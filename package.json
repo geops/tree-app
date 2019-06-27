@@ -2,8 +2,18 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@geops/tree-lib": "^0.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1"
+  },
   "devDependencies": {
-    "eslint": "^6.0.1",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@tailwindcss/custom-forms": "^0.2.0",
+    "autoprefixer": "^9.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
@@ -12,15 +22,47 @@
     "eslint-plugin-react": "^7.14.2",
     "husky": "^2.4.1",
     "lint-staged": "^8.2.1",
-    "prettier": "^1.18.2"
+    "postcss-cli": "^6.1.2",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.8.6",
+    "tailwindcss": "^1.0.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "eslintConfig": {
-    "extends": ["airbnb", "prettier", "prettier/react"],
-    "plugins": ["prettier"],
+    "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js",
+            ".jsx"
+          ]
+        }
+      ]
     }
   },
+  "eslintIgnore": [
+    "tailwind.css"
+  ],
   "hooks": {
     "pre-commit": "lint-staged",
     "post-checkout": "if [[ $HUSKY_GIT_PARAMS =~ 1$ ]]; then yarn install --frozen-lockfile; fi",
@@ -34,8 +76,16 @@
       "git add"
     ]
   },
-  "scripts": {
-    "lint": "eslint src"
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
   },
-  "dependencies": {}
+  "scripts": {
+    "tailwind": "postcss src/tailwind.css -o src/index.css",
+    "start": "yarn tailwind && react-scripts start",
+    "build": "NODE_ENV=production yarn tailwind && react-scripts build",
+    "lint": "eslint src",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
 }

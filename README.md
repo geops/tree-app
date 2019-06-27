@@ -8,6 +8,10 @@ Documentation coming soon.
 
 Details coming soon.
 
+## More
+
+- [Development](https://github.com/geops/react-spatial/tree/master/DEVELOPMENT.md)
+
 ## Bugs
 
 Please use the [GitHub issue tracker](https://github.com/geops/tree-app/issues) for all bugs and feature requests. Before creating a new issue, do a quick search to see if the problem has been reported already.
