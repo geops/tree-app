@@ -2,7 +2,40 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "eslintConfig": {
+    "extends": ["airbnb", "prettier", "prettier/react"],
+    "plugins": ["prettier"],
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+  },
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "post-checkout": "if [[ $HUSKY_GIT_PARAMS =~ 1$ ]]; then yarn install --frozen-lockfile; fi",
+    "post-merge": "yarn install --frozen-lockfile",
+    "post-rebase": "yarn install"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint src --fix",
+      "prettier --write 'src/**/*.js'",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint src"
+  },
   "dependencies": {}
 }
