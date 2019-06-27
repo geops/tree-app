@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { project, validTypes } from '@geops/tree-lib';
 import Slider from './components/Slider';
 import Dropdown from './components/Dropdown';
-import { project, validTypes } from '@geops/tree-lib';
 
 function getProjection(location) {
   try {

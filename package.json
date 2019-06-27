@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "@geops/tree-lib": "^0.1.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1"
@@ -14,6 +15,7 @@
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "@tailwindcss/custom-forms": "^0.2.0",
     "autoprefixer": "^9.6.0",
+    "eslint": "^6.0.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
@@ -40,6 +42,10 @@
     ]
   },
   "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true
+    },
     "extends": [
       "airbnb",
       "prettier",
