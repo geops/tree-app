@@ -1,0 +1,8 @@
+{
+  "name": "@geops/tree-app",
+  "description": "Web app for tree recommendations.",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {},
+  "dependencies": {}
+}
