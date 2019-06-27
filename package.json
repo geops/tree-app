@@ -1,0 +1,7 @@
+{
+  "name": "@geops/tree-lib",
+  "description": "Library for tree recommendations.",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {}
+}
