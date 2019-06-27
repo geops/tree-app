@@ -78,10 +78,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "eslint src --fix",
       "prettier --write 'src/**/*.js'",
-      "git add"
+      "git add",
+      "react-scripts test --bail --findRelatedTests --watchAll=false"
     ]
   },
   "prettier": {
@@ -92,7 +93,7 @@
     "tailwind": "postcss src/tailwind.css -o src/index.css",
     "start": "yarn tailwind && react-scripts start",
     "build": "NODE_ENV=production yarn tailwind && react-scripts build",
-    "lint": "eslint src",
+    "lint": "yarn tailwind && eslint src",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   }
