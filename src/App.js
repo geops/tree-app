@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import { project, validTypes } from '@geops/tree-lib';
 import Slider from './components/Slider';
 import Dropdown from './components/Dropdown';
-import { project, validTypes } from '@geops/tree-lib';
 
 function getProjection(location) {
   try {
@@ -10,6 +10,10 @@ function getProjection(location) {
     return e.message;
   }
 }
+
+const forestRegWithEmptyInit = ['', ...validTypes.forestEcoregion];
+const heightWithEmptyInit = ['', ...validTypes.heightLevel];
+const forestTypeWithEmptyInit = ['', ...validTypes.forestType];
 
 function App() {
   const [location, setLocation] = useState({});
@@ -34,23 +38,24 @@ function App() {
   return (
     <div className="container mx-auto">
       <Dropdown
-        label="Regions"
-        values={validTypes.forestEcoregion}
+        label="Forest Ecoregion"
+        values={forestRegWithEmptyInit.sort()}
         onChange={forestEcoregion =>
           setLocation({ ...location, forestEcoregion })
         }
       />
       <Dropdown
-        label="heightlevel"
-        values={validTypes.heightLevel}
+        label="Height Level"
+        values={heightWithEmptyInit}
         onChange={heightLevel => setLocation({ ...location, heightLevel })}
       />
       <Dropdown
-        label="forestType"
-        values={validTypes.forestType.sort()}
+        label="Forest Type"
+        values={forestTypeWithEmptyInit.sort()}
         onChange={forestType => setLocation({ ...location, forestType })}
       />
-      Use Slope as (unknown):
+      <br />
+      Slope value is unknown:
       <input
         type="checkbox"
         id="myCheck"
