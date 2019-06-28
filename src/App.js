@@ -26,7 +26,7 @@ function App() {
 
   const SliderDisplay = !slopeActive ? (
     <Slider
-      label="Slope"
+      label="Hangneigung"
       min={10}
       max={100}
       onChange={slope => setLocation({ ...location, slope })}
@@ -38,24 +38,24 @@ function App() {
   return (
     <div className="container mx-auto">
       <Dropdown
-        label="Forest Ecoregion"
+        label="Waldstandortsregionen"
         values={forestRegWithEmptyInit.sort()}
         onChange={forestEcoregion =>
           setLocation({ ...location, forestEcoregion })
         }
       />
       <Dropdown
-        label="Height Level"
+        label="Höhenstufe"
         values={heightWithEmptyInit}
         onChange={heightLevel => setLocation({ ...location, heightLevel })}
       />
       <Dropdown
-        label="Forest Type"
+        label="Standorttyp"
         values={forestTypeWithEmptyInit.sort()}
         onChange={forestType => setLocation({ ...location, forestType })}
       />
       <br />
-      Slope value is unknown:
+      Hangneigung unbekannt:
       <input
         type="checkbox"
         id="myCheck"
