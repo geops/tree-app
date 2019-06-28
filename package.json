@@ -15,6 +15,7 @@
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "@tailwindcss/custom-forms": "^0.2.0",
     "autoprefixer": "^9.6.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
@@ -41,6 +42,10 @@
     ]
   },
   "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true
+    },
     "extends": [
       "airbnb",
       "react-app",
@@ -74,10 +79,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "eslint src --fix",
       "prettier --write 'src/**/*.js'",
-      "git add"
+      "git add",
+      "react-scripts test --bail --findRelatedTests --watchAll=false"
     ]
   },
   "prettier": {
@@ -88,7 +94,7 @@
     "tailwind": "postcss src/tailwind.css -o src/index.css",
     "start": "yarn tailwind && react-scripts start",
     "build": "NODE_ENV=production yarn tailwind && react-scripts build",
-    "lint": "eslint src",
+    "lint": "yarn tailwind && eslint src",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   }

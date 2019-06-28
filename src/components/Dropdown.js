@@ -12,7 +12,7 @@ function Dropdown({ values, label, onChange }) {
         className="form-select mt-1 block w-full"
         onChange={e => onChange(e.target.value)}
       >
-        {values.map((item, i) => (
+        {values.map(item => (
           <option key={item} value={item}>
             {item}
           </option>
