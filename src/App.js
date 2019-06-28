@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="container mx-auto">
       <Dropdown
-        label="Waldstandortsregionen"
+        label="Waldstandortsregion"
         values={forestRegWithEmptyInit.sort()}
         onChange={forestEcoregion =>
           setLocation({ ...location, forestEcoregion })
