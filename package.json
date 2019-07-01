@@ -48,6 +48,7 @@
     },
     "extends": [
       "airbnb",
+      "react-app",
       "prettier",
       "prettier/react"
     ],

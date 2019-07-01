@@ -11,6 +11,10 @@ function getProjection(location) {
   }
 }
 
+const forestRegWithEmptyInit = ['', ...validTypes.forestEcoregion];
+const heightWithEmptyInit = ['', ...validTypes.heightLevel];
+const forestTypeWithEmptyInit = ['', ...validTypes.forestType];
+
 function App() {
   const [location, setLocation] = useState({});
   const [slopeActive, setSlopeActive] = useState(false);
@@ -22,7 +26,7 @@ function App() {
 
   const SliderDisplay = !slopeActive ? (
     <Slider
-      label="Slope"
+      label="Hangneigung"
       min={10}
       max={100}
       onChange={slope => setLocation({ ...location, slope })}
@@ -34,23 +38,24 @@ function App() {
   return (
     <div className="container mx-auto">
       <Dropdown
-        label="Regions"
-        values={validTypes.forestEcoregion}
+        label="Waldstandortsregion"
+        values={forestRegWithEmptyInit.sort()}
         onChange={forestEcoregion =>
           setLocation({ ...location, forestEcoregion })
         }
       />
       <Dropdown
-        label="heightlevel"
-        values={validTypes.heightLevel}
+        label="Höhenstufe"
+        values={heightWithEmptyInit}
         onChange={heightLevel => setLocation({ ...location, heightLevel })}
       />
       <Dropdown
-        label="forestType"
-        values={validTypes.forestType.sort()}
+        label="Standorttyp"
+        values={forestTypeWithEmptyInit.sort()}
         onChange={forestType => setLocation({ ...location, forestType })}
       />
-      Use Slope as (unknown):
+      <br />
+      Hangneigung unbekannt:
       <input
         type="checkbox"
         id="myCheck"
