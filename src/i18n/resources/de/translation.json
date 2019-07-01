@@ -1,0 +1,11 @@
+{
+  "forestEcoregion": {
+    "label": "Waldstandortsregion"
+  },
+  "heightLevel": {
+    "label": "Höhenstufe"
+  },
+  "forestType": {
+    "label": "Standorttyp"
+  }
+}
