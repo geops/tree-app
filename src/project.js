@@ -42,7 +42,7 @@ const project = location => {
     if (required && value === undefined) {
       throw new Error(`Location is missing required ${field}.`);
     }
-    if (value && values && values.includes(value) === false) {
+    if (value && values && values.find(v => v[value]) === undefined) {
       throw new Error(`${value} for ${field} is not valid.`);
     }
 
