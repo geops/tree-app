@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { project, validTypes } from '@geops/tree-lib';
 import Slider from './components/Slider';
 import Dropdown from './components/Dropdown';
@@ -18,6 +19,7 @@ const forestTypeWithEmptyInit = ['', ...validTypes.forestType];
 function App() {
   const [location, setLocation] = useState({});
   const [slopeActive, setSlopeActive] = useState(false);
+  const { t } = useTranslation();
 
   const switchSlopeActive = checkbox => {
     setLocation({ ...location, slope: 'unknown' });
@@ -38,19 +40,19 @@ function App() {
   return (
     <div className="container mx-auto">
       <Dropdown
-        label="Waldstandortsregion"
+        label={t('forestEcoregion.label')}
         values={forestRegWithEmptyInit.sort()}
         onChange={forestEcoregion =>
           setLocation({ ...location, forestEcoregion })
         }
       />
       <Dropdown
-        label="Höhenstufe"
+        label={t('heightLevel.label')}
         values={heightWithEmptyInit}
         onChange={heightLevel => setLocation({ ...location, heightLevel })}
       />
       <Dropdown
-        label="Standorttyp"
+        label={t('forestType.label')}
         values={forestTypeWithEmptyInit.sort()}
         onChange={forestType => setLocation({ ...location, forestType })}
       />
