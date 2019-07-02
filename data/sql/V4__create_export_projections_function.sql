@@ -7,7 +7,7 @@ BEGIN
     WITH slopes AS (SELECT slope, array_to_string(regexp_matches(slope, '(<|>).*(\d{2})'), '') parsed_slope FROM projections_import)
        SELECT
       region,
-      hm.b AS heightlevel,
+      hm.target AS heightlevel,
       CASE foresttype::name = any(enum_range(null::foresttype)::name[])
         WHEN TRUE THEN foresttype::foresttype
         ELSE null
@@ -24,7 +24,7 @@ BEGIN
         WITH regions AS (SELECT unnest(enum_range(NULL::region))::text)
         SELECT string_agg(regions.unnest, '|'::text) FROM regions
       )))[1]::region AS region, * FROM projections_import) i
-    LEFT JOIN heightlevel_mapping hm ON hm.a = i.heightlevel
+    LEFT JOIN heightlevel_meta hm ON hm.source = i.heightlevel
     LEFT JOIN slopes ON slopes.slope = i.slope;
 
 COPY
@@ -59,14 +59,14 @@ COPY
 COPY (
 WITH
 foresttype AS (
-SELECT enum_range(null::foresttype)::name[] AS values
+SELECT json_agg(jsonb_build_object(target, jsonb_build_object('de',de))) AS values FROM foresttype_meta
 ),
 regions AS (
-SELECT enum_range(null::region)::name[] AS values
+SELECT json_agg(jsonb_build_object(target, jsonb_build_object('de',de))) AS values FROM region_meta
 ),
 heightlevel AS (
-SELECT enum_range(null::heightlevel)::name[] AS values
-) 
+SELECT json_agg(jsonb_build_object(target, jsonb_build_object('de',de))) AS values FROM heightlevel_meta
+)
 SELECT jsonb_build_object('forestType', foresttype.values,'forestEcoregion', regions.values,'heightLevel',heightlevel.values)
 FROM foresttype, regions, heightlevel
 ) TO '/data/valid_enum.json';
