@@ -22,7 +22,7 @@ Details coming soon.
 Data for tree type projections is provided as a [CSV file](./data/projections.csv) and needs to be converted into JSON to be usable by the library.
 
 1. Install Yarn and Docker Compose.
-2. Run transformation: `yarn run database:transform`
+2. Run transformation: `yarn run data:transform`
 
 ## Bugs
 

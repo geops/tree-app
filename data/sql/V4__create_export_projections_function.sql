@@ -27,33 +27,30 @@ BEGIN
     LEFT JOIN heightlevel_meta hm ON hm.source = i.heightlevel
     LEFT JOIN slopes ON slopes.slope = i.slope;
 
-COPY
-    (WITH foresttype AS
-         (SELECT region,
+COPY(
+    WITH slope AS
+         (SELECT foresttype, region,
                  heightlevel,
-                 slope,
-                 jsonb_object_agg(coalesce(foresttype::text, 'not found'), coalesce(targets::text, 'not found')) AS json
+                 jsonb_object_agg(slope, targets::text) AS json
           FROM projections_export
-          GROUP BY (region,
-                   heightlevel,
-                   slope)),
-          slope AS
-         (SELECT region,
-                 heightlevel,
-                 jsonb_object_agg(slope, foresttype.json) AS json
-          FROM projections_export
-          LEFT JOIN foresttype USING (region, heightlevel, slope)
-          GROUP BY region,
+          GROUP BY foresttype, region,
                    heightlevel),
           heightlevels AS
-         (SELECT region,
+         (SELECT foresttype, region,
                  jsonb_object_agg(heightlevel, slope.json) AS json
           FROM projections_export
-          LEFT JOIN slope USING (region,
+          LEFT JOIN slope USING (foresttype, region,
                                  heightlevel)
-          GROUP BY region) SELECT jsonb_object_agg(region, heightlevels.json)
+          GROUP BY foresttype, region),
+          regions AS
+         (SELECT foresttype,
+                 jsonb_object_agg(region, heightlevels.json) AS json
+          FROM projections_export
+          LEFT JOIN heightlevels USING (foresttype, region)
+          GROUP BY foresttype) SELECT jsonb_object_agg(coalesce(foresttype::text, 'not found'), regions.json)
      FROM projections_export
-     LEFT JOIN heightlevels USING (region)) TO '/data/projections.json';
+     LEFT JOIN regions USING (foresttype)
+     ) TO '/data/projections.json';
 
 -- 5.) Dynamically generate json file for enum validation in the library
 COPY (
@@ -66,9 +63,12 @@ SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS values FROM regi
 ),
 heightlevel AS (
 SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS values FROM heightlevel_meta
+),
+slope AS (
+SELECT json_agg(jsonb_build_object('key', slope, 'de', slope||'%')) AS values FROM (SELECT DISTINCT slope FROM projections_export WHERE slope != 'unknown') foo
 )
-SELECT jsonb_build_object('forestType', foresttype.values,'forestEcoregion', regions.values,'heightLevel',heightlevel.values)
-FROM foresttype, regions, heightlevel
+SELECT jsonb_build_object('forestType', foresttype.values,'forestEcoregion', regions.values,'heightLevel',heightlevel.values,'slope',slope.values)
+FROM foresttype, regions, heightlevel, slope
 ) TO '/data/valid_enum.json';
 
 
