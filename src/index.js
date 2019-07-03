@@ -1,1 +1,1 @@
-export { default as project, projections, validTypes } from "./project";
+export { default as project, getOptions } from './project';

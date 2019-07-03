@@ -59,13 +59,13 @@ COPY
 COPY (
 WITH
 foresttype AS (
-SELECT json_agg(jsonb_build_object(target, jsonb_build_object('de',de))) AS values FROM foresttype_meta
+SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS values FROM foresttype_meta
 ),
 regions AS (
-SELECT json_agg(jsonb_build_object(target, jsonb_build_object('de',de))) AS values FROM region_meta
+SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS values FROM region_meta
 ),
 heightlevel AS (
-SELECT json_agg(jsonb_build_object(target, jsonb_build_object('de',de))) AS values FROM heightlevel_meta
+SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS values FROM heightlevel_meta
 )
 SELECT jsonb_build_object('forestType', foresttype.values,'forestEcoregion', regions.values,'heightLevel',heightlevel.values)
 FROM foresttype, regions, heightlevel

@@ -42,7 +42,7 @@ const project = location => {
     if (required && value === undefined) {
       throw new Error(`Location is missing required ${field}.`);
     }
-    if (value && values && values.find(v => v[value]) === undefined) {
+    if (value && values && values.find(v => v.key === value) === undefined) {
       throw new Error(`${value} for ${field} is not valid.`);
     }
 
@@ -59,4 +59,12 @@ const project = location => {
   throw new Error(`Found no matching projection.`);
 };
 
-export { project as default, projections, validTypes };
+export const getOptions = (field, language) => {
+  const values = validTypes[field];
+  if (!values) {
+    throw new Error(`${field} is not valid.`);
+  }
+  return values.map(v => ({ key: v.key, label: v[language] }));
+};
+
+export default project;
