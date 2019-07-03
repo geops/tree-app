@@ -16,9 +16,6 @@
     "semantic-ui-react": "^0.87.2"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^1.2.0",
-    "@tailwindcss/custom-forms": "^0.2.0",
-    "autoprefixer": "^9.6.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.0.0",
@@ -28,10 +25,8 @@
     "eslint-plugin-react": "^7.14.2",
     "husky": "^2.4.1",
     "lint-staged": "^8.2.1",
-    "postcss-cli": "^6.1.2",
     "prettier": "^1.18.2",
-    "react-test-renderer": "^16.8.6",
-    "tailwindcss": "^1.0.4"
+    "react-test-renderer": "^16.8.6"
   },
   "browserslist": {
     "production": [
@@ -72,7 +67,6 @@
     }
   },
   "eslintIgnore": [
-    "tailwind.css",
     "translation.json"
   ],
   "husky": {
@@ -96,10 +90,9 @@
     "singleQuote": true
   },
   "scripts": {
-    "tailwind": "postcss src/tailwind.css -o src/index.css",
-    "start": "yarn tailwind && react-scripts start",
-    "build": "NODE_ENV=production yarn tailwind && react-scripts build",
-    "lint": "yarn tailwind && eslint src",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint src",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   }
