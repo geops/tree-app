@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { project, validTypes } from '@geops/tree-lib';
+import 'semantic-ui-css/semantic.min.css';
+import { Dropdown } from 'semantic-ui-react';
 import Slider from './components/Slider';
-import Dropdown from './components/Dropdown';
 
 function getProjection(location) {
   try {
@@ -11,10 +12,6 @@ function getProjection(location) {
     return e.message;
   }
 }
-
-const forestRegWithEmptyInit = ['', ...validTypes.forestEcoregion];
-const heightWithEmptyInit = ['', ...validTypes.heightLevel];
-const forestTypeWithEmptyInit = ['', ...validTypes.forestType];
 
 function App() {
   const [location, setLocation] = useState({});
@@ -37,24 +34,63 @@ function App() {
     ''
   );
 
+  const listForestTypes = validTypes.forestType.map((forest, index) => ({
+    key: index + 2321,
+    text: forest,
+    value: forest,
+  }));
+
+  const listHeightLevel = validTypes.heightLevel.map((height, index) => ({
+    key: index + 5556,
+    text: height,
+    value: height,
+  }));
+
+  const listForestRegion = validTypes.forestEcoregion.map((region, index) => ({
+    key: index + 9635,
+    text: region,
+    value: region,
+  }));
+
   return (
     <div className="container mx-auto">
+      <span className="text-gray-700">{t(`forestEcoregion.label`)}</span>
       <Dropdown
-        label={t('forestEcoregion.label')}
-        values={forestRegWithEmptyInit.sort()}
-        onChange={forestEcoregion =>
-          setLocation({ ...location, forestEcoregion })
-        }
+        placeholder="Bitte aus der Liste auswählen"
+        search
+        selection
+        clearable
+        fluid
+        options={listForestRegion}
+        onChange={(e, { value }) => {
+          setLocation({ ...location, forestEcoregion: value });
+        }}
       />
+      <br />
+      <span className="text-gray-700">{t(`heightLevel.label`)}</span>
       <Dropdown
-        label={t('heightLevel.label')}
-        values={heightWithEmptyInit}
-        onChange={heightLevel => setLocation({ ...location, heightLevel })}
+        placeholder="Bitte aus der Liste auswählen"
+        search
+        selection
+        clearable
+        fluid
+        options={listHeightLevel}
+        onChange={(none, { value }) => {
+          setLocation({ ...location, heightLevel: value });
+        }}
       />
+      <br />
+      <span className="text-gray-700">{t(`forestType.label`)}</span>
       <Dropdown
-        label={t('forestType.label')}
-        values={forestTypeWithEmptyInit.sort()}
-        onChange={forestType => setLocation({ ...location, forestType })}
+        placeholder="Bitte aus der Liste auswählen"
+        search
+        selection
+        fluid
+        clearable
+        options={listForestTypes}
+        onChange={(e, { value }) => {
+          setLocation({ ...location, forestType: value });
+        }}
       />
       <br />
       Hangneigung unbekannt:
