@@ -52,12 +52,4 @@ function project(location, language) {
   return newLocation;
 }
 
-export const getOptions = (field, language) => {
-  const values = validTypes[field];
-  if (!values) {
-    throw new Error(`${field} is not valid.`);
-  }
-  return values.map(v => ({ key: v.key, label: v[language] }));
-};
-
 export default project;
