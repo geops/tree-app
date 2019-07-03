@@ -2,7 +2,16 @@ import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { project } from '@geops/tree-lib';
 import 'semantic-ui-css/semantic.min.css';
-import { Container, Divider, Form, Header, Label } from 'semantic-ui-react';
+import {
+  Container,
+  Divider,
+  Form,
+  Grid,
+  Header,
+  Label,
+  List,
+  Tab,
+} from 'semantic-ui-react';
 
 import Slope from './components/Slope';
 
@@ -18,12 +27,71 @@ function App() {
     // forestType: '60*',
     // forestEcoregion: '1',
     // heightLevel: 'SA',
+    // slope: '<70',
   });
   const projection = useMemo(() => project(location, i18n.language), [
     location,
     i18n.language,
   ]);
   document.title = t('app.title');
+
+  const panes = [
+    {
+      menuItem: t('tab.scenario1'),
+      render: () => <Tab.Pane>Coming soon...</Tab.Pane>,
+    },
+    {
+      menuItem: t('tab.scenario2'),
+      render: () => (
+        <Tab.Pane>
+          <Header>
+            {projection.target}
+            <Header.Subheader>
+              zukünftiger Standorttyp unter Annahme der Änderung um eine
+              Höhenstufe
+            </Header.Subheader>
+          </Header>
+          <Form>
+            <Form.Field>
+              <Form.Radio label="bereits heute mögliche Baumarten" checked />
+            </Form.Field>
+            <Form.Field>
+              <Form.Radio
+                label="in Zukunft zusätzliche Baumarten"
+                checked={false}
+              />
+            </Form.Field>
+          </Form>
+          <Divider hidden />
+          <Grid stackable columns={3}>
+            <Grid.Column>
+              <Header color="olive">Fördern</Header>
+              <List>
+                <List.Item>Spitzahorn</List.Item>
+                <List.Item>Bergahorn</List.Item>
+                <List.Item>Buche</List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column>
+              <Header color="grey">Mitnehmen</Header>
+              <List>
+                <List.Item>Spitzahorn</List.Item>
+                <List.Item>Bergahorn</List.Item>
+                <List.Item>Buche</List.Item>
+              </List>
+            </Grid.Column>
+            <Grid.Column>
+              <Header color="red">Reduzieren</Header>
+            </Grid.Column>
+          </Grid>
+        </Tab.Pane>
+      ),
+    },
+    {
+      menuItem: t('tab.scenario3'),
+      render: () => <Tab.Pane>Coming soon...</Tab.Pane>,
+    },
+  ];
 
   return (
     <Container>
@@ -85,8 +153,16 @@ function App() {
             value={location.slope}
           />
         )}
-        <p>Result: {projection.target}</p>
       </Form>
+      {projection.target && (
+        <>
+          <Divider horizontal>
+            <Header color="olive">{t('app.result')}</Header>
+          </Divider>
+          <Tab panes={panes} defaultActiveIndex={1} />
+        </>
+      )}
+      <Divider hidden />
     </Container>
   );
 }

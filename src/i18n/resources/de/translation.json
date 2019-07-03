@@ -1,7 +1,13 @@
 {
   "app": {
+    "result": "Ergebnis",
     "ribbon": "Beta",
     "title": "Baumarten Tool"
+  },
+  "tab": {
+    "scenario1": "heute",
+    "scenario2": "mäßig",
+    "scenario3": "stark"
   },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
   "forestEcoregion": {
