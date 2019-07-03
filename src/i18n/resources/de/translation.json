@@ -1,12 +1,19 @@
 {
+  "app": {
+    "ribbon": "Beta",
+    "title": "Baumarten Tool"
+  },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
   "forestEcoregion": {
-    "label": "Waldstandortsregion"
+    "label": "2. Waldstandortsregion"
   },
   "heightLevel": {
-    "label": "Höhenstufe"
+    "label": "3. Höhenstufe"
   },
   "forestType": {
-    "label": "Standorttyp"
+    "label": "1. Standorttyp"
+  },
+  "slope": {
+    "label": "4. Hangneigung"
   }
 }
