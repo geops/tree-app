@@ -20,6 +20,11 @@ const getDropdownOptions = i => ({
   text: i.label,
   value: i.key,
 });
+const getDropdownKeyOptions = i => ({
+  key: i.key,
+  text: i.key === i.label ? i.label : `${i.key} ${i.label}`,
+  value: i.key,
+});
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -109,7 +114,7 @@ function App() {
           fluid
           clearable
           value={location.forestType}
-          options={projection.options.forestType.map(getDropdownOptions)}
+          options={projection.options.forestType.map(getDropdownKeyOptions)}
           onChange={(e, { value }) =>
             setLocation({ ...location, forestType: value })
           }
