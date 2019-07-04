@@ -8,7 +8,7 @@ test('valid projection', () => {
       forestType: '60*',
       slope: '<70',
     }).target,
-  ).toBe('50*');
+  ).toBe(undefined);
 });
 
 test('invalid location values', () => {

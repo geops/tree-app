@@ -47,7 +47,9 @@ function project(location, language) {
 
   const newLocation = { ...location, options };
   if (typeof target === 'string') {
-    newLocation.target = target;
+    newLocation.target = validTypes.forestType.find(t => t.key === target)[
+      language
+    ];
   }
   return newLocation;
 }
