@@ -65,7 +65,7 @@ heightlevel AS (
 SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS values FROM heightlevel_meta
 ),
 slope AS (
-SELECT json_agg(jsonb_build_object('key', slope, 'de', slope||'%')) AS values FROM (SELECT DISTINCT slope FROM projections_export WHERE slope != 'unknown') foo
+SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS values FROM slope_meta
 )
 SELECT jsonb_build_object('forestType', foresttype.values,'forestEcoregion', regions.values,'heightLevel',heightlevel.values,'slope',slope.values)
 FROM foresttype, regions, heightlevel, slope

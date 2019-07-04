@@ -265,6 +265,14 @@ VALUES (1,
                                                                                                   'OSA'::heightlevel,
                                                                                                   'Obersubalpin');
 
+
+CREATE TABLE slope_meta (target TEXT, de TEXT);
+INSERT INTO slope_meta (target, de) VALUES ('<60', '<60%');
+INSERT INTO slope_meta (target, de) VALUES ('<70', '<70%');
+INSERT INTO slope_meta (target, de) VALUES ('>60', '>60%');
+INSERT INTO slope_meta (target, de) VALUES ('>70', '>70%');
+INSERT INTO slope_meta (target, de) VALUES ('unknown', 'nicht relevant');
+
 -- 2.) Add new column to export table using enum type.
 
 CREATE TABLE projections_export (id serial, region region,
