@@ -106,8 +106,8 @@ function App() {
           placeholder={t('dropdownPlaceholder')}
           search
           selection
-          fluid
           clearable
+          fluid
           value={location.forestType}
           options={projection.options.forestType.map(getDropdownOptions)}
           onChange={(e, { value }) =>
