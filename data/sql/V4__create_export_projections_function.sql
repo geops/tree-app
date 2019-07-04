@@ -33,6 +33,7 @@ COPY(
                  heightlevel,
                  jsonb_object_agg(slope, targets::text) AS json
           FROM projections_export
+          WHERE targets IS NOT NULL
           GROUP BY foresttype, region,
                    heightlevel),
           heightlevels AS
@@ -41,15 +42,18 @@ COPY(
           FROM projections_export
           LEFT JOIN slope USING (foresttype, region,
                                  heightlevel)
+          WHERE slope.json IS NOT NULL
           GROUP BY foresttype, region),
           regions AS
          (SELECT foresttype,
                  jsonb_object_agg(region, heightlevels.json) AS json
           FROM projections_export
           LEFT JOIN heightlevels USING (foresttype, region)
+          WHERE heightlevels.json IS NOT NULL
           GROUP BY foresttype) SELECT jsonb_object_agg(coalesce(foresttype::text, 'not found'), regions.json)
      FROM projections_export
      LEFT JOIN regions USING (foresttype)
+     WHERE regions.json IS NOT NULL
      ) TO '/data/projections.json';
 
 -- 5.) Dynamically generate json file for enum validation in the library
