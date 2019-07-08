@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/label-has-for,jsx-a11y/label-has-associated-control */
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { Button, Form } from 'semantic-ui-react';
 
 function ChoiceButton({ onChange, options, value, label }) {
-  const { t } = useTranslation();
   return (
     <Form.Field>
       <label>{label}</label>
