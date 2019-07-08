@@ -14,7 +14,7 @@ test('valid projection', () => {
       },
       'de',
     ).target,
-  ).toBe('Karbonat-Ta-Fi-Wald mit kahlem Alpendost');
+  ).toBe('Buntreitgras-Fi-Wald');
 });
 
 test('invalid location values', () => {
@@ -32,13 +32,17 @@ test('invalid location values', () => {
   expect(() =>
     project(
       {
-        forestEcoregion: '5',
-        heightLevel: 'SA',
-        forestType: 'fooBar',
+        forestEcoregion: '1',
+        heightLevel: 'HM',
+        forestType: '55 collin',
       },
       'de',
     ),
-  ).toThrowError('fooBar for forestType is not valid.');
+  ).toThrowError('55 collin for forestType is not valid.');
+});
+
+test('unsupported language', () => {
+  expect(() => project({}, 'fooBar')).toThrowError('fooBar is not supported.');
 });
 
 test('unsupported language', () => {

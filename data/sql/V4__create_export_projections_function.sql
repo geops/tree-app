@@ -8,12 +8,12 @@ INSERT INTO projections_export (region, heightlevel, foresttype, targets, additi
        SELECT
       region,
       hm.target AS heightlevel,
-      CASE foresttype::name = any(enum_range(null::foresttype)::name[])
-        WHEN TRUE THEN foresttype::foresttype
+      CASE regexp_replace(foresttype, ' collin', '')::name = any(enum_range(null::foresttype)::name[])
+        WHEN TRUE THEN regexp_replace(foresttype, ' collin', '')::foresttype
         ELSE null
       END,
-      CASE targets::name = any(enum_range(null::foresttype)::name[])
-        WHEN TRUE THEN targets::foresttype
+      CASE regexp_replace(foresttype, ' collin', '')::name = any(enum_range(null::foresttype)::name[])
+        WHEN TRUE THEN regexp_replace(foresttype, ' collin', '')::foresttype
         ELSE null
       END,
       CASE am.target is null
