@@ -1,14 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-for,jsx-a11y/label-has-associated-control */
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { Button, Form } from 'semantic-ui-react';
 
-function Slope({ onChange, options, value }) {
-  const { t } = useTranslation();
+function ChoiceButton({ onChange, options, value, label }) {
   return (
     <Form.Field>
-      <label>{t('slope.label')}</label>
+      <label>{label}</label>
       <Button.Group basic>
         {options.map(s => (
           <Button
@@ -24,7 +22,8 @@ function Slope({ onChange, options, value }) {
   );
 }
 
-Slope.propTypes = {
+ChoiceButton.propTypes = {
+  label: PropTypes.string.isRequired,
   onChange: PropTypes.func,
   options: PropTypes.arrayOf(
     PropTypes.exact({ key: PropTypes.string, label: PropTypes.string }),
@@ -32,9 +31,9 @@ Slope.propTypes = {
   value: PropTypes.string,
 };
 
-Slope.defaultProps = {
+ChoiceButton.defaultProps = {
   onChange: () => {},
   value: '',
 };
 
-export default Slope;
+export default ChoiceButton;
