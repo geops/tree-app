@@ -58,11 +58,11 @@ INSERT INTO foresttype_meta (target, de)
 SELECT foo.foresttype,
        mstr.naistyp_wges
 FROM
-  (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
+        (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
 LEFT JOIN
-  (SELECT naistyp_wges,
-          regexp_split_to_table(naistyp_c, '\/') AS naistyp_c
-   FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
+        (SELECT naistyp_wges,
+                regexp_split_to_table(naistyp_c, '\/') AS naistyp_c
+         FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
 
 
 CREATE TYPE heightlevel AS ENUM ('C', 'SM', 'UM', 'OM', 'HM', 'SA', 'OSA');
@@ -73,45 +73,45 @@ CREATE TABLE heightlevel_meta (source TEXT, target heightlevel,
 
 
 INSERT INTO heightlevel_meta (source, target, de)
-VALUES ( 'collin',
-         'C'::heightlevel,
-         'Collin');
+VALUES ('collin',
+        'C'::heightlevel,
+        'Collin');
 
 
 INSERT INTO heightlevel_meta (source, target, de)
-VALUES ( 'submontan',
-         'SM'::heightlevel,
-         'Submontan');
+VALUES ('submontan',
+        'SM'::heightlevel,
+        'Submontan');
 
 
 INSERT INTO heightlevel_meta (source, target, de)
-VALUES ( 'untermontan',
-         'UM'::heightlevel,
-         'Untermontan');
+VALUES ('untermontan',
+        'UM'::heightlevel,
+        'Untermontan');
 
 
 INSERT INTO heightlevel_meta (source, target, de)
-VALUES ( 'obermontan',
-         'OM'::heightlevel,
-         'Obermontan');
+VALUES ('obermontan',
+        'OM'::heightlevel,
+        'Obermontan');
 
 
 INSERT INTO heightlevel_meta (source, target, de)
-VALUES ( 'hochmontan',
-         'HM'::heightlevel,
-         'Hochmontan');
+VALUES ('hochmontan',
+        'HM'::heightlevel,
+        'Hochmontan');
 
 
 INSERT INTO heightlevel_meta (source, target, de)
-VALUES ( 'subalpin',
-         'SA'::heightlevel,
-         'Subalpin');
+VALUES ('subalpin',
+        'SA'::heightlevel,
+        'Subalpin');
 
 
 INSERT INTO heightlevel_meta (source, target, de)
-VALUES ( 'obersubalpin',
-         'OSA'::heightlevel,
-         'Obersubalpin');
+VALUES ('obersubalpin',
+        'OSA'::heightlevel,
+        'Obersubalpin');
 
 
 CREATE TABLE slope_meta (target TEXT, de TEXT);
@@ -141,10 +141,253 @@ INSERT INTO slope_meta (target, de)
 VALUES ('unknown',
         'nicht relevant');
 
+
+CREATE TYPE additional AS ENUM ('NrmlSl','ExtB','Nrml','withAv','CmpS','Shdy_Cl_Bb','Shdy_Cl','Wrm_Rdt','=10F','Cl','<1F','NoAvln','WthAvln', 'D_Eb_Cl','>5F','<5F','DpSl_Shdy','Dp','Rvn','Rbl','Shlw','<10F','>10F','unknown');
+
+
+CREATE TABLE additional_meta (source TEXT, de TEXT,en TEXT,target additional);
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Boden normal',
+        'Boden normal',
+        'Normal Soil',
+        'NrmlSl');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Extrem blockig',
+        'Extrem blockig',
+        'Extremely blocky',
+        'ExtB');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Normal',
+        'Normal',
+        'Normal',
+        'Nrml');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('bei Lawinenzug',
+        'bei Lawinenzug',
+        'for avalanches',
+        'withAv');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Boden verdichtet',
+        'Boden verdichtet',
+        'Compacted Soil',
+        'CmpS');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('schattig, kühl, grosse Blöcke',
+        'schattig, kühl, grosse Blöcke',
+        'Shady, Cool, Big blocks',
+        'Shdy_Cl_Bb');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Schattig, Kühl',
+        'Schattig, Kühl',
+        'Shady, Cool',
+        'Shdy_Cl');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Warm und Strahlungsreich',
+        'Warm und Strahlungsreich',
+        'Warm and radiant',
+        'Wrm_Rdt');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('falls mind alle 10 Jahre überschwemmt',
+        'falls mind alle 10 Jahre überschwemmt',
+        'Flooded every 10 years',
+        '=10F');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Kühl',
+        'Kühl',
+        'Cool',
+        'Cl');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('falls alljährlich überschwemmt',
+        'falls alljährlich überschwemmt',
+        'Flooded every year',
+        '<1F');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Keine Lawinenbeeinflussung',
+        'Keine Lawinenbeeinflussung',
+        'No avalanche influence',
+        'NoAvln');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('mit Lawinenbeeinflussung',
+        'mit Lawinenbeeinflussung',
+        'With avalanche control',
+        'WthAvln');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('trocken, extrem blockig, kühl',
+        'trocken, extrem blockig, kühl',
+        'Dry, Extremely blocky, Cool',
+        'D_Eb_Cl');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('alle 6 Jahre oder seltener überschwemmt',
+        'alle 6 Jahre oder seltener überschwemmt',
+        'Flooded every six years or less',
+        '>5F');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('bis alle 5 Jahre überschwemmt',
+        'bis alle 5 Jahre überschwemmt',
+        'Flooded every five years',
+        '<5F');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('tiefgründiger Boden, schattig',
+        'tiefgründiger Boden, schattig',
+        'Deep soil, Shady',
+        'DpSl_Shdy');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('tiefgründig',
+        'tiefgründig',
+        'Deep',
+        'Dp');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('Schlucht',
+        'Schlucht',
+        'Ravine',
+        'Rvn');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('mit viel Schutt',
+        'mit viel Schutt',
+        'With lots of rubble',
+        'Rbl');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('flachgründig',
+        'flachgründig',
+        'Shallow',
+        'Shlw');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('weniger als alle 10 Jahre überschwemmt',
+        'weniger als alle 10 Jahre überschwemmt',
+        'Flooded less than every 10 years',
+        '<10F');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('mind. alle 10 Jahre überschwemmt',
+        'mind. alle 10 Jahre überschwemmt',
+        'Flooded at least every 10 years',
+        '>10F');
+
+
+INSERT INTO additional_meta (source,de,en,target)
+VALUES ('',
+        'nicht relevant',
+        'not relevant',
+        'unknown');
+
+
+CREATE TYPE tannenareal AS ENUM ('h_or_n','r','h_and_n','n','unknown');
+
+
+CREATE TABLE tannen_meta (source TEXT, de TEXT,target tannenareal);
+
+
+INSERT INTO tannen_meta (source,de,target)
+VALUES ('Haupt- und Nebenareal',
+        'Haupt- und Nebenareal',
+        'h_and_n');
+
+
+INSERT INTO tannen_meta (source,de,target)
+VALUES ('Reliktareal',
+        'Reliktareal',
+        'r');
+
+
+INSERT INTO tannen_meta (source,de,target)
+VALUES ('Haupt- oder Nebenareal',
+        'Haupt- oder Nebenareal',
+        'h_or_n');
+
+
+INSERT INTO tannen_meta (source,de,target)
+VALUES ('Nebenareal',
+        'Nebenareal',
+        'n');
+
+
+INSERT INTO tannen_meta (source,de,target)
+VALUES ('',
+        'nicht relevant',
+        'unknown');
+
+
+CREATE TYPE relief AS ENUM ('h_and_m','normal','w_and_s','kup','unknown');
+
+
+CREATE TABLE relief_meta (source TEXT, de TEXT,target relief);
+
+
+INSERT INTO relief_meta (source,de,target)
+VALUES ('Hang- und Muldenlage',
+        'Hang- und Muldenlage',
+        'h_and_m');
+
+
+INSERT INTO relief_meta (source,de,target)
+VALUES ('normal',
+        'normal',
+        'normal');
+
+
+INSERT INTO relief_meta (source,de,target)
+VALUES ('Kuppenlage',
+        'Kuppenlage',
+        'kup');
+
+
+INSERT INTO relief_meta (source,de,target)
+VALUES ('',
+        'nicht relevant',
+        'unknown');
+
 -- 2.) Add new column to export table using enum type.
 
 CREATE TABLE projections_export (id serial, region region,
                                             heightlevel heightlevel,
                                             foresttype foresttype,
                                             targets foresttype,
+                                            additional additional,
+                                            tannenareal tannenareal,
+                                            relief relief,
                                             slope text);

@@ -2099,7 +2099,7 @@ R4;subalpin;71;;;71;;;;;;hochmontan
 R4;subalpin;60;;;47D;Haupt- oder Nebenareal;;;;;hochmontan
 R4;subalpin;60;;;47DRe;Reliktareal;;;;;hochmontan
 R4;subalpin;24*;;;24*;;;;;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;99999;;;;hochmontan
+R4;subalpin;99999;;99999;24*;99999;;;;;hochmontan
 R4;subalpin;21*;;;47D;;;;;;hochmontan
 R4;subalpin;27*;;;27h;;;;;;hochmontan
 R4;subalpin;53;;;53Ta;;;;;;hochmontan
@@ -2114,32 +2114,32 @@ R4;subalpin;57VM;;;47M;Haupt- oder Nebenareal;;;;;hochmontan
 R4;subalpin;57VM;;;47MRe;Reliktareal;;;;;hochmontan
 R4;subalpin;57S;;;56;;;;;;hochmontan
 R4;subalpin;58;;;55*;;;;;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;99999;;;;hochmontan
+R4;subalpin;99999;;99999;55*;99999;;;;;hochmontan
 R4;subalpin;58Bl;;normal;47H;;;;;;hochmontan
 R4;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;;;hochmontan
 R4;subalpin;58C;;;55*;;;;;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;99999;;;;hochmontan
+R4;subalpin;99999;;99999;55*;99999;;;;;hochmontan
 R4;subalpin;60*;;;50*;Haupt- oder Nebenareal;;;;;hochmontan
 R4;subalpin;60*;;;50*Re;Reliktareal;;;;;hochmontan
 R4;subalpin;32V;;alle 6 Jahre oder seltener überschwemmt;32V;;;;;;hochmontan
-R4;subalpin;99999;;99999;32V;99999;99999;;;;hochmontan
+R4;subalpin;99999;;99999;32V;99999;;;;;hochmontan
 R4;subalpin;32V;;bis alle 5 Jahre überschwemmt;43S;;;;;;hochmontan
 R4;subalpin;AV;;;24*;;;;;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;23*;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;24;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;32*;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;33V;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;40P;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;40PBl;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;66;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;AV;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;25a;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;;;hochmontan
+R4;subalpin;99999;;99999;24*;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;23*;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;24;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;32*;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;33V;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;40P;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;40PBl;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;66;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;AV;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;25a;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;;;hochmontan
 R4;subalpin;57C;;;47Re;Haupt- oder Nebenareal;;Reliktareal;;;hochmontan
 R4;subalpin;57C;;;47Re;Reliktareal;;Reliktareal;;;hochmontan
 R4;subalpin;57V;;;46MRe;Haupt- oder Nebenareal;;Reliktareal;;;hochmontan
@@ -2169,7 +2169,7 @@ R4;subalpin;71;;;71;;;Reliktareal;;;hochmontan
 R4;subalpin;60;;;47DRe;Haupt- oder Nebenareal;;Reliktareal;;;hochmontan
 R4;subalpin;60;;;47DRe;Reliktareal;;Reliktareal;;;hochmontan
 R4;subalpin;24*;;;24*;;;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;99999;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;24*;99999;;Reliktareal;;;hochmontan
 R4;subalpin;21*;;;47DRe;;;Reliktareal;;;hochmontan
 R4;subalpin;27*;;;27h;;;Reliktareal;;;hochmontan
 R4;subalpin;53;;;53*;;;Reliktareal;;;hochmontan
@@ -2184,32 +2184,32 @@ R4;subalpin;57VM;;;47MRe;Haupt- oder Nebenareal;;Reliktareal;;;hochmontan
 R4;subalpin;57VM;;;47MRe;Reliktareal;;Reliktareal;;;hochmontan
 R4;subalpin;57S;;;56;;;Reliktareal;;;hochmontan
 R4;subalpin;58;;;55*;;;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;99999;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;55*;99999;;Reliktareal;;;hochmontan
 R4;subalpin;58Bl;;normal;47H;;;Reliktareal;;;hochmontan
 R4;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;Reliktareal;;;hochmontan
 R4;subalpin;58C;;;55*;;;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;99999;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;55*;99999;;Reliktareal;;;hochmontan
 R4;subalpin;60*;;;50*Re;Haupt- oder Nebenareal;;Reliktareal;;;hochmontan
 R4;subalpin;60*;;;50*Re;Reliktareal;;Reliktareal;;;hochmontan
 R4;subalpin;32V;;alle 6 Jahre oder seltener überschwemmt;32V;;;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;32V;99999;99999;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;32V;99999;;Reliktareal;;;hochmontan
 R4;subalpin;32V;;bis alle 5 Jahre überschwemmt;43S;;;Reliktareal;;;hochmontan
 R4;subalpin;AV;;;24*;;;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;23*;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;24;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;32*;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;33V;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;40P;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;40PBl;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;66;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;AV;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;25a;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;Reliktareal;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;24*;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;23*;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;24;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;32*;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;33V;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;40P;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;40PBl;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;66;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;AV;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;25a;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;Reliktareal;;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;Reliktareal;;;hochmontan
 R4;subalpin;57C;;;47;Haupt- oder Nebenareal;;;Nebenareal;;hochmontan
 R4;subalpin;57C;;;47;Reliktareal;;;Nebenareal;;hochmontan
 R4;subalpin;57V;;;46M;Haupt- oder Nebenareal;;;Nebenareal;;hochmontan
@@ -2239,7 +2239,7 @@ R4;subalpin;71;;;71;;;;Nebenareal;;hochmontan
 R4;subalpin;60;;;47D;Haupt- oder Nebenareal;;;Nebenareal;;hochmontan
 R4;subalpin;60;;;47D;Reliktareal;;;Nebenareal;;hochmontan
 R4;subalpin;24*;;;24*;;;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;99999;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;24*;99999;;;Nebenareal;;hochmontan
 R4;subalpin;21*;;;47D;;;;Nebenareal;;hochmontan
 R4;subalpin;27*;;;27h;;;;Nebenareal;;hochmontan
 R4;subalpin;53;;;53Ta;;;;Nebenareal;;hochmontan
@@ -2254,32 +2254,32 @@ R4;subalpin;57VM;;;47M;Haupt- oder Nebenareal;;;Nebenareal;;hochmontan
 R4;subalpin;57VM;;;47M;Reliktareal;;;Nebenareal;;hochmontan
 R4;subalpin;57S;;;56;;;;Nebenareal;;hochmontan
 R4;subalpin;58;;;55*;;;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;99999;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;55*;99999;;;Nebenareal;;hochmontan
 R4;subalpin;58Bl;;normal;47H;;;;Nebenareal;;hochmontan
 R4;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;Nebenareal;;hochmontan
 R4;subalpin;58C;;;55*;;;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;99999;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;55*;99999;;;Nebenareal;;hochmontan
 R4;subalpin;60*;;;50*;Haupt- oder Nebenareal;;;Nebenareal;;hochmontan
 R4;subalpin;60*;;;50*;Reliktareal;;;Nebenareal;;hochmontan
 R4;subalpin;32V;;alle 6 Jahre oder seltener überschwemmt;32V;;;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;32V;99999;99999;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;32V;99999;;;Nebenareal;;hochmontan
 R4;subalpin;32V;;bis alle 5 Jahre überschwemmt;43S;;;;Nebenareal;;hochmontan
 R4;subalpin;AV;;;24*;;;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;23*;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;24;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;32*;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;33V;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;40P;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;40PBl;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;66;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;AV;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;25a;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;Nebenareal;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;99999;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;24*;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;23*;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;24;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;32*;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;33V;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;40P;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;40PBl;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;66;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;AV;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;25a;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;Nebenareal;;hochmontan
+R4;subalpin;99999;;99999;99999;99999;;;Nebenareal;;hochmontan
 R4;hochmontan;47;;;25a;;;;;;collin
 R4;hochmontan;47Re;;;25a;;;;;;collin
 R4;hochmontan;46M;;;42V;;;;;;collin
