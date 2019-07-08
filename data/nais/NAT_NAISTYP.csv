@@ -1,0 +1,1398 @@
+NAISTYP_SORT; NAISTYP_C; NAISTYP_LAT; NAISTYP_NWLD; NAISTYP_HDOM_MIN; NAISTYP_HDOM_MAX; NAISTYP_HMAX_NAD; NAISTYP_HMAX_LAU; NAISTYP_BEM4; NAISTYP_STAO; NAISTYP_VASP; NAISTYP_HUMF; NAISTYP_ENT; NAISTYP_EIG; NTYP_KG_FEIN; NTYP_KG_GESTEIN; NAISTYP_KG_V; NAISTYP_KG_T_MIN; NAISTYP_KG_T_MAX; NTYP_AM_S; NTYP_AM_B; NTYP_RT_MITTELH; NTYP_RT_MULDE; NTYP_RT_KUPPE; NTYP_RT_PLATEAU; NTYP_RT_STEILH; NTYP_FELS; NTYP_BL_FELS_ST; NTYP_BL_FELS_WE; NTYP_BL_KARREN; NTYP_BL_SCHUTT_M; NTYP_BL_SCHUTT_S; NTYP_BL_SCHUTT_X; NTYP_STEINSCHLAG; NTYP_LAWINEN; NTYP_RUTSCHUNG; NTYP_EROSION; NTYP_WASS_BACH; NTYP_WASS_KLEIN; NTYP_WASS_QUELL; NTYP_WECHSELF; NAISTYP_GFX
+1;1;Luzulo sylvaticae-/L. niveae-Fagetum typicum;"Mässig wüchsiger Buchenwald; oft reine Buchenbestände; aber häufig auch Traubeneichen und/oder Waldföhren beigemischt. 
+";20;30;0;0;;"Kuppen und flache Hügelrücken über kalkarmem oder tiefgründig ausgewaschenem Muttergestein
+";"Sträucher oft fehlend; Bodenvegetation oft lückig und artenarm. Oft Moosteppich.
+";Moder;"Stark saure Braunerde und Parabraunerde; teilweise vernässt
+";"Gründigkeit tief; biologische Aktivität stark eingeschränkt; Durchlässigkeit mittel. Keine Vernässung bis schwach pseudovergleyt.
+";0;0;9;85;;1;2;1;0;1;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+10.001;10a   ;Pulmonario-/ Lathyro-Fagetum melittetosum;"Buchenwald in dem Waldföhre und fast alle Laubbäume beigemischt sein können. Die Lärche ist im Mittelland und Jura wenig geeignet; in den kontinentaler geprägten Gebieten (2a und angerenzend) gedeiht sie gut. 
+";18;28;30;28;;"Flache und steile Hänge; trockene Lagen; Kalk
+";"Krautreich bis lückig. Oft Seggen- und Grasrasen.
+";Mull (Kalkmull);"Rendzina; Pararendzina manchmal etwas verbraunt
+";"Skelettgehalt hoch; Gründigkeit tief; biologische Aktivität durch Trockenheit eingeschränkt; Durchlässigkeit mittel; keine Vernässung
+";9;1;1;;55;0;1;1;2;2;2;1;2;0;2;2;2;0;1;2;0;0;0;0;0;0;0;10a
+10.014;10w   ;"Pulmonario-/ Lathyro-Fagetum melittetosum; Carex flacca-Variante";"Buchenwald in dem Waldföhre; teilweise Eibe. Fast alle Laubbäume können beigemischt sein. 
+";18;28;30;28;;"Flache und steile Hänge; meist Mergel
+";"Krautreich bis lückig. Oft Seggen- und Grasrasen. Häufig kriechender Liguster.
+";"Mull (Kalkmull); teilweise trockenen Ausprägung";"Rendzina; Pararendzina manchmal etwas verbraunt
+";"Skelettgehalt hoch; kalkreich; Gründigkeit tief; biologische Aktivität durch Trockenheit eingeschränkt; wechselnder Bodenwasserhaushalt; Durchlässigkeit mittel bis gering; schwach pseudovergleyt bis keine Vernässung
+";9;1;1;;30;0;1;1;2;2;2;1;2;0;2;0;2;0;1;2;0;1;1;0;0;0;1;10w
+11;11;Aro-Fagetum;"Mischwald mit dominierender Buche; Bergahorn und Esche; Stieleiche; Kirschbaum. Gerade Stämme.
+";30;40;45;40;;"Hangfuss- und Tallagen; Kalk
+";"Krautig. Oft dominiert de Bärlauch; er kann aber auch fehlen.
+";"Mull; teilweise feuchte Ausprägung";"Rendzina; Regosol oder Braunerde; alle leicht vernässt
+";"Gründigkeit sehr tief; biologische Aktivität hoch; Wurzelraum für Buchen noch genügend durchlüftet; Durchlässigkeit mittel; schwach bis sehr schwach pseudovergleyt oder grundnass bis schwach grundnass. 
+";9;1;1;;200;0;1;2;1;0;2;2;0;0;0;0;0;0;2;0;0;2;0;2;2;0;0;11
+12;12*   ;Cardamino-Fagetum insubricum sl.;"Mittelwüchsiger bis wüchsiger Buchenwald; mit einzelnen Ahornen; Ulmen; Linden; Hopfenbuche; Mehlbeere; Vogelbeere und Stechpalme. Evt. ist potentiell auch Tanne vorhanden
+";15;25;28;25;;"Schattenhänge; Hangfusslagen oder tiefgründige; schattige Standorte
+";"Krautig; saftig grün oder viel Buchenstreu; mit Haselsträuchern; Farnen und nährtstoffliebenden Arten. Durch Rehverbiss und Lichtmangel sind verarmte Bodenvegetationsbilder häufig.
+";Mull (Kalkmull) bis Mull-Moder;"Rendzina; stellenweise verbraunt
+";"Skelettreich; mittel- bis tiefgründig; durchlässig; keine Vernässung
+";9;1;9;;;0;1;1;1;0;2;2;0;0;1;0;2;0;2;2;0;0;0;0;0;0;0;12Stern
+12.009;12*h  ;Cardamino-Fagetum veratretosum;"Mässig wüchsiger Buchenwald; mit einzelnen Bergahorn; Vogelbeere; Mehlbeere. Evt. sind potentiell auch Tanne und Lärche vorhanden
+";12;22;25;22;;"Hanglagen auf Kalk (Trias; Lias); meidet stark besonnte Hänge
+";"Zahnwurz und montane Arten dominieren
+";"Mull; stellenweise Moder; teilweise trockene Ausprägung";"Rendzina; stellenweise verbraunt
+";"Skelettreich; mittel bis tiefgründig; durchlässig; keine Vernässung
+";9;1;;;;0;1;1;1;0;2;2;0;0;2;0;2;0;2;2;0;0;0;0;0;0;0;12Sternh
+12.00012;12S   ;Mercuriali-/Cardamino-Fagetum circaetosum / allietosum;"Sehr wüchsiger Mischwald mit Buche; beigemischter Tanne; Bergahorn und Esche; kaum Eiche; Hagebuche; Kirschbaum in Baumschicht. 
+";30;40;45;40;;"Lagen an Schattenhängen; Kalk
+";"Krautreich. Oft viele Farne.
+";Mull;"Rendzina; Pararendzina; Regosol; Braunerde; Parabraunerde; alle leicht vernässt
+";"Skelettgehalt mittel bis hoch; Gründigkeit sehr tief; kalkreich; biologische Aktivität hoch; Durchlässigkeit mittel bis gering; pseudovergleyt bis sehr schwach pseudovergleyt oder grundnass bis schwach grundnass
+";9;1;1;;170;0;1;2;1;0;2;2;0;0;0;0;0;0;2;0;0;2;0;2;2;0;0;12S
+12.001;12a   ;Mercuriali-/Cardamino-Fagetum typicum;"Wüchsiger Buchenwald; oft Hallenwald. Tanne; Ahorn und Esche können beigemischt sein. Eiche; Hagebuche; Kirschbaum kaum in Baumschicht. Die Lärche ist im Mittelland und Jura wenig geeignet; in den kontinentaler geprägten Gebieten (2a und angerenzend) gedeiht sie gut. 
+";30;35;42;38;;"Hanglagen; meist auf stabilisiertem Kalkschutt
+";"Krautig. Oft dominieren Fiederblättrige Zahnwurz oder Bingelkraut; manchmal Farne.
+";Mull (Kalkmull);"Rendzina; Pararendzina; Regosol; Braunerde; Parabraunerde
+";"Skelettgehalt hoch bis sehr hoch; Gründigkeit tief bis sehr tief; biologische Aktivität hoch; Durchlässigkeit mittel; keine Vernässung
+";9;1;1;;50;0;1;1;2;0;2;1;2;0;2;2;2;0;1;2;0;0;2;0;0;0;0;12a
+12.005;12e   ;Mercuriali-/Cardamino-Fagetum caricetosum albae;"Mässig wüchsiger Buchenwald mit Mehlbeere; Waldföhre und teilweise Eibe; kaum Eiche; Hagebuche; Kirschbaum in Baumschicht; für Tanne trocken. Die Lärche ist im Mittelland und Jura wenig geeignet; in den kontinentaler geprägten Gebieten (2a und angerenzend) gedeiht sie gut. 
+";18;25;30;28;;"Trockene Hanglagen; v. a. südexponiert; Kalk
+";"Oft Seggen- und Grasrasen.
+";"Mull; (Kalkmull); stellenweise trockene Ausprägung";"Rendzina; Pararendzina; Regosol; Braunerde
+";"Skelettgehalt hoch; Gründigkeit tief; kalkreich; Durchlässigkeit mittel; keine Vernässung
+";9;1;1;;25;0;2;1;0;2;2;2;2;0;2;2;2;0;1;2;0;0;0;0;0;0;0;12e
+12.014;12w   ;Mercuriali-/Cardamino-Fagetum caricetosum flaccae;"Buchenwald mit Bergahorn; Sommerlinde und teilweise Eibe. 
+";20;30;32;30;;"Hänge mit mässig bewegtem Kalkschutt; meist Mergel; Nord- (submontan) bis Süd-Exposition
+";"Oft Seggen- und Grasrasen. Häufig kriechende Liguster.
+";"Mull (Kalkmull); stellenweise trockene oder feuchte Ausprägung";"Rendzina; Pararendzina; Regosol; Braunerde; stellenweise vernässt
+";"Wechselfeucht bis wechseltrocken; Skelettgehalt hoch; Gründigkeit tief bis sehr tief; kalkreich; biologische Aktivität hoch; Durchlässigkeit mittel bis gering; schwach pseudovergleyt bis keine Vernässung
+";9;1;1;;10;0;1;1;2;2;2;1;2;0;2;0;2;0;1;2;0;1;1;0;0;0;1;12w
+13.1;13*   ;Tilio-Fagetum (Insubrische Ausbildung);"Wüchsige Buchenwälder oder Laubmischwälder wo die Buche noch fähig ist die Dominanz zu erreichen
+";18;24;26;26;;"Leicht azonalen Standorten mit Basenreichtum. Mässig bewegter Schutt; sichbar aber nicht auffallend. Wenige Hohlräume im Bodenprofil. Der Standort kann austrocken aber ist meistens noch genügen frisch und ruhig dass die Buche zur Dominanz kommen kann.
+";"Wüchsige Mischbestände mit teilweise üppige Krautschichten; in den unteren Lagen vermehrt mit immergrünen Unterschichten
+";Mull bis Moder;"Kolluviale Brauunerde; teilw. Rendzina mit verbraunte Oberboden
+";"Humusreiche Schuttböden; Skelettgehalt sehr hoch; Gründigkeit tief; Durchlässigkeit normal; keine Vernässung
+";2;1;9;;;2;1;1;1;0;9;2;0;2;1;0;1;2;1;2;0;2;2;0;0;0;0;13Stern
+13.001;13a   ;Tilio-Fagetum typicum;"Buche dominiert; daneben spielen Linde und Bergahorn eine wichtige Rolle; dazu Esche.
+";20;30;33;30;;"Hänge mit mässig bewegtem Kalkschutt; frisch; Nord-(submontan) bis Süd-Exposition
+";"Krautig. Oft dominieren Fiederblättrige Zahnwurz oder Bingelkraut; manchmal Farne.
+";"Mull (Kalkmull); stellenweise erodiert";"Rendzina; Pararendzina; stellenweise vernässt
+";"Humusreiche Kalkschuttböden; Skelettgehalt sehr hoch; Gründigkeit sehr tief; starke biologische Aktivität; Durchlässigkeit gering bis hoch; schwach pseudovergleyt bis keine Vernässung
+";9;1;1;;30;0;1;1;2;0;0;1;1;2;1;2;1;2;2;1;0;0;1;0;0;0;0;13a
+13.005;13e   ;Tilio-Fagetum caricetosum albae;"Buche dominiert; daneben spielen Linde und Mehlbeere eine wichtige Rolle; dazu Esche und Ahorn.
+";16;28;30;28;;"Hänge mit mässig bewegtem; trockenem Kalkschutt; v. a. Südlagen
+";"Krautig bis lückig. Steine sichtbar. Verletzungen an Baumstämmen.
+";"Mull; Moder (Kalkmull; Kalkmoder); stellenweise trockene Ausprägung; stellenweise erodiert";"Rendzina; Pararendzina
+";"Humusreiche Kalkschuttböden; Skelettgehalt sehr hoch; Gründigkeit tief; Durchlssigkeit normal; keine Vernässung
+";9;1;;;;0;1;1;2;0;0;1;1;2;1;2;1;2;2;1;0;0;1;0;0;0;0;13e
+13.006;13eh  ;Adenostylo-Fagetum seslerietosum;"Mässig wüchsiger Buchenwald mit Bergahorn; Mehlbeere.
+";15;25;30;25;;"Hänge mit mässig bewegtem Kalkschutt; v. a. Südlagen; trocken
+";"Krautig. Oft dominieren Trockenheitszeiger. Steine sichtbar. Verletzungen an Baumstämmen.
+";"Mull; Moder (Kalkmull; Kalkmoder); stellenweise trockene Ausprägung; stellenweise erodiert";"Rendzina; Pararendzina
+";"Humusreiche Kalkschuttböden; Skelettgehalt sehr hoch; Gründigkeit tief; starke biologische Aktivität; durchlässig; keine Vernässung
+";9;1;;;;0;1;1;2;0;0;1;1;2;1;2;1;2;2;1;0;0;1;0;0;0;0;13eh
+13.009;13h   ;Adenostylo-Fagetum typicum;"Buchenwald mit Bergahorn.
+";20;30;35;30;;"Hänge mit mässig bewegtem Kalkschutt; frisch; Nord-(submontan) bis Süd-Exposition
+";"Krautig. Oft dominiert der Alpendost. Steine sichtbar. Verletzungen an Baumstämmen.
+";Mull (Kalkmull);"Rendzina; Pararendzina; stellenweise vernässt
+
+";"Humusreiche Kalkschuttböden; Skelettgehalt sehr hoch; Gründigkeit sehr tief; starke biologische Aktivität; durchlässig; schwach pseudovergleyt bis keine Vernässung
+";9;1;1;30;;0;1;1;2;0;0;1;1;2;1;2;1;2;2;1;0;0;1;0;0;0;0;13h
+14;14;Carici (albae)-Fagetum typicum;"Buchenwald mit Eichen und anderen wärmeliebenden Baumarten; oft knorrige Stämme. Die Lärche ist im Mittelland und Jura wenig geeignet; in den kontinentaler geprägten Gebieten (2a und angerenzend) gedeiht sie gut. 
+";15;25;28;25;;"Warme; trockene Standorte auf Kalk.
+";"Krautig oder gras-/seggenreich. Oft strauchreich.
+";Kalkmull (stellenweise trockene Ausprägung);"Rendzina; Pararendzina; stellenweise verbraunt
+";"Skelettgehalt sehr hoch; Gründigkeit tief; durchlässig; keine Vernässung
+";9;1;1;;25;0;1;1;0;2;2;1;1;2;1;2;0;0;1;2;0;0;2;0;0;0;2;14
+14.1;14*   ;Cephelanthero-Fagetum insubricum s. l.;"Schlechtwüchsiger Buchenwald mit Mehlbeere und Hasel im Nebenbestand. Dazu Hopfenbuche; Feldahorn; Mannaesche; Eichen; Kastanie und Stechpalme. 
+";12;20;20;18;;"Sonnige; windexponierte Kreten und steile; konvexe Hänge mit Austrockungstendenz
+";"Krautig und gebüschreich nur bei genügenden Lichtverhältnissen; ansonsten eher artenarme Krautschichten. Buchen grobastig.
+";"Mull; stellenweise Moder; Kalkmull; teilweise trockene Ausprägung";"Rendzina; Gesteinsrohboden
+";"Skelettgehalt hoch bis äusserst hoch; Gründigkeit flach bis tief; durchlässig; keine Vernässung
+";9;1;;;;0;1;2;0;1;0;2;1;2;1;0;2;0;2;2;0;0;2;0;0;0;2;14Stern
+15;15;Carici-Fagetum caricetosum montanae;"Buchenwald mit Eichen und anderen wärmeliebenden Baumarten; oft knorrige Stämme. 
+";15;25;28;25;;"Warme; trockene Standorte auf Kalk- oder Mischgesteins-Untergrund; oberflächlich versauert.
+";"Krautig oder gras-/seggenreich. Oft strauchreich.
+";Mull oder Moder (trockene Ausprägung);"Rendzina; Pararendzina; Braunerde; Parabraunerde
+";"Skelettgehalt hoch; Gründigkeit mittel bis tief; durchlässig; keine Vernässung
+";9;1;1;;120;0;1;2;0;1;2;2;1;2;1;2;0;0;2;0;0;0;0;0;0;0;2;15
+16;16;Seslerio-Fagetum;"Schlecht wüchsiger Buchenwald; oft mit Waldföhren und Mehlbeeren; in Nordlagen auch Fichten. 
+";12;18;20;18;;"Kuppen und Gratlagen auf kalkhaltigem harten Gestein; selten auch auf sehr trockenem Kalkschutt
+";"Krautig. Meist dominiert das Blaugras.
+";Xeromull (Xero-Kalkmull) und Xero-Moder;"Rendzina; Pararendzina
+";"Skelettgehalt sehr hoch; Gründigkeit tief; biologische Aktivität mittel; Durchlässigkeit normal; keine Vernässung
+";9;1;1;;90;0;1;1;0;1;2;1;1;1;1;2;1;2;1;2;0;0;0;0;0;0;2;16
+16.1;16*   ;Seslerio-Fagetum (insubrische Ausbildung);"Schlecht wüchsiger; lockerer Buchenwald; oft mit Mehlbeeren
+
+";6;10;0;15;;"Trockene Steilhänge; Kuppen und Gratlagen auf kalkhaltigem harten Gestein; meistens kleinflächig
+";"Krautig. Meist dominiert das Blaugras und Erika
+";(Xero-)Moder;"Rendzina
+";"Skelettgehalt sehr hoch; Gründigkeit tief; biologische Aktivität mittel; Durchlässigkeit mittel bis hoch; keine Vernässung
+";1;1;9;;;9;1;0;0;2;0;1;1;1;2;0;2;0;2;1;0;2;2;0;0;0;2;16Stern
+17;17;Taxo-Fagetum / Seslerio-Fagetum calamagrostietosum variae;"Steilhang-Buchenwald; oft mit Eiben; Tannen und wärmeliebenden Baumarten. 
+";15;25;28;25;;"Steilhänge; meist Mergel.
+";"Krautig oder gras-/seggenreich.
+";"Mull; teils erodiert; stellenweise Kalkmull";"Rendzina;; Pararendzina; Braunerde
+";"Wechselfeucht; Skelettgehalt mittel; Gründigkeit tief; durchlässig; Schwach pseudovergleyt bis keine Vernässung 
+";9;1;1;;45;0;1;1;0;0;0;1;1;2;2;2;2;2;2;2;0;1;1;0;0;0;1;17
+18;18;Festuco-Abieti-Fagetum;"Buche und Tanne dominieren; dazu Fichte; stellenweise Bergahorn; Vogelbeere; Schlussgrad normal bis locker; Einzelbäume und Kleinkollektive
+";30;40;45;35;;"Oberboden ohne Basen; oft auf Molasse; Moräne; Flysch; meistens Hanglagen
+";"Wenig Bodenvegetation; Waldschwingel
+";"Mull; stellenweise Moder";"Braunerde; Parabraunerde; stellenweise vernässt
+";"Skelettgehalt mittel; Gründigkeit sehr tief; Durchlässigkeit mittel; schwach pseudovergleyt bis keine Vernässung
+";0;9;1;80;;1;2;1;2;2;2;2;0;0;0;0;0;0;0;2;0;2;2;0;0;0;0;18
+18.1;18*   ;Adenostyle glabrae-Abieti-Fagetum caricetosum albae;"Buche und Tanne dominieren; dazu Fichte; Bergahorn; Esche; Vogelbeere und Mehlbeere. Die Lärche ist im Mittelland und Jura wenig geeignet; in den kontinentaler geprägten Gebieten (2a und angerenzend) gedeiht sie gut.  Schlussgrad locker bis räumig; Einzelbäume; Kleinkollektive; auch Rotten möglich
+";20;30;32;25;;"Basenreiche Unterlage (v. a. Kalke); flachgründig; oft in felsigen; steilen Lagen; trocken
+";"Weisssegge oder andere Trockenheits-/Basenzeiger und Kahler Alpendost
+";"Mull (Kalkmull); Moder (Kalkmoder); auch trockene Ausprägungen möglich";"Rendzina; Pararendzina; Gesteinsrohboden. 
+";"Skelettgehalt sehr hoch; Gründigkeit sehr tief; durchlässig; keine Vernässung
+";9;1;1;;50;0;1;2;0;1;2;2;1;1;1;2;2;2;2;2;2;2;2;0;0;0;2;18Stern
+18.00007;18M   ;Adenostyle glabrae-Abieti-Fagetum typicum;"Buche und Tanne dominieren; dazu Bergahorn; Fichte; Bergulme; Esche; Vogelbeere; Schlussgrad normal bis locker; Einzelbäume und Kleinkollektive
+";30;40;45;35;;"Basenreiche Unterlage (v. a. Kalke); meistens Hanglagen; oft steil
+";"Kahler Alpendost und Bingelkraut
+";"Mull; stellenweise Moder; örtlich Kalkmull; Kalkmoder";"Rendzina; Pararendzina; Regosol; Braunerde; Parabraunerde; stellenweise vernässt
+";"Skelettgehalt sehr hoch; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering. schwach pseudovergleyt bis keine Vernässung.
+";9;1;1;;90;0;1;1;2;0;2;1;2;0;2;2;2;0;1;2;0;0;2;0;0;0;0;18M
+18.015;18v   ;"Adenostylo glabrae Abieti-Fagetum calamagrostietosumvariae; Ausbildung mit Carex ferruginea";"Buche dominiert; dazu Tanne; Fichte; Bergahorn; Esche; Vogelbeere; Mehlbeere. Schlussgrad locker bis aufgelöst; teils niederliegende Baumformen. Einzelbäume; Kleinkollektive; auch Rotten möglich
+";10;20;20;15;;"Wechselfeuchte; kühle; basenreiche; oft rutschige Standorte; meistens Steilhänge; oft durch Schneebewegungen beeinflusst
+";"Grasig. Viel Rostsegge; Buntreitgras
+";"Mull; Moder; teils erodiert; stellenweise Kalkmull";"Rendzina; Pararendzina; Gesteinsrohboden. Stellenweise verbraunt; vernässt.
+";"Skelettgehalt mittel bis hoch; Gründigkeit mittel; Durchlässigkeit mittel bis gering. pseudovergleyt bis keine Vernässung.
+";9;1;;;;0;1;1;2;0;0;1;1;2;1;0;1;2;2;2;1;1;1;0;0;0;1;18v
+18.014;18w   ;Adenostylo glabrae Abieti-Fagetum calamagrostietosumvariae;"Buche und Tanne dominieren; dazu Fichte; Bergahorn; Esche; Mehlbeere; Vogelbeere. Schlussgrad locker bis aufgelöst; Einzelbäume;
+Kleinkollektive; auch Rotten möglich
+";15;25;28;23;;"Wechselfeuchte; basenreiche; oft rutschige Standorte; meistens Steilhänge
+";"Grasig. Buntreitgras; Schlaffe Segge
+";"Mull; Moder; teils erodiert; stellenweise Kalkmull; Kalkmoder";"Rendzina; Pararendzina; Braunerde; Parabraunerde; stellenweise vernässt
+";"Skelettgehalt hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit mittel bis gering; schwach pseudovergleyt bis keine Vernässung
+";9;1;1;;100;0;1;1;2;0;0;1;2;2;1;0;2;2;2;2;2;1;1;0;0;0;1;18w
+19;19;Luzulo-Abieti-Fagetum typicum;"Buche und Tanne dominieren; dazu Fichte und Vogelbeere.
+Schlussgrad normal bis locker; Einzelbäume; Kleinkollektive
+";25;35;40;35;;"Auf saurer Unterlage (Hang und Kuppenlage) oder auf versauerten Kreten
+";"Oft spärliche Krautschicht. Wald- oder Schneesimse; Heidelbeere
+";"Moder; stellenweise Mull";"Braunerde; Regosol; Parabraunerde; stellenweise vernässt
+";"Skeletgehalt mittel bis sehr hoch; Gründigkeit sehr tief; Durchlässigkeit hoch bis gering; schwach pseudovergleyt bis keine Vernässung
+";0;0;9;;50;1;2;2;0;1;2;0;0;0;0;0;0;0;0;0;0;2;2;0;0;0;0;19
+19.00008;19P   ;Luzulo-Fagetum petasitetosum (p.p. Streptopto-Fagetum s.l.);"Buche und Tanne dominieren; dazu Bergahorn; Bergulme; Fichte; Esche; Vogelbeere. In der Region 5a mit Fichtenvorposten sind evt. vereinzelt Fichten vorhanden; in der Region 5b fehlt die Fichte.
+Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive Umfasst auch den Knotenfuss-Buchenwald (E+K 5)
+";30;40;42;35;;"Oberboden neutral; frisch bis feucht; meistens Hangfusslage; Tobeleinhänge und Runsen. Saure Unterlage (Silikat); Gesteine und/oder Wasser sichern die Basenzufuhr; kühle Hanglagen
+";"Farnreich; Grauer Alpendost; Weisse Pestwurz
+";Mull;"Braunerde; stellenweise Parabraunerde; Rendzina; Regosol; alle auch zeitweise vernässt möglich. Nassböden beeinflusst Hangwasser; vernässte Braunerde oder Parabraunerde.
+";"Skelettgehalt gering bis mittel; Gründigkeit mittel bis tief; Durchlässigkeit mittel bis gering; Vernässung keine bis leicht pseudovergleyt oder grundnass
+";2;2;2;;;1;2;2;1;0;0;2;2;0;2;0;2;2;1;2;2;2;2;2;2;1;1;19P
+19.001;19a   ;Luzulo-Abieti-Fagetum calamagrostietosum arundinaceae;"Weisstannenreiche Buchenbestände; meistens mit Fichte. Lärche; Birke; Bergahorn; Vogelbeere als Pionierbaumarten In der Region 5a mit Fichtenvorposten sind evt. vereinzelt Fichten vorhanden. 
+Oft Schlusswaldgesellschaft von mesischen Formen von 3 (Schnesimse-Buchenwald) und von 4 (Farnreicher Schneesimsen-Buchenwald)
+";25;32;37;32;;"Saure Unterlage und versauerten Moränen. Der Oberboden ist teilweise stark ausgelaugt und trocknet zeitweise aus.
+
+";"Wenig üppige Krautschicht mit Schneesimse und kaum mesophilen Krautschicht-Arten. Wald-Reitgras; Draht-Schmiele und gelegentlich Vaccinien kommen an beschatteten Freistellen vor. 
+";Moder;"Podsol; stellenweise podsolierte Braunerde; Humuspodsol; Braunpodsol
+";"Skelettgehalt gering bis hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit hoch bis sehr hoch; keine Vernässung
+";0;0;2;;;1;0;1;2;1;2;1;1;2;1;0;2;0;1;2;0;0;2;2;2;0;0;19a
+19.007;19f   ;"Luzulo-Abieti-Fagetum; Ausbildung auf Pseudogley";"Tanne dominiert; dazu Fichte; Buche; Vogelbeere. Schlussgrad normal bis locker. Einzelbäume; Kleinkollektive
+";25;35;38;28;;"Verdichtete; sauere Unterlage (z. B. Molasse; Flysch; Moräne; Kieselkalk). Oft flachere Hanglagen.
+";"Farnreich. Waldsimse; Heidelbeere; Waldschlüsselblume;  Waldgerste; Rippenfarn; Weisse Pestwurz
+";"Moder; stellenweise Mull. Teilweise feuchte Ausprägung.";"Vernässte Braunerde; Nassböden beeinflusst durch Stauwasser oder Grund/Hangwasser
+";"Skelettgehalt gering bis mittel; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering; Pseudogley bis schwach pseudovergleyt; sehr stark bis schwach grundnass.
+";0;0;1;70;;1;2;1;2;0;2;0;0;0;0;0;0;0;0;0;0;1;2;0;2;0;0;19f
+19.01;19m   ;"Luzulo-Abieti-Fagetum typicum; Südalpen-Ausbildung  Synonim:  Laburno-Abieti-Fagetum.";"Buche und Tanne dominieren; dazu Fichte und Lärche; als Pionierbaumarten Bergahorn; Vogelbeere; Alpengoldregen. In der Region 5a mit Fichtenvorposten sind evt. vereinzelt Fichten vorhanden. Schlussgrad normal. Einzelbäume und Kleinkollektive. 
+Oft Schlusswaldgesellschaft von basenreicheren Formen von 4 (Farnreicher Schneesimsen-Buchenwald)
+";30;35;40;35;;"Saure Unterlage (Silikat) mit Basenzufuhr oder Gesteinen und Moränen die im Unterboden basenreicher sind; kühle Hanglagen
+";"Wenig üppige Krautschicht mit wenig Schneesimse v.a. an den beschatteten Partien; vereinzelten mesophilen Krautschicht-Arten beleben die Lücken und die Runsen wo gelegentlich als Pionier der Alpengoldregen auftritt.
+";Moder;"Stellenweise podsolierte oder oberflächlich versauerte Braunerde; teilweise kolluviale leicht verbraunten Roh-Böden.
+";"Skeletgehalt mittel bis sehr hoch; Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung
+";2;2;2;;;1;2;1;1;0;0;1;0;2;1;0;2;0;1;2;0;2;2;2;2;2;2;19m
+1.009;1h    ;"Luzulo-Abieti-Fagetum; artenarme Ausbildung";"Buche und Tanne dominieren; dazu Fichte; Föhre; Vogelbeere; Schlussgrad normal bis locker. Einzelbäume; Kleinkollektive; selten Rotten
+";20;25;30;25;;"Kuppen und flache Hügelrücken über kalkarmem oder tiefgründig ausgewaschenem Muttergestein
+";"Heidelbeere; säurezeigende Moose
+";"Moder; stellenweise Rohhumus";"Braunerde; Parabraunerde; teilweise podsoliert
+";"Skelettgehalt mittel bis hoch; Gründigkeit mittel; Durchlässigkeit mittel bis hoch
+";0;0;9;130;;1;2;2;0;1;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1h
+2;2;Luzulo-Fagetum leucobryetosum;"Schlecht wüchsiger Buchenwald; oft reine Buchenbestände; aber häufig auch Traubeneichen und/oder Waldföhren beigemischt. 
+";15;25;28;25;;"Kuppen und flache Hügelrücken und Hänge über kalkarmem oder tiefgründig ausgewaschenem Muttergestein. Verlustlagen. 
+";"Sträucher oft fehlend; wo Laubstreu weggeweht wird oft ausgeprägte Moospolster.
+";Moder;"Stark saure Braunerde; teilweise podsoliert; Parabraunerde
+";"Gründigkeit tief; biologische Aktivität eingeschränkt; Durchlässigkeit mittel bis hoch. Keine Vernässung bis schwach pseudovergleyt.
+";0;0;2;;;1;2;2;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2
+20;20;Adenostylo alliariae-Abieti-Fagetum typicum;"Buche und Tanne dominieren; dazu Bergahorn; Bergulme; Fichte; Esche; Vogelbeere. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+";30;40;45;35;;"Oberboden ohne Basen; frisch bis feucht; meistens Hanglage; oft Tobeleinhänge
+";"Farnreich; Grauer Alpendost; Weisse Pestwurz
+";Mull;"Braunerde; Parabraunerde; Rendzina; Pararendzina; Regosol; Ranker; alle auch vernässt möglich
+";"Skelettgehalt gering bis hoch; Gründigkeit sehr tief; durchlässig; schwach pseudovergleyt bis keine Vernässung
+";0;9;9;;50;1;2;1;1;0;2;1;2;0;2;2;0;0;2;2;2;1;1;0;2;0;0;20
+20.00004;20E   ;Adenostylo alliariae-Abieti-Fagetum hordelymetosum;"Tanne und Edellaubbäume (Bergahorn; Esche; Bergulme) dominieren; dazu Buche; Fichte. Schlussgrad normal bis locker. Einzelbäume; Kleinkollektive
+";25;35;38;30;;"Verdichtete; basenreiche Unterlage; oft Mergel oder toniger Flysch. Oft flachere Hanglagen mit unregelmässigem Kleinrelief (Sackungen)
+";"Krautschicht oft spärlich ausgebildet. Waldgerste; Sanikel; auf gestörten Flächen Schachtelhalme. 
+";"Mull; Moder; feuchte Ausprägung";"Nassböden beeinflusst durch Stauwasser oder Grund/Hangwasser; vernässte Braunerde oder Parabraunerde.
+";"Skelettgehalt mittel; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering; Pseuogley bis schwach pseudovergleyt; sehr stark grundnass bis grundnass
+";0;9;1;12;;2;1;1;2;0;2;0;0;0;0;0;0;0;0;0;0;1;2;0;2;0;0;20E
+21;21;Aceri-Fagetum;"Buche; Bergahorn; dazu Vogelbeere; Tanne; Fichte. Wegen der starken Konkurrenz durch die Hochstauden und die Einwirkung des Schnees sind die Bestände meist locker bis räumig. Rottenansätze; Einzelbäume und Kleinkollektive
+";20;25;30;25;;"Auf konsolidiertem Hangschutt basen- und tonreicher Schichten. Schattig; kühl und luftfeucht; oft Hangmulden; im Jura häufig nahe von Kreten. Häufig im Bereich von Schneerutschungen und kleineren Lawinen
+";"Sehr üppige Hochstaudenflur
+";"Mull; stellenweise Kalkmull; Moder";"Braunerde; Rendzina; Pararendzina; Regosol; stellenweise vernässt
+";"Skelettgehalt gering bis mittel; Gründigkeit mittel bis tief; Durchlässigkeit hoch bis mittel; grundnass oder schwach pseudovergleyt bis keine Vernässung.
+";0;9;9;;;0;1;1;2;0;0;1;2;0;0;0;0;0;0;2;1;2;2;0;0;0;0;21
+21.1;21*   ;Alno viridi-Sorbetum aucupariae prov.;"Vogelbeere und Grünerle dominieren; dazu Bergahorn. Selten auch Buche; Tanne oder Lärche. Dichter Laubwald (ca. 5 m hoch) mit einzelnen Vogelbeeren; die grösser als 5 m werden. Verjüngung auch mit Ableger.
+Teilweise Pionierstadium von 59A (Hochstauden-Lärchenwald); 60 (Typischer Hochstauden-Fichtenwald) oder 47* (Alpenrosen-Lärchen-Tannenwald)
+";6;8;15;8;;"Lawinengefährdete Hanglagen; Schattenhänge oder sonnenabgewandte Mulden.
+";"Dickicht aus Grünerle und Vogelbeere; mit Heidelbeere; Alpenrose und Hainrispengras
+";"Mull; Moder";"Saure Braunerde; schwach podsoliert; stellenweise vernässt
+";"Skelettgehalt mittel bis hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis gering; Vernässung keine bis leicht pseudovergleyt oder grundnass
+";0;0;2;;;1;0;1;1;2;2;2;2;2;1;0;2;2;2;2;1;2;2;2;2;2;2;21Stern
+21.00006;21L   ;Laburno-Aceretum prov.;"Bergahorngruppen mit Alpengoldregen; oft in Form von kleinen säbelwüchsigen Kollektiven. Die Stämme erscheinen in schneereichen; bewegten Hangpartien auffällig gekrümmt. In den Lücken ist die Grasschicht manchmal sehr üppig.
+";0;0;15;15;;"Durch Steinschlag; Lawinen und Schneedruck geprägten Standorte in schattigen Gewinnlagen; am Hangfuss und an der Aussenseite von Runsen.
+";"Mosaik aus Steinhaufen mit Mineralerde (Rumex scutatus; Vincetoxicum; Festuca; ...); schattigen Stellen mit kleinwüchisgen Arten (Oxalis; Viola;..) und lichtreicheren üppigen Grasfluren (Peucedanum; Senecio; Silene; Rumex; ...)
+";Mull-Moder;"Regosol; kolluviale oberflächlich verbraunten Böden.
+";"Skelettgehalt gering bis mittel; Gründigkeit mittel; Durchlässigkeit hoch bis mittel; grundnass bis keine Vernässung.
+";0;0;2;;;1;2;2;1;0;0;1;1;1;1;0;2;2;1;2;1;2;2;2;2;2;2;21L
+22;22;Phyllitido-Aceretum;"Bergahornwald; Esche. Linde und Ulme können beigemischt sein.
+";18;28;30;28;;"Kalkschutthalden mit grossen Blöcken; dazwischen tiefreichender Mull und Hohlräume. Steinschlag. Oft Ablagerungsgebiet eines Bergsturzes; Schattenhänge
+";"Zwischen den Blöcken Hirschzunge.
+";Kalkmull;"Regosol; Gesteinrohboden (Schutthalden)
+";"Skelettgehalt sehr hoch bis äusserst hoch; Gründigkeit sehr flach bis sehr tief; Durchlässigkeit hoch bis gering; keine Vernässung
+";9;1;;;;2;1;2;1;0;2;0;2;1;0;2;2;0;1;1;0;0;0;0;0;0;0;22
+22.1;22*   ;Phyllitido-Aceretum (Insubrische Ausbildung);"Ahorne; Hopfenbuchen; Linden und Eschen in Schluchtwälder; kleinflächig in Runsen oder Hangfusswälder mit aktiven Blochschutt in luftfeuchter Lagen. 
+";0;0;0;28;;"Windarme; luftfeuchte Lagen mit mehr oder weniger frischem Blockschutt; Schluchtlagen oder schattige Standorte die ständig basenhaltigen Schutt nachliefern und gleichzeitig milde bis kühle; jedoch ausgeglichene Temperaturen aufweisen.
+";"Dauergesellschaft mit insubrische Ausprägung: in der stellenweise üppiger Krautschicht prägt der immergrüne Element (Farnen; Kräuter; Sträucher; Lianen un Bäumen) alle Vegetationsschichten.
+";Mull;"Regosol; Rohboden; örtlich in Form von leicht vebraunten Rendzina
+";"Skelettgehalt sehr hoch bis äusserst hoch; Gründigkeit sehr flach bis sehr tief; Durchlässigkeit hoch bis gering; keine Vernässung
+";1;1;9;;;2;1;0;1;0;0;1;2;1;1;0;1;1;1;1;2;2;1;1;1;2;9;22Stern
+22.00001;22A   ;Arunco-Aceretum;"Bergahorn-Pionierwald; säbelwüchsig; kleinflächig in Runsen und frischen Rutschflächen. Stabilisiert sich der Hang; entwickeln sich feuchte (Tannen-)Buchenwälder; Ahorn-Eschenwälder oder Lerchensporn-Ahornwälder
+";10;18;27;25;;"Rutschige; feinkörnige Böden über Kalkmergeln und Flysch; eher in Schattenlagen
+";"Krautschicht üppig; aber mit Lücken und nicht artenreich. 
+";Mull;"Regosol/Rohboden
+";"Feucht; nährstoffreich.
+";9;1;;;;2;1;2;0;0;0;1;1;2;2;0;0;0;0;2;0;1;1;0;0;0;0;22A
+22.00002;22C   ;Corydalido-Aceretum;"Wüchsiger Ahornwald; oft mit Esche und Sommerlinde. 
+";30;35;37;35;;"Hangfusslagen; meist auf feinem feuchtem Kalkschutt; meist an Schattenhängen
+";"Krautig; besonders im Frühlingsaspekt; wenn Lerchensporn und/oder Märzenglöckchen dominieren.
+";"Mull (Kalkmull); teils erodiert";"Pararendzina; Rendzina und Regosole; manchmal verbraunt oder vernässt; auf Feinschutt
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit sehr tief; biologische Aktivität sehr hoch; Durchlässigkeit normal bis gering; schwach grundnass bis keine Vernässung
+";9;1;1;;0;0;1;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;22C
+23;23;Sorbo-Aceretum;"Bergahorn und Mehlbeere. Der Schlussgrad ist räumig bis aufgelöst. Meistens Einzelbäume. Oft durchziehen waldfreie Schuttströme die 
+Bestände. Die Bäume sind grosskronig und stark säbelwüchsig. Die Stämme sind auf der Oberseite häufig stark verletzt.
+";10;15;18;15;;"Basenreiche Schutthalden direkt unterhalb von Felsen; die ständig basenhaltigen Schutt nachliefern. Südexposition und sehr starke Einstrahlung sind Voraussetzung für das entstehen des Standortstyps
+";"Artenreiche; üppige Krautschicht mit Trockenheits- und Feuchtezeigern; dazwischen zeitweise stark austrocknende Schutthalden ohne Vegetation
+";"Mull; Kalkmull stellenweise Moder; Kalkmoder; auch trockene Ausprägungen; teils erodiert";"Rendzina; Pararendzina; Gesteinsrohboden
+";"Skelettgehalt äusserst hoch; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering; keine Vernässung
+";9;1;1;;25;0;1;1;2;0;0;2;1;1;1;0;2;1;0;1;1;0;1;0;0;0;2;23
+23.1;23*   ;Sorbetum ariae PROV.;"Mehlbeerreiche Mischbestände; kleinwüchsig mit wenig anderen Baumarten (Esche; Bergahorn; Buche)
+";5;10;12;10;;"Trockene Hänge in sonnigen Lagen auf Felsen; mit stabilisiertem; feinem Schutt; unerreichbaren Terrassen und Felsenritzen als Habitate von versch. Vogelarten und Huftiere (zoogene Bindung).
+";"Unterschicht artenreich; grasig oder krautig.
+";Xeromull;"Regosol; Ranker
+";"Trocken; flachgründig; im Unterboden basenreich; oberflächlich versauert.
+";2;2;2;;;1;2;0;0;2;0;1;1;1;1;0;2;2;2;2;2;2;2;0;0;0;2;23Stern
+23.00016;23H   ;Hepatico-Aceretum;"Mischwald mit Bergahorn; Esche; Kirschbaum etc.; Hasel üppig.
+Aktuell hat es oft Lärche oder Fichte auf diesem Standort.
+Geschlossener Wald
+";20;30;0;0;;"Meist Mulden auf basenhaltigem Schiefer; eher in Schattenlagen.
+";"Krautschicht mit viel Geissfuss. 
+";Mull;"Neutrale Braunerde
+";"Skelettgehalt mittel; Gründigkeit mittel bis tief. Durchlässigkeit mittel; schwach bis stark grundnass
+";;;;;;0;0;1;1;0;0;2;2;0;2;0;0;0;0;2;2;2;2;0;0;0;2;23H
+24;24;Ulmo-Aceretum asperuletosum taurinae;"Bergulme; Nerbulme und in den unteren Lagen auch Esche. Der Schlussgrad ist locker bis lückig. Die Bäume sind oft grosskronig und säbelwüchsig. 
+";20;25;28;25;;"Basenreiche Schutthalden unterhalb von Felsen; die ständig basischen Schutt nachliefern. Schuttkegel. 
+";"Artenreiche üppige Krautschicht mit vielen mittleren Arten. 
+";"Mull; Kalkmull; teilweise erodiert.";"Pararendzina; Rendzina; Ranker; teilweise verbraunt; Gesteinsrohboden
+";"Skelettgehalt sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit hoch bis gering; keine Vernässung.
+";2;1;1;;20;2;1;1;1;0;0;2;2;2;1;0;1;1;2;1;1;0;2;0;0;0;0;
+24.1;24*   ;Ulmo-Aceretum;"Bergahorn; Bergulme und in unteren Lagen auch Esche. Der Schlussgrad ist locker bis aufgelöst; oft sind baumfreie Runsen vorhanden. Meistens Einzelbäume. Die Bäume sind oft grosskronig und säbelwüchsig. Häufig ist der Bestand homogen; da er nach einem grösseren Ereignis (z. B. Lawine) entstanden ist.
+";15;25;28;25;;"Basenreiche; schattige Schutthalden unterhalb von Felsen; die ständig basenhaltigen Schutt nachliefern; Schuttkegel; teilweise im Bereich von Lawinenbahnen. Auch auf Bachschuttkelgeln im Ablagerungsbereich von Murgängen. 
+";"Sehr üppige; hochstaudenreiche Krautschicht mit Mondviole; Glänzendem Kerbel; Alpenmilchlattich; Brennessel
+";"Mull; stellenweise Kalkmull; teils erodiert";"Regosol; Pararendzina; Rendzina; stellenweise verbraunt; Gesteinsrohboden
+";"Skelettgehalt sehr hoch; Gründigkeit tief; Durchlässigkeit hoch bis gering. Keine Vernässung.
+";9;1;9;;10;2;1;1;1;0;0;2;1;2;1;2;2;1;0;1;1;2;2;0;0;0;0;24Stern
+25;25;Asperulo taurinae-Tilietum typicum;"Laubmischwald mit Linden; Esche; Berg- und Spitzahorn.
+";25;35;37;35;;"Föhnklima. Mässig trocken. Steile Kalkschutthalden mit Steinschlag; zwischen dem Schutt Hohlräume. Teilweise auch in warmen Felslagen
+";"Spärliche Strauchschicht; Krautschicht mit «frischem» Aussehen; hauptsächlich Buchenwaldarten.
+";"Kalkmull; teils trockene Ausprägung; teils erodiert.";"Pararendzina; Rendzina; Gesteinsrohboden. Instabile Schutthalden
+";"Skelettgerhalt sehr hoch; Gründigkeit sehr tief; durchlässig; keine Vernässung
+";9;1;1;;0;0;1;1;2;0;0;1;1;2;2;2;2;1;2;1;0;0;2;0;0;0;0;25
+25.1;25*   ;Aceri-Tilietum / Asperulo taurinae-Tilietum tametosum;"Laubmischwald mit Linden (beide Arten); Esche; Bergund Spitzahorn; Mehlbeerbaum.
+";15;25;27;25;;"Warm. Steile; trockene Kalkschutthalden mit Steinschlag und an der Oberfläche lose abgelagertem Schutt. Teilweise auch in warmen Felslagen.
+";"Oft dichte Strauchschicht; lückige; im Hochsommer oft austrocknende Krautschicht im Schutt.
+";Kalkmull;"Pararendzina; Regosol; instabile Schutthalden
+";"Skelettgehalt sehr hoch; Gründigkeit mittel bis tief; übermässig durchlässig; keine Vernässung
+";9;1;;;;0;1;1;2;0;0;1;1;1;2;2;2;1;2;1;0;0;2;0;0;0;2;25Stern
+25.00001;25A   ;Fraxino-Tilietum aegopodietosum;"Mischwald mit Winterlinde; Esche; Kirschbaum; Spitzahorn; Birke; Nussbaum; etc. Hasel üppig. Aktuell hat es oft Fichte oder Lärche auf diesem Standort.
+Geschlossener Wald. 
+
+";20;30;35;32;;"Meist Mulden auf basenhaltigem Schiefer; eher in Schattenlagen
+";"Krautschicht mit viel Geissfuss. 
+";Mull;"Neutrale Braunerde
+";"Skelettgehalt mittel; Gründigkeit tief bis sehr tief. Durchlässigkeit mittel; schwach bis stark grundnass
+";9;1;9;30;;0;0;2;1;0;0;2;2;0;2;0;2;0;2;0;0;1;2;0;0;0;0;25_A
+25.00019;25F   ;Asperulo taurinae-Tilietum aegopodietosum;"Laubmischwald mit Esche; Bergahorn; Spitzahorn; Linden; Ulme. 
+";25;35;37;35;;"Basenreiche; schattige Schutthalden unterhalb von Felsen; die ständig basenhaltigen Schutt nachliefern; Schuttkegel. Auch auf Bachschuttkegeln im Ablagerungsbereich von Murgängen. 
+";"Oft üppige Strauchschicht. Krautschicht sehr artenreich mit viele Nährstoff- udn Feuchtezeigern
+";"Mull; Kalkmull; teils erodiert";"Pararendzina; Rendzina teilweise verbraunt und oder vernässt; 
+";"Skelettgehalt sehr hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit mittel bis gering; keine Vernässung bis grundnass oder schwach pseudovergleyt.
+";9;1;1;0;;0;1;2;1;0;0;2;2;0;2;0;2;1;2;1;0;2;2;0;0;0;0;
+25.00017;25O   ;Asperulo taurinae-Tilietum ostryetosum  Insubrische Ausbildung;"Offener Laubmischwald; mit unbewachsenen Steinschuttrunsen mit dominierenden Hopfenbuchen. Dazu Winterlinde; Sommerlinde; Esche; Mannaesche; selten Ahorne; Ulmen; Eichen; Stechpalme; Edellorbeer.
+";0;0;27;25;;"Steile; instabile Kalkschutthalden mit Steinschlag; grobschuttig; meist sonnig; wenig stabilisiert und humusiert.
+";"Dichte niederwaldartige Hopfenbuchengruppen; teilw mit Haselbeständen. Trockenere Fazies mit Rohböden; mit Mäusedorn und Niedrige Segge.
+";Kalkmull. Ürtlich Xeromoder.;"Rendzina; Regosol; instabile Schutthalden nur kleinflächig und oberflächlich verbraunt.
+";"Skelettreiche Rohböden; Gründigkeit flach; durchlässig
+";1;1;1;10;;2;1;1;1;2;0;1;1;1;2;0;2;1;2;1;2;1;2;0;0;0;0;25O
+25.00011;25Q   ;Querco-Tilietum;"Mischwald mit Traubeneiche; Winterlinde; Esche; Kirschbaum; Feldahorn; Mehlbeere; Spitzahorn; Birke; etc. auch Kastanie möglich. Hasel. Aktuell hat es oft Fichte; Lärche oder Waldföhre auf diesem Standort. Geschlossener Wald. 
+";15;20;25;22;;"Meist Kreten auf basenhaltigem Schiefer oder Moränen; eher in Schattenlagen
+";"Krautschicht artenreich. 
+";"Moder; Mull";"Neutrale Braunerde; Regosol
+";"Skelettgehalt mittel; Gründigkeit mittel. Durchlässig; keine Vernässung
+";9;1;;;;0;0;2;0;1;0;2;1;2;1;0;2;0;2;0;0;2;2;0;0;0;2;25Q
+25.001;25a   ;;"Winterlinde dominiert mit Esche und Kastanie.
+";0;0;30;35;;"Taleinschnitte mit steilen Hängen. Silikat- und Moränen-Schutthalden mit Steinschlag; zwischen dem Schutt Hohlräume. Teilweise bis auf zonalen Hängen in Gebieten ohne Buche
+";"Krautschicht aus mesophilen Arten; Efeu bildet Rasen; Lücken mit viel Haselsträucher.
+";Mull;"Kolluviale Böden; oberflächlich verbraunt; leicht sauer bis neutral.
+";"Skelettgehalt mittel; Gründigkeit mittel. Durchlässig; keine Vernässung
+";2;0;2;;;1;2;1;1;0;0;1;2;1;1;0;1;2;1;1;0;2;2;2;2;0;0;25a
+25.001001;25as  ;Luzulo niveae-Tilietum;"Winterlinde dominiert mit Kastanie und Traubeneiche. 
+";0;0;30;28;;"Austrockende; teilw. sonnige; felsige oder schuttige Hänge. Felsen. Teilweise bis auf zonale Hänge in Gebieten ohne Buche.
+";"Krautschicht unterbrochen; oft mit Trockenzeigern
+";Moder;"Regosol; kolluviale Ranker; wenig tief verbraunt.
+";"Skelettgehalt mittel bis hoch; Gründigkeit flach bis tief. Durchlässig; keine Vernässung
+";0;0;2;;;1;2;2;0;2;0;1;1;1;2;0;1;2;2;1;0;2;2;2;2;0;0;25as
+25.017;25au  ;Luzulo niveae-Tilietum;"Winterlinde und Esche mit Bergahorn (Ulme) dominieren.
+";0;0;37;35;;"Frische Zufuhrlagen mit Schutt; steile Hänge; schattig und frisch. Teilweise bis auf zonale Hänge in Gebieten ohne Buche.
+";"Üppige Krautschichten mit Farnen. Brombeeren.
+";Mull;"Kolluviale Böden bis saure Braunerde in den stabilisierten Teilen.
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit flach bis tief; keine Vernässung
+";2;0;2;;;1;2;1;1;0;0;1;2;2;1;0;1;2;1;1;0;1;2;1;1;2;2;25au
+25.002;25b   ;Asperulo taurinae-Tilietum Insubrische Ausbildung;"Laubmischwald; wüchsig oft ausgewachsener Niederwald mit Hopfenbuche; Winterlinde; Sommerlinde; Esche; Mannaesche; Ahorne; Ulmen; Kirsche; Buche; Hagebuche; Kastanie; Eichen; Stechpalme und Edellorbeer;
+Nussbaum
+";20;30;32;30;;"Kalkschutthalden teilweise stabilisiert; feinschuttig; gelegentlich mit Steinschlag. Auf schattigen; frischen; wärmeren Expositionen.
+";"Spärliche Strauchschicht in den reifen Stadien; sonst dichte Haselbestände. Krautschicht mit Â«frischemÂ» Aussehen. Frischere Fazies mit Farnen.
+";Kalkmull;"Rendzina; teilweise oberflächlich verbraunt; Pararendzina; (Regosol).
+";"Skelettgerhalt sehr hoch; Gründigkeit sehr tief; durchlässig; keine Vernässung 
+";9;1;1;;;0;1;1;2;0;0;2;2;0;2;2;2;1;0;1;0;0;2;0;0;0;0;25b
+25.005;25e   ;Tilio-Fraxinetum;"Wenig wüchsiger; oft buschiger Eschenmischwald mit einzelnen Linden und Eichen. 
+";10;20;22;20;;"Warme; trockene Kalkfelssteilhänge
+";"Strauchig und krautig.
+";Xeromull (Xero-Kalkmull) und Xero-Moder;"Sehr flachgründige Rendzina
+";"Oft nur in Felsspalten; Durchlässigkeit übermässig
+";9;1;;;;0;1;1;0;2;0;1;1;1;2;2;0;0;0;1;0;0;2;0;0;0;2;25e
+25.007;25f   ;"Lunario-Acerion; Tilion; Arunco-Fraxinetum p. p.";"Winterlinde und Esche dominieren; dazu Traubeneiche; Kastanie; Buche; Bergahorn; Bergulme; Schwarzerle; Fichte; Tanne; Eibe. Potentiell entsteht ein Lindenmischwald mit Eibe; Tanne; Efeu und laurophyllen Arten
+";25;30;32;30;;"Vegetationskomplex der schattigen Schluchten auf Silikat. Enge Täler mit  ozeanischem; luftfeuchten; windarmen Mesoklima. Bis 900 (1100) m über Meer.
+";"Artenreich; mit sauren; trockenen Polster auf den Felswänden; bis auf bewegten Schutt mit Nährstoffzeigern wie Mondviole und vielen Farnen.
+";Mull;"Kolluviale Böden; teilweise verbraunt bis Ranker.
+";"Skelettgehalt mittel bis hoch; Gründigkeit flach bis tief; keine Vernässung
+";0;0;2;;;1;0;0;1;0;0;1;1;1;1;0;1;1;1;2;0;2;2;1;1;1;1;25f
+26;26;Aceri-Fraxinetum;"Bergahorn und Esche dominieren; dazu Stieleiche; Kirschbaum (submontane Stufe); Bergulme; Tanne.
+";25;40;40;40;;"Feuchte bis nasse; meist schattige Zufuhrlagen.
+";"Oft üppige Hochstauden.
+";"Mull (feuchte Ausprägung); stellenweise Kalkmull.";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Braunerde; Pararbraunerde; Rendzina; Pararendzina; Regosol; vernässt. 
+";"Skelettgehalt gering bis mittel; Gründigkeit sehr tief; biologische Aktivität hoch; obere Horizonte periodisch durchlüftet; untere Horizonte für Buche zu nass; Durchlässigkeit hoch bis gering; sehr stark bis schwach grundnass; Pseudogley bis schwach pseudovergleyt. 
+";9;9;1;;150;2;1;2;1;0;0;2;0;0;0;0;0;0;2;0;0;1;2;2;2;0;0;26
+26.009;26h   ;"Aceri-Fraxinetum; Höhenausbildung";"Bergahorn und Esche dominieren; dazu Bergulme; Tanne; und Vogelbeere. Schlussgrad normal bis räumig. Einzelbäume und Kleinkollektive
+";25;35;35;30;;"Tal- und Hangfusslagen
+";"Üppige; artenreiche Krautschicht
+";"Mull; feuchte Ausprägung; stellenweise Kalkmull";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Braunerde; Pararendzina; Regosol; vernässt. 
+";"Skelettgehalt sehr gering bis hoch; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering. sehr stark bis schwach grundnass; Pseudogley bis schwach pseudovergleyt.
+";9;9;1;;60;2;1;2;1;0;0;2;0;0;0;0;0;0;2;0;2;1;2;2;2;0;0;26h
+26.014;26w   ;Aceri-Fraxinetum calamagrostietosum variae;"Mässig wüchsige; oft lückige Ahorn-Weisserlenbestände; denen unterhalb 1200 müM auch Eschen beigemischt sein können; eine stark deckende Strauchschicht ist stets vorhanden.
+";15;25;0;0;;"Stark basisch-tonige Unterlage; meist im Flyschgebiet; häufig sind Hangrutschungen und Wasseraustritte; gute bis übermässige Wasserversorgung mit periodischer Tendenz zur Austrocknung. Mässig geneigte Hänge; wasserzügige Mulden und konkave Hangfusslagen; steilere Tobelflanken mit Oberflächenerosion; alle Expositionen 
+";"Gut deckende Bodenvegetation mit ausgeprägtem Grasaspekt; zahlreiche; aber nicht üppig in Erscheinung tretende Krautpflanzen sind stets vorhanden aber nicht aspektbestimmend; die Moosschicht spielt eine untergeordnete Rolle 
+";"Mull; kaum organische Auflage";"Hangwasserbeeinflusste Rohböden
+";"Stark tonig; wenig verwittert; basenreich bis zur Oberfläche; oft mit Stauhorizont; mässig skelettreich; schlecht durchlässig und gute bis übermässige Wasserspeicherkapazität; schlechte Durchlüftung 
+";;;;;;0;0;2;1;0;0;0;0;0;0;0;0;0;0;0;2;1;1;2;2;1;1;26w
+27;27;Carici remotae-Fraxinetum;"Esche; Schwarzerle; vereinzelt Bergahorn.
+";25;35;26;26;;"Quellige Stellen und Bachläufe; Einfluss von fliessendem Wasser.
+";"Oft üppige Krautschicht; an quelligen Stellen mit viel Riesenschachtelhalm.
+";"Mull (feuchte Ausprägung); stellenweise Anmoor; Kalkmull";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Braunerde; Rendzina; Pararendzina; Regosol; Ranker vernässt. 
+";"Skelettgehalt sehr gering bis hoch; oft Kalktuff; Gründigkeit sehr tief;biologische Aktivität hoch. Durchlässigkeit hoch bis gering; sehr stark bis schach grundnass; stark bis sehr schwach pseudovergleyt
+";0;0;9;0;;2;1;2;1;0;0;0;0;0;0;0;0;0;2;0;0;1;2;1;1;1;2;27
+27.1;27*   ;Adenostylo-Alnetum incanae;"Grauerle und Bergahorn dominieren; dazu Vogelbeere; auf weniger vernässten Kleinstandorten einzelne Tannen und Fichten. Teilweise auch Esche. Der Schlussgrad ist räumig bis aufgelöst. Einzelbäume; Kleinkollektive und Rottenansätze.
+";15;20;27;20;;"Stark tonhaltige und basenreiche Unterlage; oft Tonschiefer; Mergel oder Flysch; oft Standorte mit tiefgründigen Bodenrutschungen: meist in Mulden; oft entlang von wenig tief eingeschnittenen Bächen. Eher Schattenlage.
+";"Sehr üppige; artenreiche Hochstaudenflur
+";"Mull; feuchte Ausprägung; stellenweise Moder; Kalkmull feuchte Ausprägungen; Anmoor; teils erodiert";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Braunerde; Rendzina; Pararendzina; Regosol vernässt.
+";"Skelettgehalt sehr gering bis hoch; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering; stark bis sehr schwach pseudovergleyt oder sehr stark bis schwach grundnass. 
+";9;1;;;;0;0;2;1;0;0;0;0;0;0;0;0;0;2;0;0;1;2;1;1;1;2;27Stern
+27.00017;27O   ;Osmundo-Alnetum  (syn Osmundo-Fraxinetum - Ceschi);"Esche und Schwarzerle dominieren
+";0;0;0;32;;"Quellige Stellen und kleine Bachläufe in wintermilden Lagen; Einfluss von fliessendem Wasser; Häufig am Hang auf Möräne und Silikat (kalkmeidend).
+";"Wüchsige Erlengruppen; mit Efeu. Unten Eschen und Brombeergestrüpp unterbrochen von Nassstellen. Farnhorste.
+";Mull;"Braunerde teilw. mit Oxidation. Regosol oberflächlich verbraunt.
+";"Skelettgehalt mittel bis hoch; Oben versauert; Gründigkeit tief; biologische Aktivität hoch. Durchlässigkeit mittel bis gross; Hang- und Grundwasserspiegel oberflächennah aber sauerstoffreich; daher nur schwach pseudovergleyt.
+";0;0;2;;;1;0;2;1;0;0;2;2;0;0;0;2;0;1;2;0;2;2;2;1;1;1;27O
+27.009;27h   ;"Carici remotae-Fraxinetum; Ausbildung mit Petasites albus";"Esche dominiert; dazu Bergahorn; einzelne Tannen und Weisserlen. Schlussgrad normal bis räumig. Einzelbäume und Kleinkollektive
+";20;25;30;25;;"Quellige und sickernasse Stellen oft entlang von Bachläufen. Untergrund kalkreich; verdichtet.
+";"Üppige; artenreiche Krautschicht; Riesenschachtelhalm; oft Tuffausscheidungen mit Kalkquellmoosen.
+";"Mull; auch feuchte Ausprägung; tstellenweise Anmoor; Kalkmull";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Braunerde; Rendzina; Pararendzina; Regosol vernässt.
+";"Skelettgehalt sehr gering bis hoch; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering; stark bis sehr schwach pseudovergleyt oder sehr stark bis schwach grundnass. 
+";9;9;9;0;;2;1;2;1;0;0;0;0;0;0;0;0;0;2;0;0;1;2;1;1;1;2;27h
+28;28;Ulmo-Fraxinetum equisetosum hyemalis;"Eschen-Mischwald mit Bergulme; Bergahorn und Stieleiche; Grauerle.
+";25;32;35;32;;"Aue im näheren Bereich des Flusslaufes; ursprünglich regelmässig (meist nicht alljährlich) überschwemmt; Grundwasser meist im Wurzelraum; in Trockenperioden absinkend. Bei Flusskorrekturen selten überdauernd
+";"Meist dominiert der Winter-Schachtelhalm; doch kann die Krautschicht artenreich sein. Sträucher weniger dicht als im Zweiblatt-Eschenmischwald
+";"Mull; stellenweise feuchte Ausprägung; oft erodiert.";"Auenböden; Regosol; Pararendzina vernässt; Nassböden beeinflusst durch Grund-/Hangwasser. 
+";"Oberboden sandig-lehmig; nährstoffreich; Unterboden kiesig; Skelettgehalt gering bis sehr hoch; Gründikeit mittel bis tief; durchlässig; sunpfig bis schwach grundnass.
+";9;9;1;;0;2;1;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;1;1;2;2;2;28
+29;29;Ulmo-Fraxinetum typicum;"Wüchsiger Eschenmischwald mit oft dominierender Esche und einzelnen Traubenkirschen; Bergahornen und Schwarzerlen. 
+";25;35;40;35;;"Flache Mulden mit Staunässe
+";"Strauchig (oft Traubenkirsche) und krautig; Moose oft auch an Stammansatz
+";"Mull; stellenweise feuchte Ausprägung";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Braunerde; Parabraunerde vernässt.
+";"Skelettgehalt gering; Gründigkeit sehr tief; biologische Aktivität hoch; Durchlässigkeit mittel bis sehr gering; sehr stark bis schwach grundnass; Pseudogley bis schwach pseudovergleyt.
+";9;9;1;60;;2;1;0;1;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;2;2;2;29
+29.00001;29A   ;Ulmo-Fraxinetum listeretosum;"Eschen-Mischwald mit Bergulme; Bergahorn und Stieleiche; an erhöhten; lange nicht mehr überschwemmten Stellen kann sich die Buche ansiedeln. Heute oft ganz vom Fluss abgeschnitten; sodass die Entwicklung zum Buchenwald fortschreiten kann.
+";28;35;40;35;;"Auen an Flüssen und grösseren Bächen; auch ursprünglich selten überschwemmt; Grundwasser meist im Wurzelraum; in Trockenperioden absinkend
+";"Sträucher oft dicht; Krautschicht kann sehr verschieden zusammengesetzt sein. 
+";"Mull; stellenweise Kalkmull; teils erodiert.";"Auenböden; Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Regosol; Pararendzina; Rendzina vernässt; verbraunt;
+";"Boden sandig-lehmig; nährstoffreich; Skelettgehalt gering bis sehr hoch; Gründigkeit tief; Durchlässigkeit mittel bis hoch; schwach bis stark grundnass; pseudovergleyt bis schach pseudovergleyt.
+";9;9;1;;70;2;1;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;2;1;2;2;0;29A
+29.00002;29C   ;Ulmo-Fraxinetum caricetosum albae;"Eschen-Mischwald mit Bergahorn und Stieleiche; oft auch mit einzelnen Buchen. Die Lärche ist im Mittelland und Jura wenig geeignet; in den kontinentaler geprägten Gebieten (2a und angerenzend) gedeiht sie gut. Oft auch Übergänge zu Kalk-Buchenwäldern
+";25;32;37;32;;"Tiefere Lagen (unter 600 m ü. M.). Trockene Stellen der Aue; meist leicht erhöht und/oder mit sehr durchlässigem Untergrund; das Grundwasser erreicht nur die tieferen Bodenschichten
+";"Sträucher oft dicht; Krautschicht meist von der Weisssegge dominiert.
+";"Mull; stellenweise Kalkmull; teils erodiert";"Auenböden. Regosol; Pararendzina; Rendzina vernässt; Nassböden beeinflusst durch Grund-/Hangwasser
+";"Boden sandig-lehmig; Skelettgehalt sehr gering bis sehr hoch; Gründigkeit mittel bis tief; Durchlässigkeit hoch bis sehr hoch; grundnass bis keine Vernässung
+";9;1;1;;0;0;1;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;2;2;2;0;2;29C
+29.009;29h   ;Ulmo-Fraxinetum equisetosum sylvaticae;"Wüchsiger Eschenmischwald mit oft dominierenden Esche und Tanne. 
+";30;35;40;30;;"Flache Mulden und Plateaulagen mit Staunässe
+";"Krautig; moosig.
+";"Mull; Moder; stellenweise feuchte Ausprägung";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser; Braunerde; Parabraunerde vernässt.
+";"Skelettgehalt gering; Gründigkeit sehr tief; biologische Aktivität hoch; Durchlässigkeit mittel bis sehr gering; sehr stark bis schwach grundnass; Pseudogley bis schwach pseudovergleyt. 
+";9;9;1;40;;2;1;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;2;2;2;29h
+3;3;Luzulo niveae-Fagetum typicum;"Oft dichte Buchenwälder; teilweise grosskronige Buchen auch Stockausschläge. Stellenweise beigemischt: Traubeneiche; Birke; Kastanie; Mehlbeere; Vogelbeere; Zitterpappel; Linde; Fichte; Tanne; Lärche. In der Region 5a mit Fichtenvorposten sind evt. vereinzelt
+Fichten vorhanden; in der Region 5b fehlt die Fichte vollständig. Die seltenen Schlusswaldstadien sind reicher an Tanne und entsprechen etwa dem 1h 
+(Artenarmer Waldsimsen-Tannen-Buchenwald)
+";15;25;30;25;;"Hanglagen; in tiefen Lagen kalten Schattenhänge. Von 500 bis 1500 m über Meer
+";"Spärliche Krautschicht mit Schneesimse; Rohrreitgras ; Betonienblättrige Rapunzel . Nicht selten sind die dunkelsten Beständen ohne Krautschicht
+";Moder;"Saure Braunerde; Braunpodsol; Humuspodsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";0;0;2;;;1;0;1;0;2;2;1;0;0;2;0;0;0;2;2;0;0;2;0;0;0;0;3
+3.1;3*/4* ;Rhododendro-Fagetum;"Wenig wüchsige; strauchreiche Buchenbestände mit Ericaceen (Alpenrosen; Heidekraut; Heidelbeere) und mit potentieller Anreicherung von Weisstannen.
+";12;18;26;22;;"Nährstoffarmen; schattige Lagen auf silikatischen Felsen oder Blöcken mit dünner Feinerdebedeckung. 
+";"Strauchreich dank der nicht geschlossenen Baumschicht. Bei Schluchten und Luftfeuchten Lagen kommt vermehrt die Ausbildung mit Farnen; Bärlapp und Moosteppiche vor (4*).
+";Moder;"Ranker; Humuspodsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung. In Verlustlagen ist die biologische Aktivität durch die Bodensäure gehemmt.
+";0;0;2;;;0;0;1;2;1;2;2;2;1;1;0;0;0;2;2;0;0;2;0;0;0;0;3Stern
+30;30;Pruno-Fraxinetum;"Sumpfiger Eschen-Schwarzerlen-Mischwald mit Traubenkirsche. 
+";20;30;30;30;;"Flache Mulden und Tälchen; mit Stauwasser im Wurzelbereich
+";"Strauchig und krautig. Oft dominieren Traubenkirsche und Scharfkantige Segge.
+";"Anmoor; seltener Mull-Hydroform";"Nassböden beeinflusst durch Grund-/Hangwasser oder Stauwasser. 
+";"Unterhalb 50 cm ständig; darüber oft über längere Perioden vernässt; neutral bis basenreich. Skelettgehalt gering; Gründigkeit tief; Durchlässigkeit mittel bis gering. Sumpfig bis grundnass; Stagnogley oder Pseudogley.
+";9;9;1;55;;2;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;2;2;2;30
+31;31;Equiseto-Alnetum incanae;"Grauerlenwald mit herrschender Grauerle und einzelnen Silberweiden
+";10;18;20;18;;"Tiefe Lagen (unter 500 m ü. M.). Entlang den grossen Flüssen in nächster Nähe zum Flusslauf; alljährlich überschwemmt; die Bestände können bei Extrem-Hochwasser weggeschwemmt werden; und die Auenentwicklung setzt wieder von vorne ein. Bei Flusskorrekturen nicht überdauernd
+";"Üppige Krautschicht ; die sehr unterschiedlich zusammengesetzt werden kann.
+";"Mull; oft erodiert";"Auenböden. Regosol/Rohboden
+";"Boden kiesig-sandig-lehmig.
+";9;9;;;;2;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;1;1;2;2;1;31
+32.1;32*   ;Aceri-Alnetum incanae typicum;"Mässig- bis schlechtwüchsige Laubholzbestände; die einen deutlichen Pioniercharakter zeigen. Weisserle oder Bergahorn dominieren; stellenweise Esche; Ulme beigemischt. Oft stufig mit einer üppigen; artenreichen Strauchschicht; Hasel dominiert. Stellenweise Spuren von starker landwirtschaftlichen Nutzung.
+";15;20;30;20;;"Hänge mit mehr oder weniger deutlich sichtbaren Gleithorizonten; oft tiefgründigen Rutschungen und Oberflächenerosion. Häufig auf Bündnerschiefer; Flyschböden und Moränen. Gut wasserversorgt; jedoch nicht permanent vernässt.
+";"Sehr artenreich -  wenig konstante Arten:  üppige Strauchschicht Bodenvegation stark deckend; grossblättrige Krautpflanzen. 
+";"Mull; Moder; stellenweise feuchte Ausprägung. Teils Anmoor; Kalkmull; erodiert. ";"Rendzina; Pararendzina; Regosol; Ranker; stellenweise vernässt.
+";"Durch die wenig versauernd wirkende Streu der Baum- und Strauchschicht zeigt der Oberboden auch auf silikatreichen Böden oft einen erstaunlich hohen pH-Wert. Durch die Anwesenheit von viel stickstoffbindenden Weisserlen sind die Böden sehr nährstoffreich. Skelettgehalt hoch bis äusserst hoch; Gründigkeit sehr tief; durchlässig; grundnass bi skeine Vernässung. 
+";9;9;1;;0;2;1;1;1;0;0;2;0;0;0;0;2;0;1;2;2;1;1;2;2;2;2;32Stern
+32.00002;32C   ;Calamagrostio-Alnetum incanae;"Grauerlenwald in Reinbestand
+";10;18;22;18;;"Flüsse und grosse Bäche unter 1000 m ü. M. Aue in nächster Nähe zum Flusslauf; mindestens alle 10 Jahre überschwemmt; die Bestände können bei Extrem-Hochwasser weggeschwemmt werden; und die Auenentwicklung setzt wieder von vorne ein. Bei Flusskorrekturen nicht überdauernd
+";"Üppige Krautschicht; die aber nach Überschwemmungen sehr lückig und sehr unterschiedlich zusammengesetzt sein kann. 
+";"Mull; stellenweise feuchte Ausprägung; teils Anmoor; Kalkmull; erodiert";"Auenböden. Regosol; Pararendzina; Rendzina stellenweise vernässt; Nassböden beeinflusst durch Grund-/Hangwasser. 
+";"Boden kiesig-sandig. Skelettgehalt gering bis hoch; Gründigkeit tief; Durchlässigkeit sehr hoch bis mittel; sumpfig bis schwach grundnass. 
+";9;9;1;;55;2;1;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;1;1;2;2;1;32C
+32.00012;32S   ;Alno-Salicetum pentandrae;"Lorbeerweidenbestände mit Grauerle und weiteren Weiden-Arten
+";6;10;18;10;;"In den Alpen in der subalpinen Stufe (über 1400 m ü. M.) entlang von Flussabschnitten mit wenig Gefälle. Bestände alljährlich überschwemmt; die Bestände können bei Extrem-Hochwasser weggeschwemmt werden; und die Auenentwicklung setzt wieder von vorne ein. Bei Flusskorrekturen nicht überdauernd.
+";"Niedrigwüchsiger Wald mit vielen Hochstauden.
+";"Mull; stellenweise feuchte Ausprägung; teils Anmoor; Kalkmull; erodiert";"Auenböden. Regosol; Pararendzina; Rendzina stellenweise vernässt; Nassböden beeinflusst durch Grund-/Hangwasser. 
+";"Boden kiesig-sandig. Skelettgehalt gering bis hoch; Gründigkeit tief; Durchlässigkeit sehr hoch bis mittel; sumpfig bis schwach grundnass. 
+";9;9;;;;2;1;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;1;1;1;1;1;32S
+32.00014;32V   ;Violo-Alnetum incanae;"Grauerlenwald in Reinbestand
+";10;15;22;15;;"Flüsse und grosse Bäche über 1000 m ü. M. in den Alpen; an kühlen stellen auch über 900 m über Meer. Aue in nächster Nähe zum Flusslauf; mindestens alle 10 Jahre überschwemmt; die Bestände können bei Extrem-Hochwasser weggeschwemmt werden; und die Auenentwicklung setzt wieder von vorne ein. Bei Flusskorrekturen nicht überdauernd.
+";"Üppige Krautschicht; die aber nach Überschwemmungen sehr lückig und sehr unterschiedlich zusammengesetzt sein kann. 
+";"Mull; stellenweise feuchte Ausprägung; teils Anmoor; Kalkmull; erodiert";"Auenböden. Regosol; Pararendzina; Rendzina stellenweise vernässt; Nassböden beeinflusst durch Grund-/Hangwasser. 
+";"Boden kiesig-sandig. Skelettgehalt gering bis hoch; Gründigkeit tief; Durchlässigkeit sehr hoch bis mittel; sumpfig bis schwach grundnass. 
+
+";9;9;1;;55;2;1;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;1;1;1;2;1;32V
+33.00014;33V   ;Salvio glutinosae-Fraxinetum violetosum biflorae;"Mässig bis schlechtwüchsige Laubholzbestände mit deutlichem Pioniercharakter. Esche und Bergahorn dominieren; dazu Zitterpappel; Hängebirke. Meist locker mit üppiger Krautschicht; viel Hasel. Anthropogen bedingte Entwicklungsstadien der hochmontanen Nadelwälder; die sich langsam in Richtung der zonalen Nadelwälder entwickeln. Oft beliebe Schalenwildeinstände; dazurch wird die Entwicklung zu Nadelwäldern verlangsamt oder verhindert. 
+";15;20;30;20;;"Warme Hänge mit guter Einstrahlung. Auf silikatischem Untergrund; oft auf gründigen Moränen
+";"Sehr artenreich -  wenig konstante Arten:  üppige Strauchschicht Bodenvegation massig deckend; grasig-krautig.
+";Mull - Moder;"Ranker; Braunerden. 
+";"Die Böden sind meist gründig; gut verwittert und oft nur wenig skelettreich. Durch die wenig versauernd wirkende Streu der Baum- und Strauchschicht zeigt der Oberboden auch auf silikatreichen Böden oft einen erstaunlich hohen pH-Wert. Oft sinkt der pH in tiefern Bodenhorizonten ab.
+";0;9;;;;1;0;1;2;2;2;2;2;2;1;2;2;0;1;2;2;2;2;0;0;0;2;33V
+33.001;33a   ;Arunco-Fraxinetum castanosum;"Kastanien - oft ausgewachsene starke Stockausshläge - dominieren mit wenig alternativen Elementen. Potentielle Stechpalmenbuchenwälder (4L) mit weniger Kastanie. Laurophyllenunterholz wenig vital; dafür Stechpalmen baumförmig.
+";24;28;32;30;"Kernwüchse und Stockausschläge oft unterschiedliche Höhe auf gleichen Standort.
+";"Schattenhänge und luftfeuchte Mulden auf Silikat; stabilen Lagen teilw. sehr sauer.
+";"Die Unterschichten werden durch die Dominanz der Kastanie geprägt; eher artenarm und  von der Bodensäure. Wenig Farnen und Aruncus der Säure wegen; meist an lichten Stellen und Mineralerde.
+";Moder (Mull);"Kryptopodsol; tendiert nur selten zu saurer Braunerde.
+";"Skelettgehalt gering bis sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis sehr hoch; keine Vernässung. Die Böden sind meist gründig; gut verwittert auf Moräne. Der Oberboden auf solche silikatreichen Böden wird durch das Kastanienlaub sehr sauer gehalten; nur schwach sauer in den unteren Bereichen.
+";0;0;2;;;1;0;1;1;0;0;2;2;2;2;0;0;0;2;0;0;0;0;0;0;2;2;33a
+33.002;33b   ;Arunco-Fraxinetum castanosum;"Laubmischwald mit Kastanien; Eschen; reich an sonstigen Edellaubhölzer.  Efeu in den Kronen. Meist ehemaligen Kastanienselven. Potentiell entstehen Lindenmischwälder (25a); seltener neutrophilen Stechpalmenbuchenwälder (4L; 13L). Laurophyllenunterholz; Eiben und Stechpalmen baumförmig.
+";25;30;32;30;;"Frische; mind. im Unterboden kalkhaltige Moränen; Hangfusslagen auf stabilen oder stabilisierten Böden; meistens Schattige Lagen mit basenreicheren Untergrund.
+";"Üppig und artenreich in jeder Schicht. Ausgereiften Beständen weisen meistens einen immergrünen Unterschicht mit Stechpalme; Eibe; Efeu und laurophyllen Pflanzenarten auf. Frühlingsaspekt manchmal durch blühenden Geophyten geprägt. Farne!
+";Mull bis - selten - Moder wo der Kastanienanteil noch wichtig ist.;"Braunerde; oberflächlich teilweise versauert.
+";"Skelettgehalt sehr gering bis hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis sehr hoch; keine Vernässung bis schwach pseudovergleyt oder grundnass. Frisch; teilweise im Unterboden wechselfeucht
+";2;2;9;;;1;2;2;1;0;2;2;2;0;2;0;0;0;2;2;0;2;2;2;2;2;2;33b
+33.01;33m   ;Arunco-Fraxinetum castanosum;"Laubmischwald mit Kastanien; Eschen; Winterlinde und Buche. Meist ehemaligen Kastanienselven.  Potentiell entstehen Stechpalmenbuchenwälder (4L) oder Lindenmischwälder (25au). Laurophyllenunterholz; Stechpalmen baumförmig.
+";0;0;35;33;;"Frische; schattige; tiefgründige Moränen auf Hanglage bis Ebenen; Hangfusslagen auf stabilen oder stabilisierten Böden; meistens luftfeuchte Lagen mit tiefgründigem Untergrund.
+";"Reich an mesophilen; azidiphilen Arten. Brombeeren und dichte Strauchschichten in lichten Kastanien-Selven. Farne und Aruncus!
+";Mull bis Moder.;"Saure Braunerde wenn Edellaubhölzer herrschen; in ausgewaschenen Partien mit viel Kastanie zu Kryptopodsol neigend
+";"Die Böden sind meist gründig; gut verwittert auf Moräne oder stabilisiertem Schutt; der Oberboden wird durch das Kastanienlaub sauer gehalten.
+";0;0;2;150;;1;2;2;1;0;2;2;2;0;2;0;0;0;2;2;0;0;2;2;2;2;2;33m
+34.1;34*   ;Luzulo niveae-Tilietum cordatae;"Mässigwüchsige Winterlinden- und (v.a. in den westlichen Regionen) Bergahornbestände; denen Eschen und Eichen beigemischt sind. Der meist lockere Kronenschirm lässt viel Licht ins Bestandesinnere. 
+";20;25;27;25;;"Submontan-untermontan. Auf kalkfreiem Blockschutt (Orthogneis; Saurer Verrucano) in Föhngebieten an warmen Hängen mit guter Einstrahlung. 
+";"Artenreich; wenige konstante Arten. Ziemlich üppige Strauchschicht. Bodenvegetation mässig deckend. 
+";Moder;"Ranker; z. T. verbraunt; instabile Schutthalden (Rohboden). 
+";"Skelettgehalt hoch bis äusserst hoch. Gründigkeit sehr tief; Durchlässigkeit mittel bis hoch. Oberflächlich versauert; mit basenreicheren Stellen. Keine Vernässung.
+";0;0;;;;1;0;1;1;0;2;2;2;2;2;2;2;1;2;1;0;0;0;0;0;0;2;34Stern
+34.001;34a   ;Cruciato glabrae-Quercetum;"Kastanie dominiert; dazu vermehrt Winterlinde; Kirsche;  Traubeneiche und Buche. Pionierbaumarten. Potentiell entstehen sauren Lindenmischwälder (25as) und Stechpalmentbuchenwälder (3L). Laurophyllenunterholz; Stechpalmen baumförmig.
+
+";15;24;28;26;;"Untergrund mit Silikat-Material (z. B. Moränen). Hanglagen in jeder Exposition. Bis 900 m über Meer
+";"Säurezeiger und mesischen Arten. Die letzten sind in sehr sauren Standorten oder bei starken Kastaniendeckung weniger zahlreich; der Aspekt wird somit monoton.
+";Moder;"Saure; kolluviale Braunerde bis Kryptopodsol.
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit mittel bis äusserst tief; durchlässig; keine Vernässung.
+";0;0;2;;;1;0;1;2;2;2;1;2;2;2;0;2;2;1;2;0;0;0;2;2;2;0;34a
+34.002;34b   ;Cruciato glabrae-Quercetum;"Winterlinde; Kirsche; Spitzahorn; Hopfenbuche; Traubeneiche und Flaumeiche dominieren; dazu Birke; Kastanie; Buche; Mehlbeere; Zittelpappel; Sommerlinde; Esche; Feldahorn; Feldulme; Waldföhre; Eibe; Robinie; Nussbaum; Hagebuche. Pionierbaumarten. Potentiell entsteht ein mittlerer Eichen-Hopfenbuchen- Lindenmischwald (25ABL); mit Laurophyllenunterholz.
+";20;25;27;25;;"Untergrund mit basischem Material (z. B. Moränen). Hanglagen; meistens Sonnenhänge. Bis 700 (800) m über Meer
+";"Sobald die Kastaniendominanz kleiner ist; zeigen sich Basenzeiger; mittlere Arten sowie Efeu als Teppich am Boden und kletternd; aber keine anspruchsvolle Farne
+";"Moder; Mull (teilweise trockene Ausprägung)";"Braunerde; oberflächlich versauert; im Unterboden basenreicher.
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit mittel bis äusserst tief; durchlässig; keine Vernässung.
+";2;2;2;;;0;1;1;2;1;2;1;1;2;2;0;2;0;1;2;0;0;2;0;0;0;0;34b
+35;35;Galio-Carpinetum;"Laubmischwald mit Eichen; Hagebuche; Kirschbaum; Feldahorn; Mehlbeere; Sommerlinde und nur vereinzelten Buchen. 
+";25;35;37;35;;"Ebene Lagen mit frühlingsfeuchten und sommertrockenen Böden; z. T. im Spätfrostlagen; in niederschlagsärmeren Gegenden (Jahresniederschlag unter 900 mm).
+";"Krautschicht kann sehr unterschiedlich entwickelt sein. Kombination von einigen frischezeigenden Frühlingsblühern und Trockenheitszeigern sowie Säureund Basenzeigern ist charakteristisch.
+";Mull;"Parabraunerde oder Braunerde
+";"Im Frühling feucht; im Sommer stark austrocknend; Skelettgehalt hoch bis sehr hoch; Gründigkeit sehr tief; durchlässig; keine Vernässung
+";0;9;1;70;;1;2;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;2;35
+35.001;35A   ;Stellario-Carpinetum;"Wüchsiger Laubmischwald mit Eiche (v. a. Stieleiche); Hagebuche; Esche; Sommerlinde; Kirschbaum; Feldahorn; vereinzelt Bergahorn und Buche.
+";25;35;37;35;;"Ebene Lagen mit wechselfeuchten Böden mit Frühjahrsfeuchtigkeit; in niederschlagsärmeren Gegenden (Jahresniederschlag unter 900 mm).
+";"Im Frühling krautig; im Sommer wenige Kräuter.
+";Mull;"Braunerde; Parabraunerde  vernässt
+";"Feinkörnig bis tonig; im Frühling feucht; im Sommer wechseltrocken mit ausgeprägten Austrocknungsperioden; basen- und oft kalkhaltig. Skelettgehalt sehr gerin bis mittel; Gründigkeit tief; Durchlässigkeit mittel bis gering; stark bis schwach grundnass oder pseudovergleyt.
+";0;9;1;70;;2;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;35A
+35.00007;35M   ;Galio-Carpinetum molinietosum;"Mässigwüchsige Eichen-Mischbestände mit Hageuche; Esche; Kirschbaum. Der meist lockere Kronenschirm lässt viel Licht ins Bestandesinnere. 
+";20;35;27;25;;"Collin. Wechselfeuchte Böden in flachen Lagen. 
+";"Artenreich. Bodenvegetation grasig-krautig. 
+";Mull;"Parabraunerden. 
+";"Wechseltrockene Lehmböden. Oberflächlich stellenweise versauert
+";0;9;;;;2;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;35M
+35.00011;35Q   ;;"In der Hartholzaue oder in planarer Lage durch Stieleiche; Winterlinde und Esche dominierter Mischwald. Robinie und Feldahorn kommen regelmässig vor. Vorhanden sind manchmal auch Auenwaldreste von früheren Stadien (Pappel; Weiden; Föhren) die sich allmählich verdünnen.
+";22;28;32;30;;"Hartholzaue der sich auch als zonale Schullasstadium erhalten kann; kommt in wenig bis kaum vom Grundwasser und von Hochwasser beeinflussten Stellen vor.  
+";"Artenreich. Bodenvegetation grasig-krautig. Im Frühling grün und blühend (Geophyten); eher krautreich im Sommer.
+";Mull bisModer;"Mehr oder wenig tief verbraunte Böden abgehend vom Ranker bis in polyphasisch entwickelt durch Auflandung von Schlick und Lehm.
+";"Wechseltrockene Braunerden. Oberflächlich stellenweise versauert.
+";0;0;2;;;1;2;0;2;0;1;0;0;0;0;0;2;0;2;0;0;0;2;1;2;2;2;35Q
+35.00012;35S   ;Scillo-Carpinetum;"Wüchsiger Laubmischwald mit Kirschbaum; Eichen; Hagebuche; Esche; Winterlinde; Ulme; Robinien und Lianen. Teilweise Buchenfähige Standorte.
+";25;30;32;30;;"Colline Stufe in Lagen mit tonreichen Böden und allgemein grosse Wasserspeicherkapazität. Tallagen der Mendrisiotto mit klimatischen Einfluss der Po-Ebene.
+";"Im Vorfrühling sehr blumenreich (Geophyten wie Scilla; Leucojum; Allium; ...); dann krautig; im Hochsommer wenige Kräuter
+";Mull;"Braunerde
+";"Feinkörnig bis tonig; im Frühling feucht; im Sommer warme Böden; wechseltrocken; basen- und kalkhaltig
+";2;1;2;60;200;2;1;1;1;2;2;0;0;0;0;0;2;0;2;0;0;2;2;1;2;1;1;35S
+36;36;Carpino betuli-Ostryetum;"Meistens hängende Niederwälder; von Hopfenbuche dominiert; dazu Hagebuche; Linden; Feldahorn; Esche; Mannaesche; Eichen; Zürgelbaum; Stechpalme; Nussbaum; Edellorbeer. Meistens buchenfähig.
+";14;25;27;25;;"Kalk; mittlere Lagen; alle Expositionen; meistens zonal. Bis 800 (1000) m über Meer
+";"Krautiges; vielfältiges Unterholz; mit Basenzeigern und mittleren Arten. Oft Teppiche von Efeu und Immergrün.
+";"Mull; Kalkmull";"Rendzina; Neutrale Braunerde
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit normal bis sehr hoch; keine Vernässung. Meistens frisch aber in Sommer manchmal stark austrockend.
+";1;1;1;;;0;1;1;1;2;1;2;2;2;2;0;2;0;2;2;0;2;2;0;0;0;2;36
+37;37;Fraxino orni-Ostryetum;"Meistens hängende Niederwälder in denen Hopfenbuche dominiert; mit Mannaesche; Flaumeiche; Mehlbeere; Zerreiche und Zürgelbaum. Dazu Edellorbeer.
+";9;18;20;18;;"Trockene; felsige flachgründige oder exponierte Standorte auf Kalk; alle Expositionen. Bis 800 (1000) m über Meer.
+";"Unter dichten Strauchschichten (Heckenrose; Alpengoldregen; Felsenmispel; Strauchwicke; Mäusedorn; Kreuzdorn; Schwarzdorn etc. ) viele Basenzeiger sowie wenige mittleren Arten und Trockenheitszeiger.
+";Mull;"Rendzina; Pararendzina und stellenweise Braunerde
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit gering; keine Vernässung.
+";1;1;1;50;;0;1;1;0;1;0;1;1;1;1;2;1;2;1;2;0;2;1;0;0;0;0;37
+38;38;Arabidi turritae-Quercetum pubescentis;"Schlecht wüchsiger; oft lichter Eichenwald mit Flaum- und Traubeneiche; Mehlbeere; Schneeballblättrigem Ahorn; Elsbeere; Wildbirne. 
+";7;15;17;15;;"Südexponierte trockene Kalkfelshänge in warmen Lagen. 
+";"Unterschicht artenreich; meistens grasig oder krautig.
+";Xeromull;"Rendzina; Regosol; z.T. verbraunt
+";"Flachgründig; trocken
+";9;1;;;;0;1;1;0;2;2;1;1;1;1;2;0;0;2;1;0;0;2;0;0;0;2;38
+38.1;38*   ;"Asperulo purpurei-Quercetum pubescentis PROV. (p.p. Helleboro-Ornetum Subass. asteretosum in ANTONIETTI; 1968und p.p.";"Flaumeichen-Buschwald auf kalkreichen Gesteinen. 
+";9;18;20;18;;"Trockene Hänge (Fels) in warmen; sonnigen; kalkreichen Lagen. Kalkfelshänge mit stabilen Terassen.
+";"Unterschicht sehr artenreich; grasig oder krautig.
+";Xeromull;"Rendzina; z.T. verbraunt; wenig steinig.
+";"Trocken; meist basenreich; oberflächlich schwach versauert
+";1;1;1;;;0;1;2;0;2;0;1;1;1;2;2;0;0;2;2;0;0;2;0;0;0;0;38Stern
+38.00012;38S   ;Saponario-Quercetum pubescentis;"Wenig wüchsiger Eichenwald mit Flaum- und Traubeneiche; Mehlbeere; Schneeballblättriger Ahorn; Waldföhre. 
+";5;12;14;12;;"Trockene Hänge (Fels oder Hangschutt) in warmen Lagen des niederschlagarmen Walliser Trockengebietes
+";"Unterschicht artenreich; grasig oder krautig.
+";"Xeromull; Xeromoder; teils erodiert. ";"Rendzina; Regosol; Pararendzina; teils verbraunt. 
+";"Skelettgehalt hoch bis sehr hoch; Gründigkeit tief; durchlässig; keine Vernässung. 
+";9;1;1;;0;0;1;1;0;2;2;1;1;1;1;0;2;0;1;1;0;0;1;0;0;0;2;38S
+39;39;Coronillo coronatae-Quercetum;"Wenig wüchsiger Eichenmischwald mit Trauben- und Flaumeiche; Mehlbeere; Elsbeere; Feldahorn; Esche; Wildbirne; Waldföhre. 
+";8;16;18;16;;"Südexponierte trockene Kalkfelshänge
+";"Unterschicht artenreich; grasig oder krautig.
+";"Xeromull; teils mit Kalk; teils erodiert.";"Rendzina; Regosol; z.T. verbraunt
+";"Flachgründig; trocken
+";9;1;;;;0;1;1;0;2;2;1;1;1;1;0;2;0;0;1;0;0;2;0;0;0;1;39
+39.1;39*   ;Rhamno alpinae-Quercetum;"Wenig wüchsiger Eichenmischwald mit Traubeneiche; Mehlbeere; Sommerlinde; Feldahorn; Schneeballblättrigem Ahorn; Wildbirne. 
+";8;16;18;16;;"Südexponierte trockene Kalkfelshänge
+";"Unterschicht artenreich; grasig oder krautig.
+";"Xeromull; teils mit Kalk; teils erodiert. ";"Rendzina; Pararendzina; z.T. verbraunt
+";"Skelettgehalt äusserst hoch; Gründigkeit mittel; durchlässig; nicht vernässt. 
+";9;1;1;;25;0;1;1;0;2;2;1;1;2;1;0;2;0;2;1;0;0;2;0;0;0;1;39Stern
+3.01;3L/4L ;Ilici-Fagetum typicum und dryopteridetosum;"Buche dominiert. In der Unterschicht Stechpalme; Eibe. In der Oberschicht beigemischt Traubeneiche; Birke; Kastanie; Linde (4L). Ahorn; Esche; Kirschbaum; Schwarzerle. Laurophylle Arten. Auch Tanne ist hier potentiell
+möglich
+";20;33;30;30;;"Hanglagen; oft auf Porphyr oder Moränen; meistens Schattenhänge. Bis 800 (1000) m über Meer
+";"Spärliche Krautschicht; viele immergrüne Sträucher; Efeu auch in Baumschicht
+";"Moder; stellenweise Mull";"Saure Braunerde; schwach podsoliert. Braunpodsol; Humuspodsol
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit tief bis äusserst tief; durchlässig; keine Vernässung
+
+";0;0;2;;;1;0;1;2;2;2;1;0;1;2;0;0;0;2;2;0;0;2;0;0;0;0;3L4L
+3.00015;3LV   ;Ilici-Fagetum typicum (verarmte Variante);"Buche; Traubeneiche und Kastanie dominieren. In der Unterschicht: Stechpalme. In der Oberschicht beigemischt: Birke; Mehlbeere; evt. Tanne.
+";15;20;20;16;;"Hanglagen; meistens Schattenlagen. Bis 800 (1000) m über Meer
+";"Spärliche Krautschicht; viel Stechpalme und Eibe in der Strauchschicht
+";"Moder; teilweise trockene Ausprägung";"Podsolierte Braunerde; Humuspodsol; Ranker
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";0;0;;;;1;0;1;2;2;2;2;0;0;2;0;0;0;2;2;0;0;2;0;0;0;0;3LV
+3.000001;3s    ;Luzulo niveae-Fagetum (Trockene Ausbildung);"Schlecht wüchsiger Buchenwald; oft mit offenen Stellen. Wenig Traubeneiche; Mehlbeere und Birke beigemischt. Bäume grobastig und wenig vital; trockene Aeste.
+";12;15;18;15;"Meistens auch kleinere Bäume; selten mehr als 12-15m
+";"Sonnige Hänge auf Silikat; steile; konvexe; felsige Lagen mit wenig tiefgründige Böden der montanen Stufe
+";"Am Boden Rohrreitgras und Pfeifengras
+";"Moder; Xeromoder";"Braunpodsol; Humuspodsol
+";"Skelettgehalt hoch bis sehr hoch; durchlässig. Die biologische Aktivität ist durch die Bodensäure und die wiederkehrende Trockenheit gehemmt.
+";0;0;2;;;1;0;2;0;1;0;1;1;1;2;0;0;0;2;2;0;0;2;0;0;0;0;3s
+4;4;Luzulo niveae-Fagetum dryopteridetosum;"Oft dichte Buchenwälder; häufig gerade Stämme. Stellenweise beigemischt: Traubeneiche; Kastanie; Mehlbeere; Zitterpappel; Bergahorn; Tanne; Fichte; Lärche. Alpengoldregen; selten Birke. In der Region 5a mit Fichtenvorposten sind evt. vereinzelt Fichten vorhanden; in der Region 5b fehlt die Fichte vollständig. Die seltenen Schlusswaldstadien sind reicher an Tanne und entsprechen dem 19L (Typischer Goldregen-Tannen-Buchenwald)
+";25;30;35;30;;"Hanglagen; oft Mulden; meistens Schattenhänge. Von 700 (500) bis 1400 m über Meer
+";"Spärliche Krautschicht; oft mächtige Laubansammlungen; Farne.
+";Mull oder Moder;"Braunerde; stellenweise podsolierte Braunerde; Humuspodsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit sehr tief; durchlässig; keine Vernässung
+";0;0;2;;;1;0;2;1;0;2;2;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;4
+40.1;40*   ;Teucrio-Quercetum;"Wenig wüchsiger Eichenmischwald mit Traubeneiche; Mehlbeere; Waldföhre. 
+";10;15;20;18;;"Südexponierte trockene Kalkfelshänge in den Föhntälern
+";"Unterschicht artenreich; grasig oder krautig.
+";"Xero-Moder; Xero-Mull; teils erodiert; teils mit Kalk.";"Rendzina; Regosol; z.T. verbraunt
+";"Flachgründig; trocken
+";9;1;1;10;;0;1;2;0;1;0;1;1;1;1;0;2;0;2;1;0;0;2;0;0;0;1;40Stern
+40.00008;40P   ;Corylo-Populetum;"Mässig bis schlechtwüchsige Laubholzbestände mit deutlichem Pioniercharakter. Zitterpappel und Birke dominieren teilweise beigemischt sind  Esche; Winterlinde; Salweide; Mehlbeere etc. Üppige; artenreiche Strauchschicht mit viel Hasel.  
+";15;20;30;20;"  
+";"Pionierstandort. Meistens eingewachsene Magerwiesen und -weiden; oft Hanglagen oder flachgründige Kuppen. Meistens an Südhängen; in den Regionen 4 und 5 an allen Expositionen. Oft auf  basenarmen inneralpinen Silikatgesteinen. Potenzial für Fichten oder Tannen-Fichtenwälder (Regionen 2; 3; 4) sowie Buchen- und Tannen-Buchenwälder (Region 5; 3; 19a).
+";"Artenreich -  wenig konstante Arten: Bodenvegetation zum Teil Adlerfarnflur; zum Teil mässig deckend; krautig grasig; zahlreiche Saum-; Wiesen- und Weidearten. Bei basenhaltigem Untergrund sind basenzeigende Arten beigemischt. 
+";Moder bis Mull;"Braunerde; Regosol; Ranker; Humuspodsol
+";"Skelettgehalt gering bis hoch; Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung. Durch die wenig versauernd wirkende Streu der Baum- und Strauchschicht zeigt der Oberboden auch auf silikatreichen Böden oft einen erstaunlich hohen pH-Wert 
+";0;9;2;;;1;2;2;0;1;2;1;2;0;2;0;0;0;0;2;0;0;2;0;0;0;2;40P
+40.000082;40PBl ;Corylo-Populetum (Block-Ausbildung);"Mässig bis schlechtwüchsige Laubholzbestände mit deutlichem Pioniercharakter. Zitterpappel und Birke dominieren; beigemischt sind teilweise Esche; Winterlinde; Mehlbeere; Salweide etc.. Üppige; artenreiche Strauchschicht mit viel Hasel.
+";15;20;30;20;;"Auf ruhendem oder bewegtem Silikatblockschutt oder Lesesteinhaufen. Meistens an Südhängen; in den Regionen 4 und 5a an allen Expositionen. Oft  auf basenarmen inneralpinen Silikatgesteinen. Potenzial für Fichtenwälder auf Blockschutt (v. a. 47H; 47*) und Ahornwälder auf bewegtem Schutt (v. a. 24); in Region 5 für Buchenwälder (3) oder dauernd 40PBl.
+";"Wenig konstante Arten: Artenarme Blockschuttfelder bis krautig grasige Bodenvegetation; teils üppige Strauchschicht; zahlreiche Saum-; Wiesen und Weidearten. Bei basenhaltigem Untergrund sind basenzeigende Arten beigemischt. 
+";"Mull; auch Moder und Rohhumus";"Gesteinsrohböden (Schutthalden); Regosol; teilweise verbraunt; Braunerde; teils podsoliert. 
+";"Skelettgehalt sehr hoch bis äusserst hoch; Gründigkeit tief; lokal sehr flachgründig. Durchlässig; keine Vernässung.
+Durch die wenig versauernd wirkende Streu der Baum- und Strauchschicht zeigt der Oberboden auch auf silikatreichen Böden oft einen erstaunlich hohen pH-Wert 
+";0;9;2;;;1;2;1;1;2;2;2;0;1;1;0;2;0;1;2;0;0;0;0;0;0;2;40PBl
+40.013082;40PBlt;"Corylp-Populetum; Blockausbidlung tiefer Lagen";"Mässig bis schlechtwüchsige Laubholzbestände mit deutlichem Pioniercharakter. Zitterpappel und Birke dominieren; beigemischt sind teilweise Esche;  Winterlinde; Kastanie; Ahorne; Mehlbeere. Üppige; artenreiche Strauchschicht mit viel Hasel.
+";15;20;30;20;;"Auf ruhendem oder bewegtem Silikatblockschutt oder Lesesteinhaufen. Meistens an Südhängen; in den Regionen 4 und 5a an allen Expositionen. Oft auf den basenarmen Gesteinen der Südalpen in tiefen Lagen. Potenzial für 42; 3 oder 40PBl auf ruhendem Schutt; für verschiedene 25 auf bewegtem  Schutt.
+";"Wenig konstante Arten: Artenarme Blockschuttfelder bis krautig grasige Bodenvegetation; teils üppige Strauchschicht; zahlreiche Saum-; Wiesen und Weidearten. Bei basenhaltigem Untergrund sind basenzeigende Arten beigemischt. 
+";Mull oder Moder;"Gesteinsrohböden (Schutthalden); Regosol; teilweise verbraunt; Braunerde; teils podsoliert. 
+";"Skelettgehalt sehr hoch bis äusserst hoch; Gründigkeit tief; lokal sehr flachgründig. Durchlässig; keine Vernässung.
+";0;9;;;;1;2;1;1;2;2;2;0;1;1;;2;0;1;2;0;0;0;0;0;0;2;
+40.01308;40Pt  ;"Corylo-Populetum; Ausbildung tiefer Lagen";"Mässig bis schlechtwüchsige Laubholzbestände mit deutlichem Pioniercharakter. Zitterpappel und Birke dominieren; beigemischt sind teilweise Esche; Winterlinde; Kastanie; Ahorne; Hopfenbuche etc. Üppige; artenreiche Strauchschicht mit viel Hasel.
+";15;20;30;20;;"Pionierstandort. Oft auf Waldbrandflächen oder einwachsenden Magerweiden und -wiesen. Oft auf den basenarmen Gesteinen der Südalpen in tiefen Lagen. Potential für Kastanienmischwälder (42Q; 42C; 42t; 34a); Buchenwälder (Region 5; 3L) und Lindenwälder  (Region 4; 25a)
+";"Artenreich -  wenig konstante Arten: üppige Strauchschicht Bodenvegation mässig deckend; krautig grasig; zahlreiche Saum-; Wiesen und Weidearten. Bei basenhaltigem Untergrund sind basenzeigende Arten beigemischt. 
+";Mull oder Moder;"Ranker; Regosol; Braunerde; Humuspodsol;  
+";"Skelettgehalt gering bis hoch; Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung. Durch die wenig versauernd wirkende Streu der Baum- und Strauchschicht zeigt der Oberboden auch auf silikatreichen Böden oft einen erstaunlich hohen pH-Wert 
+";0;9;;;;1;2;2;0;1;2;1;2;0;2;0;0;0;0;2;0;0;0;0;0;0;2;
+41;41;Lathyro-Quercetum;"Wenig wüchsiger Laubmischwald mit Traubeneiche; Mehlbeere; Elsbeere. 
+";10;15;17;15;;"Warme; trockene Lagen; dünne Moränenschicht über Kalkfelsuntergrund oder durchlässiger Sandstein
+";"Krautig in verschiedener Zusammensetzung. Im Westen oft mit Mäusedorn (Ruscus aculeatus).
+";Xero-Moder;"Verbraunte Rendzina und Braunerde.
+";"Flachgründig; trocken; obere Schichten versauert
+";0;0;;;;1;2;1;0;1;0;2;2;0;2;0;2;0;2;2;0;0;2;0;0;0;2;41
+41.1;41*   ;Luzulo-Quercetum;"Schlecht wüchsiger Laubmischwald mit Traubeneiche; Mehlbeere; Vogelbeere. 
+";10;15;17;15;;"Südexponierte; trockene Hänge mit saurem Boden
+";"Krautig. Oft dominieren Grasartige.
+";Xero-Moder;"Saure Braunerde
+";"Flachgründig auf kalkfreiem Muttergestein; sehr trocken
+";0;0;;;;1;2;2;0;1;2;2;1;2;2;0;0;0;0;0;0;0;2;0;0;0;1;41Stern
+42.012;42B   ;Allio lusitanici-Quercetum pubescentis;"Steilhangwälder mit Flaumeiche und Traubeneiche. Birke und Kastanie (häufig wenig vital) dazu Zerreiche (Region 5b); Mehlbeere; Zitterpappel; Kirschbaum; Felsenkirsche.
+";5;12;16;14;;"Felsige Hänge; Anphibolite; basenreichere Silikate mit Kieselkalk- oder Marmorader; meistens Sonnenhänge. Bis 800 m über Meer.
+";"Felsen im Mosaik mit grasigen Partien. Besenheide und Heidekraut wenig vorherrschend; dazu mehr Gras (Fiederzwenke; Molinia; Chrysopogon).
+";Moder bis Rohhumus (trockene Ausprägung);"Ranker
+";"Skelettgehalt sehr bis äusserst hoch; Gründigkeit flach bis tief; Durchlässigkeit hoch bis sehr hoch; stark austrockend jedoch nicht nährstoffarm.
+";0;9;;;;1;2;0;0;0;0;1;1;1;1;0;0;0;2;2;0;2;2;0;0;0;2;42B
+42.00002;42C   ;Phyteum betonicifoliae-Quercetum castanosum;"Schlechtwüchsige durch die Kastanie dominierten nährstoffarme Niederwälder; selten Selven mit wenig Traubeneiche. In Sottoceneri (5b) auch Zerreiche.
+";10;16;24;22;;"Sonnige; flachgründigen Hänge mit sehr saurer; dünner Erdebedeckung. Aspekt wirkt kränklich; trocken; oft durch Waldbränder mitgeprägt.
+";"Unterholz oft fehlend; wenig Pfeifengras und Adlerfarn; dagegen viel trockenes; unzersetzten Laub.
+";"Moder bis Rohumus; teils erodiert";"Ranker; Kryptopodsol
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis sehr hoch; keine Vernässung; sehr sauer
+";2;1;2;;;1;0;1;0;1;0;1;1;2;1;0;2;0;2;2;0;0;2;0;0;0;2;42C
+42.00011;42Q   ;Phyteum betonicifoliae-Quercetum;"Häufig dominieren Eichen; vorwiegend Traubeneiche; in Sottoceneri (5b) auch Zerreiche; selten Stiel- und Flaumeiche. Kastanie; Mehlbeere 
+und Birke.
+";14;18;2;22;;"Trockene; flachgründige sonnige Hänge auf Silikat.
+";"Traubeneichenbestände; dünn; licht und grasig; wenig bis kaum entwickelten Strauchschicht. Teilweise durch Waldbränder mitgeprägt.
+";"Moder (Rohhumus); teils erodiert";"Ranker; Kryptopodsol
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis sehr hoch; keine Vernässung; sehr sauer
+
+";0;0;;;;1;0;1;0;1;0;1;1;2;1;0;2;0;2;2;0;0;2;0;0;0;2;42Q
+42.00014;42V   ;Phyteumo betonicifoliae-Quercetum vaccinetosum;"Häufig Kastanienniederwald; selten Kastanienselven oder Eichenhochwald. Traubeneiche; (Zerreichen in 5b) Kastanie; Mehlbeere und Vogelbeere; selten Buche Birke; Zitterpappel; Tanne; teilweise Fichte. 
+Teilweise langsame Entwicklung in Richtung eichenreiche Hochwälder oder in Richtung Nährstoffarmer Buchenwald mit Stechpalme (3VL). Selten potentielle saure Linden- Eichenwälder (42-34L).
+";12;14;26;24;;"Silikat; Hanglagen; meistens Schattenhänge. Bis 700 (900) m über Meer
+";"Mit Heidelbeere; keine oder wenig vitale mittlere Arten. Im Kastanienniederwald spärliche Krautschicht
+";"Moder bis Rohhumus; teils erodiert";"Ranker; Kryptopodsol; podsolierte Braunerde
+";"Skelettgehalt sehr gering bis mittel; Gründigkeit fläch bis tief; Durchlässigkeit mittel bis sehr hoch; keine Vernässung; sehr sauer
+";0;0;2;;;1;0;1;0;0;2;1;2;0;2;0;0;0;2;2;0;0;2;0;0;0;2;42V
+42.011;42r   ;Phyteumo betonicifoliae-Quercetum festucetosum variae.;"Langsam wüchsige formenreiche Steilhangwälder in denen Traubeneiche; Flaumeiche; Birke und Kastanie dominieren; dazu Stieleiche (selten); Zerreiche (Region 5b); Waldföhre; Mehlbeere; Zitterpappel; Kirschbaum; Felsenkirsche; stellenweise auch einzeln Hopfenbuche; Robinie. Teilweise langsame Entwicklung in Richtung Eichenwälder (42Q). In der montanen Stufe Mehlbeerwälder
+";5;12;16;14;;"Felsige Hänge; Ortogneise und sonstige sehr harte; basenarme Silikate; meistens Sonnenhänge. Bis 900 (1300) m über Meer.
+";"Vegetationsfreie Felsen wechseln mit Besenheide und Kräutern
+";Moder bis Rohhumus (trockene Ausprägung);"Ranker
+";"Skelettgehalt sehr bis äusserst hoch; Gründigkeit flach bis tief; Durchlässigkeit hoch bis sehr hoch; sehr nährstoffarm
+";0;0;2;;;1;0;0;0;2;0;1;1;1;1;0;2;0;2;2;0;2;2;0;0;0;2;42r
+42.013;42t   ;"Phyteumo betonicifoliae-Quercetum polygonatetosum multiflorii; Cruciato glabrae-Quercetum p.p.";"Kastanienniederwälder; seltener Kastanienselven; dazu wenig Traubeneiche; Buche und Linde; einzelne Flaumeiche; Zerreiche; Birke; Mehlbeere; Zitterpappel; Fichte. Pionierbaumarten. Meistens langsame bis schnelle Entwicklung in Richtung sauer Linden-Eichenmischwälder (25AL) oder in Richtung Buchenwälder mit Stechpalme (3L); in Schattenlagen möglicherweise mit Tanne und Eibe; Bildung von Laurophyllenunterholz (Stechpalme)
+";15;24;26;24;;"Silikat. Hanglagen; alle Expositionen. Oft durch Feuer beeinflusst. Bis 800 (1000) m über Meer
+";"In der Strauchschicht dominieren Pfeifengras und Adlerfarn; jedoch mit wenigen mittleren Arten wie Hasel; Brombeer; Hedera; ...
+";"Moder; Mull; teils erodiert";"Braunerde; Kryptopodsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis äusserst tief; Durchlässigkeit gering bis sehr hoch; keine Vernässung
+";0;0;2;;;1;2;1;0;1;2;1;2;2;1;0;0;0;2;2;0;2;0;0;0;0;2;42t
+43;43;Salicetum albae;"Offener Weidenwald mit meist dominierender Silberweide; sowie Bruch- und Mandelweide.
+";15;25;27;25;;"Tiefe Lagen (unter 500 m ü. M.). Entlang der grossen Flüsse in nächster Nähe zum Flusslauf; alljährlich überschwemmt; die Bestände können bei Extrem-Hochwasser weggeschwemmt werden; und die Auenentwicklung setzt wieder von vorne ein.  Bei Flusskorrekturen nicht überdauernd.
+";"Üppige Krautschicht ; die sehr unterschiedlich zusammengesetzt werden kann. Strauchschicht lückig.
+";Mull;"Regosol/Rohboden
+";"Boden kiesig-sandig.
+";9;9;;;;2;1;0;2;0;1;0;0;0;0;0;0;0;2;0;0;0;1;1;2;2;1;43
+43.1;43*   ;;"Raschwüchsige Schwarzpappelgruppen; Lavendelweide; Birken; Föhren; Winterlinde mit Efeu; Kirschbaum und Eschen wachsen im Unterholz.
+";12;24;22;30;;"Hochgelegenen Schotterbänke die durch heftige Hochwasserereignisse entstanden sind werden langsam kolonisiert und weiter nur wenig gestört bleiben. Auf diesen Inseln erreichen die Schwarpappel allmählich den Grundwasserspiegel und wachsen dann sehr rasch auf. Die Insel kann sich somit weiter durch Auflandung von Feinsedimente entwickeln.
+";"Unterholz strauchreich; mit einem Gemisch von alluviale Arten (Land-Reitgras); Trochenzeiger (Liguster; Berberitze; Wachholder) und klimaxwaldarten (Efeu; Brachypodium silvaticum; ...).
+";Mull;"Poliphasische Auenböden nur wenig verbraunt; unten folgen sandige Auflagerungen; mit eingefügten verbraunten Horizonte die während Hochwasser und auflandungsprozesse überlagert wurden. Grundwasser tief vorhanden beeinflusst das Wachstum der höchsten Bäumen.
+";"Tiefgründig; sandig; am Grunde skelettreich und meistens sehr durchlässig.
+";0;2;2;;;1;2;0;0;0;1;0;0;0;0;0;2;0;2;0;0;2;1;1;0;0;1;43Stern
+43.00012;43S   ;Salicetum elaeagno-daphnoidis;"Lockerer Weidenbestand (Lavendel- und Reifweide); oft nur buschförmig.
+";5;12;17;15;;"Submontan-montan. Auen der Alpenflüsse; im Bereich; der knapp über dem Mittelwasserstand liegt; oft überschwemmt; bei Tiefwasser austrocknend
+";"Bestände unter starke Flussdinamick sind jeweils artenarm; bereichern sich allmälich mit Pionierarten und können periodisch sehr artenreich werden. Horste von Land-Reitgras wirken aspektbestimmend.  
+";Oft humusarm.;"Auen-Rohboden.
+";"Sand- und Kiesböden; periodisch überschwemmt. 
+";9;9;;;;2;1;0;2;0;1;0;0;0;0;0;0;0;2;0;0;0;1;1;2;2;1;43S
+44;44;Carici elongatae-Alnetum glutinosae;"Schwarzerlen-Sumpfwald. Erlen mancherorts mit Stelzenwurzeln. Einzelne Eschen.
+";10;20;22;20;;"Flache; staunasse Mulden.
+";"Lückige Krautschicht; oft am Fuss der Stämme zusammengezogen.
+";"Anmoor; oft mit Bruchwaldtorf";"Gley
+";"Nass; oft überschwemmt
+";9;9;;;;2;1;0;2;0;1;0;0;0;0;0;0;0;0;0;0;0;0;2;1;1;1;44
+45;45;Pino-Betuletum;"Lockerer Sumpfwald mit Föhren und Birken mit eingestreuten Fichten. 
+";18;22;22;20;;"Moorgebiete
+";"Krautig und moosreich. Torfmoos charakteristisch.
+";Torf;"Torfschicht den ganzen Wurzelbereich umfassend
+";"Dauernd nass; nur oberflächlich zeitweise austrocknend; sauer
+";0;0;;;;1;2;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;45
+46;46;Vaccinio myrtillii-Abieti-Piceetum typicum;"Tanne und Fichte dominieren; dazu Vogelbeere. In unteren Lagen Buchen im Nebenbestand. Schlussgrad normal bis locker; grosse Konkurrenz zwischen den Baumkronen; Einzelbäume und Kleinkollektive
+";25;35;38;25;;"Meistens Plateaulagen auf dichter Unterlage. Je weiter oben; je niederschlagsreicher; je dichter der Untergrund und je kühler; desto eher werden steilere Hanglagen besiedelt.
+";"Heidelbeere; Moosschicht oft vollständig deckend; stellenweise mit Farnfluren
+";"Rohhumus und Moder; teils feuchte Ausprägungen.";"Nassgebleichte Nassböden; beeinflusst durch Stauwasser; vernässte Braunerde.
+";"Skelettgehalt mittel bis hoch; Gründigkeit sehr tief; Durchlässigkeit hoch bis gering; Vernässung mittel; Stagnogley; Pseudogley bis schwach pseudovergleyt.
+";0;0;9;60;;1;2;2;2;2;1;0;0;0;0;0;0;0;0;0;0;2;2;0;0;0;0;46
+46.1;46*   ;Vaccinio myrtillii-Abieti-Piceetum sphagnetosum;"Tanne und Fichte dominieren; dazu Vogelbeere. Schlussgrad locker; Einzelbäume und Kleinkollektive; auch Rottenansätze
+";20;30;30;20;;"Auf sehr dichter Unterlage; flach; stellenweise leicht geneigt. Je weiter oben; je niederschlagsreicher; je dichter der Untergrund und je kühler; desto eher werden auch mässig geneigte Hanglagen besiedelt.
+";"Sehr moosreich; mit Torfmoos; Heidelbeere
+";"Rohhumus; Torf; stellenweise Rohhumus; feuchte Ausprägung";"Nassgebleichte Nassböden; beeinflusst durch Stauwasser; vernässte Braunerde.
+";"Skelettgehalt sehr gering bis hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis gering; Stagnogley; Pseudogley bis schwach pseudovergleyt. 
+";0;0;9;60;;1;2;2;2;2;1;0;0;0;0;0;0;0;0;0;0;2;2;0;0;0;0;46Stern
+46.1000003;46*Re ;;"Fichte dominiert; dazu Vogelbeere. Schlussgrad locker; Einzelbäume und Kleinkollektive; auch Rottenansätze
+
+";0;0;30;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 46*
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+46.00007;46M   ;Vaccinio myrtillii-Abieti-Piceetum melampyretosum;"Fichte und seltener auch Tannen dominieren; dazu Vogelbeere. Schlussgrad normal bis locker; auf gründigen Standorten grosse Konkurrenz zwischen den Baumkronen. Einzelbäume und Kleinkollektive. Auf felsigen; flachgründigen Standorten sind die Bestände stufig (auch Rottenansätze) und oft schlechtwüchsig
+";20;35;38;25;;"Vor allem auf kalkfreiem; tonarmem; durchlässigem Substrat. Meist flache Lagen ohne Oberflächenerosion (Kuppen); in kühler Lage zum Teil auch auf Felsen
+";"Heidelbeere; Moosschicht vollständig deckend. Auf ehemaligen Kahlflächen und in überaus dichtstehenden Beständen kann die Heidelbeere sehr stark
+zurücktreten. Eine Standortsansprache kann nur mit Hilfe einer Beurteilung des Bodens erfolgen.
+";Rohhumus und Moder;"Podsol; stellenweise bei Beweidung Braunpodsol; podsolierte Braunerde; vernässter Podsol
+";"Skelettgehalt mittel bis hoch; Gründigkeit sehr tief; Durchlässigkeit hoch bis mittel; keine Vernässung bis pseudovergleyt.
+";0;0;9;105;;1;0;2;0;1;1;2;2;2;1;0;0;0;2;0;2;2;2;0;0;0;0;46M
+46.0000703;46MRe ;;"Fichte dominiert; dazu Vogelbeere. Schlussgrad normal bis locker; auf gründigen Standorten grosse Konkurrenz zwischen den Baumkronen. Einzelbäume und Kleinkollektive. Auf felsigen; flachgründigen Standorten sind die Bestände stufig (auch Rottenansätze)
+";0;0;38;25;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 46M
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+46.0000003;46Re  ;;"Fichte dominiert; dazu Vogelbeere. Schlussgrad normal bis locker; grosse Konkurrenz zwischen den Baumkronen; Einzelbäume und Kleinkollektive
+";0;0;0;0;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 46
+";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+46.013;46t   ;Bazzanio-Abietetum;"Fichten-Tannenwald mit Buche; Eiche und Vogelbeere im Nebenbestand. 
+";28;35;36;30;;"Flache und leicht geneigte Lagen auf saurer Unterlage
+";"Heidelbeere und Moose dominieren; Farne stetig.
+";"Rohhumus oder Moder; teilweise feuchte Ausprägungen";"Nassböden beeinflusst durch Stauwasser; vernässte/podsolierte Braunerde oder Parabraunerde
+";"Skelettgehalt sehr gering bis mittel; Gründigkeit sehr tief; Durchlässigkeit mittel bis gering; Stagnogley; Pseudogley bis schwach pseudovergleyt.
+";0;0;1;85;;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;46t
+47;47;Calamagrostio-villosae-Abieti-Piceetum typicum;"Tanne und Fichte dominieren; dazu Lärche; Birke und Vogelbeere. In der Region 5a mit Fichtenvorposten sind keine oder nur
+einzelne Fichten vorhanden; dafür können einzelne Buchen beigemischt sein.
+In der Region 5b ist der Typische Wollreitgras-Tannen-Fichtenwald mit Buche teilweise die Schlusswaldgesellschaft vom Schneesimsen-Buchenwald (3; 4); die Fichte fehlt hier. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+";25;35;38;25;;"Saure Unterlage; je flacher desto mächtiger ist die organische Auflage. Hanglagen.
+";"Grasig; oft artenarm. Wollreitgras; etwas Heidelbeere.
+";"Moder; stellenweise Rohhumus; teils erodiert.";"Braunerde; Braunpodsol; Humuspodsol; stellenweise podsolierte Braunerde
+";"Skelettgehalt mittel bis hoch; Gründigkeit mittel bis tief; Durchlässigkeit hoch; keine Vernässung.
+";0;0;2;;;1;0;1;2;2;2;1;1;2;1;0;0;0;2;1;1;2;1;0;0;0;0;47
+47.1;47*   ;Rhododendro-Abietetum;"Tanne dominiert; dazu viel Lärche; Vogelbeere; Grünerle; etwas Fichte; teilweise krüppelige Buchen und Bergahorne. Der Schlussgrad ist aufgelöst.
+Einzelbäume mit langen Kronen; selten Rotten mit wenig Bäumen.
+";20;30;32;20;;"Saure Unterlage; häufig an kalten Nordhängen oder im Bereich von kältespeichernden Blockhalden; auch an ost- und westexponierten Hängen
+";"Üppig; strauchreich; viele Moose. Alpenrosengebüsch mit Reitgrasrasen; Heidelbeeren
+";"Rohhumus; stellenweise Moder";"Humuspodsol; Braunerde; stellenweise Podsol; podsolierte Braunerde; Pararendzina; Regosol; Ranker; Gesteinsrohboden; in Taschen podsoliert
+";"Skelettreich (Blöcke); Gründigkeit mittel; Durchlässigkeit normal bis übermässig
+";0;0;;;;1;0;1;1;2;2;2;1;1;1;1;0;0;1;1;2;0;0;0;0;0;0;47Stern
+47.1000001;47*Lä;;"Lärche dominiert; dazu Vogelbeere; Grünerle; etwas Fichte oder Tanne; teilweise krüppelige Buchen und Bergahorne. Der Schlussgrad ist aufgelöst.
+Einzelbäume mit langen Kronen; selten Rotten mit wenig Bäumen.
+";0;0;0;0;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 47*
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+47.00003;47D   ;Calamagrostio-villosae-Abieti-Piceetum dryopteridetosum;"Tanne dominiert häufig; dazu Fichte; wenig Lärche; Vogelbeere; Birke. In der Region 5a mit Fichtenvorposten sind keine oder nur einzelne Fichten vorhanden; dafür können einzelne Buchen beigemischt sein.
+In der Region 5b ist der Farnreiche Wollreitgras-Tannen- Fichtenwald mit Buche teilweise die Schlusswaldgesellschaft vom Farnreichen Schneesimsen-Buchenwald (4); die Fichte fehlt hier. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+";30;35;38;25;;"Saure Unterlage; in schattigen Mulden oder Hangfusslagen; konsolidierter Hangschutt oder saure Moränen; häufig etwas blockig. Meistens Schattenlagen
+";"Krautig-grasig; aber nicht üppig. Wollreitgras; Schneesimse; Keilblättriger Steinbrech; Farne
+";"Moder; stellenweise Rohhumus oder Mull; teils erodiert";"Braunerde; stellenweise podsolierte Braunerde; Braunpodsol; Humuspodsol; Ranker; Regosol
+";"Skelettgehalt mittel bis serh hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit hoch; keine Vernässung.
+";0;0;2;;;1;0;2;1;0;0;2;1;1;1;0;0;0;2;1;1;0;2;0;0;0;0;47D
+47.0000303;47DRe ;;"Fichte dominiert; dazu Lärche; Vogelbeere; Birke. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+
+";0;0;38;25;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 47D
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+47.00016;47H   ;Hypno-Piceetum;"Fichte dominiert; selten etwas Tanne (nur in Region 2; 4) und Lärche; dazu Vogelbeere. Schlussgrad normal bis locker; häufig gleichförmige und dichte Bestände. Einzelbäume und Kleinkollektive
+";30;35;38;25;;"Blockschutthalden aus Granit oder Gneis in den Flanken der typischen Trogtäler; ruhender; meist trockener Schutt mit Durchmesser von 30 cm bis 1 m; der nur wenig Kälte speichert
+";"Artenarm und monoton; die Steinblöcke sind mit einer dünnen; durchgehenden Moosschicht überzogen
+";"Moder (diskontinuierlich); stellenweise Mull; Rohhumus";"Ranker; Regosol; Gesteinsrohboden; örtlich in Spalten verbraunt
+";"Skelettgehalt hoch bis äussert hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";0;0;2;;;1;0;2;1;0;0;2;1;2;2;0;0;0;1;1;1;0;0;0;0;0;0;47H
+47.00007;47M   ;Calamagrostio-villosae-Abieti-Piceetum melampyretosum;"Fichte und Tanne dominieren; dazu Vogelbeere und stellenweise Lärche; Waldföhre. In der Region 5a mit Fichtenvorposten sind keine oder nur einzelne Fichten vorhanden; dafür können einzelne Buchen
+beigemischt sein. In der Region 5b ist der Wollreitgras-Tannen-Fichtenwald mit Wachtelweizen mit Buche teilweise die Schlusswaldgesellschaft
+vom Typischen Schneesimsen-Buchenwald (3); die Fichte fehlt hier. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+";25;30;32;22;;"Saure Unterlage; konsolidierter Hangschutt oder saure Moränen. Meistens Sonnenhänge
+";"Schneesimse; Waldwachtelweizen; Heidelbeere mit geringem Deckungswert; Wollreitgras; Keilblättriger Steinbrech
+";"Moder; stellenweise Rohhumus; auch trockene Ausprägungen möglich";"Braunerde; stellenweise podsolierte Braunerde; Braunpodsol; Humuspodsol; Ranker; Regosol
+";"Skelettgehalt hoch  bis sehr hoch; Gründigkeit mittel; Durchlässigkeit hoch; keine Vernässung
+";0;0;;;;1;0;1;0;1;2;1;1;1;1;0;0;0;2;1;1;2;2;0;0;0;0;47M
+47.0000703;47MRe ;;"Fichte dominiert; dazu Vogelbeere und stellenweise Lärche; Waldföhre.  Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+
+";0;0;32;22;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 47M
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+47.0000003;47Re  ;;"Fichte dominiert; dazu Lärche; Birke und Vogelbeere. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+
+";0;0;38;25;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 47
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+48;48;Asplenio-Abieti-Piceetum;"Fichte und Tanne dominieren; dazu Vogelbeere; stellenweise Bergahorn; in unteren Lagen auch Buchen im Nebenbestand. Wenn das Kleinstandortsmosaik stark ausgeprägt ist; ist die Konkurrenz zwischen den Baumkronen gering. Der Schlussgrad ist locker bis räumig. Einzelbäume; Kleinkollektive und Rottenansätze. Stufige Bestände sind häufig. Die Fichte wächst eher auf Blöcken; die Tanne hingegen auch dazwischen.
+";25;35;38;25;;"Ruhender basischer Blockschutt oder Karren; oft Ablagerungsgebiet eines Bergsturzes; stark ausgeprägtes Kleinrelief
+";"Sehr artenreich. Auf Steinen: Moosteppich mit Heidelbeere; schwarze Heckenkirsche (Lonicera nigra) und Farnen. In Mulden: üppig; artenreich; mit Hochstauden
+";"Rohhumus; stellenweise Tangelhumus; Moder";"Gesteinsrohboden; stellenweise Ranker; Regosol; Pararendzina; Rendzina; in Spalten organische Böden
+";"Skelettgehalt sehr bis äusserst hoch; Gründgkeit flach bis tief; durchlässig; keine Vernässung
+";0;9;9;0;;2;1;2;1;0;2;0;2;2;2;1;0;0;1;2;2;0;0;0;0;0;0;48
+49;49;Equiseto-Abieti-Piceetum typicum;"Tanne und Fichte dominieren; dazu Vogelbeere; in Mulden besonders in basenreicheren Ausbildungen im Nebenbestand auch Bergahorn; Weisserle; stellenweise Esche-.Die vernässten Mulden sind zum grossen Teil nadelwaldfeindlich. Wenn die versauerten Kuppen nicht zu gross sind; so ist der Schlussgrad räumig bis aufgelöst. Neben Kleinkollektiven und Einzelbäumen sind auch Rotten vorhanden
+";20;30;32;25;;"Auf dichter Unterlage; im Bereich von quelligen Aufstössen oder leicht fliessendem Wasser in Mulden.
+";"In Mulden: üppig; artenreich; Waldschachtelhalm; Sumpfdotterblume. Auf Kuppen: Heidelbeere; viele säurezeigende Moose
+";"Im Mulden Mull; feuchte Ausprägung; Anmoor; Torf; auf Kuppen Moder; Rohhumus";"In Mulden Nassböden beeinflusst durch Hang-/Grund- oder Stauwasser; auf Kuppen vernässte Braunerde
+";"Skelettgehalt gering bis hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit auf Kuppen mittel bis gering; in Mulden sehr gering; sumpfig bis grundnass; Pseudogley bis pseudovergleyt
+";0;9;1;50;;1;2;2;1;0;2;0;0;0;0;0;0;0;0;0;0;1;1;0;1;2;1;49
+49.1;49*   ;Equiseto-Abieti-Piceetum caricetosum ferrugineae;"Fichte dominiert; dazu Grünerle und Vogelbeere. Die vernässten Mulden sind äusserst nadelbaumfeindlich. Schlussgrad räumig bis aufgelöst. Rottenstruktur. Reduzierte Wüchsigkeit wegen stark wechselnder Feuchtigkeit; die Fichte hat oft gelbe Nadeln.
+";10;25;27;20;;"Vor allem auf tonhaltigen Schichten von karbonathaltigen Schiefern; auch Flysch. Oft grossräumige Rutschhänge; die von zahlreichen Quellaufstössen
+und kleinen Bachläufen durchsetzt sind. Häufig starke Schwankungen zwischen sehr nass und trocken.
+";"In Mulden artenreiche krautige Vegetation mit vielen Sumpfpflanzen. Auf Kuppen Heidelbeere und säurezeigende Moose
+";"In Mulden Anmoor; auf Kuppen Rohhumus; teils erodiert";"Nassböden beeinflusst durch Hang-/Grundwasser oder Stauwasser; vernässter Regosol oder Pararendzina; teils verbraunt
+";"Skelettanteil gering bis hoch; Gründigkeit sehr tief bis mittel; Durchlässigkeitmittel bis sehr gering; sumpfig bis grundnass; Pseudogley bis pseudovergleyt
+";9;1;1;50;;0;1;2;1;0;2;0;0;0;0;0;0;0;0;0;0;1;1;0;1;1;1;49Stern
+49.1000002;49*Ta ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen; dazu Bergahorn; Grünerle und Vogelbeere. Die vernässten Mulden sind äusserst nadelbaumfeindlich. Schlussgrad räumig bis aufgelöst. Rottenstruktur. Reduzierte Wüchsigkeit wegen stark wechselnder Feuchtigkeit; die Fichte hat oft gelbe Nadeln.
+";0;0;27;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 49*
+";;;;9;1;;;;;;;;;;;;;;;;;;;;;;;;;;
+50;50;Adenostylo alliariae-Abieti-Piceetum typicum;"Tanne und Fichte dominieren; dazu Vogelbeere; in basischen Ausbildungen etwas Bergahorn; Unterhalb von 1200 m über Meer auch Esche. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+";30;40;42;25;;"Vor allem auf rasch verwitterndem; siltig-tonigem Ausgangsgestein; meistens Schattenhänge; häufig etwas wasserzügige Mulden.
+";"In Lücken üppige Hochstauden wie Grauer Alpendost; Alpenmilchlattich. An erhöhten Stellen: Heidelbeere; Alpenlattich; säurezeigende Moose
+";"In Mulden Mull; Moder. Auf Kuppen Rohhumus; Moder";"Braunerde; stellenweise Parabraunerde; Pararendzina; Regosol; alle auch vernässt möglich
+";"Skelettgehalt gering bis sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit hoch bis gering; keine Vernässung bis schwach pseudovergleyt.
+";0;0;9;42;;1;2;1;1;0;2;2;2;0;2;2;0;0;2;2;1;1;1;0;2;0;0;50
+50.1;50*   ;Adenostylo glabrae-Abieti-Piceetum typicum;"Tanne und Fichte dominieren; dazu Bergahorn; Vogelbeere; unterhalb von 1200 m über Meer auch Esche.
+Schlussgrad normal bis locker; Einzelbäume und Kleinkollektive
+";30;40;42;25;;"Auf kalkreicher; meist verwitterter; mässig toniger Unterlage (z. B. Bündnerschiefer); oft leichte Oberflächenerosion; Steilhänge; eher Schattenlage
+";"Durchgehende; nicht üppige Krautschicht Kahler Alpendost; Weisse Pestwurz; säurezeigende Moose mit mässiger Deckung; viel Schönschnabelmoos (Eurhynchium striatum)
+";"Mull; stellenweise Moder; Kalkmull; teils erodiert";"Rendzina; Regosol; stellenweise Pararendzina; neutrale Braunerde; Braunerde
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung.
+";9;1;1;45;;0;1;2;2;2;2;1;2;0;2;2;2;0;2;1;1;2;1;0;0;0;0;50Stern
+50.1000003;50*Re ;;"Fichte dominiert; dazu Bergahorn; Vogelbeere; unterhalb von 1200 m über Meer auch Esche.
+Schlussgrad normal bis locker; Einzelbäume und Kleinkollektive
+";0;0;0;0;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 50*
+";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+50.00008;50P   ;Adenostylo-Abieti-Piceetum petasitetosum;"Fichte und Tanne dominieren; häufig sind auch tannenarme Pionierphasen; dazu Grünerle; Weisserle; Bergahorn; Vogelbeere; unerhalb von 1200 m über Meer auch Esche. Schlussgrad normal bis aufgelöst. Einzelbäume und Kleinkollektive; oft vertikale Lücken
+";30;40;42;25;;"Kühle; mässig luftfeuchte Muldenlagen mit bewegtem Boden sowie steile Tobelflanken mit oberflächlicher Erosion. Kleinere Rutschungen und Lawinenzüge sind typisch. Gutverwitterndes; höchstens mässig basenreiches Gestein.
+";"In Bestandeslücken und Mulden: üppige Staudenflur; in der die Weisse Pestwurz dominiert. An erhöhten Stellen: Heidelbeere; säurezeigende Moose
+";"Mull; teils erodiert; auf Kuppen auch Moder; Rohhumus";"Regosol; stellenweise Pararendzina; Rendzina; Braunerde; alle auch vernässt möglich.
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit mittel bis gering; keine Vernässung bis grundnass.
+";0;0;1;50;;1;2;2;1;0;0;1;2;0;2;0;2;0;0;1;1;1;1;0;2;2;0;50P
+50.0000003;50Re  ;;"Fichte dominiert; dazu Vogelbeere; in basischen Ausbildungen etwas Bergahorn; Unterhalb von 1200 m über Meer auch Esche. Schlussgrad normal bis locker. Einzelbäume und Kleinkollektive
+";0;0;42;25;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 50
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+51;51;Galio-Abieti-Piceetum typicum;"Tanne und Fichte dominieren; dazu Bergahorn und Vogelbeere; unterhalb von 1200 m über Meer auch Esche. In den Regionen 1 und 2a selten im Nebenbestand einzelne Buchen. Schlussgrad normal bis locker; Einzelbäume und Kleinkollektive
+";30;40;42;25;;"Gut verwitternder Untergrund; mässig tonig; siltreich; ohne Basen im Oberboden. Mässig geneigte Hänge; eher Schattenlagen
+";"Durchgehende; artenreiche aber nicht üppige Krautschicht mit einzelnen Farnen; wenig Moose; Rundblättriges Labkraut; Hasenlattich; Waldhabichtskraut; Heidelbeere mit geringer Wüchsigkeit; Waldwachtelweizen
+";"Moder; stellenweise Mull";"Braunerde; stellenweise Parabraunerde
+";"Skelettgehalt hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit hoch bis gering; schwach pseudovergleyt bis keine Vernässung
+";0;0;9;45;;1;2;1;2;2;2;2;2;0;2;2;0;0;2;2;2;2;2;0;0;0;0;51
+51.00002;51C   ;Galio-Abieti-Piceetum coryletosum;"Tanne dominiert; dazu Fichte. In Pionierphasen sind auch Esche; Ahorn; Bergulme und Linden verbreitet; in der Strauchschicht kann sich Hasel sehr üppig entwickeln. Schlussgrad normal bis locker; vor allem Einzelbäume
+";30;40;42;35;;"Konsolidierte Schutthalden. Im Buchenareal wachsen auf vergleichbaren Standorten Buchen. Die Buche fehlt hier vermutlich wegen den stark wirkenden Frösten.
+";"In Lücken kann eine üppige Staudenvegetation entstehen; im Bestand und unter den üppigen Haselstauden ist die Krautvegetation nur spärlich ausgebildet.
+";Mull;"Ranker; Regosol; stellenweise Braunerde.
+";"Skelettgehalt mittel; tiefgründig; normal bis übermässig durchlässig
+";0;0;;;;1;2;1;2;0;2;2;2;0;2;0;0;0;1;2;2;2;2;0;0;0;0;51C
+51.0000003;51Re  ;;"Fichte dominiert; dazu Bergahorn und Vogelbeere; unterhalb von 1200 m über Meer auch Esche. In den Regionen 1 und 2a selten im Nebenbestand einzelne Buchen. Schlussgrad normal bis locker; Einzelbäume und Kleinkollektive
+";0;0;42;25;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 51
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+52;52;Adenostylo glabrae-Abieti-Piceetum caricetosum albae;"Tanne und Fichte dominieren; dazu Lärche; Föhre; Vogelbeere; Mehlbeere; Bergahorn. In der Region 2a oft auch Buche im Nebenbestand Schlussgrad normal bis locker; Einzelbäume und
+Kleinkollektive
+";25;35;37;25;;"Auf kalkreicher; meist verwitterter Unterlage (z.B. Bündnerschiefer); Steilhänge; eher Sonnenlage; trocken.
+";"Grasig. Weissegge; Waldwachtelweizen; säurezeigende Moose
+";"Moder; stellenweise Mull; auch trockene Ausprägungen möglich; auch Kalkmoder; Kalkmull möglich. ";"Rendzina; Pararendzina; Regosol; stellenweise neutrale Braunerde; Braunerde; Parabraunerde
+";"Skelettgehalt hoch bis sehr hoch; Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung
+";9;1;1;;80;0;1;1;2;2;2;1;2;2;1;2;0;0;2;1;1;2;2;0;0;0;2;52
+52.0000003;52Re  ;;"Fichte dominiert; dazu Lärche; Föhre; Vogelbeere; Mehlbeere; Bergahorn. In der Region 2a oft auch Buche im Nebenbestand Schlussgrad normal bis locker; Einzelbäume und
+Kleinkollektive
+
+";0;0;37;25;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 52
+";;;;9;1;;;;;;;;;;;;;;;;;;;;;;;;;;
+52.00013;52T   ;Adenostylo glabrae -Abieti-Piceetum caricetosum albae mit Tilia cordata;"Meist recht wüchsige Tannen-Fichtenbestände; denen im Nebenbestand zahlreiche Winterlinden; Bergahorne; Eschen; Ulmen; Kirschbaum etc. beigemischt sind. Der Laubholzreichtum hängt stark von der Bestandesgeschichte ab. Eine üppige; von Hasel dominierte Strauchschicht ist in aufgelockerten Beständen vorhanden.  
+";30;35;37;32;;"Kuppen; flache Hügelrücken; nicht allzu steile Hänge und Mulden. Auf basenreichem Muttergestein; basenreichen Moränen und verwittertem Gehängeschutt
+";"Ein Weisseggenrasen dominiert die artenreiche; aber  spärlich ausgebildete Krautschicht mit krautigen Pflanzen; durchgehende Moosschicht
+";Moder bis Mull;"Rendzina; Feinmaterialreiche Gesteinsrohböden; Ranker 
+";"Mittel- bis tiefgründig; mindesten basenreiches Skelett bis zur Bodenoberfläche; nur mässig austrocknend 
+";9;1;;;;0;1;1;2;1;1;2;1;2;1;0;2;0;1;2;2;2;2;0;0;0;2;52T
+53;53;Polygalo chamaebuxi-Piceetum;"Fichte dominiert normalerweise; dazu Vogelbeere; Mehlbeere; stellenweise Föhren; Bergahorn; in den Zwischenalpen Lärche. Der Schlussgrad ist räumig bis aufgelöst. Die Bäume wachsen vor allem auf erhöhten Stellen; teilweise unter extremsten Bedingungen. Ausgeprägte Rottenstruktur.
+";15;25;27;17;;"Basische Unterlage; anstehende Kalkfelsen (oft Schrattenkalk); Tonschiefer; flachgründig. Sonnige Steilhänge; trocken
+";"Grasig; mit Blaugras; Erika; Zwergbuchs; wenig Buntreitgras
+";"Moder; stellenweise Mull; Rohhumus; Kalkmull; Kalkmoder; Tangelhumus. Teils erodiert; teils trockene Ausprägung";"Rendzina; stellenweise Braunerde; neutrale Braunerde; Pararendzina; Regosol; Gesteinsrohboden
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";9;1;1;;110;0;1;1;0;2;2;1;1;2;1;1;2;0;1;1;1;2;1;0;0;0;1;53
+53.1;53*   ;Erico-Piceetum;"Fichte dominiert; dazu besonders in Pionierphasen viel Waldföhre; zudem Lärche; Vogel- oder Mehlbeere; Pionierarten. Die Oberhöhe ausgewachsener Föhren muss grösser als 17 m sein; sonst handelt es sich um einen Föhrenwaldstandort. Der Schlussgrad ist locker bis räumig. Kleinkollektive und Einzelbäume; auch Rottenansätze.
+";20;30;32;20;;"Basische Unterlage (Kalk oder Dolomit); meist konsolidierter Hangschutt oder basenreiche Moräne; Hanglage; häufig Sonnenhänge; trocken.
+";"Erika dominiert; Waldwachtelweizen; säurezeigende Moose; Weissegge als gute Trennart zum Erika-Föhrenwald
+";"Moder; stellenweise Mull; Kalkmull; Kalkmoder; auch trockene Ausprägungen möglich; teils erodiert.";"Rendzina; stellenweise Gesteinsrohboden; Pararendzina; Braunerde; neutrale Braunerde
+";"Skelettgehalt gering bis sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis sehr hoch; keine Vernässung
+";9;1;9;0;;0;1;1;0;2;2;1;1;2;1;2;1;2;1;1;1;2;1;0;0;0;2;53Stern
+53.1000002;53*Ta ;;"Fichte dominiert; dazu besonders in Pionierphasen viel Waldföhre; mindestens einzelne Tannen können die Oberschicht erreichen. Zudem Lärche; Vogel- oder Mehlbeere; Pionierarten. Die Oberhöhe ausgewachsener Föhren muss grösser als 17 m sein;
+sonst handelt es sich um einen Föhrenwaldstandort. Der Schlussgrad ist locker bis räumig.
+Kleinkollektive und Einzelbäume; auch Rottenansätze.
+";0;0;0;0;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 53*
+";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+53.1000001;53*s  ;"Erico-Piceetum typicum; subalpine Ausbildung";"Fichte dominiert; meistens sind Lärche und Bergföhre beigemischt; selten auch die Waldföhre
+";18;25;28;20;;;"Zwergstrauchreich; oft mit Erica. Teilweise grasig und moosig. 
+";"Moder; teilweise Xeromoder; Kalkmoder; teilweise erodiert.";"Regosol; Rendzina
+";"Sleöettgehalt sehr hoch; Durchlässigkeit gut.
+";1;1;1;0;;0;1;1;2;2;2;1;2;2;1;0;2;0;1;1;1;0;2;0;0;0;2;
+53.00001;53A   ;Polygalo chamaebuxi-Piceetum aposeritetosum;"Fichte dominiert; dazu Lärche; Mehlbeere; Vogelbeere. 
+Der Schlussgrad ist locker bis räumig; Rottenstruktur
+
+";25;30;32;20;;"Eher flache Lagen auf basenhaltigem Untergrund. Die Flächen wurden oft beweidet.
+";"Krautschicht deckend; aber nicht üppig; mit viel Hainlattich und Waldwachtelweizen. 
+";Moder;"Neutrale Braunerde
+";"Skelettgehalt mittel; Gründigkeit mittel bis tief. Durchlässigkeit mittel bis hoch; keine Vernässung
+";9;1;;;;0;0;2;2;2;1;0;0;0;2;0;0;0;2;0;0;0;0;0;0;0;0;53A
+53.0000102;53ATa ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Lärche; Mehlbeere; Vogelbeere. Der Schlussgrad ist locker bis räumig; Rottenstruktur
+";0;0;32;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 53A
+";;;;9;1;;;;;;;;;;;;;;;;;;;;;;;;;;
+53.0000001;53Lä ;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Mehlbeere und Vogelbeere sind beigemischt; die immergrüne Fichte kommt nur spärlich vor. 
+";0;0;27;17;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 53
+";;;;9;1;;;;;;;;;;;;;;;;;;;;;;;;;;
+53.0000002;53Ta  ;;"Fichte dominiert normalerweise; mindestens einzelne Tannen können die Oberschicht erreichen; dazu Vogelbeere; Mehlbeere; stellenweise Föhren; Bergahorn; in den Zwischenalpen Lärche. Der Schlussgrad ist räumig bis aufgelöst. Die Bäume wachsen vor allem auf erhöhten Stellen; teilweise unter extremsten Bedingungen. Ausgeprägte Rottenstruktur.
+
+";0;0;27;17;;"In den nördlichen Randalpen (Region 1) in der hochmontanen Stufe verbreitet; in den übrigen Gebieten selten. 
+";"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 53
+";;;;9;1;;;;;;;;;;;;;;;;;;;;;;;;;;
+54;54;Melico-Piceetum typicum;"Mässig bis gut wüchsige Fichtenbestände; denen je nach Bestandesgeschichte mehr oder weniger Lärchen beigemischt sein können. Schlussgrad normal bis locker; Einzelbäume   
+";25;30;37;25;;"Mässig saure bis schwach basische Unterlage: Gehängeschutt und Moränen; abgewandte Lagen mit mässiger Einstrahlung; mässig geneigte Hänge 
+";"Spärlich deckende Bodenvegetation; in etwas aufgelichteten Beständen oft mit deutlichem Grasaspekt; wenig Krautpflanzen; Zwergsträucher sind vorhanden aber nicht aspektbestimmend. Stark deckende Moosschicht  
+";"Moder; leichte Tendenz zu Mull; in dichteren Beständen häufig auch Xeromoder";"Braunerden; neutrale Braunerde; Pararendzina; Rendzina; Regosol
+";"Mässig verwittert; oft mit etwas basenreichem Skelett im Hauptwurzelraum; Skelettgehalt mittel bis sehr hoch; Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung.
+";0;0;1;;110;1;2;1;2;2;2;2;0;0;2;0;0;0;2;2;1;2;2;0;0;0;0;54
+54.00001;54A   ;Melico-Piceetum atragenetosum;"Gut wüchsige Fichtenbestände; denen je nach Bestandesgeschichte mehr oder weniger Lärchen beigemischt sein können  
+";30;35;0;0;;"Mässig saure bis schwach basische Unterlage: meist auf gründigen Moränen; abgewandte Lagen mit geringer Einstrahlung; konkave Hangfusslagen; etwas feuchtere Mulden; kaum austrocknend; mässig geneigt
+";"Mässig bis gut deckende Bodenvegetation; in etwas aufgelichteten Beständen mit deutlichem Grasaspekt; zahlreiche; aber nicht üppig in Erscheinung tretende Krautpflanzen; Zwergsträucher sind vorhanden aber nicht aspektbestimmend. Stark deckende Moosschicht  
+";"Moder; leichte Tendenz zu Mull; im Interzeptionsbereich auch Xeromoder";"Braunerden; neutrale Braunerde; Pararendzina; Rendzina; Regosol
+
+";"Mässig verwittert; oft mit etwas basenreichem Skelett im Hauptwurzelraum; Skelettgehalt mittel bis sehr hoch; Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung.
+";;;;;;1;2;2;1;0;2;0;0;0;0;0;0;0;2;2;2;2;2;0;0;0;0;54A
+55;55;Veronico latifoliae-Piceetum;"Fichte dominiert; dazu Lärche und Vogelbeere. In gewissen Gebieten fehlt die Lärche nahezu vollständig. Der Schlussgrad ist normal bis locker. Kleinkollektive und Einzelbäume.
+";30;35;37;25;;"Saure Unterlage. Meistens Schattenhänge
+";"Krautig. Heidelbeere mit geringer Wuchshöhe; etwas Preiselbeere; Alpenlattich; Waldwachtelweizen
+";"Moder; stellenweise Rohhumus oder Mull";"Braunerde; Ranker; stellenweise Regosol; Pararendzina; podsolierte Braunerde; Braunpodsol; Podsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung
+";0;0;9;100;;1;2;1;2;2;2;2;0;0;2;0;0;0;2;2;1;2;2;0;0;0;0;55
+55.1;55*   ;Luzulo niveae-Piceetum;"Fichte dominiert; dazu Vogelbeere; Waldföhre; Lärche. In gewissen Gebieten fehlt die Lärche nahezu vollständig. Schlussgrad locker. Kleinkollektive und Einzelbäume; auch Rottenansätze.
+";25;35;27;20;;"Saure Unterlage; Steile Sonnenhänge; trocken
+";"Häufig spärlich ausgebildete Krautschicht. Schneesimse; Waldhabichtskraut; Waldwachtelweizen; Wollreitgras; Heidelbeere und Preiselbeere mit  
+ähnlichem Deckungswert und geringer Wuchshöhe
+";"Moder; trockene Ausprägung; teils erodiert";"Ranker; Braunerde; stellenweise Regosol; podsolierte Braunerde; Braunpodsol; Podsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";0;0;9;70;;1;2;1;0;1;2;1;1;2;1;0;0;0;2;1;1;2;1;0;0;0;2;55Stern
+55.1000001;55*Lä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; dazu Vogelbeere; Birke. Die immergrünen Fichten kommen nur spärlich vor. Schlussgrad locker. Kleinkollektive und Einzelbäume; auch Rottenansätze.
+";0;0;27;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 55*
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+55.1000002;55*Ta ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; Waldföhre; Lärche. In gewissen Gebieten fehlt die Lärche nahezu vollständig. Schlussgrad locker. Kleinkollektive und Einzelbäume; auch Rottenansätze.
+";0;0;27;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 55*
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+56;56;Sphagno-Piceetum;"Fichten; Bergföhren; Vogelbeere; Moorbirke; Birke; stellenweise schlechtwüchsige Tannen Schlussgrad räumig bis aufgelöst; oft stufige Bestände mit langbekronten Einzelbäumen und kleinen Rotten.
+";15;25;25;15;;"Stark stauender mineralischer Untergrund; flach; die organische Auflage ist bis zur Oberfläche vernässt (Torf). Die Bäume wurzeln im Torf. Im Gegensatz zum Hochmoor besteht ein Wasseraustausch mit der Umgebung
+";"Skelettfrei; flachgründig; undurchlässig bis übermässig durchlässig; stark vernässt Moosreich; mit Torfmoos; Grossem Haarmützenmoos; Heidelbeere
+";"Torf; Rohhumus feuchte Ausprägung; falls beweidet";"Organische Böden; Nassböden beeinflusst durch Stau-; Hang- oder Grundwasser; stellenweise nassgebleicht
+";"Skelettgehalt sehr gering; Gründigkeit mittel bis flach; Durchlässigkeit im organischen Bereich sehr bis äusserst hoch; im mineralischen Bereich gering bis sehr gering. Sumpfig bis sehr stark grundnass; Pseudogley oder Stagnogley.
+";0;0;1;80;;1;2;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;56
+57.000002;57Bl  ;"Homogyno-Piceetum; Blockausbildung";"Fichte dominiert; dazu Vogelbeere; stellenweise Bergföhre; Grünerle; in den kontinentalen Hochalpen (Region 3) auch Arve. Wegen dem ausgeprägten Kleinstandortsmosaik und den vielen nadelwaldfeindlichen Stellen sind viele langbekronte Einzelbäume und kleine Rotten vorhanden. Der Schlussgrad ist locker bis aufgelöst.
+";10;25;27;17;;"Ruhender Blockschutt oder Karren; oft Ablagerungsgebiet eines Bergsturzes; häufig Kaltluftströme im Blockschutt (Eiskeller)
+";"Moosreich; mit Heidelbeere und Farnen
+";"Rohhumus; stellenweise Tangelhumus; Moder";"Gesteinsrohboden; Ranker; Regosol; Pararendzina; Rendzina; teils stellenweise verbraunt
+";"Skelettgehalt sehr bis äusserst hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";0;9;9;30;;2;1;2;1;0;2;0;2;1;2;1;0;0;0;2;2;0;0;0;0;0;0;57Bl
+57.0000022;57BlTa;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; stellenweise Bergföhre; Grünerle. Wegen dem ausgeprägten Kleinstandortsmosaik und den vielen nadelwaldfeindlichen Stellen sind viele langbekronte Einzelbäume und kleine Rotten vorhanden. Der Schlussgrad ist locker bis aufgelöst.
+";0;0;27;17;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 57Bl
+";;;;0;9;;;;;;;;;;;;;;;;;;;;;;;;;;
+57.00002;57C   ;Homogyno-Piceetum calamagrostietosum villosae;"Fichte dominiert; dazu Vogelbeere; in kontinentalen Gebieten Lärche (Pionier); in schattigen Steilhängen mit starker Schneebewegung stellenweise einzelne Grünerlen. Schlussgrad locker bis räumig; oft mit waldfreien Runsen. Rottenstruktur
+";25;35;35;20;;"Saure Unterlage. Meistens Steilhänge. In den nördliche Randalpen alle Expositionen; sonst vor allem Schattenlagen
+";"Grasig. Viel Wollreitgras; dazwischen Heidelbeere und Moose
+";"Rohhumus oder Moder; teils erodiert";"Braunpodsol; Braunerde; stellenweise podsolierte Braunerde; Ranker; Regosol oder Podsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief;durchlässig; keine Vernässung
+";0;0;9;80;;1;2;1;2;2;2;1;2;0;2;0;0;0;2;1;1;1;1;0;0;0;0;57C
+57.0000201;57CLä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; dazu Vogelbeere; Grünerle. Die immergrünen Fichten und Arven kommen nur spärlich vor. Schlussgrad locker bis räumig; oft mit waldfreien Runsen. Rottenstruktur
+";0;0;35;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 57C
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+57.0000202;57CTa ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; in kontinentalen Gebieten Lärche (Pionier); in schattigen Steilhängen mit starker Schneebewegung stellenweise einzelne Grünerlen. Schlussgrad locker bis räumig; oft mit waldfreien Runsen. Rottenstruktur
+";0;0;35;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 57C
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+57.00007;57M   ;Homogyno-Piceetum melampyretosum sylvatici;"Fichten; dazu oft Lärche; etwas Vogelbeere. Recht geschlossene Bestände mit Tendenz zu Kleinkollektiven.
+";25;30;30;20;;"Saure Unterlage (Silikat). Vor allem Schattenhänge; meistens im unteren Bereich der subalpinen Stufe.
+";"Zwergstrauchreich; etwas mehr Heidelbeeren als Preiselbeeren; nicht üppig. Moosreich. Mit Waldwachtelweizen. Krautschicht häufig nicht deckend.
+";"Moder; stellenweise trockene Ausprägung";"Braunerde; stellenweise podsoliert; Ranker oder Regosol; Podsol
+";"Skelettgehalt hoch; Gründigkeit tief; durchlässig; keine Vernässung
+";0;0;9;120;;1;2;1;2;2;2;2;2;0;2;0;0;0;2;1;1;2;2;0;0;0;0;57M
+57.00012;57S   ;Homogyno-Piceetum sphagnetosum;"Fichte dominiert; dazu Vogelbeere; stellenweise einzelne Bergföhren. Der 
+Schlussgrad ist räumig bis aufgelöst. Ausgeprägte Rottenstruktur
+";20;30;30;20;;"Häufig auf toniger Unterlage oder sehr viel Niederschläge und kühle; schattige; luftfeuchte Lagen. Flache Lagen bis mässig geneigte Hänge; alle Expositionen
+";"Deckende Moosschicht mit Torfmoos; zwergstrauchreich; die Heidelbeere ist oft kniehoch; nur wenig Wollreitgras
+";"Mächtiger Rohhumus; in Mulden Torf; stellenweise Hydroform";"Nassböden beeinflusst durch Stau; Hang- oder Grundwasser; stellenweise nassgebleichte Nassböden oder teilweise vernässter Podsol
+";"Wenig Skelett; Gründigkeit mittel; Durchlässigkeit gering; Vernässung mittel bis stark
+";0;0;1;70;;1;2;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;57S
+57.0001202;57STa ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; stellenweise einzelne Bergföhren. Der Schlussgrad ist räumig bis aufgelöst. Ausgeprägte Rottenstruktur
+";0;0;30;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 57S
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+57.00014;57V   ;Homogyno-Piceetum vaccinietosum myrtilli;"Fichte dominiert; dazu Vogelbeere; in kontinentalen Gebieten Lärche (Pionier) ausgeprägte Rottenstruktur mit Schneelöchern
+";25;35;35;20;;"Saure Unterlage. Mässig geneigte Hänge; in den nördliche Randalpen alle Expositionen; in den Zwischenalpen vor allem Schattenlagen; in den kontinentalen Hochalpen nur an besonders kühlen; schattigen Lagen.
+";"Zwergstrauchreich; die Heidelbeere ist oft kniehoch. Deckende Moosschicht
+";"Rohhumus; stellenweise Moder";"Podsol; stellenweise podsolierte Braunerde; Braunpodsol; Ranker; Regosol; teilweise vernässt
+";"Skelettgehalt gering bis sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit sher hoch bis mittel; schwach pseudovergleyt bis keine Vernässung
+";0;0;9;70;;1;2;1;2;1;1;0;0;0;2;0;0;0;2;2;2;2;2;0;0;0;0;57V
+57.0001401;57VLä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere und Grünerle sind beigemischt; die immergrüne Fichte kommt nur spärlich vor. Rottenstruktur mit Schneelöchern.
+";0;0;35;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 57V
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+57.00018;57VM  ;Homogyno-Piceetum valerianetosum montanae;"Mässig bis gut wüchsige Fichtenbestände mit lockerem Schlussgrad und meist deutlicher Rottenstruktur. Im vorwiegend kontinentalen Verbreitungsgebiet können Lärchen und einzelne Arven beigemischt sein. Im Nebenbestand sind stellenweise Vogelbeeren eingestreut. 
+";25;35;0;0;;"Basische bis schwach saure Unterlage; mässig geneigte Hange; meidet Steilhänge und Plateaulagen; erscheint in allen Expositionen; im kontinentalen Raum werden abgewandte Lagen bevorzugt  
+";"Oft etwas lückige Bodenvegetation; spärlich entwickelte Zwergstrauchvegetation;  aspektdominierende Moosschicht; Im Interzeptionsbereich oft vegetationsarme Xeromoderflächen. 
+Krautpflanzen sind stets vorhanden jedoch mit geringer Deckung. Grasartige sind nur spärlich eingestreut.
+";"Moder; etwas Xeromoder unter den Kronen stellenweise geringmächtige Rohhumusauflage";"Regosol; schwach entwickelte Braunerden. 
+";"Mehr oder weniger tiefgründige; feinerdereiche; mässig bis wenig verwitterte Profile. Die oberen Horizonte sind entbast und oft schwach verbraunt. Kalk- bzw. dolomitreiches Skelett ist stets vorhanden. Eine Kalkgrenze findet sich im Hauptwurzelraum. Meist aus Mischgestein von Moränenablagerungen entstanden; gute Wasserspeicher-kapazität; mässige Durchlässigkeit
+";;;;;;0;0;1;2;2;0;0;2;0;2;0;2;0;2;1;1;1;2;0;0;0;2;57VM
+57.0001402;57VTa ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere und evt. Lärche. Ausgeprägte Rottenstruktur mit Schneelöchern.
+";0;0;35;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 57V
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+58;58;Larici-Piceetum typicum;"Fichte; dazu Lärche als Pionier (fehlt meistens im Vorderrheintal); etwas Vogelbeere; in den kontinentalen Hochalpen gegen die obersubalpine Stufe hin auch einzelne Arven. Der Schlussgrad ist locker bis räumig; Rottenstruktur
+";20;25;27;18;;"Saure Unterlage (Silikat). In den kontinentalen Hochalpen Hänge alle Expositionen; in den Zwischenalpen meistens Sonnenhänge
+";"Grasig; Wollreitgras nur mit mässigem Deckungswert; Heidelbeere mit geringer Wuchshöhe und mit ähnlichem Deckungswert wie die Preiselbeere
+";"Moder; stellenweise Rohhumus; stellenweise trockene Ausprägungen";"Braunerde; Ranker; Regosol; Braunpodsol; Podsol
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit flach bis sehr tief; durchlässig; keine Vernässung
+";0;0;9;50;;1;2;1;2;2;2;1;2;0;2;0;0;0;2;1;1;2;2;0;0;0;0;58
+58.000002;58Bl  ;"Larici-Piceetum typicum; Blockausbildung";"Schlechtwüchsige; locker bis aufgelöste Fichtenbestände mit deutlicher Rottenstruktur. Lärchen und einzelne Bergföhren oder Arven können beigemischt sein. Im Nebenbestand sind stellenweise Legföhren oder Vogelbeeren eingestreut. Zahlreiche; mehr oder weniger baumfeindliche Kleinstandorte sind stets vorhanden. Die trocken wirkende Bodenoberfläche wird durch grosse; ruhende Blöcke mit einer deutlichen Flechten- bzw. Zwergstrauchflora geprägt
+";18;0;27;18;;"Ruhende Blockschuttfelder mit mässiger Hangneigung. Die von historischen Bergstürzen stammenden granitischen Blöcke sind gross; neigen zur Überhitzung und zeigen immer eine starke Einstrahlung. Grosse Temperaturamplituden schränken das Baumwachstum deutlich ein. 
+";"Zwergstauchreiche; oft etwas lückige Bodenvegetation. Die Blöcke sind mit einer artenreichen Flechtenflora bewachsen; Moose sind zwischen den Blöcken und auf mächtigeren Humuspolstern vorhanden. Krautpflanzen sind nur spärlich eingestreut.
+";"Xero-Moder mit einzelnen trockenen Rohhumustaschen; teisl Tangelhumus";"Feinmaterialarme Gesteinsrohböden; Ranker; Regosol. Oft ist eine kleinstandörtliche Podsolierung vorhanden. 
+";"Zeitweise stark austrocknend und überhitzend. Skelettgehalt sehr bis äusserst hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung.
+";0;0;;;;2;1;2;1;0;2;0;2;1;2;2;0;0;0;2;2;0;0;0;0;0;2;58Bl
+58.00002;58C   ;Larici-Piceetum calamagrostietosum villosae;"Fichte; dazu oft Lärche. Der Schlussgrad ist locker bis räumig; Rottenstruktur
+";20;25;27;18;;"Saure Unterlage (Silikat). Mässig trockene Standorte in südexponierten Steilhängen
+";"Grasig; das Wollreitgras dominiert. 
+";"Moder; oft trockene Ausprägung";"Braunerde;Podsol; Ranker oder Regosol
+";"Skelettgehalt mittel bis sehr hoch;Gründigkeit tief bis sehr tief; durchlässig; keine Vernässung
+";0;0;2;;;1;2;1;0;2;2;1;2;0;2;0;0;0;2;1;1;2;2;0;0;0;0;58C
+58.00006;58L   ;Larici-Piceetum laserpitietosum halleri;"Fichte und Lärche (fehlt meistens im Vorderrheintal) dominieren; in den kontinentalen Hochalpen sind gegen die obersubalpine Stufe hin auch Arven
+eingestreut. Der Schlussgrad ist räumig bis aufgelöst. Ausgeprägte Rottenstruktur.
+";20;22;24;15;;"Saure Unterlage (Silikat); in den nördlichen Zwischenalpen nur auf sehr flachgründigen Standorten; meistens auf Rippen oder Hangschultern.
+Meistens Sonnenhänge; sehr häufig beweidet
+";"Karg; viele vegetationsfreie Stellen mit dürrer Nadelstreu. Viel Preiselbeere; Hallers Laserkraut; Wollreitgras; nur wenig Heidelbeere mit geringer Wuchshöhe
+";"Moder trockene Ausprägung; stellenweise Rohhumus trockene Ausprägung; teils erodiert";"Ranker; stellenweise podsolierte Braunerde; Braunpodsol
+";"Skelettgehalt hoch bis äusserst hoch; Gründigkeit mittel bis tief; durchlässig; keine Vernässung
+";0;0;1;100;;1;0;1;2;2;2;1;1;0;2;0;2;0;2;1;1;2;1;0;0;0;0;58L
+58.0000601;58LLä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere ist beigemischt; die immergrüne Fichte kommt nur spärlich vor. Der Schlussgrad ist locker bis räumig; Rottenstruktur
+";0;0;24;15;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 58L
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+58.0000001;58Lä ;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere ist beigemischt; die immergrüne Fichte kommt nur spärlich vor. Der Schlussgrad ist locker bis räumig; Rottenstruktur
+";0;0;27;18;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 58
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+59;59;Larici-Pinetum cembrae typicum;"Arve dominiert; dazu Lärche; Vogelbeere und Birke; stellenweise einzelne Fichten. Teilweise dominiert auch die Lärche; z. B. weil sie durch Kalhschläge oder Beweidung gefördert wurde. Der Schlussgrad ist locker bis räumig. Langkronige Einzelbäume oder Rotten mit wenig Bäumen 
+";15;25;25;15;;"Meist auf Silikatgestein; selten auch auf basischem Gestein möglich. Blockig-felsige Standorte werden bevorzugt. Meistens Schattenhänge.
+";"Üppige Zwergstrauchvegetation und dichte Moosschicht
+";"Rohhumus; stellenweise Moder";"Podsol; Braunpodsol; Ranker; Regosol; stellenweise podsolierte Braunerde; Gesteinsrohboden
+";"Skelettgehalt mittel bis äusserst hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";0;0;9;110;;1;0;1;1;2;1;2;2;1;1;2;0;0;2;1;1;0;0;0;0;0;0;59
+59.1;59*   ;Rhododendro ferruginei-Laricetum;"Lockere bis aufgelöste; häufig gleichförmig wirkende Lärchenbestände mit Grünerlen und einzelnen eingestreuten Vogelbeeren. Standorte mit viel Alpenrose ausserhalb des Arvenareals; entspricht etwa einem
+Lärchen-Arvenwald mit Alpenrose ohne Arve.
+";15;25;25;15;;"Kühle Lagen; oft grober; ruhender Blockschutt mit kältespeichernden Hohlräumen. Feinerdereichere Flächen wurden oft alpwirtschaftlich genutzt. Flache Lagen und mässig geneigte Schattenhänge
+";"Bis über 1 m hohe Alpenrosen; dazwischen kniehohe Heidelbeeren und Grünerlen. In stark beweideten Beständen grasige Vegetation.
+";Rohhumus;"Podsol auf Blockschutt; stellenweise Gesteinsrohboden; Ranker; Humuspodsol
+";"Skelettgehalt gering bis äusserst hoch; Gründigkeit gering bis sehr tief; Durchlässigkeit hoch bis äusserst hoch; keine Vernässung.
+";0;0;2;;;1;0;1;1;2;2;1;1;1;2;0;0;0;2;1;1;0;0;0;0;0;0;59Stern
+59.00001;59A   ;Adenostylo-Laricetum;"Lärche und Grünerle dominieren; dazu Vogelbeere; stellenweise auch Arve. In den Regionen 4 und 5 fehlt die Arve. Der Bestand ist stufig; mit Lärche (auf felsigen Kuppen) in der oberen Schicht und Grünerle (in wasserzügigen Mulden) in der unteren Schicht. Der Schlussgrad ist räumig bis aufgelöst. Langkronige Einzelbäume; selten Rotten mit wenig Bäumen
+";15;25;25;15;;"Kühl-feuchte; mittel bis stark geneigte Nordhänge mit langer Schneebedeckung; häufig im Bereich von Lawinenzügen
+";"Sehr üppige Hochstaudenflur; oft mit viel Alpenwaldfarn; auf Kuppen einige Zwergsträucher. In der Regionen 4 und 5 gibt es auch grasreiche Varianten. 
+";"Mull; feuchte Ausprägung und Moder; auf Kuppen auch Rohhumus";"Braunerde; stellenweise nasser Ranker; vernässter vernässte und podsolierte Braunerde; Braunpodsol; Podsol
+";"Skelettgehalt mittel bis hoch; Gründigkeit mittel; Durchlässigkeit mittel bis gering; leicht vernässt
+";0;0;;;;1;0;1;1;2;2;1;2;0;2;2;2;0;1;1;1;2;2;0;0;0;0;59A
+59.00002;59C   ;Cotoneastro-Pinetum cembrae;"Arve dominiert; dazu selten Lärche und stellenweise Bergföhre. Der Schlussgrad ist räumig bis aufgelöst. Langkronige Einzelbäume; selten Rotten mit wenig Bäumen
+";10;15;15;10;;"Silikat; selten auch auf Kalk; stark ausgeprägtes Kleinrelief mit vielen Felsen und Blöcken und wenig feinerdereichen Stellen. Extreme; steile Sonnenhänge; trocken.
+";"Artenreiche Krautschicht mit geringer Deckung; dazwischen oft felsige Partien; die höchstens eine Flechtenvegetation zeigen.
+";"Moder; trockene Ausprägung; stellenweise Rohhumus; trockene Ausprägung";"Gesteinsrohboden; Ranker; stellenweise podsolierte Braunerde; Braunpodsol
+";"Skelettreich; flachgründig; Durchlässigkeit übermässig bis normal
+";0;0;;;;1;0;2;0;2;2;1;1;1;2;2;0;0;2;1;1;0;0;0;0;0;0;59C
+59.00004;59E   ;Larici- Pinetum cembrae ericetosum;"Schlechtwüchsige; meist lückig bis aufgelöste; Arven-Lärchenbestände; denen einzelne Bergföhren beigemischt sind. Die Arven und Lärchen sind einzelstammweise oder in kleineren Gruppen verteilt. In den zahlreichen Lücken und Blössen dominieren oft vegetationsfreie Geröll- und Felspartien.  
+";15;20;20;13;;"Basenreiche Unterlage (tonarme Kalke; Dolomit); felsige oder blockige  mässig bis stark geneigte Hänge mit hoher Einstrahlung; zeitweise austrocknend
+";"Mässig bis stark deckende Bodenvegetation die von Zwergsträuchern mit geringer Wuchshöhe dominiert wird. Beweidete Bestände zeigen oft den grasigen Aspekt alpiner Blaugrasrasen. 
+";"Moder; Kalkmoder; teilweise trockene Ausprägung";"Gesteinsrohboden; Rendzina
+";"Die mineralischen Horizonte sind wenig verwittert; flachgründig und skelettreich; Feinerde ist nur spärlich vorhanden; grosse Durchlässigkeit; die Wasserspeicherkapazität ist gering.
+";9;1;;;;0;1;1;2;1;2;1;1;1;2;2;2;2;2;1;1;2;2;0;0;0;2;59E
+59.00016;59H   ;Larici-Pinetum cembrae rhododendretosum hirsuti;"Schlechtwüchsige; meist lückig bis aufgelöste; Arven-Lärchenbestände; denen einzelne Bergföhren beigemischt sind. Die Arven und Lärchen sind einzelstammweise oder in kleineren Gruppen verteilt. In den zahlreichen Lücken und Blössen gedeiht eine üppige oft über 1m hohe Zwergstrauchvegetation. Die Bestände sind meist von felsig-blockigen; baumfreien Partien durchsetzt
+";15;20;0;0;;"Basenreiche Unterlage (tonarme Kalke; Dolomit); felsige oder blockige  Nordlagen; kalt; geringe Einstrahlung; oft taufeucht; zeitweise austrocknend; mässig bis stark geneigt
+";"Stark deckende Bodenvegetation; üppige Zwergstrauchvegetation; Rhododendren; Aspektdominierende Moosschicht; im Interzeptionsbereich oft vegetationsarm; Krautpflanzen und Grasartige sind vor allem auf anstehendem  mineralischen Material herdenweise eingestreut. 
+";"Rohhumus; Tangelhumus; Xeromoder.";"Gesteinsrohboden; Rendzina
+";"Die mineralischen Horizonte sind wenig verwittert; flachgründig und skelettreich; Feinerde ist nur spärlich vorhanden; grosse Durchlässigkeit; die Wasserspeicherkapazität ist gering.
+";;;;;;0;1;1;2;2;2;1;1;1;2;2;2;2;2;1;1;2;2;0;0;0;0;59H
+59.00005;59J   ;Junipero-Laricetum;"Aufgelöste bis lockere; meist gleichförmige Lärchenbestände mit Vogelbeere; selten mit einzelnen Fichten; Tannen; Buchen oder Arven. Oft stark vom Menschen beeinflusst; teilweise Ersatzgesellschaft von 59 oder 47*
+";15;25;25;15;;"Silikat. Gleichmässige; eher trockene; steinige Hänge mit teilweise anstehendem Fels. Sonnenhänge. Die feinerdereicheren Lichtungen wurden oft alpwirtschaftlich genutzt.
+";"Teppiche von Zwergwacholder und anderen Zwergsträuchern; in Lichtungen grasig.
+";"Moder; stellenweise Rohhumus; trockene Ausprägungen; teils erodiert";"Ranker; Podsol; Gesteinsrohboden
+";"Skelettgehalt gering bis hoch; Gründigkeit flach bis tief; Durchlässigkeit äusserst hoch bis hoch; keine Vernässung.
+";0;0;2;;;1;0;1;2;1;2;1;1;1;1;0;2;0;2;1;1;2;1;0;0;0;0;59J
+59.00006;59L   ;Larici-Pinetum cembrae laserpitietosum halleri;"Arve dominiert; dazu Lärche (diese ist oft stärker vertreten als in der Ausbildung mit Alpenrose). Teilweise dominiert die Lärche; weil sie durch Kalkschlag oder wegen Beweidung gefördert wurde. Der Schlussgrad ist räumig. Langkronige Einzelbäume oder Rotten mit wenig Bäumen
+";15;25;25;15;;"Meist auf Silikat; selten auch auf Bündnerschiefer; feinerdereiche Böden; nur wenig Felsen und Blockschutt. Meistens Sonnenhänge; trocken.
+";"Grasig mit Wollreitgras; dazwischen auch Zwergsträucher 
+";"Moder; stellenweise Rohhumus; Mull; teilweise trockene Ausprägungen; teils erodiert";"Braunerde; Ranker; Regosol; Braunpodsol; Podsol.
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit sehr hoch bis mittel; keine Vernässung.
+";0;0;9;100;;1;2;1;2;1;2;1;1;2;1;0;2;0;2;1;1;2;1;0;0;0;0;59L
+59.0000601;59LLä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; die immergrüne Arve kommt nur spärlich vor. Der Schlussgrad ist locker bis räumig. Langkronige Einzelbäume oder Rotten mit wenig Bäumen
+
+";0;0;25;15;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 59L
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+59.0000001;59Lä ;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere und Birke sind beigemischt; die immergrüne Arve kommt nur spärlich vor. Der Schlussgrad ist locker bis
+räumig. Langkronige Einzelbäume oder Rotten mit wenig Bäumen
+";0;0;0;0;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 59
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+59.00018;59R   ;Larici-Pinetum cembrae rumicetosum scutati;"Mässig wüchsige; locker bis aufgelöste Lärchenbestände; denen einzelne Arven oder Fichten beigemischt sein können. Im Nebenbestand sind oft +/- grosskronige Vogel- und Mehlbeeren vorhanden. Die Bestände sind häufig pionierhaft und zeugen von früherer Beweidung. Die Bodenoberfläche wirkt meist grasig oder wird durch spärlich bewachsene; überhitzende Schuttflächen geprägt. 
+";15;28;30;20;;"Mehr oder weniger aktiver Blockschutt mit mittlerer bis feiner Blockgrösse. Harte; granitische oder serpentinithaltige Gesteine. Die mässig steilen Schutthalden finden sich im Schuttablagerungsbereich und zeigen immer eine starke Einstrahlung
+";"Grasige; oft etwas lückige; aber artenreiche Bodenvegetation. Die Blöcke wirken kahl; oft mit Flechten bewachsen; Moose sind höchstens spärlich vorhanden.
+";Moder mit einzelnen Humustaschen;"Feinmaterialarme Gesteinsrohböden; Ranker 
+";"Zeitweise stark austrocknend und überhitzend; auf bewegtem Blockschutt sind oft Restbasen und Nährstoffe vorhanden.
+";0;0;;;;0;0;1;2;0;0;0;2;0;2;0;1;1;1;1;1;0;2;0;0;0;0;59R
+59.00012;59S   ;;"Lärchen dominieren allein; in Gebieten wo die Arve von Natur aus schwach bis kaum vertreten ist.
+";15;25;25;15;;"Kalkhaltige Felsen; Terassen und Steile hängen. Meistens sonnige Hänge ; zeitweise austrocknend
+";"Lärche dominiert parkartig; darunter Rasen aus Blaugras; Berg-Reitgras Silberkraut mit wenige Sträucher.
+";"Moder; teilweise Xeromoder.";"Rendzina. Rohboden.
+";"Sehr flachgründig und skelettreich; Feinerde mit Humus ist dünn; mit knappe Wasserspeicherkapazität.
+";2;1;9;;;2;1;2;0;1;0;1;1;1;2;9;0;0;2;2;1;2;2;0;0;0;2;59S
+59.00014;59V   ;Larici-Pinetum cembrae vaccinietosum myrtilli;"Lockere Lärchen-Arvenwälder; teilweise fehlt die Lärche; teilweise mit Bergföhre.
+";15;25;25;15;;"Auf Silikatböden oder basenarmen Moränen. Hanglagen und Hangfusslagen
+";"Wegen ehemaliger Beweidung oft grasig. Moosschicht vorhanden; aber nicht üppig.
+";"Moder; stellenweise Rohhumus.";"Podsol; Braunpodsol; podsolierte Braunerde; stellenweise Regosol
+";"Skelettgehalt hoch bis sehr hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit sehr hoch bis mittel; keine Vernässung
+";0;0;2;;;1;2;1;2;2;2;2;0;0;2;0;0;0;2;1;1;2;2;0;0;0;0;59V
+59.0001401;59VLä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere ist beigemischt; die immergrüne Arve kommt nur spärlich vor.
+";0;0;25;15;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 59V
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+6;6;Galio odorati-Fagetum luzuletosum;"Wüchsiger Buchenwald; oft reine Buchenbestände; aber häufig auch Traubeneichen beigemischt. 
+";25;35;38;35;;"Kuppen; flache Hügelrücken und Hänge über kalkarmem oder tiefgründig ausgewaschenem Muttergestein
+";"Krautschicht oft artenarm und lückig. Oft moosige Stellen.
+";Moder;"Parabraunerde und stark saure Braunerde; teilweise vernässt
+";"Gründigkeit mittel bis sehr tief; biologische Aktivität etwas eingeschränkt; Durchlässigkeit mittel bis sehr hoch; aber auf Parabraunerden in tieferen Horizonten mancherorts etwas eingeschränkt. Keine Vernässung bis schwach pseudovergleyt
+";0;0;1;60;;1;2;2;0;1;2;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;6
+60;60;Adenostylo-Piceetum typicum;"Fichte dominiert; dazu Vogelbeere; Grünerlen; in basischen Ausbildungen einzelne Bergahorne. Der Schlussgrad ist räumig. Rottenstruktur.
+";25;35;37;22;;"Siltig-tonig verwitterndes Ausgangsgestein; meistens Hangbis Muldenlage; schattig; neblig; häufig etwas feuchtes Lokalklima. Vor allem Schattenhänge; häufig etwas wasserzügige Mulden.
+";"Sehr üppige Hochstaudenflur mit Grauem Alpendost; Alpenmilchlattich; dazwischen an erhöhten Stellen versauerte Kleinstandorte mit Heidelbeervegetation
+";"Mull bis Moder; stellenweise auf Kuppen auch Rohhumus; stellenweise feuchte Ausprägung von Mull und Moder";"Braunerde; Pararendzina; Regosol; Ranker; alle auch vernässt möglich
+";"Skelettgehalt gerigg bis hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit bis gering; schwach pseudovergleyt bis keine Vernässung
+";0;0;9;95;;1;2;1;1;0;2;2;2;0;2;2;0;0;2;1;1;1;1;0;0;0;0;60
+60.1;60*   ;Calamagrostio variae-Piceetum;"Fichte dominiert normalerweise; dazu Vogelbeere; Mehlbeere; stellenweise Alpenerle; Bergahorn; in den Zwischenalpen Lärche. Schlussgrad locker bis räumig; oft mit waldfreien Runsen; Rottenstruktur
+";20;30;30;20;;"Basische Unterlage; oft auf Tonschiefer; Steilhänge; eher in Schattenlage
+";"Grasig. Viel Buntreitgras; Kahler Alpendost; Dreiblattbaldrian; auf erhöhten Stellen Säurezeiger
+";"Mull; Moder stellenweise erodiert; Kalkmull; Kalkmoder";"Regosol; Pararendzina; Rendzina; alle auch vernässt möglich; stellenweise Gesteinsrohboden
+";"Skelettgehalt gering bis äusserst hoch; Gründigkeit mittel bis äusserst tief; Durchlässigkeit hoch bis gering; schwach pseudovergleyt bis keine Vernässung
+";9;1;1;;50;0;1;1;2;2;2;1;1;0;2;0;2;0;1;1;1;1;1;0;0;0;1;60Stern
+60.1000001;60*Lä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere ist beigemischt; die immergrüne Fichte kommt nur spärlich vor.
+";0;0;30;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 60*
+";;;;9;1;;;;;;;;;;;;;;;;;;;;;;;;;;
+60.1000002;60*Ta ;;"Fichte dominiert normalerweise; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; Mehlbeere; stellenweise Alpenerle; Bergahorn; in den Zwischenalpen Lärche. Schlussgrad locker bis räumig; oft mit waldfreien Runsen; Rottenstruktur
+";0;0;30;20;;"In den nördlichen Randalpen (Region 1) in der hochmontanen Stufe verbreitet; in den übrigen Gebieten selten. 
+";"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 60*
+";;;;9;1;;;;;;;;;;;;;;;;;;;;;;;;;;
+60.00001;60A   ;Adenostylo-Piceetum athyrietosum distentifolii;"Fichte dominiert; dazu Vogelbeere; Grünerlen; Der Schlussgrad ist locker bis räumig. Rottenstruktur
+";25;35;37;20;;"Saure Unterlage; meistens Schattenhänge
+";"Sehr üppig Farnflur mit Alpenwaldfarn; wenig Hochstauden; an erhöhten Stellen
+versauerte Kleinstandorte
+";"Mull und Moder; auf Kuppen Moder; stellenweise Rohhumus";"Braunerde; stellenweise podsolierte Braunerde; Regosol; Ranker; alle auch vernässt möglich
+";"Skelettgehalt mittel bis sehr hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit mittel bis gering; schwach pseudovergleyt bis keine Vernässung
+";0;0;9;100;;1;2;1;1;0;2;1;2;0;2;2;0;0;1;1;1;1;1;0;0;0;0;60A
+60.0000101;60ALä;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere und Grünerle sind beigemischt; die immergrüne Fichte kommt nur spärlich vor.
+";0;0;37;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 60A
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+60.0000102;60ATa ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; Grünerlen; Der Schlussgrad ist locker bis räumig.
+Rottenstruktur
+";0;0;37;20;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 60A
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+60.00004;60E   ;Adenostylo-Piceetum equisetetosum silvaticae;"Fichte dominiert; dazu Vogelbeere; Grünerlen. Der Schlussgrad ist aufgelöst. Ausgeprägte Rottenstruktur
+";15;25;25;15;;"Verdichtete Unterlage; häufig quellige Aufstösse im Bereich von Hangrutschungen oder vernässte Stellen entlang von kleinen Gewässern; meistens Mulden. Flache Lagen bis mässig geneigte Hänge.
+";"Üppige Hochstaudenflur mit Schachtelhalmen; Sumpfdotterblume; stellenweise im Bereich basischer Quellaufstösse Rostsegge.
+";"In Mulden vernässter Mull; stellenweise Anmoor; auf Kuppen Moder oder Rohhumus";"Nassböden beeinflusst durch Hang- oder Grundwasser; stellenweise nassgebleichte Nassböden beeinflusst durch Stauwasser; vernässter Regosol
+";"Skelett sehr gering bis hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis sehr gering. Sumpfig bis grundnass; Pseudogley bis pseudovergleyt. 
+";0;9;1;50;;1;2;0;1;0;1;0;0;0;0;0;0;0;0;0;0;2;2;2;1;2;2;60E
+60.0000402;60ETa ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; Grünerlen. Der Schlussgrad ist aufgelöst. Ausgeprägte
+Rottenstruktur
+";0;0;25;15;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 60E
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+60.0000001;60Lä ;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere udn Grünerle sind beigemischt; die immergrüne Fichte kommt nur spärlich vor.
+";0;0;37;22;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 60
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+60.0000002;60Ta  ;;"Fichte dominiert; mindestens einzelne Tannen können die Oberschicht erreichen. Dazu Vogelbeere; Grünerlen; in basischen Ausbildungen einzelne
+Bergahorne. Der Schlussgrad ist räumig. Rottenstruktur.
+";0;0;37;22;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 60
+";;;;0;0;;;;;;;;;;;;;;;;;;;;;;;;;;
+61;61;Molinio-Pinetum sylvestris;"Sehr offener Pionier-Föhrenwald; eingestreut sind der Mehlbeere; Eibe und Traubeneiche
+";8;15;17;14;;"Steile Rutschhänge; meist Mergel. Viele offene Erosionsflächen; stark wechseltrocken
+";"Gras- und seggenreich. Vegetationslose Erosionsflächen.
+";"Kalkmull (trockene Ausprägung); teils erodiert";"Rendzina; Pararendzina; teilweise vernässt.
+";"Skelettgehalt hoch bis äusserst hoch; Gründigkeit flach bis tief;  Durchlässigkeit mittel bis gering; grundnass bis keine Vernässung.
+";9;1;1;;0;0;1;2;0;2;0;1;2;0;2;0;1;2;1;1;0;1;1;0;0;0;1;61
+62;62;Cephalanthero-Pinetum sylvestris;"Föhrenwald mit Mehlbeere; anderen wärmeliebenden Baumarten; selten Buche und Bergahorn (krüppelig); Pionierbaumarten
+";10;18;20;18;;"Steile Hänge; meist Mergel; wechseltrocken
+";"Gras- und seggenreich. Oft strauchreich.
+";"Mull und Moder (trockene Ausprägung); stellenweise Kalkmull; teils erodiert";"Rendzina; Pararendzina; teils vernässt
+";"Skelettgehalt mittel bis hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit hoch bis gering; schwach grundnass bis keine Vernässung.
+";9;1;1;;0;0;1;2;0;2;0;1;2;0;2;0;0;0;2;1;0;1;1;0;0;0;1;62
+65;65;Erico- / Coronillo-Pinetum sylvestris;"Föhrenwald mit Mehlbeere; Vogelbeere; selten Eiche (Jura); viele Sträucher (z. B. Felsenmispel; Amelanchier ovalis)
+";10;20;20;15;;"Trockene Hänge und Kreten mit Kalk- oder Dolomitunterlage
+";"Krautig oder gras-/seggenreich. Oft strauchreich.
+";"Kalkmull (trockene Ausprägung); teils erodiert; stellenweise Moder; Kalkmoder (trockene Ausprägung)";"Rendzina; Pararendzina; Gesteinsrohboden; Regosol; Braunerde
+";"Skelettgehalt gering bis äusserst hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";9;1;1;;45;0;1;1;0;1;2;1;2;2;1;0;1;2;2;1;2;2;1;0;0;0;2;65
+65.1;65*   ;Ononido-Pinetum sylvestris;"Lichter Föhrenwald; manchmal mit eingestreuten Fichten und Lärchen; im Wallis auch Flaumeichen; Birke; Esche; Kirschbaum.
+";7;15;17;14;;"Kontinentales Klima. Sehr trockene Hänge auf Kalk und Dolomit.
+";"Flecken mit Gräsern; Seggen und/oder Kräutern zwischen solchen von mit Streuauflage oder nackter Mineralerde.
+";"Kalkmoder und Kalkmull (trockene Ausprägungen); z. T. erodiert.";"Rendzina; Pararendzina; Regosol
+";"Skelettgehalt gering bis äusserst hoch; Gründigkeit mittel bis sehr tief; durchlässig; keine Vernässung
+";9;1;1;;32;0;1;1;0;2;2;1;1;0;2;0;2;0;1;1;2;2;1;0;0;0;2;65Stern
+66;66;Pyrolo- und Ligustro-Pinetum;"Föhrenwald; beigemischt sind einzelne schlechtwüchsige Fichten; Eschen; Mehlbeeren; Kirschbäume; Traubeneichen; Winterlinden. In den kontinentalen Alpentälern Dauergesellschaft; nördlich der Alpen wahrscheinlich Entwicklungsstadium zum trockenen Eschen-Auenwald mit Weisssegge.
+";10;20;20;15;;"Trockenste Stellen der Aue; meist leicht erhöht und/oder mit sehr durchlässigem Untergrund; das Grundwasser erreicht nur die tieferen Bodenschichten.
+";"Sträucher oft dicht; oder fast fehlend (höhere Lagen).
+";"Moder; Kalkmoder; Kalkmull; teilweise trockene Auspräungen";"Auenböden; Regosol; Rendzina; Pararendzina; Gesteinsrohboden
+";"Boden sandig-lehmig;Skelettgehalt hoch bis äusserst hoch; Gründigkeit tief bis sehr tief; Durchlässigkeit hoch bis äusserst hoch; keine Vernässung
+";9;9;1;;0;2;1;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;2;0;0;0;2;66
+66.0001;66PM  ;;"Seltener Auenwaldtyp durch die aufrechte Form der Bergföhre dominiert. 
+";5;12;15;7;;"Durch die Auendinamick noch beeinflussten subalpinen Schwemmebenen. Meistens dominieren Kalkfelsen im Einzugsgebiet.
+";"Stufige Betsände mit Rottenbildung.Die Bergfähre prägt mit anderen Auenelementen (Weiden;) die Landschaft;. Am Boden artenreiches Gemisch von kleinflächigen; pionierartigen Davallseggenrieder mit Zwergsträucher.
+";"Moder; in Mulden amoorartig.";"Typischen Auenböden mit eingefügten verbraunten Schichten mit organische Substanz. 
+";"Kiesig-Lehmig; mit kalkreichere Sedimente. Teilweise durch dem Grundwasserspiegel bis an der Oberfläche beeinflusst.
+";1;1;9;;;0;1;0;2;0;1;0;0;0;0;0;0;0;0;0;2;0;1;1;1;2;1;66PM
+67;67;Erico-Pinetum montanae;"Schlecht wüchsiger Bergföhrenwald. Aufrechte Bergföhren und teilweise auch  Legföhren
+";4;15;15;10;;"Trocken-warme; südexponierte Hänge auf Kalk und Dolomit
+";"Zwergstrauchreich. Flecken mit dicker Streuauflage neben solchen mit Schuttboden.
+";"Kalkmoder (trockene Ausprägung); Tangelhumus; z. T. erodiert.";"Rendzina; Pararendzina; Regosol; Gesteinsrohboden.
+";"Skelettgehalt hoch bis äusserst hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis hoch; keine Vernässung
+";9;1;1;;20;0;1;1;0;1;2;1;1;2;1;2;2;0;1;1;2;2;1;0;0;0;2;67
+67.1;67*   ;Carici humilis Pinetum sylvestris;"Engadinerföhren dominieren; dazu etwas Bergföhre sowie schlechtwüchsige Fichten und Lärchen
+";12;18;20;15;;"Warme Steilhänge auf Kalk der Dolomit; fast ohne organische Auflage; mit viel riesender Feinerde. 
+";"Teilweise dominiert Carex humilis; die Vegetation ist artenreich; aber wenig üppig. 
+";"Xeromoder; Kalkmoder; oft erodiert";"Gesteinsrohboden bis Regosol/Rendzina. 
+";"Skelettgehalt sehr hoch bis äusserst hoch. Durchlässigkeit hoch. 
+";1;1;1;0;;0;1;2;0;2;2;1;2;0;2;0;1;2;2;1;1;0;1;0;0;0;2;
+68;68;Calluno-Pinetum sylvestris;"Waldföhre dominiert; dazu einzelne Traubeneichen; Fichten; Vogelbeeren; Bergföhren; Lärchen; Tannen.
+";10;18;20;15;;"Steile Hänge und felsige Kuppen auf Silikatgestein; trocken.
+";"Zwergstrauchreich.
+";"Moder; Rohhumus (trockene Ausprägung)";"Ranker; Gesteinsrohboden; stellenweise Podsol
+";"Flachgründig; übermässig durchlässig
+";0;0;;;;1;0;1;0;1;0;1;1;0;1;0;2;0;2;1;2;2;2;0;0;0;2;68
+68.1;68*   ;Vaccinio vitis-idaeae-Pinetum sylvestris;"Waldföhre dominiert; dazu Laubbäume wie Mehlbeere; Vogelbeere und Birke sowie stellenweise einzelne Fichten; Lärchen; Bergföhren und Arven.
+";10;15;17;14;;"Trockene Hänge auf Silikatgestein.
+";"Spärliche Krautschicht mit Zwergsträuchern; Flecken mit dicker Streuauflage
+";"Moder; Rohhumus (trockene Ausprägung)";"Ranker; Gesteinsrohboden; Regosol; Braunerde; Podsol. 
+";"Skelettgehalt sehr hoch bis äusserst hoch; Gründikgeit flach bis tief; Durchlässigkeit mittel bis sehr hoch; keine Vernässung
+";0;0;2;;;1;2;2;0;1;2;2;2;0;2;0;0;0;2;2;2;0;0;0;0;0;2;68Stern
+69;69;Rhododendro hirsuti-Pinetum montanae;"Schlecht wüchsiger Bergföhrenwald
+";4;15;15;10;;"Eher schattige Nord- bis Osthänge (Kontinentale Hochalpen) oder Südhänge (Nordalpen; Jura) auf Kalk und Dolomit.
+";"Zwergstrauchreich (insbesondere Alpenrosen). Dazwischen Stellen mit mächtiger organischen Auflage; Säure- und Kalkzeiger nebeneinander.
+";"Kalkmoder; Tangelhumus; z. T. erodiert.";"Rendzina; Pararendzina; Regosol; Gesteinsrohboden.
+";"Skelettgehalt hoch bis äusserst hoch; Gründigkeit mittel bis serh tief ; starke Humusauflage; durchlässig; keine Vernässung
+";9;1;1;;9;0;1;1;2;1;0;1;1;2;1;2;1;2;1;1;1;2;1;0;0;0;1;69
+7.1;7*    ;Galio-Fagetum blechnetosum;"Mischwald mit Buche; Tanne; Fichte; seltener Waldföhre und Stieleiche; nur vereinzelt andere Laubbäume. 
+";25;35;38;33;;"Ebenen und leicht geneigte Hänge. Vor allem auf Rissmoränen und verlehmten Rissschottern sowie sauren Moränen. 
+";"Oft lückig; mit ausgedehnter Moosdecke. 
+";Mullartiger Moder;"Vernässt Parabraunerde oder Braunerde; sauer; wechselfeucht und im Unterboden staunass.
+";"Gründigkeit sehr tief; biologische Aktivität tief; Durchlässigkeit mittel bis gering; schwach bis stark pseudovergleyt
+";0;0;1;100;;1;2;0;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;7Stern
+70;70;Rhododendro ferruginei-Pinetum montanae;"Schlecht wüchsiger Bergföhrenwald
+";4;15;15;10;;"Flache bis steile Lagen über sauren Gesteinen; vorwiegend regenreiche Gebiete
+";"Üusserst zwergstrauchreich (insbesondere Alpenrosen). Fast lückenloser Moosteppich.
+";Rohhumus;"Ranker; Gesteinsrohboden; Podsol.
+";"Skelettgehalt hoch; flachgründig; starke Humusauflage. 
+";0;0;;;;1;0;1;0;1;2;1;1;2;1;0;2;0;2;1;1;2;1;0;0;0;1;70
+71;71;Sphagno-Pinetum montanae;"Schlecht wüchsiger Bergföhrenwald im Hochmoor. 
+";4;15;15;10;;"Hochmoor oder hochmoorartiger Standort; die Pflanzen wachsen auf reinem organischem Material und leben nur vom Niederschlagswasser.
+";"Neben dem Torfmoos dominieren Zwergsträucher.
+";Torf;"Organischer Boden
+";"Übermässige Durchlässigkeit; im Untergrund oft undurchlässig
+";0;0;;;;1;2;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;2;2;1;71
+72;72;Sphagno-Pinetum cembrae;"Arve dominiert; dazu Vogelbeere; Bergföhre; stellenweise einzelne Fichten oder Tannen. Lärchen fehlen in der Regel vollständig. Der Schlussgrad ist räumig bis aufgelöst. Langkronige Einzelbäume; selten Rotten mit wenig Bäumen
+";10;20;22;14;;"Auf grossen Blöcken oder Karren. Felsige Steilhänge mit geringer Schneeablagerung; bevorzugt in Schattenlagen
+";"Üppige Zwergstrauchschicht; darunter dichter Moosteppich Sauer
+";"Tangelhumus; Rohhumus; Moder; stellenweise feuchte Ausprägungen";"Podsol; Regosol; stellenweise Rendzina; vernässter Regosol; vernässter Podsol; organische Böden; Gesteinsrohboden (in Klüften podsoliert)
+";"Skelettgehalt hoch bis äusserst hoch; Gründigkeit mittel bis sehr tief; Durchlässigkeit mittel bis sehr hoch; sehr schwach pseudovergleyt; schwach grundnass oder keine Vernässung.
+";0;9;1;80;;1;2;1;0;2;2;2;1;1;2;1;0;0;0;2;2;0;0;0;0;0;0;72
+72.0000001;72Lä ;;"Wegen Beeinflussung durch Schneebewegungen/Lawinen dominiert die Lärche; Vogelbeere ist beigemischt; die immergrüne Arve kommt nur spärlich vor.
+";0;0;22;14;;;"Strauch-; Kraut- und Moosschicht sowie Boden siehe bei 72
+";;;;0;9;;;;;;;;;;;;;;;;;;;;;;;;;;
+7.00012;7S    ;Galio-Fagetum stachyetosum sylvaticae;"Mischwald mit dominierender Buche; Bergahorn und Esche; Stieleiche; Kirschbaum. Gerade Stämme.
+";30;40;43;40;;"Hangfuss- und Tallagen
+";"Krautreich.
+";Mull;"Braunerde leicht vernässt oder Parabraunerde leicht vernässt
+";"Gründigkeit sehr tief; biologische Aktivität hoch;Wurzelraum für Buchen noch genügend durchlüftet; Durchlässigkeit mittel bis gering; Vernässung: sehr schwach bis stark pseudovergleyt oder grundnass
+";0;9;1;65;;1;2;2;1;0;2;2;0;0;0;0;0;0;0;0;0;2;0;0;2;2;0;7S
+7.001;7a    ;Galio-Fagetum typicum;"Buchenwald in dem fast alle Baumarten gut wachsen; doch ist die Konkurrenz der Buche stark; gerade Stämme. 
+";30;40;43;40;;"Ebenen und Hänge (ausser Steilhänge).
+";"Krautreich bis lückig. Unter Fichten oft dichte Brombeerdecke.
+";Mull;"Braunerde; Parabraunerde
+";"Skelettgehalt gering bis hoch; Gründigkeit sehr tief; Säuregrad schwach sauer bis sauer; biologische Aktivität hoch. Durchlässig. Vernässung keine bis sehr schwach pseudovergleyt.
+";0;9;1;60;;1;2;1;2;2;1;2;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;7a
+7.002;7b    ;Galio-Fagetum caricetosum remotae;"Wüchsiger Buchenwald mit einzelnen Bergahornen; Eschen; Stieleichen und Hagebuchen.     
+";30;40;40;36;;"In Ebenen und schwach ausgebildeten Muldenlagen. 
+";"Brombeere; Zittergras-Segge oder Adlerfarn dominieren oft. 
+";"Mull; Moder";"Braunerde oder Parabraunerde vernässt.
+";"Tief- bis äusserst tiefgründig. Hoher bis sehr geringer Skelettgehalt. Durchlssigkeit mittel bis gering. Stark bis sehr schwach pesudovergleyt. 
+";0;0;9;;;1;2;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
+8.1;8*    ;Milio-Fagetum blechnetosum;"Mischwald mit Buche; Tanne; Fichte; nur vereinzelten anderen Laubbäumen (an wärmeren Stellen Stieleiche möglich). Buche mit schlechter Holzqualität.
+";25;35;40;33;;"Ebenen und leicht geneigte Hänge; in tiefen Lagen Schattenhänge.
+";"Oft lückig; aber farnreich und mit dichter Moosdecke.
+";Typischer bis rohhumusartiger Moder;"Stark saure Braun- und Parabraunerde; meist vernässt und/oder podsoliert
+";"Gründigkeit sehr tief; biologische Aktivität tief; Durchlässigkeit mittel bis gering. Sehr schwach bis stark pseudovergleyt. 
+";0;0;1;100;;1;2;0;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;8Stern
+8.00012;8S    ;Milio-Fagetum stachyetosum sylvaticae;"Hochstämmiger Mischwald mit Buche; beigemischter Tanne; Bergahorn und Esche; kaum Eiche; Hagebuche; Kirschbaum in der Baumschicht; gerade Stämme. 
+";30;40;45;40;;"Hangfuss- und Tallagen; in tiefen Lagen Schattenhänge.
+";"Krautreich. Oft viele Farne.
+";Mull;"Braunerde vernässt oder Parabraunerde vernässt
+";"Gründigkeit sehr tief; biologische Aktivität hoch; Wurzelraum für Buchen noch genügend durchlüftet; Durchlässigkeit mittel bis gering; sehr schwach pseudovergleyt bis pseudovergleyt oder grundnass. 
+";0;9;1;100;;1;2;2;1;0;2;2;0;0;0;0;0;0;0;0;0;2;0;0;2;2;0;8S
+8.001;8a    ;Milio-Fagetum typicum;"Hochstämmiger Buchenwald mit beigemischter Tanne; dazu Bergahorn und Esche; kaum Eiche; Hagebuche; Kirschbaum in der Bauschicht; gerade Stämme.
+";30;40;45;40;;"Ebenen und Hänge (ausser Steilhänge); in tiefen Lagen Schattenhänge.
+";"Krautreich bis lückig. Oft viele Farne. Unter Fichten oft dichte Brombeerdecke.
+";"Mull; manchmal moderartiger Mull";"Braunerde; Parabraunerde
+";"Skelettgehalt gering bis hoch; Gründigkeit sehr tief; Säuregrad schwach sauer bis sauer; biologische Aktivität hoch; Durchlässigkeit mittel bis gering. Keine Vernässung oder sehr schwach pseudovergleyt.
+";0;9;1;60;;1;2;1;2;2;1;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8a
+8.002;8b    ;;"Wüchsiger Buchenwald mit hohem Tannen- und Fichteanteil sowie spärlicher Strauchschicht. 
+";30;40;40;36;;"In Ebenen und schwach ausgebildeten Muldenlagen.
+";"Brombeere; Adlerfarn oder andere Farne dominnieren oft. 
+";"Mull; Moder";"Braunerde oder Parabraunerde vernässt; stellenweise podsoliert. 
+";"Tief- bis äusserst tiefgründig. Hoher bis sehr geringer Skelettgehalt. Durchlssigkeit mittel bis gering. Stark bis sehr schwach pesudovergleyt.
+";0;0;9;;;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;
+8.004;8d    ;Milio odorati-Fagetum luzuletosum;"Wüchsiger Buchenwald; oft reine Buchenbestände; aber häufig auch Tanne beigemischt. 
+";30;38;43;38;;"Kuppen; flache Hügelrücken und Hänge über kalkarmem oder tiefgründig ausgewaschenem Muttergestein.
+";"Bodenvegetation oft artenarm. Oft moosige Stellen.
+";Moder;"Parabraunerde und stark saure Braunerde; teilweise vernässt
+";"Gründigkeit sehr tief; biologische Aktivität etwas eingeschränkt; Durchlässigkeit gering bis hoch; auf Parabraunerden in tieferen Horizonten oft etwas eingeschränkt. Keine Vernässung bis schwach pseudovergleyt
+";0;0;1;70;;1;2;1;0;1;2;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8d
+91;91;;"Die Robinie dominiert den Oberschicht begleitet durch verschiedenen potentiellen Baumarten im Unterwuchs. Lianen (Efeuil; Waldebe; Bromberen) und Laurophyllen. In zonalen Lagen und Wälder ohne starke Lichtungen wird der Robinienwald durch die im Unterwuchs herankommenden Schattbaumarten allmälich ersezt.
+
+
+
+";8;24;30;28;;"Pionierstandorte; Auenbereiche sowie jede Hänge in sommerwarmen; klimatisch milden Gebieten die eine Pionierphase erleben. Vorzüglich lichte Stellen; Blossee; Niederwälder mit gelegentlich Mineralerde an der Oberfläche.
+";"Lichte Beständemit üppigen; saftigen; dunkelgrünen Unterholz mit grossen Brombeere; Holunder und stickstoffliebenden Arten.
+";Mull;"Rohböden; Rendzina; Ranker bis Braunerde.
+";"Oberboden durchlässig; leicht; nährstoffreich; biologisch sehr aktiv durch
+";2;2;9;;;1;2;1;1;1;1;1;2;2;1;9;1;2;1;2;0;1;1;2;0;0;2;91
+92.001;92a   ;;"Monospezifische Bestände durch Götterbaum; Pawlonia; Mimose; Essigbaum oder andere exotischen; unnachgiebigen Baumarten durch den ausgesprochenen Pioniercharakter gekennzeichnet. Die anthopischen Störungen sowie azonalen Standortsverhltnissen verhindern grossenteil das Ausreifen und die Sukzessionsabfolge. Die Bestände bleiben lange intakt und Verjüngen sich gleich vor Ort. Mittelfristig haben manche laurophyllen Elementen im Unterwuchs die Chance eine Beschattung zu sichern.
+";5;24;27;25;;"Azonale standorte; Blockhalden; ständig aktiven Rütschungen; Verankerung der Bäume schlecht; z.T. gestörte Auenbereiche. Anthropogenen Standorten (Kahlschlägen; Strassenränder; Böschungen; Müllhalden; ...) wo eine Ausreifung der Bestände mittelfristig schwierig ist.
+";"Unterholz häufig durch nitrophile Flora; Brombeeren; wenige Laurophyllen.
+";Mull-Moder;"Häufig mit Mineralerde; Steine und Blöcke an der Oberfläche; wenig Humus; auch auf Abfälle und Trummer.
+";"Durchlässig; zeitweise stark austrockend aber nicht nöhrstoffarm.
+";2;1;9;;;1;1;1;1;1;1;1;1;1;1;9;1;1;1;1;0;1;1;1;0;0;0;92a
+92.018;92z   ;;"Monospezifische Bestände durch Götterbaum; Pawlonia; Mimose; Essigbaum oder andere exotischen; unnachgiebigen Baumarten durch den ausgesprochenen Pioniercharakter gekennzeichnet. Die Bestände werden mit der zeit dichter und schattiger. Ein Ausreifen und die Sukzessionsabfolge sind vaoraussehbar. Manche laurophyllen Elementen verbreiten sich im Unterwuchs.
+";0;0;27;25;;"Zonale Standorte; relativ fruchtbar. Die Bäume können stabil  wachsen . Wenig Storung auch in die Benachbarten Bestände; die Wilddichte tragbar; zunehmenden Beschattunsverhältnissen.
+";"Nitrophile und Pionierarte wuchern. Üppige einseitige Oberschichten lassen hie und da Platz für die Entwicklung des Unterholzes.
+";Mull (Moder);"Saure Braunerde. Rendzina oberflächlich verbraunt.
+";"Mittelgründig; humos; durchlässig aber nicht extrem trocken so dass ein Unterschicht sich im Schirm einsetzen kann.
+";9;9;9;;;1;2;1;1;1;1;0;2;2;2;9;0;0;2;0;0;0;0;2;0;0;0;92z
+93;93;;"Mischwälder aus Kastanie; Eschen; Linden wo die Immergrünen Laubbaumarten mitherrschen: Einheimische (Abies; Ilex; Taxus; Hedera); sowie  Gastbaumarten (Laurus; Quercus Ilex; Cinnamomum; Ligustrum lucidum; ...). Die Vegetationsperiode estreckt sich bis in den Wintertagen uns ist gut angepasst an den milden Klimabedingungen Insubriens.
+";18;16;35;30;;"Wintermilden Lagen; in Seenahen Bereich Insubriens.
+";"Substropisches Aspekt mit Lianen und wuchernden Efeuil. Der Unterholz zeigt eine lebhafte Naturverjüngung der obenstehenden Baumarten sowie Palmen und Sträucher (Kirschlorbeer; Elaeagnus; Phyracantha; ... Die Krautschichtarten sind mehrheitlich einhemisch; Silikat oder kalkliebenden Arten.
+";Mull-Moder;"Miestens mittelgründigen Braunerden oberflächlich versauert. Auf kalk: gut entwickelten Rendzinen und kolluvialen Böden oben verbraunt.
+";"Mittelgründige Fruchtbare Standorte; mit gute Wasserspeicherkapazität.
+";0;2;9;;;1;2;1;1;2;2;2;2;2;2;9;2;0;2;2;0;2;0;2;0;0;2;93
+9.001;9a    ;Pulmonario-/ Lathyro-Fagetum typicum;"Buchenwald; in dem fast alle Laubbaumarten eingestreut sein können. Die Lärche ist im Mittelland und Jura wenig geeignet; in den kontinentaler geprägten Gebieten (2a und angerenzend) gedeiht sie gut. 
+";25;35;43;38;;"Hanglagen; meist auf stabilisiertem Kalkschutt.
+";"Oft dominieren Bingelkraut und/oder Kalkzeiger.
+";"Mull; stellenweise Kalkmull";"Rendzina oder Pararendzina; manchmal etwas verbraunt
+";"Skelettgehalt hoch; Gründigkeit tief; biologische Aktivität hoch; gelegentliche Sommertrockenheit; Durchlässigkeit mittel
+";9;1;1;;50;0;1;1;2;2;2;1;2;0;2;2;2;0;1;2;0;0;2;0;0;0;0;9a
+9.014;9w    ;Pulmonario-/ Lathyro-Fagetum caricetosum flaccae;"Buchenwald; in dem fast alle Laubbaumarten eingestreut sein können. 
+";20;30;36;33;;"Hanglagen; meist Mergel
+";"Oft dominieren Schlaffe Segge und/oder Kalkzeiger. Teilweise kriechender Liguster.
+";"Mull; stellenweise Kalkmull";"Rendzina oder Pararendzina; manchmal etwas verbraunt
+";"Gründigkeit tief; biologische Aktivität mittel bis hoch; wechselnder Bodenwasserhaushalt; gelegentliche Sommertrockenheit; Durchlässigkeit mittel bis gering; keine Vernässung
+";9;1;1;;20;0;1;1;2;2;2;1;2;0;0;0;2;0;2;2;0;2;2;0;0;0;2;9w

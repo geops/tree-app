@@ -1,0 +1,81 @@
+ART_SISF_NR; ART_NAM_LAT; ART_NAM_DEU; ART_NAM_FRZ; ART_NAM_ITA; ART_SCHICHT_STD; ART_HS_COLLIN; ART_HS_SUBMONTAN; ART_HS_UNTERMONT; ART_HS_OBERMONT; ART_HS_HOCHMONT; ART_HS_SUBALPIN; ART_HS_OBSUBALP; ART_REGION_J; ART_REGION_M; ART_REGION_1; ART_REGION_2A; ART_REGION_2B; ART_REGION_3; ART_REGION_4; ART_REGION_5A; ART_REGION_5AA; ART_REGION_5B; ART_EIG_GRP; ART_ZEIG_DET; ART_ZEIG_FLO; ART_LEBENSR
+100;Abies alba;Tanne;"Sapin; Sapin blanc";Abete bianco;1;2;2;1;1;1;9;0;1;1;1;1;2;0;2;1;1;1;;;t3k2l1f4w2r3n3h5d1;2.9 9.1 9.2
+300;Acer campestre;Feldahorn;Erable champêtre;"Acero oppio; Loppio";1;1;1;2;0;0;0;0;1;1;1;1;1;2;2;1;1;1;;;t4k3l3f2.5w1r3n3h3d3;7.4 9.1 9.2 9.3
+600;Acer opalus;Schneeballblättriger Ahorn;Erable à  feuilles d'obier;Acero alpino;0;1;1;2;2;0;0;0;1;2;2;1;1;0;0;0;0;0;;;t4.5k3l3f2w1r4n3h3d3;7.4 9.2 9.3
+700;Acer platanoides;Spitzahorn;Erable plane;Acero riccio;1;1;1;2;2;0;0;0;1;1;1;1;2;2;9;9;9;9;;;t4k3l2f3w1r4n3h3d1;2.9 7.4 9.2
+800;Acer pseudoplatanus;Bergahorn;Erable des montagnes;Acero di monte;1;2;1;1;1;1;2;0;9;9;9;9;9;9;9;9;9;9;;;t3k2l2f3.5w3r3n3h3d1;3.3 7.4 9.1 9.2
+6900;Aesculus hippocastanum;Rosskastanie;Marronnier;Ippocastano;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4k2l3f3.5w2r4n3h3d3;2.9 9.2
+9500;Ailanthus altissima;Götterbaum;Ailante;Ailanto;0;1;2;9;9;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t4.5k3l4f2w1r4n4h3d3;2.2 2.9 7.4 9.2
+25200;Alnus glutinosa;Schwarzerle;Aulne glutineux;Ontano comune;1;1;1;2;0;0;0;0;1;1;1;2;2;2;2;1;1;1;;;t4k3l3f4.5w3r3n4h5d1;7.5 9.2
+25300;Alnus incana;Grauerle;Aulne blanchâtre;Ontano bianco;1;2;1;1;1;2;0;0;1;1;1;1;1;2;1;1;1;1;;;t3k3l3f4w3r4n4h3d1;7.5 9.2
+25400;Alnus viridis;Alpenerle;Aulne vert;Ontano verde;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t2k2l3f4w3r2n4h3d1;8.1 8.2 9.1 9.2
+60400;Betula pendula;Hängebirke;Bouleau pendant;Betulla verrucosa;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;;;t3.5k3l4fxw2rxn2hxdx;2.6 7.4 9.1 9.2
+60500;Betula pubescens;Moorbirke;Bouleau pubescent;Betulla pubescente;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3k3l4f4w2rxn2h5d1;7.4 8.1 9.1
+96900;Carpinus betulus;Hagebuche;Charme;Carpino comune;1;1;2;0;0;0;0;0;1;1;2;2;2;0;2;1;1;1;;;t4k3l2f3w2r3n3h3d3;7.4 9.2
+97200;Castanea sativa;Kastanie;Châtaignier cultivé;Castagno comune;1;1;1;1;0;0;0;0;0;0;0;0;0;0;0;1;1;1;;;t4.5k3l3f3w1r2n2h3d3;2.9 9.2 9.3
+97800;Celtis australis;Zürgelbaum;Micocoulier;Bagolaro;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t5k2l3f2w1r3n3h3d3;2.9 7.4 9.3
+107150;Chamaecyparis lawsoniana;Lawsons Zypresse;Cyprès de Lawson;Cipresso di Lawson;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k3l3f2.5w1r3n2h3d3;2.7 2.9
+113350;Cinnamomum glanduliferum;Drüsiger Kampferbaum;Cannelier glanduleux;Cinnamomo ghiandoloso;0;;;;;;;;;;;;;;;;;;;;;
+113399;Cinnamomum camphora;Kampferbaum;;;0;;;;;;;;;;;;;;;;;;;;;
+137700;Diospyros lotus;Lotuspflaume;Plaqueminier lotier;"Albero di Sant' Andrea; Loto falso";1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t5k2l3f3w1r3n3h3d3;2.9 7.4 9.2
+165000;Fagus sylvatica;Buche;Hêtre;Faggio comune;1;2;1;1;1;0;0;0;1;1;1;1;0;0;0;1;1;1;;;t3.5k2l1f3w1r3n3h3d3;7.4 8.1 9.2 9.3
+172200;Ficus carica;Feige;Figuier;Fico;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t5k2l3f2w2r3n3h3d3;2.9 3.2 7.4
+174200;Fraxinus excelsior;Gemeine Esche;Frêne commun;Frassino comune;1;1;1;1;2;2;0;0;1;1;1;1;1;2;1;1;1;1;;;t3.5k3l3f3.5w3r4n3h3d1;7.4 9.1 9.2 9.3
+174300;Fraxinus ornus;Blumenesche;Frêne à  fleurs;Frassino da manna;0;1;1;1;0;0;0;0;0;0;0;0;0;0;0;1;1;1;;;t4.5k3l3f2w1r4n2h3d5;7.4 9.1 9.2 9.3
+213300;Ilex aquifolium;Stechpalme;Houx;Agrifoglio;1;1;2;2;0;0;0;0;2;2;2;2;2;0;2;1;1;1;;;t3.5k2l2f2.5w1r3n3h3d3;9.1 9.2 9.3 9.4
+217500;Juglans regia;Nussbaum;Noyer royal;Noce comune;1;1;1;2;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t4k2l3f2.5w1r4n4h3d3;2.9 9.2 9.5
+220400;Juniperus communis;Gewöhnlicher Wacholder;Genévrier commun;Ginepro comune;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3.5k4l4f2w2r3n2h3d1;3.2 7.4 9.1 9.2
+224200;Laburnum alpinum;Alpen Goldregen;Aubour des Alpes;Maggiociondolo di montagna;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;1;1;;;t4k3l3f3w1r3n3h3d3;3.2 3.3 7.4 9.2
+224300;Laburnum anagryoides;Gewöhnlicher Goldregen;Aubour commun;Maggiociondolo comune;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;1;1;;;t4.5k3l3f2.5w1r4n3h3d3;3.3 7.4 9.2 9.3
+227200;Larix decidua;Lärche;Mélèze;Larice comune;1;2;2;2;2;1;1;1;2;2;2;2;1;1;1;2;2;2;;;t2k4l4f3w1r2n2h3d3;7.1 8.1 8.2 9.1
+231500;Laurus nobilis;Edellorbeer;Laurier noble;"Alloro; Lauro";1;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t5k2l2f2w1r3n2h3d3;2.9 9.2 9.3 9.4
+238050;Ligustrum lucidum;Baum-Liguster;Troène de Chine;;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t5k2l3f2.5w1r3n3h3d3;2.9 9.2
+252900;Malus sylvestris;Wildapfel;Pommier sauvage;Melo selvatico;0;2;1;2;0;0;0;0;1;1;2;2;2;2;2;2;2;2;;;t3.5k3l3f3w2r4n3h3d3;3.3 7.4 9.2 9.3
+275100;Olea europaea;Ölbaum;Olivier;Olivo;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t5k1l4f2w1r3n2h3d3;2.9 3.2 7.4 7.6
+287100;Ostrya carpinifolia;Hopfenbuche;Charme houblon;Carpino nero;1;1;2;2;0;0;0;0;0;0;0;0;0;0;2;1;1;1;;;t4.5k3l2f2w1r4n3h3d3;7.4 9.1 9.2 9.3
+302800;Picea abies;Fichte;Epicéa;"Abete rosso; Peccio";1;2;2;1;1;1;1;2;1;1;1;1;1;1;1;1;2;2;;;t2.5k3l1f3w1rxn3h5d3;8.1 8.2 9.1 9.2
+304900;Pinus cembra;Arve;Arolle;"Pino cembro; Cirmolo";1;0;0;0;0;0;2;1;0;0;2;2;1;1;2;2;0;0;;;t2k4l3f3w1r2n2h5d3;6.5 7.1 8.2 9.1
+305500;Pinus mugo;Leg-Föhre;Pin couché;"Pino mugo; Parancio";0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t2k4l4f2.5w2rxn2h1d3;6.5 8.1 8.2 9.1
+305800;Pinus uncinata;Bergföhre;Pin à  crochet;Pino uncinato;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t2k4l4f2.5w2r3n2h3dx;2.9 3.2 9.1
+305900;Pinus nigra;Schwarz-Föhre;Pin noir;"Pino nero; Pino austriaco";0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k4l4f2w2r4n2h3d3;2.9 3.2 9.1 9.3
+306000;Pinus strobus;Strobe;Pin Weymouth;Pino strobo;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4k3l3f3w1rxn2h3d3;2.9 9.2
+306100;Pinus sylvestris aggr.;Waldföhre;Pin sylvestre;"Pino silvestre; Pino rosso";1;2;1;1;1;1;2;0;1;1;1;1;1;1;1;2;2;2;;;txk4l4fxw3rxn2h3d3;
+308600;Platanus hispanica;Platane;Platane d'Espagne;Platano di Spagna;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k2l3f3.5w2r3n3h3d3;2.9
+317100;Populus alba;Silberpappel;Peuplier blanc;"Pioppo bianco; Gattice";1;1;2;2;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t4.5k3l4f3.5w3r4n4h3d1;2.9 9.2
+317300;Populus nigra;Schwarzpappel;Peuplier noir;;1;1;2;2;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t4k3l3f4w3r4n4h3d1;2.5 2.9 7.4 9.2
+317500;Populus tremula;Zitterpappel;Tremble;Pioppo tremulo;1;2;1;1;1;1;1;2;1;1;1;1;1;1;1;1;1;1;;;t3k3l4f3w3r3n3h3d1;7.4 8.1 8.2 9.2
+328400;Prunus avium;Kirschbaum;Cerisier sauvage;Ciliegio;1;1;1;2;2;2;0;0;1;1;1;1;1;2;1;1;1;1;;;t4k3l3f3.5w1r3n3h3d3;2.9 7.4 9.2
+329500;Prunus mahaleb;Felsenkirsche;Merisier odorant;Ciliegio canino;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k4l3f1.5w1r4n2h1d3;7.4 9.1 9.3 9.4
+329700;Prunus padus;Traubenkirsche;Merisier à  grappes;;0;1;1;2;0;0;0;0;1;1;1;1;1;2;2;1;1;1;;;t4k2l2f3.5w3r3n3h3d1;7.4 9.2
+330200;Prunus serotina;Herbst-Traubenkirsche;Merisier tardif;Pruno autunnale;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k4l2f2.5w2r2n3h3d3;2.9 7.4 9.2
+330600;Pseudotsuga menziesii;Douglasie;Sapin de Douglas;Abete di Douglas;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3.5k2l2f3w1r2n2h5d3;2.9 9.2
+335300;Pyrus pyraster;Wildbirne;Poirier sauvage;Pero selvatico;0;2;1;2;0;0;0;0;1;1;1;1;1;2;1;1;1;1;;;t4k4l3f2w2r4n3h3d3;2.9 7.4 9.2 9.3
+335600;Quercus cerris;Zerreiche;Chêne chevelu;Quercia cerro;0;1;2;2;0;0;0;0;0;0;0;0;0;0;2;2;2;1;;;t4.5k4l4f2w2r3n2h3d3;2.9 7.4 9.2 9.3
+335800;Quercus ilex;Steineiche;Chêne vert;Leccio;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t5k2l2f1w2r3n3h3d3;7.4 7.6 9.3 9.4
+335900;Quercus petraea;Traubeneiche;Chêne sessile;Quercia rovere;1;1;1;2;0;0;0;0;1;1;1;1;1;0;1;1;1;1;;;t4k3l3f2w2r3n2h3d3;9.1 9.2 9.3
+336000;Quercus pubescens;Flaumeiche;Chêne pubescent;"Quercia pubescente; Roverella";1;1;0;0;0;0;0;0;1;2;2;2;1;0;2;2;2;1;;;t4.5k3l3f2.5w2r3n2h3d3;7.4 9.1 9.3
+336100;Quercus robur;Stieleiche;Chêne pédonculé;"Quercia comune; Farnia";1;1;1;2;0;0;0;0;1;1;1;2;2;3;2;2;2;2;;;t4k3l3f3.5w3r3n3h3d1;9.2 9.3
+336200;Quercus rubra;Roteiche;Chêne rouge;Quercia rossa;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k2l3f3w1r3n3h3d3;2.9 9.1 9.2
+336250;Quercus suber;Korkeiche;;;1;;;;;;;;;;;;;;;;;;;;;
+345600;Rhus typhina;Essigbaum;Sumac;Sommacco maggiore;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k2l4f2w1r3n3h3d3;2.9 7.4 9.5
+346500;Robinia pseudoacacia;Robinie;Robinier faux acacia;Robinia;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4.5k3l3f2.5w1r3n4h3d3;7.4 9.2 9.3 9.5
+362800;Salix alba;Weissweide;Saule blanc;Salice comune;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4k3l3f4.5w3r4n4h1d1;2.9 2.5 9.2
+363700;Salix caprea;Salweide;Saule marsault;Salice delle capre;1;2;1;1;1;1;2;0;1;1;1;1;1;2;1;1;1;1;;;t3k3l3f3w3r3n3h3d1;2.6 7.4 7.5 9.2
+363900;Salix daphnoides;Reifweide;Saule pruineux;Salice dafnoide;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3.5k3l4f4w3r4n2h1d1;2.9 7.5 8.1 9.2
+364000;Salix elaeagnos;Lavendelweide;Saule drapé;Salice ripaiolo;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3.5k3l4f4w3r4n2h1d1;2.5 7.5 8.1 9.2
+364200;Salix foetida;Stinkweide;Saule fétide;Salice fetido;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t1.5k2l4f4w3r3n2h3d1;3.3 4.1 5.1 8.1
+364300;Salix fragilis;Bruchweide;Saule fragile;Salice fragile;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3.5k2l4f4.5w3r3n3h1d1;2.9 9.2
+365800;Salix purpurea L.;Purpurweide;"Osier rouge; Saule pourpre";Salice rosso;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;;
+402200;Sorbus aria;Mehlbeere;Alisier blanc;"Sorbo montano; Farinaccio";1;2;1;1;1;1;2;0;1;1;1;1;1;1;1;1;1;1;;;t3.5k3l3f2w2r3n2h3d3;7.4 9.1 9.2 9.3
+402300;Sorbus aucuparia;Vogelbeere;Sorbier des oiseleurs;Sorbo degli ucellatori;1;2;2;2;1;1;1;2;1;1;1;1;1;1;1;1;1;1;;;t3k3l3f3w1r3n3h3d3;2.6 7.4 9.1 9.2
+402500;Sorbus domestica;Speierling;Sorbier domestique;Sorbo comune;1;1;2;0;0;0;0;0;1;1;2;2;2;0;0;0;0;0;;;t4.5k2l3f3w2r4n2h3d3;2.9 7.4 9.2 9.3
+402600;Sorbus mougeotii; Mougeots-Mehlbeere;Sorbier de Mougeot;Sorbo di Mougeot;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3k3l3f2w2r4n2h3d3;7.4 9.1 9.2 9.3
+402700;Sorbus torminalis;Elsbeere;Alisier torminal;Sorbo torminale;0;1;1;2;0;0;0;0;1;1;2;0;0;0;0;0;0;0;;;t4k4l3f2w2r4n2h3d3;2.9 9.2 9.3
+402750;Sorbus x latifolia (Lam.) Pers.;Breitblättriger Mehlbeerbaum;Sorbier à  larges feuilles;Sorbo maggiore;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;;
+413600;Taxus baccata;Eibe;If;Tasso comune;1;1;1;1;0;0;0;0;1;1;1;2;2;0;2;1;1;1;;;t3.5k2l2f2.5w3r4n2h3d3;2.9 9.1 9.2 9.3
+421400;Tilia cordata;Winterlinde;Tilleul à  petites feuilles;Tiglio selvatico;1;1;1;1;2;2;0;0;1;1;1;2;2;2;1;1;1;1;;;t4k4l2f2.5w1r3n2h3d3;9.2
+421500;Tilia platyphyllos;Sommerlinde;Tilleul à  larges feuilles;Tiglio nostrano;1;1;1;1;2;2;0;0;1;1;1;1;2;2;1;1;1;1;;;t4k2l2f3w1r4n3h3d3;2.9 9.2
+422450;Trachycarpus fortunei;Hanfpalme;Palmier chanvre;Palma di Fortune;0;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t5k1l3f3w3r3n3h3d3;2.9 9.2
+432800;Ulmus glabra;Bergulme;Orme montagnard;Olmo di montagna;1;0;2;1;1;1;2;0;1;1;1;1;1;2;1;1;1;1;;;t3.5k2l2f3.5w3r3n4h3d1;2.9 7.4 9.2
+432900;Ulmus laevis;Flatterulme;Orme lisse;Olmo bianco;0;1;2;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t4.5k4l2f4w3r4n4h3d1;2.9 9.2
+433000;Ulmus minor;Feldulme;Orme champêtre;Olmo comune;0;1;2;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t4.5k3l3f3.5w3r4n3h3d1;2.9 7.4 9.2 9.3
