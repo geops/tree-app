@@ -391,3 +391,22 @@ CREATE TABLE projections_export (id serial, region region,
                                             tannenareal tannenareal,
                                             relief relief,
                                             slope text);
+
+
+CREATE TYPE treetype AS ENUM ('100','300','600','700','800','6900','9500','25200','25300','25400','60400','60500','96900','97200','97800','107150','113350','113399','137700','165000','172200','174200','174300','213300','217500','220400','224200','224300','227200','231500','238050','252900','275100','287100','302800','304900','305500','305800','305900','306000','306100','308600','317100','317300','317500','328400','329500','329700','330200','330600','335300','335600','335800','335900','336000','336100','336200','336250','345600','346500','362800','363700','363900','364000','364200','364300','365800','402200','402300','402500','402600','402700','402750','413600','421400','421500','422450','432800','432900','433000');
+
+
+CREATE TABLE treetype_meta (target treetype,
+                            de TEXT);
+
+
+INSERT INTO treetype_meta (target, de)
+SELECT foo.treetype,
+       nais.art_nam_deu
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+LEFT JOIN nat_arten_baum nais ON nais.art_sisf_nr = foo.treetype::text;
+
+
+CREATE TYPE recommendationtype AS ENUM ('0', '1', '2', '3');
+
