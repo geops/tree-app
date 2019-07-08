@@ -21,5 +21,14 @@
   },
   "slope": {
     "label": "4. Hangneigung"
+  },
+  "additional": {
+    "label": "5. Weitere"
+  },
+  "tannenareal": {
+    "label": "6. Tannenareal"
+  },
+  "relief": {
+    "label": "7. Relief"
   }
 }

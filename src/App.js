@@ -13,7 +13,7 @@ import {
   Tab,
 } from 'semantic-ui-react';
 
-import Slope from './components/Slope';
+import ChoiceButton from './components/ChoiceButton';
 
 const getDropdownOptions = i => ({
   key: i.key,
@@ -33,6 +33,9 @@ function App() {
     // forestEcoregion: '1',
     // heightLevel: 'SA',
     // slope: '<70',
+    // additional: 'unknown',
+    // tannenareal: 'unknown',
+    // relief: 'unknown',
   });
   const projection = useMemo(() => project(location, i18n.language), [
     location,
@@ -150,12 +153,45 @@ function App() {
           />
         )}
         {projection.options.slope && projection.options.slope.length > 0 && (
-          <Slope
+          <ChoiceButton
+            label="slope"
             options={projection.options.slope}
             onChange={(e, { value }) =>
               setLocation({ ...location, slope: value })
             }
             value={location.slope}
+          />
+        )}
+        {projection.options.additional &&
+          projection.options.additional.length > 0 && (
+            <ChoiceButton
+              label="additional"
+              options={projection.options.additional}
+              onChange={(e, { value }) =>
+                setLocation({ ...location, additional: value })
+              }
+              value={location.additional}
+            />
+          )}
+        {projection.options.tannenareal &&
+          projection.options.tannenareal.length > 0 && (
+            <ChoiceButton
+              label="tannenareal"
+              options={projection.options.tannenareal}
+              onChange={(e, { value }) =>
+                setLocation({ ...location, tannenareal: value })
+              }
+              value={location.tannenareal}
+            />
+          )}
+        {projection.options.relief && projection.options.relief.length > 0 && (
+          <ChoiceButton
+            label="relief"
+            options={projection.options.relief}
+            onChange={(e, { value }) =>
+              setLocation({ ...location, relief: value })
+            }
+            value={location.relief}
           />
         )}
       </Form>
