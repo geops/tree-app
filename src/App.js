@@ -154,7 +154,7 @@ function App() {
         )}
         {projection.options.slope && projection.options.slope.length > 0 && (
           <ChoiceButton
-            label="slope"
+            label={t('slope.label')}
             options={projection.options.slope}
             onChange={(e, { value }) =>
               setLocation({ ...location, slope: value })
@@ -165,7 +165,7 @@ function App() {
         {projection.options.additional &&
           projection.options.additional.length > 0 && (
             <ChoiceButton
-              label="additional"
+              label={t('additional.label')}
               options={projection.options.additional}
               onChange={(e, { value }) =>
                 setLocation({ ...location, additional: value })
@@ -176,7 +176,7 @@ function App() {
         {projection.options.tannenareal &&
           projection.options.tannenareal.length > 0 && (
             <ChoiceButton
-              label="tannenareal"
+              label={t('tannenareal.label')}
               options={projection.options.tannenareal}
               onChange={(e, { value }) =>
                 setLocation({ ...location, tannenareal: value })
@@ -186,7 +186,7 @@ function App() {
           )}
         {projection.options.relief && projection.options.relief.length > 0 && (
           <ChoiceButton
-            label="relief"
+            label={t('relief.label')}
             options={projection.options.relief}
             onChange={(e, { value }) =>
               setLocation({ ...location, relief: value })

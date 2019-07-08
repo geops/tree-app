@@ -8,7 +8,7 @@ function ChoiceButton({ onChange, options, value, label }) {
   const { t } = useTranslation();
   return (
     <Form.Field>
-      <label>{t(`${label}.label`)}</label>
+      <label>{label}</label>
       <Button.Group basic>
         {options.map(s => (
           <Button

@@ -67,8 +67,7 @@
     }
   },
   "eslintIgnore": [
-    "translation.json",
-    "index.css"
+    "translation.json"
   ],
   "husky": {
     "hooks": {
