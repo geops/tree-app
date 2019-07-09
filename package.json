@@ -52,7 +52,7 @@
     "singleQuote": true
   },
   "scripts": {
-    "data:transform": "yarn data:start && yarn data:stop",
+    "data:transform": "yarn data:stop && yarn data:start && yarn data:stop",
     "data:start": "cd data && docker-compose up -d && sleep 9 && docker run --network=data_default --rm -v `pwd`/sql:/flyway/sql boxfuse/flyway:5-alpine -url=jdbc:postgresql://db:5432/tree -user=postgres migrate",
     "data:stop": "cd data && docker-compose down --remove-orphans --volumes",
     "build": "microbundle",

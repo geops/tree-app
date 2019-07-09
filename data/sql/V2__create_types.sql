@@ -177,7 +177,7 @@ VALUES ('',
 ----------------------------------------------
 -- foresttype
 
-CREATE TYPE foresttype AS ENUM ('41','35A','68*','50','59R','13*','13e','16','25a','26','8*','57VLä','AV','71','24*','60*','59V','40PBlt','13a','32V','8S','19m','29h','20E','26h','46*Re', '57C','50P','18','38S','25A','2','29C','1h','12*','46MRe','10a','59Lä','34*','49*','12*h','4','47*Lä','23H','43S','58Bl', '49*Ta','66','45','61','13h','21*','50*','19P','3s','11','31','25e','43','60ALä','27*','60','47D','62','49','18*','53*','69','60*Lä','54','57VM', '39*','8d','27h','52Re','15','59*','18M','52','60E','18w','58LLä','25*','19f','7a','59L','13eh','10w','29','57S','53*s','40PBl','9a','54A','21', '60A','67*','59C','52T','17','56','51C','47*lä','12S','57M','59H','42r','53Lä','59LLä','22','3','55*','19a','25F','40P','32S','47Re','47M','72','70','18v', '28','39','19','47*','20','23','25','46t','14','59A','7*','6','12a','23*','59VLä','57CLä','38','68','40Pt','47DRe','41*','12w','58','72Lä','16*','35M', '59J','51Re','60*Ta','66PM','30','65*','46*','46','46M','51','59E','53','47MRe','27','53A','58L','3*','4*','55*Ta','32C','67','22C','32*','60Lä','50Re','53Ta', '8b','47','55','33V','7S','58Lä','12e','65','44','58C','50*Re','26w','59','47H','7b','21L','25Q','22A','46Re','1','57BlTa','14*','57Bl','8a','24', '57V','59S','40*','29A','48','35');
+CREATE TYPE foresttype AS ENUM ('1','10a','10w','11','12*','12*h','12S','12a','12e','12w','13*','13a','13e','13eh','13h','14','14*','15','16','16*','17','18','18*','18M','18v','18w','19','19P','19a','19f','19m','1h','2','20','20E','21','21*','21L','22','22*','22A','22C','23','23*','23H','24','24*','25','25*','25A','25F','25O','25Q','25a','25as','25au','25b','25e','25f','26','26h','26w','27','27*','27O','27h','28','29','29A','29C','29h','3','3*','4*','30','31','32*','32C','32S','32V','33V','33a','33b','33m','34*','34a','34b','35','35A','35M','35Q','35S','36','37','38','38*','38S','39','39*','3L','4L','3LV','3s','4','40*','40P','40PBl','40PBlt','40Pt','41','41*','42B','42C','42Q','42V','42r','42t','43','43*','43S','44','45','46','46*','46*Re','46M','46MRe','46Re','46t','47','47*','47*Lä','47D','47DRe','47H','47M','47MRe','47Re','48','49','49*','49*Ta','50','50*','50*Re','50P','50Re','51','51C','51Re','52','52Re','52T','53','53*','53*Ta','53*s','53A','53ATa','53Lä','53Ta','54','54A','55','55*','55*Lä','55*Ta','56','57Bl','57BlTa','57C','57CLä','57CTa','57M','57S','57STa','57V','57VLä','57VM','57VTa','58','58Bl','58C','58L','58LLä','58Lä','59','59*','59A','59C','59E','59H','59J','59L','59LLä','59Lä','59R','59S','59V','59VLä','6','60','60*','60*Lä','60*Ta','60A','60ALä','60ATa','60E','60ETa','60Lä','60Ta','61','62','65','65*','66','66PM','67','67*','68','68*','69','7*','70','71','72','72Lä','7S','7a','7b','8*','8S','8a','8b','8d','91','92a','92z','93','9a','9w');
 
 
 CREATE TABLE foresttype_meta (target foresttype,
@@ -188,11 +188,11 @@ INSERT INTO foresttype_meta (target, de)
 SELECT foo.foresttype,
        mstr.naistyp_wges
 FROM
-  (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
+        (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
 LEFT JOIN
-  (SELECT naistyp_wges,
-          regexp_split_to_table(naistyp_c, '\/') AS naistyp_c
-   FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
+        (SELECT naistyp_wges,
+                regexp_split_to_table(naistyp_c, '\/') AS naistyp_c
+         FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
 
 ----------------------------------------------
 -- heightlevel
@@ -338,6 +338,16 @@ CREATE TABLE slope_meta (target TEXT, de TEXT);
 
 
 INSERT INTO slope_meta (target, de)
+VALUES ('<20',
+        '<20%');
+
+
+INSERT INTO slope_meta (target, de)
+VALUES ('>20',
+        '>20%');
+
+
+INSERT INTO slope_meta (target, de)
 VALUES ('<60',
         '<60%');
 
@@ -413,5 +423,6 @@ INSERT INTO treetype_meta (target, de)
 SELECT foo.treetype,
        nais.art_nam_deu
 FROM
-  (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 LEFT JOIN nat_arten_baum nais ON nais.art_sisf_nr = foo.treetype::text;
+
