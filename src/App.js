@@ -26,6 +26,25 @@ const getDropdownOptions = (type, language, includeKey = false) => key => ({
   value: key,
 });
 
+const styles = {
+  position: 'fixed',
+  bottom: '20px',
+  backgroundColor: 'red',
+  right: '-35px',
+  transform: 'rotate(-45deg)',
+  zIndex: '10',
+};
+
+const textStyle = {
+  border: '2px solid white',
+  color: 'white',
+  fontSize: '14px',
+  fontFamily: 'Sans-Serif',
+  fontWeight: 'bold',
+  margin: '2px',
+  padding: '0 70px',
+};
+
 function App() {
   const { t, i18n } = useTranslation();
   const [location, setLocation] = useState({
@@ -82,7 +101,7 @@ function App() {
     <Container>
       <Divider hidden />
       <Header size="huge" textAlign="center" color="olive">
-        {t('app.title')} <Label>{t('app.ribbon')}</Label>
+        {t('app.title')}
       </Header>
       <Divider hidden />
       <Form>
@@ -195,6 +214,9 @@ function App() {
         </>
       )}
       <Divider hidden />
+      <div style={styles}>
+        <div style={textStyle}>{t('app.ribbon')}</div>
+      </div>
     </Container>
   );
 }
