@@ -1,29 +1,29 @@
 import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { project } from '@geops/tree-lib';
+import { project, translate } from '@geops/tree-lib';
 import 'semantic-ui-css/semantic.min.css';
 import {
   Container,
   Divider,
   Form,
-  Grid,
   Header,
   Label,
-  List,
   Tab,
 } from 'semantic-ui-react';
 
 import ChoiceButton from './components/ChoiceButton';
+import Recommendation from './components/Recommendation';
 
-const getDropdownOptions = i => ({
-  key: i.key,
-  text: i.label,
-  value: i.key,
+const getButtonOptions = (type, language) => key => ({
+  key,
+  label: translate(type, key, language),
 });
-const getDropdownKeyOptions = i => ({
-  key: i.key,
-  text: i.key === i.label ? i.label : `${i.key} ${i.label}`,
-  value: i.key,
+const getDropdownOptions = (type, language, includeKey = false) => key => ({
+  key,
+  text: includeKey
+    ? `${key} - ${translate(type, key, language)}`
+    : translate(type, key, language),
+  value: key,
 });
 
 function App() {
@@ -37,10 +37,7 @@ function App() {
     // tannenareal: 'unknown',
     // relief: 'unknown',
   });
-  const projection = useMemo(() => project(location, i18n.language), [
-    location,
-    i18n.language,
-  ]);
+  const projection = useMemo(() => project(location), [location]);
   document.title = t('app.title');
 
   const panes = [
@@ -53,7 +50,7 @@ function App() {
       render: () => (
         <Tab.Pane>
           <Header>
-            {projection.target}
+            {translate('forestType', projection.target, i18n.language)}
             <Header.Subheader>
               zukünftiger Standorttyp unter Annahme der Änderung um eine
               Höhenstufe
@@ -71,27 +68,7 @@ function App() {
             </Form.Field>
           </Form>
           <Divider hidden />
-          <Grid stackable columns={3}>
-            <Grid.Column>
-              <Header color="olive">Fördern</Header>
-              <List>
-                <List.Item>Spitzahorn</List.Item>
-                <List.Item>Bergahorn</List.Item>
-                <List.Item>Buche</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column>
-              <Header color="grey">Mitnehmen</Header>
-              <List>
-                <List.Item>Spitzahorn</List.Item>
-                <List.Item>Bergahorn</List.Item>
-                <List.Item>Buche</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column>
-              <Header color="red">Reduzieren</Header>
-            </Grid.Column>
-          </Grid>
+          <Recommendation forestType={projection.target} />
         </Tab.Pane>
       ),
     },
@@ -117,7 +94,9 @@ function App() {
           fluid
           clearable
           value={location.forestType}
-          options={projection.options.forestType.map(getDropdownKeyOptions)}
+          options={projection.options.forestType.map(
+            getDropdownOptions('forestType', i18n.language, true),
+          )}
           onChange={(e, { value }) =>
             setLocation({ ...location, forestType: value })
           }
@@ -131,7 +110,9 @@ function App() {
             clearable
             fluid
             value={location.forestEcoregion}
-            options={projection.options.forestEcoregion.map(getDropdownOptions)}
+            options={projection.options.forestEcoregion.map(
+              getDropdownOptions('forestEcoregion', i18n.language),
+            )}
             onChange={(e, { value }) =>
               setLocation({ ...location, forestEcoregion: value })
             }
@@ -146,7 +127,9 @@ function App() {
             clearable
             fluid
             value={location.heightLevel}
-            options={projection.options.heightLevel.map(getDropdownOptions)}
+            options={projection.options.heightLevel.map(
+              getDropdownOptions('heightLevel', i18n.language),
+            )}
             onChange={(e, { value }) =>
               setLocation({ ...location, heightLevel: value })
             }
@@ -155,7 +138,9 @@ function App() {
         {projection.options.slope && projection.options.slope.length > 0 && (
           <ChoiceButton
             label={t('slope.label')}
-            options={projection.options.slope}
+            options={projection.options.slope.map(
+              getButtonOptions('slope', i18n.language),
+            )}
             onChange={(e, { value }) =>
               setLocation({ ...location, slope: value })
             }
@@ -166,7 +151,9 @@ function App() {
           projection.options.additional.length > 0 && (
             <ChoiceButton
               label={t('additional.label')}
-              options={projection.options.additional}
+              options={projection.options.additional.map(
+                getButtonOptions('additional', i18n.language),
+              )}
               onChange={(e, { value }) =>
                 setLocation({ ...location, additional: value })
               }
@@ -177,7 +164,9 @@ function App() {
           projection.options.tannenareal.length > 0 && (
             <ChoiceButton
               label={t('tannenareal.label')}
-              options={projection.options.tannenareal}
+              options={projection.options.tannenareal.map(
+                getButtonOptions('tannenareal', i18n.language),
+              )}
               onChange={(e, { value }) =>
                 setLocation({ ...location, tannenareal: value })
               }
@@ -187,7 +176,9 @@ function App() {
         {projection.options.relief && projection.options.relief.length > 0 && (
           <ChoiceButton
             label={t('relief.label')}
-            options={projection.options.relief}
+            options={projection.options.relief.map(
+              getButtonOptions('relief', i18n.language),
+            )}
             onChange={(e, { value }) =>
               setLocation({ ...location, relief: value })
             }
