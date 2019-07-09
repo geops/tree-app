@@ -12,7 +12,7 @@ Details coming soon.
 
 ## More
 
-- [Development](https://github.com/geops/react-spatial/tree/master/DEVELOPMENT.md)
+- [Development](https://github.com/geops/tree-app/tree/master/DEVELOPMENT.md)
 
 ## Bugs
 
