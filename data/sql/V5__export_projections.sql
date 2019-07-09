@@ -19,8 +19,8 @@ SELECT region,
            WHEN TRUE THEN regexp_replace(foresttype, ' collin', '')::foresttype
            ELSE null
        END,
-       CASE regexp_replace(foresttype, ' collin', '')::name = any(enum_range(null::foresttype)::name[])
-           WHEN TRUE THEN regexp_replace(foresttype, ' collin', '')::foresttype
+       CASE regexp_replace(targets, ' collin', '')::name = any(enum_range(null::foresttype)::name[])
+           WHEN TRUE THEN regexp_replace(targets, ' collin', '')::foresttype
            ELSE null
        END,
        CASE am.target is null
