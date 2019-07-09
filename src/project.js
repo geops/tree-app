@@ -32,12 +32,7 @@ const conditions = [
   },
 ];
 
-const validLanguages = ['de'];
-
-function project(location, language) {
-  if (!validLanguages.includes(language)) {
-    throw new Error(`${language} is not supported.`);
-  }
+function project(location) {
   const options = {};
   let target = projections;
   for (let i = 0; i < conditions.length; i += 1) {
@@ -49,10 +44,7 @@ function project(location, language) {
       throw new Error(`${value} for ${field} is not valid.`);
     }
 
-    const keys = Object.keys(target);
-    options[field] = values
-      .filter(v => keys.includes(v.key))
-      .map(v => ({ key: v.key, label: v[language] }));
+    options[field] = Object.keys(target);
 
     if (value && target[value]) {
       target = target[value];
@@ -63,7 +55,7 @@ function project(location, language) {
   }
   const newLocation = { ...location, options };
   if (typeof target === 'string') {
-    newLocation.target = types.forestType.find(t => t.key === target)[language];
+    newLocation.target = target;
   }
   return newLocation;
 }
