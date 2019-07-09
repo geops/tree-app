@@ -1,34 +1,34 @@
 import projections from '../data/projections.json';
-import validTypes from '../data/valid_enum.json';
+import types from '../data/types.json';
 
 const conditions = [
   {
     field: 'forestType',
-    values: validTypes.forestType,
+    values: types.forestType,
   },
   {
     field: 'forestEcoregion',
-    values: validTypes.forestEcoregion,
+    values: types.forestEcoregion,
   },
   {
     field: 'heightLevel',
-    values: validTypes.heightLevel,
+    values: types.heightLevel,
   },
   {
     field: 'slope',
-    values: validTypes.slope,
+    values: types.slope,
   },
   {
     field: 'additional',
-    values: validTypes.additional,
+    values: types.additional,
   },
   {
     field: 'tannenareal',
-    values: validTypes.tannenareal,
+    values: types.tannenareal,
   },
   {
     field: 'relief',
-    values: validTypes.relief,
+    values: types.relief,
   },
 ];
 
@@ -63,9 +63,7 @@ function project(location, language) {
   }
   const newLocation = { ...location, options };
   if (typeof target === 'string') {
-    newLocation.target = validTypes.forestType.find(t => t.key === target)[
-      language
-    ];
+    newLocation.target = types.forestType.find(t => t.key === target)[language];
   }
   return newLocation;
 }

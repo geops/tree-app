@@ -52,8 +52,9 @@
     "singleQuote": true
   },
   "scripts": {
-    "data:transform": "yarn data:start && cd data && docker-compose exec db sh -c 'psql -U postgres -d tree -c \"SELECT import_projections(); SELECT export_projections()\"' && docker-compose down --remove-orphans --volumes",
-    "data:start": "cd data && docker-compose down --remove-orphans --volumes && docker-compose up -d && sleep 9 && docker run --network=data_default --rm -v `pwd`/sql:/flyway/sql boxfuse/flyway:5-alpine -url=jdbc:postgresql://db:5432/tree -user=postgres migrate",
+    "data:transform": "yarn data:start && yarn data:stop",
+    "data:start": "cd data && docker-compose up -d && sleep 9 && docker run --network=data_default --rm -v `pwd`/sql:/flyway/sql boxfuse/flyway:5-alpine -url=jdbc:postgresql://db:5432/tree -user=postgres migrate",
+    "data:stop": "cd data && docker-compose down --remove-orphans --volumes",
     "build": "microbundle",
     "lint": "microbundle && eslint src",
     "test": "microbundle && jest"
