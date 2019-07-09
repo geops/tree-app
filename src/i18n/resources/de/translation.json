@@ -1,5 +1,6 @@
 {
   "app": {
+    "recommendation": "Empfehlung",
     "result": "Ergebnis",
     "ribbon": "Beta",
     "title": "Baumarten Tool"
