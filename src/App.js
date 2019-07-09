@@ -2,17 +2,11 @@ import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { project, translate } from '@geops/tree-lib';
 import 'semantic-ui-css/semantic.min.css';
-import {
-  Container,
-  Divider,
-  Form,
-  Header,
-  Label,
-  Tab,
-} from 'semantic-ui-react';
+import { Container, Divider, Form, Header, Tab } from 'semantic-ui-react';
 
 import ChoiceButton from './components/ChoiceButton';
 import Recommendation from './components/Recommendation';
+import Ribbon from './components/Ribbon';
 
 const getButtonOptions = (type, language) => key => ({
   key,
@@ -82,7 +76,7 @@ function App() {
     <Container>
       <Divider hidden />
       <Header size="huge" textAlign="center" color="olive">
-        {t('app.title')} <Label>{t('app.ribbon')}</Label>
+        {t('app.title')}
       </Header>
       <Divider hidden />
       <Form>
@@ -195,6 +189,7 @@ function App() {
         </>
       )}
       <Divider hidden />
+      <Ribbon label={t('app.ribbon')} />
     </Container>
   );
 }
