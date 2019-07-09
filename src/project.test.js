@@ -14,7 +14,7 @@ test('valid projection', () => {
       },
       'de',
     ).target,
-  ).toBe('Buntreitgras-Fi-Wald');
+  ).toBe('Karbonat-Ta-Fi-Wald mit kahlem Alpendost');
 });
 
 test('invalid location values', () => {
