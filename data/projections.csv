@@ -2758,405 +2758,204 @@ R5;hochmontan;99999;;;99999;;;;;99999;untermontan
 R5;hochmontan;99999;;;99999;;;;;99999;untermontan
 R5;hochmontan;99999;;;99999;;;;;99999;untermontan
 R5;hochmontan;99999;;;99999;;;;;99999;untermontan
-R5;obermontan;21L;;;25au;;;;;;collin
-R5;obermontan;21L;;;25au;;;;;;collin
-R5;obermontan;19P;;;33m;;;;;;collin
-R5;obermontan;23*;;;42B;;;;;;collin
-R5;obermontan;24;;;25a;;;;;;collin
-R5;obermontan;24*;;;25au;;;;;;collin
-R5;obermontan;32V;;;32C;;;;;;collin
-R5;obermontan;32*;;;27;;;;;;collin
-R5;obermontan;27;;;27;;;;;;collin
-R5;obermontan;40P;;;40Pt;;;;;;collin
-R5;obermontan;40PBl;;;25as;;;;;;collin
-R5;obermontan;43S;;;43S;;;;;;collin
-R5;obermontan;19a;;;3L/4L;;;;;;collin
-R5;obermontan;19a;;;3L/4L;;;;;;collin
-R5;obermontan;19m;;;3L/4L;;;;;;collin
-R5;obermontan;47H;;;25as;;;;;;collin
-R5;obermontan;3;;normal;42V;;;;;;collin
-R5;obermontan;3;;tiefgründig;34a;;;;;;collin
-R5;obermontan;4;;;3L/4L;;;;;;collin
-R5;obermontan;4;;;3L/4L;;;;;;collin
-R5;obermontan;4;;;3L/4L;;;;;;collin
-R5;obermontan;4;;;3L/4L;;;;;;collin
-R5;obermontan;14*;;normal;37;;;;;;collin
-R5;obermontan;14*;;mit viel Schutt;25O;;;;;;collin
-R5;obermontan;24*;;;25au;;;;;;collin
-R5;obermontan;3s;;normal;42Q;;;;;;collin
-R5;obermontan;3s;;flachgründig;42r;;;;;;collin
-R5;obermontan;12*;;;36;;;;;;collin
-R5;obermontan;3s;;normal;42Q;;;;;;collin
-R5;obermontan;3s;;flachgründig;42r;;;;;;collin
-R5;obermontan;24*;;;25au;;;;;;collin
-R5;obermontan;keine Angabe;;;66;;;;;;collin
-R5;obermontan;68;;;42r;;;;;;collin
-R5;obermontan;42r;;;42r;;;;;;collin
-R5;obermontan;16*;;;38*;;;;;;collin
-R5;obermontan;14*;;normal;37;;;;;;collin
-R5;obermontan;14*;;mit viel Schutt;25O;;;;;;collin
-R5;obermontan;;;;;;;;;;collin
-R5;obermontan;24*;;;25au;;;;;;collin
-R5;obermontan;3*/4*;;;3LV;;;;;;collin
-R5;obermontan;12*h;;;36;;;;;;collin
-R5;obermontan;13*;;;13*;;;;;;collin
-R5;obermontan;27h;;;27;;;;;;collin
-R5;obermontan;AV;;;25au;;;;;;collin
-R5;obermontan;40Pt;;;40Pt;;;;;;collin
-R5;obermontan;40PBlt;;;25as;;;;;;collin
-R5;obermontan;99999;;99999;7a;;;;;;collin
-R5;obermontan;99999;;99999;22*;;;;;;collin
-R5;obermontan;99999;;99999;25f;;;;;;collin
-R5;obermontan;99999;;99999;27O;;;;;;collin
-R5;obermontan;99999;;99999;28;;;;;;collin
-R5;obermontan;99999;;99999;30;;;;;;collin
-R5;obermontan;99999;;99999;31;;;;;;collin
-R5;obermontan;99999;;99999;33a;;;;;;collin
-R5;obermontan;99999;;99999;33b;;;;;;collin
-R5;obermontan;99999;;99999;35Q;;;;;;collin
-R5;obermontan;99999;;99999;35S;;;;;;collin
-R5;obermontan;99999;;99999;40PBlt;;;;;;collin
-R5;obermontan;99999;;99999;42C;;;;;;collin
-R5;obermontan;99999;;99999;42t;;;;;;collin
-R5;obermontan;99999;;99999;43;;;;;;collin
-R5;obermontan;99999;;99999;43*;;;;;;collin
-R5;obermontan;99999;;99999;44;;;;;;collin
-R5;obermontan;99999;;99999;91;;;;;;collin
-R5;obermontan;99999;;99999;92a;;;;;;collin
-R5;obermontan;99999;;99999;92z;;;;;;collin
-R5;obermontan;99999;;99999;93;;;;;;collin
-R5;obermontan;21L;;;25au hyp;;;;;;collin
-R5;obermontan;21L;;;25au hyp;;;;;;collin
-R5;obermontan;19P;;;33m hyp;;;;;;collin
-R5;obermontan;23*;;;42B hyp;;;;;;collin
-R5;obermontan;24;;;25a hyp;;;;;;collin
-R5;obermontan;24*;;;25au hyp;;;;;;collin
-R5;obermontan;32V;;;32C hyp;;;;;;collin
-R5;obermontan;32*;;;27 hyp;;;;;;collin
-R5;obermontan;27;;;27 hyp;;;;;;collin
-R5;obermontan;40P;;;40P hyp;;;;;;collin
-R5;obermontan;40PBl;;;25as hyp;;;;;;collin
-R5;obermontan;43S;;;43S hyp;;;;;;collin
-R5;obermontan;19a;;;3L/4L hyp;;;;;;collin
-R5;obermontan;19a;;;3L/4L hyp;;;;;;collin
-R5;obermontan;19m;;;3L/4L hyp;;;;;;collin
-R5;obermontan;47H;;;25as hyp;;;;;;collin
-R5;obermontan;3;;normal;42V hyp;;;;;;collin
-R5;obermontan;3;;tiefgründig;34a hyp;;;;;;collin
-R5;obermontan;4;;;3L/4L hyp;;;;;;collin
-R5;obermontan;4;;;3L/4L hyp;;;;;;collin
-R5;obermontan;4;;;3L/4L hyp;;;;;;collin
-R5;obermontan;4;;;3L/4L hyp;;;;;;collin
-R5;obermontan;14*;;normal;37 hyp;;;;;;collin
-R5;obermontan;14*;;mit viel Schutt;25O hyp;;;;;;collin
-R5;obermontan;24*;;;25au hyp;;;;;;collin
-R5;obermontan;3s;;normal;42Q hyp;;;;;;collin
-R5;obermontan;3s;;flachgründig;42r hyp;;;;;;collin
-R5;obermontan;12*;;;36 hyp;;;;;;collin
-R5;obermontan;3s;;normal;42Q hyp;;;;;;collin
-R5;obermontan;3s;;flachgründig;42r hyp;;;;;;collin
-R5;obermontan;24*;;;25au hyp;;;;;;collin
-R5;obermontan;keine Angabe;;;66 hyp;;;;;;collin
-R5;obermontan;68;;;42r hyp;;;;;;collin
-R5;obermontan;42r;;;42r hyp;;;;;;collin
-R5;obermontan;16*;;;38* hyp;;;;;;collin
-R5;obermontan;14*;;normal;37 hyp;;;;;;collin
-R5;obermontan;14*;;mit viel Schutt;25O hyp;;;;;;collin
-R5;obermontan;;;;;;;;;;collin
-R5;obermontan;24*;;;25au hyp;;;;;;collin
-R5;obermontan;3*/4*;;;3LV hyp;;;;;;collin
-R5;obermontan;12*h;;;36 hyp;;;;;;collin
-R5;obermontan;13*;;;13* hyp;;;;;;collin
-R5;obermontan;27h;;;27 hyp;;;;;;collin
-R5;obermontan;AV;;;25au hyp;;;;;;collin
-R5;obermontan;40Pt;;;40P hyp;;;;;;collin
-R5;obermontan;40PBlt;;;25as hyp;;;;;;collin
-R5;obermontan;99999;;99999;7a hyp;;;;;;collin
-R5;obermontan;99999;;99999;22* hyp;;;;;;collin
-R5;obermontan;99999;;99999;25f hyp;;;;;;collin
-R5;obermontan;99999;;99999;27O hyp;;;;;;collin
-R5;obermontan;99999;;99999;28 hyp;;;;;;collin
-R5;obermontan;99999;;99999;30 hyp;;;;;;collin
-R5;obermontan;99999;;99999;31 hyp;;;;;;collin
-R5;obermontan;99999;;99999;33a hyp;;;;;;collin
-R5;obermontan;99999;;99999;33b hyp;;;;;;collin
-R5;obermontan;99999;;99999;35Q hyp;;;;;;collin
-R5;obermontan;99999;;99999;35S hyp;;;;;;collin
-R5;obermontan;99999;;99999;40PBl hyp;;;;;;collin
-R5;obermontan;99999;;99999;42C hyp;;;;;;collin
-R5;obermontan;99999;;99999;42t hyp;;;;;;collin
-R5;obermontan;99999;;99999;43 hyp;;;;;;collin
-R5;obermontan;99999;;99999;43* hyp;;;;;;collin
-R5;obermontan;99999;;99999;44 hyp;;;;;;collin
-R5;obermontan;99999;;99999;91 hyp;;;;;;collin
-R5;obermontan;99999;;99999;92a hyp;;;;;;collin
-R5;obermontan;99999;;99999;92z hyp;;;;;;collin
-R5;obermontan;99999;;99999;93 hyp;;;;;;collin
-R5;obermontan;21L;;;25au med;;;;;;collin
-R5;obermontan;21L;;;25au med;;;;;;collin
-R5;obermontan;19P;;;33m  med;;;;;;collin
-R5;obermontan;23*;;;42B  med;;;;;;collin
-R5;obermontan;24;;;25a  med;;;;;;collin
-R5;obermontan;24*;;;25au med;;;;;;collin
-R5;obermontan;32V;;;32C  med;;;;;;collin
-R5;obermontan;32*;;;27  med;;;;;;collin
-R5;obermontan;27;;;27  med;;;;;;collin
-R5;obermontan;40P;;;40P  med;;;;;;collin
-R5;obermontan;40PBl;;;25as  med;;;;;;collin
-R5;obermontan;43S;;;43S  med;;;;;;collin
-R5;obermontan;19a;;;3L/4L  med;;;;;;collin
-R5;obermontan;19a;;;3L/4L  med;;;;;;collin
-R5;obermontan;19m;;;3L/4L  med;;;;;;collin
-R5;obermontan;47H;;;25as  med;;;;;;collin
-R5;obermontan;3;;normal;42V  med;;;;;;collin
-R5;obermontan;3;;tiefgründig;34a  med;;;;;;collin
-R5;obermontan;4;;;3L/4L  med;;;;;;collin
-R5;obermontan;4;;;3L/4L  med;;;;;;collin
-R5;obermontan;4;;;3L/4L  med;;;;;;collin
-R5;obermontan;4;;;3L/4L  med;;;;;;collin
-R5;obermontan;14*;;normal;37  med;;;;;;collin
-R5;obermontan;14*;;mit viel Schutt;25O  med;;;;;;collin
-R5;obermontan;24*;;;25au med;;;;;;collin
-R5;obermontan;3s;;normal;42Q  med;;;;;;collin
-R5;obermontan;3s;;flachgründig;42r  med;;;;;;collin
-R5;obermontan;12*;;;36  med;;;;;;collin
-R5;obermontan;3s;;normal;42Q  med;;;;;;collin
-R5;obermontan;3s;;flachgründig;42r  med;;;;;;collin
-R5;obermontan;24*;;;25au med;;;;;;collin
-R5;obermontan;keine Angabe;;;66  med;;;;;;collin
-R5;obermontan;68;;;42r  med;;;;;;collin
-R5;obermontan;42r;;;42r  med;;;;;;collin
-R5;obermontan;16*;;;38*  med;;;;;;collin
-R5;obermontan;14*;;normal;37  med;;;;;;collin
-R5;obermontan;14*;;mit viel Schutt;25O  med;;;;;;collin
-R5;obermontan;;;;;;;;;;collin
-R5;obermontan;24*;;;25au  med;;;;;;collin
-R5;obermontan;3*/4*;;;3LV  med;;;;;;collin
-R5;obermontan;12*h;;;36  med;;;;;;collin
-R5;obermontan;13*;;;13*  med;;;;;;collin
-R5;obermontan;27h;;;27  med;;;;;;collin
-R5;obermontan;AV;;;25au  med;;;;;;collin
-R5;obermontan;40Pt;;;40P  med;;;;;;collin
-R5;obermontan;40PBlt;;;25as  med;;;;;;collin
-R5;obermontan;99999;;99999;7a med;;;;;;collin
-R5;obermontan;99999;;99999;22*  med;;;;;;collin
-R5;obermontan;99999;;99999;25f  med;;;;;;collin
-R5;obermontan;99999;;99999;27O  med;;;;;;collin
-R5;obermontan;99999;;99999;28  med;;;;;;collin
-R5;obermontan;99999;;99999;30  med;;;;;;collin
-R5;obermontan;99999;;99999;31  med;;;;;;collin
-R5;obermontan;99999;;99999;33a  med;;;;;;collin
-R5;obermontan;99999;;99999;33b  med;;;;;;collin
-R5;obermontan;99999;;99999;35Q  med;;;;;;collin
-R5;obermontan;99999;;99999;35S  med;;;;;;collin
-R5;obermontan;99999;;99999;40PBl  med;;;;;;collin
-R5;obermontan;99999;;99999;42C  med;;;;;;collin
-R5;obermontan;99999;;99999;42t  med;;;;;;collin
-R5;obermontan;99999;;99999;43  med;;;;;;collin
-R5;obermontan;99999;;99999;43*  med;;;;;;collin
-R5;obermontan;99999;;99999;44  med;;;;;;collin
-R5;obermontan;99999;;99999;91  med;;;;;;collin
-R5;obermontan;99999;;99999;92a  med;;;;;;collin
-R5;obermontan;99999;;99999;92z  med;;;;;;collin
-R5;obermontan;99999;;99999;93  med;;;;;;collin
-R5;untermontan;21L;;;25au;;;;;;collin
-R5;untermontan;21L;;;25au;;;;;;collin
-R5;untermontan;19P;;;33m;;;;;;collin
-R5;untermontan;23*;;;42B;;;;;;collin
-R5;untermontan;24;;;25a;;;;;;collin
-R5;untermontan;24*;;;25au;;;;;;collin
-R5;untermontan;32V;;;32C;;;;;;collin
-R5;untermontan;32*;;;27;;;;;;collin
-R5;untermontan;27;;;27;;;;;;collin
-R5;untermontan;40P;;;40Pt;;;;;;collin
-R5;untermontan;40PBl;;;25as;;;;;;collin
-R5;untermontan;43S;;;43S;;;;;;collin
-R5;untermontan;19a;;;3L/4L;;;;;;collin
-R5;untermontan;19a;;;3L/4L;;;;;;collin
-R5;untermontan;19m;;;3L/4L;;;;;;collin
-R5;untermontan;47H;;;25as;;;;;;collin
-R5;untermontan;3;;normal;42V;;;;;;collin
-R5;untermontan;3;;tiefgründig;34a;;;;;;collin
-R5;untermontan;4;;;3L/4L;;;;;;collin
-R5;untermontan;4;;;3L/4L;;;;;;collin
-R5;untermontan;4;;;3L/4L;;;;;;collin
-R5;untermontan;4;;;3L/4L;;;;;;collin
-R5;untermontan;14*;;normal;37;;;;;;collin
-R5;untermontan;14*;;mit viel Schutt;25O;;;;;;collin
-R5;untermontan;24*;;;25au;;;;;;collin
-R5;untermontan;3s;;normal;42Q;;;;;;collin
-R5;untermontan;3s;;flachgründig;42r;;;;;;collin
-R5;untermontan;12*;;;36;;;;;;collin
-R5;untermontan;3s;;normal;42Q;;;;;;collin
-R5;untermontan;3s;;flachgründig;42r;;;;;;collin
-R5;untermontan;24*;;;25au;;;;;;collin
-R5;untermontan;keine Angabe;;;66;;;;;;collin
-R5;untermontan;68;;;42r;;;;;;collin
-R5;untermontan;42r;;;42r;;;;;;collin
-R5;untermontan;16*;;;38*;;;;;;collin
-R5;untermontan;14*;;normal;37;;;;;;collin
-R5;untermontan;14*;;mit viel Schutt;25O;;;;;;collin
-R5;untermontan;;;;;;;;;;collin
-R5;untermontan;24*;;;25au;;;;;;collin
-R5;untermontan;3*/4*;;;3LV;;;;;;collin
-R5;untermontan;12*h;;;36;;;;;;collin
-R5;untermontan;13*;;;13*;;;;;;collin
-R5;untermontan;27h;;;27;;;;;;collin
-R5;untermontan;AV;;;25au;;;;;;collin
-R5;untermontan;40Pt;;;40Pt;;;;;;collin
-R5;untermontan;40PBlt;;;25as;;;;;;collin
-R5;untermontan;99999;;99999;7a;;;;;;collin
-R5;untermontan;99999;;99999;22*;;;;;;collin
-R5;untermontan;99999;;99999;25f;;;;;;collin
-R5;untermontan;99999;;99999;27O;;;;;;collin
-R5;untermontan;99999;;99999;28;;;;;;collin
-R5;untermontan;99999;;99999;30;;;;;;collin
-R5;untermontan;99999;;99999;31;;;;;;collin
-R5;untermontan;99999;;99999;33a;;;;;;collin
-R5;untermontan;99999;;99999;33b;;;;;;collin
-R5;untermontan;99999;;99999;35Q;;;;;;collin
-R5;untermontan;99999;;99999;35S;;;;;;collin
-R5;untermontan;99999;;99999;40PBlt;;;;;;collin
-R5;untermontan;99999;;99999;42C;;;;;;collin
-R5;untermontan;99999;;99999;42t;;;;;;collin
-R5;untermontan;99999;;99999;43;;;;;;collin
-R5;untermontan;99999;;99999;43*;;;;;;collin
-R5;untermontan;99999;;99999;44;;;;;;collin
-R5;untermontan;99999;;99999;91;;;;;;collin
-R5;untermontan;99999;;99999;92a;;;;;;collin
-R5;untermontan;99999;;99999;92z;;;;;;collin
-R5;untermontan;99999;;99999;93;;;;;;collin
-R5;untermontan;21L;;;25au hyp;;;;;;collin
-R5;untermontan;21L;;;25au hyp;;;;;;collin
-R5;untermontan;19P;;;33m hyp;;;;;;collin
-R5;untermontan;23*;;;42B hyp;;;;;;collin
-R5;untermontan;24;;;25a hyp;;;;;;collin
-R5;untermontan;24*;;;25au hyp;;;;;;collin
-R5;untermontan;32V;;;32C hyp;;;;;;collin
-R5;untermontan;32*;;;27 hyp;;;;;;collin
-R5;untermontan;27;;;27 hyp;;;;;;collin
-R5;untermontan;40P;;;40P hyp;;;;;;collin
-R5;untermontan;40PBl;;;25as hyp;;;;;;collin
-R5;untermontan;43S;;;43S hyp;;;;;;collin
-R5;untermontan;19a;;;3L/4L hyp;;;;;;collin
-R5;untermontan;19a;;;3L/4L hyp;;;;;;collin
-R5;untermontan;19m;;;3L/4L hyp;;;;;;collin
-R5;untermontan;47H;;;25as hyp;;;;;;collin
-R5;untermontan;3;;normal;42V hyp;;;;;;collin
-R5;untermontan;3;;tiefgründig;34a hyp;;;;;;collin
-R5;untermontan;4;;;3L/4L hyp;;;;;;collin
-R5;untermontan;4;;;3L/4L hyp;;;;;;collin
-R5;untermontan;4;;;3L/4L hyp;;;;;;collin
-R5;untermontan;4;;;3L/4L hyp;;;;;;collin
-R5;untermontan;14*;;normal;37 hyp;;;;;;collin
-R5;untermontan;14*;;mit viel Schutt;25O hyp;;;;;;collin
-R5;untermontan;24*;;;25au hyp;;;;;;collin
-R5;untermontan;3s;;normal;42Q hyp;;;;;;collin
-R5;untermontan;3s;;flachgründig;42r hyp;;;;;;collin
-R5;untermontan;12*;;;36 hyp;;;;;;collin
-R5;untermontan;3s;;normal;42Q hyp;;;;;;collin
-R5;untermontan;3s;;flachgründig;42r hyp;;;;;;collin
-R5;untermontan;24*;;;25au hyp;;;;;;collin
-R5;untermontan;keine Angabe;;;66 hyp;;;;;;collin
-R5;untermontan;68;;;42r hyp;;;;;;collin
-R5;untermontan;42r;;;42r hyp;;;;;;collin
-R5;untermontan;16*;;;38* hyp;;;;;;collin
-R5;untermontan;14*;;normal;37 hyp;;;;;;collin
-R5;untermontan;14*;;mit viel Schutt;25O hyp;;;;;;collin
-R5;untermontan;;;;;;;;;;collin
-R5;untermontan;24*;;;25au hyp;;;;;;collin
-R5;untermontan;3*/4*;;;3LV hyp;;;;;;collin
-R5;untermontan;12*h;;;36 hyp;;;;;;collin
-R5;untermontan;13*;;;13* hyp;;;;;;collin
-R5;untermontan;27h;;;27 hyp;;;;;;collin
-R5;untermontan;AV;;;25au hyp;;;;;;collin
-R5;untermontan;40Pt;;;40P hyp;;;;;;collin
-R5;untermontan;40PBlt;;;25as hyp;;;;;;collin
-R5;untermontan;99999;;99999;7a hyp;;;;;;collin
-R5;untermontan;99999;;99999;22* hyp;;;;;;collin
-R5;untermontan;99999;;99999;25f hyp;;;;;;collin
-R5;untermontan;99999;;99999;27O hyp;;;;;;collin
-R5;untermontan;99999;;99999;28 hyp;;;;;;collin
-R5;untermontan;99999;;99999;30 hyp;;;;;;collin
-R5;untermontan;99999;;99999;31 hyp;;;;;;collin
-R5;untermontan;99999;;99999;33a hyp;;;;;;collin
-R5;untermontan;99999;;99999;33b hyp;;;;;;collin
-R5;untermontan;99999;;99999;35Q hyp;;;;;;collin
-R5;untermontan;99999;;99999;35S hyp;;;;;;collin
-R5;untermontan;99999;;99999;40PBl hyp;;;;;;collin
-R5;untermontan;99999;;99999;42C hyp;;;;;;collin
-R5;untermontan;99999;;99999;42t hyp;;;;;;collin
-R5;untermontan;99999;;99999;43 hyp;;;;;;collin
-R5;untermontan;99999;;99999;43* hyp;;;;;;collin
-R5;untermontan;99999;;99999;44 hyp;;;;;;collin
-R5;untermontan;99999;;99999;91 hyp;;;;;;collin
-R5;untermontan;99999;;99999;92a hyp;;;;;;collin
-R5;untermontan;99999;;99999;92z hyp;;;;;;collin
-R5;untermontan;99999;;99999;93 hyp;;;;;;collin
-R5;untermontan;21L;;;25au med;;;;;;collin
-R5;untermontan;21L;;;25au med;;;;;;collin
-R5;untermontan;19P;;;33m  med;;;;;;collin
-R5;untermontan;23*;;;42B  med;;;;;;collin
-R5;untermontan;24;;;25a  med;;;;;;collin
-R5;untermontan;24*;;;25au med;;;;;;collin
-R5;untermontan;32V;;;32C  med;;;;;;collin
-R5;untermontan;32*;;;27  med;;;;;;collin
-R5;untermontan;27;;;27  med;;;;;;collin
-R5;untermontan;40P;;;40P  med;;;;;;collin
-R5;untermontan;40PBl;;;25as  med;;;;;;collin
-R5;untermontan;43S;;;43S  med;;;;;;collin
-R5;untermontan;19a;;;3L/4L  med;;;;;;collin
-R5;untermontan;19a;;;3L/4L  med;;;;;;collin
-R5;untermontan;19m;;;3L/4L  med;;;;;;collin
-R5;untermontan;47H;;;25as  med;;;;;;collin
-R5;untermontan;3;;normal;42V  med;;;;;;collin
-R5;untermontan;3;;tiefgründig;34a  med;;;;;;collin
-R5;untermontan;4;;;3L/4L  med;;;;;;collin
-R5;untermontan;4;;;3L/4L  med;;;;;;collin
-R5;untermontan;4;;;3L/4L  med;;;;;;collin
-R5;untermontan;4;;;3L/4L  med;;;;;;collin
-R5;untermontan;14*;;normal;37  med;;;;;;collin
-R5;untermontan;14*;;mit viel Schutt;25O  med;;;;;;collin
-R5;untermontan;24*;;;25au med;;;;;;collin
-R5;untermontan;3s;;normal;42Q  med;;;;;;collin
-R5;untermontan;3s;;flachgründig;42r  med;;;;;;collin
-R5;untermontan;12*;;;36  med;;;;;;collin
-R5;untermontan;3s;;normal;42Q  med;;;;;;collin
-R5;untermontan;3s;;flachgründig;42r  med;;;;;;collin
-R5;untermontan;24*;;;25au med;;;;;;collin
-R5;untermontan;keine Angabe;;;66  med;;;;;;collin
-R5;untermontan;68;;;42r  med;;;;;;collin
-R5;untermontan;42r;;;42r  med;;;;;;collin
-R5;untermontan;16*;;;38*  med;;;;;;collin
-R5;untermontan;14*;;normal;37  med;;;;;;collin
-R5;untermontan;14*;;mit viel Schutt;25O  med;;;;;;collin
-R5;untermontan;;;;;;;;;;collin
-R5;untermontan;24*;;;25au  med;;;;;;collin
-R5;untermontan;3*/4*;;;3LV  med;;;;;;collin
-R5;untermontan;12*h;;;36  med;;;;;;collin
-R5;untermontan;13*;;;13*  med;;;;;;collin
-R5;untermontan;27h;;;27  med;;;;;;collin
-R5;untermontan;AV;;;25au  med;;;;;;collin
-R5;untermontan;40Pt;;;40P  med;;;;;;collin
-R5;untermontan;40PBlt;;;25as  med;;;;;;collin
-R5;untermontan;99999;;99999;7a med;;;;;;collin
-R5;untermontan;99999;;99999;22*  med;;;;;;collin
-R5;untermontan;99999;;99999;25f  med;;;;;;collin
-R5;untermontan;99999;;99999;27O  med;;;;;;collin
-R5;untermontan;99999;;99999;28  med;;;;;;collin
-R5;untermontan;99999;;99999;30  med;;;;;;collin
-R5;untermontan;99999;;99999;31  med;;;;;;collin
-R5;untermontan;99999;;99999;33a  med;;;;;;collin
-R5;untermontan;99999;;99999;33b  med;;;;;;collin
-R5;untermontan;99999;;99999;35Q  med;;;;;;collin
-R5;untermontan;99999;;99999;35S  med;;;;;;collin
-R5;untermontan;99999;;99999;40PBl  med;;;;;;collin
-R5;untermontan;99999;;99999;42C  med;;;;;;collin
-R5;untermontan;99999;;99999;42t  med;;;;;;collin
-R5;untermontan;99999;;99999;43  med;;;;;;collin
-R5;untermontan;99999;;99999;43*  med;;;;;;collin
-R5;untermontan;99999;;99999;44  med;;;;;;collin
-R5;untermontan;99999;;99999;91  med;;;;;;collin
-R5;untermontan;99999;;99999;92a  med;;;;;;collin
-R5;untermontan;99999;;99999;92z  med;;;;;;collin
-R5;untermontan;99999;;99999;93  med;;;;;;collin
+R5;ober- und untermontan;21L;;;25au;;;;;;collin mit Buche
+R5;ober- und untermontan;21L;;;25au;;;;;;collin mit Buche
+R5;ober- und untermontan;19P;;;33m;;;;;;collin mit Buche
+R5;ober- und untermontan;23*;;;42B;;;;;;collin mit Buche
+R5;ober- und untermontan;24;;;25a;;;;;;collin mit Buche
+R5;ober- und untermontan;24*;;;25au;;;;;;collin mit Buche
+R5;ober- und untermontan;32V;;;32C;;;;;;collin mit Buche
+R5;ober- und untermontan;32*;;;27;;;;;;collin mit Buche
+R5;ober- und untermontan;27;;;27;;;;;;collin mit Buche
+R5;ober- und untermontan;40P;;;40Pt;;;;;;collin mit Buche
+R5;ober- und untermontan;40PBl;;;25as;;;;;;collin mit Buche
+R5;ober- und untermontan;43S;;;43S;;;;;;collin mit Buche
+R5;ober- und untermontan;19a;;;3L/4L;;;;;;collin mit Buche
+R5;ober- und untermontan;19a;;;3L/4L;;;;;;collin mit Buche
+R5;ober- und untermontan;19m;;;3L/4L;;;;;;collin mit Buche
+R5;ober- und untermontan;47H;;;25as;;;;;;collin mit Buche
+R5;ober- und untermontan;3;;normal;42V;;;;;;collin mit Buche
+R5;ober- und untermontan;3;;tiefgründig;34a;;;;;;collin mit Buche
+R5;ober- und untermontan;4;;;3L/4L;;;;;;collin mit Buche
+R5;ober- und untermontan;4;;;3L/4L;;;;;;collin mit Buche
+R5;ober- und untermontan;4;;;3L/4L;;;;;;collin mit Buche
+R5;ober- und untermontan;4;;;3L/4L;;;;;;collin mit Buche
+R5;ober- und untermontan;14*;;normal;37;;;;;;collin mit Buche
+R5;ober- und untermontan;14*;;mit viel Schutt;25O;;;;;;collin mit Buche
+R5;ober- und untermontan;24*;;;25au;;;;;;collin mit Buche
+R5;ober- und untermontan;3s;;normal;42Q;;;;;;collin mit Buche
+R5;ober- und untermontan;3s;;flachgründig;42r;;;;;;collin mit Buche
+R5;ober- und untermontan;12*;;;36;;;;;;collin mit Buche
+R5;ober- und untermontan;3s;;normal;42Q;;;;;;collin mit Buche
+R5;ober- und untermontan;3s;;flachgründig;42r;;;;;;collin mit Buche
+R5;ober- und untermontan;24*;;;25au;;;;;;collin mit Buche
+R5;ober- und untermontan;keine Angabe;;;66;;;;;;collin mit Buche
+R5;ober- und untermontan;68;;;42r;;;;;;collin mit Buche
+R5;ober- und untermontan;42r;;;42r;;;;;;collin mit Buche
+R5;ober- und untermontan;16*;;;38*;;;;;;collin mit Buche
+R5;ober- und untermontan;14*;;normal;37;;;;;;collin mit Buche
+R5;ober- und untermontan;14*;;mit viel Schutt;25O;;;;;;collin mit Buche
+R5;ober- und untermontan;;;;;;;;;;collin mit Buche
+R5;ober- und untermontan;24*;;;25au;;;;;;collin mit Buche
+R5;ober- und untermontan;3*/4*;;;3LV;;;;;;collin mit Buche
+R5;ober- und untermontan;12*h;;;36;;;;;;collin mit Buche
+R5;ober- und untermontan;13*;;;13*;;;;;;collin mit Buche
+R5;ober- und untermontan;27h;;;27;;;;;;collin mit Buche
+R5;ober- und untermontan;AV;;;25au;;;;;;collin mit Buche
+R5;ober- und untermontan;40Pt;;;40Pt;;;;;;collin mit Buche
+R5;ober- und untermontan;40PBlt;;;25as;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;7a;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;22*;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;25f;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;27O;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;28;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;30;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;31;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;33a;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;33b;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;35Q;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;35S;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;40PBlt;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;42C;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;42t;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;43;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;43*;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;44;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;91;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;92a;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;92z;;;;;;collin mit Buche
+R5;ober- und untermontan;99999;;99999;93;;;;;;collin mit Buche
+R5;ober- und untermontan;21L;;;25au hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;21L;;;25au hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;19P;;;33m hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;23*;;;42B hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;24;;;25a hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;24*;;;25au hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;32V;;;32C hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;32*;;;27 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;27;;;27 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;40P;;;40P hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;40PBl;;;25as hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;43S;;;43S hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;19a;;;3L/4L hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;19a;;;3L/4L hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;19m;;;3L/4L hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;47H;;;25as hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;3;;normal;42V hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;3;;tiefgründig;34a hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;4;;;3L/4L hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;4;;;3L/4L hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;4;;;3L/4L hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;4;;;3L/4L hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;14*;;normal;37 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;14*;;mit viel Schutt;25O hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;24*;;;25au hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;3s;;normal;42Q hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;3s;;flachgründig;42r hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;12*;;;36 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;3s;;normal;42Q hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;3s;;flachgründig;42r hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;24*;;;25au hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;keine Angabe;;;66 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;68;;;42r hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;42r;;;42r hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;16*;;;38* hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;14*;;normal;37 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;14*;;mit viel Schutt;25O hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;;;;;;;;;;hyperinsubrisch
+R5;ober- und untermontan;24*;;;25au hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;3*/4*;;;3LV hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;12*h;;;36 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;13*;;;13* hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;27h;;;27 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;AV;;;25au hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;40Pt;;;40P hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;40PBlt;;;25as hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;7a hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;22* hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;25f hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;27O hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;28 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;30 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;31 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;33a hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;33b hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;35Q hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;35S hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;40PBl hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;42C hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;42t hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;43 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;43* hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;44 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;91 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;92a hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;92z hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;99999;;99999;93 hyp;;;;;;hyperinsubrisch
+R5;ober- und untermontan;21L;;;25au med;;;;;;collin -mediterran
+R5;ober- und untermontan;21L;;;25au med;;;;;;collin -mediterran
+R5;ober- und untermontan;19P;;;33m  med;;;;;;collin -mediterran
+R5;ober- und untermontan;23*;;;42B  med;;;;;;collin -mediterran
+R5;ober- und untermontan;24;;;25a  med;;;;;;collin -mediterran
+R5;ober- und untermontan;24*;;;25au med;;;;;;collin -mediterran
+R5;ober- und untermontan;32V;;;32C  med;;;;;;collin -mediterran
+R5;ober- und untermontan;32*;;;27  med;;;;;;collin -mediterran
+R5;ober- und untermontan;27;;;27  med;;;;;;collin -mediterran
+R5;ober- und untermontan;40P;;;40P  med;;;;;;collin -mediterran
+R5;ober- und untermontan;40PBl;;;25as  med;;;;;;collin -mediterran
+R5;ober- und untermontan;43S;;;43S  med;;;;;;collin -mediterran
+R5;ober- und untermontan;19a;;;3L/4L  med;;;;;;collin -mediterran
+R5;ober- und untermontan;19a;;;3L/4L  med;;;;;;collin -mediterran
+R5;ober- und untermontan;19m;;;3L/4L  med;;;;;;collin -mediterran
+R5;ober- und untermontan;47H;;;25as  med;;;;;;collin -mediterran
+R5;ober- und untermontan;3;;normal;42V  med;;;;;;collin -mediterran
+R5;ober- und untermontan;3;;tiefgründig;34a  med;;;;;;collin -mediterran
+R5;ober- und untermontan;4;;;3L/4L  med;;;;;;collin -mediterran
+R5;ober- und untermontan;4;;;3L/4L  med;;;;;;collin -mediterran
+R5;ober- und untermontan;4;;;3L/4L  med;;;;;;collin -mediterran
+R5;ober- und untermontan;4;;;3L/4L  med;;;;;;collin -mediterran
+R5;ober- und untermontan;14*;;normal;37  med;;;;;;collin -mediterran
+R5;ober- und untermontan;14*;;mit viel Schutt;25O  med;;;;;;collin -mediterran
+R5;ober- und untermontan;24*;;;25au med;;;;;;collin -mediterran
+R5;ober- und untermontan;3s;;normal;42Q  med;;;;;;collin -mediterran
+R5;ober- und untermontan;3s;;flachgründig;42r  med;;;;;;collin -mediterran
+R5;ober- und untermontan;12*;;;36  med;;;;;;collin -mediterran
+R5;ober- und untermontan;3s;;normal;42Q  med;;;;;;collin -mediterran
+R5;ober- und untermontan;3s;;flachgründig;42r  med;;;;;;collin -mediterran
+R5;ober- und untermontan;24*;;;25au med;;;;;;collin -mediterran
+R5;ober- und untermontan;keine Angabe;;;66  med;;;;;;collin -mediterran
+R5;ober- und untermontan;68;;;42r  med;;;;;;collin -mediterran
+R5;ober- und untermontan;42r;;;42r  med;;;;;;collin -mediterran
+R5;ober- und untermontan;16*;;;38*  med;;;;;;collin -mediterran
+R5;ober- und untermontan;14*;;normal;37  med;;;;;;collin -mediterran
+R5;ober- und untermontan;14*;;mit viel Schutt;25O  med;;;;;;collin -mediterran
+R5;ober- und untermontan;;;;;;;;;;collin -mediterran
+R5;ober- und untermontan;24*;;;25au  med;;;;;;collin -mediterran
+R5;ober- und untermontan;3*/4*;;;3LV  med;;;;;;collin -mediterran
+R5;ober- und untermontan;12*h;;;36  med;;;;;;collin -mediterran
+R5;ober- und untermontan;13*;;;13*  med;;;;;;collin -mediterran
+R5;ober- und untermontan;27h;;;27  med;;;;;;collin -mediterran
+R5;ober- und untermontan;AV;;;25au  med;;;;;;collin -mediterran
+R5;ober- und untermontan;40Pt;;;40P  med;;;;;;collin -mediterran
+R5;ober- und untermontan;40PBlt;;;25as  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;7a med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;22*  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;25f  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;27O  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;28  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;30  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;31  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;33a  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;33b  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;35Q  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;35S  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;40PBl  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;42C  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;42t  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;43  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;43*  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;44  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;91  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;92a  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;92z  med;;;;;;collin -mediterran
+R5;ober- und untermontan;99999;;99999;93  med;;;;;;collin -mediterran

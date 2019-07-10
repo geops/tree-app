@@ -197,7 +197,7 @@ LEFT JOIN
 ----------------------------------------------
 -- heightlevel
 
-CREATE TYPE heightlevel AS ENUM ('C', 'SM', 'UM', 'OM', 'HM', 'SA', 'OSA');
+CREATE TYPE heightlevel AS ENUM ('C', 'SM', 'UM', 'OM', 'HM', 'SA', 'OSA','OUM','C_B','HY','C_M');
 
 
 CREATE TABLE heightlevel_meta (source TEXT, target heightlevel,
@@ -244,6 +244,30 @@ INSERT INTO heightlevel_meta (source, target, de)
 VALUES ('obersubalpin',
         'OSA'::heightlevel,
         'Obersubalpin');
+
+
+INSERT INTO heightlevel_meta (source, target, de)
+VALUES ('collin mit Buche',
+        'C_B'::heightlevel,
+        'collin mit Buche');
+
+
+INSERT INTO heightlevel_meta (source, target, de)
+VALUES ('hyperinsubrisch',
+        'HY'::heightlevel,
+        'hyperinsubrisch');
+
+
+INSERT INTO heightlevel_meta (source, target, de)
+VALUES ('collin -mediterran',
+        'C_M'::heightlevel,
+        'collin-mediterran');
+
+
+INSERT INTO heightlevel_meta (source, target, de)
+VALUES ('ober- und untermontan',
+        'OUM'::heightlevel,
+        'unter-/obermontan');
 
 ----------------------------------------------
 -- recommendationtype
