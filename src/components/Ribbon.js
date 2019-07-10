@@ -3,21 +3,23 @@ import propTypes from 'prop-types';
 
 const styles = {
   position: 'fixed',
-  bottom: '20px',
+  bottom: '35px',
   backgroundColor: '#8b0e00',
-  right: '-35px',
+  right: '-41px',
   transform: 'rotate(-45deg)',
   zIndex: '10',
+  lineHeight: '24px',
 };
 
 const textStyle = {
-  border: '2px solid white',
+  border: 'dotted',
   color: 'white',
   fontSize: '14px',
   fontFamily: 'Sans-Serif',
   fontWeight: 'bold',
-  margin: '2px',
   padding: '0 70px',
+  textAlign: 'center',
+  letterSpacing: '3px',
 };
 
 const Ribbon = ({ label }) => (
