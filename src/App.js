@@ -75,14 +75,13 @@ function App() {
   return (
     <Container>
       <Divider hidden />
-      <Header size="huge" textAlign="center" color="olive">
+      <Header size="huge" textAlign="center" color="#055418">
         {t('app.title')}
       </Header>
       <Divider hidden />
       <Form>
         <Form.Dropdown
           label={t('forestType.label')}
-          placeholder={t('dropdownPlaceholder')}
           search
           selection
           fluid
