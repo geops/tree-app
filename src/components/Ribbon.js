@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 const styles = {
   position: 'fixed',
   bottom: '20px',
-  backgroundColor: 'blue',
+  backgroundColor: '#8b0e00',
   right: '-35px',
   transform: 'rotate(-45deg)',
   zIndex: '10',
