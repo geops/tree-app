@@ -9,15 +9,17 @@ const styles = {
   transform: 'rotate(-45deg)',
   zIndex: '10',
   lineHeight: '24px',
+  opacity: '0.8',
+  boxShadow: 'rgba(123, 85, 85, 0.85) 4px 1px 3px 3px',
 };
 
 const textStyle = {
-  border: 'dotted',
+  border: '2px solid white',
   color: 'white',
-  fontSize: '14px',
-  fontFamily: 'Sans-Serif',
-  fontWeight: 'bold',
+  fontSize: '1.3rem',
+  fontWeight: 'bolder',
   padding: '0 70px',
+  margin: '2px',
   textAlign: 'center',
   letterSpacing: '3px',
 };
