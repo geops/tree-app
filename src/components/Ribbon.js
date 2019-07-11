@@ -4,13 +4,13 @@ import propTypes from 'prop-types';
 const styles = {
   position: 'fixed',
   bottom: '35px',
-  backgroundColor: '#8b0e00',
-  right: '-41px',
+  backgroundColor: '#b3372b',
+  right: '-51px',
   transform: 'rotate(-45deg)',
   zIndex: '10',
   lineHeight: '24px',
   opacity: '0.8',
-  boxShadow: 'rgba(123, 85, 85, 0.85) 4px 1px 3px 3px',
+  boxShadow: 'rgba(123, 85, 85, 0.85) 0px 0px 10px 0px',
 };
 
 const textStyle = {
