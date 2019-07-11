@@ -1,11 +1,18 @@
 version: '3'
 services:
   db:
-    image: postgres:11
+    build:
+      context: ./db
     restart: always
     ports:
       - 5432:5432
     environment:
       - POSTGRES_DB=tree
+    volumes:
+      - .:/data
+  tippecanoe:
+    build:
+      context: ./tippecanoe
+    restart: always
     volumes:
       - .:/data
