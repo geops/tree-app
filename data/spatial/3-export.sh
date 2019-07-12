@@ -1,1 +1,0 @@
-ogr2ogr -f GeoJSON export/altitudinal_zones_1995.geojson PG:'host=localhost dbname=tree user=postgres' -sql 'select * from altitudinal_zones_1995_export'

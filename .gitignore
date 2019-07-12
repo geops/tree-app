@@ -2,4 +2,8 @@ dist
 node_modules
 data/spatial/export
 data/spatial/tiles
-data/spatial/vegetationshoehenstufen_1995
+data/spatial/altitudinal_zones_1995
+data/spatial/altitudinal_zones_2085_dry
+data/spatial/altitudinal_zones_2085_less_dry
+data/spatial/forest_ecoregions
+data/spatial/silver_fir_areas
