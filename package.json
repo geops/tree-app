@@ -53,8 +53,10 @@
   },
   "scripts": {
     "data:transform": "yarn data:stop && yarn data:start && yarn data:stop",
-    "data:start": "cd data && docker-compose up -d --build && sleep 9 && docker run --network=data_default --rm -v `pwd`/sql:/flyway/sql boxfuse/flyway:5-alpine -url=jdbc:postgresql://db:5432/tree -user=postgres migrate",
+    "data:start": "cd data && docker-compose up -d --build && sleep 9 && docker run --network=data_default --rm -v `pwd`/sql:/flyway/sql boxfuse/flyway:5-alpine -url=jdbc:postgresql://db:5432/tree -user=postgres migrate && docker-compose exec db sh -c '/data/spatial/1-import.sh'",
     "data:stop": "cd data && docker-compose down --remove-orphans --volumes",
+    "data:spatial:export": "cd data && docker-compose exec db sh -c '/data/spatial/2-export.sh'",
+    "data:spatial:tile": "cd data && docker-compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
     "build": "microbundle",
     "lint": "microbundle && eslint src",
     "test": "microbundle && jest"
