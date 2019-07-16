@@ -12,7 +12,7 @@ COPY
       values
       FROM region_meta),
         heightlevel AS
-     (SELECT json_agg(jsonb_build_object('key', target, 'de', de)) AS
+     (SELECT json_agg(jsonb_build_object('key', target, 'de', de,'id',id)) AS
       values
       FROM heightlevel_meta),
         additional AS

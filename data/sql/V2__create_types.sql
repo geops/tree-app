@@ -188,11 +188,11 @@ INSERT INTO foresttype_meta (target, de)
 SELECT foo.foresttype,
        mstr.naistyp_wges
 FROM
-  (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
+        (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
 LEFT JOIN
-  (SELECT naistyp_wges,
-          regexp_split_to_table(naistyp_c, '\/') AS naistyp_c
-   FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
+        (SELECT naistyp_wges,
+                regexp_split_to_table(naistyp_c, '\/') AS naistyp_c
+         FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
 
 ----------------------------------------------
 -- heightlevel
@@ -201,7 +201,7 @@ CREATE TYPE heightlevel AS ENUM ('C', 'SM', 'UM', 'OM', 'HM', 'SA', 'OSA','OUM',
 
 
 CREATE TABLE heightlevel_meta (source TEXT, target heightlevel,
-                                            de TEXT, vegetationshoehenstufen_codes integer[]);
+                                            de TEXT, id SERIAL, vegetationshoehenstufen_codes integer []);
 
 
 INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
@@ -278,7 +278,6 @@ VALUES ('obersubalpin',
         'OSA'::heightlevel,
         'Obersubalpin',
         '{10}');
-
 
 ----------------------------------------------
 -- recommendationtype
@@ -458,6 +457,6 @@ INSERT INTO treetype_meta (target, de)
 SELECT foo.treetype,
        nais.art_nam_deu
 FROM
-  (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 LEFT JOIN nat_arten_baum nais ON nais.art_sisf_nr = foo.treetype::text;
 
