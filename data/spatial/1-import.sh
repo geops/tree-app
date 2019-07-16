@@ -16,7 +16,7 @@ _import () {
     fi
 
     local COUNT=$(psql -d tree -U postgres -At -c "SELECT COUNT(*) FROM ${TARGET}")
-    if [ $COUNT == "0" ]; then
+    if [ "$COUNT" == "0" ]; then
         echo "Importing ${TARGET} ..."
         shp2pgsql -a -s 2056 "/data/spatial/${TARGET}/${TARGET}.shp" | psql -d tree -U postgres
     else
