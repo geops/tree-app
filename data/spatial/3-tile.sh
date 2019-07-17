@@ -13,3 +13,4 @@ _tile "silver_fir_areas"
 echo "Joining tiles ..."
 cd /data/spatial/tiles
 tile-join --force --maximum-zoom=10 --no-tile-size-limit -e "tree" altitudinal_zones_1995.mbtiles altitudinal_zones_2085_dry.mbtiles altitudinal_zones_2085_less_dry.mbtiles forest_ecoregions.mbtiles silver_fir_areas.mbtiles
+rm altitudinal_zones_1995.mbtiles altitudinal_zones_2085_dry.mbtiles altitudinal_zones_2085_less_dry.mbtiles forest_ecoregions.mbtiles silver_fir_areas.mbtiles
