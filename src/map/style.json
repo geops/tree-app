@@ -1,0 +1,171 @@
+{
+  "version": 8,
+  "name": "tree",
+  "sources": {
+    "tree": {
+      "type": "vector"
+    }
+  },
+  "layers": [
+    {
+      "id": "altitudinal_zones_1995",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "altitudinal_zones_1995",
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code"],
+          0,
+          "#ccc",
+          1,
+          "#df73ff",
+          2,
+          "#8400a8",
+          3,
+          "#e60000",
+          4,
+          "#ff5500",
+          5,
+          "#ffaa00",
+          6,
+          "#267300",
+          7,
+          "#70a800",
+          8,
+          "#00a9e6",
+          9,
+          "#732600",
+          10,
+          "#3b1300",
+          "#ccc"
+        ],
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "altitudinal_zones_2085_dry",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "altitudinal_zones_2085_dry",
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code"],
+          0,
+          "#ccc",
+          1,
+          "#df73ff",
+          2,
+          "#8400a8",
+          3,
+          "#e60000",
+          4,
+          "#ff5500",
+          5,
+          "#ffaa00",
+          6,
+          "#267300",
+          7,
+          "#70a800",
+          8,
+          "#00a9e6",
+          9,
+          "#732600",
+          10,
+          "#3b1300",
+          "#ccc"
+        ],
+        "fill-opacity": 0.01
+      }
+    },
+    {
+      "id": "altitudinal_zones_2085_less_dry",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "altitudinal_zones_2085_less_dry",
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code"],
+          0,
+          "#ccc",
+          1,
+          "#df73ff",
+          2,
+          "#8400a8",
+          3,
+          "#e60000",
+          4,
+          "#ff5500",
+          5,
+          "#ffaa00",
+          6,
+          "#267300",
+          7,
+          "#70a800",
+          8,
+          "#00a9e6",
+          9,
+          "#732600",
+          10,
+          "#3b1300",
+          "#ccc"
+        ],
+        "fill-opacity": 0.01
+      }
+    },
+    {
+      "id": "forest_ecoregions",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "forest_ecoregions",
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code"],
+          "J",
+          "#cf8a23",
+          "M",
+          "#dcbd2f",
+          "1",
+          "#d8df51",
+          "2a",
+          "#7ce882",
+          "2b",
+          "#3ba625",
+          "3",
+          "#93e6ec",
+          "4",
+          "#76a8e7",
+          "5a",
+          "#5851df",
+          "5b",
+          "#e466c7",
+          "#ccc"
+        ],
+        "fill-opacity": 0.01
+      }
+    },
+    {
+      "id": "silver_fir_areas",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "silver_fir_areas",
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code"],
+          1,
+          "#4e4e4e",
+          2,
+          "#9c9c9c",
+          3,
+          "#ffffff",
+          "#ccc"
+        ],
+        "fill-opacity": 0.01
+      }
+    }
+  ]
+}
