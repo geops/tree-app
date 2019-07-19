@@ -195,143 +195,69 @@ LEFT JOIN
          FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
 
 ----------------------------------------------
--- heightlevel
+-- altitudinal zones
 
-CREATE TYPE heightlevel AS ENUM ('C', 'SM', 'UM', 'OM', 'HM', 'SA', 'OSA','OUM','C_B','HY','C_M');
-
-
-CREATE TABLE heightlevel_meta (source TEXT, target heightlevel,
-                                            de TEXT, id SERIAL, vegetationshoehenstufen_codes integer []);
+CREATE TABLE altitudinal_zone_meta (projection TEXT, code TEXT, id SERIAL);
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('hyperinsubrisch',
-        'HY'::heightlevel,
-        'hyperinsubrisch',
-        '{1}');
+        '1');
 
 
-INSERT INTO heightlevel_meta (source, target, de)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('collin -mediterran',
-        'C_M'::heightlevel,
-        'collin-mediterran');
+        '0');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('collin',
-        'C'::heightlevel,
-        'Collin',
-        '{2}');
+        '2');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('collin mit Buche',
-        'C_B'::heightlevel,
-        'collin mit Buche',
-        '{3}');
+        '3');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('submontan',
-        'SM'::heightlevel,
-        'Submontan',
-        '{4}');
+        '4');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('untermontan',
-        'UM'::heightlevel,
-        'Untermontan',
-        '{5}');
+        '5');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('obermontan',
-        'OM'::heightlevel,
-        'Obermontan',
-        '{6}');
+        '6');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('ober- und untermontan',
-        'OUM'::heightlevel,
-        'unter-/obermontan',
-        '{7}');
+        '7');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('hochmontan',
-        'HM'::heightlevel,
-        'Hochmontan',
-        '{8}');
+        '8');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('subalpin',
-        'SA'::heightlevel,
-        'Subalpin',
-        '{9}');
+        '9');
 
 
-INSERT INTO heightlevel_meta (source, target, de, vegetationshoehenstufen_codes)
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('obersubalpin',
-        'OSA'::heightlevel,
-        'Obersubalpin',
-        '{10}');
+        '10');
 
 ----------------------------------------------
 -- recommendationtype
 
 CREATE TYPE recommendationtype AS ENUM ('0', '1', '2', '3');
-
-----------------------------------------------
--- region
-
-CREATE TYPE region AS ENUM ('J', 'M', '1', '2a', '2b', '3', '4', '5');
-
-
-CREATE TABLE region_meta (target region,
-                          de TEXT);
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('J'::region,
-        'Jura');
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('M'::region,
-        'Mittelland');
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('1'::region,
-        'Nördliche Randalpen');
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('2a'::region,
-        'Nördliche Zwischenalpen mit Buchen');
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('2b'::region,
-        'Nördliche Zwischenalpen ohne Buchen');
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('3'::region,
-        'Kontinentale Hochalpen');
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('4'::region,
-        'Südliche Zwischenalpen');
-
-
-INSERT INTO region_meta (target, de)
-VALUES ('5'::region,
-        'Südliche Randalpen');
 
 ----------------------------------------------
 -- relief
@@ -406,41 +332,28 @@ VALUES ('unknown',
         'nicht relevant');
 
 ----------------------------------------------
--- tannenareal
+-- silver fir areaS
 
-CREATE TYPE tannenareal AS ENUM ('h_or_n','r','h_and_n','n','unknown');
-
-
-CREATE TABLE tannen_meta (source TEXT, de TEXT,target tannenareal);
+CREATE TABLE silver_fir_area_meta (projection TEXT, code_ta TEXT);
 
 
-INSERT INTO tannen_meta (source,de,target)
-VALUES ('Haupt- und Nebenareal',
-        'Haupt- und Nebenareal',
-        'h_and_n');
+INSERT INTO silver_fir_area_meta (projection, code_ta)
+VALUES ('Hauptareal',
+        '1');
 
 
-INSERT INTO tannen_meta (source,de,target)
-VALUES ('Reliktareal',
-        'Reliktareal',
-        'r');
-
-
-INSERT INTO tannen_meta (source,de,target)
-VALUES ('Haupt- oder Nebenareal',
-        'Haupt- oder Nebenareal',
-        'h_or_n');
-
-
-INSERT INTO tannen_meta (source,de,target)
+INSERT INTO silver_fir_area_meta (projection, code_ta)
 VALUES ('Nebenareal',
-        'Nebenareal',
-        'n');
+        '2');
 
 
-INSERT INTO tannen_meta (source,de,target)
-VALUES ('',
-        'nicht relevant',
+INSERT INTO silver_fir_area_meta (projection, code_ta)
+VALUES ('Reliktareal',
+        '3');
+
+
+INSERT INTO silver_fir_area_meta (projection, code_ta)
+VALUES ('nicht relevant',
         'unknown');
 
 ----------------------------------------------

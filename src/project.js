@@ -11,8 +11,8 @@ const conditions = [
     values: types.forestEcoregion,
   },
   {
-    field: 'heightLevel',
-    values: types.heightLevel,
+    field: 'altitudinalZone',
+    values: types.altitudinalZone,
   },
   {
     field: 'slope',
@@ -23,8 +23,8 @@ const conditions = [
     values: types.additional,
   },
   {
-    field: 'tannenareal',
-    values: types.tannenareal,
+    field: 'silverFirArea',
+    values: types.silverFirArea,
   },
   {
     field: 'relief',
@@ -32,55 +32,67 @@ const conditions = [
   },
 ];
 
-const heightLevelList = types.heightLevel
+const altitudinalZoneList = types.altitudinalZone
   .filter(e => e.id !== 1 && e.id !== 2 && e.id !== 4 && e.id !== 8)
-  .map(e => e.key)
+  .map(e => e.code)
   .reverse();
 
-const getNextHeigtLevel = currentHeightLevel =>
-  heightLevelList[heightLevelList.indexOf(currentHeightLevel) + 1];
+const getNextHeigtLevel = currentaltitudinalZone =>
+  altitudinalZoneList[altitudinalZoneList.indexOf(currentaltitudinalZone) + 1];
 
 function projectionReducer(location) {
-  const options = {};
+  const newLocation = { ...location, options: {} };
+  delete newLocation.forestType;
   let forestType = projections;
   for (let i = 0; i < conditions.length; i += 1) {
     const { field, values } = conditions[i];
     const value = location[field];
 
     // Validation
-    if (value && values && values.find(v => v.key === value) === undefined) {
+    if (value && values && values.find(v => v.code === value) === undefined) {
       throw new Error(`${value} for ${field} is not valid.`);
     }
 
-    options[field] = Object.keys(forestType);
+    newLocation.options[field] = Object.keys(forestType);
 
     if (value && forestType[value]) {
       forestType = forestType[value];
+    } else if (forestType.unknown && Object.keys(forestType).length === 1) {
+      forestType = forestType.unknown;
+      newLocation[field] = 'unknown';
     } else {
       // Location does not provide any more values for conditions.
       break;
     }
   }
 
-  if (typeof forestType !== 'string') {
-    throw new Error('Found no projection for selected targetHeightLevel.');
+  if (typeof forestType === 'string') {
+    newLocation.forestType = forestType;
   }
 
-  const heightLevel = getNextHeigtLevel(location.heightLevel);
-  return { ...location, options, forestType, heightLevel };
+  newLocation.altitudinalZone = getNextHeigtLevel(location.altitudinalZone);
+  return newLocation;
 }
 
-function project(location, targetHeightLevel) {
-  if (types.heightLevel.find(v => v.key === targetHeightLevel) === undefined) {
-    throw new Error(`${targetHeightLevel} for targetHeightLevel is not valid.`);
+function project(location, targetaltitudinalZone) {
+  if (
+    types.altitudinalZone.find(v => v.code === targetaltitudinalZone) ===
+    undefined
+  ) {
+    throw new Error(
+      `${targetaltitudinalZone} for target altitudinal zone is not valid.`,
+    );
   }
 
-  const heightLevelPointer = heightLevelList.indexOf(location.heightLevel);
+  const altitudinalZonePointer = altitudinalZoneList.indexOf(
+    location.altitudinalZone,
+  );
+
   let newLocation;
-  if (heightLevelList[heightLevelPointer] !== targetHeightLevel) {
+  if (altitudinalZoneList[altitudinalZonePointer] !== targetaltitudinalZone) {
     newLocation = projectionReducer(location);
-    if (newLocation.heightLevel !== targetHeightLevel) {
-      newLocation = project(newLocation, targetHeightLevel);
+    if (newLocation.altitudinalZone !== targetaltitudinalZone) {
+      newLocation = project(newLocation, targetaltitudinalZone);
     }
   }
   return newLocation;

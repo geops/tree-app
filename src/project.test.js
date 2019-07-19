@@ -1,82 +1,112 @@
 const { project } = require('../');
 
-test('valid projection', () => {
-  expect(
-    project(
-      {
-        forestEcoregion: '1',
-        additional: 'unknown',
-        heightLevel: 'OM',
-        forestType: '1h',
-        slope: 'unknown',
-        tannenareal: 'unknown',
-        relief: 'unknown',
-      },
-      'UM',
-    ).forestType,
-  ).toBe('1');
+describe('Test for input values', () => {
+  test('valid projection', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '6',
+          forestType: '1h',
+        },
+        '5',
+      ).forestType,
+    ).toBe('1');
+  });
+
+  test('invalid location values', () => {
+    expect(() =>
+      project({ forestType: '60*', forestEcoregion: 'fooBar' }, '5'),
+    ).toThrowError('fooBar for forestEcoregion is not valid.');
+
+    expect(() =>
+      project(
+        { forestType: '60*', forestEcoregion: '1', altitudinalZone: 'fooBar' },
+        '6',
+      ),
+    ).toThrowError('fooBar for altitudinalZone is not valid.');
+
+    expect(() =>
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '8',
+          forestType: '55 collin',
+        },
+        '2',
+      ),
+    ).toThrowError('55 collin for forestType is not valid.');
+  });
+
+  test('invalid target altitudinalZone', () => {
+    expect(() => project({}, 'fooBar')).toThrowError(
+      'fooBar for target altitudinal zone is not valid.',
+    );
+  });
 });
 
-test('valid multi heightLevel projection', () => {
-  expect(
-    project(
-      {
-        forestEcoregion: '3',
-        additional: 'unknown',
-        heightLevel: 'OSA',
-        forestType: '59L',
-        slope: 'unknown',
-        tannenareal: 'unknown',
-        relief: 'unknown',
-      },
-      'OM',
-    ).forestType,
-  ).toBe('1h');
-});
+describe('Test for output values', () => {
+  test('check for unknown as only available option', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '6',
+          forestType: '1h',
+        },
+        '5',
+      ).additional,
+    ).toBe('unknown');
+  });
 
-test('invalid location values', () => {
-  expect(() =>
-    project({ forestType: '60*', forestEcoregion: 'fooBar' }, 'UM'),
-  ).toThrowError('fooBar for forestEcoregion is not valid.');
+  test('empty target for incomplete location values', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          forestType: '60*',
+        },
+        '8',
+      ).target,
+    ).toBe(undefined);
+  });
 
-  expect(() =>
-    project(
-      { forestType: '60*', forestEcoregion: '1', heightLevel: 'fooBar' },
-      'OM',
-    ),
-  ).toThrowError('fooBar for heightLevel is not valid.');
+  test('option field with values for complete location values', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '9',
+          forestType: '60*',
+        },
+        '8',
+      ).options.slope,
+    ).toMatchObject(['<70', '>70']);
+  });
 
-  expect(() =>
-    project(
-      {
-        forestEcoregion: '1',
-        heightLevel: 'HM',
-        forestType: '55 collin',
-      },
-      'C',
-    ),
-  ).toThrowError('55 collin for forestType is not valid.');
-});
+  test('empty option field for incomplete location values', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '9',
+          forestType: '60*',
+        },
+        '8',
+      ).options.relief,
+    ).toBe(undefined);
+  });
 
-test('invalid target heightLevel', () => {
-  expect(() => project({}, 'fooBar')).toThrowError(
-    'fooBar for targetHeightLevel is not valid.',
-  );
-});
-
-test('missing projection for valid location and targetHeight', () => {
-  expect(() =>
-    project(
-      {
-        forestEcoregion: '1',
-        additional: 'unknown',
-        heightLevel: 'OSA',
-        forestType: '58L',
-        slope: 'unknown',
-        tannenareal: 'unknown',
-        relief: 'unknown',
-      },
-      'HM',
-    ),
-  ).toThrowError('Found no projection for selected targetHeightLevel.');
+  test('valid multi altitudinal zone projection', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '10',
+          forestType: '59L',
+        },
+        '6',
+      ).forestType,
+    ).toBe('1');
+  });
 });
