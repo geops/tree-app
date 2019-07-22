@@ -1,3 +1,4 @@
+import { getUid } from 'ol';
 import OLMap from 'ol/Map';
 import PropTypes from 'prop-types';
 import React, { useEffect, useMemo, useRef } from 'react';
@@ -7,7 +8,11 @@ import 'ol/ol.css';
 export const MapContext = React.createContext();
 
 function Map({ children, style, ...props }) {
-  const map = useMemo(() => new OLMap(props), [props]);
+  const map = useMemo(
+    () => new OLMap(props),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    Object.values(props).map(prop => getUid(prop)),
+  );
   const target = useRef(null);
   useEffect(() => map.setTarget(target.current));
   return (
