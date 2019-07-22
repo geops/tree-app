@@ -132,9 +132,9 @@ function Recommendation() {
             options={projection.options.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
             )}
-            onChange={(e, { value }) =>
-              setLocation({ ...location, altitudinalZone: value })
-            }
+            onChange={(e, { value }) => {
+              setLocation({ ...location, altitudinalZone: value });
+            }}
           />
         )}
 
@@ -198,7 +198,10 @@ function Recommendation() {
               selection
               clearable
               fluid
-              value={targetAltitudinalZone}
+              value={
+                targetAltitudinalZone ||
+                projection.options.targetAltitudinalZone[0]
+              }
               options={projection.options.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
