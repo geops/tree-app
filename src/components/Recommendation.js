@@ -174,8 +174,9 @@ function Recommendation() {
             value={location.relief}
           />
         )}
-        {projection.options.targetAltitudinalZone &&
-          projection.options.targetAltitudinalZone.length > 1 && (
+        {projection.options.altitudinalZone &&
+          projection.options.targetAltitudinalZone &&
+          projection.options.targetAltitudinalZone.length >= 1 && (
             <Form.Dropdown
               label={t('targetAltitudinalZone.label')}
               placeholder={t('dropdownPlaceholder')}
