@@ -26,7 +26,7 @@ function Recommendation() {
     // altitudinalZone: '9',
     // forestType: '60*',
   });
-  const [targetAltitudinalZone, setTargetAltitudinalZone] = useState('');
+  const [targetAltitudinalZone, setTargetAltitudinalZone] = useState();
   const projection = useMemo(() => project(location, targetAltitudinalZone), [
     location,
     targetAltitudinalZone,
@@ -188,7 +188,9 @@ function Recommendation() {
               options={projection.options.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
-              onChange={(e, { value }) => setTargetAltitudinalZone(value)}
+              onChange={(e, { value }) => {
+                return setTargetAltitudinalZone(value || undefined);
+              }}
             />
           )}
       </Form>
