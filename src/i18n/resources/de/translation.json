@@ -1,7 +1,7 @@
 {
   "app": {
     "recommendation": "Empfehlung",
-    "result": "Ergebnis",
+    "result": "Baumartenempfehlung",
     "ribbon": "Test",
     "title": "Baumarten Tool"
   },
@@ -19,24 +19,27 @@
   },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
   "forestEcoregion": {
-    "label": "2. Waldstandortsregion"
+    "label": "Waldstandortsregion"
   },
-  "heightLevel": {
-    "label": "3. Höhenstufe"
+  "altitudinalZone": {
+    "label": "Höhenstufe"
   },
   "forestType": {
-    "label": "1. Standorttyp"
+    "label": "Standorttyp"
   },
   "slope": {
-    "label": "4. Hangneigung"
+    "label": "Hangneigung"
   },
   "additional": {
-    "label": "5. Weitere"
+    "label": "Weitere"
   },
-  "tannenareal": {
-    "label": "6. Tannenareal"
+  "silverFirArea": {
+    "label": "Tannenareal"
   },
   "relief": {
-    "label": "7. Relief"
+    "label": "Relief"
+  },
+  "targetAltitudinalZone": {
+    "label": "Ziel Höhenstufe"
   }
 }

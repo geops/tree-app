@@ -22,15 +22,16 @@ const getDropdownOptions = (type, language, includeKey = false) => key => ({
 function Recommendation() {
   const { t, i18n } = useTranslation();
   const [location, setLocation] = useState({
-    // forestType: '60*',
     // forestEcoregion: '1',
-    // heightLevel: 'SA',
-    // slope: '<70',
-    // additional: 'unknown',
-    // tannenareal: 'unknown',
-    // relief: 'unknown',
+    // altitudinalZone: '9',
+    // forestType: '60*',
   });
-  const projection = useMemo(() => project(location), [location]);
+  const [targetAltitudinalZone, setTargetAltitudinalZone] = useState();
+  const projection = useMemo(() => project(location, targetAltitudinalZone), [
+    location,
+    targetAltitudinalZone,
+  ]);
+
   document.title = t('app.title');
 
   const panes = [
@@ -43,7 +44,7 @@ function Recommendation() {
       render: () => (
         <Tab.Pane>
           <Header>
-            {translate('forestType', projection.target, i18n.language)}
+            {translate('forestType', projection.forestType, i18n.language)}
             <Header.Subheader>
               zukünftiger Standorttyp unter Annahme der Änderung um eine
               Höhenstufe
@@ -61,7 +62,7 @@ function Recommendation() {
             </Form.Field>
           </Form>
           <Divider hidden />
-          <RecommendationResult forestType={projection.target} />
+          <RecommendationResult forestType={projection.forestType} />
         </Tab.Pane>
       ),
     },
@@ -105,24 +106,25 @@ function Recommendation() {
             }
           />
         )}
-        {projection.options.heightLevel && (
+        {projection.options.altitudinalZone && (
           <Form.Dropdown
-            label={t('heightLevel.label')}
+            label={t('altitudinalZone.label')}
             placeholder={t('dropdownPlaceholder')}
             search
             selection
             clearable
             fluid
-            value={location.heightLevel}
-            options={projection.options.heightLevel.map(
-              getDropdownOptions('heightLevel', i18n.language),
+            value={location.altitudinalZone}
+            options={projection.options.altitudinalZone.map(
+              getDropdownOptions('altitudinalZone', i18n.language),
             )}
             onChange={(e, { value }) =>
-              setLocation({ ...location, heightLevel: value })
+              setLocation({ ...location, altitudinalZone: value })
             }
           />
         )}
-        {projection.options.slope && projection.options.slope.length > 0 && (
+
+        {projection.options.slope && projection.options.slope.length > 1 && (
           <ChoiceButton
             label={t('slope.label')}
             options={projection.options.slope.map(
@@ -135,7 +137,7 @@ function Recommendation() {
           />
         )}
         {projection.options.additional &&
-          projection.options.additional.length > 0 && (
+          projection.options.additional.length > 1 && (
             <ChoiceButton
               label={t('additional.label')}
               options={projection.options.additional.map(
@@ -147,20 +149,20 @@ function Recommendation() {
               value={location.additional}
             />
           )}
-        {projection.options.tannenareal &&
-          projection.options.tannenareal.length > 0 && (
+        {projection.options.silverFirArea &&
+          projection.options.silverFirArea.length > 1 && (
             <ChoiceButton
-              label={t('tannenareal.label')}
-              options={projection.options.tannenareal.map(
-                getButtonOptions('tannenareal', i18n.language),
+              label={t('silverFirArea.label')}
+              options={projection.options.silverFirArea.map(
+                getButtonOptions('silverFirArea', i18n.language),
               )}
               onChange={(e, { value }) =>
-                setLocation({ ...location, tannenareal: value })
+                setLocation({ ...location, silverFirArea: value })
               }
-              value={location.tannenareal}
+              value={location.silverFirArea}
             />
           )}
-        {projection.options.relief && projection.options.relief.length > 0 && (
+        {projection.options.relief && projection.options.relief.length > 1 && (
           <ChoiceButton
             label={t('relief.label')}
             options={projection.options.relief.map(
@@ -172,8 +174,27 @@ function Recommendation() {
             value={location.relief}
           />
         )}
+        {projection.options.altitudinalZone &&
+          projection.options.targetAltitudinalZone &&
+          projection.options.targetAltitudinalZone.length >= 1 && (
+            <Form.Dropdown
+              label={t('targetAltitudinalZone.label')}
+              placeholder={t('dropdownPlaceholder')}
+              search
+              selection
+              clearable
+              fluid
+              value={targetAltitudinalZone}
+              options={projection.options.targetAltitudinalZone.map(
+                getDropdownOptions('altitudinalZone', i18n.language),
+              )}
+              onChange={(e, { value }) => {
+                return setTargetAltitudinalZone(value || undefined);
+              }}
+            />
+          )}
       </Form>
-      {projection.target && (
+      {projection.forestType && (
         <>
           <Divider horizontal>
             <Header color="olive">{t('app.result')}</Header>
