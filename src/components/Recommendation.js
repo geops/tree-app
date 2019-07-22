@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { project, translate } from '@geops/tree-lib';
 import 'semantic-ui-css/semantic.min.css';
-import { Divider, Form, Header, Tab } from 'semantic-ui-react';
+import { Button, Divider, Form, Header, Tab } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
 import RecommendationResult from './RecommendationResult';
@@ -75,6 +75,20 @@ function Recommendation() {
   return (
     <>
       <Form>
+        <Form.Group>
+          <Button
+            content="Karte"
+            icon="point"
+            label={{
+              as: 'a',
+              basic: true,
+              pointing: 'right',
+              content: "622'749 / 215'049",
+            }}
+            labelPosition="left"
+          />
+          <Button active icon="edit" content="Manual" />
+        </Form.Group>
         <Form.Dropdown
           label={t('forestType.label')}
           search
