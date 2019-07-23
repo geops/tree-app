@@ -4,7 +4,7 @@
   "sources": {
     "tree": {
       "type": "vector",
-      "tiles": ["http://tiles.tree-app.ch/tree/{z}/{x}/{y}.pbf"],
+      "tiles": ["https://tiles.tree-app.ch/tree/{z}/{x}/{y}.pbf"],
       "maxzoom": 10
     }
   },
