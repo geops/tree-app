@@ -133,7 +133,7 @@ function Recommendation() {
               getDropdownOptions('altitudinalZone', i18n.language),
             )}
             onChange={(e, { value }) => {
-              setLocation({ ...location, altitudinalZone: value });
+              setLocation({ ...location, altitudinalZone: value || undefined });
             }}
           />
         )}
@@ -190,7 +190,8 @@ function Recommendation() {
         )}
         {projection.options.altitudinalZone &&
           projection.options.targetAltitudinalZone &&
-          projection.options.targetAltitudinalZone.length >= 1 && (
+          projection.options.targetAltitudinalZone.length >= 1 &&
+          projection.options.altitudinalZone !== undefined && (
             <Form.Dropdown
               label={t('targetAltitudinalZone.label')}
               placeholder={t('dropdownPlaceholder')}
@@ -206,7 +207,9 @@ function Recommendation() {
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
               onChange={(e, { value }) => {
-                return setTargetAltitudinalZone(value || undefined);
+                console.log('value altiTar ', value, projection.options);
+
+                setTargetAltitudinalZone(value || undefined);
               }}
             />
           )}
