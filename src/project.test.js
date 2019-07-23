@@ -127,3 +127,29 @@ describe('Test for output values', () => {
 test('empty location value and target altitudinal Zone ', () => {
   expect(project().options.forestType.length).toBe(199);
 });
+
+test('valid list of preceding keys for multi-step options', () => {
+  expect(
+    project(
+      {
+        forestEcoregion: '1',
+        altitudinalZone: '10',
+        forestType: '59V',
+      },
+      '8',
+    ).options.altitudinalZone,
+  ).toMatchObject(['9', '10']);
+});
+
+test('valid list of preceding keys for multi-step options if prior field is undefined', () => {
+  expect(
+    project(
+      {
+        forestEcoregion: '1',
+        altitudinalZone: undefined,
+        forestType: '59V',
+      },
+      '8',
+    ).options.altitudinalZone,
+  ).toMatchObject(['10']);
+});
