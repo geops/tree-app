@@ -1,4 +1,3 @@
-import stylefunction from 'ol-mapbox-style/stylefunction';
 import React, { useContext, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu } from 'semantic-ui-react';
@@ -13,7 +12,7 @@ const getStyle = activeLayer => ({
   ...mapStyle,
   layers: mapStyle.layers.map(l => ({
     ...l,
-    paint: { ...l.paint, 'fill-opacity': l.id === activeLayer ? 0.5 : 0.01 },
+    paint: { ...l.paint, 'fill-opacity': l.id === activeLayer ? 0.5 : 0.0 },
   })),
 });
 
@@ -22,7 +21,8 @@ function MapVectorStyle() {
   const layer = useContext(LayerContext);
   const [activeLayer, setActiveLayer] = useState(defaultLayer);
   const style = getStyle(activeLayer);
-  useMemo(() => stylefunction(layer, style, 'tree'), [layer, style]);
+  // eslint-disable-next-line no-underscore-dangle
+  useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
   return (
     <Menu
       inverted

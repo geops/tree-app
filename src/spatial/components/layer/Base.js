@@ -1,6 +1,6 @@
 import OLBase from 'ol/layer/Base';
 import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import { MapContext } from '../Map';
 
@@ -8,7 +8,7 @@ export const LayerContext = React.createContext();
 
 function Base({ children, layer }) {
   const map = useContext(MapContext);
-  map.addLayer(layer);
+  useEffect(() => map.addLayer(layer), [map, layer]);
   return (
     <LayerContext.Provider value={layer}>{children}</LayerContext.Provider>
   );

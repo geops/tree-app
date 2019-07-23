@@ -1,2 +1,1 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import 'jest-canvas-mock';
+jest.mock('./components/Map.js', () => 'Map');

@@ -3,7 +3,9 @@
   "name": "tree",
   "sources": {
     "tree": {
-      "type": "vector"
+      "type": "vector",
+      "tiles": ["http://tiles.tree-app.ch/tree/{z}/{x}/{y}.pbf"],
+      "maxzoom": 10
     }
   },
   "layers": [
@@ -40,7 +42,7 @@
           "#3b1300",
           "#ccc"
         ],
-        "fill-opacity": 0.5
+        "fill-opacity": 0.0
       }
     },
     {
@@ -76,7 +78,7 @@
           "#3b1300",
           "#ccc"
         ],
-        "fill-opacity": 0.01
+        "fill-opacity": 0.0
       }
     },
     {
@@ -112,7 +114,7 @@
           "#3b1300",
           "#ccc"
         ],
-        "fill-opacity": 0.01
+        "fill-opacity": 0.0
       }
     },
     {
@@ -144,7 +146,7 @@
           "#e466c7",
           "#ccc"
         ],
-        "fill-opacity": 0.01
+        "fill-opacity": 0.0
       }
     },
     {
@@ -164,7 +166,7 @@
           "#ffffff",
           "#ccc"
         ],
-        "fill-opacity": 0.01
+        "fill-opacity": 0.0
       }
     }
   ]
