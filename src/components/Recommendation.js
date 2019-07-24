@@ -1,11 +1,14 @@
+import { project, translate } from '@geops/tree-lib';
 import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { project, translate } from '@geops/tree-lib';
-import 'semantic-ui-css/semantic.min.css';
+import { useSelector } from 'react-redux';
 import { Button, Divider, Form, Header, Tab } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
 import RecommendationResult from './RecommendationResult';
+
+const formatCoordinate = coordinate =>
+  coordinate.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'");
 
 const getButtonOptions = (type, language) => key => ({
   key,
@@ -21,6 +24,7 @@ const getDropdownOptions = (type, language, includeKey = false) => key => ({
 
 function Recommendation() {
   const { t, i18n } = useTranslation();
+  const mapLocation = useSelector(state => state.mapLocation);
   const [location, setLocation] = useState({
     // forestEcoregion: '1',
     // altitudinalZone: '9',
@@ -83,7 +87,9 @@ function Recommendation() {
               as: 'a',
               basic: true,
               pointing: 'right',
-              content: "622'749 / 215'049",
+              content: mapLocation.coordinate
+                ? mapLocation.coordinate.map(formatCoordinate).join(', ')
+                : t('map.hint'),
             }}
             labelPosition="left"
           />
