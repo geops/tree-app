@@ -8,8 +8,8 @@
     "@geops/tree-lib": "^0.6.2",
     "@rehooks/window-size": "^1.0.2",
     "i18next": "^17.0.4",
-    "ol": "^5.3.3",
-    "ol-mapbox-style": "^4.3.1",
+    "mapbox-gl": "^1.1.1",
+    "ol": "^6.0.0-beta.11",
     "proj4": "^2.5.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -17,7 +17,8 @@
     "react-i18next": "^10.11.2",
     "react-scripts": "^3.0.1",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.87.2"
+    "semantic-ui-react": "^0.87.2",
+    "webgl-mock": "^0.1.7"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
@@ -28,7 +29,6 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
     "husky": "^2.4.1",
-    "jest-canvas-mock": "^2.1.0",
     "lint-staged": "^8.2.1",
     "prettier": "^1.18.2",
     "react-test-renderer": "^16.8.6"

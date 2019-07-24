@@ -12,10 +12,11 @@ function MapLocationInfo() {
   const map = useContext(MapContext);
   useEffect(() => {
     map.on('click', event => {
-      const newLocation = map
-        .getFeaturesAtPixel(event.pixel)
-        .map(feature => feature.getProperties())
-        .reduce((l, p) => ({ ...l, [p.layer]: p.code }), {});
+      const features = map.getFeaturesAtPixel(event.pixel) || [];
+      const newLocation = features.reduce(
+        (l, f) => ({ ...l, [f.sourceLayer]: f.properties.code }),
+        {},
+      );
       setLocation(newLocation);
       setPosition(event.coordinate);
     });
