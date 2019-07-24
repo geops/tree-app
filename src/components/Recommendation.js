@@ -207,8 +207,6 @@ function Recommendation() {
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
               onChange={(e, { value }) => {
-                console.log('value altiTar ', value, projection.options);
-
                 setTargetAltitudinalZone(value || undefined);
               }}
             />
