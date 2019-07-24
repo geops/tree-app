@@ -47,7 +47,7 @@ FROM
                                  FROM forest_ecoregions)))[1] AS region,
             *
      FROM
-         (SELECT lower(coalesce(trim(lower(reliktareal)),trim(lower(nebenareal)),trim(lower(tannenareal)),'unknown')),
+         (SELECT lower(coalesce(trim(tannenareal),'unknown')),
                  (regexp_matches(regexp_split_to_table(regexp_replace(regexp_replace(coalesce(trim(lower(tannenareal)),'unknown'), 'haupt- und nebenareal', 'hauptareal,nebenareal'),'haupt- oder nebenareal', 'hauptareal,nebenareal'),',\s?') ,
                                      (SELECT string_agg(lower(areal_de)::text, '|'::text) || '|unknown'
                                       FROM silver_fir_areas)))[1] AS tan_splited,

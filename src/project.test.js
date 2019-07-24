@@ -6,23 +6,23 @@ describe('Test for input values', () => {
       project(
         {
           forestEcoregion: '1',
-          altitudinalZone: '6',
+          altitudinalZone: '60',
           forestType: '1h',
         },
-        '5',
+        '50',
       ).forestType,
     ).toBe('1');
   });
 
   test('invalid location values', () => {
     expect(() =>
-      project({ forestType: '60*', forestEcoregion: 'fooBar' }, '5'),
+      project({ forestType: '60*', forestEcoregion: 'fooBar' }, '50'),
     ).toThrowError('fooBar for forestEcoregion is not valid.');
 
     expect(() =>
       project(
         { forestType: '60*', forestEcoregion: '1', altitudinalZone: 'fooBar' },
-        '6',
+        '60',
       ),
     ).toThrowError('fooBar for altitudinalZone is not valid.');
 
@@ -30,10 +30,10 @@ describe('Test for input values', () => {
       project(
         {
           forestEcoregion: '1',
-          altitudinalZone: '8',
+          altitudinalZone: '81',
           forestType: '55 collin',
         },
-        '2',
+        '20',
       ),
     ).toThrowError('55 collin for forestType is not valid.');
   });
@@ -51,10 +51,10 @@ describe('Test for output values', () => {
       project(
         {
           forestEcoregion: '1',
-          altitudinalZone: '6',
+          altitudinalZone: '60',
           forestType: '1h',
         },
-        '5',
+        '50',
       ).additional,
     ).toBe('unknown');
   });
@@ -66,7 +66,7 @@ describe('Test for output values', () => {
           forestEcoregion: '1',
           forestType: '60*',
         },
-        '8',
+        '81',
       ).target,
     ).toBe(undefined);
   });
@@ -76,10 +76,10 @@ describe('Test for output values', () => {
       project(
         {
           forestEcoregion: '1',
-          altitudinalZone: '9',
+          altitudinalZone: '90',
           forestType: '60*',
         },
-        '8',
+        '81',
       ).options.slope,
     ).toMatchObject(['<70', '>70']);
   });
@@ -89,10 +89,10 @@ describe('Test for output values', () => {
       project(
         {
           forestEcoregion: '1',
-          altitudinalZone: '9',
+          altitudinalZone: '90',
           forestType: '60*',
         },
-        '8',
+        '81',
       ).options.relief,
     ).toBe(undefined);
   });
@@ -102,10 +102,10 @@ describe('Test for output values', () => {
       project(
         {
           forestEcoregion: '1',
-          altitudinalZone: '10',
+          altitudinalZone: '100',
           forestType: '59V',
         },
-        '8',
+        '83',
       ).forestType,
     ).toBe('55');
   });
@@ -115,12 +115,12 @@ describe('Test for output values', () => {
       project(
         {
           forestEcoregion: '1',
-          altitudinalZone: '6',
+          altitudinalZone: '60',
           forestType: '47H',
         },
-        '4',
+        '40',
       ).options.targetAltitudinalZone,
-    ).toMatchObject(['5', '4', '2']);
+    ).toMatchObject(['50', '40', '20']);
   });
 });
 
@@ -133,12 +133,12 @@ test('valid list of preceding keys for multi-step options', () => {
     project(
       {
         forestEcoregion: '1',
-        altitudinalZone: '10',
+        altitudinalZone: '100',
         forestType: '59V',
       },
-      '8',
+      '81',
     ).options.altitudinalZone,
-  ).toMatchObject(['9', '10']);
+  ).toMatchObject(['81', '90', '100']);
 });
 
 test('valid list of preceding keys for multi-step options if prior field is undefined', () => {
@@ -149,7 +149,7 @@ test('valid list of preceding keys for multi-step options if prior field is unde
         altitudinalZone: undefined,
         forestType: '59V',
       },
-      '8',
+      '81',
     ).options.altitudinalZone,
-  ).toMatchObject(['10']);
+  ).toMatchObject(['100']);
 });
