@@ -132,9 +132,9 @@ function Recommendation() {
             options={projection.options.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
             )}
-            onChange={(e, { value }) =>
-              setLocation({ ...location, altitudinalZone: value })
-            }
+            onChange={(e, { value }) => {
+              setLocation({ ...location, altitudinalZone: value || undefined });
+            }}
           />
         )}
 
@@ -190,7 +190,8 @@ function Recommendation() {
         )}
         {projection.options.altitudinalZone &&
           projection.options.targetAltitudinalZone &&
-          projection.options.targetAltitudinalZone.length >= 1 && (
+          projection.options.targetAltitudinalZone.length >= 1 &&
+          projection.options.altitudinalZone !== undefined && (
             <Form.Dropdown
               label={t('targetAltitudinalZone.label')}
               placeholder={t('dropdownPlaceholder')}
@@ -198,12 +199,15 @@ function Recommendation() {
               selection
               clearable
               fluid
-              value={targetAltitudinalZone}
+              value={
+                targetAltitudinalZone ||
+                projection.options.targetAltitudinalZone[0]
+              }
               options={projection.options.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
               onChange={(e, { value }) => {
-                return setTargetAltitudinalZone(value || undefined);
+                setTargetAltitudinalZone(value || undefined);
               }}
             />
           )}
