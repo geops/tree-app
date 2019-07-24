@@ -201,58 +201,68 @@ CREATE TABLE altitudinal_zone_meta (projection TEXT, code TEXT, id SERIAL);
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('hyperinsubrisch',
-        '1');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('collin -mediterran',
         '0');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
+VALUES ('hyperinsubrisch',
+        '10');
+
+
+INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('collin',
-        '2');
+        '20');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('collin mit Buche',
-        '3');
+        '30');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('submontan',
-        '4');
+        '40');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('untermontan',
-        '5');
+        '50');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('obermontan',
-        '6');
+        '60');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('ober- und untermontan',
-        '7');
+        '70');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('hochmontan',
-        '8');
+        '81');
+
+
+INSERT INTO altitudinal_zone_meta (projection,code)
+VALUES ('hochmontan Nebenareal der Tanne',
+        '82');
+
+
+INSERT INTO altitudinal_zone_meta (projection,code)
+VALUES ('hochmontan Reliktareal der Tanne',
+        '83');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('subalpin',
-        '9');
+        '90');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('obersubalpin',
-        '10');
+        '100');
 
 ----------------------------------------------
 -- recommendationtype

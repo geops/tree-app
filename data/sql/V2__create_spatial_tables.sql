@@ -15,10 +15,9 @@ SELECT AddGeometryColumn('','altitudinal_zones_1995','geom','2056','MULTIPOLYGON
 
 
 CREATE VIEW altitudinal_zones_1995_export AS
-SELECT code,
-       ST_Union(ST_MakeValid(geom)) as geometry
-FROM altitudinal_zones_1995
-GROUP BY code;
+SELECT (code::TEXT || subcode::TEXT)::INT AS code,
+       geom AS geometry
+FROM altitudinal_zones_1995;
 
 ----------------------------------------------
 -- altitudinal_zones_2085_dry
@@ -37,10 +36,9 @@ SELECT AddGeometryColumn('','altitudinal_zones_2085_dry','geom','2056','MULTIPOL
 
 
 CREATE VIEW altitudinal_zones_2085_dry_export AS
-SELECT code,
-       ST_Union(ST_MakeValid(geom)) as geometry
-FROM altitudinal_zones_2085_dry
-GROUP BY code;
+SELECT (code::TEXT || subcode::TEXT)::INT AS code,
+       geom AS geometry
+FROM altitudinal_zones_2085_dry;
 
 ----------------------------------------------
 -- altitudinal_zones_2085_less_dry
@@ -59,10 +57,9 @@ SELECT AddGeometryColumn('','altitudinal_zones_2085_less_dry','geom','2056','MUL
 
 
 CREATE VIEW altitudinal_zones_2085_less_dry_export AS
-SELECT code,
-       ST_Union(ST_MakeValid(geom)) as geometry
-FROM altitudinal_zones_2085_less_dry
-GROUP BY code;
+SELECT (code::TEXT || subcode::TEXT)::INT AS code,
+       geom AS geometry
+FROM altitudinal_zones_2085_less_dry;
 
 ----------------------------------------------
 -- forest_ecoregions
@@ -106,6 +103,7 @@ SELECT AddGeometryColumn('','silver_fir_areas','geom','2056','MULTIPOLYGON',2);
 
 
 CREATE VIEW silver_fir_areas_export AS
-SELECT code_ta as code, geom as geometry
+SELECT code_ta as code,
+       geom as geometry
 FROM silver_fir_areas;
 
