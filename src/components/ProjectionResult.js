@@ -7,8 +7,9 @@ import { Divider, Form, Header, Tab } from 'semantic-ui-react';
 import Recommendation from './Recommendation';
 
 function ProjectionResult() {
-  const { projectionLocation } = useSelector(state => ({
+  const { projectionLocation, mapLocation } = useSelector(state => ({
     projectionLocation: state.projectionLocation,
+    mapLocation: state.mapLocation,
   }));
   const { t, i18n } = useTranslation();
 
@@ -22,6 +23,8 @@ function ProjectionResult() {
       render: () => (
         <Tab.Pane>
           <Header>
+            {projectionLocation.forestType}
+            {' - '}
             {translate(
               'forestType',
               projectionLocation.forestType,
@@ -40,7 +43,10 @@ function ProjectionResult() {
             </Form.Field>
           </Form>
           <Divider hidden />
-          <Recommendation forestType={projectionLocation.forestType} />
+          <Recommendation
+            forestTypeToday={mapLocation.forestType}
+            forestTypeFuture={projectionLocation.forestType}
+          />
         </Tab.Pane>
       ),
     },
