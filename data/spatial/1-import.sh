@@ -33,3 +33,5 @@ _import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_wen
 _import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/data.zip" "forest_ecoregions" "Waldstandortsregionen" "Waldstandortsregionen"
 
 _import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_fir_areas" "Tannenareale" "Tannenareale"
+
+_import "Please download Lucerne dataset manually to data/spatial/NAWALGES_V1_PY/" "NAWALGES_V1_PY"

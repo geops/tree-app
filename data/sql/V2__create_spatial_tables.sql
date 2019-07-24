@@ -107,3 +107,39 @@ SELECT code_ta as code,
        geom as geometry
 FROM silver_fir_areas;
 
+----------------------------------------------
+-- nawalges_v1_py
+
+CREATE TABLE "nawalges_v1_py" (gid serial, "farbe" int4,
+                                           "g1" int4,
+                                           "g2" int4,
+                                           "g3" int4,
+                                           "g4" int4,
+                                           "g5" int4,
+                                           "typ" int4,
+                                           "nass" int4,
+                                           "code" int4,
+                                           "plottxt" varchar(50),
+                                                     "g1_txt" varchar(7),
+                                                              "g2_txt" varchar(7),
+                                                                       "g3_txt" varchar(7),
+                                                                                "g4_txt" varchar(7),
+                                                                                         "g5_txt" varchar(7),
+                                                                                                  "verdrisk" int4,
+                                                                                                  "mg_nat" int4,
+                                                                                                  "shape_area" numeric, "shape_len" numeric);
+
+
+ALTER TABLE "nawalges_v1_py" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','nawalges_v1_py','geom','2056','MULTIPOLYGON',2);
+
+
+CREATE VIEW forest_types_export AS
+SELECT NAIS as code,
+       geom as geometry
+FROM nawalges_v1_py
+LEFT JOIN mapping_luzern ON nawalges_v1_py.g1_txt = mapping_luzern.luzern
+WHERE nais IS NOT NULL;
+
