@@ -60,8 +60,9 @@
     "data:spatial:tile": "cd data && docker-compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
     "data:spatial:publish": "netlify deploy --dir=data/spatial/tiles --prod --site=5dc39927-3ba0-485e-b01d-2e15385ce212",
     "build": "microbundle",
+    "dev": "microbundle watch",
     "lint": "microbundle && eslint src",
-    "test": "microbundle && jest",
+    "test": "jest --watch",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {}
