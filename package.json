@@ -61,7 +61,8 @@
     "data:spatial:publish": "netlify deploy --dir=data/spatial/tiles --prod --site=5dc39927-3ba0-485e-b01d-2e15385ce212",
     "build": "microbundle",
     "lint": "microbundle && eslint src",
-    "test": "microbundle && jest"
+    "test": "microbundle && jest",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {}
 }
