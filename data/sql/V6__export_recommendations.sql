@@ -13,34 +13,22 @@ WHERE art = 'B'
         AND trim(naistyp_c::name) = any(enum_range(null::foresttype)::name[]);
 
 COPY
-        (WITH zero AS
-                 (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
-                  FROM recommendations_export
-                  WHERE recommendationtype = '0'
-                  GROUP BY foresttype),
-              one AS
-                 (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
+        (WITH one AS
+                 (SELECT foresttype, json_agg(treetype::text::int) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '1'
-                  GROUP BY foresttype),
-              two AS
-                 (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
+                  GROUP BY foresttype), two AS
+                 (SELECT foresttype, json_agg(treetype::text::int) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '2'
-                  GROUP BY foresttype),
-              three AS
-                 (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
+                  GROUP BY foresttype), three AS
+                 (SELECT foresttype, json_agg(treetype::text::int) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '3'
-                  GROUP BY foresttype) SELECT json_object_agg(foresttype, one.treetypes) AS recommendations
+                  GROUP BY foresttype) SELECT json_object_agg(foresttype,json_build_object('one',one.treetypes,'two',two.treetypes,'three',three.treetypes)) AS recommendations
          FROM
                  (SELECT DISTINCT foresttype
                   FROM recommendations_export) foo
-         LEFT JOIN zero USING (foresttype)
          LEFT JOIN one USING (foresttype)
          LEFT JOIN two USING (foresttype)
-         LEFT JOIN three USING (foresttype)) TO '/data/recommendations.json';
+         LEFT JOIN three USING (foresttype) ) TO '/data/recommendations.json';
