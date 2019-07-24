@@ -5,7 +5,7 @@
     "tree": {
       "type": "vector",
       "tiles": ["https://tiles.tree-app.ch/tree/{z}/{x}/{y}.pbf"],
-      "maxzoom": 10
+      "maxzoom": 12
     }
   },
   "layers": [
@@ -160,6 +160,13 @@
         ],
         "fill-opacity": 0.0
       }
+    },
+    {
+      "id": "forest_types",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "paint": {}
     },
     {
       "id": "silver_fir_areas",

@@ -12,7 +12,10 @@ const getStyle = activeLayer => ({
   ...mapStyle,
   layers: mapStyle.layers.map(l => ({
     ...l,
-    paint: { ...l.paint, 'fill-opacity': l.id === activeLayer ? 0.5 : 0.0 },
+    paint:
+      l.type === 'fill'
+        ? { ...l.paint, 'fill-opacity': l.id === activeLayer ? 0.5 : 0.0 }
+        : l.paint,
   })),
 });
 
