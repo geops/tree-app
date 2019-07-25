@@ -21,13 +21,17 @@ const getDropdownOptions = (type, language, includeKey = false) => key => ({
 
 function ProjectionForm() {
   const dispatch = useDispatch();
-  const { manualLocation, projectionMode, projectionOptions } = useSelector(
-    state => ({
-      manualLocation: state.manualLocation,
-      projectionMode: state.projectionMode,
-      projectionOptions: state.projectionOptions,
-    }),
-  );
+  const {
+    location,
+    manualLocation,
+    projectionMode,
+    projectionOptions,
+  } = useSelector(state => ({
+    location: state.location,
+    manualLocation: state.manualLocation,
+    projectionMode: state.projectionMode,
+    projectionOptions: state.projectionOptions,
+  }));
   const setLocation = (key, value) =>
     dispatch(setManualLocation({ ...manualLocation, [key]: value }));
 
@@ -47,7 +51,7 @@ function ProjectionForm() {
               getDropdownOptions('forestType', i18n.language, true),
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
-            value={manualLocation.forestType}
+            value={location.forestType}
           />
         )}
         {projectionMode === 'manual' && projectionOptions.forestEcoregion && (
@@ -62,7 +66,7 @@ function ProjectionForm() {
               getDropdownOptions('forestEcoregion', i18n.language),
             )}
             onChange={(e, { value }) => setLocation('forestEcoregion', value)}
-            value={manualLocation.forestEcoregion}
+            value={location.forestEcoregion}
           />
         )}
         {projectionMode === 'manual' && projectionOptions.altitudinalZone && (
@@ -79,7 +83,7 @@ function ProjectionForm() {
             onChange={(e, { value }) => {
               setLocation('altitudinalZone', value || undefined);
             }}
-            value={manualLocation.altitudinalZone}
+            value={location.altitudinalZone}
           />
         )}
 
@@ -90,7 +94,7 @@ function ProjectionForm() {
               getButtonOptions('slope', i18n.language),
             )}
             onChange={(e, { value }) => setLocation('slope', value)}
-            value={manualLocation.slope}
+            value={location.slope}
           />
         )}
         {projectionOptions.additional &&
@@ -101,7 +105,7 @@ function ProjectionForm() {
                 getButtonOptions('additional', i18n.language),
               )}
               onChange={(e, { value }) => setLocation('additional', value)}
-              value={manualLocation.additional}
+              value={location.additional}
             />
           )}
         {projectionOptions.silverFirArea &&
@@ -112,7 +116,7 @@ function ProjectionForm() {
                 getButtonOptions('silverFirArea', i18n.language),
               )}
               onChange={(e, { value }) => setLocation('silverFirArea', value)}
-              value={manualLocation.silverFirArea}
+              value={location.silverFirArea}
             />
           )}
         {projectionOptions.relief && projectionOptions.relief.length > 1 && (
@@ -122,7 +126,7 @@ function ProjectionForm() {
               getButtonOptions('relief', i18n.language),
             )}
             onChange={(e, { value }) => setLocation('relief', value)}
-            value={manualLocation.relief}
+            value={location.relief}
           />
         )}
         {projectionMode === 'manual' &&
@@ -144,7 +148,7 @@ function ProjectionForm() {
                 setLocation('targetAltitudinalZone', value || undefined);
               }}
               value={
-                manualLocation.targetAltitudinalZone ||
+                location.targetAltitudinalZone ||
                 projectionOptions.targetAltitudinalZone[0]
               }
             />

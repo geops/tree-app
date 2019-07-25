@@ -27,10 +27,9 @@ export const projection = store => next => action => {
         ? mapLocation.targetAltitudinalZoneModerate
         : manualLocation.targetAltitudinalZone;
     try {
-      console.log(location);
       const projectionResult = project(location, targetAltitudinalZone);
-      store.dispatch(setProjectionResult(projectionResult));
-      console.log('Projection result: ', projectionResult);
+      store.dispatch(setProjectionResult(projectionResult, location));
+      console.log('Projection result: ', projectionResult, location);
     } catch (error) {
       console.log('Projection error: ', error);
     }
