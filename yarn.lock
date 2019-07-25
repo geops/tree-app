@@ -917,10 +917,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@geops/tree-lib@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.6.2.tgz#b215fd670a52a362f3c9e3481dfcc5eaa3f2b67f"
-  integrity sha512-r/I2ZVJfnR2N/5XX2t3WngU4I3EDRZKke8N+jh8Jrg8c2fjvTqZZpvbhSur6OQwegd3E7qcPHkX/7al+QoewCg==
+"@geops/tree-lib@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.7.0.tgz#704abda05172d81d7dc5a5348cbc6b08f022de0b"
+  integrity sha512-OHtlnUfrjJRuyMhzkVnnOX9adhQF5/BTG1KmDmEWDgXfkBq0Y/O/pt2cP1qsPRX8NTb1P1INBfSLPo9J6Y+GWQ==
 
 "@hapi/address@2.x.x":
   version "2.0.0"

@@ -4,9 +4,23 @@ import { Segment } from 'semantic-ui-react';
 
 import { MapContext } from '../spatial/components/Map';
 import Popup from '../spatial/components/Popup';
-import { SET_MAP_LOCATION } from '../store/actions';
+import { setMapLocation } from '../store/actions';
 
 import styles from './MapLocationInfo.module.css';
+
+const sourceLayerMapping = {
+  altitudinal_zones_1995: 'altitudinalZone',
+  altitudinal_zones_2085_less_dry: 'targetAltitudinalZoneModerate',
+  altitudinal_zones_2085_dry: 'targetAltitudinalZoneExtreme',
+  forest_ecoregions: 'forestEcoregion',
+  forest_types: 'forestType',
+  silver_fir_areas: 'silverFirArea',
+};
+const featuresToLocation = (location, feature) => ({
+  ...location,
+  [sourceLayerMapping[feature.sourceLayer] ||
+  feature.sourceLayer]: feature.properties.code.toString(),
+});
 
 function MapLocationInfo() {
   const map = useContext(MapContext);
@@ -15,14 +29,8 @@ function MapLocationInfo() {
   useEffect(() => {
     map.on('click', ({ coordinate, pixel }) => {
       const features = map.getFeaturesAtPixel(pixel) || [];
-      const properties = features.reduce(
-        (l, f) => ({ ...l, [f.sourceLayer]: f.properties.code }),
-        {},
-      );
-      dispatch({
-        type: SET_MAP_LOCATION,
-        mapLocation: { ...properties, coordinate },
-      });
+      const location = features.reduce(featuresToLocation, {});
+      dispatch(setMapLocation({ ...location, coordinate }));
     });
   }, [map, dispatch]);
   return (
