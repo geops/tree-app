@@ -15,8 +15,18 @@ function concatTreeSpecies(...treeSp) {
   return Array.from(new Set([].concat(...treeSp)));
 }
 
-function filterTreeSpecies(treeSp1, treeSp2) {
-  return treeSp1.filter(tree => !treeSp2.includes(tree));
+const arrayIntersected = (arr1, arr2) => arr1.filter(i => arr2.includes(i));
+const arrayNotIntersected = (arr1, arr2) => arr1.filter(i => !arr2.includes(i));
+
+function filterFourFrom123(previousResult) {
+  const { one, two, three, four } = previousResult;
+  const result = {
+    one: arrayNotIntersected(one, four),
+    two: arrayNotIntersected(two, four),
+    three: arrayNotIntersected(three, four),
+    four,
+  };
+  return result;
 }
 
 function recommend(forestType1, forestType2, future) {
@@ -32,31 +42,55 @@ function recommend(forestType1, forestType2, future) {
 
   let result = recommendTreeSpecies(forestType1);
 
-  const { one, two, three } = result;
+  const { one, two, three, four } = result;
+
   if (forestType2) {
-    const { one: one2, two: two2, three: three2 } = recommendTreeSpecies(
-      forestType2,
-    );
+    const {
+      one: futureOne,
+      two: futureTwo,
+      three: futureThree,
+      four: futureFour,
+    } = recommendTreeSpecies(forestType2);
     if (future) {
       result = {
-        one: filterTreeSpecies(one, one2),
-        two: filterTreeSpecies(two, two2),
-        three: filterTreeSpecies(three, three2),
+        one: arrayNotIntersected(
+          concatTreeSpecies(futureOne, futureTwo),
+          concatTreeSpecies(one, two, three),
+        ),
+        two: arrayNotIntersected(
+          futureThree,
+          concatTreeSpecies(one, two, three),
+        ),
+        three: [],
+        four: futureFour || [],
       };
     } else {
       result = {
-        one: concatTreeSpecies(one, one2, two, two2),
-        two: concatTreeSpecies(three, three2),
-        three: filterTreeSpecies(
+        one: arrayIntersected(
           concatTreeSpecies(one, two, three),
-          concatTreeSpecies(one2, two2, three2),
+          concatTreeSpecies(futureOne, futureTwo),
         ),
+        two: arrayIntersected(three, futureThree),
+        three: arrayNotIntersected(
+          concatTreeSpecies(one, two, three),
+          concatTreeSpecies(futureOne, futureTwo, futureThree),
+        ),
+        four: four || [],
       };
+    }
+    if (result.four && result.four.length > 0) {
+      result = filterFourFrom123(result);
     }
   }
 
-  const { one: positive, two: neutral, three: negative } = result;
-  result = { positive, neutral, negative };
+  const {
+    one: positive,
+    two: neutral,
+    three: negative,
+    four: attention,
+  } = result;
+  result = { positive, neutral, negative, attention };
+
   return result;
 }
 

@@ -28,37 +28,62 @@ describe('Test for input values', () => {
 
 describe('Test for output values', () => {
   test('valid single forest type recommendations', () => {
-    expect(recommend('60')).toStrictEqual({
-      positive: [302800],
-      neutral: [402300],
-      negative: [800, 25400, 60400, 60500, 227200, 363700],
+    expect(recommend('18M')).toStrictEqual({
+      positive: [100, 165000],
+      neutral: [800, 174200, 302800, 432800],
+      negative: [
+        25300,
+        60400,
+        227200,
+        317500,
+        328400,
+        363700,
+        402200,
+        402300,
+        421400,
+        421500,
+      ],
+      attention: null,
+    });
+  });
+
+  test('valid multiple forest type recommendations', () => {
+    expect(recommend('18M', '9a', true)).toStrictEqual({
+      positive: [700, 335900],
+      neutral: [
+        300,
+        600,
+        96900,
+        213300,
+        217500,
+        305900,
+        306100,
+        336100,
+        346500,
+        402500,
+        402700,
+        413600,
+      ],
+      negative: [],
+      attention: [9500],
     });
   });
 
   test('valid multiple forest type recommendations', () => {
     expect(recommend('60', '50')).toStrictEqual({
-      positive: [302800, 100, 402300, 800],
-      neutral: [
-        800,
-        25400,
-        60400,
-        60500,
-        227200,
-        363700,
-        25300,
-        174200,
-        317500,
-        402200,
-      ],
+      positive: [302800, 402300, 800],
+      neutral: [60400, 227200, 363700],
       negative: [25400, 60500],
+      attention: [],
     });
   });
 
   test('valid multiple forest type recommendations with future flag', () => {
     expect(recommend('60', '50', true)).toStrictEqual({
-      positive: [],
-      neutral: [],
-      negative: [800, 25400, 60500],
+      positive: [100],
+      neutral: [25300, 174200, 317500, 402200],
+      negative: [],
+      attention: [],
     });
   });
 });
