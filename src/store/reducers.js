@@ -6,6 +6,7 @@ import {
 } from './actions';
 
 const initialState = {
+  location: {},
   manualLocation: {},
   mapLocation: {},
   projectionMode: 'map',
@@ -23,7 +24,12 @@ function tree(state = initialState, action) {
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {
       const { options, ...projectionLocation } = action.projectionResult;
-      return { ...state, projectionOptions: options, projectionLocation };
+      return {
+        ...state,
+        location: action.location,
+        projectionOptions: options,
+        projectionLocation,
+      };
     }
     default:
       return state;

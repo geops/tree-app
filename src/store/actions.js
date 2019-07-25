@@ -15,6 +15,6 @@ export function setProjectionMode(projectionMode) {
   return { type: SET_PROJECTION_MODE, projectionMode };
 }
 
-export function setProjectionResult(projectionResult) {
-  return { type: SET_PROJECTION_RESULT, projectionResult };
+export function setProjectionResult(projectionResult, location) {
+  return { type: SET_PROJECTION_RESULT, projectionResult, location };
 }
