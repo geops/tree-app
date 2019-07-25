@@ -40,6 +40,7 @@ function ProjectionResult() {
             </Form.Field>
           </Form>
           <Divider hidden />
+          <Recommendation forestType={projectionLocation.forestType} />
         </Tab.Pane>
       ),
     },
