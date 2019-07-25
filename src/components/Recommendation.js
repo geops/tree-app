@@ -4,16 +4,19 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Grid, Header, List } from 'semantic-ui-react';
 
-function Recommendation({ forestType }) {
+function Recommendation({ forestTypeToday, forestTypeFuture, future }) {
   const { i18n } = useTranslation();
-  const recommendations = useMemo(() => recommend(forestType), [forestType]);
+  const recommendations = useMemo(
+    () => recommend(forestTypeToday, forestTypeFuture, future),
+    [forestTypeToday, forestTypeFuture, future],
+  );
 
   return (
     <Grid stackable columns={3}>
       <Grid.Column>
         <Header color="olive">Fördern</Header>
         <List>
-          {recommendations.map(r => (
+          {recommendations.positive.map(r => (
             <List.Item key={r}>
               {translate('treeType', r, i18n.language)}
             </List.Item>
@@ -23,20 +26,41 @@ function Recommendation({ forestType }) {
       <Grid.Column>
         <Header color="grey">Mitnehmen</Header>
         <List>
-          <List.Item>Spitzahorn</List.Item>
-          <List.Item>Bergahorn</List.Item>
-          <List.Item>Buche</List.Item>
+          {recommendations.neutral.map(r => (
+            <List.Item key={r}>
+              {translate('treeType', r, i18n.language)}
+            </List.Item>
+          ))}
         </List>
       </Grid.Column>
       <Grid.Column>
         <Header color="red">Reduzieren</Header>
+        <List>
+          {recommendations.negative.map(r => (
+            <List.Item key={r}>
+              {translate('treeType', r, i18n.language)}
+            </List.Item>
+          ))}
+        </List>
+      </Grid.Column>
+      <Grid.Column>
+        <Header color="green">Achtung</Header>
+        <List>
+          {recommendations.attention.map(r => (
+            <List.Item key={r}>
+              {translate('treeType', r, i18n.language)}
+            </List.Item>
+          ))}
+        </List>
       </Grid.Column>
     </Grid>
   );
 }
 
 Recommendation.propTypes = {
-  forestType: PropTypes.string.isRequired,
+  forestTypeToday: PropTypes.string.isRequired,
+  forestTypeFuture: PropTypes.string.isRequired,
+  future: PropTypes.bool.isRequired,
 };
 
 export default Recommendation;
