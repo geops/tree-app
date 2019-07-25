@@ -1,4 +1,6 @@
-import { createStore } from 'redux';
-import tree from './reducers';
+import { applyMiddleware, createStore } from 'redux';
 
-export default createStore(tree);
+import { projection } from './middleware';
+import reducers from './reducers';
+
+export default createStore(reducers, applyMiddleware(projection));
