@@ -1,30 +1,34 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Segment } from 'semantic-ui-react';
 
 import { MapContext } from '../spatial/components/Map';
 import Popup from '../spatial/components/Popup';
+import { SET_MAP_LOCATION } from '../store/actions';
 
 import styles from './MapLocationInfo.module.css';
 
 function MapLocationInfo() {
-  const [location, setLocation] = useState({});
-  const [position, setPosition] = useState();
   const map = useContext(MapContext);
+  const dispatch = useDispatch();
+  const mapLocation = useSelector(state => state.mapLocation);
   useEffect(() => {
-    map.on('click', event => {
-      const features = map.getFeaturesAtPixel(event.pixel) || [];
-      const newLocation = features.reduce(
+    map.on('click', ({ coordinate, pixel }) => {
+      const features = map.getFeaturesAtPixel(pixel) || [];
+      const properties = features.reduce(
         (l, f) => ({ ...l, [f.sourceLayer]: f.properties.code }),
         {},
       );
-      setLocation(newLocation);
-      setPosition(event.coordinate);
+      dispatch({
+        type: SET_MAP_LOCATION,
+        mapLocation: { ...properties, coordinate },
+      });
     });
-  }, [map]);
+  }, [map, dispatch]);
   return (
-    <Popup position={position}>
+    <Popup position={mapLocation.coordinate}>
       <Segment compact inverted className={styles.popup}>
-        <pre>{JSON.stringify(location, null, 2)}</pre>
+        <pre>{JSON.stringify(mapLocation, null, 2)}</pre>
       </Segment>
     </Popup>
   );
