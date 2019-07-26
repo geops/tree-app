@@ -34,7 +34,7 @@ function Recommendation({ todayFutureToggler }) {
         <Form>
           <Form.Field>
             <Form.Radio
-              label={t('radioButtonLabel.today')}
+              label={t('todayFutureToggler.today')}
               name="radioGroup"
               checked={future === false}
               onChange={() => setFuture(false)}
@@ -42,7 +42,7 @@ function Recommendation({ todayFutureToggler }) {
           </Form.Field>
           <Form.Field>
             <Form.Radio
-              label={t('radioButtonLabel.future')}
+              label={t('todayFutureToggler.future')}
               name="radioGroup"
               checked={future === true}
               onChange={() => setFuture(true)}

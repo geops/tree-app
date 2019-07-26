@@ -17,15 +17,16 @@ const projectionActionTypes = [
 ];
 
 function getTargetAltitudinalZone(recommendationMode, location) {
-  let recommendationModeText;
-  if (recommendationMode === 'today') {
-    recommendationModeText = location.altitudinalZone;
-  } else if (recommendationMode === 'moderate') {
-    recommendationModeText = location.targetAltitudinalZoneModerate;
-  } else if (recommendationMode === 'extreme') {
-    recommendationModeText = location.targetAltitudinalZoneExtreme;
+  switch (recommendationMode) {
+    case 'today':
+      return location.altitudinalZone;
+    case 'moderate':
+      return location.targetAltitudinalZoneModerate;
+    case 'extreme':
+      return location.targetAltitudinalZoneExtreme;
+    default:
+      return location.targetAltitudinalZone;
   }
-  return recommendationModeText;
 }
 
 export const projection = store => next => action => {

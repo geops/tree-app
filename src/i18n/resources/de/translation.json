@@ -21,7 +21,7 @@
     "extreme": "stark"
   },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
-  "radioButtonLabel": {
+  "todayFutureToggler": {
     "today": "bereits heute mögliche Baumarten",
     "future": "in Zukunft zusätzliche Baumarten"
   },
