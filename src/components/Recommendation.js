@@ -93,17 +93,18 @@ function Recommendation({ todayFutureToggler }) {
               ))}
             </List>
           </Grid.Column>
-          <Grid.Column>
-            <Header color="green">Achtung</Header>
-            <List>
-              {[] ||
-                recommendations.attention.map(r => (
+          {recommendations.attention && recommendations.attention.length > 0 && (
+            <Grid.Column>
+              <Header color="red">Achtung</Header>
+              <List>
+                {recommendations.attention.map(r => (
                   <List.Item key={r}>
                     {translate('treeType', r, i18n.language)}
                   </List.Item>
                 ))}
-            </List>
-          </Grid.Column>
+              </List>
+            </Grid.Column>
+          )}
         </Grid>
       </Tab.Pane>
     )
