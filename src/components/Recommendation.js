@@ -46,11 +46,12 @@ function Recommendation({ forestTypeToday, forestTypeFuture, future }) {
       <Grid.Column>
         <Header color="green">Achtung</Header>
         <List>
-          {recommendations.attention.map(r => (
-            <List.Item key={r}>
-              {translate('treeType', r, i18n.language)}
-            </List.Item>
-          ))}
+          {[] ||
+            recommendations.attention.map(r => (
+              <List.Item key={r}>
+                {translate('treeType', r, i18n.language)}
+              </List.Item>
+            ))}
         </List>
       </Grid.Column>
     </Grid>

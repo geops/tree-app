@@ -15,10 +15,10 @@
     "silver_fir_areas": "Tannenareale",
     "hint": "Bitte Position wählen"
   },
-  "tab": {
-    "scenario1": "heute",
-    "scenario2": "mässig",
-    "scenario3": "stark"
+  "recommendationMode": {
+    "today": "heute",
+    "moderate": "mässig",
+    "extreme": "stark"
   },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
   "forestEcoregion": {
