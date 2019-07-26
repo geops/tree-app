@@ -35,7 +35,9 @@ function MapLocationInfo() {
     map.on('click', event => {
       const coordinate = transform(event.coordinate, 'EPSG:3857', EPSG2056);
       const features = map.getFeaturesAtPixel(event.pixel) || [];
-      const location = features.reduce(featuresToLocation, {});
+      const location = features
+        .filter(feature => feature.properties.code)
+        .reduce(featuresToLocation, {});
       dispatch(setMapLocation({ ...location, coordinate }));
     });
   }, [map, dispatch]);
