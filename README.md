@@ -35,6 +35,7 @@ Spatial data is downloaded from different sources and imported into the database
 1. Start database: `yarn run data:start`
 2. Export spatial data to GeoJSON files (might take a long time): `yarn run data:spatial:export`
 3. Transform GeoJSON files to single vector tileset: `yarn run data:spatial:tile`
+3. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
 4. Publish tiles to Netlify: `yarn run data:spatial:publish`
 
 ## Bugs

@@ -1,3 +1,4 @@
 /*.pbf
   Access-Control-Allow-Origin: *
+/tree/*.pbf
   Content-Encoding: gzip

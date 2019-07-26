@@ -210,6 +210,14 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@geops/mapbox-gl-fonts@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@geops/mapbox-gl-fonts/-/mapbox-gl-fonts-3.0.0.tgz#46fbad806df0df9f2231cd228050a3451a186af0"
+  integrity sha512-c3gbESNqViXfPlhwh+l6ULc3R+aJx5CnJUAOrtXwekG+WzAJZhs5/8L0RfNmKCfj94KMQ5p1CfXHr5+Bz6Gpgw==
+  dependencies:
+    "@mapbox/glyph-pbf-composite" "0.0.3"
+    fontnik "0.5.3"
+
 "@iarna/toml@^2.2.1", "@iarna/toml@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"
@@ -360,6 +368,13 @@
     "@types/istanbul-lib-coverage" "^2.0.0"
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
+
+"@mapbox/glyph-pbf-composite@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@mapbox/glyph-pbf-composite/-/glyph-pbf-composite-0.0.3.tgz#18966c54737abcfca40408352728bed24a0b3e12"
+  integrity sha1-GJZsVHN6vPykBAg1Jyi+0koLPhI=
+  dependencies:
+    protocol-buffers "^2.4.7"
 
 "@netlify/cli-utils@^1.0.6":
   version "1.0.6"
@@ -3523,6 +3538,17 @@ follow-redirects@^1.0.0:
   dependencies:
     debug "^3.2.6"
 
+fontnik@0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/fontnik/-/fontnik-0.5.3.tgz#a7d589b165837f3e7eefe6d01432c661b6ba140d"
+  integrity sha512-+wN2H+FUHvgsUKGYGJrBE/DFt8dy/U2mfbWAFe6NyMTDlfbfsCPyx5lm0zVaX8OXXeIvdTH9jvaGVCqL2JjIBw==
+  dependencies:
+    glob "^7.1.1"
+    minimist "^0.2.0"
+    nan "~2.10.0"
+    node-pre-gyp "^0.12.0"
+    queue-async "^1.0.7"
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -3652,6 +3678,20 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+generate-function@^2.0.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/generate-function/-/generate-function-2.3.1.tgz#f069617690c10c868e73b8465746764f97c3479f"
+  integrity sha512-eeB5GfMNeevm/GRYq20ShmsaGcmI81kIX2K9XQx5miC8KdHaC6Jm0qQ8ZNeGOi7wYB8OsdxKs+Y2oVuTFuVwKQ==
+  dependencies:
+    is-property "^1.0.2"
+
+generate-object-property@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/generate-object-property/-/generate-object-property-1.2.0.tgz#9c0e1c40308ce804f4783618b937fa88f99d50d0"
+  integrity sha1-nA4cQDCM6AT0eDYYuTf6iPmdUNA=
+  dependencies:
+    is-property "^1.0.0"
 
 generic-names@^1.0.3:
   version "1.0.3"
@@ -4686,6 +4726,11 @@ is-promise@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
   integrity sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=
+
+is-property@^1.0.0, is-property@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
+  integrity sha1-V/4cTkhHTt1lsJkR8msc1Ald2oQ=
 
 is-redirect@^1.0.0:
   version "1.0.0"
@@ -6050,6 +6095,11 @@ minimist@1.1.x:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.1.3.tgz#3bedfd91a92d39016fcfaa1c681e8faa1a1efda8"
   integrity sha1-O+39kaktOQFvz6ocaB6Pqhoe/ag=
 
+minimist@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.2.0.tgz#4dffe525dae2b864c66c2e23c6271d7afdecefce"
+  integrity sha1-Tf/lJdriuGTGbC4jxicdev3s784=
+
 minimist@^1.1.1, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
@@ -6132,6 +6182,11 @@ nan@^2.12.1, nan@^2.13.2:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
   integrity sha512-INOFj37C7k3AfaNTtX8RhsTw7qRy7eLET14cROi9+5HAVbbHuIWUHEauBv5qT4Av2tWasiTY1Jw6puUNqRJXQg==
+
+nan@~2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
+  integrity sha512-bAdJv7fBLhWC+/Bls0Oza+mvTaNQtP+1RyhhhvD95pgUJz6XM5IzgmxOkItJ9tkoCiplvAnXI1tNmmUD/eScyA==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -7875,6 +7930,23 @@ proto-list@~1.2.1:
   resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
   integrity sha1-IS1b/hMYMGpCD2QCuOJv85ZHqEk=
 
+protobuf-schema@^1.2.0, protobuf-schema@^1.5.0:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/protobuf-schema/-/protobuf-schema-1.5.1.tgz#10912ead14fdd90599ed1bb8c6ed9681fbbaed1d"
+  integrity sha1-EJEurRT92QWZ7Ru4xu2Wgfu67R0=
+
+protocol-buffers@^2.4.7:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/protocol-buffers/-/protocol-buffers-2.7.0.tgz#fb9d6aa4c31bdb5cbf702ebf4bd41ccdad7f7824"
+  integrity sha1-+51qpMMb21y/cC6/S9Qcza1/eCQ=
+  dependencies:
+    generate-function "^2.0.0"
+    generate-object-property "^1.1.0"
+    protobuf-schema "^1.5.0"
+    resolve-protobuf-schema "^1.0.2"
+    signed-varint "^2.0.0"
+    varint "^4.0.0"
+
 proxy-addr@~2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.5.tgz#34cbd64a2d81f4b1fd21e76f9f06c8a45299ee34"
@@ -7958,6 +8030,11 @@ query-string@^5.0.1:
     decode-uri-component "^0.2.0"
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
+
+queue-async@^1.0.7:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/queue-async/-/queue-async-1.2.1.tgz#0582e01dae253258cf576fc2a35db96fca847f6f"
+  integrity sha1-BYLgHa4lMljPV2/Co125b8qEf28=
 
 random-item@^1.0.0:
   version "1.0.0"
@@ -8331,6 +8408,13 @@ resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
+
+resolve-protobuf-schema@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/resolve-protobuf-schema/-/resolve-protobuf-schema-1.0.2.tgz#91219afe30415d55dadbdf3813292bd2223c5990"
+  integrity sha1-kSGa/jBBXVXa2984Eykr0iI8WZA=
+  dependencies:
+    protobuf-schema "^1.2.0"
 
 resolve-url@^0.2.1:
   version "0.2.1"
@@ -8747,6 +8831,13 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
+
+signed-varint@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/signed-varint/-/signed-varint-2.0.1.tgz#50a9989da7c98c2c61dad119bc97470ef8528129"
+  integrity sha1-UKmYnafJjCxh2tEZvJdHDvhSgSk=
+  dependencies:
+    varint "~5.0.0"
 
 simple-concat@^1.0.0:
   version "1.0.0"
@@ -9728,6 +9819,16 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+varint@^4.0.0:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/varint/-/varint-4.0.1.tgz#490829b942d248463b2b35097995c3bf737198e9"
+  integrity sha1-SQgpuULSSEY7KzUJeZXDv3NxmOk=
+
+varint@~5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/varint/-/varint-5.0.0.tgz#d826b89f7490732fabc0c0ed693ed475dcb29ebf"
+  integrity sha1-2Ca4n3SQcy+rwMDtaT7Uddyynr8=
 
 vary@~1.1.2:
   version "1.1.2"
