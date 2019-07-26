@@ -217,6 +217,17 @@
         ],
         "fill-opacity": 0.0
       }
+    },
+    {
+      "id": "cantonal_boundaries",
+      "type": "line",
+      "source": "tree",
+      "source-layer": "cantonal_boundaries",
+      "paint": {
+        "line-color": "#fbf0b2",
+        "line-opacity": 0.5
+      },
+      "maxzoom": 15
     }
   ]
 }
