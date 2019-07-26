@@ -15,10 +15,20 @@ function Recommendation({ todayFutureToggler }) {
       recommendationMode: state.recommendationMode,
     }),
   );
-  const recommendations = useMemo(
-    () => recommend(location.forestType, projectionLocation.forestType, future),
-    [location.forestType, projectionLocation.forestType, future],
-  );
+  const recommendations = useMemo(() => {
+    let result;
+    try {
+      result = recommend(
+        location.forestType,
+        projectionLocation.forestType,
+        future,
+      );
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log('Recommendation error: ', error);
+    }
+    return result;
+  }, [location.forestType, projectionLocation.forestType, future]);
 
   const forest =
     recommendationMode === 'today'
@@ -26,80 +36,86 @@ function Recommendation({ todayFutureToggler }) {
       : projectionLocation.forestType;
 
   return (
-    <Tab.Pane>
-      <Header>
-        {`${forest} - ${translate('forestType', forest, i18n.language)}`}
-      </Header>
-      {todayFutureToggler && (
-        <Form>
-          <Form.Field>
-            <Form.Radio
-              label={t('todayFutureToggler.today')}
-              name="radioGroup"
-              checked={future === false}
-              onChange={() => setFuture(false)}
-            />
-          </Form.Field>
-          <Form.Field>
-            <Form.Radio
-              label={t('todayFutureToggler.future')}
-              name="radioGroup"
-              checked={future === true}
-              onChange={() => setFuture(true)}
-            />
-          </Form.Field>
-        </Form>
-      )}
-      <Divider hidden />
-      <Grid stackable columns={3}>
-        <Grid.Column>
-          <Header color="olive">Fördern</Header>
-          <List>
-            {recommendations.positive.map(r => (
-              <List.Item key={r}>
-                {translate('treeType', r, i18n.language)}
-              </List.Item>
-            ))}
-          </List>
-        </Grid.Column>
-        <Grid.Column>
-          <Header color="grey">Mitnehmen</Header>
-          <List>
-            {recommendations.neutral.map(r => (
-              <List.Item key={r}>
-                {translate('treeType', r, i18n.language)}
-              </List.Item>
-            ))}
-          </List>
-        </Grid.Column>
-        <Grid.Column>
-          <Header color="red">Reduzieren</Header>
-          <List>
-            {recommendations.negative.map(r => (
-              <List.Item key={r}>
-                {translate('treeType', r, i18n.language)}
-              </List.Item>
-            ))}
-          </List>
-        </Grid.Column>
-        <Grid.Column>
-          <Header color="green">Achtung</Header>
-          <List>
-            {[] ||
-              recommendations.attention.map(r => (
+    recommendations && (
+      <Tab.Pane>
+        <Header>
+          {`${forest} - ${translate('forestType', forest, i18n.language)}`}
+        </Header>
+        {todayFutureToggler && (
+          <Form>
+            <Form.Field>
+              <Form.Radio
+                label={t('todayFutureToggler.today')}
+                name="radioGroup"
+                checked={future === false}
+                onChange={() => setFuture(false)}
+              />
+            </Form.Field>
+            <Form.Field>
+              <Form.Radio
+                label={t('todayFutureToggler.future')}
+                name="radioGroup"
+                checked={future === true}
+                onChange={() => setFuture(true)}
+              />
+            </Form.Field>
+          </Form>
+        )}
+        <Divider hidden />
+        <Grid stackable columns={3}>
+          <Grid.Column>
+            <Header color="olive">Fördern</Header>
+            <List>
+              {recommendations.positive.map(r => (
                 <List.Item key={r}>
                   {translate('treeType', r, i18n.language)}
                 </List.Item>
               ))}
-          </List>
-        </Grid.Column>
-      </Grid>
-    </Tab.Pane>
+            </List>
+          </Grid.Column>
+          <Grid.Column>
+            <Header color="grey">Mitnehmen</Header>
+            <List>
+              {recommendations.neutral.map(r => (
+                <List.Item key={r}>
+                  {translate('treeType', r, i18n.language)}
+                </List.Item>
+              ))}
+            </List>
+          </Grid.Column>
+          <Grid.Column>
+            <Header color="red">Reduzieren</Header>
+            <List>
+              {recommendations.negative.map(r => (
+                <List.Item key={r}>
+                  {translate('treeType', r, i18n.language)}
+                </List.Item>
+              ))}
+            </List>
+          </Grid.Column>
+          <Grid.Column>
+            <Header color="green">Achtung</Header>
+            <List>
+              {[] ||
+                recommendations.attention.map(r => (
+                  <List.Item key={r}>
+                    {translate('treeType', r, i18n.language)}
+                  </List.Item>
+                ))}
+            </List>
+          </Grid.Column>
+        </Grid>
+      </Tab.Pane>
+    )
   );
 }
 
 Recommendation.propTypes = {
-  todayFutureToggler: PropTypes.string.isRequired,
+  todayFutureToggler: PropTypes.bool,
+};
+
+Recommendation.defaultProps = {
+  todayFutureToggler: false,
 };
 
 export default Recommendation;
