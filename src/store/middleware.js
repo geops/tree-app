@@ -16,14 +16,14 @@ const projectionActionTypes = [
   SET_RECOMMENDATION_MODE,
 ];
 
-function getRecommendationMode(recommendationMode, mapLocation) {
+function getTargetAltitudinalZone(recommendationMode, location) {
   let recommendationModeText;
   if (recommendationMode === 'today') {
-    recommendationModeText = mapLocation.altitudinalZone;
+    recommendationModeText = location.altitudinalZone;
   } else if (recommendationMode === 'moderate') {
-    recommendationModeText = mapLocation.targetAltitudinalZoneModerate;
+    recommendationModeText = location.targetAltitudinalZoneModerate;
   } else if (recommendationMode === 'extreme') {
-    recommendationModeText = mapLocation.targetAltitudinalZoneExtreme;
+    recommendationModeText = location.targetAltitudinalZoneExtreme;
   }
   return recommendationModeText;
 }
@@ -44,7 +44,7 @@ export const projection = store => next => action => {
 
     const targetAltitudinalZone =
       projectionMode === 'map'
-        ? getRecommendationMode(recommendationMode, mapLocation)
+        ? getTargetAltitudinalZone(recommendationMode, mapLocation)
         : manualLocation.targetAltitudinalZone;
     try {
       const projectionResult = project(location, targetAltitudinalZone);
