@@ -6,7 +6,7 @@ import { LayerContext } from '../spatial/components/layer/Base';
 
 import mapStyle from '../map/style';
 
-const defaultLayer = 'altitudinal_zones_1995';
+const defaultLayer = 'forest_types';
 
 const getStyle = activeLayer => ({
   ...mapStyle,
@@ -14,7 +14,10 @@ const getStyle = activeLayer => ({
     ...l,
     paint:
       l.type === 'fill'
-        ? { ...l.paint, 'fill-opacity': l.id === activeLayer ? 0.5 : 0.0 }
+        ? {
+            ...l.paint,
+            'fill-opacity': l['source-layer'] === activeLayer ? 0.5 : 0.0,
+          }
         : l.paint,
   })),
 });
@@ -32,16 +35,18 @@ function MapVectorStyle() {
       vertical
       style={{ position: 'absolute', zIndex: 9, right: '30px', top: '15px' }}
     >
-      {style.layers.map(l => (
-        <Menu.Item
-          key={l.id}
-          name={l.id}
-          active={activeLayer === l.id}
-          onClick={() => setActiveLayer(l.id)}
-        >
-          {t(`map.${l.id}`)}
-        </Menu.Item>
-      ))}
+      {style.layers
+        .filter(l => l.type === 'fill')
+        .map(l => (
+          <Menu.Item
+            key={l['source-layer']}
+            name={l['source-layer']}
+            active={activeLayer === l['source-layer']}
+            onClick={() => setActiveLayer(l['source-layer'])}
+          >
+            {t(`map.${l.id}`)}
+          </Menu.Item>
+        ))}
     </Menu>
   );
 }
