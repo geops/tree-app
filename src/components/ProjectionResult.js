@@ -8,47 +8,24 @@ import Recommendation from './Recommendation';
 
 function ProjectionResult() {
   const dispatch = useDispatch();
-  const { projectionLocation, location } = useSelector(state => ({
-    projectionLocation: state.projectionLocation,
-    location: state.location,
-  }));
+  const projectionLocation = useSelector(state => state.projectionLocation);
   const { t } = useTranslation();
 
   const panes = [
     {
       menuItem: t('recommendationMode.today'),
       recommendationMode: 'today',
-      render: () => (
-        <Recommendation
-          forestTypeToday={location.forestType}
-          forest={location.forestType}
-          todayFutureToggler={false}
-        />
-      ),
+      render: () => <Recommendation />,
     },
     {
       menuItem: t('recommendationMode.moderate'),
       recommendationMode: 'moderate',
-      render: () => (
-        <Recommendation
-          forestTypeToday={location.forestType}
-          forestTypeFuture={projectionLocation.forestType}
-          forest={projectionLocation.forestType}
-          todayFutureToggler
-        />
-      ),
+      render: () => <Recommendation todayFutureToggler />,
     },
     {
       menuItem: t('recommendationMode.extreme'),
       recommendationMode: 'extreme',
-      render: () => (
-        <Recommendation
-          forestTypeToday={location.forestType}
-          forestTypeFuture={projectionLocation.forestType}
-          forest={projectionLocation.forestType}
-          todayFutureToggler
-        />
-      ),
+      render: () => <Recommendation todayFutureToggler />,
     },
   ];
 
