@@ -1,6 +1,7 @@
 {
   "version": 8,
   "name": "tree",
+  "glyphs": "https://tiles.tree-app.ch/fonts/{fontstack}/{range}.pbf",
   "sources": {
     "tree": {
       "type": "vector",
@@ -166,7 +167,36 @@
       "type": "fill",
       "source": "tree",
       "source-layer": "forest_types",
-      "paint": {}
+      "paint": {
+        "fill-color": "#006268"
+      }
+    },
+    {
+      "id": "forest_types_line",
+      "type": "line",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "paint": {
+        "line-color": "#fbf0b2",
+        "line-opacity": 0.5
+      },
+      "minzoom": 15
+    },
+    {
+      "id": "forest_types_label",
+      "type": "symbol",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "layout": {
+        "text-field": ["get", "code"],
+        "text-font": ["Roboto Regular"],
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#fbf0b2",
+        "text-opacity": 0.5
+      },
+      "minzoom": 15
     },
     {
       "id": "silver_fir_areas",
