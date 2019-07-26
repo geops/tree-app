@@ -16,7 +16,7 @@ SELECT AddGeometryColumn('','altitudinal_zones_1995','geom','2056','MULTIPOLYGON
 
 CREATE VIEW altitudinal_zones_1995_export AS
 SELECT (code::TEXT || subcode::TEXT)::INT AS code,
-       geom AS geometry
+       ST_Transform(geom, 3857) AS geometry
 FROM altitudinal_zones_1995;
 
 ----------------------------------------------
@@ -37,7 +37,7 @@ SELECT AddGeometryColumn('','altitudinal_zones_2085_dry','geom','2056','MULTIPOL
 
 CREATE VIEW altitudinal_zones_2085_dry_export AS
 SELECT (code::TEXT || subcode::TEXT)::INT AS code,
-       geom AS geometry
+       ST_Transform(geom, 3857) AS geometry
 FROM altitudinal_zones_2085_dry;
 
 ----------------------------------------------
@@ -58,7 +58,7 @@ SELECT AddGeometryColumn('','altitudinal_zones_2085_less_dry','geom','2056','MUL
 
 CREATE VIEW altitudinal_zones_2085_less_dry_export AS
 SELECT (code::TEXT || subcode::TEXT)::INT AS code,
-       geom AS geometry
+       ST_Transform(geom, 3857) AS geometry
 FROM altitudinal_zones_2085_less_dry;
 
 ----------------------------------------------
@@ -82,7 +82,7 @@ SELECT AddGeometryColumn('','forest_ecoregions','geom','2056','MULTIPOLYGON',2);
 
 CREATE VIEW forest_ecoregions_export AS
 SELECT subcode as code,
-       ST_Union(ST_MakeValid(geom)) as geometry
+       ST_Transform(ST_Union(ST_MakeValid(geom)),3857) as geometry
 FROM forest_ecoregions
 GROUP BY subcode;
 
@@ -104,7 +104,7 @@ SELECT AddGeometryColumn('','silver_fir_areas','geom','2056','MULTIPOLYGON',2);
 
 CREATE VIEW silver_fir_areas_export AS
 SELECT code_ta as code,
-       geom as geometry
+       ST_Transform(geom, 3857) as geometry
 FROM silver_fir_areas;
 
 ----------------------------------------------
@@ -138,7 +138,7 @@ SELECT AddGeometryColumn('','nawalges_v1_py','geom','2056','MULTIPOLYGON',2);
 
 CREATE VIEW forest_types_export AS
 SELECT NAIS as code,
-       geom as geometry
+       ST_Transform(geom, 3857) as geometry
 FROM nawalges_v1_py
 LEFT JOIN mapping_luzern ON nawalges_v1_py.g1_txt = mapping_luzern.luzern
 WHERE nais IS NOT NULL;
