@@ -25,7 +25,7 @@ function getTargetAltitudinalZone(recommendationMode, location) {
     case 'extreme':
       return location.targetAltitudinalZoneExtreme;
     default:
-      return location.targetAltitudinalZone;
+      return location.altitudinalZone;
   }
 }
 
