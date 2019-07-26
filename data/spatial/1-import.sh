@@ -9,8 +9,12 @@ _import () {
         wget --no-check-certificate "${URL}" -O "${TARGET}.zip"
         7z x -aoa -o"${TARGET}" "${TARGET}.zip"
         7z x -aoa -o"${TARGET}" "${TARGET}/${ZIPFILE}.zip"
+        cd ${TARGET}
+        if [ -f "/data/spatial/${TARGET}/${ZIPFILE}/${SHPFILE}.shp" ]; then
+            mv ${ZIPFILE}/${SHPFILE}.* .
+        fi
         rm "${TARGET}.zip" "${TARGET}/${ZIPFILE}.zip"
-        cd "${TARGET}" && rename "s/${SHPFILE}/${TARGET}/" ${SHPFILE}.*
+        rename "s/${SHPFILE}/${TARGET}/" ${SHPFILE}.*
     else
         echo "$TARGET already downloaded! Will be reused ..."
     fi
@@ -33,5 +37,7 @@ _import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_wen
 _import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/data.zip" "forest_ecoregions" "Waldstandortsregionen" "Waldstandortsregionen"
 
 _import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_fir_areas" "Tannenareale" "Tannenareale"
+
+_import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/data.zip" "cantonal_boundaries" "SHAPEFILE_LV95_LN02" "swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET"
 
 _import "Please download Lucerne dataset manually to data/spatial/NAWALGES_V1_PY/" "NAWALGES_V1_PY"

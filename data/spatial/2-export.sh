@@ -11,6 +11,7 @@ _export () {
 _export "altitudinal_zones_1995"
 _export "altitudinal_zones_2085_dry"
 _export "altitudinal_zones_2085_less_dry"
+_export "cantonal_boundaries"
 _export "forest_ecoregions"
 _export "forest_types"
 _export "silver_fir_areas"

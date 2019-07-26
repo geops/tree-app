@@ -62,6 +62,38 @@ SELECT (code::TEXT || subcode::TEXT)::INT AS code,
 FROM altitudinal_zones_2085_less_dry;
 
 ----------------------------------------------
+-- cantonal_boundaries
+
+CREATE TABLE "cantonal_boundaries" (gid serial, "uuid" varchar(38),
+                                                       "datum_aend" date, "datum_erst" date, "erstell_j" int4,
+                                                                                             "erstell_m" varchar(20),
+                                                                                                         "revision_j" int4,
+                                                                                                         "revision_m" varchar(20),
+                                                                                                                      "grund_aend" varchar(20),
+                                                                                                                                   "herkunft" varchar(20),
+                                                                                                                                              "herkunft_j" int4,
+                                                                                                                                              "herkunft_m" varchar(20),
+                                                                                                                                                           "objektart" varchar(20),
+                                                                                                                                                                       "revision_q" varchar(100),
+                                                                                                                                                                                    "icc" varchar(20),
+                                                                                                                                                                                          "kantonsnum" int4,
+                                                                                                                                                                                          "see_flaech" numeric, "kantonsfla" numeric, "kt_teil" varchar(20),
+                                                                                                                                                                                                                                                "name" varchar(254),
+                                                                                                                                                                                                                                                       "einwohnerz" int4);
+
+
+ALTER TABLE "cantonal_boundaries" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','cantonal_boundaries','geom','2056','MULTIPOLYGON',4);
+
+
+CREATE VIEW cantonal_boundaries_export AS
+SELECT ST_Transform(geom, 3857) as geometry
+FROM cantonal_boundaries
+WHERE name = 'Luzern';
+
+----------------------------------------------
 -- forest_ecoregions
 
 CREATE TABLE "forest_ecoregions" (gid serial, "region_de" varchar(50),
