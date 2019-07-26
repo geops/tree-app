@@ -3,6 +3,7 @@ import {
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
+  SET_RECOMMENDATION_MODE,
 } from './actions';
 
 const initialState = {
@@ -31,6 +32,8 @@ function tree(state = initialState, action) {
         projectionLocation,
       };
     }
+    case SET_RECOMMENDATION_MODE:
+      return { ...state, recommendationMode: action.recommendationMode };
     default:
       return state;
   }
