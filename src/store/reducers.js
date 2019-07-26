@@ -13,6 +13,7 @@ const initialState = {
   projectionMode: 'map',
   projectionLocation: {},
   projectionOptions: {},
+  recommendationMode: 'moderate',
 };
 
 function tree(state = initialState, action) {
