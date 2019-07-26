@@ -1,5 +1,4 @@
-import WMTSSource from 'ol/source/WMTS';
-import WMTSTilegrid from 'ol/tilegrid/WMTS';
+import XYZSource from 'ol/source/XYZ';
 import View from 'ol/View';
 import React from 'react';
 
@@ -10,22 +9,16 @@ import TileLayer from '../spatial/components/layer/Tile';
 import MapLocationInfo from './MapLocationInfo';
 import MapVectorStyle from './MapVectorStyle';
 
-import { EPSG2056, extent, resolutions } from '../map/projection';
-
-const center = [2655946, 1209129];
 const mapStyle = { height: '100vh' };
-const mapView = new View({ center, resolution: 100, projection: EPSG2056 });
-const tileSource = new WMTSSource({
-  layer: 'ch.swisstopo.swissimage',
-  projection: EPSG2056,
-  requestEncoding: 'REST',
-  tileGrid: new WMTSTilegrid({
-    origin: [extent[0], extent[3]],
-    resolutions,
-    matrixIds: Object.keys(resolutions).map(i => parseInt(i, 10)),
-  }),
+const mapView = new View({
+  maxZoom: 20,
+  center: [910001, 5947112],
+  zoom: 9,
+  minZoom: 2,
+});
+const tileSource = new XYZSource({
   url:
-    '//wmts10.geo.admin.ch/1.0.0/{Layer}/default/current/2056/{TileMatrix}/{TileCol}/{TileRow}.jpeg',
+    'https://wmts10.geo.admin.ch/1.0.0/ch.swisstopo.swissimage/default/current/3857/{z}/{x}/{y}.jpeg',
 });
 
 function AppMap() {

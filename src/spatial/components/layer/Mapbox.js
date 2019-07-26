@@ -34,7 +34,7 @@ class MapboxRenderer {
     }
     mapboxMap.jumpTo({
       center: toLonLat(center),
-      zoom: zoom + 4,
+      zoom: zoom - 1,
       animate: false,
     });
     // cancel the scheduled update & trigger synchronous redraw

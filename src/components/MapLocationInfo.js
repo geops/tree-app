@@ -1,7 +1,9 @@
+import { transform } from 'ol/proj';
 import React, { useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Segment } from 'semantic-ui-react';
 
+import { EPSG2056 } from '../map/projection';
 import { MapContext } from '../spatial/components/Map';
 import Popup from '../spatial/components/Popup';
 import { setMapLocation } from '../store/actions';
@@ -26,15 +28,19 @@ function MapLocationInfo() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
   const mapLocation = useSelector(state => state.mapLocation);
+  const position =
+    mapLocation.coordinate &&
+    transform(mapLocation.coordinate, EPSG2056, 'EPSG:3857');
   useEffect(() => {
-    map.on('click', ({ coordinate, pixel }) => {
-      const features = map.getFeaturesAtPixel(pixel) || [];
+    map.on('click', event => {
+      const coordinate = transform(event.coordinate, 'EPSG:3857', EPSG2056);
+      const features = map.getFeaturesAtPixel(event.pixel) || [];
       const location = features.reduce(featuresToLocation, {});
       dispatch(setMapLocation({ ...location, coordinate }));
     });
   }, [map, dispatch]);
   return (
-    <Popup position={mapLocation.coordinate}>
+    <Popup position={position}>
       <Segment compact inverted className={styles.popup}>
         <pre>{JSON.stringify(mapLocation, null, 2)}</pre>
       </Segment>
