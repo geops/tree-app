@@ -20,3 +20,7 @@
 .map :global(.ol-control button:focus) {
   outline: 0;
 }
+
+.map {
+  height: 100vh;
+}

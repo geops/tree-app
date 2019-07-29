@@ -9,7 +9,8 @@ import TileLayer from '../spatial/components/layer/Tile';
 import MapLocationInfo from './MapLocationInfo';
 import MapVectorStyle from './MapVectorStyle';
 
-const mapStyle = { height: '100vh' };
+import styles from './Map.module.css';
+
 const mapView = new View({
   maxZoom: 20,
   center: [910001, 5947112],
@@ -23,7 +24,7 @@ const tileSource = new XYZSource({
 
 function AppMap() {
   return (
-    <Map style={mapStyle} view={mapView}>
+    <Map className={styles.map} view={mapView}>
       <MapLocationInfo />
       <TileLayer source={tileSource} />
       <MapboxLayer>
