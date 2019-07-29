@@ -1,0 +1,7 @@
+.button:global(.ui.active.button) {
+  background: #006268;
+  color: white;
+}
+.button:global(.ui.active.button:hover) {
+  background: #176f6f;
+}
