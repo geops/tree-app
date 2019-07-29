@@ -1,12 +1,13 @@
-.ol_control button {
+.map :global(.ol-hidden) {
+  visibility: hidden;
+}
+
+.map :global(.ol-control button) {
   display: block;
   margin: 8px;
-  padding: 0;
   font-size: 2.14em !important;
   color: white;
   font-size: 1.14em;
-  font-weight: bold;
-  text-decoration: none;
   text-align: center;
   height: 1.375em;
   width: 1.375em;
@@ -16,6 +17,6 @@
   border-radius: 50%;
 }
 
-button:focus {
+.map :global(.ol-control button:focus) {
   outline: 0;
 }

@@ -1,6 +1,6 @@
 import { transform } from 'ol/proj';
 import React, { useContext, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import OLFeature from 'ol/Feature';
 import { Point } from 'ol/geom';
@@ -49,10 +49,7 @@ iconFeature.setStyle(iconStyle);
 function MapLocationInfo() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
-  const mapLocation = useSelector(state => state.mapLocation);
-  const position =
-    mapLocation.coordinate &&
-    transform(mapLocation.coordinate, EPSG2056, 'EPSG:3857');
+
   useEffect(() => {
     map.on('click', event => {
       const coordinate = transform(event.coordinate, 'EPSG:3857', EPSG2056);
