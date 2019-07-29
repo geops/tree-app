@@ -1,0 +1,10 @@
+.dropdown:global(.ui.selection.dropdown) {
+  border: 2px solid #006268;
+}
+.dropdown:global(.ui.selection.dropdown:hover) {
+  border: 2px solid #176f6f;
+}
+
+.dropdown :global(.dropdown.icon) {
+  color: #006268;
+}
