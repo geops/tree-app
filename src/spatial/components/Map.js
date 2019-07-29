@@ -3,7 +3,7 @@ import OLMap from 'ol/Map';
 import PropTypes from 'prop-types';
 import React, { useEffect, useMemo, useRef } from 'react';
 
-import styles from './Map.module.css';
+import styles from '../../components/Map.module.css';
 
 export const MapContext = React.createContext();
 
