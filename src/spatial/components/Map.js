@@ -3,7 +3,7 @@ import OLMap from 'ol/Map';
 import PropTypes from 'prop-types';
 import React, { useEffect, useMemo, useRef } from 'react';
 
-import 'ol/ol.css';
+import styles from './Map.module.css';
 
 export const MapContext = React.createContext();
 
@@ -17,7 +17,7 @@ function Map({ children, style, ...props }) {
   useEffect(() => map.setTarget(target.current));
   return (
     <MapContext.Provider value={map}>
-      <div ref={target} style={style}>
+      <div ref={target} style={style} className={styles.ol_control}>
         {children}
       </div>
     </MapContext.Provider>

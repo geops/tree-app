@@ -1,0 +1,21 @@
+.ol_control button {
+  display: block;
+  margin: 8px;
+  padding: 0;
+  font-size: 2.14em !important;
+  color: white;
+  font-size: 1.14em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  height: 1.375em;
+  width: 1.375em;
+  line-height: 0.4em;
+  background-color: rgb(13, 117, 123);
+  border: none;
+  border-radius: 50%;
+}
+
+button:focus {
+  outline: 0;
+}
