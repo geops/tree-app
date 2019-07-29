@@ -1,14 +1,16 @@
 import { transform } from 'ol/proj';
 import React, { useContext, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Segment } from 'semantic-ui-react';
+import { useDispatch } from 'react-redux';
+
+import OLFeature from 'ol/Feature';
+import { Point } from 'ol/geom';
+import { Style, Icon } from 'ol/style';
+import VectorSource from 'ol/source/Vector';
 
 import { EPSG2056 } from '../map/projection';
 import { MapContext } from '../spatial/components/Map';
-import Popup from '../spatial/components/Popup';
 import { setMapLocation } from '../store/actions';
-
-import styles from './MapLocationInfo.module.css';
+import Vector from '../spatial/components/layer/Vector';
 
 const sourceLayerMapping = {
   altitudinal_zones_1995: 'altitudinalZone',
@@ -24,16 +26,36 @@ const featuresToLocation = (location, feature) => ({
   feature.sourceLayer]: feature.properties.code.toString(),
 });
 
+const iconFeature = new OLFeature({
+  geometry: new Point([0, 0]),
+  name: 'selected forest :D',
+});
+const vectorSource = new VectorSource({
+  features: [iconFeature],
+});
+
+const iconStyle = new Style({
+  image: new Icon({
+    anchor: [0.5, 0.9],
+    anchorXUnits: 'fraction',
+    anchorYUnits: 'fraction',
+    src: '/images/batool_pin.png',
+    scale: 0.09,
+  }),
+});
+
+iconFeature.setStyle(iconStyle);
+
 function MapLocationInfo() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
-  const mapLocation = useSelector(state => state.mapLocation);
-  const position =
-    mapLocation.coordinate &&
-    transform(mapLocation.coordinate, EPSG2056, 'EPSG:3857');
+
   useEffect(() => {
     map.on('click', event => {
       const coordinate = transform(event.coordinate, 'EPSG:3857', EPSG2056);
+
+      iconFeature.getGeometry().setCoordinates(event.coordinate);
+
       const features = map.getFeaturesAtPixel(event.pixel) || [];
       const location = features
         .filter(feature => feature.properties.code)
@@ -41,13 +63,7 @@ function MapLocationInfo() {
       dispatch(setMapLocation({ ...location, coordinate }));
     });
   }, [map, dispatch]);
-  return (
-    <Popup position={position}>
-      <Segment compact inverted className={styles.popup}>
-        <pre>{JSON.stringify(mapLocation, null, 2)}</pre>
-      </Segment>
-    </Popup>
-  );
+  return <Vector source={vectorSource} zIndex={999} />;
 }
 
 export default MapLocationInfo;
