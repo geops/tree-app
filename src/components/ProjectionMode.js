@@ -1,12 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 
+import Button from './Button';
+import { ReactComponent as ManualIcon } from '../icons/manual.svg';
+import { ReactComponent as MapIcon } from '../icons/map.svg';
 import { setProjectionMode } from '../store/actions';
 
 const formatCoordinate = coordinate =>
   coordinate.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'");
+
+const iconStyle = { height: '2em' };
 
 function ProjectionMode() {
   const dispatch = useDispatch();
@@ -16,29 +21,36 @@ function ProjectionMode() {
   }));
   const { t } = useTranslation();
   return (
-    <>
-      <Button
-        active={projectionMode === 'map'}
-        content="Karte"
-        icon="point"
-        label={{
-          as: 'a',
-          basic: true,
-          pointing: 'right',
-          content: coordinate
-            ? coordinate.map(formatCoordinate).join(', ')
-            : t('map.hint'),
-        }}
-        labelPosition="left"
-        onClick={() => dispatch(setProjectionMode('map'))}
-      />
-      <Button
-        active={projectionMode === 'manual'}
-        content="Manual"
-        icon="edit"
-        onClick={() => dispatch(setProjectionMode('manual'))}
-      />
-    </>
+    <Grid columns="2" verticalAlign="middle">
+      <Grid.Row>
+        <Grid.Column>
+          <Button
+            disabled
+            icon="point"
+            label={
+              coordinate
+                ? coordinate.map(formatCoordinate).join(', ')
+                : t('map.hint')
+            }
+          />
+        </Grid.Column>
+        <Grid.Column textAlign="right">
+          <Button.Group>
+            <Button
+              active={projectionMode === 'map'}
+              content={<MapIcon fill="white" style={iconStyle} />}
+              onClick={() => dispatch(setProjectionMode('map'))}
+            />
+            <Button
+              active={projectionMode === 'manual'}
+              content={<ManualIcon fill="white" style={iconStyle} />}
+              onClick={() => dispatch(setProjectionMode('manual'))}
+            />
+          </Button.Group>
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row></Grid.Row>
+    </Grid>
   );
 }
 
