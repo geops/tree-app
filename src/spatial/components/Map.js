@@ -13,6 +13,7 @@ function Map({ children, style, ...props }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     Object.values(props).map(prop => getUid(prop)),
   );
+
   const target = useRef(null);
   useEffect(() => map.setTarget(target.current));
   return (
