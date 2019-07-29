@@ -33,7 +33,8 @@
     "label": "Höhenstufe"
   },
   "forestType": {
-    "label": "Standorttyp"
+    "label": "Standorttyp",
+    "hint": "Bitte in der Karte auswählen"
   },
   "slope": {
     "label": "Hangneigung"
