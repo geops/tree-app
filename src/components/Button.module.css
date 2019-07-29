@@ -1,7 +1,7 @@
-.button:global(.ui.active.button) {
-  background: #006268;
-  color: white;
+.active {
+  composes: primaryBackgroundColor from global;
 }
-.button:global(.ui.active.button:hover) {
-  background: #176f6f;
+
+.button:global(.ui.active.button) {
+  color: white;
 }

@@ -1,0 +1,17 @@
+.primaryColor {
+  color: #006268 !important;
+}
+
+.primaryBackgroundColor {
+  background-color: #006268 !important;
+}
+.primaryBackgroundColor:hover {
+  background-color: #176f6f !important;
+}
+
+.primaryBorderColor {
+  border-color: #006268 !important;
+}
+.primaryBorderColor:hover {
+  border-color: #176f6f !important;
+}
