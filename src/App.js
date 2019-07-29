@@ -6,6 +6,8 @@ import Navigation from './components/Navigation';
 import Projection from './components/Projection';
 import store from './store';
 
+import './theme.css';
+
 function App() {
   return (
     <Provider store={store}>

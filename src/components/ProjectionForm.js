@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/label-has-for */
 import { translate } from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -5,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Form } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
+import Dropdown from './Dropdown';
 import { setManualLocation } from '../store/actions';
 
 const getButtonOptions = (type, language) => key => ({
@@ -40,51 +43,63 @@ function ProjectionForm() {
   return (
     <>
       <Form>
-        {projectionMode === 'manual' && projectionOptions.forestType && (
-          <Form.Dropdown
-            label={t('forestType.label')}
-            search
-            selection
-            fluid
-            clearable
-            options={projectionOptions.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
-            )}
-            onChange={(e, { value }) => setLocation('forestType', value)}
-            value={location.forestType}
-          />
+        {projectionOptions.forestType && (
+          <Form.Field>
+            <label>{t('forestType.label')}</label>
+            <Dropdown
+              disabled={projectionMode === 'map'}
+              search
+              selection
+              fluid
+              clearable={projectionMode === 'manual'}
+              options={projectionOptions.forestType.map(
+                getDropdownOptions('forestType', i18n.language, true),
+              )}
+              onChange={(e, { value }) => setLocation('forestType', value)}
+              placeholder={
+                projectionMode === 'map'
+                  ? t('forestType.hint')
+                  : t('dropdownPlaceholder')
+              }
+              value={location.forestType}
+            />
+          </Form.Field>
         )}
         {projectionMode === 'manual' && projectionOptions.forestEcoregion && (
-          <Form.Dropdown
-            label={t('forestEcoregion.label')}
-            placeholder={t('dropdownPlaceholder')}
-            search
-            selection
-            clearable
-            fluid
-            options={projectionOptions.forestEcoregion.map(
-              getDropdownOptions('forestEcoregion', i18n.language),
-            )}
-            onChange={(e, { value }) => setLocation('forestEcoregion', value)}
-            value={location.forestEcoregion}
-          />
+          <Form.Field>
+            <label>{t('forestEcoregion.label')}</label>
+            <Dropdown
+              placeholder={t('dropdownPlaceholder')}
+              search
+              selection
+              clearable
+              fluid
+              options={projectionOptions.forestEcoregion.map(
+                getDropdownOptions('forestEcoregion', i18n.language),
+              )}
+              onChange={(e, { value }) => setLocation('forestEcoregion', value)}
+              value={location.forestEcoregion}
+            />
+          </Form.Field>
         )}
         {projectionMode === 'manual' && projectionOptions.altitudinalZone && (
-          <Form.Dropdown
-            label={t('altitudinalZone.label')}
-            placeholder={t('dropdownPlaceholder')}
-            search
-            selection
-            clearable
-            fluid
-            options={projectionOptions.altitudinalZone.map(
-              getDropdownOptions('altitudinalZone', i18n.language),
-            )}
-            onChange={(e, { value }) => {
-              setLocation('altitudinalZone', value || undefined);
-            }}
-            value={location.altitudinalZone}
-          />
+          <Form.Field>
+            <label>{t('altitudinalZone.label')}</label>
+            <Dropdown
+              placeholder={t('dropdownPlaceholder')}
+              search
+              selection
+              clearable
+              fluid
+              options={projectionOptions.altitudinalZone.map(
+                getDropdownOptions('altitudinalZone', i18n.language),
+              )}
+              onChange={(e, { value }) => {
+                setLocation('altitudinalZone', value || undefined);
+              }}
+              value={location.altitudinalZone}
+            />
+          </Form.Field>
         )}
 
         {projectionOptions.slope && projectionOptions.slope.length > 1 && (
@@ -134,24 +149,26 @@ function ProjectionForm() {
           projectionOptions.targetAltitudinalZone &&
           projectionOptions.targetAltitudinalZone.length >= 1 &&
           projectionOptions.altitudinalZone !== undefined && (
-            <Form.Dropdown
-              label={t('targetAltitudinalZone.label')}
-              placeholder={t('dropdownPlaceholder')}
-              search
-              selection
-              clearable
-              fluid
-              options={projectionOptions.targetAltitudinalZone.map(
-                getDropdownOptions('altitudinalZone', i18n.language),
-              )}
-              onChange={(e, { value }) => {
-                setLocation('targetAltitudinalZone', value || undefined);
-              }}
-              value={
-                location.targetAltitudinalZone ||
-                projectionOptions.targetAltitudinalZone[0]
-              }
-            />
+            <Form.Field>
+              <label>{t('targetAltitudinalZone.label')}</label>
+              <Dropdown
+                placeholder={t('dropdownPlaceholder')}
+                search
+                selection
+                clearable
+                fluid
+                options={projectionOptions.targetAltitudinalZone.map(
+                  getDropdownOptions('altitudinalZone', i18n.language),
+                )}
+                onChange={(e, { value }) => {
+                  setLocation('targetAltitudinalZone', value || undefined);
+                }}
+                value={
+                  location.targetAltitudinalZone ||
+                  projectionOptions.targetAltitudinalZone[0]
+                }
+              />
+            </Form.Field>
           )}
       </Form>
     </>
