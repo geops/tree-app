@@ -18,7 +18,7 @@ function Map({ children, style, ...props }) {
   useEffect(() => map.setTarget(target.current));
   return (
     <MapContext.Provider value={map}>
-      <div ref={target} style={style} className={styles.ol_control}>
+      <div ref={target} style={style} className={styles.map}>
         {children}
       </div>
     </MapContext.Provider>
