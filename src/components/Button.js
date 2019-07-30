@@ -5,13 +5,7 @@ import { Button as SUIButton } from 'semantic-ui-react';
 import styles from './Button.module.css';
 
 function Button({ active, ...props }) {
-  return (
-    <SUIButton
-      {...props}
-      active={active}
-      className={`${styles.button} ${active && styles.active}`}
-    />
-  );
+  return <SUIButton {...props} active={active} className={styles.button} />;
 }
 
 Button.propTypes = {

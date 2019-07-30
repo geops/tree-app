@@ -1,8 +1,9 @@
-.dropdown {
-  composes: primaryBorderColor from global;
-  composes: primaryColor from global;
+.dropdown:global(.ui.selection.dropdown) {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-width: 2px;
 }
 
-.dropdown:global(.ui.selection.dropdown) {
-  border-width: 2px;
+.dropdown:global(.ui.selection.dropdown:hover) {
+  border-color: var(--primary-light-color);
 }
