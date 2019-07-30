@@ -1,3 +1,9 @@
-.form {
-  margin: 0 20px 20px;
+.form:global(.ui.form) {
+  margin: 0 20px;
+  position: sticky;
+  top: 0;
+}
+
+.form label {
+  color: var(--primary-color) !important;
 }

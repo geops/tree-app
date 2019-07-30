@@ -19,6 +19,8 @@
 }
 .right {
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu:global(.ui.menu) {
