@@ -1,0 +1,6 @@
+.grid:global(.ui.grid) {
+  margin: 20px 20px 0;
+}
+.icon {
+  height: 2em;
+}

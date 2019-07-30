@@ -1,0 +1,13 @@
+.container {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+.tab :global(.ui.secondary.inverted.pointing.menu) {
+  border: none;
+}
+
+.tab :global(.ui.attached.segment) {
+  background: none;
+  color: white;
+  border: none;
+}
