@@ -2,8 +2,17 @@
   visibility: hidden;
 }
 
+.map :global(.ol-zoom-out) {
+  top: 2.5em;
+  left: 0.5em;
+}
+
+.map :global(.ol-zoom-in) {
+  top: 0.5em;
+  left: 0.5em;
+}
+
 .map :global(.ol-control button) {
-  display: block;
   margin: 8px;
   font-size: 2em !important;
   color: white;
@@ -15,7 +24,9 @@
   background-color: var(--primary-color);
   border: none;
   border-radius: 50%;
+  position: absolute;
 }
+
 .map :global(.ol-control button:hover) {
   cursor: pointer;
   background-color: var(--primary-light-color);
