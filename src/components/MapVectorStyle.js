@@ -27,10 +27,10 @@ function MapVectorStyle() {
   const layer = useContext(LayerContext);
   const [activeLayer, setActiveLayer] = useState(defaultLayer);
   const style = getStyle(activeLayer);
-  // eslint-disable-next-line no-underscore-dangle
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
   return (
     <Menu
+      compact
       inverted
       vertical
       style={{ position: 'absolute', zIndex: 9, right: '30px', top: '15px' }}
