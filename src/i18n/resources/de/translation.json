@@ -59,5 +59,10 @@
   },
   "targetAltitudinalZone": {
     "label": "Ziel Höhenstufe"
+  },
+  "errorMessage": {
+    "incompleteLocationInput": "Insufficient information provided.",
+    "incompleteInputSubMessage": "Forest type information is available only within the Standorttypen layer.",
+    "noProjectionFoundMessage": "No projection found for the chosen forest type"
   }
 }
