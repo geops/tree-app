@@ -7,11 +7,10 @@ import Button from './Button';
 import { ReactComponent as ManualIcon } from '../icons/manual.svg';
 import { ReactComponent as MapIcon } from '../icons/map.svg';
 import { setProjectionMode } from '../store/actions';
+import styles from './ProjectionMode.module.css';
 
 const formatCoordinate = coordinate =>
   coordinate.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'");
-
-const iconStyle = { height: '2em' };
 
 function ProjectionMode() {
   const dispatch = useDispatch();
@@ -21,7 +20,7 @@ function ProjectionMode() {
   }));
   const { t } = useTranslation();
   return (
-    <Grid columns="2" verticalAlign="middle">
+    <Grid columns="2" verticalAlign="middle" className={styles.grid}>
       <Grid.Row>
         <Grid.Column>
           <Button
@@ -38,18 +37,17 @@ function ProjectionMode() {
           <Button.Group>
             <Button
               active={projectionMode === 'map'}
-              content={<MapIcon fill="white" style={iconStyle} />}
+              content={<MapIcon fill="white" className={styles.icon} />}
               onClick={() => dispatch(setProjectionMode('map'))}
             />
             <Button
               active={projectionMode === 'manual'}
-              content={<ManualIcon fill="white" style={iconStyle} />}
+              content={<ManualIcon fill="white" className={styles.icon} />}
               onClick={() => dispatch(setProjectionMode('manual'))}
             />
           </Button.Group>
         </Grid.Column>
       </Grid.Row>
-      <Grid.Row></Grid.Row>
     </Grid>
   );
 }

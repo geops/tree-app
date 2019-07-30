@@ -1,10 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
-import { Divider, Header, Tab } from 'semantic-ui-react';
+import { Container, Header, Tab } from 'semantic-ui-react';
 
 import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
+import styles from './ProjectionResult.module.css';
 
 function ProjectionResult() {
   const dispatch = useDispatch();
@@ -32,19 +33,27 @@ function ProjectionResult() {
   return (
     <>
       {projectionLocation.forestType && (
-        <>
-          <Divider horizontal>
-            <Header color="olive">{t('app.result')}</Header>
-          </Divider>
+        <Container className={styles.container}>
+          <Header inverted size="large" textAlign="center">
+            {t('projectionResult.header')}
+          </Header>
           <Tab
-            panes={panes}
+            className={styles.tab}
             defaultActiveIndex={1}
+            menu={{
+              borderless: true,
+              inverted: true,
+              pointing: true,
+              secondary: true,
+              widths: '3',
+            }}
             onTabChange={(e, data) => {
               const { recommendationMode } = data.panes[data.activeIndex];
               dispatch(setRecommendationMode(recommendationMode));
             }}
+            panes={panes}
           />
-        </>
+        </Container>
       )}
     </>
   );

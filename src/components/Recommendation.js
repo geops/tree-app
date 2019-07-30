@@ -5,6 +5,11 @@ import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { Grid, Header, List, Tab, Form, Divider } from 'semantic-ui-react';
 
+import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
+import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
+import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
+import styles from './Recommendation.module.css';
+
 function Recommendation({ todayFutureToggler }) {
   const { t, i18n } = useTranslation();
   const [future, setFuture] = useState(false);
@@ -38,11 +43,11 @@ function Recommendation({ todayFutureToggler }) {
   return (
     recommendations && (
       <Tab.Pane>
-        <Header>
+        <Header inverted>
           {`${forest} - ${translate('forestType', forest, i18n.language)}`}
         </Header>
         {todayFutureToggler && (
-          <Form>
+          <Form inverted>
             <Form.Field>
               <Form.Radio
                 label={t('todayFutureToggler.today')}
@@ -64,7 +69,10 @@ function Recommendation({ todayFutureToggler }) {
         <Divider hidden />
         <Grid stackable columns={3}>
           <Grid.Column>
-            <Header color="olive">Fördern</Header>
+            <Header inverted>
+              <PositiveIcon fill="white" className={styles.icon} />
+              {t('recommendation.positive')}
+            </Header>
             <List>
               {recommendations.positive.map(r => (
                 <List.Item key={r}>
@@ -74,7 +82,10 @@ function Recommendation({ todayFutureToggler }) {
             </List>
           </Grid.Column>
           <Grid.Column>
-            <Header color="grey">Mitnehmen</Header>
+            <Header inverted>
+              <NeutralIcon fill="white" className={styles.icon} />
+              {t('recommendation.neutral')}
+            </Header>
             <List>
               {recommendations.neutral.map(r => (
                 <List.Item key={r}>
@@ -84,7 +95,10 @@ function Recommendation({ todayFutureToggler }) {
             </List>
           </Grid.Column>
           <Grid.Column>
-            <Header color="red">Reduzieren</Header>
+            <Header inverted>
+              <NegativeIcon fill="white" className={styles.icon} />
+              {t('recommendation.negative')}
+            </Header>
             <List>
               {recommendations.negative.map(r => (
                 <List.Item key={r}>
@@ -95,7 +109,7 @@ function Recommendation({ todayFutureToggler }) {
           </Grid.Column>
           {recommendations.attention && recommendations.attention.length > 0 && (
             <Grid.Column>
-              <Header color="red">Achtung</Header>
+              <Header inverted>{t('recommendation.attention')}</Header>
               <List>
                 {recommendations.attention.map(r => (
                   <List.Item key={r}>

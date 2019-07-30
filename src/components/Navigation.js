@@ -34,7 +34,6 @@ function Navigation({ left, right }) {
           style={{
             width: isMobile ? '100vw' : '50vw',
             position: 'relative',
-            padding: '20px',
             overflow: 'scroll',
           }}
         >

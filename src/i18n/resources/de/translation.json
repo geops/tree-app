@@ -4,7 +4,7 @@
     "recommendation": "Empfehlung",
     "result": "Baumartenempfehlung",
     "ribbon": "Test",
-    "title": "Baumarten Tool"
+    "title": "Tree App"
   },
   "map": {
     "altitudinal_zones_1995": "Höhenstufen 1995",
@@ -14,6 +14,15 @@
     "forest_types": "Standorttypen",
     "silver_fir_areas": "Tannenareale",
     "hint": "Bitte Position wählen"
+  },
+  "projectionResult": {
+    "header": "Empfehlung"
+  },
+  "recommendation": {
+    "attention": "Achtung",
+    "negative": "Reduzieren",
+    "neutral": "Mitnehmen",
+    "positive": "Fördern"
   },
   "recommendationMode": {
     "today": "heute",
