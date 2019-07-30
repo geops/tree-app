@@ -27,7 +27,6 @@ function MapVectorStyle() {
   const layer = useContext(LayerContext);
   const [activeLayer, setActiveLayer] = useState(defaultLayer);
   const style = getStyle(activeLayer);
-  // eslint-disable-next-line no-underscore-dangle
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
   return (
     <Menu
