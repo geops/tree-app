@@ -6,7 +6,6 @@
   "private": true,
   "dependencies": {
     "@geops/tree-lib": "^0.7.0",
-    "@rehooks/window-size": "^1.0.2",
     "i18next": "^17.0.4",
     "mapbox-gl": "^1.1.1",
     "ol": "^6.0.0-beta.11",

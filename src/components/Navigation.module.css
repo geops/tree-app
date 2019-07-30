@@ -1,0 +1,54 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pages {
+  flex-grow: 1;
+  display: flex;
+  transition: transform ease-out 0.2s;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  width: 50vw;
+  position: relative;
+}
+.right {
+  overflow: scroll;
+}
+
+.menu:global(.ui.menu) {
+  border-radius: 0;
+  margin: 0;
+  flex-shrink: 0;
+  display: none;
+}
+
+.item {
+  border-radius: 0;
+}
+
+.icon {
+  height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .pages {
+    width: 200vw;
+  }
+  .pageRight {
+    transform: translateX(-100vw);
+  }
+  .left,
+  .right {
+    width: 100vw;
+  }
+  .menu:global(.ui.menu) {
+    display: flex;
+  }
+}
