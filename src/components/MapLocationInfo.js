@@ -7,6 +7,7 @@ import { Point } from 'ol/geom';
 import { Style, Icon } from 'ol/style';
 import VectorSource from 'ol/source/Vector';
 
+import mapPositionIcon from '../icons/mapPosition.svg';
 import { EPSG2056 } from '../map/projection';
 import { MapContext } from '../spatial/components/Map';
 import { setMapLocation } from '../store/actions';
@@ -36,11 +37,9 @@ const vectorSource = new VectorSource({
 
 const iconStyle = new Style({
   image: new Icon({
-    anchor: [0.5, 0.9],
-    anchorXUnits: 'fraction',
-    anchorYUnits: 'fraction',
-    src: '/images/batool_pin.png',
-    scale: 0.09,
+    anchor: [0.5, 1],
+    src: mapPositionIcon,
+    scale: 0.05,
   }),
 });
 
