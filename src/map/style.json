@@ -11,50 +11,78 @@
   },
   "layers": [
     {
-      "id": "altitudinal_zones_1995",
+      "id": "forest_types",
       "type": "fill",
       "source": "tree",
-      "source-layer": "altitudinal_zones_1995",
+      "source-layer": "forest_types",
+      "paint": {
+        "fill-color": "#006268"
+      }
+    },
+    {
+      "id": "forest_types_line",
+      "type": "line",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "paint": {
+        "line-color": "#fbf0b2",
+        "line-opacity": 0.5
+      },
+      "minzoom": 15
+    },
+    {
+      "id": "forest_types_label",
+      "type": "symbol",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "layout": {
+        "text-field": ["get", "code"],
+        "text-font": ["Roboto Regular"],
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#fbf0b2",
+        "text-opacity": 0.5
+      },
+      "minzoom": 15
+    },
+    {
+      "id": "forest_ecoregions",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "forest_ecoregions",
       "paint": {
         "fill-color": [
           "match",
           ["get", "code"],
-          0,
-          "#ccc",
-          10,
-          "#df73ff",
-          20,
-          "#8400a8",
-          30,
-          "#e60000",
-          40,
-          "#ff5500",
-          50,
-          "#ffaa00",
-          60,
-          "#267300",
-          70,
-          "#70a800",
-          81,
-          "#73dfff",
-          82,
-          "#00a9e6",
-          83,
-          "#004da8",
-          90,
-          "#732600",
-          100,
-          "#3b1300",
+          "J",
+          "#cf8a23",
+          "M",
+          "#dcbd2f",
+          "1",
+          "#d8df51",
+          "2a",
+          "#7ce882",
+          "2b",
+          "#3ba625",
+          "3",
+          "#93e6ec",
+          "4",
+          "#76a8e7",
+          "5a",
+          "#5851df",
+          "5b",
+          "#e466c7",
           "#ccc"
         ],
         "fill-opacity": 0.0
       }
     },
     {
-      "id": "altitudinal_zones_2085_dry",
+      "id": "altitudinal_zones_1995",
       "type": "fill",
       "source": "tree",
-      "source-layer": "altitudinal_zones_2085_dry",
+      "source-layer": "altitudinal_zones_1995",
       "paint": {
         "fill-color": [
           "match",
@@ -131,72 +159,44 @@
       }
     },
     {
-      "id": "forest_ecoregions",
+      "id": "altitudinal_zones_2085_dry",
       "type": "fill",
       "source": "tree",
-      "source-layer": "forest_ecoregions",
+      "source-layer": "altitudinal_zones_2085_dry",
       "paint": {
         "fill-color": [
           "match",
           ["get", "code"],
-          "J",
-          "#cf8a23",
-          "M",
-          "#dcbd2f",
-          "1",
-          "#d8df51",
-          "2a",
-          "#7ce882",
-          "2b",
-          "#3ba625",
-          "3",
-          "#93e6ec",
-          "4",
-          "#76a8e7",
-          "5a",
-          "#5851df",
-          "5b",
-          "#e466c7",
+          0,
+          "#ccc",
+          10,
+          "#df73ff",
+          20,
+          "#8400a8",
+          30,
+          "#e60000",
+          40,
+          "#ff5500",
+          50,
+          "#ffaa00",
+          60,
+          "#267300",
+          70,
+          "#70a800",
+          81,
+          "#73dfff",
+          82,
+          "#00a9e6",
+          83,
+          "#004da8",
+          90,
+          "#732600",
+          100,
+          "#3b1300",
           "#ccc"
         ],
         "fill-opacity": 0.0
       }
-    },
-    {
-      "id": "forest_types",
-      "type": "fill",
-      "source": "tree",
-      "source-layer": "forest_types",
-      "paint": {
-        "fill-color": "#006268"
-      }
-    },
-    {
-      "id": "forest_types_line",
-      "type": "line",
-      "source": "tree",
-      "source-layer": "forest_types",
-      "paint": {
-        "line-color": "#fbf0b2",
-        "line-opacity": 0.5
-      },
-      "minzoom": 15
-    },
-    {
-      "id": "forest_types_label",
-      "type": "symbol",
-      "source": "tree",
-      "source-layer": "forest_types",
-      "layout": {
-        "text-field": ["get", "code"],
-        "text-font": ["Roboto Regular"],
-        "text-optional": true
-      },
-      "paint": {
-        "text-color": "#fbf0b2",
-        "text-opacity": 0.5
-      },
-      "minzoom": 15
     },
     {
       "id": "silver_fir_areas",
