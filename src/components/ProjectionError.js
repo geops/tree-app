@@ -29,7 +29,7 @@ function ProjectionError() {
         error
         header={t('errorMessage.incompleteLocationInput')}
         list={missingFields}
-        size="medium"
+        size="large"
         compact
       />
     </Grid>
