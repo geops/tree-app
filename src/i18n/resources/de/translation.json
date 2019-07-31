@@ -61,8 +61,6 @@
     "label": "Ziel Höhenstufe"
   },
   "errorMessage": {
-    "incompleteLocationInput": "Unzureichende Angaben. Fehlender Wert für:",
-    "incompleteInputSubMessage": "Forest type information is available only within the Standorttypen layer.",
-    "noProjectionFoundMessage": "Für den gewählten Waldtyp wurde keine Projektion gefunden."
+    "incompleteLocationInput": "Folgende Angaben fehlen:"
   }
 }
