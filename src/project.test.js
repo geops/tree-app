@@ -43,6 +43,19 @@ describe('Test for input values', () => {
       'fooBar for target altitudinal zone is not valid.',
     );
   });
+
+  test('valid projection with same altitudinalZone and targetAltitudinalZone', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: 'M',
+          altitudinalZone: '40',
+          forestType: '8*',
+        },
+        '40',
+      ).forestType,
+    ).toBe('8*');
+  });
 });
 
 describe('Test for output values', () => {
@@ -122,34 +135,34 @@ describe('Test for output values', () => {
       ).options.targetAltitudinalZone,
     ).toMatchObject(['50', '40', '20']);
   });
-});
 
-test('empty location value and target altitudinal Zone ', () => {
-  expect(project().options.forestType.length).toBe(199);
-});
+  test('empty location value and target altitudinal Zone ', () => {
+    expect(project().options.forestType.length).toBe(199);
+  });
 
-test('valid list of preceding keys for multi-step options', () => {
-  expect(
-    project(
-      {
-        forestEcoregion: '1',
-        altitudinalZone: '100',
-        forestType: '59V',
-      },
-      '81',
-    ).options.altitudinalZone,
-  ).toMatchObject(['81', '90', '100']);
-});
+  test('valid list of preceding keys for multi-step options', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '100',
+          forestType: '59V',
+        },
+        '81',
+      ).options.altitudinalZone,
+    ).toMatchObject(['81', '90', '100']);
+  });
 
-test('valid list of preceding keys for multi-step options if prior field is undefined', () => {
-  expect(
-    project(
-      {
-        forestEcoregion: '1',
-        altitudinalZone: undefined,
-        forestType: '59V',
-      },
-      '81',
-    ).options.altitudinalZone,
-  ).toMatchObject(['100']);
+  test('valid list of preceding keys for multi-step options if prior field is undefined', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: undefined,
+          forestType: '59V',
+        },
+        '81',
+      ).options.altitudinalZone,
+    ).toMatchObject(['100']);
+  });
 });
