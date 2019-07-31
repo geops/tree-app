@@ -43,7 +43,7 @@ function ProjectionForm() {
 
   return (
     <Form className={styles.form}>
-      {projectionOptions.forestType && (
+      {projectionMode === 'manual' && projectionOptions.forestType && (
         <Form.Field>
           <label>{t('forestType.label')}</label>
           <Dropdown

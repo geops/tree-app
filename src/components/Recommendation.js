@@ -100,11 +100,14 @@ function Recommendation({ todayFutureToggler }) {
               {t('recommendation.negative')}
             </Header>
             <List>
-              {recommendations.negative.map(r => (
-                <List.Item key={r}>
-                  {translate('treeType', r, i18n.language)}
-                </List.Item>
-              ))}
+              {recommendations.negative.map(
+                r =>
+                  r && (
+                    <List.Item key={r}>
+                      {translate('treeType', r, i18n.language)}
+                    </List.Item>
+                  ),
+              )}
             </List>
           </Grid.Column>
           {recommendations.attention && recommendations.attention.length > 0 && (

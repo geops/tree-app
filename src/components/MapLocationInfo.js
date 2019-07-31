@@ -58,7 +58,7 @@ function MapLocationInfo() {
 
       const features = map.getFeaturesAtPixel(event.pixel) || [];
       const location = features
-        .filter(feature => feature.properties.code)
+        .filter(feature => feature.properties && feature.properties.code)
         .reduce(featuresToLocation, {});
       dispatch(setMapLocation({ ...location, coordinate }));
     });
