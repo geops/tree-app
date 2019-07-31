@@ -36,7 +36,7 @@ COPY
                          json_agg(treetype::text::int) treetypes
                   FROM recommendations_export
                   WHERE treetype = '9500'
-                  GROUP BY foresttype) SELECT json_object_agg(foresttype,json_build_object('one',one.treetypes,'two',two.treetypes,'three',three.treetypes,'four',four.treetypes)) AS recommendations
+                  GROUP BY foresttype) SELECT json_object_agg(foresttype,json_build_object('one',coalesce(one.treetypes,'[]'::json),'two',coalesce(two.treetypes,'[]'::json),'three',coalesce(three.treetypes,'[]'::json),'four',coalesce(four.treetypes,'[]'::json))) AS recommendations
          FROM
                  (SELECT DISTINCT foresttype
                   FROM recommendations_export) foo

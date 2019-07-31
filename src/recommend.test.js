@@ -43,7 +43,7 @@ describe('Test for output values', () => {
         421400,
         421500,
       ],
-      attention: null,
+      attention: [],
     });
   });
 
@@ -83,6 +83,15 @@ describe('Test for output values', () => {
       positive: [100],
       neutral: [25300, 174200, 317500, 402200],
       negative: [],
+      attention: [],
+    });
+  });
+
+  test('result does not include null values', () => {
+    expect(recommend('71', '45', false)).toStrictEqual({
+      positive: [60500, 302800],
+      neutral: [402300],
+      negative: [305500],
       attention: [],
     });
   });
