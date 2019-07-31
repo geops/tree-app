@@ -10,34 +10,30 @@ const requiredFieldsForProjection = [
 ];
 
 function NoProjectionFound() {
-  const {
-    mapLocation,
-    projectionMode,
-    projectionLocation,
-    projectionOptions,
-  } = useSelector(state => ({
-    mapLocation: state.mapLocation,
-    projectionMode: state.projectionMode,
-    projectionLocation: state.projectionLocation,
-    projectionOptions: state.projectionOptions,
-  }));
+  const { mapLocation, projectionMode, projectionLocation } = useSelector(
+    state => ({
+      mapLocation: state.mapLocation,
+      projectionMode: state.projectionMode,
+      projectionLocation: state.projectionLocation,
+    }),
+  );
 
   const { t } = useTranslation();
   const missingFields = requiredFieldsForProjection
     .filter(field => mapLocation[field] === undefined)
-    .map(field => <li key={field}>{t(`${field}.label`)}</li>);
+    .map(field => t(`${field}.label`));
 
   return (
     <>
       {projectionMode === 'map' &&
         mapLocation.coordinate &&
         missingFields.length >= 1 && (
-          <Message negative>
-            <Message.Header>
-              {t('errorMessage.incompleteLocationInput')}
-              {missingFields}
-            </Message.Header>
-          </Message>
+          <Message
+            error
+            header={t('errorMessage.incompleteLocationInput')}
+            list={missingFields}
+            size="large"
+          />
         )}
       {projectionMode === 'map' &&
         missingFields.length === 0 &&
@@ -46,7 +42,6 @@ function NoProjectionFound() {
           <Message negative>
             <Message.Header>
               {t('errorMessage.noProjectionFoundMessage')}
-              <p>hello there</p>
             </Message.Header>
           </Message>
         )}
