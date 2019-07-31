@@ -11,16 +11,19 @@
   },
   "layers": [
     {
-      "id": "forest_types",
+      "id": "ft",
       "type": "fill",
       "source": "tree",
       "source-layer": "forest_types",
+      "metadata": {
+        "mapping": "forestType"
+      },
       "paint": {
         "fill-color": "#006268"
       }
     },
     {
-      "id": "forest_types_line",
+      "id": "ft_line",
       "type": "line",
       "source": "tree",
       "source-layer": "forest_types",
@@ -31,7 +34,7 @@
       "minzoom": 15
     },
     {
-      "id": "forest_types_label",
+      "id": "ft_label",
       "type": "symbol",
       "source": "tree",
       "source-layer": "forest_types",
@@ -47,10 +50,13 @@
       "minzoom": 15
     },
     {
-      "id": "forest_ecoregions",
+      "id": "fe",
       "type": "fill",
       "source": "tree",
       "source-layer": "forest_ecoregions",
+      "metadata": {
+        "mapping": "forestEcoregion"
+      },
       "paint": {
         "fill-color": [
           "match",
@@ -79,10 +85,13 @@
       }
     },
     {
-      "id": "altitudinal_zones_1995",
+      "id": "azt",
       "type": "fill",
       "source": "tree",
       "source-layer": "altitudinal_zones_1995",
+      "metadata": {
+        "mapping": "altitudinalZone"
+      },
       "paint": {
         "fill-color": [
           "match",
@@ -119,10 +128,13 @@
       }
     },
     {
-      "id": "altitudinal_zones_2085_less_dry",
+      "id": "azm",
       "type": "fill",
       "source": "tree",
       "source-layer": "altitudinal_zones_2085_less_dry",
+      "metadata": {
+        "mapping": "targetAltitudinalZoneModerate"
+      },
       "paint": {
         "fill-color": [
           "match",
@@ -159,10 +171,13 @@
       }
     },
     {
-      "id": "altitudinal_zones_2085_dry",
+      "id": "aze",
       "type": "fill",
       "source": "tree",
       "source-layer": "altitudinal_zones_2085_dry",
+      "metadata": {
+        "mapping": "targetAltitudinalZoneExtreme"
+      },
       "paint": {
         "fill-color": [
           "match",
@@ -199,10 +214,13 @@
       }
     },
     {
-      "id": "silver_fir_areas",
+      "id": "sfa",
       "type": "fill",
       "source": "tree",
       "source-layer": "silver_fir_areas",
+      "metadata": {
+        "mapping": "silverFirArea"
+      },
       "paint": {
         "fill-color": [
           "match",
@@ -219,7 +237,7 @@
       }
     },
     {
-      "id": "cantonal_boundaries",
+      "id": "cb",
       "type": "line",
       "source": "tree",
       "source-layer": "cantonal_boundaries",

@@ -8,7 +8,7 @@ import { Form } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
-import { setManualLocation } from '../store/actions';
+import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
 const getButtonOptions = (type, language) => key => ({
@@ -25,19 +25,15 @@ const getDropdownOptions = (type, language, includeKey = false) => key => ({
 
 function ProjectionForm() {
   const dispatch = useDispatch();
-  const {
-    location,
-    manualLocation,
-    projectionMode,
-    projectionOptions,
-  } = useSelector(state => ({
-    location: state.location,
-    manualLocation: state.manualLocation,
-    projectionMode: state.projectionMode,
-    projectionOptions: state.projectionOptions,
-  }));
+  const { location, projectionMode, projectionOptions } = useSelector(
+    state => ({
+      location: state.location,
+      projectionMode: state.projectionMode,
+      projectionOptions: state.projectionOptions,
+    }),
+  );
   const setLocation = (key, value) =>
-    dispatch(setManualLocation({ ...manualLocation, [key]: value }));
+    dispatch(setFormLocation({ [key]: value }));
 
   const { t, i18n } = useTranslation();
 
@@ -47,11 +43,11 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('forestType.label')}</label>
           <Dropdown
-            disabled={projectionMode === 'map'}
+            disabled={projectionMode === 'm'}
             search
             selection
             fluid
-            clearable={projectionMode === 'manual'}
+            clearable={projectionMode === 'f'}
             options={projectionOptions.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
@@ -65,7 +61,7 @@ function ProjectionForm() {
           />
         </Form.Field>
       )}
-      {projectionMode === 'manual' && projectionOptions.forestEcoregion && (
+      {projectionMode === 'f' && projectionOptions.forestEcoregion && (
         <Form.Field>
           <label>{t('forestEcoregion.label')}</label>
           <Dropdown
@@ -82,7 +78,7 @@ function ProjectionForm() {
           />
         </Form.Field>
       )}
-      {projectionMode === 'manual' && projectionOptions.altitudinalZone && (
+      {projectionMode === 'f' && projectionOptions.altitudinalZone && (
         <Form.Field>
           <label>{t('altitudinalZone.label')}</label>
           <Dropdown
@@ -101,7 +97,6 @@ function ProjectionForm() {
           />
         </Form.Field>
       )}
-
       {projectionOptions.slope && projectionOptions.slope.length > 1 && (
         <ChoiceButton
           label={t('slope.label')}
@@ -144,7 +139,7 @@ function ProjectionForm() {
           value={location.relief}
         />
       )}
-      {projectionMode === 'manual' &&
+      {projectionMode === 'f' &&
         projectionOptions.altitudinalZone &&
         projectionOptions.targetAltitudinalZone &&
         projectionOptions.targetAltitudinalZone.length >= 1 &&
