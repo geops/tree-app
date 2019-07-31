@@ -3,14 +3,14 @@ import React from 'react';
 import ProjectionForm from './ProjectionForm';
 import ProjectionMode from './ProjectionMode';
 import ProjectionResult from './ProjectionResult';
-import NoProjectionFound from './NoProjectionFound';
+import ProjectionError from './ProjectionError';
 
 function Projection() {
   return (
     <>
       <ProjectionMode />
       <ProjectionForm />
-      <NoProjectionFound />
+      <ProjectionError />
       <ProjectionResult />
     </>
   );
