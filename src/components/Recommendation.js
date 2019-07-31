@@ -39,7 +39,7 @@ function Recommendation({ todayFutureToggler }) {
     recommendationMode === 'today'
       ? location.forestType
       : projectionLocation.forestType;
-
+  console.log('reco neg ', recommendations.negative);
   return (
     recommendations && (
       <Tab.Pane>
