@@ -9,7 +9,7 @@ const requiredFieldsForProjection = [
   'altitudinalZone',
 ];
 
-function NoProjectionFound() {
+function ProjectionError() {
   const { mapLocation, projectionMode, projectionLocation } = useSelector(
     state => ({
       mapLocation: state.mapLocation,
@@ -24,10 +24,9 @@ function NoProjectionFound() {
     .map(field => t(`${field}.label`));
 
   return (
-    <>
-      {projectionMode === 'map' &&
-        mapLocation.coordinate &&
-        missingFields.length >= 1 && (
+    projectionMode === 'map' && (
+      <>
+        {mapLocation.coordinate && missingFields.length >= 1 && (
           <Message
             error
             header={t('errorMessage.incompleteLocationInput')}
@@ -35,18 +34,18 @@ function NoProjectionFound() {
             size="large"
           />
         )}
-      {projectionMode === 'map' &&
-        missingFields.length === 0 &&
-        mapLocation.forestType &&
-        projectionLocation.forestType === undefined && (
-          <Message negative>
-            <Message.Header>
-              {t('errorMessage.noProjectionFoundMessage')}
-            </Message.Header>
-          </Message>
-        )}
-    </>
+        {missingFields.length === 0 &&
+          mapLocation.forestType &&
+          projectionLocation.forestType === undefined && (
+            <Message negative>
+              <Message.Header>
+                {t('errorMessage.noProjectionFoundMessage')}
+              </Message.Header>
+            </Message>
+          )}
+      </>
+    )
   );
 }
 
-export default NoProjectionFound;
+export default ProjectionError;
