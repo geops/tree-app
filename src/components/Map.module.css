@@ -2,6 +2,10 @@
   visibility: hidden;
 }
 
+.map :global(.ol-zoom) {
+  position: absolute;
+}
+
 .map :global(.ol-control button) {
   display: block;
   margin: 8px;
@@ -16,6 +20,7 @@
   border: none;
   border-radius: 50%;
 }
+
 .map :global(.ol-control button:hover) {
   cursor: pointer;
   background-color: var(--primary-light-color);
