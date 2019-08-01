@@ -20,31 +20,32 @@ function Recommendation({ todayFutureToggler }) {
       recommendationMode: state.recommendationMode,
     }),
   );
+
+  const forestType =
+    recommendationMode === 'today'
+      ? location.forestType
+      : projectionLocation.forestType;
+
   const recommendations = useMemo(() => {
     let result;
     try {
-      result = recommend(
-        location.forestType,
-        projectionLocation.forestType,
-        future,
-      );
+      result = recommend(location.forestType, forestType, future);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [location.forestType, projectionLocation.forestType, future]);
-
-  const forest =
-    recommendationMode === 'today'
-      ? location.forestType
-      : projectionLocation.forestType;
+  }, [location.forestType, forestType, future]);
 
   return (
     recommendations && (
       <Tab.Pane>
         <Header inverted>
-          {`${forest} - ${translate('forestType', forest, i18n.language)}`}
+          {`${forestType} - ${translate(
+            'forestType',
+            forestType,
+            i18n.language,
+          )}`}
         </Header>
         {todayFutureToggler && (
           <Form inverted>
