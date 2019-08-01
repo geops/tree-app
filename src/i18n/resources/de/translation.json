@@ -59,5 +59,8 @@
   },
   "targetAltitudinalZone": {
     "label": "Ziel Höhenstufe"
+  },
+  "errorMessage": {
+    "incompleteLocationInput": "Folgende Angaben fehlen:"
   }
 }
