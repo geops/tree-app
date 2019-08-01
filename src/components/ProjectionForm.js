@@ -40,7 +40,7 @@ function ProjectionForm() {
     dispatch(setManualLocation({ ...manualLocation, [key]: value }));
 
   const { t, i18n } = useTranslation();
-  console.log('projection mode ', projectionMode);
+
   return (
     <Form className={styles.form}>
       {projectionOptions.forestType && (
@@ -55,9 +55,7 @@ function ProjectionForm() {
             options={projectionOptions.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
-            onChange={(e, { value }) => {
-              setLocation('forestType', value);
-            }}
+            onChange={(e, { value }) => setLocation('forestType', value)}
             placeholder={
               projectionMode === 'map'
                 ? t('forestType.hint')
