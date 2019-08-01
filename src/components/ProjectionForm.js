@@ -152,6 +152,7 @@ function ProjectionForm() {
               search
               selection
               clearable
+              upward
               fluid
               options={projectionOptions.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
