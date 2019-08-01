@@ -43,6 +43,7 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('forestType.label')}</label>
           <Dropdown
+            className={styles.forestType}
             disabled={projectionMode === 'm'}
             search
             selection
