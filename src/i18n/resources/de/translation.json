@@ -15,10 +15,8 @@
     "silver_fir_areas": "Tannenareale",
     "hint": "Bitte Position wählen"
   },
-  "projectionResult": {
-    "header": "Empfehlung"
-  },
   "recommendation": {
+    "header": "Empfehlung",
     "attention": "Achtung",
     "negative": "weitere Baumarten",
     "neutral": "wichtige beigemischte Naturwaldbaumarten",

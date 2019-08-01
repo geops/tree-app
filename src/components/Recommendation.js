@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Grid, Header, List, Tab, Form, Divider } from 'semantic-ui-react';
+import { Grid, Header, List, Tab, Form } from 'semantic-ui-react';
 
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
@@ -66,7 +66,9 @@ function Recommendation({ todayFutureToggler }) {
             </Form.Field>
           </Form>
         )}
-        <Divider hidden />
+        <Header inverted textAlign="center">
+          {t('recommendation.header')}
+        </Header>
         <Grid stackable columns={3}>
           <Grid.Column>
             <Header inverted>
