@@ -16,6 +16,8 @@ const projectionActionTypes = [
   SET_RECOMMENDATION_MODE,
 ];
 
+let projectionResult;
+
 function getTargetAltitudinalZone(recommendationMode, location) {
   switch (recommendationMode) {
     case 'today':
@@ -48,7 +50,18 @@ export const projection = store => next => action => {
         ? getTargetAltitudinalZone(recommendationMode, mapLocation)
         : formLocation.targetAltitudinalZone;
     try {
-      const projectionResult = project(location, targetAltitudinalZone);
+      // const projectionResult = project(location, targetAltitudinalZone);
+
+      projectionResult =
+        projectionMode === 'm' && location.forestType
+          ? project(location, targetAltitudinalZone)
+          : { options: { forestType: [] } };
+
+      projectionResult =
+        projectionMode === 'f' && location.forestType
+          ? project(location, targetAltitudinalZone)
+          : project();
+
       store.dispatch(setProjectionResult(projectionResult, location));
       console.log('Projection result: ', projectionResult, location);
     } catch (error) {
