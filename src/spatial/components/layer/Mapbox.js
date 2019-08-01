@@ -56,7 +56,7 @@ class MapboxRenderer {
   }
 }
 
-class MapboxLayer extends Layer {
+export class MapboxLayer extends Layer {
   constructor({ container, map, style, ...options }) {
     super({ ...options, source: new Source({}) });
 
@@ -76,6 +76,7 @@ class MapboxLayer extends Layer {
       scrollZoom: false,
       touchZoomRotate: false,
     });
+    this.mapboxMap.on('load', () => this.dispatchEvent('loadend'));
 
     this.map = map;
 

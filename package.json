@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@geops/tree-lib": "^0.7.0",
+    "@geops/tree-lib": "^0.7.2",
     "i18next": "^17.0.7",
     "mapbox-gl": "^1.2.0",
     "ol": "^6.0.0-beta.11",
@@ -17,6 +17,7 @@
     "react-redux": "^7.1.0",
     "react-scripts": "^3.0.1",
     "redux": "^4.0.4",
+    "redux-query-sync": "^0.1.8",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.87.2",
     "webgl-mock": "^0.1.7"

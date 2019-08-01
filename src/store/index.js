@@ -1,6 +1,12 @@
-import { applyMiddleware, createStore } from 'redux';
+import { applyMiddleware, compose, createStore } from 'redux';
 
-import { projection } from './middleware';
+import { querySync } from './enhancers';
+import { projection } from './middlewares';
 import reducers from './reducers';
 
-export default createStore(reducers, applyMiddleware(projection));
+const composedEnhancers = compose(
+  querySync,
+  applyMiddleware(projection),
+);
+
+export default createStore(reducers, composedEnhancers);
