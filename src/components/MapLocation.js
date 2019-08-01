@@ -46,7 +46,7 @@ function MapLocation() {
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
       const location = features
-        .filter(feature => feature.properties.code)
+        .filter(feature => feature.properties && feature.properties.code)
         .reduce(featuresToLocation, {});
       dispatch(setMapLocation({ ...location, coordinate }));
     };

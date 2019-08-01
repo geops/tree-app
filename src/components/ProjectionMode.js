@@ -22,6 +22,7 @@ function ProjectionMode() {
     coordinate: state.mapLocation.coordinate,
     projectionMode: state.projectionMode,
   }));
+
   const { t } = useTranslation();
   return (
     <Grid columns="2" verticalAlign="middle" className={styles.grid}>
