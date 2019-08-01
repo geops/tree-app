@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Message, Grid } from 'semantic-ui-react';
+import { Message } from 'semantic-ui-react';
+import styles from './projectionError.module.css';
 
 const requiredFieldsForProjection = [
   'forestEcoregion',
@@ -23,15 +24,14 @@ function ProjectionError() {
   return projectionMode === 'map' &&
     mapLocation.coordinate &&
     missingFields.length >= 1 ? (
-    <Grid columns={1} centered>
-      <Message
-        error
-        header={t('errorMessage.incompleteLocationInput')}
-        list={missingFields}
-        size="large"
-        compact
-      />
-    </Grid>
+    <Message
+      className={styles.ProjectionError}
+      error
+      compact
+      header={t('errorMessage.incompleteLocationInput')}
+      list={missingFields}
+      size="small"
+    />
   ) : null;
 }
 
