@@ -21,7 +21,7 @@ function ProjectionError() {
     .filter(field => mapLocation[field] === undefined)
     .map(field => t(`${field}.label`));
 
-  return projectionMode === 'map' &&
+  return projectionMode === 'm' &&
     mapLocation.coordinate &&
     missingFields.length >= 1 ? (
     <Message

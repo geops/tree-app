@@ -1,16 +1,20 @@
 import {
-  SET_MANUAL_LOCATION,
+  SET_FORM_LOCATION,
+  SET_MAP_LAYER,
   SET_MAP_LOCATION,
+  SET_MAP_VIEW,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
   SET_RECOMMENDATION_MODE,
 } from './actions';
 
-const initialState = {
+export const initialState = {
   location: {},
-  manualLocation: {},
+  formLocation: {},
+  mapLayer: 'ft',
   mapLocation: {},
-  projectionMode: 'map',
+  mapView: '9|910001|5947112',
+  projectionMode: 'm',
   projectionLocation: {},
   projectionOptions: {},
   recommendationMode: 'moderate',
@@ -18,12 +22,19 @@ const initialState = {
 
 function tree(state = initialState, action) {
   switch (action.type) {
-    case SET_MANUAL_LOCATION:
-      return { ...state, manualLocation: action.manualLocation };
+    case SET_FORM_LOCATION:
+      return {
+        ...state,
+        formLocation: { ...state.formLocation, ...action.formLocation },
+      };
+    case SET_MAP_LAYER:
+      return { ...state, mapLayer: action.mapLayer };
     case SET_MAP_LOCATION: {
-      const projectionMode = 'map';
+      const projectionMode = 'm';
       return { ...state, mapLocation: action.mapLocation, projectionMode };
     }
+    case SET_MAP_VIEW:
+      return { ...state, mapView: action.mapView };
     case SET_PROJECTION_MODE:
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {

@@ -1,3 +1,4 @@
+import { transform } from 'ol/proj';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,11 +7,14 @@ import { Grid } from 'semantic-ui-react';
 import Button from './Button';
 import { ReactComponent as ManualIcon } from '../icons/manual.svg';
 import { ReactComponent as MapIcon } from '../icons/map.svg';
+import { EPSG2056 } from '../map/projection';
 import { setProjectionMode } from '../store/actions';
 import styles from './ProjectionMode.module.css';
 
-const formatCoordinate = coordinate =>
-  coordinate.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'");
+const formatCoordinates = coordinates =>
+  transform(coordinates, 'EPSG:3857', EPSG2056)
+    .map(c => c.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'"))
+    .join(', ');
 
 function ProjectionMode() {
   const dispatch = useDispatch();
@@ -27,24 +31,20 @@ function ProjectionMode() {
           <Button
             disabled
             icon="point"
-            label={
-              coordinate
-                ? coordinate.map(formatCoordinate).join(', ')
-                : t('map.hint')
-            }
+            label={coordinate ? formatCoordinates(coordinate) : t('map.hint')}
           />
         </Grid.Column>
         <Grid.Column textAlign="right">
           <Button.Group>
             <Button
-              active={projectionMode === 'map'}
+              active={projectionMode === 'm'}
               content={<MapIcon fill="white" className={styles.icon} />}
-              onClick={() => dispatch(setProjectionMode('map'))}
+              onClick={() => dispatch(setProjectionMode('m'))}
             />
             <Button
-              active={projectionMode === 'manual'}
+              active={projectionMode === 'f'}
               content={<ManualIcon fill="white" className={styles.icon} />}
-              onClick={() => dispatch(setProjectionMode('manual'))}
+              onClick={() => dispatch(setProjectionMode('f'))}
             />
           </Button.Group>
         </Grid.Column>

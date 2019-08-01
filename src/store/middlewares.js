@@ -3,7 +3,7 @@ import { project } from '@geops/tree-lib';
 
 import {
   SET_PROJECTION_MODE,
-  SET_MANUAL_LOCATION,
+  SET_FORM_LOCATION,
   SET_MAP_LOCATION,
   setProjectionResult,
   SET_RECOMMENDATION_MODE,
@@ -11,7 +11,7 @@ import {
 
 const projectionActionTypes = [
   SET_PROJECTION_MODE,
-  SET_MANUAL_LOCATION,
+  SET_FORM_LOCATION,
   SET_MAP_LOCATION,
   SET_RECOMMENDATION_MODE,
 ];
@@ -33,20 +33,20 @@ export const projection = store => next => action => {
   const result = next(action);
   if (projectionActionTypes.includes(action.type)) {
     const {
-      manualLocation,
+      formLocation,
       mapLocation,
       projectionMode,
       recommendationMode,
     } = store.getState();
     const location =
-      projectionMode === 'map'
-        ? { ...manualLocation, ...mapLocation }
-        : { ...mapLocation, ...manualLocation };
+      projectionMode === 'm'
+        ? { ...formLocation, ...mapLocation }
+        : { ...mapLocation, ...formLocation };
 
     const targetAltitudinalZone =
-      projectionMode === 'map'
+      projectionMode === 'm'
         ? getTargetAltitudinalZone(recommendationMode, mapLocation)
-        : manualLocation.targetAltitudinalZone;
+        : formLocation.targetAltitudinalZone;
     try {
       const projectionResult = project(location, targetAltitudinalZone);
       store.dispatch(setProjectionResult(projectionResult, location));
