@@ -45,16 +45,16 @@ describe('Test for input values', () => {
   });
 
   test('valid projection with same altitudinalZone and targetAltitudinalZone', () => {
-    expect(
-      project(
-        {
-          forestEcoregion: 'M',
-          altitudinalZone: '40',
-          forestType: '8*',
-        },
-        '40',
-      ).forestType,
-    ).toBe('8*');
+    const result = project(
+      {
+        forestEcoregion: 'M',
+        altitudinalZone: '40',
+        forestType: '8*',
+      },
+      '40',
+    );
+    expect(result.altitudinalZone).toBe('40');
+    expect(result.forestType).toBe('8*');
   });
 });
 
