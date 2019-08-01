@@ -66,9 +66,7 @@ function Recommendation({ todayFutureToggler }) {
             </Form.Field>
           </Form>
         )}
-        <Header inverted textAlign="center">
-          {t('recommendation.header')}
-        </Header>
+        <Header inverted>{t('recommendation.header')}</Header>
         <Grid stackable columns={3}>
           <Grid.Column>
             <Header inverted>
