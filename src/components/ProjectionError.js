@@ -13,7 +13,6 @@ function ProjectionError() {
   const { mapLocation, projectionMode } = useSelector(state => ({
     mapLocation: state.mapLocation,
     projectionMode: state.projectionMode,
-    projectionLocation: state.projectionLocation,
   }));
 
   const { t } = useTranslation();
