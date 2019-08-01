@@ -25,7 +25,7 @@ function ProjectionError() {
     mapLocation.coordinate &&
     missingFields.length >= 1 ? (
     <Message
-      className={styles.ProjectionError}
+      className={styles.message}
       error
       compact
       header={t('errorMessage.incompleteLocationInput')}
