@@ -125,6 +125,11 @@ function project(location = {}, targetAltitudinalZone) {
     );
   }
 
+  // Replace alphanumeric sorting with custom sorting based on database export
+  newLocation.options.forestType = types.forestType
+    .filter(ft => newLocation.options.forestType.includes(ft.code))
+    .map(ft => ft.code);
+
   return newLocation;
 }
 

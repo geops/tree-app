@@ -159,7 +159,7 @@ COPY
 
 COPY
   (WITH foresttype AS
-     (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
+     (SELECT json_agg(jsonb_build_object('code', target, 'de', de) ORDER BY sort) AS
       values
       FROM foresttype_meta),
         treetype AS

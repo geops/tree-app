@@ -181,17 +181,21 @@ CREATE TYPE foresttype AS ENUM ('1','10a','10w','11','12*','12*h','12S','12a','1
 
 
 CREATE TABLE foresttype_meta (target foresttype,
-                              de TEXT);
+                              de TEXT,
+                              sort TEXT);
 
 
-INSERT INTO foresttype_meta (target, de)
+INSERT INTO foresttype_meta (target, de,
+                             sort)
 SELECT foo.foresttype,
-       mstr.naistyp_wges
+       mstr.naistyp_wges,
+       naistyp_sort
 FROM
         (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
 LEFT JOIN
         (SELECT naistyp_wges,
-                regexp_split_to_table(naistyp_c, '\/') AS naistyp_c
+                regexp_split_to_table(naistyp_c, '\/') AS naistyp_c,
+                naistyp_sort
          FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
 
 ----------------------------------------------
