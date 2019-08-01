@@ -7,3 +7,8 @@
 .form label {
   color: var(--primary-color) !important;
 }
+
+.forestType:global(.ui.search.dropdown) {
+  font-size: 18px;
+  font-weight: bold;
+}

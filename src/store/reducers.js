@@ -17,7 +17,7 @@ export const initialState = {
   projectionMode: 'm',
   projectionLocation: {},
   projectionOptions: {},
-  recommendationMode: 'moderate',
+  recommendationMode: 'extreme',
 };
 
 function tree(state = initialState, action) {

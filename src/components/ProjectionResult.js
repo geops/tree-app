@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
-import { Container, Header, Tab } from 'semantic-ui-react';
+import { Container, Tab } from 'semantic-ui-react';
 
 import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
@@ -32,9 +32,6 @@ function ProjectionResult() {
 
   return projectionLocation.forestType && projectionLocation.altitudinalZone ? (
     <Container className={styles.container}>
-      <Header inverted size="large" textAlign="center">
-        {t('projectionResult.header')}
-      </Header>
       <Tab
         className={styles.tab}
         defaultActiveIndex={1}

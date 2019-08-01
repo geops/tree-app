@@ -15,10 +15,8 @@
     "silver_fir_areas": "Tannenareale",
     "hint": "Bitte Position wählen"
   },
-  "projectionResult": {
-    "header": "Empfehlung"
-  },
   "recommendation": {
+    "header": "Empfehlung",
     "attention": "Achtung",
     "negative": "Reduzieren",
     "neutral": "Mitnehmen",
@@ -26,8 +24,8 @@
   },
   "recommendationMode": {
     "today": "heute",
-    "moderate": "mässig",
-    "extreme": "stark"
+    "moderate": "mässiger Klimawandel",
+    "extreme": "starker Klimawandel"
   },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
   "todayFutureToggler": {
@@ -58,7 +56,7 @@
     "label": "Relief"
   },
   "targetAltitudinalZone": {
-    "label": "Ziel Höhenstufe"
+    "label": "Zukunft Höhenstufe"
   },
   "errorMessage": {
     "incompleteLocationInput": "Folgende Angaben fehlen:"

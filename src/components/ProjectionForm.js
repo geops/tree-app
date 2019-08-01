@@ -43,6 +43,7 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('forestType.label')}</label>
           <Dropdown
+            className={styles.forestType}
             disabled={projectionMode === 'm'}
             search
             selection
@@ -151,6 +152,7 @@ function ProjectionForm() {
               search
               selection
               clearable
+              upward
               fluid
               options={projectionOptions.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
