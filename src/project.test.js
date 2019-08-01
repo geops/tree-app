@@ -133,7 +133,7 @@ describe('Test for output values', () => {
         },
         '40',
       ).options.targetAltitudinalZone,
-    ).toMatchObject(['50', '40', '20']);
+    ).toMatchObject(['50', '40', '30', '20', '10', '0']);
   });
 
   test('empty location value and target altitudinal Zone ', () => {
@@ -163,6 +163,6 @@ describe('Test for output values', () => {
         },
         '81',
       ).options.altitudinalZone,
-    ).toMatchObject(['100']);
+    ).toMatchObject(['81', '90', '100']);
   });
 });

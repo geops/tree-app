@@ -33,8 +33,8 @@ const conditions = [
 ];
 
 const altitudinalZoneList = types.altitudinalZone
-  .filter(e => e.id !== 1 && e.id !== 2 && e.id !== 4 && e.id !== 8)
-  .map(e => e.code)
+  .map(az => az.code)
+  .sort((a, b) => a - b)
   .reverse();
 
 /* Provides the list of altitudinal Zones as target Altitudinal zones that are immediately 
