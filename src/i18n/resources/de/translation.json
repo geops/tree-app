@@ -18,9 +18,9 @@
   "recommendation": {
     "header": "Empfehlung",
     "attention": "Achtung",
-    "negative": "weitere Baumarten",
-    "neutral": "wichtige beigemischte Naturwaldbaumarten",
-    "positive": "dominante Naturwaldbaumarten"
+    "negative": "Reduzieren",
+    "neutral": "Mitnehmen",
+    "positive": "Fördern"
   },
   "recommendationMode": {
     "today": "heute",
