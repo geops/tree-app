@@ -30,30 +30,26 @@ function ProjectionResult() {
     },
   ];
 
-  return (
-    <>
-      {projectionLocation.forestType && (
-        <Container className={styles.container}>
-          <Tab
-            className={styles.tab}
-            defaultActiveIndex={1}
-            menu={{
-              borderless: true,
-              inverted: true,
-              pointing: true,
-              secondary: true,
-              widths: '3',
-            }}
-            onTabChange={(e, data) => {
-              const { recommendationMode } = data.panes[data.activeIndex];
-              dispatch(setRecommendationMode(recommendationMode));
-            }}
-            panes={panes}
-          />
-        </Container>
-      )}
-    </>
-  );
+  return projectionLocation.forestType && projectionLocation.altitudinalZone ? (
+    <Container className={styles.container}>
+      <Tab
+        className={styles.tab}
+        defaultActiveIndex={1}
+        menu={{
+          borderless: true,
+          inverted: true,
+          pointing: true,
+          secondary: true,
+          widths: '3',
+        }}
+        onTabChange={(e, data) => {
+          const { recommendationMode } = data.panes[data.activeIndex];
+          dispatch(setRecommendationMode(recommendationMode));
+        }}
+        panes={panes}
+      />
+    </Container>
+  ) : null;
 }
 
 export default ProjectionResult;
