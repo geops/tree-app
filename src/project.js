@@ -33,14 +33,14 @@ const conditions = [
 ];
 
 const altitudinalZoneList = types.altitudinalZone
-  .filter(e => e.id !== 1 && e.id !== 2 && e.id !== 4 && e.id !== 8)
-  .map(e => e.code)
+  .map(az => az.code)
+  .sort((a, b) => a - b)
   .reverse();
 
 /* Provides the list of altitudinal Zones as target Altitudinal zones that are immediately 
 after the currently chosen altitudinal Zone. */
-const getNextAltitudinalZone = currentaltitudinalZone =>
-  altitudinalZoneList[altitudinalZoneList.indexOf(currentaltitudinalZone) + 1];
+const nextAltitudinalZone = current =>
+  altitudinalZoneList[altitudinalZoneList.indexOf(current) + 1];
 
 function projectionReducer(location, targetAltitudinalZone) {
   const newLocation = { ...location, options: location.options || {} };
@@ -76,12 +76,8 @@ function projectionReducer(location, targetAltitudinalZone) {
     newLocation.forestType = forestType;
   }
 
-  if (location.altitudinalZone && targetAltitudinalZone !== undefined) {
-    newLocation.altitudinalZone = getNextAltitudinalZone(
-      location.altitudinalZone,
-    );
-  } else {
-    newLocation.altitudinalZone = location.altitudinalZone;
+  if (targetAltitudinalZone !== location.altitudinalZone) {
+    newLocation.altitudinalZone = nextAltitudinalZone(location.altitudinalZone);
   }
 
   return newLocation;

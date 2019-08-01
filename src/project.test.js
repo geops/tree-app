@@ -45,16 +45,16 @@ describe('Test for input values', () => {
   });
 
   test('valid projection with same altitudinalZone and targetAltitudinalZone', () => {
-    expect(
-      project(
-        {
-          forestEcoregion: 'M',
-          altitudinalZone: '40',
-          forestType: '8*',
-        },
-        '40',
-      ).forestType,
-    ).toBe('8*');
+    const result = project(
+      {
+        forestEcoregion: 'M',
+        altitudinalZone: '40',
+        forestType: '8*',
+      },
+      '40',
+    );
+    expect(result.altitudinalZone).toBe('40');
+    expect(result.forestType).toBe('8*');
   });
 });
 
@@ -133,7 +133,7 @@ describe('Test for output values', () => {
         },
         '40',
       ).options.targetAltitudinalZone,
-    ).toMatchObject(['50', '40', '20']);
+    ).toMatchObject(['50', '40', '30', '20', '10', '0']);
   });
 
   test('empty location value and target altitudinal Zone ', () => {
@@ -163,6 +163,6 @@ describe('Test for output values', () => {
         },
         '81',
       ).options.altitudinalZone,
-    ).toMatchObject(['100']);
+    ).toMatchObject(['81', '90', '100']);
   });
 });
