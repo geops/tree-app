@@ -137,7 +137,7 @@ describe('Test for output values', () => {
   });
 
   test('empty location value and target altitudinal Zone ', () => {
-    expect(project().options.forestType.length).toBe(199);
+    expect(project().options.forestType.length).toBe(202);
   });
 
   test('valid list of preceding keys for multi-step options', () => {
