@@ -20,14 +20,14 @@
   },
   "recommendation": {
     "attention": "Achtung",
-    "negative": "Reduzieren",
-    "neutral": "Mitnehmen",
-    "positive": "Fördern"
+    "negative": "weitere Baumarten",
+    "neutral": "wichtige beigemischte Naturwaldbaumarten",
+    "positive": "dominante Naturwaldbaumarten"
   },
   "recommendationMode": {
     "today": "heute",
-    "moderate": "mässig",
-    "extreme": "stark"
+    "moderate": "mässiger Klimawandel",
+    "extreme": "starker Klimawandel"
   },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
   "todayFutureToggler": {
@@ -58,6 +58,6 @@
     "label": "Relief"
   },
   "targetAltitudinalZone": {
-    "label": "Ziel Höhenstufe"
+    "label": "Zukunft Höhenstufe"
   }
 }
