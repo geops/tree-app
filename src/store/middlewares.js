@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { project } from '@geops/tree-lib';
+import { initialState } from './reducers';
 
 import {
   SET_PROJECTION_MODE,
@@ -39,6 +40,8 @@ export const projection = store => next => action => {
       mapLocation,
       projectionMode,
       recommendationMode,
+      projectionOptions,
+      projectionLocation,
     } = store.getState();
     const location =
       projectionMode === 'm'
@@ -50,18 +53,22 @@ export const projection = store => next => action => {
         ? getTargetAltitudinalZone(recommendationMode, mapLocation)
         : formLocation.targetAltitudinalZone;
     try {
-      // const projectionResult = project(location, targetAltitudinalZone);
-
-      projectionResult =
-        projectionMode === 'm' && location.forestType
-          ? project(location, targetAltitudinalZone)
+      if (projectionMode === 'm') {
+        projectionResult = projectionLocation
+          ? console.log('loc ', {
+              ...location,
+              forestType: location.forestType,
+            })
           : { options: { forestType: [] } };
+      }
 
-      projectionResult =
-        projectionMode === 'f' && location.forestType
-          ? project(location, targetAltitudinalZone)
+      if (projectionMode === 'f') {
+        projectionResult = location.forestType
+          ? project({ ...location }, targetAltitudinalZone)
           : project();
+      }
 
+      console.log(projectionMode, location.forestType);
       store.dispatch(setProjectionResult(projectionResult, location));
       console.log('Projection result: ', projectionResult, location);
     } catch (error) {
