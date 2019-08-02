@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 import { project } from '@geops/tree-lib';
-import { initialState } from './reducers';
 
 import {
   SET_PROJECTION_MODE,
