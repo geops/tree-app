@@ -40,10 +40,9 @@ export const projection = store => next => action => {
       mapLocation,
       projectionMode,
       recommendationMode,
-      projectionOptions,
       projectionLocation,
     } = store.getState();
-    const location =
+    let location =
       projectionMode === 'm'
         ? { ...formLocation, ...mapLocation }
         : { ...mapLocation, ...formLocation };
@@ -54,21 +53,62 @@ export const projection = store => next => action => {
         : formLocation.targetAltitudinalZone;
     try {
       if (projectionMode === 'm') {
-        projectionResult = projectionLocation
-          ? console.log('loc ', {
-              ...location,
-              forestType: location.forestType,
-            })
-          : { options: { forestType: [] } };
+        if (projectionLocation && location.coordinate === undefined) {
+          projectionResult = { options: { forestType: [] } };
+        }
+
+        if (
+          projectionLocation.coordinate === undefined &&
+          location.coordinate &&
+          mapLocation.forestType === undefined
+        ) {
+          projectionResult = { options: { forestType: [] } };
+        }
+
+        if (
+          projectionLocation.coordinate === undefined &&
+          location.coordinate &&
+          mapLocation.forestType
+        ) {
+          projectionResult = project(mapLocation, targetAltitudinalZone);
+        }
+
+        if (
+          projectionLocation &&
+          projectionLocation.coordinate &&
+          projectionLocation.coordinate !== location.coordinate &&
+          mapLocation.forestType === undefined
+        ) {
+          projectionResult = { options: { forestType: [] } };
+        }
+
+        if (
+          projectionLocation &&
+          projectionLocation.coordinate &&
+          projectionLocation.coordinate !== location.coordinate &&
+          mapLocation.forestType
+        ) {
+          projectionResult = { options: { forestType: [] } };
+        }
       }
 
       if (projectionMode === 'f') {
-        projectionResult = location.forestType
-          ? project({ ...location }, targetAltitudinalZone)
-          : project();
+        if (mapLocation.forestType === undefined && location.coordinate) {
+          projectionResult = project(location, targetAltitudinalZone);
+        }
+
+        if (
+          mapLocation.forestType &&
+          location.coordinate &&
+          projectionLocation
+        ) {
+          projectionResult = project(mapLocation, targetAltitudinalZone);
+          location = { ...mapLocation };
+        } else {
+          projectionResult = project(location, targetAltitudinalZone);
+        }
       }
 
-      console.log(projectionMode, location.forestType);
       store.dispatch(setProjectionResult(projectionResult, location));
       console.log('Projection result: ', projectionResult, location);
     } catch (error) {
