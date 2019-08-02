@@ -6,6 +6,7 @@ import { Menu } from 'semantic-ui-react';
 import mapStyle from '../map/style';
 import { LayerContext } from '../spatial/components/layer/Base';
 import { setMapLayer } from '../store/actions';
+import styles from './MapVectorStyle.module.css';
 
 const getStyle = layerId => {
   const { layers } = mapStyle;
@@ -33,7 +34,6 @@ function MapVectorStyle() {
   return (
     <Menu
       compact
-      inverted
       vertical
       style={{ position: 'absolute', zIndex: 9, right: '30px', top: '15px' }}
     >
@@ -42,6 +42,7 @@ function MapVectorStyle() {
           key={l.id}
           active={mapLayer === l.id}
           onClick={() => dispatch(setMapLayer(l.id))}
+          className={styles.item}
         >
           {t(`map.${l['source-layer']}`)}
         </Menu.Item>

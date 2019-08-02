@@ -34,7 +34,7 @@ function ProjectionResult() {
     <Container className={styles.container}>
       <Tab
         className={styles.tab}
-        defaultActiveIndex={1}
+        defaultActiveIndex={2}
         menu={{
           borderless: true,
           inverted: true,
