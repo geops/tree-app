@@ -26,7 +26,7 @@ function ProjectionError() {
     missingFields.length >= 1 ? (
     <Message
       className={styles.message}
-      error
+      positive
       compact
       header={t('errorMessage.incompleteLocationInput')}
       list={missingFields}

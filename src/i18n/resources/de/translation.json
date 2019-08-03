@@ -41,7 +41,7 @@
   },
   "forestType": {
     "label": "Standorttyp",
-    "hint": "Bitte in der Karte auswählen"
+    "hint": "Kein Standorttyp ausgewählt"
   },
   "slope": {
     "label": "Hangneigung"

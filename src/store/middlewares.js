@@ -16,8 +16,6 @@ const projectionActionTypes = [
   SET_RECOMMENDATION_MODE,
 ];
 
-let projectionResult;
-
 function getTargetAltitudinalZone(recommendationMode, location) {
   switch (recommendationMode) {
     case 'today':
@@ -39,7 +37,6 @@ export const projection = store => next => action => {
       mapLocation,
       projectionMode,
       recommendationMode,
-      projectionLocation,
     } = store.getState();
     let location =
       projectionMode === 'm'
@@ -51,66 +48,21 @@ export const projection = store => next => action => {
         ? getTargetAltitudinalZone(recommendationMode, mapLocation)
         : formLocation.targetAltitudinalZone;
     try {
-      if (projectionMode === 'm') {
-        if (projectionLocation && location.coordinate === undefined) {
-          projectionResult = { options: { forestType: [] } };
-        }
-
-        if (
-          projectionLocation.coordinate === undefined &&
-          location.coordinate &&
-          mapLocation.forestType === undefined
-        ) {
-          projectionResult = { options: { forestType: [] } };
-        }
-
-        if (
-          projectionLocation.coordinate === undefined &&
-          location.coordinate &&
-          mapLocation.forestType
-        ) {
-          projectionResult = project(mapLocation, targetAltitudinalZone);
-        }
-
-        if (
-          projectionLocation &&
-          projectionLocation.coordinate &&
-          projectionLocation.coordinate !== location.coordinate &&
-          mapLocation.forestType === undefined
-        ) {
-          projectionResult = { options: { forestType: [] } };
-        }
-
-        if (
-          projectionLocation &&
-          projectionLocation.coordinate &&
-          projectionLocation.coordinate !== location.coordinate &&
-          mapLocation.forestType
-        ) {
-          projectionResult = { options: { forestType: [] } };
-        }
+      if (projectionMode === 'm' && mapLocation.forestType === undefined) {
+        location = { ...location, forestType: '' };
       }
 
-      if (projectionMode === 'f') {
-        if (mapLocation.forestType === undefined && location.coordinate) {
-          projectionResult = project(location, targetAltitudinalZone);
-        }
-
-        if (
-          mapLocation.forestType &&
-          location.coordinate &&
-          projectionLocation
-        ) {
-          projectionResult = project(mapLocation, targetAltitudinalZone);
-          location = { ...mapLocation };
-        } else {
-          projectionResult = project(location, targetAltitudinalZone);
-        }
-      }
-
+      const projectionResult = project(location, targetAltitudinalZone);
       store.dispatch(setProjectionResult(projectionResult, location));
       console.log('Projection result: ', projectionResult, location);
     } catch (error) {
+      if (
+        mapLocation.forestType === '50a' ||
+        mapLocation.forestType === 'undefined'
+      ) {
+        const projectionResult = { options: { forestType: [] } };
+        store.dispatch(setProjectionResult(projectionResult, location));
+      }
       console.log('Projection error: ', error);
     }
   }
