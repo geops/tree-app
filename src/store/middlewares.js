@@ -38,7 +38,7 @@ export const projection = store => next => action => {
       projectionMode,
       recommendationMode,
     } = store.getState();
-    const location =
+    let location =
       projectionMode === 'm'
         ? { ...formLocation, ...mapLocation }
         : { ...mapLocation, ...formLocation };
@@ -48,10 +48,21 @@ export const projection = store => next => action => {
         ? getTargetAltitudinalZone(recommendationMode, mapLocation)
         : formLocation.targetAltitudinalZone;
     try {
+      if (projectionMode === 'm' && mapLocation.forestType === undefined) {
+        location = { ...location, forestType: '' };
+      }
+
       const projectionResult = project(location, targetAltitudinalZone);
       store.dispatch(setProjectionResult(projectionResult, location));
       console.log('Projection result: ', projectionResult, location);
     } catch (error) {
+      if (
+        mapLocation.forestType === '50a' ||
+        mapLocation.forestType === 'undefined'
+      ) {
+        const projectionResult = { options: { forestType: [] } };
+        store.dispatch(setProjectionResult(projectionResult, location));
+      }
       console.log('Projection error: ', error);
     }
   }

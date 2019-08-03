@@ -4,12 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { Message } from 'semantic-ui-react';
 import styles from './projectionError.module.css';
 
-const requiredFieldsForProjection = [
-  'forestEcoregion',
-  'forestType',
-  'altitudinalZone',
-];
-
 function ProjectionError() {
   const { mapLocation, projectionMode } = useSelector(state => ({
     mapLocation: state.mapLocation,
@@ -17,19 +11,15 @@ function ProjectionError() {
   }));
 
   const { t } = useTranslation();
-  const missingFields = requiredFieldsForProjection
-    .filter(field => mapLocation[field] === undefined)
-    .map(field => t(`${field}.label`));
 
-  return projectionMode === 'm' &&
-    mapLocation.coordinate &&
-    missingFields.length >= 1 ? (
+  return projectionMode === 'm' && mapLocation.forestType === '50a' ? (
     <Message
       className={styles.message}
-      error
+      success
       compact
-      header={t('errorMessage.incompleteLocationInput')}
-      list={missingFields}
+      header={`${mapLocation.forestType} ${t(
+        'errorMessage.invalidForestType',
+      )}`}
       size="small"
     />
   ) : null;

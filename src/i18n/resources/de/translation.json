@@ -41,7 +41,7 @@
   },
   "forestType": {
     "label": "Standorttyp",
-    "hint": "Bitte in der Karte auswählen"
+    "hint": "Kein Standorttyp ausgewählt"
   },
   "slope": {
     "label": "Hangneigung"
@@ -59,6 +59,6 @@
     "label": "Zukunft Höhenstufe"
   },
   "errorMessage": {
-    "incompleteLocationInput": "Folgende Angaben fehlen:"
+    "invalidForestType": " ist kein gültiger Standorttyp"
   }
 }
