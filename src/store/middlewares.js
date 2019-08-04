@@ -56,13 +56,8 @@ export const projection = store => next => action => {
       store.dispatch(setProjectionResult(projectionResult, location));
       console.log('Projection result: ', projectionResult, location);
     } catch (error) {
-      if (
-        mapLocation.forestType === '50a' ||
-        mapLocation.forestType === 'undefined'
-      ) {
-        const projectionResult = { options: { forestType: [] } };
-        store.dispatch(setProjectionResult(projectionResult, location));
-      }
+      const projectionResult = project();
+      store.dispatch(setProjectionResult(projectionResult, location));
       console.log('Projection error: ', error);
     }
   }
