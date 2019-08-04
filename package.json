@@ -23,6 +23,7 @@
     "webgl-mock": "^0.1.7"
   },
   "devDependencies": {
+    "cypress": "^3.4.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.0.0",
@@ -102,6 +103,7 @@
     "build": "react-scripts build",
     "lint": "eslint src",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol)/\"",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   }
 }
