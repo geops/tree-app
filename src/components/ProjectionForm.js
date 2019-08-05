@@ -37,6 +37,7 @@ function ProjectionForm() {
 
   const { t, i18n } = useTranslation();
 
+  // Note: remember to keep formLocationFields in reducers.js updated.
   return (
     <Form className={styles.form}>
       {projectionOptions.forestType && (
