@@ -1,8 +1,8 @@
-.container:global(.ui.container) {
+.container {
   background-color: var(--primary-color);
   padding: 20px;
   margin: 30px 0 0 !important;
-  position: relative;
+  position: sticky;
   box-shadow: 0 0 20px #777;
   flex-grow: 1;
 }
@@ -20,4 +20,6 @@
   position: absolute;
   left: 47%;
   top: -11px;
+  box-shadow: 0 0 20px #777;
+  border-radius: 11px;
 }

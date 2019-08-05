@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
-import { Container, Tab } from 'semantic-ui-react';
+import { Tab } from 'semantic-ui-react';
+import useComponentSize from '@rehooks/component-size';
 
 import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
@@ -13,6 +14,8 @@ function ProjectionResult() {
   const projectionLocation = useSelector(state => state.projectionLocation);
   const { t } = useTranslation();
 
+  const ref = useRef(null);
+  const { height } = useComponentSize(ref);
   const panes = [
     {
       menuItem: t('recommendationMode.today'),
@@ -32,7 +35,11 @@ function ProjectionResult() {
   ];
 
   return projectionLocation.forestType && projectionLocation.altitudinalZone ? (
-    <Container className={styles.container}>
+    <div
+      ref={ref}
+      className={styles.container}
+      style={{ bottom: `${20 - height}px` }}
+    >
       <ExpandResult className={styles.pointer} />
       <Tab
         className={styles.tab}
@@ -50,7 +57,7 @@ function ProjectionResult() {
         }}
         panes={panes}
       />
-    </Container>
+    </div>
   ) : null;
 }
 
