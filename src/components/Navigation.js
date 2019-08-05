@@ -18,13 +18,13 @@ function Navigation({ left, right }) {
         <div className={styles.left}>{left}</div>
         <div className={styles.right}>{right}</div>
       </div>
-      <Menu inverted fluid widths={2} icon="labeled" className={styles.menu}>
+      <Menu fluid widths={2} icon="labeled" className={styles.menu}>
         <Menu.Item
           active={page === 'map'}
           onClick={() => setPage('map')}
           className={styles.item}
         >
-          <MapIcon fill="white" className={styles.icon} />
+          <MapIcon fill="var(--primary-color)" className={styles.icon} />
           {t('app.map')}
         </Menu.Item>
         <Menu.Item
@@ -32,7 +32,7 @@ function Navigation({ left, right }) {
           onClick={() => setPage('recommendation')}
           className={styles.item}
         >
-          <TreeIcon fill="white" className={styles.icon} />
+          <TreeIcon fill="var(--primary-color)" className={styles.icon} />
           {t('app.recommendation')}
         </Menu.Item>
       </Menu>

@@ -32,6 +32,7 @@
 
 .item {
   border-radius: 0;
+  color: var(--primary-color) !important;
 }
 
 .icon {
