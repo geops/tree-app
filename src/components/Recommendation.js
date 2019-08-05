@@ -3,7 +3,15 @@ import PropTypes from 'prop-types';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Grid, Header, List, Tab, Form } from 'semantic-ui-react';
+import {
+  Grid,
+  Header,
+  List,
+  Tab,
+  Form,
+  Step,
+  Checkbox,
+} from 'semantic-ui-react';
 
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
@@ -48,24 +56,35 @@ function Recommendation({ todayFutureToggler }) {
           )}`}
         </Header>
         {todayFutureToggler && (
-          <Form inverted>
-            <Form.Field>
-              <Form.Radio
-                label={t('todayFutureToggler.today')}
-                name="radioGroup"
-                checked={future === false}
-                onChange={() => setFuture(false)}
-              />
-            </Form.Field>
-            <Form.Field>
-              <Form.Radio
-                label={t('todayFutureToggler.future')}
-                name="radioGroup"
-                checked={future === true}
-                onChange={() => setFuture(true)}
-              />
-            </Form.Field>
-          </Form>
+          <Grid columns={3} textAlign="center" verticalAlign="middle">
+            <Grid.Column>
+              <Step.Group size="mini">
+                <Step>
+                  <Step.Content>
+                    <Step.Title>Heute</Step.Title>
+                    <Step.Description>
+                      {t('todayFutureToggler.today')}
+                    </Step.Description>
+                  </Step.Content>
+                </Step>
+              </Step.Group>
+            </Grid.Column>
+            <Grid.Column>
+              <Checkbox toggle />
+            </Grid.Column>
+            <Grid.Column>
+              <Step.Group size="mini">
+                <Step>
+                  <Step.Content>
+                    <Step.Title>Künftig</Step.Title>
+                    <Step.Description>
+                      {t('todayFutureToggler.future')}
+                    </Step.Description>
+                  </Step.Content>
+                </Step>
+              </Step.Group>
+            </Grid.Column>
+          </Grid>
         )}
         <Header inverted>{t('recommendation.header')}</Header>
         <Grid stackable columns={3}>
