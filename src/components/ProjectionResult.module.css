@@ -15,3 +15,9 @@
   color: white;
   border: none;
 }
+
+.pointer {
+  position: absolute;
+  left: 47%;
+  top: -11px;
+}

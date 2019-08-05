@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { Container, Tab } from 'semantic-ui-react';
@@ -6,6 +6,7 @@ import { Container, Tab } from 'semantic-ui-react';
 import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
 import styles from './ProjectionResult.module.css';
+import { ReactComponent as ExpandResult } from '../icons/recommendationPointer.svg';
 
 function ProjectionResult() {
   const dispatch = useDispatch();
@@ -32,6 +33,7 @@ function ProjectionResult() {
 
   return projectionLocation.forestType && projectionLocation.altitudinalZone ? (
     <Container className={styles.container}>
+      <ExpandResult className={styles.pointer} />
       <Tab
         className={styles.tab}
         defaultActiveIndex={2}
