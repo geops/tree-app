@@ -7,7 +7,7 @@ import useComponentSize from '@rehooks/component-size';
 import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
 import styles from './ProjectionResult.module.css';
-import { ReactComponent as ExpandResult } from '../icons/recommendationPointer.svg';
+import { ReactComponent as RecommendationPointer } from '../icons/recommendationPointer.svg';
 
 function ProjectionResult() {
   const dispatch = useDispatch();
@@ -40,7 +40,7 @@ function ProjectionResult() {
       className={styles.container}
       style={{ bottom: `${20 - height}px` }}
     >
-      <ExpandResult className={styles.pointer} />
+      <RecommendationPointer className={styles.pointer} />
       <Tab
         className={styles.tab}
         defaultActiveIndex={2}
