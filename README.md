@@ -26,7 +26,7 @@ Data for tree type projections is provided as a [CSV file](./data/projections.cs
 
 ### NaiS
 
-NaiS data is provided as CSV files and imported into the PostgreSQL database for further processing. New data needs to be converted to UTF-8 encoding with the following command: `iconv -f ISO-8859-1 -t UTF-8 [target].csv > [source].csv`
+NaiS data is provided as CSV files and imported into the PostgreSQL database for further processing. New data needs to be converted to UTF-8 encoding with the following command: `iconv -f ISO-8859-1 -t UTF-8 [source].csv > [target].csv`
 
 ## Vector Tiles
 
@@ -35,8 +35,8 @@ Spatial data is downloaded from different sources and imported into the database
 1. Start database: `yarn run data:start`
 2. Export spatial data to GeoJSON files (might take a long time): `yarn run data:spatial:export`
 3. Transform GeoJSON files to single vector tileset: `yarn run data:spatial:tile`
-3. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
-4. Publish tiles to Netlify: `yarn run data:spatial:publish`
+4. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
+5. Publish tiles to Netlify: `yarn run data:spatial:publish`
 
 ## Bugs
 
