@@ -63,7 +63,9 @@ function ProjectionForm() {
           {projectionMode === 'm' &&
             location.coordinate &&
             !location.forestType && (
-              <Label pointing>{t('error.incompleteLocationInput')}</Label>
+              <Label pointing>
+                {t('errorMessage.incompleteLocationInput')}
+              </Label>
             )}
         </Form.Field>
       )}
