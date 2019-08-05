@@ -59,6 +59,6 @@
     "label": "Höhenstufe Zukunft"
   },
   "errorMessage": {
-    "incompleteLocationInput": "Folgende Angaben fehlen:"
+    "incompleteLocationInput": "Nicht in der Karte gefunden"
   }
 }

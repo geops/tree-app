@@ -4,7 +4,7 @@ import { translate } from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Form } from 'semantic-ui-react';
+import { Form, Label } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
@@ -37,6 +37,7 @@ function ProjectionForm() {
 
   const { t, i18n } = useTranslation();
 
+  // Note: remember to keep formLocationFields in reducers.js updated.
   return (
     <Form className={styles.form}>
       {projectionOptions.forestType && (
@@ -44,7 +45,6 @@ function ProjectionForm() {
           <label>{t('forestType.label')}</label>
           <Dropdown
             className={styles.forestType}
-            disabled={projectionMode === 'm'}
             search
             selection
             fluid
@@ -54,12 +54,17 @@ function ProjectionForm() {
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
             placeholder={
-              projectionMode === 'map'
+              projectionMode === 'm'
                 ? t('forestType.hint')
                 : t('dropdownPlaceholder')
             }
-            value={location.forestType}
+            value={location.forestType || ''}
           />
+          {projectionMode === 'm' &&
+            location.coordinate &&
+            !location.forestType && (
+              <Label pointing>{t('error.incompleteLocationInput')}</Label>
+            )}
         </Form.Field>
       )}
       {projectionMode === 'f' && projectionOptions.forestEcoregion && (
