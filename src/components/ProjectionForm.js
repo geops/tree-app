@@ -45,7 +45,6 @@ function ProjectionForm() {
           <label>{t('forestType.label')}</label>
           <Dropdown
             className={styles.forestType}
-            disabled={projectionMode === 'm'}
             search
             selection
             fluid
@@ -55,7 +54,7 @@ function ProjectionForm() {
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
             placeholder={
-              projectionMode === 'map'
+              projectionMode === 'm'
                 ? t('forestType.hint')
                 : t('dropdownPlaceholder')
             }

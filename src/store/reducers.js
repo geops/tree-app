@@ -48,7 +48,8 @@ function tree(state = initialState, action) {
   switch (action.type) {
     case SET_FORM_LOCATION: {
       const formLocation = getFormLocation(state, action);
-      return { ...state, formLocation };
+      const projectionMode = 'f';
+      return { ...state, formLocation, projectionMode };
     }
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
