@@ -25,6 +25,7 @@ function Recommendation({ futureDisabled }) {
     recommendationMode === 'today'
       ? location.forestType
       : projectionLocation.forestType;
+  const forestTypeLabel = translate('forestType', forestType, i18n.language);
 
   const recommendations = useMemo(() => {
     let result;
@@ -41,11 +42,7 @@ function Recommendation({ futureDisabled }) {
     recommendations && (
       <Tab.Pane>
         <Header inverted>
-          {`${forestType} - ${translate(
-            'forestType',
-            forestType,
-            i18n.language,
-          )}`}
+          {forestTypeLabel ? `${forestType} - ${forestTypeLabel}` : forestType}
         </Header>
 
         <Button.Group>
