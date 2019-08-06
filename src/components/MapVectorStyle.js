@@ -1,12 +1,8 @@
-import React, { useContext, useMemo } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
-import { Menu } from 'semantic-ui-react';
+import { useContext, useMemo } from 'react';
+import { useSelector } from 'react-redux';
 
 import mapStyle from '../map/style';
 import { LayerContext } from '../spatial/components/layer/Base';
-import { setMapLayer } from '../store/actions';
-import styles from './MapVectorStyle.module.css';
 
 const getStyle = layerId => {
   const { layers } = mapStyle;
@@ -22,33 +18,13 @@ const getStyle = layerId => {
     })),
   };
 };
-const polygonLayers = mapStyle.layers.filter(l => l.type === 'fill');
 
 function MapVectorStyle() {
-  const dispatch = useDispatch();
   const mapLayer = useSelector(state => state.mapLayer);
-  const { t } = useTranslation();
   const layer = useContext(LayerContext);
   const style = getStyle(mapLayer);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
-  return (
-    <Menu
-      compact
-      vertical
-      style={{ position: 'absolute', zIndex: 9, right: '30px', top: '15px' }}
-    >
-      {polygonLayers.map(l => (
-        <Menu.Item
-          key={l.id}
-          active={mapLayer === l.id}
-          onClick={() => dispatch(setMapLayer(l.id))}
-          className={styles.item}
-        >
-          {t(`map.${l['source-layer']}`)}
-        </Menu.Item>
-      ))}
-    </Menu>
-  );
+  return null;
 }
 
 export default MapVectorStyle;
