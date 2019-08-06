@@ -10,7 +10,7 @@ import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.sv
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 import styles from './Recommendation.module.css';
 
-function Recommendation({ todayFutureToggler, disabled }) {
+function Recommendation({ disabled }) {
   const { t, i18n } = useTranslation();
   const [future, setFuture] = useState(false);
   const { projectionLocation, location, recommendationMode } = useSelector(
