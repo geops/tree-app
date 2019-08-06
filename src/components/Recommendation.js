@@ -56,7 +56,7 @@ function Recommendation({ futureDisabled }) {
             className={styles.button}
           >
             <h5>{t('recommendation.todayHeader')}</h5>
-            <p>{t('todayFutureToggler.todayMessage')}</p>
+            <p>{t('recommendation.todayMessage')}</p>
           </Button>
           <Button
             disabled={futureDisabled}
@@ -65,7 +65,7 @@ function Recommendation({ futureDisabled }) {
             className={styles.button}
           >
             <h5>{t('recommendation.futureHeader')}</h5>
-            <p>{t('todayFutureToggler.futureMessage')}</p>
+            <p>{t('recommendation.futureMessage')}</p>
           </Button>
         </Button.Group>
 
