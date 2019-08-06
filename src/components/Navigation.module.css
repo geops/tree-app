@@ -18,7 +18,8 @@
   position: relative;
 }
 .right {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -28,6 +29,8 @@
   margin: 0;
   flex-shrink: 0;
   display: none;
+  box-shadow: 0 0 20px #777;
+  position: relative;
 }
 
 .item {

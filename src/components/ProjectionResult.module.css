@@ -15,11 +15,3 @@
   color: white;
   border: none;
 }
-
-.pointer {
-  position: absolute;
-  left: 47%;
-  top: -11px;
-  box-shadow: 0 0 20px #777;
-  border-radius: 11px;
-}
