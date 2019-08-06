@@ -1,16 +1,27 @@
 
-CREATE TABLE recommendations_export (foresttype foresttype,
-                                     treetype treetype,
-                                     recommendationtype recommendationtype);
+CREATE TABLE recommendations_export (foresttype TEXT, treetype treetype,
+                                                      recommendationtype recommendationtype);
 
 
 INSERT INTO recommendations_export (foresttype, treetype, recommendationtype)
-SELECT trim(naistyp_c)::foresttype,
-       sisf_nr::int::text::treetype,
-       vorh::recommendationtype
+SELECT DISTINCT trim(both
+                     from naistyp_c) AS foresttype,
+                sisf_nr::int::text::treetype,
+                vorh::recommendationtype
 FROM nat_naistyp_art
 WHERE art = 'B'
-        AND trim(naistyp_c::name) = any(enum_range(null::foresttype)::name[]);
+UNION
+SELECT DISTINCT trim(both
+                     from naistyp) AS foresttype,
+                sisf_nr::int::text::treetype,
+                CASE vorh
+                    WHEN 'a' THEN '1'::recommendationtype
+                    WHEN 'b' THEN '2'::recommendationtype
+                    WHEN 'c' THEN '3'::recommendationtype
+                    ELSE null
+                END AS recommendationtype
+FROM nat_baum_collin
+WHERE sisf_nr::int::text::name = any(enum_range(null::treetype)::name[]);
 
 COPY
         (WITH one AS

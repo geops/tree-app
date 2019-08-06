@@ -1,8 +1,6 @@
-CREATE TABLE projections_export (id serial, forest_ecoregion text, altitudinal_zones text, foresttype foresttype,
-                                                                                           targets foresttype,
-                                                                                           additional additional,
-                                                                                           silver_fir_area text, relief relief,
-                                                                                                                 slope text);
+CREATE TABLE projections_export (id SERIAL, forest_ecoregion TEXT, altitudinal_zone TEXT, foresttype TEXT, target TEXT, additional additional,
+                                                                                                                        silver_fir_area TEXT, relief relief,
+                                                                                                                                              slope TEXT);
 
 
 CREATE FUNCTION export_projections() RETURNS integer AS $$
@@ -10,21 +8,21 @@ DECLARE x integer;
 BEGIN
  TRUNCATE projections_export;
 
-INSERT INTO projections_export (forest_ecoregion, altitudinal_zones, foresttype, targets, additional, silver_fir_area, relief, slope) -- 3.) Match CSV values to enum values.
+INSERT INTO projections_export (forest_ecoregion, altitudinal_zone, foresttype, target, additional, silver_fir_area, relief, slope) -- 3.) Match CSV values to enum values.
 WITH slopes AS
     (SELECT slope,
             array_to_string(regexp_matches(slope, '(<|>).*(\d{2})'), '') parsed_slope
      FROM projections_import)
 SELECT region AS forest_ecoregion,
        alt_zone_meta.code AS altitudinal_zone,
-       CASE regexp_replace(foresttype, ' collin', '')::name = any(enum_range(null::foresttype)::name[])
-           WHEN TRUE THEN regexp_replace(foresttype, ' collin', '')::foresttype
+       CASE trim(both from foresttype) = any(SELECT code FROM foresttype_meta)
+           WHEN TRUE THEN foresttype
            ELSE null
-       END,
-       CASE regexp_replace(targets, ' collin', '')::name = any(enum_range(null::foresttype)::name[])
-           WHEN TRUE THEN regexp_replace(targets, ' collin', '')::foresttype
+       END AS foresttype,
+       CASE trim(both from targets) = any(SELECT code FROM foresttype_meta)
+           WHEN TRUE THEN targets
            ELSE null
-       END,
+       END AS target,
        CASE add_meta.target is null
            WHEN TRUE THEN 'unknown'
            ELSE add_meta.target
@@ -66,92 +64,92 @@ COPY
     (WITH relief AS
          (SELECT foresttype,
                  forest_ecoregion,
-                 altitudinal_zones,
+                 altitudinal_zone,
                  slope,
                  additional,
                  silver_fir_area,
-                 jsonb_object_agg(relief, targets::text) AS json
+                 jsonb_object_agg(relief, target::text) AS json
           FROM projections_export
-          WHERE targets IS NOT NULL
+          WHERE target IS NOT NULL
           GROUP BY foresttype,
                    forest_ecoregion,
-                   altitudinal_zones,
+                   altitudinal_zone,
                    slope,
                    additional,
                    silver_fir_area),
           silver_fir_area AS
          (SELECT foresttype,
                  forest_ecoregion,
-                 altitudinal_zones,
+                 altitudinal_zone,
                  slope,
                  additional,
                  jsonb_object_agg(silver_fir_area, relief.json) AS json
           FROM projections_export
           LEFT JOIN relief USING (foresttype,
                                   forest_ecoregion,
-                                  altitudinal_zones,
+                                  altitudinal_zone,
                                   slope,
                                   additional,
                                   silver_fir_area)
           WHERE relief.json IS NOT NULL
           GROUP BY foresttype,
                    forest_ecoregion,
-                   altitudinal_zones,
+                   altitudinal_zone,
                    slope,
                    additional),
           additional AS
          (SELECT foresttype,
                  forest_ecoregion,
-                 altitudinal_zones,
+                 altitudinal_zone,
                  slope,
                  jsonb_object_agg(additional,silver_fir_area.json) AS json
           FROM projections_export
           LEFT JOIN silver_fir_area USING (foresttype,
                                            forest_ecoregion,
-                                           altitudinal_zones,
+                                           altitudinal_zone,
                                            slope,
                                            additional)
           WHERE silver_fir_area.json IS NOT NULL
           GROUP BY foresttype,
                    forest_ecoregion,
-                   altitudinal_zones,
+                   altitudinal_zone,
                    slope),
           slope AS
          (SELECT foresttype,
                  forest_ecoregion,
-                 altitudinal_zones,
+                 altitudinal_zone,
                  jsonb_object_agg(slope, additional.json) AS json
           FROM projections_export
           LEFT JOIN additional USING (foresttype,
                                       forest_ecoregion,
-                                      altitudinal_zones,
+                                      altitudinal_zone,
                                       slope)
           WHERE additional.json IS NOT NULL
           GROUP BY foresttype,
                    forest_ecoregion,
-                   altitudinal_zones),
-          altitudinal_zoness AS
+                   altitudinal_zone),
+          altitudinal_zone AS
          (SELECT foresttype,
                  forest_ecoregion,
-                 jsonb_object_agg(altitudinal_zones, slope.json) AS json
+                 jsonb_object_agg(altitudinal_zone, slope.json) AS json
           FROM projections_export
           LEFT JOIN slope USING (foresttype,
                                  forest_ecoregion,
-                                 altitudinal_zones)
+                                 altitudinal_zone)
           WHERE slope.json IS NOT NULL
           GROUP BY foresttype,
                    forest_ecoregion),
-          forest_ecoregions AS
+          forest_ecoregion AS
          (SELECT foresttype,
-                 jsonb_object_agg(forest_ecoregion, altitudinal_zoness.json) AS json
+                 jsonb_object_agg(forest_ecoregion, altitudinal_zone.json) AS json
           FROM projections_export
-          LEFT JOIN altitudinal_zoness USING (foresttype,
+          LEFT JOIN altitudinal_zone USING (foresttype,
                                               forest_ecoregion)
-          WHERE altitudinal_zoness.json IS NOT NULL
-          GROUP BY foresttype) SELECT jsonb_object_agg(coalesce(foresttype::text, 'not found'), forest_ecoregions.json)
+          WHERE altitudinal_zone.json IS NOT NULL
+          GROUP BY foresttype) SELECT jsonb_object_agg(coalesce(foresttype::text, 'not found'), forest_ecoregion.json)
      FROM projections_export
-     LEFT JOIN forest_ecoregions USING (foresttype)
-     WHERE forest_ecoregions.json IS NOT NULL) To '/data/projections.json';
+     LEFT JOIN forest_ecoregion USING (foresttype)
+     WHERE forest_ecoregion.json IS NOT NULL) To '/data/projections.json';
 
 ------------------------------
 ----- types
@@ -159,7 +157,7 @@ COPY
 
 COPY
   (WITH foresttype AS
-     (SELECT json_agg(jsonb_build_object('code', target, 'de', de) ORDER BY sort) AS
+     (SELECT json_agg(jsonb_build_object('code', code, 'de', de) ORDER BY sort) AS
       values
       FROM foresttype_meta),
         treetype AS

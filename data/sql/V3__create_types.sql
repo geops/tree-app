@@ -177,26 +177,31 @@ VALUES ('',
 ----------------------------------------------
 -- foresttype
 
-CREATE TYPE foresttype AS ENUM ('1','10a','10w','11','12*','12*h','12S','12a','12e','12w','13*','13a','13e','13eh','13h','14','14*','15','16','16*','17','18','18*','18M','18v','18w','19','19P','19a','19f','19m','1h','2','20','20E','21','21*','21L','22','22*','22A','22C','23','23*','23H','24','24*','25','25*','25A','25F','25O','25Q','25a','25as','25au','25b','25e','25f','26','26h','26w','27','27*','27O','27h','28','29','29A','29C','29h','3','3*','4*','30','31','32*','32C','32S','32V','33V','33a','33b','33m','34*','34a','34b','35','35A','35M','35Q','35S','36','37','38','38*','38S','39','39*','3L','4L','3LV','3s','4','40*','40P','40PBl','40PBlt','40Pt','41','41*','42B','42C','42Q','42V','42r','42t','43','43*','43S','44','45','46','46*','46*Re','46M','46MRe','46Re','46t','47','47*','47*Lä','47D','47DRe','47H','47M','47MRe','47Re','48','49','49*','49*Ta','50','50*','50*Re','50P','50Re','51','51C','51Re','52','52Re','52T','53','53*','53*Ta','53*s','53A','53ATa','53Lä','53Ta','54','54A','55','55*','55*Lä','55*Ta','56','57Bl','57BlTa','57C','57CLä','57CTa','57M','57S','57STa','57V','57VLä','57VM','57VTa','58','58Bl','58C','58L','58LLä','58Lä','59','59*','59A','59C','59E','59H','59J','59L','59LLä','59Lä','59R','59S','59V','59VLä','6','60','60*','60*Lä','60*Ta','60A','60ALä','60ATa','60E','60ETa','60Lä','60Ta','61','62','65','65*','66','66PM','67','67*','68','68*','69','7*','70','71','72','72Lä','7S','7a','7b','8*','8S','8a','8b','8d','91','92a','92z','93','9a','9w');
+CREATE TABLE foresttype_meta (code TEXT, de TEXT,
+                              sort FLOAT);
 
 
-CREATE TABLE foresttype_meta (target foresttype,
-                              de TEXT,
-                              sort TEXT);
-
-
-INSERT INTO foresttype_meta (target, de,
+INSERT INTO foresttype_meta (code, de,
                              sort)
-SELECT foo.foresttype,
-       mstr.naistyp_wges,
-       naistyp_sort
-FROM
-        (SELECT unnest(enum_range(null::foresttype)) AS foresttype) foo
-LEFT JOIN
-        (SELECT naistyp_wges,
-                regexp_split_to_table(naistyp_c, '\/') AS naistyp_c,
-                naistyp_sort
-         FROM nat_naistyp_mstr) mstr ON trim(lower(mstr.naistyp_c)) = lower(foo.foresttype::text);
+SELECT trim(both
+            from naistyp_c),
+       trim(both
+            from naistyp_wges),
+       trim(both
+            from naistyp_sort)::float
+FROM nat_naistyp_mstr
+GROUP BY naistyp_c,
+         naistyp_wges,
+         naistyp_sort
+UNION
+SELECT trim(both
+            from naistyp),
+       null,
+       trim(both
+            from naistyp_sort)::float
+FROM nat_baum_collin
+GROUP BY naistyp,
+         naistyp_sort;
 
 ----------------------------------------------
 -- altitudinal zones
