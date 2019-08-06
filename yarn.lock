@@ -939,10 +939,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@geops/tree-lib@^0.7.3":
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.7.3.tgz#d635314f6cacb1596372089413b10352c5cbc8df"
-  integrity sha512-487vK6VJAa2BWgU72ZsCWNDIMD3jGtDN3uHO+uKNZUKQpjMCQWdHWAFUdXSJ/CW0jRWYb72SKPOGzFlgWq+p/Q==
+"@geops/tree-lib@^0.7.4":
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.7.4.tgz#51dcfc70c547f4b8d9ae7a63dcdf98d80776893e"
+  integrity sha512-FQvccrs3WGbp6NOSoZ2vruY7MEhZHMDTHyq4FojR9ZZCcGeg7hKQEkgMR4s6K8sA2igDozEh6n60DBm0C4TvBg==
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -4936,10 +4936,10 @@ husky@^2.4.1:
     run-node "^1.0.0"
     slash "^3.0.0"
 
-i18next@^17.0.7:
-  version "17.0.7"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-17.0.7.tgz#aae8591634b109c0ecec755b46c6414b0d743e07"
-  integrity sha512-fQn+gcyDaHb3qXIeahjCnGMsCeHaKveSORclang55stBjOL13oK7ZYxXVz1AaFV6p3SzOSu/KW+tgZcUuDdf6Q==
+i18next@^17.0.9:
+  version "17.0.9"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-17.0.9.tgz#5f835e91a34fa5e7da1e5ae4c4586c81d7c4b17f"
+  integrity sha512-fCYpm3TDzcfPIPN3hmgvC/QJx17QHI+Ul88qbixwIrifN9nBmk2c2oVxVYSDxnV5FgBXZJJ0O4yBYiZ8v1bX2A==
   dependencies:
     "@babel/runtime" "^7.3.1"
 
@@ -8595,10 +8595,10 @@ react-error-overlay@^5.1.6:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.6.tgz#0cd73407c5d141f9638ae1e0c63e7b2bf7e9929d"
   integrity sha512-X1Y+0jR47ImDVr54Ab6V9eGk0Hnu7fVWGeHQSOXHf/C2pF9c6uy3gef8QUeuUiWlNb0i08InPSE5a/KJzNzw1Q==
 
-react-i18next@^10.11.2:
-  version "10.11.4"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-10.11.4.tgz#9277a609ee640fac353087a91935ee9a9eb65f40"
-  integrity sha512-/CWXaf3a5BLNeVnBGxzWOIZLQgSNEc2LWHX4ZaJb7ww0xgY0S5K9HRAMzJIHeHGe7jfpSraprD66VDblWb4ZXA==
+react-i18next@^10.11.5:
+  version "10.11.5"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-10.11.5.tgz#10d0726a6c63c2d928078a7e7ec3db708246be04"
+  integrity sha512-+LXYehLGWbOzM4on9pgeCMTmo7J24Pm2rio4S8OSVdYudUKxLSYzoMDgJect0SQbTlIiK6b6+OTgTGY4YKPECw==
   dependencies:
     "@babel/runtime" "^7.3.1"
     html-parse-stringify2 "2.0.1"
