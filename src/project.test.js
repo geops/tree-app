@@ -31,11 +31,11 @@ describe('Test for input values', () => {
         {
           forestEcoregion: '1',
           altitudinalZone: '81',
-          forestType: '55 collin',
+          forestType: 'fooBar',
         },
         '20',
       ),
-    ).toThrowError('55 collin for forestType is not valid.');
+    ).toThrowError('fooBar for forestType is not valid.');
   });
 
   test('invalid target altitudinalZone', () => {
