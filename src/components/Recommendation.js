@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Grid, Header, List, Tab, Form } from 'semantic-ui-react';
+import { Grid, Header, List, Tab, Button } from 'semantic-ui-react';
 
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 import styles from './Recommendation.module.css';
 
-function Recommendation({ todayFutureToggler }) {
+function Recommendation({ futureDisabled }) {
   const { t, i18n } = useTranslation();
   const [future, setFuture] = useState(false);
   const { projectionLocation, location, recommendationMode } = useSelector(
@@ -47,26 +47,28 @@ function Recommendation({ todayFutureToggler }) {
             i18n.language,
           )}`}
         </Header>
-        {todayFutureToggler && (
-          <Form inverted>
-            <Form.Field>
-              <Form.Radio
-                label={t('todayFutureToggler.today')}
-                name="radioGroup"
-                checked={future === false}
-                onChange={() => setFuture(false)}
-              />
-            </Form.Field>
-            <Form.Field>
-              <Form.Radio
-                label={t('todayFutureToggler.future')}
-                name="radioGroup"
-                checked={future === true}
-                onChange={() => setFuture(true)}
-              />
-            </Form.Field>
-          </Form>
-        )}
+
+        <Button.Group>
+          <Button
+            disabled={futureDisabled}
+            active={!future}
+            onClick={() => setFuture(false)}
+            className={styles.button}
+          >
+            <h5>{t('recommendation.todayHeader')}</h5>
+            <p>{t('recommendation.todayMessage')}</p>
+          </Button>
+          <Button
+            disabled={futureDisabled}
+            active={future}
+            onClick={() => setFuture(true)}
+            className={styles.button}
+          >
+            <h5>{t('recommendation.futureHeader')}</h5>
+            <p>{t('recommendation.futureMessage')}</p>
+          </Button>
+        </Button.Group>
+
         <Header inverted>{t('recommendation.header')}</Header>
         <Grid stackable columns={3}>
           <Grid.Column>

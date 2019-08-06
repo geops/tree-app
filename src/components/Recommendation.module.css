@@ -3,3 +3,29 @@
   vertical-align: middle;
   margin-right: 10px;
 }
+
+.button:global(.ui.button) {
+  flex: auto !important;
+  color: var(--primary-color) !important;
+  background: #fff;
+}
+
+.button:global(.ui.active.button) {
+  background: #f2f2f2;
+}
+
+.button:global(.ui.active.button:hover) {
+  background: #fff;
+}
+
+.button:global(.ui.button:hover) {
+  background: #fff;
+}
+
+.button h5 {
+  margin-bottom: 5px;
+}
+
+.button p {
+  font-weight: normal;
+}
