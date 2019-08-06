@@ -20,7 +20,7 @@ function ProjectionResult() {
     {
       menuItem: t('recommendationMode.today'),
       recommendationMode: 'today',
-      render: () => <Recommendation disabled />,
+      render: () => <Recommendation futureDisabled />,
     },
     {
       menuItem: t('recommendationMode.moderate'),

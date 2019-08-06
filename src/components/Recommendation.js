@@ -10,7 +10,7 @@ import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.sv
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 import styles from './Recommendation.module.css';
 
-function Recommendation({ disabled }) {
+function Recommendation({ futureDisabled }) {
   const { t, i18n } = useTranslation();
   const [future, setFuture] = useState(false);
   const { projectionLocation, location, recommendationMode } = useSelector(
@@ -50,22 +50,22 @@ function Recommendation({ disabled }) {
 
         <Button.Group>
           <Button
-            disabled={disabled}
+            disabled={futureDisabled}
             active={!future}
             onClick={() => setFuture(false)}
             className={styles.button}
           >
-            <h5>{t('recommendation.today')}</h5>
-            <p>{t('todayFutureToggler.today')}</p>
+            <h5>{t('recommendation.todayHeader')}</h5>
+            <p>{t('todayFutureToggler.todayMessage')}</p>
           </Button>
           <Button
-            disabled={disabled}
+            disabled={futureDisabled}
             active={future}
             onClick={() => setFuture(true)}
             className={styles.button}
           >
-            <h5>{t('recommendation.future')}</h5>
-            <p>{t('todayFutureToggler.future')}</p>
+            <h5>{t('recommendation.futureHeader')}</h5>
+            <p>{t('todayFutureToggler.futureMessage')}</p>
           </Button>
         </Button.Group>
 

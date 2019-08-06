@@ -11,7 +11,7 @@
 }
 
 .button:global(.ui.active.button) {
-  background: #f2f4f2;
+  background: #f2f2f2;
 }
 
 .button:global(.ui.active.button:hover) {
@@ -27,6 +27,5 @@
 }
 
 .button p {
-  line-height: 1rem;
   font-weight: normal;
 }
