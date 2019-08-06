@@ -1,4 +1,6 @@
 import {
+  CLOSE_WELCOME_MODAL,
+  OPEN_WELCOME_MODAL,
   SET_FORM_LOCATION,
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
@@ -18,6 +20,7 @@ export const initialState = {
   projectionLocation: {},
   projectionOptions: {},
   recommendationMode: 'extreme',
+  welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'closed',
 };
 
 const formLocationFields = [
@@ -46,6 +49,12 @@ const getFormLocation = (state, action) => {
 
 function tree(state = initialState, action) {
   switch (action.type) {
+    case CLOSE_WELCOME_MODAL:
+      localStorage.setItem('tree.welcomeModal', 'closed');
+      return { ...state, welcomeModalOpen: false };
+    case OPEN_WELCOME_MODAL:
+      localStorage.setItem('tree.welcomeModal', 'opened');
+      return { ...state, welcomeModalOpen: true };
     case SET_FORM_LOCATION: {
       const formLocation = getFormLocation(state, action);
       const projectionMode = 'f';

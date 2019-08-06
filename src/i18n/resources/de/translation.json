@@ -60,5 +60,8 @@
   },
   "errorMessage": {
     "incompleteLocationInput": "Nicht in der Karte gefunden"
+  },
+  "welcome": {
+    "close": "Los geht's"
   }
 }
