@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { project } from '@geops/tree-lib';
+import { applyMiddleware } from 'redux';
 
 import {
   SET_PROJECTION_MODE,
@@ -7,7 +8,7 @@ import {
   SET_MAP_LOCATION,
   setProjectionResult,
   SET_RECOMMENDATION_MODE,
-} from './actions';
+} from '../actions';
 
 const projectionActionTypes = [
   SET_PROJECTION_MODE,
@@ -29,7 +30,7 @@ function getTargetAltitudinalZone(recommendationMode, location) {
   }
 }
 
-export const projection = store => next => action => {
+const projection = store => next => action => {
   const result = next(action);
   if (projectionActionTypes.includes(action.type)) {
     const {
@@ -59,4 +60,4 @@ export const projection = store => next => action => {
   return result;
 };
 
-export default {};
+export default applyMiddleware(projection);
