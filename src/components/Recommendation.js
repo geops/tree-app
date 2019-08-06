@@ -47,28 +47,28 @@ function Recommendation({ todayFutureToggler, disabled }) {
             i18n.language,
           )}`}
         </Header>
-        {todayFutureToggler && (
-          <Button.Group>
-            <Button
-              disabled={disabled}
-              active={!future}
-              onClick={() => setFuture(false)}
-              className={styles.button}
-            >
-              <h5>Heute</h5>
-              <p>{t('todayFutureToggler.today')}</p>
-            </Button>
-            <Button
-              disabled={disabled}
-              active={future}
-              onClick={() => setFuture(true)}
-              className={styles.button}
-            >
-              <h5>Künftig</h5>
-              <p>{t('todayFutureToggler.future')}</p>
-            </Button>
-          </Button.Group>
-        )}
+
+        <Button.Group>
+          <Button
+            disabled={disabled}
+            active={!future}
+            onClick={() => setFuture(false)}
+            className={styles.button}
+          >
+            <h5>{t('recommendation.today')}</h5>
+            <p>{t('todayFutureToggler.today')}</p>
+          </Button>
+          <Button
+            disabled={disabled}
+            active={future}
+            onClick={() => setFuture(true)}
+            className={styles.button}
+          >
+            <h5>{t('recommendation.future')}</h5>
+            <p>{t('todayFutureToggler.future')}</p>
+          </Button>
+        </Button.Group>
+
         <Header inverted>{t('recommendation.header')}</Header>
         <Grid stackable columns={3}>
           <Grid.Column>

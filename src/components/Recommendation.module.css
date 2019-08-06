@@ -4,24 +4,18 @@
   margin: 0 10px;
 }
 
-.grid:global(.ui.grid) {
-  margin: 20px 20px 0;
-}
-
 .button:global(.ui.button) {
-  font-size: 1.14285714em;
-  font-weight: 700;
   flex: auto !important;
   color: var(--primary-color) !important;
   background: #fff;
 }
 
 .button:global(.ui.active.button) {
-  background: rgb(242, 243, 242);
+  background: #f2f4f2;
 }
 
 .button:global(.ui.active.button:hover) {
-  background: rgb(242, 243, 242);
+  background: #fff;
 }
 
 .button:global(.ui.button:hover) {
@@ -29,11 +23,10 @@
 }
 
 .button h5 {
-  font-weight: bolder;
-  margin-bottom: auto;
+  margin-bottom: 5px;
 }
 
 .button p {
-  line-height: 1rem !important;
-  font-weight: 400;
+  line-height: 1rem;
+  font-weight: normal;
 }

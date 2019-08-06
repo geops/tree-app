@@ -20,7 +20,9 @@
     "attention": "Achtung",
     "negative": "Reduzieren",
     "neutral": "Mitnehmen",
-    "positive": "Fördern"
+    "positive": "Fördern",
+    "today": "Heute",
+    "future": "Künftig"
   },
   "recommendationMode": {
     "today": "Klima heute",

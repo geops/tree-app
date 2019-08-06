@@ -20,17 +20,17 @@ function ProjectionResult() {
     {
       menuItem: t('recommendationMode.today'),
       recommendationMode: 'today',
-      render: () => <Recommendation todayFutureToggler disabled />,
+      render: () => <Recommendation disabled />,
     },
     {
       menuItem: t('recommendationMode.moderate'),
       recommendationMode: 'moderate',
-      render: () => <Recommendation todayFutureToggler />,
+      render: () => <Recommendation />,
     },
     {
       menuItem: t('recommendationMode.extreme'),
       recommendationMode: 'extreme',
-      render: () => <Recommendation todayFutureToggler />,
+      render: () => <Recommendation />,
     },
   ];
 
