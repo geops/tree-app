@@ -1,8 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Button, Header, Icon, Modal } from 'semantic-ui-react';
+import { Header, Icon, Modal } from 'semantic-ui-react';
 
+import Button from './Button';
 import { ReactComponent as Logo } from '../icons/logo.svg';
 import { closeWelcomeModal } from '../store/actions';
 
@@ -28,7 +29,7 @@ function WelcomeModal() {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
-        <Button onClick={() => dispatch(closeWelcomeModal())}>
+        <Button active onClick={() => dispatch(closeWelcomeModal())}>
           <Icon name="checkmark" /> {t('welcome.close')}
         </Button>
       </Modal.Actions>
