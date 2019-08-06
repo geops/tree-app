@@ -8,10 +8,10 @@
   },
   "map": {
     "altitudinal_zones_1995": "Höhenstufen heute",
-    "altitudinal_zones_2085_dry": "Höhenstufen stark",
-    "altitudinal_zones_2085_less_dry": "Höhenstufen mässig",
-    "forest_ecoregions": "Waldstandortsregionen",
-    "forest_types": "Standorttypen",
+    "altitudinal_zones_2085_dry": "Höhenstufen starker Klimawandel",
+    "altitudinal_zones_2085_less_dry": "Höhenstufen mässiger Klimawandel",
+    "forest_ecoregions": "Standortsregionen",
+    "forest_types": "Standortstypen",
     "silver_fir_areas": "Tannenareale",
     "hint": "Bitte Position wählen"
   },
