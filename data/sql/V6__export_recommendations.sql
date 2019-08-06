@@ -26,25 +26,29 @@ WHERE sisf_nr::int::text::name = any(enum_range(null::treetype)::name[]);
 COPY
         (WITH one AS
                  (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
+                         json_agg(treetype::text::int
+                                  ORDER BY treetype) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '1'
                   GROUP BY foresttype),
               two AS
                  (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
+                         json_agg(treetype::text::int
+                                  ORDER BY treetype) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '2'
                   GROUP BY foresttype),
               three AS
                  (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
+                         json_agg(treetype::text::int
+                                  ORDER BY treetype) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '3'
                   GROUP BY foresttype),
               four AS
                  (SELECT foresttype,
-                         json_agg(treetype::text::int) treetypes
+                         json_agg(treetype::text::int
+                                  ORDER BY treetype) treetypes
                   FROM recommendations_export
                   WHERE treetype = '9500'
                   GROUP BY foresttype) SELECT json_object_agg(foresttype,json_build_object('one',coalesce(one.treetypes,'[]'::json),'two',coalesce(two.treetypes,'[]'::json),'three',coalesce(three.treetypes,'[]'::json),'four',coalesce(four.treetypes,'[]'::json))) AS recommendations
