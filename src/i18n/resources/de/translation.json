@@ -20,7 +20,11 @@
     "attention": "Achtung",
     "negative": "Reduzieren",
     "neutral": "Mitnehmen",
-    "positive": "Fördern"
+    "positive": "Fördern",
+    "todayHeader": "Heute",
+    "futureHeader": "Künftig",
+    "todayMessage": "bereits heute mögliche Baumarten",
+    "futureMessage": "in Zukunft zusätzlich mögliche Baumarten"
   },
   "recommendationMode": {
     "today": "Klima heute",
@@ -28,10 +32,6 @@
     "extreme": "starker Klimawandel"
   },
   "dropdownPlaceholder": "Bitte aus der Liste auswählen",
-  "todayFutureToggler": {
-    "today": "bereits heute mögliche Baumarten",
-    "future": "in Zukunft zusätzlich mögliche Baumarten"
-  },
   "projectedForestType": "projectionLocation.forestType",
   "forestEcoregion": {
     "label": "Standortsregion"
