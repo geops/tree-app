@@ -3,22 +3,14 @@ import PropTypes from 'prop-types';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import {
-  Grid,
-  Header,
-  List,
-  Tab,
-  Form,
-  Step,
-  Checkbox,
-} from 'semantic-ui-react';
+import { Grid, Header, List, Tab, Button } from 'semantic-ui-react';
 
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 import styles from './Recommendation.module.css';
 
-function Recommendation({ todayFutureToggler }) {
+function Recommendation({ todayFutureToggler, disabled }) {
   const { t, i18n } = useTranslation();
   const [future, setFuture] = useState(false);
   const { projectionLocation, location, recommendationMode } = useSelector(
@@ -56,35 +48,26 @@ function Recommendation({ todayFutureToggler }) {
           )}`}
         </Header>
         {todayFutureToggler && (
-          <Grid columns={3} textAlign="center" verticalAlign="middle">
-            <Grid.Column>
-              <Step.Group size="mini">
-                <Step>
-                  <Step.Content>
-                    <Step.Title>Heute</Step.Title>
-                    <Step.Description>
-                      {t('todayFutureToggler.today')}
-                    </Step.Description>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-            </Grid.Column>
-            <Grid.Column>
-              <Checkbox toggle />
-            </Grid.Column>
-            <Grid.Column>
-              <Step.Group size="mini">
-                <Step>
-                  <Step.Content>
-                    <Step.Title>Künftig</Step.Title>
-                    <Step.Description>
-                      {t('todayFutureToggler.future')}
-                    </Step.Description>
-                  </Step.Content>
-                </Step>
-              </Step.Group>
-            </Grid.Column>
-          </Grid>
+          <Button.Group>
+            <Button
+              disabled={disabled}
+              active={!future}
+              onClick={() => setFuture(false)}
+              className={styles.button}
+            >
+              <h5>Heute</h5>
+              <p>{t('todayFutureToggler.today')}</p>
+            </Button>
+            <Button
+              disabled={disabled}
+              active={future}
+              onClick={() => setFuture(true)}
+              className={styles.button}
+            >
+              <h5>Künftig</h5>
+              <p>{t('todayFutureToggler.future')}</p>
+            </Button>
+          </Button.Group>
         )}
         <Header inverted>{t('recommendation.header')}</Header>
         <Grid stackable columns={3}>

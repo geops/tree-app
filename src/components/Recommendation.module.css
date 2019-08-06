@@ -3,3 +3,37 @@
   vertical-align: middle;
   margin: 0 10px;
 }
+
+.grid:global(.ui.grid) {
+  margin: 20px 20px 0;
+}
+
+.button:global(.ui.button) {
+  font-size: 1.14285714em;
+  font-weight: 700;
+  flex: auto !important;
+  color: var(--primary-color) !important;
+  background: #fff;
+}
+
+.button:global(.ui.active.button) {
+  background: rgb(242, 243, 242);
+}
+
+.button:global(.ui.active.button:hover) {
+  background: rgb(242, 243, 242);
+}
+
+.button:global(.ui.button:hover) {
+  background: #fff;
+}
+
+.button h5 {
+  font-weight: bolder;
+  margin-bottom: auto;
+}
+
+.button p {
+  line-height: 1rem !important;
+  font-weight: 400;
+}
