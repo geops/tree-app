@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Header, Icon, Modal } from 'semantic-ui-react';
 
@@ -13,19 +13,19 @@ function WelcomeModal() {
   const welcomeModalOpen = useSelector(state => state.welcomeModalOpen);
   return (
     <Modal open={welcomeModalOpen}>
-      <Modal.Header>{t('app.title')}</Modal.Header>
+      <Modal.Header>{t('welcome.header')}</Modal.Header>
       <Modal.Content image>
         <Logo style={{ margin: '0 50px' }} />
         <Modal.Description>
-          <Header>Platzhalter</Header>
-          <ul>
-            <li>Verweis auf WSL als Urheberin</li>
-            <li>Kurzer Info-Text zum Hintergrund der App</li>
-            <li>
-              Anleitung, dass auf Karte geklickt werden muss und weitere Infos
-            </li>
-            <li>Text wird von Peter</li>
-          </ul>
+          <Trans i18nKey="welcome.content">
+            about <i>app</i>
+            <ol>
+              <li>today</li>
+              <li>moderate</li>
+              <li>extreme</li>
+            </ol>
+            by
+          </Trans>
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
