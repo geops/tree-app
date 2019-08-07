@@ -35,7 +35,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  .grids:global(.ui.stackable.grid > .column:not(.row)) {
+  .grid:global(.ui.stackable.grid > .column:not(.row)) {
     padding: 1rem 0 !important;
   }
 }
