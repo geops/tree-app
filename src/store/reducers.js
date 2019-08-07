@@ -5,10 +5,12 @@ import {
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
+  SET_PAGE,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
   SET_RECOMMENDATION_MODE,
 } from './actions';
+import { MAP_PAGE, RECOMMENDATION_PAGE } from '../components/Navigation';
 
 export const initialState = {
   location: {},
@@ -16,6 +18,7 @@ export const initialState = {
   mapLayer: 'ft',
   mapLocation: {},
   mapView: '9|910001|5947112',
+  page: MAP_PAGE,
   projectionMode: 'm',
   projectionLocation: {},
   projectionOptions: {},
@@ -65,10 +68,13 @@ function tree(state = initialState, action) {
     case SET_MAP_LOCATION: {
       const { formLocation, projectionMode } = initialState;
       const { mapLocation } = action;
-      return { ...state, formLocation, mapLocation, projectionMode };
+      const page = RECOMMENDATION_PAGE;
+      return { ...state, formLocation, mapLocation, page, projectionMode };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };
+    case SET_PAGE:
+      return { ...state, page: action.page };
     case SET_PROJECTION_MODE:
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {

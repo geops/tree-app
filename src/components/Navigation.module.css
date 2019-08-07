@@ -41,6 +41,7 @@
 .icon {
   height: 1.5em;
   margin-bottom: 0.5em;
+  fill: var(--primary-color);
 }
 
 @media (max-width: 768px) {
