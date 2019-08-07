@@ -14,7 +14,7 @@
   background: white !important;
 }
 
-.button:global(.ui.button:hover) {
+.button:global(.ui.button:not(.active):hover) {
   background-color: #f7f7f7 !important;
 }
 
