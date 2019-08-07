@@ -67,13 +67,14 @@ function Recommendation({ futureDisabled }) {
         </Button.Group>
 
         <Header inverted>{t('recommendation.header')}</Header>
-        <Grid stackable columns={3}>
+        <Grid stackable columns={3} className={styles.grids}>
           <Grid.Column>
             <Header inverted>
               <PositiveIcon fill="white" className={styles.icon} />
               {t('recommendation.positive')}
             </Header>
-            <List>
+
+            <List className={styles.list}>
               {recommendations.positive.map(r => (
                 <List.Item key={r}>
                   {translate('treeType', r, i18n.language)}
@@ -86,7 +87,7 @@ function Recommendation({ futureDisabled }) {
               <NeutralIcon fill="white" className={styles.icon} />
               {t('recommendation.neutral')}
             </Header>
-            <List>
+            <List className={styles.list}>
               {recommendations.neutral.map(r => (
                 <List.Item key={r}>
                   {translate('treeType', r, i18n.language)}
@@ -99,7 +100,7 @@ function Recommendation({ futureDisabled }) {
               <NegativeIcon fill="white" className={styles.icon} />
               {t('recommendation.negative')}
             </Header>
-            <List>
+            <List className={styles.list}>
               {recommendations.negative.map(r => (
                 <List.Item key={r}>
                   {translate('treeType', r, i18n.language)}
