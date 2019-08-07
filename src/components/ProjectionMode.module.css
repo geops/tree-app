@@ -1,5 +1,10 @@
-.grid:global(.ui.grid) {
-  margin: 20px 20px 0;
+.row {
+  display: block;
+  margin: 20px;
+  height: 52px;
+}
+.group {
+  float: right;
 }
 .icon {
   height: 2em;
