@@ -95,4 +95,13 @@ describe('Test for output values', () => {
       attention: [],
     });
   });
+
+  test('forest type with no recommendation currently', () => {
+    expect(recommend('AV', '7S collin')).toStrictEqual({
+      positive: [],
+      neutral: [],
+      negative: [],
+      attention: [],
+    });
+  });
 });
