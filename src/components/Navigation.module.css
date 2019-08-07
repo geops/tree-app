@@ -9,8 +9,6 @@ body {
 
 .wrapper {
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .pages {
@@ -19,6 +17,8 @@ body {
   transition: transform ease-out 0.2s;
   will-change: transform;
   overflow: hidden;
+  position: fixed;
+  height: calc(100% - 70px);
 }
 
 .left,
@@ -39,7 +39,8 @@ body {
   flex-shrink: 0;
   display: none;
   box-shadow: 0 0 20px #777;
-  position: relative;
+  position: fixed;
+  bottom: 0;
 }
 
 .item {
