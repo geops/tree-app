@@ -1,5 +1,3 @@
-export const CLOSE_WELCOME_MODAL = 'CLOSE_WELCOME_MODAL';
-export const OPEN_WELCOME_MODAL = 'OPEN_WELCOME_MODAL';
 export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
 export const SET_MAP_LAYER = 'SET_MAP_LAYER';
 export const SET_MAP_LOCATION = 'SET_MAP_LOCATION';
@@ -8,14 +6,7 @@ export const SET_PAGE = 'SET_PAGE';
 export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
 export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
 export const SET_RECOMMENDATION_MODE = 'SET_RECOMMENDATION_MODE';
-
-export function closeWelcomeModal() {
-  return { type: CLOSE_WELCOME_MODAL };
-}
-
-export function openWelcomeModal() {
-  return { type: OPEN_WELCOME_MODAL };
-}
+export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -47,4 +38,8 @@ export function setProjectionResult(projectionResult, location) {
 
 export function setRecommendationMode(recommendationMode) {
   return { type: SET_RECOMMENDATION_MODE, recommendationMode };
+}
+
+export function setWelcomeModal(open) {
+  return { type: SET_WELCOME_MODAL, open };
 }
