@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Header, Icon, Modal } from 'semantic-ui-react';
+import { Icon, Modal } from 'semantic-ui-react';
 
 import Button from './Button';
 import { ReactComponent as Logo } from '../icons/logo.svg';
