@@ -7,19 +7,15 @@
 .button:global(.ui.button) {
   flex: auto !important;
   color: var(--primary-color) !important;
-  background: #fff;
+  background: #eee !important;
 }
 
 .button:global(.ui.active.button) {
-  background: #f2f2f2;
+  background: white !important;
 }
 
-.button:global(.ui.active.button:hover) {
-  background: #fff;
-}
-
-.button:global(.ui.button:hover) {
-  background: #fff;
+.button:global(.ui.button:not(.active):hover) {
+  background-color: #f7f7f7 !important;
 }
 
 .button h5 {
