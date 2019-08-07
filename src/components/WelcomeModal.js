@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Icon, Modal } from 'semantic-ui-react';
+import { Icon, Image, Modal } from 'semantic-ui-react';
 
 import Button from './Button';
 import { ReactComponent as Logo } from '../icons/logo.svg';
@@ -26,7 +26,9 @@ function WelcomeModal() {
     >
       <Modal.Header>{t('welcome.header')}</Modal.Header>
       <Modal.Content image>
-        <Logo className={styles.logo} />
+        <Image wrapped>
+          <Logo className={styles.logo} />
+        </Image>
         <Modal.Description>
           <Trans i18nKey="welcome.content">
             about <i>app</i>
