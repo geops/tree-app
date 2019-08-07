@@ -1,5 +1,14 @@
+body {
+  height: 100%;
+}
+
+:global(#root) {
+  height: 100%;
+  overflow: hidden;
+}
+
 .wrapper {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
