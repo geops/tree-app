@@ -6,10 +6,10 @@ import {
   setMapView,
   setProjectionMode,
   setMapLocation,
-} from './actions';
-import { initialState } from './reducers';
+} from '../actions';
+import { initialState } from '../reducers';
 
-export const querySync = ReduxQuerySync.enhancer({
+const querySync = ReduxQuerySync.enhancer({
   params: {
     flft: {
       selector: s => s.formLocation && s.formLocation.forestType,
@@ -69,4 +69,4 @@ export const querySync = ReduxQuerySync.enhancer({
   initialTruth: 'location',
 });
 
-export default {};
+export default querySync;

@@ -60,5 +60,10 @@
   },
   "errorMessage": {
     "incompleteLocationInput": "Nicht in der Karte gefunden"
+  },
+  "welcome": {
+    "header": "Das Klima ändert sich",
+    "content": "Die <i>Tree App</i> unterstützt Dich bei der Wahl geeigneter Baumarten für drei Fälle:<2><0>Klima 1961-1990</0><1>mässiger Klimawandel</1><2>starker Klimawandel</2></2>Sie ist ein Produkt des Forschungsprogramms Wald und Klimawandel von BAFU und WSL.",
+    "close": "Weiter zum Prototypen"
   }
 }
