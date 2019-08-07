@@ -27,16 +27,18 @@ function Recommendation({ futureDisabled }) {
       : projectionLocation.forestType;
   const forestTypeLabel = translate('forestType', forestType, i18n.language);
 
+  const recommendFuture = futureDisabled ? false : future;
+
   const recommendations = useMemo(() => {
     let result;
     try {
-      result = recommend(location.forestType, forestType, future);
+      result = recommend(location.forestType, forestType, recommendFuture);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [location.forestType, forestType, future]);
+  }, [location.forestType, forestType, recommendFuture]);
 
   return (
     recommendations && (
@@ -48,7 +50,7 @@ function Recommendation({ futureDisabled }) {
         <Button.Group>
           <Button
             disabled={futureDisabled}
-            active={!future}
+            active={!recommendFuture}
             onClick={() => setFuture(false)}
             className={styles.button}
           >
@@ -57,7 +59,7 @@ function Recommendation({ futureDisabled }) {
           </Button>
           <Button
             disabled={futureDisabled}
-            active={future}
+            active={recommendFuture}
             onClick={() => setFuture(true)}
             className={styles.button}
           >
