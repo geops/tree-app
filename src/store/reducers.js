@@ -1,14 +1,15 @@
 import {
-  CLOSE_WELCOME_MODAL,
-  OPEN_WELCOME_MODAL,
   SET_FORM_LOCATION,
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
+  SET_PAGE,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
   SET_RECOMMENDATION_MODE,
+  SET_WELCOME_MODAL,
 } from './actions';
+import { MAP_PAGE, RECOMMENDATION_PAGE } from '../components/Navigation';
 
 export const initialState = {
   location: {},
@@ -16,11 +17,12 @@ export const initialState = {
   mapLayer: 'ft',
   mapLocation: {},
   mapView: '9|910001|5947112',
+  page: MAP_PAGE,
   projectionMode: 'm',
   projectionLocation: {},
   projectionOptions: {},
   recommendationMode: 'extreme',
-  welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'closed',
+  welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
 
 const formLocationFields = [
@@ -49,12 +51,6 @@ const getFormLocation = (state, action) => {
 
 function tree(state = initialState, action) {
   switch (action.type) {
-    case CLOSE_WELCOME_MODAL:
-      localStorage.setItem('tree.welcomeModal', 'closed');
-      return { ...state, welcomeModalOpen: false };
-    case OPEN_WELCOME_MODAL:
-      localStorage.setItem('tree.welcomeModal', 'opened');
-      return { ...state, welcomeModalOpen: true };
     case SET_FORM_LOCATION: {
       const formLocation = getFormLocation(state, action);
       const projectionMode = 'f';
@@ -65,10 +61,13 @@ function tree(state = initialState, action) {
     case SET_MAP_LOCATION: {
       const { formLocation, projectionMode } = initialState;
       const { mapLocation } = action;
-      return { ...state, formLocation, mapLocation, projectionMode };
+      const page = RECOMMENDATION_PAGE;
+      return { ...state, formLocation, mapLocation, page, projectionMode };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };
+    case SET_PAGE:
+      return { ...state, page: action.page };
     case SET_PROJECTION_MODE:
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {
@@ -78,6 +77,9 @@ function tree(state = initialState, action) {
     }
     case SET_RECOMMENDATION_MODE:
       return { ...state, recommendationMode: action.recommendationMode };
+    case SET_WELCOME_MODAL:
+      localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');
+      return { ...state, welcomeModalOpen: action.open };
     default:
       return state;
   }

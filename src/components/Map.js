@@ -10,6 +10,7 @@ import MapVectorStyle from './MapVectorStyle';
 import MapView from './MapView';
 
 import styles from './Map.module.css';
+import WelcomeModal from './WelcomeModal';
 
 const tileSource = new XYZSource({
   url:
@@ -25,6 +26,7 @@ function AppMap() {
       <Mapbox>
         <MapVectorStyle />
       </Mapbox>
+      <WelcomeModal />
     </Map>
   );
 }

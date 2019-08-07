@@ -1,3 +1,11 @@
+.button:global(.ui.button) {
+  color: white;
+  background-color: #ccc;
+}
+.button:global(.ui.button:hover) {
+  background-color: #ddd;
+}
+
 .button:global(.ui.active.button) {
   color: white;
   background-color: var(--primary-color);
