@@ -34,8 +34,15 @@
 }
 
 .item {
-  border-radius: 0;
+  border-radius: 0 !important;
+  background-color: #eee !important;
   color: var(--primary-color) !important;
+}
+.item:hover {
+  background-color: #f7f7f7 !important;
+}
+.item:global(.active.item) {
+  background-color: white !important;
 }
 
 .icon {
