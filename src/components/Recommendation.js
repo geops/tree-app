@@ -67,7 +67,7 @@ function Recommendation({ futureDisabled }) {
         </Button.Group>
 
         <Header inverted>{t('recommendation.header')}</Header>
-        <Grid stackable columns={3} className={styles.grids}>
+        <Grid stackable columns={3} className={styles.grid}>
           <Grid.Column>
             <Header inverted>
               <PositiveIcon fill="white" className={styles.icon} />
