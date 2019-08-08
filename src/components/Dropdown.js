@@ -18,4 +18,9 @@ Dropdown.defaultProps = {
   className: '',
 };
 
+Dropdown.Divider = SUIDropdown.Divider;
+Dropdown.Header = SUIDropdown.Header;
+Dropdown.Item = SUIDropdown.Item;
+Dropdown.Menu = SUIDropdown.Menu;
+
 export default Dropdown;

@@ -1,30 +1,69 @@
-import { useContext, useMemo } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useContext, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useDispatch, useSelector } from 'react-redux';
 
+import Dropdown from './Dropdown';
 import mapStyle from '../map/style';
 import { LayerContext } from '../spatial/components/layer/Base';
+import { setMapLayer } from '../store/actions';
+import styles from './MapVectorStyle.module.css';
 
-const getStyle = layerId => {
-  const { layers } = mapStyle;
-  const sl = (layers.find(l => l.id === layerId) || {})['source-layer'];
+const getSourcLayer = layerId =>
+  (mapStyle.layers.find(l => l.id === layerId) || {})['source-layer'];
+
+const getStyle = sourceLayer => {
   return {
     ...mapStyle,
-    layers: layers.map(l => ({
-      ...l,
+    layers: mapStyle.layers.map(layer => ({
+      ...layer,
       paint:
-        l.type === 'fill'
-          ? { ...l.paint, 'fill-opacity': l['source-layer'] === sl ? 0.5 : 0.0 }
-          : l.paint,
+        layer.type === 'fill'
+          ? {
+              ...layer.paint,
+              'fill-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
+            }
+          : layer.paint,
     })),
   };
 };
+const getLayersByGroup = group =>
+  mapStyle.layers.filter(l => l.metadata && l.metadata.group === group);
 
 function MapVectorStyle() {
-  const mapLayer = useSelector(state => state.mapLayer);
+  const { t } = useTranslation();
+  const dispatch = useDispatch();
   const layer = useContext(LayerContext);
-  const style = getStyle(mapLayer);
+  const mapLayer = useSelector(state => state.mapLayer);
+  const sourceLayer = getSourcLayer(mapLayer);
+  const style = getStyle(sourceLayer);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
-  return null;
+
+  const getDropdownItem = l => (
+    <Dropdown.Item
+      active={mapLayer === l.id}
+      key={l.id}
+      onClick={() => dispatch(setMapLayer(l.id))}
+    >
+      {t(`map.${l['source-layer']}`)}
+    </Dropdown.Item>
+  );
+
+  return (
+    <Dropdown
+      button
+      className={styles.dropdown}
+      direction="left"
+      pointing
+      text={t(`map.${sourceLayer}`)}
+    >
+      <Dropdown.Menu>
+        {getLayersByGroup('main').map(getDropdownItem)}
+        <Dropdown.Divider />
+        <Dropdown.Header>{t('map.altitudinalZones')}</Dropdown.Header>
+        {getLayersByGroup('altitudinalZones').map(getDropdownItem)}
+      </Dropdown.Menu>
+    </Dropdown>
+  );
 }
 
 export default MapVectorStyle;
