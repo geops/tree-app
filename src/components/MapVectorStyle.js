@@ -41,6 +41,7 @@ function MapVectorStyle() {
   const getDropdownItem = l => (
     <Dropdown.Item
       active={mapLayer === l.id}
+      className={styles.item}
       key={l.id}
       onClick={() => dispatch(setMapLayer(l.id))}
     >
@@ -59,7 +60,9 @@ function MapVectorStyle() {
       <Dropdown.Menu>
         {getLayersByGroup('main').map(getDropdownItem)}
         <Dropdown.Divider />
-        <Dropdown.Header>{t('map.altitudinalZones')}</Dropdown.Header>
+        <Dropdown.Header className={styles.header}>
+          {t('map.altitudinalZones')}
+        </Dropdown.Header>
         {getLayersByGroup('altitudinalZones').map(getDropdownItem)}
       </Dropdown.Menu>
     </Dropdown>
