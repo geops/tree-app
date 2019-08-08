@@ -39,7 +39,7 @@ function ProjectionForm() {
 
   // Note: remember to keep formLocationFields in reducers.js updated.
   return (
-    <Form className={styles.form}>
+    <Form className={projectionMode === 'm' ? styles.formMap : styles.form}>
       {projectionOptions.forestType && (
         <Form.Field>
           <label>{t('forestType.label')}</label>

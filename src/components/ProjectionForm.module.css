@@ -4,6 +4,12 @@
   top: 0;
 }
 
+.formMap:global(.ui.form) {
+  margin: 0 20px;
+  position: ralative;
+  top: 0;
+}
+
 .form label {
   color: var(--primary-color) !important;
 }
