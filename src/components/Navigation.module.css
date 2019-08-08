@@ -18,6 +18,7 @@ body {
   will-change: transform;
   overflow: hidden;
   position: fixed;
+  height: 100%;
 }
 
 .left,
