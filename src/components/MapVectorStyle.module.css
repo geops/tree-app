@@ -1,3 +1,7 @@
-.item {
-  color: var(--primary-color) !important;
+.dropdown:global(.ui.button.dropdown) {
+  position: absolute;
+  z-index: 9;
+  right: 20px;
+  top: 20px;
+  margin: 0;
 }
