@@ -1,11 +1,21 @@
 .row {
-  display: block;
+  display: flex;
+  min-height: fit-content;
   margin: 20px;
   height: 52px;
+  justify-content: space-between;
 }
 .group {
   float: right;
 }
 .icon {
   height: 2em;
+}
+
+.coordinateButtonActive {
+  background: #5c5c5c !important;
+}
+
+.coordinateButton {
+  background: grey;
 }
