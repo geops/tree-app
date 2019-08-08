@@ -1,7 +1,9 @@
 .row {
-  display: block;
+  display: flex;
+  min-height: fit-content;
   margin: 20px;
   height: 52px;
+  justify-content: space-between;
 }
 .group {
   float: right;
@@ -10,9 +12,6 @@
   height: 2em;
 }
 
-@media (max-width: 375px) {
-  .row {
-    display: flex;
-    min-height: fit-content;
-  }
+.coordinateButton {
+  color: #5c5c5c;
 }

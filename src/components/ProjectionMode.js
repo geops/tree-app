@@ -29,7 +29,7 @@ function ProjectionMode() {
     <div className={styles.row}>
       <Button
         disabled
-        color={projectionMode === 'm' ? 'black' : 'grey'}
+        color={projectionMode === 'f' ? `${styles.coordinateButton}` : 'grey'}
         icon={
           // Reset size because OpenLayers map icon requires height and width.
           <MapPosition height={null} width={null} className={styles.icon} />
