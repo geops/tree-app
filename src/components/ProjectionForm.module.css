@@ -6,7 +6,7 @@
 
 .formMap:global(.ui.form) {
   margin: 0 20px;
-  position: ralative;
+  position: relative;
   top: 0;
 }
 
