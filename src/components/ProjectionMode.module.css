@@ -12,6 +12,10 @@
   height: 2em;
 }
 
+.coordinateButtonActive {
+  background: #5c5c5c !important;
+}
+
 .coordinateButton {
-  color: #5c5c5c;
+  background: grey;
 }
