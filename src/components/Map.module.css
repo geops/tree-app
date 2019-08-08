@@ -6,6 +6,11 @@
   position: absolute;
 }
 
+.map :global(.ol-rotate) {
+  position: absolute;
+  top: 105px;
+}
+
 .map :global(.ol-control button) {
   display: flex;
   justify-content: center;
