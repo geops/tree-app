@@ -5,3 +5,14 @@
   top: 20px;
   margin: 0;
 }
+
+.header {
+  text-transform: none !important;
+  font-size: 1em !important;
+  font-weight: normal !important;
+  color: #999 !important;
+}
+
+.item {
+  color: var(--primary-color) !important;
+}
