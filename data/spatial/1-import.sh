@@ -41,3 +41,4 @@ _import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_f
 _import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/data.zip" "cantonal_boundaries" "SHAPEFILE_LV95_LN02" "swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET"
 
 _import "Please download Lucerne dataset manually to data/spatial/NAWALGES_V1_PY/" "NAWALGES_V1_PY"
+_import "Please download modified Lucerne dataset manually to data/spatial/NAWALGES_V1_PY_MOD/" "NAWALGES_V1_PY_MOD"
