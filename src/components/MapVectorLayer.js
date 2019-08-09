@@ -6,7 +6,7 @@ import Dropdown from './Dropdown';
 import mapStyle from '../map/style';
 import { LayerContext } from '../spatial/components/layer/Base';
 import { setMapLayer } from '../store/actions';
-import styles from './MapVectorStyle.module.css';
+import styles from './MapVectorLayer.module.css';
 
 const getSourcLayer = layerId =>
   (mapStyle.layers.find(l => l.id === layerId) || {})['source-layer'];
@@ -29,7 +29,7 @@ const getStyle = sourceLayer => {
 const getLayersByGroup = group =>
   mapStyle.layers.filter(l => l.metadata && l.metadata.group === group);
 
-function MapVectorStyle() {
+function MapVectorLayer() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const layer = useContext(LayerContext);
@@ -69,4 +69,4 @@ function MapVectorStyle() {
   );
 }
 
-export default MapVectorStyle;
+export default MapVectorLayer;

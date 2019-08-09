@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { layers } from '../map/style';
 import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
-import { MapboxLayer } from '../spatial/components/layer/Mapbox';
+import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
 import { setMapLocation } from '../store/actions';
 
@@ -54,7 +54,7 @@ function MapLocation() {
       const mapboxLayer = map
         .getLayers()
         .getArray()
-        .find(layer => layer instanceof MapboxLayer);
+        .find(layer => layer instanceof Mapbox.Layer);
       if (mapboxLayer && mapLocation && mapLocation.coordinate) {
         const { coordinate } = mapLocation;
         mapboxLayer.on('loadend', () => handleMapLocation({ coordinate }));
