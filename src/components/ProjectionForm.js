@@ -32,6 +32,10 @@ function ProjectionForm() {
       projectionOptions: state.projectionOptions,
     }),
   );
+
+  const getValue = field =>
+    projectionOptions[field].includes(location[field]) ? location[field] : '';
+
   const setLocation = (key, value) =>
     dispatch(setFormLocation({ [key]: value }));
 
@@ -58,7 +62,7 @@ function ProjectionForm() {
                 ? t('forestType.hint')
                 : t('dropdownPlaceholder')
             }
-            value={location.forestType || ''}
+            value={getValue('forestType')}
           />
           {projectionMode === 'm' &&
             location.coordinate &&
@@ -82,7 +86,7 @@ function ProjectionForm() {
               getDropdownOptions('forestEcoregion', i18n.language),
             )}
             onChange={(e, { value }) => setLocation('forestEcoregion', value)}
-            value={location.forestEcoregion}
+            value={getValue('forestEcoregion')}
           />
         </Form.Field>
       )}
@@ -101,7 +105,7 @@ function ProjectionForm() {
             onChange={(e, { value }) => {
               setLocation('altitudinalZone', value || undefined);
             }}
-            value={location.altitudinalZone}
+            value={getValue('altitudinalZone')}
           />
         </Form.Field>
       )}
@@ -112,7 +116,7 @@ function ProjectionForm() {
             getButtonOptions('slope', i18n.language),
           )}
           onChange={(e, { value }) => setLocation('slope', value)}
-          value={location.slope}
+          value={getValue('slope')}
         />
       )}
       {projectionOptions.additional &&
@@ -123,7 +127,7 @@ function ProjectionForm() {
               getButtonOptions('additional', i18n.language),
             )}
             onChange={(e, { value }) => setLocation('additional', value)}
-            value={location.additional}
+            value={getValue('additional')}
           />
         )}
       {projectionOptions.silverFirArea &&
@@ -134,7 +138,7 @@ function ProjectionForm() {
               getButtonOptions('silverFirArea', i18n.language),
             )}
             onChange={(e, { value }) => setLocation('silverFirArea', value)}
-            value={location.silverFirArea}
+            value={getValue('silverFirArea')}
           />
         )}
       {projectionOptions.relief && projectionOptions.relief.length > 1 && (
@@ -144,7 +148,7 @@ function ProjectionForm() {
             getButtonOptions('relief', i18n.language),
           )}
           onChange={(e, { value }) => setLocation('relief', value)}
-          value={location.relief}
+          value={getValue('relief')}
         />
       )}
       {projectionMode === 'f' &&
