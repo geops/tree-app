@@ -2,7 +2,7 @@
   "name": "@geops/tree-lib",
   "description": "Library for tree recommendations.",
   "license": "MIT",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "source": "src/index.js",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
