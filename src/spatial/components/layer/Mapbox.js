@@ -56,7 +56,7 @@ class MapboxRenderer {
   }
 }
 
-export class MapboxLayer extends Layer {
+class MapboxLayer extends Layer {
   constructor({ container, map, style, ...options }) {
     super({ ...options, source: new Source({}) });
 
@@ -94,6 +94,8 @@ function Mapbox({ children, style, ...props }) {
   );
   return layer ? <Base layer={layer}>{children}</Base> : null;
 }
+
+Mapbox.Layer = MapboxLayer;
 
 Mapbox.propTypes = {
   children: PropTypes.oneOfType([
