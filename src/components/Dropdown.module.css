@@ -1,9 +1,17 @@
+.dropdown:global(.ui.button.dropdown) {
+  color: white;
+  background-color: var(--primary-color);
+}
+.dropdown:global(.ui.button.dropdown):hover {
+  color: white;
+  background-color: var(--primary-light-color);
+}
+
 .dropdown:global(.ui.selection.dropdown) {
   color: var(--primary-color);
   border-color: var(--primary-color);
   border-width: 2px;
 }
-
 .dropdown:global(.ui.selection.dropdown:hover) {
   border-color: var(--primary-light-color);
 }
