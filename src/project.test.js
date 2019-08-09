@@ -178,4 +178,18 @@ describe('Test for output values', () => {
       ).options.targetAltitudinalZone,
     ).toMatchObject(['60', '50', '40', '30', '20', '10', '0']);
   });
+
+  test('undefined forest type when location is merged from mapLocation and formLocation', () => {
+    expect(
+      project(
+        {
+          forestType: '33V',
+          forestEcoregion: 'M',
+          altitudinalZone: '40',
+          silverFirArea: '1',
+        },
+        '40',
+      ).forestType,
+    ).toBe(undefined);
+  });
 });

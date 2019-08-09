@@ -36,7 +36,7 @@ const nextAltitudinalZone = current =>
   altitudeList[altitudeList.indexOf(current) + 1];
 
 function projectionReducer(location, targetAltitude) {
-  const newLocation = { ...location, options: location.options || {} };
+  const newLocation = { ...location };
   const options = location.options || {};
 
   let projection = projections;
@@ -48,15 +48,15 @@ function projectionReducer(location, targetAltitude) {
       new Set((options[field] || []).concat(Object.keys(projection))),
     ).sort((a, b) => a - b);
 
-    if (valueNotInOptions(value, options[field])) {
-      return { options };
-    }
-
     if (value && projection[value]) {
       projection = projection[value];
     } else if (projection.unknown && Object.keys(projection).length === 1) {
+      // Handle optional fields.
       projection = projection.unknown;
       newLocation[field] = 'unknown';
+    } else if (valueNotInOptions(value, options[field])) {
+      // Do not return location values if no projection was found.
+      return { options };
     } else {
       // Location does not provide any more values for conditions.
       break;
