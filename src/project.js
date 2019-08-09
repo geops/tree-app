@@ -27,6 +27,8 @@ const validate = (field, value, values) => {
     throw new Error(`${value} for ${field} is not valid.`);
   }
 };
+const valueNotInOptions = (value, fieldOptions) =>
+  value && fieldOptions && fieldOptions.find(v => v === value) === undefined;
 
 /* Provides the list of altitudinal Zones as target Altitudinal zones that are immediately 
 after the currently chosen altitudinal Zone. */
@@ -35,23 +37,25 @@ const nextAltitudinalZone = current =>
 
 function projectionReducer(location, targetAltitude) {
   const newLocation = { ...location, options: location.options || {} };
+  const options = location.options || {};
 
-  let forestType = projections;
+  let projection = projections;
   for (let i = 0; i < fields.length; i += 1) {
     const { field, value, values } = getField(fields[i], location);
-
     validate(field, value, values);
 
-    newLocation.options[field] = newLocation.options[field]
-      ? Array.from(
-          new Set(newLocation.options[field].concat(Object.keys(forestType))),
-        ).sort((a, b) => a - b)
-      : Object.keys(forestType);
+    options[field] = Array.from(
+      new Set((options[field] || []).concat(Object.keys(projection))),
+    ).sort((a, b) => a - b);
 
-    if (value && forestType[value]) {
-      forestType = forestType[value];
-    } else if (forestType.unknown && Object.keys(forestType).length === 1) {
-      forestType = forestType.unknown;
+    if (valueNotInOptions(value, options[field])) {
+      return { options };
+    }
+
+    if (value && projection[value]) {
+      projection = projection[value];
+    } else if (projection.unknown && Object.keys(projection).length === 1) {
+      projection = projection.unknown;
       newLocation[field] = 'unknown';
     } else {
       // Location does not provide any more values for conditions.
@@ -60,12 +64,13 @@ function projectionReducer(location, targetAltitude) {
   }
 
   if (targetAltitude !== location.altitudinalZone) {
-    if (typeof forestType === 'string') {
-      newLocation.forestType = forestType;
+    if (typeof projection === 'string') {
+      newLocation.forestType = projection;
     }
     newLocation.altitudinalZone = nextAltitudinalZone(location.altitudinalZone);
   }
 
+  newLocation.options = options;
   return newLocation;
 }
 
