@@ -7,19 +7,9 @@ import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
 import styles from './ProjectionResult.module.css';
 
-function checkField(fieldList, field) {
-  return fieldList.includes(field);
-}
-
 function ProjectionResult() {
   const dispatch = useDispatch();
-  const { location, projectionLocation, projectionOptions } = useSelector(
-    state => ({
-      location: state.location,
-      projectionLocation: state.projectionLocation,
-      projectionOptions: state.projectionOptions,
-    }),
-  );
+  const projectionLocation = useSelector(state => state.projectionLocation);
   const { t } = useTranslation();
 
   const panes = [
@@ -40,8 +30,7 @@ function ProjectionResult() {
     },
   ];
 
-  return projectionLocation.forestType &&
-    checkField(projectionOptions.forestEcoregion, location.forestEcoregion) ? (
+  return projectionLocation.forestType ? (
     <div className={styles.container}>
       <Tab
         className={styles.tab}
