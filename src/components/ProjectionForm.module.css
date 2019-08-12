@@ -4,7 +4,7 @@
   top: 0;
 }
 
-.formMap:global(.ui.form) {
+.formActive:global(.ui.form) {
   margin: 0 20px;
   position: relative;
   top: 0;

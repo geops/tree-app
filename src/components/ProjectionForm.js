@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
 import { translate } from '@geops/tree-lib';
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Label } from 'semantic-ui-react';
@@ -38,20 +38,29 @@ function ProjectionForm() {
     projectionMode: state.projectionMode,
     projectionOptions: state.projectionOptions,
   }));
+  const [fieldActive, setFieldActive] = useState('');
+  const activateField = field => setFieldActive(field);
+  const deactivateField = () => setFieldActive('');
 
   const getValue = field =>
     projectionOptions[field].includes(location[field]) ? location[field] : '';
 
   const isDifferent = field => mapLocation[field] !== projectionLocation[field];
 
-  const setLocation = (key, value) =>
+  const setLocation = (key, value) => {
+    setFieldActive('');
     dispatch(setFormLocation({ [key]: value }));
+  };
 
   const { t, i18n } = useTranslation();
 
   // Note: remember to keep formLocationFields in reducers.js updated.
   return (
-    <Form className={projectionMode === 'm' ? styles.formMap : styles.form}>
+    <Form
+      className={
+        projectionMode === 'm' || fieldActive ? styles.formActive : styles.form
+      }
+    >
       {projectionOptions.forestType && (
         <Form.Field>
           <label>{t('forestType.label')}</label>
@@ -61,7 +70,10 @@ function ProjectionForm() {
             options={projectionOptions.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
+            open={fieldActive === 'forestType'}
             onChange={(e, { value }) => setLocation('forestType', value)}
+            onBlur={deactivateField}
+            onFocus={() => activateField('forestType')}
             placeholder={
               projectionMode === 'm'
                 ? t('forestType.hint')
@@ -86,7 +98,10 @@ function ProjectionForm() {
             options={projectionOptions.forestEcoregion.map(
               getDropdownOptions('forestEcoregion', i18n.language),
             )}
+            open={fieldActive === 'forestEcoregion'}
             onChange={(e, { value }) => setLocation('forestEcoregion', value)}
+            onBlur={deactivateField}
+            onFocus={() => activateField('forestEcoregion')}
             value={getValue('forestEcoregion')}
           />
         </Form.Field>
@@ -99,9 +114,12 @@ function ProjectionForm() {
             options={projectionOptions.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
             )}
+            open={fieldActive === 'altitudinalZone'}
             onChange={(e, { value }) => {
               setLocation('altitudinalZone', value || undefined);
             }}
+            onBlur={deactivateField}
+            onFocus={() => activateField('altitudinalZone')}
             value={getValue('altitudinalZone')}
           />
         </Form.Field>
@@ -157,13 +175,15 @@ function ProjectionForm() {
             <label>{t('targetAltitudinalZone.label')}</label>
             <Dropdown
               clearable={isDifferent('targetAltitudinalZone')}
-              upward
               options={projectionOptions.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
+              open={fieldActive === 'targetAltitudinalZone'}
               onChange={(e, { value }) => {
                 setLocation('targetAltitudinalZone', value || undefined);
               }}
+              onBlur={deactivateField}
+              onFocus={() => activateField('targetAltitudinalZone')}
               value={
                 location.targetAltitudinalZone ||
                 projectionOptions.targetAltitudinalZone[0]
