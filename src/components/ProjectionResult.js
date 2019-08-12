@@ -1,14 +1,26 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Tab } from 'semantic-ui-react';
 
 import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
 import styles from './ProjectionResult.module.css';
 
+const requiredFieldsForProjection = [
+  'forestEcoregion',
+  'forestType',
+  'altitudinalZone',
+];
+
 function ProjectionResult() {
   const dispatch = useDispatch();
+  const { location } = useSelector(state => ({
+    projectionOptions: state.projectionOptions,
+    mapLocation: state.mapLocation,
+    location: state.location,
+    projectionMode: state.projectionMode,
+  }));
   const { t } = useTranslation();
 
   const panes = [
@@ -29,7 +41,11 @@ function ProjectionResult() {
     },
   ];
 
-  return (
+  const missingFields = requiredFieldsForProjection.filter(
+    field => location[field] === undefined,
+  );
+
+  return missingFields.length === 0 ? (
     <div className={styles.container}>
       <Tab
         className={styles.tab}
@@ -48,7 +64,7 @@ function ProjectionResult() {
         panes={panes}
       />
     </div>
-  );
+  ) : null;
 }
 
 export default ProjectionResult;
