@@ -1,13 +1,23 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Dropdown as SUIDropdown } from 'semantic-ui-react';
 
 import styles from './Dropdown.module.css';
 
 function Dropdown({ className, ...props }) {
+  const { t } = useTranslation();
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <SUIDropdown {...props} className={`${className} ${styles.dropdown}`} />
+    <SUIDropdown
+      fluid
+      search
+      selection
+      noResultsMessage={t('dropdown.noResultsMessage')}
+      placeholder={t('dropdown.placeholder')}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+      className={`${className} ${styles.dropdown}`}
+    />
   );
 }
 

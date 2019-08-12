@@ -51,6 +51,9 @@ function MapVectorLayer() {
 
   return (
     <Dropdown
+      fluid={false}
+      search={false}
+      selection={false}
       button
       className={styles.dropdown}
       direction="left"
