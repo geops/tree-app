@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Tab } from 'semantic-ui-react';
 
 import { setRecommendationMode } from '../store/actions';
@@ -9,7 +9,6 @@ import styles from './ProjectionResult.module.css';
 
 function ProjectionResult() {
   const dispatch = useDispatch();
-  const projectionLocation = useSelector(state => state.projectionLocation);
   const { t } = useTranslation();
 
   const panes = [
@@ -30,7 +29,7 @@ function ProjectionResult() {
     },
   ];
 
-  return projectionLocation.forestType ? (
+  return (
     <div className={styles.container}>
       <Tab
         className={styles.tab}
@@ -49,7 +48,7 @@ function ProjectionResult() {
         panes={panes}
       />
     </div>
-  ) : null;
+  );
 }
 
 export default ProjectionResult;

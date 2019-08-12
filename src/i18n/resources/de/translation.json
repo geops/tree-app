@@ -29,7 +29,8 @@
     "todayHeader": "Heute",
     "futureHeader": "Künftig",
     "todayMessage": "bereits heute mögliche Baumarten",
-    "futureMessage": "in Zukunft zusätzlich mögliche Baumarten"
+    "futureMessage": "in Zukunft zusätzlich mögliche Baumarten",
+    "noProjectionFound": "Keine Empfehlung möglich"
   },
   "recommendationMode": {
     "today": "Klima heute",
