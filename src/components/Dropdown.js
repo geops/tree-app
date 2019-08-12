@@ -6,6 +6,7 @@ import styles from './Dropdown.module.css';
 
 function Dropdown({ className, ...props }) {
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <SUIDropdown {...props} className={`${className} ${styles.dropdown}`} />
   );
 }
