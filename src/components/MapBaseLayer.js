@@ -8,7 +8,7 @@ import styles from './MapBaseLayer.module.css';
 const getUrl = baseLayer => {
   const layer =
     baseLayer === 'map'
-      ? 'ch.swisstopo.pixelkarte-farbe'
+      ? 'ch.swisstopo.pixelkarte-grau'
       : 'ch.swisstopo.swissimage';
   return `https://wmts10.geo.admin.ch/1.0.0/${layer}/default/current/3857/{z}/{x}/{y}.jpeg`;
 };
