@@ -1,60 +1,12 @@
-/* eslint-disable no-underscore-dangle */
 import mapboxgl from 'mapbox-gl';
 import Layer from 'ol/layer/Layer';
-import { toLonLat } from 'ol/proj';
 import Source from 'ol/source/Source';
 import PropTypes from 'prop-types';
 import React, { useContext, useMemo, useState } from 'react';
 
 import Base from './Base';
 import { MapContext } from '../Map';
-
-class MapboxRenderer {
-  constructor({ layer }) {
-    this.layer = layer;
-  }
-
-  prepareFrame() {
-    return typeof this.layer.mapboxMap === 'object';
-  }
-
-  renderFrame(frameState) {
-    const { mapboxMap } = this.layer;
-    const canvas = mapboxMap.getCanvas();
-    const { center, rotation, zoom } = frameState.viewState;
-    const visible = this.layer.getVisible();
-    canvas.style.display = visible ? 'block' : 'none';
-    const opacity = this.layer.getOpacity();
-    canvas.style.opacity = opacity;
-    // adjust view parameters in mapbox
-    if (rotation) {
-      mapboxMap.rotateTo((-rotation * 180) / Math.PI, {
-        animate: false,
-      });
-    }
-    mapboxMap.jumpTo({
-      center: toLonLat(center),
-      zoom: zoom - 1,
-      animate: false,
-    });
-    // cancel the scheduled update & trigger synchronous redraw
-    // see https://github.com/mapbox/mapbox-gl-js/issues/7893#issue-408992184
-    // NOTE: THIS MIGHT BREAK WHEN UPDATING MAPBOX
-    if (mapboxMap._frame) {
-      mapboxMap._frame.cancel();
-      mapboxMap._frame = null;
-    }
-    mapboxMap._render();
-    return canvas;
-  }
-
-  forEachFeatureAtCoordinate(coordinate, frameState, hitTolerance, callback) {
-    const pixel = this.layer.map.getPixelFromCoordinate(coordinate);
-    const features = this.layer.mapboxMap.queryRenderedFeatures(pixel) || [];
-    features.forEach(f => callback(f));
-    return features;
-  }
-}
+import MapboxRenderer from '../../renderer/Mapbox';
 
 class MapboxLayer extends Layer {
   constructor({ container, map, style, ...options }) {
@@ -80,6 +32,7 @@ class MapboxLayer extends Layer {
 
     this.map = map;
 
+    // eslint-disable-next-line no-underscore-dangle
     this.renderer_ = new MapboxRenderer({ layer: this });
   }
 }

@@ -5,6 +5,7 @@ import { Button as SUIButton } from 'semantic-ui-react';
 import styles from './Button.module.css';
 
 function Button({ className, ...props }) {
+  // eslint-disable-next-line react/jsx-props-no-spreading
   return <SUIButton {...props} className={`${className} ${styles.button}`} />;
 }
 

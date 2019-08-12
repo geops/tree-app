@@ -30,7 +30,7 @@ function ProjectionResult() {
     },
   ];
 
-  return projectionLocation.forestType && projectionLocation.altitudinalZone ? (
+  return projectionLocation.forestType ? (
     <div className={styles.container}>
       <Tab
         className={styles.tab}
