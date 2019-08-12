@@ -25,16 +25,24 @@ const getDropdownOptions = (type, language, includeKey = false) => key => ({
 
 function ProjectionForm() {
   const dispatch = useDispatch();
-  const { location, projectionMode, projectionOptions } = useSelector(
-    state => ({
-      location: state.location,
-      projectionMode: state.projectionMode,
-      projectionOptions: state.projectionOptions,
-    }),
-  );
+  const {
+    location,
+    mapLocation,
+    projectionLocation,
+    projectionMode,
+    projectionOptions,
+  } = useSelector(state => ({
+    location: state.location,
+    mapLocation: state.mapLocation,
+    projectionLocation: state.projectionLocation,
+    projectionMode: state.projectionMode,
+    projectionOptions: state.projectionOptions,
+  }));
 
   const getValue = field =>
     projectionOptions[field].includes(location[field]) ? location[field] : '';
+
+  const isDifferent = field => mapLocation[field] !== projectionLocation[field];
 
   const setLocation = (key, value) =>
     dispatch(setFormLocation({ [key]: value }));
@@ -52,7 +60,7 @@ function ProjectionForm() {
             search
             selection
             fluid
-            clearable={projectionMode === 'f'}
+            clearable={projectionMode === 'f' && isDifferent('forestType')}
             options={projectionOptions.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
@@ -60,7 +68,7 @@ function ProjectionForm() {
             placeholder={
               projectionMode === 'm'
                 ? t('forestType.hint')
-                : t('dropdownPlaceholder')
+                : t('dropdown.placeholder')
             }
             value={getValue('forestType')}
           />
@@ -77,10 +85,9 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('forestEcoregion.label')}</label>
           <Dropdown
-            placeholder={t('dropdownPlaceholder')}
             search
             selection
-            clearable
+            clearable={isDifferent('forestEcoregion')}
             fluid
             options={projectionOptions.forestEcoregion.map(
               getDropdownOptions('forestEcoregion', i18n.language),
@@ -94,10 +101,9 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('altitudinalZone.label')}</label>
           <Dropdown
-            placeholder={t('dropdownPlaceholder')}
             search
             selection
-            clearable
+            clearable={isDifferent('altitudinalZone')}
             fluid
             options={projectionOptions.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
@@ -159,10 +165,9 @@ function ProjectionForm() {
           <Form.Field>
             <label>{t('targetAltitudinalZone.label')}</label>
             <Dropdown
-              placeholder={t('dropdownPlaceholder')}
               search
               selection
-              clearable
+              clearable={isDifferent('targetAltitudinalZone')}
               upward
               fluid
               options={projectionOptions.targetAltitudinalZone.map(
