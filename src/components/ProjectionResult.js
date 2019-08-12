@@ -7,9 +7,15 @@ import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
 import styles from './ProjectionResult.module.css';
 
+const requiredFieldsForResult = [
+  'forestEcoregion',
+  'forestType',
+  'altitudinalZone',
+];
+
 function ProjectionResult() {
   const dispatch = useDispatch();
-  const projectionLocation = useSelector(state => state.projectionLocation);
+  const location = useSelector(state => state.location);
   const { t } = useTranslation();
 
   const panes = [
@@ -30,7 +36,11 @@ function ProjectionResult() {
     },
   ];
 
-  return projectionLocation.forestType ? (
+  const missingFields = requiredFieldsForResult.filter(
+    field => location[field] === undefined,
+  );
+
+  return missingFields.length === 0 ? (
     <div className={styles.container}>
       <Tab
         className={styles.tab}
