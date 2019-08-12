@@ -37,8 +37,10 @@
     "moderate": "mässiger Klimawandel",
     "extreme": "starker Klimawandel"
   },
-  "dropdownPlaceholder": "Bitte aus der Liste auswählen",
-  "projectedForestType": "projectionLocation.forestType",
+  "dropdown": {
+    "placeholder": "Bitte aus der Liste auswählen",
+    "noResultsMessage": "Kein Eintrag gefunden"
+  },
   "forestEcoregion": {
     "label": "Standortsregion"
   },
