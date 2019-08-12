@@ -7,7 +7,7 @@ import { setRecommendationMode } from '../store/actions';
 import Recommendation from './Recommendation';
 import styles from './ProjectionResult.module.css';
 
-const requiredFieldsForProjection = [
+const requiredFieldsForResult = [
   'forestEcoregion',
   'forestType',
   'altitudinalZone',
@@ -15,12 +15,7 @@ const requiredFieldsForProjection = [
 
 function ProjectionResult() {
   const dispatch = useDispatch();
-  const { location } = useSelector(state => ({
-    projectionOptions: state.projectionOptions,
-    mapLocation: state.mapLocation,
-    location: state.location,
-    projectionMode: state.projectionMode,
-  }));
+  const location = useSelector(state => state.location);
   const { t } = useTranslation();
 
   const panes = [
@@ -41,7 +36,7 @@ function ProjectionResult() {
     },
   ];
 
-  const missingFields = requiredFieldsForProjection.filter(
+  const missingFields = requiredFieldsForResult.filter(
     field => location[field] === undefined,
   );
 
