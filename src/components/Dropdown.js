@@ -9,6 +9,9 @@ function Dropdown({ className, ...props }) {
   const { t } = useTranslation();
   return (
     <SUIDropdown
+      fluid
+      search
+      selection
       noResultsMessage={t('dropdown.noResultsMessage')}
       placeholder={t('dropdown.placeholder')}
       // eslint-disable-next-line react/jsx-props-no-spreading

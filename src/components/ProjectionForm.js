@@ -57,9 +57,6 @@ function ProjectionForm() {
           <label>{t('forestType.label')}</label>
           <Dropdown
             className={styles.forestType}
-            search
-            selection
-            fluid
             clearable={projectionMode === 'f' && isDifferent('forestType')}
             options={projectionOptions.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
@@ -85,10 +82,7 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('forestEcoregion.label')}</label>
           <Dropdown
-            search
-            selection
             clearable={isDifferent('forestEcoregion')}
-            fluid
             options={projectionOptions.forestEcoregion.map(
               getDropdownOptions('forestEcoregion', i18n.language),
             )}
@@ -101,10 +95,7 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('altitudinalZone.label')}</label>
           <Dropdown
-            search
-            selection
             clearable={isDifferent('altitudinalZone')}
-            fluid
             options={projectionOptions.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
             )}
@@ -165,11 +156,8 @@ function ProjectionForm() {
           <Form.Field>
             <label>{t('targetAltitudinalZone.label')}</label>
             <Dropdown
-              search
-              selection
               clearable={isDifferent('targetAltitudinalZone')}
               upward
-              fluid
               options={projectionOptions.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
