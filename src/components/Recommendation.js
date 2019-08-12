@@ -49,7 +49,8 @@ function Recommendation({ futureDisabled }) {
           ? `${forestType} - ${forestTypeLabel}`
           : forestType || t('recommendation.noProjectionFound')}
       </Header>
-      {(projectionLocation.forestType || recommendationMode === 'today') && (
+      {(projectionLocation.forestType ||
+        (location.coordinate && recommendationMode === 'today')) && (
         <>
           <Button.Group>
             <Button
