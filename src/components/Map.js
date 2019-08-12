@@ -1,3 +1,5 @@
+import { defaults as controlDefaults } from 'ol/control';
+import { defaults as interactionDefaults } from 'ol/interaction';
 import XYZSource from 'ol/source/XYZ';
 import React from 'react';
 
@@ -12,11 +14,16 @@ import MapView from './MapView';
 import WelcomeModal from './WelcomeModal';
 import styles from './Map.module.css';
 
+const controls = controlDefaults({ rotate: false });
+const interactions = interactionDefaults({
+  altShiftDragRotate: false,
+  pinchRotate: false,
+});
 const tileSource = new XYZSource();
 
 function AppMap() {
   return (
-    <Map className={styles.map}>
+    <Map className={styles.map} controls={controls} interactions={interactions}>
       <MapView />
       <MapLocation />
       <TileLayer source={tileSource}>
