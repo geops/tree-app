@@ -90,7 +90,7 @@ describe('Test for output values', () => {
   test('result does not include null values', () => {
     expect(recommend('71', '45', false)).toStrictEqual({
       positive: [60500, 302800],
-      neutral: [402300],
+      neutral: [305800, 402300],
       negative: [305500],
       attention: [],
     });
@@ -103,5 +103,32 @@ describe('Test for output values', () => {
       negative: [],
       attention: [],
     });
+  });
+});
+
+test('both same forest type', () => {
+  expect(recommend('8a', '8a', false)).toStrictEqual({
+    positive: [165000],
+    neutral: [100, 800, 174200, 302800],
+    negative: [
+      700,
+      60400,
+      97200,
+      213300,
+      227200,
+      306100,
+      317500,
+      328400,
+      330600,
+      335900,
+      336100,
+      336200,
+      363700,
+      402300,
+      413600,
+      421400,
+      432800,
+    ],
+    attention: [],
   });
 });
