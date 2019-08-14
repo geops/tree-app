@@ -70,7 +70,6 @@ function ProjectionForm() {
             options={projectionOptions.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
-            open={fieldActive === 'forestType'}
             onChange={(e, { value }) => setLocation('forestType', value)}
             onBlur={deactivateField}
             onFocus={() => activateField('forestType')}
@@ -98,7 +97,6 @@ function ProjectionForm() {
             options={projectionOptions.forestEcoregion.map(
               getDropdownOptions('forestEcoregion', i18n.language),
             )}
-            open={fieldActive === 'forestEcoregion'}
             onChange={(e, { value }) => setLocation('forestEcoregion', value)}
             onBlur={deactivateField}
             onFocus={() => activateField('forestEcoregion')}
@@ -114,7 +112,6 @@ function ProjectionForm() {
             options={projectionOptions.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
             )}
-            open={fieldActive === 'altitudinalZone'}
             onChange={(e, { value }) => {
               setLocation('altitudinalZone', value || undefined);
             }}
@@ -175,10 +172,10 @@ function ProjectionForm() {
             <label>{t('targetAltitudinalZone.label')}</label>
             <Dropdown
               clearable={isDifferent('targetAltitudinalZone')}
+              upward
               options={projectionOptions.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
-              open={fieldActive === 'targetAltitudinalZone'}
               onChange={(e, { value }) => {
                 setLocation('targetAltitudinalZone', value || undefined);
               }}
