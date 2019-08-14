@@ -108,9 +108,8 @@ describe('Test for output values', () => {
 
 test('both same forest type', () => {
   expect(recommend('8a', '8a', false)).toStrictEqual({
-    positive: [165000],
-    neutral: [100, 800, 174200, 302800],
-    negative: [
+    positive: [165000, 100, 800, 174200, 302800],
+    neutral: [
       700,
       60400,
       97200,
@@ -129,6 +128,7 @@ test('both same forest type', () => {
       421400,
       432800,
     ],
+    negative: [],
     attention: [],
   });
 });

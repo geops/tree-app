@@ -53,48 +53,41 @@ function recommend(forestType1, forestType2, future) {
   const { one, two, three, four } = result;
 
   if (forestType2) {
-    if (forestType1 === forestType2) {
-      result = { ...result };
+    const {
+      one: futureOne,
+      two: futureTwo,
+      three: futureThree,
+      four: futureFour,
+    } = recommendTreeSpecies(forestType2);
+    if (future) {
+      result = {
+        one: arrayNotIntersected(
+          concatTreeSpecies(futureOne, futureTwo),
+          concatTreeSpecies(one, two, three),
+        ),
+        two: arrayNotIntersected(
+          futureThree,
+          concatTreeSpecies(one, two, three),
+        ),
+        three: [],
+        four: futureFour || [],
+      };
     } else {
-      const {
-        one: futureOne,
-        two: futureTwo,
-        three: futureThree,
-        four: futureFour,
-      } = recommendTreeSpecies(forestType2);
-      if (future) {
-        result = {
-          one: arrayNotIntersected(
-            concatTreeSpecies(futureOne, futureTwo),
-            concatTreeSpecies(one, two, three),
-          ),
-          two: arrayNotIntersected(
-            futureThree,
-            concatTreeSpecies(one, two, three),
-          ),
-          three: [],
-          four: futureFour || [],
-        };
-      } else {
-        result = {
-          one: arrayIntersected(
-            concatTreeSpecies(one, two, three),
-            concatTreeSpecies(futureOne, futureTwo),
-          ),
-          two: arrayIntersected(
-            concatTreeSpecies(one, two, three),
-            futureThree,
-          ),
-          three: arrayNotIntersected(
-            concatTreeSpecies(one, two, three),
-            concatTreeSpecies(futureOne, futureTwo, futureThree),
-          ),
-          four: four || [],
-        };
-      }
-      if (result.four && result.four.length > 0) {
-        result = filterFourFrom123(result);
-      }
+      result = {
+        one: arrayIntersected(
+          concatTreeSpecies(one, two, three),
+          concatTreeSpecies(futureOne, futureTwo),
+        ),
+        two: arrayIntersected(concatTreeSpecies(one, two, three), futureThree),
+        three: arrayNotIntersected(
+          concatTreeSpecies(one, two, three),
+          concatTreeSpecies(futureOne, futureTwo, futureThree),
+        ),
+        four: four || [],
+      };
+    }
+    if (result.four && result.four.length > 0) {
+      result = filterFourFrom123(result);
     }
   }
 
