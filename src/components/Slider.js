@@ -30,5 +30,4 @@ Slider.propTypes = {
 Slider.defaultProps = {
   onChange: () => {},
 };
-
 export default Slider;
