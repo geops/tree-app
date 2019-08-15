@@ -49,13 +49,32 @@ describe('Test if UI gets actived in form mode', () => {
     );
   });
 
-  it('checks the list of recommended tree species for all 4 categories', () => {
-    cy.get('.column .ui.inverted.header')
-      .contains('Fördern')
-      .get('.ui.list.Recommendation_list__2ut8U')
-      .find('item')
+  it('checks the length of categroies for recommended tree species', () => {
+    cy.get('.ui.stackable.Recommendation_grid__2wELJ')
+      .children()
       .should('have.length', 3);
   });
+
+  it('checks the valid recommended tree-species for each category', () => {
+    cy.get('.ui.stackable.Recommendation_grid__2wELJ')
+      .children()
+      .each($el => {
+        if ($el[0].children[0].textContent === 'Fördern') {
+          cy.get($el.children()[1]).contains('Fichte');
+          cy.get($el.children()[1]).contains('Bergahorn');
+          cy.get($el.children()[1]).contains('Vogelbeere');
+        } else if ($el[0].children[0].textContent === 'Mitnehmen') {
+          cy.get($el.children()[1]).contains('Hängebirke');
+          cy.get($el.children()[1]).contains('Lärche');
+          cy.get($el.children()[1]).contains('Salweide');
+        } else if ($el[0].children[0].textContent === 'Reduzieren') {
+          cy.get($el.children()[1]).contains('Alpenerle');
+          cy.get($el.children()[1]).contains('Moorbirke');
+        }
+      });
+  });
+
+  it('checks the futureDisabled ');
 });
 
 // describe('Test if the map mode is working', () => {
