@@ -66,6 +66,11 @@ function ProjectionForm() {
           <label>{t('forestType.label')}</label>
           <Dropdown
             className={styles.forestType}
+            disabled={
+              mapLocation.forestEcoregion &&
+              mapLocation.forestType &&
+              mapLocation.altitudinalZone
+            }
             clearable={projectionMode === 'f' && isDifferent('forestType')}
             options={projectionOptions.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
@@ -93,6 +98,11 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('forestEcoregion.label')}</label>
           <Dropdown
+            disabled={
+              mapLocation.forestEcoregion &&
+              mapLocation.forestType &&
+              mapLocation.altitudinalZone
+            }
             clearable={isDifferent('forestEcoregion')}
             options={projectionOptions.forestEcoregion.map(
               getDropdownOptions('forestEcoregion', i18n.language),
@@ -108,6 +118,11 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('altitudinalZone.label')}</label>
           <Dropdown
+            disabled={
+              mapLocation.forestEcoregion &&
+              mapLocation.forestType &&
+              mapLocation.altitudinalZone
+            }
             clearable={isDifferent('altitudinalZone')}
             options={projectionOptions.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
@@ -163,31 +178,6 @@ function ProjectionForm() {
           value={getValue('relief')}
         />
       )}
-      {projectionMode === 'f' &&
-        projectionOptions.altitudinalZone &&
-        projectionOptions.targetAltitudinalZone &&
-        projectionOptions.targetAltitudinalZone.length >= 1 &&
-        projectionOptions.altitudinalZone !== undefined && (
-          <Form.Field>
-            <label>{t('targetAltitudinalZone.label')}</label>
-            <Dropdown
-              clearable={isDifferent('targetAltitudinalZone')}
-              upward
-              options={projectionOptions.targetAltitudinalZone.map(
-                getDropdownOptions('altitudinalZone', i18n.language),
-              )}
-              onChange={(e, { value }) => {
-                setLocation('targetAltitudinalZone', value || undefined);
-              }}
-              onBlur={deactivateField}
-              onFocus={() => activateField('targetAltitudinalZone')}
-              value={
-                location.targetAltitudinalZone ||
-                projectionOptions.targetAltitudinalZone[0]
-              }
-            />
-          </Form.Field>
-        )}
     </Form>
   );
 }

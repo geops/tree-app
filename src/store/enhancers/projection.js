@@ -47,7 +47,7 @@ const projection = store => next => action => {
     const targetAltitudinalZone =
       projectionMode === 'm'
         ? getTargetAltitudinalZone(recommendationMode, mapLocation)
-        : formLocation.targetAltitudinalZone;
+        : getTargetAltitudinalZone(recommendationMode, mapLocation);
     try {
       const projectionResult = project(location, targetAltitudinalZone);
       store.dispatch(setProjectionResult(projectionResult, location));
