@@ -1,5 +1,3 @@
-import { isContext } from 'vm';
-
 describe('visit and start', () => {
   it('visits the app in localhost', () => {
     cy.visit('http://localhost:3000/');
@@ -194,7 +192,7 @@ describe('Test if the map mode is working', () => {
         .contains('Karte');
     });
 
-    it('checks if all the layers renders correctly', () => {
+    it('checks if all the vector layers render correctly', () => {
       cy.get(
         '.ui.button.MapVectorLayer_dropdown__2lAu5.Dropdown_dropdown__3SDyp',
       ).click();
@@ -202,7 +200,7 @@ describe('Test if the map mode is working', () => {
       cy.get('.menu.transition.left.visible')
         .children()
         .each($el => {
-          cy.wait(1500);
+          cy.wait(1000);
           cy.get($el).click({ force: true });
         });
     });
@@ -212,11 +210,18 @@ describe('Test if the map mode is working', () => {
     'checks the rendering of the projection result if forest type is clicked',
     () => {
       it('clicks on map', () => {
+        // cy.wait(8000);
         cy.get('.ol-layer')
           .eq(0)
-          .trigger('pointerdown', 130, 420, { force: true })
-          .trigger('pointerup', 130, 420, { force: true });
+          .trigger('pointerdown', 200, 420, { force: true })
+          .trigger('pointerup', 200, 420, { force: true });
+        cy.get('.text').contains('46* - Heidelbeer-Ta-Fi-Wald mit Torfmoos');
+        // cy.get('.ui.inverted.header').contains(
+        //   '7* - Waldmeister-Bu-Wald mit Rippenfarn',
+        // );
       });
     },
   );
 });
+
+/* coordinate for trigger is quite dynamic, sometimes work and sometimes not */
