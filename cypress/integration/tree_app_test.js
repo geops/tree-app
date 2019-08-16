@@ -5,7 +5,7 @@ describe('visit and start', () => {
     cy.visit('http://localhost:3000/');
   });
 
-  it('starts the app', () => {
+  it('checks the rendering of the welcome screen', () => {
     cy.get('.actions > .ui').click();
   });
 });
@@ -165,3 +165,58 @@ context('Klima heute scenario', () => {
 });
 
 /* massiger for form mode not checked as starker and massiger will be merged in future version */
+describe('Test if the map mode is working', () => {
+  context('checks the map rendering', () => {
+    it('visits the app', () => {
+      cy.visit('http://localhost:3000/');
+    });
+
+    it('checks the rendering of the welcome screen', () => {
+      cy.get('.actions > .ui').click();
+    });
+
+    it('checks the map control component', () => {
+      cy.get('.ol-zoom-in')
+        .click()
+        .click()
+        .click();
+      cy.get('.ol-zoom-out')
+        .click()
+        .click()
+        .click();
+    });
+
+    it('checks if basemap renders correctly', () => {
+      cy.get('.ui.MapBaseLayer_button__1K5SC.Button_button__2Ce79')
+        .click()
+        .contains('Luftbild')
+        .click()
+        .contains('Karte');
+    });
+
+    it('checks if all the layers renders correctly', () => {
+      cy.get(
+        '.ui.button.MapVectorLayer_dropdown__2lAu5.Dropdown_dropdown__3SDyp',
+      ).click();
+      cy.wait(1500);
+      cy.get('.menu.transition.left.visible')
+        .children()
+        .each($el => {
+          cy.wait(1500);
+          cy.get($el).click({ force: true });
+        });
+    });
+  });
+
+  context(
+    'checks the rendering of the projection result if forest type is clicked',
+    () => {
+      it('clicks on map', () => {
+        cy.get('.ol-layer')
+          .eq(0)
+          .trigger('pointerdown', 130, 420, { force: true })
+          .trigger('pointerup', 130, 420, { force: true });
+      });
+    },
+  );
+});
