@@ -55,7 +55,22 @@ describe('Test if UI gets actived in form mode', () => {
       .should('have.length', 3);
   });
 
-  it('checks the valid recommended tree-species for each category', () => {
+  it('checks if the tab correctly toggles', () => {
+    cy.get('.ui.borderless.menu')
+      .contains('mässiger Klimawandel')
+      .click()
+      .prev()
+      .click()
+      .next()
+      .next()
+      .click();
+  });
+
+  it('checks if the today button is active by default', () => {
+    cy.get('.ui.active.button').contains('Heute');
+  });
+
+  it('checks if recommended tree species for today scenario is valid ', () => {
     cy.get('.ui.stackable.Recommendation_grid__2wELJ')
       .children()
       .each($el => {
@@ -74,7 +89,33 @@ describe('Test if UI gets actived in form mode', () => {
       });
   });
 
-  it('checks the futureDisabled ');
+  it('checks if button correctly toggles to future scenario', () => {
+    cy.get('.ui.button.Recommendation_button__1ecZM')
+      .contains('Künftig')
+      .click();
+    cy.get('.ui.button.Recommendation_button__1ecZM')
+      .not('.active')
+      .contains('Heute');
+  });
+
+  it('checks if recommended tree species for future scenario is valid ', () => {
+    cy.get('.ui.stackable.Recommendation_grid__2wELJ')
+      .children()
+      .each($el => {
+        if ($el[0].children[0].textContent === 'Fördern') {
+          cy.get($el.children()[1]).contains('Tanne');
+        } else if ($el[0].children[0].textContent === 'Mitnehmen') {
+          cy.get($el.children()[1]).contains('Grauerle');
+          cy.get($el.children()[1]).contains('Gemeine Esche');
+          cy.get($el.children()[1]).contains('Zitterpappel');
+          cy.get($el.children()[1]).contains('Mehlbeere');
+        } else if ($el[0].children[0].textContent === 'Reduzieren') {
+          cy.get($el.children()[1]).should('not.have.descendants', '.item');
+        }
+      });
+  });
+
+  /* massiger for form mode not checked as starker and massiger will be merged in future version */
 });
 
 // describe('Test if the map mode is working', () => {
