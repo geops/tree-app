@@ -3,3 +3,8 @@ node_modules
 npm-debug.log
 .DS_Store
 cypress/integration/examples
+cypress/integration/fixtures
+cypress/integration/plugins
+cypress/integration/support
+
+

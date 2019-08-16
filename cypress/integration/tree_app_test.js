@@ -165,24 +165,3 @@ context('Klima heute scenario', () => {
 });
 
 /* massiger for form mode not checked as starker and massiger will be merged in future version */
-
-// describe('Test if the map mode is working', () => {
-//   it('visits the app', () => {
-//     cy.visit('http://localhost:3000/');
-//   });
-
-//   it('zoom the map and click on Standorttyp', () => {
-//     cy.get('.ol-zoom-in')
-//       .click()
-//       .click()
-//       .click();
-//     // cy.get('.ol-overlaycontainer-stopevent').click()
-//   });
-
-//   it('checks if all layers are rendering', () => {
-//     cy.get('.vertical.menu').each(($el, index, $list) => {
-//       // $el is a wrapped jQuery element
-//       console.log($el.children.item);
-//     });
-//   });
-// });
