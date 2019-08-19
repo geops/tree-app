@@ -44,28 +44,22 @@ function ProjectionResult() {
       recommendationMode: 'extreme',
       render: () => <Recommendation />,
     },
+    {
+      menuItem: projectionMode === 'f' && t('recommendationMode.manual'),
+      recommendationMode: /(extreme|moderate)/.test(lastRecommendationMode)
+        ? lastRecommendationMode
+        : 'extreme',
+      render: () => <Recommendation />,
+    },
   ];
 
   const missingFields = requiredFieldsForResult.filter(
     field => location[field] === undefined,
   );
 
-  if (projectionMode === 'f') {
-    panes.push({
-      menuItem: t('recommendationMode.manual'),
-      recommendationMode: /(extreme|moderate)/.test(lastRecommendationMode)
-        ? lastRecommendationMode
-        : 'extreme',
-      render: () => <Recommendation />,
-    });
-  }
-
-  let idx = panes.findIndex(
+  const idx = panes.findIndex(
     p => p.menuItem && p.recommendationMode === previousRecommendationMode,
   );
-  if (idx === -1) {
-    idx = 2;
-  }
 
   return missingFields.length === 0 ? (
     <div className={styles.container}>
