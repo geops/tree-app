@@ -34,6 +34,7 @@ const formLocationFields = [
   'relief',
   'targetAltitudinalZone',
 ];
+
 const getFormLocation = (state, action) => {
   const formLocation = { ...state.formLocation, ...action.formLocation };
   let reset = false;
@@ -69,7 +70,12 @@ function tree(state = initialState, action) {
     case SET_PAGE:
       return { ...state, page: action.page };
     case SET_PROJECTION_MODE:
-      return { ...state, projectionMode: action.projectionMode };
+      return {
+        ...state,
+        projectionMode: action.projectionMode,
+        lastRecommendationMode:
+          action.projectionMode === 'f' ? state.recommendationMode : undefined,
+      };
     case SET_PROJECTION_RESULT: {
       const { location, projectionResult: result } = action;
       const { options: projectionOptions, ...projectionLocation } = result;

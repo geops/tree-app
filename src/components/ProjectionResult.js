@@ -15,7 +15,17 @@ const requiredFieldsForResult = [
 
 function ProjectionResult() {
   const dispatch = useDispatch();
-  const location = useSelector(state => state.location);
+  const {
+    location,
+    projectionMode,
+    previousRecommendationMode,
+    lastRecommendationMode,
+  } = useSelector(state => ({
+    location: state.location,
+    projectionMode: state.projectionMode,
+    previousRecommendationMode: state.recommendationMode,
+    lastRecommendationMode: state.lastRecommendationMode,
+  }));
   const { t } = useTranslation();
 
   const panes = [
@@ -25,12 +35,12 @@ function ProjectionResult() {
       render: () => <Recommendation futureDisabled />,
     },
     {
-      menuItem: t('recommendationMode.moderate'),
+      menuItem: projectionMode === 'm' && t('recommendationMode.moderate'),
       recommendationMode: 'moderate',
       render: () => <Recommendation />,
     },
     {
-      menuItem: t('recommendationMode.extreme'),
+      menuItem: projectionMode === 'm' && t('recommendationMode.extreme'),
       recommendationMode: 'extreme',
       render: () => <Recommendation />,
     },
@@ -40,11 +50,27 @@ function ProjectionResult() {
     field => location[field] === undefined,
   );
 
+  if (projectionMode === 'f') {
+    panes.push({
+      menuItem: t('recommendationMode.manual'),
+      recommendationMode: /(extreme|moderate)/.test(lastRecommendationMode)
+        ? lastRecommendationMode
+        : 'extreme',
+      render: () => <Recommendation />,
+    });
+  }
+
+  let idx = panes.findIndex(
+    p => p.menuItem && p.recommendationMode === previousRecommendationMode,
+  );
+  if (idx === -1) {
+    idx = 2;
+  }
+
   return missingFields.length === 0 ? (
     <div className={styles.container}>
       <Tab
         className={styles.tab}
-        defaultActiveIndex={2}
         menu={{
           borderless: true,
           inverted: true,
@@ -52,6 +78,7 @@ function ProjectionResult() {
           secondary: true,
           widths: '3',
         }}
+        activeIndex={idx}
         onTabChange={(e, data) => {
           const { recommendationMode } = data.panes[data.activeIndex];
           dispatch(setRecommendationMode(recommendationMode));
