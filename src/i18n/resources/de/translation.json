@@ -35,7 +35,8 @@
   "recommendationMode": {
     "today": "Klima heute",
     "moderate": "mässiger Klimawandel",
-    "extreme": "starker Klimawandel"
+    "extreme": "starker Klimawandel",
+    "manual": "maneller Klimawandel"
   },
   "dropdown": {
     "placeholder": "Bitte aus der Liste auswählen",

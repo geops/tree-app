@@ -48,12 +48,16 @@ function ProjectionMode() {
         <Button
           active={projectionMode === 'm'}
           content={<MapIcon fill="white" className={styles.icon} />}
-          onClick={() => dispatch(setProjectionMode('m'))}
+          onClick={() => {
+            dispatch(setProjectionMode('m'));
+          }}
         />
         <Button
           active={projectionMode === 'f'}
           content={<ManualIcon fill="white" className={styles.icon} />}
-          onClick={() => dispatch(setProjectionMode('f'))}
+          onClick={() => {
+            dispatch(setProjectionMode('f'));
+          }}
         />
       </Button.Group>
     </div>

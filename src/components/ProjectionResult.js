@@ -15,7 +15,17 @@ const requiredFieldsForResult = [
 
 function ProjectionResult() {
   const dispatch = useDispatch();
-  const location = useSelector(state => state.location);
+  const {
+    location,
+    projectionMode,
+    previousRecommendationMode,
+    lastRecommendationMode,
+  } = useSelector(state => ({
+    location: state.location,
+    projectionMode: state.projectionMode,
+    previousRecommendationMode: state.recommendationMode,
+    lastRecommendationMode: state.lastRecommendationMode,
+  }));
   const { t } = useTranslation();
 
   const panes = [
@@ -25,13 +35,20 @@ function ProjectionResult() {
       render: () => <Recommendation futureDisabled />,
     },
     {
-      menuItem: t('recommendationMode.moderate'),
+      menuItem: projectionMode === 'm' && t('recommendationMode.moderate'),
       recommendationMode: 'moderate',
       render: () => <Recommendation />,
     },
     {
-      menuItem: t('recommendationMode.extreme'),
+      menuItem: projectionMode === 'm' && t('recommendationMode.extreme'),
       recommendationMode: 'extreme',
+      render: () => <Recommendation />,
+    },
+    {
+      menuItem: projectionMode === 'f' && t('recommendationMode.manual'),
+      recommendationMode: /(extreme|moderate)/.test(lastRecommendationMode)
+        ? lastRecommendationMode
+        : 'extreme',
       render: () => <Recommendation />,
     },
   ];
@@ -40,11 +57,14 @@ function ProjectionResult() {
     field => location[field] === undefined,
   );
 
+  const idx = panes.findIndex(
+    p => p.menuItem && p.recommendationMode === previousRecommendationMode,
+  );
+
   return missingFields.length === 0 ? (
     <div className={styles.container}>
       <Tab
         className={styles.tab}
-        defaultActiveIndex={2}
         menu={{
           borderless: true,
           inverted: true,
@@ -52,6 +72,7 @@ function ProjectionResult() {
           secondary: true,
           widths: '3',
         }}
+        activeIndex={idx}
         onTabChange={(e, data) => {
           const { recommendationMode } = data.panes[data.activeIndex];
           dispatch(setRecommendationMode(recommendationMode));
