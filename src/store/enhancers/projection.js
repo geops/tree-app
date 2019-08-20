@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import { project } from '@geops/tree-lib';
 import { applyMiddleware } from 'redux';
+import qs from 'query-string';
 
 import {
   SET_PROJECTION_MODE,
@@ -17,6 +18,8 @@ const projectionActionTypes = [
   SET_RECOMMENDATION_MODE,
 ];
 
+const parsed = qs.parse(window.location.search);
+
 function getTargetAltitudinalZone(recommendationMode, location) {
   switch (recommendationMode) {
     case 'today':
@@ -28,6 +31,19 @@ function getTargetAltitudinalZone(recommendationMode, location) {
     default:
       return location.altitudinalZone;
   }
+}
+
+function basedOnManual(formLocation, recommendationMode, mapLocation) {
+  let targetAltitudinalZone;
+  if (parsed.manual) {
+    targetAltitudinalZone = formLocation.targetAltitudinalZone;
+  } else {
+    targetAltitudinalZone = getTargetAltitudinalZone(
+      recommendationMode,
+      mapLocation,
+    );
+  }
+  return targetAltitudinalZone;
 }
 
 const projection = store => next => action => {
@@ -47,7 +63,8 @@ const projection = store => next => action => {
     const targetAltitudinalZone =
       projectionMode === 'm'
         ? getTargetAltitudinalZone(recommendationMode, mapLocation)
-        : formLocation.targetAltitudinalZone;
+        : basedOnManual(formLocation, recommendationMode, mapLocation);
+    console.log('target alti ', targetAltitudinalZone);
     try {
       const projectionResult = project(location, targetAltitudinalZone);
       store.dispatch(setProjectionResult(projectionResult, location));
