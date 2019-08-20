@@ -169,6 +169,32 @@ function ProjectionForm() {
           value={getValue('relief')}
         />
       )}
+      {projectionMode === 'f' &&
+        projectionOptions.altitudinalZone &&
+        projectionOptions.targetAltitudinalZone &&
+        projectionOptions.targetAltitudinalZone.length >= 1 &&
+        projectionOptions.altitudinalZone !== undefined && (
+          <Form.Field>
+            <label>{t('targetAltitudinalZone.label')}</label>
+            <Dropdown
+              disabled={!parsed.manual}
+              clearable={isDifferent('targetAltitudinalZone')}
+              upward
+              options={projectionOptions.targetAltitudinalZone.map(
+                getDropdownOptions('altitudinalZone', i18n.language),
+              )}
+              onChange={(e, { value }) => {
+                setLocation('targetAltitudinalZone', value || undefined);
+              }}
+              onBlur={deactivateField}
+              onFocus={() => activateField('targetAltitudinalZone')}
+              value={
+                location.targetAltitudinalZone ||
+                projectionOptions.targetAltitudinalZone[0]
+              }
+            />
+          </Form.Field>
+        )}
     </Form>
   );
 }
