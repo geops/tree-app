@@ -1,6 +1,6 @@
 describe('visit and start', () => {
   it('visits the app in localhost', () => {
-    cy.visit('http://localhost:3000/');
+    cy.visit('/');
   });
 
   it('checks the rendering of the welcome screen', () => {
@@ -8,7 +8,7 @@ describe('visit and start', () => {
   });
 });
 
-describe('Test form mode', () => {
+describe('Test form mode by clicking and selecting from the dropdown', () => {
   it('selects the form mode', () => {
     cy.get('.ui.buttons').click('right');
   });
@@ -162,11 +162,44 @@ context('Klima heute scenario', () => {
   });
 });
 
-/* massiger for form mode not checked as starker and massiger will be merged in future version */
+describe('Test form mode by typing in the input field', () => {
+  it('visits the app in localhost', () => {
+    cy.visit('/');
+  });
+
+  it('checks the rendering of the welcome screen', () => {
+    cy.get('.actions > .ui').click();
+  });
+
+  it('checks for valid forestType by typing in Standorttyp field', () => {
+    const forestType = '60';
+    cy.get('.field')
+      .click()
+      .find('input')
+      .type(forestType)
+      .type('{enter}');
+    cy.get('.text').contains('60 - Typischer Hochstauden-Fichtenwald');
+  });
+
+  it('checks for invalid forestType by typing in Standorttyp field', () => {
+    const forestType = '1001';
+    cy.get('.field')
+      .contains('label', 'Standortsregion')
+      .click()
+      .next()
+      .click()
+      .find('input')
+      .type(forestType)
+      .type('{enter}');
+    cy.get('.message').contains('Kein Eintrag gefunden');
+  });
+});
+
+// /* massiger for form mode not checked as starker and massiger will be merged in future version */
 describe('Test if the map mode is working', () => {
   context('checks the map rendering', () => {
     it('visits the app', () => {
-      cy.visit('http://localhost:3000/');
+      cy.visit('/');
     });
 
     it('checks the rendering of the welcome screen', () => {
