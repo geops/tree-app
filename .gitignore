@@ -6,5 +6,8 @@ cypress/integration/examples
 cypress/integration/fixtures
 cypress/integration/plugins
 cypress/integration/support
+cypress/support
+cypress/plugins
+cypress/fixtures
 
 
