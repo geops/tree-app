@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Grid, Header, List, Tab, Button } from 'semantic-ui-react';
+import { Grid, Header, Tab, Button } from 'semantic-ui-react';
 
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 import styles from './Recommendation.module.css';
+import RecommendationTreeList from './RecommendationTreeList';
 
 function Recommendation({ futureDisabled }) {
   const { t, i18n } = useTranslation();
@@ -80,50 +81,38 @@ function Recommendation({ futureDisabled }) {
                 {t('recommendation.positive')}
               </Header>
 
-              <List className={styles.list}>
-                {recommendations.positive.map(r => (
-                  <List.Item key={r}>
-                    {translate('treeType', r, i18n.language)}
-                  </List.Item>
-                ))}
-              </List>
+              <RecommendationTreeList
+                className={styles.list}
+                recommendationTreeList={recommendations.positive}
+              />
             </Grid.Column>
             <Grid.Column>
               <Header inverted>
                 <NeutralIcon fill="white" className={styles.icon} />
                 {t('recommendation.neutral')}
               </Header>
-              <List className={styles.list}>
-                {recommendations.neutral.map(r => (
-                  <List.Item key={r}>
-                    {translate('treeType', r, i18n.language)}
-                  </List.Item>
-                ))}
-              </List>
+              <RecommendationTreeList
+                className={styles.list}
+                recommendationTreeList={recommendations.neutral}
+              />
             </Grid.Column>
             <Grid.Column>
               <Header inverted>
                 <NegativeIcon fill="white" className={styles.icon} />
                 {t('recommendation.negative')}
               </Header>
-              <List className={styles.list}>
-                {recommendations.negative.map(r => (
-                  <List.Item key={r}>
-                    {translate('treeType', r, i18n.language)}
-                  </List.Item>
-                ))}
-              </List>
+              <RecommendationTreeList
+                className={styles.list}
+                recommendationTreeList={recommendations.negative}
+              />
             </Grid.Column>
             {recommendations.attention && recommendations.attention.length > 0 && (
               <Grid.Column>
                 <Header inverted>{t('recommendation.attention')}</Header>
-                <List>
-                  {recommendations.attention.map(r => (
-                    <List.Item key={r}>
-                      {translate('treeType', r, i18n.language)}
-                    </List.Item>
-                  ))}
-                </List>
+                <RecommendationTreeList
+                  className={styles.list}
+                  recommendationTreeList={recommendations.attention}
+                />
               </Grid.Column>
             )}
           </Grid>

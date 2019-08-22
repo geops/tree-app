@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console, import/no-unresolved */
 import { project } from '@geops/tree-lib';
 import { applyMiddleware } from 'redux';
 import qs from 'query-string';
