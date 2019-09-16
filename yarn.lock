@@ -5009,10 +5009,10 @@ husky@^3.0.3:
     run-node "^1.0.0"
     slash "^3.0.0"
 
-i18next@^17.0.11:
-  version "17.0.11"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-17.0.11.tgz#36424dc01f6de391fae87878d24f5ff713565c27"
-  integrity sha512-O+yzoNi0usYcd4oi85EFY4WuwZ8NNsYJLauZ629YSjwgIi2D7eYDSQxy6aAR67V++b//GNuZEk7hx/i3L9Rxag==
+i18next@^17.0.15:
+  version "17.0.15"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-17.0.15.tgz#a4a378910fa06ca1c34f9e481ff6642acdb16dba"
+  integrity sha512-d+DLqZY1G15jDhSLRtsCVd/+KAWKmcmX1bp/5RjamIhftEFDvSXVgWXXkzsBFIl41VHhBV1y5JORukgz1s3GCQ==
   dependencies:
     "@babel/runtime" "^7.3.1"
 
