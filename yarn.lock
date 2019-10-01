@@ -1589,6 +1589,11 @@
     lodash.unescape "4.0.1"
     semver "^6.3.0"
 
+"@ungap/url-search-params@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ungap/url-search-params/-/url-search-params-0.1.2.tgz#8ba8c0527543fe675d1c29ae0a2daca842e8ee4f"
+  integrity sha512-WVk5+lJ+AoNLh2sIDMhnEAgLsVQuI067hWLJCzirErH1GYiy1gs09q4+XZxYWSvdAsslKsaO4q1iXXMx2c72dA==
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -9251,13 +9256,13 @@ redeyed@~0.4.0:
   dependencies:
     esprima "~1.0.4"
 
-redux-query-sync@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/redux-query-sync/-/redux-query-sync-0.1.8.tgz#3e4683776732a0ed1440dca9c02da4b4b281ea8f"
-  integrity sha512-4+/3MToEuwiqpAVE7WIP20B4h+8+gQsr8ZR8ciHYSoiqPKQRW+iUeoQNSQMNDWdA0pNdAcdeFofcKAMksBXOTg==
+redux-query-sync@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/redux-query-sync/-/redux-query-sync-0.1.9.tgz#a680d77e462fc13f0e9942fd0450172f88438614"
+  integrity sha512-vmoIB4QLC4Jpj1IelovFB0yxrakKU06oMghacS75bBfywxb/Pe3jT05jHbSs/rZV70XKu/rc4/gzqIEeWkthRw==
   dependencies:
+    "@ungap/url-search-params" "^0.1.2"
     history "^4.8.0"
-    url-search-params "0.10.0"
 
 redux@^4.0.4:
   version "4.0.4"
@@ -10846,11 +10851,6 @@ url-parse@^1.4.3:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
-
-url-search-params@0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/url-search-params/-/url-search-params-0.10.0.tgz#d428c1fa9d78d5c5a3feb634147873890f4adcf0"
-  integrity sha512-oFPzmbPAbdthStgffGq8alULe47skPDt1X3KW6NOQnKkcLHP4IS1NfdfHG/CBP5lGsr2gDzNp87pfWLx/eIxjw==
 
 url@^0.11.0:
   version "0.11.0"
