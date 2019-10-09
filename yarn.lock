@@ -6268,9 +6268,9 @@ netlify-cli-logo@^1.0.0:
     chalk "^2.4.2"
 
 netlify-cli@^2.12.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.16.0.tgz#19adacc5cc518834dbf20ded2377c24df5c5e771"
-  integrity sha512-E1BjpJTkXTGAe0W08Vie/EPEzDT7qlCtU8D6Cn7odbclsUiiw/hNjzgGjVoM+q1k9fD0gz2B9EQeci63okkPdg==
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.17.0.tgz#8808d93ff1b4532a9b027a7778b0a5598d342637"
+  integrity sha512-GbwdjYuLlhKdnlnMr7DBg5RpyBRbNdOSdUxgS9KnV55iMGgALn/2u2xskeDnxH/MLZ5FDv+zhJ2PNeHyfb0vPA==
   dependencies:
     "@iarna/toml" "^2.2.3"
     "@netlify/zip-it-and-ship-it" "^0.3.1"
