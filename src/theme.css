@@ -1,4 +1,13 @@
 :root {
   --primary-color: #006268;
   --primary-light-color: #49959b;
+  --primary-color-100: #00a2a9;
+  --primary-color-200: #009096;
+  --primary-color-300: #007d83;
+  --primary-color-400: #007076;
+  --primary-color-500: #006268;
+  --primary-color-600: #00565b;
+  --primary-color-700: #004a4d;
+  --primary-color-800: #003a3d;
+  --primary-color-900: #002a2c;
 }

@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@geops/tree-lib": "^0.7.9",
+    "@geops/tree-lib": "^0.8.1",
     "i18next": "^18.0.1",
     "mapbox-gl": "^1.5.0",
     "ol": "^6.0.1",
@@ -31,7 +31,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.1.2",
+    "eslint-plugin-react-hooks": "^2.2.0",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",

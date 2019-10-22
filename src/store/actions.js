@@ -5,7 +5,6 @@ export const SET_MAP_VIEW = 'SET_MAP_VIEW';
 export const SET_PAGE = 'SET_PAGE';
 export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
 export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
-export const SET_RECOMMENDATION_MODE = 'SET_RECOMMENDATION_MODE';
 export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
 
 export function setFormLocation(formLocation) {
@@ -34,10 +33,6 @@ export function setProjectionMode(projectionMode) {
 
 export function setProjectionResult(projectionResult, location) {
   return { type: SET_PROJECTION_RESULT, projectionResult, location };
-}
-
-export function setRecommendationMode(recommendationMode) {
-  return { type: SET_RECOMMENDATION_MODE, recommendationMode };
 }
 
 export function setWelcomeModal(open) {

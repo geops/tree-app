@@ -6,7 +6,6 @@ import {
   SET_PAGE,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
-  SET_RECOMMENDATION_MODE,
   SET_WELCOME_MODAL,
 } from './actions';
 import { MAP_PAGE, RECOMMENDATION_PAGE } from '../components/Navigation';
@@ -21,7 +20,6 @@ export const initialState = {
   projectionMode: 'm',
   projectionLocation: {},
   projectionOptions: {},
-  recommendationMode: 'extreme',
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
 
@@ -70,19 +68,11 @@ function tree(state = initialState, action) {
     case SET_PAGE:
       return { ...state, page: action.page };
     case SET_PROJECTION_MODE:
-      return {
-        ...state,
-        projectionMode: action.projectionMode,
-        lastRecommendationMode:
-          action.projectionMode === 'f' ? state.recommendationMode : undefined,
-      };
+      return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {
-      const { location, projectionResult: result } = action;
-      const { options: projectionOptions, ...projectionLocation } = result;
-      return { ...state, location, projectionOptions, projectionLocation };
+      const { location, projectionResult } = action;
+      return { ...state, location, projectionResult };
     }
-    case SET_RECOMMENDATION_MODE:
-      return { ...state, recommendationMode: action.recommendationMode };
     case SET_WELCOME_MODAL:
       localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');
       return { ...state, welcomeModalOpen: action.open };

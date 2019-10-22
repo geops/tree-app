@@ -1,29 +1,13 @@
 .icon {
-  height: 2em;
-  vertical-align: middle;
-  margin-right: 10px;
+  height: 3em;
 }
 
-.button:global(.ui.button) {
-  flex: auto !important;
-  color: var(--primary-color) !important;
-  background: #eee !important;
+.infoIcon {
+  height: 1.5em;
 }
 
-.button:global(.ui.active.button) {
-  background: white !important;
-}
-
-.button:global(.ui.button:not(.active):hover) {
-  background-color: #f7f7f7 !important;
-}
-
-.button h5 {
-  margin-bottom: 5px;
-}
-
-.button p {
-  font-weight: normal;
+.checkbox :global(label) {
+  color: white !important;
 }
 
 @media (max-width: 768px) {

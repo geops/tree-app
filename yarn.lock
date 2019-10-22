@@ -962,10 +962,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@geops/tree-lib@^0.7.9":
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.7.9.tgz#ef157cb03c4ea0e9ee4488e660f813256237e977"
-  integrity sha512-19FoofkauRcn6fYhjwwUw4ADmdOIDr/Zf8Cmq5v52c4xtHd7haBm8Kh1Zbe+Md1hSFDI+8Mn5/mE1UkJeS49TA==
+"@geops/tree-lib@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.8.1.tgz#b655d4f2585cfacfe2ad49286dbd3a2ae502ab71"
+  integrity sha512-wTbZFCgf6Hy076cwC6OcfqbvBOQzpgOH8f/Z/P3WMS8CUlUepEoEoJoUCAWA0gJdlw+Msga11LZKFWYzlKeM+Q==
 
 "@hapi/address@2.x.x":
   version "2.0.0"
@@ -4030,10 +4030,10 @@ eslint-plugin-react-hooks@^1.6.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.7.0.tgz#6210b6d5a37205f0b92858f895a4e827020a7d04"
   integrity sha512-iXTCFcOmlWvw4+TOE8CLWj6yX1GwzT0Y6cUfHHZqWnSk144VmVIRcVGtUAzrLES7C798lmvnt02C7rxaOX1HNA==
 
-eslint-plugin-react-hooks@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.1.2.tgz#1358d2acb2c5e02b7e90c37e611ac258a488e3a7"
-  integrity sha512-ZR+AyesAUGxJAyTFlF3MbzeVHAcQTFQt1fFVe5o0dzY/HFoj1dgQDMoIkiM+ltN/HhlHBYX4JpJwYonjxsyQMA==
+eslint-plugin-react-hooks@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.2.0.tgz#078264e9e388da6929ace09d6abe92c85963aff4"
+  integrity sha512-jSlnBjV2cmyIeL555H/FbvuSbQ1AtpHjLMHuPrQnt1eVA6lX8yufdygh7AArI2m8ct7ChHGx2uOaCuxq2MUn6g==
 
 eslint-plugin-react@7.14.3:
   version "7.14.3"

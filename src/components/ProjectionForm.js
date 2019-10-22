@@ -33,20 +33,20 @@ function ProjectionForm() {
     mapLocation,
     projectionLocation,
     projectionMode,
-    projectionOptions,
+    projectionResult: { options },
   } = useSelector(state => ({
     location: state.location,
     mapLocation: state.mapLocation,
     projectionLocation: state.projectionLocation,
     projectionMode: state.projectionMode,
-    projectionOptions: state.projectionOptions,
+    projectionResult: state.projectionResult,
   }));
   const [fieldActive, setFieldActive] = useState('');
   const activateField = field => setFieldActive(field);
   const deactivateField = () => setFieldActive('');
 
   const getValue = field =>
-    projectionOptions[field].includes(location[field]) ? location[field] : '';
+    options[field].includes(location[field]) ? location[field] : '';
 
   const isDifferent = field => mapLocation[field] !== projectionLocation[field];
 
@@ -64,14 +64,14 @@ function ProjectionForm() {
         projectionMode === 'm' || fieldActive ? styles.formActive : styles.form
       }
     >
-      {projectionOptions.forestType && (
+      {options.forestType && (
         <Form.Field>
           <label>{t('forestType.label')}</label>
           <Dropdown
             className={styles.forestType}
             clearable={projectionMode === 'f' && isDifferent('forestType')}
             disabled={!parsed.manual}
-            options={projectionOptions.forestType.map(
+            options={options.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
@@ -93,13 +93,13 @@ function ProjectionForm() {
             )}
         </Form.Field>
       )}
-      {projectionMode === 'f' && projectionOptions.forestEcoregion && (
+      {projectionMode === 'f' && options.forestEcoregion && (
         <Form.Field>
           <label>{t('forestEcoregion.label')}</label>
           <Dropdown
             disabled={!parsed.manual}
             clearable={isDifferent('forestEcoregion')}
-            options={projectionOptions.forestEcoregion.map(
+            options={options.forestEcoregion.map(
               getDropdownOptions('forestEcoregion', i18n.language),
             )}
             onChange={(e, { value }) => setLocation('forestEcoregion', value)}
@@ -109,13 +109,13 @@ function ProjectionForm() {
           />
         </Form.Field>
       )}
-      {projectionMode === 'f' && projectionOptions.altitudinalZone && (
+      {projectionMode === 'f' && options.altitudinalZone && (
         <Form.Field>
           <label>{t('altitudinalZone.label')}</label>
           <Dropdown
             disabled={!parsed.manual}
             clearable={isDifferent('altitudinalZone')}
-            options={projectionOptions.altitudinalZone.map(
+            options={options.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
             )}
             onChange={(e, { value }) => {
@@ -127,42 +127,38 @@ function ProjectionForm() {
           />
         </Form.Field>
       )}
-      {projectionOptions.slope && projectionOptions.slope.length > 1 && (
+      {options.slope && options.slope.length > 1 && (
         <ChoiceButton
           label={t('slope.label')}
-          options={projectionOptions.slope.map(
-            getButtonOptions('slope', i18n.language),
-          )}
+          options={options.slope.map(getButtonOptions('slope', i18n.language))}
           onChange={(e, { value }) => setLocation('slope', value)}
           value={getValue('slope')}
         />
       )}
-      {projectionOptions.additional &&
-        projectionOptions.additional.length > 1 && (
-          <ChoiceButton
-            label={t('additional.label')}
-            options={projectionOptions.additional.map(
-              getButtonOptions('additional', i18n.language),
-            )}
-            onChange={(e, { value }) => setLocation('additional', value)}
-            value={getValue('additional')}
-          />
-        )}
-      {projectionOptions.silverFirArea &&
-        projectionOptions.silverFirArea.length > 1 && (
-          <ChoiceButton
-            label={t('silverFirArea.label')}
-            options={projectionOptions.silverFirArea.map(
-              getButtonOptions('silverFirArea', i18n.language),
-            )}
-            onChange={(e, { value }) => setLocation('silverFirArea', value)}
-            value={getValue('silverFirArea')}
-          />
-        )}
-      {projectionOptions.relief && projectionOptions.relief.length > 1 && (
+      {options.additional && options.additional.length > 1 && (
+        <ChoiceButton
+          label={t('additional.label')}
+          options={options.additional.map(
+            getButtonOptions('additional', i18n.language),
+          )}
+          onChange={(e, { value }) => setLocation('additional', value)}
+          value={getValue('additional')}
+        />
+      )}
+      {options.silverFirArea && options.silverFirArea.length > 1 && (
+        <ChoiceButton
+          label={t('silverFirArea.label')}
+          options={options.silverFirArea.map(
+            getButtonOptions('silverFirArea', i18n.language),
+          )}
+          onChange={(e, { value }) => setLocation('silverFirArea', value)}
+          value={getValue('silverFirArea')}
+        />
+      )}
+      {options.relief && options.relief.length > 1 && (
         <ChoiceButton
           label={t('relief.label')}
-          options={projectionOptions.relief.map(
+          options={options.relief.map(
             getButtonOptions('relief', i18n.language),
           )}
           onChange={(e, { value }) => setLocation('relief', value)}
@@ -170,17 +166,17 @@ function ProjectionForm() {
         />
       )}
       {projectionMode === 'f' &&
-        projectionOptions.altitudinalZone &&
-        projectionOptions.targetAltitudinalZone &&
-        projectionOptions.targetAltitudinalZone.length >= 1 &&
-        projectionOptions.altitudinalZone !== undefined && (
+        options.altitudinalZone &&
+        options.targetAltitudinalZone &&
+        options.targetAltitudinalZone.length >= 1 &&
+        options.altitudinalZone !== undefined && (
           <Form.Field>
             <label>{t('targetAltitudinalZone.label')}</label>
             <Dropdown
               disabled={!parsed.manual}
               clearable={isDifferent('targetAltitudinalZone')}
               upward
-              options={projectionOptions.targetAltitudinalZone.map(
+              options={options.targetAltitudinalZone.map(
                 getDropdownOptions('altitudinalZone', i18n.language),
               )}
               onChange={(e, { value }) => {
@@ -190,7 +186,7 @@ function ProjectionForm() {
               onFocus={() => activateField('targetAltitudinalZone')}
               value={
                 location.targetAltitudinalZone ||
-                projectionOptions.targetAltitudinalZone[0]
+                options.targetAltitudinalZone[0]
               }
             />
           </Form.Field>

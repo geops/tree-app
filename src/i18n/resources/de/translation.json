@@ -20,6 +20,11 @@
     "silver_fir_areas": "Tannenareale",
     "hint": "Bitte Position wählen"
   },
+  "projection": {
+    "treeTypesOne": "Dominante Naturwaldbaumart",
+    "treeTypesTwo": "Wichtige beigemischte Naturwaldbaumart",
+    "treeTypesThree": "Weitere Baumarten"
+  },
   "recommendation": {
     "header": "Empfehlung",
     "attention": "Achtung",
@@ -27,16 +32,8 @@
     "neutral": "Mitnehmen",
     "positive": "Fördern",
     "todayHeader": "Heute",
-    "futureHeader": "Künftig",
-    "todayMessage": "bereits heute mögliche Baumarten",
-    "futureMessage": "in Zukunft zusätzlich mögliche Baumarten",
+    "future": "In Zukunft zusätzlich passende Baumarten einblenden",
     "noProjectionFound": "Keine Empfehlung möglich"
-  },
-  "recommendationMode": {
-    "today": "Klima heute",
-    "moderate": "mässiger Klimawandel",
-    "extreme": "starker Klimawandel",
-    "manual": "maneller Klimawandel"
   },
   "dropdown": {
     "placeholder": "Bitte aus der Liste auswählen",

@@ -1,13 +1,51 @@
 .container {
-  background-color: var(--primary-color);
-  padding: 20px;
+  background-color: var(--primary-color-500);
   margin: 30px 0 0 !important;
   box-shadow: 0 0 20px #777;
   flex-grow: 1;
   z-index: 1;
 }
-.tab :global(.ui.secondary.inverted.pointing.menu) {
-  border: none;
+.tab :global(.ui.secondary.inverted.menu) {
+  margin-top: -2px;
+}
+.tabMenu :global(.item) {
+  border-radius: 0 !important;
+  background-color: var(--primary-color-600) !important;
+}
+.tabMenu :global(.item:nth-child(2)) {
+  background-color: var(--primary-color-700) !important;
+}
+.tabMenu :global(.item:nth-child(3)) {
+  background-color: var(--primary-color-800) !important;
+}
+.tabMenu :global(.item:nth-child(4)) {
+  background-color: var(--primary-color-900) !important;
+}
+.tabMenu :global(.item.active) {
+  background-color: var(--primary-color-500) !important;
+}
+
+.arrow:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 1.3em;
+  margin-top: -1.3em;
+  z-index: 1;
+}
+.tabMenu :global(.item:nth-child(2):after) {
+  border-left-color: var(--primary-color-700) !important;
+}
+.tabMenu :global(.item:nth-child(3):after) {
+  border-left-color: var(--primary-color-800) !important;
+}
+.tabMenu :global(.item.active:after) {
+  border-left-color: var(--primary-color-500) !important;
 }
 
 .tab :global(.ui.attached.segment) {
