@@ -1,8 +1,5 @@
 # tree-lib
 
-[![build](https://img.shields.io/travis/com/geops/tree-lib.svg)](https://travis-ci.com/geops/tree-lib)
-[![npm](https://img.shields.io/npm/v/@geops/tree-lib.svg)](https://www.npmjs.com/package/@geops/tree-lib)
-
 This library provides tree recommendations for different climate change scenarios.
 
 Documentation coming soon.
