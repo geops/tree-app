@@ -1,7 +1,5 @@
 # tree-app
 
-[![build](https://img.shields.io/travis/com/geops/tree-app.svg)](https://travis-ci.com/geops/tree-app)
-
 This offline-first web application provides tree recommendations for different climate change scenarios.
 
 Documentation coming soon.
