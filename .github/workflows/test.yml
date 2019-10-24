@@ -23,3 +23,5 @@ jobs:
         yarn lint
         yarn test
         yarn build
+      env:
+        CI: true
