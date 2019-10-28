@@ -35,10 +35,8 @@ after the currently chosen altitudinal Zone. */
 const nextAltitudinalZone = current =>
   altitudeList[altitudeList.indexOf(current) + 1];
 
-function projectionReducer(location, targetAltitude) {
-  const newLocation = { ...location };
-  const options = location.options || {};
-
+function projectionReducer(location, targetAltitudePointer, result) {
+  const { options } = result;
   let projection = projections;
   for (let i = 0; i < fields.length; i += 1) {
     const { field, value, values } = getField(fields[i], location);
@@ -53,51 +51,51 @@ function projectionReducer(location, targetAltitude) {
     } else if (projection.unknown && Object.keys(projection).length === 1) {
       // Handle optional fields.
       projection = projection.unknown;
-      newLocation[field] = 'unknown';
     } else if (valueNotInOptions(value, options[field])) {
       // Do not return location values if no projection was found.
-      return { options };
+      return { ...result, options };
     } else {
       // Location does not provide any more values for conditions.
       break;
     }
   }
 
-  if (targetAltitude !== location.altitudinalZone) {
-    if (typeof projection === 'string') {
-      newLocation.forestType = projection;
-    }
-    newLocation.altitudinalZone = nextAltitudinalZone(location.altitudinalZone);
+  if (
+    typeof projection === 'string' &&
+    altitudeList.indexOf(location.altitudinalZone) < targetAltitudePointer
+  ) {
+    result.projections.push({
+      forestType: projection,
+      altitudinalZone: nextAltitudinalZone(location.altitudinalZone),
+    });
   }
 
-  newLocation.options = options;
-  return newLocation;
+  return { ...result, options };
 }
 
-function project(location = {}, targetAltitude) {
-  const altitudePointer = altitudeList.indexOf(location.altitudinalZone);
-  const altitudinalZone = targetAltitude || location.altitudinalZone;
+function project(location = {}, targetAltitude, previousResult) {
+  const altitudeIdx = altitudeList.indexOf(location.altitudinalZone);
+  const targetAltitudeIdx = altitudeList.indexOf(targetAltitude);
+  let result = previousResult || { options: {}, projections: [] };
 
   validate('targetAltitudinalZone', targetAltitude, types.altitudinalZone);
 
-  let newLocation = projectionReducer(location, altitudinalZone);
-  if (targetAltitude && newLocation.altitudinalZone !== targetAltitude) {
-    newLocation = project(newLocation, targetAltitude);
+  result = projectionReducer(location, targetAltitudeIdx, result);
+  const last = result.projections.slice(-1)[0];
+  if (last && altitudeList.indexOf(last.altitudinalZone) < targetAltitudeIdx) {
+    result = project({ ...location, ...last }, targetAltitude, result);
   }
 
-  if (newLocation && altitudePointer !== -1) {
-    newLocation.options.targetAltitudinalZone = [
-      location.altitudinalZone,
-      ...altitudeList.slice(altitudePointer + 1),
-    ];
+  if (result && altitudeIdx !== -1) {
+    result.options.targetAltitudinalZone = altitudeList.slice(altitudeIdx);
   }
 
   // Replace alphanumeric sorting with custom sorting based on database export
-  newLocation.options.forestType = types.forestType
-    .filter(ft => newLocation.options.forestType.includes(ft.code))
+  result.options.forestType = types.forestType
+    .filter(ft => result.options.forestType.includes(ft.code))
     .map(ft => ft.code);
 
-  return newLocation;
+  return result;
 }
 
 export default project;
