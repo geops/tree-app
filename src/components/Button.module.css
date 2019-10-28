@@ -8,10 +8,10 @@
 }
 
 .button:global(.ui.active.button) {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-500);
   color: white;
 }
 .button:global(.ui.active.button:hover) {
-  background-color: var(--primary-light-color);
+  background-color: var(--primary-color-200);
   color: white;
 }

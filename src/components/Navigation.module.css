@@ -46,7 +46,7 @@ body {
 .item {
   border-radius: 0 !important;
   background-color: #eee !important;
-  color: var(--primary-color) !important;
+  color: var(--primary-color-500) !important;
 }
 .item:hover {
   background-color: #f7f7f7 !important;
@@ -58,7 +58,7 @@ body {
 .icon {
   height: 1.5em;
   margin-bottom: 0.5em;
-  fill: var(--primary-color);
+  fill: var(--primary-color-500);
 }
 
 @media (max-width: 768px) {

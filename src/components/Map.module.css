@@ -21,7 +21,7 @@
   width: 42px;
   font-size: 28px;
   line-height: 38px;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-500);
   border: none;
   border-radius: 50%;
   padding: 0 0 4px 0;
@@ -29,7 +29,7 @@
 
 .map :global(.ol-control button:hover) {
   cursor: pointer;
-  background-color: var(--primary-light-color);
+  background-color: var(--primary-color-200);
 }
 .map :global(.ol-control button:focus) {
   outline: 0;
