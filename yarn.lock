@@ -411,13 +411,13 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@0.0.27":
-  version "0.0.27"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.0.27.tgz#60fd3a25cd641066b364e74665cf470a6a6e2c17"
-  integrity sha512-ytVC6TxjEkL4Zg7gsw6qY514ogTDhijDtSpfAZLAuSe69+xn1+94XcPjyUmJaIUnY4hemxhA5PREuO4XK0RvsQ==
+"@netlify/build@0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.0.30.tgz#b9ea729cc067d7835cf79699289288650fe1aa4a"
+  integrity sha512-s6WH8C+KOC7CSXV4eE1AWz2wSvscc1iHgrcEDua/459NH48Ba+/Y7kakw1I6NrNHO/VMGfvJaU1wxtu/u38CNw==
   dependencies:
-    "@netlify/config" "0.0.3"
-    "@netlify/zip-it-and-ship-it" "0.4.0-3"
+    "@netlify/config" "^0.0.5"
+    "@netlify/zip-it-and-ship-it" "0.4.0-5"
     analytics "^0.2.5"
     array-flat-polyfill "^1.0.1"
     camelcase-keys "^6.0.1"
@@ -477,27 +477,27 @@
     uuid "^3.3.2"
     write-file-atomic "^2.3.0"
 
-"@netlify/config@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.0.3.tgz#68509b45d352e112b899a96314136add5080a6a6"
-  integrity sha512-axKg2FKY03OSXOkd+qYimdxZTZ8a0he/lvh6YyQXUdB4kwedvo3aL3Ua1jAio67dSDaEL2HC2MiiEUN/Jhr1KQ==
+"@netlify/config@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.0.5.tgz#9c63177757f657877f26c49f2c1663aec1d610bf"
+  integrity sha512-ZfKLq09RlzpVnI3ru2VSXGJTjgljRPLwSyfKyozbS0vCrL6HhvTe8cj5xUxc6XFYxfxOJbjchNDHI3szsB1Tvw==
   dependencies:
-    configorama "0.3.5"
+    configorama "^0.3.6"
     find-up "^4.1.0"
     map-obj "^4.1.0"
     minimist "^1.2.0"
-    omit.js "^1.0.2"
     path-exists "^4.0.0"
+    resolve "^1.12.0"
 
 "@netlify/open-api@^0.9.0":
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/@netlify/open-api/-/open-api-0.9.0.tgz#8ac676555df6d2ab38d1397f3b772e04fd518596"
   integrity sha512-9HpbxZX0LnU2IkaIYIjw6GCQZ6JMQ0Ai3F+9RrHr2jMAgXiiHRT19h2CiKEbjv44lYD5a0sRyV6kr+YRJVUQjg==
 
-"@netlify/zip-it-and-ship-it@0.4.0-3":
-  version "0.4.0-3"
-  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-0.4.0-3.tgz#fa3b78564a91bfdd695d66405d6d9a92447f6536"
-  integrity sha512-Wge2B9lRIy/YT4szwbjx7qAFOUfmj2oqSmXK/aMMvz7wzlkM7Wm72wk1JZmdej2RXgdWCY88tekz9fBpnjcwxA==
+"@netlify/zip-it-and-ship-it@0.4.0-5":
+  version "0.4.0-5"
+  resolved "https://registry.yarnpkg.com/@netlify/zip-it-and-ship-it/-/zip-it-and-ship-it-0.4.0-5.tgz#b780da54a2c4be3e055067457c9b810302f76867"
+  integrity sha512-TZd0YI2m1Dk8jIoFaffbi8TY/3CHPTbLA1iGhiApfJTo1TB72WOWOZ5Y2Tfn7psBPLn88mM+XrTlTXhPOa0JPg==
   dependencies:
     archiver "^3.0.0"
     common-path-prefix "^2.0.0"
@@ -2237,10 +2237,10 @@ config-chain@^1.1.11:
     ini "^1.3.4"
     proto-list "~1.2.1"
 
-configorama@0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/configorama/-/configorama-0.3.5.tgz#9f67e6353ae3d5ebbf55929eaccd36a2b9eecffe"
-  integrity sha512-YDUcC6BgWvx/8J/UejRZ6nqpmZol3dprJ1MG8ySe/eeFuAXIYD1smiBYDgxxDpwI/h89lK00oZltsj1TY9Nbsw==
+configorama@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/configorama/-/configorama-0.3.6.tgz#ad0774f473f8897688e9a1e1aa259b25bbad2055"
+  integrity sha512-6Al3wzGylNeN5RsoWthXZl3AfXJPnaGolco9/xyyDO0ifheN8We01KU71DrzuAhrTJRVT3OiLXGsleEZQaEvGQ==
   dependencies:
     "@iarna/toml" "^2.2.3"
     dot-prop "^5.0.0"
@@ -6819,12 +6819,12 @@ netlify-cli-logo@^1.0.0:
     chalk "^2.4.2"
 
 netlify-cli@^2.12.0:
-  version "2.19.3"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.19.3.tgz#df41897aec857b3a17b087d38227cb7bf5e49ff9"
-  integrity sha512-GyVc7ZV1RHIM7WBEIoh2TuUCpUxYOncjsMb4Blo2uiPWbnPHD0WwB2/JbElwp/gJgMuFPtUbQc4Fk7Hidk5o+w==
+  version "2.19.4"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.19.4.tgz#6211f71b2d1b7e6746423fd64328ef3f8efa71fd"
+  integrity sha512-l9dcLKFQP3wo6zSoOjIj15kN+BXMAFC145O5jeibF1f150gUWc8Fv7gOzoBidDDOvPrjGOBPz5kG/ByEEgVxIQ==
   dependencies:
     "@iarna/toml" "^2.2.3"
-    "@netlify/build" "0.0.27"
+    "@netlify/build" "0.0.30"
     "@netlify/cli-utils" "^1.0.7"
     "@netlify/zip-it-and-ship-it" "^0.3.1"
     "@oclif/command" "^1.5.18"
