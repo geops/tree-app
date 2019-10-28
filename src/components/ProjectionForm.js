@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Label } from 'semantic-ui-react';
-import qs from 'query-string';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
@@ -23,8 +22,6 @@ const getDropdownOptions = (type, language, includeKey = false) => key => ({
     : translate(type, key, language),
   value: key,
 });
-
-const parsed = qs.parse(window.location.search);
 
 function ProjectionForm() {
   const dispatch = useDispatch();
@@ -70,7 +67,6 @@ function ProjectionForm() {
           <Dropdown
             className={styles.forestType}
             clearable={projectionMode === 'f' && isDifferent('forestType')}
-            disabled={!parsed.manual}
             options={options.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
@@ -97,7 +93,6 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('forestEcoregion.label')}</label>
           <Dropdown
-            disabled={!parsed.manual}
             clearable={isDifferent('forestEcoregion')}
             options={options.forestEcoregion.map(
               getDropdownOptions('forestEcoregion', i18n.language),
@@ -113,7 +108,6 @@ function ProjectionForm() {
         <Form.Field>
           <label>{t('altitudinalZone.label')}</label>
           <Dropdown
-            disabled={!parsed.manual}
             clearable={isDifferent('altitudinalZone')}
             options={options.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
@@ -173,7 +167,6 @@ function ProjectionForm() {
           <Form.Field>
             <label>{t('targetAltitudinalZone.label')}</label>
             <Dropdown
-              disabled={!parsed.manual}
               clearable={isDifferent('targetAltitudinalZone')}
               upward
               options={options.targetAltitudinalZone.map(
