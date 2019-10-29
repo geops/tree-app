@@ -411,10 +411,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/build@0.0.30":
-  version "0.0.30"
-  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.0.30.tgz#b9ea729cc067d7835cf79699289288650fe1aa4a"
-  integrity sha512-s6WH8C+KOC7CSXV4eE1AWz2wSvscc1iHgrcEDua/459NH48Ba+/Y7kakw1I6NrNHO/VMGfvJaU1wxtu/u38CNw==
+"@netlify/build@^0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@netlify/build/-/build-0.0.34.tgz#d805b60c49ca71014997f6284f2fdc31dd0c0b86"
+  integrity sha512-1GIJCFtoQEP5cIXtNGAR6Or8kj5Pko+QdtuaHnGt3sw3TJltfVTDpXiKVvKqL1LFu0sRXAJoRh+7ZOXQjl2vdQ==
   dependencies:
     "@netlify/config" "^0.0.5"
     "@netlify/zip-it-and-ship-it" "0.4.0-5"
@@ -450,7 +450,7 @@
     replacestream "^4.0.3"
     resolve "^1.12.0"
     shell-source "^1.1.0"
-    stack-utils "^1.0.2"
+    strip-ansi "^5.2.0"
     yargs "^14.2.0"
 
 "@netlify/cli-utils@^1.0.7":
@@ -6819,12 +6819,12 @@ netlify-cli-logo@^1.0.0:
     chalk "^2.4.2"
 
 netlify-cli@^2.12.0:
-  version "2.19.4"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.19.4.tgz#6211f71b2d1b7e6746423fd64328ef3f8efa71fd"
-  integrity sha512-l9dcLKFQP3wo6zSoOjIj15kN+BXMAFC145O5jeibF1f150gUWc8Fv7gOzoBidDDOvPrjGOBPz5kG/ByEEgVxIQ==
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.20.0.tgz#b7f0aae8474ff1334e4a5f8add7f6e361d618a26"
+  integrity sha512-DjNQad4lj4a//tVAKSUoLXhft5RxRy6pGbDGNRFyprqcIfKYlT4nrgJesmJWVO+wV/dzAAgTNif2II4G22wE5A==
   dependencies:
     "@iarna/toml" "^2.2.3"
-    "@netlify/build" "0.0.30"
+    "@netlify/build" "^0.0.34"
     "@netlify/cli-utils" "^1.0.7"
     "@netlify/zip-it-and-ship-it" "^0.3.1"
     "@oclif/command" "^1.5.18"
@@ -9739,7 +9739,7 @@ stable@^0.1.8:
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
 
-stack-utils@^1.0.1, stack-utils@^1.0.2:
+stack-utils@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
   integrity sha512-MTX+MeG5U994cazkjd/9KNAapsHnibjMLnfXodlkXw76JEea0UiNzrqidzo1emMwk7w5Qhc9jd4Bn9TBb1MFwA==
