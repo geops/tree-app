@@ -5,9 +5,9 @@ describe('Test for input values', () => {
     expect(() => recommend()).toThrowError('forestTypeToday is required');
   });
 
-  test('at least 2 projected forestTypes are required', () => {
-    expect(() => recommend('60', [{ forestType: '8b' }])).toThrowError(
-      `at least 2 projected forestTypes are required`,
+  test('at least 1 projected forestType is required', () => {
+    expect(() => recommend('60', [])).toThrowError(
+      `at least 1 projected forestType is required`,
     );
   });
 
@@ -31,7 +31,36 @@ describe('Test for input values', () => {
 });
 
 describe('Test for output values', () => {
-  test('valid multiple forest type recommendations', () => {
+  test('valid recommendations for single projection', () => {
+    expect(recommend('19f', [{ forestType: '8b' }], true)).toStrictEqual([
+      [100, 165000, 302800],
+      [],
+      [],
+      [],
+      [402300, 60400, 317500, 330600, 363700],
+      [],
+      [
+        700,
+        800,
+        97200,
+        174200,
+        213300,
+        227200,
+        306100,
+        328400,
+        335900,
+        336100,
+        336200,
+        413600,
+        421400,
+        432800,
+      ],
+      [],
+      [25300, 402200],
+      [],
+    ]);
+  });
+  test('valid recommendations for multiple projection', () => {
     expect(
       recommend('19f', [{ forestType: '8b' }, { forestType: '7b' }], true),
     ).toStrictEqual([
