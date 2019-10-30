@@ -10,6 +10,16 @@
   color: white !important;
 }
 
+.large {
+  font-size: 1.5em;
+}
+.small {
+  font-size: 0.8em;
+}
+.bold {
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .list {
     display: grid;

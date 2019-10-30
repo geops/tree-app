@@ -21,7 +21,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesOne')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            {treeTypes.one
+            {treeTypes[0]
               .map(tt => translate('treeType', tt, i18n.language))
               .join(' ')}
           </Grid.Column>
@@ -34,7 +34,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesTwo')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            {treeTypes.two
+            {treeTypes[1]
               .map(tt => translate('treeType', tt, i18n.language))
               .join(' ')}
           </Grid.Column>
@@ -47,7 +47,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesThree')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            {treeTypes.three
+            {treeTypes[2]
               .map(tt => translate('treeType', tt, i18n.language))
               .join(' ')}
           </Grid.Column>

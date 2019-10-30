@@ -11,24 +11,27 @@ import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.
 import { ReactComponent as InfoIcon } from '../icons/info.svg';
 import styles from './Recommendation.module.css';
 
+const list = (r, i18n) =>
+  r.map(t => translate('treeType', t, i18n.language)).join(' ');
+
 function Recommendation() {
   const { t, i18n } = useTranslation();
   const [future, setFuture] = useState(false);
-  const { pLocation, location } = useSelector(state => ({
-    pLocation: state.projectionLocation,
-    location: state.location,
+  const { forestTypeToday, projections } = useSelector(state => ({
+    forestTypeToday: state.location.forestType,
+    projections: state.projectionResult.projections,
   }));
 
   const recommendations = useMemo(() => {
     let result;
     try {
-      result = recommend(location.forestType, pLocation.forestType, future);
+      result = recommend(forestTypeToday, projections, future);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [location.forestType, pLocation.forestType, future]);
+  }, [forestTypeToday, projections, future]);
 
   return (
     <Tab.Pane>
@@ -42,9 +45,18 @@ function Recommendation() {
               <InfoIcon fill="white" className={styles.infoIcon} />
             </Grid.Column>
             <Grid.Column width={11}>
-              {recommendations.positive
-                .map(tt => translate('treeType', tt, i18n.language))
-                .join(' ')}
+              <div className={styles.large}>
+                <span className={styles.bold}>
+                  {list(recommendations[0], i18n)}
+                </span>{' '}
+                {list(recommendations[1], i18n)}
+              </div>
+              <div>
+                <span className={styles.bold}>
+                  {list(recommendations[2], i18n)}
+                </span>{' '}
+                {list(recommendations[3], i18n)}
+              </div>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
@@ -55,9 +67,18 @@ function Recommendation() {
               <InfoIcon fill="white" className={styles.infoIcon} />
             </Grid.Column>
             <Grid.Column width={11}>
-              {recommendations.neutral
-                .map(tt => translate('treeType', tt, i18n.language))
-                .join(' ')}
+              <div>
+                <span className={styles.bold}>
+                  {list(recommendations[4], i18n)}
+                </span>{' '}
+                {list(recommendations[5], i18n)}
+              </div>
+              <div className={styles.small}>
+                <span className={styles.bold}>
+                  {list(recommendations[6], i18n)}
+                </span>{' '}
+                {list(recommendations[7], i18n)}
+              </div>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
@@ -68,12 +89,14 @@ function Recommendation() {
               <InfoIcon fill="white" className={styles.infoIcon} />
             </Grid.Column>
             <Grid.Column width={11}>
-              {recommendations.negative
-                .map(tt => translate('treeType', tt, i18n.language))
-                .join(' ')}
+              <div className={styles.small}>
+                <span className={styles.bold}>
+                  {list(recommendations[8], i18n)}
+                </span>
+              </div>
             </Grid.Column>
           </Grid.Row>
-          {recommendations.attention.length > 0 && (
+          {recommendations[9].length > 0 && (
             <Grid.Row>
               <Grid.Column textAlign="center" width={4}>
                 <AttentionIcon fill="white" className={styles.icon} />
@@ -82,9 +105,9 @@ function Recommendation() {
                 <InfoIcon fill="white" className={styles.infoIcon} />
               </Grid.Column>
               <Grid.Column width={11}>
-                {recommendations.attention
-                  .map(tt => translate('treeType', tt, i18n.language))
-                  .join(' ')}
+                <span className={styles.bold}>
+                  {list(recommendations[9], i18n)}
+                </span>
               </Grid.Column>
             </Grid.Row>
           )}
