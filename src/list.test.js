@@ -10,10 +10,10 @@ describe('invalid function parameters', () => {
 
 describe('valid results', () => {
   test('valid forestType', () =>
-    expect(list('60')).toStrictEqual({
-      one: [302800],
-      two: [402300],
-      three: [800, 25400, 60400, 60500, 227200, 363700],
-      four: [],
-    }));
+    expect(list('60')).toStrictEqual([
+      [302800],
+      [402300],
+      [800, 25400, 60400, 60500, 227200, 363700],
+      [],
+    ]));
 });

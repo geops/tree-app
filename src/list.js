@@ -1,12 +1,7 @@
 import recommendations from '../data/recommendations.json';
 import types from '../data/types.json';
 
-const emptyTreeSpecies = {
-  one: [],
-  two: [],
-  three: [],
-  four: [],
-};
+const emptyList = [[], [], [], []];
 
 function list(forestType) {
   if (!forestType) {
@@ -19,7 +14,7 @@ function list(forestType) {
 
   const [, treeSpecies] = Object.entries(recommendations).find(
     t => t[0] === forestType,
-  ) || [null, emptyTreeSpecies];
+  ) || [null, emptyList];
 
   return treeSpecies;
 }
