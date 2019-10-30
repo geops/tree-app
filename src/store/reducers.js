@@ -18,7 +18,6 @@ export const initialState = {
   mapView: '9|910001|5947112',
   page: MAP_PAGE,
   projectionMode: 'm',
-  projectionLocation: {},
   projectionOptions: {},
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };

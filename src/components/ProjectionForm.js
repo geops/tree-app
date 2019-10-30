@@ -28,13 +28,13 @@ function ProjectionForm() {
   const {
     location,
     mapLocation,
-    projectionLocation,
+    formLocation,
     projectionMode,
     projectionResult: { options },
   } = useSelector(state => ({
     location: state.location,
     mapLocation: state.mapLocation,
-    projectionLocation: state.projectionLocation,
+    formLocation: state.formLocation,
     projectionMode: state.projectionMode,
     projectionResult: state.projectionResult,
   }));
@@ -45,7 +45,7 @@ function ProjectionForm() {
   const getValue = field =>
     options[field].includes(location[field]) ? location[field] : '';
 
-  const isDifferent = field => mapLocation[field] !== projectionLocation[field];
+  const isDifferent = field => mapLocation[field] !== formLocation[field];
 
   const setLocation = (key, value) => {
     setFieldActive('');
