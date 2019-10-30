@@ -1,105 +1,41 @@
-import recommendations from '../data/recommendations.json';
-import types from '../data/types.json';
+import difference from 'lodash.difference';
+import intersection from 'lodash.intersection';
+import union from 'lodash.union';
+import xor from 'lodash.xor';
 
-const emptyTreeSpecies = {
-  one: [],
-  two: [],
-  three: [],
-  four: [],
-};
+import list from './list';
 
-function recommendTreeSpecies(forestType) {
-  if (types.forestType.find(v => v.code === forestType) === undefined) {
-    throw new Error(`${forestType} is not a valid forest type`);
+const get3 = ([, , p3]) => p3;
+const union12 = ([p1, p2]) => union(p1, p2);
+
+function recommend(forestTypeToday, projections = [], future = false) {
+  if (!forestTypeToday) {
+    throw new Error('forestTypeToday is required');
   }
-
-  const [, treeSpecies] = Object.entries(recommendations).find(
-    t => t[0] === forestType,
-  ) || [null, emptyTreeSpecies];
-  return treeSpecies;
-}
-
-function concatTreeSpecies(...treeSp) {
-  return Array.from(new Set([].concat(...treeSp)));
-}
-
-const arrayIntersected = (arr1, arr2) => arr1.filter(i => arr2.includes(i));
-const arrayNotIntersected = (arr1, arr2) => arr1.filter(i => !arr2.includes(i));
-
-function filterFourFrom123(previousResult) {
-  const { one, two, three, four } = previousResult;
-  const result = {
-    one: arrayNotIntersected(one, four),
-    two: arrayNotIntersected(two, four),
-    three: arrayNotIntersected(three, four),
-    four,
-  };
-  return result;
-}
-
-function recommend(forestType1, forestType2, future) {
-  if (!forestType1) {
-    throw new Error(
-      `at least one forest type is required to get the recommendation of tree species`,
-    );
+  if (projections.reduce((c, p) => (p.forestType ? c + 1 : null), 0) < 2) {
+    throw new Error('at least 2 projected forestTypes are required');
   }
-
   if (future && typeof future !== 'boolean') {
     throw new Error(`expected boolean type for future flag`);
   }
 
-  let result = recommendTreeSpecies(forestType1);
+  const today = list(forestTypeToday);
+  const [today1, today2, today3, today4] = today;
+  const t123 = union(today1, today2, today3);
+  const p = projections.map(({ forestType }) => list(forestType));
 
-  const { one, two, three, four } = result;
-
-  if (forestType2) {
-    const {
-      one: futureOne,
-      two: futureTwo,
-      three: futureThree,
-      four: futureFour,
-    } = recommendTreeSpecies(forestType2);
-    if (future) {
-      result = {
-        one: arrayNotIntersected(
-          concatTreeSpecies(futureOne, futureTwo),
-          concatTreeSpecies(one, two, three),
-        ),
-        two: arrayNotIntersected(
-          futureThree,
-          concatTreeSpecies(one, two, three),
-        ),
-        three: [],
-        four: futureFour || [],
-      };
-    } else {
-      result = {
-        one: arrayIntersected(
-          concatTreeSpecies(one, two, three),
-          concatTreeSpecies(futureOne, futureTwo),
-        ),
-        two: arrayIntersected(concatTreeSpecies(one, two, three), futureThree),
-        three: arrayNotIntersected(
-          concatTreeSpecies(one, two, three),
-          concatTreeSpecies(futureOne, futureTwo, futureThree),
-        ),
-        four: four || [],
-      };
-    }
-    if (result.four && result.four.length > 0) {
-      result = filterFourFrom123(result);
-    }
-  }
-
-  const {
-    one: positive,
-    two: neutral,
-    three: negative,
-    four: attention,
-  } = result;
-  result = { positive, neutral, negative, attention };
-
-  return result;
+  return [
+    intersection(t123, intersection(...p.map(union12))), // Level 1
+    intersection(t123, xor(...p.map(union12))), // Level 2
+    future ? difference(intersection(...p.map(union12)), t123) : [], // Level 3
+    future ? difference(xor(...p.map(union12)), t123) : [], // Level 4
+    intersection(t123, intersection(...p.map(get3))), // Level 5
+    intersection(t123, xor(...p.map(get3))), // Level 6
+    future ? difference(intersection(...p.map(get3)), t123) : [], // Level 7
+    future ? difference(xor(...p.map(get3)), t123) : [], // Level 8
+    difference(t123, union(...p.map(x => union(...x)))), // Level 9
+    union(today4, ...p.map(([, , , p4]) => p4)), // Level 10
+  ];
 }
 
 export default recommend;
