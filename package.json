@@ -54,7 +54,8 @@
     "singleQuote": true
   },
   "scripts": {
-    "data:transform": "yarn data:stop && yarn data:start && yarn data:stop",
+    "data:format": "prettier --write 'data/*.json'",
+    "data:transform": "yarn data:stop && yarn data:start && yarn data:format && yarn data:stop",
     "data:start": "cd data && docker-compose up -d --build && sleep 9 && docker run --network=data_default --rm -v `pwd`/sql:/flyway/sql boxfuse/flyway:5-alpine -url=jdbc:postgresql://db:5432/tree -user=postgres migrate && docker-compose exec db sh -c 'bash /data/spatial/1-import.sh' && docker-compose exec db sh -c 'psql -U postgres -d tree -c \" SELECT export_projections()\"'",
     "data:stop": "cd data && docker-compose down --remove-orphans --volumes",
     "data:spatial:export": "cd data && docker-compose exec db sh -c '/data/spatial/2-export.sh'",
