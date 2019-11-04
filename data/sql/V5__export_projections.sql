@@ -161,7 +161,7 @@ COPY
       values
       FROM foresttype_meta),
         treetype AS
-     (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de)) AS
+     (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered)) AS
       values
       FROM treetype_meta),
         forest_ecoregions AS

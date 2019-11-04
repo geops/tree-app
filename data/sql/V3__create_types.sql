@@ -382,13 +382,15 @@ CREATE TYPE treetype AS ENUM ('100','300','600','700','800','6900','9500','25200
 
 
 CREATE TABLE treetype_meta (target treetype,
-                            de TEXT);
+                            de TEXT, endangered BOOLEAN);
 
 
-INSERT INTO treetype_meta (target, de)
+INSERT INTO treetype_meta (target, de, endangered)
 SELECT foo.treetype,
-       nais.art_nam_deu
+       nais.art_nam_deu,
+       info.krankheitsgefaehrdet::boolean
 FROM
         (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
-LEFT JOIN nat_arten_baum nais ON nais.art_sisf_nr = foo.treetype::text;
+LEFT JOIN nat_arten_baum nais ON nais.art_sisf_nr = foo.treetype::text
+LEFT JOIN baumarteninformationen info ON info.code::int = foo.treetype::text::int;
 
