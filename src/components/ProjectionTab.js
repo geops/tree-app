@@ -1,4 +1,4 @@
-import { list, translate } from '@geops/tree-lib';
+import { info, list } from '@geops/tree-lib';
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -22,7 +22,7 @@ function ProjectionTab({ forestType }) {
           </Grid.Column>
           <Grid.Column width={8}>
             {treeTypes[0]
-              .map(tt => translate('treeType', tt, i18n.language))
+              .map(tt => info('treeType', tt)[i18n.language])
               .join(' ')}
           </Grid.Column>
         </Grid.Row>
@@ -35,7 +35,7 @@ function ProjectionTab({ forestType }) {
           </Grid.Column>
           <Grid.Column width={8}>
             {treeTypes[1]
-              .map(tt => translate('treeType', tt, i18n.language))
+              .map(tt => info('treeType', tt)[i18n.language])
               .join(' ')}
           </Grid.Column>
         </Grid.Row>
@@ -48,7 +48,7 @@ function ProjectionTab({ forestType }) {
           </Grid.Column>
           <Grid.Column width={8}>
             {treeTypes[2]
-              .map(tt => translate('treeType', tt, i18n.language))
+              .map(tt => info('treeType', tt)[i18n.language])
               .join(' ')}
           </Grid.Column>
         </Grid.Row>

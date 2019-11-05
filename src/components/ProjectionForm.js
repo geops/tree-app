@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
-import { translate } from '@geops/tree-lib';
+import { info } from '@geops/tree-lib';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,15 +11,13 @@ import Dropdown from './Dropdown';
 import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
-const getButtonOptions = (type, language) => key => ({
+const getButtonOptions = (type, lng) => key => ({
   key,
-  label: translate(type, key, language),
+  label: info(type, key)[lng],
 });
-const getDropdownOptions = (type, language, includeKey = false) => key => ({
+const getDropdownOptions = (type, lng, includeKey = false) => key => ({
   key,
-  text: includeKey
-    ? `${key} - ${translate(type, key, language)}`
-    : translate(type, key, language),
+  text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
   value: key,
 });
 

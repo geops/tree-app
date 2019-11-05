@@ -1,4 +1,4 @@
-import { translate } from '@geops/tree-lib';
+import { info } from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
@@ -25,7 +25,7 @@ function ProjectionResult() {
       menuItem: (
         <Menu.Item key={p.forestType} className={styles.arrow}>
           {p.forestType}{' '}
-          {translate('altitudinalZone', p.altitudinalZone, i18n.language)}
+          {info('altitudinalZone', p.altitudinalZone)[i18n.language]}
         </Menu.Item>
       ),
       render: () => <ProjectionTab forestType={p.forestType} />,
