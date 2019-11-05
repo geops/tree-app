@@ -51,6 +51,7 @@ function ProjectionMode() {
           onClick={() => {
             dispatch(setProjectionMode('m'));
           }}
+          data-cypress="projectionModeMapButton"
         />
         <Button
           active={projectionMode === 'f'}
@@ -58,6 +59,7 @@ function ProjectionMode() {
           onClick={() => {
             dispatch(setProjectionMode('f'));
           }}
+          data-cypress="projectionModeFormButton"
         />
       </Button.Group>
     </div>
