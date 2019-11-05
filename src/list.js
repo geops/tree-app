@@ -12,11 +12,16 @@ function list(forestType) {
     throw new Error(`${forestType} is not valid`);
   }
 
-  const [, treeSpecies] = Object.entries(recommendations).find(
+  const [, treeTypes] = Object.entries(recommendations).find(
     t => t[0] === forestType,
   ) || [null, emptyList];
 
-  return treeSpecies;
+  return treeTypes.map(l => {
+    const { treeType } = types;
+    const res = l.filter(c => !treeType.find(t => t.code === c).nonresident);
+    const nonres = l.filter(c => treeType.find(t => t.code === c).nonresident);
+    return res.concat(nonres);
+  });
 }
 
 export default list;
