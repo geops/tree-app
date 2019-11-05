@@ -36,7 +36,7 @@ function Recommendation() {
   return (
     <Tab.Pane>
       {recommendations && (
-        <Grid columns={3} className={styles.grid} padded verticalAlign="middle">
+        <Grid columns={3} padded verticalAlign="middle">
           <Grid.Row>
             <Grid.Column textAlign="center" width={4}>
               <PositiveIcon fill="white" className={styles.icon} />

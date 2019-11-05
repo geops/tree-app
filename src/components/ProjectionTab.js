@@ -14,10 +14,10 @@ function ProjectionTab({ forestType }) {
     <Tab.Pane>
       <Grid columns={3} padded verticalAlign="middle">
         <Grid.Row>
-          <Grid.Column width={1}>
+          <Grid.Column width={2} textAlign="center">
             <InfoIcon fill="white" className={styles.infoIcon} />
           </Grid.Column>
-          <Grid.Column width={7}>
+          <Grid.Column width={6}>
             <Header inverted>{t('projection.treeTypesOne')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
@@ -27,10 +27,10 @@ function ProjectionTab({ forestType }) {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <Grid.Column width={1}>
+          <Grid.Column width={2} textAlign="center">
             <InfoIcon fill="white" className={styles.infoIcon} />
           </Grid.Column>
-          <Grid.Column width={7}>
+          <Grid.Column width={6}>
             <Header inverted>{t('projection.treeTypesTwo')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
@@ -40,10 +40,10 @@ function ProjectionTab({ forestType }) {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-          <Grid.Column width={1}>
+          <Grid.Column width={2} textAlign="center">
             <InfoIcon fill="white" className={styles.infoIcon} />
           </Grid.Column>
-          <Grid.Column width={7}>
+          <Grid.Column width={6}>
             <Header inverted>{t('projection.treeTypesThree')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
