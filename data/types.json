@@ -15,90 +15,466 @@
     { "de": "nicht relevant", "code": "unknown" }
   ],
   "treeType": [
-    { "de": "Tanne", "code": 100, "endangered": false },
-    { "de": "Feldahorn", "code": 300, "endangered": false },
-    { "de": "Schneeballblättriger Ahorn", "code": 600, "endangered": false },
-    { "de": "Spitzahorn", "code": 700, "endangered": false },
-    { "de": "Bergahorn", "code": 800, "endangered": false },
-    { "de": "Rosskastanie", "code": 6900, "endangered": false },
-    { "de": "Götterbaum", "code": 9500, "endangered": false },
-    { "de": "Schwarzerle", "code": 25200, "endangered": false },
-    { "de": "Grauerle", "code": 25300, "endangered": false },
-    { "de": "Alpenerle", "code": 25400, "endangered": false },
-    { "de": "Hängebirke", "code": 60400, "endangered": false },
-    { "de": "Moorbirke", "code": 60500, "endangered": false },
-    { "de": "Hagebuche", "code": 96900, "endangered": false },
-    { "de": "Kastanie", "code": 97200, "endangered": true },
-    { "de": "Zürgelbaum", "code": 97800, "endangered": false },
-    { "de": "Lawsons Zypresse", "code": 107150, "endangered": false },
-    { "de": "Drüsiger Kampferbaum", "code": 113350, "endangered": false },
-    { "de": "Kampferbaum", "code": 113399, "endangered": false },
-    { "de": "Lotuspflaume", "code": 137700, "endangered": false },
-    { "de": "Buche", "code": 165000, "endangered": false },
-    { "de": "Feige", "code": 172200, "endangered": false },
-    { "de": "Gemeine Esche", "code": 174200, "endangered": true },
-    { "de": "Blumenesche", "code": 174300, "endangered": false },
-    { "de": "Stechpalme", "code": 213300, "endangered": false },
-    { "de": "Nussbaum", "code": 217500, "endangered": false },
-    { "de": "Gewöhnlicher Wacholder", "code": 220400, "endangered": false },
-    { "de": "Alpen Goldregen", "code": 224200, "endangered": false },
-    { "de": "Gewöhnlicher Goldregen", "code": 224300, "endangered": false },
-    { "de": "Lärche", "code": 227200, "endangered": false },
-    { "de": "Edellorbeer", "code": 231500, "endangered": false },
-    { "de": "Baum-Liguster", "code": 238050, "endangered": false },
-    { "de": "Wildapfel", "code": 252900, "endangered": false },
-    { "de": "Ölbaum", "code": 275100, "endangered": false },
-    { "de": "Hopfenbuche", "code": 287100, "endangered": false },
-    { "de": "Fichte", "code": 302800, "endangered": false },
-    { "de": "Arve", "code": 304900, "endangered": false },
-    { "de": "Leg-Föhre", "code": 305500, "endangered": false },
-    { "de": "Bergföhre", "code": 305800, "endangered": false },
-    { "de": "Schwarz-Föhre", "code": 305900, "endangered": false },
-    { "de": "Strobe", "code": 306000, "endangered": true },
-    { "de": "Waldföhre", "code": 306100, "endangered": false },
-    { "de": "Platane", "code": 308600, "endangered": false },
-    { "de": "Silberpappel", "code": 317100, "endangered": false },
-    { "de": "Schwarzpappel", "code": 317300, "endangered": false },
-    { "de": "Zitterpappel", "code": 317500, "endangered": false },
-    { "de": "Kirschbaum", "code": 328400, "endangered": false },
-    { "de": "Felsenkirsche", "code": 329500, "endangered": false },
-    { "de": "Traubenkirsche", "code": 329700, "endangered": false },
-    { "de": "Herbst-Traubenkirsche", "code": 330200, "endangered": false },
-    { "de": "Douglasie", "code": 330600, "endangered": false },
-    { "de": "Wildbirne", "code": 335300, "endangered": false },
-    { "de": "Zerreiche", "code": 335600, "endangered": false },
-    { "de": "Steineiche", "code": 335800, "endangered": false },
-    { "de": "Traubeneiche", "code": 335900, "endangered": false },
-    { "de": "Flaumeiche", "code": 336000, "endangered": false },
-    { "de": "Stieleiche", "code": 336100, "endangered": false },
-    { "de": "Roteiche", "code": 336200, "endangered": false },
-    { "de": "Korkeiche", "code": 336250, "endangered": false },
-    { "de": "Essigbaum", "code": 345600, "endangered": false },
-    { "de": "Robinie", "code": 346500, "endangered": false },
-    { "de": "Weissweide", "code": 362800, "endangered": false },
-    { "de": "Salweide", "code": 363700, "endangered": false },
-    { "de": "Reifweide", "code": 363900, "endangered": false },
-    { "de": "Lavendelweide", "code": 364000, "endangered": false },
-    { "de": "Stinkweide", "code": 364200, "endangered": false },
-    { "de": "Bruchweide", "code": 364300, "endangered": false },
-    { "de": "Purpurweide", "code": 365800, "endangered": false },
-    { "de": "Mehlbeere", "code": 402200, "endangered": false },
-    { "de": "Vogelbeere", "code": 402300, "endangered": false },
-    { "de": "Speierling", "code": 402500, "endangered": false },
-    { "de": " Mougeots-Mehlbeere", "code": 402600, "endangered": false },
-    { "de": "Elsbeere", "code": 402700, "endangered": false },
+    { "de": "Tanne", "code": 100, "endangered": false, "nonresident": false },
+    {
+      "de": "Feldahorn",
+      "code": 300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Schneeballblättriger Ahorn",
+      "code": 600,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Spitzahorn",
+      "code": 700,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Bergahorn",
+      "code": 800,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Rosskastanie",
+      "code": 6900,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Götterbaum",
+      "code": 9500,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Schwarzerle",
+      "code": 25200,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Grauerle",
+      "code": 25300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Alpenerle",
+      "code": 25400,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Hängebirke",
+      "code": 60400,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Moorbirke",
+      "code": 60500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Hagebuche",
+      "code": 96900,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Kastanie",
+      "code": 97200,
+      "endangered": true,
+      "nonresident": false
+    },
+    {
+      "de": "Zürgelbaum",
+      "code": 97800,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Lawsons Zypresse",
+      "code": 107150,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Drüsiger Kampferbaum",
+      "code": 113350,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Kampferbaum",
+      "code": 113399,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Lotuspflaume",
+      "code": 137700,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Buche",
+      "code": 165000,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Feige",
+      "code": 172200,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Gemeine Esche",
+      "code": 174200,
+      "endangered": true,
+      "nonresident": false
+    },
+    {
+      "de": "Blumenesche",
+      "code": 174300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Stechpalme",
+      "code": 213300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Nussbaum",
+      "code": 217500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Gewöhnlicher Wacholder",
+      "code": 220400,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Alpen Goldregen",
+      "code": 224200,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Gewöhnlicher Goldregen",
+      "code": 224300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Lärche",
+      "code": 227200,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Edellorbeer",
+      "code": 231500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Baum-Liguster",
+      "code": 238050,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Wildapfel",
+      "code": 252900,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Ölbaum",
+      "code": 275100,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Hopfenbuche",
+      "code": 287100,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Fichte",
+      "code": 302800,
+      "endangered": false,
+      "nonresident": false
+    },
+    { "de": "Arve", "code": 304900, "endangered": false, "nonresident": false },
+    {
+      "de": "Leg-Föhre",
+      "code": 305500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Bergföhre",
+      "code": 305800,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Schwarz-Föhre",
+      "code": 305900,
+      "endangered": false,
+      "nonresident": true
+    },
+    { "de": "Strobe", "code": 306000, "endangered": true, "nonresident": true },
+    {
+      "de": "Waldföhre",
+      "code": 306100,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Platane",
+      "code": 308600,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Silberpappel",
+      "code": 317100,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Schwarzpappel",
+      "code": 317300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Zitterpappel",
+      "code": 317500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Kirschbaum",
+      "code": 328400,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Felsenkirsche",
+      "code": 329500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Traubenkirsche",
+      "code": 329700,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Herbst-Traubenkirsche",
+      "code": 330200,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Douglasie",
+      "code": 330600,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Wildbirne",
+      "code": 335300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Zerreiche",
+      "code": 335600,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Steineiche",
+      "code": 335800,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Traubeneiche",
+      "code": 335900,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Flaumeiche",
+      "code": 336000,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Stieleiche",
+      "code": 336100,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Roteiche",
+      "code": 336200,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Korkeiche",
+      "code": 336250,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Essigbaum",
+      "code": 345600,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Robinie",
+      "code": 346500,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Weissweide",
+      "code": 362800,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Salweide",
+      "code": 363700,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Reifweide",
+      "code": 363900,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Lavendelweide",
+      "code": 364000,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Stinkweide",
+      "code": 364200,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Bruchweide",
+      "code": 364300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Purpurweide",
+      "code": 365800,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Mehlbeere",
+      "code": 402200,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Vogelbeere",
+      "code": 402300,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Speierling",
+      "code": 402500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": " Mougeots-Mehlbeere",
+      "code": 402600,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Elsbeere",
+      "code": 402700,
+      "endangered": false,
+      "nonresident": false
+    },
     {
       "de": "Breitblättriger Mehlbeerbaum",
       "code": 402750,
-      "endangered": false
+      "endangered": false,
+      "nonresident": false
     },
-    { "de": "Eibe", "code": 413600, "endangered": false },
-    { "de": "Winterlinde", "code": 421400, "endangered": false },
-    { "de": "Sommerlinde", "code": 421500, "endangered": false },
-    { "de": "Hanfpalme", "code": 422450, "endangered": false },
-    { "de": "Bergulme", "code": 432800, "endangered": true },
-    { "de": "Flatterulme", "code": 432900, "endangered": true },
-    { "de": "Feldulme", "code": 433000, "endangered": true }
+    { "de": "Eibe", "code": 413600, "endangered": false, "nonresident": false },
+    {
+      "de": "Winterlinde",
+      "code": 421400,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Sommerlinde",
+      "code": 421500,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Hanfpalme",
+      "code": 422450,
+      "endangered": false,
+      "nonresident": true
+    },
+    {
+      "de": "Bergulme",
+      "code": 432800,
+      "endangered": true,
+      "nonresident": false
+    },
+    {
+      "de": "Flatterulme",
+      "code": 432900,
+      "endangered": false,
+      "nonresident": false
+    },
+    {
+      "de": "Feldulme",
+      "code": 433000,
+      "endangered": true,
+      "nonresident": false
+    }
   ],
   "additional": [
     { "de": "Boden normal", "code": "NrmlSl" },
