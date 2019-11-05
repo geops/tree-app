@@ -18,7 +18,13 @@ function Recommendation() {
     forestTypeToday: state.location.forestType,
     projections: state.projectionResult.projections,
   }));
-  const list = r => r.map(k => info('treeType', k)[i18n.language]).join(' ');
+  const list = recommendations =>
+    recommendations
+      .map(code => {
+        const treeInfo = info('treeType', code);
+        return treeInfo[i18n.language] + (treeInfo.endangered ? '*' : '');
+      })
+      .join(' ');
 
   const recommendations = useMemo(() => {
     let result;
