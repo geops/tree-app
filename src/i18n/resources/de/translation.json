@@ -6,6 +6,9 @@
     "ribbon": "Test",
     "title": "Tree App"
   },
+  "help": {
+    "recommendationPositive": "Empfohlene Baumarten: dominante oder wichtige beigemischte Naturwaldbaumarten, die <1>in allen Klimaprojektionen geeignet</1> ist (<3>fett</3>) bzw. die im heutigen Klima und bei «mässigem» oder «starkem» Klimawandel geeignet sind (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten sollen gefördert werden."
+  },
   "map": {
     "baseLayer": {
       "map": "Karte",

@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Grid, Header, Tab } from 'semantic-ui-react';
 
 import { ReactComponent as InfoIcon } from '../icons/info.svg';
-import styles from './Recommendation.module.css';
+import styles from './ProjectionTab.module.css';
 
 function ProjectionTab({ forestType }) {
   const treeTypes = useMemo(() => list(forestType), [forestType]);

@@ -2,10 +2,6 @@
   height: 3em;
 }
 
-.infoIcon {
-  height: 1.5em;
-}
-
 .checkbox :global(label) {
   color: white !important;
 }

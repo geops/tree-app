@@ -1,14 +1,14 @@
 import { info, recommend } from '@geops/tree-lib';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { Checkbox, Grid, Tab } from 'semantic-ui-react';
 
+import Help from './Help';
 import { ReactComponent as AttentionIcon } from '../icons/recommendationAttention.svg';
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
-import { ReactComponent as InfoIcon } from '../icons/info.svg';
 import styles from './Recommendation.module.css';
 
 function Recommendation() {
@@ -46,7 +46,11 @@ function Recommendation() {
               <PositiveIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
-              <InfoIcon fill="white" className={styles.infoIcon} />
+              <Help>
+                <Trans i18nKey="help.recommendationPositive">
+                  help <b>bold</b> some <b>bold</b> text
+                </Trans>
+              </Help>
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.large}>
@@ -64,7 +68,7 @@ function Recommendation() {
               <NeutralIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
-              <InfoIcon fill="white" className={styles.infoIcon} />
+              <Help />
             </Grid.Column>
             <Grid.Column width={11}>
               <div>
@@ -82,7 +86,7 @@ function Recommendation() {
               <NegativeIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
-              <InfoIcon fill="white" className={styles.infoIcon} />
+              <Help />
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.small}>
@@ -96,7 +100,7 @@ function Recommendation() {
                 <AttentionIcon fill="white" className={styles.icon} />
               </Grid.Column>
               <Grid.Column width={1}>
-                <InfoIcon fill="white" className={styles.infoIcon} />
+                <Help />
               </Grid.Column>
               <Grid.Column width={11}>
                 <span className={styles.bold}>{list(recommendations[9])}</span>
