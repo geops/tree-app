@@ -25,13 +25,19 @@
     "treeTypesTwo": "Wichtige beigemischte Naturwaldbaumart",
     "treeTypesThree": "Weitere Baumarten"
   },
+  "projectionScenario": {
+    "today": "Klima heute",
+    "moderate": "mässiger Klimawandel",
+    "extreme": "starker Klimawandel",
+    "moderateExtreme": "mässiger und sarker Klimawandel",
+    "manual": "manueller Klimawandel"
+  },
   "recommendation": {
     "header": "Empfehlung",
     "attention": "Achtung",
     "negative": "Reduzieren",
     "neutral": "Mitnehmen",
     "positive": "Fördern",
-    "todayHeader": "Heute",
     "future": "In Zukunft zusätzlich passende Baumarten einblenden",
     "noProjectionFound": "Keine Empfehlung möglich"
   },
