@@ -3,12 +3,10 @@ import {
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
-  SET_PAGE,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
   SET_WELCOME_MODAL,
 } from './actions';
-import { MAP_PAGE, RECOMMENDATION_PAGE } from '../components/Navigation';
 
 export const initialState = {
   location: {},
@@ -16,7 +14,6 @@ export const initialState = {
   mapLayer: 'ft',
   mapLocation: {},
   mapView: '9|910001|5947112',
-  page: MAP_PAGE,
   projectionMode: 'm',
   projectionOptions: {},
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
@@ -59,13 +56,10 @@ function tree(state = initialState, action) {
     case SET_MAP_LOCATION: {
       const { formLocation, projectionMode } = initialState;
       const { mapLocation } = action;
-      const page = RECOMMENDATION_PAGE;
-      return { ...state, formLocation, mapLocation, page, projectionMode };
+      return { ...state, formLocation, mapLocation, projectionMode };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };
-    case SET_PAGE:
-      return { ...state, page: action.page };
     case SET_PROJECTION_MODE:
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {

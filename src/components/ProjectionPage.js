@@ -4,7 +4,7 @@ import ProjectionForm from './ProjectionForm';
 import ProjectionMode from './ProjectionMode';
 import ProjectionResult from './ProjectionResult';
 
-function Projection() {
+function ProjectionPage() {
   return (
     <>
       <ProjectionMode />
@@ -14,4 +14,4 @@ function Projection() {
   );
 }
 
-export default Projection;
+export default ProjectionPage;

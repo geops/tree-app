@@ -1,61 +1,88 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
-import { Menu } from 'semantic-ui-react';
+import { Switch, Route, useHistory, useLocation } from 'react-router-dom';
+import { Icon, Menu } from 'semantic-ui-react';
 
 import { ReactComponent as MapIcon } from '../icons/map.svg';
+import { ReactComponent as LocationIcon } from '../icons/location.svg';
 import { ReactComponent as TreeIcon } from '../icons/tree.svg';
+
+import InfoPage from './InfoPage';
+import LocationPage from './LocationPage';
+import Map from './Map';
+import ProjectionPage from './ProjectionPage';
 import Ribbon from './Ribbon';
+import useWindowSize from '../hooks/useWindowSize';
+
 import styles from './Navigation.module.css';
-import { setPage } from '../store/actions';
 
-export const MAP_PAGE = 'MAP';
-export const RECOMMENDATION_PAGE = 'RECOMMENDATION';
-
-function Navigation({ left, right }) {
-  const dispatch = useDispatch();
-  const page = useSelector(state => state.page);
+function Navigation() {
+  const history = useHistory();
+  const { pathname, search } = useLocation();
+  const go = page => () => history.push(`/${page}${search}`);
+  const is = page => pathname === `/${page}`;
   const { t } = useTranslation();
+  const windowSize = useWindowSize();
+  const isMobile = windowSize.width < 768;
   document.title = t('app.title');
   return (
     <div className={styles.wrapper}>
-      <div
-        className={`${styles.pages} ${page !== MAP_PAGE && styles.pageRight}`}
-      >
-        <div className={styles.left}>{left}</div>
-        <div className={styles.right}>{right}</div>
+      <div className={`${styles.map} ${is('') && 'frontpage'}`}>
+        <Map />
       </div>
-      <Menu fluid widths={2} icon="labeled" className={styles.menu}>
+      <div className={`${styles.page} ${is('') && 'frontpage'}`}>
+        <Switch>
+          <Route path="/location">
+            <LocationPage />
+          </Route>
+          <Route path="/info">
+            <InfoPage />
+          </Route>
+          <Route path={isMobile ? '/projection' : ['/', '/projection']}>
+            <ProjectionPage />
+          </Route>
+        </Switch>
+      </div>
+      <Menu
+        fluid
+        widths={isMobile ? 4 : 3}
+        icon="labeled"
+        className={styles.menu}
+      >
+        {isMobile && (
+          <Menu.Item active={is('')} onClick={go('')} className={styles.item}>
+            <MapIcon className={styles.icon} />
+            {!isMobile && t('app.map')}
+          </Menu.Item>
+        )}
         <Menu.Item
-          active={page === MAP_PAGE}
-          onClick={() => dispatch(setPage(MAP_PAGE))}
+          active={is('location')}
+          onClick={go('location')}
           className={styles.item}
         >
-          <MapIcon className={styles.icon} />
-          {t('app.map')}
+          <LocationIcon className={styles.icon} />
+          {!isMobile && t('app.location')}
         </Menu.Item>
         <Menu.Item
-          active={page === RECOMMENDATION_PAGE}
-          onClick={() => dispatch(setPage(RECOMMENDATION_PAGE))}
+          active={isMobile ? is('projection') : is('') || is('projection')}
+          onClick={go('projection')}
           className={styles.item}
         >
           <TreeIcon className={styles.icon} />
-          {t('app.recommendation')}
+          {!isMobile && t('app.recommendation')}
+        </Menu.Item>
+        <Menu.Item
+          active={is('info')}
+          onClick={go('info')}
+          className={styles.item}
+        >
+          <Icon name="info" className={styles.icon} />
+          {!isMobile && t('app.info')}
         </Menu.Item>
       </Menu>
       <Ribbon label={t('app.ribbon')} />
     </div>
   );
 }
-
-Navigation.propTypes = {
-  left: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node])
-    .isRequired,
-  right: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]).isRequired,
-};
 
 export default Navigation;

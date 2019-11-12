@@ -2,7 +2,6 @@ export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
 export const SET_MAP_LAYER = 'SET_MAP_LAYER';
 export const SET_MAP_LOCATION = 'SET_MAP_LOCATION';
 export const SET_MAP_VIEW = 'SET_MAP_VIEW';
-export const SET_PAGE = 'SET_PAGE';
 export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
 export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
 export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
@@ -17,10 +16,6 @@ export function setMapLayer(mapLayer) {
 
 export function setMapView(mapView) {
   return { type: SET_MAP_VIEW, mapView };
-}
-
-export function setPage(page) {
-  return { type: SET_PAGE, page };
 }
 
 export function setMapLocation(mapLocation) {

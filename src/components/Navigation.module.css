@@ -11,36 +11,32 @@ body {
   height: 100%;
 }
 
-.pages {
-  flex-grow: 1;
-  display: flex;
-  transition: transform ease-out 0.2s;
-  will-change: transform;
-  overflow: hidden;
-  position: fixed;
-  height: 100%;
+.map {
+  width: 50%;
+  position: absolute;
 }
 
-.left,
-.right {
-  width: 50vw;
-  position: relative;
-}
-.right {
+.page {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  height: calc(100% - 73px);
 }
 
-.menu:global(.ui.menu) {
+.menu:global(.ui.menu.fluid) {
   border-radius: 0;
   margin: 0;
   flex-shrink: 0;
-  display: none;
   box-shadow: 0 0 20px #777;
   position: fixed;
   bottom: 0;
+  right: 0;
+  width: 50% !important;
 }
 
 .item {
@@ -62,18 +58,19 @@ body {
 }
 
 @media (max-width: 768px) {
-  .pages {
-    width: 200vw;
-    height: calc(100% - 70px);
+  .map,
+  .page:global(.frontpage) {
+    display: none;
   }
-  .pageRight {
-    transform: translateX(-100vw);
+  .map:global(.frontpage) {
+    display: block;
   }
-  .left,
-  .right {
-    width: 100vw;
+  .map,
+  .page {
+    width: 100%;
+    height: calc(100% - 59px);
   }
-  .menu:global(.ui.menu) {
-    display: flex;
+  .menu:global(.ui.menu.fluid) {
+    width: 100% !important;
   }
 }

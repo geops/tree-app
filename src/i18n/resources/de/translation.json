@@ -1,6 +1,8 @@
 {
   "app": {
     "map": "Karte",
+    "info": "Infos",
+    "location": "Standort",
     "recommendation": "Empfehlung",
     "result": "Baumartenempfehlung",
     "ribbon": "Test",

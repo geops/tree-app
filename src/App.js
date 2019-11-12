@@ -1,18 +1,19 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
-import Map from './components/Map';
 import Navigation from './components/Navigation';
-import Projection from './components/Projection';
 import store from './store';
 
 import './theme.css';
 
 function App() {
   return (
-    <Provider store={store}>
-      <Navigation left={<Map />} right={<Projection />} />
-    </Provider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <Navigation />
+      </Provider>
+    </BrowserRouter>
   );
 }
 
