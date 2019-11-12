@@ -38,7 +38,12 @@ function ProjectionResult() {
     const icons = [];
     const scenarios = [];
     if (projectionMode === 'f') {
-      scenarios.push(t('projectionScenario.manual'));
+      if (location.altitudinalZone === p.altitudinalZone) {
+        icons.push(<EarthTodayIcon key="today" className={styles.icon} />);
+        scenarios.push(t('projectionScenario.today'));
+      } else {
+        scenarios.push(t('projectionScenario.manual'));
+      }
     } else {
       if (location.altitudinalZone === p.altitudinalZone) {
         icons.push(<EarthTodayIcon key="today" className={styles.icon} />);
