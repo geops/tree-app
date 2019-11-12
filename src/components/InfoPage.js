@@ -201,7 +201,7 @@ function InfoPage() {
   ];
   return (
     <div className={styles.page}>
-      <Accordion panels={panels} styled />
+      <Accordion fluid panels={panels} styled />
     </div>
   );
 }
