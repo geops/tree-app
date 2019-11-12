@@ -90,8 +90,7 @@ SELECT AddGeometryColumn('','cantonal_boundaries','geom','2056','MULTIPOLYGON',4
 
 CREATE VIEW cantonal_boundaries_export AS
 SELECT ST_Transform(geom, 3857) as geometry
-FROM cantonal_boundaries
-WHERE name = 'Luzern';
+FROM cantonal_boundaries;
 
 ----------------------------------------------
 -- forest_ecoregions
