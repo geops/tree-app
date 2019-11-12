@@ -7,7 +7,12 @@
     "title": "Tree App"
   },
   "help": {
-    "recommendationPositive": "Empfohlene Baumarten: dominante oder wichtige beigemischte Naturwaldbaumarten, die <1>in allen Klimaprojektionen geeignet</1> ist (<3>fett</3>) bzw. die im heutigen Klima und bei «mässigem» oder «starkem» Klimawandel geeignet sind (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten sollen gefördert werden."
+    "recommendationPositiveHeader": "Empfohlene Baumarten",
+    "recommendationPositive": "Dominante oder wichtige beigemischte Naturwaldbaumarten, die <1>in allen Klimaprojektionen geeignet sind (fett)</1> bzw. die im heutigen Klima und bei «mässigem» oder «starkem» Klimawandel geeignet sind (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten sollen gefördert werden.",
+    "recommendationNeutralHeader": "Bedingt empfohlene Baumarten",
+    "recommendationNeutral": "Im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart) und entweder <1>bei beiden Klimaprojektionen weitere Baumart (fett)</1> oder nur in einer Klimaprojektion weitere Baumart (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten können gefördert werden.",
+    "recommendationNegativeHeader": "Gefährdete Baumarten",
+    "recommendationNegative": "Im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft in keiner Klimaprojektion mehr empfohlen ist <1>(fett)</1>. Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind."
   },
   "map": {
     "baseLayer": {

@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
 import { Checkbox, Grid, Tab } from 'semantic-ui-react';
 
-import Help from './Help';
+import HelpModal from './HelpModal';
 import { ReactComponent as AttentionIcon } from '../icons/recommendationAttention.svg';
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
@@ -46,11 +46,11 @@ function Recommendation() {
               <PositiveIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
-              <Help>
+              <HelpModal header={t('help.recommendationPositiveHeader')}>
                 <Trans i18nKey="help.recommendationPositive">
-                  help <b>bold</b> some <b>bold</b> text
+                  help <b>bold</b> text
                 </Trans>
-              </Help>
+              </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.large}>
@@ -68,7 +68,11 @@ function Recommendation() {
               <NeutralIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
-              <Help />
+              <HelpModal header={t('help.recommendationNeutralHeader')}>
+                <Trans i18nKey="help.recommendationNeutral">
+                  help <b>bold</b> text
+                </Trans>
+              </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
               <div>
@@ -86,7 +90,11 @@ function Recommendation() {
               <NegativeIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
-              <Help />
+              <HelpModal header={t('help.recommendationNegativeHeader')}>
+                <Trans i18nKey="help.recommendationNegative">
+                  help <b>bold</b> text
+                </Trans>
+              </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.small}>
@@ -99,9 +107,7 @@ function Recommendation() {
               <Grid.Column textAlign="center" width={4}>
                 <AttentionIcon fill="white" className={styles.icon} />
               </Grid.Column>
-              <Grid.Column width={1}>
-                <Help />
-              </Grid.Column>
+              <Grid.Column width={1}></Grid.Column>
               <Grid.Column width={11}>
                 <span className={styles.bold}>{list(recommendations[9])}</span>
               </Grid.Column>
