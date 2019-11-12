@@ -5,15 +5,22 @@
 .checkbox :global(label) {
   color: white !important;
 }
+.checkbox:global(.checked > label) {
+  color: #fbf0b2 !important;
+}
 
 .large {
   font-size: 1.5em;
+  line-height: 1.5em;
 }
 .small {
   font-size: 0.8em;
 }
 .bold {
   font-weight: bold;
+}
+.yellow {
+  color: #fbf0b2;
 }
 
 @media (max-width: 768px) {

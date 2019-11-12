@@ -57,7 +57,7 @@ function Recommendation() {
                 <span className={styles.bold}>{list(recommendations[0])}</span>{' '}
                 {list(recommendations[1])}
               </div>
-              <div>
+              <div className={styles.yellow}>
                 <span className={styles.bold}>{list(recommendations[2])}</span>{' '}
                 {list(recommendations[3])}
               </div>
@@ -79,7 +79,7 @@ function Recommendation() {
                 <span className={styles.bold}>{list(recommendations[4])}</span>{' '}
                 {list(recommendations[5])}
               </div>
-              <div className={styles.small}>
+              <div className={`${styles.small} ${styles.yellow}`}>
                 <span className={styles.bold}>{list(recommendations[6])}</span>{' '}
                 {list(recommendations[7])}
               </div>
