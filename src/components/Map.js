@@ -11,7 +11,6 @@ import MapBaseLayer from './MapBaseLayer';
 import MapLocation from './MapLocation';
 import MapVectorLayer from './MapVectorLayer';
 import MapView from './MapView';
-import WelcomeModal from './WelcomeModal';
 import styles from './Map.module.css';
 
 const controls = controlDefaults({ rotate: false });
