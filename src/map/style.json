@@ -16,8 +16,7 @@
       "source": "tree",
       "source-layer": "forest_types",
       "metadata": {
-        "group": "main",
-        "mapping": "forestType"
+        "group": "main"
       },
       "paint": {
         "fill-color": "#006268"

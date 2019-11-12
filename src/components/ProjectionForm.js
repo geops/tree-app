@@ -4,7 +4,7 @@ import { info } from '@geops/tree-lib';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Form, Label } from 'semantic-ui-react';
+import { Form } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
@@ -64,27 +64,16 @@ function ProjectionForm() {
           <label>{t('forestType.label')}</label>
           <Dropdown
             className={styles.forestType}
-            clearable={projectionMode === 'f' && isDifferent('forestType')}
+            clearable
             options={options.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
             onBlur={deactivateField}
             onFocus={() => activateField('forestType')}
-            placeholder={
-              projectionMode === 'm'
-                ? t('forestType.hint')
-                : t('dropdown.placeholder')
-            }
+            placeholder={t('dropdown.placeholder')}
             value={getValue('forestType')}
           />
-          {projectionMode === 'm' &&
-            location.coordinate &&
-            !location.forestType && (
-              <Label pointing>
-                {t('errorMessage.incompleteLocationInput')}
-              </Label>
-            )}
         </Form.Field>
       )}
       {projectionMode === 'f' && options.forestEcoregion && (
