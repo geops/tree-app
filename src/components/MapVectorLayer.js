@@ -22,7 +22,10 @@ const getStyle = sourceLayer => {
               ...layer.paint,
               'fill-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
             }
-          : layer.paint,
+          : {
+              ...layer.paint,
+              'line-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
+            },
     })),
   };
 };

@@ -12,7 +12,7 @@ import {
 export const initialState = {
   location: {},
   formLocation: {},
-  mapLayer: 'ft',
+  mapLayer: 'cb',
   mapLocation: {},
   mapView: '9|910001|5947112',
   projectionMode: 'm',
