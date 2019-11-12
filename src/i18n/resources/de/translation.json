@@ -17,6 +17,8 @@
     "recommendationNegative": "Im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft in keiner Klimaprojektion mehr empfohlen ist <1>(fett)</1>. Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind."
   },
   "info": {
+    "aboutTitle": "Über die Anwendung",
+    "about": "Die <i>Tree App</i> unterstützt Dich bei der Wahl geeigneter Baumarten für drei Fälle:<2><0>Klima 1961-1990</0><1>mässiger Klimawandel</1><2>starker Klimawandel</2></2>Sie ist ein Produkt des Forschungsprogramms Wald und Klimawandel von BAFU und WSL.<br> Klicke in die Karte oder wähle manuell einen Standortstyp, dann zeigt die App die empfohlenen Baumarten.",
     "usageTitle": "Erläuterungen und Hinweise zur Bedienung",
     "usage": "<0>Ansichten</0><p>[Aufzählung der Ansichten und ihres Zwecks]</p><2>Kartenansicht</2><p>[Erklärung der Elemente auf der Karte]</p><4>Ansicht zur Wahl des Standortstyps und Anzeige der Baumartenempfehlung</4><p>[Erklärung der Elemente]</p><6>Glossar</6><p>Höhenstufe s. Vegetationshöhenstufe<br />Standortstyp<br />Standortsregion<br />Tannenareal<br />Vegetationshöhenstufe<br />Waldstandort</p>",
     "recommendationTitle": "Baumartenempfehlungen",
@@ -96,7 +98,6 @@
   },
   "welcome": {
     "header": "Das Klima ändert sich",
-    "content": "Die <i>Tree App</i> unterstützt Dich bei der Wahl geeigneter Baumarten für drei Fälle:<2><0>Klima 1961-1990</0><1>mässiger Klimawandel</1><2>starker Klimawandel</2></2>Sie ist ein Produkt des Forschungsprogramms Wald und Klimawandel von BAFU und WSL.<br> Klicke in die Karte oder wähle manuell einen Standortstyp, dann zeigt die App die empfohlenen Baumarten.",
     "close": "Weiter zum Prototypen"
   }
 }

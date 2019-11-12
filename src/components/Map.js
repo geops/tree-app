@@ -32,7 +32,6 @@ function AppMap() {
       <MapboxLayer>
         <MapVectorLayer />
       </MapboxLayer>
-      <WelcomeModal />
     </Map>
   );
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { Accordion } from 'semantic-ui-react';
 
+import InfoAbout from './InfoAbout';
+
 import styles from './InfoPage.module.css';
 
 const participants = {
@@ -24,6 +26,13 @@ const participants = {
 function InfoPage() {
   const { t } = useTranslation();
   const panels = [
+    {
+      key: 'info.about',
+      title: { content: t('info.aboutTitle') },
+      content: {
+        content: <InfoAbout />,
+      },
+    },
     {
       key: 'info.usage',
       title: { content: t('info.usageTitle') },
