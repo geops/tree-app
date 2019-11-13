@@ -84,3 +84,7 @@
   font-size: 0.8em;
   line-height: 1.5em;
 }
+
+.notFound:global(.ui.inverted.header) {
+  margin: 20px;
+}

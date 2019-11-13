@@ -2,7 +2,7 @@ import { info } from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { Menu, Tab } from 'semantic-ui-react';
+import { Header, Menu, Tab } from 'semantic-ui-react';
 
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';
@@ -13,15 +13,20 @@ import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg'
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
 function ProjectionResult() {
-  const { location, projectionMode, projectionResult } = useSelector(state => ({
+  const {
+    location,
+    projectionMode,
+    projections,
+    targetAltitudinalZone,
+  } = useSelector(state => ({
     projectionMode: state.projectionMode,
-    projectionResult: state.projectionResult,
     location: state.location,
+    projections: [...state.projectionResult.projections],
+    targetAltitudinalZone: state.targetAltitudinalZone,
   }));
   const { i18n, t } = useTranslation();
 
   const { altitudinalZone, forestType } = location;
-  const projections = [...projectionResult.projections];
   if (
     altitudinalZone &&
     projections.findIndex(p => p.altitudinalZone === altitudinalZone) === -1
@@ -86,9 +91,9 @@ function ProjectionResult() {
     }
   });
 
-  return (
-    projectionResult.projections.length > 0 && (
-      <div className={styles.container}>
+  return forestType && targetAltitudinalZone ? (
+    <div className={styles.container}>
+      {projections.length > 1 ? (
         <Tab
           className={styles.tab}
           menu={{
@@ -100,9 +105,13 @@ function ProjectionResult() {
           }}
           panes={panes}
         />
-      </div>
-    )
-  );
+      ) : (
+        <Header className={styles.notFound} inverted>
+          {t('recommendation.noProjectionFound')}
+        </Header>
+      )}
+    </div>
+  ) : null;
 }
 
 export default ProjectionResult;
