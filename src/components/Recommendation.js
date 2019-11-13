@@ -41,8 +41,8 @@ function Recommendation() {
     <Tab.Pane>
       {recommendations && (
         <Grid columns={3} padded verticalAlign="middle">
-          <Grid.Row>
-            <Grid.Column textAlign="center" width={4}>
+          <Grid.Row centered>
+            <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
               <PositiveIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
@@ -63,8 +63,8 @@ function Recommendation() {
               </div>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
-            <Grid.Column textAlign="center" width={4}>
+          <Grid.Row centered>
+            <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
               <NeutralIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
@@ -75,7 +75,7 @@ function Recommendation() {
               </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
-              <div>
+              <div className={styles.centered}>
                 <span className={styles.bold}>{list(recommendations[4])}</span>{' '}
                 {list(recommendations[5])}
               </div>
@@ -85,8 +85,8 @@ function Recommendation() {
               </div>
             </Grid.Column>
           </Grid.Row>
-          <Grid.Row>
-            <Grid.Column textAlign="center" width={4}>
+          <Grid.Row centered>
+            <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
               <NegativeIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
