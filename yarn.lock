@@ -969,10 +969,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@geops/tree-lib@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.8.5.tgz#acf8c36daf0a5b0c42a3953a882b7ef7bf4c1a5c"
-  integrity sha512-hNWO06jigyiDsaUDKlF/OMDmonW3tVTmxZHGRK5hAeNW7wjBodeJppmfdzmTEkSST00FwWl5v1pMeSTDMfR+yw==
+"@geops/tree-lib@^0.8.7":
+  version "0.8.7"
+  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.8.7.tgz#4367b9069c70ad9330453026bd4ca4fb646915c6"
+  integrity sha512-rqWGNZJ+fhcRD7a2ndaPe/yNrD2bvmOZaMsgKlm5Bja0lvFUC0CYi3uvRHqsyiqVZId6Gld9x9faDFTKijOj1Q==
   dependencies:
     lodash.difference "^4.5.0"
     lodash.intersection "^4.4.0"
@@ -9139,10 +9139,10 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
 
-react-i18next@^11.1.0:
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.1.0.tgz#94e298e1a115100bebbaa0245921aab69529b956"
-  integrity sha512-FxHNBA6ptW7cygTpbIz5GAN9lrsB89xqgwpD3AzwSB4CDQsd+9i9/Je3Hc3VF6joAb1khFmCUO3ETJFLSrmuwg==
+react-i18next@^11.2.0:
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.2.0.tgz#ef49dc2205408b192e51cc449a6b572ae2af0670"
+  integrity sha512-V+TmORi4ImmhdEiJslXDF0XO1wETI/eKfVi3J3tFpcAW0M6BFJYKYBSV/dkGNjiZb1CgRrTImJnApSaeXFyHag==
   dependencies:
     "@babel/runtime" "^7.3.1"
     html-parse-stringify2 "2.0.1"

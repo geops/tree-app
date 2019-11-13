@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@geops/tree-lib": "^0.8.5",
+    "@geops/tree-lib": "^0.8.7",
     "i18next": "^19.0.0",
     "mapbox-gl": "^1.5.0",
     "ol": "^6.1.1",
@@ -13,7 +13,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-i18next": "^11.1.0",
+    "react-i18next": "^11.2.0",
     "react-redux": "^7.1.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.2.0",
