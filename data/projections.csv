@@ -1,187 +1,43 @@
 regions;heightLevel;forestType;slope;condition;targets;tannenareal;standortsregion;relief;targetHeight
 R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60% ;Boden normal;57C;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60% ;Boden normal;57C;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60% ;Boden normal;57V;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60% ;Boden normal;57V;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;> als 60% ;Boden normal;57CLä;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;> als 60% ;Boden normal;57CLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;< als 60% ;Boden normal;57VLä;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;< als 60% ;Boden normal;57VLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60% ;extrem blockig;57Bl;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60% ;extrem blockig;57Bl;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;57Bl;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;57BlTa;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59A;;normal;60;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59A;;bei Lawinenzug;60Lä;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59C;;;58Bl;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;58Bl;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59E;;;53*s;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59H;;;57VM;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;;;;57VM;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59L;;;58L;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59LLä;;;58LLä;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59R;;;59R;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59V;;;57M;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59VLä;> als 60% ;;57CLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;57CLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59VLä;< als 60% ;;57VLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;57VLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;67;;;67;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;;;;67;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;69;;;69;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;69;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;70;;;70;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;70;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;70;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;71;;;71;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;AV;;;AV;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;23;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;24*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;27*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;32S;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;49*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;49*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;53;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;53;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;53Ta;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;53Lä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;53A;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;57S;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;58;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;58Lä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;58C;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60A;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60ALä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60E;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60E;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60*Lä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60*Lä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60*Ta;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;60*Ta;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;72;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;72Lä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;66PM;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;67*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;47*;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;47*Lä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R,J,M,1,2,3 osa bis co;subalpin;57C;;;55;Reliktareal;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57C;;;51;Haupt- oder Nebenareal;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;51;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57V;;normal;46M;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57V;;Boden verdichtet;46;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57CLä;;;55;Reliktareal ;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;51;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57VLä;;normal;46M;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57VLä;;Boden verdichtet;46;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57Bl;;normal;48;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57Bl;;normal;48;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;48;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57BlTa;;;48;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60;;;50;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60Lä;;;50;;;;hochmontan
@@ -189,148 +45,55 @@ R,J,M,1,2,3 osa bis co;subalpin;58Bl;;normal;47H;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;53*s;;;53*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57VM;;;51;Haupt- oder Nebenareal;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;51;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57VM;;;51Re;Reliktareal;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;58L;;;55*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;58LLä;;;55*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;59R;;;59R;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57M;;;55;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57CLä;;;55;Reliktareal ;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;51;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57VLä;;normal;46M;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57VLä;;Boden verdichtet;46;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;67;;;67;;M, J, 1;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;67;;;65*;;2, 3;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;69;;;69;;M, J, 1;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;69;;;65;;2, 3;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;70;;;70;;M, J, 1;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;70;;;68;;2;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;70;;;68*;;3;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;71;;;71;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;AV;;;50;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;AV;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;23;;;23;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;24*;;;24*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;27*;;;27*;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;27*;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;32S;;;32V;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;49*;;;49*Ta;Haupt- und Nebenareal;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;49*Ta;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;49*;;;49*;Reliktareal;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;49*;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;53;;;53Ta;;M, J, 1, 2a;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;53;;;53*;;2b, 3;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;53Ta;;;53Ta;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;53Lä;;;53Lä;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;53A;;;52;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;57S;;;46*;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46*;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;58;;;55*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;58Lä;;;55*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;58C;;;55*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60A;;;50;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60ALä;;;50;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60E;;;49;;M, J, 1, 2a;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;49;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60E;;;49*;;2b, 3;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;49*;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60*;> 70%;;60*Ta;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;60*Ta;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60*;< 70%;;50*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60*Lä;> 70%;;60*Lä;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;60*Lä;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60*Lä;< 70%;;50*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60*Ta;> 70%;;60*Ta;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;60*Ta;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;60*Ta;< 70%;;50*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;72;;;57Bl;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;72Lä;;;57Bl;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;66PM;;;32V;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;67*;;;65*;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;21;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;23H;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;26;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;26w;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;32C;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;32*;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;33V;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;24;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;40PBl;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;40P;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46Re;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46Re;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46MRe;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46*Re;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;46*Re;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;47;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;47*;;;47*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;subalpin;47*Lä;;;47*;;;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;47*Lä;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;50Re;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;50P;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;50*Re;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;51C;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;51C;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;52Re;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;52T;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;54;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;54A;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;56;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;66;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
-R,J,M,1,2,3 osa bis co;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan
 R,J,M,1,2,3 osa bis co;hochmontan;55;;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;;obermontan
@@ -345,9 +108,9 @@ R,J,M,1,2,3 osa bis co;hochmontan;46;< 20%;;46;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;> 20%;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;48;;normal;22;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;48;;normal;22;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;48;;schattig, k�hl;48;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;48;;schattig, kühl;48;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;normal;48;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;schattig, k�hl, grosse Bl�cke;57Bl;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;48;;;22;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50;;;20;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50;;;20;;;;obermontan
@@ -369,23 +132,12 @@ R,J,M,1,2,3 osa bis co;hochmontan;46M;;;1h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;< 20%;;46;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;> 20%;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;67;;;65;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;65*;;;65*;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;65*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;69;;;65;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;65;;;65;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;70;;;68;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;68;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;68;;;68;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;68;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;68*;;;68;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;68;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;71;;;71;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50;;;20;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;AV;;;20;;;;obermontan
@@ -394,8 +146,6 @@ R,J,M,1,2,3 osa bis co;hochmontan;24*;;;24*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;27*;< 20%;;27h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;27*;> 20%;;26h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;32V;;;32V;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;32V;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;49*Ta;< 20%;;27h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;49*Ta;> 20%;;26h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;49*;> 20%;;26h;;;;obermontan
@@ -403,9 +153,8 @@ R,J,M,1,2,3 osa bis co;hochmontan;49*;< 20%;;27h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;53Ta;;;53Ta;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;53*;;;53Ta;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;53Ta;;;53Ta;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;53Lä;;;53L�;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;53Lä;;;53Lä;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;52;;;18*;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;18*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46*;< 20%;;46*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46*;> 20%;;46;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;55*;;;1h;;;;obermontan
@@ -418,30 +167,25 @@ R,J,M,1,2,3 osa bis co;hochmontan;49;> 20%;;19f;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;49*;< 20%;;27h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;49*;> 20%;;26h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;60*Ta;;normal;18w;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;60*Ta;;schattig, k�hl;18v;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;60*Ta;;schattig, kühl;18v;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50*;;;18M;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;60*Lä;;normal;18w;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;60*Lä;;schattig, k�hl;18v;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;60*Lä;;schattig, kühl;18v;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50*;;;18M;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;60*Ta;;normal;18w;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;60*Ta;;schattig, k�hl;18v;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;60*Ta;;schattig, kühl;18v;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50*;;;18M;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;normal;48;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;schattig, k�hl, grosse Bl�cke;57Bl;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;normal;48;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;schattig, k�hl, grosse Bl�cke;57Bl;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;32V;;;32V;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;32V;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;65*;;;65*;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;65*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;21;;;20;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;23H;;;20;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;26;;;26h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;26w;;;26w;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;32C;;;32V;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;32V;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;32*;;;32*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;33V;;;keine Angabe;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;24;;;24;;;;obermontan
@@ -462,58 +206,22 @@ R,J,M,1,2,3 osa bis co;hochmontan;50*Re;;;18M;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;51C;;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;51C;;;18;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;52Re;;;18*;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;18*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;52T;;;18*;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;18*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;54;;;18*;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;18*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;54A;;;18;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;56;;;56;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;66;;;keine Angabe;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;20E;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;29h;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;13h;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;13eh;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;61;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;22A;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;29A;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;19a;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;19a;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 2b,3;subalpin;57C;;;55;Reliktareal;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57C;;;51Re;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57V;;normal;46MRe;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57V;;Boden verdichtet;55;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;55;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57CLä;;;55;Reliktareal ;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57CLä;;;51Re;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57VLä;;normal;46MRe;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57VLä;;Boden verdichtet;55;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;55;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57Bl;;normal;47H;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57Bl;;normal;47H;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;47H;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57BlTa;;;47H;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60;;;50Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60Lä;;;50Re;;;;hochmontan Reliktareal der Tanne
@@ -521,165 +229,66 @@ R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 2b,3;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53*s;;;53*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57VM;;;51Re;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57VM;;;51Re;Reliktareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;58L;;;55*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;58LLä;;;55*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;59R;;;59R;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57M;;;55;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57CLä;;;55;Reliktareal ;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57CLä;;;51Re;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57VLä;;normal;46MRe;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57VLä;;Boden verdichtet;55;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;55;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;67;;;;;M, J, 1;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;67;;;65*;;2, 3;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;69;;;;;M, J, 1;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;69;;;65;;2, 3;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;70;;;;;M, J, 1;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;70;;;68;;2;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;70;;;68*;;3;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;71;;;71;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;AV;;;50Re;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;AV;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;23;;;23;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;24*;;;24*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;27*;;;27*;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;27*;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;32S;;;32V;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;49*;;;49*;Haupt- und Nebenareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;49*;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;49*;;;49* ;Reliktareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;49* ;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53;;;53;;M, J, 1, 2a;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53;;;53*;;2b, 3;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53Ta;;;53;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53Lä;;;53Lä;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53A;;;52Re;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57S;;;46*Re;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;46*Re;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;58;;;55*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;58Lä;;;55*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;58C;;;55*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60A;;;50Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60ALä;;;50Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60E;;;;;M, J, 1, 2a;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60E;;;49* ;;2b, 3;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;49* ;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*;> 70%;;;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*;< 70%;;50*Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*Lä;> 70%;;;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*Lä;< 70%;;50*Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*Ta;> 70%;;;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*Ta;< 70%;;50*Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;72;;;57Bl;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;72Lä;;;57Bl;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;66PM;;;32V;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;67*;;;65*;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;50Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;32C;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;32*;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;33V;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;24;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;40PBl;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;40P;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;46Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;46Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;46MRe;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;46*Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;46*Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;55;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;47*;;;;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;47*Lä;;;;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;50Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;50Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;50*Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;51Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;52Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;52Re;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;54;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;54A;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;56;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;66;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;57C;;;51;Reliktareal;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57C;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;51;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57V;;normal;46M;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57V;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57CLä;;;51;Reliktareal ;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;51;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57VLä;;normal;46M;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57VLä;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57Bl;;normal;48;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57Bl;;normal;48;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;48;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57BlTa;;;48;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60;;;50;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60Lä;;;50;;;;hochmontan Nebenareal der Tanne
@@ -687,148 +296,55 @@ R,J,M,1,2,3 osa bis co;hochmontan;99999;99999;99999;99999;;;;obermontan
 2b,3;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;53*s;;;53*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57VM;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;51;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57VM;;;51;Reliktareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;51;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;58L;;;55*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;58LLä;;;55*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;59R;;;59R;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57M;;;51;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57CLä;;;51;Reliktareal ;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;51;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57VLä;;normal;46M;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57VLä;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;67;;;;;M, J, 1;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;67;;;65*;;2, 3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;69;;;;;M, J, 1;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;69;;;65;;2, 3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;70;;;;;M, J, 1;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;70;;;68;;2;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;70;;;68;;3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;71;;;71;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;AV;;;50;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;AV;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;23;;;23;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;24*;;;24*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;27*;;;27*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;27*;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;32S;;;32V;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;49*;;;49*Ta;Haupt- und Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;49*Ta;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;49*;;;49*Ta;Reliktareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;49*Ta;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;53;;;53Ta;;M, J, 1, 2a;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;53;;;53*;;2b, 3;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;53Ta;;;53Ta;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;53Lä;;;53Lä;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;53A;;;52;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;57S;;;46*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46*;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;58;;;55*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;58Lä;;;55*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;58C;;;55*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60A;;;50;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60ALä;;;50;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60E;;;;;M, J, 1, 2a;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60E;;;49*Ta;;2b, 3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;49*Ta;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60*;> 70%;;60*Ta;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;60*Ta;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60*;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60*Lä;> 70%;;60*Lä;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;60*Lä;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60*Lä;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60*Ta;> 70%;;60*Ta;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;60*Ta;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;60*Ta;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;72;;;57Bl;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;72Lä;;;57Bl;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;57Bl;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;66PM;;;32V;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;67*;;;65*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;23H;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;26;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;26w;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;32C;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;32*;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;24;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;40PBl;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;40P;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46M;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46*;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;46*;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;47;99999;99999;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;47*;;;47*;;;;hochmontan Nebenareal der Tanne
 2b,3;subalpin;47*Lä;;;47*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;47*Lä;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;50;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;50P;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;50*;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;51C;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;51C;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;52;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;52T;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;52;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;50*(51);99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;56;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;66;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;99999;99999;99999;99999;99999;99999;;hochmontan Nebenareal der Tanne
 J,M,1,2a;hochmontan;55;;;6 collin;;;;collin
 J,M,1,2a;hochmontan;51;;;6 collin;;;;collin
 J,M,1,2a;hochmontan;51;;;7a collin;;;;collin
@@ -867,23 +383,12 @@ J,M,1,2a;hochmontan;46M;;;1 collin;;;;collin
 J,M,1,2a;hochmontan;46;;;7* collin;;;;collin
 J,M,1,2a;hochmontan;46;;;6 collin;;;;collin
 J,M,1,2a;hochmontan;67;;;38 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;40* collin;;;;collin
 J,M,1,2a;hochmontan;65*;;;38 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;40* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;65* collin;;;;collin
 J,M,1,2a;hochmontan;69;;;38 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;40* collin;;;;collin
 J,M,1,2a;hochmontan;65;;;38 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;40* collin;;;;collin
 J,M,1,2a;hochmontan;70;;;41* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;41* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;41* collin;;;;collin
 J,M,1,2a;hochmontan;68;;;41* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;41* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;41* collin;;;;collin
 J,M,1,2a;hochmontan;68*;;;41* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;41* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;41* collin;;;;collin
 J,M,1,2a;hochmontan;71;;;45 collin;;;;collin
 J,M,1,2a;hochmontan;50;;;7S collin;;;;collin
 J,M,1,2a;hochmontan;AV;;;7S collin;;;;collin
@@ -892,8 +397,6 @@ J,M,1,2a;hochmontan;24*;;;25F collin;;;;collin
 J,M,1,2a;hochmontan;27*;;;27 collin;;;;collin
 J,M,1,2a;hochmontan;27*;;;26 collin;;;;collin
 J,M,1,2a;hochmontan;32V;;;28 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;32C collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;31 collin;;;;collin
 J,M,1,2a;hochmontan;49*Ta;;;27 collin;;;;collin
 J,M,1,2a;hochmontan;49*Ta;;;26 collin;;;;collin
 J,M,1,2a;hochmontan;49*;;;26 collin;;;;collin
@@ -903,7 +406,6 @@ J,M,1,2a;hochmontan;53*;;;62 collin;;;;collin
 J,M,1,2a;hochmontan;53Ta;;;62 collin;;;;collin
 J,M,1,2a;hochmontan;53Lä;;;62 collin;;;;collin
 J,M,1,2a;hochmontan;52;;;14 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;15 collin;;;;collin
 J,M,1,2a;hochmontan;46*;;;7* collin;;;;collin
 J,M,1,2a;hochmontan;46*;;;7* collin;;;;collin
 J,M,1,2a;hochmontan;55*;;;1 collin;;;;collin
@@ -929,17 +431,12 @@ J,M,1,2a;hochmontan;57Bl;;;22 collin;;;;collin
 J,M,1,2a;hochmontan;57Bl;;;22 collin;;;;collin
 J,M,1,2a;hochmontan;57Bl;;;22 collin;;;;collin
 J,M,1,2a;hochmontan;32V;;;28 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;32C collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;31 collin;;;;collin
 J,M,1,2a;hochmontan;65*;;;38 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;65* collin;;;;collin
 J,M,1,2a;hochmontan;21;;;7S collin;;;;collin
 J,M,1,2a;hochmontan;23H;;;7S collin;;;;collin
 J,M,1,2a;hochmontan;26;;;26 collin;;;;collin
 J,M,1,2a;hochmontan;26w;;;26 collin;;;;collin
 J,M,1,2a;hochmontan;32C;;;28 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;32C collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;31 collin;;;;collin
 J,M,1,2a;hochmontan;32*;;;;;;;collin
 J,M,1,2a;hochmontan;33V;;;;;;;collin
 J,M,1,2a;hochmontan;24;;;25 collin;;;;collin
@@ -960,41 +457,11 @@ J,M,1,2a;hochmontan;50*Re;;;9a collin;;;;collin
 J,M,1,2a;hochmontan;51C;;;6 collin;;;;collin
 J,M,1,2a;hochmontan;51C;;;7a collin;;;;collin
 J,M,1,2a;hochmontan;52Re;;;14 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;15 collin;;;;collin
 J,M,1,2a;hochmontan;52T;;;14 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;15 collin;;;;collin
 J,M,1,2a;hochmontan;54;;;14 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;15 collin;;;;collin
 J,M,1,2a;hochmontan;54A;;;7a collin;;;;collin
 J,M,1,2a;hochmontan;56;;;45 collin;;;;collin
 J,M,1,2a;hochmontan;66;;;66 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;7S collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;29 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;13a collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;13e collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;61 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;22C collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;29A collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;1 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;6 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;2 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;10a collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;11 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;10w collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;39 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;39* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;40* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;22C collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;29C collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;30 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;39 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;39* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;40* collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;43 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;43S collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;44 collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;25e collin;;;;collin
-J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan;55;;;55 collin;;;;collin
 2b,3;hochmontan;51;;;51 collin;;;;collin
 2b,3;hochmontan;51;;;51 collin;;;;collin
@@ -1033,23 +500,12 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan;46;;;46 collin;;;;collin
 2b,3;hochmontan;46;;;46 collin;;;;collin
 2b,3;hochmontan;67;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;65*;;;65* collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;69;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;65;;;65 collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;70;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;68;;;68 collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;68*;;;68* collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;71;;;45 collin;;;;collin
 2b,3;hochmontan;50;;;50 collin;;;;collin
 2b,3;hochmontan;AV;;;50 collin;;;;collin
@@ -1058,8 +514,6 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan;27*;;;27* collin;;;;collin
 2b,3;hochmontan;27*;;;27* collin;;;;collin
 2b,3;hochmontan;32V;;;32C collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;49*Ta;;;49* collin;;;;collin
 2b,3;hochmontan;49*Ta;;;49* collin;;;;collin
 2b,3;hochmontan;49*;;;49* collin;;;;collin
@@ -1069,7 +523,6 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan;53Ta;;;53 collin;;;;collin
 2b,3;hochmontan;53Lä;;;53 collin;;;;collin
 2b,3;hochmontan;52;;;52 collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;46*;;;46* collin;;;;collin
 2b,3;hochmontan;46*;;;46* collin;;;;collin
 2b,3;hochmontan;55*;;;55* collin;;;;collin
@@ -1095,17 +548,12 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan;57Bl;;;48 collin;;;;collin
 2b,3;hochmontan;57Bl;;;48 collin;;;;collin
 2b,3;hochmontan;32V;;;32C collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;65*;;;65* collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;21;;;;;;;collin
 2b,3;hochmontan;23H;;;23H collin;;;;collin
 2b,3;hochmontan;26;;;26 collin;;;;collin
 2b,3;hochmontan;26w;;;26w collin;;;;collin
 2b,3;hochmontan;32C;;;32C collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;32*;;;32* collin;;;;collin
 2b,3;hochmontan;33V;;;33V collin;;;;collin
 2b,3;hochmontan;24;;;24 collin;;;;collin
@@ -1126,41 +574,11 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan;51C;;;51 collin;;;;collin
 2b,3;hochmontan;51C;;;51 collin;;;;collin
 2b,3;hochmontan;52Re;;;52 collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;52T;;;52 collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;54;;;54 collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan;54A;;;54A collin;;;;collin
 2b,3;hochmontan;56;;;45 collin;;;;collin
 2b,3;hochmontan;66;;;66 collin;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
-2b,3;hochmontan;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;55;;;55 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;51Re;;;51 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;51Re;;;51 collin;;;;collin
@@ -1199,23 +617,12 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;55;;;46 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;55;;;46 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;65*;;;65* collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;65;;;65 collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;68;;;68 collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;68*;;;68* collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;71;;;45 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;50Re;;;50 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;AV;;;50 collin;;;;collin
@@ -1224,8 +631,6 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;27*;;;27* collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;27*;;;27* collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;32V;;;32C collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;49*;;;49* collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;49*;;;49* collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;49* ;;;49* collin;;;;collin
@@ -1235,7 +640,6 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;53;;;53 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;53Lä;;;53 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;52Re;;;52 collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;46*Re;;;46* collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;46*Re;;;46* collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;55*;;;55* collin;;;;collin
@@ -1261,17 +665,12 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;57Bl;;;48 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;57Bl;;;48 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;32V;;;32C collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;65*;;;65* collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;50Re;;;23H collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;;;;26 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;;;;26w collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;32C;;;32C collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;32*;;;32* collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;33V;;;33V collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;24;;;24 collin;;;;collin
@@ -1292,41 +691,11 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;51Re;;;51 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;51Re;;;51 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;52Re;;;52 collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;52Re;;;52 collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;54;;;54 collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;54A;;;54A collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;56;;;45 collin;;;;collin
 2b,3;hochmontan Reliktareal der Tanne;66;;;66 collin;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Reliktareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;51;;;55 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;51;;;51 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;51;;;51 collin;;;;collin
@@ -1365,23 +734,12 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;46;;;46 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;46;;;46 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;65*;;;65* collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;65;;;65 collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;68;;;68 collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;68;;;68* collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;71;;;45 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;50;;;50 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;AV;;;50 collin;;;;collin
@@ -1390,8 +748,6 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;27*;;;27* collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;27*;;;27* collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;32V;;;32C collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;49*Ta;;;49* collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;49*Ta;;;49* collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;49*Ta;;;49* collin;;;;collin
@@ -1401,7 +757,6 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;53Ta;;;53 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;53Lä;;;53 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;52;;;52 collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;46*;;;46* collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;46*;;;46* collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;55*;;;55* collin;;;;collin
@@ -1427,17 +782,12 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;57Bl;;;48 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;57Bl;;;48 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;32V;;;32C collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;65*;;;65* collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;23H;;;23H collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;26;;;26 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;26w;;;26w collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;32C;;;32C collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;32*;;;32* collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;;;;33V collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;24;;;24 collin;;;;collin
@@ -1458,41 +808,11 @@ J,M,1,2a;hochmontan;99999;;;41 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;51C;;;51 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;51C;;;51 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;52;;;52 collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;52T;;;52 collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;52;;;54 collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;50*(51);;;54A collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;56;;;45 collin;;;;collin
 2b,3;hochmontan Nebenareal der Tanne;66;;;66 collin;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
-2b,3;hochmontan Nebenareal der Tanne;99999;;;;;;;collin
 R,J,M,1,2,3 osa bis co;obermontan;19;;;8d;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;19;;;8d;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;18;;;8a;;;;untermontan
@@ -1531,22 +851,15 @@ R,J,M,1,2,3 osa bis co;obermontan;1h;;;1;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;46;;;8*;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;19;;;8d;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;65;;;65;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;65;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;65*;;;65;;J, M, 1;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;65;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;65*;;;65*;;2, 3;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;65;;;65;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;65;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;65;;;65;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;65;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;68;;normal;68;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;68;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;68;;warm und strahlungsreich;41*;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;68;;normal;68;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;68;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;68;;warm und strahlungsreich;41*;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;68;;normal;68;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;68;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;68;;warm und strahlungsreich;41*;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;71;;;45;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;20;;;8S;;;;untermontan
@@ -1557,7 +870,6 @@ R,J,M,1,2,3 osa bis co;obermontan;27h;;;27;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;26h;;;26;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;32V;;normal;28;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;32V;;falls mind alle 10 Jahre überschwemmt;32C;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;32C;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;27h;;;27;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;26h;;;26;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;26h;;;26;;;;untermontan
@@ -1594,7 +906,6 @@ R,J,M,1,2,3 osa bis co;obermontan;48;;;22;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;57Bl;;;48;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;32V;;normal;28;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;32V;;falls mind alle 10 Jahre überschwemmt;32C;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;32C;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;65*;;;65;;J, M, 1;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;65*;;;65*;;2, 3;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;20;;;8S;;;;untermontan
@@ -1603,7 +914,6 @@ R,J,M,1,2,3 osa bis co;obermontan;26h;;;26;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;26w;;;26;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;32V;;normal;28;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;32V;;falls mind alle 10 Jahre überschwemmt;32C;;;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;32C;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;32*;;;;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;keine Angabe;;;keine Angabe;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;24;;;25;;;;untermontan
@@ -1641,24 +951,6 @@ R,J,M,1,2,3 osa bis co;obermontan;22A;;;22A;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;29A;;;29A;;;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;19a;;normal;3;;nur in Standortsregion 2a Wallis;;untermontan
 R,J,M,1,2,3 osa bis co;obermontan;19a;;tiefgründiger Boden, schattig;4;;nur in Standortsregion 2a Wallis;;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;2;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;12e;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;12S;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;12w;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;r Hainsimsen-Bu-Wald;99999;;99999;16;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;16;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;16;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;22C;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;29C;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;30;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;39;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;39*;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;40*;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;43;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;43S;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;44;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;99999;;99999;99999;untermontan
-R,J,M,1,2,3 osa bis co;obermontan;99999;;99999;99999;;99999;99999;untermontan
 R,J,M,1,2,3 osa bis co;untermontan;8d;;;6;;;;submontan
 R,J,M,1,2,3 osa bis co;untermontan;8d;;;6;;;;submontan
 R,J,M,1,2,3 osa bis co;untermontan;8a;;;7a;;;;submontan
@@ -1823,8 +1115,6 @@ R,J,M,1,2,3 osa bis co;untermontan;40*;;;40*;;;;submontan
 R,J,M,1,2,3 osa bis co;untermontan;43;;;43;;;;submontan
 R,J,M,1,2,3 osa bis co;untermontan;43S;;;43S;;;;submontan
 R,J,M,1,2,3 osa bis co;untermontan;44;;;44;;;;submontan
-R,J,M,1,2,3 osa bis co;untermontan;99999;;99999;25e;;99999;;submontan
-R,J,M,1,2,3 osa bis co;untermontan;99999;;99999;41;;99999;;submontan
 J,M,1,2a;submontan;6;;;6 collin;;;;collin
 J,M,1,2a;submontan;6;;;6 collin;;;;collin
 J,M,1,2a;submontan;7a;;;7a collin;;;;collin
@@ -2167,75 +1457,23 @@ R,J,M,1,2 Beginn co;collin;35M;;;17 collin;;;;collin
 R,J,M,1,2 Beginn co;collin;38S;;;65* collin;;;;collin
 R,J,M,1,2 Beginn co;collin;40*;;;40* collin;;;;collin
 R4;obersubalpin;59;> als 60% ;normal;57C;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57C;;;;subalpin
 R4;obersubalpin;59;< als 60% ;normal;57V;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57V;;;;subalpin
 R4;obersubalpin;59;> als 60% ;extrem blockig;57Bl;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57Bl;;;;subalpin
 R4;obersubalpin;59;< als 60% ;extrem blockig;57Bl;;;;subalpin
 R4;obersubalpin;59A;;normal;60A;;;;subalpin
-R4;obersubalpin;99999;99999;99999;60A;;;;subalpin
 R4;obersubalpin;59A;;schattig, kühl;59A;;;;subalpin
-R4;obersubalpin;99999;99999;99999;59A;;;;subalpin
 R4;obersubalpin;59J;;normal;58L;;;;subalpin
 R4;obersubalpin;59J;;schattig, kühl;59J;;;;subalpin
 R4;obersubalpin;59R;;;59R;;;;subalpin
 R4;obersubalpin;59S;;;59S;;;;subalpin
-R4;obersubalpin;99999;99999;99999;59S;;;;subalpin
 R4;obersubalpin;59*;;normal;47*;;;;subalpin
 R4;obersubalpin;59*;;schattig, kühl;59*;;;;subalpin
-R4;obersubalpin;99999;99999;99999;47*Lä;;;;subalpin
-R4;obersubalpin;99999;99999;99999;;;;;subalpin
 R4;obersubalpin;67;;;67;;;;subalpin
-R4;obersubalpin;99999;99999;99999;67;;;;subalpin
 R4;obersubalpin;69;;;69;;;;subalpin
-R4;obersubalpin;99999;99999;99999;69;;;;subalpin
 R4;obersubalpin;70;;;70;;;;subalpin
 R4;obersubalpin;71;;;71;;;;subalpin
 R4;obersubalpin;AV;;keine Lawinenbeeinflussung;60;;;;subalpin
-R4;obersubalpin;99999;99999;99999;60;;;;subalpin
 R4;obersubalpin;AV;;mit Lawinenbeeinflussung;24*;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;21*;;;;subalpin
-R4;obersubalpin;99999;99999;99999;27*;;;;subalpin
-R4;obersubalpin;99999;99999;99999;53;;;;subalpin
-R4;obersubalpin;99999;99999;99999;53Lä;;;;subalpin
-R4;obersubalpin;99999;99999;99999;53Ta;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57CLä;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57CLä;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57VLä;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57VLä;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57BlTa;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57VM;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57VM;;;;subalpin
-R4;obersubalpin;99999;99999;99999;57S;;;;subalpin
-R4;obersubalpin;99999;99999;99999;58;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;58Bl;;;;subalpin
-R4;obersubalpin;99999;99999;99999;58Bl;;;;subalpin
-R4;obersubalpin;99999;99999;99999;58C;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;60*;;;;subalpin
-R4;obersubalpin;99999;99999;99999;60*;;;;subalpin
-R4;obersubalpin;99999;99999;99999;32V;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;32V;;;;subalpin
-R4;obersubalpin;99999;99999;99999;AV;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
-R4;obersubalpin;99999;99999;99999;99999;;;;subalpin
 R4;subalpin;57C;;;47;Haupt- oder Nebenareal;;;hochmontan
 R4;subalpin;57C;;;47Re;Reliktareal;;;hochmontan
 R4;subalpin;57V;;;46M;Haupt- oder Nebenareal;;;hochmontan
@@ -2265,7 +1503,6 @@ R4;subalpin;71;;;71;;;;hochmontan
 R4;subalpin;60;;;47D;Haupt- oder Nebenareal;;;hochmontan
 R4;subalpin;60;;;47DRe;Reliktareal;;;hochmontan
 R4;subalpin;24*;;;24*;;;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;;;hochmontan
 R4;subalpin;21*;;;47D;;;;hochmontan
 R4;subalpin;27*;;;27h;;;;hochmontan
 R4;subalpin;53;;;53Ta;;;;hochmontan
@@ -2280,32 +1517,14 @@ R4;subalpin;57VM;;;47M;Haupt- oder Nebenareal;;;hochmontan
 R4;subalpin;57VM;;;47MRe;Reliktareal;;;hochmontan
 R4;subalpin;57S;;;56;;;;hochmontan
 R4;subalpin;58;;;55*;;;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;;;hochmontan
 R4;subalpin;58Bl;;normal;47H;;;;hochmontan
 R4;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan
 R4;subalpin;58C;;;55*;;;;hochmontan
-R4;subalpin;99999;;99999;55*;99999;;;hochmontan
 R4;subalpin;60*;;;50*;Haupt- oder Nebenareal;;;hochmontan
 R4;subalpin;60*;;;50*Re;Reliktareal;;;hochmontan
 R4;subalpin;32V;;alle 6 Jahre oder seltener überschwemmt;32V;;;;hochmontan
-R4;subalpin;99999;;99999;32V;99999;;;hochmontan
 R4;subalpin;32V;;bis alle 5 Jahre überschwemmt;43S;;;;hochmontan
 R4;subalpin;AV;;;24*;;;;hochmontan
-R4;subalpin;99999;;99999;24*;99999;;;hochmontan
-R4;subalpin;99999;;99999;23*;99999;;;hochmontan
-R4;subalpin;99999;;99999;24;99999;;;hochmontan
-R4;subalpin;99999;;99999;32*;99999;;;hochmontan
-R4;subalpin;99999;;99999;33V;99999;;;hochmontan
-R4;subalpin;99999;;99999;40P;99999;;;hochmontan
-R4;subalpin;99999;;99999;40PBl;99999;;;hochmontan
-R4;subalpin;99999;;99999;66;99999;;;hochmontan
-R4;subalpin;99999;;99999;AV;99999;;;hochmontan
-R4;subalpin;99999;;99999;25a;99999;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan
 R4;subalpin;57C;;;47Re;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
 R4;subalpin;57C;;;47Re;Reliktareal;;;hochmontan Reliktareal der Tanne
 R4;subalpin;57V;;;46MRe;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
@@ -2335,7 +1554,6 @@ R4;subalpin;71;;;71;;;;hochmontan Reliktareal der Tanne
 R4;subalpin;60;;;47DRe;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
 R4;subalpin;60;;;47DRe;Reliktareal;;;hochmontan Reliktareal der Tanne
 R4;subalpin;24*;;;24*;;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;24*;99999;;;hochmontan Reliktareal der Tanne
 R4;subalpin;21*;;;47DRe;;;;hochmontan Reliktareal der Tanne
 R4;subalpin;27*;;;27h;;;;hochmontan Reliktareal der Tanne
 R4;subalpin;53;;;53*;;;;hochmontan Reliktareal der Tanne
@@ -2350,32 +1568,14 @@ R4;subalpin;57VM;;;47MRe;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tan
 R4;subalpin;57VM;;;47MRe;Reliktareal;;;hochmontan Reliktareal der Tanne
 R4;subalpin;57S;;;56;;;;hochmontan Reliktareal der Tanne
 R4;subalpin;58;;;55*;;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;55*;99999;;;hochmontan Reliktareal der Tanne
 R4;subalpin;58Bl;;normal;47H;;;;hochmontan Reliktareal der Tanne
 R4;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan Reliktareal der Tanne
 R4;subalpin;58C;;;55*;;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;55*;99999;;;hochmontan Reliktareal der Tanne
 R4;subalpin;60*;;;50*Re;Haupt- oder Nebenareal;;;hochmontan Reliktareal der Tanne
 R4;subalpin;60*;;;50*Re;Reliktareal;;;hochmontan Reliktareal der Tanne
 R4;subalpin;32V;;alle 6 Jahre oder seltener überschwemmt;32V;;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;32V;99999;;;hochmontan Reliktareal der Tanne
 R4;subalpin;32V;;bis alle 5 Jahre überschwemmt;43S;;;;hochmontan Reliktareal der Tanne
 R4;subalpin;AV;;;24*;;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;24*;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;23*;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;24;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;32*;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;33V;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;40P;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;40PBl;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;66;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;AV;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;25a;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Reliktareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Reliktareal der Tanne
 R4;subalpin;57C;;;47;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;57C;;;47;Reliktareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;57V;;;46M;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
@@ -2405,7 +1605,6 @@ R4;subalpin;71;;;71;;;;hochmontan Nebenareal der Tanne
 R4;subalpin;60;;;47D;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;60;;;47D;Reliktareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;24*;;;24*;;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;24*;99999;;;hochmontan Nebenareal der Tanne
 R4;subalpin;21*;;;47D;;;;hochmontan Nebenareal der Tanne
 R4;subalpin;27*;;;27h;;;;hochmontan Nebenareal der Tanne
 R4;subalpin;53;;;53Ta;;;;hochmontan Nebenareal der Tanne
@@ -2420,32 +1619,14 @@ R4;subalpin;57VM;;;47M;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;57VM;;;47M;Reliktareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;57S;;;56;;;;hochmontan Nebenareal der Tanne
 R4;subalpin;58;;;55*;;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;55*;99999;;;hochmontan Nebenareal der Tanne
 R4;subalpin;58Bl;;normal;47H;;;;hochmontan Nebenareal der Tanne
 R4;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan Nebenareal der Tanne
 R4;subalpin;58C;;;55*;;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;55*;99999;;;hochmontan Nebenareal der Tanne
 R4;subalpin;60*;;;50*;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;60*;;;50*;Reliktareal;;;hochmontan Nebenareal der Tanne
 R4;subalpin;32V;;alle 6 Jahre oder seltener überschwemmt;32V;;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;32V;99999;;;hochmontan Nebenareal der Tanne
 R4;subalpin;32V;;bis alle 5 Jahre überschwemmt;43S;;;;hochmontan Nebenareal der Tanne
 R4;subalpin;AV;;;24*;;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;24*;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;23*;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;24;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;32*;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;33V;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;40P;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;40PBl;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;66;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;AV;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;25a;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Nebenareal der Tanne
-R4;subalpin;99999;;99999;99999;99999;;;hochmontan Nebenareal der Tanne
 R4;hochmontan;47;;;25a;;;;collin
 R4;hochmontan;47Re;;;25a;;;;collin
 R4;hochmontan;46M;;;42V;;;;collin
@@ -2511,11 +1692,6 @@ R4;hochmontan;40PBl;;;40PBlt;;;;collin
 R4;hochmontan;66;;;66;;;;collin
 R4;hochmontan;AV;;;25au;;;;collin
 R4;hochmontan;25a;;;25a;;;;collin
-R4;hochmontan;99999;;99999;42t;;;;collin
-R4;hochmontan;99999;;99999;44;;;;collin
-R4;hochmontan;99999;;99999;33b;;;;collin
-R4;hochmontan;99999;;99999;35Q;;;;collin
-R4;hochmontan;99999;;99999;91;;;;collin
 R4;hochmontan Reliktareal der Tanne;47Re;;;25a;;;;collin
 R4;hochmontan Reliktareal der Tanne;47Re;;;25a;;;;collin
 R4;hochmontan Reliktareal der Tanne;46MRe;;;42V;;;;collin
@@ -2581,11 +1757,6 @@ R4;hochmontan Reliktareal der Tanne;40PBl;;;40PBlt;;;;collin
 R4;hochmontan Reliktareal der Tanne;66;;;66;;;;collin
 R4;hochmontan Reliktareal der Tanne;AV;;;25au;;;;collin
 R4;hochmontan Reliktareal der Tanne;25a;;;25a;;;;collin
-R4;hochmontan Reliktareal der Tanne;99999;;99999;42t;;;;collin
-R4;hochmontan Reliktareal der Tanne;99999;;99999;44;;;;collin
-R4;hochmontan Reliktareal der Tanne;99999;;99999;33b;;;;collin
-R4;hochmontan Reliktareal der Tanne;99999;;99999;35Q;;;;collin
-R4;hochmontan Reliktareal der Tanne;99999;;99999;91;;;;collin
 R4;hochmontan Nebenareal der Tanne;47;;;25a;;;;collin
 R4;hochmontan Nebenareal der Tanne;47;;;25a;;;;collin
 R4;hochmontan Nebenareal der Tanne;46M;;;42V;;;;collin
@@ -2651,145 +1822,44 @@ R4;hochmontan Nebenareal der Tanne;40PBl;;;40PBlt;;;;collin
 R4;hochmontan Nebenareal der Tanne;66;;;66;;;;collin
 R4;hochmontan Nebenareal der Tanne;AV;;;25au;;;;collin
 R4;hochmontan Nebenareal der Tanne;25a;;;25a;;;;collin
-R4;hochmontan Nebenareal der Tanne;99999;;99999;42t;;;;collin
-R4;hochmontan Nebenareal der Tanne;99999;;99999;44;;;;collin
-R4;hochmontan Nebenareal der Tanne;99999;;99999;33b;;;;collin
-R4;hochmontan Nebenareal der Tanne;99999;;99999;35Q;;;;collin
-R4;hochmontan Nebenareal der Tanne;99999;;99999;91;;;;collin
 R5;subalpin;21L;;;21L;;;;hochmontan
 R5;subalpin;59A;;;21L;;;;hochmontan
 R5;subalpin;21*;;;21*;;;;hochmontan
-R5;subalpin;99999;;;23*;;;;hochmontan
-R5;subalpin;99999;;;24;;;;hochmontan
 R5;subalpin;AV;;;24*;;;;hochmontan
-R5;subalpin;99999;;;32V;;;;hochmontan
-R5;subalpin;99999;;;32*;;;;hochmontan
 R5;subalpin;;;;27h;;;;hochmontan
-R5;subalpin;99999;;;40P;;;;hochmontan
-R5;subalpin;99999;;;40PBl;;;;hochmontan
-R5;subalpin;99999;;;43S;;;;hochmontan
 R5;subalpin;57C;;;47;;;;hochmontan
 R5;subalpin;59;;;47;;;;hochmontan
-R5;subalpin;99999;;;47D;;;;hochmontan
-R5;subalpin;99999;;;47H;;;;hochmontan
-R5;subalpin;99999;;;47M;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
 R5;subalpin;47*;;;47*;;;;hochmontan
 R5;subalpin;47*Lä;;;47*;;;;hochmontan
 R5;subalpin;;;;47*Lä;;;;hochmontan
 R5;subalpin;59*;;;47*;;;;hochmontan
 R5;subalpin;59S;;;52;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;48;;;;hochmontan
 R5;subalpin;58;;;55*;;;;hochmontan
 R5;subalpin;59J;;;55*;;;;hochmontan
-R5;subalpin;99999;;;50*;;;;hochmontan
-R5;subalpin;99999;;;55*Ta;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;57Bl;;;;hochmontan
-R5;subalpin;99999;;;66;;;;hochmontan
 R5;subalpin;70;;;68;;;;hochmontan
 R5;subalpin;70;;;68;;;;hochmontan
 R5;subalpin;67;;;67;;;;hochmontan
 R5;subalpin;69;;;69;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
 R5;subalpin;71;;;keine Abgabe;;;;hochmontan
-R5;subalpin;99999;;;AV;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
-R5;subalpin;99999;;;99999;;;;hochmontan
 R5;obersubalpin;21L;;;21L;;;;hochmontan
 R5;obersubalpin;59A;;;21L;;;;hochmontan
 R5;obersubalpin;21*;;;21*;;;;hochmontan
-R5;obersubalpin;99999;;;23*;;;;hochmontan
-R5;obersubalpin;99999;;;24;;;;hochmontan
 R5;obersubalpin;AV;;;24*;;;;hochmontan
-R5;obersubalpin;99999;;;32V;;;;hochmontan
-R5;obersubalpin;99999;;;32*;;;;hochmontan
 R5;obersubalpin;;;;27h;;;;hochmontan
-R5;obersubalpin;99999;;;40P;;;;hochmontan
-R5;obersubalpin;99999;;;40PBl;;;;hochmontan
-R5;obersubalpin;99999;;;43S;;;;hochmontan
 R5;obersubalpin;57C;;;47;;;;hochmontan
 R5;obersubalpin;59;;;47;;;;hochmontan
-R5;obersubalpin;99999;;;47D;;;;hochmontan
-R5;obersubalpin;99999;;;47H;;;;hochmontan
-R5;obersubalpin;99999;;;47M;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
 R5;obersubalpin;47*;;;47*;;;;hochmontan
 R5;obersubalpin;47*Lä;;;47*;;;;hochmontan
 R5;obersubalpin;;;;47*Lä;;;;hochmontan
 R5;obersubalpin;59*;;;47*;;;;hochmontan
 R5;obersubalpin;59S;;;52;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;48;;;;hochmontan
 R5;obersubalpin;58;;;55*;;;;hochmontan
 R5;obersubalpin;59J;;;55*;;;;hochmontan
-R5;obersubalpin;99999;;;50*;;;;hochmontan
-R5;obersubalpin;99999;;;55*Ta;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;57Bl;;;;hochmontan
-R5;obersubalpin;99999;;;66;;;;hochmontan
 R5;obersubalpin;70;;;68;;;;hochmontan
 R5;obersubalpin;70;;;68;;;;hochmontan
 R5;obersubalpin;67;;;67;;;;hochmontan
 R5;obersubalpin;69;;;69;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
 R5;obersubalpin;71;;;keine Abgabe;;;;hochmontan
-R5;obersubalpin;99999;;;AV;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
-R5;obersubalpin;99999;;;99999;;;;hochmontan
 R5;hochmontan;21L;;;21L;;;;obermontan
 R5;hochmontan;21L;;;21L;;;;obermontan
 R5;hochmontan;21*;;;19P;;;;obermontan
@@ -2807,56 +1877,24 @@ R5;hochmontan;47;;;19a;;;;obermontan
 R5;hochmontan;47D;;;19m;;;;obermontan
 R5;hochmontan;47H;;;47H;;;;obermontan
 R5;hochmontan;47M;;;3;;;;obermontan
-R5;hochmontan;99999;;;3;;;99999;obermontan
 R5;hochmontan;47*;;;4;;;;obermontan
 R5;hochmontan;47*;;;4;;;;obermontan
 R5;hochmontan;47*Lä;;;4;;;;obermontan
 R5;hochmontan;47*;;;4;;;;obermontan
 R5;hochmontan;52;;;14*;;;;obermontan
-R5;hochmontan;99999;;;14*;;;99999;obermontan
 R5;hochmontan;48;;;24*;;;;obermontan
 R5;hochmontan;55*;;;3s;;;;obermontan
 R5;hochmontan;55*;;;3s;;;;obermontan
 R5;hochmontan;50*;;;12*;;;;obermontan
 R5;hochmontan;55*Ta;;;3s;;;;obermontan
-R5;hochmontan;99999;;;3s;;;99999;obermontan
 R5;hochmontan;57Bl;;;24*;;;;obermontan
 R5;hochmontan;66;;;keine Angabe;;;;obermontan
 R5;hochmontan;68;;;68;;;normal;obermontan
 R5;hochmontan;68;;;42r;;;warm und strahlungsreich;obermontan
 R5;hochmontan;67;;;16*;;;;obermontan
 R5;hochmontan;69;;;14*;;;;obermontan
-R5;hochmontan;99999;;;14*;;;99999;obermontan
 R5;hochmontan;keine Abgabe;;;;;;;obermontan
 R5;hochmontan;AV;;;24*;;;;obermontan
-R5;hochmontan;99999;;;3*/4*;;;99999;obermontan
-R5;hochmontan;99999;;;12*h;;;99999;obermontan
-R5;hochmontan;99999;;;13*;;;99999;obermontan
-R5;hochmontan;99999;;;27h;;;99999;obermontan
-R5;hochmontan;99999;;;AV;;;99999;obermontan
-R5;hochmontan;99999;;;40Pt;;;99999;obermontan
-R5;hochmontan;99999;;;40PBlt;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
-R5;hochmontan;99999;;;99999;;;99999;obermontan
 R5;hochmontan;21L;;;21L;;;;untermontan
 R5;hochmontan;21L;;;21L;;;;untermontan
 R5;hochmontan;21*;;;19P;;;;untermontan
@@ -2874,56 +1912,24 @@ R5;hochmontan;47;;;19a;;;;untermontan
 R5;hochmontan;47D;;;19m;;;;untermontan
 R5;hochmontan;47H;;;47H;;;;untermontan
 R5;hochmontan;47M;;;3;;;;untermontan
-R5;hochmontan;99999;;;3;;;99999;untermontan
 R5;hochmontan;47*;;;4;;;;untermontan
 R5;hochmontan;47*;;;4;;;;untermontan
 R5;hochmontan;47*Lä;;;4;;;;untermontan
 R5;hochmontan;47*;;;4;;;;untermontan
 R5;hochmontan;52;;;14*;;;;untermontan
-R5;hochmontan;99999;;;14*;;;99999;untermontan
 R5;hochmontan;48;;;24*;;;;untermontan
 R5;hochmontan;55*;;;3s;;;;untermontan
 R5;hochmontan;55*;;;3s;;;;untermontan
 R5;hochmontan;50*;;;12*;;;;untermontan
 R5;hochmontan;55*Ta;;;3s;;;;untermontan
-R5;hochmontan;99999;;;3s;;;99999;untermontan
 R5;hochmontan;57Bl;;;24*;;;;untermontan
 R5;hochmontan;66;;;keine Angabe;;;;untermontan
 R5;hochmontan;68;;;68;;;normal;untermontan
 R5;hochmontan;68;;;42r;;;warm und strahlungsreich;untermontan
 R5;hochmontan;67;;;16*;;;;untermontan
 R5;hochmontan;69;;;14*;;;;untermontan
-R5;hochmontan;99999;;;14*;;;99999;untermontan
 R5;hochmontan;keine Abgabe;;;;;;;untermontan
 R5;hochmontan;AV;;;24*;;;;untermontan
-R5;hochmontan;99999;;;3*/4*;;;99999;untermontan
-R5;hochmontan;99999;;;12*h;;;99999;untermontan
-R5;hochmontan;99999;;;13*;;;99999;untermontan
-R5;hochmontan;99999;;;27h;;;99999;untermontan
-R5;hochmontan;99999;;;AV;;;99999;untermontan
-R5;hochmontan;99999;;;40Pt;;;99999;untermontan
-R5;hochmontan;99999;;;40PBlt;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
-R5;hochmontan;99999;;;99999;;;99999;untermontan
 R5;ober- und untermontan;21L;;;25au;;;;collin mit Buche
 R5;ober- und untermontan;21L;;;25au;;;;collin mit Buche
 R5;ober- und untermontan;19P;;;33m;;;;collin mit Buche
@@ -2970,27 +1976,6 @@ R5;ober- und untermontan;27h;;;27;;;;collin mit Buche
 R5;ober- und untermontan;AV;;;25au;;;;collin mit Buche
 R5;ober- und untermontan;40Pt;;;40Pt;;;;collin mit Buche
 R5;ober- und untermontan;40PBlt;;;25as;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;7a;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;22*;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;25f;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;27O;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;28;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;30;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;31;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;33a;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;33b;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;35Q;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;35S;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;40PBlt;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;42C;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;42t;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;43;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;43*;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;44;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;91;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;92a;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;92z;;;;collin mit Buche
-R5;ober- und untermontan;99999;;99999;93;;;;collin mit Buche
 R5;ober- und untermontan;21L;;;25au hyp;;;;hyperinsubrisch
 R5;ober- und untermontan;21L;;;25au hyp;;;;hyperinsubrisch
 R5;ober- und untermontan;19P;;;33m hyp;;;;hyperinsubrisch
@@ -3037,27 +2022,6 @@ R5;ober- und untermontan;27h;;;27 hyp;;;;hyperinsubrisch
 R5;ober- und untermontan;AV;;;25au hyp;;;;hyperinsubrisch
 R5;ober- und untermontan;40Pt;;;40P hyp;;;;hyperinsubrisch
 R5;ober- und untermontan;40PBlt;;;25as hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;7a hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;22* hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;25f hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;27O hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;28 hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;30 hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;31 hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;33a hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;33b hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;35Q hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;35S hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;40PBl hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;42C hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;42t hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;43 hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;43* hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;44 hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;91 hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;92a hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;92z hyp;;;;hyperinsubrisch
-R5;ober- und untermontan;99999;;99999;93 hyp;;;;hyperinsubrisch
 R5;ober- und untermontan;21L;;;25au med;;;;collin -mediterran
 R5;ober- und untermontan;21L;;;25au med;;;;collin -mediterran
 R5;ober- und untermontan;19P;;;33m  med;;;;collin -mediterran
@@ -3104,24 +2068,3 @@ R5;ober- und untermontan;27h;;;27  med;;;;collin -mediterran
 R5;ober- und untermontan;AV;;;25au  med;;;;collin -mediterran
 R5;ober- und untermontan;40Pt;;;40P  med;;;;collin -mediterran
 R5;ober- und untermontan;40PBlt;;;25as  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;7a med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;22*  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;25f  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;27O  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;28  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;30  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;31  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;33a  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;33b  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;35Q  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;35S  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;40PBl  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;42C  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;42t  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;43  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;43*  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;44  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;91  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;92a  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;92z  med;;;;collin -mediterran
-R5;ober- und untermontan;99999;;99999;93  med;;;;collin -mediterran
