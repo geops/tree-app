@@ -93,7 +93,7 @@ function project(location = {}, targetAltitude, previousResult) {
   }
 
   if (result && altitudeIdx !== -1) {
-    result.options.targetAltitudinalZone = altitudeList.slice(altitudeIdx);
+    result.options.targetAltitudinalZone = altitudeList.slice(altitudeIdx + 1);
   }
 
   // Replace alphanumeric sorting with custom sorting based on database export
