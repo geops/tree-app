@@ -29,6 +29,9 @@
     "impressumTitle": "Impressum",
     "impressum": "Die Tree-App ist ein Umsetzungsprodukt des Forschungsprogramms „Wald und Klimawandel“ von BAFU und WSL."
   },
+  "location": {
+    "underConstruction": "Die Bestimmung des Standortstyp befindet sich noch in der Entwicklung und wird erst in der nächsten Version verfügbar sein."
+  },
   "map": {
     "baseLayer": {
       "map": "Karte",
