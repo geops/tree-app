@@ -80,9 +80,15 @@ function project(location = {}, targetAltitude, previousResult) {
 
   validate('targetAltitudinalZone', targetAltitude, types.altitudinalZone);
 
+  const previous = result.projections.slice(-1)[0];
   result = projectionReducer(location, targetAltitudeIdx, result);
   const last = result.projections.slice(-1)[0];
-  if (last && altitudeList.indexOf(last.altitudinalZone) < targetAltitudeIdx) {
+  const lastAltitudeIdx = last && altitudeList.indexOf(last.altitudinalZone);
+
+  if (previous && previous.altitudinalZone === last.altitudinalZone) {
+    // Could not find projection to targetAltitude
+    result.projections = [];
+  } else if (lastAltitudeIdx < targetAltitudeIdx) {
     result = project({ ...location, ...last }, targetAltitude, result);
   }
 
