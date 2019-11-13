@@ -6,12 +6,13 @@
   z-index: 1;
 }
 .tab :global(.ui.secondary.inverted.menu) {
-  margin-top: -2px;
+  height: 90px;
 }
 .tabMenu :global(.item) {
   border-radius: 0 !important;
   background-color: var(--primary-color-600) !important;
   padding: 0.5em 0 !important;
+  height: 100%;
 }
 .tabMenu :global(.item:first-child) {
   font-size: 1.2em;
