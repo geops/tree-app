@@ -2,9 +2,9 @@ import projections from '../data/projections.json';
 import types from '../data/types.json';
 
 const fields = [
-  'forestType',
   'forestEcoregion',
   'altitudinalZone',
+  'forestType',
   'slope',
   'additional',
   'silverFirArea',
@@ -97,9 +97,11 @@ function project(location = {}, targetAltitude, previousResult) {
   }
 
   // Replace alphanumeric sorting with custom sorting based on database export
-  result.options.forestType = types.forestType
-    .filter(ft => result.options.forestType.includes(ft.code))
-    .map(ft => ft.code);
+  if (result.options.forestType) {
+    result.options.forestType = types.forestType
+      .filter(ft => result.options.forestType.includes(ft.code))
+      .map(ft => ft.code);
+  }
 
   return result;
 }

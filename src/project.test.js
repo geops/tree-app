@@ -33,8 +33,8 @@ describe('invalid function parameters', () => {
 });
 
 describe('valid options', () => {
-  test('valid length of forestType list for empty input', () => {
-    expect(project().options.forestType.length).toBe(202);
+  test('valid length of forestEcoregion list for empty input', () => {
+    expect(project().options.forestEcoregion.length).toBe(9);
   });
 
   test('valid list for forestEcoregion with input not found', () => {
@@ -45,7 +45,7 @@ describe('valid options', () => {
         altitudinalZone: '40',
         silverFirArea: '1',
       }).options.forestEcoregion,
-    ).toMatchObject(['3', '4', '2b']);
+    ).toMatchObject(['1', '3', '4', 'J', 'M', '2a', '2b', '5a', '5b']);
   });
 
   test('valid list for altitudinalZone', () => {
@@ -54,7 +54,7 @@ describe('valid options', () => {
         forestEcoregion: '1',
         forestType: '59V',
       }).options.altitudinalZone,
-    ).toMatchObject(['100']);
+    ).toMatchObject(['20', '40', '50', '60', '81', '90', '100']);
   });
 
   test('valid list for targetAltitudinalZone', () => {

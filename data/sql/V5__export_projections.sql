@@ -62,18 +62,18 @@ LEFT JOIN slopes ON slopes.slope = i.slope;
 
 COPY
     (WITH relief AS
-         (SELECT foresttype,
-                 forest_ecoregion,
+         (SELECT forest_ecoregion,
                  altitudinal_zone,
+                 foresttype,
                  slope,
                  additional,
                  silver_fir_area,
-                 jsonb_object_agg(relief, target::text) AS json
+                 jsonb_object_agg(relief::text, target::text) AS json
           FROM projections_export
           WHERE target IS NOT NULL
-          GROUP BY foresttype,
-                   forest_ecoregion,
+          GROUP BY forest_ecoregion,
                    altitudinal_zone,
+                   foresttype,
                    slope,
                    additional,
                    silver_fir_area),
@@ -83,18 +83,18 @@ COPY
                  altitudinal_zone,
                  slope,
                  additional,
-                 jsonb_object_agg(silver_fir_area, relief.json) AS json
+                 jsonb_object_agg(silver_fir_area::text, relief.json) AS json
           FROM projections_export
-          LEFT JOIN relief USING (foresttype,
-                                  forest_ecoregion,
+          LEFT JOIN relief USING (forest_ecoregion,
                                   altitudinal_zone,
+                                  foresttype,
                                   slope,
                                   additional,
                                   silver_fir_area)
           WHERE relief.json IS NOT NULL
-          GROUP BY foresttype,
-                   forest_ecoregion,
+          GROUP BY forest_ecoregion,
                    altitudinal_zone,
+                   foresttype,
                    slope,
                    additional),
           additional AS
@@ -102,54 +102,54 @@ COPY
                  forest_ecoregion,
                  altitudinal_zone,
                  slope,
-                 jsonb_object_agg(additional,silver_fir_area.json) AS json
+                 jsonb_object_agg(additional::text, silver_fir_area.json) AS json
           FROM projections_export
-          LEFT JOIN silver_fir_area USING (foresttype,
-                                           forest_ecoregion,
+          LEFT JOIN silver_fir_area USING (forest_ecoregion,
                                            altitudinal_zone,
+                                           foresttype,
                                            slope,
                                            additional)
           WHERE silver_fir_area.json IS NOT NULL
-          GROUP BY foresttype,
-                   forest_ecoregion,
+          GROUP BY forest_ecoregion,
                    altitudinal_zone,
+                   foresttype,
                    slope),
           slope AS
          (SELECT foresttype,
                  forest_ecoregion,
                  altitudinal_zone,
-                 jsonb_object_agg(slope, additional.json) AS json
+                 jsonb_object_agg(slope::text, additional.json) AS json
           FROM projections_export
-          LEFT JOIN additional USING (foresttype,
-                                      forest_ecoregion,
+          LEFT JOIN additional USING (forest_ecoregion,
                                       altitudinal_zone,
+                                      foresttype,
                                       slope)
           WHERE additional.json IS NOT NULL
-          GROUP BY foresttype,
-                   forest_ecoregion,
+          GROUP BY forest_ecoregion,
+                   altitudinal_zone,
+                   foresttype),
+          foresttype AS
+         (SELECT forest_ecoregion,
+                 altitudinal_zone,
+                 jsonb_object_agg(foresttype::text, slope.json) AS json
+          FROM projections_export
+          LEFT JOIN slope USING (forest_ecoregion,
+                                 altitudinal_zone,
+                                 foresttype)
+          WHERE slope.json IS NOT NULL
+          GROUP BY forest_ecoregion,
                    altitudinal_zone),
           altitudinal_zone AS
-         (SELECT foresttype,
-                 forest_ecoregion,
-                 jsonb_object_agg(altitudinal_zone, slope.json) AS json
+         (SELECT forest_ecoregion,
+                 jsonb_object_agg(altitudinal_zone::text, foresttype.json) AS json
           FROM projections_export
-          LEFT JOIN slope USING (foresttype,
-                                 forest_ecoregion,
-                                 altitudinal_zone)
-          WHERE slope.json IS NOT NULL
-          GROUP BY foresttype,
-                   forest_ecoregion),
-          forest_ecoregion AS
-         (SELECT foresttype,
-                 jsonb_object_agg(forest_ecoregion, altitudinal_zone.json) AS json
-          FROM projections_export
-          LEFT JOIN altitudinal_zone USING (foresttype,
-                                              forest_ecoregion)
-          WHERE altitudinal_zone.json IS NOT NULL
-          GROUP BY foresttype) SELECT jsonb_object_agg(coalesce(foresttype::text, 'not found'), forest_ecoregion.json)
+          LEFT JOIN foresttype USING (forest_ecoregion,
+                                      altitudinal_zone)
+          WHERE foresttype.json IS NOT NULL
+          GROUP BY forest_ecoregion) SELECT jsonb_object_agg(forest_ecoregion::text, altitudinal_zone.json)
      FROM projections_export
-     LEFT JOIN forest_ecoregion USING (foresttype)
-     WHERE forest_ecoregion.json IS NOT NULL) To '/data/projections.json';
+     LEFT JOIN altitudinal_zone USING (forest_ecoregion)
+     WHERE altitudinal_zone.json IS NOT NULL) To '/data/projections.json';
 
 ------------------------------
 ----- types
