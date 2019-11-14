@@ -30,6 +30,7 @@ COPY
                                   ORDER BY treetype) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '1'
+                          AND treetype != '9500'
                   GROUP BY foresttype),
               two AS
                  (SELECT foresttype,
@@ -37,6 +38,7 @@ COPY
                                   ORDER BY treetype) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '2'
+                          AND treetype != '9500'
                   GROUP BY foresttype),
               three AS
                  (SELECT foresttype,
@@ -44,6 +46,7 @@ COPY
                                   ORDER BY treetype) treetypes
                   FROM recommendations_export
                   WHERE recommendationtype = '3'
+                          AND treetype != '9500'
                   GROUP BY foresttype),
               four AS
                  (SELECT foresttype,

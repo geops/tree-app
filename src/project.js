@@ -10,6 +10,7 @@ const fields = [
   'silverFirArea',
   'relief',
 ];
+const fieldsConcat = ['slope', 'additional', 'silverFirArea', 'relief'];
 
 const altitudeList = types.altitudinalZone
   .map(az => az.code)
@@ -42,8 +43,9 @@ function projectionReducer(location, targetAltitudePointer, result) {
     const { field, value, values } = getField(fields[i], location);
     validate(field, value, values);
 
+    const fieldOptions = (fieldsConcat.includes(field) && options[field]) || [];
     options[field] = Array.from(
-      new Set((options[field] || []).concat(Object.keys(projection))),
+      new Set(fieldOptions.concat(Object.keys(projection))),
     ).sort((a, b) => a - b);
 
     if (value && projection[value]) {

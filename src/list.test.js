@@ -16,7 +16,7 @@ describe('valid results', () => {
       [800, 25400, 60400, 60500, 227200, 363700],
       [],
     ]));
-  test('nonresident tree types (9500 ...) at the end of lists', () =>
+  test('nonresident tree types (330600, 346500) at the end of list and 9500 only in attention', () =>
     expect(list('55 collin')).toStrictEqual([
       [335900],
       [],
@@ -30,7 +30,6 @@ describe('valid results', () => {
         402200,
         402300,
         421400,
-        9500,
         330600,
         346500,
       ],
