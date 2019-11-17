@@ -94,7 +94,7 @@ function project(location = {}, targetAltitude, previousResult) {
     result = project({ ...location, ...last }, targetAltitude, result);
   }
 
-  if (result && altitudeIdx !== -1) {
+  if (result && location.forestType && altitudeIdx !== -1) {
     result.options.targetAltitudinalZone = altitudeList.slice(altitudeIdx + 1);
   }
 

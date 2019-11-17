@@ -95,6 +95,12 @@ describe('valid options', () => {
         forestType: '60*',
       }).options.relief,
     ).toBe(undefined);
+    expect(
+      project({
+        forestEcoregion: '1',
+        altitudinalZone: '90',
+      }).options.targetAltitudinalZone,
+    ).toBe(undefined);
   });
 });
 
