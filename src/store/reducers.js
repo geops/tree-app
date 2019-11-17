@@ -21,9 +21,9 @@ export const initialState = {
 };
 
 const formLocationFields = [
-  'forestType',
   'forestEcoregion',
   'altitudinalZone',
+  'forestType',
   'additional',
   'silverFirArea',
   'relief',
