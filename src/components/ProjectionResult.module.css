@@ -80,6 +80,10 @@
   font-size: 0.8em;
   margin-right: 5px;
 }
+.iconToday {
+  font-size: 0.8em;
+  margin: 14px 5px 0 0;
+}
 
 .scenario {
   font-size: 0.8em;

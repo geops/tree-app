@@ -23,29 +23,33 @@ function ProjectionResult() {
   const { altitudinalZone, forestType, targetAltitudinalZone } = location;
   if (
     altitudinalZone &&
-    projections.findIndex(p => p.altitudinalZone === altitudinalZone) === -1
+    (altitudinalZone === targetAltitudinalZone ||
+      projections.findIndex(p => p.altitudinalZone === altitudinalZone) === -1)
   ) {
     projections.unshift({ altitudinalZone, forestType });
   }
 
   const panes = [];
-  panes.push({
-    menuItem: t('recommendation.header'),
-    render: () => <Recommendation />,
-  });
+  if (altitudinalZone && altitudinalZone === targetAltitudinalZone) {
+    panes.push({
+      menuItem: t('recommendation.header'),
+      render: () => <Recommendation />,
+    });
+  }
+
   projections.forEach(p => {
     const icons = [];
     const scenarios = [];
     if (projectionMode === 'f') {
       if (location.altitudinalZone === p.altitudinalZone) {
-        icons.push(<EarthTodayIcon key="today" className={styles.icon} />);
+        icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
         scenarios.push(t('projectionScenario.today'));
       } else {
         scenarios.push(t('projectionScenario.manual'));
       }
     } else {
       if (location.altitudinalZone === p.altitudinalZone) {
-        icons.push(<EarthTodayIcon key="today" className={styles.icon} />);
+        icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
         scenarios.push(t('projectionScenario.today'));
       }
 
@@ -87,7 +91,7 @@ function ProjectionResult() {
 
   return forestType && (location.coordinate || targetAltitudinalZone) ? (
     <div className={styles.container}>
-      {projections.length > 1 ? (
+      {panes.length > 0 ? (
         <Tab
           className={styles.tab}
           menu={{
