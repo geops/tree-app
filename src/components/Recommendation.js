@@ -116,7 +116,20 @@ function Recommendation() {
               <Grid.Column textAlign="center" width={4}>
                 <AttentionIcon fill="white" className={styles.icon} />
               </Grid.Column>
-              <Grid.Column width={1}></Grid.Column>
+              <Grid.Column width={1}>
+                <HelpModal header={t('help.recommendationAttentionHeader')}>
+                  <Trans i18nKey="help.recommendationAttention">
+                    help text{' '}
+                    <a
+                      href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      link
+                    </a>
+                  </Trans>
+                </HelpModal>
+              </Grid.Column>
               <Grid.Column width={11}>
                 <TreeTypeList
                   className={styles.bold}

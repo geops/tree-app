@@ -15,6 +15,8 @@
     "recommendationNeutral": "Im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart) und entweder <1>bei beiden Klimaprojektionen weitere Baumart (fett)</1> oder nur in einer Klimaprojektion weitere Baumart (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten können gefördert werden.",
     "recommendationNegativeHeader": "Gefährdete Baumarten",
     "recommendationNegative": "Im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <1>in keiner Klimaprojektion mehr empfohlen ist (fett)</1>. Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind.",
+    "recommendationAttentionHeader": "Götterbaum",
+    "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>. "
   },
   "info": {
     "aboutTitle": "Über die Anwendung",
