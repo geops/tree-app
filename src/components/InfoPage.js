@@ -65,7 +65,12 @@ function InfoPage() {
               <li>positive</li>
               <li>neutral</li>
               <li>negative</li>
-              <li>attention</li>
+              <li>
+                attention{' '}
+                <a href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html">
+                  link
+                </a>
+              </li>
             </ul>
             <h3>scenarios</h3>
             <p>description</p>
