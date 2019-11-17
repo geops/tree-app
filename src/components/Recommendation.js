@@ -1,10 +1,11 @@
-import { info, recommend } from '@geops/tree-lib';
+import { recommend } from '@geops/tree-lib';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
 import { Checkbox, Grid, Tab } from 'semantic-ui-react';
 
 import HelpModal from './HelpModal';
+import TreeTypeList from './TreeTypeList';
 import { ReactComponent as AttentionIcon } from '../icons/recommendationAttention.svg';
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
@@ -12,19 +13,12 @@ import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.
 import styles from './Recommendation.module.css';
 
 function Recommendation() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [future, setFuture] = useState(false);
   const { forestTypeToday, projections } = useSelector(state => ({
     forestTypeToday: state.location.forestType,
     projections: state.projectionResult.projections,
   }));
-  const list = recommendations =>
-    recommendations
-      .map(code => {
-        const treeInfo = info('treeType', code);
-        return treeInfo[i18n.language] + (treeInfo.endangered ? '*' : '');
-      })
-      .join(' ');
 
   const recommendations = useMemo(() => {
     let result;
@@ -54,12 +48,18 @@ function Recommendation() {
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.large}>
-                <span className={styles.bold}>{list(recommendations[0])}</span>{' '}
-                {list(recommendations[1])}
+                <TreeTypeList
+                  className={styles.bold}
+                  codes={recommendations[0]}
+                />{' '}
+                <TreeTypeList codes={recommendations[1]} />
               </div>
               <div className={styles.yellow}>
-                <span className={styles.bold}>{list(recommendations[2])}</span>{' '}
-                {list(recommendations[3])}
+                <TreeTypeList
+                  className={styles.bold}
+                  codes={recommendations[2]}
+                />{' '}
+                <TreeTypeList codes={recommendations[3]} />
               </div>
             </Grid.Column>
           </Grid.Row>
@@ -76,12 +76,18 @@ function Recommendation() {
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.centered}>
-                <span className={styles.bold}>{list(recommendations[4])}</span>{' '}
-                {list(recommendations[5])}
+                <TreeTypeList
+                  className={styles.bold}
+                  codes={recommendations[4]}
+                />{' '}
+                <TreeTypeList codes={recommendations[5]} />
               </div>
               <div className={`${styles.small} ${styles.yellow}`}>
-                <span className={styles.bold}>{list(recommendations[6])}</span>{' '}
-                {list(recommendations[7])}
+                <TreeTypeList
+                  className={styles.bold}
+                  codes={recommendations[6]}
+                />{' '}
+                <TreeTypeList codes={recommendations[7]} />
               </div>
             </Grid.Column>
           </Grid.Row>
@@ -98,7 +104,10 @@ function Recommendation() {
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.small}>
-                <span className={styles.bold}>{list(recommendations[8])}</span>
+                <TreeTypeList
+                  className={styles.bold}
+                  codes={recommendations[8]}
+                />
               </div>
             </Grid.Column>
           </Grid.Row>
@@ -109,7 +118,10 @@ function Recommendation() {
               </Grid.Column>
               <Grid.Column width={1}></Grid.Column>
               <Grid.Column width={11}>
-                <span className={styles.bold}>{list(recommendations[9])}</span>
+                <TreeTypeList
+                  className={styles.bold}
+                  codes={recommendations[9]}
+                />
               </Grid.Column>
             </Grid.Row>
           )}

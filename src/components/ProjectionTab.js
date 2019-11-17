@@ -1,15 +1,16 @@
-import { info, list } from '@geops/tree-lib';
+import { list } from '@geops/tree-lib';
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Grid, Header, Tab } from 'semantic-ui-react';
 
+import TreeTypeList from './TreeTypeList';
 import { ReactComponent as InfoIcon } from '../icons/info.svg';
 import styles from './ProjectionTab.module.css';
 
 function ProjectionTab({ forestType }) {
   const treeTypes = useMemo(() => list(forestType), [forestType]);
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <Tab.Pane>
       <Grid columns={3} padded verticalAlign="middle">
@@ -21,9 +22,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesOne')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            {treeTypes[0]
-              .map(tt => info('treeType', tt)[i18n.language])
-              .join(' ')}
+            <TreeTypeList codes={treeTypes[0]} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -34,9 +33,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesTwo')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            {treeTypes[1]
-              .map(tt => info('treeType', tt)[i18n.language])
-              .join(' ')}
+            <TreeTypeList codes={treeTypes[1]} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -47,9 +44,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesThree')}</Header>
           </Grid.Column>
           <Grid.Column width={8}>
-            {treeTypes[2]
-              .map(tt => info('treeType', tt)[i18n.language])
-              .join(' ')}
+            <TreeTypeList codes={treeTypes[2]} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
