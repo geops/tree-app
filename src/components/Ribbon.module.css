@@ -1,0 +1,28 @@
+.wrapper {
+  overflow: hidden;
+  position: fixed;
+  bottom: 73px;
+  right: -62px;
+  z-index: 10;
+  height: 100px;
+  padding: 48px 0 0 0;
+}
+
+.line {
+  background-color: #b3372b;
+  transform: rotate(-45deg);
+  line-height: 24px;
+  opacity: 0.8;
+  box-shadow: rgba(123, 85, 85, 0.85) 0px 0px 10px 0px;
+}
+
+.text {
+  border: 2px solid white;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  padding: 0 70px;
+  margin: 2px;
+  text-align: center;
+  letter-spacing: 2px;
+}
