@@ -6,6 +6,7 @@ import {
   SET_MAP_VIEW,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
+  SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
 } from './actions';
 
@@ -17,6 +18,7 @@ export const initialState = {
   mapView: '9|910001|5947112',
   projectionMode: 'm',
   projectionOptions: {},
+  targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
 
@@ -64,6 +66,9 @@ function tree(state = initialState, action) {
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {
       return { ...state, projectionResult: action.projectionResult };
+    }
+    case SET_TARGET_ALTITUDINAL_ZONE: {
+      return { ...state, targetAltitudinalZone: action.targetAltitudinalZone };
     }
     case SET_WELCOME_MODAL:
       localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');

@@ -15,11 +15,14 @@ import styles from './Recommendation.module.css';
 function Recommendation() {
   const { t } = useTranslation();
   const [future, setFuture] = useState(false);
-  const { location, projections } = useSelector(state => ({
-    location: state.location,
-    projections: state.projectionResult.projections,
-  }));
-  const { altitudinalZone, forestType, targetAltitudinalZone } = location;
+  const { location, projections, targetAltitudinalZone } = useSelector(
+    state => ({
+      location: state.location,
+      projections: state.projectionResult.projections,
+      targetAltitudinalZone: state.targetAltitudinalZone,
+    }),
+  );
+  const { altitudinalZone, forestType } = location;
 
   const recommendations = useMemo(() => {
     let result;

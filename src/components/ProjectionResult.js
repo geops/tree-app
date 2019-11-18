@@ -13,14 +13,20 @@ import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg'
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
 function ProjectionResult() {
-  const { location, projectionMode, projections } = useSelector(state => ({
+  const {
+    location,
+    projectionMode,
+    projections,
+    targetAltitudinalZone,
+  } = useSelector(state => ({
     projectionMode: state.projectionMode,
     location: state.location,
     projections: [...state.projectionResult.projections],
+    targetAltitudinalZone: state.targetAltitudinalZone,
   }));
   const { i18n, t } = useTranslation();
 
-  const { altitudinalZone, forestType, targetAltitudinalZone } = location;
+  const { altitudinalZone, forestType } = location;
   if (
     altitudinalZone &&
     (altitudinalZone === targetAltitudinalZone ||

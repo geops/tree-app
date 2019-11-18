@@ -8,6 +8,7 @@ import {
   SET_PROJECTION_MODE,
   setLocation,
   setProjectionResult,
+  setTargetAltitudinalZone,
 } from '../actions';
 
 const projectionActionTypes = [
@@ -24,11 +25,12 @@ const projection = store => next => action => {
       projectionMode === 'm'
         ? { ...formLocation, ...mapLocation }
         : { ...mapLocation, ...formLocation };
+    store.dispatch(setLocation(location));
     const targetAltitudinalZone =
       projectionMode === 'm'
         ? mapLocation.targetAltitudinalZoneExtreme
         : formLocation.targetAltitudinalZone;
-    store.dispatch(setLocation(location));
+    store.dispatch(setTargetAltitudinalZone(targetAltitudinalZone));
     try {
       const projectionResult = project(location, targetAltitudinalZone);
       store.dispatch(setProjectionResult(projectionResult));
