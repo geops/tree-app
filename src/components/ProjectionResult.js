@@ -15,12 +15,14 @@ import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 function ProjectionResult() {
   const {
     location,
+    options,
     projectionMode,
     projections,
     targetAltitudinalZone,
   } = useSelector(state => ({
     projectionMode: state.projectionMode,
     location: state.location,
+    options: state.projectionResult.options,
     projections: [...state.projectionResult.projections],
     targetAltitudinalZone: state.targetAltitudinalZone,
   }));
@@ -93,7 +95,10 @@ function ProjectionResult() {
     }
   });
 
-  return forestType && (location.coordinate || targetAltitudinalZone) ? (
+  return forestType &&
+    options.forestType &&
+    options.forestType.includes(forestType) &&
+    (location.coordinate || targetAltitudinalZone) ? (
     <div className={styles.container}>
       {panes.length > 0 ? (
         <Tab
