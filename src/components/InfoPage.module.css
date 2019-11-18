@@ -8,7 +8,7 @@
 
 .iconList :global(li) {
   margin-top: 0.5em;
-  min-height: 2.5em;
+  min-height: 2em;
 }
 
 .iconList :global(svg) {
@@ -16,4 +16,8 @@
   position: absolute;
   left: 30px;
   fill: var(--primary-color-500);
+}
+
+.todayIcon {
+  margin-top: -0.5em;
 }

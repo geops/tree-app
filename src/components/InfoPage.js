@@ -89,7 +89,7 @@ function InfoPage() {
             <p>description</p>
             <ul className={styles.iconList}>
               <li>
-                <EarthTodayIcon /> today
+                <EarthTodayIcon className={styles.todayIcon} /> today
               </li>
               <li>
                 <EarthModerateIcon /> moderate
