@@ -37,6 +37,19 @@ describe('valid options', () => {
     expect(project().options.forestEcoregion.length).toBe(9);
   });
 
+  test('location forestType is included in options for multi-step projection', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: 'M',
+          altitudinalZone: '60',
+          forestType: '18',
+        },
+        '40',
+      ).options.forestType,
+    ).toContain('18');
+  });
+
   test('valid list for forestEcoregion with input not found', () => {
     expect(
       project({

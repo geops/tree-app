@@ -43,10 +43,11 @@ function projectionReducer(location, targetAltitudePointer, result) {
     const { field, value, values } = getField(fields[i], location);
     validate(field, value, values);
 
-    const fieldOptions = (fieldsConcat.includes(field) && options[field]) || [];
-    options[field] = Array.from(
-      new Set(fieldOptions.concat(Object.keys(projection))),
-    ).sort((a, b) => a - b);
+    options[field] = fieldsConcat.includes(field)
+      ? Array.from(
+          new Set((options[field] || []).concat(Object.keys(projection))),
+        ).sort((a, b) => a - b)
+      : options[field] || Object.keys(projection);
 
     if (value && projection[value]) {
       projection = projection[value];
