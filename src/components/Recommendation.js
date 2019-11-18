@@ -15,21 +15,26 @@ import styles from './Recommendation.module.css';
 function Recommendation() {
   const { t } = useTranslation();
   const [future, setFuture] = useState(false);
-  const { forestTypeToday, projections } = useSelector(state => ({
-    forestTypeToday: state.location.forestType,
+  const { location, projections } = useSelector(state => ({
+    location: state.location,
     projections: state.projectionResult.projections,
   }));
+  const { altitudinalZone, forestType, targetAltitudinalZone } = location;
 
   const recommendations = useMemo(() => {
     let result;
     try {
-      result = recommend(forestTypeToday, projections, future);
+      if (altitudinalZone && altitudinalZone === targetAltitudinalZone) {
+        result = recommend(forestType, [{ forestType }], future);
+      } else {
+        result = recommend(forestType, projections, future);
+      }
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [forestTypeToday, projections, future]);
+  }, [altitudinalZone, targetAltitudinalZone, forestType, projections, future]);
 
   return (
     <Tab.Pane>

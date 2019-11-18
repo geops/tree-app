@@ -30,12 +30,10 @@ function ProjectionResult() {
   }
 
   const panes = [];
-  if (altitudinalZone && altitudinalZone === targetAltitudinalZone) {
-    panes.push({
-      menuItem: t('recommendation.header'),
-      render: () => <Recommendation />,
-    });
-  }
+  panes.push({
+    menuItem: t('recommendation.header'),
+    render: () => <Recommendation />,
+  });
 
   projections.forEach(p => {
     const icons = [];
