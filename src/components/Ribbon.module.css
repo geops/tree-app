@@ -26,3 +26,9 @@
   text-align: center;
   letter-spacing: 2px;
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    bottom: 59px;
+  }
+}
