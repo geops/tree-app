@@ -15,19 +15,15 @@ import styles from './Recommendation.module.css';
 function Recommendation() {
   const { t } = useTranslation();
   const [future, setFuture] = useState(false);
-  const { location, projections, targetAltitudinalZone } = useSelector(
-    state => ({
-      location: state.location,
-      projections: state.projectionResult.projections,
-      targetAltitudinalZone: state.targetAltitudinalZone,
-    }),
-  );
-  const { altitudinalZone, forestType } = location;
+  const { forestType, projections } = useSelector(state => ({
+    forestType: state.location.forestType,
+    projections: state.projectionResult.projections,
+  }));
 
   const recommendations = useMemo(() => {
     let result;
     try {
-      if (altitudinalZone && altitudinalZone === targetAltitudinalZone) {
+      if (projections && projections.length === 0) {
         result = recommend(forestType, [{ forestType }], future);
       } else {
         result = recommend(forestType, projections, future);
@@ -37,7 +33,7 @@ function Recommendation() {
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [altitudinalZone, targetAltitudinalZone, forestType, projections, future]);
+  }, [forestType, projections, future]);
 
   return (
     <Tab.Pane>
