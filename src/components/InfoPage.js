@@ -3,8 +3,16 @@ import { Trans, useTranslation } from 'react-i18next';
 import { Accordion } from 'semantic-ui-react';
 
 import InfoAbout from './InfoAbout';
+import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
+import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
+import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
+import { ReactComponent as AttentionIcon } from '../icons/recommendationAttention.svg';
+import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
+import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
+import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 
 import styles from './InfoPage.module.css';
+import recommendationStyles from './Recommendation.module.css';
 
 const participants = {
   locationBasics:
@@ -14,7 +22,6 @@ const participants = {
   idea: 'Urs Rutishauser, Monika Frehner, Cornel Broder',
   conception:
     'Monika Frehner, Urs Rutishauser, Cornel Broder, Elke Ehrhardt, Uli Müller, Thomas Bettler, Christian Küchli, Andreas Zischg, Peter Brang',
-  implementation: 'geOps AG',
   projectManagement: 'Peter Brang',
   projectControl: 'Marco Ferretti, Christoph Dürr, Ueli Meier',
   wslUsers:
@@ -61,12 +68,18 @@ function InfoPage() {
             <p>
               <strong>recommendation</strong> description
             </p>
-            <ul>
-              <li>positive</li>
-              <li>neutral</li>
-              <li>negative</li>
+            <ul className={styles.iconList}>
+              <li className={recommendationStyles.large}>
+                <PositiveIcon /> positive
+              </li>
               <li>
-                attention{' '}
+                <NeutralIcon /> neutral
+              </li>
+              <li className={recommendationStyles.small}>
+                <NegativeIcon /> negative
+              </li>
+              <li>
+                <AttentionIcon /> attention{' '}
                 <a href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html">
                   link
                 </a>
@@ -74,10 +87,16 @@ function InfoPage() {
             </ul>
             <h3>scenarios</h3>
             <p>description</p>
-            <ul>
-              <li>today</li>
-              <li>moderate</li>
-              <li>extreme</li>
+            <ul className={styles.iconList}>
+              <li>
+                <EarthTodayIcon /> today
+              </li>
+              <li>
+                <EarthModerateIcon /> moderate
+              </li>
+              <li>
+                <EarthExtremeIcon /> extreme
+              </li>
             </ul>
             <p>tabs</p>
             <ul>
@@ -101,7 +120,12 @@ function InfoPage() {
             <p>{{ climateChangeBasics: participants.climateChangeBasics }}</p>
             <p>{{ idea: participants.idea }}</p>
             <p>{{ conception: participants.conception }}</p>
-            <p>{{ implementation: participants.implementation }}</p>
+            <p>
+              implementation{' '}
+              <a href="https://geops.ch/" target="extern">
+                geOps AG
+              </a>
+            </p>
             <p>{{ projectManagement: participants.projectManagement }}</p>
             <p>{{ projectControl: participants.projectControl }}</p>
             <p>funding</p>
@@ -118,77 +142,120 @@ function InfoPage() {
         content: (
           <ul>
             <li>
+              <strong>
+                Mit welchen Klimaparametern kann man Grenzen plausibel erklären,
+                die in NaiS (Nachhaltigkeit und Erfolgskontrolle im Schutzwald)
+                verwendet werden um Ökogramme auszuwählen?
+              </strong>
+              <br />
+              <em>Huber B, Zischg A, Burnand J, Frehner M, Carraro G. 2015.</em>
+              <br /> Schlussbericht des Projektes im Forschungsprogramm
+              &quot;Wald und Klimawandel&quot; des Bundesamtes für Umwelt BAFU,
+              Bern und der Eidg. Forschungsanstalt WSL, Birmensdorf.
+              <br />
               <a
                 href="https://www.research-collection.ethz.ch/handle/20.500.11850/156262/eth-50707-01.pdf"
                 target="reports"
               >
-                Huber B, Zischg A, Burnand J, Frehner M, Carraro G. 2015. Mit
-                welchen Klimaparametern kann man Grenzen plausibel erklären, die
-                in NaiS (Nachhaltigkeit und Erfolgskontrolle im Schutzwald)
-                verwendet werden um Ökogramme auszuwählen? Schlussbericht des
-                Projektes im Forschungsprogramm &quot;Wald und Klimawandel&quot;
-                des Bundesamtes für Umwelt BAFU, Bern und der Eidg.
-                Forschungsanstalt WSL, Birmensdorf
+                Link
               </a>
             </li>
             <li>
-              <a
-                href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108"
-                target="reports"
-              >
+              <strong>
+                Schlussbericht des Projektes «Adaptierte Ökogramme» im
+                Forschungsprogramm «Wald und Klimawandel»: Übersicht über die
+                Teilberichte.
+              </strong>
+              <br />
+              <em>
                 Frehner M, Huber B; mit Beiträgen von Gubelmann P (Teil 1 und
                 3), Zürcher-Gasser N (Teil 4 und 5), Zimmermann NE (Teil 3),
                 Braun S (Teil 2), Scherler M (Teil 2), Zischg A (Teil 1),
                 Burnand J (Teil 1), Carraro G (Teil 1), Bugmann H (Teil 3),
-                Psomas A (Teil 3). 2019. Schlussbericht des Projektes
-                «Adaptierte Ökogramme» im Forschungsprogramm «Wald und
-                Klimawandel»: Übersicht über die Teilberichte. Sargans,
-                Forstingenieurbüro Frehner und Chur, Abenis AG
+                Psomas A (Teil 3). 2019.
+              </em>
+              <br />
+              Sargans, Forstingenieurbüro Frehner und Chur, Abenis AG.
+              <br />
+              <a
+                href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108"
+                target="reports"
+              >
+                Link
               </a>
             </li>
             <li>
+              <strong>
+                Schlussbericht des Projektes «Adaptierte Ökogramme» im
+                Forschungsprogramm «Wald und Klimawandel», Teil 1:
+                Quantifizierung und Verschiebung der Höhenstufengrenzen sowie
+                des Tannen- und Buchenareals in der Schweiz mit zwei
+                Klimazukünften.
+              </strong>
+              <br />
+              <em>
+                Gubelmann P, Huber B, Frehner M, Zischg A, Burnand J, Carraro G.
+                2019.
+              </em>
+              <br /> Chur, Abenis AG. 194 S
+              <br />
               <a
                 href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108/AdaptierteOekogramme_EndberichtTeil1_inkl_Anhang_20190430_inkl_LesehilfeV2.pdf"
                 target="reports"
               >
-                Gubelmann P, Huber B, Frehner M, Zischg A, Burnand J, Carraro G.
-                2019. Schlussbericht des Projektes «Adaptierte Ökogramme» im
-                Forschungsprogramm «Wald und Klimawandel», Teil 1:
-                Quantifizierung und Verschiebung der Höhenstufengrenzen sowie
-                des Tannen- und Buchenareals in der Schweiz mit zwei
-                Klimazukünften. Chur, Abenis AG. 194 S
+                Link
               </a>
             </li>
             <li>
+              <strong>
+                Schlussbericht des Projektes «Adaptierte Ökogramme» im
+                Forschungsprogramm «Wald und Klimawandel», Teil 5: «Herleitung
+                von Klima angepassten Baumartenempfehlungen für Schweizer
+                Wälder».
+              </strong>
+              <br />
+              <em>Frehner M, Zürcher-Gasser N. 2019.</em>
+              <br />
+              Sargans, Forstingenieurbüro Frehner und Rabius, Gadola AG. 24 S
+              <br />
               <a
                 href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108/AdaptierteOekogramme_EndberichtTeil5_20190430.pdf"
                 target="reports"
               >
-                Frehner M, Zürcher-Gasser N. 2019. Schlussbericht des Projektes
-                «Adaptierte Ökogramme» im Forschungsprogramm «Wald und
-                Klimawandel», Teil 5: «Herleitung von Klima angepassten
-                Baumartenempfehlungen für Schweizer Wälder». Sargans,
-                Forstingenieurbüro Frehner und Rabius, Gadola AG. 24 S
+                Link
               </a>
             </li>
             <li>
+              <strong>
+                Nachhaltigkeit und Erfolgskontrolle im Schutzwald. Wegleitung
+                für Pflegemassnahmen in Wäldern mit Schutzfunktion.
+              </strong>
+              <br />
+              <em>Frehner M, Wasser B, Schwitter R. 2005/09.</em>
+              <br />
+              Bern, Bundesamt für Umwelt
+              <br />
               <a
                 href="http://www.gebirgswald.ch/de/nais-download.html"
                 target="reports"
               >
-                Frehner M, Wasser B, Schwitter R. 2005/09. Nachhaltigkeit und
-                Erfolgskontrolle im Schutzwald. Wegleitung für Pflegemassnahmen
-                in Wäldern mit Schutzfunktion. Bern, Bundesamt für Umwelt
+                Link
               </a>
             </li>
             <li>
+              <strong>
+                Standortkundliche Grundlagen für die Waldbewirtschaftung im
+                Klimawandel.
+              </strong>
+              <br />
+              <em>Frehner M, Brang P, Kaufmann G, Küchli C. 2018.</em>
+              <br />
+              WSL Ber. 66: 43 S<br />
               <a
                 href="https://www.wsl.ch/de/publikationen/standortkundliche-grundlagen-fuer-die-waldbewirtschaftung-im-klimawandel.html"
                 target="reports"
               >
-                Frehner M, Brang P, Kaufmann G, Küchli C. 2018.
-                Standortkundliche Grundlagen für die Waldbewirtschaftung im
-                Klimawandel. WSL Ber. 66: 43 S
+                Link
               </a>
             </li>
             <li>Schlussbericht Projekt NaiS-LFI (folgt)</li>

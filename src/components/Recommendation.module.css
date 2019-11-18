@@ -11,10 +11,11 @@
 
 .large {
   font-size: 1.5em;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 .small {
   font-size: 0.8em;
+  line-height: 1.4em;
 }
 .bold {
   font-weight: bold;

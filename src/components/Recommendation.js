@@ -45,9 +45,7 @@ function Recommendation() {
             </Grid.Column>
             <Grid.Column width={1}>
               <HelpModal header={t('help.recommendationPositiveHeader')}>
-                <Trans i18nKey="help.recommendationPositive">
-                  help <b>bold</b> text
-                </Trans>
+                <Trans i18nKey="help.recommendationPositive">help text</Trans>
               </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
@@ -73,9 +71,7 @@ function Recommendation() {
             </Grid.Column>
             <Grid.Column width={1}>
               <HelpModal header={t('help.recommendationNeutralHeader')}>
-                <Trans i18nKey="help.recommendationNeutral">
-                  help <b>bold</b> text
-                </Trans>
+                <Trans i18nKey="help.recommendationNeutral">help text</Trans>
               </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
@@ -101,9 +97,7 @@ function Recommendation() {
             </Grid.Column>
             <Grid.Column width={1}>
               <HelpModal header={t('help.recommendationNegativeHeader')}>
-                <Trans i18nKey="help.recommendationNegative">
-                  help <b>bold</b> text
-                </Trans>
+                <Trans i18nKey="help.recommendationNegative">help text</Trans>
               </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
