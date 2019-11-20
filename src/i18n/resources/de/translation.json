@@ -54,7 +54,8 @@
     "treeTypesTwo": "Wichtige beigemischte Naturwaldbaumart",
     "treeTypesThree": "Weitere Baumarten",
     "missingLocation": "Bitte eine Position in der Karte wählen.",
-    "missingLocationData": "Keine Daten gefunden, bitte eine andere Position wählen."
+    "missingLocationData": "Keine Daten gefunden, bitte eine andere Position wählen.",
+    "missingProjectionData": "Keine Standortstypen gefunden, bitte eine andere Position wählen."
   },
   "projectionScenario": {
     "today": "Klima heute",

@@ -99,10 +99,14 @@ function ProjectionForm() {
       ) : (
         projectionMode === 'm' && (
           <Message className={styles.message} size="big">
-            {!mapLocation.coordinate
-              ? t('projection.missingLocation')
-              : !mapLocation.altitudinalZone &&
-                t('projection.missingLocationData')}
+            {(() => {
+              if (!mapLocation.coordinate) {
+                return t('projection.missingLocation');
+              }
+              return !mapLocation.altitudinalZone
+                ? t('projection.missingLocationData')
+                : t('projection.missingProjectionData');
+            })()}
           </Message>
         )
       )}
