@@ -31,11 +31,6 @@ const validate = (field, value, values) => {
 const valueNotInOptions = (value, fieldOptions) =>
   value && fieldOptions && fieldOptions.find(v => v === value) === undefined;
 
-/* Provides the list of altitudinal Zones as target Altitudinal zones that are immediately 
-after the currently chosen altitudinal Zone. */
-const nextAltitudinalZone = current =>
-  altitudeList[altitudeList.indexOf(current) + 1];
-
 function projectionReducer(location, targetAltitudePointer, result) {
   const { options } = result;
   let projection = projections;
@@ -63,14 +58,11 @@ function projectionReducer(location, targetAltitudePointer, result) {
     }
   }
 
-  if (
-    typeof projection === 'string' &&
-    altitudeList.indexOf(location.altitudinalZone) < targetAltitudePointer
-  ) {
-    result.projections.push({
-      forestType: projection,
-      altitudinalZone: nextAltitudinalZone(location.altitudinalZone),
-    });
+  if (typeof projection === 'string') {
+    const [altitudinalZone, forestType] = projection.split(':');
+    if (altitudeList.indexOf(altitudinalZone) <= targetAltitudePointer) {
+      result.projections.push({ altitudinalZone, forestType });
+    }
   }
 
   return { ...result, options };

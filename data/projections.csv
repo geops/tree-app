@@ -1,4 +1,4 @@
-regions;heightLevel;forestType;slope;condition;targets;tannenareal;standortsregion;relief;targetHeight
+forest_ecoregions;altitudinal_zone;forest_type;slope;additional;target_forest_type;silver_fir_area;specific_forest_ecoregions;relief;target_altitudinal_zone
 R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60%;Boden normal;57C;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60%;Boden normal;57C;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60%;Boden normal;57V;;;;subalpin

@@ -152,12 +152,25 @@ describe('valid projections', () => {
           altitudinalZone: '100',
           forestType: '59V',
         },
-        '83',
+        '81',
       ).projections.slice(-1)[0].forestType,
     ).toBe('55');
   });
 
-  test('valid projection between altitudinalZone 8X', () => {
+  test('valid projection skipping altitudinalZone 30 which is not available in forestEcoregion M', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: 'M',
+          altitudinalZone: '40',
+          forestType: '7S',
+        },
+        '20',
+      ).projections[0].forestType,
+    ).toBe('7S collin');
+  });
+
+  test('valid projection skipping altitudinalZones which are not available in forestEcoregion 2b', () => {
     expect(
       project(
         {
@@ -165,8 +178,8 @@ describe('valid projections', () => {
           altitudinalZone: '83',
           forestType: '55',
         },
-        '82',
-      ).projections[0].forestType,
+        '20',
+      ).projections.slice(-1)[0].forestType,
     ).toBe('46 collin');
   });
 
@@ -174,11 +187,11 @@ describe('valid projections', () => {
     expect(
       project(
         {
-          forestEcoregion: '1',
-          altitudinalZone: '100',
-          forestType: '59V',
+          forestEcoregion: 'M',
+          altitudinalZone: '40',
+          forestType: '7S',
         },
-        '81',
+        '30',
       ).projections,
     ).toMatchObject([]);
   });
