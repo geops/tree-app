@@ -70,7 +70,7 @@ COPY
                  slope,
                  additional,
                  silver_fir_area,
-                 jsonb_object_agg(relief::text, target_altitudinal_zone_meta::text||':'||target_forest_type::text) AS json
+                 jsonb_object_agg(relief::text, target_altitudinal_zone::text||':'||target_forest_type::text) AS json
           FROM projections_export
           WHERE target_forest_type IS NOT NULL
           GROUP BY forest_ecoregion,
