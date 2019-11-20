@@ -1,14 +1,14 @@
 regions;heightLevel;forestType;slope;condition;targets;tannenareal;standortsregion;relief;targetHeight
-R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60% ;Boden normal;57C;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60% ;Boden normal;57C;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60% ;Boden normal;57V;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60% ;Boden normal;57V;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;> als 60% ;Boden normal;57CLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;> als 60% ;Boden normal;57CLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;< als 60% ;Boden normal;57VLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;< als 60% ;Boden normal;57VLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60% ;extrem blockig;57Bl;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60% ;extrem blockig;57Bl;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60%;Boden normal;57C;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60%;Boden normal;57C;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60%;Boden normal;57V;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60%;Boden normal;57V;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;> als 60%;Boden normal;57CLä;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;> als 60%;Boden normal;57CLä;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;< als 60%;Boden normal;57VLä;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59Lä;< als 60%;Boden normal;57VLä;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59;< als 60%;extrem blockig;57Bl;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59;> als 60%;extrem blockig;57Bl;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59A;;normal;60;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59A;;bei Lawinenzug;60Lä;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59C;;;58Bl;;;;subalpin
@@ -19,8 +19,8 @@ R,J,M,1,2,3 osa bis co;obersubalpin;59L;;;58L;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59LLä;;;58LLä;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59R;;;59R;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;59V;;;57M;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59VLä;> als 60% ;;57CLä;;;;subalpin
-R,J,M,1,2,3 osa bis co;obersubalpin;59VLä;< als 60% ;;57VLä;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59VLä;> als 60%;;57CLä;;;;subalpin
+R,J,M,1,2,3 osa bis co;obersubalpin;59VLä;< als 60%;;57VLä;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;67;;;67;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;;;;67;;;;subalpin
 R,J,M,1,2,3 osa bis co;obersubalpin;69;;;69;;;;subalpin
@@ -252,7 +252,7 @@ R,J,M,1,2,3 osa bis co;hochmontan;66;;;keine Angabe;;;;obermontan
 2b,3;subalpin;27*;;;27*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;32S;;;32V;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;49*;;;49*;Haupt- und Nebenareal;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;49*;;;49* ;Reliktareal;;;hochmontan Reliktareal der Tanne
+2b,3;subalpin;49*;;;49*;Reliktareal;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53;;;53;;M, J, 1, 2a;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53;;;53*;;2b, 3;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;53Ta;;;53;;;;hochmontan Reliktareal der Tanne
@@ -265,7 +265,7 @@ R,J,M,1,2,3 osa bis co;hochmontan;66;;;keine Angabe;;;;obermontan
 2b,3;subalpin;60A;;;50Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60ALä;;;50Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60E;;;;;M, J, 1, 2a;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;60E;;;49* ;;2b, 3;;hochmontan Reliktareal der Tanne
+2b,3;subalpin;60E;;;49*;;2b, 3;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*;> 70%;;;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*;< 70%;;50*Re;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;60*Lä;> 70%;;;;;;hochmontan Reliktareal der Tanne
@@ -1456,10 +1456,10 @@ R,J,M,1,2 Beginn co;collin;35A;;;7a collin;;;;collin
 R,J,M,1,2 Beginn co;collin;35M;;;17 collin;;;;collin
 R,J,M,1,2 Beginn co;collin;38S;;;65* collin;;;;collin
 R,J,M,1,2 Beginn co;collin;40*;;;40* collin;;;;collin
-R4;obersubalpin;59;> als 60% ;normal;57C;;;;subalpin
-R4;obersubalpin;59;< als 60% ;normal;57V;;;;subalpin
-R4;obersubalpin;59;> als 60% ;extrem blockig;57Bl;;;;subalpin
-R4;obersubalpin;59;< als 60% ;extrem blockig;57Bl;;;;subalpin
+R4;obersubalpin;59;> als 60%;normal;57C;;;;subalpin
+R4;obersubalpin;59;< als 60%;normal;57V;;;;subalpin
+R4;obersubalpin;59;> als 60%;extrem blockig;57Bl;;;;subalpin
+R4;obersubalpin;59;< als 60%;extrem blockig;57Bl;;;;subalpin
 R4;obersubalpin;59A;;normal;60A;;;;subalpin
 R4;obersubalpin;59A;;schattig, kühl;59A;;;;subalpin
 R4;obersubalpin;59J;;normal;58L;;;;subalpin
