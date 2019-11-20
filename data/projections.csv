@@ -278,73 +278,140 @@ R,J,M,1,2,3 osa bis co;hochmontan;66;;;keine Angabe;;;;obermontan
 2b,3;subalpin;67*;;;65*;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;47*;;;;;;;hochmontan Reliktareal der Tanne
 2b,3;subalpin;47*Lä;;;;;;;hochmontan Reliktareal der Tanne
-2b,3;subalpin;57C;;;51;Reliktareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57C;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57V;;normal;46M;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57V;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57CLä;;;51;Reliktareal ;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57VLä;;normal;46M;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57VLä;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57Bl;;normal;48;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57Bl;;normal;48;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57BlTa;;;48;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60;;;50;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60Lä;;;50;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;58Bl;;normal;47H;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;53*s;;;53*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57VM;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57VM;;;51;Reliktareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;58L;;;55*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;58LLä;;;55*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;59R;;;59R;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57M;;;51;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57CLä;;;51;Reliktareal ;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57VLä;;normal;46M;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57VLä;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;67;;;;;M, J, 1;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;67;;;65*;;2, 3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;69;;;;;M, J, 1;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;69;;;65;;2, 3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;70;;;;;M, J, 1;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;70;;;68;;2;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;70;;;68;;3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;71;;;71;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;AV;;;50;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;23;;;23;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;24*;;;24*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;27*;;;27*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;32S;;;32V;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;49*;;;49*Ta;Haupt- und Nebenareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;49*;;;49*Ta;Reliktareal;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;53;;;53Ta;;M, J, 1, 2a;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;53;;;53*;;2b, 3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;53Ta;;;53Ta;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;53Lä;;;53Lä;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;53A;;;52;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;57S;;;46*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;58;;;55*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;58Lä;;;55*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;58C;;;55*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60A;;;50;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60ALä;;;50;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60E;;;;;M, J, 1, 2a;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60E;;;49*Ta;;2b, 3;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60*;> 70%;;60*Ta;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60*;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60*Lä;> 70%;;60*Lä;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60*Lä;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60*Ta;> 70%;;60*Ta;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;60*Ta;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;72;;;57Bl;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;72Lä;;;57Bl;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;66PM;;;32V;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;67*;;;65*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;47*;;;47*;;;;hochmontan Nebenareal der Tanne
-2b,3;subalpin;47*Lä;;;47*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55;;;55;Reliktareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;51Re;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;46MRe;;normal;46M;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55;;;55;Reliktareal ;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;51Re;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;46MRe;;normal;46M;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;47H;;normal;48;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;47H;;normal;48;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;47H;;;48;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50Re;;;50;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50Re;;;50;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;47H;;normal;47H;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;53*;;;53*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;51Re;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;51Re;;;51Re;Reliktareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55*;;;55*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55*;;;55*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;59R;;;59R;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55;;;55;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55;;;55;Reliktareal ;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;51Re;;;51;Haupt- oder Nebenareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;46MRe;;normal;46M;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55;;Boden verdichtet;46;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;;;67;;M, J, 1;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;65*;;;65*;;2, 3;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;;;69;;M, J, 1;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;65;;;65;;2, 3;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;;;70;;M, J, 1;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;68;;;68;;2;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;68*;;;68*;;3;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;71;;;71;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50Re;;;50;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;23;;;23;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;24*;;;24*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;27*;;;27*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;32V;;;32V;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;49*;;;49*Ta;Haupt- und Nebenareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;49*;;;49*;Reliktareal;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;53;;;53Ta;;M, J, 1, 2a;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;53*;;;53*;;2b, 3;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;53;;;53Ta;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;53Lä;;;53Lä;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;52Re;;;52;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;46*Re;;;46*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55*;;;55*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55*;;;55*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;55*;;;55*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50Re;;;50;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50Re;;;50;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;;;49;;M, J, 1, 2a;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;49*;;;49*;;2b, 3;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;> 70%;;60*Ta;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50*Re;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;> 70%;;60*Lä;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50*Re;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;> 70%;;60*Ta;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;50*Re;< 70%;;50*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;57Bl;;;57Bl;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;57Bl;;;57Bl;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;32V;;;32V;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;65*;;;65*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;;;47*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Reliktareal der Tanne;;;;47*;;;;hochmontan Nebenareal der Tanne
+2b,3;hochmontan Nebenareal der Tanne;57C;;;55;Reliktareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57C;;;51;Haupt- oder Nebenareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57V;;normal;46M;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57V;;Boden verdichtet;46;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57CLä;;;55;Reliktareal ;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57VLä;;normal;46M;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57VLä;;Boden verdichtet;46;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57Bl;;normal;48;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57Bl;;normal;48;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57Bl;;schattig, kühl, grosse Blöcke;57Bl;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57BlTa;;;48;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60;;;50;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60Lä;;;50;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;58Bl;;normal;47H;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;58Bl;;trocken, extrem blockig, kühl;58Bl;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;53*s;;;53*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57VM;;;51;Haupt- oder Nebenareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57VM;;;51Re;Reliktareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;58L;;;55*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;58LLä;;;55*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;59R;;;59R;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57M;;;55;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57CLä;;;55;Reliktareal ;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57CLä;;;51;Haupt- oder Nebenareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57VLä;;normal;46M;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57VLä;;Boden verdichtet;46;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;67;;;67;;M, J, 1;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;67;;;65*;;2, 3;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;69;;;69;;M, J, 1;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;69;;;65;;2, 3;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;70;;;70;;M, J, 1;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;70;;;68;;2;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;70;;;68*;;3;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;71;;;71;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;AV;;;50;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;23;;;23;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;24*;;;24*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;27*;;;27*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;32S;;;32V;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;49*;;;49*Ta;Haupt- und Nebenareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;49*;;;49*;Reliktareal;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;53;;;53Ta;;M, J, 1, 2a;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;53;;;53*;;2b, 3;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;53Ta;;;53Ta;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;53Lä;;;53Lä;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;53A;;;52;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;57S;;;46*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;58;;;55*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;58Lä;;;55*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;58C;;;55*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60A;;;50;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60ALä;;;50;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60E;;;49;;M, J, 1, 2a;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60E;;;49*;;2b, 3;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60*;> 70%;;60*Ta;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60*;< 70%;;50*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60*Lä;> 70%;;60*Lä;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60*Lä;< 70%;;50*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60*Ta;> 70%;;60*Ta;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;60*Ta;< 70%;;50*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;72;;;57Bl;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;72Lä;;;57Bl;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;66PM;;;32V;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;67*;;;65*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;47*;;;47*;;;;hochmontan
+2b,3;hochmontan Nebenareal der Tanne;47*Lä;;;47*;;;;hochmontan
 J,M,1,2a;hochmontan;55;;;6 collin;;;;collin
 J,M,1,2a;hochmontan;51;;;6 collin;;;;collin
 J,M,1,2a;hochmontan;51;;;7a collin;;;;collin

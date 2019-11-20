@@ -176,11 +176,11 @@ describe('valid projections', () => {
         {
           forestEcoregion: '2b',
           altitudinalZone: '83',
-          forestType: '55',
+          forestType: '55*',
         },
         '20',
       ).projections.slice(-1)[0].forestType,
-    ).toBe('46 collin');
+    ).toBe('55* collin');
   });
 
   test('empty projections if targetAltitudinalZone is not found', () => {
