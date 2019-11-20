@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@geops/tree-lib": "^0.9.3",
+    "@geops/tree-lib": "^0.9.4",
     "i18next": "^19.0.1",
     "mapbox-gl": "^1.5.0",
     "ol": "^6.1.1",
