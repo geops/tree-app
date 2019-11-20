@@ -3950,10 +3950,10 @@ eslint-config-airbnb@^18.0.1:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-prettier@^6.6.0:
-  version "6.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.6.0.tgz#4e039f65af8245e32d8fba4a2f5b83ed7186852e"
-  integrity sha512-6RGaj7jD+HeuSVHoIT6A0WkBhVEk0ULg74kp2FAWIwkYrOERae0TjIO09Cw33oN//gJWmt7aFhVJErEVta7uvA==
+eslint-config-prettier@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.7.0.tgz#9a876952e12df2b284adbd3440994bf1f39dfbb9"
+  integrity sha512-FamQVKM3jjUVwhG4hEMnbtsq7xOIDm+SY5iBPfR8gKsJoAB2IQnNF+bk1+8Fy44Nq7PPJaLvkRxILYdJWoguKQ==
   dependencies:
     get-stdin "^6.0.0"
 
@@ -5293,10 +5293,10 @@ husky@^3.1.0:
     run-node "^1.0.0"
     slash "^3.0.0"
 
-i18next@^19.0.0:
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.0.0.tgz#5418207d7286128e6cfe558e659fa8c60d89794b"
-  integrity sha512-xxNKNOqLdGP/M+/fzzBOhcc9hCAqv6gDhHq0xbYz/Vlz5PlMfr9P1LbBvmk7RkZjYoh/kyM1tnfSl+sJ2VaD0Q==
+i18next@^19.0.1:
+  version "19.0.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.0.1.tgz#11347b9d5f2ceb4a03750a06010cc249fe065d31"
+  integrity sha512-xZjzCcInvkgx3ZzymkySZ/ULOZyAMXTmQP22Hvnf5CMRqrxe3BXhg6CBtpGSVPMiANnHOmPiNVWHLSncnffnxw==
   dependencies:
     "@babel/runtime" "^7.3.1"
 
@@ -9139,10 +9139,10 @@ react-error-overlay@^6.0.3:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.3.tgz#c378c4b0a21e88b2e159a3e62b2f531fd63bf60d"
   integrity sha512-bOUvMWFQVk5oz8Ded9Xb7WVdEi3QGLC8tH7HmYP0Fdp4Bn3qw0tRFmr5TW6mvahzvmrK4a6bqWGfCevBflP+Xw==
 
-react-i18next@^11.2.1:
-  version "11.2.1"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.2.1.tgz#a56d9f1f52d003eb4fa8f1c7d6752123827160f0"
-  integrity sha512-F9uO4YMNgH5wnPzpyZo2NLaKJM8+JhrXSKUqe0gTRd79mRWVOq+mh/CjYeZuF8Wk+ocoOaJvfwE0lRjlfUNk9w==
+react-i18next@^11.2.2:
+  version "11.2.2"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.2.2.tgz#e5e55ae4187521b01b4eafe483dd96b280106670"
+  integrity sha512-g0Nqa9HBVbS1UMWaUD+tgrlnpDT+wiID1hHj51uYcz6aPS1YFSkH5U4XhEQrJf4Ms5c+vbma12abyT2Mq7e65w==
   dependencies:
     "@babel/runtime" "^7.3.1"
     html-parse-stringify2 "2.0.1"
