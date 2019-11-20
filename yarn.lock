@@ -969,10 +969,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@geops/tree-lib@^0.9.2":
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.9.2.tgz#a27fda17dda14c41aa8802e07dca134dd5442a36"
-  integrity sha512-yjDqFdamuot9v0Af3W5MZi+Ji84RTPs9YQrwwrK7ekIp2UohznP8/VixckllC9fCXfg87KdIDmbW7vI07eyhaQ==
+"@geops/tree-lib@^0.9.3":
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.9.3.tgz#91f5eb2986596af7bf4bbf93ea3ff8fb2add6fcf"
+  integrity sha512-TQdENGZWmLx3PGjWkqUmlEmYqOo107QprMFvHmHsLSzZXWrk6qK7rdZ7ueF3Uw3sJbBo2FLySWdWs++gSP88cQ==
   dependencies:
     lodash.difference "^4.5.0"
     lodash.intersection "^4.4.0"
