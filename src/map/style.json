@@ -1,11 +1,9 @@
 {
   "version": 8,
   "name": "tree",
-  "glyphs": "https://tiles.tree-app.ch/fonts/{fontstack}/{range}.pbf",
   "sources": {
     "tree": {
       "type": "vector",
-      "tiles": ["https://tiles.tree-app.ch/tree/{z}/{x}/{y}.pbf"],
       "maxzoom": 12
     }
   },
