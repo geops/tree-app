@@ -57,7 +57,8 @@ COPY
                   GROUP BY foresttype) SELECT json_object_agg(foresttype,json_build_array(coalesce(one.treetypes,'[]'::json),coalesce(two.treetypes,'[]'::json),coalesce(three.treetypes,'[]'::json),coalesce(four.treetypes,'[]'::json))) AS recommendations
          FROM
                  (SELECT DISTINCT foresttype
-                  FROM recommendations_export) foo
+                  FROM recommendations_export
+                  ORDER BY foresttype) foo
          LEFT JOIN one USING (foresttype)
          LEFT JOIN two USING (foresttype)
          LEFT JOIN three USING (foresttype)
