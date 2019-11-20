@@ -157,6 +157,19 @@ describe('valid projections', () => {
     ).toBe('55');
   });
 
+  test('valid projection between altitudinalZone 8X', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '2b',
+          altitudinalZone: '83',
+          forestType: '55',
+        },
+        '82',
+      ).projections[0].forestType,
+    ).toBe('46 collin');
+  });
+
   test('empty projections if targetAltitudinalZone is not found', () => {
     expect(
       project(

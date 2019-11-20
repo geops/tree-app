@@ -51,7 +51,7 @@ FROM
                                       FROM silver_fir_areas)))[1] AS tan_splited,
                  *
           FROM projections_import)subquery1) i
-LEFT JOIN altitudinal_zone_meta alt_zone_meta ON alt_zone_meta.projection::text = lower(i.heightlevel)
+LEFT JOIN altitudinal_zone_meta alt_zone_meta ON lower(alt_zone_meta.projection::text) = lower(i.heightlevel)
 LEFT JOIN additional_meta add_meta ON lower(add_meta.source) = lower(i.condition)
 LEFT JOIN silver_fir_area_meta sil_fir_meta ON lower(sil_fir_meta.projection) = i.tan_splited
 LEFT JOIN relief_meta ON relief_meta.source = i.relief
