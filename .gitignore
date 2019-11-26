@@ -2,4 +2,4 @@ build
 node_modules
 npm-debug.log
 .DS_Store
-cypress/integration/examples
+cypress/videos

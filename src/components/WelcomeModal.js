@@ -25,7 +25,11 @@ function WelcomeModal() {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
-        <Button active onClick={() => dispatch(setWelcomeModal(false))}>
+        <Button
+          active
+          data-cypress="welcomeModalGo"
+          onClick={() => dispatch(setWelcomeModal(false))}
+        >
           <Icon name="checkmark" /> {t('welcome.close')}
         </Button>
       </Modal.Actions>
