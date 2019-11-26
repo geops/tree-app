@@ -1,54 +1,25 @@
 {
   "version": 8,
   "name": "tree",
-  "glyphs": "https://tiles.tree-app.ch/fonts/{fontstack}/{range}.pbf",
   "sources": {
     "tree": {
       "type": "vector",
-      "tiles": ["https://tiles.tree-app.ch/tree/{z}/{x}/{y}.pbf"],
       "maxzoom": 12
     }
   },
   "layers": [
     {
-      "id": "ft",
-      "type": "fill",
-      "source": "tree",
-      "source-layer": "forest_types",
-      "metadata": {
-        "group": "main",
-        "mapping": "forestType"
-      },
-      "paint": {
-        "fill-color": "#006268"
-      }
-    },
-    {
-      "id": "ft_line",
+      "id": "cb",
       "type": "line",
       "source": "tree",
-      "source-layer": "forest_types",
+      "source-layer": "cantonal_boundaries",
+      "metadata": {
+        "group": "main"
+      },
       "paint": {
         "line-color": "#fbf0b2",
         "line-opacity": 0.5
-      },
-      "minzoom": 15
-    },
-    {
-      "id": "ft_label",
-      "type": "symbol",
-      "source": "tree",
-      "source-layer": "forest_types",
-      "layout": {
-        "text-field": ["get", "code"],
-        "text-font": ["Roboto Regular"],
-        "text-optional": true
-      },
-      "paint": {
-        "text-color": "#fbf0b2",
-        "text-opacity": 0.5
-      },
-      "minzoom": 15
+      }
     },
     {
       "id": "fe",
@@ -241,17 +212,6 @@
         ],
         "fill-opacity": 0.0
       }
-    },
-    {
-      "id": "cb",
-      "type": "line",
-      "source": "tree",
-      "source-layer": "cantonal_boundaries",
-      "paint": {
-        "line-color": "#fbf0b2",
-        "line-opacity": 0.5
-      },
-      "maxzoom": 15
     }
   ]
 }

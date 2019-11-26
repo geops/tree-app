@@ -45,6 +45,7 @@ function Mapbox({ children, style, ...props }) {
     () => container && new MapboxLayer({ container, map, style }),
     [container, map, style],
   );
+  map.on('change:size', () => layer && layer.mapboxMap.resize());
   return layer ? <Base layer={layer}>{children}</Base> : null;
 }
 

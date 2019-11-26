@@ -1,31 +1,32 @@
 import {
+  SET_LOCATION,
   SET_FORM_LOCATION,
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
-  SET_PAGE,
   SET_PROJECTION_MODE,
   SET_PROJECTION_RESULT,
+  SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
 } from './actions';
-import { MAP_PAGE, RECOMMENDATION_PAGE } from '../components/Navigation';
 
 export const initialState = {
   location: {},
   formLocation: {},
-  mapLayer: 'ft',
+  mapLayer: 'cb',
   mapLocation: {},
   mapView: '9|910001|5947112',
-  page: MAP_PAGE,
   projectionMode: 'm',
   projectionOptions: {},
+  projectionResult: { options: {}, projections: [] },
+  targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
 
 const formLocationFields = [
-  'forestType',
   'forestEcoregion',
   'altitudinalZone',
+  'forestType',
   'additional',
   'silverFirArea',
   'relief',
@@ -49,28 +50,26 @@ const getFormLocation = (state, action) => {
 
 function tree(state = initialState, action) {
   switch (action.type) {
+    case SET_LOCATION: {
+      return { ...state, location: action.location };
+    }
     case SET_FORM_LOCATION: {
-      const formLocation = getFormLocation(state, action);
-      const projectionMode = 'f';
-      return { ...state, formLocation, projectionMode };
+      return { ...state, formLocation: getFormLocation(state, action) };
     }
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
     case SET_MAP_LOCATION: {
-      const { formLocation, projectionMode } = initialState;
-      const { mapLocation } = action;
-      const page = RECOMMENDATION_PAGE;
-      return { ...state, formLocation, mapLocation, page, projectionMode };
+      return { ...state, mapLocation: action.mapLocation, projectionMode: 'm' };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };
-    case SET_PAGE:
-      return { ...state, page: action.page };
     case SET_PROJECTION_MODE:
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {
-      const { location, projectionResult } = action;
-      return { ...state, location, projectionResult };
+      return { ...state, projectionResult: action.projectionResult };
+    }
+    case SET_TARGET_ALTITUDINAL_ZONE: {
+      return { ...state, targetAltitudinalZone: action.targetAltitudinalZone };
     }
     case SET_WELCOME_MODAL:
       localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');

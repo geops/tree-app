@@ -1,14 +1,19 @@
 export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
+export const SET_LOCATION = 'SET_LOCATION';
 export const SET_MAP_LAYER = 'SET_MAP_LAYER';
 export const SET_MAP_LOCATION = 'SET_MAP_LOCATION';
 export const SET_MAP_VIEW = 'SET_MAP_VIEW';
-export const SET_PAGE = 'SET_PAGE';
 export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
 export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
+export const SET_TARGET_ALTITUDINAL_ZONE = 'SET_TARGET_ALTITUDINAL_ZONE';
 export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
+}
+
+export function setLocation(location) {
+  return { type: SET_LOCATION, location };
 }
 
 export function setMapLayer(mapLayer) {
@@ -17,10 +22,6 @@ export function setMapLayer(mapLayer) {
 
 export function setMapView(mapView) {
   return { type: SET_MAP_VIEW, mapView };
-}
-
-export function setPage(page) {
-  return { type: SET_PAGE, page };
 }
 
 export function setMapLocation(mapLocation) {
@@ -33,6 +34,10 @@ export function setProjectionMode(projectionMode) {
 
 export function setProjectionResult(projectionResult, location) {
   return { type: SET_PROJECTION_RESULT, projectionResult, location };
+}
+
+export function setTargetAltitudinalZone(targetAltitudinalZone) {
+  return { type: SET_TARGET_ALTITUDINAL_ZONE, targetAltitudinalZone };
 }
 
 export function setWelcomeModal(open) {

@@ -11,10 +11,6 @@ import { initialState } from '../reducers';
 
 const querySync = ReduxQuerySync.enhancer({
   params: {
-    flft: {
-      selector: s => s.formLocation && s.formLocation.forestType,
-      action: forestType => setFormLocation({ forestType }),
-    },
     flfe: {
       selector: s => s.formLocation && s.formLocation.forestEcoregion,
       action: forestEcoregion => setFormLocation({ forestEcoregion }),
@@ -22,6 +18,10 @@ const querySync = ReduxQuerySync.enhancer({
     flaz: {
       selector: s => s.formLocation && s.formLocation.altitudinalZone,
       action: altitudinalZone => setFormLocation({ altitudinalZone }),
+    },
+    flft: {
+      selector: s => s.formLocation && s.formLocation.forestType,
+      action: forestType => setFormLocation({ forestType }),
     },
     fls: {
       selector: s => s.formLocation && s.formLocation.slope,

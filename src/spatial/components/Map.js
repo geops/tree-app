@@ -13,7 +13,10 @@ function Map({ children, className, ...props }) {
   );
 
   const target = useRef(null);
-  useEffect(() => map.setTarget(target.current));
+  useEffect(() => {
+    map.setTarget(target.current);
+    map.updateSize();
+  });
   return (
     <MapContext.Provider value={map}>
       <div ref={target} className={className}>

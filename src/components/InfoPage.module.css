@@ -1,0 +1,23 @@
+.page {
+  padding: 20px;
+}
+
+.iconList {
+  list-style: none;
+}
+
+.iconList :global(li) {
+  margin-top: 0.5em;
+  min-height: 2em;
+}
+
+.iconList :global(svg) {
+  height: 42px;
+  position: absolute;
+  left: 30px;
+  fill: var(--primary-color-500);
+}
+
+.todayIcon {
+  margin-top: -0.5em;
+}

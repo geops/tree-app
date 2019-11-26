@@ -2,22 +2,26 @@
   height: 3em;
 }
 
-.infoIcon {
-  height: 1.5em;
-}
-
 .checkbox :global(label) {
   color: white !important;
+}
+.checkbox:global(.checked > label) {
+  color: #fbf0b2 !important;
 }
 
 .large {
   font-size: 1.5em;
+  line-height: 1.4em;
 }
 .small {
   font-size: 0.8em;
+  line-height: 1.4em;
 }
 .bold {
   font-weight: bold;
+}
+.yellow {
+  color: #fbf0b2;
 }
 
 @media (max-width: 768px) {

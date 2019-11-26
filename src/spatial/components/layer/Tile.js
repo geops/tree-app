@@ -4,8 +4,8 @@ import React, { useMemo } from 'react';
 
 import Base from './Base';
 
-function Tile({ children, ...props }) {
-  const layer = useMemo(() => new OLTile(props), [props]);
+function Tile({ children, source }) {
+  const layer = useMemo(() => new OLTile({ source }), [source]);
   return <Base layer={layer}>{children}</Base>;
 }
 
@@ -14,6 +14,7 @@ Tile.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  source: PropTypes.shape().isRequired,
 };
 
 Tile.defaultProps = {

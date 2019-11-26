@@ -1,25 +1,23 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
-import { translate } from '@geops/tree-lib';
+import { info } from '@geops/tree-lib';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Form, Label } from 'semantic-ui-react';
+import { Form, Message } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
 import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
-const getButtonOptions = (type, language) => key => ({
+const getButtonOptions = (type, lng) => key => ({
   key,
-  label: translate(type, key, language),
+  label: info(type, key)[lng],
 });
-const getDropdownOptions = (type, language, includeKey = false) => key => ({
+const getDropdownOptions = (type, lng, includeKey = false) => key => ({
   key,
-  text: includeKey
-    ? `${key} - ${translate(type, key, language)}`
-    : translate(type, key, language),
+  text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
   value: key,
 });
 
@@ -53,73 +51,64 @@ function ProjectionForm() {
   };
 
   const { t, i18n } = useTranslation();
+  const formActive = projectionMode === 'm' || fieldActive;
 
   // Note: remember to keep formLocationFields in reducers.js updated.
   return (
-    <Form
-      className={
-        projectionMode === 'm' || fieldActive ? styles.formActive : styles.form
-      }
-    >
-      {options.forestType && (
-        <Form.Field>
-          <label>{t('forestType.label')}</label>
-          <Dropdown
-            className={styles.forestType}
-            clearable={projectionMode === 'f' && isDifferent('forestType')}
-            options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
-            )}
-            onChange={(e, { value }) => setLocation('forestType', value)}
-            onBlur={deactivateField}
-            onFocus={() => activateField('forestType')}
-            placeholder={
-              projectionMode === 'm'
-                ? t('forestType.hint')
-                : t('dropdown.placeholder')
-            }
-            value={getValue('forestType')}
-          />
-          {projectionMode === 'm' &&
-            location.coordinate &&
-            !location.forestType && (
-              <Label pointing>
-                {t('errorMessage.incompleteLocationInput')}
-              </Label>
-            )}
-        </Form.Field>
-      )}
+    <Form className={formActive ? styles.formActive : styles.form}>
       {projectionMode === 'f' && options.forestEcoregion && (
-        <Form.Field>
-          <label>{t('forestEcoregion.label')}</label>
-          <Dropdown
-            clearable={isDifferent('forestEcoregion')}
-            options={options.forestEcoregion.map(
-              getDropdownOptions('forestEcoregion', i18n.language),
-            )}
-            onChange={(e, { value }) => setLocation('forestEcoregion', value)}
-            onBlur={deactivateField}
-            onFocus={() => activateField('forestEcoregion')}
-            value={getValue('forestEcoregion')}
-          />
-        </Form.Field>
+        <Dropdown
+          clearable={isDifferent('forestEcoregion')}
+          label={t('forestEcoregion.label')}
+          options={options.forestEcoregion.map(
+            getDropdownOptions('forestEcoregion', i18n.language),
+          )}
+          onChange={(e, { value }) => setLocation('forestEcoregion', value)}
+          onBlur={deactivateField}
+          onFocus={() => activateField('forestEcoregion')}
+          value={getValue('forestEcoregion')}
+        />
       )}
       {projectionMode === 'f' && options.altitudinalZone && (
-        <Form.Field>
-          <label>{t('altitudinalZone.label')}</label>
-          <Dropdown
-            clearable={isDifferent('altitudinalZone')}
-            options={options.altitudinalZone.map(
-              getDropdownOptions('altitudinalZone', i18n.language),
-            )}
-            onChange={(e, { value }) => {
-              setLocation('altitudinalZone', value || undefined);
-            }}
-            onBlur={deactivateField}
-            onFocus={() => activateField('altitudinalZone')}
-            value={getValue('altitudinalZone')}
-          />
-        </Form.Field>
+        <Dropdown
+          clearable={isDifferent('altitudinalZone')}
+          label={t('altitudinalZone.label')}
+          options={options.altitudinalZone.map(
+            getDropdownOptions('altitudinalZone', i18n.language),
+          )}
+          onChange={(e, { value }) => setLocation('altitudinalZone', value)}
+          onBlur={deactivateField}
+          onFocus={() => activateField('altitudinalZone')}
+          value={getValue('altitudinalZone')}
+        />
+      )}
+      {options.forestType ? (
+        <Dropdown
+          className={styles.forestType}
+          clearable
+          label={t('forestType.label')}
+          options={options.forestType.map(
+            getDropdownOptions('forestType', i18n.language, true),
+          )}
+          onChange={(e, { value }) => setLocation('forestType', value)}
+          onBlur={deactivateField}
+          onFocus={() => activateField('forestType')}
+          placeholder={t('dropdown.placeholder')}
+          value={getValue('forestType')}
+        />
+      ) : (
+        projectionMode === 'm' && (
+          <Message className={styles.message} size="big">
+            {(() => {
+              if (!mapLocation.coordinate) {
+                return t('projection.missingLocation');
+              }
+              return !mapLocation.altitudinalZone
+                ? t('projection.missingLocationData')
+                : t('projection.missingProjectionData');
+            })()}
+          </Message>
+        )
       )}
       {options.slope && options.slope.length > 1 && (
         <ChoiceButton
@@ -160,29 +149,23 @@ function ProjectionForm() {
         />
       )}
       {projectionMode === 'f' &&
-        options.altitudinalZone &&
+        options.forestType &&
         options.targetAltitudinalZone &&
-        options.targetAltitudinalZone.length >= 1 &&
-        options.altitudinalZone !== undefined && (
-          <Form.Field>
-            <label>{t('targetAltitudinalZone.label')}</label>
-            <Dropdown
-              clearable={isDifferent('targetAltitudinalZone')}
-              upward
-              options={options.targetAltitudinalZone.map(
-                getDropdownOptions('altitudinalZone', i18n.language),
-              )}
-              onChange={(e, { value }) => {
-                setLocation('targetAltitudinalZone', value || undefined);
-              }}
-              onBlur={deactivateField}
-              onFocus={() => activateField('targetAltitudinalZone')}
-              value={
-                location.targetAltitudinalZone ||
-                options.targetAltitudinalZone[0]
-              }
-            />
-          </Form.Field>
+        options.targetAltitudinalZone.length >= 1 && (
+          <Dropdown
+            clearable={isDifferent('targetAltitudinalZone')}
+            label={t('targetAltitudinalZone.label')}
+            options={options.targetAltitudinalZone.map(
+              getDropdownOptions('altitudinalZone', i18n.language),
+            )}
+            onChange={(e, { value }) => {
+              setLocation('targetAltitudinalZone', value || undefined);
+            }}
+            onBlur={deactivateField}
+            onFocus={() => activateField('targetAltitudinalZone')}
+            upward
+            value={getValue('targetAltitudinalZone')}
+          />
         )}
     </Form>
   );

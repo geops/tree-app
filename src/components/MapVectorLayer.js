@@ -8,6 +8,10 @@ import { LayerContext } from '../spatial/components/layer/Base';
 import { setMapLayer } from '../store/actions';
 import styles from './MapVectorLayer.module.css';
 
+const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
+mapStyle.glyphs = `${endpoint}/fonts/{fontstack}/{range}.pbf`;
+mapStyle.sources.tree.tiles = [`${endpoint}/tree/{z}/{x}/{y}.pbf`];
+
 const getSourcLayer = layerId =>
   (mapStyle.layers.find(l => l.id === layerId) || {})['source-layer'];
 
@@ -22,7 +26,10 @@ const getStyle = sourceLayer => {
               ...layer.paint,
               'fill-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
             }
-          : layer.paint,
+          : {
+              ...layer.paint,
+              'line-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
+            },
     })),
   };
 };
