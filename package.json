@@ -105,8 +105,7 @@
   },
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run",
-    "cypress:ci": "start-server-and-test start http://localhost:3000 cypress:run",
+    "cypress:ci": "start-server-and-test start http://localhost:3000 'cypress run --record'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint src",

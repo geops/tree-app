@@ -27,4 +27,6 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Run and record Cypress tests
-        run: yarn run cypress:ci --record
+        run: yarn run cypress:ci
+        env:
+          CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
