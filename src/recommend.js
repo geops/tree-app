@@ -5,8 +5,14 @@ import xor from 'lodash.xor';
 
 import list from './list';
 
-const get3 = ([, , p3]) => p3;
-const union12 = ([p1, p2]) => union(p1, p2);
+const removeDuplicates = (...nestedArray) => {
+  const foundItems = [];
+  return nestedArray.map(items => {
+    const uniqueItems = difference(items, foundItems);
+    foundItems.push(...items);
+    return uniqueItems;
+  });
+};
 
 function recommend(location = {}, projections = [], future = false) {
   if (!location.forestType) {
@@ -21,21 +27,26 @@ function recommend(location = {}, projections = [], future = false) {
 
   const [today1, today2, today3, today4] = list(location);
   const t123 = union(today1, today2, today3);
-  const p = projections.map(({ forestType }) => list(forestType));
-  const multi = projections.length > 1;
+  const p = projections.map(x => list(x));
+  const p12 = p.map(([x1, x2]) => union(x1, x2));
+  const p3 = p.map(([, , x3]) => x3);
+  const p4 = p.map(([, , , x4]) => x4);
+  const pAll = p.map(x => union(...x));
+  const isFuture = x => (future ? x : []);
+  const isMulti = x => (projections.length > 1 ? x : []);
 
-  return [
-    intersection(t123, intersection(...p.map(union12))), // Level 1
-    multi ? intersection(t123, xor(...p.map(union12))) : [], // Level 2
-    future ? difference(intersection(...p.map(union12)), t123) : [], // Level 3
-    future && multi ? difference(xor(...p.map(union12)), t123) : [], // Level 4
-    intersection(t123, intersection(...p.map(get3))), // Level 5
-    multi ? intersection(t123, xor(...p.map(get3))) : [], // Level 6
-    future ? difference(intersection(...p.map(get3)), t123) : [], // Level 7
-    future && multi ? difference(xor(...p.map(get3)), t123) : [], // Level 8
-    difference(t123, union(...p.map(x => union(...x)))), // Level 9
-    union(today4, ...p.map(([, , , p4]) => p4)), // Level 10
-  ];
+  return removeDuplicates(
+    intersection(t123, intersection(...p12)), //         Level 1
+    isMulti(intersection(t123, xor(...p12))), //         Level 2
+    isFuture(difference(intersection(...p12), t123)), // Level 3
+    isFuture(isMulti(difference(xor(...p12), t123))), // Level 4
+    intersection(t123, intersection(...p3)), //          Level 5
+    isMulti(intersection(t123, xor(...p3))), //          Level 6
+    isFuture(difference(intersection(...p3), t123)), //  Level 7
+    isFuture(isMulti(difference(xor(...p3), t123))), //  Level 8
+    difference(t123, union(...pAll)), //                 Level 9
+    union(today4, ...p4), //                             Level 10
+  );
 }
 
 export default recommend;
