@@ -15,8 +15,8 @@ import styles from './Recommendation.module.css';
 function Recommendation() {
   const { t } = useTranslation();
   const [future, setFuture] = useState(false);
-  const { forestType, projections } = useSelector(state => ({
-    forestType: state.location.forestType,
+  const { location, projections } = useSelector(state => ({
+    location: state.location,
     projections: state.projectionResult.projections,
   }));
 
@@ -24,16 +24,16 @@ function Recommendation() {
     let result;
     try {
       if (projections && projections.length === 0) {
-        result = recommend(forestType, [{ forestType }], future);
+        result = recommend(location, [location], future);
       } else {
-        result = recommend(forestType, projections, future);
+        result = recommend(location, projections, future);
       }
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [forestType, projections, future]);
+  }, [location, projections, future]);
 
   return (
     <Tab.Pane>

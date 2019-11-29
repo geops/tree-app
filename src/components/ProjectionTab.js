@@ -6,8 +6,8 @@ import { Grid, Header, Tab } from 'semantic-ui-react';
 
 import TreeTypeList from './TreeTypeList';
 
-function ProjectionTab({ forestType }) {
-  const treeTypes = useMemo(() => list(forestType), [forestType]);
+function ProjectionTab({ location }) {
+  const [one, two, three] = useMemo(() => list(location), [location]);
   const { t } = useTranslation();
   return (
     <Tab.Pane>
@@ -17,7 +17,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesOne')}</Header>
           </Grid.Column>
           <Grid.Column>
-            <TreeTypeList codes={treeTypes[0]} />
+            <TreeTypeList codes={one} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -25,7 +25,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesTwo')}</Header>
           </Grid.Column>
           <Grid.Column>
-            <TreeTypeList codes={treeTypes[1]} />
+            <TreeTypeList codes={two} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -33,7 +33,7 @@ function ProjectionTab({ forestType }) {
             <Header inverted>{t('projection.treeTypesThree')}</Header>
           </Grid.Column>
           <Grid.Column>
-            <TreeTypeList codes={treeTypes[2]} />
+            <TreeTypeList codes={three} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -42,7 +42,7 @@ function ProjectionTab({ forestType }) {
 }
 
 ProjectionTab.propTypes = {
-  forestType: PropTypes.string.isRequired,
+  location: PropTypes.objectOf({}).isRequired,
 };
 
 export default ProjectionTab;

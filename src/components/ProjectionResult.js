@@ -34,7 +34,7 @@ function ProjectionResult() {
     (altitudinalZone === targetAltitudinalZone ||
       projections.findIndex(p => p.altitudinalZone === altitudinalZone) === -1)
   ) {
-    projections.unshift({ altitudinalZone, forestType });
+    projections.unshift(location);
   }
 
   const panes = [];
@@ -90,7 +90,7 @@ function ProjectionResult() {
             </div>
           </Menu.Item>
         ),
-        render: () => <ProjectionTab forestType={p.forestType} />,
+        render: () => <ProjectionTab location={p} />,
       });
     }
   });
