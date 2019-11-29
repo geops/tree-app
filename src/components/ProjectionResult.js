@@ -81,7 +81,9 @@ function ProjectionResult() {
             {icons}
             <div>
               <div>
-                {p.forestType}{' '}
+                {p.transitionForestType
+                  ? ` ${p.forestType} (${p.transitionForestType}) `
+                  : ` ${p.forestType} `}
                 <span className={styles.altitudinalZone}>
                   {info('altitudinalZone', p.altitudinalZone)[i18n.language]}
                 </span>

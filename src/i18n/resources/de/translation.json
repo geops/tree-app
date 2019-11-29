@@ -55,7 +55,12 @@
     "treeTypesThree": "Weitere Baumarten",
     "missingLocation": "Bitte eine Position in der Karte wählen.",
     "missingLocationData": "Keine Daten gefunden, bitte eine andere Position wählen.",
-    "missingProjectionData": "Keine Standortstypen gefunden, bitte eine andere Position wählen."
+    "missingProjectionData": "Keine Standortstypen gefunden, bitte eine andere Position wählen.",
+    "transition": {
+      "label": "Übergangsstandort",
+      "false": "Nein",
+      "true": "Ja"
+    }
   },
   "projectionScenario": {
     "today": "Klima heute",
@@ -81,11 +86,13 @@
     "label": "Standortsregion"
   },
   "altitudinalZone": {
-    "label": "Höhenstufe heute"
+    "label": "Höhenstufe heute",
+    "transition": "Übergang zu Höhenstufe heute"
   },
   "forestType": {
     "label": "Standortstyp",
-    "hint": "Bitte in der Karte auswählen"
+    "hint": "Bitte in der Karte auswählen",
+    "transition": "Übergang zu Standortstyp"
   },
   "slope": {
     "label": "Hangneigung"
@@ -100,7 +107,8 @@
     "label": "Relief"
   },
   "targetAltitudinalZone": {
-    "label": "Höhenstufe Zukunft"
+    "label": "Höhenstufe Zukunft",
+    "transition": "Übergang zu Höhenstufe Zukunft"
   },
   "errorMessage": {
     "incompleteLocationInput": "Nicht in der Karte gefunden"
