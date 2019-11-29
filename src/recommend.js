@@ -8,9 +8,9 @@ import list from './list';
 const get3 = ([, , p3]) => p3;
 const union12 = ([p1, p2]) => union(p1, p2);
 
-function recommend(forestTypeToday, projections = [], future = false) {
-  if (!forestTypeToday) {
-    throw new Error('forestTypeToday is required');
+function recommend(location = {}, projections = [], future = false) {
+  if (!location.forestType) {
+    throw new Error('location.forestType is required');
   }
   if (projections.reduce((c, p) => (p.forestType ? c + 1 : null), 0) < 1) {
     throw new Error('at least 1 projected forestType is required');
@@ -19,8 +19,7 @@ function recommend(forestTypeToday, projections = [], future = false) {
     throw new Error(`expected boolean type for future flag`);
   }
 
-  const today = list(forestTypeToday);
-  const [today1, today2, today3, today4] = today;
+  const [today1, today2, today3, today4] = list(location);
   const t123 = union(today1, today2, today3);
   const p = projections.map(({ forestType }) => list(forestType));
   const multi = projections.length > 1;

@@ -11,7 +11,8 @@ const findForestType = c => types.forestType.find(f => f.code === c);
 const nonresidents = c => types.treeType.find(t => t.code === c).nonresident;
 const residents = c => !types.treeType.find(t => t.code === c).nonresident;
 
-function list(forestType, transitionForestType) {
+function list(location = {}) {
+  const { forestType, transitionForestType } = location;
   if (!forestType) {
     throw new Error(`forestType is missing`);
   }
