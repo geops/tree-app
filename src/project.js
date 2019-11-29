@@ -11,6 +11,8 @@ const fields = [
   'relief',
 ];
 const fieldsConcat = ['slope', 'additional', 'silverFirArea', 'relief'];
+const concat = (x, y) =>
+  Array.from(new Set((x || []).concat(y))).sort((a, b) => a - b);
 
 const altitudeList = types.altitudinalZone
   .map(az => az.code)
@@ -39,9 +41,7 @@ function projectionReducer(location, targetAltitudePointer, result) {
     validate(field, value, values);
 
     options[field] = fieldsConcat.includes(field)
-      ? Array.from(
-          new Set((options[field] || []).concat(Object.keys(projection))),
-        ).sort((a, b) => a - b)
+      ? concat(options[field], Object.keys(projection))
       : options[field] || Object.keys(projection);
 
     if (value && projection[value]) {
@@ -89,6 +89,22 @@ function project(location = {}, targetAltitude, previousResult) {
 
   if (result && location.forestType && altitudeIdx !== -1) {
     result.options.targetAltitudinalZone = altitudeList.slice(altitudeIdx + 1);
+  }
+
+  if (location.transitionForestType) {
+    const { transitionForestType, transitionAltitudinalZone, ...tl } = location;
+    tl.forestType = transitionForestType;
+    tl.altitudinalZone = transitionAltitudinalZone;
+    const { options, projections: tp } = project(tl, targetAltitude);
+    Object.entries(options).forEach(([k, v]) => {
+      if (fieldsConcat.includes(k)) {
+        result.options[k] = concat(result.options[k], v);
+      }
+    });
+    result.projections = result.projections.map(p => {
+      const i = tp.findIndex(t => t.altitudinalZone === p.altitudinalZone);
+      return { ...p, transitionForestType: tp[i] && tp[i].forestType };
+    });
   }
 
   // Replace alphanumeric sorting with custom sorting based on database export

@@ -100,6 +100,18 @@ describe('valid options', () => {
     ).toStrictEqual(['<70', '>70']);
   });
 
+  test('option includes options from transition', () => {
+    expect(
+      project({
+        forestEcoregion: '1',
+        forestType: '19f',
+        transitionForestType: '46',
+        altitudinalZone: '60',
+        transitionAltitudinalZone: '81',
+      }).options.slope,
+    ).toStrictEqual(['unknown', '<20', '>20']);
+  });
+
   test('empty option field for incomplete location values', () => {
     expect(
       project({
@@ -131,7 +143,66 @@ describe('valid projections', () => {
     ).toStrictEqual([{ altitudinalZone: '50', forestType: '1' }]);
   });
 
-  test('valid projection with same altitudinalZone and targetAltitudinalZone', () => {
+  test('projection with valid transitionForestType', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          forestType: '19f',
+          transitionForestType: '46',
+          altitudinalZone: '60',
+          transitionAltitudinalZone: '81',
+          slope: '<20',
+        },
+        '50',
+      ).projections[0],
+    ).toStrictEqual({
+      altitudinalZone: '50',
+      forestType: '8b',
+      transitionForestType: '8*',
+    });
+  });
+
+  test('projection with transitionForestType not found', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          forestType: '19f',
+          transitionForestType: '46',
+          altitudinalZone: '60',
+          transitionAltitudinalZone: '81',
+        },
+        '50',
+      ).projections[0],
+    ).toStrictEqual({
+      altitudinalZone: '50',
+      forestType: '8b',
+      transitionForestType: undefined,
+    });
+  });
+
+  test('projection with transitionForestType and multi altitudinal zones', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          forestType: '19f',
+          transitionForestType: '46',
+          altitudinalZone: '60',
+          transitionAltitudinalZone: '81',
+          slope: '<20',
+        },
+        '40',
+      ).projections.slice(-1)[0],
+    ).toStrictEqual({
+      altitudinalZone: '40',
+      forestType: '7b',
+      transitionForestType: '7*',
+    });
+  });
+
+  test('projection with same altitudinalZone and targetAltitudinalZone', () => {
     expect(
       project(
         {
