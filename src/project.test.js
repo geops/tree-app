@@ -58,7 +58,7 @@ describe('valid options', () => {
         altitudinalZone: '40',
         silverFirArea: '1',
       }).options.forestEcoregion,
-    ).toMatchObject(['1', '3', '4', 'J', 'M', '2a', '2b', '5a', '5b']);
+    ).toStrictEqual(['1', '3', '4', 'J', 'M', '2a', '2b', '5a', '5b']);
   });
 
   test('valid list for altitudinalZone', () => {
@@ -67,7 +67,7 @@ describe('valid options', () => {
         forestEcoregion: '1',
         forestType: '59V',
       }).options.altitudinalZone,
-    ).toMatchObject(['20', '40', '50', '60', '81', '90', '100']);
+    ).toStrictEqual(['20', '40', '50', '60', '81', '90', '100']);
   });
 
   test('valid list for targetAltitudinalZone', () => {
@@ -77,7 +77,7 @@ describe('valid options', () => {
         altitudinalZone: '60',
         forestType: '47H',
       }).options.targetAltitudinalZone,
-    ).toMatchObject(['50', '40', '30', '20', '10', '0']);
+    ).toStrictEqual(['50', '40', '30', '20', '10', '0']);
   });
 
   test('check for unknown as only available option', () => {
@@ -87,7 +87,7 @@ describe('valid options', () => {
         altitudinalZone: '60',
         forestType: '1h',
       }).options.additional,
-    ).toMatchObject(['unknown']);
+    ).toStrictEqual(['unknown']);
   });
 
   test('option field with values for incomplete location values', () => {
@@ -97,7 +97,7 @@ describe('valid options', () => {
         altitudinalZone: '90',
         forestType: '60*',
       }).options.slope,
-    ).toMatchObject(['<70', '>70']);
+    ).toStrictEqual(['<70', '>70']);
   });
 
   test('empty option field for incomplete location values', () => {
@@ -127,8 +127,8 @@ describe('valid projections', () => {
           forestType: '1h',
         },
         '50',
-      ).projections[0].forestType,
-    ).toBe('1');
+      ).projections,
+    ).toStrictEqual([{ altitudinalZone: '50', forestType: '1' }]);
   });
 
   test('valid projection with same altitudinalZone and targetAltitudinalZone', () => {
@@ -141,10 +141,10 @@ describe('valid projections', () => {
         },
         '50',
       ).projections,
-    ).toMatchObject([]);
+    ).toStrictEqual([]);
   });
 
-  test('valid multi altitudinal zone projection', () => {
+  test('multi altitudinal zone projection', () => {
     expect(
       project(
         {
@@ -153,11 +153,11 @@ describe('valid projections', () => {
           forestType: '59V',
         },
         '81',
-      ).projections.slice(-1)[0].forestType,
-    ).toBe('55');
+      ).projections.slice(-1)[0],
+    ).toStrictEqual({ altitudinalZone: '81', forestType: '55' });
   });
 
-  test('valid projection skipping altitudinalZone 30 which is not available in forestEcoregion M', () => {
+  test('projection skipping altitudinalZone 30 which is not available in forestEcoregion M', () => {
     expect(
       project(
         {
@@ -166,11 +166,11 @@ describe('valid projections', () => {
           forestType: '7S',
         },
         '20',
-      ).projections[0].forestType,
-    ).toBe('7S collin');
+      ).projections,
+    ).toStrictEqual([{ altitudinalZone: '20', forestType: '7S collin' }]);
   });
 
-  test('valid projection skipping altitudinalZones which are not available in forestEcoregion 2b', () => {
+  test('projection skipping altitudinalZones which are not available in forestEcoregion 2b', () => {
     expect(
       project(
         {
@@ -179,8 +179,8 @@ describe('valid projections', () => {
           forestType: '55*',
         },
         '20',
-      ).projections.slice(-1)[0].forestType,
-    ).toBe('55* collin');
+      ).projections.slice(-1)[0],
+    ).toStrictEqual({ altitudinalZone: '20', forestType: '55* collin' });
   });
 
   test('empty projections if targetAltitudinalZone is not found', () => {
@@ -193,6 +193,6 @@ describe('valid projections', () => {
         },
         '30',
       ).projections,
-    ).toMatchObject([]);
+    ).toStrictEqual([]);
   });
 });
