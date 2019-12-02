@@ -987,10 +987,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@geops/tree-lib@^0.9.5":
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.9.5.tgz#7c0857c461912adbda56452536abf5f85080002e"
-  integrity sha512-wptLkKtsOdTawwsMVqwhKMC1oT4omiqxQwJaxgRSjmNNA8ClMy4HNaEEtcdrKXyoDfOz9XOihSZs4unIbWEDCA==
+"@geops/tree-lib@^0.9.6":
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-0.9.6.tgz#8ebd1b00337eaa5d7a3f572d96f6a15ec82916a9"
+  integrity sha512-i0xDuCeeSOabJcJ/QZFDT6KAZMN8Fj38uQrSSyn7qmBY52QW+2ZvBmRKJus/ftRenp3jZs7c+VWO8t4NtkBSJA==
   dependencies:
     lodash.difference "^4.5.0"
     lodash.intersection "^4.4.0"
