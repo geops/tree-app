@@ -19,9 +19,22 @@ const querySync = ReduxQuerySync.enhancer({
       selector: s => s.formLocation && s.formLocation.altitudinalZone,
       action: altitudinalZone => setFormLocation({ altitudinalZone }),
     },
+    fltraz: {
+      selector: s => s.formLocation && s.formLocation.transitionAltitudinalZone,
+      action: transitionAltitudinalZone =>
+        setFormLocation({ transitionAltitudinalZone }),
+    },
     flft: {
       selector: s => s.formLocation && s.formLocation.forestType,
       action: forestType => setFormLocation({ forestType }),
+    },
+    flt: {
+      selector: s => s.formLocation && s.formLocation.transition,
+      action: transition => setFormLocation({ transition }),
+    },
+    fltft: {
+      selector: s => s.formLocation && s.formLocation.transitionForestType,
+      action: transitionForestType => setFormLocation({ transitionForestType }),
     },
     fls: {
       selector: s => s.formLocation && s.formLocation.slope,

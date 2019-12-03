@@ -40,8 +40,12 @@ function ProjectionForm() {
   const activateField = field => setFieldActive(field);
   const deactivateField = () => setFieldActive('');
 
-  const getValue = field =>
-    options[field].includes(location[field]) ? location[field] : '';
+  const getValue = (field, transition) => {
+    const name = transition
+      ? `transition${field[0].toUpperCase() + field.slice(1)}`
+      : field;
+    return options[field].includes(location[name]) ? location[name] : '';
+  };
 
   const isDifferent = field => mapLocation[field] !== formLocation[field];
 
@@ -83,19 +87,32 @@ function ProjectionForm() {
         />
       )}
       {options.forestType ? (
-        <Dropdown
-          className={styles.forestType}
-          clearable
-          label={t('forestType.label')}
-          options={options.forestType.map(
-            getDropdownOptions('forestType', i18n.language, true),
-          )}
-          onChange={(e, { value }) => setLocation('forestType', value)}
-          onBlur={deactivateField}
-          onFocus={() => activateField('forestType')}
-          placeholder={t('dropdown.placeholder')}
-          value={getValue('forestType')}
-        />
+        <>
+          <Dropdown
+            className={styles.forestType}
+            clearable
+            label={t('forestType.label')}
+            options={options.forestType.map(
+              getDropdownOptions('forestType', i18n.language, true),
+            )}
+            onChange={(e, { value }) => setLocation('forestType', value)}
+            onBlur={deactivateField}
+            onFocus={() => activateField('forestType')}
+            placeholder={t('dropdown.placeholder')}
+            value={getValue('forestType')}
+          />
+          <ChoiceButton
+            label={t('projection.transition.label')}
+            options={[false, true].map(key => ({
+              key: key.toString(),
+              label: t(`projection.transition.${key}`),
+            }))}
+            onChange={(e, { value }) =>
+              setLocation('transition', value === 'true')
+            }
+            value={(location.transition || false).toString()}
+          />
+        </>
       ) : (
         projectionMode === 'm' && (
           <Message className={styles.message} size="big">
@@ -109,6 +126,38 @@ function ProjectionForm() {
             })()}
           </Message>
         )
+      )}
+      {location.transition && (
+        <>
+          <Dropdown
+            className={styles.forestType}
+            clearable
+            label={t('forestType.transition')}
+            options={options.forestType.map(
+              getDropdownOptions('forestType', i18n.language, true),
+            )}
+            onChange={(e, { value }) =>
+              setLocation('transitionForestType', value)
+            }
+            onBlur={deactivateField}
+            onFocus={() => activateField('transitionForestType')}
+            placeholder={t('dropdown.placeholder')}
+            value={getValue('forestType', true)}
+          />
+          <Dropdown
+            clearable
+            label={t('altitudinalZone.transition')}
+            options={options.altitudinalZone.map(
+              getDropdownOptions('altitudinalZone', i18n.language),
+            )}
+            onChange={(e, { value }) => {
+              setLocation('transitionAltitudinalZone', value);
+            }}
+            onBlur={deactivateField}
+            onFocus={() => activateField('transitionAltitudinalZone')}
+            value={getValue('altitudinalZone', true)}
+          />
+        </>
       )}
       {options.slope && options.slope.length > 1 && (
         <ChoiceButton
