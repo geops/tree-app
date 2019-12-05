@@ -4,19 +4,22 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Dropdown as SUIDropdown, Form } from 'semantic-ui-react';
 
+import useIsMobile from '../hooks/useIsMobile';
+
 import styles from './Dropdown.module.css';
 
 function Dropdown({ className, label, ...props }) {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   return (
     <Form.Field>
       {label && <label>{label}</label>}
       <SUIDropdown
         fluid
-        search
-        selection
         noResultsMessage={t('dropdown.noResultsMessage')}
         placeholder={t('dropdown.placeholder')}
+        search={isMobile === false}
+        selection
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...props}
         className={`${className} ${styles.dropdown}`}

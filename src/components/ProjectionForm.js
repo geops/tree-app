@@ -99,6 +99,7 @@ function ProjectionForm() {
             onBlur={deactivateField}
             onFocus={() => activateField('forestType')}
             placeholder={t('dropdown.placeholder')}
+            search
             value={getValue('forestType')}
           />
           <ChoiceButton
@@ -142,6 +143,7 @@ function ProjectionForm() {
             onBlur={deactivateField}
             onFocus={() => activateField('transitionForestType')}
             placeholder={t('dropdown.placeholder')}
+            search
             value={getValue('forestType', true)}
           />
           <Dropdown

@@ -12,7 +12,7 @@ import LocationPage from './LocationPage';
 import Map from './Map';
 import ProjectionPage from './ProjectionPage';
 import Ribbon from './Ribbon';
-import useWindowSize from '../hooks/useWindowSize';
+import useIsMobile from '../hooks/useIsMobile';
 
 import styles from './Navigation.module.css';
 
@@ -22,8 +22,7 @@ function Navigation() {
   const go = page => () => history.push(`/${page}${search}`);
   const is = page => pathname === `/${page}`;
   const { t } = useTranslation();
-  const windowSize = useWindowSize();
-  const isMobile = windowSize.width < 768;
+  const isMobile = useIsMobile();
   document.title = t('app.title');
   return (
     <div className={styles.wrapper}>
