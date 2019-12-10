@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@geops/tree-lib": "^0.9.6",
+    "@geops/tree-lib": "^0.9.7",
     "i18next": "^19.0.1",
     "mapbox-gl": "^1.6.0",
     "ol": "^6.1.1",
@@ -20,7 +20,7 @@
     "redux": "^4.0.4",
     "redux-query-sync": "^0.1.9",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.1",
+    "semantic-ui-react": "^0.88.2",
     "webgl-mock": "^0.1.7"
   },
   "devDependencies": {
@@ -29,7 +29,7 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-cypress": "^2.7.0",
-    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.17.0",
