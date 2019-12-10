@@ -15,8 +15,9 @@ WITH slopes AS
      FROM projections_import)
 SELECT processed_forest_ecoregion AS forest_ecoregion,
        altitudinal_zone_meta.code AS altitudinal_zone,
-       CASE trim(both from forest_type) = any(SELECT code FROM foresttype_meta)
-           WHEN TRUE THEN forest_type
+       CASE
+           WHEN trim(both from forest_type) = any(SELECT code FROM foresttype_meta) THEN forest_type
+           WHEN trim(both from target_forest_type) = any(SELECT code FROM foresttype_meta) THEN target_forest_type
            ELSE null
        END AS forest_type,
        CASE additional_meta.target is null
@@ -36,8 +37,9 @@ SELECT processed_forest_ecoregion AS forest_ecoregion,
            ELSE slopes.parsed_slope
        END AS slope,
        target_altitudinal_zone_meta.code AS target_altitudinal_zone,
-       CASE trim(both from target_forest_type) = any(SELECT code FROM foresttype_meta)
-           WHEN TRUE THEN target_forest_type
+       CASE
+           WHEN trim(both from target_forest_type) = any(SELECT code FROM foresttype_meta) THEN target_forest_type
+           WHEN trim(both from forest_type) = any(SELECT code FROM foresttype_meta) THEN forest_type
            ELSE null
        END AS target_forest_type
 FROM
