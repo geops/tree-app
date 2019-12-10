@@ -5,7 +5,7 @@ import VectorSource from 'ol/source/Vector';
 import React, { useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { layers } from '../map/style';
+import { layers } from '../map/style.json';
 import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
 import Mapbox from '../spatial/components/layer/Mapbox';

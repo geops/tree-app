@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Dropdown from './Dropdown';
-import mapStyle from '../map/style';
+import mapStyle from '../map/style.json';
 import { LayerContext } from '../spatial/components/layer/Base';
 import { setMapLayer } from '../store/actions';
 import styles from './MapVectorLayer.module.css';
