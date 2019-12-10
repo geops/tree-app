@@ -1,0 +1,28 @@
+[
+  {
+    "location": {
+      "forestEcoregion": "1",
+      "forestType": "47*",
+      "altitudinalZone": "90"
+    },
+    "projections": [
+      { "altitudinalZone": "81", "forestType": "47*" },
+      { "altitudinalZone": "60", "forestType": "19" },
+      { "altitudinalZone": "50", "forestType": "8d" },
+      { "altitudinalZone": "40", "forestType": "6" },
+      { "altitudinalZone": "20", "forestType": "6 collin" }
+    ]
+  },
+  {
+    "location": {
+      "forestEcoregion": "2b",
+      "forestType": "47*",
+      "altitudinalZone": "90"
+    },
+    "projections": [
+      { "altitudinalZone": "83", "forestType": "47*" },
+      { "altitudinalZone": "82", "forestType": "47*" },
+      { "altitudinalZone": "20", "forestType": "55 collin" }
+    ]
+  }
+]

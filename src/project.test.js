@@ -1,4 +1,5 @@
 const { project } = require('../');
+const fixtures = require('./project.fixtures.json');
 
 describe('invalid function parameters', () => {
   const validLocation = { forestEcoregion: '1', altitudinalZone: '81' };
@@ -256,5 +257,12 @@ describe('valid projections', () => {
         '30',
       ).projections,
     ).toStrictEqual([]);
+  });
+
+  test('projections based on fixtures', () => {
+    fixtures.forEach(({ location, projections }) => {
+      const target = projections.slice(-1)[0].altitudinalZone;
+      expect(project(location, target).projections).toStrictEqual(projections);
+    });
   });
 });
