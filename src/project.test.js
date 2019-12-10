@@ -1,32 +1,23 @@
 const { project } = require('../');
 
 describe('invalid function parameters', () => {
+  const validLocation = { forestEcoregion: '1', altitudinalZone: '81' };
   test('invalid location values', () => {
     expect(() =>
-      project({ forestType: '60*', forestEcoregion: 'fooBar' }, '50'),
+      project({ ...validLocation, forestEcoregion: 'fooBar' }),
     ).toThrowError('fooBar for forestEcoregion is not valid.');
 
     expect(() =>
-      project(
-        { forestType: '60*', forestEcoregion: '1', altitudinalZone: 'fooBar' },
-        '60',
-      ),
+      project({ ...validLocation, altitudinalZone: 'fooBar' }),
     ).toThrowError('fooBar for altitudinalZone is not valid.');
 
     expect(() =>
-      project(
-        {
-          forestEcoregion: '1',
-          altitudinalZone: '81',
-          forestType: 'fooBar',
-        },
-        '20',
-      ),
+      project({ ...validLocation, forestType: 'fooBar' }),
     ).toThrowError('fooBar for forestType is not valid.');
   });
 
   test('invalid target altitudinalZone', () => {
-    expect(() => project({}, 'fooBar')).toThrowError(
+    expect(() => project(validLocation, 'fooBar')).toThrowError(
       'fooBar for targetAltitudinalZone is not valid.',
     );
   });
