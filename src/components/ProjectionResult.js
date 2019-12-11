@@ -80,7 +80,7 @@ function ProjectionResult() {
           <Menu.Item key={p.altitudinalZone} className={styles.arrow}>
             {icons}
             <div>
-              <div>
+              <div data-cypress="projectionResultMenuItem">
                 {p.transitionForestType
                   ? ` ${p.forestType} (${p.transitionForestType}) `
                   : ` ${p.forestType} `}

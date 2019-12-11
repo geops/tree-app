@@ -1,20 +1,20 @@
-/* eslint-disable jsx-a11y/label-has-for,jsx-a11y/label-has-associated-control */
+/* eslint-disable jsx-a11y/label-has-for,jsx-a11y/label-has-associated-control,react/jsx-props-no-spreading */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Form } from 'semantic-ui-react';
 
-function ChoiceButton({ onChange, options, value, label }) {
+function ChoiceButton({ onChange, options, value, label, ...props }) {
   return (
     <Form.Field>
       <label>{label}</label>
-      <Button.Group basic>
-        {options.map(s => (
+      <Button.Group basic {...props}>
+        {options.map(option => (
           <Button
-            key={s.key}
-            active={value === s.key}
-            onClick={e => onChange(e, { value: s.key })}
+            key={option.key}
+            active={value === option.key}
+            onClick={e => onChange(e, { value: option.key })}
           >
-            {s.label}
+            {option.label}
           </Button>
         ))}
       </Button.Group>

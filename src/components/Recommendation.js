@@ -36,7 +36,7 @@ function Recommendation() {
   }, [location, projections, future]);
 
   return (
-    <Tab.Pane>
+    <Tab.Pane data-cypress="recommendationPane">
       {recommendations && (
         <Grid columns={3} padded verticalAlign="middle">
           <Grid.Row centered>

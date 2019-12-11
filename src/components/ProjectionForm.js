@@ -63,6 +63,7 @@ function ProjectionForm() {
       {projectionMode === 'f' && options.forestEcoregion && (
         <Dropdown
           clearable={isDifferent('forestEcoregion')}
+          data-cypress="projectionFormForestEcoregion"
           label={t('forestEcoregion.label')}
           options={options.forestEcoregion.map(
             getDropdownOptions('forestEcoregion', i18n.language),
@@ -76,6 +77,7 @@ function ProjectionForm() {
       {projectionMode === 'f' && options.altitudinalZone && (
         <Dropdown
           clearable={isDifferent('altitudinalZone')}
+          data-cypress="projectionFormAltitudinalZone"
           label={t('altitudinalZone.label')}
           options={options.altitudinalZone.map(
             getDropdownOptions('altitudinalZone', i18n.language),
@@ -91,6 +93,7 @@ function ProjectionForm() {
           <Dropdown
             className={styles.forestType}
             clearable
+            data-cypress="projectionFormForestType"
             label={t('forestType.label')}
             options={options.forestType.map(
               getDropdownOptions('forestType', i18n.language, true),
@@ -103,6 +106,7 @@ function ProjectionForm() {
             value={getValue('forestType')}
           />
           <ChoiceButton
+            data-cypress="projectionFormTransition"
             label={t('projection.transition.label')}
             options={[false, true].map(key => ({
               key: key.toString(),
@@ -132,6 +136,7 @@ function ProjectionForm() {
         <Segment>
           <Dropdown
             className={styles.forestType}
+            data-cypress="projectionFormTransitionForestType"
             clearable
             label={t('forestType.transition')}
             options={options.forestType.map(
@@ -148,6 +153,7 @@ function ProjectionForm() {
           />
           <Dropdown
             clearable
+            data-cypress="projectionFormTransitionAltitudinalZone"
             label={t('altitudinalZone.transition')}
             options={options.altitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
@@ -205,6 +211,7 @@ function ProjectionForm() {
         options.targetAltitudinalZone.length >= 1 && (
           <Dropdown
             clearable={isDifferent('targetAltitudinalZone')}
+            data-cypress="projectionFormTargetAltitudinalZone"
             label={t('targetAltitudinalZone.label')}
             options={options.targetAltitudinalZone.map(
               getDropdownOptions('altitudinalZone', i18n.language),
