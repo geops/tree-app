@@ -25,6 +25,10 @@ const projection = store => next => action => {
       projectionMode === 'm'
         ? { ...formLocation, ...mapLocation }
         : { ...mapLocation, ...formLocation };
+    if (!location.transition) {
+      delete location.transitionForestType;
+      delete location.transitionAltitudinalZone;
+    }
     store.dispatch(setLocation(location));
     const targetAltitudinalZone =
       projectionMode === 'm'
