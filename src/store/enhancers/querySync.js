@@ -30,6 +30,8 @@ const querySync = ReduxQuerySync.enhancer({
     },
     flt: {
       selector: s => s.formLocation && s.formLocation.transition,
+      valueToString: value => (value ? 't' : 'f'),
+      stringToValue: value => value === 't',
       action: transition => setFormLocation({ transition }),
     },
     fltft: {
