@@ -4,7 +4,7 @@ import { info } from '@geops/tree-lib';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Form, Message } from 'semantic-ui-react';
+import { Form, Message, Segment } from 'semantic-ui-react';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
@@ -129,7 +129,7 @@ function ProjectionForm() {
         )
       )}
       {location.transition && (
-        <>
+        <Segment>
           <Dropdown
             className={styles.forestType}
             clearable
@@ -159,7 +159,7 @@ function ProjectionForm() {
             onFocus={() => activateField('transitionAltitudinalZone')}
             value={getValue('altitudinalZone', true)}
           />
-        </>
+        </Segment>
       )}
       {options.slope && options.slope.length > 1 && (
         <ChoiceButton
