@@ -187,7 +187,7 @@ COPY
         relief as
      (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
       values
-      FROM relief_meta),
+      FROM (SELECT DISTINCT target, de FROM relief_meta) foo),
         slope AS
      (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
       values

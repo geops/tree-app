@@ -95,14 +95,14 @@ R,J,M,1,2a;subalpin;67*;;;65*;;;;hochmontan
 R,J,M,1,2a;subalpin;47*;;;47*;;;;hochmontan
 R,J,M,1,2a;subalpin;47*Lä;;;47*;;;;hochmontan
 R,J,M,1,2,3 osa bis co;hochmontan;55;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;Kuppenlage;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;Hang- oder Muldenlage;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46M;;;1h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;< 20%;;46;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;> 20%;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;55;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;Kuppenlage;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;Hang- oder Muldenlage;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46M;;;1h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;< 20%;;46;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;> 20%;;19;;;;obermontan
@@ -117,17 +117,17 @@ R,J,M,1,2,3 osa bis co;hochmontan;50;;;20;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;47H;;;47H;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;58Bl;;;48;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;53*;;;53Ta;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51Re;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51Re;;;18;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;Kuppenlage;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;Hang- oder Muldenlage;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51Re;;;19;;;Kuppenlage;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51Re;;;18;;;Hang- oder Muldenlage;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;55*;;;1h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;55*;;;1h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;59R;;;48;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;55;;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;55;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;19;;;Kuppenlage;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51;;;18;;;Hang- oder Muldenlage;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46M;;;1h;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;< 20%;;46;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;46;> 20%;;19;;;;obermontan
@@ -203,8 +203,8 @@ R,J,M,1,2,3 osa bis co;hochmontan;47*Lä;;;19;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50Re;;;20;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50P;;;20;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;50*Re;;;18M;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51C;;;19;;;;obermontan
-R,J,M,1,2,3 osa bis co;hochmontan;51C;;;18;;;;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51C;;;19;;;Kuppenlage;obermontan
+R,J,M,1,2,3 osa bis co;hochmontan;51C;;;18;;;Hang- oder Muldenlage;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;52Re;;;18*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;52T;;;18*;;;;obermontan
 R,J,M,1,2,3 osa bis co;hochmontan;54;;;18*;;;;obermontan

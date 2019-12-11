@@ -288,6 +288,12 @@ CREATE TABLE relief_meta (source TEXT, de TEXT,target relief);
 
 
 INSERT INTO relief_meta (source,de,target)
+VALUES ('Hang- oder Muldenlage',
+        'Hang- und Muldenlage',
+        'h_and_m');
+
+
+INSERT INTO relief_meta (source,de,target)
 VALUES ('Hang- und Muldenlage',
         'Hang- und Muldenlage',
         'h_and_m');

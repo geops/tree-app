@@ -9,10 +9,10 @@
     { "de": "nicht relevant", "code": "unknown" }
   ],
   "relief": [
-    { "de": "Hang- und Muldenlage", "code": "h_and_m" },
     { "de": "normal", "code": "normal" },
-    { "de": "Kuppenlage", "code": "kup" },
-    { "de": "nicht relevant", "code": "unknown" }
+    { "de": "Hang- und Muldenlage", "code": "h_and_m" },
+    { "de": "nicht relevant", "code": "unknown" },
+    { "de": "Kuppenlage", "code": "kup" }
   ],
   "treeType": [
     { "de": "Tanne", "code": 100, "endangered": false, "nonresident": false },
