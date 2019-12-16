@@ -4,54 +4,23 @@
   "license": "MIT",
   "version": "0.9.7",
   "source": "src/index.js",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "unpkg": "dist/index.umd.js",
+  "main": "build/index.js",
   "devDependencies": {
     "@geops/mapbox-gl-fonts": "^3.0.0",
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "@neutrinojs/airbnb-base": "^9.0.0",
+    "@neutrinojs/jest": "^9.0.0",
+    "@neutrinojs/library": "^9.0.0",
+    "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.6.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "husky": "^3.1.0",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
-    "microbundle": "^0.11.0",
     "netlify-cli": "^2.12.0",
-    "prettier": "^1.18.2"
-  },
-  "eslintConfig": {
-    "env": {
-      "jest": true
-    },
-    "extends": [
-      "airbnb-base",
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "post-checkout": "if [[ $HUSKY_GIT_PARAMS =~ 1$ ]]; then yarn install --frozen-lockfile; fi",
-      "post-merge": "yarn install --frozen-lockfile",
-      "post-rebase": "yarn install"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "yarn lint --fix",
-      "prettier --write 'src/**/*.js'",
-      "git add",
-      "yarn test --bail --findRelatedTests --watchAll=false"
-    ]
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "singleQuote": true
+    "neutrino": "^9.0.0",
+    "prettier": "^1.18.2",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
   },
   "scripts": {
     "data:transform": "yarn data:stop && yarn data:start && yarn data:stop",
@@ -61,10 +30,9 @@
     "data:spatial:tile": "cd data && docker-compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
     "data:spatial:fonts": "./data/spatial/4-fonts.sh",
     "data:spatial:publish": "netlify deploy --dir=data/spatial/tiles --prod --site=5dc39927-3ba0-485e-b01d-2e15385ce212",
-    "build": "microbundle",
-    "build:watch": "microbundle watch",
-    "lint": "microbundle && eslint src",
-    "test": "microbundle && jest",
+    "build": "webpack --mode production",
+    "lint": "eslint --cache --format codeframe src",
+    "test": "jest",
     "test:watch": "jest --watch",
     "prepublishOnly": "yarn build"
   },

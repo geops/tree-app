@@ -1,4 +1,4 @@
-const { project } = require('../');
+const { project } = require('../src');
 const fixtures = require('./project.fixtures.json');
 
 describe('invalid function parameters', () => {

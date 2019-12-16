@@ -1,4 +1,4 @@
-const { info } = require('../');
+const { info } = require('../src');
 
 test('valid german translation', () => {
   expect(info('treeType', 100).de).toStrictEqual('Tanne');

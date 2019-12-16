@@ -1,4 +1,4 @@
-const { recommend } = require('../');
+const { recommend } = require('../src');
 
 describe('Test for input values', () => {
   test('location forestType is required', () => {

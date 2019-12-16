@@ -1,5 +1,6 @@
+.eslintcache
 .netlify
-dist
+build
 node_modules
 data/spatial/export
 data/spatial/tiles/fonts

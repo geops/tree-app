@@ -1,4 +1,4 @@
-const { list } = require('../');
+const { list } = require('../src');
 
 describe('invalid function parameters', () => {
   test('missing forestType', () =>
