@@ -68,6 +68,14 @@ function projectionReducer(location, targetAltitudePointer, result) {
   return { ...result, options };
 }
 
+/**
+ * This function projects the forest type for a given location into the future.
+ *
+ * @param {object} location The current location.
+ * @param {string} targetAltitude The result of the `project()` function.
+ * @param {object} [previousResult] Only for internal use.
+ * @returns {object} Includes projections and options.
+ */
 function project(location = {}, targetAltitude, previousResult) {
   const altitudeIdx = altitudeList.indexOf(location.altitudinalZone);
   const targetAltitudeIdx = altitudeList.indexOf(targetAltitude);

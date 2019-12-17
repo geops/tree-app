@@ -14,6 +14,14 @@ const removeDuplicates = (...nestedArray) => {
   });
 };
 
+/**
+ * This function recommends tree types based on a location and list of projections. Call this function with the result of the `project()` function.
+ *
+ * @param {object} location The current location.
+ * @param {array} projections The result of the `project()` function.
+ * @param {boolean} [future] Optional flag to include tree types for the future.
+ * @returns {array} Nested arrays of recommended tree type codes.
+ */
 function recommend(location = {}, projections = [], future = false) {
   if (!location.forestType) {
     throw new Error('location.forestType is required');
