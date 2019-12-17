@@ -10,6 +10,8 @@
     "@neutrinojs/airbnb-base": "^9.0.0",
     "@neutrinojs/jest": "^9.0.0",
     "@neutrinojs/library": "^9.0.0",
+    "@semantic-release/changelog": "^3.0.6",
+    "@semantic-release/git": "^7.0.18",
     "documentation": "^12.1.4",
     "eslint": "^6.7.2",
     "eslint-config-prettier": "^6.6.0",
@@ -20,6 +22,7 @@
     "netlify-cli": "^2.12.0",
     "neutrino": "^9.0.0",
     "prettier": "^1.18.2",
+    "semantic-release": "^15.13.31",
     "webpack": "^4.41.3",
     "webpack-cli": "^3.3.10"
   },
@@ -37,12 +40,17 @@
     "lint": "eslint --cache --format codeframe src",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "lodash.difference": "^4.5.0",
     "lodash.intersection": "^4.4.0",
     "lodash.union": "^4.6.0",
     "lodash.xor": "^4.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geops/tree-lib.git"
   }
 }
