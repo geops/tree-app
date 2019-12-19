@@ -31,4 +31,5 @@ Please use the [GitHub issue tracker](https://github.com/geops/tree-lib/issues) 
 
 ## Development
 
-Run `yarn run test:watch` to continuously test in development.
+- Run `yarn run test:watch` to continuously test in development.
+- Use [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) for commit messages.
