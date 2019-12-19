@@ -8,7 +8,8 @@ Data for tree type projections is provided as a [CSV file](./data/projections.cs
 
 1. Install NodeJS 10, Yarn and Docker Compose.
 2. Install dependencies: `yarn install`
-3. Run transformation: `yarn run data:transform`
+3. Make sure Docker can overwrite JSON files (ie. on Linux `chmod 777 data/*.json`)
+4. Run transformation: `yarn run data:transform`
 
 ### NaiS
 
