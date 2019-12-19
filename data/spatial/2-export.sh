@@ -1,11 +1,11 @@
 _export () {
     local TARGET=$1
-    if [ ! -f "/data/spatial/export/${TARGET}.geojson" ]; then
+    #if [ ! -f "/data/spatial/export/${TARGET}.geojson" ]; then
         echo "Exporting ${TARGET} ..."
         ogr2ogr -f GeoJSON /data/spatial/export/${TARGET}.geojson PG:'host=localhost dbname=tree user=postgres' -sql "select * from ${TARGET}_export"
-    else
-        echo "$TARGET already exported! Do nothing ..."
-    fi
+    #else
+    #    echo "$TARGET already exported! Do nothing ..."
+    #fi
 }
 
 _export "altitudinal_zones_1995"
