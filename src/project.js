@@ -72,7 +72,7 @@ function projectionReducer(location, targetAltitudePointer, result) {
  * This function projects the forest type for a given location into the future.
  *
  * @param {object} location The current location.
- * @param {string} targetAltitude The result of the `project()` function.
+ * @param {string} targetAltitude Code for target altitudinal zone.
  * @param {object} [previousResult] Only for internal use.
  * @returns {object} Includes projections and options.
  */
