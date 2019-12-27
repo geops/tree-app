@@ -24,7 +24,7 @@
     "webgl-mock": "^0.1.7"
   },
   "devDependencies": {
-    "cypress": "^3.8.0",
+    "cypress": "^3.8.1",
     "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
