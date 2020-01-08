@@ -9,3 +9,13 @@
   --primary-color-800: #003a3d;
   --primary-color-900: #002a2c;
 }
+
+.Toastify__toast--info {
+  background: var(--primary-color-500);
+}
+
+@media (min-width: 481px) {
+  .Toastify__toast--info {
+    border-radius: 5px;
+  }
+}

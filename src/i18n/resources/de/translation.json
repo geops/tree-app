@@ -50,6 +50,10 @@
     "silver_fir_areas": "Tannenareale",
     "hint": "Bitte Position wählen"
   },
+  "offline": {
+    "update": "Aktualisierung verfügbar, wenn alle Browser-Fenster der Tree App geschlossen wurden.",
+    "success": "Die Tree App ist offline verfügbar."
+  },
   "projection": {
     "treeTypesOne": "Dominante Naturwaldbaumart",
     "treeTypesTwo": "Wichtige beigemischte Naturwaldbaumart",
