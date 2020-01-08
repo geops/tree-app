@@ -29,7 +29,8 @@
     "participants": "<p>Viele Fachleute haben zur Tree App beigetragen. Besonders erwähnt seien hier folgende Personen:</p><1><strong>Standortkundliche Grundlagen zum Projekt „Nachhaltigkeit im Schutzwald“</strong><br> {{locationBasics}}</1><2><strong>Grundlagenarbeiten zur Berücksichtigung des Klimawandels</strong><br> {{climateChangeBasics}}</2><3><strong>Idee zur Tree App</strong><br> {{idea}}</3><4><strong>Konzeption</strong><br> {{conception}}</4><5><strong>Realisierung</strong><br> <2>geOps AG</2></5><6><strong>Projektleitung</strong><br> {{projectManagement}}</6><7><strong>Projektsteuerung</strong><br> {{projectControl}}</7><p><strong>Finanzierung</strong><br> BAFU im Rahmen des Forschungsprogramms „Wald und Klimawandel“, WSL</p><9><strong>Anwender-Begleitgruppe</strong><br> {{wslUsers}}</9><10><strong>IT-Begleitgruppe</strong><br> {{itUsers}}</10>",
     "reportsTitle": "Zugrundeliegende Berichte",
     "impressumTitle": "Impressum",
-    "impressum": "Die Tree App ist ein Umsetzungsprodukt des Forschungsprogramms „Wald und Klimawandel“ von BAFU und WSL."
+    "impressum": "Die Tree App ist ein Umsetzungsprodukt des Forschungsprogramms „Wald und Klimawandel“ von BAFU und WSL.",
+    "versionTitle": "Version"
   },
   "location": {
     "underConstruction": "Die Bestimmung des Standortstyp befindet sich noch in der Entwicklung und wird erst in der nächsten Version verfügbar sein."
