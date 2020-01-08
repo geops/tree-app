@@ -1,4 +1,5 @@
 import OLTile from 'ol/layer/Tile';
+import XYZSource from 'ol/source/XYZ';
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 
@@ -14,11 +15,12 @@ Tile.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
-  source: PropTypes.shape().isRequired,
+  source: PropTypes.shape(),
 };
 
 Tile.defaultProps = {
   children: null,
+  source: new XYZSource(),
 };
 
 export default Tile;
