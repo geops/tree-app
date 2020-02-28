@@ -16,15 +16,15 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.2.1",
+    "husky": "^4.2.3",
     "jest": "^25.1.0",
-    "lint-staged": "^10.0.7",
-    "netlify-cli": "^2.31.0",
+    "lint-staged": "^10.0.8",
+    "netlify-cli": "^2.36.0",
     "neutrino": "^9.1.0",
     "prettier": "^1.18.2",
-    "semantic-release": "^17.0.2",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "semantic-release": "^17.0.4",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   },
   "scripts": {
     "data:transform": "yarn data:stop && yarn data:start && yarn data:stop",
