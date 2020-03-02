@@ -7,7 +7,7 @@
   "dependencies": {
     "@geops/tree-lib": "^1.0.0",
     "i18next": "^19.1.0",
-    "mapbox-gl": "^1.7.0",
+    "mapbox-gl": "^1.8.1",
     "ol": "^6.1.1",
     "proj4": "^2.6.0",
     "prop-types": "^15.7.2",
