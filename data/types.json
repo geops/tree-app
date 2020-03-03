@@ -9,10 +9,10 @@
     { "de": "nicht relevant", "code": "unknown" }
   ],
   "relief": [
-    { "de": "normal", "code": "normal" },
-    { "de": "Hang- und Muldenlage", "code": "h_and_m" },
     { "de": "nicht relevant", "code": "unknown" },
-    { "de": "Kuppenlage", "code": "kup" }
+    { "de": "Kuppenlage", "code": "kup" },
+    { "de": "normal", "code": "normal" },
+    { "de": "Hang- und Muldenlage", "code": "h_and_m" }
   ],
   "treeType": [
     { "de": "Tanne", "code": 100, "endangered": false, "nonresident": false },
@@ -95,26 +95,20 @@
       "nonresident": false
     },
     {
+      "de": "Atlaszeder",
+      "code": 97750,
+      "endangered": null,
+      "nonresident": null
+    },
+    {
       "de": "Zürgelbaum",
       "code": 97800,
       "endangered": false,
       "nonresident": false
     },
     {
-      "de": "Lawsons Zypresse",
-      "code": 107150,
-      "endangered": false,
-      "nonresident": true
-    },
-    {
       "de": "Drüsiger Kampferbaum",
       "code": 113350,
-      "endangered": false,
-      "nonresident": true
-    },
-    {
-      "de": "Kampferbaum",
-      "code": 113399,
       "endangered": false,
       "nonresident": true
     },
@@ -136,12 +130,7 @@
       "endangered": false,
       "nonresident": false
     },
-    {
-      "de": "Gemeine Esche",
-      "code": 174200,
-      "endangered": true,
-      "nonresident": false
-    },
+    { "de": "Esche", "code": 174200, "endangered": true, "nonresident": false },
     {
       "de": "Blumenesche",
       "code": 174300,
@@ -161,20 +150,20 @@
       "nonresident": false
     },
     {
+      "de": "Schwarznuss",
+      "code": 217510,
+      "endangered": null,
+      "nonresident": null
+    },
+    {
       "de": "Gewöhnlicher Wacholder",
       "code": 220400,
       "endangered": false,
       "nonresident": false
     },
     {
-      "de": "Alpen Goldregen",
+      "de": "Alpen-Goldregen",
       "code": 224200,
-      "endangered": false,
-      "nonresident": false
-    },
-    {
-      "de": "Gewöhnlicher Goldregen",
-      "code": 224300,
       "endangered": false,
       "nonresident": false
     },
@@ -203,16 +192,16 @@
       "nonresident": false
     },
     {
-      "de": "Ölbaum",
-      "code": 275100,
-      "endangered": false,
-      "nonresident": true
-    },
-    {
       "de": "Hopfenbuche",
       "code": 287100,
       "endangered": false,
       "nonresident": false
+    },
+    {
+      "de": "Blauglockenbaum",
+      "code": 293550,
+      "endangered": null,
+      "nonresident": null
     },
     {
       "de": "Fichte",
@@ -222,7 +211,7 @@
     },
     { "de": "Arve", "code": 304900, "endangered": false, "nonresident": false },
     {
-      "de": "Leg-Föhre",
+      "de": "Legföhre",
       "code": 305500,
       "endangered": false,
       "nonresident": false
@@ -234,7 +223,7 @@
       "nonresident": false
     },
     {
-      "de": "Schwarz-Föhre",
+      "de": "Schwarzföhre",
       "code": 305900,
       "endangered": false,
       "nonresident": true
@@ -273,12 +262,6 @@
     {
       "de": "Kirschbaum",
       "code": 328400,
-      "endangered": false,
-      "nonresident": false
-    },
-    {
-      "de": "Felsenkirsche",
-      "code": 329500,
       "endangered": false,
       "nonresident": false
     },
@@ -339,12 +322,6 @@
     {
       "de": "Roteiche",
       "code": 336200,
-      "endangered": false,
-      "nonresident": true
-    },
-    {
-      "de": "Korkeiche",
-      "code": 336250,
       "endangered": false,
       "nonresident": true
     },
@@ -421,7 +398,7 @@
       "nonresident": false
     },
     {
-      "de": " Mougeots-Mehlbeere",
+      "de": "Mougeots Mehlbeere",
       "code": 402600,
       "endangered": false,
       "nonresident": false
@@ -525,9 +502,9 @@
     { "de": null, "code": "7S collin" },
     { "de": "Feuchter Waldmeister-Bu-Wald auf Fels", "code": "7SFe" },
     { "de": "Typischer Waldmeister-Bu-Wald", "code": "7a" },
-    { "de": null, "code": "7a hyp" },
-    { "de": null, "code": "7a collin" },
     { "de": null, "code": "7a med" },
+    { "de": null, "code": "7a collin" },
+    { "de": null, "code": "7a hyp" },
     { "de": null, "code": "7b collin" },
     { "de": "Typischer Waldmeister-Bu-Wald auf Fels", "code": "7aFe" },
     {
@@ -565,7 +542,6 @@
     { "de": "Aronstab-Bu-Wald", "code": "11" },
     { "de": null, "code": "11 collin" },
     { "de": "Aronstab-Bu-Wald auf Fels", "code": "11Fe" },
-    { "de": "Mesophiler insubrischer Kalk-Bu-Wald", "code": "12*" },
     { "de": "Feuchter Bingelkraut-/Zahnwurz-Bu-Wald", "code": "12S" },
     {
       "de": "Feuchter Bingelkraut-/Zahnwurz-Bu-Wald auf Fels",
@@ -577,8 +553,9 @@
       "code": "12aFe"
     },
     { "de": "Trockener Bingelkraut-/Zahnwurz-Bu-Wald", "code": "12e" },
-    { "de": "Kalk-Bu-Wald der insubrischen Gebirge", "code": "12*h" },
     { "de": "Wechselfeuchter Bingelkraut-/Zahnwurz-Bu-Wald", "code": "12w" },
+    { "de": "Mesophiler insubrischer Kalk-Bu-Wald", "code": "12*" },
+    { "de": "Kalk-Bu-Wald der insubrischen Gebirge", "code": "12*h" },
     { "de": "Typischer Linden-Bu-Wald", "code": "13a" },
     { "de": null, "code": "13a collin" },
     { "de": "Typischer Linden-Bu-Wald auf Fels", "code": "13aFe" },
@@ -607,13 +584,11 @@
     { "de": "Karbonat-Ta-Bu-Wald mit Weissegge", "code": "18*" },
     { "de": "Typischer Waldsimsen-Ta-Bu-Wald", "code": "19" },
     { "de": "Typischer Waldsimsen-Ta-Bu-Wald auf Fels", "code": "19Fe" },
-    { "de": "Insubrischer Ta-Bu-Wald mit Hochstauden", "code": "19P" },
+    { "de": "Typischer Goldregen-Ta-Bu-Wald", "code": "19L" },
+    { "de": "Goldregen-Ta-Bu-Wald mit Kitaibels Zahnwurz", "code": "19LC" },
+    { "de": "Goldregen-Ta-Bu-Wald mit weisser Pestwurz", "code": "19LP" },
     { "de": "Waldsimsen-Ta-Bu-Wald mit Rohrreitgras", "code": "19a" },
     { "de": "Waldsimsen-Ta-Bu-Wald auf Pseudogley", "code": "19f" },
-    {
-      "de": "Typischer Waldsimsen-Tannen-Buchenwald; Südalpen-Ausbildung",
-      "code": "19m"
-    },
     { "de": "Hochstauden-Ta-Bu-Wald", "code": "20" },
     { "de": "Hochstauden-Ta-Bu-Wald auf Fels", "code": "20Fe" },
     { "de": "Waldgersten-Ta-Bu-Wald", "code": "20E" },
@@ -649,8 +624,8 @@
       "de": "Feuchter insubrischer Schneesimsen-Lindenwald mit Hopfenbuche",
       "code": "25O"
     },
-    { "de": null, "code": "25O med" },
     { "de": null, "code": "25O hyp" },
+    { "de": null, "code": "25O med" },
     { "de": "Turinermeister-Lindenwald mit Geissfuss", "code": "25F" },
     { "de": null, "code": "25F collin" },
     {
@@ -658,19 +633,19 @@
       "code": "25FFe"
     },
     { "de": "Typischer insubrischer Schneesimsen-Lindenwald", "code": "25a" },
-    { "de": null, "code": "25a hyp" },
     { "de": null, "code": "25a med" },
+    { "de": null, "code": "25a hyp" },
     { "de": "Trockener isubrischer Schneesimsen-Lindenwald", "code": "25as" },
-    { "de": null, "code": "25as med" },
     { "de": null, "code": "25as hyp" },
+    { "de": null, "code": "25as med" },
     { "de": "Insubrischer Turinermeister-Lindenwald", "code": "25b" },
-    { "de": null, "code": "25b med" },
     { "de": null, "code": "25b hyp" },
+    { "de": null, "code": "25b med" },
     { "de": "Linden-Eschen-Felsenwald", "code": "25e" },
     { "de": null, "code": "25e collin" },
     { "de": "Schluchtwald; saure Ausbildung", "code": "25f" },
-    { "de": null, "code": "25f hyp" },
     { "de": null, "code": "25f med" },
+    { "de": null, "code": "25f hyp" },
     { "de": "Feuchter insubrischer Schneesimsen-Lindenwald", "code": "25au" },
     { "de": null, "code": "25au med" },
     { "de": null, "code": "25au hyp" },
@@ -681,23 +656,24 @@
     { "de": null, "code": "25* collin" },
     { "de": "Ahorn-Eschenwald", "code": "26" },
     { "de": null, "code": "26 collin" },
+    { "de": "Ahorn-Eschenwald auf Fels", "code": "26Fe" },
     { "de": "Ahorn-Eschenwald; Höhenausbildung", "code": "26h" },
     { "de": "Ahorn-Eschenwald mit Schlaffer Segge", "code": "26w" },
     { "de": null, "code": "26w collin" },
     { "de": "Bach-Eschenwald", "code": "27" },
-    { "de": null, "code": "27 med" },
     { "de": null, "code": "27 hyp" },
     { "de": null, "code": "27 collin" },
+    { "de": null, "code": "27 med" },
     { "de": "Königsfarn-Schwarzerlenwald", "code": "27O" },
-    { "de": null, "code": "27Omed" },
     { "de": null, "code": "27O hyp" },
+    { "de": null, "code": "27Omed" },
     { "de": "Bach-Eschenwald; Höhenausbildung", "code": "27h" },
     { "de": "Hochstauden-Weisserlen-Ahornwald", "code": "27*" },
     { "de": null, "code": "27* collin" },
     { "de": "Ulmen-Eschen-Auenwald", "code": "28" },
     { "de": null, "code": "28 hyp" },
-    { "de": null, "code": "28 collin" },
     { "de": null, "code": "28 med" },
+    { "de": null, "code": "28 collin" },
     { "de": "Ulmen-Eschenwald", "code": "29" },
     { "de": null, "code": "29 collin" },
     { "de": "Zweiblatt-Eschen-Auenwald", "code": "29A" },
@@ -707,16 +683,16 @@
     { "de": "Ulmen-Eschenwald mit Waldschachtelhalm", "code": "29h" },
     { "de": "Traubenkirschen-Eschenwald", "code": "30" },
     { "de": null, "code": "30 collin" },
-    { "de": null, "code": "30 med" },
     { "de": null, "code": "30 hyp" },
+    { "de": null, "code": "30 med" },
     { "de": "Tieflagen-Grauerlenwald", "code": "31" },
-    { "de": null, "code": "31 med" },
-    { "de": null, "code": "31 hyp" },
     { "de": null, "code": "31 collin" },
+    { "de": null, "code": "31 hyp" },
+    { "de": null, "code": "31 med" },
     { "de": "Untermontaner Grauerlenwald", "code": "32C" },
-    { "de": null, "code": "32C hyp" },
-    { "de": null, "code": "32C med" },
     { "de": null, "code": "32C collin" },
+    { "de": null, "code": "32C med" },
+    { "de": null, "code": "32C hyp" },
     { "de": "Subalpiner Loorbeerweidenauenwald", "code": "32S" },
     { "de": "Obermontaner Grauerlenwald", "code": "32V" },
     { "de": "Typischer Ahorn-Weisserlenwald", "code": "32*" },
@@ -730,14 +706,14 @@
     { "de": null, "code": "33b hyp" },
     { "de": null, "code": "33b med" },
     { "de": "Geissbart-Eschenwald mit Kastanie", "code": "33m" },
-    { "de": null, "code": "33m hyp" },
     { "de": null, "code": "33m med" },
+    { "de": null, "code": "33m hyp" },
     {
       "de": "Kreuzlabkraut-Eichenwald mit Kastanie; saure Variante",
       "code": "34a"
     },
-    { "de": null, "code": "34a med" },
     { "de": null, "code": "34a hyp" },
+    { "de": null, "code": "34a med" },
     {
       "de": "Kreuzlabkraut-Eichenwald mit Kastanie; basische Variante",
       "code": "34b"
@@ -752,21 +728,21 @@
     { "de": null, "code": "35Q med" },
     { "de": null, "code": "35Q hyp" },
     { "de": "Blaustern-Hagebuchenmischwald", "code": "35S" },
-    { "de": null, "code": "35S med" },
     { "de": null, "code": "35S hyp" },
+    { "de": null, "code": "35S med" },
     { "de": "Aronstab-Eichenmischwald", "code": "35A" },
     { "de": "Hagebuchen-Hopfenbuchenwald", "code": "36" },
     { "de": null, "code": "36 med" },
     { "de": null, "code": "36 hyp" },
     { "de": "Hopfenbuchen-Eichenwald", "code": "37" },
-    { "de": null, "code": "37 med" },
     { "de": null, "code": "37 hyp" },
+    { "de": null, "code": "37 med" },
     { "de": "Turmkressen-Flaumeichenwald", "code": "38" },
     { "de": null, "code": "38 collin" },
     { "de": "Seifenkraut-Flaumeichenwald", "code": "38S" },
     { "de": "Purpurwaldmeister-Flaumeichenwald", "code": "38*" },
-    { "de": null, "code": "38* hyp" },
     { "de": null, "code": "38* med" },
+    { "de": null, "code": "38* hyp" },
     { "de": "Kronwicken-Eichenmischwald", "code": "39" },
     { "de": null, "code": "39 collin" },
     { "de": "Kreuzdorn-Eichenmischwald", "code": "39*" },
@@ -776,9 +752,9 @@
     { "de": null, "code": "40P med" },
     { "de": null, "code": "40P hyp" },
     { "de": "Aspen-Haselbuschwald auf Blockschutt", "code": "40PBl" },
-    { "de": null, "code": "40PBl med" },
     { "de": null, "code": "40PBl collin" },
     { "de": null, "code": "40PBl hyp" },
+    { "de": null, "code": "40PBl med" },
     {
       "de": "Pionier-Aspen-Haselbuschwald; Tieflagenausbildung",
       "code": "40Pt"
@@ -797,8 +773,8 @@
     { "de": null, "code": "42C med" },
     { "de": null, "code": "42C hyp" },
     { "de": "Typischer Rapunzel-Eichenwald", "code": "42Q" },
-    { "de": null, "code": "42Q hyp" },
     { "de": null, "code": "42Q med" },
+    { "de": null, "code": "42Q hyp" },
     { "de": "Eichen-Kastanienwald mit Heidelbeere", "code": "42V" },
     { "de": null, "code": "42V hyp" },
     { "de": null, "code": "42V med" },
@@ -806,15 +782,15 @@
     { "de": null, "code": "42r med" },
     { "de": null, "code": "42r hyp" },
     { "de": "Eichen-Kastanienwald auf Fels; basische Variante", "code": "42B" },
-    { "de": null, "code": "42B hyp" },
     { "de": null, "code": "42B med" },
+    { "de": null, "code": "42B hyp" },
     { "de": "Eichen-Kastanienwald in Entwicklung", "code": "42t" },
-    { "de": null, "code": "42t med" },
     { "de": null, "code": "42t hyp" },
+    { "de": null, "code": "42t med" },
     { "de": "Silberweidenauenwald", "code": "43" },
     { "de": null, "code": "43 collin" },
-    { "de": null, "code": "43 med" },
     { "de": null, "code": "43 hyp" },
+    { "de": null, "code": "43 med" },
     { "de": "Lavendelweidengebüsch", "code": "43S" },
     { "de": null, "code": "43S med" },
     { "de": null, "code": "43S collin" },
@@ -824,8 +800,8 @@
     { "de": null, "code": "43* med" },
     { "de": "Seggen-Schwarzerlenbruch", "code": "44" },
     { "de": null, "code": "44 med" },
-    { "de": null, "code": "44 hyp" },
     { "de": null, "code": "44 collin" },
+    { "de": null, "code": "44 hyp" },
     { "de": "Föhren-Birkenbruchwald", "code": "45" },
     { "de": null, "code": "45 collin" },
     { "de": "Typischer Heidelbeer-Ta-Fi-Wald", "code": "46" },
@@ -855,10 +831,6 @@
       "code": "47DRe"
     },
     { "de": "Wollreitgras-Ta-Fi-Wald mit Wachtelweizen", "code": "47M" },
-    {
-      "de": "Wollreitgras-Ta-Fi-Wald mit Wachtelweizen im Ta-Reliktareal",
-      "code": "47MRe"
-    },
     { "de": "Zypressenschlafmoos-Fi-Wald", "code": "47H" },
     { "de": null, "code": "47H collin" },
     { "de": "Alpenrosen-Lärchen-Ta-Wald", "code": "47*" },
@@ -880,10 +852,6 @@
       "code": "50Re"
     },
     { "de": "Typischer Hochstauden-Ta-Fi-Wald auf Fels", "code": "50Fe" },
-    {
-      "de": "Typischer Hochstauden-Ta-Fi-Wald auf Fels im Ta-Reliktareal",
-      "code": "50FeRe"
-    },
     { "de": "Hochstauden-Ta-Fi-Wald mit Pestwurz", "code": "50P" },
     { "de": null, "code": "50P collin" },
     { "de": "Karbonat-Ta-Fi-Wald mit kahlem Alpendost", "code": "50*" },
@@ -896,10 +864,6 @@
     { "de": null, "code": "51 collin" },
     { "de": "Typischer Labkraut-Ta-Fi-Wald im Ta-Reliktareal", "code": "51Re" },
     { "de": "Typischer Labkraut-Ta-Fi-Wald auf Fels", "code": "51Fe" },
-    {
-      "de": "Typischer Labkraut-Ta-Fi-Wald auf Fels im Ta-Reliktareal",
-      "code": "51FeRe"
-    },
     { "de": "Labkraut-Ta-Fi-Wald mit Hasel", "code": "51C" },
     { "de": "Karbonat-Ta-Fi-Wald mit Weisssegge", "code": "52" },
     { "de": null, "code": "52 collin" },
@@ -919,17 +883,22 @@
     },
     { "de": "Erika-Fichtenwald", "code": "53*" },
     { "de": null, "code": "53* collin" },
-    { "de": "Erika-Fichtenwald; subalpine Ausbildung", "code": "53*s" },
     { "de": "Erika-Fichtenwald mit Ta", "code": "53*Ta" },
+    { "de": "Erika-Fichtenwald; subalpine Ausbildung", "code": "53*s" },
+    {
+      "de": "Erika-Fichtenwald; subalpine Lärchenausbildung",
+      "code": "53*sLä"
+    },
     { "de": "Typischer Perlgras-Fichtenwald", "code": "54" },
     { "de": null, "code": "54 collin" },
     { "de": "Perlgras-Fichtenwald mit Atragene", "code": "54A" },
     { "de": null, "code": "54A collin" },
     { "de": "Ehrenpreis-Fichtenwald", "code": "55" },
+    { "de": "Ehrenpreis-Fichtenwald; Lärchenausbildung", "code": "55Lä" },
     { "de": null, "code": "55 collin" },
     { "de": "Schneesimsen-Fi-Wald", "code": "55*" },
-    { "de": "Schneesimsen-Fi-Wald mit Lärche", "code": "55*Lä" },
     { "de": null, "code": "55* collin" },
+    { "de": "Schneesimsen-Fi-Wald mit Lärche", "code": "55*Lä" },
     { "de": "Schneesimsen-Fi-Wald mit Tanne", "code": "55*Ta" },
     { "de": "Moorrand-Fichtenwald", "code": "56" },
     { "de": "Alpenlattich-Fichtenwald; Blockausbildung", "code": "57Bl" },
@@ -965,7 +934,6 @@
     { "de": "Typischer Preiselbeer-Fi-Wald", "code": "58" },
     { "de": "Typischer Preiselbeer-Fi-Wald mit Lärche", "code": "58Lä" },
     { "de": "Preiselbeer-Fichtenwald; Blockausbildung", "code": "58Bl" },
-    { "de": null, "code": "58Fe" },
     {
       "de": "Alpenlattich-Fichtenwald mit Wollreitgras mit Lärche",
       "code": "58Fe"
@@ -978,6 +946,7 @@
     { "de": "Hochstauden-Lärchenwald", "code": "59A" },
     { "de": "Steinmispel-Arvenwald", "code": "59C" },
     { "de": "Lärchen-Arvenwald mit Erika", "code": "59E" },
+    { "de": "Lärchen-Arvenwald mit Erika; Lärchenausbildung", "code": "59ELä" },
     { "de": "Wacholder-Lärchenwald", "code": "59J" },
     { "de": "Lärchen-Arvenwald mit Laserkraut", "code": "59L" },
     { "de": "Lärchen-Arvenwald mit Laserkraut mit Lärche", "code": "59LLä" },
@@ -1000,10 +969,6 @@
       "code": "60ATa"
     },
     { "de": "Hochstauden-Fichtenwald mit Schachtelhalm", "code": "60E" },
-    {
-      "de": "Hochstauden-Fichtenwald mit Schachtelhalm und Tanne",
-      "code": "60ETa"
-    },
     { "de": "Buntreitgras-Fi-Wald", "code": "60*" },
     { "de": null, "code": "60* collin" },
     { "de": "Buntreitgras-Fi-Wald mit Lärche", "code": "60*Lä" },
@@ -1033,23 +998,23 @@
     { "de": "Nordalpen-Arvenwald", "code": "72" },
     { "de": "Nordalpen-Arvenwald mit Lärche", "code": "72Lä" },
     { "de": "Robinienwälder sauer", "code": "91" },
-    { "de": null, "code": "91 med" },
     { "de": null, "code": "91 hyp" },
+    { "de": null, "code": "91 med" },
     {
       "de": "sonstige Neophytenwälder (Späte Traubenkirsche; Ailanthus; etc.) azonal",
       "code": "92a"
     },
-    { "de": null, "code": "92a hyp" },
     { "de": null, "code": "92a med" },
+    { "de": null, "code": "92a hyp" },
     {
       "de": "sonstige Neophytenwälder (Späte Traubenkirsche; Ailanthus; etc.) zonal",
       "code": "92z"
     },
-    { "de": null, "code": "92z med" },
     { "de": null, "code": "92z hyp" },
+    { "de": null, "code": "92z med" },
     { "de": "Insubrische Laurisilven (Immergrüne Laubwälder)", "code": "93" },
-    { "de": null, "code": "93 hyp" },
     { "de": null, "code": "93 med" },
+    { "de": null, "code": "93 hyp" },
     { "de": null, "code": "1G" },
     { "de": null, "code": "1hG" },
     { "de": null, "code": "3G" },
@@ -1080,14 +1045,14 @@
     { "de": null, "code": "10wG" },
     { "de": null, "code": "11G" },
     { "de": null, "code": "11FeG" },
-    { "de": null, "code": "12*G" },
     { "de": null, "code": "12SG" },
     { "de": null, "code": "12SFeG" },
     { "de": null, "code": "12aG" },
     { "de": null, "code": "12aFeG" },
     { "de": null, "code": "12eG" },
-    { "de": null, "code": "12*hG" },
     { "de": null, "code": "12wG" },
+    { "de": null, "code": "12*G" },
+    { "de": null, "code": "12*hG" },
     { "de": null, "code": "13aG" },
     { "de": null, "code": "13aFeG" },
     { "de": null, "code": "13eG" },
@@ -1109,7 +1074,7 @@
     { "de": null, "code": "19G" },
     { "de": null, "code": "19FeG" },
     { "de": null, "code": "19LG" },
-    { "de": null, "code": "19PG" },
+    { "de": null, "code": "19LPG" },
     { "de": null, "code": "19aG" },
     { "de": null, "code": "19fG" },
     { "de": null, "code": "20G" },
@@ -1126,6 +1091,10 @@
     { "de": null, "code": "23G" },
     { "de": null, "code": "23FeG" },
     { "de": null, "code": "23*G" },
+    {
+      "de": "Ulmen-Ahornwald mit Turinermeister; Gebüschvariante",
+      "code": "24G"
+    },
     { "de": null, "code": "24*G" },
     { "de": null, "code": "24*FeG" },
     { "de": null, "code": "25G" },
@@ -1210,8 +1179,8 @@
     { "de": null, "code": "51CG" },
     { "de": null, "code": "52G" },
     { "de": null, "code": "52TG" },
-    { "de": null, "code": "53TaG" },
     { "de": null, "code": "53G" },
+    { "de": null, "code": "53TaG" },
     { "de": null, "code": "53*G" },
     { "de": null, "code": "54G" },
     { "de": null, "code": "55G" },
@@ -1237,8 +1206,8 @@
     { "de": null, "code": "60G" },
     { "de": null, "code": "60AG" },
     { "de": null, "code": "60EG" },
-    { "de": null, "code": "60*G" },
     { "de": null, "code": "60*TaG" },
+    { "de": null, "code": "60*G" },
     { "de": null, "code": "61G" },
     { "de": null, "code": "62G" },
     { "de": null, "code": "65G" },
@@ -1258,12 +1227,14 @@
     { "de": null, "code": "93G" },
     { "de": "Grünerlengebüsch", "code": "AV" },
     { "de": "Gebüschreiche Vorwaldgesellschaft", "code": "Samb" },
-    { "de": "Moor-Weidengebüsch", "code": "Cine" },
-    { "de": "Gebirgs-Weidengebüsch", "code": "Wald" },
+    { "de": "Moor-Weidengebüsch", "code": "Salci" },
+    { "de": "Gebirgs-Weidengebüsch", "code": "Salwa" },
     { "de": "Besenginstergebüsch", "code": "Saro" },
     { "de": "Trockenwarmes Gebüsch", "code": "Berb" },
     { "de": "Mesophiles Gebüsch", "code": "Prun" },
     { "de": "Brombeergestrüpp", "code": "Rubi" },
+    { "de": null, "code": "Rhod" },
+    { "de": null, "code": "Junip" },
     { "de": "Nicht-Wald", "code": "u" },
     { "de": "Siedlung", "code": "u-1" },
     { "de": "Acker", "code": "u-2" },
@@ -1275,8 +1246,7 @@
     { "de": "Magerwiese", "code": "u-8" },
     { "de": "Feuchtgebiet", "code": "u-9" },
     { "de": "Gewässer", "code": "u-10" },
-    { "de": "Fels/Schutt", "code": "u-11" },
-    { "de": "Nicht begehbar und aus der Ferne nicht ansprechbar", "code": "nb" }
+    { "de": "Fels/Schutt", "code": "u-11" }
   ],
   "silverFirArea": [
     { "de": "Hauptareal", "code": "1" },

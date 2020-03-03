@@ -1,494 +1,496 @@
-NAISTYP_SORT; NAISTYP_C; NTYP_C_ANHANG2A; NTYP_C_BSCHR_SEP; NTYP_C_BSCHR_TI; NTYP_W_B_ETAP1; NTYP_W_B_ETAP2; NTYP_G_P_ETAP1; NTYP_G_P_ETAP2; NTYP_BS_ETAP1; NTYP_BS_ETAP2; NTYP_SSKSMS_ETA1; NTYP_SSKSMS_ETA2; NTYP_C_ABGES; NTYP_C_GFX_ORT; NTYP_C_GFX_BODEN; NAISTYP_GFX; NAISTYP_WGES; NAISTYP_ANFP; NAISTYP_GFK; NAISTYP_GFEI; NAISTYP_GRB; NAISTYP_BEM;;
-1;1;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;1;Typischer Hainsimsen-Bu-Wald;1 2;BUSM;Buche submontan mittel;Buchenwälder;"neues Anforderungsprofil; 7a 9a 9w mit Waldföhre; Traubeneiche";;
-1.009;1h    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;1h;Artenarmer Waldsimsen-Ta-Bu-Wald;1h;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-2;2;;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;2;Hainsimsen-Buchenwald mit Weissmoos;1 2;BUSM;Buche submontan mittel;Buchenwälder;"neues Anforderungsprofil; 7a 9a 9w mit Waldföhre; Traubeneiche";;
-3;3;x;;;Y;;Y;;Y;;Y;;;x;x;3;Typischer Schneesimsen-Bu-Wald;3;EIBU;Eiche-Buche;Buchenwälder;;;
-3.000001;3s    ;;;x;Y;;Y;;Y;;Y;;;x;x;3s;Trockener Schneesimsen-Bu-Wald;3s;EIBU;Eiche-Buche;Buchenwälder;"neues Anforderungsprofil 3(42). Im Klimax Bu; einzelne Traubeneichen; praktisch keine Ta; Fi. Max. Baumhöhe << 15 m";;
-3.00015;3LV   ;x 3VL;;;Y;;Y;;Y;;Y;;;x;;3LV;Nährstoffarmer Bu-Wald mit Stechpalme;3LV;EIBU;Eiche-Buche;Buchenwälder;;;
-3.01;3L/4L ;x 3mL-4L;;;Y;;Y;;Y;;Y;;;x;x;3L4L;Mesophiler Bu-Wald mit Stechpalme;3L/4L;EIBU;Eiche-Buche;Buchenwälder;;;
-3.1;3*/4* ;;;x;Y;;Y;;Y;;Y;;;x;;3Stern;Typischer Alpenrosen-Bu-Wald;3* 4*;EIBU;Eiche-Buche;Buchenwälder;neues Anforderungsprofil 3(47*);;
-4;4;x;;;Y;;Y;;Y;;Y;;;x;x;4;Farnreicher Schneesimsen-Bu-Wald;4;BUTA;Buche-Tanne ;Buchenwälder;;;
-6;6;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;6;Waldmeister-Bu-Wald mit Hainsimse;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;Anforderungsprofil von 7a;;
-6.000003;6Fe   ;;;;;;;;;;;;;;;;Waldmeister-Bu-wald mit Hainsimse auf Fels;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;
-7.00012;7S    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;7S;Feuchter Waldmeister-Bu-Wald;7S 11;BUF;Buche feucht;Buchenwälder;;;
-7.000123;7SFe  ;;;;;;;;;;;;;;;;Feuchter Waldmeister-Bu-Wald auf Fels;7S 11;BUF;Buche feucht;Buchenwälder;;;
-7.001;7a    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;7a;Typischer Waldmeister-Bu-Wald;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;
-7.001003;7aFe  ;;;;;;;;;;;;;;;;Typischer Waldmeister-Bu-Wald auf Fels;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;
-7.002;7b    ;;;;;;;;;;;;;;;;Typischer Waldmeister-Buchenwald mit Lockerähriger Segge;7b;BUSM;Buche submontan mittel;Buchenwälder;;;
-7.1;7*    ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;7Stern;Waldmeister-Bu-Wald mit Rippenfarn;7* 8*;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-8.00012;8S    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;8S;Feuchter Waldhirsen-Bu-Wald;8S 12S;BUF;Buche feucht;Buchenwälder;;;
-8.000123;8SFe  ;;;;;;;;;;;;;;;;Feuchter Waldhirsen-Bu-Wald auf Fels;8S 12S;BUF;Buche feucht;Buchenwälder;;;
-8.001;8a    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;8a;Typischer Waldhirsen-Bu-Wald;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;
-8.001003;8aFe  ;;;;;;;;;;;;;;;;Typischer Waldhirsen-Bu-Wald auf Fels;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;
-8.002;8b    ;;;;;;;;;;;;;;;;Typischer Waldhirsenbuchenwald mit Lockerähriger Segge;8b;BUUM;Buche untermontan mittel;Buchenwälder;;;
-8.004;8d    ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;8d;Waldhirsen-Bu-Wald mit Hainsimse;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;Anforderungsprofil von 8a;;
-8.004003;8dFe  ;;;;;;;;;;;;;;;;Waldhirsen-Bu-Wald mit Hainsimse auf Fels;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;
-8.1;8*    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;8Stern;Waldhirsen-Bu-Wald mit Rippenfarn;7* 8*;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-9.001;9a    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;9a;Typischer Lungenkraut-/Platterbsen-Bu-Wald;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;
-9.001003;9aFe  ;;;;;;;;;;;;;;;;Typischer Lungenkraut-/Platterbsen-Bu-Wald auf Fels;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;
-9.014;9w    ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;9w;Wechselfeuchter Lungenkraut-/Platterbsen-Bu-Wald;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;
-10.001;10a   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;10a;Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;;;
-10.014;10w   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;10w;Wechseltrockener Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;;;
-11;11;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;11;Aronstab-Bu-Wald;7S 11;BUF;Buche feucht;Buchenwälder;;;
-11.000003;11Fe  ;;;;;;;;;;;;;;;;Aronstab-Bu-Wald auf Fels;7S 11;BUF;Buche feucht;Buchenwälder;;;
-12;12*   ;x;;;Y;;Y;;Y;;Y;;;x;;12Stern;Mesophiler insubrischer Kalk-Bu-Wald;12*;BUUM;Buche untermontan mittel;Buchenwälder;;;
-12.00012;12S   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;12S;Feuchter Bingelkraut-/Zahnwurz-Bu-Wald;8S 12S;BUF;Buche feucht;Buchenwälder;;;
-12.000123;12SFe ;;;;;;;;;;;;;;;;Feuchter Bingelkraut-/Zahnwurz-Bu-Wald auf Fels;8S 12S;BUF;Buche feucht;Buchenwälder;;;
-12.001;12a   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;12a;Typischer Bingelkraut-/Zahnwurz-Bu-Wald;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;
-12.001003;12aFe ;;;;;;;;;;;;;;;;Typischer Bingelkraut-/Zahnwurz-Bu-Wald auf Fels;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;
-12.005;12e   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;12e;Trockener Bingelkraut-/Zahnwurz-Bu-Wald;12e 12w;BUUM;Buche trocken;Buchenwälder;;;
-12.009;12*h  ;x;;;Y;;Y;;Y;;Y;;;x;;12Sternh;Kalk-Bu-Wald der insubrischen Gebirge;12*h;TABUS;Tanne-Buche mittel;Buchenwälder;;;
-12.014;12w   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;12w;Wechselfeuchter Bingelkraut-/Zahnwurz-Bu-Wald;12e 12w;BUUM;Buche trocken;Buchenwälder;;;
-13.001;13a   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;13a;Typischer Linden-Bu-Wald;13a;BUS;Buche Schutt;Buchenwälder;;;
-13.001003;13aFe ;;;;;;;;;;;;;;;;Typischer Linden-Bu-Wald auf Fels;13a;BUS;Buche Schutt;Buchenwälder;;;
-13.005;13e   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;13e;Trockener Linden-Bu-Wald;13e;BUS;Buche Schutt;Buchenwälder;;;
-13.006;13eh  ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;13eh;Trockener Alpendost-Bu-Wald;13eh;TABUS;Tanne-Buche Schutt;Tannen-Buchenwälder;;;
-13.009;13h   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;13h;Typischer Alpendost-Bu-Wald;13h;TABUS;Tanne-Buche Schutt;Tannen-Buchenwälder;;;
-13.009003;13hFe ;;;;;;;;;;;;;;;;Typischer Alpendost-Bu-Wald auf Fels;13h;TABUS;Tanne-Buche Schutt;Tannen-Buchenwälder;;;
-13.1;13*   ;;;x;Y;Y;Y;Y;Y;Y;Y;Y;;x;;13Stern;Insubrischer Linden-Bu-Wald ;13*;BUS;Buche Schutt;Buchenwälder;"neues Anforderungsprofil: 13a mit Stechpalme; Eibe; Laburnum; Kastanie; Kirsche; Bu; Sommer- und Winterlinde";;
-14;14;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;14;Seggen-Bu-Wald mit Weissegge;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;;;
-14.1;14*   ;x;;;Y;;Y;;Y;;Y;;;x;;14Stern;Trockener insubrischer Kalk-Bu-Wald;14*;BUT;Buche trocken;Buchenwälder;;;
-15;15;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;15;Seggen-Bu-Wald mit Bergsegge;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;;;
-16;16;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;16;Blaugras-Bu-Wald;16;BUE;Buche extrem;Buchenwälder;;;
-16.1;16*   ;;;x;Y;;Y;;Y;;Y;;;x;;16Stern;Insubrischer Blaugras-Bu-Wald;16*;BUE;Buche extrem;Buchenwälder;"keine Schutzwaldpflege; 16 mit mehr Hopfenbuche";;
-17;17;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;17;Eiben-Bu-Wald/Steilhang-Bu-Wald mit Reitgras;17;BUT;Buche trocken;Buchenwälder;;;
-18;18;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;18;Waldschwingel-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-18.000003;18Fe  ;;;;;;;;;;;;;;;;Waldschwingel-Ta-Bu-Wald auf Fels;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-18.00007;18M   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;18M;Typischer Karbonat-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-18.014;18w   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;18w;Typischer Buntreitgras-Ta-Bu-Wald;18v 18w;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-18.015;18v   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;18v;Buntreitgras-Ta-Bu-Wald mit Rostsegge;18v 18w;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-18.1;18*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;18Stern;Karbonat-Ta-Bu-Wald mit Weissegge;18*;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-19;19;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;19;Typischer Waldsimsen-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-19.000003;19Fe  ;;;;;;;;;;;;;;;;Typischer Waldsimsen-Ta-Bu-Wald auf Fels;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-19.00008;19P   ;x 20*;;;Y;;;;Y;;Y;;;x;x;19P;Insubrischer Ta-Bu-Wald mit Hochstauden;19P;BUTA;Buche-Tanne ;Tannen-Buchenwälder;;;
-19.001;19a   ;;;x;Y;;Y;;Y;;Y;;;x;x;19a;Waldsimsen-Ta-Bu-Wald mit Rohrreitgras;19a;BUTA;Buche-Tanne;Tannen-Buchenwälder;"neues Anforderungsprofil: 1h mit Lärche und Föhre; sonstige Laubbäume (Winterlinde; Traubeneiche; Kastanie; Esche) 0 - 20 % ";;
-19.007;19f   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;19f;Waldsimsen-Ta-Bu-Wald auf Pseudogley;19f 20E;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-19.01;19m   ;x;;;Y;;Y;;Y;;Y;;;x;x;19m;"Typischer Waldsimsen-Tannen-Buchenwald; Südalpen-Ausbildung";19m;BUTA;Buche-Tanne;Tannen-Buchenwälder;;;
-20;20;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;20;Hochstauden-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-20.000003;20Fe  ;;;;;;;;;;;;;;;;Hochstauden-Ta-Bu-Wald auf Fels;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-20.00004;20E   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;20E;Waldgersten-Ta-Bu-Wald;19f 20E;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;
-21;21;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;21;Ahorn-Bu-Wald;21;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;
-21.00006;21L   ;;;x;Y;;Y;;Y;;Y;;;x;;21L;Goldregen-Ahornwald;21L;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;"neues Anforderungsprofil: Bergahorn und Laburnum 80 - 100 %; Bu. Ta; Esche; Fi 0 - 20 %";;
-21.1;21*   ;x;;;Y;;;;Y;;Y;;;x;x;21Stern;Grünerlen-Vogelbeerwald;21*;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;
-22;22;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;22;Hirschzungen-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-22.000003;22Fe  ;;;;;;;;;;;;;;;;Hirschzungen-Ahornwald auf Fels;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-22.00001;22A   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;22A;Geissbart-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;Anforderungsprofil von 22;;
-22.00002;22C   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;22C;Lerchensporn-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;Anforderungsprofil von 22;;
-22.1;22*   ;;;x;Y;;Y;;Y;;Y;;;x;;22Stern;Insubrischer Hirschzungen-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;"neues Anforderungsprofil: 22 mit Hopfenbuche; Stechpalme; Eibe";;
-23;23;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;23;Mehlbeer-Ahornwald;23;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;;
-23.000003;23Fe  ;;;;;;;;;;;;;;;;Mehlbeer-Ahornwald auf Fels;23;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;;
-23.00016;23H   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;23H;Leberblümchen-Ahornwald;23H;ES;Esche;Eschen- und Erlenwälder;neues Anforderungsprofil;;
-23.1;23*   ;x;;;Y;;;;Y;;Y;;;x;;23Stern;Haselnuss-Mehlbeerwald;23*;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;;
-24;24;;;;;;;;;;;;;;;;Ulmen-Ahornwald mit Turinermeister;24 24*;LS;Laub sonder;Laubwälder Sonderwaldstandorte;;;
-24.1;24*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;24Stern;Ulmen-Ahornwald;24 24*;LS;Laub sonder;Laubwälder Sonderwaldstandorte;;;
-24.100003;24*Fe ;;;;;;;;;;;;;;;;Ulmen-Ahornwald auf Fels;24 24*;LS;Laub sonder;Laubwälder Sonderwaldstandorte;;;
-25;25;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;25;Typischer Turinermeister-Lindenwald;25 34*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-25.000003;25Fe  ;;;;;;;;;;;;;;;;Typischer Turinermeister-Lindenwald auf Fels;25 34*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-25.00001;25A   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;25_A;Eschen-Lindenmischwald mit Geissfuss;25A;ES;Esche;Eschen- und Erlenwälder;neues Anforderungsprofil;;
-25.00011;25Q   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;25Q;Eichen-Lindenmischwald;25Q;EIMI;Eichemisch;Eichenwälder;neues Anforderungsprofil;;
-25.00017;25O   ;;;;;;;;;;;;;x;x;25O;Feuchter insubrischer Schneesimsen-Lindenwald mit Hopfenbuche;25O;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;"Neues Anforderungprofil: 25B; weniger W'Li und S'Li; sehr wenig B'Ah und F'Ul; dafür mehr Hopfenbuche";;
-25.00019;25F   ;;;;;;;;;;;;;;;;Turinermeister-Lindenwald mit Geissfuss;25F;LS;Laub sonder;Laubwälder Sonderwaldstandorte;;;
-25.000193;25FFe ;;;;;;;;;;;;;;;;Turinermeister-Lindenwald mit Geissfuss auf Fels;25F;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-25.001;25a   ;;;x;Y;;Y;;Y;;Y;;;x;x;25a;Typischer insubrischer Schneesimsen-Lindenwald;25a;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;"Neues Anforderungsprofil: 25A-34mA azonaler Teil; ohne Bu; weinger Eiche; Kastanie";;
-25.001001;25as  ;;;x;Y;;Y;;Y;;Y;;;x;;25as;Trockener isubrischer Schneesimsen-Lindenwald;25as;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;neues Anforderungsprofil;;
-25.002;25b   ;x ;;;Y;;;;Y;;Y;;;x;;25b;Insubrischer Turinermeister-Lindenwald;25B;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-25.005;25e   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;25e;Linden-Eschen-Felsenwald;25e;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;;
-25.007;25f   ;x 25AF;;;Y;;;;Y;;Y;;;x;;25f;"Schluchtwald; saure Ausbildung";25f;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-25.017;25au  ;;;x;Y;;Y;;Y;;Y;;;x;;25au;Feuchter insubrischer Schneesimsen-Lindenwald;25au;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;"Neues Anforderungsprofil: 25Am-33m azonaler Teil; ohne Bu; weinger Eiche; Kastanie";;
-25.1;25*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;25Stern;Ahorn-Lindenwald/Trockener Turinermeister-Lindenwald;25*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;
-26;26;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;26;Ahorn-Eschenwald;26 29;ES;Esche;Eschen- und Erlenwälder;;;
-26.009;26h   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;26h;"Ahorn-Eschenwald; Höhenausbildung";26h 26w 29h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;
-26.014;26w   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;26w;Ahorn-Eschenwald mit Schlaffer Segge;26h 26w 29h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;
-27;27;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;27;Bach-Eschenwald;27;ES;Esche;Eschen- und Erlenwälder;;;
-27.00017;27O   ;;;x;Y;;Y;;Y;;Y;;;x;;27O;Königsfarn-Schwarzerlenwald;27O;ER;Erle;Eschen- und Erlenwälder;Anforderungsprofil von 33-27 übernehmen;;
-27.009;27h   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;27h;"Bach-Eschenwald; Höhenausbildung";27h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;
-27.1;27*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;27Stern;Hochstauden-Weisserlen-Ahornwald;27*;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;
-28;28;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;28;Ulmen-Eschen-Auenwald;28 29A 29C;Au;Auen Laub;Auenwälder Laub;;;
-29;29;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;29;Ulmen-Eschenwald;26 29;ES;Esche;Eschen- und Erlenwälder;;;
-29.00001;29A   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;29A;Zweiblatt-Eschen-Auenwald;28 29A 29C;Au;Auen Laub;Auenwälder Laub;;;
-29.00002;29C   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;29C;Ulmen-Eschen-Auenwald mit Weissegge;28 29A 29C;Au;Auen Laub;Auenwälder Laub;;;
-29.009;29h   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;29h;Ulmen-Eschenwald mit Waldschachtelhalm;26h 26w 29h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;
-30;30;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;30;Traubenkirschen-Eschenwald;30 44;ESER;Esche-Erle;Eschen- und Erlenwälder;;;
-31;31;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;31;Tieflagen-Grauerlenwald;31 32C 32V;Au;Auen Laub;Auenwälder Laub;;;
-32.00002;32C   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;32C;Untermontaner Grauerlenwald;31 32C 32V;Au;Auen Laub;Auenwälder Laub;;;
-32.00012;32S   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;32S;Subalpiner Loorbeerweidenauenwald;32S;Au;Auen Laub;Auenwälder Laub;;;
-32.00014;32V   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;32V;Obermontaner Grauerlenwald;31 32C 32V;Au;Auen Laub;Auenwälder Laub;;;
-32.1;32*   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;32Stern;Typischer Ahorn-Weisserlenwald;32*;PI;Pionierwald;Pionierwälder;;;
-33.00014;33V   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;33V;Montaner Salbei-Eschenwald;33V;PI;Pionierwald;Pionierwälder;;;
-33.001;33a   ;;;x;Y;;Y;;Y;;Y;;;x;x;33a;Heidelbeer-Geissbart-Eschenwald;33a;LSKA;Laub Süd Kastanie;Mesophile Laubwälder Insubriens;Anforderungsprofil von 33AV-33A übernehmen;;
-33.002;33b   ;;;x;;;;;Y;;;;;x;;33b;Zyclamen-Geissbart-Eschenwald;33b;LSKA;Laub Süd mittel;Mesophile Laubwälder Insubriens;"Neues Anforderungsprofil: 25Am-33m zonaler Teil; mehr Bu; weniger Linde";;
-33.01;33m   ;;;x;;;;;Y;;;;;x;x;33m;Geissbart-Eschenwald mit Kastanie;33m;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;"Neues Anforderungsprofil: 33-25A zonaler Teil; mehr Bu; weniger LI und B'Ah";;
-34.001;34a   ;;;x;;;;;Y;;;;;x;x;34a;"Kreuzlabkraut-Eichenwald mit Kastanie; saure Variante";34a;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;"Neues Anforderungsprofil: 25A-34m zonaler Teil; mehr Bu; weniger Linde ";;
-34.002;34b   ;x 34B;;;Y;;;;Y;;Y;;;x;;34b;"Kreuzlabkraut-Eichenwald mit Kastanie; basische Variante";34b;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;;;
-34.1;34*   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;34Stern;Schneesimsen-Winterlindenwald;25 34*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;Anforderungsprofil von 25;;
-35;35;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;35;Waldlabkraut-Hainbuchen-Mischwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;35Q im gleichen Anforderungsprofil (19.3.2014);;
-35.00007;35M   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;35M;Waldlabkraut-Hainbuchenwald mit Pfeifengras;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;35Q im gleichen Anforderungsprofil (19.3.2014);;
-35.00011;35Q   ;;;x;;;;;Y;;;;;x;x;35Q;Stieleichen-Winterlinden-Talboden-Auenwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;35Q im gleichen Anforderungsprofil (19.3.2014);;
-35.00012;35S   ;x;;;Y;;;;Y;;Y;;;x;;35S;Blaustern-Hagebuchenmischwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;35Q im gleichen Anforderungsprofil (19.3.2014);;
-35.001;35A   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;35A;Aronstab-Eichenmischwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;35Q im gleichen Anforderungsprofil (19.3.2014);;
-36;36;x;;;Y;;;;Y;;Y;;;x;;36;Hagebuchen-Hopfenbuchenwald;36;HO;Hopfenbuche;Mesophile Laubwälder Insubriens;"Anforderungsprofil anpassen: neu ohne Schuttwälder (mit Schutt 25b); evt. Esche erwähnen";;
-37;37;x;;;Y;;;;Y;;Y;;;x;x;37;Hopfenbuchen-Eichenwald;37;HO;Hopfenbuche;Mesophile Laubwälder Insubriens;;;
-38;38;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;38;Turmkressen-Flaumeichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;
-38.00012;38S   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;38S;Seifenkraut-Flaumeichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;
-38.1;38*   ;x;;;Y;;;;Y;;Y;;;x;;38Stern;Purpurwaldmeister-Flaumeichenwald;42r 42B 38*;EI;Eiche ;Eichenwälder;;;
-39;39;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;39;Kronwicken-Eichenmischwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;
-39.1;39*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;39Stern;Kreuzdorn-Eichenmischwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;
-40.00008;40P   ;;in Arbeit;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;40P;Pionier-Aspen-Haselbuschwald;40P 40PBl;PI;Pionierwald;Pionierwälder;neues Anforderungsprofil 40P 40PBl;;
-40.000082;40PBl ;;in Arbeit;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;40PBl;Aspen-Haselbuschwald auf Blockschutt;40P 40PBl;PI;Pionierwald;Pionierwälder;neues Anforderungsprofil 40P 40PBl;;
-40.01308;40Pt  ;;;;;;;;;;;;;;;;"Pionier-Aspen-Haselbuschwald; Tieflagenausbildung";40Pt 40PBlt;PI;Pionierwald;Pionierwälder;;;
-40.013082;40PBlt;;;;;;;;;;;;;;;;"Aspen-Haselbuschwald auf Blockschutt; Tieflagenausbildung";40Pt 40PBlt;PI;Pionierwald;Pionierwälder;;;
-40.1;40*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;40Stern;Gamander-Eichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;
-41;41;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;41;Platterbsen-Eichenmischwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;
-41.1;41*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;41Stern;Hainsimsen-Eichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;
-42.00002;42C   ;;;x;;;;;Y;;;;;x;x;42C;Rapunzel-Eichenwald mit Kastanie;42C ;EIKA;Eiche-Kastanie;Eichenwälder;"Anforderungsprofil von 42C/Q; mit mehr Kastanie";;
-42.00011;42Q   ;;;x;;;;;Y;;;;;x;;42Q;Typischer Rapunzel-Eichenwald;42Q;EI ;Eiche;Eichenwälder;"Anforderungsprofil von 42C/Q; mit mehr Eiche";;
-42.00014;42V   ;x;;;Y;;;;Y;;Y;;;x;x;42V;Eichen-Kastanienwald mit Heidelbeere;42V;EIBU;Eiche-Buche ;Buchenwälder;;;
-42.011;42r   ;x 42R;;;Y;;;;Y;;Y;;;x;x;42r;Eichen-Kastanienwald auf Fels;42r 42B 38*;EI ;Eiche;Eichenwälder;;;
-42.012;42B   ;;;x;;;;;Y;;;;;x;;42B;"Eichen-Kastanienwald auf Fels; basische Variante";42r 42B 38*;EI ;Eiche;Eichenwälder;Wie 42r zu wenig wüchsig für Schutzwaldpflege;;
-42.013;42t   ;x (42)-34A;;;Y;;;;Y;;Y;;;x;x;42t;Eichen-Kastanienwald in Entwicklung;42t;LSKA;Laub Süd Kastanie;Mesophile Laubwälder Insubriens;;;
-43;43;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;43;Silberweidenauenwald;43 43S ;Au;Auen Laub;Auenwälder Laub;;;
-43.00012;43S   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;43S;Lavendelweidengebüsch;43 43S ;Au;Auen Laub;Auenwälder Laub;;;
-43.1;43*   ;;;;;;;;;;;;;x;;43Stern;Insubrischer Schwarzpappelauenwald;43*;Au;Auen Laub;Auenwälder Laub;im Tessin und evt. auch im Wallis unterhalb von Leukerbad;;
-44;44;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;44;Seggen-Schwarzerlenbruch;30 44;ESER;Esche-Erle;Eschen- und Erlenwälder;;;
-45;45;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;45;Föhren-Birkenbruchwald;45;M;Moor;Moorwälder;;;
-46;46;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;46;Typischer Heidelbeer-Ta-Fi-Wald;46 46M 46*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-46.0000003;46Re  ;;;;;;;;;;;;;;;;Typischer Heidelbeer-Ta-Fi-Wald im Ta-Reliktareal;46Re 46MRe 46*;;;;;;
-46.00007;46M   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;46M;Heidelbeer-Ta-Fi-Wald auf Podsol;46 46M 46*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-46.0000703;46MRe ;;;;;;;;;;;;;;;;Heidelbeer-Ta-Fi-Wald auf Podsol im Ta-Reliktareal;46Re 46MRe 46*;;;;;;
-46.013;46t   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;46t;Peitschenmoss-Fi-Ta-Wald;46t;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;"neues Anforderungsprofil; 46 mit Eiche; Buche";;
-46.1;46*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;46Stern;Heidelbeer-Ta-Fi-Wald mit Torfmoos;46 46M 46*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-46.1000003;46*Re ;;;;;;;;;;;;;;;;Heidelbeer-Ta-Fi-Wald mit Torfmoos im Ta-Reliktareal;46Re 46MRe 46*;;;;;;
-47;47;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;47;Wollreitgras-Ta-Fi-Wald;47;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-47.0000003;47Re  ;;;;;;;;;;;;;;;;Wollreitgras-Ta-Fi-Wald im Ta-Reliktareal;47Re;;;;;;
-47.00003;47D   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;47D;"Wollreitgras-Ta-Fi-Wald; farnreicher";47D;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-47.0000303;47DRe ;;;;;;;;;;;;;;;;"Wollreitgras-Ta-Fi-Wald; farnreicher im Ta-Reliktareal";47DRe;;;;;;
-47.00007;47M   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;47M;Wollreitgras-Ta-Fi-Wald mit Wachtelweizen;47M;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-47.0000703;47MRe ;;;;;;;;;;;;;;;;Wollreitgras-Ta-Fi-Wald mit Wachtelweizen im Ta-Reliktareal;47MRe;;;;;;
-47.00016;47H   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;47H;Zypressenschlafmoos-Fi-Wald;47H;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;;;
-47.1;47*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;47Stern;Alpenrosen-Lärchen-Ta-Wald;47*;LATA;Lärche-Tanne;Tannen-Fichtenwälder;;;
-47.1000001;47*Lä;;;;;;;;;;;;;;;;Alpenrosen-Lärchen-Ta-Wald;47*;LATA;Lärche-Tanne;Tannen-Fichtenwälder;;;
-48;48;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;48;Blockschutt-Ta-Fi-Wald;48;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-49;49;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;49;Typischer Schachtelhalm-Ta-Fi-Wald;49;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-49.1;49*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;49Stern;Schachtelhalm-Ta-Fi-Wald mit Rostsegge;49*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-49.1000002;49*Ta ;;;;;;;;;;;;;;;;Schachtelhalm-Ta-Fi-Wald mit Rostsegge (mit Tanne);;;;;;;
-50;50;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;50;Typischer Hochstauden-Ta-Fi-Wald;50;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-50.0000003;50Re  ;;;;;;;;;;;;;;;;Typischer Hochstauden-Ta-Fi-Wald im Ta-Reliktareal;50Re;;;;;;
-50.000003;50Fe  ;;;;;;;;;;;;;;;;Typischer Hochstauden-Ta-Fi-Wald auf Fels;50;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-50.0000033;50FeRe;;;;;;;;;;;;;;;;Typischer Hochstauden-Ta-Fi-Wald auf Fels im Ta-Reliktareal;50Re;;;;;;
-50.00008;50P   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;50P;Hochstauden-Ta-Fi-Wald mit Pestwurz;50P;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;
-50.1;50*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;50Stern;Karbonat-Ta-Fi-Wald mit kahlem Alpendost;51 50*;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-50.1000003;50*Re ;;;;;;;;;;;;;;;;Karbonat-Ta-Fi-Wald mit kahlem Alpendost im Ta-Reliktareal;50*Re 51Re;;;;;;
-51;51;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;51;Typischer Labkraut-Ta-Fi-Wald;51 50*;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-51.0000003;51Re  ;;;;;;;;;;;;;;;;Typischer Labkraut-Ta-Fi-Wald im Ta-Reliktareal;50*Re 51Re;;;;;;
-51.000003;51Fe  ;;;;;;;;;;;;;;;;Typischer Labkraut-Ta-Fi-Wald auf Fels;51 50*;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-51.0000033;51FeRe;;;;;;;;;;;;;;;;Typischer Labkraut-Ta-Fi-Wald auf Fels im Ta-Reliktareal;50*Re 51Re;;;;;;
-51.00002;51C   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;51C;Labkraut-Ta-Fi-Wald mit Hasel;51C 52T;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-52;52;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;52;Karbonat-Ta-Fi-Wald mit Weisssegge;52;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-52.0000003;52Re  ;;;;;;;;;;;;;;;;Karbonat-Ta-Fi-Wald mit Weisssegge im Ta-Reliktareal;52Re;;;;;;
-52.00013;52T   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;52T;Karbonat-Ta-Fi-Wald mit Winterlinde;51C 52T;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;
-53;53;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;53;Zwergbuchs-Fichten-Wald;53;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;
-53.0000001;53Lä ;;;;;;;;Y;Y;;;;;;;Zwergbuchs-Fichtenwald mit Lärche;53Lä;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;
-53.0000002;53Ta  ;;;;;;;;Y;;;;;;;;Zwergbuchs-Fichtenwald mit Tanne;53Ta;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;
-53.00001;53A   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;53A;Zwergbuchs-Fichten-Wald mit Hainlattich;53A;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;"Neuse Anforderungsprofil. Verjüngung uaf Moderholz und Minerlaerde; Keine Verjüngung unter Schirm. Viel Sonne kein Problem; recht verjüngungsgünstig. ";;
-53.0000102;53ATa ;;;;;;;;Y;Y;;;;;;;"Zwergbuchs-Fichten-Wald mit Hainlattich; mit Tanne";53ATa;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;"Neues Anforderungsprofil. Verjüngung auf Moderholz und Minerlaerde; Keine Verjüngung unter Schirm. Viel Sonne kein Problem; recht verjüngungsgüns";;
-53.1;53*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;53Stern;Erika-Fichtenwald;53*;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;;;
-53.1000001;53*s  ;;;;;;;;;;;;;;;;"Erika-Fichtenwald; subalpine Ausbildung";53*s;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;
-53.1000002;53*Ta ;;;;;;;;Y;Y;;;;;;;Erika-Fichtenwald mit Ta;53*Ta;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;;;
-54;54;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;54;Typischer Perlgras-Fichtenwald;54 54A 55;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;;;
-54.00001;54A   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;54A;Perlgras-Fichtenwald mit Atragene;54 54A 55;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;;;
-55;55;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;55;Ehrenpreis-Fichtenwald;54 54A 55;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;;;
-55.1;55*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;55Stern;Schneesimsen-Fi-Wald;55*;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;;;
-55.1000001;55*Lä;;;;;;;;;;;;;;;;Schneesimsen-Fi-Wald mit Lärche;55*Lä;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmont;;;
-55.1000002;55*Ta ;;;;;;;;Y;Y;;;;;;;Schneesimsen-Fi-Wald mit Tanne;55*Ta;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;;;
-56;56;x;;;Y;;Y;;Y;;Y;;;x;x;56;Moorrand-Fichtenwald;56;M;Moor;Moorwälder;;;
-57.000002;57Bl  ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;57Bl;"Alpenlattich-Fichtenwald; Blockausbildung";57Bl;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-57.0000022;57BlTa;;;;;;;;Y;Y;;;;;;;"Alpenlattich-Fichtnewald; Blockausbildung; mit Tanne";57BlTa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-57.00002;57C   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;57C;Alpenlattich-Fichtenwald mit Wollreitgras;57C 57V 57VM;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;
-57.0000201;57CLä;;;;;;;;Y;Y;;;;;;;Alpenlattich-Fichtenwald mit Wollreitgras mit Lärche;57CLä 57VLä;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;
-57.0000202;57CTa ;;;;;;;;Y;Y;;;;;;;Alpenlattich-Fichtenwald mit Wollreitgras und Tanne;57CTa 57VTa;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;
-57.00007;57M   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;57M;Alpenlattich-Fichtenwald mit Waldwachtelweizen;57M;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;
-57.00012;57S   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;57S;Alpenlattich-Fichtenwald mit Torfmoos;57S;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-57.0001202;57STa ;;;;;;;;Y;Y;;;;;;;Alpenlattich-Fichtenwald mit Torfmoos und Tanne;57STa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-57.00014;57V   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;57V;Alpenlattich-Fichtenwald mit Heidelbeere;57C 57V 57VM;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;
-57.0001401;57VLä;;;;;;;;Y;Y;;;;;;;Alpenlattich-Fichtenwald mit Heidelbeere mit Lärche;57CLä 57VLä;FISMOM;Fichte subalpin Moderholz mi;Fichtendominierte Wälder subalpin;;;
-57.0001402;57VTa ;;;;;;;;Y;Y;;;;;;;Alpenlattich-Fichtenwald mit Heidelbeere und Tanne;57CTa 57VTa;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;
-57.00018;57VM  ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;57VM;Alpenlattich Fichtenwald mit Bergbaldrian;57C 57V 57VM;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;
-58;58;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;58;Typischer Preiselbeer-Fi-Wald;58;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;
-58.0000001;58Lä ;;;;;;;;Y;Y;;;;;;;Typischer Preiselbeer-Fi-Wald mit Lärche;58Lä;FISMI;Fichte subalpin Mineralderde;Fichtendominierte ;;;
-58.000002;58Bl  ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;58Bl;"Preiselbeer-Fichtenwald; Blockausbildung";58Bl;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;"kein Anforderungsprofil; da keine Pflegeeingriffe notwendig";;
-58.000003;58Fe  ;;;;;;;;;;;;;;;;Alpenlattich-Fichtenwald mit Wollreitgras mit Lärche;58;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;
-58.00002;58C   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;58C;Preiselbeer-Fi-Wald mit Wollreitgras;58C;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;
-58.00006;58L   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;58L;Preiselbeer-Fi-Wald mit Laserkraut;58L;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;
-58.0000601;58LLä;;;;;;;;;;;;;;;;Preiselbeer-Fi-Wald mit Laserkraut mit Lärche;58LLä;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;
-59;59;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;59;Lärchen-Arvenwald mit Alpenrose;59 59V;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;
-59.0000001;59Lä ;;;;;;;;Y;Y;;;;;;;Lärchen-Arvenwald mit Alpenrose mit Lärche;59Lä 59VLä;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;
-59.00001;59A   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;59A;Hochstauden-Lärchenwald;59A;LAE;Lärche ;Arven- und Lärchenwälder;;;
-59.00002;59C   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;59C;Steinmispel-Arvenwald;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;
-59.00004;59E   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;59E;Lärchen-Arvenwald mit Erika;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;
-59.00005;59J   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;59J;Wacholder-Lärchenwald;59J 59S;LAE;Lärche ;Arven- und Lärchenwälder;;;
-59.00006;59L   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;59L;Lärchen-Arvenwald mit Laserkraut;59L;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;
-59.0000601;59LLä;;;;;;;;;;;;;;;;Lärchen-Arvenwald mit Laserkraut mit Lärche;59LLä;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;
-59.00012;59S   ;;;x;;;;;Y;;;;;x;;59S;Blaugras-Lärchenwald;59J 59S;LAE;Lärche ;Arven- und Lärchenwälder;Anfoderungsprofil wie 59J ;;
-59.00014;59V   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;59V;Lärchen-Arvenwald mit Heidelbeere;59 59V;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;
-59.0001401;59VLä;;;;;;;;Y;Y;;;;;;;Lärchen-Arvenwald mit Heidelbeere mit Lärche;59Lä 59VLä;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;
-59.00016;59H   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;59H;Lärchen-Arvenwald mit Steinrose;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;
-59.00018;59R   ;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;59R;Lärchenwald mit schildblättriger Ampfer;59R;LAE;Lärche ;Arven- und Lärchenwälder;"kein Anforderungsprofil; da keine Pflegeeingriffe notwendig";;
-59.1;59*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;59Stern;Alpenrosen-Lärchenwald;59*;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;
-60;60;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;60;Typischer Hochstauden-Fichtenwald;60 60A;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.0000001;60Lä ;;;;;;;;Y;Y;;;;;;;Typischer Hochstauden-Fichtenwald mit Lärche;60Lä 60ALä;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.0000002;60Ta  ;;;;;;;;Y;Y;;;;;;;Typischer Hochstauden-Fichtenwald mit Tanne;60Ta 60ATa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.00001;60A   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;60A;Hochstauden-Fichtenwald mit Alpenwaldfarn;60 60A;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.0000101;60ALä;;;;;;;;Y;Y;;;;;;;Hochstauden-Fichtenwald mit Alpenwaldfarn und Lärche;60Lä 60ALä;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.0000102;60ATa ;;;;;;;;Y;Y;;;;;;;Hochstauden-Fichtenwald mit Alpenwaldfarn und Tanne;60Ta 60ATa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.00004;60E   ;x;;;Y;;Y;;Y;;Y;;;x;x;60E;Hochstauden-Fichtenwald mit Schachtelhalm;60E;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.0000402;60ETa ;;;;;;;;Y;Y;;;;;;;Hochstauden-Fichtenwald mit Schachtelhalm und Tanne;60ETa ;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;
-60.1;60*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;60Stern;Buntreitgras-Fi-Wald;60*;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;
-60.1000001;60*Lä;;;;;;;;Y;Y;;;;;;;Buntreitgras-Fi-Wald mit Lärche;60*Lä;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;
-60.1000002;60*Ta ;;;;;;;;Y;Y;;;;;;;Buntreitgras-Fi-Wald mit Tanne;60*Ta;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;
-61;61;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;61;Pfeifengras-Föhrenwald;61;FOB;Föhre basisch;Waldföhrenwälder;;;
-62;62;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;62;Orchideen-Föhrenwald;62;FOB;Föhre basisch;Waldföhrenwälder;;;
-65;65;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;65;Erika-/Strauchwicken-Föhrenwald;65;FOB;Föhre basisch;Waldföhrenwälder;;;
-65.1;65*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;65Stern;Hauhechel-Föhrenwald;65*;FOB;Föhre basisch;Waldföhrenwälder;;;
-66;66;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;66;Wintergrün- und Liguster-Föhrenwald;66;FOB;Föhre basisch;Waldföhrenwälder;;;
-66.0001;66PM  ;;;;;;;;;;;;;x;;66PM;Bergföhren-Auenwald;66PM;BFO;Bergföhre;Bergföhrenwälder;;;
-67;67;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;67;Erika-Bergföhrenwald;67 69 70;BFO;Bergföhre;Bergföhrenwälder;;;
-67.1;67*   ;;;;;;;;;;;;;;;;Erdseggen-Föhrenwald;67*;FOB;Föhre basisch;Bergföhrenwälder;;;
-68;68;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;68;Besenheide-Föhrenwald;68;FOS;Föhre sauer;Waldföhrenwälder;;;
-68.1;68*   ;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;68Stern;Preiselbeer-Föhrenwald;68*;FOS;Föhre sauer;Waldföhrenwälder;;;
-69;69;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;69;Steinrosen-Bergföhrenwald;67 69 70;BFO;Bergföhre;Bergföhrenwälder;;;
-70;70;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;70;Alpenrosen-Bergföhrenwald;67 69 70;BFO;Bergföhre;Bergföhrenwälder;;;
-71;71;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;;71;Torfmoos-Bergföhrenwald;71;M;Moor;Moorwälder;;;
-72;72;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;x;x;72;Nordalpen-Arvenwald;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;
-72.0000001;72Lä ;;;;;;;;Y;Y;;;;;;;Nordalpen-Arvenwald mit Lärche;72Lä;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;
-91;91;x Rob;;;Y;;;;Y;;Y;;;x;;91;Robinienwälder sauer;91;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;;;
-92.001;92a   ;;;x;;;;;Y;;;;;x;;92a;"sonstige Neophytenwälder (Späte Traubenkirsche; Ailanthus; etc.) azonal";92a 92z;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;Neues Anforderungsprofil 92z 92a;;
-92.018;92z   ;;;x;;;;;Y;;;;;x;;92z;"sonstige Neophytenwälder (Späte Traubenkirsche; Ailanthus; etc.) zonal";92a 92z;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;Neues Anforderungsprofil 92z 92a;;
-93;93;;;x;;;;;Y;;;N;;x;;93;Insubrische Laurisilven (Immergrüne Laubwälder);93;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;Neues Anforderungsprofil 93;;
-1001;1G    ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1001.009;1hG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1003;3G    ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1003.000001;3sG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1003.00015;3LVG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1003.01;3L/4LG;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1003.1;3*G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1004;4G    ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1004.1;4*G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1006;6G    ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1006.000003;6FeG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1007.00012;7SG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1007.000123;7SFeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1007.001;7aG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1007.001003;7aFeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1007.1;7*G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1008.00012;8SG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1008.000123;8SFeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1008.001;8aG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1008.001003;8aFeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1008.004;8dG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1008.004003;8dFeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1008.1;8*G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1009.001;9aG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1009.001003;9aFeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1009.014;9wG   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1010.001;10aG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1010.014;10wG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1011;11G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1011.000003;11FeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012;12*G  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012.00012;12SG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012.000123;12SFeG;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012.001;12aG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012.001003;12aFeG;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012.005;12eG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012.009;12*hG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1012.014;12wG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1013.001;13aG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1013.001003;13aFeG;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1013.005;13eG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1013.006;13ehG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1013.009;13hG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1013.1;13*G  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1014;14G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1014.1;14*G  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1015;15G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1016;16G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1016.1;16*G  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1017;17G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1018;18G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1018.000003;18FeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1018.00007;18MG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1018.014;18wG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1018.015;18vG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1018.1;18*G  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1019;19G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1019.000003;19FeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1019.00006;19LG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1019.00008;19PG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1019.001;19aG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1019.007;19fG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1020;20G   ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1020.000003;20FeG ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1020.00004;20EG  ;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1021;21G   ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1021.00006;21LG  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1021.1;21*G  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1022;22G   ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1022.000003;22FeG ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1022.00001;22AG  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1022.00002;22CG  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1022.1;22*G  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1023;23G   ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1023.000003;23FeG ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1023.1;23*G  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1024.1;24*G  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1024.100003;24*FeG;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025;25G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.000003;25FeG ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.00017;25OG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.001;25aG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.002;25BG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.005;25eG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.007;25fG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.017;25. Aug;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1025.1;25*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1026;26G   ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1026.009;26hG  ;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1027;27G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1027.00017;27OG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1027.009;27hG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1027.1;27*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1028;28G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1029;29G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1029.00001;29AG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1029.00002;29CG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1029.009;29hG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1030;30G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1031;31G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1032.00002;32CG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1032.00012;32SG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1032.00014;32VG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1032.1;32*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1033.00014;33VG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1033.001;33aG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1033.002;33bG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1033.01;33mG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1034.001;34aG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1034.002;34bG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1034.1;34*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1035;35G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1035.00007;35MG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1035.00011;35QG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1035.00012;35SG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1035.001;35AG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1036;36G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1037;37G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1038;38G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1038.00012;38SG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1038.1;38*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1039;39G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1039.1;39*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1040.00008;40PG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1040.000082;40PBlG;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1040.1;40*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1041;41G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1041.1;41*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1042.00002;42CG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1042.00011;42QG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1042.00014;42VG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1042.011;42rG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1042.012;42BG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1042.013;42tG  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1043;43G   ;;;;;;;;;;;;;;;;;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1043.00012;43SG  ;;;;;;;;;;;;;;;;Weidengebüsch;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1043.1;43*G  ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1044;44G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1045;45G   ;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-1046;46G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1046.00007;46MG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1046.013;46tG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1046.1;46*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1047;47G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1047.00003;47DG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1047.00007;47MG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1047.00016;47HG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1047.1;47*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1048;48G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1049;49G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1049.1;49*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1050;50G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1050.000003;50FeG ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1050.00008;50PG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1050.1;50*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1051;51G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1051.000003;51FeG ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1051.00002;51CG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1052;52G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1052.00013;52TG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1053;53G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1053;53TaG ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1053.1;53*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1054;54G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1055;55G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1055.1;55*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1056;56G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1057.000002;57BlG ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1057.00002;57CG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1057.00007;57MG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1057.00012;57SG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1057.00014;57VG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1058;58G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1058.00002;58CG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1058.00006;58LG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059;59G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.00001;59AG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.00002;59CG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.00004;59EG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.00005;59JG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.00006;59LG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.00012;59SG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.00014;59VG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1059.1;59*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1060;60G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1060.00001;60AG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1060.00004;60EG  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1060.1;60*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1060.1;60*TaG;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1061;61G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1062;62G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1065;65G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1065.1;65*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1066;66G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1066.0001;66PMG ;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1067;67G   ;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1068;68G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1068.1;68*G  ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1069;69G   ;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1070;70G   ;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1071;71G   ;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1072;72G   ;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1091;91G   ;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1092.001;92aG  ;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1092.018;92zG  ;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-1093;93G   ;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;
-2001;AV    ;;AV;;;;;;;;;;;;;;Grünerlengebüsch;AV;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-2002;Samb  ;;;;;;;;;;;;;;;;Gebüschreiche Vorwaldgesellschaft;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-2003;Cine  ;;;;;;;;;;;;;;;;Moor-Weidengebüsch;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-2004;Wald  ;;;;;;;;;;;;;;;;Gebirgs-Weidengebüsch;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-2005;Saro  ;;;;;;;;;;;;;;;;Besenginstergebüsch;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-2006;Berb  ;;;;;;;;;;;;;;;;Trockenwarmes Gebüsch;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-2007;Prun  ;;;;;;;;;;;;;;;;Mesophiles Gebüsch;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-2008;Rubi  ;;;;;;;;;;;;;;;;Brombeergestrüpp;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;
-3000;u     ;;;;;;;;;;;;;;;;Nicht-Wald;u;u;u;u;;;
-3001;u-1   ;;;;;;;;;;;;;;;;Siedlung;u;u;u;u;"Überbaute Fläche; Siedlungsgebiet (Verkehrswege; Gebäude inkl. Umschwung/Garten/Park; Sportanalgen)";;
-3002;u-2   ;;;;;;;;;;;;;;;;Acker;u;u;u;u;"Acker oder umgepflügte Kunstwiese; Gartenbauflächen; Reben";;
-3003;u-3   ;;;;;;;;;;;;;;;;Fettwiese;u;u;u;u;Intensiv bewirtschaftete (gedüngte) Wiese;;
-3004;u-4   ;;;;;;;;;;;;;;;;Fettwiese/Bäume;u;u;u;u;"Fettwiese mit Einzelbäumen; Hecken oder Feldgehölzen";;
-3005;u-5   ;;;;;;;;;;;;;;;;Weide;u;u;u;u;Wiese (intensiv beweidet);;
-3006;u-6   ;;;;;;;;;;;;;;;;Wytweide;u;u;u;u;"Bestockte Weide; Wytweide; aufgelöste Bestockung (mässig intensiv beweidet)";;
-3007;u-7   ;;;;;;;;;;;;;;;;Hochstauden;u;u;u;u;Hochstaudenflur (inkl. Farne);;
-3008;u-8   ;;;;;;;;;;;;;;;;Magerwiese;u;u;u;u;"Einwachsende Alpweide; Magerwiese; Trockenrasen; (t.Z. extensiv genutzt)";;
-3009;u-9   ;;;;;;;;;;;;;;;;Feuchtgebiet;u;u;u;u;"Feuchtgebiet: Ried; Moor; Feuchtwiese; usw. (extensiv oder nicht genutzt)";;
-3010;u-10  ;;;;;;;;;;;;;;;;Gewässer;u;u;u;u;"Offenes Gewässer (See; Fluss)";;
-3011;u-11  ;;;;;;;;;;;;;;;;Fels/Schutt;u;u;u;u;Fels; Ruderalflächen;" Ödland (überwiegend vegetationslos)"""
-58.000003;58Fe  ;;;;N;;;;;;;;;;;;;;;;;;;
-9999;nb    ;;;;;;;;;;;;;;;;Nicht begehbar und aus der Ferne nicht ansprechbar;nb;nb;nb;nb;;;
+NAISTYP_SORT; NAISTYP_C; NAISTYP_S20; NAISTYP_NAME_LAT; NAISTYP_NAME_DEU; NAISTYP_NAMK_DEU; NAISTYP_NAME_FRZ; NAISTYP_NAMK_FRZ; NTYP_C_ANHANG2A; NTYP_C_BSCHR_SEP; NTYP_C_BSCHR_TI; NTYP_W_B_ETAP1; NTYP_W_B_ETAP2; NTYP_G_P_ETAP1; NTYP_G_P_ETAP2; NTYP_BS_ETAP1; NTYP_BS_ETAP2; NTYP_SSKSMS_ETA1; NTYP_SSKSMS_ETA2; NTYP_DELARZE08; NTYP_C_ABGES; NTYP_C_GFX_ORT; NTYP_C_GFX_BODEN; NAISTYP_GFX; NAISTYP_WGES; NAISTYP_ANFP; NAISTYP_GFK; NAISTYP_GFEI; NAISTYP_GRB; NAISTYP_ANFP_05; NAISTYP_BEM; NTYP_NATP_ABK; NTYP_NATP_BED
+1;1;Y;Luzulo sylvaticae-/L. niveae-Fagetum typicum;Typischer Hainsimsen-Buchenwald;Typischer Hainsimsen-Bu-Wald;Hêtraie à  Luzule des forêts typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;1;Typischer Hainsimsen-Bu-Wald;1 2;BUSM;Buche submontan mittel;Buchenwälder;;"neues Anforderungsprofil; 7a 9a 9w mit Waldföhre; Traubeneiche";1;"Submontan; untermontan"
+1.009;1h     ;Y;"Luzulo-Abieti-Fagetum; artenarme Ausbildung";Artenarmer Waldsimsen-Tannen-Buchenwald;Artenarmer Waldsimsen-Ta-Bu-Wald;"Hêtraie à  Luzule des forêts typique; var. d'altitude";;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;1h;Artenarmer Waldsimsen-Ta-Bu-Wald;1h;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;1h;;1;Obermontan
+2;2;Y;Luzulo-Fagetum leucobryetosum;Hainsimsen-Buchenwald mit Weissmoos;Hainsimsen-Bu-Wald mit Weissmoos;Hêtraie à  Luzule des forêts avec Leucobryum;;;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;2;Hainsimsen-Buchenwald mit Weissmoos;1 2;BUSM;Buche submontan mittel;Buchenwälder;;"neues Anforderungsprofil; 7a 9a 9w mit Waldföhre; Traubeneiche";2;
+3;3;Y;Luzulo niveae-Fagetum typicum;Typischer Schneesimsen-Buchenwald;Typischer Schneesimsen-Bu-Wald;Hêtraie à  Luzule blanc-de-neige typique;;x;;;Y;;Y;;Y;;Y;;;;x;x;3;Typischer Schneesimsen-Bu-Wald;3;EIBU;Eiche-Buche;Buchenwälder;3;;3;Mit einzelen Trockenheitszeigern 
+3.000001;3s     ;Y;"Luzulo niveae-Fagetum; trockene Ausbildung";Trockener Schneesimsen-Buchenwald;Trockener Schneesimsen-Bu-Wald;Hêtraie à  Luzule blanc-de-neige sur sol sec;;;;x;Y;;Y;;Y;;Y;;;;x;x;3s;Trockener Schneesimsen-Bu-Wald;3s;EIBU;Eiche-Buche;Buchenwälder;;"neues Anforderungsprofil 3(42). Im Klimax Bu; einzelne Traubeneichen; praktisch keine Ta; Fi. Max. Baumhöhe << 15 m";3;Mit vielen Trockenheitszeigern
+3.00015;3LV    ;Y;"Ilici-Fagetum typicum; nährstoffarme Ausbildung";Nährstoffarmer Buchenwald mit Stechpalme;Nährstoffarmer Bu-Wald mit Stechpalme;Hêtraie oligotrophe à  Houx;;x 3VL;;;Y;;Y;;Y;;Y;;;;x;;3LV;Nährstoffarmer Bu-Wald mit Stechpalme;3LV;EIBU;Eiche-Buche;Buchenwälder;3VL;;3*;Mit Vaccinium myrtillus
+3.01;3L/4L  ;Y;Ilici-Fagetum typicum und dryopteridetosum;Mesophiler Buchenwald mit Stechpalme;Mesophiler Bu-Wald mit Stechpalme;Hêtraie mésotrophe à  Houx;;x 3mL-4L;;;Y;;Y;;Y;;Y;;;;x;x;3L_4L;Mesophiler Bu-Wald mit Stechpalme;3L/4L;EIBU;Eiche-Buche;Buchenwälder;3mL-4L;3mL-4L;3*;Ohne Vaccinium myrtillus
+3.1;3*/4*  ;Y;Rhododendro-Fagetum;Alpenrosen-Buchenwald;Alpenrosen-Bu-Wald;Hêtraie à  Rhododendron;;;;x;Y;;Y;;Y;;Y;;;;x;;3Stern;Typischer Alpenrosen-Bu-Wald;3* 4*;EIBU;Eiche-Buche;Buchenwälder;;neues Anforderungsprofil 3(47*);3**;
+4;4;Y;Luzulo niveae-Fagetum dryopteridetosum;Farnreicher Schneesimsen-Buchenwald;Farnreicher Schneesimsen-Bu-Wald;Hêtraie à  Luzule blanc-de-neige riche en fougères;;x;;;Y;;Y;;Y;;Y;;;;x;x;4;Farnreicher Schneesimsen-Bu-Wald;4;BUTA;Buche-Tanne ;Buchenwälder;4;;4;
+6;6;Y;Galio odorati-Fagetum luzuletosum;Waldmeister-Buchenwald mit Hainsimse;Waldmeister-Bu-Wald mit Hainsimse;Hêtraie à  Aspérule avec Luzule des forêts;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;6;Waldmeister-Bu-Wald mit Hainsimse;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;Anforderungsprofil von 7a;6;Ohne anstehendem  Fels
+6.000003;6Fe    ;Y;"Galio odorati-Fagetum luzuletosum; Ausbildung auf Fels";Waldmeister-Buchenwald mit Hainsimse auf Fels;Waldmeister-Bu-Wald mit Hainsimse auf Fels;Hêtraie à  Aspérule avec Luzule des forêts sur rochers;;;;;;;;;;;;;;;x;;6Fe;Waldmeister-Bu-wald mit Hainsimse auf Fels;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;6;Mit anstehendem Fels
+7.00012;7S     ;Y;Galio-Fagetum stachyetosum sylvaticae;Feuchter Waldmeister-Buchenwald;Feuchter Waldmeister-Bu-Wald;Hêtraie à  Aspérule avec Épiaire des forêts;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;7S;Feuchter Waldmeister-Bu-Wald;7S 11;BUF;Buche feucht;Buchenwälder;7S 11;;7;"Mit Feuchtezeigern; ohne Säurezeiger; ohne anstehendem Fels"
+7.000123;7SFe   ;Y;"Galio-Fagetum stachyetosum sylvaticae; Ausbildung auf Fels";Feuchter Waldmeister-Buchenwald auf Fels;Feuchter Waldmeister-Bu-Wald auf Fels;Hêtraie à  Aspérule avec Épiaire sur rochers;;;;;;;;;;;;;;;x;;7SFe;Feuchter Waldmeister-Bu-Wald auf Fels;7S 11;BUF;Buche feucht;Buchenwälder;;;7;"Mit Feuchtezeigern; ohne Säurezeiger; mit anstehendem Fels"
+7.001;7a     ;Y;Galio-Fagetum typicum;Typischer Waldmeister-Buchenwald;Typischer Waldmeister-Bu-Wald;Hêtraie à  Aspérule typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;7a;Typischer Waldmeister-Bu-Wald;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;7a 9a 9w;;7;"Ohne Feuchtezeiger; ohne Säurezeiger;  ohne anstehendem Fels"
+7.001003;7aFe   ;Y;"Galio-Fagetum typicum; Ausbildung auf Fels";Typischer Waldmeister-Buchenwald auf Fels;Typischer Waldmeister-Bu-Wald auf Fels;Hêtraie à  Aspérule typique sur rochers;;;;;;;;;;;;;;;x;;7aFe;Typischer Waldmeister-Bu-Wald auf Fels;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;7;"Ohne Feuchtezeiger; ohne Säurezeiger;  mit anstehendem Fels"
+7.002;7b     ;Y;Galio-Fagetum caricetosum remotae;Waldmeister-Buchenwald mit Lockerähriger Segge;Waldmeister-Bu-Wald mit Lockerähriger Segge;Hêtraie à  Aspérule avec Laiche à  épis espacés ;;;;;;;;;;;;;;;x;;7b;Typischer Waldmeister-Buchenwald mit Lockerähriger Segge;7b;BUSM;Buche submontan mittel;Buchenwälder;;neues Anforderungsprofil;7;"Mit Feuchtezeigern; mit Säurezeiger"
+7.1;7*     ;Y;Galio-Fagetum blechnetosum;Waldmeister-Buchenwald mit Rippenfarn;Waldmeister-Bu-Wald mit Rippenfarn;Hêtraie à  Aspérule avec Blechnum;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;7Stern;Waldmeister-Bu-Wald mit Rippenfarn;7* 8*;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;7*;
+8.00012;8S     ;Y;Milio-Fagetum stachyetosum sylvaticae;Feuchter Waldhirsen-Buchenwald;Feuchter Waldhirsen-Bu-Wald;Hêtraie à  Millet avec Épiaire des forêts;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;8S;Feuchter Waldhirsen-Bu-Wald;8S 12S;BUF;Buche feucht;Buchenwälder;8S 12S;;8;"Mit Feuchtezeigern; ohne Säurezeiger ohne anstehendem Fels"
+8.000123;8SFe   ;Y;"Milio-Fagetum stachyetosum sylvaticae; Ausbildung auf Fels";Feuchter Waldhirsen-Buchenwald auf Fels;Feuchter Waldhirsen-Bu-Wald auf Fels;Hêtraie à  Millet avec Épiaire des forêts sur rochers;;;;;;;;;;;;;;;x;;8SFe;Feuchter Waldhirsen-Bu-Wald auf Fels;8S 12S;BUF;Buche feucht;Buchenwälder;;;8;"Mit Feuchtezeigern; ohne Säurezeiger; mit anstehendem Felsen"
+8.001;8a     ;Y;Milio-Fagetum typicum;Typischer Waldhirsen-Buchenwald;Typischer Waldhirsen-Bu-Wald;Hêtraie à  Millet typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;8a;Typischer Waldhirsen-Bu-Wald;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;8a 12a;;8;"Ohne Feuchtezeiger; ohne Säurezeiger;  ohne anstehendem Felsen"
+8.001003;8aFe   ;Y;"Milio-Fagetum typicum; Ausbildung auf Fels";Typischer Waldhirsen-Buchenwald auf Fels;Typischer Waldhirsen-Bu-Wald auf Fels;Hêtraie à  Millet typique sur rochers;;;;;;;;;;;;;;;x;;8aFe;Typischer Waldhirsen-Bu-Wald auf Fels;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;8;"Ohne Feuchtezeiger; ohne Säurezeiger;  mit anstehendem Felsen"
+8.002;8b     ;Y;Milio-Fagetum caricetosum remotae;Waldhirsen-Buchenwald mit Lockerähriger Segge;Waldhirsen-Bu-Wald mit  Lockerähriger Segge;Hêtraie à  Aspérule avec Laiche à  épis espacés ;;;;;;;;;;;;;;;x;;8b;Typischer Waldhirsenbuchenwald mit Lockerähriger Segge;8b;BUUM;Buche untermontan mittel;Buchenwälder;;neues Anforderungsprofil;8;"Mit Feuchtezeigern; mit Säurezeiger"
+8.004;8d     ;Y;Milio-Fagetum luzuletosum;Waldhirsen-Buchenwald mit Hainsimse;Waldhirsen-Bu-Wald mit Hainsimse;Hêtraie à  Millet avec Luzule des forêts;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;8d;Waldhirsen-Bu-Wald mit Hainsimse;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;Anforderungsprofil von 8a;8;"Ohne Feuchtezeiger; mit Säurezeigern;  ohne anstehendem Fels"
+8.004003;8dFe   ;Y;"Milio-Fagetum luzuletosum; Ausbildung auf Fels";Waldhirsen-Buchenwald mit Hainsimse auf Fels;Waldhirsen-Bu-Wald mit Hainsimse auf Fels;Hêtraie à  Millet avec Luzule des forêts sur rochers;;;;;;;;;;;;;;;x;;8dFe;Waldhirsen-Bu-Wald mit Hainsimse auf Fels;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;8;"Ohne Feuchtezeiger; mit Säurezeigern;  mit anstehendem Fels"
+8.1;8*     ;Y;Milio-Fagetum blechnetosum;Waldhirsen-Buchenwald mit Rippenfarn;Waldhirsen-Bu-Wald mit Rippenfarn;Hêtraie à  Millet avec Blechnum spicant;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;8Stern;Waldhirsen-Bu-Wald mit Rippenfarn;7* 8*;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;8*;;8*;
+9.001;9a     ;Y;Pulmonario-/ Lathyro-Fagetum typicum;Typischer Lungenkraut-/Platterbsen-Buchenwald;Typischer Lungenkraut-/Platterbsen-Bu-Wald;Hêtraie à  Pulmonaire typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;9a;Typischer Lungenkraut-/Platterbsen-Bu-Wald;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;7a 9a 9w;;9;"Ohne Wechselfeuchtigkeitszeigern; ohne anstehendem Fels"
+9.001003;9aFe   ;Y;"Pulmonario-/ Lathyro-Fagetum typicum; Ausbildung auf Fels";Typischer Lungenkraut-/Platterbsen-Buchenwald auf Fels;Typischer Lungenkraut-/Platterbsen-Bu-Wald auf Fels;Hêtraie à  Pulmonaire typique sur rochers;;;;;;;;;;;;;;;x;;9aFe;Typischer Lungenkraut-/Platterbsen-Bu-Wald auf Fels;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;;;9;"Ohne Wechselfeuchtigkeitszeigern; mit anstehendem Fels"
+9.014;9w     ;Y;Pulmonario-/ Lathyro-Fagetum caricetosum flaccae;Wechselfeuchter Lungenkraut-/Platterbsen-Buchenwald;Wechselfeuchter Lungenkraut-/Platterbsen-Bu-Wald;Hêtraie à  Pulmonaire avec Laiche glauque;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;9w;Wechselfeuchter Lungenkraut-/Platterbsen-Bu-Wald;6 7a 9a 9w;BUSM;Buche submontan mittel;Buchenwälder;7a 9a 9w;;9;Mit Wechselfeuchtigkeitszeigern
+10.001;10a    ;Y;Pulmonario-/ Lathyro-Fagetum melittetosum;Lungenkraut-/Platterbsen-Buchenwald mit Immenblatt;Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt;Hêtraie à  Pulmonaire avec Mélitte;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;10a;Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;10a 10w 14 15;;10;Ohne Wechselfeuchtigkeitszeigern
+10.014;10w    ;Y;"Pulmonario-/ Lathyro-Fagetum melittetosum; Ausbildung mit Carex flacca";Wechseltrockener Lungenkraut-/Platterbsen-Buchenwald mit Immenblatt;Wechseltrockener Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt;Hêtraie à  Pulmonaire avec Mélitte et Laiche glauque;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;10w;Wechseltrockener Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;10a 10w 14 15;;10;Mit Wechselfeuchtigkeitszeigern
+11;11;Y;Aro-Fagetum;Aronstab-Buchenwald;Aronstab-Bu-Wald;Hêtraie à  Gouet;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;11;Aronstab-Bu-Wald;7S 11;BUF;Buche feucht;Buchenwälder;7S 11;;11;Ohne anstehendem  Fels
+11.000003;11Fe   ;Y;"Aro-Fagetum; Ausbildung auf Fels";Aronstab-Buchenwald auf Fels;Aronstab-Bu-Wald auf Fels;Hêtraie à  Gouet sur rochers;;;;;;;;;;;;;;;x;;11Fe;Aronstab-Bu-Wald auf Fels;7S 11;BUF;Buche feucht;Buchenwälder;;;11;Mit anstehendem Fels
+12.00012;12S    ;Y;Mercuriali-/Cardamino-Fagetum circaetosum;Feuchter Bingelkraut-/Zahnwurz-Buchenwald;Feuchter Bingelkraut-/Zahnwurz-Bu-Wald;Hêtraie à  Dentaire avec Épiaire des forêts;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;12S;Feuchter Bingelkraut-/Zahnwurz-Bu-Wald;8S 12S;BUF;Buche feucht;Buchenwälder;8S 12S;;12;"Mit Feuchtezeigern; ohne anstehendem Fels"
+12.000123;12SFe  ;Y;"Mercuriali-/Cardamino-Fagetum circaetosum; Ausbildung auf Fels";Feuchter Bingelkraut-/Zahnwurz-Buchenwald auf Fels;Feuchter Bingelkraut-/Zahnwurz-Bu-Wald auf Fels;Hêtraie à  Dentaire avec Épiaire des forêts sur rochers;;;;;;;;;;;;;;;x;;12SFe;Feuchter Bingelkraut-/Zahnwurz-Bu-Wald auf Fels;8S 12S;BUF;Buche feucht;Buchenwälder;;;12;"Mit Feuchtezeigern; mit anstehendem Fels"
+12.001;12a    ;Y;Mercuriali-/Cardamino-Fagetum typicum;Typischer Bingelkraut-/Zahnwurz-Buchenwald;Typischer Bingelkraut-/Zahnwurz-Bu-Wald;Hêtraie à  Dentaire typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;12a;Typischer Bingelkraut-/Zahnwurz-Bu-Wald;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;8a 12a;;12;"Ohne Feuchtezeiger; ohne Trockenheitszeiger; ohne Wechselfeuchtigkeitszeiger; ohne anstehendem Fels"
+12.001003;12aFe  ;Y;"Mercuriali-/Cardamino-Fagetum typicum; Ausbildung auf Fels";Typischer Bingelkraut-/Zahnwurz-Buchenwald auf Fels;Typischer Bingelkraut-/Zahnwurz-Bu-Wald auf Fels;Hêtraie à  Dentaire typique sur rochers;;;;;;;;;;;;;;;x;;12aFe;Typischer Bingelkraut-/Zahnwurz-Bu-Wald auf Fels;8d 8a 12a;BUUM;Buche untermontan mittel;Buchenwälder;;;12;"Ohne Feuchtezeiger; ohne Trockenheitszeiger; ohne Wechselfeuchtigkeitszeiger; mit anstehendem Fels"
+12.005;12e    ;Y;Mercuriali-/Cardamino-Fagetum caricetosum albae;Trockener Bingelkraut-/Zahnwurz-Buchenwald;Trockener Bingelkraut-/Zahnwurz-Bu-Wald;Hêtraie à  Dentaire avec Laiche blanche;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;12e;Trockener Bingelkraut-/Zahnwurz-Bu-Wald;12e 12w;BUUM;Buche trocken;Buchenwälder;12e 12w;;12;"Mit Trockenheitszeigern; ohne Wechselfeuchtigkeitszeigern"
+12.014;12w    ;Y;Mercuriali-/Cardamino-Fagetum caricetosum flaccae;Wechselfeuchter Bingelkraut-/Zahnwurz-Buchenwald;Wechselfeuchter Bingelkraut-/Zahnwurz-Bu-Wald;Hêtraie à  Dentaire avec Laiche glauque;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;12w;Wechselfeuchter Bingelkraut-/Zahnwurz-Bu-Wald;12e 12w;BUUM;Buche trocken;Buchenwälder;12e 12w;;12;Mit Wechselfeuchtigkeitszeigern
+12.1;12*    ;Y;Cardamino-Fagetum insubricum sl.;Mesophiler insubrischer Kalk-Buchenwald;Mesophiler insubrischer Kalk-Bu-Wald;Hêtraie mésophile insubrienne sur calcaire;;x;;;Y;;Y;;Y;;Y;;;;x;;12Stern;Mesophiler insubrischer Kalk-Bu-Wald;12*;BUUM;Buche untermontan mittel;Buchenwälder;12*;;12*;Unterhalb ca 1400 m über Meer
+12.109;12*h   ;Y;Cardamino-Fagetum veratretosum;Kalk-Buchenwald der insubrischen Gebirge;Kalk-Bu-Wald der insubrischen Gebirge;"Hêtraie insubrienne sur calcaire; variante d'altitude";;x;;;Y;;Y;;Y;;Y;;;;x;;12Sternh;Kalk-Bu-Wald der insubrischen Gebirge;12*h;TABUS;Tanne-Buche mittel;Buchenwälder;12*h;;12*;Oberhalb ca 1400 m über Meer
+13.001;13a    ;Y;Tilio-Fagetum typicum;Typischer Linden-Buchenwald;Typischer Linden-Bu-Wald;Hêtraie à  Tilleul typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;13a;Typischer Linden-Bu-Wald;13a;BUS;Buche Schutt;Buchenwälder;13a;;13;"Ohne  Trockenheitszeigern;  ohne anstehendem Fels; Region J; M; 1; 2a"
+13.001003;13aFe  ;Y;"Tilio-Fagetum typicum; Ausbildung auf Fels";Typischer Linden-Buchenwald auf Fels;Typischer Linden-Bu-Wald auf Fels;Hêtraie à  Tilleul typique sur rochers;;;;;;;;;;;;;;;x;;13aFe;Typischer Linden-Bu-Wald auf Fels;13a;BUS;Buche Schutt;Buchenwälder;;;13;"Ohne  Trockenheitszeigern;  mit anstehendem Fels; Region J; M; 1; 2a"
+13.005;13e    ;Y;Tilio-Fagetum caricetosum albae;Trockener Linden-Buchenwald;Trockener Linden-Bu-Wald;Hêtraie à  Tilleul avec Laiche blanche;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;13e;Trockener Linden-Bu-Wald;13e;BUS;Buche Schutt;Buchenwälder;13e ;;13;"Mit Trockenheitszeigern; Region J; M; 1; 2a"
+13.006;13eh   ;Y;Adenostylo-Fagetum seslerietosum;Trockener Alpendost-Buchenwald;Trockener Alpendost-Bu-Wald;Hêtraie à  Adénostyle avec Seslérie;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;13eh;Trockener Alpendost-Bu-Wald;13eh;TABUS;Tanne-Buche Schutt;Tannen-Buchenwälder;13eh;;13*;"Mit Trockenheitszeigern; Region J; M; 1; 2a"
+13.009;13h    ;Y;Adenostylo-Fagetum typicum;Typischer Alpendost-Buchenwald;Typischer Alpendost-Bu-Wald;Hêtraie à  Adénostyle typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;13h;Typischer Alpendost-Bu-Wald;13h;TABUS;Tanne-Buche Schutt;Tannen-Buchenwälder;13h;;13*;"Ohne  Trockenheitszeigern;  ohne anstehendem Fels; Region J; M; 1; 2a"
+13.009003;13hFe  ;Y;"Adenostylo-Fagetum typicum; Ausbildung auf Fels";Typischer Alpendost-Buchenwald auf Fels;Typischer Alpendost-Bu-Wald auf Fels;Hêtraie à  Adénostyle typique sur rochers;;;;;;;;;;;;;;;x;;13hFe;Typischer Alpendost-Bu-Wald auf Fels;13h;TABUS;Tanne-Buche Schutt;Tannen-Buchenwälder;;;13*;"Ohne  Trockenheitszeigern;  mit anstehendem Fels; Region J; M; 1; 2a"
+13.1;13*    ;Y;"Tilio-Fagetum; insubrische Ausbildung";Insubrischer Linden-Buchenwald ;Insubrischer Linden-Bu-Wald ;Hêtraie à  Tilleul insubrienne;;;;x;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;13Stern;Insubrischer Linden-Bu-Wald ;13*;BUS;Buche Schutt;Buchenwälder;;"neues Anforderungsprofil: 13a mit Stechpalme; Eibe; Laburnum; Kastanie; Kirsche; Bu; Sommer- und Winterlinde";13;Region 5
+14;14;Y;Carici (albae)-Fagetum typicum;Seggen-Buchenwald mit Weissegge;Seggen-Bu-Wald mit Weissegge;Hêtraie à  Laiche typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;14;Seggen-Bu-Wald mit Weissegge;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;10a 10w 14 15;;14;" Region J; M; 1; 2a"
+14.1;14*    ;Y;Cephelanthero-Fagetum insubricum s. l.;Trockener insubrischer Kalk-Buchenwald;Trockener insubrischer Kalk-Bu-Wald;Hêtraie xérophile insubrienne sur calcaire;;x;;;Y;;Y;;Y;;Y;;;;x;;14Stern;Trockener insubrischer Kalk-Bu-Wald;14*;BUT;Buche trocken;Buchenwälder;14*;;14;Region 5
+15;15;Y;Carici-Fagetum caricetosum montanae;Seggen-Buchenwald mit Bergsegge;Seggen-Bu-Wald mit Bergsegge;Hêtraie à  Laiche avec Laiche des montagnes;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;15;Seggen-Bu-Wald mit Bergsegge;10a 10w 14 15;BUT;Buche trocken;Buchenwälder;10a 10w 14 15;;15;
+16;16;Y;Seslerio-Fagetum;Typischer Blaugras-Buchenwald;Typischer Blaugras-Bu-Wald;Hêtraie à  Seslérie typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;16;Blaugras-Bu-Wald;16;BUE;Buche extrem;Buchenwälder;;selten Schutzwaldpflege;16;" Region J; M; 1; 2a"
+16.1;16*    ;Y;"Seslerio-Fagetum; insubrische Ausbildung";Insubrischer Blaugras-Buchenwald;Insubrischer Blaugras-Bu-Wald;Hêtraie à  Seslérie insubrienne;;;;x;Y;;Y;;Y;;Y;;;;x;;16Stern;Insubrischer Blaugras-Bu-Wald;16*;BUE;Buche extrem;Buchenwälder;;"keine Schutzwaldpflege; 16 mit mehr Hopfenbuche";16;Region 5
+17;17;Y;Taxo-Fagetum / Seslerio-Fagetum calamagrostietosum variae;Eiben-Buchenwald/Steilhang-Buchenwald mit Reitgras;Eiben-Bu-Wald/Steilhang-Bu-Wald mit Reitgras;Hêtraie à  If / Hêtraie de pente à  Calamagrostide;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;17;Eiben-Bu-Wald/Steilhang-Bu-Wald mit Reitgras;17;BUT;Buche trocken;Buchenwälder;17;;17;
+18;18;Y;Festuco-Abieti-Fagetum;Waldschwingel-Tannen-Buchenwald;Waldschwingel-Ta-Bu-Wald;Hêtraie à  Sapin typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;18;Waldschwingel-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;18 18M 19 20;;18;Ohne anstehendem Fels
+18.000003;18Fe   ;Y;"Festuco-Abieti-Fagetum; Ausbildung auf Fels";Waldschwingel-Tannen-Buchenwald auf Fels;Waldschwingel-Ta-Bu-Wald auf Fels;Hêtraie à  Sapin typique sur rochers;;;;;;;;;;;;;;;x;;18Fe;Waldschwingel-Ta-Bu-Wald auf Fels;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;18;Mit anstehendem Fels
+18.00007;18M    ;Y;Adenostyle glabrae-Abieti-Fagetum typicum;Typischer Karbonat-Tannen-Buchenwald;Typischer Karbonat-Ta-Bu-Wald;Hêtraie à  Sapin avec Adénostyle glabre;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;18M;Typischer Karbonat-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;18 18M 19 20;;18*;"Ohne Wechselfeuchtigkeitszeiger; ohne Trockenheitszeiger"
+18.014;18w    ;Y;Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae;Typischer Buntreitgras-Tannen-Buchenwald;Typischer Buntreitgras-Ta-Bu-Wald;Hêtraie à  Sapin avec Calamagrostide bigarrée;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;18w;Typischer Buntreitgras-Ta-Bu-Wald;18v 18w;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;18v 18w;;18*;"Mit Wechselfeuchtigkeitszeigern; ohne Carex ferruginea"
+18.015;18v    ;Y;"Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae; Ausbildung mit Carex ferruginea";Buntreitgras-Tannen-Buchenwald mit Rostsegge;Buntreitgras-Ta-Bu-Wald mit Rostsegge;Hêtraie à  Sapin avec Calamagrostide bigarrée et Laiche ferrugineuse;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;18v;Buntreitgras-Ta-Bu-Wald mit Rostsegge;18v 18w;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;18v 18w;;18*;"Mit Wechselfeuchtigkeitszeigern; mit Carex ferruginea"
+18.1;18*    ;Y;Adenostyle glabrae-Abieti-Fagetum caricetosum albae;Karbonat-Tannen-Buchenwald mit Weissegge;Karbonat-Ta-Bu-Wald mit Weissegge;Hêtraie à  Sapin avec Laiche blanche;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;18Stern;Karbonat-Ta-Bu-Wald mit Weissegge;18*;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;18*;;18*;Mit Trockenheitszeigern
+19;19;Y;Luzulo-Abieti-Fagetum typicum;Typischer Waldsimsen-Tannen-Buchenwald;Typischer Waldsimsen-Ta-Bu-Wald;Hêtraie à  Sapin avec Luzule des forêts;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;19;Typischer Waldsimsen-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;18 18M 19 20;;19;"Ohne verdichteten Boden; ohne anstehendem Fels"
+19.000003;19Fe   ;Y;"Luzulo-Abieti-Fagetum typicum; Ausbildung auf Fels";Typischer Waldsimsen-Tannen-Buchenwald auf Fels;Typischer Waldsimsen-Ta-Bu-Wald auf Fels;Hêtraie à  Sapin avec Luzule des forêts sur rochers;;;;;;;;;;;;;;;x;;19Fe;Typischer Waldsimsen-Ta-Bu-Wald auf Fels;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;19;"Ohne verdichteten Boden; mit anstehendem Fels"
+19.00006;19L    ;Y;Laburno-Abieti-Fagetum typicum;Typischer Goldregen-Tannen-Buchenwald;Typischer Goldregen-Ta-Bu-Wald;Hêtraie à  Sapin avec Aubours typique;;x;;;;;;;;;;;;;x;x;19L;Typischer Goldregen-Ta-Bu-Wald;19L;BUTA;Buche-Tanne;Tannen-Buchenwälder;19L;;19*;"Viel mittlere Arten; keine Basenzeiger; keine Feuchtigkeitszeiger"
+19.0002;19LC   ;Y;Laburno-Abieti-Fagetum cardaminetosum kitaibelii;Goldregen-Tannen-Buchenwald mit Kitaibels Zahnwurz;Goldregen-Ta-Bu-Wald mit Kitaibels Zahnwurz;Hêtraie à  Sapin avec Aubours et Dentaire de Kitaibel;;;;;;;;;;;;;;;x;;19LC;Goldregen-Ta-Bu-Wald mit Kitaibels Zahnwurz;19LC;BUTA;Buche-Tanne;Tannen-Buchenwälder;;;19*;Viele mittlere Arten und Basenzeiger
+19.00021;19LP   ;Y;Laburno-Abieti-Fagetum petasitetosum;Goldregen-Tannen-Buchenwald mit weisser Pestwurz;Goldregen-Ta-Bu-Wald mit weisser Pestwurz;Hêtraie à  Sapin avec Aubours et hautes herbes;;x 20*;;;Y;;;;Y;;Y;;;;x;x;19LP;Goldregen-Ta-Bu-Wald mit weisser Pestwurz;19LP;BUTA;Buche-Tanne ;Tannen-Buchenwälder;20*;;20*;Viele mittlere Arten und Feuchtigkeitszeiger
+19.001;19a    ;Y;Luzulo-Abieti-Fagetum calamagrostietosum arundinaceae;Waldsimsen-Tannen-Buchenwald mit Rohrreitgras;Waldsimsen-Ta-Bu-Wald mit Rohrreitgras;Hêtraie à  Sapin avec Luzule des forêts et Calamagrostide des forêts;;;;x;Y;;Y;;Y;;Y;;;;x;x;19a;Waldsimsen-Ta-Bu-Wald mit Rohrreitgras;19a;BUTA;Buche-Tanne;Tannen-Buchenwälder;;"neues Anforderungsprofil: 1h mit Lärche und Föhre; sonstige Laubbäume (Winterlinde; Traubeneiche; Kastanie; Esche) 0 - 20 % ";19*;Wenig oder keine mittleren Arten
+19.007;19f    ;Y;"Luzulo-Abieti-Fagetum; Ausbildung auf Pseudogley";Waldsimsen-Tannen-Buchenwald auf Pseudogley;Waldsimsen-Ta-Bu-Wald auf Pseudogley;Hêtraie à  Sapin avec Luzule des forêts sur pseudogley;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;19f;Waldsimsen-Ta-Bu-Wald auf Pseudogley;19f 20E;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;19f 20E;;19;Mit verdichtetem Boden
+20;20;Y;Adenostylo alliariae-Abieti-Fagetum typicum;Hochstauden-Tannen-Buchenwald;Hochstauden-Ta-Bu-Wald;Hêtraie à  Sapin avec hautes herbes;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;20;Hochstauden-Ta-Bu-Wald;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;18 18M 19 20;;20;"Ohne verdichteten Boden; ohne anstehendem  Fels"
+20.000003;20Fe   ;Y;"Adenostylo alliariae-Abieti-Fagetum typicum; Ausbildung auf Fels";Hochstauden-Tannen-Buchenwald auf Fels;Hochstauden-Ta-Bu-Wald auf Fels;Hêtraie à  Sapin avec hautes herbes sur rochers;;;;;;;;;;;;;;;x;;20Fe;Hochstauden-Ta-Bu-Wald auf Fels;18 18M 19 20;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;;;20;"Ohne verdichteten Boden; mit anstehendem Fels"
+20.00004;20E    ;Y;Adenostylo alliariae-Abieti-Fagetum hordelymetosum;Waldgersten-Tannen-Buchenwald;Waldgersten-Ta-Bu-Wald;Hêtraie à  Sapin avec Hordélyme d'Europe;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;20E;Waldgersten-Ta-Bu-Wald;19f 20E;TABUM;Tanne-Buche mittel;Tannen-Buchenwälder;19f 20E;;20;Mit verdichtetem Boden
+21;21;Y;Aceri-Fagetum;Ahorn-Buchenwald;Ahorn-Bu-Wald;Hêtraie à  Érable;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;21;Ahorn-Bu-Wald;21;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;21;;21;
+21.00006;21L    ;Y;Laburno-Aceretum ;Goldregen-Ahornwald;Goldregen-Ahornwald;Erablaie à  Aubours;;;;x;Y;;Y;;Y;;Y;;;;x;;21L;Goldregen-Ahornwald;21L;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;"neues Anforderungsprofil: Bergahorn und Laburnum 80 - 100 %; Bu. Ta; Esche; Fi 0 - 20 %";21**;
+21.1;21*    ;Y;Alno viridi-Sorbetum aucupariae ;Grünerlen-Vogelbeerwald;Grünerlen-Vogelbeerwald;Forêt de Sorbiers à  Aune vert;;x;;;Y;;;;Y;;Y;;;;x;x;21Stern;Grünerlen-Vogelbeerwald;21*;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;21*;;21* ;
+22;22;Y;Phyllitido-Aceretum;Hirschzungen-Ahornwald;Hirschzungen-Ahornwald;Erablaie à  Langue-de-Cerf;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;22;Hirschzungen-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;22;;22;"Mit Blockschutt; Region J; M; 1; 2"
+22.000003;22Fe   ;Y;"Phyllitido-Aceretum; Ausbildung auf Fels";Hirschzungen-Ahornwald auf Fels;Hirschzungen-Ahornwald auf Fels;Erablaie à  Langue-de-Cerf sur rochers;;;;;;;;;;;;;;;x;;22Fe;Hirschzungen-Ahornwald auf Fels;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;22;"Mit anstehendem Fels; Region J; M; 1; 2"
+22.00001;22A    ;Y;Arunco-Aceretum;Geissbart-Ahornwald;Geissbart-Ahornwald;Erablaie à  Reine-des-bois;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;22A;Geissbart-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;Anforderungsprofil von 22;22**Arunco-Aceretum;
+22.00002;22C    ;Y;Corydalido-Aceretum;Lerchensporn-Ahornwald;Lerchensporn-Ahornwald;Erablaie à  Corydale;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;22C;Lerchensporn-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;Anforderungsprofil von 22;22**Corydalido-Aceretum;
+22.1;22*    ;Y;"Phyllitido-Aceretum; insubrische Ausbildung";Insubrischer Hirschzungen-Ahornwald;Insubrischer Hirschzungen-Ahornwald;Erablaie à  Langue-de-Cerf insubrienne;;;;x;Y;;Y;;Y;;Y;;;;x;;22Stern;Insubrischer Hirschzungen-Ahornwald;22 22A 22C 22*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;"neues Anforderungsprofil: 22 mit Hopfenbuche; Stechpalme; Eibe";22;Region 5
+23;23;Y;Sorbo-Aceretum;Mehlbeer-Ahornwald;Mehlbeer-Ahornwald;Erablaie à  Alisier;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;23;Mehlbeer-Ahornwald;23;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;e;;23;Mit Schutt
+23.000003;23Fe   ;Y;"Sorbo-Aceretum; Ausbildung auf Fels";Mehlbeer-Ahornwald auf Fels;Mehlbeer-Ahornwald auf Fels;Erablaie à  Alisier sur rochers;;;;;;;;;;;;;;;x;;23Fe;Mehlbeer-Ahornwald auf Fels;23;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;;23;Mit anstehendem Fels
+23.00016;23H    ;Y;Hepatico-Aceretum;Leberblümchen-Ahornwald;Leberblümchen-Ahornwald;Erablaie à  Hépatique;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;23H;Leberblümchen-Ahornwald;23H;ES;Esche;Eschen- und Erlenwälder;;neues Anforderungsprofil;24**;
+23.1;23*    ;Y;Calamagrostio arundinaceae-Sorbetum ariae;Mehlbeerwald mit Rohr-Reitgras;Haselnuss-Mehlbeerwald;Forêt d'Alisiers à  calamagrostide des forêts;;x;;;Y;;;;Y;;Y;;;;x;;23Stern;Haselnuss-Mehlbeerwald;23*;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;;23*;
+24;24;Y;Ulmo-Aceretum asperuletosum taurinae;Ulmen-Ahornwald mit Turinermeister;Ulmen-Ahornwald mit Turinermeister;Erablaie à  Orme avec Aspérule de Turin;;;;;;;;;;;;;;;x;;24;Ulmen-Ahornwald mit Turinermeister;24 24*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;24;
+24.1;24*    ;Y;Ulmo-Aceretum typicum;Typischer Ulmen-Ahornwald;Typischer Ulmen-Ahornwald;Erablaie à  Orme;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;24Stern;Ulmen-Ahornwald;24 24*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;24*;;24*;Mit Schutt
+24.100003;24*Fe  ;Y;"Ulmo-Aceretum typicum; Ausbildung auf Fels";Typischer Ulmen-Ahornwald auf Fels;Typischer Ulmen-Ahornwald auf Fels;Erablaie à  Orme sur rochers;;;;;;;;;;;;;;;x;;24SternFe;Ulmen-Ahornwald auf Fels;24 24*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;24* ;Mit anstehendem Fels
+25;25;Y;Asperulo taurinae-Tilietum typicum;Typischer Turinermeister-Lindenwald;Typischer Turinermeister-Lindenwald;Tillaie à  Aspérule de Turin;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;25;Typischer Turinermeister-Lindenwald;25 34*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;25;;25;"Ohne Feuchtezeiger; mit Schutt; Region J; M; 1; 2; 3"
+25.000003;25Fe   ;Y;"Asperulo taurinae-Tilietum typicum; Ausbildung auf Fels";Typischer Turinermeister-Lindenwald auf Fels;Typischer Turinermeister-Lindenwald auf Fels;Tillaie à  Aspérule de Turin sur rochers;;;;;;;;;;;;;;;x;;25Fe;Typischer Turinermeister-Lindenwald auf Fels;25 34*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;25;"Ohne Feuchtezeiger; mit anstehendem Fels; Region J; M; 1; 2; 3"
+25.00001;25A    ;Y;Fraxino-Tilietum aegopodietosum;Eschen-Lindenmischwald mit Geissfuss;Eschen-Lindenmischwald mit Geissfuss;Tillaie-Frênaie à  Herbe-aux-goutteux;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;25grossA;Eschen-Lindenmischwald mit Geissfuss;25A;ES;Esche;Eschen- und Erlenwälder;;neues Anforderungsprofil;keine Zuordung möglich;
+25.00011;25Q    ;Y;Querco-Tilietum;Eichen-Lindenmischwald;Eichen-Lindenmischwald;Tillaie à  Chênes;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;25Q;Eichen-Lindenmischwald;25Q;EIMI;Eichemisch;Eichenwälder;;neues Anforderungsprofil;keine Zuordung möglich;
+25.00017;25O    ;Y;"Asperulo taurinae-Tilietum ostryetosum; insubrische Ausbildung";Trockener insubrischer Lindenmischwald mit Hopfenbuche;Trockener insubrischer Lindenmischwald mit Hopfenbuche;Tillaie à  Luzule blanc-de-neige insubrienne avec charme-houblon;;;;;;;;;;;;;;;x;x;25O;Feuchter insubrischer Schneesimsen-Lindenwald mit Hopfenbuche;25O;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;"Neues Anforderungprofil: 25B; weniger W'Li und S'Li; sehr wenig B'Ah und F'Ul; dafür mehr Hopfenbuche";37;Mit Schutt
+25.00019;25F    ;Y;Asperulo taurinae-Tilietum aegopodietosum;Turinermeister-Lindenwald mit Geissfuss;Turinermeister-Lindenwald mit Geissfuss;Tillaie à  Aspérule de Turin et Herbe-aux-goutteux;;;;;;;;;;;;;;;x;;25grossF;Turinermeister-Lindenwald mit Geissfuss;25F;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;25;"Mit Feuchtezeigern; mit Schutt; Region J; M; 1; 2; 3"
+25.000193;25FFe  ;Y;"Asperulo taurinae-Tilietum aegopodietosum; Ausbildung auf Fels";Turinermeister-Lindenwald mit Geissfuss auf Fels;Turinermeister-Lindenwald mit Geissfuss auf Fels;Tillaie à  Aspérule de Turin et Herbe-aux-goutteux sur rochers;;;;;;;;;;;;;;;x;;25grossFF;Turinermeister-Lindenwald mit Geissfuss auf Fels;25F;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;;25;"Mit Feuchtezeiger; mit anstehendem Felsen; Region J; M; 1; 2; 3"
+25.001;25a    ;Y;"Luzulo niveae-Tilietum cordatae; typische insubrische Ausbildung";Typischer insubrischer Schneesimsen-Lindenwald;Typischer insubrischer Schneesimsen-Lindenwald;Tillaie à  Luzule blanc-de-neige insubrienne typique;;;;x;Y;;Y;;Y;;Y;;;;x;x;25a;Typischer insubrischer Schneesimsen-Lindenwald;25a;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;"Neues Anforderungsprofil: 25A-34mA azonaler Teil; ohne Bu; weinger Eiche; Kastanie";34*;"Ohne Feuchtezeiger; ohne Trockenheitszeiger; Region 4; 5"
+25.001001;25as   ;Y;"Luzulo niveae-Tilietum cordatae; trockene insubrische Ausbildung";Trockener insubrischer Schneesimsen-Lindenwald;Trockener insubrischer Schneesimsen-Lindenwald;Tillaie à  Luzule blanc-de-neige insubrienne sur sol sec;;;;x;Y;;Y;;Y;;Y;;;;x;;25as;Trockener isubrischer Schneesimsen-Lindenwald;25as;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;neues Anforderungsprofil;34*;"Mit Trockenheitszeiger; Region 4; 5"
+25.002;25b    ;Y;"Asperulo taurinae-Tilietum typicum; insubrische Ausbildung";Insubrischer Turinermeister-Lindenwald;Insubrischer Turinermeister-Lindenwald;Tillaie insubrienne à  Aspérule de Turin;;x ;;;Y;;;;Y;;Y;;;;x;;25b;Insubrischer Turinermeister-Lindenwald;25b;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;25B;25B;25;"Region 4; 5"
+25.005;25e    ;Y;Tilio-Fraxinetum;Linden-Eschen-Felsenwald;Linden-Eschen-Felsenwald;Tillaie-Frênaie sur rochers;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;25e;Linden-Eschen-Felsenwald;25e;LSE;Laub sonder extrem;Laubwälder Sonderwaldstandorte;;;25*;Mit anstehendem Fels
+25.007;25f    ;Y;"Lunario-Acerion; Tilion; Arunco-Fraxinetum p. p.";"Schluchtwald; saure Ausbildung";"Schluchtwald; saure Ausbildung";Forêt de ravins insubrienne sur silice;;x 25AF;;;Y;;;;Y;;Y;;;;x;;25f;"Schluchtwald; saure Ausbildung";25f;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;25AF;25AF;34*;"Schluchtwald; Region 4; 5"
+25.017;25au   ;Y;"Luzulo niveae-Tilietum cordatae; feuchte insubrische Ausbildung";Feuchter insubrischer Schneesimsen-Lindenwald;Feuchter insubrischer Schneesimsen-Lindenwald;Tillaie à  Luzule blanc-de-neige insubrienne sur sol humide ;;;;x;Y;;Y;;Y;;Y;;;;x;;25au;Feuchter insubrischer Schneesimsen-Lindenwald;25au;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;"Neues Anforderungsprofil: 25Am-33m azonaler Teil; ohne Bu; weinger Eiche; Kastanie";34*;"Mit Feuchtezeigern; Region 4; 5"
+25.1;25*    ;Y;Aceri-Tilietum / Asperulo taurinae-Tilietum tametosum;Ahorn-Lindenwald/Trockener Turinermeister-Lindenwald;Ahorn-Lindenwald/Trockener Turinermeister-Lindenwald;Tillaie à  Erable;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;25Stern;Ahorn-Lindenwald/Trockener Turinermeister-Lindenwald;25*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;25*;;25*;Mit Schutt
+26;26;Y;Aceri-Fraxinetum;Ahorn-Eschenwald;Ahorn-Eschenwald;Frênaie à  Érable;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;26;Ahorn-Eschenwald;26 29;ES;Esche;Eschen- und Erlenwälder;26;;26;"Untermontan und tiefer; ohne anstehendem Fels"
+26.000003;26Fe   ;Y;"Aceri-Fraxinetum; Ausbildung auf Fels";Ahorn-Eschenwald auf Fels;Ahorn-Eschenwald auf Fels;Frênaie à  Érable sur rochers;;x;;;;;;;;;;;;;x;x;26Fe;Ahorn-Eschenwald auf Fels;26 29;ES;Esche;Eschen- und Erlenwälder;;;26;"Untermontan und tiefer; mit anstehendem Fels"
+26.009;26h    ;Y;"Aceri-Fraxinetum; Höhenausbildung";"Ahorn-Eschenwald; Höhenausbildung";"Ahorn-Eschenwald; Höhenausbildung";Frênaie à  Érable avec Adénostyle;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;26h;"Ahorn-Eschenwald; Höhenausbildung";26h 26w 29h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;26h;;26;"Obermontan und höher; ohne Wechselfeuchtigkeitszeiger"
+26.014;26w    ;Y;Aceri-Fraxinetum calamagrostietosum variae;Ahorn-Eschenwald mit Schlaffer Segge;Ahorn-Eschenwald mit Schlaffer Segge;Frênaie à  Érable avec Laiche glauque;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;26w;Ahorn-Eschenwald mit Schlaffer Segge;26h 26w 29h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;26;"Obermontan und höher; mit Wechselfeuchtigkeitszeiger"
+27;27;Y;Carici remotae-Fraxinetum;Bach-Eschenwald;Bach-Eschenwald;Frênaie à  Laiche;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;27;Bach-Eschenwald;27;ES;Esche;Eschen- und Erlenwälder;27;;27;Untermontan und tiefer
+27.00017;27O    ;Y;Osmundo-Alnetum  (syn Osmundo-Fraxinetum - Ceschi);Königsfarn-Schwarzerlenwald;Königsfarn-Schwarzerlenwald;Aunaie noire à  fougère royale;;;;x;Y;;Y;;Y;;Y;;;;x;;27O;Königsfarn-Schwarzerlenwald;27O;ER;Erle;Eschen- und Erlenwälder;33-27;Anforderungsprofil von 33-27 übernehmen;27**;
+27.009;27h    ;Y;"Carici remotae-Fraxinetum; Ausbildung mit Petasites albus";"Bach-Eschenwald; Höhenausbildung";"Bach-Eschenwald; Höhenausbildung";Frênaie à  Laiche avec Adénostyle;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;27h;"Bach-Eschenwald; Höhenausbildung";27h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;27h;;27;Obermontan und höher
+27.1;27*    ;Y;Adenostylo-Alnetum incanae;Hochstauden-Weisserlen-Ahornwald;Hochstauden-Weisserlen-Ahornwald;Aunaie à  Érable;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;27Stern;Hochstauden-Weisserlen-Ahornwald;27*;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;27*;;27*;
+28;28;Y;Ulmo-Fraxinetum equisetosum hyemalis;Ulmen-Eschen-Auenwald;Ulmen-Eschen-Auenwald;Frênaie à  Orme riveraine avec Prêle d'hiver;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;28;Ulmen-Eschen-Auenwald;28 29A 29C;Au;Auen Laub;Auenwälder Laub;;;28;
+29;29;Y;Ulmo-Fraxinetum typicum;Ulmen-Eschenwald;Ulmen-Eschenwald;Frênaie à  Orme sur limons engorgés;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;29;Ulmen-Eschenwald;26 29;ES;Esche;Eschen- und Erlenwälder;;;29;"Kein Auenwald; untermontan und tiefer"
+29.00001;29A    ;Y;Ulmo-Fraxinetum listeretosum;Zweiblatt-Eschen-Auenwald;Zweiblatt-Eschen-Auenwald;Frênaie à  Orme riveraine avec Listéra;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;29A;Zweiblatt-Eschen-Auenwald;28 29A 29C;Au;Auen Laub;Auenwälder Laub;;;29;Auenwald ohne Trockenheitszeiger
+29.00002;29C    ;Y;Ulmo-Fraxinetum caricetosum albae;Ulmen-Eschen-Auenwald mit Weissegge;Ulmen-Eschen-Auenwald mit Weissegge;Frênaie à  Orme riveraine avec Laiche blanche;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;29C;Ulmen-Eschen-Auenwald mit Weissegge;28 29A 29C;Au;Auen Laub;Auenwälder Laub;;;29;Auenwald mit Trockenheitszeiger
+29.009;29h    ;Y;Ulmo-Fraxinetum equisetosum sylvaticae;Ulmen-Eschenwald mit Waldschachtelhalm;Ulmen-Eschenwald mit Waldschachtelhalm;Frênaie à  Orme avec Prêle des bois;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;29h;Ulmen-Eschenwald mit Waldschachtelhalm;26h 26w 29h;LHL;Laub hohe Lagen;Laubwälder hohe Lagen;;;29;"Kein Auenwald; obermontan"
+30;30;Y;Pruno-Fraxinetum;Traubenkirschen-Eschenwald;Traubenkirschen-Eschenwald;Frênaie à  Merisier à  grappes;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;30;Traubenkirschen-Eschenwald;30 44;ESER;Esche-Erle;Eschen- und Erlenwälder;;;30;
+31;31;Y;Equiseto-Alnetum incanae;Tieflagen-Grauerlenwald;Tieflagen-Grauerlenwald;Aunaie riveraine de plaine à  Prêle ;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;31;Tieflagen-Grauerlenwald;31 32C 32V;Au;Auen Laub;Auenwälder Laub;;;31;
+32.00002;32C    ;Y;Calamagrostio-Alnetum incanae;Untermontaner Grauerlenwald;Untermontaner Grauerlenwald;Aunaie riveraine à  Calamagrostide bigarrée;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;32C;Untermontaner Grauerlenwald;31 32C 32V;Au;Auen Laub;Auenwälder Laub;;;32;Untermontan und tiefer
+32.00012;32S    ;Y;Alno-Salicetum pentandrae;Subalpiner Loorbeerweiden-Auenwald;Subalpiner Loorbeerweiden-Auenwald;Forêt riveraine subalpine à  Saule laurier;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;32S;Subalpiner Loorbeerweidenauenwald;32S;Au;Auen Laub;Auenwälder Laub;;;32*;
+32.00014;32V    ;Y;Violo-Alnetum incanae;Obermontaner Grauerlenwald;Obermontaner Grauerlenwald;Aunaie riveraine à  Pensée à  deux fleurs;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;32V;Obermontaner Grauerlenwald;31 32C 32V;Au;Auen Laub;Auenwälder Laub;;;32;Obermontan und höher
+32.1;32*    ;Y;Aceri-Alnetum incanae typicum;Typischer Ahorn-Weisserlenwald;Typischer Ahorn-Weisserlenwald;Aunaie de pente à  Erable typique ;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;32Stern;Typischer Ahorn-Weisserlenwald;32*;PI;Pionierwald;Pionierwälder;;;keine Zuordung möglich;
+33.00014;33V    ;Y;Salvio glutinosae-Fraxinetum violetosum biflorae;Montaner Salbei-Eschenmischwald;Montaner Salbei-Eschenmischwald;Frênaie à  Sauge avec pensée à  deux fleurs;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;33V;Montaner Salbei-Eschenwald;33V;PI;Pionierwald;Pionierwälder;;;keine Zuordung möglich;
+33.001;33a    ;Y;"Arunco-Fraxinetum castanosum; saure Ausbildung";Heidelbeer-Geissbart-Eschenmischwald mit Kastanie;Heidelbeer-Geissbart-Eschenmischwald mit Kastanie;Frênaie à  Reine-des-bois avec Châtaignier et Myrtille;;;;x;Y;;Y;;Y;;Y;;;;x;x;33a;Heidelbeer-Geissbart-Eschenwald;33a;LSKA;Laub Süd Kastanie;Mesophile Laubwälder Insubriens;33AV-33A;Anforderungsprofil von 33AV-33A übernehmen;33;Saure Ausbildung 
+33.002;33b    ;Y;"Arunco-Fraxinetum castanosum; basische Ausbildung";Zyklamen-Geissbart-Eschenmischwald mit Kastanie;Zyklamen-Geissbart-Eschenmischwald mit Kastanie;Frênaie à  Reine-des-bois avec Cyclamen;;;;x;;;;;Y;;;;;;x;;33b;Zyclamen-Geissbart-Eschenwald;33b;LSKA;Laub Süd mittel;Mesophile Laubwälder Insubriens;;"Neues Anforderungsprofil: 25Am-33m zonaler Teil; mehr Bu; weniger Linde";33;Basische Ausbildung
+33.01;33m    ;Y;"Arunco-Fraxinetum castanosum; mesophile Ausbildung";Mesophiler Geissbart-Eschenmischwald mit Kastanie;Mesophiler Geissbart-Eschenmischwald mit Kastanie;Frênaie à  Reine-des-bois avec Châtaignier mésophile;;;;x;;;;;Y;;;;;;x;x;33m;Geissbart-Eschenwald mit Kastanie;33m;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;;"Neues Anforderungsprofil: 33-25A zonaler Teil; mehr Bu; weniger LI und B'Ah";33;Mesophile Ausbildung
+34.001;34a    ;Y;"Cruciato glabrae-Quercetum; saure Ausbildung";Saurer Kreuzlabkraut-Eichenwald mit Kastanie;Saurer Kreuzlabkraut-Eichenwald mit Kastanie;Chênaie-Châtaigneraie à  Tilleul sur sol acide;;;;x;;;;;Y;;;;;;x;x;34a;"Kreuzlabkraut-Eichenwald mit Kastanie; saure Variante";34a;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;;"Neues Anforderungsprofil: 25A-34m zonaler Teil; mehr Bu; weniger Linde ";34;Saure Ausbildung 
+34.002;34b    ;Y;"Cruciato glabrae-Quercetum; basische Ausbildung";Basischer Kreuzlabkraut-Eichenwald mit Kastanie;Basischer Kreuzlabkraut-Eichenwald mit Kastanie;Chênaies à  Châtaignier avec Tilleul sur substrat neutre à  basique;;x 34B;;;Y;;;;Y;;Y;;;;x;;34b;"Kreuzlabkraut-Eichenwald mit Kastanie; basische Variante";34b;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;34B;34B;34;Basische Ausbildung
+34.1;34*    ;Y;Luzulo niveae-Tilietum cordatae;Schneesimsen-Winterlindenwald;Schneesimsen-Winterlindenwald;Tillaie à  petites feuilles à  Luzule blanc-de-neige;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;34Stern;Schneesimsen-Winterlindenwald;25 34*;LS;Laub sonder  ;Laubwälder Sonderwaldstandorte;;Anforderungsprofil von 25;34*;"Region J; M; 1; 2; 3"
+35;35;Y;Galio-Carpinetum;Waldlabkraut-Hainbuchenmischwald;Waldlabkraut-Hainbuchenmischwald;Chênaie-Charmaie à  Gaillet des bois;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;35;Waldlabkraut-Hainbuchen-Mischwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;;35Q im gleichen Anforderungsprofil (19.3.2014);35;Ohne Wechselfeuchtigkeitszeiger
+35.00007;35M    ;Y;Galio-Carpinetum molinietosum;Waldlabkraut-Hainbuchenwald mit Pfeifengras;Waldlabkraut-Hainbuchenwald mit Pfeifengras;Chênaie-Charmaie à  Molinie;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;35M;Waldlabkraut-Hainbuchenwald mit Pfeifengras;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;;35Q im gleichen Anforderungsprofil (19.3.2014);35;Mit Wechselfeuchtigkeitszeigern
+35.00011;35Q    ;Y;Polygonato-Quercetum roboris (Sartori 1980) ;Stieleichen-Winterlinden-Talboden-Auenwald;Stieleichen-Winterlinden-Talboden-Auenwald;Chênaie-tillaie riveraine de plaine;;;;x;;;;;Y;;;;;;x;x;35Q;Stieleichen-Winterlinden-Talboden-Auenwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;;35Q im gleichen Anforderungsprofil (19.3.2014);keine Zuordung möglich;
+35.00012;35S    ;Y;Scillo-Carpinetum;Blaustern-Hagebuchenmischwald;Blaustern-Hagebuchenmischwald;Charmaie à  Scille;;x;;;Y;;;;Y;;Y;;;;x;;35S;Blaustern-Hagebuchenmischwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;;35Q im gleichen Anforderungsprofil (19.3.2014);35**;
+35.001;35A    ;Y;Stellario-Carpinetum;Aronstab-Eichenmischwald;Aronstab-Eichenmischwald;Chênaie à  Gouet;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;35A;Aronstab-Eichenmischwald;35 35A 35M 35Q 35S;EIMI;Eichemisch;Eichenwälder;;35Q im gleichen Anforderungsprofil (19.3.2014);35*;
+36;36;Y;Carpino betuli-Ostryetum;Hagebuchen-Hopfenbuchenwald;Hagebuchen-Hopfenbuchenwald;Forêt mixte à  Charmehoublon et Charme;;x;;;Y;;;;Y;;Y;;;;x;;36;Hagebuchen-Hopfenbuchenwald;36;HO;Hopfenbuche;Mesophile Laubwälder Insubriens;36;"Anforderungsprofil anpassen: neu ohne Schuttwälder (mit Schutt 25b); evt. Esche erwähnen";36;
+37;37;Y;Fraxino orni-Ostryetum;Hopfenbuchen-Eichenwald;Hopfenbuchen-Eichenwald;Forêt mixte à  Charmehoublon et Orne;;x;;;Y;;;;Y;;Y;;;;x;x;37;Hopfenbuchen-Eichenwald;37;HO;Hopfenbuche;Mesophile Laubwälder Insubriens;37;;37;Ohne Schutt
+38;38;Y;Arabidi turritae-Quercetum pubescentis;Turmkressen-Flaumeichenwald;Turmkressen-Flaumeichenwald;Chênaie à  Arabette tourette;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;38;Turmkressen-Flaumeichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;38;"Region J; M"
+38.00012;38S    ;Y;Saponario-Quercetum pubescentis;Seifenkraut-Flaumeichenwald;Seifenkraut-Flaumeichenwald;Chênaie à  Saponaire;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;38S;Seifenkraut-Flaumeichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;38;Region 2
+38.1;38*    ;Y;Asperulo purpurei-Quercetum pubescentis ;Purpurwaldmeister-Flaumeichenwald;Purpurwaldmeister-Flaumeichenwald;Chênaie pubescente à  Aspérule pourpre;;x;;;Y;;;;Y;;Y;;;;x;;38Stern;Purpurwaldmeister-Flaumeichenwald;42r 42B 38*;EI;Eiche ;Eichenwälder;;;38* Asperulo purpurei-Quercetum  ;
+39;39;Y;Coronillo coronatae-Quercetum;Kronwicken-Eichenmischwald;Kronwicken-Eichenmischwald;Chênaie à  Coronille en couronne;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;39;Kronwicken-Eichenmischwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;39;
+39.1;39*    ;Y;Rhamno alpinae-Quercetum;Kreuzdorn-Eichenmischwald;Kreuzdorn-Eichenmischwald;Chênaie à  Nerprun des Alpes;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;39Stern;Kreuzdorn-Eichenmischwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;39*;
+40.00008;40P    ;Y;Corylo-Populetum;Pionier-Aspen-Haselbuschwald;Pionier-Aspen-Haselbuschwald;Forêt pionnière de tremble et noisetier ;;;in Arbeit;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;40P;Pionier-Aspen-Haselbuschwald;40P 40PBl;PI;Pionierwald;Pionierwälder;;neues Anforderungsprofil 40P 40PBl;keine Zuordung möglich;
+40.000082;40PBl  ;Y;"Corylo-Populetum; Blockausbildung";Aspen-Haselbuschwald auf Blockschutt;Aspen-Haselbuschwald auf Blockschutt;Forêt de tremble et noisetier sur blocs;;;in Arbeit;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;40PBl;Aspen-Haselbuschwald auf Blockschutt;40P 40PBl;PI;Pionierwald;Pionierwälder;;neues Anforderungsprofil 40P 40PBl;keine Zuordung möglich;
+40.01308;40Pt   ;Y;"Corylo-Populetum; Ausbildung tiefer Lagen";"Pionier-Aspen-Haselbuschwald; Tieflagenausbildung";"Pionier-Aspen-Haselbuschwald; Tieflagenausbildung";"Forêt pionnière de tremble et noisetier; variante de basse altitude";;;;;;;;;;;;;;;x;x;40Pt;"Pionier-Aspen-Haselbuschwald; Tieflagenausbildung";40Pt 40PBlt;PI;Pionierwald;Pionierwälder;;neues Anforderungsprofil 40Pt 40PBlt;keine Zuordung möglich;
+40.013082;40PBlt ;Y;"Corylp-Populetum; Blockausbildung tiefer Lagen";"Aspen-Haselbuschwald auf Blockschutt; Tieflagenausbildung";"Aspen-Haselbuschwald auf Blockschutt; Tieflagenausbildung";"Forêt de tremble et noisetier sur blocs; variante de basse altitude";;;;;;;;;;;;;;;x;x;40PBlt;"Aspen-Haselbuschwald auf Blockschutt; Tieflagenausbildung";40Pt 40PBlt;PI;Pionierwald;Pionierwälder;;neues Anforderungsprofil 40Pt 40PBlt;keine Zuordung möglich;
+40.1;40*    ;Y;Teucrio-Quercetum;Gamander-Eichenwald;Gamander-Eichenwald;Chênaie à  Germandrée;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;40Stern;Gamander-Eichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;40;
+41;41;Y;Lathyro-Quercetum;Platterbsen-Eichenmischwald;Platterbsen-Eichenmischwald;Chênaie à  Gesse noire;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;41;Platterbsen-Eichenmischwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;41;
+41.1;41*    ;Y;Luzulo-Quercetum;Hainsimsen-Eichenwald;Hainsimsen-Eichenwald;Chênaie à  Luzule;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;41Stern;Hainsimsen-Eichenwald;38 38S 39 39* 40* 41 41*;EI;Eiche ;Eichenwälder;;;41*;
+42.00002;42C    ;Y;Phyteum betonicifoliae-Quercetum castanosum;Rapunzel-Eichenwald mit Kastanie;Rapunzel-Eichenwald mit Kastanie;Chênaie-Châtaigneraie à  Raiponce ;;;;x;;;;;Y;;;;;;x;x;42C;Rapunzel-Eichenwald mit Kastanie;42C ;EIKA;Eiche-Kastanie;Eichenwälder;42C/Q;"Anforderungsprofil von 42C/Q; mit mehr Kastanie";42;"ohne mittleren Arten; mit Kastanie"
+42.00011;42Q    ;Y;Phyteum betonicifoliae-Quercetum typicum;Typischer Rapunzel-Eichenwald;Typischer Rapunzel-Eichenwald;Chênaie insubrienne à  Raiponce typique;;;;x;;;;;Y;;;;;;x;;42Q;Typischer Rapunzel-Eichenwald;42Q;EI ;Eiche;Eichenwälder;42C/Q;"Anforderungsprofil von 42C/Q; mit mehr Eiche";42;"ohne mittleren Arten; mit Eiche"
+42.00014;42V    ;Y;Phyteumo betonicifoliae-Quercetum vaccinetosum;Eichen-Kastanienwald mit Heidelbeere;Eichen-Kastanienwald mit Heidelbeere;Chênaie-Châtaigneraie à  Myrtille;;x;;;Y;;;;Y;;Y;;;;x;x;42V;Eichen-Kastanienwald mit Heidelbeere;42V;EIBU;Eiche-Buche ;Buchenwälder;42V;;42;mit Heidelbeere
+42.011;42r    ;Y;Phyteumo betonicifoliae-Quercetum festucetosum variae;Insubrischer Eichenwald auf Fels;Insubrischer Eichenwald auf Fels;Chênaie insubrinne sur rochers  à  silice;;x;;;Y;;;;Y;;Y;;;;x;x;42r;Eichen-Kastanienwald auf Fels;42r 42B 38*;EI;Eiche;Eichenwälder;e;42R;42;"Viel anstehener Fels; viele Trockenheitszeiger"
+42.012;42B    ;Y;Allio lusitanici-Quercetum pubescentis;"Insubrischer Eichenwald auf Fels; basische Ausbildung";"Insubrischer Eichenwald auf Fels; basische Ausbildung";"Chênaie insubrinne sur rochers  à  silice; variante alcaline";;;;x;;;;;Y;;;;;;x;;42B;"Eichen-Kastanienwald auf Fels; basische Variante";42r 42B 38*;EI;Eiche;Eichenwälder;;"Wie 42r zu wenig wüchsig für Schutzwaldpflege; beide gleiches 'Anforderungsprofil'";38* Allio lusitanici-Quercetum;
+42.013;42t    ;Y;"Phyteumo betonicifoliae-Quercetum polygonatetosum multiflorii; Cruciato glabrae-Quercetum p.p.";Eichen-Kastanienwald in Entwicklung;Eichen-Kastanienwald in Entwicklung;Chênaie-Châtaigneraie en évolution;;x (42)-34A;;;Y;;;;Y;;Y;;;;x;x;42t;Eichen-Kastanienwald in Entwicklung;42t;LSKA;Laub Süd Kastanie;Mesophile Laubwälder Insubriens;(42)-34A;(42)-34A;42;mit mittleren Arten
+43;43;Y;Salicetum albae;Silberweiden-Auenwald;Silberweiden-Auenwald;Forêt riveraine de Saule blanc;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;43;Silberweidenauenwald;43 43S ;Au;Auen Laub;Auenwälder Laub;;;43;
+43.00012;43S    ;Y;Salicetum elaeagno-daphnoidis;Lavendelweidengebüsch;Lavendelweidengebüsch;Saulaie buissonnante à  Saule drapé;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;43S;Lavendelweidengebüsch;43 43S ;Au;Auen Laub;Auenwälder Laub;;;keine Zuordung möglich;
+43.1;43*    ;Y;Coronillo emeri-Populetum nigrae;Insubrischer Schwarzpappel-Auenwald;Insubrischer Schwarzpappel-Auenwald;Forêt riveraine insubrienne de Peuplier noir;;;;;;;;;;;;;;;x;;43Stern;Insubrischer Schwarzpappelauenwald;43*;Au;Auen Laub;Auenwälder Laub;;im Tessin und evt. auch im Wallis unterhalb von Leukerbad;43*;
+44;44;Y;Carici elongatae-Alnetum glutinosae;Seggen-Schwarzerlenbruch;Seggen-Schwarzerlenbruch;Aunaie marécageuse à  Laiche;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;44;Seggen-Schwarzerlenbruch;30 44;ESER;Esche-Erle;Eschen- und Erlenwälder;;;44;
+45;45;Y;Pino-Betuletum;Föhren-Birkenbruchwald;Föhren-Birkenbruchwald;Forêt marécageuse à  Bouleau pubescent;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;45;Föhren-Birkenbruchwald;45;M;Moor;Moorwälder;;;45;
+46;46;Y;Vaccinio myrtillii-Abieti-Piceetum typicum;Typischer Heidelbeer-Tannen-Fichtenwald;Typischer Heidelbeer-Ta-Fi-Wald;Pessière-Sapinière à  Myrtille typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;46;Typischer Heidelbeer-Ta-Fi-Wald;46 46M 46*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;46 46M 46*;;46*;"Ohne Sphagnum; mit verdichtetem Boden; im Tannen-Haupt- oder Nebenareal"
+46.0000003;46Re   ;Y;Vaccinio myrtillii-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Heidelbeer-Tannen-Fichtenwald im Tannen-Reliktareal;Typischer Heidelbeer-Ta-Fi-Wald im Ta-Reliktareal;Pessière-Sapinière à  Myrtille typique dans l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;46Re;Typischer Heidelbeer-Ta-Fi-Wald im Ta-Reliktareal;46Re 46MRe 46*Re;FIHF;Fichte hochmontan feucht;Fichtendominierte Wälder hochmontan;46 46M 46*;;46* ;"Ohne Sphagnum; mit verdichtetem Boden; im Tannen-Reliktareal"
+46.00007;46M    ;Y;Vaccinio myrtillii-Abieti-Piceetum melampyretosum;Heidelbeer-Tannen-Fichtenwald auf Podsol;Heidelbeer-Ta-Fi-Wald auf Podsol;Pessière-Sapinière à  Myrtille sur podsol;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;46M;Heidelbeer-Ta-Fi-Wald auf Podsol;46 46M 46*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;46 46M 46*;;46*;"Ohne Sphagnum; mit Podsol; im Tannen-Haupt- oder Nebenareal"
+46.0000703;46MRe  ;Y;Vaccinio myrtillii-Abieti-Piceetum melampyretosum im Tannen-Reliktareal;Heidelbeer-Tannen-Fichtenwald auf Podsol im Tannen-Reliktareal;Heidelbeer-Ta-Fi-Wald auf Podsol im Ta-Reliktareal;Pessière-Sapinière à  Myrtille sur podsol de l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;46MRe;Heidelbeer-Ta-Fi-Wald auf Podsol im Ta-Reliktareal;46Re 46MRe 46*Re;FIHF;Fichte hochontan feucht;Fichtendominierte Wälder hochmontan;46 46M 46*;;46* ;"Ohne Sphagnum; mit Podsol; im Tannen-Reliktareal"
+46.013;46t    ;Y;Bazzanio-Abietetum;Peitschenmoos-Fichten-Tannenwald;Peitschenmoos-Fichten-Tannenwald;Pessière-Sapinière à  Bazzania;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;46t;Peitschenmoss-Fi-Ta-Wald;46t;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;"neues Anforderungsprofil; 46 mit Eiche; Buche";46;
+46.1;46*    ;Y;Vaccinio myrtillii-Abieti-Piceetum sphagnetosum;Heidelbeer-Tannen-Fchtenwald mit Torfmoos;Heidelbeer-Ta-Fi-Wald mit Torfmoos;Pessière-Sapinière à  Myrtille avec Sphaignes;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;46Stern;Heidelbeer-Ta-Fi-Wald mit Torfmoos;46 46M 46*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;46 46M 46*;;46*;"Mit Sphagnum; im Tannen-Haupt- oder Nebenareal"
+46.1000003;46*Re  ;Y;Vaccinio myrtillii-Abieti-Piceetum sphagnetosum im Tannen-Reliktareal;Heidelbeer-Tannen-Fichtenwald mit Torfmoos im Tannen-Reliktareal;Heidelbeer-Ta-Fi-Wald mit Torfmoos im Ta-Reliktareal;Pessière-Sapinière à  Myrtille avec Sphaignes dans l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;46SternRe;Heidelbeer-Ta-Fi-Wald mit Torfmoos im Ta-Reliktareal;46Re 46MRe 46*Re;FIHF;Fichte hochontan feucht;Fichtendominierte Wälder hochmontan;46 46M 46*;;46* ;"Mit Sphagnum; im Tannen-Reliktareal"
+47;47;Y;Calamagrostio-villosae-Abieti-Piceetum typicum;Typischer Wollreitgras-Ta-Fi-Wald;Typischer Wollreitgras-Ta-Fi-Wald;Pessière-Sapinière à  Calamagrostide velue typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;47;Wollreitgras-Ta-Fi-Wald;47;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;47;;47;"Ohne Farn; ohne Trockenheitszeiger; im Tannen-Haupt- oder Nebenareal"
+47.0000003;47Re   ;Y;Calamagrostio-villosae-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Wollreitgras-Tannen-Fichtenwald im Tannen-Reliktareal;Typischer Wollreitgras-Ta-Fi-Wald im Ta-Reliktareal;Pessière-Sapinière à  Calamagrostide velue typique dans l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;47Re;Wollreitgras-Ta-Fi-Wald im Ta-Reliktareal;47Re;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;47;;47;"Ohne Farn; ohne Trockenheitszeiger; im Tannen-Reliktareal"
+47.00003;47D    ;Y;Calamagrostio-villosae-Abieti-Piceetum dryopteridetosum;Farnreicher Wollreitgras-Tannen-Fichtenwald;"Farnreicher Wollreitgras-Ta-Fi-Wald; ";Pessière-Sapinière à  Calamagrostide velue riche en fougères;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;47D;"Wollreitgras-Ta-Fi-Wald; farnreicher";47D;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;47D;;47;"Mit Farn; ohne Trockenheitszeiger; im Tannen-Haupt- oder Nebenareal"
+47.0000303;47DRe  ;Y;Calamagrostio-villosae-Abieti-Piceetum dryopteridetosum im Tannen-Reliktareal;Farnreicher Wollreitgras-Tannen-Fichtenwald im Tannen-Reliktareal;Farnreicher Wollreitgras-Ta-Fi-Wald im Ta-Reliktareal;"Pessière-Sapinière à  Calamagrostide velue riche en fougères; dans l'aire rélictuelle du Sapin";;;;;;;;;;;;;;;x;;47DRe;"Wollreitgras-Ta-Fi-Wald; farnreicher im Ta-Reliktareal";47DRe;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;47D;;47;"Mit Farn; ohne Trockenheitszeiger; im Tannen-Reliktareal"
+47.00007;47M    ;Y;Calamagrostio-villosae-Abieti-Piceetum melampyretosum;Wollreitgras-Tannen-Fichtenwald mit Wachtelweizen;Wollreitgras-Ta-Fi-Wald mit Wachtelweizen;Pessière-Sapinière à  Mélampyre;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;47M;Wollreitgras-Ta-Fi-Wald mit Wachtelweizen;47M;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;47M;;47;"Mit Trockenheitszeigern; im Tannen-Haupt- oder Nebenareal"
+47.00016;47H    ;Y;Hypno-Piceetum;Zypressenschlafmoos-Fichtenwald;Zypressenschlafmoos-Fi-Wald;Pessière à  Hypne cyprès;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;47H;Zypressenschlafmoos-Fi-Wald;47H;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;47H;;48*;
+47.1;47*    ;Y;Rhododendro-Abietetum;Alpenrosen-Lärchen-Tannenwald;Alpenrosen-Lärchen-Ta-Wald;Sapinière à  Mélèze avec Rhododendron;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;47Stern;Alpenrosen-Lärchen-Ta-Wald;47*;LATA;Lärche-Tanne;Tannen-Fichtenwälder;47*;;47*;Mit Tanne
+47.1000001;47*Lä ;Y;"Rhododendro-Abietetum; Lärchenausbildung";"Alpenrosen-Lärchen-Tannenwald; Lärchenausbildung";"Alpenrosen-Lärchen-Ta-Wald; Lärchenausbildung";"Sapinière à  Mélèze avec Rhododendron; variante à  Mélèze dominant";;;;;;;;;;;;;;;x;;47SternLa;Alpenrosen-Lärchen-Ta-Wald;47*;LATA;Lärche-Tanne;Tannen-Fichtenwälder;;;47* ;Ohne Tanne
+48;48;Y;Asplenio-Abieti-Piceetum;Blockschutt-Tannen-Fichtenwald;Blockschutt-Tannen-Fichtenwald;Pessière-Sapinière à  Asplénium sur gros blocs;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;48;Blockschutt-Ta-Fi-Wald;48;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;48;;48;
+49;49;Y;Equiseto-Abieti-Piceetum typicum;Typischer Schachtelhalm-Tannen-Fichtenwald;Typischer Schachtelhalm-Ta-Fi-Wald;Pessière-Sapinière à  Prêle typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;49;Typischer Schachtelhalm-Ta-Fi-Wald;49;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;49;;49;Ohne Wechselfeuchtigkeitszeiger und Basenzeiger
+49.1;49*    ;Y;Equiseto-Piceetum caricetosum ferrugineae;Schachtelhalm-Fichtenwald mit Rostsegge;Schachtelhalm-Fi-Wald mit Rostsegge;Pessière à  Prêle avec Laiche ferrugineuse;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;49Stern;Schachtelhalm-Ta-Fi-Wald mit Rostsegge;49*;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;49*;;49;Mit Wechselfeuchtigkeitszeigern und Basenzeigern ohne Tanne
+49.1000002;49*Ta  ;Y;Equiseto-Abieti-Piceetum caricetosum ferrugineae;Schachtelhalm-Tannen-Fichtenwald mit Rostsegge ;Schachtelhalm-Ta-Fi-Wald mit Rostsegge ;Pessière-Sapinière à  Prêle avec Laiche ferrugineuse;;;;;;;;;;;;;;;x;;49SternTa;Schachtelhalm-Ta-Fi-Wald mit Rostsegge (mit Tanne);49*Ta;FIHF;Fichte hochontan feucht;Fichtendominierte Wälder hochmontan;49*Ta;;49;Mit Wechselfeuchtigkeitszeigern und Basenzeigern mit Tanne
+50;50;Y;Adenostylo alliariae-Abieti-Piceetum typicum;Typischer Hochstauden-Tannen-Fichtenwald;Typischer Hochstauden-Ta-Fi-Wald;Pessière-Sapinière à  Adénostyle typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;50;Typischer Hochstauden-Ta-Fi-Wald;50;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;50;;50;"Pestwurz dominiert nicht; ohne anstehendem Fels; im Tannen-Haupt- oder Nebenareal"
+50.0000003;50Re   ;Y;Adenostylo alliariae-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Hochstauden-Tannen-Fichtenwald im Tannen-Reliktareal;Typischer Hochstauden-Ta-Fi-Wald im Ta-Reliktareal;Pessière-Sapinière à  Adénostyle typique de l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;50Re;Typischer Hochstauden-Ta-Fi-Wald im Ta-Reliktareal;50Re;FIHF;Fichte hochontan feucht;Fichtendominierte Wälder hochmontan;50;;50;"Pestwurz dominiert nicht; ohne anstehendem Fels; im Tannen-Reliktareal"
+50.000003;50Fe   ;Y;"Adenostylo alliariae-Abieti-Piceetum typicum; Ausbildung auf Fels";Typischer Hochstauden-Tannen-Fichtenwald auf Fels;Typischer Hochstauden-Ta-Fi-Wald auf Fels;Pessière-Sapinière à  Adénostyle typique sur rochers;;;;;;;;;;;;;;;x;;50Fe;Typischer Hochstauden-Ta-Fi-Wald auf Fels;50;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;;;50;"Pestwurz dominiert nicht; mit anstehendem Fels; im Tannen-Haupt- oder Nebenareal"
+50.00008;50P    ;Y;Adenostylo-Abieti-Piceetum petasitetosum;Hochstauden-Tannen-Fichtenwald mit Pestwurz;Hochstauden-Ta-Fi-Wald mit Pestwurz;Pessière-Sapinière à  Pétasite;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;50P;Hochstauden-Ta-Fi-Wald mit Pestwurz;50P;TAFIMO;Tanne-Fichte Moderholz;Tannen-Fichtenwälder;50P;;50;Pestwurz dominiert
+50.1;50*    ;Y;Adenostylo glabrae-Abieti-Piceetum typicum;Karbonat-Tannen-Fichtenwald mit kahlem Alpendost;Karbonat-Ta-Fi-Wald mit kahlem Alpendost;Pessière-Sapinière à  Adénostyle glabre;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;50Stern;Karbonat-Ta-Fi-Wald mit kahlem Alpendost;51 50*;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;51 50*;;50*;Im Tannen-Haupt- oder Nebenareal
+50.1000003;50*Re  ;Y;Adenostylo glabrae-Abieti-Piceetum typicum im Tannen-Reliktareal;Karbonat-Tannen-Fichtenwald mit kahlem Alpendost im Tannen-Reliktareal;Karbonat-Ta-Fi-Wald mit kahlem Alpendost im Ta-Reliktareal;Pessière-Sapinière à  Adénostyle glabre dans l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;50SternRe;Karbonat-Ta-Fi-Wald mit kahlem Alpendost im Ta-Reliktareal;50*Re 51Re;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;51 50*;;50* ;Im Tannen-Reliktareal
+51;51;Y;Galio-Abieti-Piceetum typicum;Typischer Labkraut-Tannen-Fichtenwald;Typischer Labkraut-Ta-Fi-Wald;Pessière-Sapinière à  Gaillet typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;51;Typischer Labkraut-Ta-Fi-Wald;51 50*;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;51 50*;;51;"Mit wenig oder ohne Hasel; ohne anstehendem Fels; im Tannen-Haupt- oder Nebenareal"
+51.0000003;51Re   ;Y;Galio-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Labkraut-Tannen-Fichtenwald im Tannen-Reliktareal;Typischer Labkraut-Ta-Fi-Wald im Ta-Reliktareal;Pessière-Sapinière à  Gaillet typique dans l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;51Re;Typischer Labkraut-Ta-Fi-Wald im Ta-Reliktareal;50*Re 51Re;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;51 50*;;51;"Mit wenig oder ohne Hasel; ohne anstehendem Fels; im Tannen-Reliktareal"
+51.000003;51Fe   ;Y;"Galio-Abieti-Piceetum typicum; Ausbildung auf Fels";Typischer Labkraut-Tannen-Fichtenwald auf Fels;Typischer Labkraut-Ta-Fi-Wald auf Fels;Pessière-Sapinière à  Gaillet typique sur rochers;;;;;;;;;;;;;;;x;;51Fe;Typischer Labkraut-Ta-Fi-Wald auf Fels;51 50*;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;51;"Mit wenig oder ohne Hasel; mit anstehendem Fels; im Tannen-Haupt- oder Nebenareal"
+51.00002;51C    ;Y;Galio-Abieti-Piceetum coryletosum;Labkraut-Tannen-Fichtenwald mit Hasel;Labkraut-Ta-Fi-Wald mit Hasel;Pessière-Sapinière à  Gaillet avec noisetier;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;51C;Labkraut-Ta-Fi-Wald mit Hasel;51C 52T;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;51C;;51;Mit viel Hasel
+52;52;Y;Adenostylo glabrae-Abieti-Piceetum caricetosum albae;Karbonat-Tannen-Fichtenwald mit Weisssegge;Karbonat-Ta-Fi-Wald mit Weisssegge;Pessière-Sapinière à  Laiche blanche;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;52;Karbonat-Ta-Fi-Wald mit Weisssegge;52;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;52;;52;"Mit wenig oder ohne Hasel; mit anstehendem Fels; im Tannen-Haupt- oder Nebenareal"
+52.0000003;52Re   ;Y;Adenostylo glabrae-Abieti-Piceetum caricetosum albae im Tannen-Reliktareal;Karbonat-Tannen-Fichtenwald mit Weisssegge im Tannen-Reliktareal;Karbonat-Ta-Fi-Wald mit Weisssegge im Ta-Reliktareal;Pessière-Sapinière à  Laiche blanche dans l'aire rélictuelle du Sapin;;;;;;;;;;;;;;;x;;52Re;Karbonat-Ta-Fi-Wald mit Weisssegge im Ta-Reliktareal;52Re;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;52;;52;"Mit wenig oder ohne Hasel; mit anstehendem Fels; im Tannen-Reliktareal"
+52.00013;52T    ;Y;Adenostylo glabrae -Abieti-Piceetum caricetosum albae mit Tilia cordata;Karbonat-Tannen-Fichtenwald mit Winterlinde;Karbonat-Ta-Fi-Wald mit Winterlinde;Pessière-Sapinière à  Laiche blanche avec tilleul à  petites feuilles;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;52T;Karbonat-Ta-Fi-Wald mit Winterlinde;51C 52T;TAFIM;Tanne-Fichte mittel;Tannen-Fichtenwälder;;;52;Mit viel Hasel
+53;53;Y;Polygalo chamaebuxi-Piceetum;Typischer Zwergbuchs-Fichtenwald;Typischer Zwergbuchs-Fi-Wald;Pessière à  Polygala petit buis;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;53;Zwergbuchs-Fichten-Wald;53;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;53;;53;"Ohne Tanne. Keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+53.0000001;53Lä  ;Y;"Polygalo chamaebuxi-Piceetum; Lärchenausbildung";"Typischer Zwergbuchs-Fichtenwald; Lärchenausbildung";"Typischer Zwergbuchs-Fi-Wald; Lärchenausbildung";Pessière à  Polygala petit buis avec Mélèze;;;;;;;;;Y;Y;;;;;x;;53Lae;Zwergbuchs-Fichtenwald mit Lärche;53Lä;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;53;"Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+53.0000002;53Ta   ;Y;Polygalo chamaebuxi-Piceetum mit Tanne;Typischer Zwergbuchs-Fichtenwald mit Tanne;Typischer Zwergbuchs-Fi-Wald mit Tanne;Pessière à  Polygala petit buis avec Sapin;;;;;;;;;Y;;;;;;x;;53Ta;Zwergbuchs-Fichtenwald mit Tanne;53Ta;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;53;;53;"Mit Tanne. Keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+53.00001;53A    ;Y;Polygalo chamaebuxi-Piceetum aposeritetosum;Zwergbuchs-Fichtenwald mit Hainlattich;Zwergbuchs-Fi-Wald mit Hainlattich;Pessière à  Polygala petit buis avec Aposéris;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;53A;Zwergbuchs-Fichten-Wald mit Hainlattich;53A;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;"Neues Anforderungsprofil. Verjüngung auf Moderholz und Minerlaerde; Keine Verjüngung unter Schirm. Viel Sonne kein Problem; recht verjüngungsgünstig. ";keine Zuordung möglich;
+53.0000102;53ATa  ;Y;Polygalo chamaebuxi-Piceetum aposeritetosum mit Tanne;Zwergbuchs-Fichtenwald mit Hainlattich und Tanne;Zwergbuchs-Fi-Wald mit Hainlattich und Tanne;Pessière à  Polygala petit buis avec Aposéris et Sapin;;;;;;;;;Y;Y;;;;;x;;53ATa;"Zwergbuchs-Fichten-Wald mit Hainlattich; mit Tanne";53ATa;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;"Neues Anforderungsprofil. Verjüngung auf Moderholz und Mineralerde; Keine Verjüngung unter Schirm. Viel Sonne kein Problem; recht verjüngungsgünstig. ";keine Zuordung möglich;
+53.1;53*    ;Y;Erico-Piceetum typicum;Erika-Fichtenwald;Erika-Fi-Wald;Pessière à  Bruyère;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;53Stern;Erika-Fichtenwald;53*;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;53*;;53*;"Ohne Tanne; hochmontan"
+53.1000002;53*Ta  ;Y;Erico-Piceetum typicum mit Tanne;Erika-Fichtenwald mit Tanne;Erika-Fi-Wald mit Tanne;Pessière à  Bruyère avec Sapin;;;;;;;;;Y;Y;;;;;x;;53SternTa;Erika-Fichtenwald mit Ta;53*Ta;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;;;53*;"Mit Tanne; hochmontan"
+53.100001;53*s   ;Y;"Erico-Piceetum typicum; subalpine Ausbildung";"Erika-Fichtenwald; subalpine Ausbildung";"Erika-Fi-Wald; subalpine Ausbildung";"Pessière à  Bruyère; variante subalpine";;;;;;;;;;;;;;;x;;53Sterns;"Erika-Fichtenwald; subalpine Ausbildung";53*s;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;"neues Anforderungsprofil ähnlich wie 53*; aber Bergföhre anstatt Waldföhre";53* ;"Subalpin. Keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+53.1000011;53*sLä;Y;"Erico-Piceetum typicum; subalpine Lärchenausbildung";"Erika-Fichtenwald; subalpine Lärchenausbildung";"Erika-Fi-Wald; subalpine Lärchenausbildung";"Pessière à  Bruyère; variante subalpine à  Mélèze dominant ";;;;;;;;;;;;;;;x;;53SternsL;"Erika-Fichtenwald; subalpine Lärchenausbildung";53*s;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;"neues Anforderungsprofil ähnlich wie 53*; aber Bergföhre anstatt Waldföhre";53* ;"Subalpin. Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+54;54;Y;Melico-Piceetum typicum;Typischer Perlgras-Fichtenwald;Typischer Perlgras-Fi-Wald;Pessière à  Mélique typique;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;54;Typischer Perlgras-Fichtenwald;54 54A 55;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;54 55;;54;ohne Clemaits alpina
+54.00001;54A    ;Y;Melico-Piceetum atragenetosum;Perlgras-Fichtenwald mit Atragene;Perlgras-Fi-Wald mit Atragene;Pessière à  Mélique avec Clématite des Alpes;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;54A;Perlgras-Fichtenwald mit Atragene;54 54A 55;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;;;54;mit Clematis alpina
+55;55;Y;Veronico latifoliae-Piceetum;Ehrenpreis-Fichtenwald;Ehrenpreis-Fi-Wald;Pessière à  Véronique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;55;Ehrenpreis-Fichtenwald;54 54A 55;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;54 55;;55;"Keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+55.0000001;55Lä  ;Y;"Veronico latifoliae-Piceetum; Lärchenausbildung";"Ehrenpreis-Fichtenwald; Lärchenausbildung";"Ehrenpreis-Fi-Wald; Lärchenausbildung";"Pessière à  Véronique; variante à  Mélèze dominant";;;;;;;;;;;;;;;x;;55Lae;"Ehrenpreis-Fichtenwald; Lärchenausbildung";55Lä;FIHM;Fichte hochmontan mittel;Fichtendominierte Wälder hochmontan;;;55;"Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+55.1;55*    ;Y;Luzulo niveae-Piceetum;Schneesimsen-Fichtenwald;Schneesimsen-Fi-Wald;Pessière à  Luzule blanc-de-neige;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;55Stern;Schneesimsen-Fi-Wald;55*;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;55*;;55*;"Ohne Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+55.1000001;55*Lä ;Y;"Luzulo niveae-Piceetum; Lärchenausbildung";"Schneesimsen-Fichtenwald; Lärchenausbildung";"Schneesimsen-Fi-Wald; Lärchenausbildung";"Pessière à  Luzule blanc-de-neige; variante à  Mélèze dominant";;;;;;;;;;;;;;;x;;55SternLa;Schneesimsen-Fi-Wald mit Lärche;55*Lä;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;;;55* ;"Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+55.1000002;55*Ta  ;Y;Luzulo niveae-Piceetum mit Tanne;Schneesimsen-Fichtenwald mit Tanne;Schneesimsen-Fi-Wald mit Tanne;Pessière à  Luzule blanc-de-neige avec Sapin;;;;;;;;;Y;Y;;;;;x;;55SternTa;Schneesimsen-Fi-Wald mit Tanne;55*Ta;FIHT;Fichte hochmontan trocken;Fichtendominierte Wälder hochmontan;;;55*;"Mit Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+56;56;Y;Sphagno-Piceetum;Moorrand-Fichtenwald;Moorrand-Fi-Wald;Pessière à  Sphaignes typique;;x;;;Y;;Y;;Y;;Y;;;;x;x;56;Moorrand-Fichtenwald;56;M;Moor;Moorwälder;e;;56;
+57.000002;57Bl   ;Y;"Homogyno-Piceetum; Blockausbildung";"Alpenlattich-Fichtenwald; Blockausbildung";"Alpenlattich-Fi-Wald; Blockausbildung";"Pessière à  Homogyne typique; var. à  gros blocs";;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;57Bl;"Alpenlattich-Fichtenwald; Blockausbildung";57Bl;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;57Bl;;57;"Mit Blockschutt; ohne Tanne"
+57.0000022;57BlTa ;Y;"Homogyno-Piceetum; Blockausbildung mit Tanne";"Alpenlattich-Fichtenwald; Blockausbildung; mit Tanne";"Alpenlattich-Fi-Wald; Blockausbildung; mit Tanne";Pessière à  Homogyne typique sur gros blocs avec Sapin;;;;;;;;;Y;Y;;;;;x;;57BlTa;"Alpenlattich-Fichtnewald; Blockausbildung; mit Tanne";57BlTa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;57;"Mit Blockschutt; mit Tanne"
+57.00002;57C    ;Y;Homogyno-Piceetum calamagrostietosum villosae;Alpenlattich-Fichtenwald mit Wollreitgras;Alpenlattich-Fi-Wald mit Wollreitgras;Pessière à  Homogyne avec Calamagrostide velue;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;57C;Alpenlattich-Fichtenwald mit Wollreitgras;57C 57V 57VM;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;57V 57C;;57;"Calamagrostis villosa dominiert; ohne Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+57.0000201;57CLä ;Y;"Homogyno-Piceetum calamagrostietosum villosae; Lärchenausbildung";"Alpenlattich-Fichtenwald mit Wollreitgras; Lärchenausbildung";"Alpenlattich-Fi-Wald mit Wollreitgras; Lärchenausbildung";"Pessière à  Homogyne avec Calamagrostide velue; variante à  Mélèze dominant";;;;;;;;;Y;Y;;;;;x;;57CLae;Alpenlattich-Fichtenwald mit Wollreitgras mit Lärche;57CLä 57VLä;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;57;"Calamagrostis villosa dominiert; Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+57.0000202;57CTa  ;Y;Homogyno-Piceetum calamagrostietosum villosae mit Tanne;Alpenlattich-Fichtenwald mit Wollreitgras und Tanne;Alpenlattich-Fi-Wald mit Wollreitgras und Tanne;Pessière à  Homogyne avec Calamagrostide velue et Sapin;;;;;;;;;Y;Y;;;;;x;;57CTa;Alpenlattich-Fichtenwald mit Wollreitgras und Tanne;57CTa 57VTa;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;57;"Calamagrostis villosa dominiert; mit Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+57.00007;57M    ;Y;Homogyno-Piceetum melampyretosum sylvatici;Alpenlattich-Fichtenwald mit Waldwachtelweizen;Alpenlattich-Fi-Wald mit Waldwachtelweizen;Pessière à  Homogyne avec Mélampyre;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;57M;Alpenlattich-Fichtenwald mit Waldwachtelweizen;57M;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;57M;;57;Mit Waldwachtelweizen
+57.00012;57S    ;Y;Homogyno-Piceetum sphagnetosum;Alpenlattich-Fichtenwald mit Torfmoos;Alpenlattich-Fi-Wald mit Torfmoos;Pessière à  Homogyne avec Sphaignes;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;57S;Alpenlattich-Fichtenwald mit Torfmoos;57S;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;57S;;57;"Mit Sphagnum; ohne Tanne"
+57.0001202;57STa  ;Y;Homogyno-Piceetum sphagnetosum mit Tanne;Alpenlattich-Fichtenwald mit Torfmoos und Tanne;Alpenlattich-Fi-Wald mit Torfmoos und Tanne;Pessière à  Homogyne avec Sphaignes et Sapin;;;;;;;;;Y;Y;;;;;x;;57STa;Alpenlattich-Fichtenwald mit Torfmoos und Tanne;57STa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;57;"Mit Sphagnum; mit Tanne"
+57.00014;57V    ;Y;Homogyno-Piceetum vaccinietosum myrtilli;Alpenlattich-Fichtenwald mit Heidelbeere;Alpenlattich-Fi-Wald mit Heidelbeere;Pessière à  Homogyne avec Myrtille;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;57V;Alpenlattich-Fichtenwald mit Heidelbeere;57C 57V 57VM;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;57V 57C;;57;"Vaccinium myrtillus dominiert; ohne Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+57.0001401;57VLä ;Y;"Homogyno-Piceetum vaccinietosum myrtilli; Lärchenausbildung";"Alpenlattich-Fichtenwald mit Heidelbeere; Lärchenausbildung";"Alpenlattich-Fi-Wald mit Heidelbeere; Lärchenausbildung";"Pessière à  Homogyne avec Myrtille; variante à  Mélèze dominant";;;;;;;;;Y;Y;;;;;x;;57VLae;Alpenlattich-Fichtenwald mit Heidelbeere mit Lärche;57CLä 57VLä;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;57;"Vaccinium myrtillus dominiert; Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+57.0001402;57VTa  ;Y;Homogyno-Piceetum vaccinietosum myrtilli mit Tanne;Alpenlattich-Fichtenwald mit Heidelbeere und Tanne;Alpenlattich-Fi-Wald mit Heidelbeere und Tanne;Pessière à  Homogyne typique avec Sapin;;;;;;;;;Y;Y;;;;;x;;57VTa;Alpenlattich-Fichtenwald mit Heidelbeere und Tanne;57CTa 57VTa;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;57;"Vaccinium myrtillus dominiert; mit Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+57.00018;57VM   ;Y;Homogyno-Piceetum valerianetosum montanae;Alpenlattich Fichtenwald mit Bergbaldrian;Alpenlattich Fi-Wald mit Bergbaldrian;Pessière à  Homogyne avec Valériane;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;57VM;Alpenlattich Fichtenwald mit Bergbaldrian;57C 57V 57VM;FISMOM;Fichte subalpin Moderholz mittel;Fichtendominierte Wälder subalpin;;;57;Mit Valeriana montana
+58;58;Y;Larici-Piceetum typicum;Typischer Preiselbeer-Fichtenwald;Typischer Preiselbeer-Fi-Wald;Pessière à  Airelle typique;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;58;Typischer Preiselbeer-Fi-Wald;58;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;58;;58;"Ohne Blockschutt; ohne Laserpitium halleri; ohne anstehendem Fels; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+58.0000001;58Lä  ;Y;"Larici-Piceetum typicum; Lärchenausbildung";"Typischer Preiselbeer-Fichtenwald; Lärchenausbildung";"Typischer Preiselbeer-Fi-Wald; Lärchenausbildung";Pessière à  Airelle typique avec Mélèze;;;;;;;;;Y;Y;;;;;x;;58Lae;Typischer Preiselbeer-Fi-Wald mit Lärche;58Lä;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;58;"Ohne Blockschutt; ohne Laserpitium halleri; Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+58.000002;58Bl   ;Y;"Larici-Piceetum typicum; Blockausbildung";"Preiselbeer-Fichtenwald; Blockausbildung";"Preiselbeer-Fi-Wald; Blockausbildung";Pessière à  Airelle sur gros blocs;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;58Bl;"Preiselbeer-Fichtenwald; Blockausbildung";58Bl;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;"kein Anforderungsprofil; da keine Pflegeeingriffe notwendig";58;Mit Blockschutt
+58.000003;58Fe   ;Y;"Larici-Piceetum typicum; Ausbildung auf Fels";Typischer Preiselbeer-Fichtenwald auf Fels;Typischer Preiselbeer-Fi-Wald auf Fels;Pessière à  Airelle typique sur rochers;;;;;;;;;;;;;;;x;;58Fe;Alpenlattich-Fichtenwald mit Wollreitgras mit Lärche;58;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;58;"Ohne Blockschutt; ohne Laserpitium halleri; mit anstehendem Fels;  keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+58.00002;58C    ;Y;Larici-Piceetum calamagrostietosum villosae;Preiselbeer-Fichtenwald mit Wollreitgras;Preiselbeer-Fi-Wald mit Wollreitgras;Pessière à  Airelle avec Calamagrostide velue;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;58C;Preiselbeer-Fi-Wald mit Wollreitgras;58C;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;58C;;58;"Ohne Blockschutt; mit viel Calamagrostis villosa"
+58.00006;58L    ;Y;Larici-Piceetum laserpitietosum halleri;Preiselbeer-Fichtenwald mit Laserkraut;Preiselbeer-Fi-Wald mit Laserkraut;Pessière à  Airelle avec Laser;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;58L;Preiselbeer-Fi-Wald mit Laserkraut;58L;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;58L;;58;"Ohne Blockschutt; mit Laserpitium halleri; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+58.0000601;58LLä ;Y;"Larici-Piceetum laserpitietosum halleri; Lärchenausbildung";"Preiselbeer-Fichtenwald mit Laserkraut; Lärchenausbildung";"Preiselbeer-Fi-Wald mit Laserkraut; ; Lärchenausbildung";"Pessière à  Airelle avec Laser; variante à  Mélèze dominant";;;;;;;;;;;;;;;x;;58LLae;Preiselbeer-Fi-Wald mit Laserkraut mit Lärche;58LLä;FISMI;Fichte subalpin Mineralderde;Fichtendominierte Wälder subalpin;;;58;"Ohne Blockschutt; mit Laserpitium halleri; Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+59;59;Y;Larici-Pinetum cembrae typicum;Lärchen-Arvenwald mit Alpenrose;Lärchen-Arvenwald mit Alpenrose;Arolière à  Rhododendron;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;59;Lärchen-Arvenwald mit Alpenrose;59 59V;LAAV;Lärche-Arve;Arven- und Lärchenwälder;59 59V;;59 Larici-Pinetum cembrae ;"Ohne Laserpitium halleri; Rhododendron ferrugineum dominiert; keine Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+59.0000001;59Lä  ;Y;"Larici-Pinetum cembrae typicum; Lärchenausbildung";"Lärchen-Arvenwald mit Alpenrose; Lärchenausbildung";"Lärchen-Arvenwald mit Alpenrose; Lärchenausbildung";"Arolière à  Rhododendron; variante à  Mélèze dominant";;;;;;;;;Y;Y;;;;;x;;59Lae;Lärchen-Arvenwald mit Alpenrose mit Lärche;59Lä 59VLä;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;59 Larici-Pinetum cembrae ;"Ohne Laserpitium halleri; Rhododendron ferrugineum dominiert; Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+59.00001;59A    ;Y;Adenostylo-Laricetum;Hochstauden-Lärchenwald;Hochstauden-Lärchenwald;Mélézin à  Adénostyle;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;59A;Hochstauden-Lärchenwald;59A;LAE;Lärche ;Arven- und Lärchenwälder;e;;59 Adenostylo-Laricetum ;
+59.00002;59C    ;Y;Cotoneastro-Pinetum cembrae;Steinmispel-Arvenwald;Steinmispel-Arvenwald;Arolière à  Cotonéaster;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;59C;Steinmispel-Arvenwald;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;e;;59*;
+59.00004;59E    ;Y;Larici- Pinetum cembrae ericetosum;Lärchen-Arvenwald mit Erika;Lärchen-Arvenwald mit Erika;Arolière à  Bruyère;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;59E;Lärchen-Arvenwald mit Erika;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;e;;keine Zuordung möglich;
+59.0000401;59ELä ;Y;"Larici- Pinetum cembrae ericetosum; Lärchenausbildung";"Lärchen-Arvenwald mit Erika; Lärchenausbildung";"Lärchen-Arvenwald mit Erika; Lärchenausbildung";"Arolière à  Bruyère; variante à  Mélèze dominant";;;;;;;;;;;;;;;x;;59ELae;"Lärchen-Arvenwald mit Erika; Lärchenausbildung";59ELä;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;keine Zuordung möglich;
+59.00005;59J    ;Y;Junipero-Laricetum;Wacholder-Lärchenwald;Wacholder-Lärchenwald;Mélézin à  Genévrier;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;59J;Wacholder-Lärchenwald;59J 59S;LAE;Lärche ;Arven- und Lärchenwälder;59J;;59**;
+59.00006;59L    ;Y;Larici-Pinetum cembrae laserpitietosum halleri;Lärchen-Arvenwald mit Laserkraut;Lärchen-Arvenwald mit Laserkraut;Arolière à  Laser;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;59L;Lärchen-Arvenwald mit Laserkraut;59L;LAAV;Lärche-Arve;Arven- und Lärchenwälder;59L;;59 Larici-Pinetum cembrae ;"Mit Laserpitium halleri; keine Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+59.0000601;59LLä ;Y;"Larici-Pinetum cembrae laserpitietosum halleri; Lärchenausbildung";"Lärchen-Arvenwald mit Laserkraut; Lärchenausbildung";"Lärchen-Arvenwald mit Laserkraut; Lärchenausbildung";"Arolière à  Laser; variante à  Mélèze dominant";;;;;;;;;;;;;;;x;;59LLae;Lärchen-Arvenwald mit Laserkraut mit Lärche;59LLä;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;59 Larici-Pinetum cembrae ;"Mit Laserpitium halleri; Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+59.00012;59S    ;Y;Seslerio-Laricetum;Blaugras-Lärchenwald;Blaugras-Lärchenwald;Mélézin à  Seslérie;;;;x;;;;;Y;;;;;;x;;59S;Blaugras-Lärchenwald;59J 59S;LAE;Lärche ;Arven- und Lärchenwälder;;Anfoderungsprofil wie 59J ;59 Seslerio-Laricetum ;
+59.00014;59V    ;Y;Larici-Pinetum cembrae vaccinietosum myrtilli;Lärchen-Arvenwald mit Heidelbeere;Lärchen-Arvenwald mit Heidelbeere;Arolière à  Myrtille;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;59V;Lärchen-Arvenwald mit Heidelbeere;59 59V;LAAV;Lärche-Arve;Arven- und Lärchenwälder;59 59V;;59 Larici-Pinetum cembrae ;"Ohne Laserpitium halleri; Vaccinium myrtillus dominiert; keine Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+59.0001401;59VLä ;Y;"Larici-Pinetum cembrae vaccinietosum myrtilli; Lärchenausbildung";"Lärchen-Arvenwald mit Heidelbeere; Lärchenausbildung";"Lärchen-Arvenwald mit Heidelbeere; Lärchenausbildung";" Arolière à  Myrtille; variante à  Mélèze dominant";;;;;;;;;Y;Y;;;;;x;;59VLae;Lärchen-Arvenwald mit Heidelbeere mit Lärche;59Lä 59VLä;LAAV;Lärche-Arve;Arven- und Lärchenwälder;;;59 Larici-Pinetum cembrae ;"Ohne Laserpitium halleri; Vaccinium myrtillus  dominiert; Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+59.00016;59H    ;Y;Larici-Pinetum cembrae rhododendretosum hirsuti;Lärchen-Arvenwald mit Steinrose;Lärchen-Arvenwald mit Steinrose;Arolière à  Rhododendron cilié;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;59H;Lärchen-Arvenwald mit Steinrose;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;keine Zuordung möglich;
+59.00018;59R    ;Y;Larici-Pinetum cembrae rumicetosum scutati;Lärchenwald mit schildblättriger Ampfer;Lärchenwald mit schildblättriger Ampfer;Mélézin à  Rumex à  écussons;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;59R;Lärchenwald mit schildblättriger Ampfer;59R;LAE;Lärche ;Arven- und Lärchenwälder;;"kein Anforderungsprofil; da keine Pflegeeingriffe notwendig";keine Zuordung möglich;
+59.1;59*    ;Y;Rhododendro ferruginei-Laricetum;Alpenrosen-Lärchenwald;Alpenrosen-Lärchenwald;Mélézin à  Rhododendron;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;59Stern;Alpenrosen-Lärchenwald;59*;LAAV;Lärche-Arve;Arven- und Lärchenwälder;59*;;59 Rhododendro ferruginei-Laricetum ;
+60;60;Y;Adenostylo-Piceetum typicum;Typischer Hochstauden-Fichtenwald;Typischer Hochstauden-Fi-Wald;Pessière à  hautes herbes typique ;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;60;Typischer Hochstauden-Fichtenwald;60 60A;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;60 60A;;60;"Ohne Nässezeiger; Athyrium distentifolium dominiert nicht; ohne Tanne;  keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.0000001;60Lä  ;Y;"Adenostylo-Piceetum typicum; Lärchenausbildung";"Typischer Hochstauden-Fichtenwald; Lärchenausbildung";"Typischer Hochstauden-Fi-Wald; Lärchenausbildung";Pessière à  hautes herbes typique avec Mélèze;;;;;;;;;Y;Y;;;;;x;;60Lae;Typischer Hochstauden-Fichtenwald mit Lärche;60Lä 60ALä;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;60;"Ohne Nässezeiger; Athyrium distentifolium dominiert nicht; Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.0000002;60Ta   ;Y;Adenostylo-Piceetum typicum mit Tanne;Typischer Hochstauden-Fichtenwald mit Tanne;Typischer Hochstauden-Fi-Wald mit Tanne;Pessière à  hautes herbes typique avec Sapin;;;;;;;;;Y;Y;;;;;x;;60Ta;Typischer Hochstauden-Fichtenwald mit Tanne;60Ta 60ATa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;60;"Ohne Nässezeiger; Athyrium distentifolium dominiert nicht; mit Tanne;  keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.00001;60A    ;Y;Adenostylo-Piceetum athyrietosum distentifolii;Hochstauden-Fichtenwald mit Alpenwaldfarn;Hochstauden-Fi-Wald mit Alpenwaldfarn;Pessière à  hautes herbes avec Fougère alpestre;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;60A;Hochstauden-Fichtenwald mit Alpenwaldfarn;60 60A;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;60 60A;;60;"Ohne Nässezeiger; Athyrium distentifolium dominiert; ohne Tanne;  keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.0000101;60ALä ;Y;"Adenostylo-Piceetum athyrietosum distentifolii; Lärchenausbildung";"Hochstauden-Fichtenwald mit Alpenwaldfarn; Lärchenausbildung";"Hochstauden-Fi-Wald mit Alpenwaldfarn; Lärchenausbildung";"Pessière à  hautes herbes avec Fougère alpestre; variante à  Mélèze dominant";;;;;;;;;Y;Y;;;;;x;;60ALae;Hochstauden-Fichtenwald mit Alpenwaldfarn und Lärche;60Lä 60ALä;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;60;"Ohne Nässezeiger; Athyrium distentifolium dominiert; Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.0000102;60ATa  ;Y;Adenostylo-Piceetum athyrietosum distentifolii mit Tanne;Hochstauden-Fichtenwald mit Alpenwaldfarn und Tanne;Hochstauden-Fi-Wald mit Alpenwaldfarn und Tanne;Pessière à  hautes herbes avec Fougère alpestre et Sapin;;;;;;;;;Y;Y;;;;;x;;60ATa;Hochstauden-Fichtenwald mit Alpenwaldfarn und Tanne;60Ta 60ATa;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;;;60;"Ohne Nässezeiger; Athyrium distentifolium dominiert; mit Tanne;  keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.00004;60E    ;Y;Adenostylo-Piceetum equisetetosum silvaticae;Hochstauden-Fichtenwald mit Schachtelhalm;Hochstauden-Fi-Wald mit Schachtelhalm;Pessière à  hautes herbes avec Prêle;;x;;;Y;;Y;;Y;;Y;;;;x;x;60E;Hochstauden-Fichtenwald mit Schachtelhalm;60E;FISMOF;Fichte subalpin Moderholz feucht;Fichtendominierte Wälder subalpin;60E;;60;"Mit Nässezeigern; ohne Tanne"
+60.1;60*    ;Y;Calamagrostio variae-Piceetum;Buntreitgras-Fichtenwald;Buntreitgras-Fi-Wald;Pessière à  Calamagrostide bigarrée;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;60Stern;Buntreitgras-Fi-Wald;60*;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;60*;;60*;"Ohne Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.1000001;60*Lä ;Y;"Calamagrostio variae-Piceetum; Lärchenausbildung";"Buntreitgras-Fichtenwald; Lärchenausbildung";"Buntreitgras-Fi-Wald; Lärchenausbildung";Pessière à  Calamagrostide bigarrée avec Mélèze;;;;;;;;;Y;Y;;;;;x;;60SternLa;Buntreitgras-Fi-Wald mit Lärche;60*Lä;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;60* ;"Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+60.1000002;60*Ta  ;Y;Calamagrostio variae-Abieti-Piceetum;Buntreitgras-Tannen-Fichtenwald ;Buntreitgras-Ta-Fi-Wald ;Pessière à  Calamagrostide bigarrée avec Sapin;;;;;;;;;Y;Y;;;;;x;;60SternTa;Buntreitgras-Fi-Wald mit Tanne;60*Ta;FISB;Fichte subalpin basisch;Fichtendominierte Wälder subalpin;;;60*;"Mit Tanne; keine Schneebewegungen vorhanden; die das Aufkommen von Fichten verhindern."
+61;61;Y;Molinio-Pinetum sylvestris;Pfeifengras-Föhrenwald;Pfeifengras-Föhrenwald;Pineraie à  Molinie;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;61;Pfeifengras-Föhrenwald;61;FOB;Föhre basisch;Waldföhrenwälder;e;;61;
+62;62;Y;Cephalanthero-Pinetum sylvestris;Orchideen-Föhrenwald;Orchideen-Föhrenwald;Pineraie à  Orchidées;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;62;Orchideen-Föhrenwald;62;FOB;Föhre basisch;Waldföhrenwälder;62;;62;
+65;65;Y;Erico- / Coronillo-Pinetum sylvestris;Erika-/Strauchwicken-Föhrenwald;Erika-/Strauchwicken-Föhrenwald;Pineraie à  Bruyère;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;65;Erika-/Strauchwicken-Föhrenwald;65;FOB;Föhre basisch;Waldföhrenwälder;65;;"65 Coronillo-Pinetum; 65 Erico-Pinetum; 65 Fraxino-Pinetum ";
+65.1;65*    ;Y;Ononido-Pinetum sylvestris;Hauhechel-Föhrenwald;Hauhechel-Föhrenwald;Pineraie à  Bugrane;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;65Stern;Hauhechel-Föhrenwald;65*;FOB;Föhre basisch;Waldföhrenwälder;65*;;"65* Odontito-Pinetum; 65* Ononido-Pinetum ";
+66;66;Y;Pyrolo- und Ligustro-Pinetum;Wintergrün- und Liguster-Föhrenwald;Wintergrün- und Liguster-Föhrenwald;Pineraie à  Pyrole et Troène;;;x;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;66;Wintergrün- und Liguster-Föhrenwald;66;FOB;Föhre basisch;Waldföhrenwälder;;;66;
+66.0001;66PM   ;Y;Pyrolo-Pinetum montanae;Bergföhren-Auenwald;Bergföhren-Auenwald;Pineraie de montagne riveraine;;;;;;;;;;;;;;;x;;66PM;Bergföhren-Auenwald;66PM;BFO;Bergföhre;Bergföhrenwälder;;;keine Zuordung möglich;
+67;67;Y;Erico-Pinetum montanae;Erika-Bergföhrenwald;Erika-Bergföhrenwald;Pineraie de montagne à  Bruyère;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;67;Erika-Bergföhrenwald;67 69 70;BFO;Bergföhre;Bergföhrenwälder;e;;67;Mit aufrechten Bergföhren
+67.1;67*    ;Y;Carici humilis Pinetum sylvestris;Erdseggen-Föhrenwald;Erdseggen-Föhrenwald;Pineraie de montagne à  Laiche humble;;;;;;;;;;;;;;;x;;67Stern;Erdseggen-Föhrenwald;67*;FOB;Föhre basisch;Bergföhrenwälder;;neues Anforderungsprofil weniger Laubbäume als 65;67*  ;
+68;68;Y;Calluno-Pinetum sylvestris;Besenheide-Föhrenwald;Besenheide-Föhrenwald;Pineraie à  Callune;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;68;Besenheide-Föhrenwald;68;FOS;Föhre sauer;Waldföhrenwälder;68;;68;
+68.1;68*    ;Y;Vaccinio vitis-idaeae-Pinetum sylvestris;Preiselbeer-Föhrenwald;Preiselbeer-Föhrenwald;Pineraie à  Airelle;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;68Stern;Preiselbeer-Föhrenwald;68*;FOS;Föhre sauer;Waldföhrenwälder;68*;;"68*; 68**";
+69;69;Y;Rhododendro hirsuti-Pinetum montanae;Steinrosen-Bergföhrenwald;Steinrosen-Bergföhrenwald;Pineraie de montagne à  Rhododendron cilié;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;69;Steinrosen-Bergföhrenwald;67 69 70;BFO;Bergföhre;Bergföhrenwälder;e;;69;Mit aufrechten Bergföhren
+70;70;Y;Rhododendro ferruginei-Pinetum montanae;Alpenrosen-Bergföhrenwald;Alpenrosen-Bergföhrenwald;Pineraie de montagne à  Rhododendron ferrugineux;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;70;Alpenrosen-Bergföhrenwald;67 69 70;BFO;Bergföhre;Bergföhrenwälder;e;;70;Mit aufrechten Bergföhren
+71;71;Y;Sphagno-Pinetum montanae;Torfmoos-Bergföhrenwald;Torfmoos-Bergföhrenwald;Pineraie de montagne à  sphaignes;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;;71;Torfmoos-Bergföhrenwald;71;M;Moor;Moorwälder;e;;71;Mit aufrechten Bergföhren
+72;72;Y;Sphagno-Pinetum cembrae;Nordalpen-Arvenwald;Nordalpen-Arvenwald;Arolière des Alpes du Nord;;x;;;Y;Y;Y;Y;Y;Y;Y;Y;;;x;x;72;Nordalpen-Arvenwald;59C 59E 59H 72;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;e;;72;"keine Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+72.0000001;72Lä  ;Y;"Sphagno-Pinetum cembrae; Lärchenausbildung";"Nordalpen-Arvenwald; Lärchenausbildung";"Nordalpen-Arvenwald; Lärchenausbildung";Arolière des Alpes du Nord avec Mélèze;;;;;;;;;Y;Y;;;;;x;;72Lae;Nordalpen-Arvenwald mit Lärche;72Lä;LAAVE;Lärche-Arve extrem;Arven- und Lärchenwälder;;;72;"Schneebewegungen vorhanden; die das Aufkommen von Arven verhindern."
+91;91;Y;Chelidonio-Robinion;Robinienwälder sauer;Robinienwälder sauer;Forêt de Robinier;;x Rob;;;Y;;;;Y;;Y;;;;x;;91;Robinienwälder sauer;91;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;Rob;Rob;keine Zuordung möglich;
+92.001;92a    ;Y;;"sonstige Neophytenwälder (Späte Traubenkirsche; Götterbaum; etc.) azonal";sonstige Neophytenwälder azonal;"autres forêts de néophytes (cerisier tardif; ailanthe etc.); azonales";;;;x;;;;;Y;;;;;;x;;92a;"sonstige Neophytenwälder (Späte Traubenkirsche; Ailanthus; etc.) azonal";92a 92z;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;;Neues Anforderungsprofil 92z 92a;keine Zuordung möglich;
+92.018;92z    ;Y;;"sonstige Neophytenwälder (Späte Traubenkirsche; Götterbaum; etc.) zonal";sonstige Neophytenwälder zonal;"autres forêts de néophytes (cerisier tardif; ailanthe etc.); zonales";;;;x;;;;;Y;;;;;;x;;92z;"sonstige Neophytenwälder (Späte Traubenkirsche; Ailanthus; etc.) zonal";92a 92z;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;;Neues Anforderungsprofil 92z 92a;keine Zuordung möglich;
+93;93;Y;Lauretum insubricum s. l. ;Insubrische Laurisilven (Immergrüne Laubwälder);Insubrische Laurisilven;Laurisylves insubriennes;;;;x;;;;;Y;;;N;;;x;;93;Insubrische Laurisilven (Immergrüne Laubwälder);93;LSM;Laub Süd mittel;Mesophile Laubwälder Insubriens;;Neues Anforderungsprofil 93;keine Zuordung möglich;
+1001;1G     ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1001.009;1hG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1003;3G     ;Y;"Luzulo niveae-Fagetum typicum; Gebüschvariante";"Typischer Schneesimsen-Buchenwald; Gebüschvariante";"Typischer Schneesimsen-Bu-Wald; Gebüschvariante";"Hêtraie à  Luzule blanc-de-neige typique; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1003.000001;3sG    ;Y;"Luzulo niveae-Fagetum; trockene Ausbildung; Gebüschvariante";"Trockener Schneesimsen-Buchenwald; Gebüschvariante";"Trockener Schneesimsen-Bu-Wald; Gebüschvariante";"Hêtraie à  Luzule blanc-de-neige sur sol sec; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1003.00015;3LVG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1003.01;3L/4LG ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1003.1;3*G    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1004;4G     ;Y;"Luzulo niveae-Fagetum dryopteridetosum; Gebüschvariante";"Farnreicher Schneesimsen-Buchenwald; Gebüschvariante";"Farnreicher Schneesimsen-Bu-Wald; Gebüschvariante";"Hêtraie à  Luzule blanc-de-neige riche en fougères; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1004.1;4*G    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1006;6G     ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1006.000003;6FeG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1007.00012;7SG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1007.000123;7SFeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1007.001;7aG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1007.001003;7aFeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1007.1;7*G    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1008.00012;8SG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1008.000123;8SFeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1008.001;8aG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1008.001003;8aFeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1008.004;8dG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1008.004003;8dFeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1008.1;8*G    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1009.001;9aG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1009.001003;9aFeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1009.014;9wG    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1010.001;10aG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1010.014;10wG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1011;11G    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1011.000003;11FeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1012.00012;12SG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1012.000123;12SFeG ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1012.001;12aG   ;Y;"Mercuriali-/Cardamino-Fagetum typicum; Gebüschvariante";"Typischer Bingelkraut-/Zahnwurz-Buchenwald; Gebüschvariante";"Typischer Bingelkraut-/Zahnwurz-Bu-Wald; Gebüschvariante";"Hêtraie à  Dentaire typique; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1012.001003;12aFeG ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1012.005;12eG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1012.014;12wG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1012.1;12*G   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1012.109;12*hG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1013.001;13aG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1013.001003;13aFeG ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1013.005;13eG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1013.006;13ehG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1013.009;13hG   ;Y;"Adenostylo-Fagetum typicum; Gebüschvariante";"Typischer Alpendost-Buchenwald; Gebüschvariante";"Typischer Alpendost-Bu-Wald; Gebüschvariante";"Hêtraie à  Adénostyle typique; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1013.1;13*G   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1014;14G    ;Y;"Carici (albae)-Fagetum typicum; Gebüschvariante";"Seggen-Buchenwald mit Weissegge; Gebüschvariante";"Seggen-Bu-Wald mit Weissegge; Gebüschvariante";"Hêtraie à  Laiche typique; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1014.1;14*G   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1015;15G    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1016;16G    ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1016.1;16*G   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1017;17G    ;Y;"Taxo-Fagetum / Seslerio-Fagetum calamagrostietosum variae; Gebüschvariante";"Eiben-Buchenwald/Steilhang-Buchenwald mit Reitgras; Gebüschvariante";"Eiben-Bu-Wald/Steilhang-Bu-Wald mit Reitgras; Gebüschvariante";"Hêtraie à  If / Hêtraie de pente à  Calamagrostide; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1018;18G    ;Y;"Festuco-Abieti-Fagetum; Gebüschvariante";"Waldschwingel-Tannen-Buchenwald; Gebüschvariante";"Waldschwingel-Ta-Bu-Wald; Gebüschvariante";"Hêtraie à  Sapin typique; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1018.000003;18FeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1018.00007;18MG   ;Y;"Adenostyle glabrae-Abieti-Fagetum typicum; Gebüschvariante";"Typischer Karbonat-Tannen-Buchenwald; Gebüschvariante";"Typischer Karbonat-Ta-Bu-Wald; Gebüschvariante";"Hêtraie à  Sapin avec Adénostyle glabre; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1018.014;18wG   ;Y;"Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae; Gebüschvariante";"Typischer Buntreitgras-Tannen-Buchenwald; Gebüschvariante";"Typischer Buntreitgras-Ta-Bu-Wald; Gebüschvariante";"Hêtraie à  Sapin avec Calamagrostide bigarrée; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1018.015;18vG   ;Y;"Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae; Ausbildung mit Carex ferruginea; Gebüschvariante";"Buntreitgras-Tannen-Buchenwald mit Rostsegge; Gebüschvariante";"Buntreitgras-Ta-Bu-Wald mit Rostsegge; Gebüschvariante";"Hêtraie à  Sapin avec Calamagrostide bigarrée et Laiche ferrugineuse; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1018.1;18*G   ;Y;"Adenostyle glabrae-Abieti-Fagetum caricetosum albae; Gebüschvariante";"Karbonat-Tannen-Buchenwald mit Weissegge; Gebüschvariante";"Karbonat-Ta-Bu-Wald mit Weissegge; Gebüschvariante";"Hêtraie à  Sapin avec Laiche blanche; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1019;19G    ;Y;"Luzulo-Abieti-Fagetum typicum; Gebüschvariante";"Typischer Waldsimsen-Tannen-Buchenwald; Gebüschvariante";"Typischer Waldsimsen-Ta-Bu-Wald; Gebüschvariante";"Hêtraie à  Sapin avec Luzule des forêts; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1019.000003;19FeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1019.00006;19LG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1019.00021;19LPG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1019.001;19aG   ;Y;"Luzulo-Abieti-Fagetum calamagrostietosum arundinaceae; Gebüschvariante";"Waldsimsen-Tannen-Buchenwald mit Rohrreitgras; Gebüschvariante";"Waldsimsen-Ta-Bu-Wald mit Rohrreitgras; Gebüschvariante";"Hêtraie à  Sapin avec Luzule des forêts et Calamagrostide des forêts; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1019.007;19fG   ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1020;20G    ;Y;"Adenostylo alliariae-Abieti-Fagetum typicum; Gebüschvariante";"Hochstauden-Tannen-Buchenwald; Gebüschvariante";"Hochstauden-Ta-Bu-Wald; Gebüschvariante";"Hêtraie à  Sapin avec hautes herbes; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1020.000003;20FeG  ;;;;;;;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1020.00004;20EG   ;Y;"Adenostylo alliariae-Abieti-Fagetum hordelymetosum; Gebüschvariante";"Waldgersten-Tannen-Buchenwald; Gebüschvariante";"Waldgersten-Ta-Bu-Wald; Gebüschvariante";"Hêtraie à  Sapin avec Hordélyme d'Europe; variante buissonnante";;;;;;;;;;;;;;;;;;;FS;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1021;21G    ;Y;"Aceri-Fagetum; Gebüschvariante";"Ahorn-Buchenwald; Gebüschvariante";"Ahorn-Bu-Wald; Gebüschvariante";"Hêtraie à  Érable; variante buissonnante";;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1021.00006;21LG   ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1021.1;21*G   ;Y;"Alno viridi-Sorbetum aucupariae; Gebüschvariante";"Grünerlen-Vogelbeerwald; Gebüschvariante";"Grünerlen-Vogelbeerwald; Gebüschvariante";"Forêt de Sorbiers à  Aune vert; variante buissonnante";;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1022;22G    ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1022.000003;22FeG  ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1022.00001;22AG   ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1022.00002;22CG   ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1022.1;22*G   ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1023;23G    ;Y;"Sorbo-Aceretum; Gebüschvariante";"Mehlbeer-Ahornwald; Gebüschvariante";"Mehlbeer-Ahornwald; Gebüschvariante";"Erablaie à  Alisier; variante buissonnante";;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1023.000003;23FeG  ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1023.1;23*G   ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1024;24G    ;Y;"Ulmo-Aceretum asperuletosum taurinae; Gebüschvariante";"Ulmen-Ahornwald mit Turinermeister; Gebüschvariante";"Ulmen-Ahornwald mit Turinermeister; Gebüschvariante";"Erablaie à  Orme avec Aspérule de Turin; variante buissonnante";;;;;;;;;;;;;;;;;;"Ulmen-Ahornwald mit Turinermeister; Gebüschvariante";AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1024.1;24*G   ;Y;"Ulmo-Aceretum typicum; Gebüschvariante";"Typischer Ulmen-Ahornwald; Gebüschvariante";"Typischer Ulmen-Ahornwald; Gebüschvariante";"Erablaie à  Orme typique; variante buissonnante";;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1024.100003;24*FeG ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025;25G    ;Y;"Asperulo taurinae-Tilietum typicum; Gebüschvariante";"Typischer Turinermeister-Lindenwald; Gebüschvariante";"Typischer Turinermeister-Lindenwald; Gebüschvariante";"Tillaie à  Aspérule de Turin; variante buissonnante";;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1025.000003;25FeG  ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025.00017;25OG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025.001;25aG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025.002;25BG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025.005;25eG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025.007;25fG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025.017;25. Aug;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1025.1;25*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1026;26G    ;;;;;;;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1026.009;26hG   ;Y;"Aceri-Fraxinetum; Höhenausbildung; Gebüschvariante";"Ahorn-Eschenwald; Höhenausbildung; Gebüschvariante";"Ahorn-Eschenwald; Höhenausbildung; Gebüschvariante";"Frênaie à  Érable avec Adénostyle; variante buissonnante";;;;;;;;;;;;;;;;;;;AP;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1027;27G    ;Y;;"Bach-Eschenwald; Gebüschvariante";"Bach-Eschenwald; Gebüschvariante";"Frênaie à  Laiche; variante buissonnante";;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1027.00017;27OG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1027.009;27hG   ;Y;"Carici remotae-Fraxinetum; Ausbildung mit Petasites albus; Gebüschvariante";"Bach-Eschenwald; Höhenausbildung; ; Gebüschvariante";"Bach-Eschenwald; Höhenausbildung; Gebüschvariante";"Frênaie à  Laiche avec Adénostyle; variante buissonnante";;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1027.1;27*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1028;28G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1029;29G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1029.00001;29AG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1029.00002;29CG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1029.009;29hG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1030;30G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1031;31G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1032.00002;32CG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1032.00012;32SG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1032.00014;32VG   ;Y;"Violo-Alnetum incanae; Gebüschvariante";"Obermontaner Grauerlenwald; Gebüschvariante";"Obermontaner Grauerlenwald; Gebüschvariante";"Aunaie riveraine à  Pensée à  deux fleurs; variante buissonnante";;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1032.1;32*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1033.00014;33VG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1033.001;33aG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1033.002;33bG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1033.01;33mG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1034.001;34aG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1034.002;34bG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1034.1;34*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1035;35G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1035.00007;35MG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1035.00011;35QG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1035.00012;35SG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1035.001;35AG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1036;36G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1037;37G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1038;38G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1038.00012;38SG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1038.1;38*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1039;39G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1039.1;39*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1040.00008;40PG   ;Y;"Corylo-Populetum; Gebüschvariante";"Pionier-Aspen-Haselbuschwald; Gebüschvariante";"Pionier-Aspen-Haselbuschwald; Gebüschvariante";"Forêt pionnière de tremble et noisetier; variante buissonnante";;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+1040.000082;40PBlG ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1040.1;40*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1041;41G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1041.1;41*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1042.00002;42CG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1042.00011;42QG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1042.00014;42VG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1042.011;42rG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1042.012;42BG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1042.013;42tG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1043;43G    ;;;;;;;;;;;;;;;;;;;;;;;;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1043.00012;43SG   ;;;;;;;;;;;;;;;;;;;;;;;Weidengebüsch;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1043.1;43*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1044;44G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1045;45G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+1046;46G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1046.00007;46MG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1046.013;46tG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1046.1;46*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1047;47G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1047.00003;47DG   ;Y;"Calamagrostio-villosae-Abieti-Piceetum dryopteridetosum; Gebüschvariante";"Farnreicher Wollreitgras-Tannen-Fichtenwald; Gebüschvariante";"Farnreicher Wollreitgras-Ta-Fi-Wald; ; Gebüschvariante";"Pessière-Sapinière à  Calamagrostide velue riche en fougères; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1047.00007;47MG   ;Y;"Calamagrostio-villosae-Abieti-Piceetum melampyretosum; Gebüschvariante";"Wollreitgras-Tannen-Fichtenwald mit Wachtelweizen; Gebüschvariante";"Wollreitgras-Ta-Fi-Wald mit Wachtelweizen; Gebüschvariante";"Pessière-Sapinière à  Mélampyre; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1047.00016;47HG   ;Y;"Hypno-Piceetum; Gebüschvariante";"Zypressenschlafmoos-Fichtenwald; Gebüschvariante";"Zypressenschlafmoos-Fi-Wald; Gebüschvariante";"Pessière à  Hypne cyprès; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1047.1;47*G   ;Y;"Rhododendro-Abietetum; Gebüschvariante";"Alpenrosen-Lärchen-Tannenwald; Gebüschvariante";"Alpenrosen-Lärchen-Ta-Wald; Gebüschvariante";"Sapinière à  Mélèze avec Rhododendron; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1048;48G    ;Y;"Asplenio-Abieti-Piceetum; Gebüschvariante";"Blockschutt-Tannen-Fichtenwald; Gebüschvariante";"Blockschutt-Tannen-Fichtenwald; Gebüschvariante";"Pessière-Sapinière à  Asplénium sur gros blocs; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1049;49G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1049.1;49*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1050;50G    ;Y;"Adenostylo alliariae-Abieti-Piceetum typicum; Gebüschvariante";"Typischer Hochstauden-Tannen-Fichtenwald; Gebüschvariante";"Typischer Hochstauden-Ta-Fi-Wald; Gebüschvariante";"Pessière-Sapinière à  Adénostyle typique; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1050.000003;50FeG  ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1050.00008;50PG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1050.1;50*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1051;51G    ;Y;"Galio-Abieti-Piceetum typicum; Gebüschvariante";"Typischer Labkraut-Tannen-Fichtenwald; Gebüschvariante";"Typischer Labkraut-Ta-Fi-Wald; Gebüschvariante";"Pessière-Sapinière à  Gaillet typique; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1051.000003;51FeG  ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1051.00002;51CG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1052;52G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1052.00013;52TG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1053;53G    ;Y;"Polygalo chamaebuxi-Piceetum; Gebüschvariante";"Zwergbuchs-Fichtenwald; Gebüschvariante";"Zwergbuchs-Fi-Wald; Gebüschvariante";"Pessière à  Polygala petit buis; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1053;53TaG  ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1053.1;53*G   ;Y;"Erico-Piceetum typicum; Gebüschvariante";"Erika-Fichtenwald; Gebüschvariante";"Erika-Fi-Wald; Gebüschvariante";"Pessière à  Bruyère; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1054;54G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1055;55G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1055.1;55*G   ;Y;"Luzulo niveae-Piceetum; Gebüschvariante";"Schneesimsen-Fichtenwald; Gebüschvariante";"Schneesimsen-Fi-Wald; Gebüschvariante";"Pessière à  Luzule blanc-de-neige; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1056;56G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1057.000002;57BlG  ;Y;"Homogyno-Piceetum; Blockausbildung; Gebüschvariante";"Alpenlattich-Fichtenwald; Blockausbildung; Gebüschvariante";"Alpenlattich-Fi-Wald; Blockausbildung; Gebüschvariante";"Pessière à  Homogyne typique; var. à  gros blocs; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1057.00002;57CG   ;Y;"Homogyno-Piceetum calamagrostietosum villosae; Gebüschvariante";"Alpenlattich-Fichtenwald mit Wollreitgras; Gebüschvariante";"Alpenlattich-Fi-Wald mit Wollreitgras; Gebüschvariante";"Pessière à  Homogyne avec Calamagrostide velue; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1057.00007;57MG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1057.00012;57SG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1057.00014;57VG   ;Y;"Homogyno-Piceetum vaccinietosum myrtilli; Gebüschvariante";"Alpenlattich-Fichtenwald mit Heidelbeere; Gebüschvariante";"Alpenlattich-Fi-Wald mit Heidelbeere; Gebüschvariante";"Pessière à  Homogyne typique; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1058;58G    ;Y;"Larici-Piceetum typicum; Gebüschvariante";"Typischer Preiselbeer-Fichtenwald; Gebüschvariante";"Typischer Preiselbeer-Fi-Wald; Gebüschvariante";"Pessière à  Airelle typique; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1058.00002;58CG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1058.00006;58LG   ;Y;"Larici-Piceetum laserpitietosum halleri; Gebüschvariante";"Preiselbeer-Fichtenwald mit Laserkraut; Gebüschvariante";"Preiselbeer-Fi-Wald mit Laserkraut; Gebüschvariante";"Pessière à  Airelle avec Laser; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1059;59G    ;Y;"Larici-Pinetum cembrae typicum; Gebüschvariante";"Lärchen-Arvenwald mit Alpenrose; Gebüschvariante";"Lärchen-Arvenwald mit Alpenrose; Gebüschvariante";"Arolière à  Rhododendron; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1059.00001;59AG   ;Y;"Adenostylo-Laricetum; Gebüschvariante";"Hochstauden-Lärchenwald; Gebüschvariante";"Hochstauden-Lärchenwald; Gebüschvariante";"Mélézin à  Adénostyle; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1059.00002;59CG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1059.00004;59EG   ;Y;"Larici- Pinetum cembrae ericetosum; Gebüschvariante";"Lärchen-Arvenwald mit Erika; Gebüschvariante";"Lärchen-Arvenwald mit Erika; Gebüschvariante";"Arolière à  Bruyère; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1059.00005;59JG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1059.00006;59LG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1059.00012;59SG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1059.00014;59VG   ;Y;"Larici-Pinetum cembrae vaccinietosum myrtilli; Gebüschvariante";"Lärchen-Arvenwald mit Heidelbeere; Gebüschvariante";"Lärchen-Arvenwald mit Heidelbeere; Gebüschvariante";"Arolière à  Myrtille; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1059.1;59*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1060;60G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1060.00001;60AG   ;Y;"Adenostylo-Piceetum athyrietosum distentifolii; Gebüschvariante";"Hochstauden-Fichtenwald mit Alpenwaldfarn; Gebüschvariante";"Hochstauden-Fi-Wald mit Alpenwaldfarn; Gebüschvariante";"Pessière à  hautes herbes avec Fougère alpestre; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1060.00004;60EG   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1060.1;60*G   ;Y;"Calamagrostio variae-Piceetum; Gebüschvariante";"Buntreitgras-Fichtenwald; Gebüschvariante";"Buntreitgras-Fi-Wald; Gebüschvariante";"Pessière à  Calamagrostide bigarrée; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1060.1;60*TaG ;Y;;"Buntreitgras-Tannen-Fichtenwald; Gebüschvariante";"Buntreitgras-Ta-Fi-Wald; Gebüschvariante";"Pessière à  Calamagrostide bigarrée avec Sapin; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1061;61G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1062;62G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1065;65G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1065.1;65*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1066;66G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1066.0001;66PMG  ;;;;;;;;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1067;67G    ;Y;"Erico-Pinetum montanae; Gebüschvariante";Erika-Legföhrenwald;Erika-Legföhrenwald;Pineraie de montagne à  Pins couchés avec Bruyère;;;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;67;Mit Legföhren
+1068;68G    ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1068.1;68*G   ;;;;;;;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1069;69G    ;Y;"Rhododendro hirsuti-Pinetum montanae; Gebüschvariante";Steinrosen-Legföhrenwald;Steinrosen-Legföhrenwald;Pineraie de montagne à  Pins couchés avec Rhododendron cilié;;;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;69;Mit Legföhren
+1070;70G    ;Y;"Rhododendro ferruginei-Pinetum montanae; Gebüschvariante";Alpenrosen-Legföhrenwald;Alpenrosen-Legföhrenwald;Pineraie de montagne à  Pins couchés avec Rhododendron ferrugineux;;;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;70;Mit Legföhren
+1071;71G    ;Y;"Sphagno-Pinetum montanae; Gebüschvariante";Torfmoos-Legföhrenwald;Torfmoos-Legföhrenwald;Pineraie de montagne à  Pins couchés avec sphaignes;;;;;;;;;;;;;;;;;;;PM;GEN;Gebüschwälder Nadel;Gebüschwälder;;;71;Mit Legföhren
+1072;72G    ;Y;"Sphagno-Pinetum cembrae; Gebüschvariante";"Nordalpen-Arvenwald; Gebüschvariante";"Nordalpen-Arvenwald; Gebüschvariante";"Arolière des Alpes du Nord; variante buissonnante";;;;;;;;;;;;;;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;keine Zuordung möglich;
+1091;91G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1092.001;92aG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1092.018;92zG   ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+1093;93G    ;;;;;;;;;;;;;;;;;;;;;;;;GüL;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+2001;AV     ;Y;Alnenion viridis;Grünerlengebüsch;Grünerlengebüsch;Aunaie verte;;;AV;;;;;;;;;;;;x;;AV;Grünerlengebüsch;AV;GEL;Gebüschwälder Laub;Gebüschwälder;;;keine Zuordung möglich;
+2002;Samb   ;;;;Gebüschreiche Vorwaldgesellschaft;stade arbustif préforestier;;;;;;;;;;;;;05.03.2005;;;;;Gebüschreiche Vorwaldgesellschaft;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2003;Salci  ;;;;Moor-Weidengebüsch;Saulaie buissonnante marécageuse;;;;;;;;;;;;;05.03.2007;;;;;Moor-Weidengebüsch;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2004;Salwa  ;;;;Gebirgs-Weidengebüsch;Saulaie buissonnante subalpine;;;;;;;;;;;;;05.03.2008;;;;;Gebirgs-Weidengebüsch;SA;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2005;Saro   ;;;;Besenginstergebüsch;Buissons thermophiles sur sol acide;;;;;;;;;;;;;05.03.2001;;;;;Besenginstergebüsch;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2006;Berb   ;;;;Trockenwarmes Gebüsch;Buissons xérothermophiles sur sol neutre à  alcalin;;;;;;;;;;;;;05.03.2002;;;;;Trockenwarmes Gebüsch;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2007;Prun   ;;;;Mesophiles Gebüsch;Buissons mésophiles;;;;;;;;;;;;; 5.3.3;;;;;Mesophiles Gebüsch;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2008;Rubi   ;;;;Brombeergestrüpp;Roncier;;;;;;;;;;;;;05.03.2004;;;;;Brombeergestrüpp;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2009;Rhod   ;;;;Alpenrosenheide;Lande subalpine xérophile sur sol acide;;;;;;;;;;;;;05.04.2005;;;;;;GüL;GEL;Gebüschwälder Laub;Gebüschwälder;;;;
+2010;Junip  ;;;;Zwergwacholderheide;Lande subalpine méso-hygrophile sur sol acide;;;;;;;;;;;;;05.04.2004;;;;;;GüN;GEN;Gebüschwälder Nadel;Gebüschwälder;;;;
+3000;u      ;;;;Nicht-Wald;surface non-boisée;;;;;;;;;;;;;;;;;;Nicht-Wald;u;u;u;u;;;;
+3001;u-1    ;;;;Siedlung;milieux construits;;;;;;;;;;;;;;;;;;Siedlung;u;u;u;u;;"Überbaute Fläche; Siedlungsgebiet (Verkehrswege; Gebäude inkl. Umschwung/Garten/Park; Sportanalgen)";;
+3002;u-2    ;;;;Acker;champs;;;;;;;;;;;;;;;;;;Acker;u;u;u;u;;"Acker oder umgepflügte Kunstwiese; Gartenbauflächen; Reben";;
+3003;u-3    ;;;;Fettwiese;prairie grasse;;;;;;;;;;;;;;;;;;Fettwiese;u;u;u;u;;Intensiv bewirtschaftete (gedüngte) Wiese;;
+3004;u-4    ;;;;Fettwiese/Bäume;prairie grasse boisée;;;;;;;;;;;;;;;;;;Fettwiese/Bäume;u;u;u;u;;"Fettwiese mit Einzelbäumen; Hecken oder Feldgehölzen";;
+3005;u-5    ;;;;Weide;pâturage;;;;;;;;;;;;;;;;;;Weide;u;u;u;u;;Wiese (intensiv beweidet);;
+3006;u-6    ;;;;Wytweide;pâturage boisé;;;;;;;;;;;;;;;;;;Wytweide;u;u;u;u;;"Bestockte Weide; Wytweide; aufgelöste Bestockung (mässig intensiv beweidet)";;
+3007;u-7    ;;;;Hochstauden;hautes herbes;;;;;;;;;;;;;;;;;;Hochstauden;u;u;u;u;;Hochstaudenflur (inkl. Farne);;
+3008;u-8    ;;;;Magerwiese;prairie/pâturage maigre;;;;;;;;;;;;;;;;;;Magerwiese;u;u;u;u;;"Einwachsende Alpweide; Magerwiese; Trockenrasen; (t.Z. extensiv genutzt)";;
+3009;u-9    ;;;;Feuchtgebiet;lieux humides;;;;;;;;;;;;;;;;;;Feuchtgebiet;u;u;u;u;;"Feuchtgebiet: Ried; Moor; Feuchtwiese; usw. (extensiv oder nicht genutzt)";;
+3010;u-10   ;;;;Gewässer;eEaux libres;;;;;;;;;;;;;;;;;;Gewässer;u;u;u;u;;"Offenes Gewässer (See; Fluss)";;
+3011;u-11   ;;;;Fels/Schutt;rochers et éboulis;;;;;;;;;;;;;;;;;;Fels/Schutt;u;u;u;u;;"Fels; Blockschutt; Geröllhalden; Ruderalflächen; Ödland (überwiegend vegetationslos); auch permanente Rutschflächen an Bachläufen ";;

@@ -1,31 +1,31 @@
 NAIS_EIG_KEY; NAIS_EIG_TXT
 1;basisch
-2;"basisch; feucht"
-3;"basisch; frisch"
-4;"basisch; mässig trocken"
-5;"basisch; nass"
-6;"basisch; trocken"
-7;"basisch; wechselfeucht oder -trocken"
+2;basisch, feucht
+3;basisch, frisch
+4;basisch, mässig trocken
+5;basisch, nass
+6;basisch, trocken
+7;basisch, wechselfeucht oder -trocken
 8;extrem basisch
 9;extrem trocken
 10;feucht
-11;"feucht; Hochstaudenflur"
+11;feucht, Hochstaudenflur
 12;laurophyll
 13;mässig trocken
-14;"mittel bis feucht; tonig-schwere Böden"
-15;"mittel; frisch"
-16;"mittel; luftfeucht"
+14;mittel bis feucht, tonig-schwere Böden
+15;mittel, frisch
+16;mittel, luftfeucht
 17;nährstoffreich
 18;nass
-19;"nass; sauer"
+19;nass, sauer
 20;oberflächlich sauer (Moderzeiger)
 21;sauer
-22;"sauer; feucht"
-23;"Sauer; Nadelwald"
-24;"sauer; trocken"
+22;sauer, feucht
+23;Sauer, Nadelwald
+24;sauer, trocken
 25;Säurezeigende Moose
 26;trocken
-27;"wechselfeucht; wechseltrocken"
+27;wechselfeucht, wechseltrocken
 31;laurophyll
 32;nährstoffreich
 33;sehr nährstoffreich
@@ -43,36 +43,36 @@ NAIS_EIG_KEY; NAIS_EIG_TXT
 45;sauer
 46;mässig basisch
 47;basisch
-48;"trocken; sauer"
-49;"trocken; stark sauer"
-50;"mässig trocken; sauer"
-51;"mässig trocken; stark sauer"
-52;"feucht; sauer"
-53;"feucht; stark sauer"
-54;"sehr feucht; sauer"
-55;"sehr feucht; stark sauer"
-56;"nass; sauer"
-57;"trocken; mässig basisch"
-58;"mässig trocken; mässig basisch"
-59;"mässig trocken; basisch"
-60;"feucht; mässig basisch"
-61;"feucht; basisch"
-62;"sehr feucht; mässig basisch"
-63;"sehr feucht; basisch"
-64;"nass; basisch"
-65;"wechseltrocken; mässig basisch"
-66;"wechselfeucht; mässig basisch"
-67;"wechselnass; mässig basisch"
-68;"feucht; nährstoffreich"
-69;"feucht; mässig basisch; nährstoffreich"
-70;"sehr feucht; nährstoffreich"
-71;"sehr feucht; mässig bas.; nährst.reich"
+48;trocken, sauer
+49;trocken, stark sauer
+50;mässig trocken, sauer
+51;mässig trocken, stark sauer
+52;feucht, sauer
+53;feucht, stark sauer
+54;sehr feucht, sauer
+55;sehr feucht, stark sauer
+56;nass, sauer
+57;trocken, mässig basisch
+58;mässig trocken, mässig basisch
+59;mässig trocken, basisch
+60;feucht, mässig basisch
+61;feucht, basisch
+62;sehr feucht, mässig basisch
+63;sehr feucht, basisch
+64;nass, basisch
+65;wechseltrocken, mässig basisch
+66;wechselfeucht, mässig basisch
+67;wechselnass, mässig basisch
+68;feucht, nährstoffreich
+69;feucht, mässig basisch, nährstoffreich
+70;sehr feucht, nährstoffreich
+71;sehr feucht, mässig bas., nährst.reich
 72;mittel
-73;"wechseltrocken; stark sauer"
-74;"wechselfeucht; sauer"
-75;"trocken; basisch"
-76;"wechseltrocken; basisch"
-77;"wechselfeucht; stark sauer"
-78;"wechseltrocken; sauer"
-79;"wechselnass; stark sauer"
+73;wechseltrocken, stark sauer
+74;wechselfeucht, sauer
+75;trocken, basisch
+76;wechseltrocken, basisch
+77;wechselfeucht, stark sauer
+78;wechseltrocken, sauer
+79;wechselnass, stark sauer
 99;weitere

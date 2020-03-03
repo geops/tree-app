@@ -1,72 +1,73 @@
-ART_SISF_NR; ART_NAM_LAT; ART_NAM_DEU; ART_NAM_FRZ; ART_NAM_ITA; ART_SCHICHT_STD; ART_HS_COLLIN; ART_HS_SUBMONTAN; ART_HS_UNTERMONT; ART_HS_OBERMONT; ART_HS_HOCHMONT; ART_HS_SUBALPIN; ART_HS_OBSUBALP; ART_REGION_J; ART_REGION_M; ART_REGION_1; ART_REGION_2A; ART_REGION_2B; ART_REGION_3; ART_REGION_4; ART_REGION_5A; ART_REGION_5AA; ART_REGION_5B; ART_EIG_GRP; ART_ZEIG_DET; ART_ZEIG_FLO; ART_LEBENSR
-300;Acer campestre;Feldahorn;Erable champêtre;"Acero oppio; Loppio";1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;;t4k3l3f2.5w1r3n3h3d3;7.4 9.1 9.2 9.3
-25400;Alnus viridis;Alpenerle;Aulne vert;Ontano verde;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t2k2l3f4w3r2n4h3d1;8.1 8.2 9.1 9.2
-29300;Amelanchier ovalis;Felsenmispel;Amélanchier;Pero corvino;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;75;Rohboden;t3k4l4f2w3r4n2h1d3;3.2 7.4 9.1 9.3
-59200;Berberis vulgaris;Gemeine Berberitze;Epine-vinette;Crespino comune;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;58;;t3k4l3f2w1r4n2h3d3;7.4 9.1 9.2 9.3
-67700;Buddleja davidii;Schmetterlingsstrauch;Buddléia de David;Buddleja;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;58;Rohboden;t4.5k2l4f2w1r4n3h1d3;2.5 2.9 7.4 9.2
-70500;Buxus sempervirens;Buchs;Buis;Bosso comune;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;58;;t4.5k2l3f2w1r4n2h3d3;3.2 7.4 9.2 9.3
-113350;Cinnamomum glanduliferum;Drüsiger Kampferbaum;Cannelier glanduleux;Cinnamomo ghiandoloso;0;;;;;;;;;;;;;;;;;;;;;
-116400;Clematis vitalba;Waldrebe;Clématite blanche;"Clematide vitalba; Viorna";1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;46;;t3.5k3l3f3w1r4n3h3d3;6.7 7.4 7.5 9.2
-118100;Colutea arborescens aggr.;Blasenstrauch;Baguenaudier arborescent;Vesicaria;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;58;;t4.5k4l3f2w1r4n2h3d3;
-119600;Cornus mas;Kornelkirsche;Cornouiller mâle;Corniolo maschio;0;1;1;2;0;0;0;0;9;9;9;9;9;9;9;9;9;9;46;;t4.5k4l3f2.5w1r4n3h3d3;2.9 7.4 9.2 9.3
-119700;Cornus sanguinea;Hornstrauch;Cornouiller sanguin;Corniolo sanguinello;0;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;46;;t3.5k3l3f3w1r4n3h3d3;3.3 7.4 9.2 9.3
-121600;Corylus avellana;Haselstrauch;Noisetier;Nocciolo comune;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;72;mässig wechselfeucht;t3k3l3f3w2r3n3h3d3;7.4 9.1 9.2 9.3
-121700;Cotinus coggygria;Perückenstrauch;Arbre à  perruque;Sommacco selvatico;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;57;;t4.5k3l4f1.5w1r4n2h3d3;2.9 3.3 7.4 9.3
-121800;Cotoneaster integerrimus;Kahle Steinmispel;Cotonéaster à  feuilles entières;Cotognastro minore;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;57;"mässig wechseltrocken; Rohboden";t3k4l4f1.5w2r4n2h1d3;3.2 7.1 9.1 9.3
-122000;Cotoneaster tomentosus;Filzige Steinmispel;Cotonéaster tomenteux;Cotognastro bianco;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;75;"mässig wechseltrocken; Rohboden";t3.5k4l4f1.5w2r5n2h1d3;3.2 7.4 9.1 9.3
-122200;Crataegus laevigata;Zweigriffeliger Weissdorn;Aubépine épineuse;Biancospino selvatico;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;;t3.5k2l3f3.5w2r3n3h3d1;7.4 9.2 9.3 9.5
-122400;Crataegus monogyna;Eingriffeliger Weissdorn;Aubépine à  un style;Biancospino comune;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;;t4k4l4f3w2r4n3h3d3;7.4 9.2 9.3 9.5
-131500;Cytisus scoparius;Besenginster;Cytise à  balais;"Citiso scopario; Ginestra dei carbonai";0;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;45;;t4k2l3f2.5w1r2n3h5d1;7.1 7.3 9.1 9.2
-133500;Daphne laureola;Loorbeer-Seidelbast;Daphné lauréole;"Dafne laurella; Laureola";0;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;46;;t3.5k2l2f2.5w1r4n2h3d3;9.2 9.3
-133600;Daphne mezereum;Echter Seidelbast;Bois gentil;Dafne mezereo;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;mässig wechselfeucht;t3k3l2f3w2r4n3h3d3;3.3 7.1 7.2 9.2
-159000;Euonymus europaeus;Gemeines Pfaffenhütchen;Fusain d'Europe;"Berretto da prete; Corallini";1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;;t3.5k3l3f3.5w3r4n3h3d1;2.9 7.4 9.2
-159100;Euonymus latifolius;Breitblättriges Pfaffenhütchen;Fusain à  larges feuilles;Fusaria maggiore;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;;t3.5k2l3f3.5w1r4n3h3d3;2.9 7.4 9.2
-174000;Frangula alnus;Faulbaum;Bourdaine;Frangola comune;1;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;42;;t3.5k3l3f3.5w3r3n2h5d1;7.4 9.1 9.2
-194000;Hedera helix;Efeu;Lierre;Edera;1;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;72;;t4k2l2f3w1r3n3h3d3;2.7 7.4 9.2 9.3
-206400;Hippocrepis emerus;Strauchwicke;Hippocrépide émérus;"Erba cornetta; Dondolino";0;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;58;Rohboden;t4k4l3f2w2r4n2h1d3;7.4 9.1 9.2 9.3
-206500;Hippophaà« rhamnoides L.;Sanddorn;Argousier;Olivella spinosa;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;66;Rohboden;t3.5k4l4f2.5w3r4n3h1d3;2.5 3.2 7.4 9.1
-213300;Ilex aquifolium;Stechpalme;Houx;Agrifoglio;1;1;1;1;0;0;0;0;1;1;1;2;2;0;2;1;1;1;;;t3.5k2l2f2.5w1r3n3h3d3;9.1 9.2 9.3 9.4
-220400;Juniperus communis s. str.;Gewöhnlicher Wacholder;Genévrier commun;Ginepro comune;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;35;;t3.5k4l4f2w2r3n2h3d1;3.2 7.4 9.1 9.2
-220700;Juniperus communis ssp. alpina;Zwergwachholder;;;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;45;;;
-220800;Juniperus sabina;Sefistrauch;Genévrier sabine;"Ginepro sabino; Sabina";0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;48;;t3k5l4f1.5w1r3n2h3d3;3.2 6.2 7.4 9.1
-224200;Laburnum alpinum;Alpen Goldregen;Aubour des Alpes;Maggiociondolo di montagna;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;1;1;;;t4k3l3f3w1r3n3h3d3;3.2 3.3 7.4 9.2
-224300;Laburnum anagryoides;Gewöhnlicher Goldregen;Aubour commun;Maggiociondolo comune;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;1;1;;;t4.5k3l3f2.5w1r4n3h3d3;3.3 7.4 9.2 9.3
-231500;Laurus nobilis;Edellorbeer;Laurier noble;"Alloro; Lauro";0;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;"Verwildert; mässig trocken";t5k2l2f2w1r3n2h3d3;2.9 9.2 9.3 9.4
-238100;Ligustrum vulgare;Liguster;Troène vulgaire;Ligustro comune;1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;65;;t4k3l3f2.5w3r4n3h3d3;7.4 9.1 9.2 9.3
-243400;Lonicera alpigena;Alpen-Heckenkirsche;Chèvrefeuille alpestre;Caprifoglio alpino;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;mässig wechselfeucht;t2.5k2l2f3w2r4n3h3d1;7.1 8.1 9.1 9.2
-243500;Lonicera caerulea;Blaue Heckenkirsche;Chèvrefeuille bleu;Caprifoglio turchino;1;0;0;0;0;0;0;1;9;9;9;9;9;9;9;9;9;9;45;;t2k3l3f3w1r2n2h3d3;7.1 8.1 8.2 9.1
-243900;Lonicera nigra;Schwarze Heckenkirsche;Chèvrefeuille noir;Caprifoglio nero;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;72;;t2.5k3l2f3w1r3n3h5d1;7.1 8.1 9.1 9.2
-244000;Lonicera periclymenum;Wald-Geissblatt;Chèvrefeuille des bois;Caprifoglio atlantico;0;1;1;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;45;;t4k2l3f3w1r2n3h3d3;2.6 6.7 7.4 9.2
-244200;Lonicera xylosteum;Rote Heckenkirsche;Chèvrefeuille des haies;Caprifoglio peloso;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;72;;t3.5k3l3f3w1r4n3h3d3;7.4 9.1 9.2 9.3
-259200;Mespilus germanica;Echte Mispel;Néflier d'Allemagne;Nespolo volgare;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;35;;t4.5k2l3f2w1r3n3h3d3;2.9 7.4 9.2 9.3
-305500;Pinus mugo;Legföhre;Pin couché;"Pino mugo; Parancio";1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;72;"mässig wechselfeucht; Rohboden";t2k4l4f2.5w2rxn2h1d3;6.5 8.1 8.2 9.1
-329400;Prunus laurocerasus;Kirschlorbeer;Laurier-cerise;Lauroceraso;0;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;31;Verwildert;t4.5k2l2f2.5w1r3n3h3d3;2.9 7.4 9.2
-329500;Prunus mahaleb;Felsenkirsche;Merisier odorant;Ciliegio canino;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;57;Rohboden;t4.5k4l3f1.5w1r4n2h1d3;7.4 9.1 9.3 9.4
-329700;Prunus padus;Gewöhnliche Traubenkirsche;Merisier à  grappes;;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4k2l2f3.5w3r3n3h3d1;7.4 9.2
-330300;Prunus spinosa;Schwarzdorn;Epine noire;"Prugnolo; Pruno selvatico";0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;;t3.5k3l4f2.5w1r3n3h3d3;7.4 9.1 9.2 9.3
-335900;Quercus petraea;Trauben-Eiche;Chêne sessile;Quercia rovere;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4k3l3f2w2r3n2h3d3;9.1 9.2 9.3
-336100;Quercus robur;Stiel-Eiche;Chêne pédonculé;"Quercia comune; Farnia";1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t4k3l3f3.5w3r3n3h3d1;9.2 9.3
-343400;Rhamnus alpina;Alpen-Kreuzdorn;Nerprun des Alpes;Ranno alpino;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;58;mädssig wechselfeucht;t3.5k4l3f2w2r4n2h3d5;3.2 3.3 7.4 9.3
-343500;Rhamnus cathartica;Purgier-Kreuzdorn;Nerprun purgatif;Spinocervino;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;65;;t3.5k4l3f2.5w3r4n2h3d1;7.4 9.1 9.2 9.3
-345300;Rhododendron ferrugineum;Rostblättrige Alpenrose;Rhododendron ferrugineux;Rododendro rosso;1;0;0;0;0;0;0;1;9;9;9;9;9;9;9;9;9;9;45;In den Südalpen auch collin bis subalpin. Mässig wechselfeucht;t2k2l3f3w1r2n2h5d1;3.3 7.1 8.1 9.1
-345400;Rhododendron hirsutum;"Bewimperte Alpenrose; Steinrose";Rhododendron cilié;Rododendro irsuto;1;0;0;0;0;1;1;0;9;9;9;9;9;9;9;9;9;9;47;kalt;t2k2l3f3w1r4n2h5d1;3.3 7.1 8.2 9.1
-346000;Ribes alpinum;Alpen-Johannisbeere;Groseillier des Alpes;Ribes alpino;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;kühl;t2.5k3l3f3w1r4n3h3d3;3.3 7.4 9.1 9.2
-346200;Ribes petraeum;Felsen-Johannisbeere;Groseillier des rochers;Ribes dei sassi;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t2.5k3l3f3w1r2n4h3d3;2.9 8.1 9.1 9.2
-346300;Ribes rubrum;Rote Johannisbeere;Groseillier rouge;Ribes rosso;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3.5k2l2f3.5w2r3n4h3d1;2.9 7.4 9.2
-346400;Ribes uva-crispa;Stachelbeere;Groseillier épineux;Ribes uva spina;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t3.5k4l3f3w2r3n4h3d1;2.9 7.4 9.2
-347600;Rosa arvensis;Feld-Rose;Rose des champs;Rosa cavallina;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;mässig wechselfeucht;t3.5k2l3f3w2r4n3h3d3;7.4 9.2
-347800;Rosa canina;Hunds-Rose;Rosier des chiens;Rosa selvatica comune;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;58;;t3k3l3f2.5w1r3n3h3d3;7.4 9.1 9.2 9.3
-349500;Rosa pendulina;Alpen-Hagrose;Rosier des Alpes;Rosa alpina;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;36;kühl;t2.5k3l3f3.5w2r4n3h3d3;8.1 8.2 9.1 9.2
-353100;Rubus fruticosus aggr.;Brombeere;;;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;32;;t4kxl3f3w1rxn4h3d1;
-354400;Rubus idaeus;Himbeere;Framboisier;"Lampone; Frambos";1;1;1;1;1;1;1;1;9;9;9;9;9;9;9;9;9;9;32;mässig wechselfeucht;t3k3l3f3w2r3n4h3d3;2.6 3.3 7.2 9.2
-357400;Rubus saxatilis;Steinbeere;Ronce des rochers;"Rovo erbaiolo; More rosse";1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;mässig wechselfeucht;t3k3l2f3w2r4n2h3d3;3.3 3.4 8.2 9.2
-363100;Salix appendiculata;Grossblättrige Weide;Saule à  grandes feuilles;Salice stipolato;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;42;;t2.5k3l3f3.5w3r3n3h3d1;3.3 4.2 8.1 9.2
-364200;Salix foetida;Stink-Weide;Saule fétide;Salice fetido;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;t1.5k2l4f4w3r3n2h3d1;3.3 4.1 5.1 8.1
-368300;Sambucus nigra;Schwarzer Holunder;Sureau noir;"Sambuco comune; Sambuco nero";1;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;68;mässig wechselfeucht;t3.5k3l3f3.5w2r4n4h3d1;3.3 7.4 9.2 9.5
-368400;Sambucus racemosa;Roter Holunder;Sureau à  grappes;Sambuco rosso;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;32;sauer;t2.5k3l3f3w1r2n4h3d3;3.3 7.4 9.1 9.2
-402400;Sorbus chamaemespilus;Zwergmispel;Sorbier petit néflier;Sorbo alpino;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;46;mässig wechselfeucht;t2k2l3f3w2r4n3h5d1;3.4 7.4 8.2 9.1
-407000;Staphylea pinnata;Pimpernuss;Staphylier penné;"Bossolo; Lacrime di Giobbe; Pistacchio falso";0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;58;;t4.5k4l3f2.5w1r4n3h3d3;2.9 7.4 9.2 9.3
-434800;Vaccinium myrtillus;Heidelbeere;Myrtille;Mirtillo nero;1;1;1;1;1;1;1;1;9;9;9;9;9;9;9;9;9;9;45;;t2.5k3l2f3w3r1n2h5d1;6.5 7.1 9.1 9.2
-435300;Vaccinium vitis-idaea;Preiselbeere;Airelle rouge;Mirtillo rosso;1;1;1;1;1;1;1;1;9;9;9;9;9;9;9;9;9;9;45;mässig wechselfeucht;t2k3l4f2.5w2r1n2h5d3;
-444300;Viburnum lantana;Wolliger Schneeball;Viorne lantane;Viburno lantana;1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;59;;t3.5k3l3f2w1r4n2h3d3;7.4 9.1 9.2 9.3
-444400;Viburnum opulus;Gemeiner Schneeball;Viorne obier;"Oppio; Palle di neve";1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;42;;t3.5k2l3f3.5w3r3n3h5d1;7.4 7.5 9.1 9.2
+SISF_NR; ART_SCHICHT_STD; ART_HS_COLLIN; ART_HS_SUBMONTAN; ART_HS_UNTERMONT; ART_HS_OBERMONT; ART_HS_HOCHMONT; ART_HS_SUBALPIN; ART_HS_OBSUBALP; ART_REGION_J; ART_REGION_M; ART_REGION_1; ART_REGION_2A; ART_REGION_2B; ART_REGION_3; ART_REGION_4; ART_REGION_5A; ART_REGION_5AA; ART_REGION_5B; ART_ZEIG_DET; ART_ZEIG_FLO; ART_LEBENSR
+300;1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t4k3l3f2.5w1r3n3h3d3;7.4 9.1 9.2 9.3
+25400;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t2k2l3f4w3r2n4h3d1;8.1 8.2 9.1 9.2
+29300;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;Rohboden;t3k4l4f2w3r4n2h1d3;3.2 7.4 9.1 9.3
+59200;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3k4l3f2w1r4n2h3d3;7.4 9.1 9.2 9.3
+67700;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;Rohboden;t4.5k2l4f2w1r4n3h1d3;2.5 2.9 7.4 9.2
+70500;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4.5k2l3f2w1r4n2h3d3;3.2 7.4 9.2 9.3
+113350;0;;;;;;;;;;;;;;;;;;;;
+116400;1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t3.5k3l3f3w1r4n3h3d3;6.7 7.4 7.5 9.2
+118100;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4.5k4l3f2w1r4n2h3d3;
+119600;0;1;1;2;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t4.5k4l3f2.5w1r4n3h3d3;2.9 7.4 9.2 9.3
+119700;0;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t3.5k3l3f3w1r4n3h3d3;3.3 7.4 9.2 9.3
+121600;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t3k3l3f3w2r3n3h3d3;7.4 9.1 9.2 9.3
+121700;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4.5k3l4f1.5w1r4n2h3d3;2.9 3.3 7.4 9.3
+121800;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechseltrocken, Rohboden;t3k4l4f1.5w2r4n2h1d3;3.2 7.1 9.1 9.3
+122000;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechseltrocken, Rohboden;t3.5k4l4f1.5w2r5n2h1d3;3.2 7.4 9.1 9.3
+122200;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k2l3f3.5w2r3n3h3d1;7.4 9.2 9.3 9.5
+122400;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4k4l4f3w2r4n3h3d3;7.4 9.2 9.3 9.5
+131500;0;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;;t4k2l3f2.5w1r2n3h5d1;7.1 7.3 9.1 9.2
+133500;0;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t3.5k2l2f2.5w1r4n2h3d3;9.2 9.3
+133600;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t3k3l2f3w2r4n3h3d3;3.3 7.1 7.2 9.2
+159000;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k3l3f3.5w3r4n3h3d1;2.9 7.4 9.2
+159100;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k2l3f3.5w1r4n3h3d3;2.9 7.4 9.2
+174000;1;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;;t3.5k3l3f3.5w3r3n2h5d1;7.4 9.1 9.2
+194000;1;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;;t4k2l2f3w1r3n3h3d3;2.7 7.4 9.2 9.3
+206400;0;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;Rohboden;t4k4l3f2w2r4n2h1d3;7.4 9.1 9.2 9.3
+206500;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;Rohboden;t3.5k4l4f2.5w3r4n3h1d3;2.5 3.2 7.4 9.1
+213300;1;1;1;1;0;0;0;0;1;1;1;2;2;0;2;1;1;1;;t3.5k2l2f2.5w1r3n3h3d3;9.1 9.2 9.3 9.4
+220400;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k4l4f2w2r3n2h3d1;3.2 7.4 9.1 9.2
+220700;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;;
+220800;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3k5l4f1.5w1r3n2h3d3;3.2 6.2 7.4 9.1
+224200;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;1;1;;t4k3l3f3w1r3n3h3d3;3.2 3.3 7.4 9.2
+224300;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;1;1;;t4.5k3l3f2.5w1r4n3h3d3;3.3 7.4 9.2 9.3
+231500;0;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;Verwildert, mässig trocken;t5k2l2f2w1r3n2h3d3;2.9 9.2 9.3 9.4
+238100;1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t4k3l3f2.5w3r4n3h3d3;7.4 9.1 9.2 9.3
+243400;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t2.5k2l2f3w2r4n3h3d1;7.1 8.1 9.1 9.2
+243500;1;0;0;0;0;0;0;1;9;9;9;9;9;9;9;9;9;9;;t2k3l3f3w1r2n2h3d3;7.1 8.1 8.2 9.1
+243900;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t2.5k3l2f3w1r3n3h5d1;7.1 8.1 9.1 9.2
+244000;0;1;1;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t4k2l3f3w1r2n3h3d3;2.6 6.7 7.4 9.2
+244200;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k3l3f3w1r4n3h3d3;7.4 9.1 9.2 9.3
+259200;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4.5k2l3f2w1r3n3h3d3;2.9 7.4 9.2 9.3
+305500;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht, Rohboden;t2k4l4f2.5w2rxn2h1d3;6.5 8.1 8.2 9.1
+329400;0;1;0;0;0;0;0;0;9;9;9;9;9;9;9;9;9;9;Verwildert;t4.5k2l2f2.5w1r3n3h3d3;2.9 7.4 9.2
+329500;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;Rohboden;t4.5k4l3f1.5w1r4n2h1d3;7.4 9.1 9.3 9.4
+329700;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4k2l2f3.5w3r3n3h3d1;7.4 9.2
+330300;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k3l4f2.5w1r3n3h3d3;7.4 9.1 9.2 9.3
+335900;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4k3l3f2w2r3n2h3d3;9.1 9.2 9.3
+336100;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4k3l3f3.5w3r3n3h3d1;9.2 9.3
+343400;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mädssig wechselfeucht;t3.5k4l3f2w2r4n2h3d5;3.2 3.3 7.4 9.3
+343500;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k4l3f2.5w3r4n2h3d1;7.4 9.1 9.2 9.3
+345300;1;0;0;0;0;0;0;1;9;9;9;9;9;9;9;9;9;9;In den Südalpen auch collin bis subalpin. Mässig wechselfeucht;t2k2l3f3w1r2n2h5d1;3.3 7.1 8.1 9.1
+345400;1;0;0;0;0;1;1;0;9;9;9;9;9;9;9;9;9;9;kalt;t2k2l3f3w1r4n2h5d1;3.3 7.1 8.2 9.1
+346000;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;kühl;t2.5k3l3f3w1r4n3h3d3;3.3 7.4 9.1 9.2
+346200;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t2.5k3l3f3w1r2n4h3d3;2.9 8.1 9.1 9.2
+346300;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k2l2f3.5w2r3n4h3d1;2.9 7.4 9.2
+346400;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k4l3f3w2r3n4h3d1;2.9 7.4 9.2
+347600;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t3.5k2l3f3w2r4n3h3d3;7.4 9.2
+347800;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3k3l3f2.5w1r3n3h3d3;7.4 9.1 9.2 9.3
+349500;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;kühl;t2.5k3l3f3.5w2r4n3h3d3;8.1 8.2 9.1 9.2
+353100;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4kxl3f3w1rxn4h3d1;
+354400;1;1;1;1;1;1;1;1;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t3k3l3f3w2r3n4h3d3;2.6 3.3 7.2 9.2
+357400;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t3k3l2f3w2r4n2h3d3;3.3 3.4 8.2 9.2
+363100;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t2.5k3l3f3.5w3r3n3h3d1;3.3 4.2 8.1 9.2
+364200;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t1.5k2l4f4w3r3n2h3d1;3.3 4.1 5.1 8.1
+365500;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t2.5k4l4f4w3r3n3h3d1;7.4 7.5 8.1 9.2
+368300;1;1;1;1;1;1;0;0;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t3.5k3l3f3.5w2r4n4h3d1;3.3 7.4 9.2 9.5
+368400;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;sauer;t2.5k3l3f3w1r2n4h3d3;3.3 7.4 9.1 9.2
+402400;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t2k2l3f3w2r4n3h5d1;3.4 7.4 8.2 9.1
+407000;0;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t4.5k4l3f2.5w1r4n3h3d3;2.9 7.4 9.2 9.3
+434800;1;1;1;1;1;1;1;1;9;9;9;9;9;9;9;9;9;9;;t2.5k3l2f3w3r1n2h5d1;6.5 7.1 9.1 9.2
+435300;1;1;1;1;1;1;1;1;9;9;9;9;9;9;9;9;9;9;mässig wechselfeucht;t2k3l4f2.5w2r1n2h5d3;
+444300;1;1;1;1;0;0;0;0;9;9;9;9;9;9;9;9;9;9;;t3.5k3l3f2w1r4n2h3d3;7.4 9.1 9.2 9.3
+444400;1;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;9;;t3.5k2l3f3.5w3r3n3h5d1;7.4 7.5 9.1 9.2
