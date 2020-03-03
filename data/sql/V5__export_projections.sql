@@ -43,7 +43,7 @@ SELECT processed_forest_ecoregion AS forest_ecoregion,
            ELSE null
        END AS target_forest_type
 FROM
-    (SELECT (regexp_matches(regexp_split_to_table(regexp_replace(regexp_replace(coalesce(forest_ecoregions,specific_forest_ecoregions), '2(,|\s)', '2a, 2b,'), 'R5', '5a, 5b,'),',\s?'),
+    (SELECT (regexp_matches(regexp_split_to_table(regexp_replace(regexp_replace(coalesce(forest_ecoregions,forest_ecoregions_specific), '2(,|\s)', '2a, 2b,'), 'R 5', '5a, 5b,'),',\s?'),
                                 (SELECT string_agg(subcode, '|'::text)
                                  FROM forest_ecoregions)))[1] AS processed_forest_ecoregion,
             *

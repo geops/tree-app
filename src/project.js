@@ -46,7 +46,7 @@ function projectionReducer(location, targetAltitudePointer, result) {
 
     if (value && projection[value]) {
       projection = projection[value];
-    } else if (projection.unknown && Object.keys(projection).length === 1) {
+    } else if (projection.unknown) {
       // Handle optional fields.
       projection = projection.unknown;
     } else if (valueNotInOptions(value, options[field])) {

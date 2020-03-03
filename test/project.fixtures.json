@@ -6,23 +6,23 @@
       "forestType": "47*"
     },
     "projections": [
-      { "altitudinalZone": "81", "forestType": "47*" },
-      { "altitudinalZone": "60", "forestType": "19" },
-      { "altitudinalZone": "50", "forestType": "8d" },
-      { "altitudinalZone": "40", "forestType": "6" },
-      { "altitudinalZone": "20", "forestType": "6 collin" }
+      { "altitudinalZone": "81", "forestType": "48" },
+      { "altitudinalZone": "20", "forestType": "48 collin" }
     ]
   },
   {
     "location": {
       "forestEcoregion": "2b",
       "altitudinalZone": "90",
-      "forestType": "47*"
+      "forestType": "47*",
+      "additional": "Shdy_Cl"
     },
     "projections": [
-      { "altitudinalZone": "83", "forestType": "47*" },
-      { "altitudinalZone": "82", "forestType": "47*" },
-      { "altitudinalZone": "20", "forestType": "55 collin" }
+      { "altitudinalZone": "81", "forestType": "48" },
+      { "altitudinalZone": "60", "forestType": "48" },
+      { "altitudinalZone": "50", "forestType": "22" },
+      { "altitudinalZone": "40", "forestType": "22" },
+      { "altitudinalZone": "20", "forestType": "22 collin" }
     ]
   },
   {
