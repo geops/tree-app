@@ -4,6 +4,7 @@
 
 .map :global(.ol-zoom) {
   position: absolute;
+  background: none;
 }
 
 .map :global(.ol-rotate) {
