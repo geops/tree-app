@@ -187,7 +187,7 @@ function ProjectionForm() {
             getButtonOptions('additional', i18n.language),
           )}
           onChange={(e, { value }) => setLocation('additional', value)}
-          value={getValue('additional')}
+          value={getValue('additional', { first: true })}
         />
       )}
       {projectionMode === 'f' &&
