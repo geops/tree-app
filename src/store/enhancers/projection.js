@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { project } from '@geops/tree-lib';
+import { locate, project } from '@geops/tree-lib';
 import { applyMiddleware } from 'redux';
 
 import {
@@ -7,6 +7,7 @@ import {
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
   setLocation,
+  setLocateResult,
   setProjectionResult,
   setTargetAltitudinalZone,
 } from '../actions';
@@ -35,6 +36,13 @@ const projection = store => next => action => {
         ? mapLocation.targetAltitudinalZoneExtreme
         : formLocation.targetAltitudinalZone;
     store.dispatch(setTargetAltitudinalZone(targetAltitudinalZone));
+    try {
+      const locateResult = locate(location);
+      console.log(locateResult, location);
+      store.dispatch(setLocateResult(locateResult));
+    } catch (error) {
+      console.log('Locate error: ', error);
+    }
     try {
       const projectionResult = project(location, targetAltitudinalZone);
       store.dispatch(setProjectionResult(projectionResult));
