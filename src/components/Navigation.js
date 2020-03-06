@@ -31,14 +31,14 @@ function Navigation() {
       </div>
       <div className={`${styles.page} ${is('') && 'frontpage'}`}>
         <Switch>
-          <Route path="/location">
-            <LocationPage />
-          </Route>
           <Route path="/info">
             <InfoPage />
           </Route>
-          <Route path={isMobile ? '/projection' : ['/', '/projection']}>
+          <Route path="/projection">
             <ProjectionPage />
+          </Route>
+          <Route path={isMobile ? '/location' : ['/', '/location']}>
+            <LocationPage />
           </Route>
         </Switch>
       </div>
@@ -55,7 +55,7 @@ function Navigation() {
           </Menu.Item>
         )}
         <Menu.Item
-          active={is('location')}
+          active={isMobile ? is('location') : is('') || is('location')}
           onClick={go('location')}
           className={styles.item}
         >
@@ -63,7 +63,7 @@ function Navigation() {
           {!isMobile && t('app.location')}
         </Menu.Item>
         <Menu.Item
-          active={isMobile ? is('projection') : is('') || is('projection')}
+          active={is('projection')}
           onClick={go('projection')}
           className={styles.item}
         >
