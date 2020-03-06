@@ -190,16 +190,18 @@ function ProjectionForm() {
           value={getValue('additional')}
         />
       )}
-      {options.silverFirArea && options.silverFirArea.length > 1 && (
-        <ChoiceButton
-          label={t('silverFirArea.label')}
-          options={options.silverFirArea.map(
-            getButtonOptions('silverFirArea', i18n.language),
-          )}
-          onChange={(e, { value }) => setLocation('silverFirArea', value)}
-          value={getValue('silverFirArea')}
-        />
-      )}
+      {projectionMode === 'f' &&
+        options.silverFirArea &&
+        options.silverFirArea.length > 1 && (
+          <ChoiceButton
+            label={t('silverFirArea.label')}
+            options={options.silverFirArea
+              .sort()
+              .map(getButtonOptions('silverFirArea', i18n.language))}
+            onChange={(e, { value }) => setLocation('silverFirArea', value)}
+            value={getValue('silverFirArea')}
+          />
+        )}
       {options.relief && options.relief.length > 1 && (
         <ChoiceButton
           label={t('relief.label')}
