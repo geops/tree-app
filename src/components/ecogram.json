@@ -1,0 +1,62 @@
+{
+  "forestEcoregions": ["M", "J", "1"],
+  "altitudinalZones": ["20"],
+  "forestTypes": [
+    {
+      "x": ["0.442", "0.785"],
+      "y": ["-0.002", "0.057"],
+      "z": "1",
+      "forestTypes": ["44"],
+      "otherForestTypes": []
+    },
+    {
+      "x": ["0.465", "0.595"],
+      "y": ["0.068", "0.128"],
+      "z": "1",
+      "forestTypes": ["30"],
+      "otherForestTypes": []
+    },
+    {
+      "x": ["0.581", "0.709"],
+      "y": ["0.516", "0.632"],
+      "z": "1",
+      "forestTypes": ["35A"],
+      "otherForestTypes": []
+    },
+    {
+      "x": ["0.562", "0.433"],
+      "y": ["0.809"],
+      "z": "1",
+      "forestTypes": ["35"],
+      "otherForestTypes": []
+    },
+    {
+      "x": ["0.826", "0.955"],
+      "y": ["0.817", "0.895"],
+      "z": "1",
+      "forestTypes": ["25e"],
+      "otherForestTypes": []
+    },
+    {
+      "x": ["0.526", "0.774"],
+      "y": ["0.817", "0.901"],
+      "z": "1",
+      "forestTypes": ["39", "39*", "40*"],
+      "otherForestTypes": []
+    },
+    {
+      "x": ["0.241", "0.487"],
+      "y": ["0.817", "0.899"],
+      "z": "1",
+      "forestTypes": ["41"],
+      "otherForestTypes": []
+    },
+    {
+      "x": ["0.012", "0.228"],
+      "y": ["0.812", "0.937"],
+      "z": "1",
+      "forestTypes": ["41*"],
+      "otherForestTypes": []
+    }
+  ]
+}

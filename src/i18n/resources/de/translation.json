@@ -8,6 +8,12 @@
     "ribbon": "Test",
     "title": "Tree App"
   },
+  "ecogram": {
+    "acid": "Sauer",
+    "alkaline": "Basisch",
+    "wet": "Nass",
+    "dry": "Trocken"
+  },
   "help": {
     "recommendationPositiveHeader": "Empfohlene Baumarten",
     "recommendationPositive": "Dominante oder wichtige beigemischte Naturwaldbaumarten, die <strong>in allen Klimaprojektionen geeignet sind (fett)</strong> bzw. die im heutigen Klima und entweder bei «mässigem» oder «starkem» Klimawandel geeignet sind (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten sollen gefördert werden.",
