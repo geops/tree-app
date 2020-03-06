@@ -1,15 +1,13 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Message } from 'semantic-ui-react';
 
-import styles from './LocationPage.module.css';
+import Ecogram from './Ecogram';
+import ecogramData from './ecogram.json';
 
 function LocationPage() {
-  const { t } = useTranslation();
   return (
-    <Message className={styles.message} size="big">
-      {t('location.underConstruction')}
-    </Message>
+    <div>
+      <Ecogram data={ecogramData} />
+    </div>
   );
 }
 
