@@ -11,6 +11,7 @@ import Dropdown from './Dropdown';
 import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
+const capitalize = text => text[0].toUpperCase() + text.slice(1);
 const getButtonOptions = (type, lng) => key => ({
   key,
   label: info(type, key)[lng],
@@ -40,11 +41,15 @@ function ProjectionForm() {
   const activateField = field => setFieldActive(field);
   const deactivateField = () => setFieldActive('');
 
-  const getValue = (field, transition) => {
-    const name = transition
-      ? `transition${field[0].toUpperCase() + field.slice(1)}`
-      : field;
-    return options[field].includes(location[name]) ? location[name] : '';
+  const getValue = (field, { first, transition } = {}) => {
+    const name = transition ? `transition${capitalize(field)}` : field;
+    let value = '';
+    if (first && options[field] && !location[name]) {
+      [value] = options[field];
+    } else if (options[field].includes(location[name])) {
+      value = location[name];
+    }
+    return value;
   };
 
   const isDifferent = field => mapLocation[field] !== formLocation[field];
@@ -149,7 +154,7 @@ function ProjectionForm() {
             onFocus={() => activateField('transitionForestType')}
             placeholder={t('dropdown.placeholder')}
             search
-            value={getValue('forestType', true)}
+            value={getValue('forestType', { transition: true })}
           />
           <Dropdown
             clearable
@@ -163,7 +168,7 @@ function ProjectionForm() {
             }}
             onBlur={deactivateField}
             onFocus={() => activateField('transitionAltitudinalZone')}
-            value={getValue('altitudinalZone', true)}
+            value={getValue('altitudinalZone', { transition: true })}
           />
         </Segment>
       )}
@@ -172,7 +177,7 @@ function ProjectionForm() {
           label={t('slope.label')}
           options={options.slope.map(getButtonOptions('slope', i18n.language))}
           onChange={(e, { value }) => setLocation('slope', value)}
-          value={getValue('slope')}
+          value={getValue('slope', { first: true })}
         />
       )}
       {options.additional && options.additional.length > 1 && (
