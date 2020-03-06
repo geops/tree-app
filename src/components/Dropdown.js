@@ -12,7 +12,7 @@ function Dropdown({ className, label, ...props }) {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
   return (
-    <Form.Field>
+    <Form.Field className={styles.field}>
       {label && <label>{label}</label>}
       <SUIDropdown
         fluid

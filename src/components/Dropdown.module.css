@@ -15,3 +15,7 @@
 .dropdown:global(.ui.selection.dropdown:hover) {
   border-color: var(--primary-color-200);
 }
+
+.field label {
+  color: var(--primary-color-500) !important;
+}

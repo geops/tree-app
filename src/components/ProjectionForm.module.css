@@ -11,10 +11,6 @@
   top: 0;
 }
 
-.form label {
-  color: var(--primary-color-500) !important;
-}
-
 .forestType:global(.ui.search.dropdown) {
   font-size: 18px;
   font-weight: bold;
