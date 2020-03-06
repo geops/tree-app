@@ -1,6 +1,7 @@
 import {
-  SET_LOCATION,
   SET_FORM_LOCATION,
+  SET_LOCATE_RESULT,
+  SET_LOCATION,
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
@@ -50,11 +51,14 @@ const getFormLocation = (state, action) => {
 
 function tree(state = initialState, action) {
   switch (action.type) {
-    case SET_LOCATION: {
-      return { ...state, location: action.location };
-    }
     case SET_FORM_LOCATION: {
       return { ...state, formLocation: getFormLocation(state, action) };
+    }
+    case SET_LOCATE_RESULT: {
+      return { ...state, locateResult: action.locateResult };
+    }
+    case SET_LOCATION: {
+      return { ...state, location: action.location };
     }
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
