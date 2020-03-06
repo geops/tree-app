@@ -1,3 +1,4 @@
+import 'ol/ol.css';
 import { getUid } from 'ol';
 import OLMap from 'ol/Map';
 import PropTypes from 'prop-types';
