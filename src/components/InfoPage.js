@@ -47,7 +47,7 @@ function InfoPage() {
     {
       key: 'info.version',
       title: { content: t('info.versionTitle') },
-      content: { content: `tree-lib: ${treeLib.version}` },
+      content: { content: `tree-lib: ${treeLib ? treeLib.version : ''}` },
     },
   ];
   return (
