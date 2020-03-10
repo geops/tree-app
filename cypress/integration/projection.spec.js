@@ -2,6 +2,7 @@ describe('Projection mode', () => {
   beforeEach(() => {
     cy.visit('');
     cy.get('[data-cypress=welcomeModalGo]').click();
+    cy.get('.ui.menu > :nth-child(2)').click();
   });
 
   it('finds toggle buttons for projection mode', () => {
@@ -29,6 +30,7 @@ describe('Projection in form mode', () => {
   beforeEach(() => {
     cy.visit('');
     cy.get('[data-cypress=welcomeModalGo]').click();
+    cy.get('.ui.menu > :nth-child(2)').click();
     cy.get('[data-cypress=projectionModeFormButton]').click();
   });
 
