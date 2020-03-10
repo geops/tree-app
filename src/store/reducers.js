@@ -14,6 +14,7 @@ import {
 export const initialState = {
   location: {},
   formLocation: {},
+  locateResult: {},
   mapLayer: 'cb',
   mapLocation: {},
   mapView: '9|910001|5947112',
