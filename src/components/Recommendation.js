@@ -137,7 +137,7 @@ function Recommendation() {
             </Grid.Row>
           )}
           <Grid.Row>
-            <Grid.Column textAlign="center" width={4}></Grid.Column>
+            <Grid.Column textAlign="center" width={4} />
             <Grid.Column width={12}>
               <Checkbox
                 className={styles.checkbox}
