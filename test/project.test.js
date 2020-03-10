@@ -104,13 +104,21 @@ describe('valid options', () => {
     ).toStrictEqual(['unknown', '<20', '>20']);
   });
 
-  test('empty option field for incomplete location values', () => {
+  test('option for secondary field', () => {
     expect(
       project({
         forestEcoregion: '1',
         altitudinalZone: '90',
         forestType: '60*',
       }).options.relief,
+    ).toStrictEqual(['unknown']);
+  });
+
+  test('empty option field for incomplete location values', () => {
+    expect(
+      project({
+        forestEcoregion: '1',
+      }).options.forestType,
     ).toBe(undefined);
     expect(
       project({
@@ -133,6 +141,19 @@ describe('valid projections', () => {
         '50',
       ).projections,
     ).toStrictEqual([{ altitudinalZone: '50', forestType: '1' }]);
+  });
+
+  test('projection with missing secondary fields', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '1',
+          altitudinalZone: '90',
+          forestType: '60*',
+        },
+        '81',
+      ).projections,
+    ).toStrictEqual([{ altitudinalZone: '81', forestType: '50*' }]);
   });
 
   test('projection with valid transitionForestType', () => {

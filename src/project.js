@@ -52,6 +52,10 @@ function projectionReducer(location, targetAltitudePointer, result) {
     } else if (valueNotInOptions(value, options[field])) {
       // Do not return location values if no projection was found.
       return { ...result, options };
+    } else if (fieldsConcat.includes(field)) {
+      // Fall back to first projection for secondary fields.
+      const first = Object.keys(projection)[0];
+      projection = projection[first];
     } else {
       // Location does not provide any more values for conditions.
       break;
