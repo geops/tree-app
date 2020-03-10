@@ -18,32 +18,48 @@ const getDropdownOptions = (type, lng, includeCode = false) => {
 
 function LocationForm() {
   const dispatch = useDispatch();
-  const { location } = useSelector(state => ({ location: state.location }));
+  const { formLocation, location, mapLocation, projectionMode } = useSelector(
+    state => ({
+      formLocation: state.formLocation,
+      location: state.location,
+      mapLocation: state.mapLocation,
+      projectionMode: state.projectionMode,
+    }),
+  );
   const { t, i18n } = useTranslation();
+  const forestEcoregions = useMemo(
+    () => getDropdownOptions('forestEcoregion', i18n.language, true),
+    [i18n.language],
+  );
+  const altitudinalZones = useMemo(
+    () => getDropdownOptions('altitudinalZone', i18n.language),
+    [i18n.language],
+  );
+  const isDifferent = field => mapLocation[field] !== formLocation[field];
   return (
     <Form className={styles.form}>
-      <Dropdown
-        label={t('forestEcoregion.label')}
-        options={useMemo(
-          () => getDropdownOptions('forestEcoregion', i18n.language, true),
-          [i18n.language],
-        )}
-        onChange={(e, { value: forestEcoregion }) =>
-          dispatch(setFormLocation({ forestEcoregion }))
-        }
-        value={location.forestEcoregion}
-      />
-      <Dropdown
-        label={t('altitudinalZone.label')}
-        options={useMemo(
-          () => getDropdownOptions('altitudinalZone', i18n.language),
-          [i18n.language],
-        )}
-        onChange={(e, { value: altitudinalZone }) =>
-          dispatch(setFormLocation({ altitudinalZone }))
-        }
-        value={location.altitudinalZone}
-      />
+      {projectionMode === 'f' && (
+        <Dropdown
+          clearable={isDifferent('forestEcoregion')}
+          label={t('forestEcoregion.label')}
+          options={forestEcoregions}
+          onChange={(e, { value: forestEcoregion }) =>
+            dispatch(setFormLocation({ forestEcoregion }))
+          }
+          value={location.forestEcoregion}
+        />
+      )}
+      {projectionMode === 'f' && (
+        <Dropdown
+          clearable={isDifferent('altitudinalZone')}
+          label={t('altitudinalZone.label')}
+          options={altitudinalZones}
+          onChange={(e, { value: altitudinalZone }) =>
+            dispatch(setFormLocation({ altitudinalZone }))
+          }
+          value={location.altitudinalZone}
+        />
+      )}
     </Form>
   );
 }
