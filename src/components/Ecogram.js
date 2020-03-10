@@ -1,9 +1,13 @@
-import propTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 
-function Ecogram({ data }) {
+function Ecogram() {
+  const { locateResult } = useSelector(state => ({
+    locateResult: state.locateResult,
+  }));
   const { t } = useTranslation();
+  const { ecogram } = locateResult;
   return (
     <svg x="0px" y="0px" viewBox="0 0 1200 1200">
       <g transform="translate(100,100)">
@@ -22,34 +26,31 @@ function Ecogram({ data }) {
           stroke="black"
           strokeWidth="2"
         />
-        {data.forestTypes.map(({ x: [x1, x2], y: [y1, y2], forestTypes }) => {
-          const x = x1 * 1000;
-          const width = x2 * 1000 - x;
-          const height = 1000 - y1 * 1000 - (1000 - y2 * 1000);
-          const y = 1000 - y1 * 1000 - height;
-          return (
-            <>
-              <rect
-                x={x}
-                y={y}
-                width={width}
-                height={height}
-                fill="#b0cdeb"
-                stroke="#365bb7"
-                strokeWidth="2"
-                onClick={() => console.log(forestTypes)}
-              />
-              <text
-                x={x + width / 2}
-                y={y + height / 2 + 10}
-                fontSize="2em"
-                textAnchor="middle"
-              >
-                {forestTypes.join(' ')}
-              </text>
-            </>
-          );
-        })}
+        {ecogram &&
+          ecogram.map(({ x, y, w, h, m }) => {
+            return (
+              <>
+                <rect
+                  x={x}
+                  y={y}
+                  width={w}
+                  height={h}
+                  fill="#b0cdeb"
+                  stroke="#365bb7"
+                  strokeWidth="2"
+                  onClick={() => console.log(m)}
+                />
+                <text
+                  x={x + w / 2}
+                  y={y + h / 2 + 10}
+                  fontSize="2em"
+                  textAnchor="middle"
+                >
+                  {m.join(' ')}
+                </text>
+              </>
+            );
+          })}
       </g>
       <text
         x="0"
@@ -78,9 +79,5 @@ function Ecogram({ data }) {
     </svg>
   );
 }
-
-Ecogram.propTypes = {
-  data: propTypes.objectOf.isRequired,
-};
 
 export default Ecogram;
