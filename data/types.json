@@ -1263,11 +1263,9 @@
     { "de": "untermontan", "id": 6, "code": "50" },
     { "de": "obermontan", "id": 7, "code": "60" },
     { "de": "ober- und untermontan", "id": 8, "code": "70" },
-    { "de": "hochmontan", "id": 9, "code": "81" },
-    { "de": "hochmontan Nebenareal der Tanne", "id": 10, "code": "82" },
-    { "de": "hochmontan Reliktareal der Tanne", "id": 11, "code": "83" },
-    { "de": "subalpin", "id": 12, "code": "90" },
-    { "de": "obersubalpin", "id": 13, "code": "100" }
+    { "de": "hochmontan", "id": 9, "code": "80" },
+    { "de": "subalpin", "id": 10, "code": "90" },
+    { "de": "obersubalpin", "id": 11, "code": "100" }
   ],
   "forestEcoregion": [
     { "de": "Jura", "code": "J" },

@@ -251,17 +251,7 @@ VALUES ('ober- und untermontan',
 
 INSERT INTO altitudinal_zone_meta (projection,code)
 VALUES ('hochmontan',
-        '81');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('hochmontan Nebenareal der Tanne',
-        '82');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('hochmontan Reliktareal der Tanne',
-        '83');
+        '80');
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
