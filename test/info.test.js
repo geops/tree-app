@@ -9,7 +9,7 @@ test('valid endangered attribute', () => {
 });
 
 test('valid forestEcoregion list', () => {
-  expect(info('forestEcoregion').length).toStrictEqual(10);
+  expect(info('forestEcoregion').length).toStrictEqual(9);
 });
 
 test('invalid type', () => {
