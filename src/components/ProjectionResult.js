@@ -13,29 +13,12 @@ import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg'
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
 function ProjectionResult() {
-  const {
-    location,
-    options,
-    projectionMode,
-    projections,
-    targetAltitudinalZone,
-  } = useSelector(state => ({
-    projectionMode: state.projectionMode,
+  const { location, projectionMode, projectionResult } = useSelector(state => ({
     location: state.location,
-    options: state.projectionResult.options,
-    projections: [...state.projectionResult.projections],
-    targetAltitudinalZone: state.targetAltitudinalZone,
+    projectionMode: state.projectionMode,
+    projectionResult: state.projectionResult,
   }));
   const { i18n, t } = useTranslation();
-
-  const { altitudinalZone, forestType } = location;
-  if (
-    altitudinalZone &&
-    (altitudinalZone === targetAltitudinalZone ||
-      projections.findIndex(p => p.altitudinalZone === altitudinalZone) === -1)
-  ) {
-    projections.unshift(location);
-  }
 
   const panes = [];
   panes.push({
@@ -43,7 +26,8 @@ function ProjectionResult() {
     render: () => <Recommendation />,
   });
 
-  projections.forEach(p => {
+  projectionResult.forEach(r => {
+    const p = r.projections[r.projections.length - 1];
     const icons = [];
     const scenarios = [];
     if (projectionMode === 'f') {
@@ -53,7 +37,7 @@ function ProjectionResult() {
       } else {
         scenarios.push(t('projectionScenario.manual'));
       }
-    } else {
+    } else if (p) {
       if (location.altitudinalZone === p.altitudinalZone) {
         icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
         scenarios.push(t('projectionScenario.today'));
@@ -97,10 +81,7 @@ function ProjectionResult() {
     }
   });
 
-  return forestType &&
-    options.forestType &&
-    options.forestType.includes(forestType) &&
-    (location.coordinate || targetAltitudinalZone) ? (
+  return (
     <div className={styles.container}>
       {panes.length > 0 ? (
         <Tab
@@ -120,7 +101,7 @@ function ProjectionResult() {
         </Header>
       )}
     </div>
-  ) : null;
+  );
 }
 
 export default ProjectionResult;

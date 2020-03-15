@@ -29,7 +29,7 @@ function ProjectionForm() {
     mapLocation,
     formLocation,
     projectionMode,
-    projectionResult: { options },
+    projectionResult: [{ options }],
   } = useSelector(state => ({
     location: state.location,
     mapLocation: state.mapLocation,

@@ -17,7 +17,7 @@ function Recommendation() {
   const [future, setFuture] = useState(true);
   const { location, projections } = useSelector(state => ({
     location: state.location,
-    projections: state.projectionResult.projections,
+    projections: state.projectionResult[0].projections,
   }));
 
   const recommendations = useMemo(() => {
