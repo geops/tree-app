@@ -27,7 +27,7 @@ function Ecogram() {
           strokeWidth="2"
         />
         {ecogram &&
-          ecogram.map(({ x, y, w, h, m }) => {
+          ecogram.map(({ x, y, w, h, f }) => {
             return (
               <>
                 <rect
@@ -38,7 +38,7 @@ function Ecogram() {
                   fill="#b0cdeb"
                   stroke="#365bb7"
                   strokeWidth="2"
-                  onClick={() => console.log(m)}
+                  onClick={() => console.log(f)}
                 />
                 <text
                   x={x + w / 2}
@@ -46,7 +46,7 @@ function Ecogram() {
                   fontSize="2em"
                   textAnchor="middle"
                 >
-                  {m.join(' ')}
+                  {f.join(' ')}
                 </text>
               </>
             );
