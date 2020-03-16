@@ -3,11 +3,13 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 function Ecogram() {
-  const { locateResult } = useSelector(state => ({
-    locateResult: state.locateResult,
-  }));
+  const { ecogram } = useSelector(state => state.locateResult);
   const { t } = useTranslation();
-  const { ecogram } = locateResult;
+
+  if (!ecogram) {
+    return null;
+  }
+
   return (
     <svg x="0px" y="0px" viewBox="0 0 1200 1200">
       <g transform="translate(100,100)">
@@ -26,31 +28,30 @@ function Ecogram() {
           stroke="black"
           strokeWidth="2"
         />
-        {ecogram &&
-          ecogram.map(({ x, y, w, h, f }) => {
-            return (
-              <>
-                <rect
-                  x={x}
-                  y={y}
-                  width={w}
-                  height={h}
-                  fill="#b0cdeb"
-                  stroke="#365bb7"
-                  strokeWidth="2"
-                  onClick={() => console.log(f)}
-                />
-                <text
-                  x={x + w / 2}
-                  y={y + h / 2 + 10}
-                  fontSize="2em"
-                  textAnchor="middle"
-                >
-                  {f.join(' ')}
-                </text>
-              </>
-            );
-          })}
+        {ecogram
+          .sort((a, b) => a.z - b.z)
+          .map(({ x, y, w, h, f }) => (
+            <>
+              <rect
+                x={x}
+                y={y}
+                width={w}
+                height={h}
+                fill="#b0cdeb"
+                stroke="#365bb7"
+                strokeWidth="2"
+                onClick={() => console.log(f)}
+              />
+              <text
+                x={x + w / 2}
+                y={y + h / 2 + 10}
+                fontSize="2em"
+                textAnchor="middle"
+              >
+                {f.join(' ')}
+              </text>
+            </>
+          ))}
       </g>
       <text
         x="0"
