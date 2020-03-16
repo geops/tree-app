@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/geops/tree-lib/compare/v1.2.0...v1.3.0) (2020-03-16)
+
+
+### Bug Fixes
+
+* remove duplicate forest ecoregion ([be4a4da](https://github.com/geops/tree-lib/commit/be4a4da94b6818a83bcdb894d2c1ddb65d37f9dd))
+
+
+### Features
+
+* add ecogram data and transformation scripts ([#149](https://github.com/geops/tree-lib/issues/149)) ([987589f](https://github.com/geops/tree-lib/commit/987589f16f886689edd8fedc2225c43506829b02))
+* merge 3 altitudinal zones hochmontan into single zone and extract silver fir area ([177fb24](https://github.com/geops/tree-lib/commit/177fb24f5ac2bfa6095eda5427efc59202613847))
+* return options for locate result ([6d7cdd1](https://github.com/geops/tree-lib/commit/6d7cdd1f8f3c9de95526a612b0b3f0343f985d14))
+
 # [1.2.0](https://github.com/geops/tree-lib/compare/v1.1.0...v1.2.0) (2020-03-16)
 
 
