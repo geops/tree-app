@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/geops/tree-lib/compare/v1.1.0...v1.2.0) (2020-03-16)
+
+
+### Features
+
+* add ecogram data and transformation scripts ([#149](https://github.com/geops/tree-lib/issues/149)) ([eb09799](https://github.com/geops/tree-lib/commit/eb09799e42c07b8f96c299b879b6b745f5a92809))
+* return options for locate result ([2996755](https://github.com/geops/tree-lib/commit/2996755af15b00c01c6505f587ef1d61b05c21f6))
+
 # [1.1.0](https://github.com/geops/tree-lib/compare/v1.0.0...v1.1.0) (2020-03-10)
 
 
