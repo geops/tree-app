@@ -2,7 +2,7 @@ const { project } = require('../src');
 const fixtures = require('./project.fixtures.json');
 
 describe('invalid function parameters', () => {
-  const validLocation = { forestEcoregion: '1', altitudinalZone: '81' };
+  const validLocation = { forestEcoregion: '1', altitudinalZone: '80' };
   test('invalid location values', () => {
     expect(() =>
       project({ ...validLocation, forestEcoregion: 'fooBar' }),
@@ -59,7 +59,7 @@ describe('valid options', () => {
         forestEcoregion: '1',
         forestType: '59V',
       }).options.altitudinalZone,
-    ).toStrictEqual(['20', '40', '50', '60', '81', '90', '100']);
+    ).toStrictEqual(['20', '40', '50', '60', '80', '90', '100']);
   });
 
   test('valid list for targetAltitudinalZone', () => {
@@ -99,7 +99,7 @@ describe('valid options', () => {
         forestType: '19f',
         transitionForestType: '46',
         altitudinalZone: '60',
-        transitionAltitudinalZone: '81',
+        transitionAltitudinalZone: '80',
       }).options.slope,
     ).toStrictEqual(['unknown', '<20', '>20']);
   });
@@ -143,6 +143,20 @@ describe('valid projections', () => {
     ).toStrictEqual([{ altitudinalZone: '50', forestType: '1' }]);
   });
 
+  test('projection staying in altitudinalZone 80', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '4',
+          altitudinalZone: '80',
+          forestType: '47Re',
+          silverFirArea: '1'
+        },
+        '80',
+      ).projections,
+    ).toStrictEqual([{ altitudinalZone: '80', forestType: '47' }]);
+  });
+
   test('projection with missing secondary fields', () => {
     expect(
       project(
@@ -151,9 +165,9 @@ describe('valid projections', () => {
           altitudinalZone: '90',
           forestType: '60*',
         },
-        '81',
+        '80',
       ).projections,
-    ).toStrictEqual([{ altitudinalZone: '81', forestType: '50*' }]);
+    ).toStrictEqual([{ altitudinalZone: '80', forestType: '50*' }]);
   });
 
   test('projection with valid transitionForestType', () => {
@@ -164,7 +178,7 @@ describe('valid projections', () => {
           forestType: '19f',
           transitionForestType: '46',
           altitudinalZone: '60',
-          transitionAltitudinalZone: '81',
+          transitionAltitudinalZone: '80',
           slope: '<20',
         },
         '50',
@@ -184,7 +198,7 @@ describe('valid projections', () => {
           forestType: '19f',
           transitionForestType: '46',
           altitudinalZone: '60',
-          transitionAltitudinalZone: '81',
+          transitionAltitudinalZone: '80',
         },
         '50',
       ).projections[0],
@@ -203,7 +217,7 @@ describe('valid projections', () => {
           forestType: '19f',
           transitionForestType: '46',
           altitudinalZone: '60',
-          transitionAltitudinalZone: '81',
+          transitionAltitudinalZone: '80',
           slope: '<20',
         },
         '40',
@@ -236,9 +250,9 @@ describe('valid projections', () => {
           altitudinalZone: '100',
           forestType: '59V',
         },
-        '81',
+        '80',
       ).projections.slice(-1)[0],
-    ).toStrictEqual({ altitudinalZone: '81', forestType: '46MRe' });
+    ).toStrictEqual({ altitudinalZone: '80', forestType: '46MRe' });
   });
 
   test('projection skipping altitudinalZone 30 which is not available in forestEcoregion M', () => {
@@ -254,19 +268,18 @@ describe('valid projections', () => {
     ).toStrictEqual([{ altitudinalZone: '20', forestType: '7S collin' }]);
   });
 
-  // Disabled for now until target altitudinalZone "hochmontan Tannenareale" has been fixed in source data.
-  // test('projection skipping altitudinalZones which are not available in forestEcoregion 2b', () => {
-  //   expect(
-  //     project(
-  //       {
-  //         forestEcoregion: '2b',
-  //         altitudinalZone: '83',
-  //         forestType: '55*',
-  //       },
-  //       '20',
-  //     ).projections.slice(-1)[0],
-  //   ).toStrictEqual({ altitudinalZone: '20', forestType: '55* collin' });
-  // });
+  test('projection skipping altitudinalZones which are not available in forestEcoregion 2b', () => {
+    expect(
+      project(
+        {
+          forestEcoregion: '2b',
+          altitudinalZone: '90',
+          forestType: '55*',
+        },
+        '20',
+      ).projections.slice(-1)[0],
+    ).toStrictEqual({ altitudinalZone: '20', forestType: '55* collin' });
+  });
 
   test('empty projections if targetAltitudinalZone is not found', () => {
     expect(

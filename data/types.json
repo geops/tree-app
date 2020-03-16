@@ -1263,22 +1263,19 @@
     { "de": "untermontan", "id": 6, "code": "50" },
     { "de": "obermontan", "id": 7, "code": "60" },
     { "de": "ober- und untermontan", "id": 8, "code": "70" },
-    { "de": "hochmontan", "id": 9, "code": "81" },
-    { "de": "hochmontan Nebenareal der Tanne", "id": 10, "code": "82" },
-    { "de": "hochmontan Reliktareal der Tanne", "id": 11, "code": "83" },
-    { "de": "subalpin", "id": 12, "code": "90" },
-    { "de": "obersubalpin", "id": 13, "code": "100" }
+    { "de": "hochmontan", "id": 9, "code": "80" },
+    { "de": "subalpin", "id": 10, "code": "90" },
+    { "de": "obersubalpin", "id": 11, "code": "100" }
   ],
   "forestEcoregion": [
-    { "de": "Jura", "code": "J" },
-    { "de": "Kontinentale Hochalpen", "code": "3" },
-    { "de": "Mittelland", "code": "M" },
     { "de": "Nördliche Randalpen", "code": "1" },
     { "de": "Nördliche Zwischenalpen mit Buche", "code": "2a" },
     { "de": "Nördliche Zwischenalpen ohne Buche", "code": "2b" },
+    { "de": "Kontinentale Hochalpen", "code": "3" },
+    { "de": "Südliche Zwischenalpen", "code": "4" },
     { "de": "Südliche Randalpen mit Fichte", "code": "5a" },
-    { "de": "Südliche Randalpen mit Fichtenvorposten", "code": "5a" },
     { "de": "Südliche Randalpen ohne Fichte", "code": "5b" },
-    { "de": "Südliche Zwischenalpen", "code": "4" }
+    { "de": "Jura", "code": "J" },
+    { "de": "Mittelland", "code": "M" }
   ]
 }

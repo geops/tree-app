@@ -6,7 +6,7 @@
       "forestType": "47*"
     },
     "projections": [
-      { "altitudinalZone": "81", "forestType": "48" },
+      { "altitudinalZone": "80", "forestType": "48" },
       { "altitudinalZone": "20", "forestType": "48 collin" }
     ]
   },
@@ -18,7 +18,7 @@
       "additional": "Shdy_Cl"
     },
     "projections": [
-      { "altitudinalZone": "81", "forestType": "48" },
+      { "altitudinalZone": "80", "forestType": "48" },
       { "altitudinalZone": "60", "forestType": "48" },
       { "altitudinalZone": "50", "forestType": "22" },
       { "altitudinalZone": "40", "forestType": "22" },
@@ -28,7 +28,7 @@
   {
     "location": {
       "forestEcoregion": "1",
-      "altitudinalZone": "81",
+      "altitudinalZone": "80",
       "forestType": "51C",
       "relief": "kup"
     },
