@@ -20,7 +20,7 @@ export const initialState = {
   mapView: '9|910001|5947112',
   projectionMode: 'm',
   projectionOptions: {},
-  projectionResult: { options: {}, projections: [] },
+  projectionResult: [{ options: {}, projections: [] }],
   targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
