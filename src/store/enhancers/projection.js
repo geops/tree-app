@@ -51,7 +51,6 @@ const projection = store => next => action => {
 
     try {
       const locateResult = locate(location);
-      console.log(locateResult, location);
       store.dispatch(setLocateResult(locateResult));
     } catch (error) {
       console.log('Locate error: ', error);
@@ -60,26 +59,20 @@ const projection = store => next => action => {
     const projectionConfig = [];
     if (projectionMode === 'm') {
       const {
-        targetAltitudinalZoneModerate,
-        targetAltitudinalZoneExtreme,
+        targetAltitudinalZoneModerate: moderateZone,
+        targetAltitudinalZoneExtreme: extremeZone,
       } = mapLocation;
-      projectionConfig.push(
-        getProjectionConfig(location, targetAltitudinalZoneModerate),
-      );
-      projectionConfig.push(
-        getProjectionConfig(location, targetAltitudinalZoneExtreme),
-      );
+      projectionConfig.push(getProjectionConfig(location, moderateZone));
+      projectionConfig.push(getProjectionConfig(location, extremeZone));
     } else {
-      projectionConfig.push(
-        getProjectionConfig(location, formLocation.targetAltitudinalZone),
-      );
+      const { targetAltitudinalZone: targetZone } = formLocation;
+      projectionConfig.push(getProjectionConfig(location, targetZone));
     }
 
     try {
       const projectionResult = projectionConfig.map(config =>
         project(config.location, config.targetAltitudinalZone),
       );
-      console.log({ projectionConfig, projectionResult });
       store.dispatch(setProjectionResult(projectionResult));
     } catch (error) {
       console.log('Projection error: ', error);
