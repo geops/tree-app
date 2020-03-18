@@ -19,6 +19,7 @@ function ProjectionResult() {
     projectionResult: state.projectionResult,
   }));
   const { i18n, t } = useTranslation();
+  const { forestType } = location;
 
   const panes = [];
   panes.push({
@@ -30,7 +31,7 @@ function ProjectionResult() {
     const p = r.projections[r.projections.length - 1];
     const icons = [];
     const scenarios = [];
-    if (projectionMode === 'f') {
+    if (p && projectionMode === 'f') {
       if (location.altitudinalZone === p.altitudinalZone) {
         icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
         scenarios.push(t('projectionScenario.today'));
@@ -81,9 +82,9 @@ function ProjectionResult() {
     }
   });
 
-  return (
+  return forestType ? (
     <div className={styles.container}>
-      {panes.length > 0 ? (
+      {panes.length > 1 ? (
         <Tab
           className={styles.tab}
           menu={{
@@ -101,7 +102,7 @@ function ProjectionResult() {
         </Header>
       )}
     </div>
-  );
+  ) : null;
 }
 
 export default ProjectionResult;
