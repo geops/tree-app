@@ -21,11 +21,11 @@ describe('Projection mode', () => {
 });
 
 describe('Projection in form mode', () => {
-  const selectField = (name, item) => {
+  const selectField = (name, item, force) => {
     cy.get(`[data-cypress=projectionForm${name}]`)
       .scrollIntoView()
-      .click();
-    cy.get(`[data-cypress=projectionForm${name}] ${item}`).click();
+      .click({ force });
+    cy.get(`[data-cypress=projectionForm${name}] ${item}`).click({ force });
   };
   beforeEach(() => {
     cy.visit('');
@@ -38,7 +38,7 @@ describe('Projection in form mode', () => {
     selectField('ForestEcoregion', '.item:first-child');
     selectField('AltitudinalZone', '.item:last-child');
     selectField('ForestType', '.item:first-child');
-    selectField('TargetAltitudinalZone', '.item:first-child');
+    selectField('TargetAltitudinalZone', '.item:first-child', true);
     cy.get('[data-cypress=recommendationPane]')
       .scrollIntoView()
       .should('be.visible');
@@ -50,8 +50,8 @@ describe('Projection in form mode', () => {
     selectField('ForestType', '.item:first-child');
     cy.get(`[data-cypress=projectionFormTransition] .ui:last-child`).click();
     selectField('TransitionForestType', '.item:first-child');
-    selectField('TransitionAltitudinalZone', '.item:last-child');
-    selectField('TargetAltitudinalZone', '.item:first-child');
+    selectField('TransitionAltitudinalZone', '.item:last-child', true);
+    selectField('TargetAltitudinalZone', '.item:first-child', true);
     cy.get('[data-cypress=projectionResultMenuItem]').contains(/\w+\s\(\w+\)/);
   });
 });
