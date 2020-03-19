@@ -1,8 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { setForestTypes } from '../store/actions';
 
 function Ecogram() {
+  const dispatch = useDispatch();
   const { ecogram } = useSelector(state => state.locateResult);
   const { t } = useTranslation();
 
@@ -38,9 +41,7 @@ function Ecogram() {
                 width={w}
                 height={h}
                 fill="#b0cdeb"
-                stroke="#365bb7"
-                strokeWidth="2"
-                onClick={() => console.log(f)}
+                onClick={() => dispatch(setForestTypes(f))}
               />
               <text
                 x={x + w / 2}

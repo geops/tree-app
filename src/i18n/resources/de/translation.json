@@ -101,8 +101,10 @@
     "transition": "Übergang zu Höhenstufe heute"
   },
   "forestType": {
+    "cancel": "Abbrechen",
     "label": "Standortstyp",
     "hint": "Bitte in der Karte auswählen",
+    "select": "Standortsttyp auswählen",
     "transition": "Übergang zu Standortstyp"
   },
   "slope": {

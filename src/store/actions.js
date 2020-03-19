@@ -1,3 +1,4 @@
+export const SET_FOREST_TYPES = 'SET_FOREST_TYPES';
 export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
 export const SET_LOCATE_RESULT = 'SET_LOCATE_RESULT';
 export const SET_LOCATION = 'SET_LOCATION';
@@ -8,6 +9,10 @@ export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
 export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
 export const SET_TARGET_ALTITUDINAL_ZONE = 'SET_TARGET_ALTITUDINAL_ZONE';
 export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
+
+export function setForestTypes(forestTypes) {
+  return { type: SET_FOREST_TYPES, forestTypes };
+}
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
