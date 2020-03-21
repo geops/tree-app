@@ -107,8 +107,9 @@ function project(location = {}, targetAltitude, previousResult) {
     const { transitionForestType, transitionAltitudinalZone, ...tl } = location;
     tl.forestType = transitionForestType;
     tl.altitudinalZone = transitionAltitudinalZone;
-    const { options, projections: tp } = project(tl, targetAltitude);
-    Object.entries(options).forEach(([k, v]) => {
+    const transition = project(tl, targetAltitude);
+    const tp = transition.projections || [];
+    Object.entries(transition.options).forEach(([k, v]) => {
       if (fieldsConcat.includes(k)) {
         result.options[k] = concat(result.options[k], v);
       }
@@ -124,6 +125,10 @@ function project(location = {}, targetAltitude, previousResult) {
     result.options.forestType = types.forestType
       .filter(ft => result.options.forestType.includes(ft.code))
       .map(ft => ft.code);
+  }
+
+  if (!previousResult && result.projections.length === 0) {
+    delete result.projections;
   }
 
   return result;
