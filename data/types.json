@@ -1262,7 +1262,7 @@
     { "de": "submontan", "id": 5, "code": "40" },
     { "de": "untermontan", "id": 6, "code": "50" },
     { "de": "obermontan", "id": 7, "code": "60" },
-    { "de": "ober- und untermontan", "id": 8, "code": "70" },
+    { "de": "unter- & obermontan", "id": 8, "code": "70" },
     { "de": "hochmontan", "id": 9, "code": "80" },
     { "de": "subalpin", "id": 10, "code": "90" },
     { "de": "obersubalpin", "id": 11, "code": "100" }
