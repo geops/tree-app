@@ -245,7 +245,7 @@ VALUES ('obermontan',
 
 
 INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('ober- und untermontan',
+VALUES ('unter- & obermontan',
         '70');
 
 

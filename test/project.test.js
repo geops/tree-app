@@ -239,7 +239,7 @@ describe('valid projections', () => {
         },
         '50',
       ).projections,
-    ).toStrictEqual([]);
+    ).toStrictEqual(undefined);
   });
 
   test('multi altitudinal zone projection', () => {
@@ -291,7 +291,7 @@ describe('valid projections', () => {
         },
         '30',
       ).projections,
-    ).toStrictEqual([]);
+    ).toStrictEqual(undefined);
   });
 
   test('projections based on fixtures', () => {
