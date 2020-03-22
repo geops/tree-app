@@ -1,3 +1,16 @@
+## [1.3.1-beta.1](https://github.com/geops/tree-lib/compare/v1.3.0...v1.3.1-beta.1) (2020-03-22)
+
+
+### Bug Fixes
+
+* do not return empty array for missing projections ([26db797](https://github.com/geops/tree-lib/commit/26db797ea0bb87a15a5f0ac910b832426eda0c39))
+* match altitudinal zone 70 with source data ([89012e2](https://github.com/geops/tree-lib/commit/89012e28f484daf967f59d6276f88033df82109f))
+
+
+### Reverts
+
+* Revert "chore: release beta channel" ([c163316](https://github.com/geops/tree-lib/commit/c163316381e88472b67012646694f7acc6f33d22))
+
 # [1.3.0](https://github.com/geops/tree-lib/compare/v1.2.0...v1.3.0) (2020-03-16)
 
 
