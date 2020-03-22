@@ -8,7 +8,7 @@ import Dropdown from './Dropdown';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
 
-const getDropdownOptions = (type, lng, includeKey = false) => key => ({
+const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
   text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
   value: key,
@@ -22,7 +22,7 @@ function LocationForm() {
     location,
     mapLocation,
     projectionMode,
-  } = useSelector(state => ({
+  } = useSelector((state) => ({
     formLocation: state.formLocation,
     locateResult: state.locateResult,
     location: state.location,
@@ -30,7 +30,7 @@ function LocationForm() {
     projectionMode: state.projectionMode,
   }));
   const { t, i18n } = useTranslation();
-  const isDifferent = field => mapLocation[field] !== formLocation[field];
+  const isDifferent = (field) => mapLocation[field] !== formLocation[field];
   return (
     <Form className={styles.form}>
       {projectionMode === 'f' && options.forestEcoregion && (

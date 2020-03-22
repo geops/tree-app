@@ -11,12 +11,12 @@ import Dropdown from './Dropdown';
 import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
-const capitalize = text => text[0].toUpperCase() + text.slice(1);
-const getButtonOptions = (type, lng) => key => ({
+const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
+const getButtonOptions = (type, lng) => (key) => ({
   key,
   label: info(type, key)[lng],
 });
-const getDropdownOptions = (type, lng, includeKey = false) => key => ({
+const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
   text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
   value: key,
@@ -30,7 +30,7 @@ function ProjectionForm() {
     formLocation,
     projectionMode,
     projectionResult,
-  } = useSelector(state => ({
+  } = useSelector((state) => ({
     location: state.location,
     mapLocation: state.mapLocation,
     formLocation: state.formLocation,
@@ -43,7 +43,7 @@ function ProjectionForm() {
       : projectionResult.form.options;
 
   const [fieldActive, setFieldActive] = useState('');
-  const activateField = field => setFieldActive(field);
+  const activateField = (field) => setFieldActive(field);
   const deactivateField = () => setFieldActive('');
 
   const getValue = (field, { first, transition } = {}) => {
@@ -57,7 +57,7 @@ function ProjectionForm() {
     return value;
   };
 
-  const isDifferent = field => mapLocation[field] !== formLocation[field];
+  const isDifferent = (field) => mapLocation[field] !== formLocation[field];
 
   const setLocation = (key, value) => {
     setFieldActive('');
@@ -118,7 +118,7 @@ function ProjectionForm() {
           <ChoiceButton
             data-cypress="projectionFormTransition"
             label={t('projection.transition.label')}
-            options={[false, true].map(key => ({
+            options={[false, true].map((key) => ({
               key: key.toString(),
               label: t(`projection.transition.${key}`),
             }))}

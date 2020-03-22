@@ -68,11 +68,13 @@ function getPane(scenario, projection, language, t) {
 }
 
 function ProjectionResult() {
-  const { location, projectionMode, projectionResult } = useSelector(state => ({
-    location: state.location,
-    projectionMode: state.projectionMode,
-    projectionResult: state.projectionResult,
-  }));
+  const { location, projectionMode, projectionResult } = useSelector(
+    (state) => ({
+      location: state.location,
+      projectionMode: state.projectionMode,
+      projectionResult: state.projectionResult,
+    }),
+  );
   const { i18n, t } = useTranslation();
   const { altitudinalZone, forestType } = location;
 
@@ -117,7 +119,7 @@ function ProjectionResult() {
 
   return altitudinalZone && forestType ? (
     <div className={styles.container}>
-      {panes.filter(p => p).length > 1 ? (
+      {panes.filter((p) => p).length > 1 ? (
         <Tab
           className={styles.tab}
           menu={{

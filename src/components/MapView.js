@@ -5,12 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { MapContext } from '../spatial/components/Map';
 import { setMapView } from '../store/actions';
 
-const getMapViewString = view => {
+const getMapViewString = (view) => {
   const [lon, lat] = view.getCenter();
   const zoom = Math.round(view.getZoom());
   return [zoom, Math.round(lon), Math.round(lat)].join('|');
 };
-const parseMapViewString = mapViewString => {
+const parseMapViewString = (mapViewString) => {
   const [zoom, lon, lat] = mapViewString.split('|');
   return { center: [lon, lat], zoom };
 };
@@ -22,7 +22,7 @@ const minZoom = 2;
 function MapView() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
-  const mapViewString = useSelector(state => state.mapView);
+  const mapViewString = useSelector((state) => state.mapView);
   useEffect(() => {
     const { center, zoom } = parseMapViewString(mapViewString);
     const mapView = new View({ center, extent, maxZoom, minZoom, zoom });

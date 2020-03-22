@@ -33,7 +33,7 @@ const runProjection = (location, targetAltitudinalZone) => {
   return project(newLocation, newTargetAltitudinalZone);
 };
 
-const projection = store => next => action => {
+const projection = (store) => (next) => (action) => {
   const result = next(action);
   if (projectionActionTypes.includes(action.type)) {
     const { formLocation, mapLocation, projectionMode } = store.getState();

@@ -12,9 +12,12 @@ import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
 import { setMapLocation } from '../store/actions';
 
-const getKey = sl =>
-  (layers.find(l => l['source-layer'] === sl && l.metadata) || { metadata: {} })
-    .metadata.mapping;
+const getKey = (sl) =>
+  (
+    layers.find((l) => l['source-layer'] === sl && l.metadata) || {
+      metadata: {},
+    }
+  ).metadata.mapping;
 
 const featuresToLocation = (location, f) => ({
   ...location,
@@ -38,7 +41,7 @@ const vectorSource = new VectorSource({
 function MapLocation() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
-  const mapLocation = useSelector(state => state.mapLocation);
+  const mapLocation = useSelector((state) => state.mapLocation);
 
   useEffect(() => {
     const handleMapLocation = ({ coordinate }) => {
@@ -46,7 +49,7 @@ function MapLocation() {
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
       const location = features
-        .filter(feature => feature.properties && feature.properties.code)
+        .filter((feature) => feature.properties && feature.properties.code)
         .reduce(featuresToLocation, {});
       dispatch(setMapLocation({ ...location, coordinate }));
     };
@@ -54,7 +57,7 @@ function MapLocation() {
       const mapboxLayer = map
         .getLayers()
         .getArray()
-        .find(layer => layer instanceof Mapbox.Layer);
+        .find((layer) => layer instanceof Mapbox.Layer);
       if (mapboxLayer && mapLocation && mapLocation.coordinate) {
         const { coordinate } = mapLocation;
         mapboxLayer.on('loadend', () => handleMapLocation({ coordinate }));

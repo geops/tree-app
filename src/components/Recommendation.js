@@ -15,11 +15,13 @@ import styles from './Recommendation.module.css';
 function Recommendation() {
   const { t } = useTranslation();
   const [future, setFuture] = useState(true);
-  const { location, projectionMode, projectionResult } = useSelector(state => ({
-    location: state.location,
-    projectionMode: state.projectionMode,
-    projectionResult: state.projectionResult,
-  }));
+  const { location, projectionMode, projectionResult } = useSelector(
+    (state) => ({
+      location: state.location,
+      projectionMode: state.projectionMode,
+      projectionResult: state.projectionResult,
+    }),
+  );
 
   const recommendations = useMemo(() => {
     let projections;

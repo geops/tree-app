@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 function Ecogram() {
-  const { ecogram } = useSelector(state => state.locateResult);
+  const { ecogram } = useSelector((state) => state.locateResult);
   const { t } = useTranslation();
 
   if (!ecogram) {
