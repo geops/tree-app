@@ -1270,15 +1270,15 @@
     { "de": "obersubalpin", "id": 13, "code": "100" }
   ],
   "forestEcoregion": [
-    { "de": "Jura", "code": "J" },
-    { "de": "Kontinentale Hochalpen", "code": "3" },
-    { "de": "Mittelland", "code": "M" },
     { "de": "Nördliche Randalpen", "code": "1" },
     { "de": "Nördliche Zwischenalpen mit Buche", "code": "2a" },
     { "de": "Nördliche Zwischenalpen ohne Buche", "code": "2b" },
+    { "de": "Kontinentale Hochalpen", "code": "3" },
+    { "de": "Südliche Zwischenalpen", "code": "4" },
     { "de": "Südliche Randalpen mit Fichte", "code": "5a" },
-    { "de": "Südliche Randalpen mit Fichtenvorposten", "code": "5a" },
     { "de": "Südliche Randalpen ohne Fichte", "code": "5b" },
-    { "de": "Südliche Zwischenalpen", "code": "4" }
+    { "de": "Jura", "code": "J" },
+    { "de": "Mittelland", "code": "M" },
+    { "de": "Mendrisiotto", "code": "Me" }
   ]
 }

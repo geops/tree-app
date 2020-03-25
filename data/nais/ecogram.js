@@ -10,126 +10,89 @@ console.log(`
   into two files: /data/nais/ecograms.json & /data/nais/locations.json
 `);
 
-const abortScript = alert => {
+const abortScript = (alert) => {
   console.log(alert);
   process.exit(1);
 };
 
-const getCoords = (coordinates, coordIdx, index) => {
-  const filteredCoords = coordinates.map(c => c[coordIdx].toFixed(3));
+function validate(type, list, abort = true) {
+  if (!list) {
+    abortScript(`List for ${type} missing!`);
+  }
 
-  const coordsArray = [];
-  filteredCoords.forEach(f => {
-    if (!coordsArray.includes(f)) {
-      coordsArray.push(f);
+  list.forEach((code) => {
+    if (!types[type].find((t) => t.code === code)) {
+      const message = `Code ${code} for ${type} not valid!`;
+      if (abort) {
+        abortScript(message);
+      } else {
+        console.log(message);
+      }
     }
   });
+}
 
-  return coordsArray[index] < 0 ? 0 : coordsArray[index];
-};
+function writeJSON(filename, data) {
+  const filepath = path.join(__dirname, '../', filename);
+  fs.writeFileSync(filepath, JSON.stringify(data));
+}
 
-const aggregateGeojson = (dir, geojsonFiles) => {
-  const newEcogramsJson = {};
-  const newLocationsJson = {};
+const aggregateEcograms = () => {
+  const dir = 'data/nais/ecogram/';
+  const ecograms = {};
+  const locations = {};
 
-  geojsonFiles.forEach((filename, gIdx) => {
-    const geojsonIdx = gIdx + 1;
-    const { ext, name } = path.parse(filename);
+  fs.readdirSync(dir).forEach((filename) => {
+    console.log(`  Start aggregating ${filename}`);
+    const id = parseInt(path.parse(filename).name, 10);
     const filepath = path.resolve(dir, filename);
-    console.log(`  Start formating ${name}${ext}`);
     const rawdata = fs.readFileSync(filepath);
-    const geojson = JSON.parse(rawdata);
+    const ecogram = JSON.parse(rawdata);
 
-    const { forestEcoR, altZones } = geojson.features[0].properties;
+    const { forestEcoregions, altitudinalZones } = ecogram.properties || {};
+    // TODO: remove the following variable once branch "hochmontan" is merged!
+    const filteredAltitudinalZones = altitudinalZones.includes('80')
+      ? [...altitudinalZones.filter((z) => z !== '80'), '81', '82', '83']
+      : altitudinalZones;
 
-    if (!altZones) {
-      abortScript(`
-      /!\\ 'altZones' property not present or badly formated
-      in at least the first feature, to be converted to 'altitudinalZones' !
-      `);
-    }
-    const altitudinalZones = {};
-    altZones.split(',').forEach(zone => {
-      const type = types.altitudinalZone.find(t => t.code === zone);
-      if (!type) {
-        console.log(`Altitudinal zone ${zone} not found! Skipping ...`);
-        return;
-      }
-      altitudinalZones[zone] = geojsonIdx;
-    });
+    validate('forestEcoregion', forestEcoregions);
+    validate('altitudinalZone', filteredAltitudinalZones);
 
-    if (!forestEcoR) {
-      abortScript(`
-      /!\\ 'forestEcoR' property not present or badly formated
-      in at least the first feature, to be converted to 'forestEcoregions' !
-      `);
-    }
-    forestEcoR.split(',').forEach(region => {
-      const type = types.forestEcoregion.find(t => t.code === region);
-      if (!type) {
-        console.log(`Forest ecoregion ${region} not found! Skipping ...`);
-        return;
-      }
-
-      if (!newLocationsJson[region]) {
-        newLocationsJson[region] = altitudinalZones;
-      } else {
-        const keys = Object.keys(altitudinalZones);
-        keys.forEach(k => {
-          newLocationsJson[region][k] = altitudinalZones[k];
-        });
-      }
-    });
-
-    const features = [];
-    geojson.features.forEach(f => {
-      const { z, forTypes, otforTypes } = f.properties;
-      const { coordinates } = f.geometry;
-      const [coords] = coordinates[0];
-      // Remove last coord, which is the same as the first one.
-      coords.splice(coords.length - 1, coords.length);
-
-      const x1 = getCoords(coords, 0, 0);
-      const x2 = getCoords(coords, 0, 1);
-      const y1 = getCoords(coords, 1, 0);
-      const y2 = getCoords(coords, 1, 1);
-
-      const fT = forTypes ? forTypes.split(',') : [];
-      const oT = otforTypes ? otforTypes.split(',') : [];
-
-      features.push({
-        x: x1 * 1000,
-        y: 1000 - y1 * 1000 - (1000 - y1 * 1000 - (1000 - y2 * 1000)),
-        w: x2 * 1000 - x1 * 1000,
-        h: 1000 - y1 * 1000 - (1000 - y2 * 1000),
-        z,
-        f: [...fT, ...oT],
+    forestEcoregions.forEach((region) => {
+      locations[region] = locations[region] || {};
+      filteredAltitudinalZones.forEach((zone) => {
+        locations[region][zone] = id;
       });
     });
 
-    newEcogramsJson[geojsonIdx] = features;
+    const boxes = [];
+    ecogram.features.forEach((f) => {
+      const forestTypes = f.properties.forestTypes.split(',') || [];
+      const otherForestTypes = f.properties.otherForestTypes
+        ? f.properties.otherForestTypes.split(',')
+        : [];
+      const [[x1, y1], , [x2, y2]] = f.geometry.coordinates[0][0];
+      const height = 1000 - y1 * 1000 - (1000 - y2 * 1000);
+      const ft = [...new Set([...forestTypes, ...otherForestTypes])];
+      // TODO: abort in validation once all forestTypes are fixed!
+      validate('forestType', ft, false);
+
+      boxes.push({
+        x: Math.round(x1 * 1000),
+        y: Math.round(1000 - y1 * 1000 - height),
+        w: Math.round(x2 * 1000 - x1 * 1000), // width
+        h: Math.round(height),
+        r: parseInt(f.properties.rows, 10),
+        z: parseInt(f.properties.z, 10), // z-index
+        f: ft,
+      });
+    });
+
+    ecograms[id] = boxes;
   });
-  const outputDirectory = path.join(__dirname, `../`);
-  // If no outputs folder, create it.
-  if (!fs.existsSync(outputDirectory)) {
-    fs.mkdirSync(outputDirectory);
-  }
 
-  fs.writeFileSync(
-    `${outputDirectory}/ecograms.json`,
-    JSON.stringify(newEcogramsJson),
-  );
-  fs.writeFileSync(
-    `${outputDirectory}/locations.json`,
-    JSON.stringify(newLocationsJson),
-  );
-
-  console.log(`
-  Building ecograms.json & locations.json successfuly!
-  `);
+  writeJSON('ecograms.json', ecograms);
+  writeJSON('locations.json', locations);
 };
 
-const geojsonFiles = fs
-  .readdirSync('data/nais/geojson/')
-  .filter(fileName => /.geojson/.test(fileName));
-aggregateGeojson('data/nais/geojson/', geojsonFiles);
+aggregateEcograms();
