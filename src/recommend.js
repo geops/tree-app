@@ -7,7 +7,7 @@ import list from './list';
 
 const removeDuplicates = (...nestedArray) => {
   const foundItems = [];
-  return nestedArray.map(items => {
+  return nestedArray.map((items) => {
     const uniqueItems = difference(items, foundItems);
     foundItems.push(...items);
     return uniqueItems;
@@ -35,13 +35,13 @@ function recommend(location = {}, projections = [], future = false) {
 
   const [today1, today2, today3, today4] = list(location);
   const t123 = union(today1, today2, today3);
-  const p = projections.map(x => list(x));
+  const p = projections.map((x) => list(x));
   const p12 = p.map(([x1, x2]) => union(x1, x2));
   const p3 = p.map(([, , x3]) => x3);
   const p4 = p.map(([, , , x4]) => x4);
-  const pAll = p.map(x => union(...x));
-  const isFuture = x => (future ? x : []);
-  const isMulti = x => (projections.length > 1 ? x : []);
+  const pAll = p.map((x) => union(...x));
+  const isFuture = (x) => (future ? x : []);
+  const isMulti = (x) => (projections.length > 1 ? x : []);
 
   return removeDuplicates(
     intersection(t123, intersection(...p12)), //         Level 1

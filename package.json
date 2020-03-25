@@ -38,6 +38,7 @@
     "doc:build": "documentation build src/** --format html --output doc --config documentation.yml",
     "doc:serve": "documentation serve --config documentation.yml --watch src/**",
     "build": "webpack --mode production",
+    "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint --cache --format codeframe src",
     "test": "jest",
     "test:watch": "jest --watch",

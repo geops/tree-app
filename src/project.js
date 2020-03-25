@@ -15,7 +15,7 @@ const concat = (x, y) =>
   Array.from(new Set((x || []).concat(y))).sort((a, b) => a - b);
 
 const altitudeList = types.altitudinalZone
-  .map(az => az.code)
+  .map((az) => az.code)
   .sort((a, b) => a - b)
   .reverse();
 
@@ -26,12 +26,12 @@ const getField = (field, location) => ({
 });
 
 const validate = (field, value, values) => {
-  if (value && values && values.find(v => v.code === value) === undefined) {
+  if (value && values && values.find((v) => v.code === value) === undefined) {
     throw new Error(`${value} for ${field} is not valid.`);
   }
 };
 const valueNotInOptions = (value, fieldOptions) =>
-  value && fieldOptions && fieldOptions.find(v => v === value) === undefined;
+  value && fieldOptions && fieldOptions.find((v) => v === value) === undefined;
 
 function projectionReducer(location, targetAltitudePointer, result) {
   const { options } = result;
@@ -113,8 +113,8 @@ function project(location = {}, targetAltitude, previousResult) {
         result.options[k] = concat(result.options[k], v);
       }
     });
-    result.projections = result.projections.map(p => {
-      const i = tp.findIndex(t => t.altitudinalZone === p.altitudinalZone);
+    result.projections = result.projections.map((p) => {
+      const i = tp.findIndex((t) => t.altitudinalZone === p.altitudinalZone);
       return { ...p, transitionForestType: tp[i] && tp[i].forestType };
     });
   }
@@ -122,8 +122,8 @@ function project(location = {}, targetAltitude, previousResult) {
   // Replace alphanumeric sorting with custom sorting based on database export
   if (result.options.forestType) {
     result.options.forestType = types.forestType
-      .filter(ft => result.options.forestType.includes(ft.code))
-      .map(ft => ft.code);
+      .filter((ft) => result.options.forestType.includes(ft.code))
+      .map((ft) => ft.code);
   }
 
   return result;

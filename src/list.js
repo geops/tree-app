@@ -7,9 +7,10 @@ import types from '../data/types.json';
 const emptyLists = [[], [], [], []];
 
 const byNumber = (a, b) => a > b;
-const findForestType = c => types.forestType.find(f => f.code === c);
-const nonresidents = c => types.treeType.find(t => t.code === c).nonresident;
-const residents = c => !types.treeType.find(t => t.code === c).nonresident;
+const findForestType = (c) => types.forestType.find((f) => f.code === c);
+const nonresidents = (c) =>
+  types.treeType.find((t) => t.code === c).nonresident;
+const residents = (c) => !types.treeType.find((t) => t.code === c).nonresident;
 
 /**
  * This function lists all recommended tree types for the forest type at a given location.
@@ -30,7 +31,7 @@ function list(location = {}) {
   }
 
   const [, lists] = Object.entries(recommendations).find(
-    t => t[0] === forestType,
+    (t) => t[0] === forestType,
   ) || [null, emptyLists];
 
   if (transitionForestType) {
@@ -39,7 +40,7 @@ function list(location = {}) {
     }
 
     const [, transitionLists] = Object.entries(recommendations).find(
-      t => t[0] === transitionForestType,
+      (t) => t[0] === transitionForestType,
     ) || [null, emptyLists];
 
     lists[0] = union(
@@ -63,7 +64,7 @@ function list(location = {}) {
     lists[3] = union(lists[3], transitionLists[3]).sort(byNumber);
   }
 
-  return lists.map(trees =>
+  return lists.map((trees) =>
     trees.filter(residents).concat(trees.filter(nonresidents)),
   );
 }

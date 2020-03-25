@@ -17,7 +17,7 @@ function info(type, code) {
   }
 
   if (code) {
-    result = types[type].find(t => t.code === code);
+    result = types[type].find((t) => t.code === code);
 
     if (!result) {
       throw new Error(`${type}.${code} is not a valid code.`);
