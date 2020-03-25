@@ -4,8 +4,8 @@ import locations from '../data/locations.json';
 /**
  * This function tries to locate the forest type for a given location.
  *
- * @param {object} location The current location.´
- * @returns {object} ...
+ * @param {object} location The current location.
+ * @returns {object} Includes ecogram, forest types and options.
  */
 function locate(location = {}) {
   const options = { forestEcoregion: Object.keys(locations) };
