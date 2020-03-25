@@ -18,13 +18,13 @@ function LocationForm() {
   const dispatch = useDispatch();
   const {
     formLocation,
-    locateResult: { options },
+    locationResult: { options },
     location,
     mapLocation,
     projectionMode,
   } = useSelector(state => ({
     formLocation: state.formLocation,
-    locateResult: state.locateResult,
+    locationResult: state.locationResult,
     location: state.location,
     mapLocation: state.mapLocation,
     projectionMode: state.projectionMode,

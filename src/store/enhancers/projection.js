@@ -7,7 +7,7 @@ import {
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
   setLocation,
-  setLocateResult,
+  setLocationResult,
   setProjectionResult,
   setTargetAltitudinalZone,
 } from '../actions';
@@ -37,9 +37,9 @@ const projection = store => next => action => {
         : formLocation.targetAltitudinalZone;
     store.dispatch(setTargetAltitudinalZone(targetAltitudinalZone));
     try {
-      const locateResult = locate(location);
-      console.log(locateResult, location);
-      store.dispatch(setLocateResult(locateResult));
+      const locationResult = locate(location);
+      console.log(locationResult, location);
+      store.dispatch(setLocationResult(locationResult));
     } catch (error) {
       console.log('Locate error: ', error);
     }
