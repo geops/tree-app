@@ -292,7 +292,7 @@
         "id": 13,
         "z": "1",
         "forestTypes": "13h",
-        "otherForestTypes": "13hFe,13G"
+        "otherForestTypes": "13hFe,13hG"
       },
       "geometry": {
         "type": "MultiPolygon",

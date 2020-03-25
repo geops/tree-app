@@ -15,19 +15,14 @@ const abortScript = (alert) => {
   process.exit(1);
 };
 
-function validate(type, list, abort = true) {
+function validate(type, list) {
   if (!list) {
     abortScript(`List for ${type} missing!`);
   }
 
   list.forEach((code) => {
     if (!types[type].find((t) => t.code === code)) {
-      const message = `Code ${code} for ${type} not valid!`;
-      if (abort) {
-        abortScript(message);
-      } else {
-        console.log(message);
-      }
+      abortScript(`Code ${code} for ${type} not valid!`);
     }
   });
 }
@@ -74,8 +69,7 @@ const aggregateEcograms = () => {
       const [[x1, y1], , [x2, y2]] = f.geometry.coordinates[0][0];
       const height = 1000 - y1 * 1000 - (1000 - y2 * 1000);
       const ft = [...new Set([...forestTypes, ...otherForestTypes])];
-      // TODO: abort in validation once all forestTypes are fixed!
-      validate('forestType', ft, false);
+      validate('forestType', ft);
 
       boxes.push({
         x: Math.round(x1 * 1000),
