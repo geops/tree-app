@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/geops/tree-lib/compare/v1.2.0...v1.2.1) (2020-03-25)
+
+
+### Bug Fixes
+
+* correct forest types in ecogram data ([01e1d83](https://github.com/geops/tree-lib/commit/01e1d8340b04b54394cfaa18d4954d03b86413da))
+
 # [1.2.0](https://github.com/geops/tree-lib/compare/v1.1.0...v1.2.0) (2020-03-16)
 
 
