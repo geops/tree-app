@@ -1,7 +1,6 @@
 import {
-  SET_FOREST_TYPES,
   SET_FORM_LOCATION,
-  SET_LOCATE_RESULT,
+  SET_LOCATION_RESULT,
   SET_LOCATION,
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
@@ -14,9 +13,8 @@ import {
 
 export const initialState = {
   location: {},
-  forestTypes: [],
   formLocation: {},
-  locateResult: {},
+  locationResult: {},
   mapLayer: 'cb',
   mapLocation: {},
   mapView: '9|910001|5947112',
@@ -54,14 +52,11 @@ const getFormLocation = (state, action) => {
 
 function tree(state = initialState, action) {
   switch (action.type) {
-    case SET_FOREST_TYPES: {
-      return { ...state, forestTypes: action.forestTypes };
-    }
     case SET_FORM_LOCATION: {
       return { ...state, formLocation: getFormLocation(state, action) };
     }
-    case SET_LOCATE_RESULT: {
-      return { ...state, locateResult: action.locateResult };
+    case SET_LOCATION_RESULT: {
+      return { ...state, locationResult: action.locationResult };
     }
     case SET_LOCATION: {
       return { ...state, location: action.location };

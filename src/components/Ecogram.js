@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
-import { setForestTypes } from '../store/actions';
-
+import EcogramPopup from './EcogramPopup';
 import styles from './Ecogram.module.css';
 
 function Ecogram() {
-  const dispatch = useDispatch();
-  const { ecogram } = useSelector(state => state.locateResult);
+  const [popup, setPopup] = useState({ target: null, forestTypes: [] });
+  const { ecogram } = useSelector((state) => state.locationResult);
   const { t } = useTranslation();
 
   if (!ecogram) {
@@ -17,6 +16,11 @@ function Ecogram() {
 
   return (
     <svg x="0px" y="0px" viewBox="0 0 1200 1200">
+      <EcogramPopup
+        forestTypes={popup.forestTypes}
+        onClose={() => setPopup({ forestTypes: [] })}
+        target={popup.target}
+      />
       <g transform="translate(100,100)">
         <line x1="200" y1="0" x2="200" y2="1000" className={styles.grid} />
         <line x1="500" y1="0" x2="500" y2="1000" className={styles.grid} />
@@ -36,7 +40,7 @@ function Ecogram() {
                 width={w}
                 height={h}
                 className={styles.box}
-                onClick={() => dispatch(setForestTypes(f))}
+                onClick={({ target }) => setPopup({ target, forestTypes: f })}
               />
               {r ? (
                 [...new Array(r)].map((_, i) => (
