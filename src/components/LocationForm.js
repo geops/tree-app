@@ -2,13 +2,22 @@ import { info } from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Form } from 'semantic-ui-react';
+import { Accordion, Form, Label, Segment } from 'semantic-ui-react';
 
 import Dropdown from './Dropdown';
+import Input from './Input';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
 
-const getDropdownOptions = (type, lng, includeKey = false) => key => ({
+const forestTypeGroups = [
+  'main',
+  'special',
+  'volatile',
+  'riverside',
+  'pioneer',
+];
+
+const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
   text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
   value: key,
@@ -22,7 +31,7 @@ function LocationForm() {
     location,
     mapLocation,
     projectionMode,
-  } = useSelector(state => ({
+  } = useSelector((state) => ({
     formLocation: state.formLocation,
     locationResult: state.locationResult,
     location: state.location,
@@ -30,7 +39,78 @@ function LocationForm() {
     projectionMode: state.projectionMode,
   }));
   const { t, i18n } = useTranslation();
-  const isDifferent = field => mapLocation[field] !== formLocation[field];
+  const isDifferent = (field) => mapLocation[field] !== formLocation[field];
+
+  const panels = [
+    {
+      key: 'forestType.group.label',
+      title: { content: t('forestType.group.label') },
+      content: {
+        content: (
+          <Dropdown
+            options={forestTypeGroups.map((key) => ({
+              key,
+              text: t(`forestType.group.${key}`),
+              value: key,
+            }))}
+            onChange={(e, { value: forestTypeGroup }) =>
+              dispatch(setFormLocation({ forestTypeGroup }))
+            }
+            value={formLocation.forestTypeGroup}
+          />
+        ),
+      },
+    },
+    {
+      key: 'forestType.treeHeight',
+      title: { content: t('forestType.treeHeight') },
+      content: {
+        content: (
+          <>
+            <Segment>
+              <Label attached="top">{t('forestType.treeLayerHeight')}</Label>
+              <Input
+                label={t('forestType.treeLayerHeightMin')}
+                onChange={(e, { value: treeLayerHeightMin }) =>
+                  dispatch(setFormLocation({ treeLayerHeightMin }))
+                }
+                type="number"
+                value={formLocation.treeLayerHeightMin}
+              />
+              <Input
+                label={t('forestType.treeLayerHeightMax')}
+                onChange={(e, { value: treeLayerHeightMax }) =>
+                  dispatch(setFormLocation({ treeLayerHeightMax }))
+                }
+                type="number"
+                value={formLocation.treeLayerHeightMax}
+              />
+            </Segment>
+            <Segment>
+              <Label attached="top">{t('forestType.treeHeightMax')}</Label>
+              <Input
+                label={t('forestType.coniferTreeHeightMax')}
+                onChange={(e, { value: coniferTreeHeightMax }) =>
+                  dispatch(setFormLocation({ coniferTreeHeightMax }))
+                }
+                type="number"
+                value={formLocation.coniferTreeHeightMax}
+              />
+              <Input
+                label={t('forestType.deciduousTreeHeightMax')}
+                onChange={(e, { value: deciduousTreeHeightMax }) =>
+                  dispatch(setFormLocation({ deciduousTreeHeightMax }))
+                }
+                type="number"
+                value={formLocation.deciduousTreeHeightMax}
+              />
+            </Segment>
+          </>
+        ),
+      },
+    },
+  ];
+
   return (
     <Form className={styles.form}>
       {projectionMode === 'f' && options.forestEcoregion && (
@@ -59,6 +139,7 @@ function LocationForm() {
           value={location.altitudinalZone}
         />
       )}
+      <Accordion fluid panels={panels} styled />
     </Form>
   );
 }
