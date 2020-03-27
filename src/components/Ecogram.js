@@ -30,7 +30,7 @@ function Ecogram() {
         <line x1="0" y1="800" x2="1000" y2="800" className={styles.grid} />
         {ecogram
           .sort((a, b) => a.z - b.z)
-          .map(({ x, y, w, h, f, r }) => (
+          .map(({ a, x, y, w, h, f, r }) => (
             <>
               <rect
                 x={x}
@@ -39,7 +39,7 @@ function Ecogram() {
                 ry="5"
                 width={w}
                 height={h}
-                className={styles.box}
+                className={`${styles.box} ${a && styles.active}`}
                 onClick={({ target }) => setPopup({ target, forestTypes: f })}
               />
               {r ? (

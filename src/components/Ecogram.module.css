@@ -1,10 +1,13 @@
 .box {
-  cursor: pointer;
-  fill: var(--primary-color-500);
+  fill: #999;
   stroke: white;
   stroke-width: 2;
 }
-.box:hover {
+.active {
+  cursor: pointer;
+  fill: var(--primary-color-500);
+}
+.active:hover {
   fill: var(--primary-color-200);
 }
 
