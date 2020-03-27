@@ -177,31 +177,78 @@ VALUES ('',
 ----------------------------------------------
 -- foresttype
 
-CREATE TABLE foresttype_meta (code TEXT, de TEXT,
+CREATE TABLE foresttype_meta ( code TEXT, de TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
                               sort FLOAT);
 
 
-INSERT INTO foresttype_meta (code, de,
+INSERT INTO foresttype_meta (code, de, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
                              sort)
 SELECT trim(both
-            from naistyp_c),
+            from naistyp_c) as code,
        trim(both
-            from naistyp_wges),
+            from naistyp_wges) as de,
+       typ.naistyp_hdom_min::int as tree_layer_height_min,
+       typ.naistyp_hdom_max::int as tree_layer_height_max,
+       typ.naistyp_hmax_nad::int as conifer_tree_height_max,
+       typ.naistyp_hmax_lau::int as deciduous_tree_height_max,
        trim(both
-            from naistyp_sort)::float
-FROM nat_naistyp_mstr
-GROUP BY naistyp_c,
-         naistyp_wges,
-         naistyp_sort
+            from mstr.naistyp_sort)::float as
+sort
+FROM nat_naistyp_mstr mstr
+LEFT JOIN nat_naistyp typ USING (naistyp_c)
 UNION
 SELECT trim(both
-            from naistyp),
-       null,
+            from naistyp) as code,
+       null as de,
+       null as tree_layer_height_min,
+       null as tree_layer_height_max,
+       null as conifer_tree_height_max,
+       null as deciduous_tree_height_max,
        trim(both
-            from naistyp_sort)::float
+            from naistyp_sort)::float as
+sort
 FROM nat_baum_collin
 GROUP BY naistyp,
          naistyp_sort;
+
+
+CREATE TYPE foresttype_group_type AS ENUM ('main', 'special', 'volatile', 'riverside', 'pioneer');
+
+
+CREATE TABLE foresttype_group ("group" foresttype_group_type,
+                               code TEXT);
+
+
+INSERT INTO foresttype_group("group", code)
+SELECT 'main'::foresttype_group_type,
+       trim(both
+            from naistyp_c)
+FROM nat_naistyp
+WHERE naistyp_oeg_hawa = '1'
+UNION
+SELECT 'special'::foresttype_group_type,
+       trim(both
+            from naistyp_c)
+FROM nat_naistyp
+WHERE naistyp_oeg_sowa = '1'
+UNION
+SELECT 'volatile'::foresttype_group_type,
+       trim(both
+            from naistyp_c)
+FROM nat_naistyp
+WHERE naistyp_oeg_wefe = '1'
+UNION
+SELECT 'riverside'::foresttype_group_type,
+       trim(both
+            from naistyp_c)
+FROM nat_naistyp
+WHERE naistyp_oeg_aue = '1'
+UNION
+SELECT 'pioneer'::foresttype_group_type,
+       trim(both
+            from naistyp_c)
+FROM nat_naistyp
+WHERE naistyp_oeg_pio = '1';
 
 ----------------------------------------------
 -- altitudinal zones

@@ -3,7 +3,7 @@ CREATE TABLE projections_export (id SERIAL, forest_ecoregion TEXT, altitudinal_z
                                                                                                                                   slope TEXT, target_altitudinal_zone TEXT, target_forest_type TEXT);
 
 
-CREATE FUNCTION export_projections() RETURNS integer AS $$
+CREATE OR REPLACE FUNCTION export_projections() RETURNS integer AS $$
 DECLARE x integer;
 BEGIN
  TRUNCATE projections_export;
@@ -158,12 +158,42 @@ COPY
 ------------------------------
 ----- types
 
-
 COPY
   (WITH foresttype AS
-     (SELECT json_agg(jsonb_build_object('code', code, 'de', de) ORDER BY sort) AS
-      values
-      FROM foresttype_meta),
+     (SELECT
+  json_agg(jsonb_build_object('code', code, 'de', de, 'height', CASE tree_layer_height_min is null
+           WHEN TRUE THEN null
+           ELSE jsonb_build_array(tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max)
+       END, 'group', jsonb_build_object('main', (
+          SELECT
+            count(*) > 0 FROM foresttype_group
+        WHERE
+          code = foresttype_meta.code
+          AND "group" = 'main'::foresttype_group_type), 'special', (
+          SELECT
+            count(*) > 0 FROM foresttype_group
+        WHERE
+          code = foresttype_meta.code
+          AND "group" = 'special'::foresttype_group_type), 'volatile', (
+          SELECT
+            count(*) > 0 FROM foresttype_group
+        WHERE
+          code = foresttype_meta.code
+          AND "group" = 'volatile'::foresttype_group_type), 'riverside', (
+          SELECT
+            count(*) > 0 FROM foresttype_group
+        WHERE
+          code = foresttype_meta.code
+          AND "group" = 'riverside'::foresttype_group_type), 'pioneer', (
+          SELECT
+            count(*) > 0 FROM foresttype_group
+        WHERE
+          code = foresttype_meta.code
+          AND "group" = 'pioneer'::foresttype_group_type)))
+  ORDER BY
+    sort) AS
+VALUES
+  FROM foresttype_meta),
         treetype AS
      (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident)) AS
       values
@@ -171,7 +201,7 @@ COPY
         forest_ecoregions AS
      (SELECT json_agg(jsonb_build_object('code', subcode, 'de', region_de)) AS
       values
-      FROM (SELECT 'Me' AS subcode, 'Mendrisiotto' AS region_de UNION 
+      FROM (SELECT 'Me' AS subcode, 'Mendrisiotto' AS region_de UNION
             SELECT subcode, min(region_de) AS region_de FROM forest_ecoregions GROUP BY subcode ORDER BY subcode
            ) foo),
         altitudinal_zone AS
