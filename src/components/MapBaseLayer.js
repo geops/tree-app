@@ -5,7 +5,7 @@ import { LayerContext } from '../spatial/components/layer/Base';
 import Button from './Button';
 import styles from './MapBaseLayer.module.css';
 
-const getUrl = baseLayer => {
+const getUrl = (baseLayer) => {
   const layer =
     baseLayer === 'map'
       ? 'ch.swisstopo.pixelkarte-grau'
@@ -13,7 +13,7 @@ const getUrl = baseLayer => {
   return `https://wmts10.geo.admin.ch/1.0.0/${layer}/default/current/3857/{z}/{x}/{y}.jpeg`;
 };
 
-const toggle = baseLayer => (baseLayer === 'map' ? 'aerial' : 'map');
+const toggle = (baseLayer) => (baseLayer === 'map' ? 'aerial' : 'map');
 
 function MapBaseLayer() {
   const { t } = useTranslation();

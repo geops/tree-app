@@ -19,8 +19,8 @@ import styles from './Navigation.module.css';
 function Navigation() {
   const history = useHistory();
   const { pathname, search } = useLocation();
-  const go = page => () => history.push(`/${page}${search}`);
-  const is = page => pathname === `/${page}`;
+  const go = (page) => () => history.push(`/${page}${search}`);
+  const is = (page) => pathname === `/${page}`;
   const { t } = useTranslation();
   const isMobile = useIsMobile();
   document.title = t('app.title');

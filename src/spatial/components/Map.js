@@ -10,7 +10,7 @@ function Map({ children, className, ...props }) {
   const map = useMemo(
     () => new OLMap(props),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    Object.values(props).map(prop => getUid(prop)),
+    Object.values(props).map((prop) => getUid(prop)),
   );
 
   const target = useRef(null);

@@ -12,7 +12,7 @@ import styles from './WelcomeModal.module.css';
 function WelcomeModal() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const welcomeModalOpen = useSelector(state => state.welcomeModalOpen);
+  const welcomeModalOpen = useSelector((state) => state.welcomeModalOpen);
   return (
     <Modal open={welcomeModalOpen}>
       <Modal.Header>{t('welcome.header')}</Modal.Header>

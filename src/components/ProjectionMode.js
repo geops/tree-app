@@ -12,14 +12,14 @@ import { EPSG2056 } from '../map/projection';
 import { setProjectionMode } from '../store/actions';
 import styles from './ProjectionMode.module.css';
 
-const formatCoordinates = coordinates =>
+const formatCoordinates = (coordinates) =>
   transform(coordinates, 'EPSG:3857', EPSG2056)
-    .map(c => c.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'"))
+    .map((c) => c.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'"))
     .join(', ');
 
 function ProjectionMode() {
   const dispatch = useDispatch();
-  const { coordinate, projectionMode } = useSelector(state => ({
+  const { coordinate, projectionMode } = useSelector((state) => ({
     coordinate: state.mapLocation.coordinate,
     projectionMode: state.projectionMode,
   }));
