@@ -8,7 +8,7 @@ function TreeTypeList({ className, codes }) {
   return (
     <span className={className}>
       {codes
-        .map(code => {
+        .map((code) => {
           const treeInfo = info('treeType', code);
           return treeInfo[i18n.language] + (treeInfo.endangered ? '*' : '');
         })

@@ -15,7 +15,7 @@ import styles from './Recommendation.module.css';
 function Recommendation() {
   const { t } = useTranslation();
   const [future, setFuture] = useState(true);
-  const { location, projections } = useSelector(state => ({
+  const { location, projections } = useSelector((state) => ({
     location: state.location,
     projections: state.projectionResult.projections,
   }));

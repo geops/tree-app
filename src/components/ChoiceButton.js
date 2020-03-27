@@ -8,11 +8,11 @@ function ChoiceButton({ onChange, options, value, label, ...props }) {
     <Form.Field>
       <label>{label}</label>
       <Button.Group basic {...props}>
-        {options.map(option => (
+        {options.map((option) => (
           <Button
             key={option.key}
             active={value === option.key}
-            onClick={e => onChange(e, { value: option.key })}
+            onClick={(e) => onChange(e, { value: option.key })}
           >
             {option.label}
           </Button>

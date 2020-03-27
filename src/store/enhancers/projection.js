@@ -18,7 +18,7 @@ const projectionActionTypes = [
   SET_PROJECTION_MODE,
 ];
 
-const projection = store => next => action => {
+const projection = (store) => (next) => (action) => {
   const result = next(action);
   if (projectionActionTypes.includes(action.type)) {
     const { formLocation, mapLocation, projectionMode } = store.getState();

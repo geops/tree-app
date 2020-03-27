@@ -12,13 +12,13 @@ const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
 mapStyle.glyphs = `${endpoint}/fonts/{fontstack}/{range}.pbf`;
 mapStyle.sources.tree.tiles = [`${endpoint}/tree/{z}/{x}/{y}.pbf`];
 
-const getSourcLayer = layerId =>
-  (mapStyle.layers.find(l => l.id === layerId) || {})['source-layer'];
+const getSourcLayer = (layerId) =>
+  (mapStyle.layers.find((l) => l.id === layerId) || {})['source-layer'];
 
-const getStyle = sourceLayer => {
+const getStyle = (sourceLayer) => {
   return {
     ...mapStyle,
-    layers: mapStyle.layers.map(layer => ({
+    layers: mapStyle.layers.map((layer) => ({
       ...layer,
       paint:
         layer.type === 'fill'
@@ -33,19 +33,19 @@ const getStyle = sourceLayer => {
     })),
   };
 };
-const getLayersByGroup = group =>
-  mapStyle.layers.filter(l => l.metadata && l.metadata.group === group);
+const getLayersByGroup = (group) =>
+  mapStyle.layers.filter((l) => l.metadata && l.metadata.group === group);
 
 function MapVectorLayer() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const layer = useContext(LayerContext);
-  const mapLayer = useSelector(state => state.mapLayer);
+  const mapLayer = useSelector((state) => state.mapLayer);
   const sourceLayer = getSourcLayer(mapLayer);
   const style = getStyle(sourceLayer);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
 
-  const getDropdownItem = l => (
+  const getDropdownItem = (l) => (
     <Dropdown.Item
       active={mapLayer === l.id}
       className={styles.item}

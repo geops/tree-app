@@ -19,7 +19,7 @@ function ProjectionResult() {
     projectionMode,
     projections,
     targetAltitudinalZone,
-  } = useSelector(state => ({
+  } = useSelector((state) => ({
     projectionMode: state.projectionMode,
     location: state.location,
     options: state.projectionResult.options,
@@ -32,7 +32,8 @@ function ProjectionResult() {
   if (
     altitudinalZone &&
     (altitudinalZone === targetAltitudinalZone ||
-      projections.findIndex(p => p.altitudinalZone === altitudinalZone) === -1)
+      projections.findIndex((p) => p.altitudinalZone === altitudinalZone) ===
+        -1)
   ) {
     projections.unshift(location);
   }
@@ -43,7 +44,7 @@ function ProjectionResult() {
     render: () => <Recommendation />,
   });
 
-  projections.forEach(p => {
+  projections.forEach((p) => {
     const icons = [];
     const scenarios = [];
     if (projectionMode === 'f') {

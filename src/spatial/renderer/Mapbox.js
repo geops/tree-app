@@ -43,7 +43,7 @@ class MapboxRenderer {
   forEachFeatureAtCoordinate(coordinate, frameState, hitTolerance, callback) {
     const pixel = this.layer.map.getPixelFromCoordinate(coordinate);
     const features = this.layer.mapboxMap.queryRenderedFeatures(pixel) || [];
-    features.forEach(f => callback(f));
+    features.forEach((f) => callback(f));
     return features;
   }
 }
