@@ -104,8 +104,23 @@
     "cancel": "Abbrechen",
     "label": "Standortstyp",
     "hint": "Bitte in der Karte auswählen",
-    "select": "Standortsttyp auswählen",
-    "transition": "Übergang zu Standortstyp"
+    "select": "Standortstyp auswählen",
+    "transition": "Übergang zu Standortstyp",
+    "group": {
+      "label": "Standortsgruppe",
+      "main": "Hauptstandort",
+      "special": "Sonderwaldstandort",
+      "volatile": "Stark wechselnde Feuchtigkeit",
+      "riverside": "Auenwald",
+      "pioneer": "Pionierstandort"
+    },
+    "treeHeight": "Baumhöhe",
+    "treeLayerHeight": "Oberhöhe Baumschicht [m]",
+    "treeLayerHeightMin": "Minimal",
+    "treeLayerHeightMax": "Maximal",
+    "treeHeightMax": "Maximale Baumhöhe [m]",
+    "coniferTreeHeightMax": "Nadelbaum",
+    "deciduousTreeHeightMax": "Laubbaum"
   },
   "slope": {
     "label": "Hangneigung"

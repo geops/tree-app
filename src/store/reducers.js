@@ -13,7 +13,7 @@ import {
 
 export const initialState = {
   location: {},
-  formLocation: {},
+  formLocation: { forestTypeGroup: 'main' },
   locationResult: {},
   mapLayer: 'cb',
   mapLocation: {},
