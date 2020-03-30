@@ -122,6 +122,9 @@
     "coniferTreeHeightMax": "Nadelbaum",
     "deciduousTreeHeightMax": "Laubbaum"
   },
+  "indicator": {
+    "label": "Zeigerpflanzen"
+  },
   "slope": {
     "label": "Hangneigung"
   },
