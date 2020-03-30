@@ -1296,10 +1296,8 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@geops/tree-lib@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@geops/tree-lib/-/tree-lib-1.2.1.tgz#472931c7c4136d32cfe1cad70e74e89207e9e544"
-  integrity sha512-tyIPnlR7+XLSKGwNVBlgkXTFIqW5+NUHc3LvSUOJMDEARKlsGAFMpjpnOA+wXlEBeDbwbyQ7MgOaKr10h1bCQw==
+"@geops/tree-lib@./lib/tree-lib":
+  version "1.0.0"
   dependencies:
     lodash.difference "^4.5.0"
     lodash.intersection "^4.4.0"
