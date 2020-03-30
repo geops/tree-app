@@ -746,6 +746,18 @@
     },
     {
       "de": null,
+      "code": "7a hyp",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "height": null
+    },
+    {
+      "de": null,
       "code": "7a med",
       "group": {
         "main": false,
@@ -759,18 +771,6 @@
     {
       "de": null,
       "code": "7a collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "height": null
-    },
-    {
-      "de": null,
-      "code": "7a hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -1958,7 +1958,7 @@
     },
     {
       "de": null,
-      "code": "25O hyp",
+      "code": "25O med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -1970,7 +1970,7 @@
     },
     {
       "de": null,
-      "code": "25O med",
+      "code": "25O hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2066,7 +2066,7 @@
     },
     {
       "de": null,
-      "code": "25as hyp",
+      "code": "25as med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2078,7 +2078,7 @@
     },
     {
       "de": null,
-      "code": "25as med",
+      "code": "25as hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2162,7 +2162,7 @@
     },
     {
       "de": null,
-      "code": "25f hyp",
+      "code": "25f med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2174,7 +2174,7 @@
     },
     {
       "de": null,
-      "code": "25f med",
+      "code": "25f hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2198,7 +2198,7 @@
     },
     {
       "de": null,
-      "code": "25au med",
+      "code": "25au hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2210,7 +2210,7 @@
     },
     {
       "de": null,
-      "code": "25au hyp",
+      "code": "25au med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2342,7 +2342,7 @@
     },
     {
       "de": null,
-      "code": "27 collin",
+      "code": "27 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2354,7 +2354,7 @@
     },
     {
       "de": null,
-      "code": "27 med",
+      "code": "27 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2378,7 +2378,7 @@
     },
     {
       "de": null,
-      "code": "27Omed",
+      "code": "27O hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2390,7 +2390,7 @@
     },
     {
       "de": null,
-      "code": "27O hyp",
+      "code": "27Omed",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2450,7 +2450,7 @@
     },
     {
       "de": null,
-      "code": "28 collin",
+      "code": "28 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2474,7 +2474,7 @@
     },
     {
       "de": null,
-      "code": "28 hyp",
+      "code": "28 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2582,18 +2582,6 @@
     },
     {
       "de": null,
-      "code": "30 med",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "height": null
-    },
-    {
-      "de": null,
       "code": "30 collin",
       "group": {
         "main": false,
@@ -2617,6 +2605,18 @@
       "height": null
     },
     {
+      "de": null,
+      "code": "30 med",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "height": null
+    },
+    {
       "de": "Tieflagen-Grauerlenwald",
       "code": "31",
       "group": {
@@ -2630,7 +2630,7 @@
     },
     {
       "de": null,
-      "code": "31 hyp",
+      "code": "31 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2654,7 +2654,7 @@
     },
     {
       "de": null,
-      "code": "31 collin",
+      "code": "31 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2690,7 +2690,7 @@
     },
     {
       "de": null,
-      "code": "32C hyp",
+      "code": "32C med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2702,7 +2702,7 @@
     },
     {
       "de": null,
-      "code": "32C med",
+      "code": "32C hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2798,7 +2798,7 @@
     },
     {
       "de": null,
-      "code": "33a med",
+      "code": "33a hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2810,7 +2810,7 @@
     },
     {
       "de": null,
-      "code": "33a hyp",
+      "code": "33a med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2906,7 +2906,7 @@
     },
     {
       "de": null,
-      "code": "34a med",
+      "code": "34a hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2918,7 +2918,7 @@
     },
     {
       "de": null,
-      "code": "34a hyp",
+      "code": "34a med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2942,7 +2942,7 @@
     },
     {
       "de": null,
-      "code": "34b hyp",
+      "code": "34b med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -2954,7 +2954,7 @@
     },
     {
       "de": null,
-      "code": "34b med",
+      "code": "34b hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3026,7 +3026,7 @@
     },
     {
       "de": null,
-      "code": "35Q hyp",
+      "code": "35Q med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3038,7 +3038,7 @@
     },
     {
       "de": null,
-      "code": "35Q med",
+      "code": "35Q hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3062,7 +3062,7 @@
     },
     {
       "de": null,
-      "code": "35S hyp",
+      "code": "35S med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3074,7 +3074,7 @@
     },
     {
       "de": null,
-      "code": "35S med",
+      "code": "35S hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3110,7 +3110,7 @@
     },
     {
       "de": null,
-      "code": "36 hyp",
+      "code": "36 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3122,7 +3122,7 @@
     },
     {
       "de": null,
-      "code": "36 med",
+      "code": "36 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3146,7 +3146,7 @@
     },
     {
       "de": null,
-      "code": "37 med",
+      "code": "37 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3158,7 +3158,7 @@
     },
     {
       "de": null,
-      "code": "37 hyp",
+      "code": "37 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3218,7 +3218,7 @@
     },
     {
       "de": null,
-      "code": "38* med",
+      "code": "38* hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3230,7 +3230,7 @@
     },
     {
       "de": null,
-      "code": "38* hyp",
+      "code": "38* med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3302,18 +3302,6 @@
     },
     {
       "de": null,
-      "code": "40P hyp",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "height": null
-    },
-    {
-      "de": null,
       "code": "40P collin",
       "group": {
         "main": false,
@@ -3337,6 +3325,18 @@
       "height": null
     },
     {
+      "de": null,
+      "code": "40P hyp",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "height": null
+    },
+    {
       "de": "Aspen-Haselbuschwald auf Blockschutt",
       "code": "40PBl",
       "group": {
@@ -3350,7 +3350,7 @@
     },
     {
       "de": null,
-      "code": "40PBl med",
+      "code": "40PBl collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3374,7 +3374,7 @@
     },
     {
       "de": null,
-      "code": "40PBl collin",
+      "code": "40PBl med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3494,7 +3494,7 @@
     },
     {
       "de": null,
-      "code": "42C hyp",
+      "code": "42C med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3506,7 +3506,7 @@
     },
     {
       "de": null,
-      "code": "42C med",
+      "code": "42C hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3722,7 +3722,7 @@
     },
     {
       "de": null,
-      "code": "43 hyp",
+      "code": "43 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3734,7 +3734,7 @@
     },
     {
       "de": null,
-      "code": "43 collin",
+      "code": "43 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3758,7 +3758,7 @@
     },
     {
       "de": null,
-      "code": "43S med",
+      "code": "43S collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3782,7 +3782,7 @@
     },
     {
       "de": null,
-      "code": "43S collin",
+      "code": "43S med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3854,7 +3854,7 @@
     },
     {
       "de": null,
-      "code": "44 collin",
+      "code": "44 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -3866,7 +3866,7 @@
     },
     {
       "de": null,
-      "code": "44 med",
+      "code": "44 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -4657,18 +4657,6 @@
       "height": [25, 35, 37, 20]
     },
     {
-      "de": null,
-      "code": "55* collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "height": null
-    },
-    {
       "de": "Schneesimsen-Fi-Wald mit Lärche",
       "code": "55*Lä",
       "group": {
@@ -4679,6 +4667,18 @@
         "riverside": false
       },
       "height": [25, 35, 37, 20]
+    },
+    {
+      "de": null,
+      "code": "55* collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "height": null
     },
     {
       "de": "Schneesimsen-Fi-Wald mit Tanne",
@@ -5354,18 +5354,6 @@
     },
     {
       "de": null,
-      "code": "66 med",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "height": null
-    },
-    {
-      "de": null,
       "code": "66 collin",
       "group": {
         "main": false,
@@ -5379,6 +5367,18 @@
     {
       "de": null,
       "code": "66 hyp",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "height": null
+    },
+    {
+      "de": null,
+      "code": "66 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -5582,7 +5582,7 @@
     },
     {
       "de": null,
-      "code": "92a hyp",
+      "code": "92a med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -5594,7 +5594,7 @@
     },
     {
       "de": null,
-      "code": "92a med",
+      "code": "92a hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -5654,7 +5654,7 @@
     },
     {
       "de": null,
-      "code": "93 med",
+      "code": "93 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -5666,7 +5666,7 @@
     },
     {
       "de": null,
-      "code": "93 hyp",
+      "code": "93 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -7610,18 +7610,6 @@
     },
     {
       "de": null,
-      "code": "53TaG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "height": null
-    },
-    {
-      "de": null,
       "code": "53G",
       "group": {
         "main": true,
@@ -7631,6 +7619,18 @@
         "riverside": false
       },
       "height": [4, 6, 10, 10]
+    },
+    {
+      "de": null,
+      "code": "53TaG",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "height": null
     },
     {
       "de": null,
