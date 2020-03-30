@@ -62,6 +62,24 @@ function LocationForm() {
       },
     },
     {
+      key: 'indicator.label',
+      title: { content: t('indicator.label') },
+      content: {
+        content: options && (
+          <Dropdown
+            multiple
+            options={options.indicator.map(
+              getDropdownOptions('indicator', i18n.language),
+            )}
+            onChange={(e, { value: indicators }) =>
+              dispatch(setFormLocation({ indicators }))
+            }
+            value={formLocation.indicators}
+          />
+        ),
+      },
+    },
+    {
       key: 'forestType.treeHeight',
       title: { content: t('forestType.treeHeight') },
       content: {
