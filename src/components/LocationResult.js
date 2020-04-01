@@ -20,7 +20,11 @@ function LocationResult() {
     locationResult: state.locationResult,
   }));
   if (formLocation.forestTypeGroup === 'main') {
-    return <Ecogram />;
+    return (
+      <div>
+        <Ecogram />
+      </div>
+    );
   }
   if (formLocation.forestTypeGroup) {
     return (
