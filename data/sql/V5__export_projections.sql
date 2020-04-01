@@ -159,87 +159,110 @@ COPY
 ----- types
 
 COPY
-  (WITH foresttype AS
-     (SELECT
-  json_agg(jsonb_build_object('code', code, 'de', de, 'height', CASE tree_layer_height_min is null
-           WHEN TRUE THEN null
-           ELSE jsonb_build_array(tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max)
-       END, 'group', jsonb_build_object('main', (
-          SELECT
-            count(*) > 0 FROM foresttype_group
-        WHERE
-          code = foresttype_meta.code
-          AND "group" = 'main'::foresttype_group_type), 'special', (
-          SELECT
-            count(*) > 0 FROM foresttype_group
-        WHERE
-          code = foresttype_meta.code
-          AND "group" = 'special'::foresttype_group_type), 'volatile', (
-          SELECT
-            count(*) > 0 FROM foresttype_group
-        WHERE
-          code = foresttype_meta.code
-          AND "group" = 'volatile'::foresttype_group_type), 'riverside', (
-          SELECT
-            count(*) > 0 FROM foresttype_group
-        WHERE
-          code = foresttype_meta.code
-          AND "group" = 'riverside'::foresttype_group_type), 'pioneer', (
-          SELECT
-            count(*) > 0 FROM foresttype_group
-        WHERE
-          code = foresttype_meta.code
-          AND "group" = 'pioneer'::foresttype_group_type)))
-  ORDER BY
-    sort) AS
-VALUES
-  FROM foresttype_meta),
-        treetype AS
-     (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident)) AS
-      values
-      FROM treetype_meta),
-        forest_ecoregions AS
-     (SELECT json_agg(jsonb_build_object('code', subcode, 'de', region_de)) AS
-      values
-      FROM (SELECT 'Me' AS subcode, 'Mendrisiotto' AS region_de UNION
-            SELECT subcode, min(region_de) AS region_de FROM forest_ecoregions GROUP BY subcode ORDER BY subcode
-           ) foo),
-        altitudinal_zone AS
-     (SELECT json_agg(jsonb_build_object('code', code, 'de', projection, 'id', id)) AS
-      values
-      FROM altitudinal_zone_meta),
-        additional AS
-     (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
-      values
-      FROM additional_meta),
-        silver_fir_areas as
-     (SELECT json_agg(jsonb_build_object('code', code_ta, 'de', projection)) AS
-      values
-      FROM silver_fir_area_meta),
-        relief as
-     (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
-      values
-      FROM (SELECT DISTINCT target, de FROM relief_meta) foo),
-        slope AS
-     (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
-      values
-      FROM slope_meta) SELECT jsonb_build_object('forestType', foresttype.
-                                                 values,'treeType', treetype.
-                                                 values,'forestEcoregion', forest_ecoregions.
-                                                 values,'altitudinalZone',altitudinal_zone.
-                                                 values,'additional',additional.
-                                                 values,'silverFirArea',silver_fir_areas.
-                                                 values,'relief',relief.
-                                                 values,'slope',slope.
-                                                 values)
-   FROM foresttype,
-        treetype,
-        forest_ecoregions,
-        altitudinal_zone,
-        additional,
-        silver_fir_areas,
-        relief,
-        slope) TO '/data/types.json';
+    (WITH additional AS
+         (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
+          values
+          FROM additional_meta),
+          altitudinal_zone AS
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', projection, 'id', id)) AS
+          values
+          FROM altitudinal_zone_meta),
+          forest_ecoregions AS
+         (SELECT json_agg(jsonb_build_object('code', subcode, 'de', region_de)) AS
+          values
+          FROM
+              (SELECT 'Me' AS subcode,
+                      'Mendrisiotto' AS region_de
+               UNION SELECT subcode,
+                            min(region_de) AS region_de
+               FROM forest_ecoregions
+               GROUP BY subcode
+               ORDER BY subcode) foo),
+          foresttype AS
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'height', CASE tree_layer_height_min is null
+                                                                                   WHEN TRUE THEN null
+                                                                                   ELSE jsonb_build_array(tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max)
+                                                                               END,
+                                                                     'altitudinalZoneForestEcoregion',(SELECT json_agg(jsonb_build_array(altitudinal_zone_code, forest_ecoregion_code)) FROM foresttype_altitudinal_zone_forest_ecoregion WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
+                                                                     'carbonate', jsonb_build_array(carbonate_fine, carbonate_rock),
+                                                                     'geomorphology', jsonb_build_array(geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised),
+                                                                     'reliefType', jsonb_build_array(relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep),
+                                                                     'group', jsonb_build_object('main',
+                                                                                                                    (SELECT count(*) > 0
+                                                                                                                     FROM foresttype_group
+                                                                                                                     WHERE code = foresttype_meta.code
+                                                                                                                         AND "group" = 'main'::foresttype_group_type), 'special',
+                                                                                                                    (SELECT count(*) > 0
+                                                                                                                     FROM foresttype_group
+                                                                                                                     WHERE code = foresttype_meta.code
+                                                                                                                         AND "group" = 'special'::foresttype_group_type), 'volatile',
+                                                                                                                    (SELECT count(*) > 0
+                                                                                                                     FROM foresttype_group
+                                                                                                                     WHERE code = foresttype_meta.code
+                                                                                                                         AND "group" = 'volatile'::foresttype_group_type), 'riverside',
+                                                                                                                    (SELECT count(*) > 0
+                                                                                                                     FROM foresttype_group
+                                                                                                                     WHERE code = foresttype_meta.code
+                                                                                                                         AND "group" = 'riverside'::foresttype_group_type), 'pioneer',
+                                                                                                                    (SELECT count(*) > 0
+                                                                                                                     FROM foresttype_group
+                                                                                                                     WHERE code = foresttype_meta.code
+                                                                                                                         AND "group" = 'pioneer'::foresttype_group_type)))
+                          ORDER BY
+                          sort) AS
+          VALUES
+          FROM foresttype_meta),
+          indicators as
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'forestEcoregions',
+                                                 (SELECT json_agg(forest_ecoregion_code)
+                                                  FROM indicator_forest_ecoregion
+                                                  WHERE indicator_code = indicator_meta.code), 'altitudinalZones',
+                                                 (SELECT json_agg(altitudinal_zone_code)
+                                                  FROM indicator_altitudinal_zone
+                                                  WHERE indicator_code = indicator_meta.code), 'forestTypes',
+                                                 (SELECT json_agg(trim(BOTH FROM naistyp_c))
+                                                  FROM nat_naistyp_art
+                                                  WHERE vorh = '1' AND sisf_nr::int = indicator_meta.code)
+         )) AS
+          values
+          FROM indicator_meta),
+          relief as
+         (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
+          values
+          FROM
+              (SELECT DISTINCT target,
+                               de
+               FROM relief_meta) foo),
+          silver_fir_areas as
+         (SELECT json_agg(jsonb_build_object('code', code_ta, 'de', projection)) AS
+          values
+          FROM silver_fir_area_meta),
+          slope AS
+         (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
+          values
+          FROM slope_meta),
+          treetype AS
+         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident)) AS
+          values
+          FROM treetype_meta) SELECT jsonb_build_object('additional',additional.
+                                                        values,'altitudinalZone',altitudinal_zone.
+                                                        values,'forestEcoregion', forest_ecoregions.
+                                                        values,'forestType', foresttype.
+                                                        values,'indicator',indicators.
+                                                        values,'relief',relief.
+                                                        values,'silverFirArea',silver_fir_areas.
+                                                        values,'slope',slope.
+                                                        values,'treeType', treetype.
+                                                        values)
+     FROM additional,
+          altitudinal_zone,
+          forest_ecoregions,
+          foresttype,
+          indicators,
+          relief,
+          silver_fir_areas,
+          slope,
+          treetype) TO '/data/types.json';
 
      GET DIAGNOSTICS x = ROW_COUNT;
   RETURN x;

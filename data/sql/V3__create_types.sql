@@ -175,41 +175,215 @@ VALUES ('',
         'unknown');
 
 ----------------------------------------------
+-- altitudinal zones
+
+CREATE TABLE altitudinal_zone_meta (projection TEXT, nais TEXT, code TEXT, id SERIAL);
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('collin -mediterran',
+        '01C',
+        '0');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('hyperinsubrisch',
+        'HY',
+        '10');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('collin',
+        'C',
+        '20');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('collin mit Buche',
+        'CB',
+        '30');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('submontan',
+        'SM',
+        '40');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('untermontan',
+        'UM',
+        '50');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('obermontan',
+        'OM',
+        '60');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('ober- und untermontan',
+        'UMOM',
+        '70');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('hochmontan',
+        'HM',
+        '81');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('hochmontan Nebenareal der Tanne',
+        null,
+        '82');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('hochmontan Reliktareal der Tanne',
+        null,
+        '83');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('subalpin',
+        'SA',
+        '90');
+
+
+INSERT INTO altitudinal_zone_meta (projection, nais, code)
+VALUES ('obersubalpin',
+        'OSA',
+        '100');
+
+----------------------------------------------
 -- foresttype
 
-CREATE TABLE foresttype_meta ( code TEXT, de TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
-                              sort FLOAT);
+CREATE TABLE foresttype_meta (code TEXT PRIMARY KEY,
+                                                de TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
+                              sort FLOAT, carbonate_fine BOOLEAN, carbonate_rock BOOLEAN, geomorphology_rock_band BOOLEAN, geomorphology_blocky_rocky_strong BOOLEAN, geomorphology_blocky_rocky_little BOOLEAN, geomorphology_limestone_pavement BOOLEAN, geomorphology_rocks_moderately_moved BOOLEAN, geomorphology_rocks_strongly_moved BOOLEAN, geomorphology_rocks_stabilised BOOLEAN, relief_type_central_slope BOOLEAN, relief_type_hollow BOOLEAN, relief_type_dome BOOLEAN, relief_type_plateau BOOLEAN, relief_type_steep BOOLEAN);
 
 
 INSERT INTO foresttype_meta (code, de, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
-                             sort)
-SELECT trim(both
-            from naistyp_c) as code,
-       trim(both
-            from naistyp_wges) as de,
-       typ.naistyp_hdom_min::int as tree_layer_height_min,
-       typ.naistyp_hdom_max::int as tree_layer_height_max,
-       typ.naistyp_hmax_nad::int as conifer_tree_height_max,
-       typ.naistyp_hmax_lau::int as deciduous_tree_height_max,
-       trim(both
-            from mstr.naistyp_sort)::float as
-sort
+                             sort, carbonate_fine, carbonate_rock, geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised, relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep)
+SELECT trim(BOTH
+            FROM naistyp_c) AS code,
+       trim(BOTH
+            FROM naistyp_wges) AS de,
+       typ.naistyp_hdom_min::int AS tree_layer_height_min,
+       typ.naistyp_hdom_max::int AS tree_layer_height_max,
+       typ.naistyp_hmax_nad::int AS conifer_tree_height_max,
+       typ.naistyp_hmax_lau::int AS deciduous_tree_height_max,
+       trim(BOTH
+            FROM mstr.naistyp_sort)::float AS
+sort,
+       CASE typ.ntyp_kg_fein = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS carbonate_fine,
+       CASE typ.ntyp_kg_gestein = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS carbonate_rock,
+       CASE typ.ntyp_fels = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS geomorphology_rock_band,
+       CASE typ.ntyp_bl_fels_st = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS geomorphology_blocky_rocky_strong,
+       CASE typ.ntyp_bl_fels_we = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS geomorphology_blocky_rocky_little,
+       CASE typ.ntyp_bl_karren = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS geomorphology_limestone_pavement,
+       CASE typ.ntyp_bl_schutt_m = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS geomorphology_rocks_moderately_moved,
+       CASE typ.ntyp_bl_schutt_s = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS geomorphology_rocks_strongly_moved,
+       CASE typ.ntyp_bl_schutt_x = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS geomorphology_rocks_stabilised,
+       CASE typ.ntyp_rt_mittelh = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS relief_type_central_slope,
+       CASE typ.ntyp_rt_mulde = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS relief_type_hollow,
+       CASE typ.ntyp_rt_kuppe = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS relief_type_dome,
+       CASE typ.ntyp_rt_plateau = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS relief_type_plateau,
+       CASE typ.ntyp_rt_steilh = '1'
+           WHEN TRUE THEN TRUE
+           ELSE FALSE
+       END AS relief_type_steep
 FROM nat_naistyp_mstr mstr
 LEFT JOIN nat_naistyp typ USING (naistyp_c)
 UNION
-SELECT trim(both
-            from naistyp) as code,
-       null as de,
-       null as tree_layer_height_min,
-       null as tree_layer_height_max,
-       null as conifer_tree_height_max,
-       null as deciduous_tree_height_max,
-       trim(both
-            from naistyp_sort)::float as
-sort
+SELECT trim(BOTH
+            FROM naistyp) AS code,
+       NULL AS de,
+       NULL AS tree_layer_height_min,
+       NULL AS tree_layer_height_max,
+       NULL AS conifer_tree_height_max,
+       NULL AS deciduous_tree_height_max,
+       trim(BOTH
+            FROM naistyp_sort)::float AS
+sort,
+       NULL AS carbonate_fine,
+       NULL AS carbonate_rock,
+       NULL AS geomorphology_rock_band,
+       NULL AS geomorphology_blocky_rocky_strong,
+       NULL AS geomorphology_blocky_rocky_little,
+       NULL AS geomorphology_limestone_pavement,
+       NULL AS geomorphology_rocks_moderately_moved,
+       NULL AS geomorphology_rocks_strongly_moved,
+       NULL AS geomorphology_rocks_stabilised,
+       NULL AS relief_type_central_slope,
+       NULL AS relief_type_hollow,
+       NULL AS relief_type_dome,
+       NULL AS relief_type_plateau,
+       NULL AS relief_type_steep
 FROM nat_baum_collin
 GROUP BY naistyp,
          naistyp_sort;
+
+
+CREATE TABLE foresttype_altitudinal_zone_forest_ecoregion (foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                                           altitudinal_zone_code TEXT, forest_ecoregion_code TEXT);
+
+
+INSERT INTO foresttype_altitudinal_zone_forest_ecoregion (foresttype_code, altitudinal_zone_code, forest_ecoregion_code)
+SELECT DISTINCT trim(both
+                     from nat_naistyp.naistyp_c) AS forest_type_code,
+                azm.code AS altitudinal_zone,
+                split_part(split_part(feld_name, '_', 3), '-', 2) AS forest_ecoregion
+FROM nat_lage
+LEFT JOIN altitudinal_zone_meta azm ON azm.nais = split_part(split_part(feld_name, '_', 3), '-', 1)
+LEFT JOIN nat_naistyp on trim(both '0.'
+                              from nat_lage.naistyp_sort) = nat_naistyp.naistyp_sort
+WHERE feld_name ILIKE 'HS_%'
+        AND nat_naistyp.naistyp_c is not null
+        AND feld_wert in ('1',
+                          '2')
+        AND split_part(split_part(feld_name, '_', 3), '-', 2) != '';
 
 
 CREATE TYPE foresttype_group_type AS ENUM ('main', 'special', 'volatile', 'riverside', 'pioneer');
@@ -224,101 +398,164 @@ SELECT 'main'::foresttype_group_type,
        trim(both
             from naistyp_c)
 FROM nat_naistyp
-WHERE naistyp_oeg_hawa = '1'
+WHERE naistyp_oeg_hawa IN ('1',
+                           '2')
 UNION
 SELECT 'special'::foresttype_group_type,
        trim(both
             from naistyp_c)
 FROM nat_naistyp
-WHERE naistyp_oeg_sowa = '1'
+WHERE naistyp_oeg_sowa IN ('1',
+                           '2')
 UNION
 SELECT 'volatile'::foresttype_group_type,
        trim(both
             from naistyp_c)
 FROM nat_naistyp
-WHERE naistyp_oeg_wefe = '1'
+WHERE naistyp_oeg_wefe IN ('1',
+                           '2')
 UNION
 SELECT 'riverside'::foresttype_group_type,
        trim(both
             from naistyp_c)
 FROM nat_naistyp
-WHERE naistyp_oeg_aue = '1'
+WHERE naistyp_oeg_aue IN ('1',
+                          '2')
 UNION
 SELECT 'pioneer'::foresttype_group_type,
        trim(both
             from naistyp_c)
 FROM nat_naistyp
-WHERE naistyp_oeg_pio = '1';
+WHERE naistyp_oeg_pio IN ('1',
+                          '2');
 
 ----------------------------------------------
--- altitudinal zones
+-- indicator
 
-CREATE TABLE altitudinal_zone_meta (projection TEXT, code TEXT, id SERIAL);
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('collin -mediterran',
-        '0');
+CREATE TABLE indicator_meta (code INTEGER PRIMARY KEY,
+                                                  de TEXT);
 
 
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('hyperinsubrisch',
-        '10');
+CREATE TABLE indicator_altitudinal_zone (indicator_code INTEGER REFERENCES indicator_meta,
+                                                                           altitudinal_zone_code TEXT);
 
 
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('collin',
-        '20');
+CREATE TABLE indicator_forest_ecoregion (indicator_code INTEGER REFERENCES indicator_meta,
+                                                                           forest_ecoregion_code TEXT);
 
 
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('collin mit Buche',
-        '30');
+INSERT INTO indicator_meta (code, de)
+SELECT sisf_nr::int AS code,
+       COALESCE(art_nam_deu, art_nam_lat) AS de
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1';
 
 
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('submontan',
-        '40');
+INSERT INTO indicator_forest_ecoregion (indicator_code, forest_ecoregion_code)
+SELECT sisf_nr::int AS code,
+       '1' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_1 = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '2a' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_2a = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '2b' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_2b = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '3' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_3 = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '4' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_4 = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '5a' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_5a = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '5a' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_5aa = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '5b' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_5b = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       'J' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_j = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       'M' AS forest_ecoregion_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_region_m = '1';
 
 
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('untermontan',
-        '50');
+INSERT INTO indicator_altitudinal_zone (indicator_code, altitudinal_zone_code)
+SELECT sisf_nr::int AS code,
+       '20' AS altitudinal_zone_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_hs_collin = '1'
+UNION -- TODO: switch to 80 once hochmontan branch has been merged!
 
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('obermontan',
-        '60');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('ober- und untermontan',
-        '70');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('hochmontan',
-        '81');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('hochmontan Nebenareal der Tanne',
-        '82');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('hochmontan Reliktareal der Tanne',
-        '83');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('subalpin',
-        '90');
-
-
-INSERT INTO altitudinal_zone_meta (projection,code)
-VALUES ('obersubalpin',
-        '100');
+SELECT sisf_nr::int AS code,
+       '81' AS altitudinal_zone_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_hs_hochmont = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '60' AS altitudinal_zone_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_hs_obermont = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '100' AS altitudinal_zone_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_hs_obsubalp = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '90' AS altitudinal_zone_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_hs_subalpin = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '40' AS altitudinal_zone_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_hs_submontan = '1'
+UNION
+SELECT sisf_nr::int AS code,
+       '50' AS altitudinal_zone_code
+FROM nat_arten_mstr
+WHERE art_erk_zeik = '1'
+        AND art_hs_untermont = '1';
 
 ----------------------------------------------
 -- recommendationtype
