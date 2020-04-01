@@ -120,7 +120,30 @@
     "treeLayerHeightMax": "Maximal",
     "treeHeightMax": "Maximale Baumhöhe [m]",
     "coniferTreeHeightMax": "Nadelbaum",
-    "deciduousTreeHeightMax": "Laubbaum"
+    "deciduousTreeHeightMax": "Laubbaum",
+    "carbonate": {
+      "label": "Karbonatgehalt",
+      "fine": "Feinmaterial",
+      "rock": "Gestein"
+    },
+    "geomorphology": {
+      "label": "Geomorphologie",
+      "rockBand": "Felsband",
+      "blockyRockyStrong": "Blockig-felsig stark",
+      "blockyRockyLittle": "Blockig-felsig wenig",
+      "limestonePavement": "Karren",
+      "rocksModeratelyMoved": "Geröll/Steine mäßig bewegt",
+      "rocksStronglyMoved": "Geröll/Steine stark bewegt",
+      "rocksStabilised": "Geröll/Steine stabilisiert"
+    },
+    "reliefType": {
+      "label": "Relieftyp",
+      "centralSlope": "Mittelhang",
+      "hollow": "Mulde / Unterhang",
+      "dome": "Kuppe / Oberhang",
+      "plateau": "flach / Plateau",
+      "steep": "Steilhang"
+    }
   },
   "indicator": {
     "label": "Zeigerpflanzen"
