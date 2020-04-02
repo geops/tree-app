@@ -66,7 +66,7 @@ function LocationForm() {
       key: 'forestType.treeType',
       title: { content: t('forestType.treeType') },
       content: {
-        content: options && (
+        content: options && options.treeType && (
           <Dropdown
             multiple
             options={options.treeType.map(
