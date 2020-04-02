@@ -44,7 +44,7 @@ function LocationForm() {
 
   const panels = [
     {
-      key: 'forestType.group.label',
+      key: 'forestType.group',
       title: { content: t('forestType.group.label') },
       content: {
         content: (
@@ -63,7 +63,25 @@ function LocationForm() {
       },
     },
     {
-      key: 'indicator.label',
+      key: 'forestType.treeType',
+      title: { content: t('forestType.treeType') },
+      content: {
+        content: options && (
+          <Dropdown
+            multiple
+            options={options.treeType.map(
+              getDropdownOptions('treeType', i18n.language),
+            )}
+            onChange={(e, { value: treeTypes }) =>
+              dispatch(setFormLocation({ treeTypes }))
+            }
+            value={formLocation.treeTypes}
+          />
+        ),
+      },
+    },
+    {
+      key: 'indicator',
       title: { content: t('indicator.label') },
       content: {
         content: options && (

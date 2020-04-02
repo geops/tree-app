@@ -143,7 +143,8 @@
       "dome": "Kuppe / Oberhang",
       "plateau": "flach / Plateau",
       "steep": "Steilhang"
-    }
+    },
+    "treeType": "Baumarten"
   },
   "indicator": {
     "label": "Zeigerpflanzen"
