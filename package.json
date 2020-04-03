@@ -5,11 +5,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@geops/tree-lib": "file:./lib",
     "i18next": "^19.3.4",
-    "lodash.difference": "^4.5.0",
-    "lodash.intersection": "^4.4.0",
-    "lodash.union": "^4.6.0",
-    "lodash.xor": "^4.5.0",
     "mapbox-gl": "1.8.1",
     "ol": "^6.1.1",
     "proj4": "^2.6.0",
@@ -115,7 +112,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint src",
-    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol)/\"",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol|@geops/tree-lib)/\"",
     "eject": "react-scripts eject"
   }
 }

@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom';
 import { List, Popup } from 'semantic-ui-react';
-import { info } from '../../lib/src';
+import { info } from '@geops/tree-lib/src';
 
 import Button from './Button';
 import { setFormLocation } from '../store/actions';

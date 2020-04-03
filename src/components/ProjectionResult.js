@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
-import { info } from '../../lib/src';
+import { info } from '@geops/tree-lib/src';
 
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';

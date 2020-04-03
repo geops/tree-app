@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Accordion } from 'semantic-ui-react';
-import treeLib from '../../lib/src';
+import treeLib from '@geops/tree-lib/src';
 
 import InfoAbout from './InfoAbout';
 import InfoParticipants from './InfoParticipants';
