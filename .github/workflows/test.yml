@@ -28,8 +28,6 @@ jobs:
         with:
           node-version: 10
 
-      - run: cd lib
-
       - name: Get yarn cache
         id: yarn-cache
         run: echo "::set-output name=dir::$(yarn cache dir)"
@@ -42,7 +40,10 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - run: yarn install --frozen-lockfile
+        working-directory: ./lib
 
       - run: yarn lint
+        working-directory: ./lib
 
       - run: yarn test
+        working-directory: ./lib
