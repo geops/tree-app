@@ -1,7 +1,12 @@
 version: 1
 update_configs:
-  - package_manager: "javascript"
-    directory: "/"
-    update_schedule: "weekly"
+  - package_manager: 'javascript'
+    directory: '/'
+    update_schedule: 'weekly'
     commit_message:
-      prefix: "chore"
+      prefix: 'chore'
+  - package_manager: 'javascript'
+    directory: '/lib'
+    update_schedule: 'weekly'
+    commit_message:
+      prefix: 'chore'

@@ -1,8 +1,8 @@
-import { list } from '@geops/tree-lib';
 import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Grid, Header, Tab } from 'semantic-ui-react';
+import { list } from '@geops/tree-lib/src';
 
 import TreeTypeList from './TreeTypeList';
 

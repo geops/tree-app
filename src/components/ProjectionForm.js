@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
-import { info } from '@geops/tree-lib';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
+import { info } from '@geops/tree-lib/src';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
