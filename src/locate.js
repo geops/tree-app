@@ -29,38 +29,26 @@ function locate(location = {}) {
   }
 
   let forestTypes = types.forestType;
-  let indicators = types.indicator;
-  if (location.forestEcoregion) {
-    indicators = indicators.filter(
-      (i) => i.forestEcoregions && i.forestEcoregions.includes(forestEcoregion),
-    );
-    if (location.altitudinalZone) {
-      forestTypes = forestTypes.filter(
-        (ft) =>
-          ft.altitudinalZoneForestEcoregion &&
-          ft.altitudinalZoneForestEcoregion.filter(
-            ([az, fe]) => az === altitudinalZone && fe === forestEcoregion,
-          ).length > 0,
-      );
-    }
-  }
-  if (location.altitudinalZone) {
-    indicators = indicators.filter(
-      (i) => i.altitudinalZones && i.altitudinalZones.includes(altitudinalZone),
+  if (location.forestEcoregion && location.altitudinalZone) {
+    forestTypes = forestTypes.filter(
+      (ft) =>
+        ft.altitudinalZoneForestEcoregion &&
+        ft.altitudinalZoneForestEcoregion.filter(
+          ([az, fe]) => az === altitudinalZone && fe === forestEcoregion,
+        ).length > 0,
     );
   }
   if (location.indicators && location.indicators.length > 0) {
-    const indicatorForestTypes = location.indicators
-      .map((i) => types.indicator.find((it) => it.code === i).forestTypes)
+    const indicatorsFT = location.indicators
+      .map((li) => types.indicator.find((it) => it.code === li).forestTypes)
       .reduce((ift, ft) => ift.concat(ft), []);
-    forestTypes = forestTypes.filter((ft) =>
-      indicatorForestTypes.includes(ft.code),
-    );
+    forestTypes = forestTypes.filter((ft) => indicatorsFT.includes(ft.code));
   }
-  if (location.forestTypeGroup) {
-    forestTypes = forestTypes.filter(
-      (ft) => ft.group[location.forestTypeGroup] === true,
-    );
+  if (location.treeTypes && location.treeTypes.length > 0) {
+    const treeTypesFT = location.treeTypes
+      .map((ltt) => types.treeType.find((ttt) => ttt.code === ltt).forestTypes)
+      .reduce((ttft, ft) => ttft.concat(ft), []);
+    forestTypes = forestTypes.filter((ft) => treeTypesFT.includes(ft.code));
   }
   if (location.treeLayerHeightMin) {
     forestTypes = forestTypes.filter(
@@ -124,12 +112,23 @@ function locate(location = {}) {
   if (location.reliefTypeSteep) {
     forestTypes = forestTypes.filter((ft) => ft.reliefType[4] === true);
   }
-  forestTypes = forestTypes.map((ft) => ft.code);
-  options.indicator = indicators.map((i) => i.code);
+  const allForestTypes = forestTypes.map((ft) => ft.code);
+  const byForestTypes = (item) =>
+    intersection(item.forestTypes, allForestTypes).length > 0;
 
+  options.indicator = types.indicator.filter(byForestTypes).map((i) => i.code);
+  options.treeType = types.treeType.filter(byForestTypes).map((tt) => tt.code);
+
+  forestTypes = {
+    main: forestTypes.filter((ft) => ft.group.main).map((ft) => ft.code),
+    pioneer: forestTypes.filter((ft) => ft.group.pioneer).map((ft) => ft.code),
+    special: forestTypes.filter((ft) => ft.group.special).map((ft) => ft.code),
+    volatile: forestTypes.filter((ft) => ft.group.volatile).map((f) => f.code),
+    riverside: forestTypes.filter((f) => f.group.riverside).map((f) => f.code),
+  };
   if (ecogram) {
     ecogram = ecogram.map((e) => {
-      const a = intersection(e.f, forestTypes).length > 0; // active
+      const a = intersection(e.f, forestTypes.main).length > 0; // active
       return { ...e, a };
     });
   }
