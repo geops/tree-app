@@ -1,8 +1,8 @@
-import { info } from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Accordion, Form, Label, Segment } from 'semantic-ui-react';
+import { info } from '../../lib/src';
 
 import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';

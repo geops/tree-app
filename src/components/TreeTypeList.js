@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { info } from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { info } from '../../lib/src';
 
 function TreeTypeList({ className, codes }) {
   const { i18n } = useTranslation();

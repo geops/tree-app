@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
-import { locate, project } from '@geops/tree-lib';
 import { applyMiddleware } from 'redux';
+import { locate, project } from '../../../lib/src';
 
 import {
   SET_FORM_LOCATION,
