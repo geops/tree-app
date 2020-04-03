@@ -107,8 +107,9 @@
     "select": "Standortstyp auswählen",
     "transition": "Übergang zu Standortstyp",
     "group": {
-      "label": "Standortsgruppe",
-      "main": "Hauptstandort",
+      "label": "Waldstandortsgruppe",
+      "main": "Hauptwaldstandorte",
+      "other": "Weitere Standortstypen",
       "special": "Sonderwaldstandort",
       "volatile": "Stark wechselnde Feuchtigkeit",
       "riverside": "Auenwald",

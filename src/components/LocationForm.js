@@ -10,14 +10,6 @@ import Input from './Input';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
 
-const forestTypeGroups = [
-  'main',
-  'special',
-  'volatile',
-  'riverside',
-  'pioneer',
-];
-
 const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
   text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
@@ -43,25 +35,6 @@ function LocationForm() {
   const isDifferent = (field) => mapLocation[field] !== formLocation[field];
 
   const panels = [
-    {
-      key: 'forestType.group',
-      title: { content: t('forestType.group.label') },
-      content: {
-        content: (
-          <Dropdown
-            options={forestTypeGroups.map((key) => ({
-              key,
-              text: t(`forestType.group.${key}`),
-              value: key,
-            }))}
-            onChange={(e, { value: forestTypeGroup }) =>
-              dispatch(setFormLocation({ forestTypeGroup }))
-            }
-            value={formLocation.forestTypeGroup}
-          />
-        ),
-      },
-    },
     {
       key: 'forestType.treeType',
       title: { content: t('forestType.treeType') },

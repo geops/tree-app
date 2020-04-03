@@ -99,7 +99,7 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "eslint src --fix",
       "prettier --write 'src/**/*.js'",
-      "react-scripts test --bail --findRelatedTests --watchAll=false"
+      "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol|@geops/tree-lib)/\" --bail --findRelatedTests --watchAll=false"
     ]
   },
   "prettier": {
