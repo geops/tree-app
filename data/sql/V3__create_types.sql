@@ -278,59 +278,73 @@ SELECT trim(BOTH
        trim(BOTH
             FROM mstr.naistyp_sort)::float AS
 sort,
-       CASE typ.ntyp_kg_fein = '1'
+       CASE typ.ntyp_kg_fein IN ('1',
+                                 '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS carbonate_fine,
-       CASE typ.ntyp_kg_gestein = '1'
+       CASE typ.ntyp_kg_gestein IN ('1',
+                                    '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS carbonate_rock,
-       CASE typ.ntyp_fels = '1'
+       CASE typ.ntyp_fels IN ('1',
+                              '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS geomorphology_rock_band,
-       CASE typ.ntyp_bl_fels_st = '1'
+       CASE typ.ntyp_bl_fels_st IN ('1',
+                                    '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS geomorphology_blocky_rocky_strong,
-       CASE typ.ntyp_bl_fels_we = '1'
+       CASE typ.ntyp_bl_fels_we IN ('1',
+                                    '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS geomorphology_blocky_rocky_little,
-       CASE typ.ntyp_bl_karren = '1'
+       CASE typ.ntyp_bl_karren IN ('1',
+                                   '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS geomorphology_limestone_pavement,
-       CASE typ.ntyp_bl_schutt_m = '1'
+       CASE typ.ntyp_bl_schutt_m IN ('1',
+                                     '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS geomorphology_rocks_moderately_moved,
-       CASE typ.ntyp_bl_schutt_s = '1'
+       CASE typ.ntyp_bl_schutt_s IN ('1',
+                                     '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS geomorphology_rocks_strongly_moved,
-       CASE typ.ntyp_bl_schutt_x = '1'
+       CASE typ.ntyp_bl_schutt_x IN ('1',
+                                     '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS geomorphology_rocks_stabilised,
-       CASE typ.ntyp_rt_mittelh = '1'
+       CASE typ.ntyp_rt_mittelh IN ('1',
+                                    '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS relief_type_central_slope,
-       CASE typ.ntyp_rt_mulde = '1'
+       CASE typ.ntyp_rt_mulde IN ('1',
+                                  '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS relief_type_hollow,
-       CASE typ.ntyp_rt_kuppe = '1'
+       CASE typ.ntyp_rt_kuppe IN ('1',
+                                  '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS relief_type_dome,
-       CASE typ.ntyp_rt_plateau = '1'
+       CASE typ.ntyp_rt_plateau IN ('1',
+                                    '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS relief_type_plateau,
-       CASE typ.ntyp_rt_steilh = '1'
+       CASE typ.ntyp_rt_steilh IN ('1',
+                                   '2')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS relief_type_steep
@@ -436,6 +450,10 @@ CREATE TABLE indicator_meta (code INTEGER PRIMARY KEY,
                                                   de TEXT);
 
 
+CREATE TABLE indicator_foresttype (indicator_code INTEGER REFERENCES indicator_meta,
+                                                                     foresttype_code TEXT REFERENCES foresttype_meta);
+
+
 CREATE TABLE indicator_altitudinal_zone (indicator_code INTEGER REFERENCES indicator_meta,
                                                                            altitudinal_zone_code TEXT);
 
@@ -449,6 +467,22 @@ SELECT sisf_nr::int AS code,
        COALESCE(art_nam_deu, art_nam_lat) AS de
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1';
+
+
+INSERT INTO indicator_foresttype (indicator_code, foresttype_code)
+SELECT mstr.sisf_nr::int AS indicator_code,
+       trim(BOTH
+            FROM art.naistyp_c) AS foresttype_code
+FROM nat_arten_mstr mstr
+JOIN nat_naistyp_art art ON art.sisf_nr = mstr.sisf_nr
+WHERE mstr.art_erk_zeik = '1'
+        AND art.vorh IN ('1',
+                         '2',
+                         '3')
+        AND trim(BOTH
+                 FROM naistyp_c) IN
+                (SELECT code
+                 FROM foresttype_meta);
 
 
 INSERT INTO indicator_forest_ecoregion (indicator_code, forest_ecoregion_code)
@@ -671,8 +705,8 @@ VALUES ('nicht relevant',
 CREATE TYPE treetype AS ENUM ('100','300','600','700','800','6900','9500','25200','25300','25400','60400','60500','96900','97200','97750','97800','113350','137700','165000','172200','174200','174300','213300','217500','217510','220400','224200','227200','231500','238050','252900','287100','293550','302800','304900','305500','305800','305900','306000','306100','308600','317100','317300','317500','328400','329700','330200','330600','335300','335600','335800','335900','336000','336100','336200','345600','346500','362800','363700','363900','364000','364200','364300','365800','402200','402300','402500','402600','402700','402750','413600','421400','421500','422450','432800','432900','433000');
 
 
-CREATE TABLE treetype_meta (target treetype,
-                            de TEXT, endangered BOOLEAN, nonresident BOOLEAN);
+CREATE TABLE treetype_meta (target treetype PRIMARY KEY,
+                                                    de TEXT, endangered BOOLEAN, nonresident BOOLEAN);
 
 
 INSERT INTO treetype_meta (target, de, endangered, nonresident)
@@ -684,4 +718,156 @@ FROM
         (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 LEFT JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
 LEFT JOIN baumarteninformationen info ON info.code::int = foo.treetype::text::int;
+
+
+CREATE TABLE treetype_foresttype (treetype_code treetype REFERENCES treetype_meta,
+                                                                    foresttype_code TEXT REFERENCES foresttype_meta);
+
+
+INSERT INTO treetype_foresttype (treetype_code, foresttype_code)
+SELECT foo.treetype AS treetype_code,
+       trim(BOTH
+            FROM art.naistyp_c) AS foresttype_code
+FROM
+        (SELECT unnest(enum_range(NULL::treetype)) AS treetype) foo
+JOIN nat_naistyp_art art ON art.sisf_nr::int::text = foo.treetype::text
+WHERE art.vorh IN ('1',
+                   '2',
+                   '3')
+        AND trim(BOTH
+                 FROM naistyp_c) IN
+                (SELECT code
+                 FROM foresttype_meta);
+
+
+CREATE TABLE treetype_altitudinal_zone (treetype_code treetype REFERENCES treetype_meta,
+                                                                          altitudinal_zone_code TEXT);
+
+
+CREATE TABLE treetype_forest_ecoregion (treetype_code treetype REFERENCES treetype_meta,
+                                                                          forest_ecoregion_code TEXT);
+
+
+INSERT INTO treetype_forest_ecoregion (treetype_code, forest_ecoregion_code)
+SELECT foo.treetype AS treetype_code,
+       '1' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_1 = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '2a' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_2a = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '2b' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_2b = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '3' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_3 = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '4' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_4 = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '5a' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_5a = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '5a' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_5aa = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '5b' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_5b = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       'J' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_j = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       'M' AS forest_ecoregion_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_region_m = '1';
+
+
+INSERT INTO treetype_altitudinal_zone (treetype_code, altitudinal_zone_code)
+SELECT foo.treetype AS treetype_code,
+       '20' AS altitudinal_zone_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_hs_collin = '1'
+UNION -- TODO: switch to 80 once hochmontan branch has been merged!
+
+SELECT foo.treetype AS treetype_code,
+       '81' AS altitudinal_zone_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_hs_hochmont = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '60' AS altitudinal_zone_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_hs_obermont = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '100' AS altitudinal_zone_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_hs_obsubalp = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '90' AS altitudinal_zone_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_hs_subalpin = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '40' AS altitudinal_zone_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_hs_submontan = '1'
+UNION
+SELECT foo.treetype AS treetype_code,
+       '50' AS altitudinal_zone_code
+FROM
+        (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
+JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
+WHERE art_hs_untermont = '1';
 

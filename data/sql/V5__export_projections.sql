@@ -213,16 +213,10 @@ COPY
           VALUES
           FROM foresttype_meta),
           indicators as
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'forestEcoregions',
-                                                 (SELECT json_agg(forest_ecoregion_code)
-                                                  FROM indicator_forest_ecoregion
-                                                  WHERE indicator_code = indicator_meta.code), 'altitudinalZones',
-                                                 (SELECT json_agg(altitudinal_zone_code)
-                                                  FROM indicator_altitudinal_zone
-                                                  WHERE indicator_code = indicator_meta.code), 'forestTypes',
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'forestTypes',
                                                  (SELECT json_agg(trim(BOTH FROM naistyp_c))
                                                   FROM nat_naistyp_art
-                                                  WHERE vorh = '1' AND sisf_nr::int = indicator_meta.code)
+                                                  WHERE vorh IN ('1', '2', '3') AND sisf_nr::int = indicator_meta.code)
          )) AS
           values
           FROM indicator_meta),
@@ -242,7 +236,10 @@ COPY
           values
           FROM slope_meta),
           treetype AS
-         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident)) AS
+         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident, 'forestTypes',
+                                                 (SELECT json_agg(trim(BOTH FROM naistyp_c))
+                                                  FROM nat_naistyp_art
+                                                  WHERE vorh IN ('1', '2', '3') AND sisf_nr::int::text = treetype_meta.target::text))) AS
           values
           FROM treetype_meta) SELECT jsonb_build_object('additional',additional.
                                                         values,'altitudinalZone',altitudinal_zone.
