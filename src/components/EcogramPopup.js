@@ -4,7 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom';
 import { List, Popup } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib/src';
+// eslint-disable-next-line import/no-unresolved
+import { info } from 'lib/src';
 
 import Button from './Button';
 import { setFormLocation } from '../store/actions';

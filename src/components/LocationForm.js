@@ -2,7 +2,8 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Accordion, Form, Label, Segment } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib/src';
+// eslint-disable-next-line import/no-unresolved
+import { info } from 'lib/src';
 
 import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
