@@ -10,6 +10,13 @@ import Dropdown from './Dropdown';
 import Input from './Input';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
+import translation from '../i18n/resources/de/translation.json';
+
+const noLabel = (key) => key !== 'label';
+const translationOptions = {
+  aspect: Object.keys(translation.forestType.aspect).filter(noLabel),
+  slope: Object.keys(translation.forestType.slope).filter(noLabel),
+};
 
 const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
@@ -35,6 +42,13 @@ function LocationForm() {
   const { t, i18n } = useTranslation();
   const isDifferent = (field) => mapLocation[field] !== formLocation[field];
 
+  options.aspect = translationOptions.aspect.map((key) => {
+    return { key, text: t(`forestType.aspect.${key}`), value: key };
+  });
+  options.slope = translationOptions.slope.map((key) => {
+    return { key, text: t(`forestType.slope.${key}`), value: key };
+  });
+
   const panels = [
     {
       key: 'forestType.treeType',
@@ -58,7 +72,7 @@ function LocationForm() {
       key: 'indicator',
       title: { content: t('indicator.label') },
       content: {
-        content: options && (
+        content: options && options.indicator && (
           <Dropdown
             multiple
             options={options.indicator.map(
@@ -249,6 +263,38 @@ function LocationForm() {
               />
             </Segment>
           </>
+        ),
+      },
+    },
+    {
+      key: 'forestType.aspect',
+      title: { content: t('forestType.aspect.label') },
+      content: {
+        content: (
+          <Dropdown
+            multiple
+            options={options.aspect}
+            onChange={(e, { value: aspects }) =>
+              dispatch(setFormLocation({ aspects }))
+            }
+            value={formLocation.aspects}
+          />
+        ),
+      },
+    },
+    {
+      key: 'forestType.slope',
+      title: { content: t('forestType.slope.label') },
+      content: {
+        content: (
+          <Dropdown
+            multiple
+            options={options.slope}
+            onChange={(e, { value: slopes }) =>
+              dispatch(setFormLocation({ slopes }))
+            }
+            value={formLocation.slopes}
+          />
         ),
       },
     },
