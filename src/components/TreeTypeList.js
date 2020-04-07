@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+// eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
 
 function TreeTypeList({ className, codes }) {

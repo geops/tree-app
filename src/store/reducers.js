@@ -13,8 +13,8 @@ import {
 
 export const initialState = {
   location: {},
-  formLocation: { forestTypeGroup: 'main' },
-  locationResult: {},
+  formLocation: {},
+  locationResult: { options: {} },
   mapLayer: 'cb',
   mapLocation: {},
   mapView: '9|910001|5947112',
@@ -25,18 +25,9 @@ export const initialState = {
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
 
-const formLocationFields = [
-  'forestEcoregion',
-  'altitudinalZone',
-  'forestType',
-  'additional',
-  'silverFirArea',
-  'relief',
-  'targetAltitudinalZone',
-];
-
 const getFormLocation = (state, action) => {
   const formLocation = { ...state.formLocation, ...action.formLocation };
+  const formLocationFields = Object.keys(formLocation);
   let reset = false;
   for (let i = 0; i < formLocationFields.length; i += 1) {
     const formField = formLocationFields[i];

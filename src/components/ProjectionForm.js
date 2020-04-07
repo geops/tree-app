@@ -63,7 +63,6 @@ function ProjectionForm() {
   const { t, i18n } = useTranslation();
   const formActive = projectionMode === 'm' || fieldActive;
 
-  // Note: remember to keep formLocationFields in reducers.js updated.
   return (
     <Form className={formActive ? styles.formActive : styles.form}>
       {projectionMode === 'f' && options.forestEcoregion && (

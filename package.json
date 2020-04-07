@@ -115,6 +115,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint src",
+    "format": "prettier --write 'src/**/*.js'",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol|@geops/tree-lib)/\"",
     "eject": "react-scripts eject"
   }

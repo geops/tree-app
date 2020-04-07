@@ -1,3 +1,4 @@
+import intersection from 'lodash.intersection';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -5,12 +6,40 @@ import { Accordion, Form, Label, Segment } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
 
+import Button from './Button';
 import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
 import Input from './Input';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
 import translation from '../i18n/resources/de/translation.json';
+
+const filterFields = [
+  'treeTypes',
+  'indicators',
+  'treeLayerHeightMin',
+  'treeLayerHeightMax',
+  'coniferTreeHeightMax',
+  'deciduousTreeHeightMax',
+  'carbonateFine',
+  'carbonateRock',
+  'geomorphologyRockBand',
+  'geomorphologyBlockyRockyStrong',
+  'geomorphologyBlockyRockyLittle',
+  'geomorphologyLimestonePavement',
+  'geomorphologyRocksModeratelyMoved',
+  'geomorphologyRocksStronglyMoved',
+  'geomorphologyRocksStabilised',
+  'reliefTypeCentralSlope',
+  'reliefTypeHollow',
+  'reliefTypeDome',
+  'reliefTypePlateau',
+  'reliefTypeSteep',
+  'aspects',
+  'slopes',
+  'forestEcoregion',
+  'altitudinalZone',
+];
 
 const noLabel = (key) => key !== 'label';
 const translationOptions = {
@@ -52,36 +81,40 @@ function LocationForm() {
   const panels = [
     {
       key: 'forestType.treeType',
-      title: { content: t('forestType.treeType') },
+      title: { content: t('forestType.treeType.label') },
       content: {
         content: options && options.treeType && (
           <Dropdown
             multiple
+            search
+            placeholder={t('forestType.treeType.placeholder')}
             options={options.treeType.map(
               getDropdownOptions('treeType', i18n.language),
             )}
             onChange={(e, { value: treeTypes }) =>
               dispatch(setFormLocation({ treeTypes }))
             }
-            value={formLocation.treeTypes}
+            value={formLocation.treeTypes || ''}
           />
         ),
       },
     },
     {
-      key: 'indicator',
-      title: { content: t('indicator.label') },
+      key: 'forestType.indicator',
+      title: { content: t('forestType.indicator.label') },
       content: {
         content: options && options.indicator && (
           <Dropdown
             multiple
+            search
+            placeholder={t('forestType.indicator.placeholder')}
             options={options.indicator.map(
               getDropdownOptions('indicator', i18n.language),
             )}
             onChange={(e, { value: indicators }) =>
               dispatch(setFormLocation({ indicators }))
             }
-            value={formLocation.indicators}
+            value={formLocation.indicators || ''}
           />
         ),
       },
@@ -100,7 +133,7 @@ function LocationForm() {
                   dispatch(setFormLocation({ treeLayerHeightMin }))
                 }
                 type="number"
-                value={formLocation.treeLayerHeightMin}
+                value={formLocation.treeLayerHeightMin || ''}
               />
               <Input
                 label={t('forestType.treeLayerHeightMax')}
@@ -108,7 +141,7 @@ function LocationForm() {
                   dispatch(setFormLocation({ treeLayerHeightMax }))
                 }
                 type="number"
-                value={formLocation.treeLayerHeightMax}
+                value={formLocation.treeLayerHeightMax || ''}
               />
             </Segment>
             <Segment>
@@ -119,7 +152,7 @@ function LocationForm() {
                   dispatch(setFormLocation({ coniferTreeHeightMax }))
                 }
                 type="number"
-                value={formLocation.coniferTreeHeightMax}
+                value={formLocation.coniferTreeHeightMax || ''}
               />
               <Input
                 label={t('forestType.deciduousTreeHeightMax')}
@@ -127,7 +160,7 @@ function LocationForm() {
                   dispatch(setFormLocation({ deciduousTreeHeightMax }))
                 }
                 type="number"
-                value={formLocation.deciduousTreeHeightMax}
+                value={formLocation.deciduousTreeHeightMax || ''}
               />
             </Segment>
           </>
@@ -145,14 +178,14 @@ function LocationForm() {
               onChange={(e, { checked: carbonateFine }) =>
                 dispatch(setFormLocation({ carbonateFine }))
               }
-              value={location.carbonateFine}
+              checked={formLocation.carbonateFine || ''}
             />
             <Checkbox
               label={t('forestType.carbonate.rock')}
               onChange={(e, { checked: carbonateRock }) =>
                 dispatch(setFormLocation({ carbonateRock }))
               }
-              value={location.carbonateRock}
+              checked={formLocation.carbonateRock || ''}
             />
           </>
         ),
@@ -177,28 +210,28 @@ function LocationForm() {
                 onChange={(e, { checked: geomorphologyRockBand }) =>
                   dispatch(setFormLocation({ geomorphologyRockBand }))
                 }
-                value={location.geomorphologyRockBand}
+                checked={formLocation.geomorphologyRockBand || ''}
               />
               <Checkbox
                 label={t('forestType.geomorphology.blockyRockyStrong')}
                 onChange={(e, { checked: geomorphologyBlockyRockyStrong }) =>
                   dispatch(setFormLocation({ geomorphologyBlockyRockyStrong }))
                 }
-                value={location.geomorphologyBlockyRockyStrong}
+                checked={formLocation.geomorphologyBlockyRockyStrong || ''}
               />
               <Checkbox
                 label={t('forestType.geomorphology.blockyRockyLittle')}
                 onChange={(e, { checked: geomorphologyBlockyRockyLittle }) =>
                   dispatch(setFormLocation({ geomorphologyBlockyRockyLittle }))
                 }
-                value={location.geomorphologyBlockyRockyLittle}
+                checked={formLocation.geomorphologyBlockyRockyLittle || ''}
               />
               <Checkbox
                 label={t('forestType.geomorphology.limestonePavement')}
                 onChange={(e, { checked: geomorphologyLimestonePavement }) =>
                   dispatch(setFormLocation({ geomorphologyLimestonePavement }))
                 }
-                value={location.geomorphologyLimestonePavement}
+                checked={formLocation.geomorphologyLimestonePavement || ''}
               />
               <Checkbox
                 label={t('forestType.geomorphology.rocksModeratelyMoved')}
@@ -207,21 +240,21 @@ function LocationForm() {
                     setFormLocation({ geomorphologyRocksModeratelyMoved }),
                   )
                 }
-                value={location.geomorphologyRocksModeratelyMoved}
+                checked={formLocation.geomorphologyRocksModeratelyMoved || ''}
               />
               <Checkbox
                 label={t('forestType.geomorphology.rocksStronglyMoved')}
                 onChange={(e, { checked: geomorphologyRocksStronglyMoved }) =>
                   dispatch(setFormLocation({ geomorphologyRocksStronglyMoved }))
                 }
-                value={location.geomorphologyRocksStronglyMoved}
+                checked={formLocation.geomorphologyRocksStronglyMoved || ''}
               />
               <Checkbox
                 label={t('forestType.geomorphology.rocksStabilised')}
                 onChange={(e, { checked: geomorphologyRocksStabilised }) =>
                   dispatch(setFormLocation({ geomorphologyRocksStabilised }))
                 }
-                value={location.geomorphologyRocksStabilised}
+                checked={formLocation.geomorphologyRocksStabilised || ''}
               />
             </Segment>
             <Segment>
@@ -231,35 +264,35 @@ function LocationForm() {
                 onChange={(e, { checked: reliefTypeCentralSlope }) =>
                   dispatch(setFormLocation({ reliefTypeCentralSlope }))
                 }
-                value={location.reliefTypeCentralSlope}
+                checked={formLocation.reliefTypeCentralSlope || ''}
               />
               <Checkbox
                 label={t('forestType.reliefType.hollow')}
                 onChange={(e, { checked: reliefTypeHollow }) =>
                   dispatch(setFormLocation({ reliefTypeHollow }))
                 }
-                value={location.reliefTypeHollow}
+                checked={formLocation.reliefTypeHollow || ''}
               />
               <Checkbox
                 label={t('forestType.reliefType.dome')}
                 onChange={(e, { checked: reliefTypeDome }) =>
                   dispatch(setFormLocation({ reliefTypeDome }))
                 }
-                value={location.reliefTypeDome}
+                checked={formLocation.reliefTypeDome || ''}
               />
               <Checkbox
                 label={t('forestType.reliefType.plateau')}
                 onChange={(e, { checked: reliefTypePlateau }) =>
                   dispatch(setFormLocation({ reliefTypePlateau }))
                 }
-                value={location.reliefTypePlateau}
+                checked={formLocation.reliefTypePlateau || ''}
               />
               <Checkbox
                 label={t('forestType.reliefType.steep')}
                 onChange={(e, { checked: reliefTypeSteep }) =>
                   dispatch(setFormLocation({ reliefTypeSteep }))
                 }
-                value={location.reliefTypeSteep}
+                checked={formLocation.reliefTypeSteep || ''}
               />
             </Segment>
           </>
@@ -277,7 +310,7 @@ function LocationForm() {
             onChange={(e, { value: aspects }) =>
               dispatch(setFormLocation({ aspects }))
             }
-            value={formLocation.aspects}
+            value={formLocation.aspects || ''}
           />
         ),
       },
@@ -293,7 +326,7 @@ function LocationForm() {
             onChange={(e, { value: slopes }) =>
               dispatch(setFormLocation({ slopes }))
             }
-            value={formLocation.slopes}
+            value={formLocation.slopes || ''}
           />
         ),
       },
@@ -329,6 +362,18 @@ function LocationForm() {
         />
       )}
       <Accordion fluid panels={panels} styled />
+      {intersection(Object.keys(formLocation), filterFields).length > 0 && (
+        <Button
+          active
+          className={styles.resetButton}
+          onClick={() => {
+            const rfl = filterFields.reduce((l, f) => ({ ...l, [f]: '' }), {});
+            dispatch(setFormLocation(rfl));
+          }}
+        >
+          {t('location.reset')}
+        </Button>
+      )}
     </Form>
   );
 }
