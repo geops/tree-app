@@ -9,10 +9,6 @@ function Ecogram({ data }) {
   const [popup, setPopup] = useState({ target: null, forestTypes: [] });
   const { t } = useTranslation();
 
-  if (!data) {
-    return null;
-  }
-
   return (
     <svg x="0px" y="0px" viewBox="0 0 1050 1050">
       <EcogramPopup

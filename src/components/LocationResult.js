@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Form, Header } from 'semantic-ui-react';
+import { Form, Header, Message } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
 
@@ -17,18 +17,20 @@ function LocationResult() {
   const { t, i18n } = useTranslation();
   const {
     formLocation,
-    location,
     locationResult: { ecogram, forestTypes },
   } = useSelector((state) => ({
     formLocation: state.formLocation,
-    location: state.location,
     locationResult: state.locationResult,
   }));
-  return location.forestEcoregion ? (
+  return forestTypes ? (
     <div>
       <Form className={styles.form}>
         <Header>{t('forestType.group.main')}</Header>
-        <Ecogram data={ecogram} />
+        {ecogram ? (
+          <Ecogram data={ecogram} />
+        ) : (
+          <Message>{t('location.noEcogram')}</Message>
+        )}
         <Dropdown
           label={t('forestType.group.other')}
           onChange={(e, { value: forestType }) =>

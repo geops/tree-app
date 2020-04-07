@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Checkbox as SUICheckbox, Form } from 'semantic-ui-react';
 
-// import styles from './Checkbox.module.css';
-
 function Checkbox({ className, ...props }) {
   return (
     <Form.Field>

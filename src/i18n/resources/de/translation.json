@@ -39,7 +39,8 @@
     "versionTitle": "Version"
   },
   "location": {
-    "underConstruction": "Die Bestimmung des Standortstyp befindet sich noch in der Entwicklung und wird erst in der nächsten Version verfügbar sein."
+    "reset": "Filter zurücksetzen",
+    "noEcogram": "Kein Ökogram gefunden."
   },
   "map": {
     "baseLayer": {
@@ -173,10 +174,14 @@
       "plateau": "flach / Plateau",
       "steep": "Steilhang"
     },
-    "treeType": "Baumarten"
-  },
-  "indicator": {
-    "label": "Zeigerpflanzen"
+    "treeType": {
+      "label": "Baumarten",
+      "placeholder": "Bitte Baumart eingeben"
+    },
+    "indicator": {
+      "label": "Zeigerpflanzen",
+      "placeholder": "Bitte Zeigerart eingeben"
+    }
   },
   "slope": {
     "label": "Hangneigung"
