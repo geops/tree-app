@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Grid, Header, Tab } from 'semantic-ui-react';
-import { list } from '@geops/tree-lib/src';
+// eslint-disable-next-line import/no-unresolved
+import { list } from 'lib/src';
 
 import TreeTypeList from './TreeTypeList';
 

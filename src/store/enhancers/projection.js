@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import { applyMiddleware } from 'redux';
-import { locate, project } from '@geops/tree-lib/src';
+// eslint-disable-next-line import/no-unresolved
+import { locate, project } from 'lib/src';
 
 import {
   SET_FORM_LOCATION,

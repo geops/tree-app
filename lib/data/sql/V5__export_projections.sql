@@ -187,6 +187,8 @@ COPY
                                                                      'carbonate', jsonb_build_array(carbonate_fine, carbonate_rock),
                                                                      'geomorphology', jsonb_build_array(geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised),
                                                                      'reliefType', jsonb_build_array(relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep),
+                                                                     'aspect', (SELECT json_agg(aspect) FROM foresttype_aspect WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
+                                                                     'slope', (SELECT json_agg(slope) FROM foresttype_slope WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
                                                                      'group', jsonb_build_object('main',
                                                                                                                     (SELECT count(*) > 0
                                                                                                                      FROM foresttype_group

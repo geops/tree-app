@@ -443,6 +443,42 @@ FROM nat_naistyp
 WHERE naistyp_oeg_pio IN ('1',
                           '2');
 
+
+CREATE TABLE foresttype_aspect ( foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                 aspect TEXT);
+
+
+INSERT INTO foresttype_aspect (foresttype_code, aspect)
+SELECT DISTINCT trim(BOTH
+                     FROM nat_naistyp.naistyp_c) AS forest_type_code,
+                split_part(feld_name, '_', 2) AS aspect
+FROM nat_lage
+LEFT JOIN nat_naistyp ON trim(BOTH '0.'
+                              FROM nat_lage.naistyp_sort) = nat_naistyp.naistyp_sort
+WHERE feld_name ILIKE 'E_%'
+        AND nat_naistyp.naistyp_c IS NOT NULL
+        AND feld_wert IN ('1',
+                          '2')
+        AND split_part(feld_name, '_', 2) != '';
+
+
+CREATE TABLE foresttype_slope ( foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                slope TEXT);
+
+
+INSERT INTO foresttype_slope (foresttype_code, slope)
+SELECT DISTINCT trim(BOTH
+                     FROM nat_naistyp.naistyp_c) AS forest_type_code,
+                split_part(feld_name, '_', 2) AS slope
+FROM nat_lage
+LEFT JOIN nat_naistyp ON trim(BOTH '0.'
+                              FROM nat_lage.naistyp_sort) = nat_naistyp.naistyp_sort
+WHERE feld_name ILIKE 'HN_%'
+        AND nat_naistyp.naistyp_c IS NOT NULL
+        AND feld_wert IN ('1',
+                          '2')
+        AND split_part(feld_name, '_', 2) != '';
+
 ----------------------------------------------
 -- indicator
 

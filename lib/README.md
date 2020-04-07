@@ -27,7 +27,7 @@ Spatial data is downloaded from different sources and imported into the database
 
 ## Bugs
 
-Please use the [GitHub issue tracker](https://github.com/geops/tree-lib/issues) for all bugs and feature requests. Before creating a new issue, do a quick search to see if the problem has been reported already.
+Please use the [GitHub issue tracker](https://github.com/geops/tree-app/issues) for all bugs and feature requests. Before creating a new issue, do a quick search to see if the problem has been reported already.
 
 ## Development
 

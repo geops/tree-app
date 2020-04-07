@@ -39,7 +39,8 @@
     "versionTitle": "Version"
   },
   "location": {
-    "underConstruction": "Die Bestimmung des Standortstyp befindet sich noch in der Entwicklung und wird erst in der nächsten Version verfügbar sein."
+    "reset": "Filter zurücksetzen",
+    "noEcogram": "Kein Ökogram gefunden."
   },
   "map": {
     "baseLayer": {
@@ -106,9 +107,38 @@
     "hint": "Bitte in der Karte auswählen",
     "select": "Standortstyp auswählen",
     "transition": "Übergang zu Standortstyp",
+    "aspect": {
+      "label": "Exposition",
+      "001-025": "N - NNO",
+      "026-050": "NNO - NO",
+      "051-075": "NO - ONO",
+      "076-100": "ONO - O",
+      "101-125": "O - SOO",
+      "126-150": "SOO - SO",
+      "151-175": "SO - SSO",
+      "176-200": "SSO - S",
+      "201-225": "S - SSW",
+      "226-250": "SSW - SW",
+      "251-275": "SW - WSW",
+      "276-300": "WSW - W",
+      "301-325": "W - WNW",
+      "326-350": "WNW - NW",
+      "351-375": "NW - NNW",
+      "376-400": "NNW - N"
+    },
+    "slope": {
+      "label": "Hangneigung",
+      "000-010": "0 -  10",
+      "010-025": "10 - 25",
+      "025-050": "25 - 50",
+      "050-075": "50 - 75",
+      "075-100": "75 - 100",
+      "100": "100"
+    },
     "group": {
-      "label": "Standortsgruppe",
-      "main": "Hauptstandort",
+      "label": "Waldstandortsgruppe",
+      "main": "Hauptwaldstandorte",
+      "other": "Weitere Standortstypen",
       "special": "Sonderwaldstandort",
       "volatile": "Stark wechselnde Feuchtigkeit",
       "riverside": "Auenwald",
@@ -144,10 +174,14 @@
       "plateau": "flach / Plateau",
       "steep": "Steilhang"
     },
-    "treeType": "Baumarten"
-  },
-  "indicator": {
-    "label": "Zeigerpflanzen"
+    "treeType": {
+      "label": "Baumarten",
+      "placeholder": "Bitte Baumart eingeben"
+    },
+    "indicator": {
+      "label": "Zeigerpflanzen",
+      "placeholder": "Bitte Zeigerart eingeben"
+    }
   },
   "slope": {
     "label": "Hangneigung"

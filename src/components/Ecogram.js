@@ -1,34 +1,29 @@
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useSelector } from 'react-redux';
 
 import EcogramPopup from './EcogramPopup';
 import styles from './Ecogram.module.css';
 
-function Ecogram() {
+function Ecogram({ data }) {
   const [popup, setPopup] = useState({ target: null, forestTypes: [] });
-  const { ecogram } = useSelector((state) => state.locationResult);
   const { t } = useTranslation();
 
-  if (!ecogram) {
-    return null;
-  }
-
   return (
-    <svg x="0px" y="0px" viewBox="0 0 1200 1200">
+    <svg x="0px" y="0px" viewBox="0 0 1050 1050">
       <EcogramPopup
         forestTypes={popup.forestTypes}
         onClose={() => setPopup({ forestTypes: [] })}
         target={popup.target}
       />
-      <g transform="translate(100,100)">
+      <g transform="translate(49,1)">
         <line x1="200" y1="0" x2="200" y2="1000" className={styles.grid} />
         <line x1="500" y1="0" x2="500" y2="1000" className={styles.grid} />
         <line x1="800" y1="0" x2="800" y2="1000" className={styles.grid} />
         <line x1="0" y1="200" x2="1000" y2="200" className={styles.grid} />
         <line x1="0" y1="500" x2="1000" y2="500" className={styles.grid} />
         <line x1="0" y1="800" x2="1000" y2="800" className={styles.grid} />
-        {ecogram
+        {data
           .sort((a, b) => a.z - b.z)
           .map(({ a, x, y, w, h, f, r }) => (
             <>
@@ -71,29 +66,33 @@ function Ecogram() {
         <rect x={0} y={0} width={1000} height={1000} className={styles.frame} />
       </g>
       <text
-        x="0"
-        y="80"
+        x="100"
+        y="30"
         transform="rotate(270,100,100)"
         className={styles.label}
       >
         {t('ecogram.dry')}
       </text>
       <text
-        x="-820"
-        y="80"
+        x="-720"
+        y="30"
         transform="rotate(270,100,100)"
         className={styles.label}
       >
         {t('ecogram.wet')}
       </text>
-      <text x="180" y="1140" className={styles.label}>
+      <text x="180" y="1040" className={styles.label}>
         {t('ecogram.acid')}
       </text>
-      <text x="1000" y="1140" className={styles.label}>
+      <text x="1000" y="1040" className={styles.label}>
         {t('ecogram.alkaline')}
       </text>
     </svg>
   );
 }
+
+Ecogram.propTypes = {
+  data: PropTypes.arrayOf().isRequired,
+};
 
 export default Ecogram;

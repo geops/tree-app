@@ -5,11 +5,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@geops/tree-lib": "file:./lib",
     "i18next": "^19.3.4",
+    "lodash.difference": "^4.5.0",
+    "lodash.intersection": "^4.4.0",
+    "lodash.union": "^4.6.0",
+    "lodash.xor": "^4.5.0",
     "mapbox-gl": "1.8.1",
-    "ol": "^6.1.1",
-    "proj4": "^2.6.0",
+    "ol": "^6.3.1",
+    "proj4": "^2.6.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -24,8 +27,8 @@
     "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.26.0",
-    "@typescript-eslint/parser": "2.26.0",
+    "@typescript-eslint/eslint-plugin": "2.27.0",
+    "@typescript-eslint/parser": "2.27.0",
     "cypress": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
@@ -39,8 +42,8 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "3.0.0",
     "husky": "^4.2.3",
-    "lint-staged": "^10.1.1",
-    "prettier": "^2.0.2",
+    "lint-staged": "^10.1.2",
+    "prettier": "^2.0.4",
     "react-test-renderer": "^16.13.1",
     "start-server-and-test": "^1.10.11"
   },
@@ -99,7 +102,7 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "eslint src --fix",
       "prettier --write 'src/**/*.js'",
-      "react-scripts test --bail --findRelatedTests --watchAll=false"
+      "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol|@geops/tree-lib)/\" --bail --findRelatedTests --watchAll=false"
     ]
   },
   "prettier": {
@@ -112,6 +115,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint src",
+    "format": "prettier --write 'src/**/*.js'",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol|@geops/tree-lib)/\"",
     "eject": "react-scripts eject"
   }
