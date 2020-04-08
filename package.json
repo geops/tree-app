@@ -102,7 +102,7 @@
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "eslint src --fix",
       "prettier --write 'src/**/*.js'",
-      "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol|@geops/tree-lib)/\" --bail --findRelatedTests --watchAll=false"
+      "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol)/\" --bail --findRelatedTests --watchAll=false"
     ]
   },
   "prettier": {
@@ -116,7 +116,7 @@
     "build": "react-scripts build",
     "lint": "eslint src",
     "format": "prettier --write 'src/**/*.js'",
-    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol|@geops/tree-lib)/\"",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol)/\"",
     "eject": "react-scripts eject"
   }
 }

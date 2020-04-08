@@ -6,8 +6,9 @@
     "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
   },
   "properties": {
-    "forestEcoregions": ["2a", "2b"],
-    "altitudinalZones": ["80"]
+    "forestEcoregions": ["2b"],
+    "altitudinalZones": ["80"],
+    "silverFirAreas": ["3"]
   },
   "features": [
     {
@@ -15,6 +16,7 @@
       "properties": {
         "id": 1,
         "z": "1",
+        "rows": "2",
         "forestTypes": "71",
         "otherForestTypes": "71G"
       },
@@ -314,6 +316,7 @@
       "properties": {
         "id": 14,
         "z": "3",
+        "rows": "2",
         "forestTypes": "67",
         "otherForestTypes": "67G"
       },
@@ -337,6 +340,7 @@
       "properties": {
         "id": 15,
         "z": "1",
+        "rows": "2",
         "forestTypes": "53*",
         "otherForestTypes": "53*G"
       },
@@ -383,6 +387,7 @@
       "properties": {
         "id": 17,
         "z": "1",
+        "offset": "1",
         "forestTypes": "65*",
         "otherForestTypes": null
       },
@@ -452,6 +457,7 @@
       "properties": {
         "id": 20,
         "z": "2",
+        "rows": "2",
         "forestTypes": "55*",
         "otherForestTypes": "55*Lä,55*G"
       },
@@ -544,6 +550,7 @@
       "properties": {
         "id": 24,
         "z": "1",
+        "offset": "1",
         "forestTypes": "68",
         "otherForestTypes": null
       },

@@ -84,6 +84,7 @@
       "properties": {
         "id": 4,
         "z": "1",
+        "rows": "2",
         "forestTypes": "67",
         "otherForestTypes": "67G"
       },
@@ -107,6 +108,7 @@
       "properties": {
         "id": 5,
         "z": "2",
+        "rows": "2",
         "forestTypes": "69",
         "otherForestTypes": "69G"
       },
@@ -130,6 +132,7 @@
       "properties": {
         "id": 6,
         "z": "4",
+        "rows": "2",
         "forestTypes": "47M",
         "otherForestTypes": "47MG"
       },
@@ -176,6 +179,7 @@
       "properties": {
         "id": 8,
         "z": "2",
+        "rows": "2",
         "forestTypes": "47D",
         "otherForestTypes": "47DG"
       },
@@ -199,6 +203,7 @@
       "properties": {
         "id": 9,
         "z": "1",
+        "rows": "2",
         "forestTypes": "21*",
         "otherForestTypes": "21*G"
       },
@@ -222,6 +227,7 @@
       "properties": {
         "id": 10,
         "z": "1",
+        "rows": "3",
         "forestTypes": "47*",
         "otherForestTypes": "47*Lä,47*G"
       },
@@ -314,6 +320,7 @@
       "properties": {
         "id": 14,
         "z": "1",
+        "rows": "2",
         "forestTypes": "55*",
         "otherForestTypes": "55*Lä"
       },
@@ -337,6 +344,7 @@
       "properties": {
         "id": 15,
         "z": "1",
+        "offset": "1",
         "forestTypes": "68",
         "otherForestTypes": null
       },

@@ -7,7 +7,8 @@
   },
   "properties": {
     "forestEcoregions": ["4"],
-    "altitudinalZones": ["80"]
+    "altitudinalZones": ["80"],
+    "silverFirAreas": ["1", "2"]
   },
   "features": [
     {
@@ -15,6 +16,7 @@
       "properties": {
         "id": 1,
         "z": "1",
+        "rows": "2",
         "forestTypes": "71",
         "otherForestTypes": "71G"
       },
@@ -176,6 +178,7 @@
       "properties": {
         "id": 8,
         "z": "1",
+        "rows": "2",
         "forestTypes": "53Ta",
         "otherForestTypes": "53Lä"
       },
@@ -291,6 +294,7 @@
       "properties": {
         "id": 13,
         "z": "1",
+        "rows": "2",
         "forestTypes": "47*",
         "otherForestTypes": "47*Lä"
       },
@@ -360,6 +364,7 @@
       "properties": {
         "id": 16,
         "z": "5",
+        "rows": "2",
         "forestTypes": "55*",
         "otherForestTypes": "55*Lä,55*G"
       },

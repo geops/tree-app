@@ -15,6 +15,7 @@
       "properties": {
         "id": 1,
         "z": "2",
+        "rows": "2",
         "forestTypes": "71",
         "otherForestTypes": "71G"
       },
@@ -38,8 +39,9 @@
       "properties": {
         "id": 2,
         "z": "1",
+        "rows": "2",
         "forestTypes": "57S",
-        "otherForestTypes": null
+        "otherForestTypes": "57STa"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -176,6 +178,7 @@
       "properties": {
         "id": 8,
         "z": "1",
+        "rows": "2",
         "forestTypes": "60*",
         "otherForestTypes": "60*Lä,60*G"
       },
@@ -222,6 +225,7 @@
       "properties": {
         "id": 10,
         "z": "3",
+        "rows": "2",
         "forestTypes": "57C",
         "otherForestTypes": "57CLä,57CTa,57CG"
       },
@@ -245,6 +249,7 @@
       "properties": {
         "id": 11,
         "z": "1",
+        "rows": "2",
         "forestTypes": "60A",
         "otherForestTypes": "60ALä,60AG"
       },
@@ -291,6 +296,7 @@
       "properties": {
         "id": 13,
         "z": "1",
+        "rows": "2",
         "forestTypes": "57V",
         "otherForestTypes": "57VLä,57VTa,57VG"
       },
@@ -337,6 +343,7 @@
       "properties": {
         "id": 15,
         "z": "3",
+        "rows": "2",
         "forestTypes": "58",
         "otherForestTypes": "58Lä,58Fe,58G"
       },
@@ -429,6 +436,7 @@
       "properties": {
         "id": 19,
         "z": "3",
+        "rows": "2",
         "forestTypes": "53*s",
         "otherForestTypes": "53*sLä"
       },
@@ -475,6 +483,7 @@
       "properties": {
         "id": 21,
         "z": "2",
+        "rows": "2",
         "forestTypes": "53",
         "otherForestTypes": "53Lä,53Ta,53G"
       },

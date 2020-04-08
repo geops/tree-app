@@ -15,8 +15,9 @@
       "properties": {
         "id": 1,
         "z": "1",
+        "rows": "2",
         "forestTypes": "71",
-        "orforestTypes": "71G"
+        "otherForestTypes": "71G"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -39,7 +40,7 @@
         "id": 2,
         "z": "2",
         "forestTypes": "56",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -62,7 +63,7 @@
         "id": 3,
         "z": "2",
         "forestTypes": "46",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -85,7 +86,7 @@
         "id": 4,
         "z": "1",
         "forestTypes": "46*",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -108,7 +109,7 @@
         "id": 5,
         "z": "1",
         "forestTypes": "49",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -131,7 +132,7 @@
         "id": 6,
         "z": "2",
         "forestTypes": "49*Ta",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -154,7 +155,7 @@
         "id": 7,
         "z": "1",
         "forestTypes": "27*",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -177,7 +178,7 @@
         "id": 8,
         "z": "1",
         "forestTypes": "26h",
-        "orforestTypes": "26hG"
+        "otherForestTypes": "26hG"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -200,7 +201,7 @@
         "id": 9,
         "z": "1",
         "forestTypes": "21",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -222,8 +223,9 @@
       "properties": {
         "id": 10,
         "z": "1",
+        "rows": "3",
         "forestTypes": "50,50P",
-        "orforestTypes": "50Fe"
+        "otherForestTypes": "50Fe"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -246,7 +248,7 @@
         "id": 11,
         "z": "1",
         "forestTypes": "47",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -268,8 +270,9 @@
       "properties": {
         "id": 12,
         "z": "2",
+        "rows": "3",
         "forestTypes": "51",
-        "orforestTypes": "51Fe,51G"
+        "otherForestTypes": "51Fe,51G"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -292,7 +295,7 @@
         "id": 13,
         "z": "1",
         "forestTypes": "50*",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -315,7 +318,7 @@
         "id": 14,
         "z": "1",
         "forestTypes": "52",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -337,8 +340,9 @@
       "properties": {
         "id": 15,
         "z": "1",
+        "rows": "2",
         "forestTypes": "69",
-        "orforestTypes": "69G"
+        "otherForestTypes": "69G"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -360,8 +364,9 @@
       "properties": {
         "id": 16,
         "z": "2",
+        "rows": "2",
         "forestTypes": "53Ta",
-        "orforestTypes": "53Lä"
+        "otherForestTypes": "53Lä"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -383,8 +388,9 @@
       "properties": {
         "id": 17,
         "z": "5",
+        "rows": "2",
         "forestTypes": "67",
-        "orforestTypes": "67G"
+        "otherForestTypes": "67G"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -407,7 +413,7 @@
         "id": 18,
         "z": "2",
         "forestTypes": "46M",
-        "orforestTypes": null
+        "otherForestTypes": null
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -429,8 +435,9 @@
       "properties": {
         "id": 19,
         "z": "1",
+        "rows": "2",
         "forestTypes": "70",
-        "orforestTypes": "70G"
+        "otherForestTypes": "70G"
       },
       "geometry": {
         "type": "MultiPolygon",

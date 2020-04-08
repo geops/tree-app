@@ -25,7 +25,7 @@ function Ecogram({ data }) {
         <line x1="0" y1="800" x2="1000" y2="800" className={styles.grid} />
         {data
           .sort((a, b) => a.z - b.z)
-          .map(({ a, x, y, w, h, f, r }) => (
+          .map(({ a, x, y, w, h, f, r, o }) => (
             <>
               <rect
                 x={x}
@@ -37,17 +37,19 @@ function Ecogram({ data }) {
                 className={`${styles.box} ${a && styles.active}`}
                 onClick={({ target }) => setPopup({ target, forestTypes: f })}
               />
-              {r ? (
+              {r || o ? (
                 [...new Array(r)].map((_, i) => (
                   <text
                     x={x + w / 2}
-                    y={y + h / 2 + 45 - (35 * r || 0) + 35 * (i + 1)}
+                    y={y + h / 2 - (20 * r || 0) + 35 * (i + 1) - 35 * o}
                     className={styles.boxText}
                   >
                     {f
                       .slice(
                         Math.floor(f.length / r) * i,
-                        Math.floor(f.length / r) * (i + 1),
+                        i + 1 === r
+                          ? f.length
+                          : Math.floor(f.length / r) * (i + 1),
                       )
                       .join(' ')}
                   </text>
