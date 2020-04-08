@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import EcogramPopup from './EcogramPopup';
 import styles from './Ecogram.module.css';
 
-function Ecogram({ data }) {
+function Ecogram({ data, selectForestType }) {
   const [popup, setPopup] = useState({ target: null, forestTypes: [] });
   const { t } = useTranslation();
 
@@ -14,6 +14,7 @@ function Ecogram({ data }) {
       <EcogramPopup
         forestTypes={popup.forestTypes}
         onClose={() => setPopup({ forestTypes: [] })}
+        selectForestType={selectForestType}
         target={popup.target}
       />
       <g transform="translate(49,1)">
@@ -95,6 +96,7 @@ function Ecogram({ data }) {
 
 Ecogram.propTypes = {
   data: PropTypes.arrayOf().isRequired,
+  selectForestType: PropTypes.func.isRequired,
 };
 
 export default Ecogram;
