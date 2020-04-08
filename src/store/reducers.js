@@ -27,15 +27,17 @@ export const initialState = {
 
 const getFormLocation = (state, action) => {
   const formLocation = { ...state.formLocation, ...action.formLocation };
-  const formLocationFields = Object.keys(formLocation);
-  let reset = false;
+  const formLocationFields = Object.keys(action.formLocation);
   for (let i = 0; i < formLocationFields.length; i += 1) {
-    const formField = formLocationFields[i];
-    if (action.formLocation[formField] === '') {
-      reset = true;
-    }
-    if (reset) {
-      delete formLocation[formField];
+    const fieldName = formLocationFields[i];
+    const fieldValue = action.formLocation[fieldName];
+    if (
+      fieldValue === '' ||
+      fieldValue === null ||
+      fieldValue === undefined ||
+      (Array.isArray(fieldValue) && fieldValue.length === 0)
+    ) {
+      delete formLocation[fieldName];
     }
   }
   return formLocation;
