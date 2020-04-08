@@ -1,13 +1,14 @@
 /* eslint-disable no-console */
-import { locate, project } from '@geops/tree-lib';
 import { applyMiddleware } from 'redux';
+// eslint-disable-next-line import/no-unresolved
+import { locate, project } from 'lib/src';
 
 import {
   SET_FORM_LOCATION,
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
   setLocation,
-  setLocateResult,
+  setLocationResult,
   setProjectionResult,
 } from '../actions';
 
@@ -49,7 +50,7 @@ const projection = (store) => (next) => (action) => {
 
     try {
       const locateResult = locate(location);
-      store.dispatch(setLocateResult(locateResult));
+      store.dispatch(setLocationResult(locateResult));
     } catch (error) {
       console.log('Locate error: ', error);
     }

@@ -1,7 +1,8 @@
-import treeLib from '@geops/tree-lib';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Accordion } from 'semantic-ui-react';
+// eslint-disable-next-line import/no-unresolved
+import treeLib from 'lib/src';
 
 import InfoAbout from './InfoAbout';
 import InfoParticipants from './InfoParticipants';

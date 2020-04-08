@@ -1,6 +1,6 @@
 import {
   SET_FORM_LOCATION,
-  SET_LOCATE_RESULT,
+  SET_LOCATION_RESULT,
   SET_LOCATION,
   SET_MAP_LAYER,
   SET_MAP_LOCATION,
@@ -15,7 +15,7 @@ const initialProjection = { options: {}, projections: [] };
 export const initialState = {
   location: {},
   formLocation: {},
-  locateResult: {},
+  locationResult: { options: {} },
   mapLayer: 'cb',
   mapLocation: {},
   mapView: '9|910001|5947112',
@@ -30,18 +30,9 @@ export const initialState = {
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
 
-const formLocationFields = [
-  'forestEcoregion',
-  'altitudinalZone',
-  'forestType',
-  'additional',
-  'silverFirArea',
-  'relief',
-  'targetAltitudinalZone',
-];
-
 const getFormLocation = (state, action) => {
   const formLocation = { ...state.formLocation, ...action.formLocation };
+  const formLocationFields = Object.keys(formLocation);
   let reset = false;
   for (let i = 0; i < formLocationFields.length; i += 1) {
     const formField = formLocationFields[i];
@@ -60,8 +51,8 @@ function tree(state = initialState, action) {
     case SET_FORM_LOCATION: {
       return { ...state, formLocation: getFormLocation(state, action) };
     }
-    case SET_LOCATE_RESULT: {
-      return { ...state, locateResult: action.locateResult };
+    case SET_LOCATION_RESULT: {
+      return { ...state, locationResult: action.locationResult };
     }
     case SET_LOCATION: {
       return { ...state, location: action.location };

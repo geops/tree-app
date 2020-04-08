@@ -1,8 +1,9 @@
-import { recommend } from '@geops/tree-lib';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
 import { Checkbox, Grid, Tab } from 'semantic-ui-react';
+// eslint-disable-next-line import/no-unresolved
+import { recommend } from 'lib/src';
 
 import HelpModal from './HelpModal';
 import TreeTypeList from './TreeTypeList';

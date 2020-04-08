@@ -1,0 +1,36 @@
+.box {
+  fill: #999;
+  stroke: white;
+  stroke-width: 2;
+}
+.active {
+  cursor: pointer;
+  fill: var(--primary-color-500);
+}
+.active:hover {
+  fill: var(--primary-color-200);
+}
+
+.boxText {
+  pointer-events: none;
+  fill: white;
+  font-size: 2em;
+  text-anchor: middle;
+}
+
+.frame {
+  pointer-events: none;
+  fill: transparent;
+  stroke: #999999;
+  stroke-width: 2;
+}
+
+.grid {
+  stroke: var(--primary-color-100);
+}
+
+.label {
+  fill: #999999;
+  font-size: 2em;
+  text-anchor: middle;
+}

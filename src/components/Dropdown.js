@@ -8,7 +8,7 @@ import useIsMobile from '../hooks/useIsMobile';
 
 import styles from './Dropdown.module.css';
 
-function Dropdown({ className, label, ...props }) {
+function Dropdown({ className, children, label, ...props }) {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
   return (
@@ -23,18 +23,22 @@ function Dropdown({ className, label, ...props }) {
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...props}
         className={`${className} ${styles.dropdown}`}
-      />
+      >
+        {children}
+      </SUIDropdown>
     </Form.Field>
   );
 }
 
 Dropdown.propTypes = {
   className: PropTypes.string,
+  children: PropTypes.node,
   label: PropTypes.string,
 };
 
 Dropdown.defaultProps = {
   className: '',
+  children: null,
   label: null,
 };
 
