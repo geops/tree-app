@@ -231,19 +231,7 @@ VALUES ('ober- und untermontan',
 INSERT INTO altitudinal_zone_meta (projection, nais, code)
 VALUES ('hochmontan',
         'HM',
-        '81');
-
-
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
-VALUES ('hochmontan Nebenareal der Tanne',
-        null,
-        '82');
-
-
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
-VALUES ('hochmontan Reliktareal der Tanne',
-        null,
-        '83');
+        '80');
 
 
 INSERT INTO altitudinal_zone_meta (projection, nais, code)
@@ -444,8 +432,8 @@ WHERE naistyp_oeg_pio IN ('1',
                           '2');
 
 
-CREATE TABLE foresttype_aspect ( foresttype_code TEXT REFERENCES foresttype_meta,
-                                                                 aspect TEXT);
+CREATE TABLE foresttype_aspect (foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                aspect TEXT);
 
 
 INSERT INTO foresttype_aspect (foresttype_code, aspect)
@@ -462,8 +450,8 @@ WHERE feld_name ILIKE 'E_%'
         AND split_part(feld_name, '_', 2) != '';
 
 
-CREATE TABLE foresttype_slope ( foresttype_code TEXT REFERENCES foresttype_meta,
-                                                                slope TEXT);
+CREATE TABLE foresttype_slope (foresttype_code TEXT REFERENCES foresttype_meta,
+                                                               slope TEXT);
 
 
 INSERT INTO foresttype_slope (foresttype_code, slope)

@@ -9,10 +9,10 @@
     { "de": "nicht relevant", "code": "unknown" }
   ],
   "relief": [
-    { "de": "nicht relevant", "code": "unknown" },
     { "de": "Hang- und Muldenlage", "code": "h_and_m" },
-    { "de": "normal", "code": "normal" },
-    { "de": "Kuppenlage", "code": "kup" }
+    { "de": "nicht relevant", "code": "unknown" },
+    { "de": "Kuppenlage", "code": "kup" },
+    { "de": "normal", "code": "normal" }
   ],
   "treeType": [
     {
@@ -22374,7 +22374,7 @@
         ["40", "2a"],
         ["40", "J"],
         ["40", "M"],
-        ["81", "J"],
+        ["80", "J"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -25054,9 +25054,9 @@
       "geomorphology": [true, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
         ["60", "J"],
-        ["81", "1"],
-        ["81", "J"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "J"],
+        ["80", "M"]
       ]
     },
     {
@@ -25094,7 +25094,7 @@
       "geomorphology": [true, true, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
         ["70", "5a"],
-        ["81", "5a"]
+        ["80", "5a"]
       ]
     },
     {
@@ -25128,7 +25128,7 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "5a"],
+        ["80", "5a"],
         ["90", "4"],
         ["90", "5a"],
         ["90", "5b"]
@@ -25441,11 +25441,11 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "J"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "J"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"]
@@ -25501,9 +25501,9 @@
         ["60", "1"],
         ["60", "2a"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "M"]
       ]
     },
     {
@@ -25540,8 +25540,8 @@
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, true, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -25590,8 +25590,8 @@
       "altitudinalZoneForestEcoregion": [
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -25634,12 +25634,12 @@
         ["60", "M"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "M"],
         ["90", "4"]
       ]
     },
@@ -25701,12 +25701,12 @@
         ["60", "M"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -25768,9 +25768,9 @@
         ["60", "1"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "1"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -26164,7 +26164,7 @@
         ["20", "5a"],
         ["30", "5a"],
         ["30", "5b"],
-        ["81", "4"]
+        ["80", "4"]
       ]
     },
     {
@@ -26676,7 +26676,7 @@
         ["50", "2a"],
         ["50", "J"],
         ["50", "M"],
-        ["81", "2b"]
+        ["80", "2b"]
       ]
     },
     {
@@ -26773,10 +26773,10 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "M"]
       ]
     },
     {
@@ -26815,10 +26815,10 @@
       "altitudinalZoneForestEcoregion": [
         ["60", "1"],
         ["60", "2a"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "M"]
       ]
     },
     {
@@ -27060,8 +27060,8 @@
         ["60", "M"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -27098,10 +27098,10 @@
       "reliefType": [true, true, false, false, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -27692,7 +27692,7 @@
         ["50", "2a"],
         ["50", "J"],
         ["50", "M"],
-        ["81", "2b"]
+        ["80", "2b"]
       ]
     },
     {
@@ -27827,13 +27827,13 @@
         ["60", "M"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "M"],
         ["90", "4"]
       ]
     },
@@ -27875,12 +27875,12 @@
         ["60", "2a"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -27933,9 +27933,9 @@
       "altitudinalZoneForestEcoregion": [
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"]
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"]
       ]
     },
     {
@@ -29118,11 +29118,11 @@
         ["60", "2a"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -29215,10 +29215,10 @@
       "altitudinalZoneForestEcoregion": [
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -30132,8 +30132,8 @@
         ["50", "M"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -30468,10 +30468,10 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "M"]
       ]
     },
     {
@@ -30525,7 +30525,7 @@
       "carbonate": [false, false],
       "reliefType": [true, true, true, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": [["81", "2b"]]
+      "altitudinalZoneForestEcoregion": [["80", "2b"]]
     },
     {
       "de": "Heidelbeer-Ta-Fi-Wald auf Podsol",
@@ -30561,12 +30561,12 @@
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "M"]
       ]
     },
     {
@@ -30621,9 +30621,9 @@
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"]
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"]
       ]
     },
     {
@@ -30704,10 +30704,10 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "M"]
       ]
     },
     {
@@ -30761,7 +30761,7 @@
       "carbonate": [false, false],
       "reliefType": [true, true, true, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": [["81", "2b"]]
+      "altitudinalZoneForestEcoregion": [["80", "2b"]]
     },
     {
       "de": "Wollreitgras-Ta-Fi-Wald",
@@ -30798,11 +30798,11 @@
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
         ["70", "5a"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -30838,7 +30838,7 @@
       "carbonate": [false, false],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
-      "altitudinalZoneForestEcoregion": [["81", "4"]]
+      "altitudinalZoneForestEcoregion": [["80", "4"]]
     },
     {
       "de": "Wollreitgras-Ta-Fi-Wald; farnreicher",
@@ -30871,8 +30871,8 @@
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -30905,7 +30905,7 @@
       "carbonate": [false, false],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, false, false, true],
-      "altitudinalZoneForestEcoregion": [["81", "4"]]
+      "altitudinalZoneForestEcoregion": [["80", "4"]]
     },
     {
       "de": "Wollreitgras-Ta-Fi-Wald mit Wachtelweizen",
@@ -30941,8 +30941,8 @@
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -30982,12 +30982,12 @@
         ["60", "2a"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -31039,9 +31039,9 @@
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
         ["70", "5a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"],
         ["90", "2b"],
         ["90", "4"],
         ["90", "5a"],
@@ -31079,9 +31079,9 @@
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
         ["70", "5a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"],
         ["90", "2b"],
         ["90", "4"],
         ["90", "5a"],
@@ -31130,13 +31130,13 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "J"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "J"],
+        ["80", "M"]
       ]
     },
     {
@@ -31195,10 +31195,10 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "J"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "J"],
+        ["80", "M"]
       ]
     },
     {
@@ -31253,9 +31253,9 @@
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -31314,9 +31314,9 @@
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"]
       ]
     },
     {
@@ -31385,8 +31385,8 @@
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -31419,8 +31419,8 @@
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2b"]
+        ["80", "1"],
+        ["80", "2b"]
       ]
     },
     {
@@ -31453,11 +31453,11 @@
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, true, false, true, false, false],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "M"]
       ]
     },
     {
@@ -31512,13 +31512,13 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "J"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "J"],
+        ["80", "M"]
       ]
     },
     {
@@ -31573,9 +31573,9 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"]
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"]
       ]
     },
     {
@@ -31612,11 +31612,11 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "M"]
       ]
     },
     {
@@ -31671,8 +31671,8 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2a"],
-        ["81", "2b"]
+        ["80", "2a"],
+        ["80", "2b"]
       ]
     },
     {
@@ -31708,7 +31708,7 @@
       "carbonate": [false, false],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
-      "altitudinalZoneForestEcoregion": [["81", "1"]]
+      "altitudinalZoneForestEcoregion": [["80", "1"]]
     },
     {
       "de": "Labkraut-Ta-Fi-Wald mit Hasel",
@@ -31740,8 +31740,8 @@
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2a"],
-        ["81", "2b"]
+        ["80", "2a"],
+        ["80", "2b"]
       ]
     },
     {
@@ -31778,11 +31778,11 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -31837,8 +31837,8 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "4"]
+        ["80", "2b"],
+        ["80", "4"]
       ]
     },
     {
@@ -31875,8 +31875,8 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "4"]
+        ["80", "2b"],
+        ["80", "4"]
       ]
     },
     {
@@ -31973,10 +31973,10 @@
         ["60", "1"],
         ["60", "2a"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "4"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "4"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "4"]
@@ -32020,11 +32020,11 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "4"],
-        ["81", "J"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "4"],
+        ["80", "J"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"]
@@ -32137,10 +32137,10 @@
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"]
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"]
       ]
     },
     {
@@ -32194,7 +32194,7 @@
       "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
-      "altitudinalZoneForestEcoregion": [["81", "2b"]]
+      "altitudinalZoneForestEcoregion": [["80", "2b"]]
     },
     {
       "de": "Erika-Fichtenwald; subalpine Ausbildung",
@@ -32304,8 +32304,8 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -32352,8 +32352,8 @@
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -32404,9 +32404,9 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -32456,7 +32456,7 @@
       "carbonate": [false, false],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, true, false, false, false, true],
-      "altitudinalZoneForestEcoregion": [["81", "3"]]
+      "altitudinalZoneForestEcoregion": [["80", "3"]]
     },
     {
       "de": "Schneesimsen-Fi-Wald",
@@ -32484,10 +32484,10 @@
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -32516,10 +32516,10 @@
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -32565,7 +32565,7 @@
       "carbonate": [false, false],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
-      "altitudinalZoneForestEcoregion": [["81", "2b"]]
+      "altitudinalZoneForestEcoregion": [["80", "2b"]]
     },
     {
       "de": "Moorrand-Fichtenwald",
@@ -32605,12 +32605,12 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "M"]
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "M"]
       ]
     },
     {
@@ -32651,14 +32651,14 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "J"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "J"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -32701,7 +32701,7 @@
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
+        ["80", "2b"],
         ["90", "4"],
         ["90", "5a"]
       ]
@@ -32931,7 +32931,7 @@
       "carbonate": [false, false],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": [["81", "1"]]
+      "altitudinalZoneForestEcoregion": [["80", "1"]]
     },
     {
       "de": "Alpenlattich-Fichtenwald mit Heidelbeere",
@@ -33837,8 +33837,8 @@
       "altitudinalZoneForestEcoregion": [
         ["100", "2b"],
         ["100", "3"],
-        ["81", "2b"],
-        ["81", "3"],
+        ["80", "2b"],
+        ["80", "3"],
         ["90", "2b"],
         ["90", "3"]
       ]
@@ -34170,7 +34170,7 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "3"],
+        ["80", "3"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -34213,10 +34213,10 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -34275,10 +34275,10 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"]
       ]
@@ -34455,8 +34455,8 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -34504,8 +34504,8 @@
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
         ["20", "2b"],
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -34569,8 +34569,8 @@
         ["40", "1"],
         ["40", "2a"],
         ["40", "M"],
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -34701,12 +34701,12 @@
         ["100", "5a"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "5a"],
-        ["81", "J"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "5a"],
+        ["80", "J"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -34787,9 +34787,9 @@
         ["60", "M"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "2b"],
-        ["81", "4"],
-        ["81", "5a"]
+        ["80", "2b"],
+        ["80", "4"],
+        ["80", "5a"]
       ]
     },
     {
@@ -34844,8 +34844,8 @@
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
-        ["81", "2b"],
-        ["81", "3"]
+        ["80", "2b"],
+        ["80", "3"]
       ]
     },
     {
@@ -34906,11 +34906,11 @@
         ["100", "3"],
         ["100", "4"],
         ["100", "5a"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "5a"],
-        ["81", "J"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "5a"],
+        ["80", "J"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -34981,12 +34981,12 @@
         ["60", "2a"],
         ["60", "J"],
         ["60", "M"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -39151,13 +39151,13 @@
         ["100", "5a"],
         ["70", "5a"],
         ["70", "5b"],
-        ["81", "1"],
-        ["81", "2a"],
-        ["81", "2b"],
-        ["81", "3"],
-        ["81", "4"],
-        ["81", "5a"],
-        ["81", "M"],
+        ["80", "1"],
+        ["80", "2a"],
+        ["80", "2b"],
+        ["80", "3"],
+        ["80", "4"],
+        ["80", "5a"],
+        ["80", "M"],
         ["90", "1"],
         ["90", "2a"],
         ["90", "2b"],
@@ -39561,11 +39561,9 @@
     { "de": "untermontan", "id": 6, "code": "50" },
     { "de": "obermontan", "id": 7, "code": "60" },
     { "de": "ober- und untermontan", "id": 8, "code": "70" },
-    { "de": "hochmontan", "id": 9, "code": "81" },
-    { "de": "hochmontan Nebenareal der Tanne", "id": 10, "code": "82" },
-    { "de": "hochmontan Reliktareal der Tanne", "id": 11, "code": "83" },
-    { "de": "subalpin", "id": 12, "code": "90" },
-    { "de": "obersubalpin", "id": 13, "code": "100" }
+    { "de": "hochmontan", "id": 9, "code": "80" },
+    { "de": "subalpin", "id": 10, "code": "90" },
+    { "de": "obersubalpin", "id": 11, "code": "100" }
   ],
   "forestEcoregion": [
     { "de": "Nördliche Randalpen", "code": "1" },

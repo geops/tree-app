@@ -567,7 +567,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": "50:62" } } }
       }
     },
-    "81": {
+    "80": {
       "21": {
         "unknown": { "unknown": { "unknown": { "unknown": "20:23H collin" } } }
       },
@@ -926,330 +926,330 @@
       }
     },
     "90": {
-      "23": { "unknown": { "unknown": { "unknown": { "unknown": "81:23" } } } },
+      "23": { "unknown": { "unknown": { "unknown": { "unknown": "80:23" } } } },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "60": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } } },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
-      "71": { "unknown": { "unknown": { "unknown": { "unknown": "81:71" } } } },
+      "71": { "unknown": { "unknown": { "unknown": { "unknown": "80:71" } } } },
       "72": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "AV": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:50" } },
-          "unknown": { "unknown": { "unknown": "81:AV" } }
+          "Nrml": { "unknown": { "unknown": "80:50" } },
+          "unknown": { "unknown": { "unknown": "80:AV" } }
         }
       },
       "23G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:23G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:23G" } } }
       },
       "24*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*" } } }
       },
       "27*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:27*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:27*" } } }
       },
       "32S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:32V" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:32V" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "49*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:49*Ta" },
-            "2": { "unknown": "81:49*Ta" },
-            "3": { "unknown": "81:49*" }
+            "1": { "unknown": "80:49*Ta" },
+            "2": { "unknown": "80:49*Ta" },
+            "3": { "unknown": "80:49*" }
           }
         }
       },
       "53A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "55*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "57C": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57M": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46MRe" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46MRe" } } }
       },
       "57S": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46*" },
-            "2": { "unknown": "81:46*" },
-            "3": { "unknown": "81:46*Re" }
+            "1": { "unknown": "80:46*" },
+            "2": { "unknown": "80:46*" },
+            "3": { "unknown": "80:46*Re" }
           }
         }
       },
       "57V": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58L": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59R": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:59R" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:59R" } } }
       },
       "60*": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
         ">70": {
           "unknown": {
-            "1": { "unknown": "81:60*Ta" },
-            "2": { "unknown": "81:60*Ta" },
-            "3": { "unknown": "81:60*" }
+            "1": { "unknown": "80:60*Ta" },
+            "2": { "unknown": "80:60*Ta" },
+            "3": { "unknown": "80:60*" }
           }
         }
       },
       "60A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "60E": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:49*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:49*" } } }
       },
       "67*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
       "71G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:71G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:71G" } } }
       },
       "72G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "24*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*G" } } }
       },
       "53*s": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "53Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Ta" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Ta" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "1": { "unknown": "81:48" }, "2": { "unknown": "81:48" } },
+          "Nrml": { "1": { "unknown": "80:48" }, "2": { "unknown": "80:48" } },
           "Shdy_Cl_Bb": {
-            "1": { "unknown": "81:57Bl" },
-            "2": { "unknown": "81:57Bl" }
+            "1": { "unknown": "80:57Bl" },
+            "2": { "unknown": "80:57Bl" }
           }
         }
       },
       "57CG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57VG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "57VM": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:54A" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:54A" }
           }
         }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58LG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "60*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:60*TaG" },
-            "2": { "unknown": "81:60*TaG" },
-            "3": { "unknown": "81:60*G" }
+            "1": { "unknown": "80:60*TaG" },
+            "2": { "unknown": "80:60*TaG" },
+            "3": { "unknown": "80:60*G" }
           }
         }
       },
       "60AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50G" },
-            "2": { "unknown": "81:50G" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50G" },
+            "2": { "unknown": "80:50G" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "60Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "66PM": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:66" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:66" } } }
       },
       "53ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Lä" } } }
       },
-      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "81:57Bl " } } } },
+      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "80:57Bl " } } } },
       "57BlG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:48G" },
-            "2": { "unknown": "81:48G" },
-            "3": { "unknown": "81:57BlG" }
+            "1": { "unknown": "80:48G" },
+            "2": { "unknown": "80:48G" },
+            "3": { "unknown": "80:57BlG" }
           }
         }
       },
       "57CTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57STa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46*" } } }
       },
       "57VTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Ta": {
-        "<70": { "unknown": { "unknown": { "unknown": "81:50*" } } },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Ta" } } }
+        "<70": { "unknown": { "unknown": { "unknown": "80:50*" } } },
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Ta" } } }
       },
       "60ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "60Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "72Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "47*Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*Lä" } } }
       },
       "57CLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55Lä" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55Lä" }
           }
         }
       },
       "57VLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58LLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Lä": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Lä" } } }
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Lä" } } }
       },
       "60ALä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "53*sLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       }
     },
     "100": {
@@ -1839,7 +1839,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": "50:62" } } }
       }
     },
-    "81": {
+    "80": {
       "21": {
         "unknown": { "unknown": { "unknown": { "unknown": "20:23H collin" } } }
       },
@@ -2198,330 +2198,330 @@
       }
     },
     "90": {
-      "23": { "unknown": { "unknown": { "unknown": { "unknown": "81:23" } } } },
+      "23": { "unknown": { "unknown": { "unknown": { "unknown": "80:23" } } } },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "60": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } } },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
-      "71": { "unknown": { "unknown": { "unknown": { "unknown": "81:71" } } } },
+      "71": { "unknown": { "unknown": { "unknown": { "unknown": "80:71" } } } },
       "72": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "AV": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:50" } },
-          "unknown": { "unknown": { "unknown": "81:AV" } }
+          "Nrml": { "unknown": { "unknown": "80:50" } },
+          "unknown": { "unknown": { "unknown": "80:AV" } }
         }
       },
       "23G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:23G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:23G" } } }
       },
       "24*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*" } } }
       },
       "27*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:27*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:27*" } } }
       },
       "32S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:32V" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:32V" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "49*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:49*Ta" },
-            "2": { "unknown": "81:49*Ta" },
-            "3": { "unknown": "81:49*" }
+            "1": { "unknown": "80:49*Ta" },
+            "2": { "unknown": "80:49*Ta" },
+            "3": { "unknown": "80:49*" }
           }
         }
       },
       "53A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "55*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "57C": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57M": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46MRe" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46MRe" } } }
       },
       "57S": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46*" },
-            "2": { "unknown": "81:46*" },
-            "3": { "unknown": "81:46*Re" }
+            "1": { "unknown": "80:46*" },
+            "2": { "unknown": "80:46*" },
+            "3": { "unknown": "80:46*Re" }
           }
         }
       },
       "57V": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58L": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59R": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:59R" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:59R" } } }
       },
       "60*": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
         ">70": {
           "unknown": {
-            "1": { "unknown": "81:60*Ta" },
-            "2": { "unknown": "81:60*Ta" },
-            "3": { "unknown": "81:60*" }
+            "1": { "unknown": "80:60*Ta" },
+            "2": { "unknown": "80:60*Ta" },
+            "3": { "unknown": "80:60*" }
           }
         }
       },
       "60A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "60E": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:49*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:49*" } } }
       },
       "67*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
       "71G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:71G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:71G" } } }
       },
       "72G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "24*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*G" } } }
       },
       "53*s": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "53Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Ta" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Ta" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "1": { "unknown": "81:48" }, "2": { "unknown": "81:48" } },
+          "Nrml": { "1": { "unknown": "80:48" }, "2": { "unknown": "80:48" } },
           "Shdy_Cl_Bb": {
-            "1": { "unknown": "81:57Bl" },
-            "2": { "unknown": "81:57Bl" }
+            "1": { "unknown": "80:57Bl" },
+            "2": { "unknown": "80:57Bl" }
           }
         }
       },
       "57CG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57VG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "57VM": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:54A" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:54A" }
           }
         }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58LG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "60*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:60*TaG" },
-            "2": { "unknown": "81:60*TaG" },
-            "3": { "unknown": "81:60*G" }
+            "1": { "unknown": "80:60*TaG" },
+            "2": { "unknown": "80:60*TaG" },
+            "3": { "unknown": "80:60*G" }
           }
         }
       },
       "60AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50G" },
-            "2": { "unknown": "81:50G" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50G" },
+            "2": { "unknown": "80:50G" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "60Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "66PM": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:66" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:66" } } }
       },
       "53ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Lä" } } }
       },
-      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "81:57Bl " } } } },
+      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "80:57Bl " } } } },
       "57BlG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:48G" },
-            "2": { "unknown": "81:48G" },
-            "3": { "unknown": "81:57BlG" }
+            "1": { "unknown": "80:48G" },
+            "2": { "unknown": "80:48G" },
+            "3": { "unknown": "80:57BlG" }
           }
         }
       },
       "57CTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57STa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46*" } } }
       },
       "57VTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Ta": {
-        "<70": { "unknown": { "unknown": { "unknown": "81:50*" } } },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Ta" } } }
+        "<70": { "unknown": { "unknown": { "unknown": "80:50*" } } },
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Ta" } } }
       },
       "60ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "60Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "72Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "47*Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*Lä" } } }
       },
       "57CLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55Lä" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55Lä" }
           }
         }
       },
       "57VLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58LLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Lä": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Lä" } } }
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Lä" } } }
       },
       "60ALä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "53*sLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       }
     },
     "100": {
@@ -2618,7 +2618,7 @@
     }
   },
   "4": {
-    "81": {
+    "80": {
       "3": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
       "24": {
         "unknown": { "unknown": { "unknown": { "unknown": "30:25a" } } }
@@ -2779,327 +2779,327 @@
       }
     },
     "90": {
-      "24": { "unknown": { "unknown": { "unknown": { "unknown": "81:24" } } } },
+      "24": { "unknown": { "unknown": { "unknown": { "unknown": "80:24" } } } },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Ta" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Ta" } } }
       },
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "60": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47D" },
-            "2": { "unknown": "81:47D" },
-            "3": { "unknown": "81:47DRe" }
+            "1": { "unknown": "80:47D" },
+            "2": { "unknown": "80:47D" },
+            "3": { "unknown": "80:47DRe" }
           }
         }
       },
       "67": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:53Ta" },
-            "2": { "unknown": "81:53Ta" },
-            "3": { "unknown": "81:53*" }
+            "1": { "unknown": "80:53Ta" },
+            "2": { "unknown": "80:53Ta" },
+            "3": { "unknown": "80:53*" }
           }
         }
       },
       "69": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:53Ta" },
-            "2": { "unknown": "81:53Ta" },
-            "3": { "unknown": "81:53*" }
+            "1": { "unknown": "80:53Ta" },
+            "2": { "unknown": "80:53Ta" },
+            "3": { "unknown": "80:53*" }
           }
         }
       },
-      "70": { "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } } },
-      "71": { "unknown": { "unknown": { "unknown": { "unknown": "81:71" } } } },
-      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "81:AV" } } } },
+      "70": { "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } } },
+      "71": { "unknown": { "unknown": { "unknown": { "unknown": "80:71" } } } },
+      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "80:AV" } } } },
       "21*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47D" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47D" } } }
       },
       "24*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*" } } }
       },
       "24G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24G" } } }
       },
       "27*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:27h" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:27h" } } }
       },
       "32V": {
         "unknown": {
-          "<5F": { "unknown": { "unknown": "81:43S" } },
-          "Nrml": { "unknown": { "unknown": "81:32V" } }
+          "<5F": { "unknown": { "unknown": "80:43S" } },
+          "Nrml": { "unknown": { "unknown": "80:32V" } }
         }
       },
       "47*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47*" },
-            "2": { "unknown": "81:47*" },
-            "3": { "unknown": "81:47Re" }
+            "1": { "unknown": "80:47*" },
+            "2": { "unknown": "80:47*" },
+            "3": { "unknown": "80:47Re" }
           }
         }
       },
       "57C": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47M" },
-            "2": { "unknown": "81:47M" },
-            "3": { "unknown": "81:57C" }
+            "1": { "unknown": "80:47M" },
+            "2": { "unknown": "80:47M" },
+            "3": { "unknown": "80:57C" }
           }
         }
       },
       "57S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:56" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:56" } } }
       },
       "57V": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46M" },
-            "2": { "unknown": "81:46M" },
-            "3": { "unknown": "81:46MRe" }
+            "1": { "unknown": "80:46M" },
+            "2": { "unknown": "80:46M" },
+            "3": { "unknown": "80:46MRe" }
           }
         }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "58L": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47*" },
-            "2": { "unknown": "81:47*" },
-            "3": { "unknown": "81:47Re" }
+            "1": { "unknown": "80:47*" },
+            "2": { "unknown": "80:47*" },
+            "3": { "unknown": "80:47Re" }
           }
         }
       },
       "59A": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47D" },
-            "2": { "unknown": "81:47D" },
-            "3": { "unknown": "81:47DRe" }
+            "1": { "unknown": "80:47D" },
+            "2": { "unknown": "80:47D" },
+            "3": { "unknown": "80:47DRe" }
           }
         }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59S": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:52" },
-            "2": { "unknown": "81:52" },
-            "3": { "unknown": "81:52Re" }
+            "1": { "unknown": "80:52" },
+            "2": { "unknown": "80:52" },
+            "3": { "unknown": "80:52Re" }
           }
         }
       },
       "60*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         }
       },
       "60A": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47D" },
-            "2": { "unknown": "81:47D" },
-            "3": { "unknown": "81:47DRe" }
+            "1": { "unknown": "80:47D" },
+            "2": { "unknown": "80:47D" },
+            "3": { "unknown": "80:47DRe" }
           }
         }
       },
       "67G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:53Ta" },
-            "2": { "unknown": "81:53Ta" },
-            "3": { "unknown": "81:53*" }
+            "1": { "unknown": "80:53Ta" },
+            "2": { "unknown": "80:53Ta" },
+            "3": { "unknown": "80:53*" }
           }
         }
       },
       "69G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:53Ta" },
-            "2": { "unknown": "81:53Ta" },
-            "3": { "unknown": "81:53*" }
+            "1": { "unknown": "80:53Ta" },
+            "2": { "unknown": "80:53Ta" },
+            "3": { "unknown": "80:53*" }
           }
         }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } }
       },
       "71G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:71G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:71G" } } }
       },
       "21*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47D" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47D" } } }
       },
       "24*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*G" } } }
       },
       "32VG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:43S" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:43S" } } }
       },
       "47*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47*" },
-            "2": { "unknown": "81:47*" },
-            "3": { "unknown": "81:47Re" }
+            "1": { "unknown": "80:47*" },
+            "2": { "unknown": "80:47*" },
+            "3": { "unknown": "80:47Re" }
           }
         }
       },
       "57Bl": {
         "unknown": {
           "Nrml": {
-            "1": { "unknown": "81:48" },
-            "2": { "unknown": "81:48" },
-            "3": { "unknown": "81:47H" }
+            "1": { "unknown": "80:48" },
+            "2": { "unknown": "80:48" },
+            "3": { "unknown": "80:47H" }
           },
           "Shdy_Cl": {
-            "1": { "unknown": "81:57Bl" },
-            "2": { "unknown": "81:57Bl" },
-            "3": { "unknown": "81:57Bl" }
+            "1": { "unknown": "80:57Bl" },
+            "2": { "unknown": "80:57Bl" },
+            "3": { "unknown": "80:57Bl" }
           }
         }
       },
       "57CG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47MG" },
-            "2": { "unknown": "81:47MG" },
-            "3": { "unknown": "81:57CG" }
+            "1": { "unknown": "80:47MG" },
+            "2": { "unknown": "80:47MG" },
+            "3": { "unknown": "80:57CG" }
           }
         }
       },
       "57VM": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:57VM" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:57VM" }
           }
         }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58Fe": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58LG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "59AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47D" },
-            "2": { "unknown": "81:47D" },
-            "3": { "unknown": "81:47DRe" }
+            "1": { "unknown": "80:47D" },
+            "2": { "unknown": "80:47D" },
+            "3": { "unknown": "80:47DRe" }
           }
         }
       },
       "60*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         }
       },
       "60AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47D" },
-            "2": { "unknown": "81:47D" },
-            "3": { "unknown": "81:47DRe" }
+            "1": { "unknown": "80:47D" },
+            "2": { "unknown": "80:47D" },
+            "3": { "unknown": "80:47DRe" }
           }
         }
       },
       "24*Fe": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*Fe" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*Fe" } } }
       },
       "53Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Lä" } } }
       },
       "57BlG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:48" },
-            "2": { "unknown": "81:48" },
-            "3": { "unknown": "81:47H" }
+            "1": { "unknown": "80:48" },
+            "2": { "unknown": "80:48" },
+            "3": { "unknown": "80:47H" }
           }
         }
       },
       "57CTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47M" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47M" } } }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47D" },
-            "2": { "unknown": "81:47D" },
-            "3": { "unknown": "81:47DRe" }
+            "1": { "unknown": "80:47D" },
+            "2": { "unknown": "80:47D" },
+            "3": { "unknown": "80:47DRe" }
           }
         }
       },
       "47*Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47*Lä" },
-            "2": { "unknown": "81:47*Lä" },
-            "3": { "unknown": "81:47Re" }
+            "1": { "unknown": "80:47*Lä" },
+            "2": { "unknown": "80:47*Lä" },
+            "3": { "unknown": "80:47Re" }
           }
         }
       },
       "57BlTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "57CLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47M" },
-            "2": { "unknown": "81:47M" },
-            "3": { "unknown": "81:57CLä" }
+            "1": { "unknown": "80:47M" },
+            "2": { "unknown": "80:47M" },
+            "3": { "unknown": "80:57CLä" }
           }
         }
       },
       "57VLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46M" },
-            "2": { "unknown": "81:46M" },
-            "3": { "unknown": "81:46MRe" }
+            "1": { "unknown": "80:46M" },
+            "2": { "unknown": "80:46M" },
+            "3": { "unknown": "80:46MRe" }
           }
         }
       },
       "58LLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60ALä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:47D" },
-            "2": { "unknown": "81:47D" },
-            "3": { "unknown": "81:47DRe" }
+            "1": { "unknown": "80:47D" },
+            "2": { "unknown": "80:47D" },
+            "3": { "unknown": "80:47DRe" }
           }
         }
       }
@@ -3767,7 +3767,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": "50:62" } } }
       }
     },
-    "81": {
+    "80": {
       "21": {
         "unknown": { "unknown": { "unknown": { "unknown": "20:23H collin" } } }
       },
@@ -4126,330 +4126,330 @@
       }
     },
     "90": {
-      "23": { "unknown": { "unknown": { "unknown": { "unknown": "81:23" } } } },
+      "23": { "unknown": { "unknown": { "unknown": { "unknown": "80:23" } } } },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "60": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } } },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
-      "71": { "unknown": { "unknown": { "unknown": { "unknown": "81:71" } } } },
+      "71": { "unknown": { "unknown": { "unknown": { "unknown": "80:71" } } } },
       "72": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "AV": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:50" } },
-          "unknown": { "unknown": { "unknown": "81:AV" } }
+          "Nrml": { "unknown": { "unknown": "80:50" } },
+          "unknown": { "unknown": { "unknown": "80:AV" } }
         }
       },
       "23G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:23G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:23G" } } }
       },
       "24*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*" } } }
       },
       "27*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:27*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:27*" } } }
       },
       "32S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:32V" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:32V" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "49*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:49*Ta" },
-            "2": { "unknown": "81:49*Ta" },
-            "3": { "unknown": "81:49*" }
+            "1": { "unknown": "80:49*Ta" },
+            "2": { "unknown": "80:49*Ta" },
+            "3": { "unknown": "80:49*" }
           }
         }
       },
       "53A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "55*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "57C": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57M": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46MRe" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46MRe" } } }
       },
       "57S": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46*" },
-            "2": { "unknown": "81:46*" },
-            "3": { "unknown": "81:46*Re" }
+            "1": { "unknown": "80:46*" },
+            "2": { "unknown": "80:46*" },
+            "3": { "unknown": "80:46*Re" }
           }
         }
       },
       "57V": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58L": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59R": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:59R" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:59R" } } }
       },
       "60*": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
         ">70": {
           "unknown": {
-            "1": { "unknown": "81:60*Ta" },
-            "2": { "unknown": "81:60*Ta" },
-            "3": { "unknown": "81:60*" }
+            "1": { "unknown": "80:60*Ta" },
+            "2": { "unknown": "80:60*Ta" },
+            "3": { "unknown": "80:60*" }
           }
         }
       },
       "60A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "60E": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:49*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:49*" } } }
       },
       "67*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
       "71G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:71G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:71G" } } }
       },
       "72G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "24*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*G" } } }
       },
       "53*s": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "53Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Ta" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Ta" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "1": { "unknown": "81:48" }, "2": { "unknown": "81:48" } },
+          "Nrml": { "1": { "unknown": "80:48" }, "2": { "unknown": "80:48" } },
           "Shdy_Cl_Bb": {
-            "1": { "unknown": "81:57Bl" },
-            "2": { "unknown": "81:57Bl" }
+            "1": { "unknown": "80:57Bl" },
+            "2": { "unknown": "80:57Bl" }
           }
         }
       },
       "57CG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57VG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "57VM": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:54A" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:54A" }
           }
         }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58LG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "60*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:60*TaG" },
-            "2": { "unknown": "81:60*TaG" },
-            "3": { "unknown": "81:60*G" }
+            "1": { "unknown": "80:60*TaG" },
+            "2": { "unknown": "80:60*TaG" },
+            "3": { "unknown": "80:60*G" }
           }
         }
       },
       "60AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50G" },
-            "2": { "unknown": "81:50G" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50G" },
+            "2": { "unknown": "80:50G" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "60Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "66PM": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:66" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:66" } } }
       },
       "53ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Lä" } } }
       },
-      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "81:57Bl " } } } },
+      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "80:57Bl " } } } },
       "57BlG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:48G" },
-            "2": { "unknown": "81:48G" },
-            "3": { "unknown": "81:57BlG" }
+            "1": { "unknown": "80:48G" },
+            "2": { "unknown": "80:48G" },
+            "3": { "unknown": "80:57BlG" }
           }
         }
       },
       "57CTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57STa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46*" } } }
       },
       "57VTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Ta": {
-        "<70": { "unknown": { "unknown": { "unknown": "81:50*" } } },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Ta" } } }
+        "<70": { "unknown": { "unknown": { "unknown": "80:50*" } } },
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Ta" } } }
       },
       "60ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "60Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "72Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "47*Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*Lä" } } }
       },
       "57CLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55Lä" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55Lä" }
           }
         }
       },
       "57VLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58LLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Lä": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Lä" } } }
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Lä" } } }
       },
       "60ALä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "53*sLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       }
     },
     "100": {
@@ -5179,7 +5179,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": "50:62" } } }
       }
     },
-    "81": {
+    "80": {
       "21": {
         "unknown": { "unknown": { "unknown": { "unknown": "20:23H collin" } } }
       },
@@ -5538,330 +5538,330 @@
       }
     },
     "90": {
-      "23": { "unknown": { "unknown": { "unknown": { "unknown": "81:23" } } } },
+      "23": { "unknown": { "unknown": { "unknown": { "unknown": "80:23" } } } },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "60": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } } },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
-      "71": { "unknown": { "unknown": { "unknown": { "unknown": "81:71" } } } },
+      "71": { "unknown": { "unknown": { "unknown": { "unknown": "80:71" } } } },
       "72": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "AV": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:50" } },
-          "unknown": { "unknown": { "unknown": "81:AV" } }
+          "Nrml": { "unknown": { "unknown": "80:50" } },
+          "unknown": { "unknown": { "unknown": "80:AV" } }
         }
       },
       "23G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:23G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:23G" } } }
       },
       "24*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*" } } }
       },
       "27*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:27*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:27*" } } }
       },
       "32S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:32V" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:32V" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "49*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:49*Ta" },
-            "2": { "unknown": "81:49*Ta" },
-            "3": { "unknown": "81:49*" }
+            "1": { "unknown": "80:49*Ta" },
+            "2": { "unknown": "80:49*Ta" },
+            "3": { "unknown": "80:49*" }
           }
         }
       },
       "53A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "55*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "57C": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57M": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46MRe" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46MRe" } } }
       },
       "57S": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46*" },
-            "2": { "unknown": "81:46*" },
-            "3": { "unknown": "81:46*Re" }
+            "1": { "unknown": "80:46*" },
+            "2": { "unknown": "80:46*" },
+            "3": { "unknown": "80:46*Re" }
           }
         }
       },
       "57V": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58L": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59R": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:59R" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:59R" } } }
       },
       "60*": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
         ">70": {
           "unknown": {
-            "1": { "unknown": "81:60*Ta" },
-            "2": { "unknown": "81:60*Ta" },
-            "3": { "unknown": "81:60*" }
+            "1": { "unknown": "80:60*Ta" },
+            "2": { "unknown": "80:60*Ta" },
+            "3": { "unknown": "80:60*" }
           }
         }
       },
       "60A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "60E": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:49*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:49*" } } }
       },
       "67*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
       "71G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:71G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:71G" } } }
       },
       "72G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "24*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*G" } } }
       },
       "53*s": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "53Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Ta" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Ta" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "1": { "unknown": "81:48" }, "2": { "unknown": "81:48" } },
+          "Nrml": { "1": { "unknown": "80:48" }, "2": { "unknown": "80:48" } },
           "Shdy_Cl_Bb": {
-            "1": { "unknown": "81:57Bl" },
-            "2": { "unknown": "81:57Bl" }
+            "1": { "unknown": "80:57Bl" },
+            "2": { "unknown": "80:57Bl" }
           }
         }
       },
       "57CG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57VG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "57VM": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:54A" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:54A" }
           }
         }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58LG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "60*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:60*TaG" },
-            "2": { "unknown": "81:60*TaG" },
-            "3": { "unknown": "81:60*G" }
+            "1": { "unknown": "80:60*TaG" },
+            "2": { "unknown": "80:60*TaG" },
+            "3": { "unknown": "80:60*G" }
           }
         }
       },
       "60AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50G" },
-            "2": { "unknown": "81:50G" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50G" },
+            "2": { "unknown": "80:50G" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "60Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "66PM": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:66" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:66" } } }
       },
       "53ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Lä" } } }
       },
-      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "81:57Bl " } } } },
+      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "80:57Bl " } } } },
       "57BlG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:48G" },
-            "2": { "unknown": "81:48G" },
-            "3": { "unknown": "81:57BlG" }
+            "1": { "unknown": "80:48G" },
+            "2": { "unknown": "80:48G" },
+            "3": { "unknown": "80:57BlG" }
           }
         }
       },
       "57CTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57STa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46*" } } }
       },
       "57VTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Ta": {
-        "<70": { "unknown": { "unknown": { "unknown": "81:50*" } } },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Ta" } } }
+        "<70": { "unknown": { "unknown": { "unknown": "80:50*" } } },
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Ta" } } }
       },
       "60ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "60Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "72Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "47*Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*Lä" } } }
       },
       "57CLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55Lä" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55Lä" }
           }
         }
       },
       "57VLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58LLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Lä": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Lä" } } }
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Lä" } } }
       },
       "60ALä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "53*sLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       }
     },
     "100": {
@@ -6525,7 +6525,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": "50:62" } } }
       }
     },
-    "81": {
+    "80": {
       "21": {
         "unknown": { "unknown": { "unknown": { "unknown": "20:23H collin" } } }
       },
@@ -6884,330 +6884,330 @@
       }
     },
     "90": {
-      "23": { "unknown": { "unknown": { "unknown": { "unknown": "81:23" } } } },
+      "23": { "unknown": { "unknown": { "unknown": { "unknown": "80:23" } } } },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "60": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } } },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
-      "71": { "unknown": { "unknown": { "unknown": { "unknown": "81:71" } } } },
+      "71": { "unknown": { "unknown": { "unknown": { "unknown": "80:71" } } } },
       "72": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "AV": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:50" } },
-          "unknown": { "unknown": { "unknown": "81:AV" } }
+          "Nrml": { "unknown": { "unknown": "80:50" } },
+          "unknown": { "unknown": { "unknown": "80:AV" } }
         }
       },
       "23G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:23G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:23G" } } }
       },
       "24*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*" } } }
       },
       "27*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:27*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:27*" } } }
       },
       "32S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:32V" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:32V" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "49*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:49*Ta" },
-            "2": { "unknown": "81:49*Ta" },
-            "3": { "unknown": "81:49*" }
+            "1": { "unknown": "80:49*Ta" },
+            "2": { "unknown": "80:49*Ta" },
+            "3": { "unknown": "80:49*" }
           }
         }
       },
       "53A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "55*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "57C": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57M": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46MRe" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46MRe" } } }
       },
       "57S": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46*" },
-            "2": { "unknown": "81:46*" },
-            "3": { "unknown": "81:46*Re" }
+            "1": { "unknown": "80:46*" },
+            "2": { "unknown": "80:46*" },
+            "3": { "unknown": "80:46*Re" }
           }
         }
       },
       "57V": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58L": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59R": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:59R" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:59R" } } }
       },
       "60*": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
         ">70": {
           "unknown": {
-            "1": { "unknown": "81:60*Ta" },
-            "2": { "unknown": "81:60*Ta" },
-            "3": { "unknown": "81:60*" }
+            "1": { "unknown": "80:60*Ta" },
+            "2": { "unknown": "80:60*Ta" },
+            "3": { "unknown": "80:60*" }
           }
         }
       },
       "60A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "60E": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:49*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:49*" } } }
       },
       "67*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
       "71G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:71G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:71G" } } }
       },
       "72G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "24*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*G" } } }
       },
       "53*s": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "53Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Ta" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Ta" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "1": { "unknown": "81:48" }, "2": { "unknown": "81:48" } },
+          "Nrml": { "1": { "unknown": "80:48" }, "2": { "unknown": "80:48" } },
           "Shdy_Cl_Bb": {
-            "1": { "unknown": "81:57Bl" },
-            "2": { "unknown": "81:57Bl" }
+            "1": { "unknown": "80:57Bl" },
+            "2": { "unknown": "80:57Bl" }
           }
         }
       },
       "57CG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57VG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "57VM": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:54A" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:54A" }
           }
         }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58LG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "60*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:60*TaG" },
-            "2": { "unknown": "81:60*TaG" },
-            "3": { "unknown": "81:60*G" }
+            "1": { "unknown": "80:60*TaG" },
+            "2": { "unknown": "80:60*TaG" },
+            "3": { "unknown": "80:60*G" }
           }
         }
       },
       "60AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50G" },
-            "2": { "unknown": "81:50G" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50G" },
+            "2": { "unknown": "80:50G" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "60Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "66PM": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:66" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:66" } } }
       },
       "53ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Lä" } } }
       },
-      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "81:57Bl " } } } },
+      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "80:57Bl " } } } },
       "57BlG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:48G" },
-            "2": { "unknown": "81:48G" },
-            "3": { "unknown": "81:57BlG" }
+            "1": { "unknown": "80:48G" },
+            "2": { "unknown": "80:48G" },
+            "3": { "unknown": "80:57BlG" }
           }
         }
       },
       "57CTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57STa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46*" } } }
       },
       "57VTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Ta": {
-        "<70": { "unknown": { "unknown": { "unknown": "81:50*" } } },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Ta" } } }
+        "<70": { "unknown": { "unknown": { "unknown": "80:50*" } } },
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Ta" } } }
       },
       "60ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "60Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "72Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "47*Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*Lä" } } }
       },
       "57CLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55Lä" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55Lä" }
           }
         }
       },
       "57VLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58LLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Lä": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Lä" } } }
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Lä" } } }
       },
       "60ALä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "53*sLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       }
     },
     "100": {
@@ -7871,7 +7871,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": "50:62" } } }
       }
     },
-    "81": {
+    "80": {
       "21": {
         "unknown": { "unknown": { "unknown": { "unknown": "20:23H collin" } } }
       },
@@ -8230,330 +8230,330 @@
       }
     },
     "90": {
-      "23": { "unknown": { "unknown": { "unknown": { "unknown": "81:23" } } } },
+      "23": { "unknown": { "unknown": { "unknown": { "unknown": "80:23" } } } },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "60": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } } },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
-      "71": { "unknown": { "unknown": { "unknown": { "unknown": "81:71" } } } },
+      "71": { "unknown": { "unknown": { "unknown": { "unknown": "80:71" } } } },
       "72": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "AV": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:50" } },
-          "unknown": { "unknown": { "unknown": "81:AV" } }
+          "Nrml": { "unknown": { "unknown": "80:50" } },
+          "unknown": { "unknown": { "unknown": "80:AV" } }
         }
       },
       "23G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:23G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:23G" } } }
       },
       "24*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*" } } }
       },
       "27*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:27*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:27*" } } }
       },
       "32S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:32V" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:32V" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "49*": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:49*Ta" },
-            "2": { "unknown": "81:49*Ta" },
-            "3": { "unknown": "81:49*" }
+            "1": { "unknown": "80:49*Ta" },
+            "2": { "unknown": "80:49*Ta" },
+            "3": { "unknown": "80:49*" }
           }
         }
       },
       "53A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "55*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "57C": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57M": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46MRe" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46MRe" } } }
       },
       "57S": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46*" },
-            "2": { "unknown": "81:46*" },
-            "3": { "unknown": "81:46*Re" }
+            "1": { "unknown": "80:46*" },
+            "2": { "unknown": "80:46*" },
+            "3": { "unknown": "80:46*Re" }
           }
         }
       },
       "57V": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58L": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59R": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:59R" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:59R" } } }
       },
       "60*": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
         ">70": {
           "unknown": {
-            "1": { "unknown": "81:60*Ta" },
-            "2": { "unknown": "81:60*Ta" },
-            "3": { "unknown": "81:60*" }
+            "1": { "unknown": "80:60*Ta" },
+            "2": { "unknown": "80:60*Ta" },
+            "3": { "unknown": "80:60*" }
           }
         }
       },
       "60A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "60E": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:49*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:49*" } } }
       },
       "67*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65*" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:65" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:65" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68*" } } }
       },
       "71G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:71G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:71G" } } }
       },
       "72G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "24*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:24*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:24*G" } } }
       },
       "53*s": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       },
       "53Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Ta" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Ta" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "1": { "unknown": "81:48" }, "2": { "unknown": "81:48" } },
+          "Nrml": { "1": { "unknown": "80:48" }, "2": { "unknown": "80:48" } },
           "Shdy_Cl_Bb": {
-            "1": { "unknown": "81:57Bl" },
-            "2": { "unknown": "81:57Bl" }
+            "1": { "unknown": "80:57Bl" },
+            "2": { "unknown": "80:57Bl" }
           }
         }
       },
       "57CG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57VG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "57VM": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:54A" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:54A" }
           }
         }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58LG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*G" } } }
       },
       "60*G": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:60*TaG" },
-            "2": { "unknown": "81:60*TaG" },
-            "3": { "unknown": "81:60*G" }
+            "1": { "unknown": "80:60*TaG" },
+            "2": { "unknown": "80:60*TaG" },
+            "3": { "unknown": "80:60*G" }
           }
         }
       },
       "60AG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50G" },
-            "2": { "unknown": "81:50G" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50G" },
+            "2": { "unknown": "80:50G" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "60Ta": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "66PM": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:66" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:66" } } }
       },
       "53ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "53Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53Lä" } } }
       },
-      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "81:57Bl " } } } },
+      "57Bl ": { "unknown": { "unknown": { "3": { "unknown": "80:57Bl " } } } },
       "57BlG": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:48G" },
-            "2": { "unknown": "81:48G" },
-            "3": { "unknown": "81:57BlG" }
+            "1": { "unknown": "80:48G" },
+            "2": { "unknown": "80:48G" },
+            "3": { "unknown": "80:57BlG" }
           }
         }
       },
       "57CTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55" }
           }
         }
       },
       "57STa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:46*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:46*" } } }
       },
       "57VTa": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Ta": {
-        "<70": { "unknown": { "unknown": { "unknown": "81:50*" } } },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Ta" } } }
+        "<70": { "unknown": { "unknown": { "unknown": "80:50*" } } },
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Ta" } } }
       },
       "60ATa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:60" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:60" } } }
       },
       "60Lä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:50" },
-            "2": { "unknown": "81:50" },
-            "3": { "unknown": "81:50Re" }
+            "1": { "unknown": "80:50" },
+            "2": { "unknown": "80:50" },
+            "3": { "unknown": "80:50Re" }
           }
         }
       },
       "72Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57Bl" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57Bl" } } }
       },
       "47*Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*Lä" } } }
       },
       "57CLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:51" },
-            "2": { "unknown": "81:51" },
-            "3": { "unknown": "81:55Lä" }
+            "1": { "unknown": "80:51" },
+            "2": { "unknown": "80:51" },
+            "3": { "unknown": "80:55Lä" }
           }
         }
       },
       "57VLä": {
         "unknown": {
           "unknown": {
-            "1": { "unknown": "81:46" },
-            "2": { "unknown": "81:46" },
-            "3": { "unknown": "81:46Re" }
+            "1": { "unknown": "80:46" },
+            "2": { "unknown": "80:46" },
+            "3": { "unknown": "80:46Re" }
           }
         }
       },
       "58LLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "60*Lä": {
         "<70": {
           "unknown": {
-            "1": { "unknown": "81:50*" },
-            "2": { "unknown": "81:50*" },
-            "3": { "unknown": "81:50*Re" }
+            "1": { "unknown": "80:50*" },
+            "2": { "unknown": "80:50*" },
+            "3": { "unknown": "80:50*Re" }
           }
         },
-        ">70": { "unknown": { "unknown": { "unknown": "81:60*Lä" } } }
+        ">70": { "unknown": { "unknown": { "unknown": "80:60*Lä" } } }
       },
       "60ALä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50" } } }
       },
       "53*sLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:53*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:53*" } } }
       }
     },
     "100": {
@@ -8830,7 +8830,7 @@
       "3L/4L": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
       "40PBlt": { "unknown": { "unknown": { "unknown": { "unknown": null } } } }
     },
-    "81": {
+    "80": {
       "24": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
       "47": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
       "48": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
@@ -8880,214 +8880,214 @@
     },
     "90": {
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
-      "59": { "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } } },
-      "67": { "unknown": { "unknown": { "unknown": { "unknown": "81:67" } } } },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:69" } } } },
-      "70": { "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } } },
-      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "81:AV" } } } },
+      "59": { "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } } },
+      "67": { "unknown": { "unknown": { "unknown": { "unknown": "80:67" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:69" } } } },
+      "70": { "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } } },
+      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "80:AV" } } } },
       "21*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*" } } }
       },
       "57C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57V": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "59*": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "59A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47D" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47D" } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "60*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:67G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:67G" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:69G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:69G" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } }
       },
       "21*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*G" } } }
       },
       "47*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*G" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:48" } },
-          "Shdy_Cl": { "unknown": { "unknown": "81:57Bl" } }
+          "Nrml": { "unknown": { "unknown": "80:48" } },
+          "Shdy_Cl": { "unknown": { "unknown": "80:57Bl" } }
         }
       },
       "57CG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58Fe": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59AG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47DG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47DG" } } }
       },
       "60*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "57BlG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "57CTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57VTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "47*Lä": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "57BlTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "57VLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       }
     },
     "100": {
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
-      "59": { "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } } },
-      "67": { "unknown": { "unknown": { "unknown": { "unknown": "81:67" } } } },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:69" } } } },
-      "70": { "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } } },
-      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "81:AV" } } } },
+      "59": { "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } } },
+      "67": { "unknown": { "unknown": { "unknown": { "unknown": "80:67" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:69" } } } },
+      "70": { "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } } },
+      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "80:AV" } } } },
       "21*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*" } } }
       },
       "57C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57V": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "59*": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "59A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47D" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47D" } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "60*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:67G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:67G" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:69G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:69G" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } }
       },
       "21*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*G" } } }
       },
       "47*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*G" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:48" } },
-          "Shdy_Cl": { "unknown": { "unknown": "81:57Bl" } }
+          "Nrml": { "unknown": { "unknown": "80:48" } },
+          "Shdy_Cl": { "unknown": { "unknown": "80:57Bl" } }
         }
       },
       "57CG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58Fe": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59AG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47DG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47DG" } } }
       },
       "60*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "57BlG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "57CTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57VTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "47*Lä": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "57BlTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "57VLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       }
     }
   },
@@ -9272,7 +9272,7 @@
       "3L/4L": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
       "40PBlt": { "unknown": { "unknown": { "unknown": { "unknown": null } } } }
     },
-    "81": {
+    "80": {
       "24": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
       "47": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
       "48": { "unknown": { "unknown": { "unknown": { "unknown": null } } } },
@@ -9322,214 +9322,214 @@
     },
     "90": {
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
-      "59": { "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } } },
-      "67": { "unknown": { "unknown": { "unknown": { "unknown": "81:67" } } } },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:69" } } } },
-      "70": { "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } } },
-      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "81:AV" } } } },
+      "59": { "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } } },
+      "67": { "unknown": { "unknown": { "unknown": { "unknown": "80:67" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:69" } } } },
+      "70": { "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } } },
+      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "80:AV" } } } },
       "21*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*" } } }
       },
       "57C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57V": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "59*": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "59A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47D" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47D" } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "60*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:67G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:67G" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:69G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:69G" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } }
       },
       "21*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*G" } } }
       },
       "47*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*G" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:48" } },
-          "Shdy_Cl": { "unknown": { "unknown": "81:57Bl" } }
+          "Nrml": { "unknown": { "unknown": "80:48" } },
+          "Shdy_Cl": { "unknown": { "unknown": "80:57Bl" } }
         }
       },
       "57CG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58Fe": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59AG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47DG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47DG" } } }
       },
       "60*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "57BlG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "57CTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57VTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "47*Lä": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "57BlTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "57VLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       }
     },
     "100": {
       "58": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
-      "59": { "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } } },
-      "67": { "unknown": { "unknown": { "unknown": { "unknown": "81:67" } } } },
-      "69": { "unknown": { "unknown": { "unknown": { "unknown": "81:69" } } } },
-      "70": { "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } } },
-      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "81:AV" } } } },
+      "59": { "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } } },
+      "67": { "unknown": { "unknown": { "unknown": { "unknown": "80:67" } } } },
+      "69": { "unknown": { "unknown": { "unknown": { "unknown": "80:69" } } } },
+      "70": { "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } } },
+      "AV": { "unknown": { "unknown": { "unknown": { "unknown": "80:AV" } } } },
       "21*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*" } } }
       },
       "47*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*" } } }
       },
       "57C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57V": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58C": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "58G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "59*": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "59A": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47D" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47D" } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59S": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:52" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:52" } } }
       },
       "60*": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:67G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:67G" } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:69G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:69G" } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:68" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:68" } } }
       },
       "21*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:21*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:21*G" } } }
       },
       "47*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47*G" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47*G" } } }
       },
       "57Bl": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:48" } },
-          "Shdy_Cl": { "unknown": { "unknown": "81:57Bl" } }
+          "Nrml": { "unknown": { "unknown": "80:48" } },
+          "Shdy_Cl": { "unknown": { "unknown": "80:57Bl" } }
         }
       },
       "57CG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Bl": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47H" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47H" } } }
       },
       "58Fe": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*" } } }
       },
       "59AG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47DG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47DG" } } }
       },
       "60*G": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:50*" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:50*" } } }
       },
       "57BlG": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:57BlG" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:57BlG" } } }
       },
       "57CTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "57VTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       },
       "58Lä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:55*Lä" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:55*Lä" } } }
       },
       "47*Lä": {
         "unknown": {
-          "Nrml": { "unknown": { "unknown": "81:47*" } },
-          "WthAvln": { "unknown": { "unknown": "81:47*Lä" } }
+          "Nrml": { "unknown": { "unknown": "80:47*" } },
+          "WthAvln": { "unknown": { "unknown": "80:47*Lä" } }
         }
       },
       "57BlTa": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:48" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:48" } } }
       },
       "57VLä": {
-        "unknown": { "unknown": { "unknown": { "unknown": "81:47" } } }
+        "unknown": { "unknown": { "unknown": { "unknown": "80:47" } } }
       }
     }
   }
