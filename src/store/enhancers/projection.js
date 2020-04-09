@@ -20,7 +20,7 @@ const projectionActionTypes = [
 
 export const hochmontanAltitudinalZones = ['81', '82', '83'];
 
-const runProjection = (location, targetAltitudinalZone) => {
+const runProject = (location, targetAltitudinalZone) => {
   let newTargetAltitudinalZone = targetAltitudinalZone;
   let { altitudinalZone, silverFirArea } = location;
   if (hochmontanAltitudinalZones.includes(targetAltitudinalZone)) {
@@ -32,6 +32,16 @@ const runProjection = (location, targetAltitudinalZone) => {
   }
   const newLocation = { ...location, altitudinalZone, silverFirArea };
   return project(newLocation, newTargetAltitudinalZone);
+};
+
+const runLocate = (location) => {
+  let { altitudinalZone, silverFirArea } = location;
+  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
+    silverFirArea = altitudinalZone.slice(1);
+    altitudinalZone = '80';
+  }
+  const newLocation = { ...location, altitudinalZone, silverFirArea };
+  return locate(newLocation);
 };
 
 const projection = (store) => (next) => (action) => {
@@ -49,7 +59,7 @@ const projection = (store) => (next) => (action) => {
     store.dispatch(setLocation(location));
 
     try {
-      const locateResult = locate(location);
+      const locateResult = runLocate(location);
       store.dispatch(setLocationResult(locateResult));
     } catch (error) {
       console.log('Locate error: ', error);
@@ -62,11 +72,11 @@ const projection = (store) => (next) => (action) => {
           targetAltitudinalZoneModerate: targetAZModerate,
           targetAltitudinalZoneExtreme: targetAZExtreme,
         } = mapLocation;
-        projectionResult.moderate = runProjection(location, targetAZModerate);
-        projectionResult.extreme = runProjection(location, targetAZExtreme);
+        projectionResult.moderate = runProject(location, targetAZModerate);
+        projectionResult.extreme = runProject(location, targetAZExtreme);
       } else {
         const { targetAltitudinalZone: targetAZForm } = formLocation;
-        projectionResult.form = runProjection(location, targetAZForm);
+        projectionResult.form = runProject(location, targetAZForm);
       }
       store.dispatch(setProjectionResult(projectionResult));
     } catch (error) {
