@@ -577,10 +577,9 @@ SELECT sisf_nr::int AS code,
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1'
         AND art_hs_collin = '1'
-UNION -- TODO: switch to 80 once hochmontan branch has been merged!
-
+UNION
 SELECT sisf_nr::int AS code,
-       '81' AS altitudinal_zone_code
+       '80' AS altitudinal_zone_code
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1'
         AND art_hs_hochmont = '1'
@@ -851,10 +850,9 @@ FROM
         (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
 WHERE art_hs_collin = '1'
-UNION -- TODO: switch to 80 once hochmontan branch has been merged!
-
+UNION
 SELECT foo.treetype AS treetype_code,
-       '81' AS altitudinal_zone_code
+       '80' AS altitudinal_zone_code
 FROM
         (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
