@@ -5,6 +5,7 @@ import { Header, Menu, Tab } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
 
+import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';
 import styles from './ProjectionResult.module.css';
@@ -13,31 +14,70 @@ import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
-function ProjectionResult() {
-  const {
-    location,
-    options,
-    projectionMode,
-    projections,
-    targetAltitudinalZone,
-  } = useSelector((state) => ({
-    projectionMode: state.projectionMode,
-    location: state.location,
-    options: state.projectionResult.options,
-    projections: [...state.projectionResult.projections],
-    targetAltitudinalZone: state.targetAltitudinalZone,
-  }));
-  const { i18n, t } = useTranslation();
-
-  const { altitudinalZone, forestType } = location;
-  if (
-    altitudinalZone &&
-    (altitudinalZone === targetAltitudinalZone ||
-      projections.findIndex((p) => p.altitudinalZone === altitudinalZone) ===
-        -1)
-  ) {
-    projections.unshift(location);
+function getAZ(altitudinalZone) {
+  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
+    return '80';
   }
+  return altitudinalZone;
+}
+
+function getPane(scenario, projection, language, t) {
+  const icons = [];
+  const scenarios = [];
+  const { forestType, transitionForestType } = projection;
+  const altitudinalZone = getAZ(projection.altitudinalZone);
+  if (scenario.toLowerCase().includes('today')) {
+    icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
+    scenarios.push(t('projectionScenario.today'));
+  }
+  if (scenario.toLowerCase().includes('form')) {
+    scenarios.push(t('projectionScenario.manual'));
+  }
+  if (scenario.toLowerCase().includes('moderateextreme')) {
+    icons.push(<EarthModerateIcon key="mod" className={styles.icon} />);
+    icons.push(<EarthExtremeIcon key="extreme" className={styles.icon} />);
+    scenarios.push(t('projectionScenario.moderateExtreme'));
+  } else if (scenario.toLowerCase().includes('moderate')) {
+    icons.push(<EarthModerateIcon key="mod" className={styles.icon} />);
+    scenarios.push(t('projectionScenario.moderate'));
+  } else if (scenario.toLowerCase().includes('extreme')) {
+    icons.push(<EarthExtremeIcon key="extreme" className={styles.icon} />);
+    scenarios.push(t('projectionScenario.extreme'));
+  }
+
+  return (
+    forestType && {
+      menuItem: (
+        <Menu.Item key={altitudinalZone} className={styles.arrow}>
+          {icons}
+          <div>
+            <div data-cypress="projectionResultMenuItem">
+              {transitionForestType
+                ? ` ${forestType} (${transitionForestType}) `
+                : ` ${forestType} `}
+              <span className={styles.altitudinalZone}>
+                {info('altitudinalZone', altitudinalZone)[language]}
+              </span>
+            </div>
+            <div className={styles.scenario}>{scenarios.join(', ')}</div>
+          </div>
+        </Menu.Item>
+      ),
+      render: () => <ProjectionTab location={projection} />,
+    }
+  );
+}
+
+function ProjectionResult() {
+  const { location, projectionMode, projectionResult } = useSelector(
+    (state) => ({
+      location: state.location,
+      projectionMode: state.projectionMode,
+      projectionResult: state.projectionResult,
+    }),
+  );
+  const { i18n, t } = useTranslation();
+  const { altitudinalZone, forestType } = location;
 
   const panes = [];
   panes.push({
@@ -45,66 +85,42 @@ function ProjectionResult() {
     render: () => <Recommendation />,
   });
 
-  projections.forEach((p) => {
-    const icons = [];
-    const scenarios = [];
-    if (projectionMode === 'f') {
-      if (location.altitudinalZone === p.altitudinalZone) {
-        icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
-        scenarios.push(t('projectionScenario.today'));
+  if (projectionMode === 'f' && projectionResult.form.projections) {
+    const form = projectionResult.form.projections.slice(-1)[0] || {};
+    panes.push(getPane('today', location, i18n.language, t));
+    panes.push(getPane('form', form, i18n.language, t));
+  } else if (
+    projectionResult.moderate.projections ||
+    projectionResult.extreme.projections
+  ) {
+    const TAZToday = getAZ(location.altitudinalZone);
+    const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
+    const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
+    const moderate = projectionResult.moderate.projections.slice(-1)[0] || {};
+    const extreme = projectionResult.extreme.projections.slice(-1)[0] || {};
+    if (TAZModerate === TAZExtreme) {
+      if (TAZToday === TAZModerate) {
+        panes.push(getPane('todayModerateExtreme', location, i18n.language, t));
       } else {
-        scenarios.push(t('projectionScenario.manual'));
+        panes.push(getPane('today', location, i18n.language, t));
+        panes.push(getPane('moderateExtreme', moderate, i18n.language, t));
       }
+    } else if (TAZToday === TAZModerate) {
+      panes.push(getPane('todayModerate', location, i18n.language, t));
+      panes.push(getPane('extreme', extreme, i18n.language, t));
+    } else if (TAZToday === TAZExtreme) {
+      panes.push(getPane('moderate', moderate, i18n.language, t));
+      panes.push(getPane('todayExtreme', location, i18n.language, t));
     } else {
-      if (location.altitudinalZone === p.altitudinalZone) {
-        icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
-        scenarios.push(t('projectionScenario.today'));
-      }
-
-      if (
-        location.targetAltitudinalZoneModerate === p.altitudinalZone &&
-        location.targetAltitudinalZoneExtreme === p.altitudinalZone
-      ) {
-        icons.push(<EarthModerateIcon key="mod" className={styles.icon} />);
-        icons.push(<EarthExtremeIcon key="extreme" className={styles.icon} />);
-        scenarios.push(t('projectionScenario.moderateExtreme'));
-      } else if (location.targetAltitudinalZoneModerate === p.altitudinalZone) {
-        icons.push(<EarthModerateIcon key="mod" className={styles.icon} />);
-        scenarios.push(t('projectionScenario.moderate'));
-      } else if (location.targetAltitudinalZoneExtreme === p.altitudinalZone) {
-        icons.push(<EarthExtremeIcon key="extreme" className={styles.icon} />);
-        scenarios.push(t('projectionScenario.extreme'));
-      }
+      panes.push(getPane('today', location, i18n.language, t));
+      panes.push(getPane('moderate', moderate, i18n.language, t));
+      panes.push(getPane('extreme', extreme, i18n.language, t));
     }
-    if (scenarios.length > 0) {
-      panes.push({
-        menuItem: (
-          <Menu.Item key={p.altitudinalZone} className={styles.arrow}>
-            {icons}
-            <div>
-              <div data-cypress="projectionResultMenuItem">
-                {p.transitionForestType
-                  ? ` ${p.forestType} (${p.transitionForestType}) `
-                  : ` ${p.forestType} `}
-                <span className={styles.altitudinalZone}>
-                  {info('altitudinalZone', p.altitudinalZone)[i18n.language]}
-                </span>
-              </div>
-              <div className={styles.scenario}>{scenarios.join(', ')}</div>
-            </div>
-          </Menu.Item>
-        ),
-        render: () => <ProjectionTab location={p} />,
-      });
-    }
-  });
+  }
 
-  return forestType &&
-    options.forestType &&
-    options.forestType.includes(forestType) &&
-    (location.coordinate || targetAltitudinalZone) ? (
+  return altitudinalZone && forestType ? (
     <div className={styles.container}>
-      {panes.length > 0 ? (
+      {panes.filter((p) => p).length > 1 ? (
         <Tab
           className={styles.tab}
           menu={{

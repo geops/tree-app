@@ -30,7 +30,7 @@ function ProjectionForm() {
     mapLocation,
     formLocation,
     projectionMode,
-    projectionResult: { options },
+    projectionResult,
   } = useSelector((state) => ({
     location: state.location,
     mapLocation: state.mapLocation,
@@ -38,6 +38,11 @@ function ProjectionForm() {
     projectionMode: state.projectionMode,
     projectionResult: state.projectionResult,
   }));
+  const options =
+    projectionMode === 'm'
+      ? projectionResult.extreme.options
+      : projectionResult.form.options;
+
   const [fieldActive, setFieldActive] = useState('');
   const activateField = (field) => setFieldActive(field);
   const deactivateField = () => setFieldActive('');

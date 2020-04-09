@@ -231,19 +231,7 @@ VALUES ('ober- und untermontan',
 INSERT INTO altitudinal_zone_meta (projection, nais, code)
 VALUES ('hochmontan',
         'HM',
-        '81');
-
-
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
-VALUES ('hochmontan Nebenareal der Tanne',
-        null,
-        '82');
-
-
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
-VALUES ('hochmontan Reliktareal der Tanne',
-        null,
-        '83');
+        '80');
 
 
 INSERT INTO altitudinal_zone_meta (projection, nais, code)
@@ -444,8 +432,8 @@ WHERE naistyp_oeg_pio IN ('1',
                           '2');
 
 
-CREATE TABLE foresttype_aspect ( foresttype_code TEXT REFERENCES foresttype_meta,
-                                                                 aspect TEXT);
+CREATE TABLE foresttype_aspect (foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                aspect TEXT);
 
 
 INSERT INTO foresttype_aspect (foresttype_code, aspect)
@@ -462,8 +450,8 @@ WHERE feld_name ILIKE 'E_%'
         AND split_part(feld_name, '_', 2) != '';
 
 
-CREATE TABLE foresttype_slope ( foresttype_code TEXT REFERENCES foresttype_meta,
-                                                                slope TEXT);
+CREATE TABLE foresttype_slope (foresttype_code TEXT REFERENCES foresttype_meta,
+                                                               slope TEXT);
 
 
 INSERT INTO foresttype_slope (foresttype_code, slope)
@@ -589,10 +577,9 @@ SELECT sisf_nr::int AS code,
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1'
         AND art_hs_collin = '1'
-UNION -- TODO: switch to 80 once hochmontan branch has been merged!
-
+UNION
 SELECT sisf_nr::int AS code,
-       '81' AS altitudinal_zone_code
+       '80' AS altitudinal_zone_code
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1'
         AND art_hs_hochmont = '1'
@@ -863,10 +850,9 @@ FROM
         (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
 WHERE art_hs_collin = '1'
-UNION -- TODO: switch to 80 once hochmontan branch has been merged!
-
+UNION
 SELECT foo.treetype AS treetype_code,
-       '81' AS altitudinal_zone_code
+       '80' AS altitudinal_zone_code
 FROM
         (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
