@@ -32,7 +32,10 @@ function Recommendation() {
       projections = projectionResult.form.projections;
     } else {
       const { moderate, extreme } = projectionResult;
-      projections = [...moderate.projections, ...extreme.projections];
+      projections = [
+        ...(moderate.projections || []),
+        ...(extreme.projections || []),
+      ];
     }
 
     try {

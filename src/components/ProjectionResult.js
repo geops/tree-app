@@ -96,25 +96,29 @@ function ProjectionResult() {
     const TAZToday = getAZ(location.altitudinalZone);
     const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
     const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
-    const moderate = projectionResult.moderate.projections.slice(-1)[0] || {};
-    const extreme = projectionResult.extreme.projections.slice(-1)[0] || {};
+    const moderateLoc = projectionResult.moderate.projections
+      ? projectionResult.moderate.projections.slice(-1)[0] || {}
+      : {};
+    const extremeLoc = projectionResult.extreme.projections
+      ? projectionResult.extreme.projections.slice(-1)[0] || {}
+      : {};
     if (TAZModerate === TAZExtreme) {
       if (TAZToday === TAZModerate) {
         panes.push(getPane('todayModerateExtreme', location, i18n.language, t));
       } else {
         panes.push(getPane('today', location, i18n.language, t));
-        panes.push(getPane('moderateExtreme', moderate, i18n.language, t));
+        panes.push(getPane('moderateExtreme', moderateLoc, i18n.language, t));
       }
     } else if (TAZToday === TAZModerate) {
       panes.push(getPane('todayModerate', location, i18n.language, t));
-      panes.push(getPane('extreme', extreme, i18n.language, t));
+      panes.push(getPane('extreme', extremeLoc, i18n.language, t));
     } else if (TAZToday === TAZExtreme) {
-      panes.push(getPane('moderate', moderate, i18n.language, t));
       panes.push(getPane('todayExtreme', location, i18n.language, t));
+      panes.push(getPane('moderate', moderateLoc, i18n.language, t));
     } else {
       panes.push(getPane('today', location, i18n.language, t));
-      panes.push(getPane('moderate', moderate, i18n.language, t));
-      panes.push(getPane('extreme', extreme, i18n.language, t));
+      panes.push(getPane('moderate', moderateLoc, i18n.language, t));
+      panes.push(getPane('extreme', extremeLoc, i18n.language, t));
     }
   }
 
