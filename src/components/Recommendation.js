@@ -16,13 +16,25 @@ import styles from './Recommendation.module.css';
 function Recommendation() {
   const { t } = useTranslation();
   const [future, setFuture] = useState(true);
-  const { location, projections } = useSelector((state) => ({
-    location: state.location,
-    projections: state.projectionResult.projections,
-  }));
+  const { location, projectionMode, projectionResult } = useSelector(
+    (state) => ({
+      location: state.location,
+      projectionMode: state.projectionMode,
+      projectionResult: state.projectionResult,
+    }),
+  );
 
   const recommendations = useMemo(() => {
+    let projections;
     let result;
+
+    if (projectionMode === 'f') {
+      projections = projectionResult.form.projections;
+    } else {
+      const { moderate, extreme } = projectionResult;
+      projections = [...moderate.projections, ...extreme.projections];
+    }
+
     try {
       if (projections && projections.length === 0) {
         result = recommend(location, [location], future);
@@ -34,7 +46,7 @@ function Recommendation() {
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [location, projections, future]);
+  }, [location, projectionMode, projectionResult, future]);
 
   return (
     <Tab.Pane data-cypress="recommendationPane">

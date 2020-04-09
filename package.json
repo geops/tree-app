@@ -101,8 +101,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "eslint src --fix",
-      "prettier --write 'src/**/*.js'",
-      "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol)/\" --bail --findRelatedTests --watchAll=false"
+      "prettier --write 'src/**/*.js'"
     ]
   },
   "prettier": {

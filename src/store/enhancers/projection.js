@@ -10,7 +10,6 @@ import {
   setLocation,
   setLocationResult,
   setProjectionResult,
-  setTargetAltitudinalZone,
 } from '../actions';
 
 const projectionActionTypes = [
@@ -18,6 +17,32 @@ const projectionActionTypes = [
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
 ];
+
+export const hochmontanAltitudinalZones = ['81', '82', '83'];
+
+const runProject = (location, targetAltitudinalZone) => {
+  let newTargetAltitudinalZone = targetAltitudinalZone;
+  let { altitudinalZone, silverFirArea } = location;
+  if (hochmontanAltitudinalZones.includes(targetAltitudinalZone)) {
+    silverFirArea = targetAltitudinalZone.slice(1);
+    newTargetAltitudinalZone = '80';
+  }
+  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
+    altitudinalZone = '80';
+  }
+  const newLocation = { ...location, altitudinalZone, silverFirArea };
+  return project(newLocation, newTargetAltitudinalZone);
+};
+
+const runLocate = (location) => {
+  let { altitudinalZone, silverFirArea } = location;
+  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
+    silverFirArea = altitudinalZone.slice(1);
+    altitudinalZone = '80';
+  }
+  const newLocation = { ...location, altitudinalZone, silverFirArea };
+  return locate(newLocation);
+};
 
 const projection = (store) => (next) => (action) => {
   const result = next(action);
@@ -32,20 +57,27 @@ const projection = (store) => (next) => (action) => {
       delete location.transitionAltitudinalZone;
     }
     store.dispatch(setLocation(location));
-    const targetAltitudinalZone =
-      projectionMode === 'm'
-        ? mapLocation.targetAltitudinalZoneExtreme
-        : formLocation.targetAltitudinalZone;
-    store.dispatch(setTargetAltitudinalZone(targetAltitudinalZone));
+
     try {
-      const locationResult = locate(location);
-      console.log(locationResult, location);
-      store.dispatch(setLocationResult(locationResult));
+      const locateResult = runLocate(location);
+      store.dispatch(setLocationResult(locateResult));
     } catch (error) {
       console.log('Locate error: ', error);
     }
+
     try {
-      const projectionResult = project(location, targetAltitudinalZone);
+      const projectionResult = { extreme: {}, moderate: {}, form: {} };
+      if (projectionMode === 'm') {
+        const {
+          targetAltitudinalZoneModerate: targetAZModerate,
+          targetAltitudinalZoneExtreme: targetAZExtreme,
+        } = mapLocation;
+        projectionResult.moderate = runProject(location, targetAZModerate);
+        projectionResult.extreme = runProject(location, targetAZExtreme);
+      } else {
+        const { targetAltitudinalZone: targetAZForm } = formLocation;
+        projectionResult.form = runProject(location, targetAZForm);
+      }
       store.dispatch(setProjectionResult(projectionResult));
     } catch (error) {
       console.log('Projection error: ', error);
