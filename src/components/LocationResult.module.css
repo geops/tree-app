@@ -1,5 +1,5 @@
 .form:global(.ui.form) {
   margin: 1em 0;
   padding: 1em;
-  box-shadow: 0 0 20px #777;
+  box-shadow: 0 -20px 20px -20px #777;
 }
