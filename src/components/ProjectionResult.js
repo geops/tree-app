@@ -77,12 +77,15 @@ function ProjectionResult() {
     }),
   );
   const { i18n, t } = useTranslation();
-  const { altitudinalZone, forestType } = location;
+  const AZToday = getAZ(location.altitudinalZone);
+  const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
+  const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
+  const sameAltitudinalZone = AZToday === TAZModerate && AZToday === TAZExtreme;
 
   const panes = [];
   panes.push({
     menuItem: t('recommendation.header'),
-    render: () => <Recommendation />,
+    render: () => <Recommendation sameAltitudinalZone={sameAltitudinalZone} />,
   });
 
   if (projectionMode === 'f' && projectionResult.form.projections) {
@@ -93,9 +96,6 @@ function ProjectionResult() {
     projectionResult.moderate.projections ||
     projectionResult.extreme.projections
   ) {
-    const TAZToday = getAZ(location.altitudinalZone);
-    const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
-    const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
     const moderateLoc = projectionResult.moderate.projections
       ? projectionResult.moderate.projections.slice(-1)[0] || {}
       : {};
@@ -103,16 +103,16 @@ function ProjectionResult() {
       ? projectionResult.extreme.projections.slice(-1)[0] || {}
       : {};
     if (TAZModerate === TAZExtreme) {
-      if (TAZToday === TAZModerate) {
+      if (AZToday === TAZModerate) {
         panes.push(getPane('todayModerateExtreme', location, i18n.language, t));
       } else {
         panes.push(getPane('today', location, i18n.language, t));
         panes.push(getPane('moderateExtreme', moderateLoc, i18n.language, t));
       }
-    } else if (TAZToday === TAZModerate) {
+    } else if (AZToday === TAZModerate) {
       panes.push(getPane('todayModerate', location, i18n.language, t));
       panes.push(getPane('extreme', extremeLoc, i18n.language, t));
-    } else if (TAZToday === TAZExtreme) {
+    } else if (AZToday === TAZExtreme) {
       panes.push(getPane('todayExtreme', location, i18n.language, t));
       panes.push(getPane('moderate', moderateLoc, i18n.language, t));
     } else {
@@ -122,9 +122,10 @@ function ProjectionResult() {
     }
   }
 
-  return altitudinalZone && forestType ? (
+  const finalPanes = panes.filter((p) => p);
+  return location.altitudinalZone && location.forestType ? (
     <div className={styles.container}>
-      {panes.filter((p) => p).length > 1 ? (
+      {sameAltitudinalZone || finalPanes.length > 1 ? (
         <Tab
           className={styles.tab}
           menu={{
@@ -132,9 +133,9 @@ function ProjectionResult() {
             inverted: true,
             secondary: true,
             size: 'large',
-            widths: panes.length,
+            widths: finalPanes.length,
           }}
-          panes={panes}
+          panes={finalPanes}
         />
       ) : (
         <Header className={styles.notFound} inverted>
