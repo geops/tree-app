@@ -1,19 +1,20 @@
 _import () {
     local URL=$1
-    local TARGET=$2
-    local ZIPFILE=$3
-    local SHPFILE=$4
+    local TARGET=$2 # cantonal_boundaries
+    local ZIPFILE=$3 # SHAPEFILE_LV95_LN02
+    local SHPFILE=$4 # swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET
     if [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
         echo "Downloading ${TARGET} ..."
         cd /data/spatial
         wget --no-check-certificate "${URL}" -O "${TARGET}.zip"
         7z x -aoa -o"${TARGET}" "${TARGET}.zip"
-        7z x -aoa -o"${TARGET}" "${TARGET}/${ZIPFILE}.zip"
-        cd ${TARGET}
-        if [ -f "/data/spatial/${TARGET}/${ZIPFILE}/${SHPFILE}.shp" ]; then
-            mv ${ZIPFILE}/${SHPFILE}.* .
+        if [ -f "/data/spatial/${TARGET}/${TARGET}.zip" ]; then
+            7z x -aoa -o"${TARGET}" "${TARGET}/${TARGET}.zip"
+            rm "${TARGET}/${ZIPFILE}.zip"
         fi
-        rm "${TARGET}.zip" "${TARGET}/${ZIPFILE}.zip"
+        cd ${TARGET}
+        #mv ${TARGET}/${SHPFILE}.* .
+        rm "${TARGET}.zip"
         rename "s/${SHPFILE}/${TARGET}/" ${SHPFILE}.*
     else
         echo "$TARGET already downloaded! Will be reused ..."
@@ -38,4 +39,4 @@ _import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/data.zip" "for
 
 _import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_fir_areas" "Tannenareale" "Tannenareale"
 
-_import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/data.zip" "cantonal_boundaries" "SHAPEFILE_LV95_LN02" "swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET"
+_import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/shp/2056/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill.zip" "cantonal_boundaries" "SHAPEFILE_LV95_LN02" "swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET"

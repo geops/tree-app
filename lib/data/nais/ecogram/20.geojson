@@ -7,7 +7,8 @@
   },
   "properties": {
     "forestEcoregions": ["4"],
-    "altitudinalZones": ["80"]
+    "altitudinalZones": ["80"],
+    "silverFirAreas": ["3"]
   },
   "features": [
     {
@@ -15,6 +16,7 @@
       "properties": {
         "id": 1,
         "z": "1",
+        "rows": "2",
         "forestTypes": "71",
         "otherForestTypes": "71G"
       },
@@ -222,6 +224,7 @@
       "properties": {
         "id": 11,
         "z": "2",
+        "rows": "2",
         "forestTypes": "55*",
         "otherForestTypes": "55*Lä,55*G"
       },

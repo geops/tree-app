@@ -384,12 +384,10 @@
       "type": "Feature",
       "properties": {
         "id": 17,
-        "rows": "2",
+        "rows": "3",
         "z": "1",
         "forestTypes": "12a",
-        "otherForestTypes": "12aFe,12aG",
-        "forestEcoR": "2a",
-        "altZones": "5050"
+        "otherForestTypes": "12aFe,12aG"
       },
       "geometry": {
         "type": "MultiPolygon",

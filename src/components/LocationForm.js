@@ -361,6 +361,19 @@ function LocationForm() {
           value={location.altitudinalZone}
         />
       )}
+      {projectionMode === 'f' && options.silverFirArea && (
+        <Dropdown
+          clearable={isDifferent('silverFirArea')}
+          label={t('silverFirArea.label')}
+          options={options.silverFirArea.map(
+            getDropdownOptions('silverFirArea', i18n.language),
+          )}
+          onChange={(e, { value: silverFirArea }) =>
+            dispatch(setFormLocation({ silverFirArea }))
+          }
+          value={location.silverFirArea}
+        />
+      )}
       <Accordion fluid panels={panels} styled />
       {intersection(Object.keys(formLocation), filterFields).length > 0 && (
         <Button

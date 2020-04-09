@@ -16,6 +16,7 @@ class MapboxRenderer {
     const { center, rotation, zoom } = frameState.viewState;
     const visible = this.layer.getVisible();
     canvas.style.display = visible ? 'block' : 'none';
+    canvas.style.position = 'absolute';
     const opacity = this.layer.getOpacity();
     canvas.style.opacity = opacity;
     // adjust view parameters in mapbox

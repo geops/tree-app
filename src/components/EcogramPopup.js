@@ -1,24 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch } from 'react-redux';
-import { useHistory, useLocation } from 'react-router-dom';
 import { List, Popup } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
 
 import Button from './Button';
-import { setFormLocation } from '../store/actions';
 
-function EcogramPopup({ target, forestTypes, onClose }) {
-  const history = useHistory();
-  const { search } = useLocation();
+function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
   const { t, i18n } = useTranslation();
-  const dispatch = useDispatch();
-  const selectForestType = (forestType) => {
-    dispatch(setFormLocation({ forestType }));
-    history.push(`/projection${search}`);
-  };
 
   if (forestTypes.length === 1) {
     selectForestType(forestTypes[0]);
@@ -46,6 +36,7 @@ EcogramPopup.propTypes = {
   forestTypes: PropTypes.arrayOf(PropTypes.string).isRequired,
   onClose: PropTypes.func.isRequired,
   target: PropTypes.node.isRequired,
+  selectForestType: PropTypes.func.isRequired,
 };
 
 export default EcogramPopup;

@@ -61,6 +61,7 @@
       "properties": {
         "id": 3,
         "z": "3",
+        "rows": "2",
         "forestTypes": "57V",
         "otherForestTypes": "57VLä,57VTa"
       },
@@ -130,6 +131,7 @@
       "properties": {
         "id": 6,
         "z": "2",
+        "rows": "2",
         "forestTypes": "47*",
         "otherForestTypes": "47*Lä,47*G"
       },
@@ -153,6 +155,7 @@
       "properties": {
         "id": 7,
         "z": "1",
+        "rows": "2",
         "forestTypes": "57C",
         "otherForestTypes": "57CTa,57CG"
       },
@@ -199,6 +202,7 @@
       "properties": {
         "id": 9,
         "z": "3",
+        "rows": "2",
         "forestTypes": "58",
         "otherForestTypes": "58Lä,58Fe,58G"
       },

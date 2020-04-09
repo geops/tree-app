@@ -38,6 +38,7 @@
       "properties": {
         "id": 2,
         "z": "3",
+        "rows": "2",
         "forestTypes": "19a",
         "otherForestTypes": "19aG"
       },
@@ -107,6 +108,8 @@
       "properties": {
         "id": 5,
         "z": "1",
+        "rows": "2",
+        "offset": "-1",
         "forestTypes": "4",
         "otherForestTypes": "4G"
       },
@@ -153,6 +156,8 @@
       "properties": {
         "id": 7,
         "z": "1",
+        "rows": "2",
+        "offset": "1",
         "forestTypes": "3",
         "otherForestTypes": "3G"
       },
@@ -360,6 +365,7 @@
       "properties": {
         "id": 16,
         "z": "1",
+        "rows": "2",
         "forestTypes": "3s",
         "otherForestTypes": "3sG"
       },
