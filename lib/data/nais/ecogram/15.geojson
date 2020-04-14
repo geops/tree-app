@@ -153,6 +153,7 @@
       "properties": {
         "id": 7,
         "z": "2",
+        "offset": "-0.1",
         "forestTypes": "47",
         "otherForestTypes": null
       },
@@ -175,7 +176,7 @@
       "type": "Feature",
       "properties": {
         "id": 8,
-        "z": "2",
+        "z": "1",
         "forestTypes": "46",
         "otherForestTypes": null
       },
