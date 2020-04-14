@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import React, { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
-import { Checkbox, Grid, Tab } from 'semantic-ui-react';
+import { Checkbox, Grid, Tab, Message } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { recommend } from 'lib/src';
 
@@ -13,7 +14,7 @@ import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.sv
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 import styles from './Recommendation.module.css';
 
-function Recommendation() {
+function Recommendation({ sameAltitudinalZone }) {
   const { t } = useTranslation();
   const [future, setFuture] = useState(true);
   const { location, projectionMode, projectionResult } = useSelector(
@@ -32,7 +33,10 @@ function Recommendation() {
       projections = projectionResult.form.projections;
     } else {
       const { moderate, extreme } = projectionResult;
-      projections = [...moderate.projections, ...extreme.projections];
+      projections = [
+        ...(moderate.projections || []),
+        ...(extreme.projections || []),
+      ];
     }
 
     try {
@@ -162,8 +166,17 @@ function Recommendation() {
           </Grid.Row>
         </Grid>
       )}
+      {sameAltitudinalZone && (
+        <Message color="yellow">
+          {t('recommendation.sameAltitudinalZone')}
+        </Message>
+      )}
     </Tab.Pane>
   );
 }
+
+Recommendation.propTypes = {
+  sameAltitudinalZone: PropTypes.bool.isRequired,
+};
 
 export default Recommendation;

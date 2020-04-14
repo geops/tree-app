@@ -88,7 +88,8 @@
     "neutral": "Mitnehmen",
     "positive": "Fördern",
     "future": "In Zukunft zusätzlich passende Baumarten einblenden",
-    "noProjectionFound": "Keine Empfehlung möglich"
+    "noProjectionFound": "Keine Empfehlung möglich",
+    "sameAltitudinalZone": "Hier ändert sich zwar die Höhenstufe nicht; unter den empfohlenen Baumarten sollen aber diejenigen bevorzugt werden, die Wärme und Trockenheit am besten ertragen"
   },
   "dropdown": {
     "placeholder": "Bitte aus der Liste auswählen",
@@ -138,7 +139,7 @@
     "group": {
       "label": "Waldstandortsgruppe",
       "main": "Hauptwaldstandorte",
-      "other": "Weitere Standortstypen",
+      "other": "Weitere Waldstandortstypen",
       "special": "Sonderwaldstandort",
       "volatile": "Stark wechselnde Feuchtigkeit",
       "riverside": "Auenwald",
