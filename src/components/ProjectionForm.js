@@ -188,9 +188,9 @@ function ProjectionForm() {
       {options.additional && options.additional.length > 1 && (
         <ChoiceButton
           label={t('additional.label')}
-          options={options.additional.map(
-            getButtonOptions('additional', i18n.language),
-          )}
+          options={options.additional
+            .sort()
+            .map(getButtonOptions('additional', i18n.language))}
           onChange={(e, { value }) => setLocation('additional', value)}
           value={getValue('additional', { first: true })}
         />
