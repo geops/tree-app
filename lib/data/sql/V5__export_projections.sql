@@ -73,23 +73,50 @@ LEFT JOIN slopes ON slopes.slope = import.slope;
 ----------------------------------------------
 -- export projections_export to json
 
-COPY
-    (WITH relief AS
+COPY (
+    WITH
+          target_altitudinal_zone AS
          (SELECT forest_ecoregion,
                  altitudinal_zone,
                  forest_type,
                  slope,
                  additional,
                  silver_fir_area,
-                 jsonb_object_agg(relief::text, target_altitudinal_zone::text||':'||target_forest_type::text) AS json
+                 relief,
+                 jsonb_object_agg(target_altitudinal_zone::text, target_forest_type::text) AS json
           FROM projections_export
-          WHERE target_forest_type IS NOT NULL
+          WHERE target_forest_type IS NOT NULL AND target_altitudinal_zone IS NOT NULL
           GROUP BY forest_ecoregion,
                    altitudinal_zone,
                    forest_type,
                    slope,
                    additional,
-                   silver_fir_area),
+                   silver_fir_area,
+                   relief),
+          relief AS
+         (SELECT forest_ecoregion,
+                 altitudinal_zone,
+                 forest_type,
+                 slope,
+                 additional,
+                 silver_fir_area,
+                 jsonb_object_agg(relief::text, target_altitudinal_zone.json) AS json
+          FROM projections_export
+          LEFT JOIN target_altitudinal_zone USING (forest_ecoregion,
+                                  altitudinal_zone,
+                                  forest_type,
+                                  slope,
+                                  additional,
+                                  silver_fir_area,
+                                  relief)
+          WHERE target_altitudinal_zone.json IS NOT NULL
+          GROUP BY forest_ecoregion,
+                   altitudinal_zone,
+                   forest_type,
+                   slope,
+                   additional,
+                   silver_fir_area,
+                   relief),
           silver_fir_area AS
          (SELECT forest_ecoregion,
                  altitudinal_zone,

@@ -32,11 +32,6 @@
       "forestType": "51C",
       "relief": "kup"
     },
-    "projections": [
-      { "altitudinalZone": "60", "forestType": "19" },
-      { "altitudinalZone": "50", "forestType": "8d" },
-      { "altitudinalZone": "40", "forestType": "6" },
-      { "altitudinalZone": "20", "forestType": "6 collin" }
-    ]
+    "projections": [{ "altitudinalZone": "20", "forestType": "51 collin" }]
   }
 ]
