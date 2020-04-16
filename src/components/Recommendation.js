@@ -167,7 +167,7 @@ function Recommendation({ sameAltitudinalZone }) {
         </Grid>
       )}
       {sameAltitudinalZone && (
-        <Message color="yellow">
+        <Message className={styles.sameAltitudinalZone}>
           {t('recommendation.sameAltitudinalZone')}
         </Message>
       )}
