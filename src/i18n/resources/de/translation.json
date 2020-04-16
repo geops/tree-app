@@ -43,6 +43,7 @@
     "noEcogram": "Kein Ökogram gefunden."
   },
   "map": {
+    "legend": "Legende",
     "baseLayer": {
       "map": "Karte",
       "aerial": "Luftbild"
@@ -128,7 +129,7 @@
       "376-400": "NNW - N"
     },
     "slope": {
-      "label": "Hangneigung",
+      "label": "Hangneigung in %",
       "000-010": "0 -  10",
       "010-025": "10 - 25",
       "025-050": "25 - 50",
