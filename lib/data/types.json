@@ -18,6 +18,7 @@
     {
       "de": "Tanne",
       "code": 100,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -192,6 +193,7 @@
     {
       "de": "Feldahorn",
       "code": 300,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -296,6 +298,7 @@
     {
       "de": "Schneeballblättriger Ahorn",
       "code": 600,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -348,6 +351,7 @@
     {
       "de": "Spitzahorn",
       "code": 700,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -453,6 +457,7 @@
     {
       "de": "Bergahorn",
       "code": 800,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -657,6 +662,7 @@
     {
       "de": "Rosskastanie",
       "code": 6900,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": ["22*", "33b", "36", "91", "93"],
       "nonresident": true
@@ -664,6 +670,7 @@
     {
       "de": "Götterbaum",
       "code": 9500,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -756,6 +763,7 @@
     {
       "de": "Schwarzerle",
       "code": 25200,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "11",
@@ -804,6 +812,7 @@
     {
       "de": "Grauerle",
       "code": 25300,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "11",
@@ -917,6 +926,7 @@
     {
       "de": "Alpenerle",
       "code": 25400,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "12*h",
@@ -1050,6 +1060,7 @@
     {
       "de": "Hängebirke",
       "code": 60400,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -1360,6 +1371,7 @@
     {
       "de": "Moorbirke",
       "code": 60500,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "27O",
@@ -1420,6 +1432,7 @@
     {
       "de": "Hagebuche",
       "code": 96900,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -1494,6 +1507,7 @@
     {
       "de": "Kastanie",
       "code": 97200,
+      "pioneer": false,
       "endangered": true,
       "forestTypes": [
         "1",
@@ -1575,13 +1589,15 @@
     {
       "de": "Atlaszeder",
       "code": 97750,
-      "endangered": null,
+      "pioneer": false,
+      "endangered": false,
       "forestTypes": null,
-      "nonresident": null
+      "nonresident": true
     },
     {
       "de": "Zürgelbaum",
       "code": 97800,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "13*",
@@ -1600,11 +1616,12 @@
         "91",
         "93"
       ],
-      "nonresident": false
+      "nonresident": true
     },
     {
       "de": "Drüsiger Kampferbaum",
       "code": 113350,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "13*",
@@ -1627,6 +1644,7 @@
     {
       "de": "Lotuspflaume",
       "code": 137700,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "13*",
@@ -1655,6 +1673,7 @@
     {
       "de": "Buche",
       "code": 165000,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -1813,6 +1832,7 @@
     {
       "de": "Feige",
       "code": 172200,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "25O",
@@ -1834,6 +1854,7 @@
     {
       "de": "Esche",
       "code": 174200,
+      "pioneer": false,
       "endangered": true,
       "forestTypes": [
         "10a",
@@ -2021,6 +2042,7 @@
     {
       "de": "Blumenesche",
       "code": 174300,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "12*",
@@ -2052,6 +2074,7 @@
     {
       "de": "Stechpalme",
       "code": 213300,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -2191,6 +2214,7 @@
     {
       "de": "Nussbaum",
       "code": 217500,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -2260,13 +2284,15 @@
     {
       "de": "Schwarznuss",
       "code": 217510,
-      "endangered": null,
+      "pioneer": false,
+      "endangered": false,
       "forestTypes": ["11", "11Fe", "26", "26Fe", "27"],
-      "nonresident": null
+      "nonresident": true
     },
     {
       "de": "Gewöhnlicher Wacholder",
       "code": 220400,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "12a",
@@ -2353,6 +2379,7 @@
     {
       "de": "Alpen-Goldregen",
       "code": 224200,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "12*",
@@ -2402,6 +2429,7 @@
     {
       "de": "Lärche",
       "code": 227200,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -2608,6 +2636,7 @@
     {
       "de": "Edellorbeer",
       "code": 231500,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "13*",
@@ -2644,11 +2673,12 @@
         "92z",
         "93"
       ],
-      "nonresident": false
+      "nonresident": true
     },
     {
       "de": "Baum-Liguster",
       "code": 238050,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": ["13*", "27O", "33m", "34a", "34b", "36", "3L/4L"],
       "nonresident": true
@@ -2656,6 +2686,7 @@
     {
       "de": "Wildapfel",
       "code": 252900,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -2697,6 +2728,7 @@
     {
       "de": "Hopfenbuche",
       "code": 287100,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "12*",
@@ -2737,13 +2769,15 @@
     {
       "de": "Blauglockenbaum",
       "code": 293550,
-      "endangered": null,
+      "pioneer": false,
+      "endangered": false,
       "forestTypes": ["7a", "7aFe", "92z"],
-      "nonresident": null
+      "nonresident": true
     },
     {
       "de": "Fichte",
       "code": 302800,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -2990,6 +3024,7 @@
     {
       "de": "Arve",
       "code": 304900,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "47*",
@@ -3046,6 +3081,7 @@
     {
       "de": "Legföhre",
       "code": 305500,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "12*h",
@@ -3156,6 +3192,7 @@
     {
       "de": "Bergföhre",
       "code": 305800,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "12*h",
@@ -3244,6 +3281,7 @@
     {
       "de": "Schwarzföhre",
       "code": 305900,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -3274,6 +3312,7 @@
     {
       "de": "Strobe",
       "code": 306000,
+      "pioneer": false,
       "endangered": true,
       "forestTypes": null,
       "nonresident": true
@@ -3281,6 +3320,7 @@
     {
       "de": "Waldföhre",
       "code": 306100,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -3429,6 +3469,7 @@
     {
       "de": "Platane",
       "code": 308600,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "22*",
@@ -3451,6 +3492,7 @@
     {
       "de": "Silberpappel",
       "code": 317100,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "28",
@@ -3473,6 +3515,7 @@
     {
       "de": "Schwarzpappel",
       "code": 317300,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "25au",
@@ -3499,6 +3542,7 @@
     {
       "de": "Zitterpappel",
       "code": 317500,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -3758,6 +3802,7 @@
     {
       "de": "Kirschbaum",
       "code": 328400,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -3905,6 +3950,7 @@
     {
       "de": "Traubenkirsche",
       "code": 329700,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "11",
@@ -3944,6 +3990,7 @@
     {
       "de": "Herbst-Traubenkirsche",
       "code": 330200,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "13*",
@@ -3974,6 +4021,7 @@
     {
       "de": "Douglasie",
       "code": 330600,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -4038,6 +4086,7 @@
     {
       "de": "Wildbirne",
       "code": 335300,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "14",
@@ -4075,6 +4124,7 @@
     {
       "de": "Zerreiche",
       "code": 335600,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "12*",
@@ -4114,13 +4164,15 @@
     {
       "de": "Steineiche",
       "code": 335800,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": ["25O", "37", "38*", "42B"],
-      "nonresident": false
+      "nonresident": true
     },
     {
       "de": "Traubeneiche",
       "code": 335900,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -4245,6 +4297,7 @@
     {
       "de": "Flaumeiche",
       "code": 336000,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "12*",
@@ -4292,6 +4345,7 @@
     {
       "de": "Stieleiche",
       "code": 336100,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -4372,6 +4426,7 @@
     {
       "de": "Roteiche",
       "code": 336200,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -4437,6 +4492,7 @@
     {
       "de": "Essigbaum",
       "code": 345600,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "22*",
@@ -4455,6 +4511,7 @@
     {
       "de": "Robinie",
       "code": 346500,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -4541,6 +4598,7 @@
     {
       "de": "Weissweide",
       "code": 362800,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "27",
@@ -4561,6 +4619,7 @@
     {
       "de": "Salweide",
       "code": 363700,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -4827,6 +4886,7 @@
     {
       "de": "Reifweide",
       "code": 363900,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": ["28", "31", "32C", "43", "43*", "43S"],
       "nonresident": false
@@ -4834,6 +4894,7 @@
     {
       "de": "Lavendelweide",
       "code": 364000,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": ["27", "28", "31", "32C", "35Q", "43", "43*", "43S", "66"],
       "nonresident": false
@@ -4841,6 +4902,7 @@
     {
       "de": "Stinkweide",
       "code": 364200,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": ["66PM"],
       "nonresident": false
@@ -4848,6 +4910,7 @@
     {
       "de": "Bruchweide",
       "code": 364300,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "27",
@@ -4868,6 +4931,7 @@
     {
       "de": "Purpurweide",
       "code": 365800,
+      "pioneer": true,
       "endangered": false,
       "forestTypes": [
         "18v",
@@ -4896,6 +4960,7 @@
     {
       "de": "Mehlbeere",
       "code": 402200,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -5129,6 +5194,7 @@
     {
       "de": "Vogelbeere",
       "code": 402300,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -5414,6 +5480,7 @@
     {
       "de": "Speierling",
       "code": 402500,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -5435,6 +5502,7 @@
     {
       "de": "Mougeots Mehlbeere",
       "code": 402600,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": ["12a", "12aFe", "12aG", "41", "65"],
       "nonresident": false
@@ -5442,6 +5510,7 @@
     {
       "de": "Elsbeere",
       "code": 402700,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -5486,6 +5555,7 @@
     {
       "de": "Breitblättriger Mehlbeerbaum",
       "code": 402750,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": ["10w", "14", "14G", "15", "17", "17G", "61", "62", "9w"],
       "nonresident": false
@@ -5493,6 +5563,7 @@
     {
       "de": "Eibe",
       "code": 413600,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -5611,6 +5682,7 @@
     {
       "de": "Winterlinde",
       "code": 421400,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "1",
@@ -5753,6 +5825,7 @@
     {
       "de": "Sommerlinde",
       "code": 421500,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "10a",
@@ -5879,6 +5952,7 @@
     {
       "de": "Hanfpalme",
       "code": 422450,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": [
         "13*",
@@ -5914,6 +5988,7 @@
     {
       "de": "Bergulme",
       "code": 432800,
+      "pioneer": false,
       "endangered": true,
       "forestTypes": [
         "10a",
@@ -6050,6 +6125,7 @@
     {
       "de": "Flatterulme",
       "code": 432900,
+      "pioneer": false,
       "endangered": false,
       "forestTypes": ["26", "26Fe", "27", "28", "29A", "29C", "31", "43"],
       "nonresident": false
@@ -6057,6 +6133,7 @@
     {
       "de": "Feldulme",
       "code": 433000,
+      "pioneer": false,
       "endangered": true,
       "forestTypes": [
         "11",

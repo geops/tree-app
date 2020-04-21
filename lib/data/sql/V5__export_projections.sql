@@ -274,7 +274,7 @@ COPY
           values
           FROM slope_meta),
           treetype AS
-         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident, 'forestTypes',
+         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident, 'pioneer', pioneer, 'forestTypes',
                                                  (SELECT json_agg(trim(BOTH FROM naistyp_c))
                                                   FROM nat_naistyp_art
                                                   WHERE vorh IN ('1', '2', '3') AND sisf_nr::int::text = treetype_meta.target::text))) AS
