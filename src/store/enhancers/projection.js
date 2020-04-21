@@ -22,26 +22,13 @@ export const hochmontanAltitudinalZones = ['81', '82', '83'];
 
 const runProject = (location, targetAltitudinalZone) => {
   let newTargetAltitudinalZone = targetAltitudinalZone;
-  let { altitudinalZone, silverFirArea } = location;
+  let { silverFirArea } = location;
   if (hochmontanAltitudinalZones.includes(targetAltitudinalZone)) {
     silverFirArea = targetAltitudinalZone.slice(1);
     newTargetAltitudinalZone = '80';
   }
-  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
-    altitudinalZone = '80';
-  }
-  const newLocation = { ...location, altitudinalZone, silverFirArea };
+  const newLocation = { ...location, silverFirArea };
   return project(newLocation, newTargetAltitudinalZone);
-};
-
-const runLocate = (location) => {
-  let { altitudinalZone, silverFirArea } = location;
-  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
-    silverFirArea = altitudinalZone.slice(1);
-    altitudinalZone = '80';
-  }
-  const newLocation = { ...location, altitudinalZone, silverFirArea };
-  return locate(newLocation);
 };
 
 const projection = (store) => (next) => (action) => {
@@ -52,6 +39,10 @@ const projection = (store) => (next) => (action) => {
       projectionMode === 'm'
         ? { ...formLocation, ...mapLocation }
         : { ...mapLocation, ...formLocation };
+    if (hochmontanAltitudinalZones.includes(location.altitudinalZone)) {
+      location.silverFirArea = location.altitudinalZone.slice(1);
+      location.altitudinalZone = '80';
+    }
     if (!location.transition) {
       delete location.transitionForestType;
       delete location.transitionAltitudinalZone;
@@ -59,7 +50,7 @@ const projection = (store) => (next) => (action) => {
     store.dispatch(setLocation(location));
 
     try {
-      const locateResult = runLocate(location);
+      const locateResult = locate(location);
       store.dispatch(setLocationResult(locateResult));
     } catch (error) {
       console.log('Locate error: ', error);

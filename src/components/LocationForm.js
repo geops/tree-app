@@ -352,6 +352,37 @@ function LocationForm() {
 
   return (
     <Form className={styles.form}>
+      {projectionMode === 'm' && (
+        <>
+          <Input
+            disabled
+            label={t('forestEcoregion.label')}
+            value={
+              location.forestEcoregion
+                ? info('forestEcoregion', location.forestEcoregion)[lng]
+                : '-'
+            }
+          />
+          <Input
+            disabled
+            label={t('altitudinalZone.label')}
+            value={
+              location.altitudinalZone
+                ? info('altitudinalZone', location.altitudinalZone)[lng]
+                : '-'
+            }
+          />
+          <Input
+            disabled
+            label={t('silverFirArea.label')}
+            value={
+              location.silverFirArea
+                ? info('silverFirArea', location.silverFirArea)[lng]
+                : '-'
+            }
+          />
+        </>
+      )}
       {projectionMode === 'f' && options.forestEcoregion && (
         <Dropdown
           clearable={isDifferent('forestEcoregion')}
