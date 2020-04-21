@@ -8,12 +8,19 @@ function TreeTypeList({ className, codes }) {
   const { i18n } = useTranslation();
   return (
     <span className={className}>
-      {codes
-        .map((code) => {
-          const treeInfo = info('treeType', code);
-          return treeInfo[i18n.language] + (treeInfo.endangered ? '*' : '');
-        })
-        .join(' ')}
+      {codes.map((code) => {
+        const treeInfo = info('treeType', code);
+        return (
+          <>
+            {treeInfo[i18n.language]}
+            {(treeInfo.endangered || treeInfo.pioneer) && (
+              <sup>
+                {(treeInfo.endangered && '*') || (treeInfo.pioneer && '+')}
+              </sup>
+            )}{' '}
+          </>
+        );
+      })}
     </span>
   );
 }
