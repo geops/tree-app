@@ -24,6 +24,10 @@
   color: #fbf0b2;
 }
 
+.sameAltitudinalZone:global(.ui.message) {
+  color: var(--primary-color-500);
+}
+
 @media (max-width: 768px) {
   .list {
     display: grid;

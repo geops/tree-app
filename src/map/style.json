@@ -28,7 +28,8 @@
       "source-layer": "forest_ecoregions",
       "metadata": {
         "group": "main",
-        "mapping": "forestEcoregion"
+        "mapping": "forestEcoregion",
+        "type": "forestEcoregion"
       },
       "paint": {
         "fill-color": [
@@ -64,7 +65,8 @@
       "source-layer": "altitudinal_zones_1995",
       "metadata": {
         "group": "altitudinalZones",
-        "mapping": "altitudinalZone"
+        "mapping": "altitudinalZone",
+        "type": "altitudinalZone"
       },
       "paint": {
         "fill-color": [
@@ -108,7 +110,8 @@
       "source-layer": "altitudinal_zones_2085_less_dry",
       "metadata": {
         "group": "altitudinalZones",
-        "mapping": "targetAltitudinalZoneModerate"
+        "mapping": "targetAltitudinalZoneModerate",
+        "type": "altitudinalZone"
       },
       "paint": {
         "fill-color": [
@@ -152,7 +155,8 @@
       "source-layer": "altitudinal_zones_2085_dry",
       "metadata": {
         "group": "altitudinalZones",
-        "mapping": "targetAltitudinalZoneExtreme"
+        "mapping": "targetAltitudinalZoneExtreme",
+        "type": "altitudinalZone"
       },
       "paint": {
         "fill-color": [
@@ -196,7 +200,8 @@
       "source-layer": "silver_fir_areas",
       "metadata": {
         "group": "main",
-        "mapping": "silverFirArea"
+        "mapping": "silverFirArea",
+        "type": "silverFirArea"
       },
       "paint": {
         "fill-color": [

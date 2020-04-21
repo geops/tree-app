@@ -10,7 +10,7 @@ function Ecogram({ data, selectForestType }) {
   const { t } = useTranslation();
 
   return (
-    <svg x="0px" y="0px" viewBox="0 0 1050 1050">
+    <svg x="0px" y="0px" viewBox="0 0 1050 1050" className={styles.svg}>
       <EcogramPopup
         forestTypes={popup.forestTypes}
         onClose={() => setPopup({ forestTypes: [] })}
@@ -84,10 +84,10 @@ function Ecogram({ data, selectForestType }) {
       >
         {t('ecogram.wet')}
       </text>
-      <text x="180" y="1040" className={styles.label}>
+      <text x="150" y="1040" className={styles.label}>
         {t('ecogram.acid')}
       </text>
-      <text x="1000" y="1040" className={styles.label}>
+      <text x="940" y="1040" className={styles.label}>
         {t('ecogram.alkaline')}
       </text>
     </svg>

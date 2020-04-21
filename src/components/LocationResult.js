@@ -30,43 +30,49 @@ function LocationResult() {
     dispatch(setFormLocation({ forestType }));
     history.push(`/projection${search}`);
   };
+  const hasMainGroup =
+    !formLocation.groups || formLocation.groups.includes('main');
+  const hasOtherGroup =
+    !formLocation.groups ||
+    formLocation.groups.filter((group) => group !== 'main').length > 0;
 
   return forestTypes ? (
     <Form className={styles.form}>
       <Header>{t('forestType.group.main')}</Header>
-      {ecogram ? (
+      {hasMainGroup && ecogram && (
         <Ecogram data={ecogram} selectForestType={selectForestType} />
-      ) : (
-        <Message>{t('location.noEcogram')}</Message>
       )}
-      <Dropdown
-        search
-        label={t('forestType.group.other')}
-        value={formLocation.forestType}
-      >
-        <Dropdown.Menu>
-          {otherForestTypeGroups
-            .map((group) => (
-              <>
-                <Dropdown.Header content={t(`forestType.group.${group}`)} />
-                {forestTypes[group].map((key) => {
-                  const label = info('forestType', key)[i18n.language];
-                  const text = label ? `${key} - ${label}` : key;
-                  return (
-                    <Dropdown.Item
-                      text={text}
-                      value={key}
-                      onClick={(e, { value: forestType }) =>
-                        selectForestType(forestType)
-                      }
-                    />
-                  );
-                })}
-              </>
-            ))
-            .reduce((ttft, ft) => ttft.concat(ft), [])}
-        </Dropdown.Menu>
-      </Dropdown>
+      {hasMainGroup && !ecogram && <Message>{t('location.noEcogram')}</Message>}
+      {hasOtherGroup && (
+        <Dropdown
+          search
+          label={t('forestType.group.other')}
+          value={formLocation.forestType}
+        >
+          <Dropdown.Menu>
+            {otherForestTypeGroups
+              .map((group) => (
+                <>
+                  <Dropdown.Header content={t(`forestType.group.${group}`)} />
+                  {forestTypes[group].map((key) => {
+                    const label = info('forestType', key)[i18n.language];
+                    const text = label ? `${key} - ${label}` : key;
+                    return (
+                      <Dropdown.Item
+                        text={text}
+                        value={key}
+                        onClick={(e, { value: forestType }) =>
+                          selectForestType(forestType)
+                        }
+                      />
+                    );
+                  })}
+                </>
+              ))
+              .reduce((ttft, ft) => ttft.concat(ft), [])}
+          </Dropdown.Menu>
+        </Dropdown>
+      )}
     </Form>
   ) : null;
 }

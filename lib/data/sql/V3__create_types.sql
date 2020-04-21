@@ -729,18 +729,19 @@ CREATE TYPE treetype AS ENUM ('100','300','600','700','800','6900','9500','25200
 
 
 CREATE TABLE treetype_meta (target treetype PRIMARY KEY,
-                                                    de TEXT, endangered BOOLEAN, nonresident BOOLEAN);
+                                                    de TEXT, endangered BOOLEAN, nonresident BOOLEAN, pioneer BOOLEAN);
 
 
-INSERT INTO treetype_meta (target, de, endangered, nonresident)
+INSERT INTO treetype_meta (target, de, endangered, nonresident, pioneer)
 SELECT foo.treetype,
        nais.art_nam_deu,
-       info.krankheitsgefaehrdet::boolean,
-       info.gebietsfremd::boolean
+       baum.art_kaa::boolean,
+       baum.art_gfa::boolean,
+       baum.art_pionier::boolean
 FROM
         (SELECT unnest(enum_range(null::treetype)) AS treetype) foo
 LEFT JOIN nat_arten_mstr nais ON nais.sisf_nr = foo.treetype::text
-LEFT JOIN baumarteninformationen info ON info.code::int = foo.treetype::text::int;
+LEFT JOIN nat_arten_baum baum ON nais.sisf_nr = baum.sisf_nr;
 
 
 CREATE TABLE treetype_foresttype (treetype_code treetype REFERENCES treetype_meta,

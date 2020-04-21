@@ -6,6 +6,22 @@
   margin: 0;
 }
 
+.legendButton:global(.ui.button) {
+  position: absolute;
+  right: 20px;
+  top: 67px;
+  margin: 0;
+  z-index: 8;
+}
+
+.legendContainer:global(.ui.segment) {
+  position: absolute;
+  z-index: 7;
+  right: 20px;
+  top: 67px;
+  margin: 0;
+}
+
 .header {
   text-transform: none !important;
   font-size: 1em !important;

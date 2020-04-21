@@ -34,3 +34,7 @@
   font-size: 2em;
   text-anchor: middle;
 }
+
+.svg {
+  max-width: 525px;
+}

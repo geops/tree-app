@@ -39,11 +39,13 @@ const filterFields = [
   'slopes',
   'forestEcoregion',
   'altitudinalZone',
+  'groups',
 ];
 
-const noLabel = (key) => key !== 'label';
+const noLabel = (key) => key !== 'label' && key !== 'other';
 const translationOptions = {
   aspect: Object.keys(translation.forestType.aspect).filter(noLabel),
+  group: Object.keys(translation.forestType.group).filter(noLabel),
   slope: Object.keys(translation.forestType.slope).filter(noLabel),
 };
 
@@ -69,14 +71,15 @@ function LocationForm() {
     projectionMode: state.projectionMode,
   }));
   const { t, i18n } = useTranslation();
+  const lng = i18n.language;
   const isDifferent = (field) => mapLocation[field] !== formLocation[field];
+  const getTranslatedOption = (category) => (key) => {
+    return { key, text: t(`forestType.${category}.${key}`), value: key };
+  };
 
-  options.aspect = translationOptions.aspect.map((key) => {
-    return { key, text: t(`forestType.aspect.${key}`), value: key };
-  });
-  options.slope = translationOptions.slope.map((key) => {
-    return { key, text: t(`forestType.slope.${key}`), value: key };
-  });
+  options.aspect = translationOptions.aspect.map(getTranslatedOption('aspect'));
+  options.group = translationOptions.group.map(getTranslatedOption('group'));
+  options.slope = translationOptions.slope.map(getTranslatedOption('slope'));
 
   const panels = [
     {
@@ -88,9 +91,7 @@ function LocationForm() {
             multiple
             search
             placeholder={t('forestType.treeType.placeholder')}
-            options={options.treeType.map(
-              getDropdownOptions('treeType', i18n.language),
-            )}
+            options={options.treeType.map(getDropdownOptions('treeType', lng))}
             onChange={(e, { value: treeTypes }) =>
               dispatch(setFormLocation({ treeTypes }))
             }
@@ -109,7 +110,7 @@ function LocationForm() {
             search
             placeholder={t('forestType.indicator.placeholder')}
             options={options.indicator.map(
-              getDropdownOptions('indicator', i18n.language),
+              getDropdownOptions('indicator', lng),
             )}
             onChange={(e, { value: indicators }) =>
               dispatch(setFormLocation({ indicators }))
@@ -331,16 +332,63 @@ function LocationForm() {
         ),
       },
     },
+    {
+      key: 'forestType.group',
+      title: { content: t('forestType.group.label') },
+      content: {
+        content: (
+          <Dropdown
+            multiple
+            options={options.group}
+            onChange={(e, { value: groups }) =>
+              dispatch(setFormLocation({ groups }))
+            }
+            value={formLocation.groups || ''}
+          />
+        ),
+      },
+    },
   ];
 
   return (
     <Form className={styles.form}>
+      {projectionMode === 'm' && (
+        <>
+          <Input
+            disabled
+            label={t('forestEcoregion.label')}
+            value={
+              location.forestEcoregion
+                ? info('forestEcoregion', location.forestEcoregion)[lng]
+                : '-'
+            }
+          />
+          <Input
+            disabled
+            label={t('altitudinalZone.label')}
+            value={
+              location.altitudinalZone
+                ? info('altitudinalZone', location.altitudinalZone)[lng]
+                : '-'
+            }
+          />
+          <Input
+            disabled
+            label={t('silverFirArea.label')}
+            value={
+              location.silverFirArea
+                ? info('silverFirArea', location.silverFirArea)[lng]
+                : '-'
+            }
+          />
+        </>
+      )}
       {projectionMode === 'f' && options.forestEcoregion && (
         <Dropdown
           clearable={isDifferent('forestEcoregion')}
           label={t('forestEcoregion.label')}
           options={options.forestEcoregion.map(
-            getDropdownOptions('forestEcoregion', i18n.language),
+            getDropdownOptions('forestEcoregion', lng),
           )}
           onChange={(e, { value: forestEcoregion }) =>
             dispatch(setFormLocation({ forestEcoregion }))
@@ -353,7 +401,7 @@ function LocationForm() {
           clearable={isDifferent('altitudinalZone')}
           label={t('altitudinalZone.label')}
           options={options.altitudinalZone.map(
-            getDropdownOptions('altitudinalZone', i18n.language),
+            getDropdownOptions('altitudinalZone', lng),
           )}
           onChange={(e, { value: altitudinalZone }) =>
             dispatch(setFormLocation({ altitudinalZone }))
@@ -366,7 +414,7 @@ function LocationForm() {
           clearable={isDifferent('silverFirArea')}
           label={t('silverFirArea.label')}
           options={options.silverFirArea.map(
-            getDropdownOptions('silverFirArea', i18n.language),
+            getDropdownOptions('silverFirArea', lng),
           )}
           onChange={(e, { value: silverFirArea }) =>
             dispatch(setFormLocation({ silverFirArea }))
