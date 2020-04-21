@@ -7,6 +7,7 @@ import MapboxLayer from '../spatial/components/layer/Mapbox';
 import TileLayer from '../spatial/components/layer/Tile';
 
 import MapBaseLayer from './MapBaseLayer';
+import MapGeolocation from './MapGeolocation';
 import MapLocation from './MapLocation';
 import MapVectorLayer from './MapVectorLayer';
 import MapView from './MapView';
@@ -30,6 +31,7 @@ function AppMap() {
       <MapboxLayer>
         <MapVectorLayer />
       </MapboxLayer>
+      <MapGeolocation />
     </Map>
   );
 }
