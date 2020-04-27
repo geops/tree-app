@@ -8,13 +8,13 @@ _import () {
         cd /data/spatial
         wget --no-check-certificate "${URL}" -O "${TARGET}.zip"
         7z x -aoa -o"${TARGET}" "${TARGET}.zip"
-        if [ -f "/data/spatial/${TARGET}/${TARGET}.zip" ]; then
-            7z x -aoa -o"${TARGET}" "${TARGET}/${TARGET}.zip"
-            rm "${TARGET}/${ZIPFILE}.zip"
-        fi
         cd ${TARGET}
-        #mv ${TARGET}/${SHPFILE}.* .
-        rm "${TARGET}.zip"
+        if [ -f "/data/spatial/${TARGET}/${ZIPFILE}/${SHPFILE}.shp" ]; then
+            mv ${ZIPFILE}/${SHPFILE}.* .
+        else
+            7z x -aoa -o"." "${ZIPFILE}.zip"
+            rm "${ZIPFILE}.zip"
+        fi
         rename "s/${SHPFILE}/${TARGET}/" ${SHPFILE}.*
     else
         echo "$TARGET already downloaded! Will be reused ..."
