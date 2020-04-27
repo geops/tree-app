@@ -59,7 +59,7 @@
     "hint": "Bitte Position wählen"
   },
   "offline": {
-    "update": "Aktualisierung verfügbar, wenn alle Browser-Fenster der Tree App geschlossen wurden.",
+    "update": "Neue Version laden",
     "success": "Die Tree App ist offline verfügbar."
   },
   "projection": {
@@ -138,7 +138,7 @@
       "100": "100"
     },
     "group": {
-      "label": "Waldstandortsgruppe",
+      "label": "Waldstandortsgruppen",
       "main": "Hauptwaldstandorte",
       "other": "Weitere Waldstandortstypen",
       "special": "Sonderwaldstandort",
@@ -177,11 +177,11 @@
       "steep": "Steilhang"
     },
     "treeType": {
-      "label": "Baumarten",
+      "label": "vorhandene Baumarten",
       "placeholder": "Bitte Baumart eingeben"
     },
     "indicator": {
-      "label": "Zeigerpflanzen",
+      "label": "vorhandene Zeigerpflanzen",
       "placeholder": "Bitte Zeigerart eingeben"
     }
   },

@@ -7,18 +7,22 @@ import { info } from 'lib/src';
 
 import Button from './Button';
 
+const { REACT_APP_VECTOR_TILES_ENDPOINT } = process.env;
+const endpoint = `${REACT_APP_VECTOR_TILES_ENDPOINT}/forest-type`;
+
 function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
   const { t, i18n } = useTranslation();
 
-  if (forestTypes.length === 1) {
-    selectForestType(forestTypes[0]);
-  }
-
   return (
-    <Popup context={target} position="top center" open={forestTypes.length > 1}>
+    <Popup context={target} position="top center" open={forestTypes.length > 0}>
       <List>
         {forestTypes.map((f) => (
-          <List.Item>
+          <List.Item style={{ whiteSpace: 'nowrap' }}>
+            <Button
+              active
+              icon="file pdf"
+              onClick={() => window.open(`${endpoint}/${f}.pdf`, '_blank')}
+            />
             <Button active onClick={() => selectForestType(f)}>
               {f} - {info('forestType', f)[i18n.language]}
             </Button>

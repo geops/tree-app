@@ -38,7 +38,7 @@ function LocationResult() {
 
   return forestTypes ? (
     <Form className={styles.form}>
-      <Header>{t('forestType.group.main')}</Header>
+      {hasMainGroup && <Header>{t('forestType.group.main')}</Header>}
       {hasMainGroup && ecogram && (
         <Ecogram data={ecogram} selectForestType={selectForestType} />
       )}

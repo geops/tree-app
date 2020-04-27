@@ -11,11 +11,15 @@
 }
 
 .Toastify__toast--info {
+  background: #ccc;
+}
+.Toastify__toast--success {
   background: var(--primary-color-500);
 }
 
 @media (min-width: 481px) {
-  .Toastify__toast--info {
+  .Toastify__toast--info,
+  .Toastify__toast--success {
     border-radius: 5px;
   }
 }
