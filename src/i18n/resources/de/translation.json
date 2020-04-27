@@ -59,7 +59,7 @@
     "hint": "Bitte Position wählen"
   },
   "offline": {
-    "update": "Aktualisierung verfügbar, wenn alle Browser-Fenster der Tree App geschlossen wurden.",
+    "update": "Neue Version laden",
     "success": "Die Tree App ist offline verfügbar."
   },
   "projection": {
