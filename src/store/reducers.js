@@ -62,7 +62,8 @@ function tree(state = initialState, action) {
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
     case SET_MAP_LOCATION: {
-      return { ...state, mapLocation: action.mapLocation, projectionMode: 'm' };
+      const { mapLocation } = action;
+      return { ...state, formLocation: {}, mapLocation, projectionMode: 'm' };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };

@@ -2,5 +2,7 @@
   Access-Control-Allow-Origin: *
 /*.pbf
   Access-Control-Allow-Origin: *
+/*.txt
+  Access-Control-Allow-Origin: *
 /tree/*.pbf
   Content-Encoding: gzip

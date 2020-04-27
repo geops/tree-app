@@ -5,6 +5,7 @@ node_modules
 data/spatial/export/*.geojson
 data/spatial/tiles/fonts
 data/spatial/tiles/forest-type
+data/spatial/tiles/tiles.txt
 data/spatial/tiles/tree
 data/spatial/altitudinal_zones_1995
 data/spatial/altitudinal_zones_2085_dry
