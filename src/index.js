@@ -24,7 +24,7 @@ serviceWorker.register({
           registration.unregister().then(() => window.location.reload(true))
         }
       >
-        {18n.t('offline.update')}
+        {i18n.t('offline.update')}
       </Button>,
       { autoClose: false, type: toast.TYPE.INFO },
     ),

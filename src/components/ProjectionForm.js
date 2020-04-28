@@ -9,6 +9,7 @@ import { info } from 'lib/src';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
+import ForestTypeButton from './ForestTypeButton';
 import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
@@ -19,6 +20,14 @@ const getButtonOptions = (type, lng) => (key) => ({
 });
 const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
+  content: includeKey ? (
+    <>
+      <ForestTypeButton code={key} compact />
+      {key} - {info(type, key)[lng]}
+    </>
+  ) : (
+    info(type, key)[lng]
+  ),
   text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
   value: key,
 });

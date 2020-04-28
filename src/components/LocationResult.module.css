@@ -3,3 +3,13 @@
   padding: 1em;
   box-shadow: 0 -20px 20px -20px #777;
 }
+
+.mainHelp {
+  position: absolute;
+  right: 15px;
+  margin-top: -35px;
+}
+.otherHelp {
+  position: absolute;
+  right: 15px;
+}

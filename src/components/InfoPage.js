@@ -1,8 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Accordion } from 'semantic-ui-react';
-// eslint-disable-next-line import/no-unresolved
-import treeLib from 'lib/src';
 
 import InfoAbout from './InfoAbout';
 import InfoParticipants from './InfoParticipants';
@@ -44,11 +42,6 @@ function InfoPage() {
       key: 'info.impressum',
       title: { content: t('info.impressumTitle') },
       content: { content: t('info.impressum') },
-    },
-    {
-      key: 'info.version',
-      title: { content: t('info.versionTitle') },
-      content: { content: `tree-lib: ${treeLib ? treeLib.version : ''}` },
     },
   ];
   return (

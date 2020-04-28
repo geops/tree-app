@@ -8,10 +8,10 @@ import { info } from 'lib/src';
 
 import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
+import ForestTypeButton from './ForestTypeButton';
+import HelpModal from './HelpModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
-
-const otherForestTypeGroups = ['special', 'volatile', 'riverside', 'pioneer'];
 
 function LocationResult() {
   const dispatch = useDispatch();
@@ -38,40 +38,44 @@ function LocationResult() {
 
   return forestTypes ? (
     <Form className={styles.form}>
-      {hasMainGroup && <Header>{t('forestType.group.main')}</Header>}
+      {hasMainGroup && (
+        <>
+          <Header>{t('forestType.group.main')}</Header>
+          <div className={styles.mainHelp}>
+            <HelpModal color="#006268" header={t('forestType.group.main')}>
+              {t('location.mainResultHelp')}
+            </HelpModal>
+          </div>
+        </>
+      )}
       {hasMainGroup && ecogram && (
         <Ecogram data={ecogram} selectForestType={selectForestType} />
       )}
       {hasMainGroup && !ecogram && <Message>{t('location.noEcogram')}</Message>}
       {hasOtherGroup && (
-        <Dropdown
-          search
-          label={t('forestType.group.other')}
-          value={formLocation.forestType}
-        >
-          <Dropdown.Menu>
-            {otherForestTypeGroups
-              .map((group) => (
+        <>
+          <div className={styles.otherHelp}>
+            <HelpModal color="#006268" header={t('forestType.group.other')}>
+              {t('location.otherResultHelp')}
+            </HelpModal>
+          </div>
+          <Dropdown
+            search
+            label={t('forestType.group.other')}
+            options={forestTypes.other.map((key) => ({
+              key,
+              content: (
                 <>
-                  <Dropdown.Header content={t(`forestType.group.${group}`)} />
-                  {forestTypes[group].map((key) => {
-                    const label = info('forestType', key)[i18n.language];
-                    const text = label ? `${key} - ${label}` : key;
-                    return (
-                      <Dropdown.Item
-                        text={text}
-                        value={key}
-                        onClick={(e, { value: forestType }) =>
-                          selectForestType(forestType)
-                        }
-                      />
-                    );
-                  })}
+                  <ForestTypeButton code={key} compact />
+                  {key} - {info('forestType', key)[i18n.language]}
                 </>
-              ))
-              .reduce((ttft, ft) => ttft.concat(ft), [])}
-          </Dropdown.Menu>
-        </Dropdown>
+              ),
+              text: `${key} - ${info('forestType', key)[i18n.language]}`,
+              value: key,
+            }))}
+            value={formLocation.forestType}
+          />
+        </>
       )}
     </Form>
   ) : null;

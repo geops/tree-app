@@ -5,6 +5,14 @@ import Button from './Button';
 import { MapContext } from '../spatial/components/Map';
 import styles from './MapGeolocation.module.css';
 
+// Source: https://coderwall.com/p/i817wa/one-line-function-to-detect-mobile-devices-with-javascript
+function isMobileDevice() {
+  return (
+    typeof window.orientation !== 'undefined' ||
+    navigator.userAgent.indexOf('IEMobile') !== -1
+  );
+}
+
 function MapGeolocation() {
   const map = useContext(MapContext);
   const projection = map.getView().getProjection();
@@ -17,14 +25,14 @@ function MapGeolocation() {
     geoloc.setTracking(false);
   });
 
-  return (
+  return isMobileDevice() ? (
     <Button
       active
       className={styles.button}
       icon="location arrow"
       onClick={() => geoloc.setTracking(true)}
     />
-  );
+  ) : null;
 }
 
 export default MapGeolocation;
