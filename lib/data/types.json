@@ -22239,7 +22239,7 @@
     },
     {
       "de": null,
-      "code": "3LV hyp",
+      "code": "3LV med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -22257,7 +22257,7 @@
     },
     {
       "de": null,
-      "code": "3LV med",
+      "code": "3LV hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -22546,7 +22546,7 @@
         "376-400"
       ],
       "height": [30, 40, 43, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -22604,7 +22604,7 @@
         "376-400"
       ],
       "height": [30, 40, 43, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, false, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -22642,7 +22642,7 @@
         "376-400"
       ],
       "height": [30, 40, 43, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -22655,7 +22655,7 @@
     },
     {
       "de": null,
-      "code": "7a med",
+      "code": "7a collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -22691,7 +22691,7 @@
     },
     {
       "de": null,
-      "code": "7a collin",
+      "code": "7a med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -22755,7 +22755,7 @@
         "376-400"
       ],
       "height": [30, 40, 43, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, false, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -22891,7 +22891,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -22931,7 +22931,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, false, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -22969,7 +22969,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -23009,7 +23009,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -23207,7 +23207,7 @@
         "376-400"
       ],
       "height": [25, 35, 43, 38],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23265,7 +23265,7 @@
         "376-400"
       ],
       "height": [25, 35, 43, 38],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23305,7 +23305,7 @@
         "376-400"
       ],
       "height": [20, 30, 36, 33],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, false, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23363,7 +23363,7 @@
         "376-400"
       ],
       "height": [18, 28, 30, 28],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23421,7 +23421,7 @@
         "376-400"
       ],
       "height": [18, 28, 30, 28],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23479,7 +23479,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23537,7 +23537,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23575,7 +23575,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23615,7 +23615,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 40],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, false, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23653,7 +23653,7 @@
         "376-400"
       ],
       "height": [30, 35, 42, 38],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23693,7 +23693,7 @@
         "376-400"
       ],
       "height": [30, 35, 42, 38],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23733,7 +23733,7 @@
         "376-400"
       ],
       "height": [18, 25, 30, 28],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23773,7 +23773,7 @@
         "376-400"
       ],
       "height": [20, 30, 32, 30],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23811,7 +23811,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [false, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23847,7 +23847,7 @@
         "376-400"
       ],
       "height": [12, 22, 25, 22],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [false, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -23885,7 +23885,7 @@
         "376-400"
       ],
       "height": [20, 30, 33, 30],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -23947,7 +23947,7 @@
         "376-400"
       ],
       "height": [20, 30, 33, 30],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -23982,7 +23982,7 @@
         "326-350"
       ],
       "height": [16, 28, 30, 28],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -24040,7 +24040,7 @@
         "326-350"
       ],
       "height": [15, 25, 30, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -24080,7 +24080,7 @@
         "376-400"
       ],
       "height": [20, 30, 35, 30],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -24120,7 +24120,7 @@
         "376-400"
       ],
       "height": [20, 30, 35, 30],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [["60", "M"]]
@@ -24230,7 +24230,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -24292,7 +24292,7 @@
         "376-400"
       ],
       "height": [12, 20, 24, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, false, true],
       "geomorphology": [true, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -24330,7 +24330,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -24392,7 +24392,7 @@
         "376-400"
       ],
       "height": [12, 18, 20, 18],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -24470,7 +24470,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -24532,7 +24532,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 35],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -24572,7 +24572,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 35],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, false, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -24612,7 +24612,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 35],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -24652,7 +24652,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 23],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -24692,7 +24692,7 @@
         "376-400"
       ],
       "height": [10, 20, 25, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -24731,7 +24731,7 @@
         "376-400"
       ],
       "height": [20, 30, 32, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -25015,7 +25015,7 @@
       "slope": null,
       "aspect": null,
       "height": [30, 40, 45, 35],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -25050,7 +25050,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 35],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -25090,7 +25090,7 @@
         "376-400"
       ],
       "height": [25, 35, 38, 30],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -25126,7 +25126,7 @@
         "376-400"
       ],
       "height": [20, 25, 30, 25],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -25241,7 +25241,7 @@
         "376-400"
       ],
       "height": [18, 28, 30, 28],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, false, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -25307,7 +25307,7 @@
         "376-400"
       ],
       "height": [18, 28, 30, 28],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, false, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -25346,7 +25346,7 @@
         "376-400"
       ],
       "height": [10, 18, 27, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, false, false, true],
       "geomorphology": [true, true, true, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -25390,7 +25390,7 @@
         "376-400"
       ],
       "height": [30, 35, 37, 35],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -25451,7 +25451,7 @@
     },
     {
       "de": null,
-      "code": "22* hyp",
+      "code": "22* med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -25469,7 +25469,7 @@
     },
     {
       "de": null,
-      "code": "22* med",
+      "code": "22* hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -25510,7 +25510,7 @@
         "326-350"
       ],
       "height": [10, 15, 18, 15],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, false],
       "altitudinalZoneForestEcoregion": [
@@ -25571,7 +25571,7 @@
         "326-350"
       ],
       "height": [10, 15, 18, 15],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, false],
       "altitudinalZoneForestEcoregion": [
@@ -25768,7 +25768,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, false],
       "altitudinalZoneForestEcoregion": [
@@ -25838,7 +25838,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, false],
       "altitudinalZoneForestEcoregion": [
@@ -25880,7 +25880,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 35],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -25942,7 +25942,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 35],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -25982,7 +25982,7 @@
         "376-400"
       ],
       "height": [20, 30, 35, 32],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [["20", "2b"]]
@@ -26017,7 +26017,7 @@
         "376-400"
       ],
       "height": [15, 20, 25, 22],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, false, true],
       "geomorphology": [true, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -26067,7 +26067,7 @@
     },
     {
       "de": null,
-      "code": "25O hyp",
+      "code": "25O med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26085,7 +26085,7 @@
     },
     {
       "de": null,
-      "code": "25O med",
+      "code": "25O hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26131,7 +26131,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 35],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -26193,7 +26193,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 35],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -26246,7 +26246,7 @@
     },
     {
       "de": null,
-      "code": "25a hyp",
+      "code": "25a med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26264,7 +26264,7 @@
     },
     {
       "de": null,
-      "code": "25a med",
+      "code": "25a hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26386,7 +26386,7 @@
         "376-400"
       ],
       "height": [20, 30, 32, 30],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, true, true, true, true, false],
       "altitudinalZoneForestEcoregion": [
@@ -26398,7 +26398,7 @@
     },
     {
       "de": null,
-      "code": "25b hyp",
+      "code": "25b med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26416,7 +26416,7 @@
     },
     {
       "de": null,
-      "code": "25b med",
+      "code": "25b hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26458,7 +26458,7 @@
         "326-350"
       ],
       "height": [10, 20, 22, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, false, true],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -26534,7 +26534,7 @@
     },
     {
       "de": null,
-      "code": "25f hyp",
+      "code": "25f med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26552,7 +26552,7 @@
     },
     {
       "de": null,
-      "code": "25f med",
+      "code": "25f hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26610,7 +26610,7 @@
     },
     {
       "de": null,
-      "code": "25au med",
+      "code": "25au hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26628,7 +26628,7 @@
     },
     {
       "de": null,
-      "code": "25au hyp",
+      "code": "25au med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26674,7 +26674,7 @@
         "376-400"
       ],
       "height": [15, 25, 27, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -26741,7 +26741,7 @@
         "376-400"
       ],
       "height": [25, 35, 40, 40],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -26804,7 +26804,7 @@
         "376-400"
       ],
       "height": [25, 35, 40, 40],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, false, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -26842,7 +26842,7 @@
         "376-400"
       ],
       "height": [25, 30, 35, 30],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -26968,24 +26968,6 @@
     },
     {
       "de": null,
-      "code": "27 med",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "27 hyp",
       "group": {
         "main": false,
@@ -27005,6 +26987,24 @@
     {
       "de": null,
       "code": "27 collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
+      "code": "27 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27127,7 +27127,7 @@
         "376-400"
       ],
       "height": [20, 25, 30, 25],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27171,7 +27171,7 @@
         "376-400"
       ],
       "height": [15, 20, 27, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27233,7 +27233,7 @@
         "376-400"
       ],
       "height": [25, 32, 35, 32],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27258,24 +27258,6 @@
     },
     {
       "de": null,
-      "code": "28 collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "28 med",
       "group": {
         "main": false,
@@ -27295,6 +27277,24 @@
     {
       "de": null,
       "code": "28 hyp",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
+      "code": "28 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27340,7 +27340,7 @@
         "376-400"
       ],
       "height": [25, 35, 40, 35],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -27400,7 +27400,7 @@
         "376-400"
       ],
       "height": [28, 35, 40, 35],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27473,7 +27473,7 @@
         "376-400"
       ],
       "height": [25, 32, 37, 32],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27540,7 +27540,7 @@
         "376-400"
       ],
       "height": [30, 35, 40, 30],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -27562,9 +27562,27 @@
       "slope": null,
       "aspect": null,
       "height": [20, 30, 30, 32],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, true, false, false, false],
       "geomorphology": [false, false, false, false, false, false, false],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
+      "code": "30 collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -27588,24 +27606,6 @@
     {
       "de": null,
       "code": "30 hyp",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "30 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27651,7 +27651,7 @@
         "376-400"
       ],
       "height": [10, 18, 20, 18],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -27666,6 +27666,24 @@
         ["40", "J"],
         ["40", "M"]
       ]
+    },
+    {
+      "de": null,
+      "code": "31 med",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
     },
     {
       "de": null,
@@ -27688,24 +27706,6 @@
     {
       "de": null,
       "code": "31 collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "31 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27751,7 +27751,7 @@
         "376-400"
       ],
       "height": [10, 18, 22, 18],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27792,7 +27792,7 @@
     },
     {
       "de": null,
-      "code": "32C collin",
+      "code": "32C hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27810,7 +27810,7 @@
     },
     {
       "de": null,
-      "code": "32C hyp",
+      "code": "32C collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27856,7 +27856,7 @@
         "376-400"
       ],
       "height": [6, 10, 18, 10],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27895,7 +27895,7 @@
         "376-400"
       ],
       "height": [10, 15, 22, 15],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -27944,7 +27944,7 @@
         "376-400"
       ],
       "height": [15, 20, 30, 20],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [false, false, false, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -28004,7 +28004,7 @@
         "376-400"
       ],
       "height": [15, 20, 30, 20],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -28232,7 +28232,7 @@
     },
     {
       "de": null,
-      "code": "33m med",
+      "code": "33m hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28250,7 +28250,7 @@
     },
     {
       "de": null,
-      "code": "33m hyp",
+      "code": "33m med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28514,7 +28514,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 35],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -28553,7 +28553,7 @@
         "376-400"
       ],
       "height": [20, 35, 27, 25],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -28604,7 +28604,7 @@
     },
     {
       "de": null,
-      "code": "35Q hyp",
+      "code": "35Q med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28622,7 +28622,7 @@
     },
     {
       "de": null,
-      "code": "35Q med",
+      "code": "35Q hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28676,7 +28676,7 @@
     },
     {
       "de": null,
-      "code": "35S hyp",
+      "code": "35S med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28694,7 +28694,7 @@
     },
     {
       "de": null,
-      "code": "35S med",
+      "code": "35S hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28740,7 +28740,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 35],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -28793,7 +28793,7 @@
     },
     {
       "de": null,
-      "code": "36 med",
+      "code": "36 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28811,7 +28811,7 @@
     },
     {
       "de": null,
-      "code": "36 hyp",
+      "code": "36 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28919,7 +28919,7 @@
         "276-300"
       ],
       "height": [7, 15, 17, 15],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -28977,7 +28977,7 @@
         "376-400"
       ],
       "height": [5, 12, 14, 12],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -29075,7 +29075,7 @@
         "276-300"
       ],
       "height": [8, 16, 18, 16],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, true, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -29127,7 +29127,7 @@
         "276-300"
       ],
       "height": [8, 16, 18, 16],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -29187,7 +29187,7 @@
         "376-400"
       ],
       "height": [15, 20, 30, 20],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, false, true, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -29204,7 +29204,7 @@
     },
     {
       "de": null,
-      "code": "40P hyp",
+      "code": "40P collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29240,7 +29240,7 @@
     },
     {
       "de": null,
-      "code": "40P collin",
+      "code": "40P hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29286,7 +29286,7 @@
         "376-400"
       ],
       "height": [15, 20, 30, 20],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -29300,7 +29300,7 @@
     },
     {
       "de": null,
-      "code": "40PBl collin",
+      "code": "40PBl hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29336,7 +29336,7 @@
     },
     {
       "de": null,
-      "code": "40PBl hyp",
+      "code": "40PBl collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29382,7 +29382,7 @@
         "376-400"
       ],
       "height": [15, 20, 30, 20],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, false, true, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -29425,7 +29425,7 @@
         "376-400"
       ],
       "height": [15, 20, 30, 20],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -29459,7 +29459,7 @@
         "301-325"
       ],
       "height": [10, 15, 20, 18],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, false, true],
       "geomorphology": [true, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -29646,7 +29646,7 @@
     },
     {
       "de": null,
-      "code": "42C hyp",
+      "code": "42C med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29664,7 +29664,7 @@
     },
     {
       "de": null,
-      "code": "42C med",
+      "code": "42C hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29793,7 +29793,7 @@
     },
     {
       "de": null,
-      "code": "42V med",
+      "code": "42V hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29811,7 +29811,7 @@
     },
     {
       "de": null,
-      "code": "42V hyp",
+      "code": "42V med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29868,7 +29868,7 @@
     },
     {
       "de": null,
-      "code": "42r med",
+      "code": "42r hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29886,7 +29886,7 @@
     },
     {
       "de": null,
-      "code": "42r hyp",
+      "code": "42r med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29925,7 +29925,7 @@
         "301-325"
       ],
       "height": [5, 12, 16, 14],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [false, false, false, false, true],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -29938,7 +29938,7 @@
     },
     {
       "de": null,
-      "code": "42B med",
+      "code": "42B hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29956,7 +29956,7 @@
     },
     {
       "de": null,
-      "code": "42B hyp",
+      "code": "42B med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30080,7 +30080,7 @@
         "376-400"
       ],
       "height": [15, 25, 27, 25],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -30097,6 +30097,24 @@
         ["50", "J"],
         ["50", "M"]
       ]
+    },
+    {
+      "de": null,
+      "code": "43 med",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
     },
     {
       "de": null,
@@ -30119,24 +30137,6 @@
     {
       "de": null,
       "code": "43 hyp",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "43 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30182,7 +30182,7 @@
         "376-400"
       ],
       "height": [5, 12, 17, 15],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -30233,7 +30233,7 @@
     },
     {
       "de": null,
-      "code": "43S med",
+      "code": "43S collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30251,7 +30251,7 @@
     },
     {
       "de": null,
-      "code": "43S collin",
+      "code": "43S med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30372,7 +30372,7 @@
         "376-400"
       ],
       "height": [10, 20, 22, 20],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -31195,7 +31195,7 @@
         "376-400"
       ],
       "height": [25, 35, 38, 25],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -31264,7 +31264,7 @@
         "376-400"
       ],
       "height": [20, 30, 32, 25],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -31326,7 +31326,7 @@
         "376-400"
       ],
       "height": [10, 25, 27, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -31387,7 +31387,7 @@
         "376-400"
       ],
       "height": [10, 25, 27, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -31585,7 +31585,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -31646,7 +31646,7 @@
         "376-400"
       ],
       "height": [30, 40, 45, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -31851,7 +31851,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -31910,7 +31910,7 @@
         "376-400"
       ],
       "height": [25, 35, 37, 25],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -31948,7 +31948,7 @@
         "376-400"
       ],
       "height": [30, 35, 37, 32],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -31986,7 +31986,7 @@
         "376-400"
       ],
       "height": [15, 25, 27, 17],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -31994,24 +31994,6 @@
         ["90", "2a"],
         ["90", "4"]
       ]
-    },
-    {
-      "de": null,
-      "code": "53 collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
     },
     {
       "de": "Zwergbuchs-Fichtenwald mit Lärche",
@@ -32043,7 +32025,7 @@
         "376-400"
       ],
       "height": [15, 25, 27, 17],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -32058,6 +32040,24 @@
         ["90", "2a"],
         ["90", "4"]
       ]
+    },
+    {
+      "de": null,
+      "code": "53 collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
     },
     {
       "de": "Zwergbuchs-Fichtenwald mit Tanne",
@@ -32089,7 +32089,7 @@
         "376-400"
       ],
       "height": [15, 25, 27, 17],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -32137,7 +32137,7 @@
         "376-400"
       ],
       "height": [25, 30, 32, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, false],
       "geomorphology": [false, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -32175,7 +32175,7 @@
         "376-400"
       ],
       "height": [25, 30, 32, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, false],
       "geomorphology": [false, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [["90", "2b"]]
@@ -32210,7 +32210,7 @@
         "376-400"
       ],
       "height": [20, 30, 32, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -32268,7 +32268,7 @@
         "376-400"
       ],
       "height": [20, 30, 32, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [["80", "2b"]]
@@ -32487,24 +32487,6 @@
       ]
     },
     {
-      "de": null,
-      "code": "55 collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
       "de": "Ehrenpreis-Fichtenwald; Lärchenausbildung",
       "code": "55Lä",
       "group": {
@@ -32534,6 +32516,24 @@
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [["80", "3"]]
+    },
+    {
+      "de": null,
+      "code": "55 collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
     },
     {
       "de": "Schneesimsen-Fi-Wald",
@@ -32720,7 +32720,7 @@
         "376-400"
       ],
       "height": [10, 25, 27, 17],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -32774,7 +32774,7 @@
         "376-400"
       ],
       "height": [10, 25, 27, 17],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -33607,7 +33607,7 @@
         "301-325"
       ],
       "height": [15, 20, 23, 13],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -33637,7 +33637,7 @@
         "301-325"
       ],
       "height": [15, 20, 23, 13],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -33878,7 +33878,7 @@
         "376-400"
       ],
       "height": [15, 20, 23, 13],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -34203,7 +34203,7 @@
         "376-400"
       ],
       "height": [15, 25, 28, 15],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [false, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -34243,7 +34243,7 @@
         "376-400"
       ],
       "height": [20, 30, 33, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -34286,7 +34286,7 @@
         "376-400"
       ],
       "height": [20, 30, 33, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -34348,7 +34348,7 @@
         "376-400"
       ],
       "height": [20, 30, 33, 20],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -34390,7 +34390,7 @@
         "376-400"
       ],
       "height": [8, 15, 17, 14],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, false, true],
       "geomorphology": [true, false, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -34456,7 +34456,7 @@
         "376-400"
       ],
       "height": [10, 18, 20, 18],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, false, true],
       "geomorphology": [true, false, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -34518,7 +34518,7 @@
         "376-400"
       ],
       "height": [10, 18, 20, 15],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -34576,7 +34576,7 @@
         "301-325"
       ],
       "height": [7, 15, 17, 14],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -34633,7 +34633,7 @@
         "376-400"
       ],
       "height": [10, 18, 20, 15],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -34766,7 +34766,7 @@
         "301-325"
       ],
       "height": [4, 15, 18, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -34973,7 +34973,7 @@
         "376-400"
       ],
       "height": [4, 15, 18, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": [
@@ -35101,7 +35101,7 @@
         "376-400"
       ],
       "height": [10, 20, 22, 14],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -35139,7 +35139,7 @@
         "376-400"
       ],
       "height": [10, 20, 22, 14],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": [
@@ -35193,7 +35193,7 @@
     },
     {
       "de": null,
-      "code": "91 hyp",
+      "code": "91 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35211,7 +35211,7 @@
     },
     {
       "de": null,
-      "code": "91 med",
+      "code": "91 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35336,7 +35336,7 @@
         "376-400"
       ],
       "height": [5, 24, 27, 25],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, false],
       "geomorphology": [true, true, true, false, false, false, true],
       "altitudinalZoneForestEcoregion": [
@@ -36049,7 +36049,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -36229,7 +36229,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -36265,7 +36265,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -36355,7 +36355,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -36373,7 +36373,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
@@ -36409,7 +36409,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -36427,7 +36427,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -36445,7 +36445,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -36463,7 +36463,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -36589,7 +36589,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -36625,7 +36625,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
@@ -36643,7 +36643,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
@@ -36787,7 +36787,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, false],
       "altitudinalZoneForestEcoregion": null
@@ -36859,7 +36859,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, false],
       "altitudinalZoneForestEcoregion": null
@@ -36895,7 +36895,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -37075,7 +37075,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -37129,7 +37129,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [true, true, false, false, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -37327,7 +37327,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [true, true],
       "reliefType": [false, false, false, true, false],
       "geomorphology": [false, false, false, false, false, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -37705,7 +37705,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, false, true, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
@@ -38155,7 +38155,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, true, true, false, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -38371,7 +38371,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -38407,7 +38407,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -38497,7 +38497,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, true, false, true, false],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": null
@@ -38695,7 +38695,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -38846,24 +38846,6 @@
     },
     {
       "de": null,
-      "code": "60*G",
-      "group": {
-        "main": true,
-        "pioneer": false,
-        "special": false,
-        "volatile": true,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
-      "reliefType": [true, true, true, true, true],
-      "geomorphology": [true, false, true, false, true, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "60*TaG",
       "group": {
         "main": false,
@@ -38878,6 +38860,24 @@
       "carbonate": [false, false],
       "reliefType": [false, false, false, false, false],
       "geomorphology": [false, false, false, false, false, false, false],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
+      "code": "60*G",
+      "group": {
+        "main": true,
+        "pioneer": false,
+        "special": false,
+        "volatile": true,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": [4, 6, 10, 10],
+      "carbonate": [true, true],
+      "reliefType": [true, true, true, true, true],
+      "geomorphology": [true, false, true, false, true, false, true],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -39001,7 +39001,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
       "altitudinalZoneForestEcoregion": null
@@ -39055,7 +39055,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, true],
+      "carbonate": [true, true],
       "reliefType": [true, true, true, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
       "altitudinalZoneForestEcoregion": null
@@ -39109,7 +39109,7 @@
       "slope": null,
       "aspect": null,
       "height": [4, 6, 10, 10],
-      "carbonate": [false, false],
+      "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, false],
       "altitudinalZoneForestEcoregion": null

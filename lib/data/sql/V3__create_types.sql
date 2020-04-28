@@ -267,12 +267,14 @@ SELECT trim(BOTH
             FROM mstr.naistyp_sort)::float AS
 sort,
        CASE typ.ntyp_kg_fein IN ('1',
-                                 '2')
+                                 '2',
+                                 '9')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS carbonate_fine,
        CASE typ.ntyp_kg_gestein IN ('1',
-                                    '2')
+                                    '2',
+                                    '9')
            WHEN TRUE THEN TRUE
            ELSE FALSE
        END AS carbonate_rock,
