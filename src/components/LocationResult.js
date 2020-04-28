@@ -8,10 +8,9 @@ import { info } from 'lib/src';
 
 import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
+import ForestTypeButton from './ForestTypeButton';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
-
-const otherForestTypeGroups = ['special', 'volatile', 'riverside', 'pioneer'];
 
 function LocationResult() {
   const dispatch = useDispatch();
@@ -47,31 +46,19 @@ function LocationResult() {
         <Dropdown
           search
           label={t('forestType.group.other')}
+          options={forestTypes.other.map((key) => ({
+            key,
+            content: (
+              <>
+                <ForestTypeButton code={key} compact />
+                {key} - {info('forestType', key)[i18n.language]}
+              </>
+            ),
+            text: `${key} - ${info('forestType', key)[i18n.language]}`,
+            value: key,
+          }))}
           value={formLocation.forestType}
-        >
-          <Dropdown.Menu>
-            {otherForestTypeGroups
-              .map((group) => (
-                <>
-                  <Dropdown.Header content={t(`forestType.group.${group}`)} />
-                  {forestTypes[group].map((key) => {
-                    const label = info('forestType', key)[i18n.language];
-                    const text = label ? `${key} - ${label}` : key;
-                    return (
-                      <Dropdown.Item
-                        text={text}
-                        value={key}
-                        onClick={(e, { value: forestType }) =>
-                          selectForestType(forestType)
-                        }
-                      />
-                    );
-                  })}
-                </>
-              ))
-              .reduce((ttft, ft) => ttft.concat(ft), [])}
-          </Dropdown.Menu>
-        </Dropdown>
+        />
       )}
     </Form>
   ) : null;

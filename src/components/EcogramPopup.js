@@ -6,9 +6,7 @@ import { List, Popup } from 'semantic-ui-react';
 import { info } from 'lib/src';
 
 import Button from './Button';
-
-const { REACT_APP_VECTOR_TILES_ENDPOINT } = process.env;
-const endpoint = `${REACT_APP_VECTOR_TILES_ENDPOINT}/forest-type`;
+import ForestTypeButton from './ForestTypeButton';
 
 function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
   const { t, i18n } = useTranslation();
@@ -18,11 +16,7 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
       <List>
         {forestTypes.map((f) => (
           <List.Item style={{ whiteSpace: 'nowrap' }}>
-            <Button
-              active
-              icon="file pdf"
-              onClick={() => window.open(`${endpoint}/${f}.pdf`, '_blank')}
-            />
+            <ForestTypeButton code={f} />
             <Button active onClick={() => selectForestType(f)}>
               {f} - {info('forestType', f)[i18n.language]}
             </Button>
