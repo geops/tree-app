@@ -6,7 +6,7 @@ import { ReactComponent as InfoIcon } from '../icons/info.svg';
 
 import styles from './HelpModal.module.css';
 
-function HelpModal({ children, header }) {
+function HelpModal({ children, color, header }) {
   return (
     <Modal
       actions={[{ key: 'done', content: 'Ok' }]}
@@ -14,17 +14,19 @@ function HelpModal({ children, header }) {
         <Modal.Content className={styles.text}>{children}</Modal.Content>
       }
       header={header || undefined}
-      trigger={<InfoIcon fill="white" className={styles.icon} />}
+      trigger={<InfoIcon fill={color} className={styles.icon} />}
     />
   );
 }
 
 HelpModal.propTypes = {
   children: PropTypes.node.isRequired,
+  color: PropTypes.string,
   header: PropTypes.string,
 };
 
 HelpModal.defaultProps = {
+  color: 'white',
   header: '',
 };
 

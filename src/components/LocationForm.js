@@ -2,13 +2,14 @@ import intersection from 'lodash.intersection';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Accordion, Form, Label, Segment } from 'semantic-ui-react';
+import { Accordion, Form, Header, Label, Segment } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
 
 import Button from './Button';
 import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
+import HelpModal from './HelpModal';
 import Input from './Input';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
@@ -422,6 +423,12 @@ function LocationForm() {
           value={location.silverFirArea}
         />
       )}
+      <div className={styles.help}>
+        <HelpModal color="#006268" header={t('location.header')}>
+          {t('location.help')}
+        </HelpModal>
+      </div>
+      <Header>{t('location.header')}</Header>
       <Accordion fluid panels={panels} styled />
       {intersection(Object.keys(formLocation), filterFields).length > 0 && (
         <Button

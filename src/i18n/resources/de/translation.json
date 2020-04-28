@@ -38,7 +38,11 @@
     "impressum": "Die Tree App ist ein Umsetzungsprodukt des Forschungsprogramms „Wald und Klimawandel“ von BAFU und WSL."
   },
   "location": {
-    "reset": "Filter zurücksetzen",
+    "header": "Filterkriterien",
+    "help": "TODO",
+    "mainResultHelp": "TODO",
+    "otherResultHelp": "TODO",
+    "reset": "Filterkriterien zurücksetzen",
     "noEcogram": "Kein Ökogram gefunden."
   },
   "map": {

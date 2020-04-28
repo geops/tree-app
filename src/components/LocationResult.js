@@ -9,6 +9,7 @@ import { info } from 'lib/src';
 import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
 import ForestTypeButton from './ForestTypeButton';
+import HelpModal from './HelpModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
 
@@ -37,28 +38,44 @@ function LocationResult() {
 
   return forestTypes ? (
     <Form className={styles.form}>
-      {hasMainGroup && <Header>{t('forestType.group.main')}</Header>}
+      {hasMainGroup && (
+        <>
+          <Header>{t('forestType.group.main')}</Header>
+          <div className={styles.mainHelp}>
+            <HelpModal color="#006268" header={t('forestType.group.main')}>
+              {t('location.mainResultHelp')}
+            </HelpModal>
+          </div>
+        </>
+      )}
       {hasMainGroup && ecogram && (
         <Ecogram data={ecogram} selectForestType={selectForestType} />
       )}
       {hasMainGroup && !ecogram && <Message>{t('location.noEcogram')}</Message>}
       {hasOtherGroup && (
-        <Dropdown
-          search
-          label={t('forestType.group.other')}
-          options={forestTypes.other.map((key) => ({
-            key,
-            content: (
-              <>
-                <ForestTypeButton code={key} compact />
-                {key} - {info('forestType', key)[i18n.language]}
-              </>
-            ),
-            text: `${key} - ${info('forestType', key)[i18n.language]}`,
-            value: key,
-          }))}
-          value={formLocation.forestType}
-        />
+        <>
+          <div className={styles.otherHelp}>
+            <HelpModal color="#006268" header={t('forestType.group.other')}>
+              {t('location.otherResultHelp')}
+            </HelpModal>
+          </div>
+          <Dropdown
+            search
+            label={t('forestType.group.other')}
+            options={forestTypes.other.map((key) => ({
+              key,
+              content: (
+                <>
+                  <ForestTypeButton code={key} compact />
+                  {key} - {info('forestType', key)[i18n.language]}
+                </>
+              ),
+              text: `${key} - ${info('forestType', key)[i18n.language]}`,
+              value: key,
+            }))}
+            value={formLocation.forestType}
+          />
+        </>
       )}
     </Form>
   ) : null;
