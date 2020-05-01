@@ -13,6 +13,8 @@ import HelpModal from './HelpModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
 
+const otherForestTypeGroups = ['special', 'volatile', 'riverside', 'pioneer'];
+
 function LocationResult() {
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
@@ -60,21 +62,36 @@ function LocationResult() {
             </HelpModal>
           </div>
           <Dropdown
-            search
+            search={false}
             label={t('forestType.group.other')}
-            options={forestTypes.other.map((key) => ({
-              key,
-              content: (
-                <>
-                  <ForestTypeButton code={key} compact />
-                  {key} - {info('forestType', key)[i18n.language]}
-                </>
-              ),
-              text: `${key} - ${info('forestType', key)[i18n.language]}`,
-              value: key,
-            }))}
             value={formLocation.forestType}
-          />
+          >
+            <Dropdown.Menu>
+              {otherForestTypeGroups
+                .map((group) => (
+                  <>
+                    <Dropdown.Header content={t(`forestType.group.${group}`)} />
+                    {forestTypes[group].map((key) => {
+                      return (
+                        <Dropdown.Item
+                          content={
+                            <>
+                              <ForestTypeButton code={key} compact />
+                              {key} - {info('forestType', key)[i18n.language]}
+                            </>
+                          }
+                          value={key}
+                          onClick={(e, { value: forestType }) =>
+                            selectForestType(forestType)
+                          }
+                        />
+                      );
+                    })}
+                  </>
+                ))
+                .reduce((ttft, ft) => ttft.concat(ft), [])}
+            </Dropdown.Menu>
+          </Dropdown>
         </>
       )}
     </Form>
