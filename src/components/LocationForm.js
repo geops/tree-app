@@ -308,6 +308,7 @@ function LocationForm() {
         content: (
           <Dropdown
             multiple
+            search={false}
             options={options.aspect}
             onChange={(e, { value: aspects }) =>
               dispatch(setFormLocation({ aspects }))
@@ -324,6 +325,7 @@ function LocationForm() {
         content: (
           <Dropdown
             multiple
+            search={false}
             options={options.slope}
             onChange={(e, { value: slopes }) =>
               dispatch(setFormLocation({ slopes }))
