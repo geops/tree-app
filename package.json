@@ -10,7 +10,7 @@
     "lodash.intersection": "4.4.0",
     "lodash.union": "4.6.0",
     "lodash.xor": "4.5.0",
-    "mapbox-gl": "1.9.1",
+    "mapbox-gl": "1.10.0",
     "ol": "6.3.1",
     "proj4": "2.6.1",
     "prop-types": "15.7.2",
@@ -27,10 +27,10 @@
     "semantic-ui-react": "0.88.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "2.29.0",
-    "@typescript-eslint/parser": "2.29.0",
+    "@typescript-eslint/eslint-plugin": "2.30.0",
+    "@typescript-eslint/parser": "2.30.0",
     "cra-append-sw": "2.7.0",
-    "cypress": "4.4.1",
+    "cypress": "4.5.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
     "eslint-config-prettier": "6.11.0",
@@ -43,7 +43,7 @@
     "eslint-plugin-react": "7.19.0",
     "eslint-plugin-react-hooks": "3.0.0",
     "husky": "4.2.5",
-    "lint-staged": "10.1.7",
+    "lint-staged": "10.2.2",
     "prettier": "2.0.5",
     "react-test-renderer": "16.13.1",
     "start-server-and-test": "1.11.0"
