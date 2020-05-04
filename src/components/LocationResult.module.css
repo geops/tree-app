@@ -4,6 +4,10 @@
   box-shadow: 0 -20px 20px -20px #777;
 }
 
+.form :global(label) {
+  font-size: 18px !important;
+}
+
 .mainHelp {
   position: absolute;
   right: 15px;
