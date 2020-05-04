@@ -1,6 +1,6 @@
 import intersection from 'lodash.intersection';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Accordion, Form, Header, Label, Segment } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
@@ -127,44 +127,22 @@ function LocationForm() {
       content: {
         content: (
           <>
-            <Segment>
-              <Label attached="top">{t('forestType.treeLayerHeight')}</Label>
-              <Input
-                label={t('forestType.treeLayerHeightMin')}
-                onChange={(e, { value: treeLayerHeightMin }) =>
-                  dispatch(setFormLocation({ treeLayerHeightMin }))
-                }
-                type="number"
-                value={formLocation.treeLayerHeightMin || ''}
-              />
-              <Input
-                label={t('forestType.treeLayerHeightMax')}
-                onChange={(e, { value: treeLayerHeightMax }) =>
-                  dispatch(setFormLocation({ treeLayerHeightMax }))
-                }
-                type="number"
-                value={formLocation.treeLayerHeightMax || ''}
-              />
-            </Segment>
-            <Segment>
-              <Label attached="top">{t('forestType.treeHeightMax')}</Label>
-              <Input
-                label={t('forestType.coniferTreeHeightMax')}
-                onChange={(e, { value: coniferTreeHeightMax }) =>
-                  dispatch(setFormLocation({ coniferTreeHeightMax }))
-                }
-                type="number"
-                value={formLocation.coniferTreeHeightMax || ''}
-              />
-              <Input
-                label={t('forestType.deciduousTreeHeightMax')}
-                onChange={(e, { value: deciduousTreeHeightMax }) =>
-                  dispatch(setFormLocation({ deciduousTreeHeightMax }))
-                }
-                type="number"
-                value={formLocation.deciduousTreeHeightMax || ''}
-              />
-            </Segment>
+            <Input
+              label={t('forestType.coniferTreeHeightMax')}
+              onChange={(e, { value: coniferTreeHeightMax }) =>
+                dispatch(setFormLocation({ coniferTreeHeightMax }))
+              }
+              type="number"
+              value={formLocation.coniferTreeHeightMax || ''}
+            />
+            <Input
+              label={t('forestType.deciduousTreeHeightMax')}
+              onChange={(e, { value: deciduousTreeHeightMax }) =>
+                dispatch(setFormLocation({ deciduousTreeHeightMax }))
+              }
+              type="number"
+              value={formLocation.deciduousTreeHeightMax || ''}
+            />
           </>
         ),
       },
@@ -427,7 +405,7 @@ function LocationForm() {
       )}
       <div className={styles.help}>
         <HelpModal color="#006268" header={t('location.header')}>
-          {t('location.help')}
+          <Trans i18nKey="location.help" />
         </HelpModal>
       </div>
       <Header>{t('location.header')}</Header>
