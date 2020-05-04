@@ -7,12 +7,12 @@ describe('Info', () => {
     cy.get('.ui.menu > :nth-child(3)').click();
   });
 
-  it('shows title for impressum', () => {
-    cy.get('.ui.accordion > :nth-child(11)').contains(info.impressumTitle);
+  it('shows title for about', () => {
+    cy.get('.ui.accordion > :nth-child(1)').contains(info.aboutTitle);
   });
 
-  it('shows impressum after clicking on title', () => {
-    cy.get('.ui.accordion > :nth-child(11)').click();
-    cy.get('.ui.accordion > .content.active').contains(info.impressum);
+  it('shows text after clicking on title', () => {
+    cy.get('.ui.accordion > :nth-child(1)').click();
+    cy.get('.ui.accordion > .content.active').contains('Tree App');
   });
 });
