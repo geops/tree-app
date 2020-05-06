@@ -45,9 +45,9 @@ const filterFields = [
 
 const noLabel = (key) => key !== 'label' && key !== 'other';
 const translationOptions = {
-  aspect: Object.keys(translation.forestType.aspect).filter(noLabel),
+  aspect: Object.keys(translation.forestType.aspect).filter(noLabel).sort(),
   group: Object.keys(translation.forestType.group).filter(noLabel),
-  slope: Object.keys(translation.forestType.slope).filter(noLabel),
+  slope: Object.keys(translation.forestType.slope).filter(noLabel).sort(),
 };
 
 const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
