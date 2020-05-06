@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:20.10
 
 # Update repos and install dependencies
 RUN apt-get update \
