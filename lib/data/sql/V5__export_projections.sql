@@ -213,7 +213,11 @@ COPY
                GROUP BY subcode
                ORDER BY subcode) foo),
           foresttype AS
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'altitudinalZoneForestEcoregion',(SELECT json_agg(jsonb_build_array(altitudinal_zone_code, forest_ecoregion_code)) FROM foresttype_altitudinal_zone_forest_ecoregion WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'height', CASE tree_layer_height_min is null
+                                                                                   WHEN TRUE THEN null
+                                                                                   ELSE jsonb_build_array(conifer_tree_height_max, deciduous_tree_height_max)
+                                                                               END,
+                                                                     'altitudinalZoneForestEcoregion',(SELECT json_agg(jsonb_build_array(altitudinal_zone_code, forest_ecoregion_code)) FROM foresttype_altitudinal_zone_forest_ecoregion WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
                                                                      'carbonate', jsonb_build_array(carbonate_fine, carbonate_rock),
                                                                      'geomorphology', jsonb_build_array(geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised),
                                                                      'reliefType', jsonb_build_array(relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep),
