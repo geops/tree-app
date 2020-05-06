@@ -13,11 +13,10 @@ WITH slopes AS
     (SELECT slope,
             array_to_string(regexp_matches(slope, '(<|>).*(\d{2})'), '') parsed_slope
      FROM projections_import)
-SELECT processed_forest_ecoregion AS forest_ecoregion,
+SELECT DISTINCT processed_forest_ecoregion AS forest_ecoregion,
        altitudinal_zone_meta.code AS altitudinal_zone,
-       CASE
-           WHEN trim(both from forest_type) = any(SELECT code FROM foresttype_meta) THEN forest_type
-           WHEN trim(both from target_forest_type) = any(SELECT code FROM foresttype_meta) THEN target_forest_type
+       CASE trim(both from forest_type) = any(SELECT code FROM foresttype_meta)
+           WHEN TRUE THEN forest_type
            ELSE null
        END AS forest_type,
        CASE additional_meta.target is null
@@ -37,9 +36,8 @@ SELECT processed_forest_ecoregion AS forest_ecoregion,
            ELSE slopes.parsed_slope
        END AS slope,
        target_altitudinal_zone_meta.code AS target_altitudinal_zone,
-       CASE
-           WHEN trim(both from target_forest_type) = any(SELECT code FROM foresttype_meta) THEN target_forest_type
-           WHEN trim(both from forest_type) = any(SELECT code FROM foresttype_meta) THEN forest_type
+       CASE trim(both from target_forest_type) = any(SELECT code FROM foresttype_meta)
+           WHEN TRUE THEN target_forest_type
            ELSE null
        END AS target_forest_type
 FROM
@@ -115,8 +113,7 @@ COPY (
                    forest_type,
                    slope,
                    additional,
-                   silver_fir_area,
-                   relief),
+                   silver_fir_area),
           silver_fir_area AS
          (SELECT forest_ecoregion,
                  altitudinal_zone,
@@ -215,7 +212,11 @@ COPY
                GROUP BY subcode
                ORDER BY subcode) foo),
           foresttype AS
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'altitudinalZoneForestEcoregion',(SELECT json_agg(jsonb_build_array(altitudinal_zone_code, forest_ecoregion_code)) FROM foresttype_altitudinal_zone_forest_ecoregion WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'height', CASE tree_layer_height_min is null
+                                                                                   WHEN TRUE THEN null
+                                                                                   ELSE jsonb_build_array(conifer_tree_height_max, deciduous_tree_height_max)
+                                                                               END,
+                                                                     'altitudinalZoneForestEcoregion',(SELECT json_agg(jsonb_build_array(altitudinal_zone_code, forest_ecoregion_code)) FROM foresttype_altitudinal_zone_forest_ecoregion WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
                                                                      'carbonate', jsonb_build_array(carbonate_fine, carbonate_rock),
                                                                      'geomorphology', jsonb_build_array(geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised),
                                                                      'reliefType', jsonb_build_array(relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep),

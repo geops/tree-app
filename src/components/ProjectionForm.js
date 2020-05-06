@@ -182,7 +182,10 @@ function ProjectionForm() {
             }}
             onBlur={deactivateField}
             onFocus={() => activateField('transitionAltitudinalZone')}
-            value={getValue('altitudinalZone', { transition: true })}
+            value={
+              getValue('altitudinalZone', { transition: true }) ||
+              getValue('altitudinalZone')
+            }
           />
         </Segment>
       )}
