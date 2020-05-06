@@ -668,7 +668,11 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "13a" } } } }
       },
       "18*": {
-        "unknown": { "unknown": { "unknown": { "kup": { "50": "15" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": { "kup": { "50": "15" }, "h_and_m": { "50": "14" } }
+          }
+        }
       },
       "18G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "8a" } } } }
@@ -821,7 +825,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "21" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
             }
           }
         }
@@ -848,7 +852,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "26 collin", "60": "26h", "80": "26" }
+              "unknown": { "20": "26 collin", "60": "26h", "80": "26h" }
             }
           }
         }
@@ -858,7 +862,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -866,7 +870,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19L", "80": "47" }
+              "unknown": { "20": "55 collin", "60": "19L", "80": "55" }
             }
           }
         }
@@ -891,7 +895,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -899,7 +903,11 @@
       "51": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51" } }
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
@@ -907,7 +915,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -916,7 +924,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "54 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "54 collin", "60": "18*", "80": "54" }
             }
           }
         }
@@ -925,7 +933,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55" }
             }
           }
         }
@@ -1033,7 +1041,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -1133,7 +1141,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -1141,7 +1149,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -1177,7 +1185,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -1186,7 +1194,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20G", "80": "50G" }
+              "unknown": { "20": "50 collin", "60": "20G", "80": "50Re" }
             }
           }
         }
@@ -1195,18 +1203,30 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50P collin", "60": "20", "80": "50P" }
+              "unknown": { "20": "50P collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51C": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51G": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51G" } }
+            "unknown": {
+              "kup": { "60": "19G" },
+              "h_and_m": { "60": "18G" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
@@ -1286,7 +1306,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "68* collin", "60": "68", "80": "68" }
+              "unknown": { "20": "68* collin", "60": "68", "80": "68*" }
             }
           }
         }
@@ -1359,7 +1379,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -1376,7 +1396,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Fe" }
+              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Re" }
             }
           }
         }
@@ -1385,22 +1405,38 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51Fe": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18Fe" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19Fe" },
+              "h_and_m": { "60": "18Fe" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51Re": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52Re": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -1473,7 +1509,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -1481,7 +1517,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -1499,7 +1535,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -1535,7 +1571,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55Lä" }
             }
           }
         }
@@ -1562,7 +1598,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "48 collin", "60": "22", "80": "47*Lä" }
+              "unknown": { "20": "48 collin", "60": "22", "80": "48" }
             }
           }
         }
@@ -1609,7 +1645,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "23" } } } }
       },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -1627,13 +1663,13 @@
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67" } } } }
       },
       "69": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69" } } } }
       },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70" } } } }
       },
       "71": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71" } } } }
@@ -1675,7 +1711,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "52" } } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "57C": {
         "unknown": {
@@ -1747,13 +1783,13 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67G" } } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69G" } } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70G" } } } }
       },
       "71G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71G" } } } }
@@ -2607,7 +2643,11 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "13a" } } } }
       },
       "18*": {
-        "unknown": { "unknown": { "unknown": { "kup": { "50": "15" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": { "kup": { "50": "15" }, "h_and_m": { "50": "14" } }
+          }
+        }
       },
       "18G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "8a" } } } }
@@ -2760,7 +2800,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "21" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
             }
           }
         }
@@ -2787,7 +2827,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "26 collin", "60": "26h", "80": "26" }
+              "unknown": { "20": "26 collin", "60": "26h", "80": "26h" }
             }
           }
         }
@@ -2797,7 +2837,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -2805,7 +2845,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19L", "80": "47" }
+              "unknown": { "20": "55 collin", "60": "19L", "80": "55" }
             }
           }
         }
@@ -2830,7 +2870,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -2838,7 +2878,11 @@
       "51": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51" } }
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
@@ -2846,7 +2890,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -2855,7 +2899,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "54 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "54 collin", "60": "18*", "80": "54" }
             }
           }
         }
@@ -2864,7 +2908,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55" }
             }
           }
         }
@@ -2972,7 +3016,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -3072,7 +3116,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -3080,7 +3124,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -3116,7 +3160,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -3125,7 +3169,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20G", "80": "50G" }
+              "unknown": { "20": "50 collin", "60": "20G", "80": "50Re" }
             }
           }
         }
@@ -3134,18 +3178,30 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50P collin", "60": "20", "80": "50P" }
+              "unknown": { "20": "50P collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51C": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51G": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51G" } }
+            "unknown": {
+              "kup": { "60": "19G" },
+              "h_and_m": { "60": "18G" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
@@ -3225,7 +3281,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "68* collin", "60": "68", "80": "68" }
+              "unknown": { "20": "68* collin", "60": "68", "80": "68*" }
             }
           }
         }
@@ -3298,7 +3354,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -3315,7 +3371,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Fe" }
+              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Re" }
             }
           }
         }
@@ -3324,22 +3380,38 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51Fe": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19Fe" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19Fe" },
+              "h_and_m": { "60": "18Fe" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51Re": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52Re": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -3412,7 +3484,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -3420,7 +3492,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -3438,7 +3510,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -3474,7 +3546,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55Lä" }
             }
           }
         }
@@ -3501,7 +3573,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "48 collin", "60": "22", "80": "47*Lä" }
+              "unknown": { "20": "48 collin", "60": "22", "80": "48" }
             }
           }
         }
@@ -3548,7 +3620,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "23" } } } }
       },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -3566,13 +3638,13 @@
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67" } } } }
       },
       "69": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69" } } } }
       },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70" } } } }
       },
       "71": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71" } } } }
@@ -3614,7 +3686,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "52" } } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "57C": {
         "unknown": {
@@ -3686,13 +3758,13 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67G" } } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69G" } } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70G" } } } }
       },
       "71G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71G" } } } }
@@ -4011,7 +4083,9 @@
       "47": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25a", "30": "3L/4L", "80": "47" } }
+            "unknown": {
+              "unknown": { "20": "25a", "30": "3L/4L", "80": "47Re" }
+            }
           }
         }
       },
@@ -4032,7 +4106,7 @@
       "52": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "52" } }
+            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "52Re" } }
           }
         }
       },
@@ -4090,7 +4164,7 @@
       "25a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25a", "30": "25a", "80": "25a" } }
+            "unknown": { "unknown": { "20": "25a", "30": "25a", "80": "47Re" } }
           }
         }
       },
@@ -4148,7 +4222,9 @@
       "46M": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "42V", "30": "42V", "80": "46M" } }
+            "unknown": {
+              "unknown": { "20": "42V", "30": "42V", "80": "46MRe" }
+            }
           }
         }
       },
@@ -4156,7 +4232,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "33a", "30": "3L/4L", "80": "47*" }
+              "unknown": { "20": "33a", "30": "3L/4L", "80": "47Re" }
             }
           }
         }
@@ -4165,7 +4241,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "3L/4L", "80": "47D" }
+              "unknown": { "20": "25au", "30": "3L/4L", "80": "47DRe" }
             }
           }
         }
@@ -4189,7 +4265,7 @@
       "50*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25b", "30": "36", "80": "50*" } }
+            "unknown": { "unknown": { "20": "25b", "30": "36", "80": "50*Re" } }
           }
         }
       },
@@ -4272,14 +4348,16 @@
       "47Re": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25a", "30": "3L/4L", "80": "47" } }
+            "unknown": {
+              "unknown": { "20": "25a", "30": "3L/4L", "80": "47Re" }
+            }
           }
         }
       },
       "52Re": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "52" } }
+            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "52Re" } }
           }
         }
       },
@@ -4327,7 +4405,9 @@
       "46MRe": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "42V", "30": "42V", "80": "46M" } }
+            "unknown": {
+              "unknown": { "20": "42V", "30": "42V", "80": "46MRe" }
+            }
           }
         }
       },
@@ -4335,7 +4415,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "3L/4L", "80": "47D" }
+              "unknown": { "20": "25au", "30": "3L/4L", "80": "47DRe" }
             }
           }
         }
@@ -4343,7 +4423,7 @@
       "50*Re": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25b", "30": "36", "80": "50*" } }
+            "unknown": { "unknown": { "20": "25b", "30": "36", "80": "50*Re" } }
           }
         }
       },
@@ -5485,7 +5565,11 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "13a" } } } }
       },
       "18*": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "50": "14" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": { "kup": { "50": "15" }, "h_and_m": { "50": "14" } }
+          }
+        }
       },
       "18G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "8a" } } } }
@@ -5638,7 +5722,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "21" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
             }
           }
         }
@@ -5665,7 +5749,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "26 collin", "60": "26h", "80": "26" }
+              "unknown": { "20": "26 collin", "60": "26h", "80": "26h" }
             }
           }
         }
@@ -5675,7 +5759,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -5683,7 +5767,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19L", "80": "47" }
+              "unknown": { "20": "55 collin", "60": "19L", "80": "55" }
             }
           }
         }
@@ -5708,19 +5792,27 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -5729,7 +5821,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "54 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "54 collin", "60": "18*", "80": "54" }
             }
           }
         }
@@ -5738,7 +5830,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55" }
             }
           }
         }
@@ -5846,7 +5938,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -5946,7 +6038,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -5954,7 +6046,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -5990,7 +6082,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -5999,7 +6091,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20G", "80": "50G" }
+              "unknown": { "20": "50 collin", "60": "20G", "80": "50Re" }
             }
           }
         }
@@ -6008,16 +6100,32 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50P collin", "60": "20", "80": "50P" }
+              "unknown": { "20": "50P collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51C": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51G": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18G" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19G" },
+              "h_and_m": { "60": "18G" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52T": {
         "unknown": {
@@ -6095,7 +6203,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "68* collin", "60": "68", "80": "68" }
+              "unknown": { "20": "68* collin", "60": "68", "80": "68*" }
             }
           }
         }
@@ -6168,7 +6276,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -6185,7 +6293,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Fe" }
+              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Re" }
             }
           }
         }
@@ -6194,22 +6302,38 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51Fe": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18Fe" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19Fe" },
+              "h_and_m": { "60": "18Fe" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51Re": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52Re": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -6282,7 +6406,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -6290,7 +6414,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -6308,7 +6432,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -6344,7 +6468,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55Lä" }
             }
           }
         }
@@ -6371,7 +6495,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "48 collin", "60": "22", "80": "47*Lä" }
+              "unknown": { "20": "48 collin", "60": "22", "80": "48" }
             }
           }
         }
@@ -6418,7 +6542,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "23" } } } }
       },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -6436,13 +6560,13 @@
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67" } } } }
       },
       "69": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69" } } } }
       },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70" } } } }
       },
       "71": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71" } } } }
@@ -6484,7 +6608,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "52" } } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "57C": {
         "unknown": {
@@ -6556,13 +6680,13 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67G" } } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69G" } } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70G" } } } }
       },
       "71G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71G" } } } }
@@ -7702,7 +7826,11 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "13a" } } } }
       },
       "18*": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "50": "14" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": { "kup": { "50": "15" }, "h_and_m": { "50": "14" } }
+          }
+        }
       },
       "18G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "8a" } } } }
@@ -7855,7 +7983,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "21" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
             }
           }
         }
@@ -7882,7 +8010,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "26 collin", "60": "26h", "80": "26" }
+              "unknown": { "20": "26 collin", "60": "26h", "80": "26h" }
             }
           }
         }
@@ -7892,7 +8020,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -7900,7 +8028,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19L", "80": "47" }
+              "unknown": { "20": "55 collin", "60": "19L", "80": "55" }
             }
           }
         }
@@ -7925,19 +8053,27 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -7946,7 +8082,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "54 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "54 collin", "60": "18*", "80": "54" }
             }
           }
         }
@@ -7955,7 +8091,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55" }
             }
           }
         }
@@ -8063,7 +8199,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -8163,7 +8299,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -8171,7 +8307,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -8207,7 +8343,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -8216,7 +8352,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20G", "80": "50G" }
+              "unknown": { "20": "50 collin", "60": "20G", "80": "50Re" }
             }
           }
         }
@@ -8225,18 +8361,30 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50P collin", "60": "20", "80": "50P" }
+              "unknown": { "20": "50P collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51C": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51G": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51G" } }
+            "unknown": {
+              "kup": { "60": "19G" },
+              "h_and_m": { "60": "18G" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
@@ -8316,7 +8464,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "68* collin", "60": "68", "80": "68" }
+              "unknown": { "20": "68* collin", "60": "68", "80": "68*" }
             }
           }
         }
@@ -8389,7 +8537,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -8406,7 +8554,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Fe" }
+              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Re" }
             }
           }
         }
@@ -8415,22 +8563,38 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51Fe": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19Fe" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19Fe" },
+              "h_and_m": { "60": "18Fe" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51Re": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52Re": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -8503,7 +8667,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -8511,7 +8675,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -8529,7 +8693,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -8565,7 +8729,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55Lä" }
             }
           }
         }
@@ -8592,7 +8756,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "48 collin", "60": "22", "80": "47*Lä" }
+              "unknown": { "20": "48 collin", "60": "22", "80": "48" }
             }
           }
         }
@@ -8639,7 +8803,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "23" } } } }
       },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -8657,13 +8821,13 @@
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67" } } } }
       },
       "69": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69" } } } }
       },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70" } } } }
       },
       "71": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71" } } } }
@@ -8705,7 +8869,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "52" } } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "57C": {
         "unknown": {
@@ -8777,13 +8941,13 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67G" } } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69G" } } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70G" } } } }
       },
       "71G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71G" } } } }
@@ -9759,7 +9923,11 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "13a" } } } }
       },
       "18*": {
-        "unknown": { "unknown": { "unknown": { "kup": { "50": "15" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": { "kup": { "50": "15" }, "h_and_m": { "50": "14" } }
+          }
+        }
       },
       "18G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "8a" } } } }
@@ -9912,7 +10080,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "21" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
             }
           }
         }
@@ -9939,7 +10107,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "26 collin", "60": "26h", "80": "26" }
+              "unknown": { "20": "26 collin", "60": "26h", "80": "26h" }
             }
           }
         }
@@ -9949,7 +10117,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -9957,7 +10125,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19L", "80": "47" }
+              "unknown": { "20": "55 collin", "60": "19L", "80": "55" }
             }
           }
         }
@@ -9982,7 +10150,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -9990,7 +10158,11 @@
       "51": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51" } }
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
@@ -9998,7 +10170,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -10007,7 +10179,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "54 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "54 collin", "60": "18*", "80": "54" }
             }
           }
         }
@@ -10016,7 +10188,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55" }
             }
           }
         }
@@ -10124,7 +10296,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -10224,7 +10396,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -10232,7 +10404,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -10268,7 +10440,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -10277,7 +10449,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20G", "80": "50G" }
+              "unknown": { "20": "50 collin", "60": "20G", "80": "50Re" }
             }
           }
         }
@@ -10286,7 +10458,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50P collin", "60": "20", "80": "50P" }
+              "unknown": { "20": "50P collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -10294,12 +10466,24 @@
       "51C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51C" } }
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
       "51G": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18G" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19G" },
+              "h_and_m": { "60": "18G" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52T": {
         "unknown": {
@@ -10377,7 +10561,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "68* collin", "60": "68", "80": "68" }
+              "unknown": { "20": "68* collin", "60": "68", "80": "68*" }
             }
           }
         }
@@ -10450,7 +10634,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -10467,7 +10651,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Fe" }
+              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Re" }
             }
           }
         }
@@ -10476,22 +10660,38 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51Fe": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18Fe" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19Fe" },
+              "h_and_m": { "60": "18Fe" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51Re": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52Re": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -10564,7 +10764,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -10572,7 +10772,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -10590,7 +10790,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -10626,7 +10826,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55Lä" }
             }
           }
         }
@@ -10653,7 +10853,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "48 collin", "60": "22", "80": "47*Lä" }
+              "unknown": { "20": "48 collin", "60": "22", "80": "48" }
             }
           }
         }
@@ -10700,7 +10900,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "23" } } } }
       },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -10718,13 +10918,13 @@
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67" } } } }
       },
       "69": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69" } } } }
       },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70" } } } }
       },
       "71": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71" } } } }
@@ -10766,7 +10966,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "52" } } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "57C": {
         "unknown": {
@@ -10838,13 +11038,13 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67G" } } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69G" } } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70G" } } } }
       },
       "71G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71G" } } } }
@@ -11820,7 +12020,11 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "13a" } } } }
       },
       "18*": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "50": "14" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": { "kup": { "50": "15" }, "h_and_m": { "50": "14" } }
+          }
+        }
       },
       "18G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "50": "8a" } } } }
@@ -11973,7 +12177,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "21" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
             }
           }
         }
@@ -12000,7 +12204,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "26 collin", "60": "26h", "80": "26" }
+              "unknown": { "20": "26 collin", "60": "26h", "80": "26h" }
             }
           }
         }
@@ -12010,7 +12214,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -12018,7 +12222,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19L", "80": "47" }
+              "unknown": { "20": "55 collin", "60": "19L", "80": "55" }
             }
           }
         }
@@ -12043,19 +12247,27 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -12064,7 +12276,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "54 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "54 collin", "60": "18*", "80": "54" }
             }
           }
         }
@@ -12073,7 +12285,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55" }
             }
           }
         }
@@ -12181,7 +12393,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "23H collin", "60": "20", "80": "23H" }
+              "unknown": { "20": "23H collin", "60": "20", "80": "50Re" }
             }
           }
         }
@@ -12281,7 +12493,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -12289,7 +12501,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -12325,7 +12537,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -12334,7 +12546,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20G", "80": "50G" }
+              "unknown": { "20": "50 collin", "60": "20G", "80": "50Re" }
             }
           }
         }
@@ -12343,18 +12555,30 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50P collin", "60": "20", "80": "50P" }
+              "unknown": { "20": "50P collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51C": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51G": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "51 collin", "80": "51G" } }
+            "unknown": {
+              "kup": { "60": "19G" },
+              "h_and_m": { "60": "18G" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
           }
         }
       },
@@ -12434,7 +12658,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "68* collin", "60": "68", "80": "68" }
+              "unknown": { "20": "68* collin", "60": "68", "80": "68*" }
             }
           }
         }
@@ -12507,7 +12731,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "19" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46 collin", "80": "46" } }
+            "unknown": { "unknown": { "20": "46 collin", "80": "46Re" } }
           }
         }
       },
@@ -12524,7 +12748,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Fe" }
+              "unknown": { "20": "50 collin", "60": "20Fe", "80": "50Re" }
             }
           }
         }
@@ -12533,22 +12757,38 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50 collin", "60": "20", "80": "50" }
+              "unknown": { "20": "50 collin", "60": "20", "80": "50Re" }
             }
           }
         }
       },
       "51Fe": {
-        "unknown": { "unknown": { "unknown": { "kup": { "60": "19Fe" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19Fe" },
+              "h_and_m": { "60": "18Fe" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "51Re": {
-        "unknown": { "unknown": { "unknown": { "h_and_m": { "60": "18" } } } }
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "kup": { "60": "19" },
+              "h_and_m": { "60": "18" },
+              "unknown": { "20": "51 collin", "80": "51Re" }
+            }
+          }
+        }
       },
       "52Re": {
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "52 collin", "60": "18*", "80": "52" }
+              "unknown": { "20": "52 collin", "60": "18*", "80": "52Re" }
             }
           }
         }
@@ -12621,7 +12861,7 @@
         ">20": { "unknown": { "unknown": { "unknown": { "60": "46" } } } },
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "46* collin", "80": "46*" } }
+            "unknown": { "unknown": { "20": "46* collin", "80": "46*Re" } }
           }
         }
       },
@@ -12629,7 +12869,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "46M collin", "60": "1h", "80": "46M" }
+              "unknown": { "20": "46M collin", "60": "1h", "80": "46MRe" }
             }
           }
         }
@@ -12647,7 +12887,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "50* collin", "60": "18M", "80": "50*" }
+              "unknown": { "20": "50* collin", "60": "18M", "80": "50*Re" }
             }
           }
         }
@@ -12683,7 +12923,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "55 collin", "60": "19", "80": "51" }
+              "unknown": { "20": "55 collin", "60": "19", "80": "55Lä" }
             }
           }
         }
@@ -12710,7 +12950,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "48 collin", "60": "22", "80": "47*Lä" }
+              "unknown": { "20": "48 collin", "60": "22", "80": "48" }
             }
           }
         }
@@ -12757,7 +12997,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "23" } } } }
       },
       "53": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -12775,13 +13015,13 @@
         }
       },
       "67": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67" } } } }
       },
       "69": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69" } } } }
       },
       "70": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70" } } } }
       },
       "71": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71" } } } }
@@ -12823,7 +13063,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "52" } } } }
       },
       "53G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Ta" } } } }
       },
       "57C": {
         "unknown": {
@@ -12895,13 +13135,13 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
       },
       "67G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "67G" } } } }
       },
       "69G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "65" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "69G" } } } }
       },
       "70G": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "80": "68*" } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "80": "70G" } } } }
       },
       "71G": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "71G" } } } }

@@ -30,7 +30,24 @@
       "forestEcoregion": "1",
       "altitudinalZone": "80",
       "forestType": "51C",
+      "relief": "h_and_m"
+    },
+    "projections": [{ "altitudinalZone": "60", "forestType": "18" }]
+  },
+  {
+    "location": {
+      "forestEcoregion": "1",
+      "altitudinalZone": "80",
+      "forestType": "51C",
       "relief": "kup"
+    },
+    "projections": [{ "altitudinalZone": "60", "forestType": "19" }]
+  },
+  {
+    "location": {
+      "forestEcoregion": "1",
+      "altitudinalZone": "80",
+      "forestType": "51C"
     },
     "projections": [{ "altitudinalZone": "20", "forestType": "51 collin" }]
   }

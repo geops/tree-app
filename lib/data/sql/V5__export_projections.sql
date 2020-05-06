@@ -13,7 +13,7 @@ WITH slopes AS
     (SELECT slope,
             array_to_string(regexp_matches(slope, '(<|>).*(\d{2})'), '') parsed_slope
      FROM projections_import)
-SELECT processed_forest_ecoregion AS forest_ecoregion,
+SELECT DISTINCT processed_forest_ecoregion AS forest_ecoregion,
        altitudinal_zone_meta.code AS altitudinal_zone,
        CASE trim(both from forest_type) = any(SELECT code FROM foresttype_meta)
            WHEN TRUE THEN forest_type
@@ -113,8 +113,7 @@ COPY (
                    forest_type,
                    slope,
                    additional,
-                   silver_fir_area,
-                   relief),
+                   silver_fir_area),
           silver_fir_area AS
          (SELECT forest_ecoregion,
                  altitudinal_zone,
