@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "i18next": "19.4.4",
+    "i18next": "19.4.5",
     "lodash.difference": "4.5.0",
     "lodash.intersection": "4.4.0",
     "lodash.union": "4.6.0",
