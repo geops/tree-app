@@ -48,8 +48,10 @@ describe('Projection in form mode', () => {
     selectField('ForestEcoregion', '.item:first-child');
     selectField('AltitudinalZone', '.item:last-child');
     selectField('ForestType', '.item:first-child');
-    cy.get(`[data-cypress=projectionFormTransition] .ui:last-child`).click();
-    selectField('TransitionForestType', '.item:first-child');
+    cy.get(`[data-cypress=projectionFormTransition] .ui:last-child`).click({
+      force: true,
+    });
+    selectField('TransitionForestType', '.item:first-child', true);
     selectField('TransitionAltitudinalZone', '.item:last-child', true);
     selectField('TargetAltitudinalZone', '.item:first-child', true);
     cy.get('[data-cypress=projectionResultMenuItem]').contains(/\w+\s\(\w+\)/);
