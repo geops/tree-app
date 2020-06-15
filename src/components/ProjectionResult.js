@@ -92,10 +92,7 @@ function ProjectionResult() {
     const form = projectionResult.form.projections.slice(-1)[0] || {};
     panes.push(getPane('today', location, i18n.language, t));
     panes.push(getPane('form', form, i18n.language, t));
-  } else if (
-    projectionResult.moderate.projections ||
-    projectionResult.extreme.projections
-  ) {
+  } else {
     const moderateLoc = projectionResult.moderate.projections
       ? projectionResult.moderate.projections.slice(-1)[0] || {}
       : {};

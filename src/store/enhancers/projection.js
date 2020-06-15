@@ -11,6 +11,7 @@ import {
   setLocationResult,
   setProjectionResult,
 } from '../actions';
+import { initialState } from '../reducers';
 
 const projectionActionTypes = [
   SET_FORM_LOCATION,
@@ -57,7 +58,7 @@ const projection = (store) => (next) => (action) => {
     }
 
     try {
-      const projectionResult = { extreme: {}, moderate: {}, form: {} };
+      const projectionResult = { ...initialState.projectionResult };
       if (projectionMode === 'm') {
         const {
           targetAltitudinalZoneModerate: targetAZModerate,
