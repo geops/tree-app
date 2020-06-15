@@ -30,7 +30,7 @@ function Recommendation({ sameAltitudinalZone }) {
     let result;
 
     if (projectionMode === 'f') {
-      projections = projectionResult.form.projections.slice(-1) || [];
+      projections = projectionResult.form.projections?.slice(-1) || [];
     } else {
       const { moderate, extreme } = projectionResult;
       projections = [
