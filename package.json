@@ -2,7 +2,7 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "i18next": "19.4.5",
