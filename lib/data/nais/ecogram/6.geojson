@@ -222,6 +222,7 @@
       "properties": {
         "id": 10,
         "z": "1",
+        "rows": "2",
         "forestTypes": "93",
         "otherForestTypes": null
       },

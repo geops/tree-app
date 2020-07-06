@@ -22,11 +22,11 @@ function Ecogram({ data, selectForestType }) {
         <line x1="500" y1="0" x2="500" y2="1000" className={styles.grid} />
         <line x1="800" y1="0" x2="800" y2="1000" className={styles.grid} />
         <line x1="0" y1="200" x2="1000" y2="200" className={styles.grid} />
-        <line x1="0" y1="500" x2="1000" y2="500" className={styles.grid} />
+        <line x1="0" y1="492" x2="1000" y2="492" className={styles.grid} />
         <line x1="0" y1="800" x2="1000" y2="800" className={styles.grid} />
         {data
           .sort((a, b) => a.z - b.z)
-          .map(({ a, x, y, w, h, f, r, o }) => (
+          .map(({ a, x, y, w, h, f, r, ox, oy }) => (
             <>
               <rect
                 x={x}
@@ -38,11 +38,11 @@ function Ecogram({ data, selectForestType }) {
                 className={`${styles.box} ${a && styles.active}`}
                 onClick={({ target }) => setPopup({ target, forestTypes: f })}
               />
-              {r || o ? (
+              {r || ox || oy ? (
                 [...new Array(r)].map((_, i) => (
                   <text
-                    x={x + w / 2}
-                    y={y + h / 2 - (20 * r || 0) + 35 * (i + 1) - 35 * o}
+                    x={x + w / 2 + ox * 10}
+                    y={y + h / 2 - (20 * r || 0) + 35 * (i + 1) - 35 * oy}
                     className={styles.boxText}
                   >
                     {f

@@ -225,7 +225,7 @@
       "properties": {
         "id": 10,
         "z": "1",
-        "offset": "1",
+        "offsetY": "1",
         "forestTypes": "46MRe",
         "otherForestTypes": null
       },

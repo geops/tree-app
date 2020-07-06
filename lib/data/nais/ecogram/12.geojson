@@ -223,7 +223,7 @@
       "properties": {
         "id": 10,
         "z": "1",
-        "offset": "1",
+        "offsetY": "1",
         "forestTypes": "20",
         "otherForestTypes": "20Fe,20G"
       },
