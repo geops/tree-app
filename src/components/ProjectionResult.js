@@ -49,18 +49,16 @@ function getPane(scenario, projection, language, t) {
     forestType && {
       menuItem: (
         <Menu.Item key={altitudinalZone} className={styles.arrow}>
-          {icons}
-          <div>
-            <div data-cypress="projectionResultMenuItem">
-              {transitionForestType
-                ? ` ${forestType} (${transitionForestType}) `
-                : ` ${forestType} `}
-              <span className={styles.altitudinalZone}>
-                {info('altitudinalZone', altitudinalZone)[language]}
-              </span>
-            </div>
-            <div className={styles.scenario}>{scenarios.join(', ')}</div>
+          <div className={styles.icons}>{icons}</div>
+          <div data-cypress="projectionResultMenuItem">
+            {transitionForestType
+              ? ` ${forestType} (${transitionForestType}) `
+              : ` ${forestType} `}
+            <span className={styles.altitudinalZone}>
+              {info('altitudinalZone', altitudinalZone)[language]}
+            </span>
           </div>
+          <div className={styles.scenario}>{scenarios.join(', ')}</div>
         </Menu.Item>
       ),
       render: () => <ProjectionTab location={projection} />,
@@ -129,7 +127,6 @@ function ProjectionResult() {
             className: styles.tabMenu,
             inverted: true,
             secondary: true,
-            size: 'large',
             widths: finalPanes.length,
           }}
           panes={finalPanes}
