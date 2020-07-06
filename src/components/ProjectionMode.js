@@ -1,4 +1,3 @@
-import { transform } from 'ol/proj';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -8,12 +7,11 @@ import Button from './Button';
 import { ReactComponent as ManualIcon } from '../icons/manual.svg';
 import { ReactComponent as MapPosition } from '../icons/mapPosition.svg';
 import { ReactComponent as MapIcon } from '../icons/map.svg';
-import { EPSG2056 } from '../map/projection';
 import { setProjectionMode } from '../store/actions';
 import styles from './ProjectionMode.module.css';
 
 const formatCoordinates = (coordinates) =>
-  transform(coordinates, 'EPSG:3857', EPSG2056)
+  coordinates
     .map((c) => c.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1'"))
     .join(', ');
 

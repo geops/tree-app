@@ -45,3 +45,9 @@
 .map {
   height: 100vh;
 }
+
+@media (max-width: 768px) {
+  .map :global(.ol-scale-line) {
+    bottom: 79px;
+  }
+}
