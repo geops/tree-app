@@ -25,7 +25,7 @@ function Recommendation({ sameAltitudinalZone }) {
     }),
   );
 
-  const recommendations = useMemo(() => {
+  const r = useMemo(() => {
     let projections;
     let result;
 
@@ -54,7 +54,7 @@ function Recommendation({ sameAltitudinalZone }) {
 
   return (
     <Tab.Pane data-cypress="recommendationPane">
-      {recommendations && (
+      {r && (
         <Grid columns={3} padded verticalAlign="middle">
           <Grid.Row centered>
             <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
@@ -67,18 +67,12 @@ function Recommendation({ sameAltitudinalZone }) {
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.large}>
-                <TreeTypeList
-                  className={styles.bold}
-                  codes={recommendations[0]}
-                />{' '}
-                <TreeTypeList codes={recommendations[1]} />
+                <TreeTypeList className={styles.bold} codes={r[0]} />{' '}
+                <TreeTypeList codes={r[1]} />
               </div>
               <div className={styles.yellow}>
-                <TreeTypeList
-                  className={styles.bold}
-                  codes={recommendations[2]}
-                />{' '}
-                <TreeTypeList codes={recommendations[3]} />
+                <TreeTypeList className={styles.bold} codes={r[2]} />{' '}
+                <TreeTypeList codes={r[3]} />
               </div>
             </Grid.Column>
           </Grid.Row>
@@ -93,18 +87,12 @@ function Recommendation({ sameAltitudinalZone }) {
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.centered}>
-                <TreeTypeList
-                  className={styles.bold}
-                  codes={recommendations[4]}
-                />{' '}
-                <TreeTypeList codes={recommendations[5]} />
+                <TreeTypeList className={styles.bold} codes={r[4]} />{' '}
+                <TreeTypeList codes={r[5]} />
               </div>
               <div className={`${styles.small} ${styles.yellow}`}>
-                <TreeTypeList
-                  className={styles.bold}
-                  codes={recommendations[6]}
-                />{' '}
-                <TreeTypeList codes={recommendations[7]} />
+                <TreeTypeList className={styles.bold} codes={r[6]} />{' '}
+                <TreeTypeList codes={r[7]} />
               </div>
             </Grid.Column>
           </Grid.Row>
@@ -119,40 +107,38 @@ function Recommendation({ sameAltitudinalZone }) {
             </Grid.Column>
             <Grid.Column width={11}>
               <div className={styles.small}>
-                <TreeTypeList
-                  className={styles.bold}
-                  codes={recommendations[8]}
-                />
+                <TreeTypeList className={styles.bold} codes={r[8]} />
               </div>
             </Grid.Column>
           </Grid.Row>
-          {recommendations[9].length > 0 && (
-            <Grid.Row>
-              <Grid.Column textAlign="center" width={4}>
-                <AttentionIcon fill="white" className={styles.icon} />
-              </Grid.Column>
-              <Grid.Column width={1}>
-                <HelpModal header={t('help.recommendationAttentionHeader')}>
-                  <Trans i18nKey="help.recommendationAttention">
-                    help text{' '}
-                    <a
-                      href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      link
-                    </a>
-                  </Trans>
-                </HelpModal>
-              </Grid.Column>
-              <Grid.Column width={11}>
-                <TreeTypeList
-                  className={styles.bold}
-                  codes={recommendations[9]}
-                />
-              </Grid.Column>
-            </Grid.Row>
-          )}
+          {r[9].length > 0 ||
+            (r[10].length > 0 && (
+              <Grid.Row>
+                <Grid.Column textAlign="center" width={4}>
+                  <AttentionIcon fill="white" className={styles.icon} />
+                </Grid.Column>
+                <Grid.Column width={1}>
+                  <HelpModal header={t('help.recommendationAttentionHeader')}>
+                    <Trans i18nKey="help.recommendationAttention">
+                      help text{' '}
+                      <a
+                        href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        link
+                      </a>
+                    </Trans>
+                  </HelpModal>
+                </Grid.Column>
+                <Grid.Column width={11}>
+                  <TreeTypeList className={styles.bold} codes={r[9]} />
+                  <div className={styles.yellow}>
+                    <TreeTypeList className={styles.bold} codes={r[10]} />
+                  </div>
+                </Grid.Column>
+              </Grid.Row>
+            ))}
           <Grid.Row>
             <Grid.Column textAlign="center" width={4} />
             <Grid.Column width={12}>
