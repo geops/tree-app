@@ -11,7 +11,7 @@
     "lodash.intersection": "4.4.0",
     "lodash.union": "4.6.0",
     "lodash.xor": "4.5.0",
-    "mapbox-gl": "1.11.0",
+    "mapbox-gl": "1.11.1",
     "ol": "6.3.1",
     "proj4": "2.6.2",
     "prop-types": "15.7.2",
