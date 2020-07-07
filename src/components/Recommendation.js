@@ -70,7 +70,7 @@ function Recommendation({ sameAltitudinalZone }) {
                 <TreeTypeList className={styles.bold} codes={r[0]} />{' '}
                 <TreeTypeList codes={r[1]} />
               </div>
-              <div className={styles.yellow}>
+              <div className={`${styles.medium} ${styles.yellow}`}>
                 <TreeTypeList className={styles.bold} codes={r[2]} />{' '}
                 <TreeTypeList codes={r[3]} />
               </div>
@@ -86,11 +86,11 @@ function Recommendation({ sameAltitudinalZone }) {
               </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
-              <div className={styles.centered}>
+              <div className={styles.medium}>
                 <TreeTypeList className={styles.bold} codes={r[4]} />{' '}
                 <TreeTypeList codes={r[5]} />
               </div>
-              <div className={`${styles.small} ${styles.yellow}`}>
+              <div className={styles.yellow}>
                 <TreeTypeList className={styles.bold} codes={r[6]} />{' '}
                 <TreeTypeList codes={r[7]} />
               </div>
@@ -106,15 +106,13 @@ function Recommendation({ sameAltitudinalZone }) {
               </HelpModal>
             </Grid.Column>
             <Grid.Column width={11}>
-              <div className={styles.small}>
-                <TreeTypeList className={styles.bold} codes={r[8]} />
-              </div>
+              <TreeTypeList className={styles.bold} codes={r[8]} />
             </Grid.Column>
           </Grid.Row>
           {r[9].length > 0 ||
             (r[10].length > 0 && (
-              <Grid.Row>
-                <Grid.Column textAlign="center" width={4}>
+              <Grid.Row centered>
+                <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
                   <AttentionIcon fill="white" className={styles.icon} />
                 </Grid.Column>
                 <Grid.Column width={1}>
@@ -132,9 +130,11 @@ function Recommendation({ sameAltitudinalZone }) {
                   </HelpModal>
                 </Grid.Column>
                 <Grid.Column width={11}>
-                  <TreeTypeList className={styles.bold} codes={r[9]} />
-                  <div className={styles.yellow}>
-                    <TreeTypeList className={styles.bold} codes={r[10]} />
+                  <div className={styles.medium}>
+                    <TreeTypeList className={styles.bold} codes={r[9]} />
+                    <div className={styles.yellow}>
+                      <TreeTypeList className={styles.bold} codes={r[10]} />
+                    </div>
                   </div>
                 </Grid.Column>
               </Grid.Row>
