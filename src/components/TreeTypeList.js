@@ -15,7 +15,7 @@ function TreeTypeList({ className, codes }) {
             {treeInfo[i18n.language]}
             {(treeInfo.endangered || treeInfo.pioneer) && (
               <sup>
-                {(treeInfo.endangered && '+') || (treeInfo.pioneer && '*')}
+                {(treeInfo.endangered && '✝') || (treeInfo.pioneer && '*')}
               </sup>
             )}{' '}
           </>

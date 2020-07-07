@@ -1,5 +1,6 @@
 import ReduxQuerySync from 'redux-query-sync';
 
+import history from '../../history';
 import {
   setFormLocation,
   setMapLayer,
@@ -84,6 +85,7 @@ const querySync = ReduxQuerySync.enhancer({
     },
   },
   initialTruth: 'location',
+  history,
 });
 
 export default querySync;

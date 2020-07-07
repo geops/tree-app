@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Form, Header, Message } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
@@ -27,10 +27,9 @@ function LocationResult() {
   }));
 
   const history = useHistory();
-  const { search } = useLocation();
-  const selectForestType = (forestType) => {
-    dispatch(setFormLocation({ forestType }));
-    history.push(`/projection${search}`);
+  const selectForestType = async (forestType) => {
+    await dispatch(setFormLocation({ forestType }));
+    history.push(`/projection${history.location.search}`);
   };
   const hasMainGroup =
     !formLocation.groups || formLocation.groups.includes('main');

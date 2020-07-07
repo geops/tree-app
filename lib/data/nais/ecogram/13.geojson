@@ -109,7 +109,7 @@
         "id": 5,
         "z": "1",
         "rows": "2",
-        "offset": "-1",
+        "offsetY": "-1",
         "forestTypes": "4",
         "otherForestTypes": "4G"
       },
@@ -157,7 +157,8 @@
         "id": 7,
         "z": "1",
         "rows": "2",
-        "offset": "1",
+        "offsetX": "1",
+        "offsetY": "1",
         "forestTypes": "3",
         "otherForestTypes": "3G"
       },

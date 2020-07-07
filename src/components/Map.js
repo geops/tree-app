@@ -1,4 +1,4 @@
-import { defaults as controlDefaults } from 'ol/control';
+import { defaults as controlDefaults, ScaleLine } from 'ol/control';
 import { defaults as interactionDefaults } from 'ol/interaction';
 import React from 'react';
 
@@ -14,7 +14,9 @@ import MapView from './MapView';
 
 import styles from './Map.module.css';
 
-const controls = controlDefaults({ rotate: false });
+const scaleLine = new ScaleLine();
+
+const controls = controlDefaults({ rotate: false }).extend([scaleLine]);
 const interactions = interactionDefaults({
   altShiftDragRotate: false,
   pinchRotate: false,

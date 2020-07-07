@@ -13,6 +13,7 @@
   background-color: var(--primary-color-600) !important;
   padding: 0.5em 0 !important;
   height: 100%;
+  flex-direction: column;
 }
 .tabMenu :global(.item:first-child) {
   font-size: 1.2em;
@@ -25,8 +26,14 @@
 .tabMenu :global(.item:nth-child(3)) {
   background-color: var(--primary-color-800) !important;
 }
+.tabMenu :global(.item:nth-child(3) *) {
+  z-index: 1;
+}
 .tabMenu :global(.item:nth-child(4)) {
   background-color: var(--primary-color-900) !important;
+}
+.tabMenu :global(.item:nth-child(4) *) {
+  z-index: 2;
 }
 .tabMenu :global(.item.active) {
   background-color: var(--primary-color-500) !important;
@@ -62,7 +69,8 @@
 }
 
 .arrow svg {
-  height: 3em;
+  flex-shrink: 0;
+  height: 2em;
   fill: rgba(255, 255, 255, 0.7);
 }
 
@@ -76,13 +84,16 @@
   font-size: 1.2em;
 }
 
+.icons {
+  display: flex;
+}
 .icon {
   font-size: 0.8em;
   margin-right: 5px;
 }
 .iconToday {
   font-size: 0.8em;
-  margin: 14px 5px 0 0;
+  margin: 4px 5px 0 0;
 }
 
 .scenario {

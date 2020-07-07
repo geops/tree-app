@@ -227,7 +227,7 @@
         "id": 10,
         "z": "1",
         "rows": "3",
-        "offset": "0.2",
+        "offsetY": "0.2",
         "forestTypes": "60A",
         "otherForestTypes": "60ALä,60AG"
       },

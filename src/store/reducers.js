@@ -18,7 +18,7 @@ export const initialState = {
   locationResult: { options: {} },
   mapLayer: 'cb',
   mapLocation: {},
-  mapView: '9|910001|5947112',
+  mapView: '9|2660013|1185171',
   projectionMode: 'm',
   projectionOptions: {},
   projectionResult: {
@@ -62,8 +62,8 @@ function tree(state = initialState, action) {
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
     case SET_MAP_LOCATION: {
-      const { mapLocation } = action;
-      return { ...state, formLocation: {}, mapLocation, projectionMode: 'm' };
+      const mapLocation = { ...state.mapLocation, ...action.mapLocation };
+      return { ...state, mapLocation, projectionMode: 'm' };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };

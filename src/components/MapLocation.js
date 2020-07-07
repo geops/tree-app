@@ -1,10 +1,12 @@
 import { Point } from 'ol/geom';
+import { transform } from 'ol/proj';
 import { Style, Icon } from 'ol/style';
 import OLFeature from 'ol/Feature';
 import VectorSource from 'ol/source/Vector';
 import React, { useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { EPSG2056 } from '../map/projection';
 import { layers } from '../map/style.json';
 import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
@@ -30,7 +32,7 @@ iconFeature.setStyle(
     image: new Icon({
       anchor: [0.5, 1],
       src: mapPositionIcon,
-      scale: 0.05,
+      scale: 0.1,
     }),
   }),
 );
@@ -51,7 +53,12 @@ function MapLocation() {
       const location = features
         .filter((feature) => feature.properties && feature.properties.code)
         .reduce(featuresToLocation, {});
-      dispatch(setMapLocation({ ...location, coordinate }));
+      dispatch(
+        setMapLocation({
+          ...location,
+          coordinate: transform(coordinate, 'EPSG:3857', EPSG2056),
+        }),
+      );
     };
     map.getLayers().on('propertychange', () => {
       const mapboxLayer = map
@@ -59,7 +66,11 @@ function MapLocation() {
         .getArray()
         .find((layer) => layer instanceof Mapbox.Layer);
       if (mapboxLayer && mapLocation && mapLocation.coordinate) {
-        const { coordinate } = mapLocation;
+        const coordinate = transform(
+          mapLocation.coordinate,
+          EPSG2056,
+          'EPSG:3857',
+        );
         mapboxLayer.on('loadend', () => handleMapLocation({ coordinate }));
         map.getLayers().un('propertychange', this);
       }
