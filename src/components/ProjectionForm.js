@@ -151,7 +151,7 @@ function ProjectionForm() {
           </Message>
         )
       )}
-      {location.transition && (
+      {location.transition && options.forestType && (
         <Segment>
           <Dropdown
             className={styles.forestType}
