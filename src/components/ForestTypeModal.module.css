@@ -1,0 +1,12 @@
+.rare {
+  fill: #ddd;
+}
+
+.stroke {
+  fill: none;
+  stroke: #231f20;
+  stroke-width: 0.105729;
+}
+.thin {
+  stroke-width: 0.0704861;
+}

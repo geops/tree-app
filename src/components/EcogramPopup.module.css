@@ -1,0 +1,3 @@
+.popup:global(.ui.popup) {
+  z-index: 100;
+}
