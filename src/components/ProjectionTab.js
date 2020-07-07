@@ -7,6 +7,8 @@ import { list } from 'lib/src';
 
 import TreeTypeList from './TreeTypeList';
 
+import styles from './ProjectionTab.module.css';
+
 function ProjectionTab({ location }) {
   const [one, two, three] = useMemo(() => list(location), [location]);
   const { t } = useTranslation();
@@ -15,32 +17,26 @@ function ProjectionTab({ location }) {
       <Grid columns={2} padded verticalAlign="middle">
         <Grid.Row>
           <Grid.Column>
-            <Header inverted as="h5">
-              {t('projection.treeTypesOne')}
-            </Header>
+            <Header inverted>{t('projection.treeTypesOne')}</Header>
           </Grid.Column>
           <Grid.Column>
-            <TreeTypeList codes={one} />
+            <TreeTypeList codes={one} className={styles.medium} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column>
-            <Header inverted as="h5">
-              {t('projection.treeTypesTwo')}
-            </Header>
+            <Header inverted>{t('projection.treeTypesTwo')}</Header>
           </Grid.Column>
           <Grid.Column>
-            <TreeTypeList codes={two} />
+            <TreeTypeList codes={two} className={styles.medium} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
           <Grid.Column>
-            <Header inverted as="h5">
-              {t('projection.treeTypesThree')}
-            </Header>
+            <Header inverted>{t('projection.treeTypesThree')}</Header>
           </Grid.Column>
           <Grid.Column>
-            <TreeTypeList codes={three} />
+            <TreeTypeList codes={three} className={styles.medium} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
