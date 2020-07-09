@@ -4076,7 +4076,9 @@
       "24": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25a", "30": "25a", "80": "24" } }
+            "unknown": {
+              "unknown": { "20": "25a", "30": "25a", "70": "24", "80": "24" }
+            }
           }
         }
       },
@@ -4084,7 +4086,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25a", "30": "3L/4L", "80": "47Re" }
+              "unknown": {
+                "20": "25a",
+                "30": "3L/4L",
+                "70": "19a",
+                "80": "47Re"
+              }
             }
           }
         }
@@ -4092,56 +4099,73 @@
       "48": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25au", "30": "25au", "80": "48" } }
+            "unknown": {
+              "unknown": { "20": "25au", "30": "25au", "70": "24*", "80": "48" }
+            }
           }
         }
       },
       "51": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34a", "30": "3L/4L", "80": "51" } }
+            "unknown": {
+              "unknown": { "20": "34a", "30": "3L/4L", "70": "19L", "80": "51" }
+            }
           }
         }
       },
       "52": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "52Re" } }
+            "unknown": {
+              "unknown": { "20": "34b", "30": "14*", "70": "14*", "80": "52Re" }
+            }
           }
         }
       },
       "56": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "27", "30": "27", "80": "56" } }
+            "unknown": {
+              "unknown": { "20": "27", "30": "27", "70": "27", "80": "56" }
+            }
           }
         }
       },
       "68": {
         "unknown": {
+          "Nrml": { "unknown": { "unknown": { "70": "68" } } },
           "unknown": {
-            "unknown": { "unknown": { "20": "42r", "30": "42r", "80": "68" } }
+            "unknown": {
+              "unknown": { "20": "42r", "30": "42r", "70": "42r", "80": "68" }
+            }
           }
         }
       },
       "71": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "44", "30": "44", "80": "71" } }
+            "unknown": {
+              "unknown": { "20": "44", "30": "44", "70": "71", "80": "71" }
+            }
           }
         }
       },
       "AV": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25au", "30": "25au", "80": "AV" } }
+            "unknown": {
+              "unknown": { "20": "25au", "30": "25au", "70": "AV", "80": "AV" }
+            }
           }
         }
       },
       "23*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "42r", "30": "42B", "80": "23*" } }
+            "unknown": {
+              "unknown": { "20": "42r", "30": "42B", "70": "23*", "80": "23*" }
+            }
           }
         }
       },
@@ -4149,7 +4173,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "25au", "80": "24*" }
+              "unknown": {
+                "20": "25au",
+                "30": "25au",
+                "70": "24*",
+                "80": "24*"
+              }
             }
           }
         }
@@ -4157,35 +4186,45 @@
       "24G": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25a", "30": "25a", "80": "24G" } }
+            "unknown": {
+              "unknown": { "20": "25a", "30": "25a", "70": "24G", "80": "24G" }
+            }
           }
         }
       },
       "25a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25a", "30": "25a", "80": "47Re" } }
+            "unknown": {
+              "unknown": { "20": "25a", "30": "25a", "70": "25a", "80": "47Re" }
+            }
           }
         }
       },
       "26h": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "26", "30": "26", "80": "26h" } }
+            "unknown": {
+              "unknown": { "20": "26", "30": "26", "70": "26", "80": "26h" }
+            }
           }
         }
       },
       "27h": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "27", "30": "27", "80": "27h" } }
+            "unknown": {
+              "unknown": { "20": "27", "30": "27", "70": "27", "80": "27h" }
+            }
           }
         }
       },
       "32*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "27", "30": "27", "80": "32*" } }
+            "unknown": {
+              "unknown": { "20": "27", "30": "27", "70": "32*", "80": "32*" }
+            }
           }
         }
       },
@@ -4193,13 +4232,15 @@
         "unknown": {
           "<10F": { "unknown": { "unknown": { "20": "28", "30": "28" } } },
           "Nrml": { "unknown": { "unknown": { "20": "32C", "30": "32C" } } },
-          "unknown": { "unknown": { "unknown": { "80": "32V" } } }
+          "unknown": { "unknown": { "unknown": { "70": "32V", "80": "32V" } } }
         }
       },
       "33V": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "33m", "30": "33m", "80": "33V" } }
+            "unknown": {
+              "unknown": { "20": "33m", "30": "33m", "70": "19LP", "80": "33V" }
+            }
           }
         }
       },
@@ -4207,7 +4248,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "40Pt", "30": "40Pt", "80": "40P" }
+              "unknown": {
+                "20": "40Pt",
+                "30": "40Pt",
+                "70": "40P",
+                "80": "40P"
+              }
             }
           }
         }
@@ -4215,7 +4261,9 @@
       "43S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "43S", "30": "43S", "80": "43S" } }
+            "unknown": {
+              "unknown": { "20": "43S", "30": "43S", "70": "43S", "80": "43S" }
+            }
           }
         }
       },
@@ -4223,7 +4271,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "42V", "30": "42V", "80": "46MRe" }
+              "unknown": { "20": "42V", "30": "42V", "70": "3", "80": "46MRe" }
             }
           }
         }
@@ -4232,7 +4280,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "33a", "30": "3L/4L", "80": "47Re" }
+              "unknown": { "20": "33a", "30": "3L/4L", "70": "4", "80": "47Re" }
             }
           }
         }
@@ -4241,7 +4289,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "3L/4L", "80": "47DRe" }
+              "unknown": {
+                "20": "25au",
+                "30": "3L/4L",
+                "70": "19L",
+                "80": "47DRe"
+              }
             }
           }
         }
@@ -4250,7 +4303,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25as", "30": "25as", "80": "47H" }
+              "unknown": {
+                "20": "25as",
+                "30": "25as",
+                "70": "47H",
+                "80": "47H"
+              }
             }
           }
         }
@@ -4258,35 +4316,45 @@
       "47M": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34a", "30": "34a", "80": "47M" } }
+            "unknown": {
+              "unknown": { "20": "34a", "30": "34a", "70": "3", "80": "47M" }
+            }
           }
         }
       },
       "50*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25b", "30": "36", "80": "50*Re" } }
+            "unknown": {
+              "unknown": { "20": "25b", "30": "36", "70": "12*", "80": "50*Re" }
+            }
           }
         }
       },
       "50P": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "33m", "30": "33m", "80": "50P" } }
+            "unknown": {
+              "unknown": { "20": "33m", "30": "33m", "70": "19LP", "80": "50P" }
+            }
           }
         }
       },
       "52T": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "52T" } }
+            "unknown": {
+              "unknown": { "20": "34b", "30": "14*", "70": "14*", "80": "52T" }
+            }
           }
         }
       },
       "53*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "53Ta" } }
+            "unknown": {
+              "unknown": { "20": "34b", "30": "14*", "70": "14*", "80": "53Ta" }
+            }
           }
         }
       },
@@ -4294,13 +4362,15 @@
         "unknown": {
           "Dp": { "unknown": { "unknown": { "20": "42C", "30": "42C" } } },
           "Nrml": { "unknown": { "unknown": { "20": "42Q", "30": "42Q" } } },
-          "unknown": { "unknown": { "unknown": { "80": "55*" } } }
+          "unknown": { "unknown": { "unknown": { "70": "3s", "80": "55*" } } }
         }
       },
       "71G": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "44", "30": "44", "80": "71G" } }
+            "unknown": {
+              "unknown": { "20": "44", "30": "44", "70": "71G", "80": "71G" }
+            }
           }
         }
       },
@@ -4308,7 +4378,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "25au", "80": "24*G" }
+              "unknown": {
+                "20": "25au",
+                "30": "25au",
+                "70": "24*G",
+                "80": "24*G"
+              }
             }
           }
         }
@@ -4316,7 +4391,14 @@
       "32VG": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "43S", "30": "43S", "80": "32VG" } }
+            "unknown": {
+              "unknown": {
+                "20": "43S",
+                "30": "43S",
+                "70": "32VG",
+                "80": "32VG"
+              }
+            }
           }
         }
       },
@@ -4324,7 +4406,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "40Pt", "30": "40Pt", "80": "40PG" }
+              "unknown": {
+                "20": "40Pt",
+                "30": "40Pt",
+                "70": "40PG",
+                "80": "40PG"
+              }
             }
           }
         }
@@ -4333,7 +4420,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25as", "30": "25as", "80": "47HG" }
+              "unknown": {
+                "20": "25as",
+                "30": "25as",
+                "70": "47HG",
+                "80": "47HG"
+              }
             }
           }
         }
@@ -4341,7 +4433,9 @@
       "47MG": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34a", "30": "34a", "80": "47MG" } }
+            "unknown": {
+              "unknown": { "20": "34a", "30": "34a", "70": "3", "80": "47MG" }
+            }
           }
         }
       },
@@ -4349,7 +4443,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25a", "30": "3L/4L", "80": "47Re" }
+              "unknown": {
+                "20": "25a",
+                "30": "3L/4L",
+                "70": "19a",
+                "80": "47Re"
+              }
             }
           }
         }
@@ -4357,21 +4456,27 @@
       "52Re": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "52Re" } }
+            "unknown": {
+              "unknown": { "20": "34b", "30": "14*", "70": "14*", "80": "52Re" }
+            }
           }
         }
       },
       "53Ta": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "53Ta" } }
+            "unknown": {
+              "unknown": { "20": "34b", "30": "14*", "70": "14*", "80": "53Ta" }
+            }
           }
         }
       },
       "55*G": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "42Q", "30": "42Q", "80": "55*G" } }
+            "unknown": {
+              "unknown": { "20": "42Q", "30": "42Q", "70": "3s", "80": "55*G" }
+            }
           }
         }
       },
@@ -4379,7 +4484,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "25au", "80": "57Bl" }
+              "unknown": {
+                "20": "25au",
+                "30": "25au",
+                "70": "24*",
+                "80": "57Bl"
+              }
             }
           }
         }
@@ -4388,7 +4498,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25f", "30": "25au", "80": "24*Fe" }
+              "unknown": {
+                "20": "25f",
+                "30": "25au",
+                "70": "24*Fe",
+                "80": "24*Fe"
+              }
             }
           }
         }
@@ -4397,7 +4512,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "40PBlt", "30": "40PBlt", "80": "40PBl" }
+              "unknown": {
+                "20": "40PBlt",
+                "30": "40PBlt",
+                "70": "40PBl",
+                "80": "40PBl"
+              }
             }
           }
         }
@@ -4406,7 +4526,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "42V", "30": "42V", "80": "46MRe" }
+              "unknown": { "20": "42V", "30": "42V", "70": "3", "80": "46MRe" }
             }
           }
         }
@@ -4415,7 +4535,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "3L/4L", "80": "47DRe" }
+              "unknown": {
+                "20": "25au",
+                "30": "3L/4L",
+                "70": "19L",
+                "80": "47DRe"
+              }
             }
           }
         }
@@ -4423,14 +4548,18 @@
       "50*Re": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "25b", "30": "36", "80": "50*Re" } }
+            "unknown": {
+              "unknown": { "20": "25b", "30": "36", "70": "12*", "80": "50*Re" }
+            }
           }
         }
       },
       "53Lä": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "20": "34b", "30": "14*", "80": "53Lä" } }
+            "unknown": {
+              "unknown": { "20": "34b", "30": "14*", "70": "14*", "80": "53Lä" }
+            }
           }
         }
       },
@@ -4438,7 +4567,12 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "25au", "30": "25au", "80": "57BlG" }
+              "unknown": {
+                "20": "25au",
+                "30": "25au",
+                "70": "24*G",
+                "80": "57BlG"
+              }
             }
           }
         }
@@ -4447,7 +4581,7 @@
         "unknown": {
           "unknown": {
             "unknown": {
-              "unknown": { "20": "42Q", "30": "42Q", "80": "55*Lä" }
+              "unknown": { "20": "42Q", "30": "42Q", "70": "3s", "80": "55*Lä" }
             }
           }
         }
@@ -6994,68 +7128,6 @@
     }
   },
   "M": {
-    "10": {
-      "28": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "28" } } } }
-      },
-      "30": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "30" } } } }
-      },
-      "31": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "31" } } } }
-      },
-      "36": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "36" } } } }
-      },
-      "37": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "37" } } } }
-      },
-      "43": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "43" } } } }
-      },
-      "7a": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "7a" } } } }
-      },
-      "91": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "91" } } } }
-      },
-      "93": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "93" } } } }
-      },
-      "33a": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "33a" } } } }
-      },
-      "33b": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "33b" } } } }
-      },
-      "33m": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "33m" } } } }
-      },
-      "34a": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "34a" } } } }
-      },
-      "34b": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "34b" } } } }
-      },
-      "35S": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "35S" } } } }
-      },
-      "42C": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "42C" } } } }
-      },
-      "42V": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "42V" } } } }
-      },
-      "43*": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "43*" } } } }
-      },
-      "92a": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "92a" } } } }
-      },
-      "92z": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "10": "92z" } } } }
-      }
-    },
     "20": {
       "28": {
         "unknown": {
@@ -7175,108 +7247,6 @@
       "40Pt": {
         "unknown": {
           "unknown": { "unknown": { "unknown": { "20": "40P collin" } } }
-        }
-      }
-    },
-    "30": {
-      "28": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "28 hyp" } } }
-        }
-      },
-      "30": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "30 hyp" } } }
-        }
-      },
-      "31": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "31 hyp" } } }
-        }
-      },
-      "36": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "36 hyp" } } }
-        }
-      },
-      "37": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "37 hyp" } } }
-        }
-      },
-      "43": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "43 hyp" } } }
-        }
-      },
-      "7a": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "7a hyp" } } }
-        }
-      },
-      "91": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "91 hyp" } } }
-        }
-      },
-      "93": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "93 hyp" } } }
-        }
-      },
-      "33a": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "33a hyp" } } }
-        }
-      },
-      "33b": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "33b hyp" } } }
-        }
-      },
-      "33m": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "33m hyp" } } }
-        }
-      },
-      "34a": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "34a hyp" } } }
-        }
-      },
-      "34b": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "34b hyp" } } }
-        }
-      },
-      "35S": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "35S hyp" } } }
-        }
-      },
-      "42C": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "42C hyp" } } }
-        }
-      },
-      "42V": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "42V hyp" } } }
-        }
-      },
-      "43*": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "43* hyp" } } }
-        }
-      },
-      "92a": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "92a hyp" } } }
-        }
-      },
-      "92z": {
-        "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "92z hyp" } } }
         }
       }
     },
@@ -14069,6 +14039,460 @@
         }
       }
     },
+    "70": {
+      "3": {
+        "unknown": {
+          "Dp": {
+            "unknown": { "unknown": { "10": "34a", "20": "34a", "30": "34a" } }
+          },
+          "Nrml": {
+            "unknown": { "unknown": { "10": "42V", "20": "42V", "30": "42V" } }
+          }
+        }
+      },
+      "4": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "24": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25a", "20": "25a", "30": "25a" } }
+          }
+        }
+      },
+      "27": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "27", "20": "27", "30": "27" } }
+          }
+        }
+      },
+      "3G": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42V", "20": "42V", "30": "42V" } }
+          }
+        }
+      },
+      "3s": {
+        "unknown": {
+          "Dp": {
+            "unknown": { "unknown": { "10": "42C", "20": "42C", "30": "42C" } }
+          },
+          "Nrml": {
+            "unknown": { "unknown": { "10": "42Q", "20": "42Q", "30": "42Q" } }
+          }
+        }
+      },
+      "47": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42t", "20": "42t", "30": "42t" } }
+          }
+        }
+      },
+      "4G": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "67": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "38*", "20": "38*", "30": "38*" } }
+          }
+        }
+      },
+      "68": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42r", "20": "42r", "30": "42r" } }
+          }
+        }
+      },
+      "AV": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25au", "20": "25au", "30": "25au" }
+            }
+          }
+        }
+      },
+      "12*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "36", "20": "36", "30": "36" } }
+          }
+        }
+      },
+      "13*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "13*", "20": "13*", "30": "13*" } }
+          }
+        }
+      },
+      "14*": {
+        "unknown": {
+          "Rbl": {
+            "unknown": { "unknown": { "10": "25O", "20": "25O", "30": "25O" } }
+          },
+          "Nrml": {
+            "unknown": { "unknown": { "10": "37", "20": "37", "30": "37" } }
+          }
+        }
+      },
+      "16*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "38*", "20": "38*", "30": "38*" } }
+          }
+        }
+      },
+      "19L": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "19a": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "21L": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25au", "20": "25au", "30": "25au" }
+            }
+          }
+        }
+      },
+      "23*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42B", "20": "42B", "30": "42B" } }
+          }
+        }
+      },
+      "24*": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25au", "20": "25au", "30": "25au" }
+            }
+          }
+        }
+      },
+      "24G": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25a", "20": "25a", "30": "25a" } }
+          }
+        }
+      },
+      "27h": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "27", "20": "27", "30": "27" } }
+          }
+        }
+      },
+      "32*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "27", "20": "27", "30": "27" } }
+          }
+        }
+      },
+      "32V": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "32C", "20": "32C", "30": "32C" } }
+          }
+        }
+      },
+      "33V": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "3sG": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42Q", "20": "42Q", "30": "42Q" } }
+          }
+        }
+      },
+      "40P": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "40Pt", "20": "40Pt", "30": "40Pt" }
+            }
+          }
+        }
+      },
+      "42r": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42r", "20": "42r", "30": "42r" } }
+          }
+        }
+      },
+      "43S": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "43S", "20": "43S", "30": "43S" } }
+          }
+        }
+      },
+      "47*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "3LV", "20": "3LV", "30": "3LV" } }
+          }
+        }
+      },
+      "47H": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25as", "20": "25as", "30": "25as" }
+            }
+          }
+        }
+      },
+      "12*h": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "36", "20": "36", "30": "36" } }
+          }
+        }
+      },
+      "19LC": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "34b", "20": "34b", "30": "34b" } }
+          }
+        }
+      },
+      "19LP": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "33m", "20": "33m", "30": "33m" } }
+          }
+        }
+      },
+      "19aG": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "24*G": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25a", "20": "25a", "30": "25a" } }
+          }
+        }
+      },
+      "32VG": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "43S", "20": "43S", "30": "43S" } }
+          }
+        }
+      },
+      "24*Fe": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25f", "20": "25f", "30": "25f" } }
+          }
+        }
+      },
+      "3*/4*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "3LV", "20": "3LV", "30": "3LV" } }
+          }
+        }
+      },
+      "40PBl": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25as", "20": "25as", "30": "25as" }
+            }
+          }
+        }
+      },
+      "47*Lä": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "3LV", "20": "3LV", "30": "3LV" } }
+          }
+        }
+      }
+    },
+    "80": {
+      "24": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24" } } } }
+      },
+      "47": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19a" } } } }
+      },
+      "48": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*" } } } }
+      },
+      "52": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "14*" } } } }
+      },
+      "67": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "16*" } } } }
+      },
+      "68": {
+        "unknown": {
+          "Nrml": { "unknown": { "unknown": { "70": "68" } } },
+          "Wrm_Rdt": { "unknown": { "unknown": { "70": "42r" } } }
+        }
+      },
+      "69": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "14*" } } } }
+      },
+      "70": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "68" } } } }
+      },
+      "AV": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "AV" } } } }
+      },
+      "21*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19LP" } } } }
+      },
+      "21L": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "21L" } } } }
+      },
+      "23*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "23*" } } } }
+      },
+      "24*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*" } } } }
+      },
+      "24G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24G" } } } }
+      },
+      "27h": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "27" } } } }
+      },
+      "32*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "32*" } } } }
+      },
+      "32V": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "32V" } } } }
+      },
+      "40P": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "40P" } } } }
+      },
+      "43S": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "43S" } } } }
+      },
+      "47*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "4" } } } }
+      },
+      "47D": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19L" } } } }
+      },
+      "47H": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "47H" } } } }
+      },
+      "47M": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3" } } } }
+      },
+      "50*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "12*" } } } }
+      },
+      "55*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3s" } } } }
+      },
+      "67G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "16*" } } } }
+      },
+      "69G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "14*" } } } }
+      },
+      "70G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "68" } } } }
+      },
+      "21*G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19LP" } } } }
+      },
+      "24*G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*G" } } } }
+      },
+      "32VG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "32VG" } } } }
+      },
+      "47*G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "4G" } } } }
+      },
+      "47DG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19L" } } } }
+      },
+      "47HG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "47H" } } } }
+      },
+      "47MG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3G" } } } }
+      },
+      "57Bl": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*" } } } }
+      },
+      "24*Fe": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "70": "24*Fe" } } }
+        }
+      },
+      "40PBl": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "70": "40PBl" } } }
+        }
+      },
+      "57BlG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*G" } } } }
+      },
+      "47*Lä": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "4" } } } }
+      },
+      "55*Lä": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3s" } } } }
+      }
+    },
     "90": {
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -14929,6 +15353,460 @@
         }
       }
     },
+    "70": {
+      "3": {
+        "unknown": {
+          "Dp": {
+            "unknown": { "unknown": { "10": "34a", "20": "34a", "30": "34a" } }
+          },
+          "Nrml": {
+            "unknown": { "unknown": { "10": "42V", "20": "42V", "30": "42V" } }
+          }
+        }
+      },
+      "4": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "24": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25a", "20": "25a", "30": "25a" } }
+          }
+        }
+      },
+      "27": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "27", "20": "27", "30": "27" } }
+          }
+        }
+      },
+      "3G": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42V", "20": "42V", "30": "42V" } }
+          }
+        }
+      },
+      "3s": {
+        "unknown": {
+          "Dp": {
+            "unknown": { "unknown": { "10": "42C", "20": "42C", "30": "42C" } }
+          },
+          "Nrml": {
+            "unknown": { "unknown": { "10": "42Q", "20": "42Q", "30": "42Q" } }
+          }
+        }
+      },
+      "47": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42t", "20": "42t", "30": "42t" } }
+          }
+        }
+      },
+      "4G": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "67": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "38*", "20": "38*", "30": "38*" } }
+          }
+        }
+      },
+      "68": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42r", "20": "42r", "30": "42r" } }
+          }
+        }
+      },
+      "AV": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25au", "20": "25au", "30": "25au" }
+            }
+          }
+        }
+      },
+      "12*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "36", "20": "36", "30": "36" } }
+          }
+        }
+      },
+      "13*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "13*", "20": "13*", "30": "13*" } }
+          }
+        }
+      },
+      "14*": {
+        "unknown": {
+          "Rbl": {
+            "unknown": { "unknown": { "10": "25O", "20": "25O", "30": "25O" } }
+          },
+          "Nrml": {
+            "unknown": { "unknown": { "10": "37", "20": "37", "30": "37" } }
+          }
+        }
+      },
+      "16*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "38*", "20": "38*", "30": "38*" } }
+          }
+        }
+      },
+      "19L": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "19a": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "21L": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25au", "20": "25au", "30": "25au" }
+            }
+          }
+        }
+      },
+      "23*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42B", "20": "42B", "30": "42B" } }
+          }
+        }
+      },
+      "24*": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25au", "20": "25au", "30": "25au" }
+            }
+          }
+        }
+      },
+      "24G": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25a", "20": "25a", "30": "25a" } }
+          }
+        }
+      },
+      "27h": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "27", "20": "27", "30": "27" } }
+          }
+        }
+      },
+      "32*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "27", "20": "27", "30": "27" } }
+          }
+        }
+      },
+      "32V": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "32C", "20": "32C", "30": "32C" } }
+          }
+        }
+      },
+      "33V": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "3sG": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42Q", "20": "42Q", "30": "42Q" } }
+          }
+        }
+      },
+      "40P": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "40Pt", "20": "40Pt", "30": "40Pt" }
+            }
+          }
+        }
+      },
+      "42r": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "42r", "20": "42r", "30": "42r" } }
+          }
+        }
+      },
+      "43S": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "43S", "20": "43S", "30": "43S" } }
+          }
+        }
+      },
+      "47*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "3LV", "20": "3LV", "30": "3LV" } }
+          }
+        }
+      },
+      "47H": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25as", "20": "25as", "30": "25as" }
+            }
+          }
+        }
+      },
+      "12*h": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "36", "20": "36", "30": "36" } }
+          }
+        }
+      },
+      "19LC": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "34b", "20": "34b", "30": "34b" } }
+          }
+        }
+      },
+      "19LP": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "33m", "20": "33m", "30": "33m" } }
+          }
+        }
+      },
+      "19aG": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "3L/4L", "20": "3L/4L", "30": "3L/4L" }
+            }
+          }
+        }
+      },
+      "24*G": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25a", "20": "25a", "30": "25a" } }
+          }
+        }
+      },
+      "32VG": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "43S", "20": "43S", "30": "43S" } }
+          }
+        }
+      },
+      "24*Fe": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "25f", "20": "25f", "30": "25f" } }
+          }
+        }
+      },
+      "3*/4*": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "3LV", "20": "3LV", "30": "3LV" } }
+          }
+        }
+      },
+      "40PBl": {
+        "unknown": {
+          "unknown": {
+            "unknown": {
+              "unknown": { "10": "25as", "20": "25as", "30": "25as" }
+            }
+          }
+        }
+      },
+      "47*Lä": {
+        "unknown": {
+          "unknown": {
+            "unknown": { "unknown": { "10": "3LV", "20": "3LV", "30": "3LV" } }
+          }
+        }
+      }
+    },
+    "80": {
+      "24": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24" } } } }
+      },
+      "47": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19a" } } } }
+      },
+      "48": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*" } } } }
+      },
+      "52": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "14*" } } } }
+      },
+      "67": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "16*" } } } }
+      },
+      "68": {
+        "unknown": {
+          "Nrml": { "unknown": { "unknown": { "70": "68" } } },
+          "Wrm_Rdt": { "unknown": { "unknown": { "70": "42r" } } }
+        }
+      },
+      "69": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "14*" } } } }
+      },
+      "70": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "68" } } } }
+      },
+      "AV": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "AV" } } } }
+      },
+      "21*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19LP" } } } }
+      },
+      "21L": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "21L" } } } }
+      },
+      "23*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "23*" } } } }
+      },
+      "24*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*" } } } }
+      },
+      "24G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24G" } } } }
+      },
+      "27h": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "27" } } } }
+      },
+      "32*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "32*" } } } }
+      },
+      "32V": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "32V" } } } }
+      },
+      "40P": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "40P" } } } }
+      },
+      "43S": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "43S" } } } }
+      },
+      "47*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "4" } } } }
+      },
+      "47D": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19L" } } } }
+      },
+      "47H": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "47H" } } } }
+      },
+      "47M": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3" } } } }
+      },
+      "50*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "12*" } } } }
+      },
+      "55*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3s" } } } }
+      },
+      "67G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "16*" } } } }
+      },
+      "69G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "14*" } } } }
+      },
+      "70G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "68" } } } }
+      },
+      "21*G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19LP" } } } }
+      },
+      "24*G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*G" } } } }
+      },
+      "32VG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "32VG" } } } }
+      },
+      "47*G": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "4G" } } } }
+      },
+      "47DG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "19L" } } } }
+      },
+      "47HG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "47H" } } } }
+      },
+      "47MG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3G" } } } }
+      },
+      "57Bl": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*" } } } }
+      },
+      "24*Fe": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "70": "24*Fe" } } }
+        }
+      },
+      "40PBl": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "70": "40PBl" } } }
+        }
+      },
+      "57BlG": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "24*G" } } } }
+      },
+      "47*Lä": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "4" } } } }
+      },
+      "55*Lä": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "70": "3s" } } } }
+      }
+    },
     "90": {
       "58": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "55*" } } } }
@@ -15165,6 +16043,172 @@
       },
       "57VLä": {
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "47" } } } }
+      }
+    }
+  },
+  "Me": {
+    "10": {
+      "28": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "28" } } } }
+      },
+      "30": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "30" } } } }
+      },
+      "31": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "31" } } } }
+      },
+      "36": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "36" } } } }
+      },
+      "37": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "37" } } } }
+      },
+      "43": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "43" } } } }
+      },
+      "7a": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "7a" } } } }
+      },
+      "91": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "91" } } } }
+      },
+      "93": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "93" } } } }
+      },
+      "33a": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "33a" } } } }
+      },
+      "33b": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "33b" } } } }
+      },
+      "33m": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "33m" } } } }
+      },
+      "34a": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "34a" } } } }
+      },
+      "34b": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "34b" } } } }
+      },
+      "35S": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "35S" } } } }
+      },
+      "42C": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "42C" } } } }
+      },
+      "42V": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "42V" } } } }
+      },
+      "43*": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "43*" } } } }
+      },
+      "92a": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "92a" } } } }
+      },
+      "92z": {
+        "unknown": { "unknown": { "unknown": { "unknown": { "10": "92z" } } } }
+      }
+    },
+    "30": {
+      "28": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "28 hyp" } } }
+        }
+      },
+      "30": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "30 hyp" } } }
+        }
+      },
+      "31": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "31 hyp" } } }
+        }
+      },
+      "36": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "36 hyp" } } }
+        }
+      },
+      "37": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "37 hyp" } } }
+        }
+      },
+      "43": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "43 hyp" } } }
+        }
+      },
+      "7a": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "7a hyp" } } }
+        }
+      },
+      "91": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "91 hyp" } } }
+        }
+      },
+      "93": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "93 hyp" } } }
+        }
+      },
+      "33a": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "33a hyp" } } }
+        }
+      },
+      "33b": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "33b hyp" } } }
+        }
+      },
+      "33m": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "33m hyp" } } }
+        }
+      },
+      "34a": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "34a hyp" } } }
+        }
+      },
+      "34b": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "34b hyp" } } }
+        }
+      },
+      "35S": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "35S hyp" } } }
+        }
+      },
+      "42C": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "42C hyp" } } }
+        }
+      },
+      "42V": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "42V hyp" } } }
+        }
+      },
+      "43*": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "43* hyp" } } }
+        }
+      },
+      "92a": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "92a hyp" } } }
+        }
+      },
+      "92z": {
+        "unknown": {
+          "unknown": { "unknown": { "unknown": { "10": "92z hyp" } } }
+        }
       }
     }
   }

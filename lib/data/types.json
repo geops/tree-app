@@ -22655,6 +22655,24 @@
     },
     {
       "de": null,
+      "code": "7a med",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
       "code": "7a collin",
       "group": {
         "main": false,
@@ -22674,24 +22692,6 @@
     {
       "de": null,
       "code": "7a hyp",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "7a med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -24166,7 +24166,7 @@
     },
     {
       "de": null,
-      "code": "13* med",
+      "code": "13* hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -24184,7 +24184,7 @@
     },
     {
       "de": null,
-      "code": "13* hyp",
+      "code": "13* med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -25451,7 +25451,7 @@
     },
     {
       "de": null,
-      "code": "22* med",
+      "code": "22* hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -25469,7 +25469,7 @@
     },
     {
       "de": null,
-      "code": "22* hyp",
+      "code": "22* med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26322,7 +26322,7 @@
     },
     {
       "de": null,
-      "code": "25as hyp",
+      "code": "25as med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26340,7 +26340,7 @@
     },
     {
       "de": null,
-      "code": "25as med",
+      "code": "25as hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26398,7 +26398,7 @@
     },
     {
       "de": null,
-      "code": "25b med",
+      "code": "25b hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26416,7 +26416,7 @@
     },
     {
       "de": null,
-      "code": "25b hyp",
+      "code": "25b med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26534,7 +26534,7 @@
     },
     {
       "de": null,
-      "code": "25f med",
+      "code": "25f hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26552,7 +26552,7 @@
     },
     {
       "de": null,
-      "code": "25f hyp",
+      "code": "25f med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26610,7 +26610,7 @@
     },
     {
       "de": null,
-      "code": "25au hyp",
+      "code": "25au med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26628,7 +26628,7 @@
     },
     {
       "de": null,
-      "code": "25au med",
+      "code": "25au hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -26968,24 +26968,6 @@
     },
     {
       "de": null,
-      "code": "27 hyp",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "27 collin",
       "group": {
         "main": false,
@@ -27005,6 +26987,24 @@
     {
       "de": null,
       "code": "27 med",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
+      "code": "27 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27276,7 +27276,7 @@
     },
     {
       "de": null,
-      "code": "28 hyp",
+      "code": "28 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27294,7 +27294,7 @@
     },
     {
       "de": null,
-      "code": "28 collin",
+      "code": "28 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27569,24 +27569,6 @@
     },
     {
       "de": null,
-      "code": "30 collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "30 med",
       "group": {
         "main": false,
@@ -27606,6 +27588,24 @@
     {
       "de": null,
       "code": "30 hyp",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
+      "code": "30 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27669,6 +27669,24 @@
     },
     {
       "de": null,
+      "code": "31 collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
       "code": "31 med",
       "group": {
         "main": false,
@@ -27688,24 +27706,6 @@
     {
       "de": null,
       "code": "31 hyp",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "31 collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27792,7 +27792,7 @@
     },
     {
       "de": null,
-      "code": "32C hyp",
+      "code": "32C collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -27810,7 +27810,7 @@
     },
     {
       "de": null,
-      "code": "32C collin",
+      "code": "32C hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28074,7 +28074,7 @@
     },
     {
       "de": null,
-      "code": "33a med",
+      "code": "33a hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28092,7 +28092,7 @@
     },
     {
       "de": null,
-      "code": "33a hyp",
+      "code": "33a med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28390,7 +28390,7 @@
     },
     {
       "de": null,
-      "code": "34b hyp",
+      "code": "34b med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28408,7 +28408,7 @@
     },
     {
       "de": null,
-      "code": "34b med",
+      "code": "34b hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28676,7 +28676,7 @@
     },
     {
       "de": null,
-      "code": "35S med",
+      "code": "35S hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28694,7 +28694,7 @@
     },
     {
       "de": null,
-      "code": "35S hyp",
+      "code": "35S med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28793,7 +28793,7 @@
     },
     {
       "de": null,
-      "code": "36 hyp",
+      "code": "36 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -28811,7 +28811,7 @@
     },
     {
       "de": null,
-      "code": "36 med",
+      "code": "36 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29019,7 +29019,7 @@
     },
     {
       "de": null,
-      "code": "38* med",
+      "code": "38* hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29037,7 +29037,7 @@
     },
     {
       "de": null,
-      "code": "38* hyp",
+      "code": "38* med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29204,24 +29204,6 @@
     },
     {
       "de": null,
-      "code": "40P collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "40P med",
       "group": {
         "main": false,
@@ -29241,6 +29223,24 @@
     {
       "de": null,
       "code": "40P hyp",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
+      "code": "40P collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29318,7 +29318,7 @@
     },
     {
       "de": null,
-      "code": "40PBl med",
+      "code": "40PBl collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29336,7 +29336,7 @@
     },
     {
       "de": null,
-      "code": "40PBl collin",
+      "code": "40PBl med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29720,7 +29720,7 @@
     },
     {
       "de": null,
-      "code": "42Q med",
+      "code": "42Q hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29738,7 +29738,7 @@
     },
     {
       "de": null,
-      "code": "42Q hyp",
+      "code": "42Q med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29868,7 +29868,7 @@
     },
     {
       "de": null,
-      "code": "42r hyp",
+      "code": "42r med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -29886,7 +29886,7 @@
     },
     {
       "de": null,
-      "code": "42r med",
+      "code": "42r hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30016,7 +30016,7 @@
     },
     {
       "de": null,
-      "code": "42t hyp",
+      "code": "42t med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30034,7 +30034,7 @@
     },
     {
       "de": null,
-      "code": "42t med",
+      "code": "42t hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30100,7 +30100,7 @@
     },
     {
       "de": null,
-      "code": "43 med",
+      "code": "43 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30136,7 +30136,7 @@
     },
     {
       "de": null,
-      "code": "43 hyp",
+      "code": "43 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30215,7 +30215,7 @@
     },
     {
       "de": null,
-      "code": "43S hyp",
+      "code": "43S collin",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30233,7 +30233,7 @@
     },
     {
       "de": null,
-      "code": "43S collin",
+      "code": "43S hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30308,7 +30308,7 @@
     },
     {
       "de": null,
-      "code": "43* med",
+      "code": "43* hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30326,7 +30326,7 @@
     },
     {
       "de": null,
-      "code": "43* hyp",
+      "code": "43* med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -30393,6 +30393,24 @@
     },
     {
       "de": null,
+      "code": "44 hyp",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
+      "de": null,
       "code": "44 collin",
       "group": {
         "main": false,
@@ -30412,24 +30430,6 @@
     {
       "de": null,
       "code": "44 med",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "44 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -31996,6 +31996,24 @@
       ]
     },
     {
+      "de": null,
+      "code": "53 collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
       "de": "Zwergbuchs-Fichtenwald mit Lärche",
       "code": "53Lä",
       "group": {
@@ -32040,24 +32058,6 @@
         ["90", "2a"],
         ["90", "4"]
       ]
-    },
-    {
-      "de": null,
-      "code": "53 collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
     },
     {
       "de": "Zwergbuchs-Fichtenwald mit Tanne",
@@ -32568,6 +32568,24 @@
       ]
     },
     {
+      "de": null,
+      "code": "55* collin",
+      "group": {
+        "main": false,
+        "pioneer": false,
+        "special": false,
+        "volatile": false,
+        "riverside": false
+      },
+      "slope": null,
+      "aspect": null,
+      "height": null,
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
+      "altitudinalZoneForestEcoregion": null
+    },
+    {
       "de": "Schneesimsen-Fi-Wald mit Lärche",
       "code": "55*Lä",
       "group": {
@@ -32598,24 +32616,6 @@
         ["80", "4"],
         ["80", "5a"]
       ]
-    },
-    {
-      "de": null,
-      "code": "55* collin",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
     },
     {
       "de": "Schneesimsen-Fi-Wald mit Tanne",
@@ -34670,7 +34670,7 @@
     },
     {
       "de": null,
-      "code": "66 hyp",
+      "code": "66 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -34688,7 +34688,7 @@
     },
     {
       "de": null,
-      "code": "66 med",
+      "code": "66 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35193,7 +35193,7 @@
     },
     {
       "de": null,
-      "code": "91 med",
+      "code": "91 hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35211,7 +35211,7 @@
     },
     {
       "de": null,
-      "code": "91 hyp",
+      "code": "91 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35351,7 +35351,7 @@
     },
     {
       "de": null,
-      "code": "92z hyp",
+      "code": "92z med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35369,7 +35369,7 @@
     },
     {
       "de": null,
-      "code": "92z med",
+      "code": "92z hyp",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35426,24 +35426,6 @@
     },
     {
       "de": null,
-      "code": "93 med",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [null, null],
-      "reliefType": [null, null, null, null, null],
-      "geomorphology": [null, null, null, null, null, null, null],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "93 hyp",
       "group": {
         "main": false,
@@ -35462,7 +35444,7 @@
     },
     {
       "de": null,
-      "code": "1G",
+      "code": "93 med",
       "group": {
         "main": false,
         "pioneer": false,
@@ -35473,27 +35455,9 @@
       "slope": null,
       "aspect": null,
       "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "1hG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
+      "carbonate": [null, null],
+      "reliefType": [null, null, null, null, null],
+      "geomorphology": [null, null, null, null, null, null, null],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -35534,60 +35498,6 @@
     },
     {
       "de": null,
-      "code": "3LVG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "3L/4LG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "3*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "4G",
       "group": {
         "main": true,
@@ -35601,438 +35511,6 @@
       "height": [10, 10],
       "carbonate": [false, false],
       "reliefType": [true, true, false, true, true],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "4*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "6G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "6FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "7SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "7SFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "7aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "7aFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "7*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "8SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "8SFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "8aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "8aFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "8dG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "8dFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "8*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "9aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "9aFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "9wG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "10aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "10wG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "11G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "11FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "12SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "12SFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
@@ -36056,168 +35534,6 @@
     },
     {
       "de": null,
-      "code": "12aFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "12eG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "12wG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "12*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "12*hG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "13aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "13aFeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "13eG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "13ehG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "13hG",
       "group": {
         "main": true,
@@ -36236,24 +35552,6 @@
     },
     {
       "de": null,
-      "code": "13*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "14G",
       "group": {
         "main": true,
@@ -36268,78 +35566,6 @@
       "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, false, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "14*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "15G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "16G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "16*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -36375,24 +35601,6 @@
       "height": [10, 10],
       "carbonate": [false, true],
       "reliefType": [true, true, true, true, true],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "18FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
       "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
@@ -36488,60 +35696,6 @@
     },
     {
       "de": null,
-      "code": "19FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "19LG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "19LPG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "19aG",
       "group": {
         "main": true,
@@ -36560,24 +35714,6 @@
     },
     {
       "de": null,
-      "code": "19fG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "20G",
       "group": {
         "main": true,
@@ -36592,24 +35728,6 @@
       "carbonate": [false, true],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "20FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -36650,24 +35768,6 @@
     },
     {
       "de": null,
-      "code": "21LG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "21*G",
       "group": {
         "main": true,
@@ -36686,96 +35786,6 @@
     },
     {
       "de": null,
-      "code": "22G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "22FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "22AG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "22CG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "22*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "23G",
       "group": {
         "main": false,
@@ -36790,42 +35800,6 @@
       "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, false, true, true, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "23FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "23*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -36866,24 +35840,6 @@
     },
     {
       "de": null,
-      "code": "24*FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "25G",
       "group": {
         "main": false,
@@ -36898,168 +35854,6 @@
       "carbonate": [true, true],
       "reliefType": [true, true, false, false, true],
       "geomorphology": [true, true, true, true, true, true, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25OG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25BG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25eG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25fG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25. Aug",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "25*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "26G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -37100,24 +35894,6 @@
     },
     {
       "de": null,
-      "code": "27OG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "27hG",
       "group": {
         "main": true,
@@ -37132,186 +35908,6 @@
       "carbonate": [true, true],
       "reliefType": [true, true, false, false, false],
       "geomorphology": [false, false, false, false, false, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "27*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "28G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "29G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "29AG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "29CG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "29hG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "30G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "31G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "32CG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "32SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -37334,366 +35930,6 @@
     },
     {
       "de": null,
-      "code": "32*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "33VG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "33aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "33bG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "33mG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "34aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "34bG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "34*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "35G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "35MG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "35QG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "35SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "35AG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "36G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "37G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "38G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "38SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "38*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "39G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "39*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "40PG",
       "group": {
         "main": false,
@@ -37708,366 +35944,6 @@
       "carbonate": [false, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, false, true, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "40PBlG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "40*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "41G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "41*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "42CG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "42QG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "42VG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "42rG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "42BG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "42tG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "43G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Weidengebüsch",
-      "code": "43SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "43*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "44G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "45G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "46G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "46MG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "46tG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "46*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "47G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -38162,42 +36038,6 @@
     },
     {
       "de": null,
-      "code": "49G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "49*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "50G",
       "group": {
         "main": true,
@@ -38212,60 +36052,6 @@
       "carbonate": [false, false],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "50FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "50PG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "50*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -38288,78 +36074,6 @@
     },
     {
       "de": null,
-      "code": "51FeG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "51CG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "52G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "52TG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "53G",
       "group": {
         "main": true,
@@ -38374,24 +36088,6 @@
       "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "53TaG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -38414,42 +36110,6 @@
     },
     {
       "de": null,
-      "code": "54G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "55G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "55*G",
       "group": {
         "main": true,
@@ -38464,24 +36124,6 @@
       "carbonate": [false, false],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, false, false, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "56G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -38522,42 +36164,6 @@
     },
     {
       "de": null,
-      "code": "57MG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "57SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "57VG",
       "group": {
         "main": true,
@@ -38590,24 +36196,6 @@
       "carbonate": [false, false],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, false, true, false, false, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "58CG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -38666,24 +36254,6 @@
     },
     {
       "de": null,
-      "code": "59CG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "59EG",
       "group": {
         "main": true,
@@ -38698,60 +36268,6 @@
       "carbonate": [true, true],
       "reliefType": [true, true, true, true, true],
       "geomorphology": [true, true, true, true, true, true, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "59JG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "59LG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "59SG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -38774,42 +36290,6 @@
     },
     {
       "de": null,
-      "code": "59*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "60G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
       "code": "60AG",
       "group": {
         "main": true,
@@ -38824,42 +36304,6 @@
       "carbonate": [false, false],
       "reliefType": [true, true, false, true, true],
       "geomorphology": [true, false, true, true, false, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "60EG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "60*TaG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -38882,97 +36326,7 @@
     },
     {
       "de": null,
-      "code": "61G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "62G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "65G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "65*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "66G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "66PMG",
+      "code": "60*TaG",
       "group": {
         "main": false,
         "pioneer": false,
@@ -39004,42 +36358,6 @@
       "carbonate": [true, true],
       "reliefType": [true, false, true, true, true],
       "geomorphology": [true, true, true, true, true, false, true],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "68G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "68*G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
       "altitudinalZoneForestEcoregion": null
     },
     {
@@ -39115,78 +36433,6 @@
       "altitudinalZoneForestEcoregion": null
     },
     {
-      "de": null,
-      "code": "91G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "92aG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "92zG",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "93G",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
       "de": "Grünerlengebüsch",
       "code": "AV",
       "group": {
@@ -39243,384 +36489,6 @@
         ["90", "5a"],
         ["90", "5b"]
       ]
-    },
-    {
-      "de": "Gebüschreiche Vorwaldgesellschaft",
-      "code": "Samb",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Moor-Weidengebüsch",
-      "code": "Salci",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Gebirgs-Weidengebüsch",
-      "code": "Salwa",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Besenginstergebüsch",
-      "code": "Saro",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Trockenwarmes Gebüsch",
-      "code": "Berb",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Mesophiles Gebüsch",
-      "code": "Prun",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Brombeergestrüpp",
-      "code": "Rubi",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "Rhod",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": null,
-      "code": "Junip",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Nicht-Wald",
-      "code": "u",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Siedlung",
-      "code": "u-1",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Acker",
-      "code": "u-2",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Fettwiese",
-      "code": "u-3",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Fettwiese/Bäume",
-      "code": "u-4",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Weide",
-      "code": "u-5",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Wytweide",
-      "code": "u-6",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Hochstauden",
-      "code": "u-7",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Magerwiese",
-      "code": "u-8",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Feuchtgebiet",
-      "code": "u-9",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Gewässer",
-      "code": "u-10",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
-    },
-    {
-      "de": "Fels/Schutt",
-      "code": "u-11",
-      "group": {
-        "main": false,
-        "pioneer": false,
-        "special": false,
-        "volatile": false,
-        "riverside": false
-      },
-      "slope": null,
-      "aspect": null,
-      "height": null,
-      "carbonate": [false, false],
-      "reliefType": [false, false, false, false, false],
-      "geomorphology": [false, false, false, false, false, false, false],
-      "altitudinalZoneForestEcoregion": null
     }
   ],
   "silverFirArea": [
@@ -39637,7 +36505,7 @@
     { "de": "submontan", "id": 5, "code": "40" },
     { "de": "untermontan", "id": 6, "code": "50" },
     { "de": "obermontan", "id": 7, "code": "60" },
-    { "de": "ober- & untermontan", "id": 8, "code": "70" },
+    { "de": "unter- & obermontan", "id": 8, "code": "70" },
     { "de": "hochmontan", "id": 9, "code": "80" },
     { "de": "subalpin", "id": 10, "code": "90" },
     { "de": "obersubalpin", "id": 11, "code": "100" }
