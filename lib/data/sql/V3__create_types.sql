@@ -223,7 +223,7 @@ VALUES ('obermontan',
 
 
 INSERT INTO altitudinal_zone_meta (projection, nais, code)
-VALUES ('ober- & untermontan',
+VALUES ('unter- & obermontan',
         'UMOM',
         '70');
 
