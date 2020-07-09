@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tree-app-tiles-v1';
+const CACHE_NAME = 'tree-app-tiles-v2';
 const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
 
 // eslint-disable-next-line no-restricted-globals
