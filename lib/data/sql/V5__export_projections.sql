@@ -204,9 +204,7 @@ COPY
          (SELECT json_agg(jsonb_build_object('code', subcode, 'de', region_de)) AS
           values
           FROM
-              (SELECT 'Me' AS subcode,
-                      'Mendrisiotto' AS region_de
-               UNION SELECT subcode,
+              (SELECT subcode,
                             min(region_de) AS region_de
                FROM forest_ecoregions
                GROUP BY subcode

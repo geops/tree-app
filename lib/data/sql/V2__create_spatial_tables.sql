@@ -102,7 +102,8 @@ CREATE TABLE "forest_ecoregions" (gid serial, "region_de" varchar(50),
                                                                                               "code" varchar(50),
                                                                                                      "subcode" varchar(50),
                                                                                                                "code_bu" int4,
-                                                                                                               "code_fi" int4);
+                                                                                                               "code_fi" int4,
+                                                                                                               "shape_leng" numeric, "shape_area" numeric);
 
 
 ALTER TABLE "forest_ecoregions" ADD PRIMARY KEY (gid);
@@ -124,7 +125,8 @@ CREATE TABLE "silver_fir_areas" (gid serial, "areal_de" varchar(50),
                                                         "areal_fr" varchar(50),
                                                                    "areal_it" varchar(50),
                                                                               "areal_en" varchar(50),
-                                                                                         "code_ta" int4);
+                                                                                         "code_ta" int4,
+                                                                                         "shape_leng" numeric, "shape_area" numeric);
 
 
 ALTER TABLE "silver_fir_areas" ADD PRIMARY KEY (gid);
