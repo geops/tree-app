@@ -340,6 +340,7 @@ sort,
        END AS relief_type_steep
 FROM nat_naistyp_mstr mstr
 LEFT JOIN nat_naistyp typ USING (naistyp_c)
+WHERE naistyp_s20 = 'Y'
 UNION
 SELECT trim(BOTH
             FROM naistyp) AS code,
