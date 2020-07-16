@@ -10378,10 +10378,10 @@ recursive-readdir@2.2.2:
   dependencies:
     minimatch "3.0.4"
 
-redux-query-sync@0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/redux-query-sync/-/redux-query-sync-0.1.9.tgz#a680d77e462fc13f0e9942fd0450172f88438614"
-  integrity sha512-vmoIB4QLC4Jpj1IelovFB0yxrakKU06oMghacS75bBfywxb/Pe3jT05jHbSs/rZV70XKu/rc4/gzqIEeWkthRw==
+redux-query-sync@0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/redux-query-sync/-/redux-query-sync-0.1.10.tgz#e00552025d2a471d2d47c98cb7282457a0ba52be"
+  integrity sha512-F33z0pH7p17pNsKRAJzxOihdg5C/0CcUM8POU57a83vDPJXUXviBuuATNUI6xdhfUE3Y3gjV222EyaP7zwOktw==
   dependencies:
     "@ungap/url-search-params" "^0.1.2"
     history "^4.8.0"
