@@ -27,6 +27,7 @@ const featuresToLocation = (location, f) => ({
 });
 
 const to2056 = (coordinate) => transform(coordinate, 'EPSG:3857', EPSG2056);
+const to3857 = (coordinate) => transform(coordinate, EPSG2056, 'EPSG:3857');
 
 const iconFeature = new OLFeature({ geometry: new Point([0, 0]) });
 iconFeature.setStyle(
@@ -63,7 +64,8 @@ function MapLocation() {
         .getArray()
         .find((layer) => layer instanceof Mapbox.Layer);
       if (mapboxLayer && mapLocation && mapLocation.coordinate) {
-        mapboxLayer.on('loadend', () => handleCoords(mapLocation));
+        const coordinate = to3857(mapLocation.coordinate);
+        mapboxLayer.on('loadend', () => handleCoords({ coordinate }));
         map.getLayers().un('propertychange', waitForLoad);
       }
     };
