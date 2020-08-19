@@ -26,6 +26,8 @@ const featuresToLocation = (location, f) => ({
   [getKey(f.sourceLayer) || f.sourceLayer]: f.properties.code.toString(),
 });
 
+const to2056 = (coordinate) => transform(coordinate, 'EPSG:3857', EPSG2056);
+
 const iconFeature = new OLFeature({ geometry: new Point([0, 0]) });
 iconFeature.setStyle(
   new Style({
@@ -46,36 +48,27 @@ function MapLocation() {
   const mapLocation = useSelector((state) => state.mapLocation);
 
   useEffect(() => {
-    const handleMapLocation = ({ coordinate }) => {
+    const handleCoords = ({ coordinate }) => {
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
       const location = features
         .filter((feature) => feature.properties && feature.properties.code)
         .reduce(featuresToLocation, {});
-      dispatch(
-        setMapLocation({
-          ...location,
-          coordinate: transform(coordinate, 'EPSG:3857', EPSG2056),
-        }),
-      );
+      dispatch(setMapLocation({ ...location, coordinate: to2056(coordinate) }));
     };
-    map.getLayers().on('propertychange', () => {
+    const waitForLoad = () => {
       const mapboxLayer = map
         .getLayers()
         .getArray()
         .find((layer) => layer instanceof Mapbox.Layer);
       if (mapboxLayer && mapLocation && mapLocation.coordinate) {
-        const coordinate = transform(
-          mapLocation.coordinate,
-          EPSG2056,
-          'EPSG:3857',
-        );
-        mapboxLayer.on('loadend', () => handleMapLocation({ coordinate }));
-        map.getLayers().un('propertychange', this);
+        mapboxLayer.on('loadend', () => handleCoords(mapLocation));
+        map.getLayers().un('propertychange', waitForLoad);
       }
-    });
-    map.on('click', handleMapLocation);
+    };
+    map.getLayers().on('propertychange', waitForLoad);
+    map.on('click', handleCoords);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, dispatch]);
   return <Vector source={vectorSource} zIndex={999} />;
