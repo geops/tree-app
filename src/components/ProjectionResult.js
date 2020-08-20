@@ -120,7 +120,7 @@ function ProjectionResult() {
   const finalPanes = panes.filter((p) => p);
   return location.altitudinalZone && location.forestType ? (
     <div className={styles.container}>
-      {sameAltitudinalZone || finalPanes.length > 1 ? (
+      {sameAltitudinalZone || finalPanes.length > 2 ? (
         <Tab
           className={styles.tab}
           menu={{

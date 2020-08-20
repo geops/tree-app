@@ -34,8 +34,8 @@ function Recommendation({ sameAltitudinalZone }) {
     } else {
       const { moderate, extreme } = projectionResult;
       projections = [
-        ...(moderate.projections ? moderate.projections.slice(-1) : []),
-        ...(extreme.projections ? extreme.projections.slice(-1) : []),
+        ...(moderate.projections ? moderate.projections.slice(-1) : [location]),
+        ...(extreme.projections ? extreme.projections.slice(-1) : [location]),
       ];
     }
 
