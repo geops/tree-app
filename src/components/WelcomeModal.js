@@ -5,6 +5,7 @@ import { Icon, Image, Modal } from 'semantic-ui-react';
 
 import Button from './Button';
 import InfoAbout from './InfoAbout';
+import LanguageSwitcher from './LanguageSwitcher';
 import { ReactComponent as Logo } from '../icons/logo.svg';
 import { setWelcomeModal } from '../store/actions';
 import styles from './WelcomeModal.module.css';
@@ -25,6 +26,7 @@ function WelcomeModal() {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
+        <LanguageSwitcher />
         <Button
           active
           data-cypress="welcomeModalGo"

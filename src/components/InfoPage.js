@@ -10,6 +10,7 @@ import InfoParticipants from './InfoParticipants';
 import InfoRecommendation from './InfoRecommendation';
 import InfoReports from './InfoReports';
 import InfoUsage from './InfoUsage';
+import LanguageSwitcher from './LanguageSwitcher';
 
 import styles from './InfoPage.module.css';
 
@@ -20,6 +21,11 @@ function InfoPage() {
       key: 'info.about',
       title: { content: t('info.aboutTitle') },
       content: { content: <InfoAbout /> },
+    },
+    {
+      key: 'info.language',
+      title: { content: t('app.language') },
+      content: { content: <LanguageSwitcher /> },
     },
     {
       key: 'info.bugs',

@@ -1,13 +1,13 @@
 {
   "app": {
-    "map": "Karte",
-    "info": "Infos",
-    "location": "Standort",
+    "map": "Carte",
+    "info": "Info",
+    "location": "Site",
     "recommendation": "Empfehlung",
     "result": "Baumartenempfehlung",
     "ribbon": "Test",
     "title": "Tree App",
-    "language": "Sprache"
+    "language": "Langue"
   },
   "ecogram": {
     "acid": "Sauer",
