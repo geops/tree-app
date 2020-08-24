@@ -11,7 +11,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Boden normal',
         'Boden normal',
         'Normal Soil',
-        'NrmlSl translation missing',
+        'sol normal',
         'NrmlSl');
 
 
@@ -19,7 +19,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Extrem blockig',
         'Extrem blockig',
         'Extremely blocky',
-        'ExtB translation missing',
+        'extrèmement riche en blocs',
         'ExtB');
 
 
@@ -27,7 +27,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Normal',
         'Normal',
         'Normal',
-        'Nrml translation missing',
+        'normal',
         'Nrml');
 
 
@@ -35,7 +35,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('bei Lawinenzug',
         'bei Lawinenzug',
         'for avalanches',
-        'withAv translation missing',
+        'près d''un couloir d''avalanches',
         'withAv');
 
 
@@ -43,7 +43,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Boden verdichtet',
         'Boden verdichtet',
         'Compacted Soil',
-        'CmpS translation missing',
+        'sol compacté',
         'CmpS');
 
 
@@ -51,7 +51,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('schattig, kühl, grosse Blöcke',
         'schattig, kühl, grosse Blöcke',
         'Shady, Cool, Big blocks',
-        'Shdy_Cl_Bb translation missing',
+        'ombragé, frais, gros blocs',
         'Shdy_Cl_Bb');
 
 
@@ -59,7 +59,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Schattig, Kühl',
         'Schattig, Kühl',
         'Shady, Cool',
-        'Shdy_Cl translation missing',
+        'ombragé, frais',
         'Shdy_Cl');
 
 
@@ -67,7 +67,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Warm und Strahlungsreich',
         'Warm und Strahlungsreich',
         'Warm and radiant',
-        'Wrm_Rdt translation missing',
+        'chaud et radiant',
         'Wrm_Rdt');
 
 
@@ -75,7 +75,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('falls mind alle 10 Jahre überschwemmt',
         'falls mind alle 10 Jahre überschwemmt',
         'Flooded every 10 years',
-        '10F translation missing',
+        'en cas d''inondation tous les 10 ans',
         '=10F');
 
 
@@ -83,7 +83,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Kühl',
         'Kühl',
         'Cool',
-        'Cl translation missing',
+        'frais',
         'Cl');
 
 
@@ -91,7 +91,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('falls alljährlich überschwemmt',
         'falls alljährlich überschwemmt',
         'Flooded every year',
-        '1F translation missing',
+        'en cas d''inondation annuelle',
         '<1F');
 
 
@@ -99,7 +99,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Keine Lawinenbeeinflussung',
         'Keine Lawinenbeeinflussung',
         'No avalanche influence',
-        'NoAvln translation missing',
+        'sans influence par des avalanches',
         'NoAvln');
 
 
@@ -107,7 +107,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mit Lawinenbeeinflussung',
         'mit Lawinenbeeinflussung',
         'With avalanche control',
-        'WthAvln translation missing',
+        'avec influence par des avalanches',
         'WthAvln');
 
 
@@ -115,7 +115,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('trocken, extrem blockig, kühl',
         'trocken, extrem blockig, kühl',
         'Dry, Extremely blocky, Cool',
-        'D_Eb_Cl translation missing',
+        'sec, extrèmement riches en blocs, frais',
         'D_Eb_Cl');
 
 
@@ -123,7 +123,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('alle 6 Jahre oder seltener überschwemmt',
         'alle 6 Jahre oder seltener überschwemmt',
         'Flooded every six years or less',
-        '5F translation missing',
+        'inondé tous les 6 ans ou plus rarement',
         '>5F');
 
 
@@ -131,7 +131,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('bis alle 5 Jahre überschwemmt',
         'bis alle 5 Jahre überschwemmt',
         'Flooded every five years',
-        '<5F translation missing',
+        'inondé jusqu''à tous les 5 ans',
         '<5F');
 
 
@@ -139,7 +139,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('tiefgründiger Boden, schattig',
         'tiefgründiger Boden, schattig',
         'Deep soil, Shady',
-        'DpSl_Shdy translation missing',
+        'sol profond, ombragé',
         'DpSl_Shdy');
 
 
@@ -147,7 +147,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('tiefgründig',
         'tiefgründig',
         'Deep',
-        'Dp translation missing',
+        'sol profond',
         'Dp');
 
 
@@ -155,7 +155,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Schlucht',
         'Schlucht',
         'Ravine',
-        'Rvn translation missing',
+        'ravine',
         'Rvn');
 
 
@@ -163,7 +163,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mit viel Schutt',
         'mit viel Schutt',
         'With lots of rubble',
-        'Rbl translation missing',
+        'éboulis marqué',
         'Rbl');
 
 
@@ -171,7 +171,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('flachgründig',
         'flachgründig',
         'Shallow',
-        'Shlw translation missing',
+        'sol superficiel',
         'Shlw');
 
 
@@ -179,7 +179,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('weniger als alle 10 Jahre überschwemmt',
         'weniger als alle 10 Jahre überschwemmt',
         'Flooded less than every 10 years',
-        '<10F translation missing',
+        'inondé plus rarement que tous les 10 ans',
         '<10F');
 
 
@@ -187,7 +187,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mind. alle 10 Jahre überschwemmt',
         'mind. alle 10 Jahre überschwemmt',
         'Flooded at least every 10 years',
-        '>10F translation missing',
+        'inondé au moins tous les 10 ans',
         '>10F');
 
 
@@ -195,7 +195,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('',
         'nicht relevant',
         'not relevant',
-        'inconnu',
+        'pas important',
         'unknown');
 
 ----------------------------------------------
@@ -207,7 +207,7 @@ CREATE TABLE altitudinal_zone_meta (source TEXT, de TEXT, fr TEXT, nais TEXT, co
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('collin -mediterran',
         'collin -mediterran',
-        'collin -mediterran translation missing',
+        'collinéen à méditerranéen',
         '01C',
         '0');
 
@@ -687,14 +687,14 @@ CREATE TABLE relief_meta (source TEXT, de TEXT, fr TEXT, target relief);
 INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('Hang- oder Muldenlage',
         'Hang- und Muldenlage',
-        'h_and_m translation missing',
+        'en pente ou dans une dépression',
         'h_and_m');
 
 
 INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('Hang- und Muldenlage',
         'Hang- und Muldenlage',
-        'h_and_m translation missing',
+        'en pente ou dans une dépression',
         'h_and_m');
 
 
@@ -708,14 +708,14 @@ VALUES ('normal',
 INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('Kuppenlage',
         'Kuppenlage',
-        'kup translation missing',
+        'sur une butte',
         'kup');
 
 
 INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('',
         'nicht relevant',
-        'inconnu',
+        'pas important',
         'unknown');
 
 ----------------------------------------------
@@ -763,7 +763,7 @@ VALUES ('>70',
 INSERT INTO slope_meta (target, de, fr)
 VALUES ('unknown',
         'nicht relevant',
-        'inconnu');
+        'pas important');
 
 ----------------------------------------------
 -- silver fir areaS
@@ -795,7 +795,7 @@ VALUES ('Reliktareal',
 INSERT INTO silver_fir_area_meta (source, de, fr, target)
 VALUES ('nicht relevant',
         'nicht relevant',
-        'inconnu',
+        'pas important',
         'unknown');
 
 ----------------------------------------------
