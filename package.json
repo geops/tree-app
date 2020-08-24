@@ -7,7 +7,7 @@
   "dependencies": {
     "history": "4.10.1",
     "i18next": "19.7.0",
-    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-browser-languagedetector": "6.0.1",
     "lodash.difference": "4.5.0",
     "lodash.intersection": "4.4.0",
     "lodash.union": "4.6.0",
@@ -33,7 +33,7 @@
     "@typescript-eslint/parser": "3.9.1",
     "babel-eslint": "10.1.0",
     "cra-append-sw": "2.7.0",
-    "csv-parse": "^4.12.0",
+    "csv-parse": "4.12.0",
     "cypress": "5.0.0",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.2.0",
@@ -48,7 +48,7 @@
     "eslint-plugin-react-hooks": "4.1.0",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
-    "lodash.set": "^4.3.2",
+    "lodash.set": "4.3.2",
     "prettier": "2.0.5",
     "react-test-renderer": "16.13.1",
     "start-server-and-test": "1.11.3"
