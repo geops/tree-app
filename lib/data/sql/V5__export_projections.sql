@@ -52,7 +52,7 @@ FROM
                  END as processed_silver_fir_area2,
                  CASE
                    WHEN target_altitudinal_zone ~ 'hochmontan' THEN 'hochmontan'
-                   ELSE target_altitudinal_zone
+                   ELSE trim(target_altitudinal_zone)
                  END as processed_target_altitudinal_zone,
             *
      FROM
@@ -61,7 +61,7 @@ FROM
                                       FROM silver_fir_areas)))[1] AS processed_silver_fir_area,
                  *
           FROM projections_import) import_silver_fir_area) import
-LEFT JOIN altitudinal_zone_meta ON lower(altitudinal_zone_meta.source::text) = lower(import.altitudinal_zone)
+LEFT JOIN altitudinal_zone_meta ON lower(altitudinal_zone_meta.source::text) = trim(lower(import.altitudinal_zone))
 LEFT JOIN altitudinal_zone_meta target_altitudinal_zone_meta ON lower(target_altitudinal_zone_meta.source::text) = lower(import.processed_target_altitudinal_zone)
 LEFT JOIN additional_meta ON lower(additional_meta.source) = lower(import.additional)
 LEFT JOIN silver_fir_area_meta ON lower(silver_fir_area_meta.source) = import.processed_silver_fir_area2
