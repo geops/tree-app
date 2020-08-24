@@ -6,17 +6,17 @@
     { "de": "<70%", "fr": "<70%", "code": "<70" },
     { "de": ">60%", "fr": ">60%", "code": ">60" },
     { "de": ">70%", "fr": ">70%", "code": ">70" },
-    { "de": "nicht relevant", "fr": "inconnu", "code": "unknown" }
+    { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
   ],
   "relief": [
     { "de": "normal", "fr": "normal", "code": "normal" },
     {
       "de": "Hang- und Muldenlage",
-      "fr": "h_and_m translation missing",
+      "fr": "en pente ou dans une dépression",
       "code": "h_and_m"
     },
-    { "de": "Kuppenlage", "fr": "kup translation missing", "code": "kup" },
-    { "de": "nicht relevant", "fr": "inconnu", "code": "unknown" }
+    { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
+    { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" }
   ],
   "treeType": [
     {
@@ -22432,98 +22432,86 @@
     }
   ],
   "additional": [
-    {
-      "de": "Boden normal",
-      "fr": "NrmlSl translation missing",
-      "code": "NrmlSl"
-    },
+    { "de": "Boden normal", "fr": "sol normal", "code": "NrmlSl" },
     {
       "de": "Extrem blockig",
-      "fr": "ExtB translation missing",
+      "fr": "extrèmement riche en blocs",
       "code": "ExtB"
     },
-    { "de": "Normal", "fr": "Nrml translation missing", "code": "Nrml" },
+    { "de": "Normal", "fr": "normal", "code": "Nrml" },
     {
       "de": "bei Lawinenzug",
-      "fr": "withAv translation missing",
+      "fr": "près d'un couloir d'avalanches",
       "code": "withAv"
     },
-    {
-      "de": "Boden verdichtet",
-      "fr": "CmpS translation missing",
-      "code": "CmpS"
-    },
+    { "de": "Boden verdichtet", "fr": "sol compacté", "code": "CmpS" },
     {
       "de": "schattig, kühl, grosse Blöcke",
-      "fr": "Shdy_Cl_Bb translation missing",
+      "fr": "ombragé, frais, gros blocs",
       "code": "Shdy_Cl_Bb"
     },
-    {
-      "de": "Schattig, Kühl",
-      "fr": "Shdy_Cl translation missing",
-      "code": "Shdy_Cl"
-    },
+    { "de": "Schattig, Kühl", "fr": "ombragé, frais", "code": "Shdy_Cl" },
     {
       "de": "Warm und Strahlungsreich",
-      "fr": "Wrm_Rdt translation missing",
+      "fr": "chaud et radiant",
       "code": "Wrm_Rdt"
     },
     {
       "de": "falls mind alle 10 Jahre überschwemmt",
-      "fr": "10F translation missing",
+      "fr": "en cas d'inondation tous les 10 ans",
       "code": "=10F"
     },
-    { "de": "Kühl", "fr": "Cl translation missing", "code": "Cl" },
+    { "de": "Kühl", "fr": "frais", "code": "Cl" },
     {
       "de": "falls alljährlich überschwemmt",
-      "fr": "1F translation missing",
+      "fr": "en cas d'inondation annuelle",
       "code": "<1F"
     },
     {
       "de": "Keine Lawinenbeeinflussung",
-      "fr": "NoAvln translation missing",
+      "fr": "sans influence par des avalanches",
       "code": "NoAvln"
     },
     {
       "de": "mit Lawinenbeeinflussung",
-      "fr": "WthAvln translation missing",
+      "fr": "avec influence par des avalanches",
       "code": "WthAvln"
     },
     {
       "de": "trocken, extrem blockig, kühl",
-      "fr": "D_Eb_Cl translation missing",
+      "fr": "sec, extrèmement riches en blocs, frais",
       "code": "D_Eb_Cl"
     },
     {
       "de": "alle 6 Jahre oder seltener überschwemmt",
-      "fr": "5F translation missing",
+      "fr": "inondé tous les 6 ans ou plus rarement",
       "code": ">5F"
     },
     {
       "de": "bis alle 5 Jahre überschwemmt",
-      "fr": "<5F translation missing",
+      "fr": "inondé jusqu'à tous les 5 ans",
       "code": "<5F"
     },
     {
       "de": "tiefgründiger Boden, schattig",
-      "fr": "DpSl_Shdy translation missing",
+      "fr": "sol profond, ombragé",
       "code": "DpSl_Shdy"
     },
-    { "de": "tiefgründig", "fr": "Dp translation missing", "code": "Dp" },
-    { "de": "Schlucht", "fr": "Rvn translation missing", "code": "Rvn" },
-    { "de": "mit viel Schutt", "fr": "Rbl translation missing", "code": "Rbl" },
-    { "de": "flachgründig", "fr": "Shlw translation missing", "code": "Shlw" },
+    { "de": "tiefgründig", "fr": "sol profond", "code": "Dp" },
+    { "de": "Schlucht", "fr": "ravine", "code": "Rvn" },
+    { "de": "mit viel Schutt", "fr": "éboulis marqué", "code": "Rbl" },
+    { "de": "flachgründig", "fr": "sol superficiel", "code": "Shlw" },
     {
       "de": "weniger als alle 10 Jahre überschwemmt",
-      "fr": "<10F translation missing",
+      "fr": "inondé plus rarement que tous les 10 ans",
       "code": "<10F"
     },
     {
       "de": "mind. alle 10 Jahre überschwemmt",
-      "fr": ">10F translation missing",
+      "fr": "inondé au moins tous les 10 ans",
       "code": ">10F"
     },
-    { "de": "nicht relevant", "fr": "inconnu", "code": "unknown" }
+    { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
   ],
   "forestType": [
     {
@@ -37570,12 +37558,12 @@
     { "de": "Hauptareal", "fr": "Aire principale", "code": "1" },
     { "de": "Nebenareal", "fr": "Aire secondaire", "code": "2" },
     { "de": "Reliktareal", "fr": "Aire relictuelle", "code": "3" },
-    { "de": "nicht relevant", "fr": "inconnu", "code": "unknown" }
+    { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
   ],
   "altitudinalZone": [
     {
       "de": "collin -mediterran",
-      "fr": "collin -mediterran translation missing",
+      "fr": "collinéen à méditerranéen",
       "id": 1,
       "code": "0"
     },
