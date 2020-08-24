@@ -1,217 +1,219 @@
 {
-  "app": {
-    "map": "Karte",
-    "info": "Infos",
-    "location": "Standort",
-    "recommendation": "Empfehlung",
-    "result": "Baumartenempfehlung",
-    "ribbon": "Test",
-    "title": "Tree App",
-    "language": "Sprache"
-  },
-  "ecogram": {
-    "acid": "Sauer",
-    "alkaline": "Basisch",
-    "wet": "Nass",
-    "dry": "Trocken"
-  },
-  "help": {
-    "recommendationPositiveHeader": "Empfohlene Baumarten",
-    "recommendationPositive": "Dominante oder wichtige beigemischte Naturwaldbaumarten, die <strong>in allen Klimaprojektionen geeignet sind (fett)</strong> bzw. die im heutigen Klima und entweder bei «mässigem» oder «starkem» Klimawandel geeignet sind (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten sollen gefördert werden. + = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart",
-    "recommendationNeutralHeader": "Bedingt empfohlene Baumarten",
-    "recommendationNeutral": "Im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart) und entweder <strong>bei beiden Klimaprojektionen weitere Baumart (fett)</strong> oder nur in einer Klimaprojektion weitere Baumart (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten können gefördert werden. + = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart",
-    "recommendationNegativeHeader": "Gefährdete Baumarten",
-    "recommendationNegative": "Im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <strong>in keiner Klimaprojektion mehr empfohlen ist (fett)</strong>. Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind. + = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart",
-    "recommendationAttentionHeader": "Götterbaum",
-    "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>."
-  },
-  "info": {
-    "aboutTitle": "Über die Anwendung",
-    "about": "Die <i>Tree App</i> unterstützt Dich bei der Wahl geeigneter Baumarten für drei Annahmen über das Klima:<2><0>Klima 1961-1990</0><1>mässiger Klimawandel 2070-2099</1><2>starker Klimawandel 2070-2099</2></2><p>Sie ist ein Produkt des Forschungsprogramms Wald und Klimawandel von BAFU und WSL.<br> Klicke in die Karte, um für den gewählten Ort eine Baumartenempfehlung zu erhalten. Dann musst Du den Standortstyp (die Waldgesellschaft) angeben. Entweder Du bestimmst ihn mit Hilfe der App (Button „Standort“), oder Du wählst ihn manuell aus der Liste der möglichen Standortstypen (Button „Empfehlung“).</p><p>Version {{version}}</p>",
-    "bugsTitle": "Geplante Erweiterungen und bekannte Bugs",
-    "bugs": "<p>In der aktuellen Version sind folgende Features noch nicht implementiert:</p><p>1) Die App funktioniert mit den Browsern Firefox, Edge und Chrome. Bei anderen Browsern können Fehlfunktionen auftreten.</p><p>2) Detaillierte Informationen zu jedem Standortstyp werden nur für 5 Standortstypen angezeigt (1, 1h, 2, 8, 8*)</p><p>3) Die Grundlagenkarten weisen noch Fehler auf. In den Alpen kommen an gewissen Orten Höhenstufen vor, die in der betreffenden Standortsregion nicht vorkommen sollten. Die Standortsregion „Mendrisiotto“ fehlt noch ganz.</p><p>4) In den Standortsregionen 2b und 4 können Buchen in der Oberschicht vorkommen. Dann müssen die Ökogramme der Standortsregionen 2a bzw. 5 verwendet werden. Dies ist sowohl in der Ansicht „Standort“ als auch in der Ansicht „Empfehlung“ im manuellen Modus möglich.</p><p>5) Im Tannenreliktareal können Tannen in der Oberschicht vorkommen. Dann müssten die Ökogramme des Tannenhaupt- und Nebenareals verwendet werden. Dies ist bei der Ansicht „Standort“ nicht implementiert, und in der Ansicht „Empfehlung“ nur im manuellen Modus möglich.</p><p>6) Die französische Version ist noch nicht implementiert.</p>",
-    "glossaryTitle": "Glossar",
-    "glossary": "<p><strong>Auenwälder (Standortsgruppe)</strong></p><p>Standortstypen im Einflussbereich von Gewässern.</p><p><strong>Gebüschwälder (Standortsgruppe)</strong></p><p>Bei den NaiS-Standortstypen wird normalerweise die späte Optimalphase beschrieben. Bei niederliegender Wuchsform infolge Einwirkung von Lawinen oder Überschwemmung werden sie als Gebüschvariante mit dem angehängten Code «G» bezeichnet. Dieser Code kann an alle beschriebenen NaiS-Standortstypen angehängt werden (vgl. → Pionierstandorte).</p><p><strong>Hauptwaldstandort</strong></p><p>Zonaler Standortstyp, der für die entsprechende → Vegetationshöhenstufe durch die Standortsfaktoren Bodensäure bzw. Nährstoffverfügbarkeit und die durchschnittliche Bodenfeuchte genügend charakterisiert werden kann.</p><p><strong>Höhenstufe</strong> s. → Vegetationshöhenstufe</p><p><strong>«Mässiger» Klimawandel (Periode 2070-2099)</strong></p><p>Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 3,1 °C wärmer und der Niederschlag ist 2% geringer.</p><p><strong>Ökogramm</strong></p><p>Diagramm mit den Achsen «sauer-basisch» und «nass-trocken». In diesem sind → Hauptwaldstandorte als Kästchen, die das Zentrum des Vorkommens der entsprechenden → Standortstypen charakterisieren, modellhaft dargestellt. Über dem oberen Rand des Ökogramms ist es zu trocken für das Baumwachstum, unter dem unteren Rand ist es zu nass. Ökogramme gelten für bestimmte → Standortsregionen und → Vegetationshöhenstufen.</p><p><strong>Pionierstandorte (Standortsgruppe)</strong></p><p>Bei den NaiS-Standortstypen wird normalerweise die späte Optimalphase beschrieben. Wenn im Gelände Pionierphasen angetroffen werden und sich diese Bestände in den nächsten 100 Jahren weiterentwickeln können, wird der gleiche Standortstyp angesprochen wie beim ausgewachsenen Bestand. In Ausnahmefällen entwickeln sich die Pionierphasen nicht oder nur sehr langsam weiter (Dauerstadien). In diesen Fällen werden Pionierstandorte beschrieben, falls die Bäume aufrecht wachsen (vgl. → Gebüschwälder).</p><p><strong>Sonderwaldstandort</strong></p><p>→ Standortstyp, der hauptsächlich durch andere Standortfaktoren als Allgemeinklima, Bodensäure bzw. Nährstoffverfügbarkeit und durchschnittliche Bodenfeuchte bestimmt ist. Standortfaktoren, die einen Sonderwaldstandort bestimmen, sind bewegter Schutt oder Blockschutt. Vgl. → Hauptwaldstandort.</p><p><strong>Standort</strong></p><p>Gesamtheit aller Einflüsse, die auf die Bäume des Waldbestandes wirken (z.B. Klima, Eigenarten des Bodens, Lawinen, Steinschlag etc.).</p><p><strong>Standortstyp</strong></p><p>Aus der Betrachtung realer Standorte abgeleitete idealisierte Beschreibung eines → Standortes. In dieser Beschreibung kann ein ähnlicher realer Standort erkannt werden. Der Standortstyp wird durch floristische, standörtliche und strukturelle Merkmale charakterisiert.</p><p><strong>Standortsregion</strong></p><p>Die Standortsregionen sind biogeografische Regionen mit ähnlichem Klimacharakter. Unterschieden werden die Standortsregionen Jura, Mittelland, Nördliche Randalpen, Nördliche Zwischenalpen mit Buche, Nördliche Zwischenalpen ohne Buche, Kontinentale Hochalpen, Südliche Zwischenalpen, Südliche Randalpen  und Mendrisiotto.</p><p><strong>Stark wechselnde Feuchtigkeit (Standortsgruppe)</strong></p><p>Zonale Standortstypen, die ähnlich wie Hauptwaldstandorte für die entsprechende Höhenstufe durch die Standortsfaktoren Bodensäure bzw. Nährstoffverfügbarkeit und Bodenfeuchte charakterisiert sind. Die Bodenfeuchte ist jedoch nicht konstant, sondern wechselt stark.</p><p><strong>«Starker» Klimawandel (Periode 2070-2099)</strong></p><p>Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 4,3 °C wärmer und der Niederschlag ist 19% geringer.</p><p><strong>Tannenareal</strong></p><p>Region mit einem in bestimmter Weise ausgeprägten Vorkommen der Weisstanne. Im <strong>Hauptareal</strong> sind Tannen in der obermontanen und hochmontanen Stufe natürlicherweise in einem erheblichen Masse am Bestandesaufbau beteiligt. Im <strong>Nebenareal</strong>, das in den nördlichen und südlichen Zwischenalpen liegt, sind Tannenvorkommen meist auf die hochmontane Stufe in Tälern mit Talsohle unterhalb von rund 1000 m ü.M. und hier auf nord- und ostexponierte Hänge beschränkt. Im <strong>Reliktareal</strong> der Zwischenalpen und kontinentalen Hochalpen kommen Tannen in Form kleinerer isolierter Bestände vor.</p><p><strong>Vegetationshöhenstufe (Kurzform: Höhenstufe)</strong></p><p>Höhenbereich mit ähnlichem ökologischen Verhalten der Baumarten und ähnlicher Bestandesstruktur. Die Höhenstufen sind stark durch die Lufttemperatur geprägt. Einige Höhenstufen kommen nur in bestimmten → Standortsregionen vor.</p><p><strong>Waldstandort</strong> s. → Standort</p>",
-    "locationTitle": "Standort",
-    "location": "<p><strong>Dargestellte Elemente</strong></p><p>Der Screen Standortsbestimmung zeigt oben die geografischen Koordinaten des ausgewählten Punktes (siebenstellig, Bezugssystem CH1903+) und rechts den Button für die Wahl zwischen Kartenmodus und manuellem Modus. Darunter folgen, für den auf der Karte markierten geografischen Ort, die Standortsregion, die heutige Höhenstufe und das Tannenareal (diese Informationen können nur im manuellen Modus verändert werden).</p><p>Darunter sind die <strong>Filterkriterien</strong> aufgelistet, d.h. Merkmale des Standorts und des Bestandes, die es erlauben, unter allen in einer bestimmten Standortsregion und Höhenstufe möglichen Standortstypen die am besten passenden auszuwählen.</p><p>Weiter unten ist das <strong>Ökogramm</strong> dargestellt, das alle Hauptwaldstandorte enthält. Innerhalb des Ökogramms sind die aufgrund der Filterung noch verbleibenden Standortstypen grün, die ausgeschlossenen dagegen grau hinterlegt. Das Ökogramm wird ausgeblendet, wenn die Filterung die Hauptwaldstandorte ausschliesst. Unter dem Ökogramm folgt eine Liste <strong>Weiterer Standortstypen</strong>; hier sind die aufgrund der Filterung verbleibenden Standortstypen aufgelistet.</p><p><strong>Bedienungshinweise</strong></p><p>Ziel der Bestimmung ist die Reduktion der in einer Standortsregion und in einer Höhenstufe möglichen Standortstypen auf wenige passende. Dazu dienen 8 <strong>Filterkriterien</strong>. Bei einigen Kriterien kann man die passenden Ausprägungen anwählen (Häkchen setzen), bei anderen Ausprägungen aus der Auswahlliste wählen (Mehrfachauswahl möglich), wobei das Eintippen der Anfangsbuchstaben die Liste verkürzt. Die Filterkriterien sind:</p><p>Baumarten: Gemeint sind hier die im Bestand vorkommenden Baumarten. Oft filtern wenig vertretene Baumarten wirksamer als häufige.</p><p>Zeigerarten: Die Liste enthält eine Auswahl von Pflanzen, welche gut zwischen Standortstypen differenzieren und deren Bestimmung relativ leicht ist. Es sind Zeigerarten erwähnt, die in einem lockeren Baumholz mit naturnaher Baumartenmischung zu finden sind. Bei anderer Baumartenmischung oder anderer Bestandesstruktur kann die Bodenvegetation abweichen.</p><p>Baumhöhe: Getrennt für Nadel- und Laubbäume kann die maximale festgestellte Baumhöhe eingegeben werden. Standortstypen, auf denen die Bäume diese Baumhöhe nicht erreichen, werden ausgeschlossen. Die maximale Baumhöhe taugt nur bei älteren Beständen als Filterkriterium.</p><p>Karbonatgehalt: Dieser kann separat für das Feinmaterial und das Gestein angegeben werden. Zur Bestimmung hilft verdünnte Salzsäure.<p>Geomorphologie & Relieftyp: Anstehender Fels weist auf Felsausbildungen hin (im Standortstyp mit angehängtem „Fe“ gekennzeichnet, z.B. 13aFe = Typischer Linden-Buchen-Wald auf Fels). Bewegtes Geröll weist auf Sonderwaldstandorte hin.</p><p>Exposition: Sie kann in 8 Richtungen unterteilt angegeben werden.</p><p>Hangneigung: Sie Hangneigung kann in 6 Neigungsklassen in % angegeben werden.</p><p>Waldstandortsgruppen: Diese unterteilen die Standortstypen in 5 Gruppen (Hauptwaldstandorte, Sonderwaldstandorte, Standorte mit stark wechselnder Feuchtigkeit, Auenwälder sowie Pionierstandorte und Gebüschwälder, s. Glossar). Die Unterteilung ist v.a. dann hilfreich, wenn kein Hauptwaldstandort vorliegt, z.B. in der Nähe von fliessendem Wasser (Auenwaldstandort). Wird eine andere Gruppe als die der Hauptwaldstandorte gewählt, wird das Ökogramm ausgeblendet.</p><p><strong>Vorgehen beim Filtern</strong></p><p>Eine zu schwache Filterung lässt zu viele Standortstypen übrig, ein zu starke im Extremfall keinen Standortstyp. Ziel sollte sein, so stark zu filtern, dass 2 bis 5 Typen verbleiben. Diese können Hauptwaldstandorte sein (im Ökogramm dargestellt) und/oder solche aus weiteren Standortsgruppen (unter dem Ökogramm dargestellt). Beim Anklicken eines Standortstyps kann man dessen ausführliche Beschreibung im überprüfen (Klick auf pdf-Symbol, dann geht ein weiterer Reiter im Browser auf) oder direkt in die Ansicht „Baumartenempfehlung“ wechseln. Sobald man irgendeinen Filter gesetzt hat, erscheint oberhalb des Ökogramms ein Button, mit dem sich alle Filter zurücksetzen lassen. Die Filtermerkmale sollen an typischen, naturnahen, ungestörten Stellen in der Entwicklungsstufe Baumholz beobachtet werden, also nicht in Strassenböschungen, auf Rückegassen, in naturfernen Kunstbeständen oder auf Sturmflächen. Dabei wird ein Gesamteindruck gewonnen und auf auffällige Merkmale wie die Baumhöhe, die Baumarten, besondere Zeigerpflanzen und Bodenmerkmale geachtet. Wenn am Ende der Filterung 2 plausible Standortstypen übrigbleiben, kann die Baumartenempfehlung beide berücksichtigen, denn es können Übergänge zwischen Standortstypen angegeben werden.</p>",
-    "usageTitle": "Erläuterungen und Hinweise zur Bedienung",
-    "usage": "<p><strong>Kartenansicht</strong></p><p>In der Kartenansicht kannst Du den Ort wählen, der Dich interessiert. Der Button links unten verändert den angezeigten Hintergrund: Du kannst die Schweizer Landeskarte oder ein Luftbild anzeigen. Mit den Buttons links oben kannst Du den Ausschnitt vergrössern oder verkleinern. Der Button rechts oben erlaubt das Anzeigen verschiedener Flächeninformationen: Kantonsgrenzen, Standortsregionen, Tannenareale und die Vegetationshöhenstufen für das Klima 1961-1990 („Klima heute“) und für zwei Projektionen des Klimas 2070-2099 („mässiger Klimawandel“ und „starker Klimawandel“).</p><p><strong>Ansicht zur Standortsbestimmung</strong></p><p>Diese Ansicht erreichst Du durch Anklicken des Buttons „Standort“ (unten auf dem Screen). Sie unterstützt Dich beim Bestimmen des Standortstyps. Dies geschieht standardmässig im Kartenmodus (Kartensymbol rechts oben). Fortgeschrittene Benutzer können den Standortstyp direkt in der Ansicht zur Baumartenempfehlung (s. nächster Punkt) angeben. Sie können auch in den manuellen Modus wechseln (Bleistiftsymbol rechts oben) und die Vorgaben zu Standortsregion, Höhenstufe heute und Tannenareal überschreiben.</p><p><strong>Ansicht zur Anzeige der Baumartenempfehlung</strong></p><p>Wenn Du in der Ansicht zur Standortsbestimmung einen Standort bestimmt hast, wirst Du direkt in diese Ansicht geleitet. Sie zeigt die empfohlenen, bedingt empfohlenen und gefährdeten Baumarten an. Diese Ansicht erreichst Du auch durch Anklicken des Buttons „Empfehlung“ (unten auf dem Screen). Die Buttons rechts oben erlauben es, aus dem Kartenmodus (Standardeinstellung) in den manuellen Modus zu wechseln.</p>",
-    "recommendationTitle": "Baumartenempfehlungen",
-    "recommendation": "<p>Der Screen Baumartenempfehlung zeigt oben die geografischen Koordinaten des ausgewählten Punktes (siebenstellig, Bezugssystem CH1903+), den heutigen Standortstyp und die heutige Höhenstufe. Darunter werden die für den gewählten Standortstyp am gewählten Ort empfohlenen Baumarten aufgelistet. Der Screen zeigt die Baumartenempfehlung auf zwei bis vier Screens (Reiter).</p><1><strong>Synthetische Darstellung</strong> (Reiter links: «Baumartenempfehlung»). Diese Darstellung wird zuerst angezeigt (Default) und listet Baumarten auf, die auch im heutigen Klima empfohlen werden. Baumarten, die heute noch nicht empfohlen sind, sondern erst in Zukunft klimatisch geeignet sein dürften, können mit dem Button ganz unten eingeblendet und wieder ausgeblendet werden. Die Kategorien der Eignung der Baumarten auf einem gegebenen Standortstyp und an einem bestimmten geografischen Ort haben folgende Bedeutung:</1><2><0><0></0> empfohlene Baumarten: dominante oder wichtige beigemischte Naturwaldbaumart, die <strong>in allen Klimaprojektionen geeignet sind (fett)</strong> bzw. die im heutigen Klima und zusätzlich entweder bei «mässigem» oder «starkem» Klimawandel geeignet sind (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten sollen gefördert werden.</0><1><0></0> bedingt empfohlene Baumarten: im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart) und entweder <strong>bei beiden Klimaprojektionen weitere Baumart (fett)</strong> oder nur in einer Klimaprojektion weitere Baumart (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). Diese Baumarten können gefördert werden.</1><2><0></0> gefährdete Baumarten: im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <strong>in keiner Klimaprojektion mehr empfohlen ist (fett)</strong>. Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind.</2><3><0></0> Götterbaum: Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <3>Vollzugshilfe des Bundes</3>.</3></2><3>Darstellung für einzelne Klimaannahmen</3><p>Bei Anwendung der Klimaprojektionen für den gewählten Ort ergeben sich ein bis drei verschiedene Höhenstufen. Pro Höhenstufe erscheint rechts vom Reiter «Baumartenempfehlung» als Zusatzinformation ein Reiter, der mit einem Symbol für die Klimaprojektion, der Höhenstufe (z.B. «submontan») und beim Darüberfahren auch der dazu gehörenden Klimaprojektion bezeichnet ist. Die Symbole sind für die Klimaprojektion sind:</p><5><0><0></0> Heutiges Klima (Periode 1981-2010)</0><1><0></0> «Mässiger» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 3,1 °C wärmer und der Niederschlag ist 2% geringer.</1><2><0></0> «Starker» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 4,3 °C wärmer und der Niederschlag ist 19% geringer.</2></5><p>Die Anzahl angezeigte Reiter bedeutet Folgendes:</p><7><0>Im Fall von drei Reitern ergibt die Anwendung der zwei Klimaprojektionen unterschiedliche Standortstypen für das heutige Klima, für «mässigen» Klimawandel und für «starken» Klimawandel.</0><1>Im Fall von nur einem Reiter ergibt die Anwendung der zwei Klimaprojektionen heute und in Zukunft denselben Standortstyp.</1><2>Im Fall von zwei Reitern fallen die Höhenstufen für jeweils zwei Klimaprojektionen zusammen; entweder für das heutige Klima und den «mässigen» Klimawandel oder für den «mässigen» und den «starken» Klimawandel.</2></7><p>Klickt man auf diese ein bis drei Reiter, werden die für den jeweiligen (heutigen oder zukünftigen) Standortstyp empfohlenen Baumarten aufgeführt. Dies geschieht in den Kategorien «Dominante Naturwaldbaumart», «wichtige beigemischte Naturwaldbaumart» und «weitere Baumarten». Aus diesen Angaben ist ableitbar, bei welcher Klimaprojektion eine Baumart allenfalls nicht mehr empfohlen wird (sie fehlt dann in der Liste der Baumarten) oder erstmals empfohlen wird.</p>",
-    "participantsTitle": "Beteiligte",
-    "participants": "<p>Viele Fachleute haben zur Tree App beigetragen. Besonders erwähnt seien hier folgende Personen:</p><1><strong>Standortkundliche Grundlagen zum Projekt „Nachhaltigkeit im Schutzwald“</strong><br> {{locationBasics}}</1><2><strong>Grundlagenarbeiten zur Berücksichtigung des Klimawandels</strong><br> {{climateChangeBasics}}</2><3><strong>Idee zur Tree App</strong><br> {{idea}}</3><4><strong>Konzeption</strong><br> {{conception}}</4><5><strong>Realisierung</strong><br> <2>geOps AG</2></5><6><strong>Projektleitung</strong><br> {{projectManagement}}</6><7><strong>Projektsteuerung</strong><br> {{projectControl}}</7><p><strong>Finanzierung</strong><br> BAFU im Rahmen des Forschungsprogramms „Wald und Klimawandel“, WSL</p><9><strong>Anwender-Begleitgruppe</strong><br> {{wslUsers}}</9><10><strong>IT-Begleitgruppe</strong><br> {{itUsers}}</10>",
-    "reportsTitle": "Zugrundeliegende Berichte",
-    "impressumTitle": "Impressum",
-    "impressum": "Die Tree App ist ein Umsetzungsprodukt des Forschungsprogramms „Wald und Klimawandel“ von BAFU und WSL."
-  },
-  "location": {
-    "header": "Filterkriterien",
-    "help": "Ziel der Bestimmung ist die Reduktion der in einer Standortsregion und in einer Höhenstufe möglichen Standortstypen auf wenige passende. Dazu dienen 8 <strong>Filterkriterien</strong>. Bei einigen Kriterien kann man die passenden Ausprägungen anwählen (Häkchen setzen), bei anderen Ausprägungen aus der Auswahlliste wählen (Mehrfachauswahl möglich), wobei das Eintippen der Anfangsbuchstaben die Liste verkürzt.",
-    "mainResultHelp": "Zonaler Standortstyp, der für die entsprechende Vegetationshöhenstufe durch die Standortsfaktoren Bodensäure bzw. Nährstoffverfügbarkeit und die durchschnittliche Bodenfeuchte genügend charakterisiert werden kann.",
-    "otherResultHelp": "Weitere an diesem Ort mögliche Standortstypen, die nicht zu den Hauptwaldstandorten (s. Ökogramm) gehören, sondern zu einer der folgenden 4 Standortsgruppen: Sonderwaldstandorte, Standorte mit stark wechselnde Feuchtigkeit, Auenwälder sowie Pionierstandorte und Gebüschwälder (s. Glossar).",
-    "reset": "Filterkriterien zurücksetzen",
-    "noEcogram": "Kein Ökogram gefunden."
-  },
-  "map": {
-    "legend": "Legende",
-    "baseLayer": {
-      "map": "Karte",
-      "aerial": "Luftbild"
-    },
-    "altitudinalZones": "Höhenstufen",
-    "altitudinal_zones_1995": "Klima heute",
-    "altitudinal_zones_2085_dry": "starker Klimawandel",
-    "altitudinal_zones_2085_less_dry": "mässiger Klimawandel",
-    "cantonal_boundaries": "Kantonsgrenzen",
-    "forest_ecoregions": "Standortsregionen",
-    "forest_types": "Standortstypen",
-    "silver_fir_areas": "Tannenareale",
-    "hint": "Bitte Position wählen"
-  },
-  "offline": {
-    "update": "Neue Version laden",
-    "success": "Die Tree App ist offline verfügbar."
-  },
-  "projection": {
-    "treeTypesOne": "Dominante Naturwaldbaumart",
-    "treeTypesTwo": "Wichtige beigemischte Naturwaldbaumart",
-    "treeTypesThree": "Weitere Baumarten",
-    "missingLocation": "Bitte eine Position in der Karte wählen.",
-    "missingLocationData": "Keine Daten gefunden, bitte eine andere Position wählen.",
-    "missingProjectionData": "Keine Standortstypen gefunden, bitte eine andere Position wählen.",
-    "transition": {
-      "label": "Übergangsstandort",
-      "false": "Nein",
-      "true": "Ja"
-    }
-  },
-  "projectionScenario": {
-    "today": "Klima heute",
-    "moderate": "mässiger Klimawandel",
-    "extreme": "starker Klimawandel",
-    "moderateExtreme": "mässiger und starker Klimawandel",
-    "manual": "manueller Klimawandel"
-  },
-  "recommendation": {
-    "header": "Empfehlung",
-    "attention": "Achtung",
-    "negative": "Reduzieren",
-    "neutral": "Mitnehmen",
-    "positive": "Fördern",
-    "future": "In Zukunft zusätzlich passende Baumarten einblenden",
-    "noProjectionFound": "Keine Empfehlung möglich",
-    "sameAltitudinalZone": "Hier ändert sich zwar die Höhenstufe nicht; unter den empfohlenen Baumarten sollen aber diejenigen bevorzugt werden, die Wärme und Trockenheit am besten ertragen"
-  },
-  "dropdown": {
-    "placeholder": "Bitte aus der Liste auswählen",
-    "noResultsMessage": "Kein Eintrag gefunden"
-  },
-  "forestEcoregion": {
-    "label": "Standortsregion"
+  "additional": {
+    "label": "Weitere"
   },
   "altitudinalZone": {
     "label": "Höhenstufe heute",
     "transition": "Übergang zu Höhenstufe heute"
   },
+  "app": {
+    "info": "Infos",
+    "language": "Sprache",
+    "location": "Standort",
+    "map": "Karte",
+    "recommendation": "Empfehlung",
+    "result": "Baumartenempfehlung",
+    "ribbon": "Test",
+    "title": "Tree App"
+  },
+  "dropdown": {
+    "noResultsMessage": "Kein Eintrag gefunden",
+    "placeholder": "Bitte aus der Liste auswählen"
+  },
+  "ecogram": {
+    "acid": "Sauer",
+    "alkaline": "Basisch",
+    "dry": "Trocken",
+    "wet": "Nass"
+  },
+  "errorMessage": {
+    "incompleteLocationInput": "Nicht in der Karte gefunden"
+  },
+  "forestEcoregion": {
+    "label": "Standortsregion"
+  },
   "forestType": {
-    "cancel": "Abbrechen",
-    "label": "Standortstyp",
-    "hint": "Bitte in der Karte auswählen",
-    "select": "Standortstyp auswählen",
-    "transition": "Übergang zu Standortstyp",
     "aspect": {
-      "label": "Exposition",
-      "001-025": "N - NNO",
-      "026-050": "NNO - NO",
-      "051-075": "NO - ONO",
-      "076-100": "ONO - O",
-      "101-125": "O - SOO",
-      "126-150": "SOO - SO",
-      "151-175": "SO - SSO",
-      "176-200": "SSO - S",
-      "201-225": "S - SSW",
-      "226-250": "SSW - SW",
-      "251-275": "SW - WSW",
-      "276-300": "WSW - W",
-      "301-325": "W - WNW",
-      "326-350": "WNW - NW",
-      "351-375": "NW - NNW",
-      "376-400": "NNW - N"
+      "001-025": "Nord - Nordnordost",
+      "026-050": "Nordnordost - Nordost",
+      "051-075": "Nordost - Ostnordost",
+      "076-100": "Ostnordost - Ost",
+      "101-125": "Ost - Ostsüdost",
+      "126-150": "Ostsüdost - Südost",
+      "151-175": "Südost - Südsüdost",
+      "176-200": "Südsüdost - Süd",
+      "201-225": "Süd - Südsüdwest",
+      "226-250": "Südsüdwest - Südwest",
+      "251-275": "Südwest - Westsüdwest",
+      "276-300": "Westsüdwest - West",
+      "301-325": "West - Westnordwest",
+      "326-350": "Westnordwest - Nordwest",
+      "351-375": "Nordwest - Nordnordwest",
+      "376-400": "Nordnordwest - Nord",
+      "label": "Exposition"
     },
-    "slope": {
-      "label": "Hangneigung in %",
-      "000-010": "0 -  10",
-      "010-025": "10 - 25",
-      "025-050": "25 - 50",
-      "050-075": "50 - 75",
-      "075-100": "75 - 100",
-      "100": "> 100"
+    "cancel": "Abbrechen",
+    "carbonate": {
+      "fine": "Feinerde",
+      "label": "Karbonatgehalt",
+      "rock": "Gestein"
+    },
+    "coniferTreeHeightMax": "Nadelbaum [m]",
+    "deciduousTreeHeightMax": "Laubbaum [m]",
+    "geomorphology": {
+      "blockyRockyLittle": "Blockig-felsig wenig",
+      "blockyRockyStrong": "Blockig-felsig stark",
+      "label": "Geomorphologie",
+      "limestonePavement": "Karren",
+      "rockBand": "Felsband",
+      "rocksModeratelyMoved": "Geröll/Steine mässig bewegt",
+      "rocksStabilised": "Geröll/Steine stabilisiert",
+      "rocksStronglyMoved": "Geröll/Steine stark bewegt"
     },
     "group": {
       "label": "Waldstandortsgruppen",
       "main": "Hauptwaldstandorte",
       "other": "Weitere Waldstandortstypen",
-      "special": "Sonderwaldstandort",
-      "volatile": "Stark wechselnde Feuchtigkeit",
+      "pioneer": "Pionierstandort",
       "riverside": "Auenwald",
-      "pioneer": "Pionierstandort"
+      "special": "Sonderwaldstandort",
+      "volatile": "Stark wechselnde Feuchtigkeit"
     },
-    "treeHeight": "Maximale Baumhöhe",
-    "coniferTreeHeightMax": "Nadelbaum [m]",
-    "deciduousTreeHeightMax": "Laubbaum [m]",
-    "carbonate": {
-      "label": "Karbonatgehalt",
-      "fine": "Feinmaterial",
-      "rock": "Gestein"
+    "hint": "Bitte in der Karte auswählen",
+    "indicator": {
+      "label": "vorhandene Zeigerpflanzen",
+      "placeholder": "Bitte Zeigerarten eingeben"
     },
-    "geomorphology": {
-      "label": "Geomorphologie",
-      "rockBand": "Felsband",
-      "blockyRockyStrong": "Blockig-felsig stark",
-      "blockyRockyLittle": "Blockig-felsig wenig",
-      "limestonePavement": "Karren",
-      "rocksModeratelyMoved": "Geröll/Steine mäßig bewegt",
-      "rocksStronglyMoved": "Geröll/Steine stark bewegt",
-      "rocksStabilised": "Geröll/Steine stabilisiert"
-    },
+    "label": "Standortstyp",
     "reliefType": {
-      "label": "Relieftyp",
       "centralSlope": "Mittelhang",
-      "hollow": "Mulde / Unterhang",
       "dome": "Kuppe / Oberhang",
+      "hollow": "Mulde / Unterhang",
+      "label": "Relieftyp",
       "plateau": "flach / Plateau",
       "steep": "Steilhang"
     },
+    "select": "Standortstyp auswählen",
+    "slope": {
+      "100": "100",
+      "000-010": "0 -  10",
+      "010-025": "10 - 25",
+      "025-050": "25 - 50",
+      "050-075": "50 - 75",
+      "075-100": "75 - 100",
+      "label": "Hangneigung in %"
+    },
+    "transition": "Übergang zu Standortstyp",
+    "treeHeight": "Maximale Baumhöhe",
     "treeType": {
       "label": "vorhandene Baumarten",
-      "placeholder": "Bitte Baumart eingeben"
-    },
-    "indicator": {
-      "label": "vorhandene Zeigerpflanzen",
-      "placeholder": "Bitte Zeigerart eingeben"
+      "placeholder": "Bitte Baumarten eingeben"
     }
   },
-  "slope": {
-    "label": "Hangneigung"
+  "help": {
+    "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
+    "recommendationAttentionHeader": "Götterbaum",
+    "recommendationNegative": "Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind. Es sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <strong>in nur einer oder in keiner Klimaprojektion als weitere Baumart vorkommen (fett)</strong>. † = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart",
+    "recommendationNegativeHeader": "Gefährdete Baumarten",
+    "recommendationNeutral": "Diese Baumarten können gefördert werden. Sie sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart) und entweder <strong>bei beiden Klimaprojektionen weitere Baumart (fett)</strong> oder sie sind nur in einer Klimaprojektion möglich (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). † = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart. Die Liste enthält am Ende auch einige gebietsfremde Baumarten. Bei der Robinie ist wegen invasiven Verhaltens Vorsicht angezeigt.",
+    "recommendationNeutralHeader": "Bedingt empfohlene Baumarten",
+    "recommendationPositive": "Diese Baumarten sollen gefördert werden. Sie sind <strong>in allen Klimaprojektionen dominante oder wichtige beigemischte Naturwaldbaumarten (fett)</strong>, oder dies trifft entweder bei «mässigem» oder «starkem» Klimawandel zu (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). † = Baumart, die krankheitsgefährdet ist und daher trotz bedingter Standortseignung nicht gefördert werden soll; * = Pionierbaumart. Die Liste enthält am Ende auch einige gebietsfremde Baumarten. Bei der Robinie ist wegen invasiven Verhaltens Vorsicht angezeigt.",
+    "recommendationPositiveHeader": "Empfohlene Baumarten"
   },
-  "additional": {
-    "label": "Weitere"
+  "info": {
+    "about": "Die <i>Tree App</i> unterstützt Dich bei der Wahl geeigneter Baumarten für drei Annahmen über das Klima:<2><0>Klima 1961-1990</0><1>mässiger Klimawandel 2070-2099</1><2>starker Klimawandel 2070-2099</2></2><p>Sie ist ein Produkt des Forschungsprogramms Wald und Klimawandel von BAFU und WSL.<br> Klicke in die Karte, um für den gewählten Ort eine Baumartenempfehlung zu erhalten. Dann musst Du den Standortstyp (die Waldgesellschaft) angeben. Entweder Du bestimmst ihn mit Hilfe der App (Button „Standort“), oder Du wählst ihn manuell aus der Liste der möglichen Standortstypen (Button „Empfehlung“).</p><p>Version {{version}}</p>",
+    "aboutTitle": "Über die Anwendung",
+    "bugs": "<p>In der aktuellen Version sind folgende Fehler bekannt oder Features noch nicht implementiert:</p><p>1) Die App funktioniert mit den Browsern Firefox, Edge, Chrome, Samsung Internet und Safari. Bei anderen Browsern können Fehlfunktionen auftreten.</p><p>2) Wenn die Tree App in einer früheren Version geladen wurde, kann es sein, dass sie nicht aktualisiert wird. Um dies zu erreichen, muss der Cache manuell geleert werden (s. Browser-spezifische Anleitungen im Internet). </p><p>3) In den Standortsregionen 2b und 4 können Buchen in der Oberschicht vorkommen. Dann müssen die Ökogramme der Standortsregionen 2a bzw. 5 verwendet werden. Dies ist sowohl in der Ansicht „Standort“ als auch in der Ansicht „Empfehlung“ im manuellen Modus möglich.</p><p>4) Im Tannenreliktareal können Tannen in der Oberschicht vorkommen. Dann müssen die Ökogramme des Tannenhaupt- und Nebenareals verwendet werden. Dies ist bei der Ansicht „Standort“ nicht implementiert, und in der Ansicht „Empfehlung“ nur im manuellen Modus möglich.</p><p>5) Es ist geplant, kantonale Kartierungen der Waldstandorte so einzubinden, dass der Standortstyp direkt aus der Standortskarte übernommen wird. 6) Die gemäss Tree App empfohlenen Baumarten können von den in den kantonalen Fachgrundlagen empfohlenen Baumarten abweichen, denn sie wurden aus mehreren kantonalen Grundlagenwerken zusammengestellt. 7) Die Hintergrundkarten sind nicht offline-fähig. Man kann sie aber, bevor die Verbindung abbricht, in den Browser laden. ",
+    "bugsTitle": "Bekannte Bugs und geplante Erweiterungen",
+    "glossary": "<p><strong>Éléments représentés</strong></p><p>La page permettant de déterminer les stations indique en haut les coordonnées géographiques du point sélectionné (7 chiffres, système de référence LV95) et comporte, à droite, un bouton permettant de choisir entre le mode cartes ou le mode manuel. En dessous figurent, pour chaque lieu sélectionné sur la carte, l’écorégion, l’étage de végétation actuel et l’aire du sapin blanc (ces informations ne peuvent être modifiées qu’en mode manuel).</p><p>En dessous sont listés les <strong>critères de filtrage</strong>, c’est-à-dire les caractéristiques d’une station et d’un peuplement permettant de sélectionner les types de stations les plus adaptés parmi toutes les possibilités existant pour une écorégion et un étage de végétation donnés.</p><p>En dessous figure <strong>l’écogramme</strong>, contenant toutes les stations forestières principales. Les types de station résultant du filtrage sont affichées en vert, celles ayant été exclues, en gris. L’écogramme est masqué lorsque le critère « Groupe de stations forestières » a été choisi et que les stations forestières principales ne sont pas sélectionnées. En dessous de l’écogramme figure une liste <strong>d’autres types de station</strong> : les types de station résultant du filtrage.</p><p><strong>Mode d'emploi</strong></p><p>La détermination, sur la base des 16 <strong>critères de filtrage</strong>, vise à réduire les types de station possibles pour une écorégion et un étage de végétation donnés à un petit nombre de types de station adaptés. Pour certains critères, il est possible de sélectionner (cocher) les variantes adaptées, pour d’autres, les variantes sont à sélectionner à partir de la liste (choix multiple possible); le choix peut être accéléré en tapant les premières lettres du mot. Les critères de filtrage sont :</p><p>les essences : il s’agit ici des essences présentes dans le peuplement. Sélectionner les essences peu représentées, plutôt que celles fréquemment représentées, permet un filtrage plus efficace.</p><p>Espèces indicatrices : la liste contient une sélection de plantes permettant de bien différencier les types de station et dont la détermination est relativement facile. Sont mentionnées les espèces indicatrices qui se trouvent dans une futaie entrouverte présentant un mélange d’essences semi-naturel. Pour d’autres mélanges d’essences ou d’autres structures de peuplement, la végétation basse peut diverger.</p><p>Hauteur des arbres : la hauteur maximale observée peut être entrée séparément pour les résineux et les feuillus. Les types de station dans lesquels les arbres n’atteignent pas cette hauteur maximale sont exclus. Ce critère ne s’applique qu’aux vieux peuplements.</p><p>Teneur en carbonate : peut être indiquée séparément pour la terre fine et pour la roche. L’acide chlorhydrique aide à la détermination.</p><p>Géomorphologie et type de relief : les roches affleurantes indiquent la présence de formations rocheuses (indiquée par la mention « Fe » dans le type de station, p. ex. 13aFe =  hêtraie à tilleul typique sur roches). Les éboulis actifs indiquent la présence de stations forestières particulières.</p><p>Exposition : elle peut être indiquée sous forme de 16 directions différentes.</p><p>pente : elle peut être indiquée en %, sous forme de 6 classes de déclivité.</p><p>Groupes de stations forestières : les types de stations sont répartis en 5 groupes (stations forestières principales, stations forestières particulières, stations caractérisées par une humidité très variable, forêts alluviales ainsi que stations pionnières et forêts buissonnantes, cf. glossaire). Cette répartition est surtout utile lorsqu’il n’existe pas de station forestière principale, par exemple à proximité d’eaux courantes (station forestière alluviale). Si un groupe autre que celui des stations forestières principales est choisi, l’écogramme est masqué.</p><p><strong>Utilisation des filtres</strong></p><p>Si un filtrage trop lâche laisse apparaître un trop grand nombre de types de station, un filtrage trop stricte peut, dans un cas extrême, ne donner aucun type de station. Dans l’idéal, le filtrage doit laisser apparaître entre 2 et 5 types. Ces derniers peuvent être des stations forestières principales (représentées dans l’écogramme) et/ou des types d’autres groupes de stations (affichés en dessous de l’écogramme). Cliquer sur un type de station permet d’afficher la description complète de ce dernier, qui peut être vérifiée (cliquer sur le symbole pdf permet d’afficher un nouvel onglet dans le navigateur) ou de passer directement à la vue « Recommandations pour le choix des essences ». Dès qu’un filtre est appliqué, un bouton apparaît en dessus de l’écogramme permettant d’enlever tous les filtres. Les caractéristiques des filtres sont à observer dans des endroits typiques, proches de l’état naturel et intacts au stade développement de la futaie, et non dans des buissons situés en bord de route, en bordure de layons de débardage, dans des peuplements artificiels peu naturels ou sur des surfaces de chablis. L’observation de ces caractéristiques permet de gagner une vue d’ensemble et de prêter attention à des aspects marquants tels que la hauteur des arbres, les essences, les plantes indicatrices particulières et les caractéristiques du sol. Lorsque, à l’issue du filtrage, il reste 2 types de station plausibles, ceux-ci peuvent être pris en considération pour la recommandation du choix des essences. En effet, des transitions entre deux types de station peuvent être indiquées.</p>",
+    "glossaryTitle": "Glossar",
+    "impressum": "Die Tree App ist ein Umsetzungsprodukt des Forschungsprogramms „Wald und Klimawandel“ von BAFU und WSL.",
+    "impressumTitle": "Impressum",
+    "location": "<p><strong>Dargestellte Elemente</strong></p><p>Der Screen Standortsbestimmung zeigt oben die geografischen Koordinaten des ausgewählten Punktes (siebenstellig, Bezugssystem LV95) und rechts den Button für die Wahl zwischen Kartenmodus und manuellem Modus. Darunter folgen, für den auf der Karte markierten geografischen Ort, die Standortsregion, die heutige Höhenstufe und das Tannenareal (diese Informationen können nur im manuellen Modus verändert werden).</p><p>Darunter sind die <strong>Filterkriterien</strong> aufgelistet, d.h. Merkmale des Standorts und des Bestandes, die es erlauben, unter allen in einer bestimmten Standortsregion und Höhenstufe möglichen Standortstypen die am besten passenden auszuwählen.</p><p>Darunter ist das <strong>Ökogramm</strong> dargestellt, das alle Hauptwaldstandorte enthält. Innerhalb des Ökogramms sind die aufgrund der Filterung noch verbleibenden Standortstypen grün, die ausgeschlossenen dagegen grau hinterlegt. Das Ökogramm wird ausgeblendet, wenn mit dem Filterkriterium \"Waldstandortsgruppe\" die Hauptwaldstandorte nicht gewählt werden. Unter dem Ökogramm folgt eine Liste <strong>Weiterer Standortstypen</strong>; hier sind die aufgrund der Filterung verbleibenden Standortstypen aufgelistet.</p><p><strong>Bedienungshinweise</strong></p><p>Ziel der Bestimmung ist die Reduktion der in einer Standortsregion und in einer Höhenstufe möglichen Standortstypen auf wenige passende. Dazu dienen <strong>Filterkriterien</strong>. Bei einigen Kriterien kann man die passenden Ausprägungen anwählen (Häkchen setzen), bei anderen Ausprägungen aus der Auswahlliste wählen (Mehrfachauswahl möglich), wobei das Eintippen der Anfangsbuchstaben die Liste verkürzt. Die Filterkriterien sind:</p><p>Baumarten: Gemeint sind hier die im Bestand vorkommenden Baumarten. Oft filtern wenig vertretene Baumarten wirksamer als häufige.</p><p>Zeigerarten: Die Liste enthält eine Auswahl von Pflanzen, welche gut zwischen Standortstypen differenzieren und deren Bestimmung relativ leicht ist. Es sind Zeigerarten erwähnt, die in einem lockeren Baumholz mit naturnaher Baumartenmischung zu finden sind. Bei anderer Baumartenmischung oder anderer Bestandesstruktur kann die Bodenvegetation abweichen.</p><p>Baumhöhe: Getrennt für Nadel- und Laubbäume kann die maximale festgestellte Baumhöhe eingegeben werden. Standortstypen, auf denen die Bäume diese Baumhöhe nicht erreichen, werden ausgeschlossen. Die maximale Baumhöhe taugt nur bei älteren Beständen als Filterkriterium.</p><p>Karbonatgehalt: Dieser kann separat für die Feinerde und das Gestein angegeben werden. Zur Bestimmung hilft verdünnte Salzsäure.</p><p>Geomorphologie & Relieftyp: Anstehender Fels weist auf Felsausbildungen hin (im Standortstyp mit angehängtem „Fe“ gekennzeichnet, z.B. 13aFe = Typischer Linden-Buchen-Wald auf Fels). Bewegtes Geröll weist auf Sonderwaldstandorte hin.</p><p>Exposition: Sie kann in 16 Richtungen unterteilt angegeben werden.</p><p>Hangneigung: Die Hangneigung kann in 6 Neigungsklassen in % angegeben werden.</p><p>Waldstandortsgruppen: Diese unterteilen die Standortstypen in 5 Gruppen (Hauptwaldstandorte, Sonderwaldstandorte, Standorte mit stark wechselnder Feuchtigkeit, Auenwälder sowie Pionierstandorte und Gebüschwälder, s. Glossar). Die Unterteilung ist v.a. dann hilfreich, wenn kein Hauptwaldstandort vorliegt, z.B. in der Nähe von fliessendem Wasser (Auenwaldstandort). Wird eine andere Gruppe als die der Hauptwaldstandorte gewählt, wird das Ökogramm ausgeblendet.</p><p><strong>Vorgehen beim Filtern</strong></p><p>Eine zu schwache Filterung lässt zu viele Standortstypen übrig, eine zu starke im Extremfall keinen Standortstyp. Ziel sollte sein, so stark zu filtern, dass 2 bis 5 Typen verbleiben. Diese können Hauptwaldstandorte sein (im Ökogramm dargestellt) und/oder solche aus weiteren Standortsgruppen (unter dem Ökogramm dargestellt). Beim Anklicken eines Standortstyps kann man dessen ausführliche Beschreibung überprüfen (Klick auf Symbol i, dann geht ein weiterer Reiter im Browser auf) oder direkt in die Ansicht „Baumartenempfehlung“ wechseln. Sobald man irgendeinen Filter gesetzt hat, erscheint oberhalb des Ökogramms ein Button, mit dem sich alle Filter zurücksetzen lassen. Die Filtermerkmale sollen an typischen, naturnahen, ungestörten Stellen in der Entwicklungsstufe Baumholz beobachtet werden, also nicht in Strassenböschungen, auf Rückegassen, in naturfernen Kunstbeständen oder auf Sturmflächen. Dabei wird ein Gesamteindruck gewonnen und auf auffällige Merkmale wie die Baumhöhe, die Baumarten, besondere Zeigerpflanzen und Bodenmerkmale geachtet. Wenn am Ende der Filterung 2 plausible Standortstypen übrigbleiben, kann die Baumartenempfehlung beide berücksichtigen, denn es können Übergänge zwischen Standortstypen angegeben werden.</p>",
+    "locationTitle": "Standort",
+    "participants": "<p>Viele Fachleute haben zur Tree App beigetragen. Besonders erwähnt seien hier folgende Personen:</p><1><strong>Standortkundliche Grundlagen zum Projekt „Nachhaltigkeit im Schutzwald“</strong><br> {{locationBasics}}</1><2><strong>Grundlagenarbeiten zur Berücksichtigung des Klimawandels</strong><br> {{climateChangeBasics}}</2><3><strong>Idee zur Tree App</strong><br> {{idea}}</3><4><strong>Konzeption</strong><br> {{conception}}</4><5><strong>Realisierung</strong><br> <2>geOps AG</2></5><6><strong>Projektleitung</strong><br> {{projectManagement}}</6><7><strong>Projektsteuerung</strong><br> {{projectControl}}</7><p><strong>Finanzierung</strong><br> BAFU im Rahmen des Forschungsprogramms „Wald und Klimawandel“, WSL</p><9><strong>Anwender-Begleitgruppe</strong><br> {{wslUsers}}</9><10><strong>IT-Begleitgruppe</strong><br> {{itUsers}}</10>",
+    "participantsTitle": "Beteiligte",
+    "recommendation": "<p>Der Screen Baumartenempfehlung zeigt oben die geografischen Koordinaten des ausgewählten Punktes (siebenstellig, Bezugssystem LV95), den heutigen Standortstyp und die heutige Höhenstufe. Darunter werden die für den gewählten Standortstyp am gewählten Ort empfohlenen Baumarten aufgelistet. Der Screen zeigt die Baumartenempfehlung auf zwei bis vier Screens (Reiter).</p><1><strong>Synthetische Darstellung</strong> (Reiter links: «Baumartenempfehlung»). Diese Darstellung wird zuerst angezeigt (Default) und listet Baumarten auf, die auch im heutigen Klima empfohlen werden. Baumarten, die heute noch nicht empfohlen sind, sondern erst in Zukunft klimatisch geeignet sein dürften, können mit dem Button ganz unten eingeblendet und wieder ausgeblendet werden. Die Kategorien der Eignung der Baumarten auf einem gegebenen Standortstyp und an einem bestimmten geografischen Ort haben folgende Bedeutung:</1><2><0><0></0> empfohlene Baumarten: Diese Baumarten sollen gefördert werden. Sie sind <strong>in allen Klimaprojektionen dominante oder wichtige beigemischte Naturwaldbaumarten (fett)</strong>, oder dies trifft entweder bei «mässigem» oder «starkem» Klimawandel zu (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren).</0><1><0></0> bedingt empfohlene Baumarten: Diese Baumarten können gefördert werden. Sie sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart) und entweder <strong>bei beiden Klimaprojektionen weitere Baumart (fett)</strong> oder sie sind nur in einer Klimaprojektion möglich (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). </1><2><0></0> gefährdete Baumarten: Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind. Es sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <strong>in nur einer oder in keiner Klimaprojektion als weitere Baumart vorkommen (fett)</strong>. </2><3><0></0> Götterbaum: Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <3>Vollzugshilfe des Bundes</3>.</3></2><3>Darstellung für einzelne Klimaannahmen</3><p>Bei Anwendung der Klimaprojektionen für den gewählten Ort ergeben sich ein bis drei verschiedene Höhenstufen. Pro Höhenstufe erscheint rechts vom Reiter «Baumartenempfehlung» als Zusatzinformation ein Reiter, der mit einem Symbol für die Klimaprojektion, der Höhenstufe (z.B. «submontan») und beim Darüberfahren auch der dazu gehörenden Klimaprojektion bezeichnet ist. Die Symbole für die Klimaprojektion sind:</p><5><0><0></0> Heutiges Klima (Periode 1981-2010)</0><1><0></0> «Mässiger» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 3,1 °C wärmer und der Niederschlag ist 2% geringer.</1><2><0></0> «Starker» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 4,3 °C wärmer und der Niederschlag ist 19% geringer.</2></5><p>Die Anzahl angezeigte Reiter bedeutet Folgendes:</p><7><0>Im Fall von drei Reitern ergibt die Anwendung der zwei Klimaprojektionen unterschiedliche Standortstypen für das heutige Klima, für «mässigen» Klimawandel und für «starken» Klimawandel.</0><1>Im Fall von nur einem Reiter ergibt die Anwendung der zwei Klimaprojektionen heute und in Zukunft denselben Standortstyp.</1><2>Im Fall von zwei Reitern fallen die Höhenstufen für jeweils zwei Klimaprojektionen zusammen; entweder für das heutige Klima und den «mässigen» Klimawandel oder für den «mässigen» und den «starken» Klimawandel.</2></7><p>Klickt man auf diese ein bis drei Reiter, werden die für den jeweiligen (heutigen oder zukünftigen) Standortstyp empfohlenen Baumarten aufgeführt. Dies geschieht in den Kategorien «Dominante Naturwaldbaumart», «wichtige beigemischte Naturwaldbaumart» und «weitere Baumarten». Aus diesen Angaben ist ableitbar, bei welcher Klimaprojektion eine Baumart allenfalls nicht mehr empfohlen wird (sie fehlt dann in der Liste der Baumarten) oder erstmals empfohlen wird.</p>",
+    "recommendationTitle": "Baumartenempfehlungen",
+    "reportsTitle": "Zugrundeliegende Berichte",
+    "usage": "<p><strong>Kartenansicht</strong></p><p>In der Kartenansicht kannst Du den Ort wählen, der Dich interessiert. In der mobilen Version kannst Du Deinen aktuellen Standpunkt in die App übertrgen, indem Du auf den Pfeil rechts unten klickst. Der Button links unten verändert den angezeigten Hintergrund: Du kannst die Schweizer Landeskarte oder ein Luftbild anzeigen. Mit den Buttons links oben kannst Du den Ausschnitt vergrössern oder verkleinern. Der Button rechts oben erlaubt das Anzeigen verschiedener Flächeninformationen: Kantonsgrenzen, Standortsregionen, Tannenareale und die Vegetationshöhenstufen für das Klima 1961-1990 („Klima heute“) und für zwei Projektionen des Klimas 2070-2099 („mässiger Klimawandel“ und „starker Klimawandel“).</p><p><strong>Ansicht zur Standortsbestimmung</strong></p><p>Diese Ansicht erreichst Du durch Anklicken des Buttons „Standort“ (unten auf dem Screen). Sie unterstützt Dich beim Bestimmen des Standortstyps. Dies geschieht standardmässig im Kartenmodus (Kartensymbol rechts oben). Wer die Waldstandorte gut kennt, kann den Standortstyp direkt in der Ansicht zur Baumartenempfehlung (s. nächster Punkt) angeben. Er/Sie kann auch in den manuellen Modus wechseln (Bleistiftsymbol rechts oben) und die Vorgaben zu Standortsregion, Höhenstufe heute und Tannenareal überschreiben.</p><p><strong>Ansicht zur Anzeige der Baumartenempfehlung</strong></p><p>Wenn Du in der Ansicht zur Standortsbestimmung einen Standort bestimmt hast, wirst Du direkt in diese Ansicht geleitet. Sie zeigt die empfohlenen, bedingt empfohlenen und gefährdeten Baumarten an. Diese Ansicht erreichst Du auch durch Anklicken des Buttons „Empfehlung“ (unten auf dem Screen). Die Buttons rechts oben erlauben es, aus dem Kartenmodus (Standardeinstellung) in den manuellen Modus zu wechseln.</p>",
+    "usageTitle": "Erläuterungen und Hinweise zur Bedienung",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "Diese App wurde aufgrund der bestmöglichen fachlichen Grundlagen entwickelt. Weder die Bestimmung der Standortstypen noch die Baumartenempfehlungen sind aber fehlerfrei. Es kann nicht ausgeschlossen werden, dass bei Befolgen der Empfehlungen Misserfolge resultieren. Jede/r Anwender/in der App nimmt diese Risiken in Kauf und trägt sie selbst. Die WSL und geOps AG schliessen jede Haftung ausdrücklich aus. "
+  },
+  "location": {
+    "header": "Filterkriterien",
+    "help": "Ziel der Bestimmung ist die Reduktion der in einer Standortsregion und in einer Höhenstufe möglichen Standortstypen auf wenige passende. Dazu dienen 8 <strong>Filterkriterien</strong>. Bei einigen Kriterien kann man die passenden Ausprägungen anwählen (Häkchen setzen), bei anderen Ausprägungen aus der Auswahlliste wählen (Mehrfachauswahl möglich), wobei das Eintippen der Anfangsbuchstaben die Liste verkürzt.",
+    "mainResultHelp": "Zonaler Standortstyp, der für die entsprechende Vegetationshöhenstufe durch die Standortsfaktoren Bodensäure bzw. Nährstoffverfügbarkeit und die durchschnittliche Bodenfeuchte genügend charakterisiert und im Ökogramm dargestellt werden kann.\r\nBei Anwendung der Filterkriterien werden Standortstypen,  welche die Kriterien erfüllen, grün hinterlegt, und Standortstypen, die sie nicht erfüllen, grau hinterlegt. ",
+    "noEcogram": "Kein Ökogramm gefunden",
+    "otherResultHelp": "Weitere an diesem Ort mögliche Standortstypen, die nicht zu den Hauptwaldstandorten (s. Ökogramm) gehören, sondern zu einer der folgenden 4 Standortsgruppen: Sonderwaldstandorte, Standorte mit stark wechselnde Feuchtigkeit, Auenwälder sowie Pionierstandorte und Gebüschwälder (s. Glossar).",
+    "reset": "Filterkriterien zurücksetzen"
+  },
+  "map": {
+    "altitudinalZones": "Höhenstufen",
+    "altitudinal_zones_1995": "Klima heute",
+    "altitudinal_zones_2085_dry": "starker Klimawandel",
+    "altitudinal_zones_2085_less_dry": "mässiger Klimawandel",
+    "baseLayer": {
+      "aerial": "Luftbild",
+      "map": "Karte"
+    },
+    "cantonal_boundaries": "Kantonsgrenzen",
+    "forest_ecoregions": "Standortsregionen",
+    "forest_types": "Standortstypen",
+    "hint": "Bitte Position wählen",
+    "legend": "Legende",
+    "silver_fir_areas": "Tannenareale"
+  },
+  "offline": {
+    "success": "Die Tree App ist offline verfügbar.",
+    "update": "Neue Version laden"
+  },
+  "projection": {
+    "missingLocation": "Bitte eine Position in der Karte wählen.",
+    "missingLocationData": "Keine Daten gefunden, bitte eine andere Position wählen.",
+    "missingProjectionData": "Keine Standortstypen gefunden, bitte eine andere Position wählen.",
+    "transition": {
+      "false": "Nein",
+      "label": "Übergangsstandort",
+      "true": "Ja"
+    },
+    "treeTypesOne": "Dominante Naturwaldbaumart",
+    "treeTypesThree": "Weitere Baumarten",
+    "treeTypesTwo": "Wichtige beigemischte Naturwaldbaumart"
+  },
+  "projectionScenario": {
+    "extreme": "starker Klimawandel",
+    "manual": "manueller Klimawandel",
+    "moderate": "mässiger Klimawandel",
+    "moderateExtreme": "mässiger und starker Klimawandel",
+    "today": "Klima heute"
+  },
+  "recommendation": {
+    "attention": "Achtung",
+    "future": "In Zukunft zusätzlich passende Baumarten einblenden",
+    "header": "Empfehlung",
+    "negative": "Reduzieren",
+    "neutral": "Mitnehmen",
+    "noProjectionFound": "Keine Empfehlung möglich",
+    "positive": "Fördern",
+    "sameAltitudinalZone": "Hier ändert sich zwar die Höhenstufe nicht; unter den empfohlenen Baumarten sollen aber diejenigen bevorzugt werden, die Wärme und Trockenheit am besten ertragen"
+  },
+  "relief": {
+    "label": "Relief"
   },
   "silverFirArea": {
     "label": "Tannenareal"
   },
-  "relief": {
-    "label": "Relief"
+  "slope": {
+    "label": "Hangneigung"
   },
   "targetAltitudinalZone": {
     "label": "Höhenstufe Zukunft",
     "transition": "Übergang zu Höhenstufe Zukunft"
   },
-  "errorMessage": {
-    "incompleteLocationInput": "Nicht in der Karte gefunden"
-  },
   "welcome": {
-    "header": "Das Klima ändert sich",
-    "close": "Weiter zum Prototypen"
+    "close": "Weiter zum Prototypen",
+    "header": "Das Klima ändert sich"
   }
 }
