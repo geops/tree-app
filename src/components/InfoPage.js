@@ -67,6 +67,11 @@ function InfoPage() {
       title: { content: t('info.impressumTitle') },
       content: { content: t('info.impressum') },
     },
+    {
+      key: 'info.disclaimer',
+      title: { content: t('info.disclaimerTitle') },
+      content: { content: t('info.disclaimer') },
+    },
   ];
   return (
     <div className={styles.page}>
