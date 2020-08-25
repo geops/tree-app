@@ -25,7 +25,7 @@ SELECT DISTINCT processed_forest_ecoregion AS forest_ecoregion,
        END AS additional,
        CASE silver_fir_area is null
            WHEN TRUE THEN 'unknown'
-           ELSE silver_fir_area_meta.code_ta
+           ELSE silver_fir_area_meta.target
        END AS silver_fir_area,
        CASE relief_meta.target is null
            WHEN TRUE THEN 'unknown'
@@ -52,7 +52,7 @@ FROM
                  END as processed_silver_fir_area2,
                  CASE
                    WHEN target_altitudinal_zone ~ 'hochmontan' THEN 'hochmontan'
-                   ELSE target_altitudinal_zone
+                   ELSE trim(target_altitudinal_zone)
                  END as processed_target_altitudinal_zone,
             *
      FROM
@@ -61,10 +61,10 @@ FROM
                                       FROM silver_fir_areas)))[1] AS processed_silver_fir_area,
                  *
           FROM projections_import) import_silver_fir_area) import
-LEFT JOIN altitudinal_zone_meta ON lower(altitudinal_zone_meta.projection::text) = lower(import.altitudinal_zone)
-LEFT JOIN altitudinal_zone_meta target_altitudinal_zone_meta ON lower(target_altitudinal_zone_meta.projection::text) = lower(import.processed_target_altitudinal_zone)
+LEFT JOIN altitudinal_zone_meta ON lower(altitudinal_zone_meta.source::text) = trim(lower(import.altitudinal_zone))
+LEFT JOIN altitudinal_zone_meta target_altitudinal_zone_meta ON lower(target_altitudinal_zone_meta.source::text) = lower(import.processed_target_altitudinal_zone)
 LEFT JOIN additional_meta ON lower(additional_meta.source) = lower(import.additional)
-LEFT JOIN silver_fir_area_meta ON lower(silver_fir_area_meta.projection) = import.processed_silver_fir_area2
+LEFT JOIN silver_fir_area_meta ON lower(silver_fir_area_meta.source) = import.processed_silver_fir_area2
 LEFT JOIN relief_meta ON relief_meta.source = import.relief
 LEFT JOIN slopes ON slopes.slope = import.slope;
 
@@ -193,24 +193,24 @@ COPY (
 
 COPY
     (WITH additional AS
-         (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
+         (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
           FROM additional_meta),
           altitudinal_zone AS
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', projection, 'id', id)) AS
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'id', id)) AS
           values
           FROM altitudinal_zone_meta),
           forest_ecoregions AS
-         (SELECT json_agg(jsonb_build_object('code', subcode, 'de', region_de)) AS
+         (SELECT json_agg(jsonb_build_object('code', subcode, 'de', region_de, 'fr', region_fr)) AS
           values
           FROM
               (SELECT subcode,
-                            min(region_de) AS region_de
+                            min(region_de) AS region_de, min(region_fr) AS region_fr
                FROM forest_ecoregions
                GROUP BY subcode
                ORDER BY subcode) foo),
           foresttype AS
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'height', CASE tree_layer_height_min is null
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'height', CASE tree_layer_height_min is null
                                                                                    WHEN TRUE THEN null
                                                                                    ELSE jsonb_build_array(conifer_tree_height_max, deciduous_tree_height_max)
                                                                                END,
@@ -246,7 +246,7 @@ COPY
           VALUES
           FROM foresttype_meta),
           indicators as
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'forestTypes',
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'forestTypes',
                                                  (SELECT json_agg(trim(BOTH FROM naistyp_c))
                                                   FROM nat_naistyp_art
                                                   WHERE vorh IN ('1', '2', '3') AND sisf_nr::int = indicator_meta.code)
@@ -254,22 +254,22 @@ COPY
           values
           FROM indicator_meta),
           relief as
-         (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
+         (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
           FROM
               (SELECT DISTINCT target,
-                               de
+                               de, fr
                FROM relief_meta) foo),
           silver_fir_areas as
-         (SELECT json_agg(jsonb_build_object('code', code_ta, 'de', projection)) AS
+         (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
           FROM silver_fir_area_meta),
           slope AS
-         (SELECT json_agg(jsonb_build_object('code', target, 'de', de)) AS
+         (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
           FROM slope_meta),
           treetype AS
-         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'endangered', endangered, 'nonresident', nonresident, 'pioneer', pioneer, 'forestTypes',
+         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'fr', fr, 'endangered', endangered, 'nonresident', nonresident, 'pioneer', pioneer, 'forestTypes',
                                                  (SELECT json_agg(trim(BOTH FROM naistyp_c))
                                                   FROM nat_naistyp_art
                                                   WHERE vorh IN ('1', '2', '3') AND sisf_nr::int::text = treetype_meta.target::text))) AS

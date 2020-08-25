@@ -4,244 +4,290 @@
 CREATE TYPE additional AS ENUM ('NrmlSl','ExtB','Nrml','withAv','CmpS','Shdy_Cl_Bb','Shdy_Cl','Wrm_Rdt','=10F','Cl','<1F','NoAvln','WthAvln', 'D_Eb_Cl','>5F','<5F','DpSl_Shdy','Dp','Rvn','Rbl','Shlw','<10F','>10F','unknown');
 
 
-CREATE TABLE additional_meta (source TEXT, de TEXT,en TEXT,target additional);
+CREATE TABLE additional_meta (source TEXT, de TEXT, en TEXT, fr TEXT,target additional);
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Boden normal',
         'Boden normal',
         'Normal Soil',
+        'sol normal',
         'NrmlSl');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Extrem blockig',
         'Extrem blockig',
         'Extremely blocky',
+        'extrèmement riche en blocs',
         'ExtB');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Normal',
         'Normal',
         'Normal',
+        'normal',
         'Nrml');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('bei Lawinenzug',
         'bei Lawinenzug',
         'for avalanches',
+        'près d''un couloir d''avalanches',
         'withAv');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Boden verdichtet',
         'Boden verdichtet',
         'Compacted Soil',
+        'sol compacté',
         'CmpS');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('schattig, kühl, grosse Blöcke',
         'schattig, kühl, grosse Blöcke',
         'Shady, Cool, Big blocks',
+        'ombragé, frais, gros blocs',
         'Shdy_Cl_Bb');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Schattig, Kühl',
         'Schattig, Kühl',
         'Shady, Cool',
+        'ombragé, frais',
         'Shdy_Cl');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Warm und Strahlungsreich',
         'Warm und Strahlungsreich',
         'Warm and radiant',
+        'chaud et radiant',
         'Wrm_Rdt');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('falls mind alle 10 Jahre überschwemmt',
         'falls mind alle 10 Jahre überschwemmt',
         'Flooded every 10 years',
+        'en cas d''inondation tous les 10 ans',
         '=10F');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Kühl',
         'Kühl',
         'Cool',
+        'frais',
         'Cl');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('falls alljährlich überschwemmt',
         'falls alljährlich überschwemmt',
         'Flooded every year',
+        'en cas d''inondation annuelle',
         '<1F');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Keine Lawinenbeeinflussung',
         'Keine Lawinenbeeinflussung',
         'No avalanche influence',
+        'sans influence par des avalanches',
         'NoAvln');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mit Lawinenbeeinflussung',
         'mit Lawinenbeeinflussung',
         'With avalanche control',
+        'avec influence par des avalanches',
         'WthAvln');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('trocken, extrem blockig, kühl',
         'trocken, extrem blockig, kühl',
         'Dry, Extremely blocky, Cool',
+        'sec, extrèmement riches en blocs, frais',
         'D_Eb_Cl');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('alle 6 Jahre oder seltener überschwemmt',
         'alle 6 Jahre oder seltener überschwemmt',
         'Flooded every six years or less',
+        'inondé tous les 6 ans ou plus rarement',
         '>5F');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('bis alle 5 Jahre überschwemmt',
         'bis alle 5 Jahre überschwemmt',
         'Flooded every five years',
+        'inondé jusqu''à tous les 5 ans',
         '<5F');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('tiefgründiger Boden, schattig',
         'tiefgründiger Boden, schattig',
         'Deep soil, Shady',
+        'sol profond, ombragé',
         'DpSl_Shdy');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('tiefgründig',
         'tiefgründig',
         'Deep',
+        'sol profond',
         'Dp');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Schlucht',
         'Schlucht',
         'Ravine',
+        'ravine',
         'Rvn');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mit viel Schutt',
         'mit viel Schutt',
         'With lots of rubble',
+        'éboulis marqué',
         'Rbl');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('flachgründig',
         'flachgründig',
         'Shallow',
+        'sol superficiel',
         'Shlw');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('weniger als alle 10 Jahre überschwemmt',
         'weniger als alle 10 Jahre überschwemmt',
         'Flooded less than every 10 years',
+        'inondé plus rarement que tous les 10 ans',
         '<10F');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mind. alle 10 Jahre überschwemmt',
         'mind. alle 10 Jahre überschwemmt',
         'Flooded at least every 10 years',
+        'inondé au moins tous les 10 ans',
         '>10F');
 
 
-INSERT INTO additional_meta (source,de,en,target)
+INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('',
         'nicht relevant',
         'not relevant',
+        'pas important',
         'unknown');
 
 ----------------------------------------------
 -- altitudinal zones
 
-CREATE TABLE altitudinal_zone_meta (projection TEXT, nais TEXT, code TEXT, id SERIAL);
+CREATE TABLE altitudinal_zone_meta (source TEXT, de TEXT, fr TEXT, nais TEXT, code TEXT, id SERIAL);
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('collin -mediterran',
+        'collin -mediterran',
+        'collinéen à méditerranéen',
         '01C',
         '0');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('hyperinsubrisch',
+        'hyperinsubrisch',
+        'hyperinsubrique',
         'HY',
         '10');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('collin',
+        'collin',
+        'collinéen',
         'C',
         '20');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('collin mit Buche',
+        'collin mit Buche',
+        'collinéen avec hêtre',
         'CB',
         '30');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('submontan',
+        'submontan',
+        'submontagnard',
         'SM',
         '40');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('untermontan',
+        'untermontan',
+        'montagnard inférieur',
         'UM',
         '50');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('obermontan',
+        'obermontan',
+        'montagnard supérieur',
         'OM',
         '60');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('unter- & obermontan',
+        'unter- & obermontan',
+        'montagnard inférieur & supérieur',
         'UMOM',
         '70');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('hochmontan',
+        'hochmontan',
+        'haut-montagnard',
         'HM',
         '80');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('subalpin',
+        'subalpin',
+        'subalpin',
         'SA',
         '90');
 
 
-INSERT INTO altitudinal_zone_meta (projection, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('obersubalpin',
+        'obersubalpin',
+        'subalpin supérieur',
         'OSA',
         '100');
 
@@ -249,16 +295,21 @@ VALUES ('obersubalpin',
 -- foresttype
 
 CREATE TABLE foresttype_meta (code TEXT PRIMARY KEY,
-                                                de TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
+                                                de TEXT, fr TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
                               sort FLOAT, carbonate_fine BOOLEAN, carbonate_rock BOOLEAN, geomorphology_rock_band BOOLEAN, geomorphology_blocky_rocky_strong BOOLEAN, geomorphology_blocky_rocky_little BOOLEAN, geomorphology_limestone_pavement BOOLEAN, geomorphology_rocks_moderately_moved BOOLEAN, geomorphology_rocks_strongly_moved BOOLEAN, geomorphology_rocks_stabilised BOOLEAN, relief_type_central_slope BOOLEAN, relief_type_hollow BOOLEAN, relief_type_dome BOOLEAN, relief_type_plateau BOOLEAN, relief_type_steep BOOLEAN);
 
 
-INSERT INTO foresttype_meta (code, de, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
+INSERT INTO foresttype_meta (code, de, fr, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
                              sort, carbonate_fine, carbonate_rock, geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised, relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep)
 SELECT trim(BOTH
             FROM naistyp_c) AS code,
-       trim(BOTH
-            FROM naistyp_wges) AS de,
+       COALESCE(trim(BOTH
+                     FROM naistyp_name_deu), trim(BOTH
+                                                  FROM naistyp_namk_deu), trim(BOTH
+                                                                               FROM naistyp_wges)) AS de,
+       COALESCE(trim(BOTH
+                     FROM naistyp_name_frz), trim(BOTH
+                                                  FROM naistyp_namk_frz)) AS fr,
        typ.naistyp_hdom_min::int AS tree_layer_height_min,
        typ.naistyp_hdom_max::int AS tree_layer_height_max,
        typ.naistyp_hmax_nad::int AS conifer_tree_height_max,
@@ -345,6 +396,7 @@ UNION
 SELECT trim(BOTH
             FROM naistyp) AS code,
        NULL AS de,
+       NULL AS fr,
        NULL AS tree_layer_height_min,
        NULL AS tree_layer_height_max,
        NULL AS conifer_tree_height_max,
@@ -474,7 +526,7 @@ WHERE feld_name ILIKE 'HN_%'
 -- indicator
 
 CREATE TABLE indicator_meta (code INTEGER PRIMARY KEY,
-                                                  de TEXT);
+                                                  de TEXT, fr TEXT);
 
 
 CREATE TABLE indicator_foresttype (indicator_code INTEGER REFERENCES indicator_meta,
@@ -489,9 +541,10 @@ CREATE TABLE indicator_forest_ecoregion (indicator_code INTEGER REFERENCES indic
                                                                            forest_ecoregion_code TEXT);
 
 
-INSERT INTO indicator_meta (code, de)
+INSERT INTO indicator_meta (code, de, fr)
 SELECT sisf_nr::int AS code,
-       COALESCE(art_nam_deu, art_nam_lat) AS de
+       COALESCE(art_nam_deu, art_nam_lat) AS de,
+       COALESCE(art_nam_frz, art_nam_lat) AS de
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1';
 
@@ -628,101 +681,121 @@ CREATE TYPE recommendationtype AS ENUM ('0', '1', '2', '3');
 CREATE TYPE relief AS ENUM ('h_and_m','normal','w_and_s','kup','unknown');
 
 
-CREATE TABLE relief_meta (source TEXT, de TEXT,target relief);
+CREATE TABLE relief_meta (source TEXT, de TEXT, fr TEXT, target relief);
 
 
-INSERT INTO relief_meta (source,de,target)
+INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('Hang- oder Muldenlage',
         'Hang- und Muldenlage',
+        'en pente ou dans une dépression',
         'h_and_m');
 
 
-INSERT INTO relief_meta (source,de,target)
+INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('Hang- und Muldenlage',
         'Hang- und Muldenlage',
+        'en pente ou dans une dépression',
         'h_and_m');
 
 
-INSERT INTO relief_meta (source,de,target)
+INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('normal',
+        'normal',
         'normal',
         'normal');
 
 
-INSERT INTO relief_meta (source,de,target)
+INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('Kuppenlage',
         'Kuppenlage',
+        'sur une butte',
         'kup');
 
 
-INSERT INTO relief_meta (source,de,target)
+INSERT INTO relief_meta (source, de, fr, target)
 VALUES ('',
         'nicht relevant',
+        'pas important',
         'unknown');
 
 ----------------------------------------------
 -- slope
 
-CREATE TABLE slope_meta (target TEXT, de TEXT);
+CREATE TABLE slope_meta (target TEXT, de TEXT, fr TEXT);
 
 
-INSERT INTO slope_meta (target, de)
+INSERT INTO slope_meta (target, de, fr)
 VALUES ('<20',
+        '<20%',
         '<20%');
 
 
-INSERT INTO slope_meta (target, de)
+INSERT INTO slope_meta (target, de, fr)
 VALUES ('>20',
+        '>20%',
         '>20%');
 
 
-INSERT INTO slope_meta (target, de)
+INSERT INTO slope_meta (target, de, fr)
 VALUES ('<60',
+        '<60%',
         '<60%');
 
 
-INSERT INTO slope_meta (target, de)
+INSERT INTO slope_meta (target, de, fr)
 VALUES ('<70',
+        '<70%',
         '<70%');
 
 
-INSERT INTO slope_meta (target, de)
+INSERT INTO slope_meta (target, de, fr)
 VALUES ('>60',
+        '>60%',
         '>60%');
 
 
-INSERT INTO slope_meta (target, de)
+INSERT INTO slope_meta (target, de, fr)
 VALUES ('>70',
+        '>70%',
         '>70%');
 
 
-INSERT INTO slope_meta (target, de)
+INSERT INTO slope_meta (target, de, fr)
 VALUES ('unknown',
-        'nicht relevant');
+        'nicht relevant',
+        'pas important');
 
 ----------------------------------------------
 -- silver fir areaS
 
-CREATE TABLE silver_fir_area_meta (projection TEXT, code_ta TEXT);
+CREATE TABLE silver_fir_area_meta (source TEXT, de TEXT, fr TEXT, target TEXT);
 
 
-INSERT INTO silver_fir_area_meta (projection, code_ta)
+INSERT INTO silver_fir_area_meta (source, de, fr, target)
 VALUES ('Hauptareal',
+        'Hauptareal',
+        'Aire principale',
         '1');
 
 
-INSERT INTO silver_fir_area_meta (projection, code_ta)
+INSERT INTO silver_fir_area_meta (source, de, fr, target)
 VALUES ('Nebenareal',
+        'Nebenareal',
+        'Aire secondaire',
         '2');
 
 
-INSERT INTO silver_fir_area_meta (projection, code_ta)
+INSERT INTO silver_fir_area_meta (source, de, fr, target)
 VALUES ('Reliktareal',
+        'Reliktareal',
+        'Aire relictuelle',
         '3');
 
 
-INSERT INTO silver_fir_area_meta (projection, code_ta)
+INSERT INTO silver_fir_area_meta (source, de, fr, target)
 VALUES ('nicht relevant',
+        'nicht relevant',
+        'pas important',
         'unknown');
 
 ----------------------------------------------
@@ -732,12 +805,13 @@ CREATE TYPE treetype AS ENUM ('100','300','600','700','800','6900','9500','25200
 
 
 CREATE TABLE treetype_meta (target treetype PRIMARY KEY,
-                                                    de TEXT, endangered BOOLEAN, nonresident BOOLEAN, pioneer BOOLEAN);
+                                                    de TEXT, fr TEXT, endangered BOOLEAN, nonresident BOOLEAN, pioneer BOOLEAN);
 
 
-INSERT INTO treetype_meta (target, de, endangered, nonresident, pioneer)
+INSERT INTO treetype_meta (target, de, fr, endangered, nonresident, pioneer)
 SELECT foo.treetype,
        nais.art_nam_deu,
+       nais.art_nam_frz,
        baum.art_kaa::boolean,
        baum.art_gfa::boolean,
        baum.art_pionier::boolean

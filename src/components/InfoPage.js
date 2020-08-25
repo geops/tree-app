@@ -10,6 +10,7 @@ import InfoParticipants from './InfoParticipants';
 import InfoRecommendation from './InfoRecommendation';
 import InfoReports from './InfoReports';
 import InfoUsage from './InfoUsage';
+import LanguageSwitcher from './LanguageSwitcher';
 
 import styles from './InfoPage.module.css';
 
@@ -20,6 +21,11 @@ function InfoPage() {
       key: 'info.about',
       title: { content: t('info.aboutTitle') },
       content: { content: <InfoAbout /> },
+    },
+    {
+      key: 'info.language',
+      title: { content: t('app.language') },
+      content: { content: <LanguageSwitcher /> },
     },
     {
       key: 'info.bugs',
@@ -60,6 +66,11 @@ function InfoPage() {
       key: 'info.impressum',
       title: { content: t('info.impressumTitle') },
       content: { content: t('info.impressum') },
+    },
+    {
+      key: 'info.disclaimer',
+      title: { content: t('info.disclaimerTitle') },
+      content: { content: t('info.disclaimer') },
     },
   ];
   return (
