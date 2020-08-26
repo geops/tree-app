@@ -21,7 +21,7 @@
     "lint-staged": "10.2.11",
     "netlify-cli": "2.59.1",
     "neutrino": "9.3.0",
-    "prettier": "2.1.0",
+    "prettier": "2.1.1",
     "semantic-release": "17.1.1",
     "webpack": "4.44.1",
     "webpack-cli": "3.3.12"

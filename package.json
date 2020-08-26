@@ -49,7 +49,7 @@
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
     "lodash.set": "4.3.2",
-    "prettier": "2.1.0",
+    "prettier": "2.1.1",
     "react-test-renderer": "16.13.1",
     "start-server-and-test": "1.11.3"
   },
