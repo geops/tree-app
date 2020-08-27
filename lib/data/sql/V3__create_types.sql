@@ -295,21 +295,16 @@ VALUES ('obersubalpin',
 -- foresttype
 
 CREATE TABLE foresttype_meta (code TEXT PRIMARY KEY,
-                                                de TEXT, fr TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
-                              sort FLOAT, carbonate_fine BOOLEAN, carbonate_rock BOOLEAN, geomorphology_rock_band BOOLEAN, geomorphology_blocky_rocky_strong BOOLEAN, geomorphology_blocky_rocky_little BOOLEAN, geomorphology_limestone_pavement BOOLEAN, geomorphology_rocks_moderately_moved BOOLEAN, geomorphology_rocks_strongly_moved BOOLEAN, geomorphology_rocks_stabilised BOOLEAN, relief_type_central_slope BOOLEAN, relief_type_hollow BOOLEAN, relief_type_dome BOOLEAN, relief_type_plateau BOOLEAN, relief_type_steep BOOLEAN);
+                                                de TEXT, fr TEXT, la TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
+                              sort FLOAT, carbonate_fine INT, carbonate_rock INT, geomorphology_rock_band INT, geomorphology_blocky_rocky_strong INT, geomorphology_blocky_rocky_little INT, geomorphology_limestone_pavement INT, geomorphology_rocks_moderately_moved INT, geomorphology_rocks_strongly_moved INT, geomorphology_rocks_stabilised INT, relief_type_central_slope INT, relief_type_hollow INT, relief_type_dome INT, relief_type_plateau INT, relief_type_steep INT, process_rockfall INT, process_avalanche INT, process_landslide INT, process_erosion INT, water_stream INT, water_small INT, water_spring INT, water_change INT, location_de TEXT, location_fr TEXT, natural_forest_de TEXT, natural_forest_fr TEXT, vegetation_de TEXT, vegetation_fr TEXT);
 
 
-INSERT INTO foresttype_meta (code, de, fr, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
-                             sort, carbonate_fine, carbonate_rock, geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised, relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep)
-SELECT trim(BOTH
-            FROM naistyp_c) AS code,
-       COALESCE(trim(BOTH
-                     FROM naistyp_name_deu), trim(BOTH
-                                                  FROM naistyp_namk_deu), trim(BOTH
-                                                                               FROM naistyp_wges)) AS de,
-       COALESCE(trim(BOTH
-                     FROM naistyp_name_frz), trim(BOTH
-                                                  FROM naistyp_namk_frz)) AS fr,
+INSERT INTO foresttype_meta (code, de, fr, la, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
+                             sort, carbonate_fine, carbonate_rock, geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised, relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep, process_rockfall, process_avalanche, process_landslide, process_erosion, water_stream, water_small, water_spring, water_change, location_de, location_fr, natural_forest_de, natural_forest_fr, vegetation_de, vegetation_fr)
+SELECT trim(naistyp_c) AS code,
+       COALESCE(trim(naistyp_name_deu), trim(naistyp_namk_deu), trim(naistyp_wges)) AS de,
+       COALESCE(trim(naistyp_name_frz), trim(naistyp_namk_frz)) AS fr,
+       naistyp_name_lat AS la,
        typ.naistyp_hdom_min::int AS tree_layer_height_min,
        typ.naistyp_hdom_max::int AS tree_layer_height_max,
        typ.naistyp_hmax_nad::int AS conifer_tree_height_max,
@@ -317,78 +312,34 @@ SELECT trim(BOTH
        trim(BOTH
             FROM mstr.naistyp_sort)::float AS
 sort,
-       CASE typ.ntyp_kg_fein IN ('1',
-                                 '2',
-                                 '9')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS carbonate_fine,
-       CASE typ.ntyp_kg_gestein IN ('1',
-                                    '2',
-                                    '9')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS carbonate_rock,
-       CASE typ.ntyp_fels IN ('1',
-                              '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS geomorphology_rock_band,
-       CASE typ.ntyp_bl_fels_st IN ('1',
-                                    '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS geomorphology_blocky_rocky_strong,
-       CASE typ.ntyp_bl_fels_we IN ('1',
-                                    '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS geomorphology_blocky_rocky_little,
-       CASE typ.ntyp_bl_karren IN ('1',
-                                   '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS geomorphology_limestone_pavement,
-       CASE typ.ntyp_bl_schutt_m IN ('1',
-                                     '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS geomorphology_rocks_moderately_moved,
-       CASE typ.ntyp_bl_schutt_s IN ('1',
-                                     '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS geomorphology_rocks_strongly_moved,
-       CASE typ.ntyp_bl_schutt_x IN ('1',
-                                     '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS geomorphology_rocks_stabilised,
-       CASE typ.ntyp_rt_mittelh IN ('1',
-                                    '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS relief_type_central_slope,
-       CASE typ.ntyp_rt_mulde IN ('1',
-                                  '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS relief_type_hollow,
-       CASE typ.ntyp_rt_kuppe IN ('1',
-                                  '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS relief_type_dome,
-       CASE typ.ntyp_rt_plateau IN ('1',
-                                    '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS relief_type_plateau,
-       CASE typ.ntyp_rt_steilh IN ('1',
-                                   '2')
-           WHEN TRUE THEN TRUE
-           ELSE FALSE
-       END AS relief_type_steep
+       typ.ntyp_kg_fein::int carbonate_fine,
+       typ.ntyp_kg_gestein::int carbonate_rock,
+       typ.ntyp_fels::int AS geomorphology_rock_band,
+       typ.ntyp_bl_fels_st::int AS geomorphology_blocky_rocky_strong,
+       typ.ntyp_bl_fels_we::int AS geomorphology_blocky_rocky_little,
+       typ.ntyp_bl_karren::int AS geomorphology_limestone_pavement,
+       typ.ntyp_bl_schutt_m::int AS geomorphology_rocks_moderately_moved,
+       typ.ntyp_bl_schutt_s::int AS geomorphology_rocks_strongly_moved,
+       typ.ntyp_bl_schutt_x::int AS geomorphology_rocks_stabilised,
+       typ.ntyp_rt_mittelh::int AS relief_type_central_slope,
+       typ.ntyp_rt_mulde::int AS relief_type_hollow,
+       typ.ntyp_rt_kuppe::int AS relief_type_dome,
+       typ.ntyp_rt_plateau::int AS relief_type_plateau,
+       typ.ntyp_rt_steilh::int AS relief_type_steep,
+       typ.ntyp_steinschlag::int AS process_rockfall,
+       typ.ntyp_lawinen::int AS process_avalanche,
+       typ.ntyp_rutschung::int AS process_landslide,
+       typ.ntyp_erosion::int AS process_erosion,
+       typ.ntyp_wass_bach::int AS water_stream,
+       typ.ntyp_wass_klein::int AS water_small,
+       typ.ntyp_wass_quell::int AS water_spring,
+       typ.ntyp_wechself::int AS water_change,
+       regexp_replace(typ.naistyp_stao, '\r|\n', '', 'g') AS location_de,
+       NULL AS location_fr,
+       regexp_replace(typ.naistyp_nwld, '\r|\n', '', 'g') AS natural_forest_de,
+       NULL AS natural_forest_fr,
+       regexp_replace(typ.naistyp_vasp, '\r|\n', '', 'g') AS vegetation_de,
+       NULL AS vegetation_fr
 FROM nat_naistyp_mstr mstr
 LEFT JOIN nat_naistyp typ USING (naistyp_c)
 WHERE naistyp_s20 = 'Y'
@@ -397,6 +348,7 @@ SELECT trim(BOTH
             FROM naistyp) AS code,
        NULL AS de,
        NULL AS fr,
+       NULL AS la,
        NULL AS tree_layer_height_min,
        NULL AS tree_layer_height_max,
        NULL AS conifer_tree_height_max,
@@ -417,7 +369,21 @@ sort,
        NULL AS relief_type_hollow,
        NULL AS relief_type_dome,
        NULL AS relief_type_plateau,
-       NULL AS relief_type_steep
+       NULL AS relief_type_steep,
+       NULL AS process_rockfall,
+       NULL AS process_avalanche,
+       NULL AS process_landslide,
+       NULL AS process_erosion,
+       NULL AS water_stream,
+       NULL AS water_small,
+       NULL AS water_spring,
+       NULL AS water_change,
+       NULL AS location_de,
+       NULL AS location_fr,
+       NULL AS natural_forest_de,
+       NULL AS natural_forest_fr,
+       NULL AS vegetation_de,
+       NULL AS vegetation_fr
 FROM nat_baum_collin
 GROUP BY naistyp,
          naistyp_sort;
@@ -523,6 +489,93 @@ WHERE feld_name ILIKE 'HN_%'
         AND split_part(feld_name, '_', 2) != '';
 
 ----------------------------------------------
+-- vegetation
+
+CREATE TABLE bushtype_meta (code INTEGER PRIMARY KEY,
+                                                 de TEXT, fr TEXT, la TEXT);
+
+
+CREATE TABLE herbtype_meta (code INTEGER PRIMARY KEY,
+                                                 de TEXT, fr TEXT, la TEXT);
+
+
+CREATE TABLE mosstype_meta (code INTEGER PRIMARY KEY,
+                                                 de TEXT, fr TEXT, la TEXT);
+
+
+INSERT INTO bushtype_meta (code, de, fr, la)
+SELECT sisf_nr::int AS code,
+       COALESCE(art_nam_deu, art_nam_lat) AS de,
+       COALESCE(art_nam_frz, art_nam_lat) AS fr,
+       art_nam_lat AS la
+FROM nat_arten_mstr
+JOIN nat_arten_strauch USING (sisf_nr);
+
+
+INSERT INTO herbtype_meta (code, de, fr, la)
+SELECT sisf_nr::int AS code,
+       COALESCE(art_nam_deu, art_nam_lat) AS de,
+       COALESCE(art_nam_frz, art_nam_lat) AS fr,
+       art_nam_lat AS la
+FROM nat_arten_mstr
+JOIN nat_arten_kraut USING (sisf_nr);
+
+
+INSERT INTO mosstype_meta (code, de, fr, la)
+SELECT moss_mstr.sisf_nr::int AS code,
+       COALESCE(art_nam_deu, art_nam_lat) AS de,
+       COALESCE(art_nam_frz, art_nam_lat) AS fr,
+       art_nam_lat AS la
+FROM nat_arten_mstr moss_mstr
+JOIN nat_arten_moos USING (sisf_nr);
+
+-- frequency: 1 = oft, 2 = manchmal
+
+CREATE TABLE bushtype_foresttype (bushtype_code INTEGER REFERENCES bushtype_meta,
+                                                                   foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                                                   frequency INTEGER);
+
+
+INSERT INTO bushtype_foresttype (bushtype_code, foresttype_code, frequency)
+SELECT sisf_nr::int AS bushtype_code,
+       trim(naistyp_c) AS foresttype_code,
+       vorh::int AS frequency
+FROM nat_naistyp_art
+WHERE art = 'S'
+        AND vorh IN ('1',
+                     '2');
+
+
+CREATE TABLE herbtype_foresttype (herbtype_code INTEGER REFERENCES herbtype_meta,
+                                                                   foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                                                   frequency INTEGER);
+
+
+INSERT INTO herbtype_foresttype (herbtype_code, foresttype_code, frequency)
+SELECT sisf_nr::int AS herbtype_code,
+       trim(naistyp_c) AS foresttype_code,
+       vorh::int AS frequency
+FROM nat_naistyp_art
+WHERE art = 'K'
+        AND vorh IN ('1',
+                     '2');
+
+
+CREATE TABLE mosstype_foresttype (mosstype_code INTEGER REFERENCES mosstype_meta,
+                                                                   foresttype_code TEXT REFERENCES foresttype_meta,
+                                                                                                   frequency INTEGER);
+
+
+INSERT INTO mosstype_foresttype (mosstype_code, foresttype_code, frequency)
+SELECT sisf_nr::int AS mosstype_code,
+       trim(naistyp_c) AS foresttype_code,
+       vorh::int AS frequency
+FROM nat_naistyp_art
+WHERE art = 'M'
+        AND vorh IN ('1',
+                     '2');
+
+----------------------------------------------
 -- indicator
 
 CREATE TABLE indicator_meta (code INTEGER PRIMARY KEY,
@@ -544,7 +597,7 @@ CREATE TABLE indicator_forest_ecoregion (indicator_code INTEGER REFERENCES indic
 INSERT INTO indicator_meta (code, de, fr)
 SELECT sisf_nr::int AS code,
        COALESCE(art_nam_deu, art_nam_lat) AS de,
-       COALESCE(art_nam_frz, art_nam_lat) AS de
+       COALESCE(art_nam_frz, art_nam_lat) AS fr
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1';
 
@@ -805,13 +858,14 @@ CREATE TYPE treetype AS ENUM ('100','300','600','700','800','6900','9500','25200
 
 
 CREATE TABLE treetype_meta (target treetype PRIMARY KEY,
-                                                    de TEXT, fr TEXT, endangered BOOLEAN, nonresident BOOLEAN, pioneer BOOLEAN);
+                                                    de TEXT, fr TEXT, la TEXT, endangered BOOLEAN, nonresident BOOLEAN, pioneer BOOLEAN);
 
 
-INSERT INTO treetype_meta (target, de, fr, endangered, nonresident, pioneer)
+INSERT INTO treetype_meta (target, de, fr, la, endangered, nonresident, pioneer)
 SELECT foo.treetype,
        nais.art_nam_deu,
        nais.art_nam_frz,
+       nais.art_nam_lat,
        baum.art_kaa::boolean,
        baum.art_gfa::boolean,
        baum.art_pionier::boolean
