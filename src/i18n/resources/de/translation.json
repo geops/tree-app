@@ -52,14 +52,21 @@
       "376-400": "Nordnordwest - Nord",
       "label": "Exposition"
     },
+    "bush": "Sträucher",
     "cancel": "Abbrechen",
     "carbonate": {
       "fine": "Feinerde",
       "label": "Karbonatgehalt",
       "rock": "Gestein"
     },
-    "coniferTreeHeightMax": "Nadelbaum [m]",
-    "deciduousTreeHeightMax": "Laubbaum [m]",
+    "coniferTreeHeightMax": "Nadelbaum",
+    "deciduousTreeHeightMax": "Laubbaum",
+    "frequency": {
+      "0": "selten",
+      "1": "sehr häufig",
+      "2": "wenig häufig",
+      "9": "unbestimmt"
+    },
     "geomorphology": {
       "blockyRockyLittle": "Blockig-felsig wenig",
       "blockyRockyStrong": "Blockig-felsig stark",
@@ -79,12 +86,25 @@
       "special": "Sonderwaldstandort",
       "volatile": "Stark wechselnde Feuchtigkeit"
     },
+    "herb": "Kräuter",
     "hint": "Bitte in der Karte auswählen",
     "indicator": {
       "label": "vorhandene Zeigerpflanzen",
       "placeholder": "Bitte Zeigerarten eingeben"
     },
     "label": "Standortstyp",
+    "location": "Standort allgemein",
+    "moss": "Moos",
+    "naturalForest": "Naturwald",
+    "often": "oft",
+    "process": {
+      "avalanche": "Lawinen",
+      "erosion": "Oberflächenerosion",
+      "label": "Prozesse",
+      "landslide": "Rutschung",
+      "rockfall": "Steinschlag aktiv"
+    },
+    "rare": "manchmal",
     "reliefType": {
       "centralSlope": "Mittelhang",
       "dome": "Kuppe / Oberhang",
@@ -104,10 +124,19 @@
       "label": "Hangneigung in %"
     },
     "transition": "Übergang zu Standortstyp",
+    "treeLayerHeight": "Maximale Bestandeshöhe",
     "treeHeight": "Maximale Baumhöhe",
     "treeType": {
       "label": "vorhandene Baumarten",
       "placeholder": "Bitte Baumarten eingeben"
+    },
+    "vegetation": "Vegetation Aspekt",
+    "water": {
+      "change": "Wechselfeuchte",
+      "label": "Fliessgewässer",
+      "small": "kleine Bachläufe",
+      "spring": "Quellaufstoss",
+      "stream": "entlang Bachlauf"
     }
   },
   "help": {

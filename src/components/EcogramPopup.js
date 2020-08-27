@@ -39,17 +39,20 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
     >
       <div ref={container}>
         <List>
-          {forestTypes.map((f) => (
-            <List.Item style={{ display: 'flex' }}>
-              <ForestTypeModal
-                code={f}
-                setIsForestTypeModalOpen={setIsForestTypeModalOpen}
-              />
-              <Button active onClick={() => selectForestType(f)}>
-                {f} - {info('forestType', f)[i18n.language]}
-              </Button>
-            </List.Item>
-          ))}
+          {forestTypes.map((ftCode) => {
+            const ftInfo = info('forestType', ftCode);
+            return (
+              <List.Item style={{ display: 'flex' }}>
+                <ForestTypeModal
+                  data={ftInfo}
+                  setIsForestTypeModalOpen={setIsForestTypeModalOpen}
+                />
+                <Button active onClick={() => selectForestType(ftCode)}>
+                  {ftCode} - {ftInfo[i18n.language]}
+                </Button>
+              </List.Item>
+            );
+          })}
           <List.Item>
             <Button onClick={() => onClose()}>{t('forestType.cancel')}</Button>
           </List.Item>

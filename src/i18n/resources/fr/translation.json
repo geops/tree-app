@@ -58,8 +58,8 @@
       "label": "Teneur en carbonate",
       "rock": "Roche"
     },
-    "coniferTreeHeightMax": "Résineux [m]",
-    "deciduousTreeHeightMax": "Feuillu [m]",
+    "coniferTreeHeightMax": "Résineux",
+    "deciduousTreeHeightMax": "Feuillu",
     "geomorphology": {
       "blockyRockyLittle": "peu de roches/blocs",
       "blockyRockyStrong": "riche en roches/blocs",
