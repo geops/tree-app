@@ -10,7 +10,6 @@ import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.sv
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 
 import styles from './InfoRecommendation.module.css';
-import recommendationStyles from './Recommendation.module.css';
 
 function InfoRecommendation() {
   return (
@@ -20,13 +19,13 @@ function InfoRecommendation() {
         <strong>recommendation</strong> description
       </p>
       <ul className={styles.iconList}>
-        <li className={recommendationStyles.large}>
+        <li>
           <PositiveIcon /> positive
         </li>
         <li>
           <NeutralIcon /> neutral
         </li>
-        <li className={recommendationStyles.small}>
+        <li>
           <NegativeIcon /> negative
         </li>
         <li>
