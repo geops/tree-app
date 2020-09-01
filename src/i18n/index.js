@@ -12,6 +12,7 @@ i18n
     interpolation: {
       escapeValue: false, // not needed for React as it escapes by default
     },
+    language: 'de',
     resources,
   });
 
