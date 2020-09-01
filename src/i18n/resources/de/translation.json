@@ -1,6 +1,6 @@
 {
   "additional": {
-    "label": "Weitere"
+    "label": "Weitere Merkmale"
   },
   "altitudinalZone": {
     "label": "Höhenstufe heute",
@@ -167,7 +167,7 @@
   },
   "offline": {
     "success": "Die Tree App ist offline verfügbar.",
-    "update": "Neue Version laden"
+    "update": "Zur aktuellen Version wechseln"
   },
   "projection": {
     "missingLocation": "Bitte eine Position in der Karte wählen.",
