@@ -1,0 +1,14 @@
+.line {
+  stroke: #999;
+  fill: none;
+}
+
+.rare {
+  fill: #eee;
+}
+.medium {
+  fill: #b7ddae;
+}
+.often {
+  fill: #74bd70;
+}
