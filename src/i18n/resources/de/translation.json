@@ -16,6 +16,147 @@
     "ribbon": "Test",
     "title": "Tree App"
   },
+  "forestTypeDiagram": {
+    "aboveSeaLevel": "ü.M.",
+    "altitudinalZoneAbbr": {
+      "100": "OSA",
+      "90": "SA",
+      "80": "HM",
+      "60": "OM",
+      "50": "UM",
+      "40": "SM",
+      "20": "C"
+    },
+    "altitudinalZoneForestEcoregion": "Höhenstufe/Region",
+    "altitude": {
+      "label": "Höhenlage",
+      "situation": "Hanglage",
+      "aspect": "N E&W S"
+    },
+    "amount": {
+      "extremelyHigh": "äusserst hoch",
+      "veryHigh": "sehr hoch",
+      "high": "hoch",
+      "medium": "mittel",
+      "low": "gering",
+      "veryLow": "sehr gering"
+    },
+    "aspect": {
+      "label": "Exposition",
+      "N": "N",
+      "E": "E",
+      "S": "S",
+      "W": "W"
+    },
+    "forestEcoregion": {
+      "1": "Nördl. Randalpen",
+      "2": "Nördl. Zwischenalpen",
+      "3": "Kontinent. Hochalpen",
+      "4": "Südl. Zwischenalpen",
+      "5": "Südl. Randalpen"
+    },
+    "graininess": {
+      "label": "Körnung",
+      "clay": "Ton",
+      "silt": "Schluff"
+    },
+    "humus": {
+      "label": "Humusform",
+      "dry": "trockene Ausprägung",
+      "eroded": "erodiert",
+      "fmull": "F-Mull",
+      "halfBog": "Anmoor",
+      "hydro": "(Hydroformen)",
+      "limeModer": "Kalkmoder",
+      "limeMull": "Kalkmull",
+      "moder": "Moder",
+      "moderLike": "Typischer",
+      "mor": "Rohhumus",
+      "morLike": "Rohhumusartig",
+      "mull": "Mull",
+      "mullLike": "Mullartig",
+      "tangel": "Tangelhumus",
+      "turf": "Torf",
+      "variants": "Varianten",
+      "wet": "feuchte Ausprägung",
+      "xero": "(Xeroformen)",
+      "lmull": "L-Mull"
+    },
+    "legend": {
+      "label": "Legende",
+      "distribution": "Verteilung",
+      "often": "sehr häufig",
+      "medium": "weniger häufig",
+      "rare": "selten"
+    },
+    "meter": "Meter",
+    "rawMaterial": {
+      "label": "Ausgangsmaterial",
+      "acid": "sauer",
+      "alkaline": "basisch",
+      "unkown": "nicht bestimmt"
+    },
+    "slope": "Hangneigung",
+    "skeletalFraction": "Skelettgehalt",
+    "soil": {
+      "header": "Boden",
+      "label": "Bodenentwicklung",
+      "rock": "Gesteinsrohböden",
+      "ranker": "Ranker",
+      "regosol": "Regosol",
+      "pararendzina": "Pararendzina",
+      "rendzina": "Rendzina",
+      "brown": "Braunerde",
+      "paraBrown": "Parabraunerde",
+      "podsol": "Podsol",
+      "ironHumusPodsol": "(Eisen-Humuspodsol)",
+      "tailwater": "Stauwasser",
+      "tailwaterPseudo": "(Pseudo-/ Stagnogley)",
+      "groundwater": "Grund-/Hangwasser",
+      "groundwaterGley": "(Gley/Hanggley)",
+      "raw": "rohe Böden",
+      "developed": "entwickelte Böden",
+      "wet": "vernässte Böden",
+      "organic": "organische Böden",
+      "riverside": "Auenböden",
+      "neutralBrown": "neutr. Braunerden",
+      "brownPodsol": "Braunpodsole",
+      "humusPodsol": "Humuspodsole",
+      "podsoled": "podsoliert",
+      "browned": "verbraunt",
+      "bleached": "nassgebleicht",
+      "weted": "vernässt"
+    },
+    "soilDepth": {
+      "label": "Gründigkeit",
+      "skeletalFraction": "Gründigkeit und Skelettgehalt",
+      "veryShallow": "sehr flach",
+      "shallow": "flach",
+      "medium": "mittel",
+      "deep": "tief",
+      "veryDeep": "sehr tief",
+      "extremelyDeep": "äusserst tief"
+    },
+    "soilWetness": {
+      "label": "Vernässung",
+      "groundwater": "grund- und hangwasserbeeinflusste Böden",
+      "tailwater": "stauwasserbeeinflusste Böden",
+      "none": "keine Vernässung",
+      "swampy": "sumpfig",
+      "veryHigh": "sehr stark grundnass",
+      "high": "stark grundnass",
+      "normal": "grundnass",
+      "low": "schwach grundnass",
+      "stagnogley": "Stagnogley",
+      "pseudogley": "Pseudogley",
+      "highPseudogleyed": "stark pseudovergleyt",
+      "pseudogleyed": "pseudovergleyt",
+      "lowPseudogleyed": "schwach pseudovergleyt",
+      "veryLowPseudogleyed": "sehr schwach pseudovergleyt",
+      "waterPermeability": "Wasserdurchlässigkeit",
+      "permeability": "Durchlässigkeit"
+    }
+  },
   "dropdown": {
     "noResultsMessage": "Kein Eintrag gefunden",
     "placeholder": "Bitte aus der Liste auswählen"
