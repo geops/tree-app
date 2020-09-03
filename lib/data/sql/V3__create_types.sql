@@ -67,7 +67,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Warm und Strahlungsreich',
         'Warm und Strahlungsreich',
         'Warm and radiant',
-        'chaud et radiant',
+        'chaud et exposé',
         'Wrm_Rdt');
 
 
@@ -99,7 +99,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Keine Lawinenbeeinflussung',
         'Keine Lawinenbeeinflussung',
         'No avalanche influence',
-        'sans influence par des avalanches',
+        'Non influencé par les avalanches',
         'NoAvln');
 
 
@@ -107,7 +107,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mit Lawinenbeeinflussung',
         'mit Lawinenbeeinflussung',
         'With avalanche control',
-        'avec influence par des avalanches',
+        'Influencé par les avalanches',
         'WthAvln');
 
 
@@ -155,7 +155,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('Schlucht',
         'Schlucht',
         'Ravine',
-        'ravine',
+        'ravin',
         'Rvn');
 
 
@@ -187,7 +187,7 @@ INSERT INTO additional_meta (source, de, en, fr, target)
 VALUES ('mind. alle 10 Jahre überschwemmt',
         'mind. alle 10 Jahre überschwemmt',
         'Flooded at least every 10 years',
-        'inondé au moins tous les 10 ans',
+        'inondé au minimum tous les 10 ans',
         '>10F');
 
 
@@ -206,7 +206,7 @@ CREATE TABLE altitudinal_zone_meta (source TEXT, de TEXT, fr TEXT, nais TEXT, co
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
 VALUES ('collin -mediterran',
-        'collin -mediterran',
+        'collin-mediterran',
         'collinéen à méditerranéen',
         '01C',
         '0');

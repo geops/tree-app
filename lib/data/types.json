@@ -26094,7 +26094,7 @@
     { "de": "Schattig, Kühl", "fr": "ombragé, frais", "code": "Shdy_Cl" },
     {
       "de": "Warm und Strahlungsreich",
-      "fr": "chaud et radiant",
+      "fr": "chaud et exposé",
       "code": "Wrm_Rdt"
     },
     {
@@ -26110,12 +26110,12 @@
     },
     {
       "de": "Keine Lawinenbeeinflussung",
-      "fr": "sans influence par des avalanches",
+      "fr": "Non influencé par les avalanches",
       "code": "NoAvln"
     },
     {
       "de": "mit Lawinenbeeinflussung",
-      "fr": "avec influence par des avalanches",
+      "fr": "Influencé par les avalanches",
       "code": "WthAvln"
     },
     {
@@ -26139,7 +26139,7 @@
       "code": "DpSl_Shdy"
     },
     { "de": "tiefgründig", "fr": "sol profond", "code": "Dp" },
-    { "de": "Schlucht", "fr": "ravine", "code": "Rvn" },
+    { "de": "Schlucht", "fr": "ravin", "code": "Rvn" },
     { "de": "mit viel Schutt", "fr": "éboulis marqué", "code": "Rbl" },
     { "de": "flachgründig", "fr": "sol superficiel", "code": "Shlw" },
     {
@@ -26149,7 +26149,7 @@
     },
     {
       "de": "mind. alle 10 Jahre überschwemmt",
-      "fr": "inondé au moins tous les 10 ans",
+      "fr": "inondé au minimum tous les 10 ans",
       "code": ">10F"
     },
     { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
@@ -46843,7 +46843,7 @@
   ],
   "altitudinalZone": [
     {
-      "de": "collin -mediterran",
+      "de": "collin-mediterran",
       "fr": "collinéen à méditerranéen",
       "id": 1,
       "code": "0"
