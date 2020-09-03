@@ -18,7 +18,7 @@
     "eslint-plugin-prettier": "3.1.4",
     "husky": "4.2.5",
     "jest": "26.4.2",
-    "lint-staged": "10.2.13",
+    "lint-staged": "10.3.0",
     "netlify-cli": "2.59.3",
     "neutrino": "9.4.0",
     "prettier": "2.1.1",
