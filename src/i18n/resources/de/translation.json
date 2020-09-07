@@ -70,11 +70,11 @@
       "limeModer": "Kalkmoder",
       "limeMull": "Kalkmull",
       "moder": "Moder",
-      "moderLike": "Typischer",
+      "moderLike": "<0>Typischer</0><1>Moder</1>",
       "mor": "Rohhumus",
-      "morLike": "Rohhumusartig",
+      "morLike": "<0>Rohhumus-</0><1>artiger</1><2>Moder</2>",
       "mull": "Mull",
-      "mullLike": "Mullartig",
+      "mullLike": "<0>Mullartiger</0><1>Moder</1>",
       "tangel": "Tangelhumus",
       "turf": "Torf",
       "variants": "Varianten",
@@ -152,7 +152,7 @@
       "highPseudogleyed": "stark pseudovergleyt",
       "pseudogleyed": "pseudovergleyt",
       "lowPseudogleyed": "schwach pseudovergleyt",
-      "veryLowPseudogleyed": "sehr schwach pseudovergleyt",
+      "veryLowPseudogleyed": "sehr schwach pseudoverg.",
       "waterPermeability": "Wasserdurchlässigkeit",
       "permeability": "Durchlässigkeit"
     }

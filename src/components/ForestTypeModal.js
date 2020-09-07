@@ -25,7 +25,7 @@ function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
       actions={[{ key: 'done', content: 'Ok' }]}
       content={
         <Modal.Content>
-          <ForestTypeDiagram />
+          <ForestTypeDiagram data={data} />
           <Table basic padded structured unstackable>
             <Table.Body>
               <Table.Row>
