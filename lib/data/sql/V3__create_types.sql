@@ -296,7 +296,7 @@ VALUES ('obersubalpin',
 
 CREATE TABLE foresttype_meta (code TEXT PRIMARY KEY,
                                                 de TEXT, fr TEXT, la TEXT, tree_layer_height_min INT, tree_layer_height_max INT, conifer_tree_height_max INT, deciduous_tree_height_max INT,
-                              sort FLOAT, carbonate_fine INT, carbonate_rock INT, geomorphology_rock_band INT, geomorphology_blocky_rocky_strong INT, geomorphology_blocky_rocky_little INT, geomorphology_limestone_pavement INT, geomorphology_rocks_moderately_moved INT, geomorphology_rocks_strongly_moved INT, geomorphology_rocks_stabilised INT, relief_type_central_slope INT, relief_type_hollow INT, relief_type_dome INT, relief_type_plateau INT, relief_type_steep INT, process_rockfall INT, process_avalanche INT, process_landslide INT, process_erosion INT, water_stream INT, water_small INT, water_spring INT, water_change INT, location_de TEXT, location_fr TEXT, natural_forest_de TEXT, natural_forest_fr TEXT, vegetation_de TEXT, vegetation_fr TEXT);
+                              sort FLOAT, carbonate_fine INT, carbonate_rock INT, geomorphology_rock_band INT, geomorphology_blocky_rocky_strong INT, geomorphology_blocky_rocky_little INT, geomorphology_limestone_pavement INT, geomorphology_rocks_moderately_moved INT, geomorphology_rocks_strongly_moved INT, geomorphology_rocks_stabilised INT, relief_type_central_slope INT, relief_type_hollow INT, relief_type_dome INT, relief_type_plateau INT, relief_type_steep INT, process_rockfall INT, process_avalanche INT, process_landslide INT, process_erosion INT, water_stream INT, water_small INT, water_spring INT, water_change INT, location_de TEXT, location_fr TEXT, natural_forest_de TEXT, natural_forest_fr TEXT, vegetation_de TEXT, vegetation_fr TEXT, altitude INTEGER[][], altitudinal_zone_forest_ecoregion INTEGER[][], skeletal_fraction_soil_depth INTEGER[][], soil_wetness_groundwater INTEGER[][], soil_wetness_tailwater INTEGER[][], aspect INTEGER[], graininess INTEGER[], humus INTEGER[][], humus_variants INTEGER[], raw_material INTEGER[], slope INTEGER[], soil INTEGER[][], soil_variants INTEGER[]);
 
 
 INSERT INTO foresttype_meta (code, de, fr, la, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
@@ -389,24 +389,450 @@ GROUP BY naistyp,
          naistyp_sort;
 
 
-CREATE TABLE foresttype_altitudinal_zone_forest_ecoregion (foresttype_code TEXT REFERENCES foresttype_meta,
-                                                                                           altitudinal_zone_code TEXT, forest_ecoregion_code TEXT);
-
-
-INSERT INTO foresttype_altitudinal_zone_forest_ecoregion (foresttype_code, altitudinal_zone_code, forest_ecoregion_code)
-SELECT DISTINCT trim(both
-                     from nat_naistyp.naistyp_c) AS forest_type_code,
-                azm.code AS altitudinal_zone,
-                split_part(split_part(feld_name, '_', 3), '-', 2) AS forest_ecoregion
+UPDATE foresttype_meta
+SET altitudinal_zone_forest_ecoregion = ARRAY[ ARRAY[HS_01b_01C_J::int,
+                                                     HS_01d_SM_J::int,
+                                                     HS_01e_UM_J::int,
+                                                     HS_01h_OM_J::int,
+                                                     HS_01i_HM_J::int,
+                                                     null,
+                                                     null], ARRAY[ HS_02b_C_M::int,
+                                                                   HS_02d_SM_M::int,
+                                                                   HS_02e_UM_M::int,
+                                                                   HS_02h_OM_M::int,
+                                                                   HS_02i_HM_M::int,
+                                                                   null,
+                                                                   null], ARRAY[HS_03b_C_1::int,
+                                                                                HS_03d_SM_1::int,
+                                                                                HS_03e_UM_1::int,
+                                                                                HS_03h_OM_1::int,
+                                                                                HS_03i_HM_1::int,
+                                                                                HS_03m_SA_1::int,
+                                                                                HS_03n_OSA_1::int], ARRAY[HS_04b_C_2a::int,
+                                                                                                          HS_04d_SM_2a::int,
+                                                                                                          HS_04e_UM_2a::int,
+                                                                                                          HS_04h_OM_2a::int,
+                                                                                                          HS_04i_HM_2a::int,
+                                                                                                          HS_04m_SA_2a::int,
+                                                                                                          HS_04n_OSA_2a::int], ARRAY[HS_05b_C_2b::int,
+                                                                                                                                     HS_05i_HM_2b::int,
+                                                                                                                                     HS_05j_HM_2b_bis1000m::int,
+                                                                                                                                     HS_05k_HM_2b_ab1000m::int,
+                                                                                                                                     HS_05m_SA_2b::int,
+                                                                                                                                     HS_05n_OSA_2b::int,
+                                                                                                                                     null], ARRAY[HS_06i_HM_3::int,
+                                                                                                                                                  HS_06m_SA_3::int,
+                                                                                                                                                  HS_06n_OSA_3::int,
+                                                                                                                                                  null,
+                                                                                                                                                  null,
+                                                                                                                                                  null,
+                                                                                                                                                  null], ARRAY[HS_07b_C_4::int,
+                                                                                                                                                               HS_07i_HM_4::int,
+                                                                                                                                                               HS_07m_SA_4::int,
+                                                                                                                                                               HS_07n_OSA_4::int,
+                                                                                                                                                               null,
+                                                                                                                                                               null,
+                                                                                                                                                               null], ARRAY[ HS_08a_HY_5a::int,
+                                                                                                                                                                             HS_08b_C_5a::int,
+                                                                                                                                                                             HS_08c_CB_5a::int,
+                                                                                                                                                                             HS_08g_UMOM_5a::int,
+                                                                                                                                                                             HS_08i_HM_5a::int,
+                                                                                                                                                                             HS_08m_SA_5a::int,
+                                                                                                                                                                             HS_08n_OSA_5a::int], ARRAY[HS_09a_HY_5b::int,
+                                                                                                                                                                                                        HS_09c_CB_5b::int,
+                                                                                                                                                                                                        HS_09g_UMOM_5b::int,
+                                                                                                                                                                                                        HS_09m_SA_5b::int,
+                                                                                                                                                                                                        null,
+                                                                                                                                                                                                        null,
+                                                                                                                                                                                                        null], ARRAY[HS_10a_HY_Me::int,
+                                                                                                                                                                                                                     HS_10c_CB_Me::int,
+                                                                                                                                                                                                                     null,
+                                                                                                                                                                                                                     null,
+                                                                                                                                                                                                                     null,
+                                                                                                                                                                                                                     null,
+                                                                                                                                                                                                                     null]]
 FROM nat_lage
-LEFT JOIN altitudinal_zone_meta azm ON azm.nais = split_part(split_part(feld_name, '_', 3), '-', 1)
-LEFT JOIN nat_naistyp on trim(both '0.'
-                              from nat_lage.naistyp_sort) = nat_naistyp.naistyp_sort
-WHERE feld_name ILIKE 'HS_%'
-        AND nat_naistyp.naistyp_c is not null
-        AND feld_wert in ('1',
-                          '2')
-        AND split_part(split_part(feld_name, '_', 3), '-', 2) != '';
+LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET skeletal_fraction_soil_depth = ARRAY[ ARRAY[gs_01::int,
+                                                gs_02::int,
+                                                gs_03::int,
+                                                gs_04::int,
+                                                gs_05::int,
+                                                gs_06::int], --Gündigkeit sehr flach
+ ARRAY[gs_07::int,
+       gs_08::int,
+       gs_09::int,
+       gs_10::int,
+       gs_11::int,
+       gs_12::int], --Gündigkeit flach
+ ARRAY[gs_13::int,
+       gs_14::int,
+       gs_15::int,
+       gs_16::int,
+       gs_17::int,
+       gs_18::int], --Gündigkeit mittel
+ ARRAY[gs_19::int,
+       gs_20::int,
+       gs_21::int,
+       gs_22::int,
+       gs_23::int,
+       gs_24::int], --Gündigkeit tief
+ ARRAY[gs_25::int,
+       gs_26::int,
+       gs_27::int,
+       gs_28::int,
+       gs_29::int,
+       gs_30::int], --Gündigkeit sehr tief
+ ARRAY[gs_31::int,
+       gs_32::int,
+       gs_33::int,
+       gs_34::int,
+       gs_35::int,
+       gs_36::int] --Gündigkeit äusserst tief
+ ]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET soil_wetness_groundwater = ARRAY[ ARRAY[wvg_01::int,
+                                            wvg_02::int,
+                                            wvg_03::int,
+                                            wvg_04::int,
+                                            wvg_05::int,
+                                            wvg_06::int], ARRAY[wvg_07::int,
+                                                                wvg_08::int,
+                                                                wvg_09::int,
+                                                                wvg_10::int,
+                                                                wvg_11::int,
+                                                                wvg_12::int], ARRAY[wvg_13::int,
+                                                                                    wvg_14::int,
+                                                                                    wvg_15::int,
+                                                                                    wvg_16::int,
+                                                                                    wvg_17::int,
+                                                                                    wvg_18::int], ARRAY[wvg_19::int,
+                                                                                                        wvg_20::int,
+                                                                                                        wvg_21::int,
+                                                                                                        wvg_22::int,
+                                                                                                        wvg_23::int,
+                                                                                                        wvg_24::int], ARRAY[wvg_25::int,
+                                                                                                                            wvg_26::int,
+                                                                                                                            wvg_27::int,
+                                                                                                                            wvg_28::int,
+                                                                                                                            wvg_29::int,
+                                                                                                                            wvg_30::int], ARRAY[wvg_31::int,
+                                                                                                                                                wvg_32::int,
+                                                                                                                                                wvg_33::int,
+                                                                                                                                                wvg_34::int,
+                                                                                                                                                wvg_35::int,
+                                                                                                                                                wvg_36::int] ]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET soil_wetness_tailwater = ARRAY[ ARRAY[wvs_01::int,
+                                          wvs_02::int,
+                                          wvs_03::int,
+                                          wvs_04::int,
+                                          wvs_05::int,
+                                          wvs_06::int], ARRAY[wvs_07::int,
+                                                              wvs_08::int,
+                                                              wvs_09::int,
+                                                              wvs_10::int,
+                                                              wvs_11::int,
+                                                              wvs_12::int], ARRAY[wvs_13::int,
+                                                                                  wvs_14::int,
+                                                                                  wvs_15::int,
+                                                                                  wvs_16::int,
+                                                                                  wvs_17::int,
+                                                                                  wvs_18::int], ARRAY[wvs_19::int,
+                                                                                                      wvs_20::int,
+                                                                                                      wvs_21::int,
+                                                                                                      wvs_22::int,
+                                                                                                      wvs_23::int,
+                                                                                                      wvs_24::int], ARRAY[wvs_25::int,
+                                                                                                                          wvs_26::int,
+                                                                                                                          wvs_27::int,
+                                                                                                                          wvs_28::int,
+                                                                                                                          wvs_29::int,
+                                                                                                                          wvs_30::int], ARRAY[wvs_31::int,
+                                                                                                                                              wvs_32::int,
+                                                                                                                                              wvs_33::int,
+                                                                                                                                              wvs_34::int,
+                                                                                                                                              wvs_35::int,
+                                                                                                                                              wvs_36::int], ARRAY[wvs_37::int,
+                                                                                                                                                                  wvs_38::int,
+                                                                                                                                                                  wvs_39::int,
+                                                                                                                                                                  wvs_40::int,
+                                                                                                                                                                  wvs_41::int,
+                                                                                                                                                                  wvs_42::int] ]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET aspect = ARRAY[ E_001_025_n_nne::int,
+                    E_026_050_nne_ne::int,
+                    E_051_075_ne_ene::int,
+                    E_076_100_ene_e::int,
+                    E_101_125_e_see::int,
+                    E_126_150_see_se::int,
+                    E_151_175_se_sse::int,
+                    E_176_200_ss_s::int,
+                    E_201_225_s_ssw::int,
+                    E_226_250_ssw_sw::int,
+                    E_251_275_sw_wsw::int,
+                    E_276_300_wsw_w::int,
+                    E_301_325_w_wnw::int,
+                    E_326_350_wnw_nw::int,
+                    E_351_375_nw_nnww::int,
+                    E_376_400_nnw_n::int ]
+FROM nat_lage
+LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET slope = ARRAY[ HN_000_010::int,
+                   HN_010_025::int,
+                   HN_025_050::int,
+                   HN_050_075::int,
+                   HN_075_100::int,
+                   HN_100::int ]
+FROM nat_lage
+LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET altitude = ARRAY[ ARRAY[HL_N_0250::int,
+                            HL_N_0300::int,
+                            HL_N_0350::int,
+                            HL_N_0400::int,
+                            HL_N_0450::int,
+                            HL_N_0500::int,
+                            HL_N_0550::int,
+                            HL_N_0600::int,
+                            HL_N_0650::int,
+                            HL_N_0700::int,
+                            HL_N_0750::int,
+                            HL_N_0800::int,
+                            HL_N_0850::int,
+                            HL_N_0900::int,
+                            HL_N_0950::int,
+                            HL_N_1000::int,
+                            HL_N_1050::int,
+                            HL_N_1100::int,
+                            HL_N_1150::int,
+                            HL_N_1200::int,
+                            HL_N_1250::int,
+                            HL_N_1300::int,
+                            HL_N_1350::int,
+                            HL_N_1400::int,
+                            HL_N_1450::int,
+                            HL_N_1500::int,
+                            HL_N_1550::int,
+                            HL_N_1600::int,
+                            HL_N_1650::int,
+                            HL_N_1700::int,
+                            HL_N_1750::int,
+                            HL_N_1800::int,
+                            HL_N_1850::int,
+                            HL_N_1900::int,
+                            HL_N_1950::int,
+                            HL_N_2000::int,
+                            HL_N_2050::int,
+                            HL_N_2100::int,
+                            HL_N_2150::int,
+                            HL_N_2200::int,
+                            HL_N_2250::int,
+                            HL_N_2300::int], ARRAY[HL_EW_0250::int,
+                                                   HL_EW_0300::int,
+                                                   HL_EW_0350::int,
+                                                   HL_EW_0400::int,
+                                                   HL_EW_0450::int,
+                                                   HL_EW_0500::int,
+                                                   HL_EW_0550::int,
+                                                   HL_EW_0600::int,
+                                                   HL_EW_0650::int,
+                                                   HL_EW_0700::int,
+                                                   HL_EW_0750::int,
+                                                   HL_EW_0800::int,
+                                                   HL_EW_0850::int,
+                                                   HL_EW_0900::int,
+                                                   HL_EW_0950::int,
+                                                   HL_EW_1000::int,
+                                                   HL_EW_1050::int,
+                                                   HL_EW_1100::int,
+                                                   HL_EW_1150::int,
+                                                   HL_EW_1200::int,
+                                                   HL_EW_1250::int,
+                                                   HL_EW_1300::int,
+                                                   HL_EW_1350::int,
+                                                   HL_EW_1400::int,
+                                                   HL_EW_1450::int,
+                                                   HL_EW_1500::int,
+                                                   HL_EW_1550::int,
+                                                   HL_EW_1600::int,
+                                                   HL_EW_1650::int,
+                                                   HL_EW_1700::int,
+                                                   HL_EW_1750::int,
+                                                   HL_EW_1800::int,
+                                                   HL_EW_1850::int,
+                                                   HL_EW_1900::int,
+                                                   HL_EW_1950::int,
+                                                   HL_EW_2000::int,
+                                                   HL_EW_2050::int,
+                                                   HL_EW_2100::int,
+                                                   HL_EW_2150::int,
+                                                   HL_EW_2200::int,
+                                                   HL_EW_2250::int,
+                                                   HL_EW_2300::int], ARRAY[HL_S_0250::int,
+                                                                           HL_S_0300::int,
+                                                                           HL_S_0350::int,
+                                                                           HL_S_0400::int,
+                                                                           HL_S_0450::int,
+                                                                           HL_S_0500::int,
+                                                                           HL_S_0550::int,
+                                                                           HL_S_0600::int,
+                                                                           HL_S_0650::int,
+                                                                           HL_S_0700::int,
+                                                                           HL_S_0750::int,
+                                                                           HL_S_0800::int,
+                                                                           HL_S_0850::int,
+                                                                           HL_S_0900::int,
+                                                                           HL_S_0950::int,
+                                                                           HL_S_1000::int,
+                                                                           HL_S_1050::int,
+                                                                           HL_S_1100::int,
+                                                                           HL_S_1150::int,
+                                                                           HL_S_1200::int,
+                                                                           HL_S_1250::int,
+                                                                           HL_S_1300::int,
+                                                                           HL_S_1350::int,
+                                                                           HL_S_1400::int,
+                                                                           HL_S_1450::int,
+                                                                           HL_S_1500::int,
+                                                                           HL_S_1550::int,
+                                                                           HL_S_1600::int,
+                                                                           HL_S_1650::int,
+                                                                           HL_S_1700::int,
+                                                                           HL_S_1750::int,
+                                                                           HL_S_1800::int,
+                                                                           HL_S_1850::int,
+                                                                           HL_S_1900::int,
+                                                                           HL_S_1950::int,
+                                                                           HL_S_2000::int,
+                                                                           HL_S_2050::int,
+                                                                           HL_S_2100::int,
+                                                                           HL_S_2150::int,
+                                                                           HL_S_2200::int,
+                                                                           HL_S_2250::int,
+                                                                           HL_S_2300::int] ]
+FROM nat_lage
+LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET graininess = ARRAY[KO_IS::int,
+                       KO_L::int,
+                       KO_S::int,
+                       KO_T::int,
+                       KO_U::int,
+                       KO_lT::int,
+                       KO_lU::int,
+                       KO_sL::int,
+                       KO_tL::int,
+                       KO_tU::int ]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET humus = ARRAY[ ARRAY[HUF_mo_mull_hydro::int,
+                         HUF_mo_mull_norm::int,
+                         HUF_mo_mull_xero::int], ARRAY[HUF_mo_rh_hydro::int,
+                                                       HUF_mo_rh_norm::int,
+                                                       HUF_mo_rh_xero::int], ARRAY[HUF_mo_typ_hydro::int,
+                                                                                   HUF_mo_typ_norm::int,
+                                                                                   HUF_mo_typ_xero::int], ARRAY[HUF_mu_f_hydro::int,
+                                                                                                                HUF_mu_f_norm::int,
+                                                                                                                HUF_mu_f_xero::int], ARRAY[HUF_mu_l_hydro::int,
+                                                                                                                                           HUF_mu_l_norm::int,
+                                                                                                                                           HUF_mu_l_xero::int], ARRAY[HUF_rh_hydro::int,
+                                                                                                                                                                      HUF_rh_norm::int,
+                                                                                                                                                                      HUF_rh_xero::int] ]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET humus_variants = ARRAY[HUF_V_Anmoor::int,
+                           HUF_V_Kalkmoder::int,
+                           HUF_V_Kalkmull::int,
+                           HUF_V_Tangel::int,
+                           HUF_V_Torf::int,
+                           HUF_V_erod::int]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET raw_material = ARRAY[AM_B::int,
+                         AM_S::int ]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET soil = ARRAY[ ARRAY[BE_GestRohB::int,
+                        null,
+                        null], ARRAY[BE_Ranker_norm::int,
+                                     BE_Ranker_verbraunt::int,
+                                     BE_Ranker_vernaesst::int], ARRAY[BE_Regosol_norm::int,
+                                                                      BE_Regosol_verbraunt::int,
+                                                                      BE_Regosol_vernaesst::int], ARRAY[BE_Pararendz_norm::int,
+                                                                                                        BE_Pararendz_verbraunt::int,
+                                                                                                        BE_Pararendz_vernaesst::int], ARRAY[BE_Rendz_norm::int,
+                                                                                                                                            BE_Rendz_verbraunt::int,
+                                                                                                                                            BE_Rendz_vernaesst::int], ARRAY[BE_Braunerd_norm::int,
+                                                                                                                                                                            BE_Braunerd_podso::int,
+                                                                                                                                                                            BE_Braunerd_vernaesst::int], ARRAY[BE_Parabraunerd_norm::int,
+                                                                                                                                                                                                               BE_Parabraunerd_podso::int,
+                                                                                                                                                                                                               BE_Parabraunerd_vernaesst::int], ARRAY[BE_Podsol_norm::int,
+                                                                                                                                                                                                                                                      BE_Podsol_vernaesst::int,
+                                                                                                                                                                                                                                                      null], ARRAY[BE_Stauw_norm::int,
+                                                                                                                                                                                                                                                                   BE_Stauw_nassgebl::int,
+                                                                                                                                                                                                                                                                   null], ARRAY[BE_Grundw_norm::int,
+                                                                                                                                                                                                                                                                                BE_Grundw_nassgebl::int,
+                                                                                                                                                                                                                                                                                null] ]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
+
+
+UPDATE foresttype_meta
+SET soil_variants = ARRAY[BE_V_Auenb::int,
+                          BE_V_Braunpod::int,
+                          BE_V_Humuspod::int,
+                          BE_V_OrgB::int,
+                          BE_V_neutrBraune::int]
+FROM nat_boden
+LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
 CREATE TYPE foresttype_group_type AS ENUM ('main', 'special', 'volatile', 'riverside', 'pioneer');
@@ -451,42 +877,6 @@ SELECT 'pioneer'::foresttype_group_type,
 FROM nat_naistyp
 WHERE naistyp_oeg_pio IN ('1',
                           '2');
-
-
-CREATE TABLE foresttype_aspect (foresttype_code TEXT REFERENCES foresttype_meta,
-                                                                aspect TEXT);
-
-
-INSERT INTO foresttype_aspect (foresttype_code, aspect)
-SELECT DISTINCT trim(BOTH
-                     FROM nat_naistyp.naistyp_c) AS forest_type_code,
-                split_part(feld_name, '_', 2) AS aspect
-FROM nat_lage
-LEFT JOIN nat_naistyp ON trim(BOTH '0.'
-                              FROM nat_lage.naistyp_sort) = nat_naistyp.naistyp_sort
-WHERE feld_name ILIKE 'E_%'
-        AND nat_naistyp.naistyp_c IS NOT NULL
-        AND feld_wert IN ('1',
-                          '2')
-        AND split_part(feld_name, '_', 2) != '';
-
-
-CREATE TABLE foresttype_slope (foresttype_code TEXT REFERENCES foresttype_meta,
-                                                               slope TEXT);
-
-
-INSERT INTO foresttype_slope (foresttype_code, slope)
-SELECT DISTINCT trim(BOTH
-                     FROM nat_naistyp.naistyp_c) AS forest_type_code,
-                split_part(feld_name, '_', 2) AS slope
-FROM nat_lage
-LEFT JOIN nat_naistyp ON trim(BOTH '0.'
-                              FROM nat_lage.naistyp_sort) = nat_naistyp.naistyp_sort
-WHERE feld_name ILIKE 'HN_%'
-        AND nat_naistyp.naistyp_c IS NOT NULL
-        AND feld_wert IN ('1',
-                          '2')
-        AND split_part(feld_name, '_', 2) != '';
 
 ----------------------------------------------
 -- vegetation
