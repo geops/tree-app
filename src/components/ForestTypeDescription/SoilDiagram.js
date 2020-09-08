@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import styles from './Diagram.module.css';
 import { getStyle } from './utils';
 
-function Soil({ soil, soilVariants }) {
+function SoilDiagram({ soil, soilVariants }) {
   const { t } = useTranslation();
   return (
     <svg viewBox="0 0 800 470">
@@ -311,9 +311,9 @@ function Soil({ soil, soilVariants }) {
   );
 }
 
-Soil.propTypes = {
+SoilDiagram.propTypes = {
   soil: PropTypes.arrayOf().isRequired,
   soilVariants: PropTypes.arrayOf().isRequired,
 };
 
-export default Soil;
+export default SoilDiagram;
