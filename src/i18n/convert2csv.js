@@ -12,11 +12,8 @@ function flatten(arr) {
 const getLines = (de, fr, prefix) => {
   const deData = Object.entries(de);
   const frData = Object.entries(fr);
-  return deData.map(([deKey, deValue], index) => {
-    const [frKey, frValue] = frData[index];
-    if (frKey !== deKey) {
-      throw new Error(`French translation missing for ${deKey}!`);
-    }
+  return deData.map(([deKey, deValue]) => {
+    const [, frValue] = frData.find(([frKey]) => frKey === deKey) || [null, ''];
     const lineKey = prefix ? `${prefix}.${deKey}` : deKey;
     if (typeof deValue === 'string') {
       return `${lineKey},"${deValue}","${frValue}"`;

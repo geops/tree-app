@@ -1,6 +1,6 @@
 {
   "additional": {
-    "label": "Autres"
+    "label": "Autres caractéristiques"
   },
   "altitudinalZone": {
     "label": "Étage de végétation actuel",
@@ -15,6 +15,149 @@
     "result": "Recommandations pour le choix des essences",
     "ribbon": "Test",
     "title": "Tree App"
+  },
+  "forestTypeDiagram": {
+    "aboveSeaLevel": "m",
+    "altitudinalZoneAbbr": {
+      "20": "C",
+      "40": "SM",
+      "50": "MI",
+      "60": "MS",
+      "80": "HM",
+      "90": "SA",
+      "100": "SS"
+    },
+    "altitudinalZoneForestEcoregion": "Etage de végétation / Région",
+    "altitude": {
+      "label": "Altitude",
+      "situation": "versant",
+      "aspect": "N E&O S"
+    },
+    "amount": {
+      "extremelyHigh": "extrème",
+      "veryHigh": "très élevée",
+      "high": "élevée",
+      "medium": "moyenne",
+      "low": "faible",
+      "veryLow": "très faible"
+    },
+    "aspect": {
+      "label": "Exposition",
+      "N": "N",
+      "E": "E",
+      "S": "S",
+      "W": "O"
+    },
+    "forestEcoregion": {
+      "1": "<0>Alpes externes</0><1>du Nord</1>",
+      "2": "<0>Alpes</0><1>intermédiaires</1><2>du Nord</2>",
+      "3": "<0>Hautes Alpes</0><1>continentales",
+      "4": "<0>Alpes</0><1>intermédiaires</1><2>du Sud</2>",
+      "5": "<0>Alpes externes</0><1>du Sud</1>"
+    },
+    "graininess": {
+      "label": "Texture",
+      "clay": "Argile",
+      "silt": "Silt"
+    },
+    "humus": {
+      "label": "Forme d'humus",
+      "dry": "en milieu sec",
+      "eroded": "érodée",
+      "fmull": "mull F",
+      "halfBog": "anmoor",
+      "hydro": "(formes hydromorphes)",
+      "limeModer": "moder calcique",
+      "limeMull": "mull calcique",
+      "moder": "moder",
+      "moderLike": "",
+      "mor": "humus brut",
+      "morLike": "",
+      "mull": "mull",
+      "mullLike": "",
+      "tangel": "tangel",
+      "turf": "tourbe",
+      "variants": "Variantes",
+      "wet": "en milieu humide",
+      "xero": "(formes xériques)",
+      "lmull": "mull L"
+    },
+    "legend": {
+      "label": "Légende",
+      "distribution": "Répartition",
+      "often": "très fréquente",
+      "medium": "moins fréquente",
+      "rare": "rare"
+    },
+    "meter": "m",
+    "rawMaterial": {
+      "label": "Matérieu parental",
+      "acid": "acide",
+      "alkaline": "alcalin",
+      "unkown": "indeterminé"
+    },
+    "slope": "Pente",
+    "skeletalFraction": "Pierrosité",
+    "soil": {
+      "header": "Sol",
+      "label": "Formation des sols",
+      "rock": "Sols bruns rocheux",
+      "ranker": "Ranker",
+      "regosol": "Régosol",
+      "pararendzina": "Pararendzine",
+      "rendzina": "Rendzine",
+      "brown": "Sol brun",
+      "paraBrown": "Sol brun lessivé",
+      "podsol": "Podzol",
+      "ironHumusPodsol": "(humo-ferrugineux)",
+      "tailwater": "Nappe perchée",
+      "tailwaterPseudo": "(Pseudo- / Stagnogley)",
+      "groundwater": "Nappe de fond / de pente",
+      "groundwaterGley": "(Gley / Gley de pente)",
+      "raw": "Sols bruts",
+      "developed": "Sols évolués",
+      "wet": "Sols hydromorphes",
+      "organic": "Sols organiques",
+      "riverside": "Sols alluviaux",
+      "neutralBrown": "Sols bruns neutres",
+      "brownPodsol": "Sol ocre podzolique",
+      "humusPodsol": "Podzol humifère",
+      "podsoled": "podzolisé",
+      "browned": "brunifié",
+      "bleached": "décoloré par l'eau",
+      "weted": "hydromorphe"
+    },
+    "soilDepth": {
+      "label": "Profondeur",
+      "skeletalFraction": "Profondeur et pierrosité",
+      "veryShallow": "très superficiel",
+      "shallow": "superficiel",
+      "medium": "moyennement profond",
+      "deep": "profond",
+      "veryDeep": "très profond",
+      "extremelyDeep": "extrèmement profond"
+    },
+    "soilWetness": {
+      "label": "Hydromorphie",
+      "groundwater": "sols influencés par une nappe de fond ou de pente",
+      "tailwater": "sols influencés par une nappe perchée",
+      "none": "non hydromorphe",
+      "swampy": "détrempé",
+      "veryHigh": "très fortement mouillé",
+      "high": "fortement mouillé",
+      "normal": "mouillé",
+      "low": "faiblement mouillé",
+      "stagnogley": "Stagnogley",
+      "pseudogley": "Pseudogley",
+      "highPseudogleyed": "très pseudogleyifié",
+      "pseudogleyed": "pseudogleyifié",
+      "lowPseudogleyed": "peu pseudogleyifié",
+      "veryLowPseudogleyed": "très peu pseudogleyifié",
+      "waterPermeability": "Perméabilité à l'eau",
+      "permeability": "Perméabilité"
+    },
+    "terrain": "Terrain",
+    "vegetation": "Végétation aspect"
   },
   "dropdown": {
     "noResultsMessage": "Aucune entrée trouvée",
@@ -52,17 +195,24 @@
       "376-400": "Nord-nord-ouest à nord",
       "label": "Exposition"
     },
+    "bush": "Arbustes / buissons",
     "cancel": "Annuler",
     "carbonate": {
       "fine": "Terre fine",
       "label": "Teneur en carbonate",
       "rock": "Roche"
     },
-    "coniferTreeHeightMax": "Résineux [m]",
-    "deciduousTreeHeightMax": "Feuillu [m]",
+    "coniferTreeHeightMax": "Résineux",
+    "deciduousTreeHeightMax": "Feuillu",
+    "frequency": {
+      "0": "rare",
+      "1": "très fréquente",
+      "2": "peu fréquente",
+      "9": "indéterminé"
+    },
     "geomorphology": {
-      "blockyRockyLittle": "peu de roches/blocs",
-      "blockyRockyStrong": "riche en roches/blocs",
+      "blockyRockyLittle": "peu de roches / blocs",
+      "blockyRockyStrong": "riche en roches / blocs",
       "label": "Géomorphologie",
       "limestonePavement": "Lapié",
       "rockBand": "Vire rocheuse",
@@ -79,12 +229,25 @@
       "special": "Station forestière particulière",
       "volatile": "Humidité très variable"
     },
+    "herb": "Plantes herbacées",
     "hint": "Veuillez effectuer votre sélection sur la carte",
     "indicator": {
       "label": "Plantes indicatrices présentes",
       "placeholder": "Veuillez indiquer les espèces indicatrices"
     },
     "label": "Type de station",
+    "location": "Station générale",
+    "moss": "Mousses",
+    "naturalForest": "Forêt naturelle",
+    "often": "souvent",
+    "process": {
+      "avalanche": "Avalanches",
+      "erosion": "Erosion",
+      "label": "Processus",
+      "landslide": "Glissement de terrain",
+      "rockfall": "Chute de pierres active"
+    },
+    "rare": "parfois",
     "reliefType": {
       "centralSlope": "Pente moyenne",
       "dome": "Butte / haut de pente",
@@ -104,28 +267,37 @@
       "label": "Pente en %"
     },
     "transition": "Transition vers le type de station",
+    "treeLayerHeight": "Hauteur maximale du peuplement",
     "treeHeight": "Hauteur maximale des arbres",
     "treeType": {
       "label": "Essences présentes",
       "placeholder": "Veuillez indiquer les essences"
+    },
+    "vegetation": "Végétation aspect",
+    "water": {
+      "change": "Humidité variable",
+      "label": "Cours d'eau",
+      "small": "Petits ruisseaux",
+      "spring": "Source",
+      "stream": "le long de ruisseaux"
     }
   },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
     "recommendationAttentionHeader": "Ailante",
-    "recommendationNegative": "Ces essences ne doivent pas être favorisées, car elles sont de plus en plus menacées par les changements climatiques. Elles sont recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle ou autres essences) qui <strong>ne sont recommandées ni dans la projection climatique « modérée » ni dans la projection climatique « prononcée » (gras</strong>. † = espèce avec risque de maladie, qui ne doit donc pas être favorisée malgré  son adéquation à la station ; * = espèce pionnière",
+    "recommendationNegative": "Ces essences ne doivent pas être favorisées, car elles sont de plus en plus menacées par les changements climatiques. Elles sont recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle mixte ou autres essences) qui <strong>ne seront présentes à l'avenir, comme « autres essences », que dans une seule projection climatique voir dans aucune (gras)</strong>. † = espèce avec risque de maladie, qui ne doit donc pas être favorisée malgré  son adéquation à la station ; * = espèce pionnière.",
     "recommendationNegativeHeader": "Essences menacées",
-    "recommendationNeutral": "Ces essences peuvent être favorisées. Elles sont recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle ou autres essences) et autres essences recommandées soit <strong>dans les projections climatiques « modérée » et « prononcée »(gras)</strong> soit dans l’une de ces deux projections uniquement (style normal ; pour savoir dans quel projection climatique une essence est adaptée, consultez les onglets de droite). † = espèce avec risque de maladie, qui ne doit donc pas être favorisée malgré son adéquation à la station ; * = espèce pionnière. Quelques essences non indigènes sont mentionnées en fin de liste. Le robinier est à considérer avec prudence en raison de son comportement invasif.",
+    "recommendationNeutral": "Ces essences peuvent être favorisées. Elles sont soit recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle mixte ou autres essences, écriture blanche) et autres essences recommandées <strong>dans les deux projections climatiques (gras)</strong>. Soit elles sont recommandées dans le climat actuel et dans l’une des deux projections uniquement, comme essences dominantes ou importantes en forêt naturelle mixte (style normal, écriture blanche). Ou alors elles ne sont pas encore recommandées aujourd’hui, mais seulement à l’avenir (écriture jaune), comme « autres essences » dans une (style normal) ou dans les deux projections climatiques (gras). Pour savoir dans quelle projection climatique une essence est adaptée, consultez les onglets de droite. † = espèce avec risque de maladie, qui ne doit donc pas être favorisée malgré son adéquation à la station ; * = espèce pionnière. Quelques essences non indigènes sont mentionnées en fin de liste. Le robinier est à considérer avec prudence en raison de son comportement invasif.",
     "recommendationNeutralHeader": "Essences recommandées avec mesure",
-    "recommendationPositive": "Ces essences sont à favoriser. Elles sont des essences dominantes ou importantes en forêt naturelle <strong>adaptées à toutes les projections climatiques (gras)</strong>, à savoir au climat actuel ainsi qu’aux projections climatiques « modérée » et « prononcée » (style normal ; pour savoir dans quel projection climatique une essence est adaptée, consultez les onglets de droite). † = espèce avec risque de maladie, qui ne doit donc pas être favorisée malgré son adéquation à la station ; * = espèce pionnière. Quelques essences non indigènes sont mentionnées en fin de liste. Le robinier est à considérer avec prudence en raison de son comportement invasif.",
+    "recommendationPositive": "Ces essences sont à favoriser. A l’avenir, elles seront <strong>des essences dominantes ou importantes en forêt naturelle mixte dans les deux projections climatiques (gras)</strong>, ou dans une seule des projections « modérée » ou « prononcée », tandis que dans l’autre projection climatique elles seront des « autres essences » (style normal). L’écriture blanche désigne des essences adaptées aussi dans le climat actuel (essence dominante, essence importante en forêt naturelle mixte ou autre essence), l’écriture jaune désigne des essences qui ne sont pas encore adaptées au climat actuel. Pour savoir dans quelle projection climatique une essence est adaptée, consultez les onglets de droite. † = espèce avec risque de maladie, qui ne doit donc pas être favorisée malgré son adéquation à la station ; * = espèce pionnière. Quelques essences non indigènes peuvent être mentionnées en fin de liste. Le robinier est à considérer avec prudence en raison de son comportement invasif.",
     "recommendationPositiveHeader": "Essences recommandées"
   },
   "info": {
     "about": "L’application <i>Tree App</i> vous aide à choisir les essences adaptées dans trois scénarios climatiques :<2><0>climat 1981-2010</0><1>changement climatique « modéré » 2070-2099</1><2>changement climatique « prononcé » 2070-2099</2></2><p>Elle est un produit du programme de recherche Forêts et changements climatiques de l’OFEV et du WSL.<br> Cliquez sur la carte pour obtenir les essences recommandées à l'emplacement du clic. Indiquez ensuite le type de station (l'association forestière), soit en le déterminant à l'aide de l'application (bouton « Stations »), soit en le sélectionnant manuellement dans la liste des types de station proposés (bouton « Recommandations »).</p><p>Version {{version}}</p>",
     "aboutTitle": "À propos",
-    "bugs": "<p>Les caractéristiques suivantes ne sont pas encore intégrées à la version actuelle :</p><p>1) L'application fonctionne avec les navigateurs Firefox, Edge, Chrome, Samsung Internet et Safari. Des dysfonctionnements peuvent se produire avec les autres navigateurs.</p><p>2) Si une version antérieure de l'application a été chargée, il se peut qu'elle ne soit pas mise à jour. Pour ce faire, le cache doit être effacé manuellement (voir les instructions spécifiques au navigateur sur Internet). Dans les écorégions 2b et 4, le hêtre peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des écorégions 2a et 5 doivent être utilisés. Ils peuvent l'être dans le mode « manuel » aussi bien dans l'affichage « Station » que dans l'affichage « Recommandation ».</p><p>3) Dans l'aire relictuelle du sapin, celui-ci peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des aires principale et secondaire du sapin sont à utiliser. Ils ne sont pas encore intégrés à l'affichage « Station » et peuvent être utilisés manuellement dans l'affichage « Recommandation ».</p>5) Il est prévu d'intégrer les cartographies cantonales des stations forestières, de manière à ce que le type de station puisse être directement repris de ces cartes. 6) Les essences recommandées dans Tree App peuvent différer des recommandations inscrites dans les divers documents cantonaux, car elles ont été compilées à partir de plusieurs recommandations cantonales. 7) Les fonds de plan ne peuvent pas être utilisées hors ligne. Toutefois, ils peuvent être chargés dans le navigateur avant que la connexion ne soit perdue.",
+    "bugs": "<p>Les caractéristiques suivantes ne sont pas encore intégrées à la version actuelle :</p><p>1) L'application fonctionne avec les navigateurs Firefox, Edge, Chrome, Samsung Internet et Safari. Des dysfonctionnements peuvent se produire avec les autres navigateurs.</p><p>2) Si une version antérieure de l'application a été chargée, il se peut qu'elle ne soit pas mise à jour. Pour ce faire, le cache doit être effacé manuellement (voir les instructions spécifiques au navigateur sur Internet). </p><p>3) Dans les écorégions 2b et 4, le hêtre peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des écorégions 2a et 5 doivent être utilisés. Ils peuvent l'être dans le mode « manuel » aussi bien dans l'affichage « Station » que dans l'affichage « Recommandation ».</p><p>4) Dans l'aire relictuelle du sapin, celui-ci peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des aires principale et secondaire du sapin sont à utiliser. Ils ne sont pas encore intégrés à l'affichage « Station » et peuvent être utilisés manuellement dans l'affichage « Recommandation ».</p><p>5) Il est prévu d'intégrer les cartographies cantonales des stations forestières, de manière à ce que le type de station puisse être directement repris de ces cartes. </p><p>6) Les essences recommandées dans Tree App peuvent différer des recommandations inscrites dans les divers documents cantonaux, car elles ont été compilées à partir de plusieurs recommandations cantonales. </p><p>7) Les fonds de plan ne peuvent pas être utilisées hors ligne. Toutefois, ils peuvent être chargés dans le navigateur avant que la connexion ne soit perdue.",
     "bugsTitle": "Erreurs connues et développements prévus",
-    "glossary": "<p><strong>Forêts alluviales (groupe de station)</strong></p><p>Types de station soumis aux effets des eaux.</p><p><strong>Forêts buissonnantes (groupe de station)</strong></p><p>Dans le cas des types de station NaiS, c'est généralement la phase optimale qui est décrite. Le phéno-type rabougri à la suite des effets des avalanches ou des inondations est décrit comme une variante buissonnante et assorti du code « G ». Ce dernier peut être attribué à tous les types de station NaiS accompagnés d'une description (cf. → stations pionnières).</p><p><strong>Station forestière principale</strong></p><p>Type de station zonale qui, selon → l'étage de végétation correspondant, peut être identifié avec suffisamment de précision grâce aux facteurs du milieu que sont l'acidité du sol (ou les éléments nutritifs disponibles) et l'humidité moyenne du sol.</p><p><strong><strong>Changement climatique « modéré » (période 2070-2099)</strong></p><p> En moyenne nationale d’avril à septembre, la hausse des températures est de 3,1 °C et la baisse des précipitations, de 2 %, par rapport à la période de 1981 à 2010.</p><p><strong>Écogramme</strong></p><p>Diagramme muni des deux axes « acide - basique » et « mouillé - sec ». Les → stations forestières types peuvent être localisées par des rectangles placés dans ces diagrammes et représentant un modèle des caractéristiques de ces stations. Au-delà du bord supérieur de l’écogramme, le milieu est trop sec pour permettre la croissance des arbres; au-delà du bord inférieur, il est trop mouillé. Les écogrammes s'appliquent à certaines → écorégions et à certains → étages de végétation.</p><p><strong>Stations pionnières (groupe de station)</strong></p><p>Dans le cas des types de station NaiS, c'est généralement la phase optimale qui est décrite. Les terrains qui présentent des phases pionnières et dont les peuplements peuvent se développer au cours des 100 prochaines années sont caractérisés par le même type de station que les peuplements adultes. Dans certains cas exceptionnels, les phases pionnières ne se développent pas ou que très lentement (stades permanents). Dans ces cas, les stations pionnières ne sont décrites que si les arbres croissent droit (cf. → forêts buissonnantes).</p><p><strong>Stations forestières particulières</strong></p><p>→ Type de station déterminé en premier lieu par des facteurs du milieu autres que les caractéristiques générales du climat, l’acidité du sol (ou le séléments nutritifs disponibles) et l’humidité moyenne du sol. Les facteurs stationnels qui déterminent une station forestière particulière sont les éboulis ou les éboulis de blocs actifs. cf. → Station forestière principale.</p><p><strong>Station</strong></p><p>Ensemble des facteurs qui agissent sur les arbres d’un peuplement forestier (p. ex. climat, caractéristiques du sol, avalanches, chutes de pierres, etc.).</p><p><strong>Type de station</strong></p><p> Description idéalisée d’une → station, élaborée à partir de l’observation de stations réelles. Cette description permet d’identifier une station existante semblable. Le type de station est caractérisé par le cortège floristique, mais aussi par des propriétés stationelles et structurelles.</p><p><strong>Écorégion</strong></p><p> Les écorégions sont des régions biogéographiques possédant des caractéristiques climatiques similaires. Elles comprennent le Jura, le Plateau, suisse, les Alpes externes du Nord, les Alpes intermédiaires du Nord avec hêtre, les Alpes intermédiaires du Nord sans hêtre, les hautes Alpes continentales, les Alpes intermédiaires du Sud, les Alpes externes du Sud et le Mendrisiotto.</p><p><strong>Humidité fortement variable (groupe de station)</strong></p><p>Types de station zonale pouvant être identifié, de manière similaire aux stations forestières principales pour les étages de végétation correspondant, grâce aux facteurs du milieu que sont l’acidité du sol (ou les éléments nutritifs disponibles) et l’humidité moyenne. L’humidité du sol n’est toutefois pas constante, mais varie fortement.</p><p><strong>Changement climatique « prononcé » (période 2070-2099)</strong></p><p> En moyenne nationale d’avril à septembre, la hausse des température est de 4,3 °C et la baisse des précipitations, de 19 %, par rapport à la période de 1981 à 2010. </p><p><strong>Aire du sapin blanc</strong></p><p>Région marquée par la présence du sapin blanc. Dans <strong>l'aire principale</strong> du sapin blanc, ce dernier participe naturellement et dans des proportions considérables à la structure des peuplements des étages montagnard supérieur et haut-montagnard. Dans <strong>l'aire secondaire</strong>, qui couvre les Alpes intermédiaires du Nord et du Sud, les peuplements de sapin blanc se limitent pour la plupart aux vallées de l'étage haut-montagnard dont le fond se situe en dessous de 1000 m et aux versants exposés nord et est. Dans <strong>l'aire relictuelle</strong> des Alpes intermédiaires et des hautes Alpes continentales, le sapin blanc est présent sous forme de petits peuplements isolés. </p><p><strong>Étage de végétation</strong></p><p>Zone altitudinale caractérisée par un comportement écologique des essences similaire et une structure de peuplement homogène. Les étages de végétation sont fortement influencés par la température de l’air. Certains étages de végétation ne sont présents que dans certaines → écorégions.</p><p><strong>Station forestière</strong> voir → Station</p>",
+    "glossary": "<p><strong>Aire du sapin blanc</strong></p><p>Région marquée par la présence du sapin blanc. Dans <strong>l'aire principale</strong> du sapin blanc, ce dernier participe naturellement et dans des proportions considérables à la structure des peuplements des étages montagnard supérieur et haut-montagnard. Dans <strong>l'aire secondaire</strong>, qui couvre les Alpes intermédiaires du Nord et du Sud, les peuplements de sapin blanc se limitent pour la plupart aux vallées de l'étage haut-montagnard dont le fond se situe en dessous de 1000 m et aux versants exposés nord et est. Dans <strong>l'aire relictuelle</strong> des Alpes intermédiaires et des hautes Alpes continentales, le sapin blanc est présent sous forme de petits peuplements isolés. </p><p><strong>Changement climatique « modéré » (période 2070-2099)</strong></p><p> En moyenne nationale d’avril à septembre, la hausse des températures est de 3,1 °C et la baisse des précipitations, de 2 %, par rapport à la période de 1981 à 2010.</p><p><strong>Changement climatique « prononcé » (période 2070-2099)</strong></p><p>En moyenne nationale d’avril à septembre, la hausse des température est de 4,3 °C et la baisse des précipitations, de 19 %, par rapport à la période de 1981 à 2010. </p><p><strong>Écogramme</strong></p><p>Diagramme muni des deux axes « acide - basique » et « mouillé - sec ». Les → stations forestières types peuvent être localisées par des rectangles placés dans ces diagrammes et représentant un modèle des caractéristiques de ces stations. Au-delà du bord supérieur de l’écogramme, le milieu est trop sec pour permettre la croissance des arbres; au-delà du bord inférieur, il est trop mouillé. Les écogrammes s'appliquent à certaines → écorégions et à certains → étages de végétation.</p><p><strong>Écorégion</strong></p><p>Les écorégions sont des régions biogéographiques possédant des caractéristiques climatiques similaires. Elles comprennent le Jura, le Plateau, suisse, les Alpes externes du Nord, les Alpes intermédiaires du Nord avec hêtre, les Alpes intermédiaires du Nord sans hêtre, les hautes Alpes continentales, les Alpes intermédiaires du Sud, les Alpes externes du Sud et le Mendrisiotto.</p><p><strong>Étage de végétation</strong></p><p>Zone altitudinale caractérisée par un comportement écologique des essences similaire et une structure de peuplement homogène. Les étages de végétation sont fortement influencés par la température de l’air. Certains étages de végétation ne sont présents que dans certaines → écorégions.</p><p><strong>Forêts alluviales (groupe de station)</strong></p><p>Types de station soumis aux effets des eaux.</p><p><strong>Forêts buissonnantes (groupe de station)</strong></p><p>Dans le cas des types de station NaiS, c'est généralement la phase optimale qui est décrite. Le phéno-type rabougri à la suite des effets des avalanches ou des inondations est décrit comme une variante buissonnante et assorti du code « G ». Ce dernier peut être attribué à tous les types de station NaiS accompagnés d'une description (cf. → stations pionnières).</p><p><strong>Humidité fortement variable (groupe de station)</strong></p><p>Types de station zonale pouvant être identifié, de manière similaire aux stations forestières principales pour les étages de végétation correspondant, grâce aux facteurs du milieu que sont l’acidité du sol (ou les éléments nutritifs disponibles) et l’humidité moyenne. L’humidité du sol n’est toutefois pas constante, mais varie fortement. </p><p><strong>Station</strong></p><p>Ensemble des facteurs qui agissent sur les arbres d’un peuplement forestier (p. ex. climat, caractéristiques du sol, avalanches, chutes de pierres, etc.).</p><p><strong>Station forestière</strong> voir → Station</p><strong>Station forestière particulière</strong></p><p>→ Type de station déterminé en premier lieu par des facteurs du milieu autres que les caractéristiques générales du climat, l’acidité du sol (ou le séléments nutritifs disponibles) et l’humidité moyenne du sol. Les facteurs stationnels qui déterminent une station forestière particulière sont les éboulis ou les éboulis de blocs actifs. cf. → Station forestière principale.</p><p><strong>Station forestière principale</strong></p><p>Type de station zonale qui, selon → l'étage de végétation correspondant, peut être identifié avec suffisamment de précision grâce aux facteurs du milieu que sont l'acidité du sol (ou les éléments nutritifs disponibles) et l'humidité moyenne du sol.</p><p><strong>Station pionnière (groupe de station)</strong></p><p>Dans le cas des types de station NaiS, c'est généralement la phase optimale qui est décrite. Les terrains qui présentent des phases pionnières et dont les peuplements peuvent se développer au cours des 100 prochaines années sont caractérisés par le même type de station que les peuplements adultes. Dans certains cas exceptionnels, les phases pionnières ne se développent pas ou que très lentement (stades permanents). Dans ces cas, les stations pionnières ne sont décrites que si les arbres croissent droit (cf. → forêts buissonnantes).</p><p><strong>Type de station</strong></p><p>Description idéalisée d’une → station, élaborée à partir de l’observation de stations réelles. Cette description permet d’identifier une station existante semblable. Le type de station est caractérisé par le cortège floristique, mais aussi par des propriétés stationelles et structurelles.</p><p>",
     "glossaryTitle": "Glossaire",
     "impressum": "L’application Tree App est un produit du programme de recherche Forêts et changements climatiques de l’OFEV et du WSL.",
     "impressumTitle": "Impressum",
@@ -133,7 +305,7 @@
     "locationTitle": "Station",
     "participants": "<p>De nombreux spécialistes ont contribué à l’application Tree App, en particulier :</p><1><strong>bases stationnelles relatives au projet « Gestion durable des forêts de protection »</strong><br> {{locationBasics}}</1><2><strong>travaux de base en vue de tenir compte des changements climatiques</strong><br> {{climateChangeBasics}}</2><3><strong>idée d’une application</strong><br> {{idea}}</3><4><strong>conception</strong><br> {{conception}}</4><5><strong>réalisation</strong><br> <2>geOps AG</2></5><6><strong>direction du projet</strong><br> {{projectManagement}}</6><7><strong>pilotage du projet</strong><br> {{projectControl}}</7><p><strong>financement</strong><br>OFEV dans le cadre du programme de recherche Forêts et changements climatiques et WSL</p><9><strong>groupe d’accompagnement Utilisateurs, et</strong><br> {{wslUsers}}</9><10><strong>groupe d’accompagnement Informatique</strong><br> {{itUsers}}</10>",
     "participantsTitle": "Contributeurs",
-    "recommendation": "<<p>L’affichage des recommandations pour le choix des essences indique, en haut, les coordonnées géographiques du point sélectionné (7 chiffres, système de référence LV95) ainsi que le type de station et l’étage de végétation actuels. En dessous sont listées les essences recommandées pour le lieu et le type de station sélectionnés. Les essences recommandées sont affichées dans deux à quatre onglets.</p><1><strong>Représentation synthétique</strong> (onglet de gauche : « Essences recommandées »). Cet affichage (par défaut) est présenté en premier. Il énumère les essences recommandées dès à présent (essences adaptées au climat actuel). Les essences qui ne sont pas encore recommandées, mais qui pourraient l’être à l’avenir pour des raisons climatiques, peuvent être affichées ou masquées à l’aide du bouton en bas de la page. Les essences adaptées à un lieu géographique précis et à un type de station donné sont réparties en trois catégories. </1><2><0><0></0> Essences recommandées : Ces essences sont à favoriser. Il s'agit d'essences dominantes ou importantes en forêt naturelle <strong>adaptées à tous les scénarios climatiques (gras)</strong>, ou adaptées au climat actuel ainsi qu’à une seule des projections climatiques, soit « modérée »,  soit « prononcée » (style normal ; pour savoir dans quel scénario climatique une essence est adaptée, consultez les onglets de droite). </0><1><0></0> Essences recommandées avec mesure : ces essences peuvent être favorisées. Il s'agit d'essences recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle ou autres essences) et autres essences recommandées soit <strong>dans les projections climatiques « modérée » et « prononcée »(gras)</strong>soit dans l’une de ces deux projections uniquement (style normal ; pour savoir dans quel scénario climatique une essence est adaptée, consultez les onglets de droite). </1><2><0></0> Essences menacées : Ces essences ne doivent pas être favorisées, car elles seront de plus en plus menacées par les changements climatiques. Il s'agit d'essences recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle ou autres essences) qui <strong>ne sont recommandées ni dans la projection climatique « modérée » ni dans la projection climatique « prononcée » (gras</strong>. </2><3><0></0> Ailante : la lutte contre cette essence envahissante est réglée dans une <3>Aide à l’exécution de la Confédération</3>.</3></2></3><4><0></0>Essences non mentionnées : essences non recommandées ou exotiques et trop peu connues<3>Affichage pour les trois scénarios climatiques</3><p>Pour chaque lieu sélectionné, les scénarios climatiques génèrent entre un et trois étages de végétation. Pour chaque étage, un onglet additionnel, à droite de celui des essences recommandées, indique le ou les scénarios climatiques et les symboles respectifs ainsi que l’étage de végétation (p. ex. « submontagnard ») correspondant. Les scénarios climatiques sont symbolisés de la manière suivante :</p><5><0><0></0> climat actuel (période 1981-2010)</0><1><0></0> projection climatique « modérée » (période 2070-2099). En moyenne nationale d’avril à septembre, la hausse des températures est de 3,1 °C et la baisse des précipitations, de 2 %, par rapport à la période de 1981 à 2010.</1><2><0></0> projection climatique « prononcée » (période 2070-2099). En moyenne nationale d’avril à septembre, la hausse des température est de 4,3 °C et la baisse des précipitations, de 19 %, par rapport à la période de 1981 à 2010.</2></5><p>Signification du nombre d’onglets affichés :</p><7><0>si trois onglets sont affichés, les types de station générés diffèrent pour chacun des trois scénarios climatiques ;</0><1>si un seul onglet est affiché, le type de station est identique pour chacun des trois scénarios climatiques ;</1><2>si deux onglets sont affichés, les étages de végétation coïncident pour deux des trois scénarios climatiques, soit pour le climat actuel et pour la projection climatique « modérée » soit pour les projections climatiques « modérée » et « prononcée ».</2></7><p>En cliquant sur ces onglets, vous pouvez visualiser les essences recommandées pour les types de station correspondants (actuels ou futurs). Les essences recommandées sont réparties en trois catégories : « essences dominantes en forêt naturelle », « essences importantes mélangées en forêt naturelle » et « autres essences ». Ces données permettent de connaître, pour chaque scénario climatique, les essences qui ne sont plus recommandées (elles sont absentes de la liste) ou celles qui sont désormais recommandées.</p>",
+    "recommendation": "<p>L’affichage des recommandations pour le choix des essences indique, en haut, les coordonnées géographiques du lieu sélectionné (7 chiffres, système de référence LV95) ainsi que le type de station et l’étage de végétation actuels. En dessous sont listées les essences recommandées pour le lieu et le type de station sélectionnés. Les essences recommandées sont affichées dans deux à quatre onglets.</p><1><strong>Représentation synthétique</strong> (onglet de gauche : « Essences recommandées »). Cet affichage (par défaut) est présenté en premier. Il énumère les essences recommandées dès à présent (essences adaptées au climat actuel). Les essences qui ne sont pas encore recommandées, mais qui devraient l’être à l’avenir pour des raisons climatiques, peuvent être affichées ou masquées à l’aide du bouton en bas de la page. Les essences adaptées à un lieu géographique précis et à un type de station donné sont réparties en trois catégories (attention : l’adéquation des essences en écriture jaune dans le climat actuel est douteuse) : </1><2><0><0></0> Essences recommandées : Ces essences sont à favoriser. A l’avenir, elles seront <strong>des essences dominantes ou importantes en forêt naturelle mixte dans les deux projections climatiques (gras)</strong>, ou dans une seule des projections « modérée » ou « prononcée », tandis que dans l’autre projection climatique elles seront des « autres essences » (style normal).</0><1><0></0>Essences recommandées avec mesure : ces essences peuvent être favorisées. Elles sont soit recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle mixte ou autres essences, écriture blanche) et autres essences recommandées <strong>dans les deux projections climatiques (gras)</strong>. Soit elles sont recommandées dans le climat actuel et dans l’une des deux projections uniquement, comme essences dominantes ou importantes en forêt naturelle mixte (style normal).</1><2><0></0>Essences menacées : Ces essences ne doivent pas être favorisées, car elles sont de plus en plus menacées par les changements climatiques. Elles sont recommandées pour le type de station actuel (essences dominantes ou importantes en forêt naturelle mixte ou autres essences) qui <strong>ne seront présentes à l’avenir, comme « autres essences », que dans une seule projection climatique voir dans aucune (gras)</strong>.</2><3><0></0> Ailante : la lutte contre cette essence envahissante est réglée dans une <3>Aide à l’exécution de la Confédération</3>.</3></2></3><4><0></0>Essences non mentionnées : essences non recommandées ou exotiques et trop peu connues.<3>Affichage pour les trois scénarios climatiques</3><p>Pour chaque lieu sélectionné, les scénarios climatiques génèrent entre un et trois étages de végétation. Pour chaque étage, un onglet additionnel, à droite de celui des essences recommandées, indique le ou les scénarios climatiques et les symboles respectifs ainsi que l’étage de végétation (p. ex. « submontagnard » et les projections climatiques (p. ex. « chang. clim. modéré et prononcé ») correspondantes. Les scénarios climatiques sont symbolisés de la manière suivante :</p><5><0><0></0> climat actuel (période 1981-2010)</0><1><0></0> projection climatique « modérée » (période 2070-2099). En moyenne nationale d’avril à septembre, la hausse des températures est de 3,1 °C et la baisse des précipitations, de 2 %, par rapport à la période de 1981 à 2010.</1><2><0></0> projection climatique « prononcée » (période 2070-2099). En moyenne nationale d’avril à septembre, la hausse des température est de 4,3 °C et la baisse des précipitations, de 19 %, par rapport à la période de 1981 à 2010.</2></5><p>Signification du nombre d’onglets affichés :</p><7><0>si trois onglets sont affichés, les types de station générés diffèrent pour chacun des trois scénarios climatiques ;</0><1>si un seul onglet est affiché, le type de station est identique pour chacun des trois scénarios climatiques ;</1><2>si deux onglets sont affichés, les étages de végétation coïncident pour deux des trois scénarios climatiques, soit pour le climat actuel et pour la projection climatique « modérée » soit pour les projections climatiques « modérée » et « prononcée ».</2></7><p>En cliquant sur ces onglets, vous pouvez visualiser les essences recommandées pour les types de station correspondants (actuels ou futurs). Les essences recommandées sont réparties en trois catégories : « essences dominantes en forêt naturelle », « essences importantes en forêt naturelle mixte » et « autres essences ». Ces données permettent de connaître, pour chaque scénario climatique, les essences qui ne sont plus recommandées (elles sont absentes de la liste) ou celles qui sont désormais recommandées.</p>",
     "recommendationTitle": "Recommandations pour le choix des essences",
     "reportsTitle": "Rapports de référence",
     "usage": "<p><strong>Carte</strong></p><p>Sélectionnez le lieu qui vous intéresse. La version mobile de l’application permet d’importer la position actuelle en cliquant sur la flèche en bas à droite. Le bouton à gauche en bas permet de modifier le fond de plan. Vous pouvez choisir entre la carte nationale suisse ou une image aérienne. Le bouton à gauche en haut permet de zoomer en avant ou en arrière. Le bouton à droite en haut permet d’afficher différentes informations : limites cantonales, écorégions, aires du sapin blanc, étages de végétation pour le climat 1961-1990 (« climat actuel ») et pour deux projections climatiques 2070-2099 (« changement climatique modéré » et « changement climatique  prononcé »).</p><p><strong>Détermination des stations</strong></p><p>Pour afficher cette vue, cliquer sur le bouton « Stations » (en bas de l’écran). Cette vue facilite la détermination des stations. Le mode cartographique s’affiche par défaut (icône « carte » en haut de l'écran). Si vous connaissez bien les stations forestières, vous pouvez indiquer directement le type de station dans la vue des recommandations pour le choix des essences (voir point suivant). Il est possible également de passer en mode manuel (icône « crayon » dans le coin supérieur droit de l'écran) afin d'écraser les valeurs par défaut pour l'écorégion, l'étage de végétation actuel et l'aire du sapin blanc.</p><p><strong>Recommandations pour le choix des essences</strong></p><p>Après avoir déterminé une station avec l'écran « Stations », vous serez automatiquement redirigé vers l'écran « Recommandations ». Celui-ci indique les espèces d'arbres recommandées, recommandées avec mesure et menacées. Pour l’afficher, cliquer sur le bouton « Recommandations » (en bas de l’écran). Les boutons en haut à droite de l'écran permettent de passer du mode cartographique (par défaut) au mode manuel.</p>",
@@ -144,7 +316,7 @@
   "location": {
     "header": "Critères de filtrage",
     "help": "La détermination vise à réduire les types de station possibles pour une écorégion et un étage de végétation donnés à un petit nombre de types de station adaptés. Elle se fait sur la base de <strong>critères de filtrage</strong>. Pour certains critères, il est possible de sélectionner (cocher) les caractéristiques adaptées, pour d’autres, les caractéristiques sont à sélectionner à partir de la liste (choix multiple possible) ; le choix peut être accéléré en tapant les premières lettres du mot (autocomplétion).",
-    "mainResultHelp": "Type de station zonale qui, selon l’étage de végétation correspondant, est suffisamment caractérisé par les facteurs du milieu tels que l’acidité du sol (ou les éléments nutritifs disponibles) et l’humidité moyenne du sol et qui peut être représenté dans l’écogramme.\r\nLors de l’utilisation des critères de filtrage, les types de station qui répondent aux critères sont surlignés en vert, tandis que ceux qui ne remplissent pas les critères sont surlignés en gris.",
+    "mainResultHelp": "Type de station zonale qui, selon l’étage de végétation correspondant, est suffisamment caractérisé par les facteurs du milieu tels que l’acidité du sol (ou les éléments nutritifs disponibles) et l’humidité moyenne du sol et qui peut être représenté dans l’écogramme. Lors de l’utilisation des critères de filtrage, les types de station qui répondent aux critères sont surlignés en vert, tandis que ceux qui ne remplissent pas les critères sont surlignés en gris.",
     "noEcogram": "Aucun écogramme trouvé",
     "otherResultHelp": "Autres types de station possibles à cet emplacement qui n’appartiennent pas aux stations forestières principales (cf. écogramme), mais aux 4 groupes de stations suivants : stations forestières particulières, stations caractérisées par une humidité très variable, forêts alluviales ainsi que stations pionnières et forêts buissonnantes (cf. glossaire).",
     "reset": "Enlever les critères de filtrage"
@@ -180,7 +352,7 @@
     },
     "treeTypesOne": "Essence dominante en forêt naturelle",
     "treeTypesThree": "Autres essences",
-    "treeTypesTwo": "Essence importante en forêt naturelle mélangée"
+    "treeTypesTwo": "Essence importante en forêt naturelle mixte"
   },
   "projectionScenario": {
     "extreme": "Chang. clim. prononcé",

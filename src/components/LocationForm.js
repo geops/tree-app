@@ -128,7 +128,7 @@ function LocationForm() {
         content: (
           <>
             <Input
-              label={t('forestType.coniferTreeHeightMax')}
+              label={`${t('forestType.coniferTreeHeightMax')} [m]`}
               onChange={(e, { value: coniferTreeHeightMax }) =>
                 dispatch(setFormLocation({ coniferTreeHeightMax }))
               }
@@ -136,7 +136,7 @@ function LocationForm() {
               value={formLocation.coniferTreeHeightMax || ''}
             />
             <Input
-              label={t('forestType.deciduousTreeHeightMax')}
+              label={`${t('forestType.deciduousTreeHeightMax')} [m]`}
               onChange={(e, { value: deciduousTreeHeightMax }) =>
                 dispatch(setFormLocation({ deciduousTreeHeightMax }))
               }

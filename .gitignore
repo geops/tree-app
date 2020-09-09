@@ -3,4 +3,4 @@ node_modules
 npm-debug.log
 .DS_Store
 cypress/videos
-src/i18n/translations.csv
+src/i18n/*.csv

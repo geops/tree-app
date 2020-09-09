@@ -200,6 +200,9 @@ COPY
          (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'id', id)) AS
           values
           FROM altitudinal_zone_meta),
+          bushtype AS (
+            SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la)) AS values FROM bushtype_meta
+          ),
           forest_ecoregions AS
          (SELECT json_agg(jsonb_build_object('code', subcode, 'de', region_de, 'fr', region_fr)) AS
           values
@@ -210,16 +213,31 @@ COPY
                GROUP BY subcode
                ORDER BY subcode) foo),
           foresttype AS
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'height', CASE tree_layer_height_min is null
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la, 'height', CASE tree_layer_height_min is null
                                                                                    WHEN TRUE THEN null
-                                                                                   ELSE jsonb_build_array(conifer_tree_height_max, deciduous_tree_height_max)
+                                                                                   ELSE jsonb_build_array(conifer_tree_height_max, deciduous_tree_height_max, tree_layer_height_min, tree_layer_height_max)
                                                                                END,
-                                                                     'altitudinalZoneForestEcoregion',(SELECT json_agg(jsonb_build_array(altitudinal_zone_code, forest_ecoregion_code)) FROM foresttype_altitudinal_zone_forest_ecoregion WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
+                                                                     'location', jsonb_build_object('de', location_de, 'fr', location_fr),
+                                                                     'naturalForest', jsonb_build_object('de', natural_forest_de, 'fr', natural_forest_fr),
+                                                                     'vegetation', jsonb_build_object('de', vegetation_de, 'fr', vegetation_fr),
+                                                                     'altitudinalZoneForestEcoregion', array_to_json(altitudinal_zone_forest_ecoregion),
                                                                      'carbonate', jsonb_build_array(carbonate_fine, carbonate_rock),
+                                                                     'water', jsonb_build_array(water_stream, water_small, water_spring, water_change),
                                                                      'geomorphology', jsonb_build_array(geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised),
+                                                                     'process', jsonb_build_array(process_rockfall, process_avalanche, process_landslide, process_erosion),
                                                                      'reliefType', jsonb_build_array(relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep),
-                                                                     'aspect', (SELECT json_agg(aspect) FROM foresttype_aspect WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
-                                                                     'slope', (SELECT json_agg(slope) FROM foresttype_slope WHERE foresttype_code = foresttype_meta.code GROUP BY foresttype_code),
+                                                                     'altitude', array_to_json(altitude),
+                                                                     'aspect', array_to_json(aspect),
+                                                                     'graininess', array_to_json(graininess),
+                                                                     'humus', array_to_json(humus),
+                                                                     'humusVariants', array_to_json(humus_variants),
+                                                                     'rawMaterial', array_to_json(raw_material),
+                                                                     'slope', array_to_json(slope),
+                                                                     'skeletalFractionSoilDepth', array_to_json(skeletal_fraction_soil_depth),
+                                                                     'soil', array_to_json(soil),
+                                                                     'soilVariants', array_to_json(soil_variants),
+                                                                     'soilWetnessGroundwater', array_to_json(soil_wetness_groundwater),
+                                                                     'soilWetnessTailwater', array_to_json(soil_wetness_tailwater),
                                                                      'group', jsonb_build_object('main',
                                                                                                                     (SELECT count(*) > 0
                                                                                                                      FROM foresttype_group
@@ -245,6 +263,9 @@ COPY
                           sort) AS
           VALUES
           FROM foresttype_meta),
+          herbtype AS (
+            SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la)) AS values FROM herbtype_meta
+          ),
           indicators as
          (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'forestTypes',
                                                  (SELECT json_agg(trim(BOTH FROM naistyp_c))
@@ -253,6 +274,9 @@ COPY
          )) AS
           values
           FROM indicator_meta),
+          mosstype AS (
+            SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la)) AS values FROM mosstype_meta
+          ),
           relief as
          (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
@@ -269,16 +293,19 @@ COPY
           values
           FROM slope_meta),
           treetype AS
-         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'fr', fr, 'endangered', endangered, 'nonresident', nonresident, 'pioneer', pioneer, 'forestTypes',
+         (SELECT json_agg(jsonb_build_object('code', target::text::int, 'de', de, 'fr', fr, 'la', la, 'endangered', endangered, 'nonresident', nonresident, 'pioneer', pioneer, 'forestTypes',
                                                  (SELECT json_agg(trim(BOTH FROM naistyp_c))
                                                   FROM nat_naistyp_art
                                                   WHERE vorh IN ('1', '2', '3') AND sisf_nr::int::text = treetype_meta.target::text))) AS
           values
           FROM treetype_meta) SELECT jsonb_build_object('additional',additional.
                                                         values,'altitudinalZone',altitudinal_zone.
+                                                        values,'bushType', bushtype.
                                                         values,'forestEcoregion', forest_ecoregions.
                                                         values,'forestType', foresttype.
+                                                        values,'herbType', herbtype.
                                                         values,'indicator',indicators.
+                                                        values,'mossType', mosstype.
                                                         values,'relief',relief.
                                                         values,'silverFirArea',silver_fir_areas.
                                                         values,'slope',slope.
@@ -286,9 +313,12 @@ COPY
                                                         values)
      FROM additional,
           altitudinal_zone,
+          bushtype,
           forest_ecoregions,
           foresttype,
+          herbtype,
           indicators,
+          mosstype,
           relief,
           silver_fir_areas,
           slope,
@@ -298,3 +328,4 @@ COPY
   RETURN x;
 END;
 $$ LANGUAGE plpgsql;
+
