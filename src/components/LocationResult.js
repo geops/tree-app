@@ -8,7 +8,7 @@ import { info } from 'lib/src';
 
 import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
-import ForestTypeButton from './ForestTypeButton';
+import ForestTypeModal from './ForestTypeModal';
 import HelpModal from './HelpModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
@@ -71,12 +71,13 @@ function LocationResult() {
                   <>
                     <Dropdown.Header content={t(`forestType.group.${group}`)} />
                     {forestTypes[group].map((key) => {
+                      const ftInfo = info('forestType', key);
                       return (
                         <Dropdown.Item
                           content={
                             <>
-                              <ForestTypeButton code={key} compact />
-                              {key} - {info('forestType', key)[i18n.language]}
+                              <ForestTypeModal compact data={ftInfo} />
+                              {key} - {ftInfo[i18n.language]}
                             </>
                           }
                           value={key}

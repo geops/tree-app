@@ -9,7 +9,7 @@ import { info } from 'lib/src';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
-import ForestTypeButton from './ForestTypeButton';
+import ForestTypeModal from './ForestTypeModal';
 import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
@@ -22,7 +22,7 @@ const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
   content: includeKey ? (
     <>
-      <ForestTypeButton code={key} compact />
+      <ForestTypeModal compact data={info(type, key)} />
       {key} - {info(type, key)[lng]}
     </>
   ) : (

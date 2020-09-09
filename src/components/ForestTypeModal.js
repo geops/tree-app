@@ -6,12 +6,11 @@ import { Modal } from 'semantic-ui-react';
 import Button from './Button';
 import ForestTypeDescription from './ForestTypeDescription';
 
-function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
+function ForestTypeModal({ compact, data, setIsForestTypeModalOpen }) {
   const { i18n } = useTranslation();
 
   return (
     <Modal
-      open
       actions={[{ key: 'done', content: 'Ok' }]}
       content={
         <Modal.Content>
@@ -21,14 +20,20 @@ function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
       header={`${data.code} - ${data[i18n.language]} (${data.la})`}
       onClose={() => setIsForestTypeModalOpen(false)}
       onOpen={() => setIsForestTypeModalOpen(true)}
-      trigger={<Button active icon="info" />}
+      trigger={<Button active compact={compact} icon="info" />}
     />
   );
 }
 
 ForestTypeModal.propTypes = {
+  compact: PropTypes.bool,
   data: PropTypes.arrayOf().isRequired,
-  setIsForestTypeModalOpen: PropTypes.func.isRequired,
+  setIsForestTypeModalOpen: PropTypes.func,
+};
+
+ForestTypeModal.defaultProps = {
+  compact: false,
+  setIsForestTypeModalOpen: () => null,
 };
 
 export default ForestTypeModal;
