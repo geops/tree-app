@@ -19,13 +19,13 @@
   "forestTypeDiagram": {
     "aboveSeaLevel": "ü.M.",
     "altitudinalZoneAbbr": {
-      "100": "OSA",
-      "90": "SA",
-      "80": "HM",
-      "60": "OM",
-      "50": "UM",
+      "20": "C",
       "40": "SM",
-      "20": "C"
+      "50": "UM",
+      "60": "OM",
+      "80": "HM",
+      "90": "SA",
+      "100": "OSA"
     },
     "altitudinalZoneForestEcoregion": "Höhenstufe/Region",
     "altitude": {
@@ -44,16 +44,16 @@
     "aspect": {
       "label": "Exposition",
       "N": "N",
-      "E": "E",
+      "E": "O",
       "S": "S",
       "W": "W"
     },
     "forestEcoregion": {
-      "1": "Nördl. Randalpen",
-      "2": "Nördl. Zwischenalpen",
-      "3": "Kontinent. Hochalpen",
-      "4": "Südl. Zwischenalpen",
-      "5": "Südl. Randalpen"
+      "1": "<0>Nördl.</0><1>Randalpen</1>",
+      "2": "<0>Nördl.</0><1>Zwischen-</1><2>alpen</2>",
+      "3": "<0>Kontinent.</0><1>Hochalpen</1>",
+      "4": "<0>Südl.</0><1>Zwischen-</1><2>alpen</2>",
+      "5": "<0>Südl.</0><1>Randalpen</1>"
     },
     "graininess": {
       "label": "Körnung",
@@ -89,7 +89,7 @@
       "medium": "weniger häufig",
       "rare": "selten"
     },
-    "meter": "Meter",
+    "meter": "m",
     "rawMaterial": {
       "label": "Ausgangsmaterial",
       "acid": "sauer",
@@ -111,7 +111,7 @@
       "podsol": "Podsol",
       "ironHumusPodsol": "(Eisen-Humuspodsol)",
       "tailwater": "Stauwasser",
-      "tailwaterPseudo": "(Pseudo-/ Stagnogley)",
+      "tailwaterPseudo": "(Pseudo-/Stagnogley)",
       "groundwater": "Grund-/Hangwasser",
       "groundwaterGley": "(Gley/Hanggley)",
       "raw": "rohe Böden",
@@ -152,10 +152,12 @@
       "highPseudogleyed": "stark pseudovergleyt",
       "pseudogleyed": "pseudovergleyt",
       "lowPseudogleyed": "schwach pseudovergleyt",
-      "veryLowPseudogleyed": "sehr schwach pseudoverg.",
+      "veryLowPseudogleyed": "sehr schwach pseudovergleyt",
       "waterPermeability": "Wasserdurchlässigkeit",
       "permeability": "Durchlässigkeit"
-    }
+    },
+    "terrain": "Gelände",
+    "vegetation": "Vegetation"
   },
   "dropdown": {
     "noResultsMessage": "Kein Eintrag gefunden",
@@ -285,9 +287,9 @@
     "recommendationAttentionHeader": "Götterbaum",
     "recommendationNegative": "Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind. Es sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <strong>in nur einer Klimazukunft als weitere Baumart oder in keiner Klimazukunft vorkommen (fett)</strong>. † = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart. ",
     "recommendationNegativeHeader": "Gefährdete Baumarten",
-    "recommendationNeutral": "Diese Baumarten können gefördert werden. Sie sind entweder im heutigen Standortstyp empfohlen (dominante oder wichtige beigemischte Naturwaldbaumart oder weitere Baumart, weisse Schrift) und <strong>bei beiden Klimazukünften weitere Baumart (fett)</strong>. Oder sie sind heute empfohlen und nur in einer Klimazukunft dominante oder wichtige beigemischte Naturwaldbaumart (Normalschrift, weiss). Oder dann sind sie heute noch nicht empfohlen, sondern erst in Zukunft (gelbe Schrift), und zwar als weitere Baumart in beiden Klimazukünften (fett) oder nur in einer (Normalschrift). Will man wissen, wie gut eine Baumart in einer Klimazukunft ist, sind die Reiter rechts zu konsultieren. † = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart. Die Liste kann am Ende auch einige gebietsfremde Baumarten enthalten. Bei der Robinie ist wegen invasiven Verhaltens Vorsicht angezeigt.",
+    "recommendationNeutral": "Diese Baumarten können gefördert werden. Sie sind entweder im heutigen Standortstyp empfohlen (dominante oder wichtige beigemischte Naturwaldbaumart oder weitere Baumart, weisse Schrift) und <strong>bei beiden Klimazukünften weitere Baumart (fett)</strong>. Oder sie sind heute empfohlen und nur in einer Klimazukunft dominante oder wichtige beigemischte Naturwaldbaumart (Normalschrift, weiss). Oder dann sind sie heute noch nicht empfohlen, sondern erst in Zukunft (gelbe Schrift), und zwar als weitere Baumart in beiden Klimazukünften (fett) oder nur in einer (Normalschrift). Will man wissen, wie gut eine Baumart im aktuellen Klima oder in einer Klimazukunft geeignet ist, sind die Reiter rechts zu konsultieren. † = Baumart, die krankheitsgefährdet ist und daher trotz Standortseignung nicht gefördert werden soll; * = Pionierbaumart. Die Liste kann am Ende auch einige gebietsfremde Baumarten enthalten. Bei der Robinie ist wegen invasiven Verhaltens Vorsicht angezeigt.",
     "recommendationNeutralHeader": "Bedingt empfohlene Baumarten",
-    "recommendationPositive": "Diese Baumarten sollen gefördert werden. Sie sind <strong>in Zukunft entweder in beiden Klimazukünften dominante oder wichtige beigemischte Naturwaldbaumarten (fett)</strong> oder dies trifft entweder bei «mässigem» oder «starkem» Klimawandel zu, während sie in der anderen Klimazukunft nur weitere Baumart sind (Normalschrift). Weisse Schrift steht für Baumarten, die auch im heutigen Klima geeignet sind (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), gelbe Schrift für Baumarten, die im heutigen Klima noch ungeeignet sind. Will man wissen, wie gut eine Baumart in einer Klimazukunft geeignet ist, sind die Reiter rechts zu konsultieren.  † = Baumart, die krankheitsgefährdet ist und daher trotz bedingter Standortseignung nicht gefördert werden soll; * = Pionierbaumart. Die Liste kann am Ende auch einige gebietsfremde Baumarten enthalten. Bei der Robinie ist wegen invasiven Verhaltens Vorsicht angezeigt.",
+    "recommendationPositive": "Diese Baumarten sollen gefördert werden. Sie sind <strong>in Zukunft entweder in beiden Klimazukünften dominante oder wichtige beigemischte Naturwaldbaumarten (fett)</strong> oder dies trifft entweder bei «mässigem» oder «starkem» Klimawandel zu, während sie in der anderen Klimazukunft nur weitere Baumart sind (Normalschrift). Weisse Schrift steht für Baumarten, die auch im heutigen Klima geeignet sind (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), gelbe Schrift für Baumarten, die im heutigen Klima noch ungeeignet sind. Will man wissen, wie gut eine Baumart im aktuellen Klima oder in einer Klimazukunft geeignet ist, sind die Reiter rechts zu konsultieren.  † = Baumart, die krankheitsgefährdet ist und daher trotz bedingter Standortseignung nicht gefördert werden soll; * = Pionierbaumart. Die Liste kann am Ende auch einige gebietsfremde Baumarten enthalten. Bei der Robinie ist wegen invasiven Verhaltens Vorsicht angezeigt.",
     "recommendationPositiveHeader": "Empfohlene Baumarten"
   },
   "info": {
@@ -303,7 +305,7 @@
     "locationTitle": "Standort",
     "participants": "<p>Viele Fachleute haben zur Tree App beigetragen. Besonders erwähnt seien hier folgende Personen:</p><1><strong>Standortkundliche Grundlagen zum Projekt „Nachhaltigkeit im Schutzwald“</strong><br> {{locationBasics}}</1><2><strong>Grundlagenarbeiten zur Berücksichtigung des Klimawandels</strong><br> {{climateChangeBasics}}</2><3><strong>Idee zur Tree App</strong><br> {{idea}}</3><4><strong>Konzeption</strong><br> {{conception}}</4><5><strong>Realisierung</strong><br> <2>geOps AG</2></5><6><strong>Projektleitung</strong><br> {{projectManagement}}</6><7><strong>Projektsteuerung</strong><br> {{projectControl}}</7><p><strong>Finanzierung</strong><br> BAFU im Rahmen des Forschungsprogramms „Wald und Klimawandel“, WSL</p><9><strong>Anwender-Begleitgruppe</strong><br> {{wslUsers}}</9><10><strong>IT-Begleitgruppe</strong><br> {{itUsers}}</10>",
     "participantsTitle": "Beteiligte",
-    "recommendation": "<p>Der Screen Baumartenempfehlung zeigt oben die geografischen Koordinaten des ausgewählten Punktes (siebenstellig, Bezugssystem LV95), den heutigen Standortstyp und die heutige Höhenstufe. Darunter werden die für den gewählten Standortstyp und Ort empfohlenen Baumarten aufgelistet. Der Screen zeigt die Baumartenempfehlung auf zwei bis vier Screens (Reiter).</p><1><strong>Synthetische Darstellung</strong> (Reiter links: «Baumartenempfehlung»). Diese Darstellung wird zuerst angezeigt (Default) und listet in weiss Baumarten auf, die auch im heutigen Klima empfohlen werden, und in gelb Baumarten, die heute noch nicht empfohlen sind, sondern erst in Zukunft klimatisch geeignet sein dürften. Mit dem Button ganz unten können die in Zukunft erwarteten Baumarten ein- und ausgeblendet werden. Die Kategorien der Eignung der Baumarten für den gewählten Standortstyp und Ort haben folgende Bedeutung (zu beachten: bei gelb geschriebenen Baumarten ist die Eignung im heutigen Klima fraglich): </1><2><0><0></0> empfohlene Baumarten: Diese Baumarten sollen gefördert werden. Sie sind <strong>in allen Klimaprojektionen dominante oder wichtige beigemischte Naturwaldbaumarten (fett)</strong>, oder dies trifft entweder bei «mässigem» oder «starkem» Klimawandel zu (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren).</0><1><0></0> bedingt empfohlene Baumarten: Diese Baumarten können gefördert werden. Sie sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart) und entweder <strong>bei beiden Klimaprojektionen weitere Baumart (fett)</strong> oder sie sind nur in einer Klimaprojektion möglich (Normalschrift; will man wissen, bei welcher Klimaprojektion eine Baumart geeignet ist, sind die Reiter rechts zu konsultieren). </1><2><0></0> gefährdete Baumarten: Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind. Es sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <strong>in nur einer oder in keiner Klimaprojektion als weitere Baumart vorkommen (fett)</strong>. </2><3><0></0> Götterbaum: Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <3>Vollzugshilfe des Bundes</3>.</3></2><3>Darstellung für einzelne Klimaannahmen</3><p>Bei Anwendung der Klimaprojektionen für den gewählten Ort ergeben sich ein bis drei verschiedene Höhenstufen. Pro Höhenstufe erscheint rechts vom Reiter «Baumartenempfehlung» als Zusatzinformation ein Reiter, der mit einem Symbol für die Klimaprojektion, der Höhenstufe (z.B. «submontan») und beim Darüberfahren auch der dazu gehörenden Klimaprojektion bezeichnet ist. Die Symbole für die Klimaprojektion sind:</p><5><0><0></0> Heutiges Klima (Periode 1981-2010)</0><1><0></0> «Mässiger» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 3,1 °C wärmer und der Niederschlag ist 2% geringer.</1><2><0></0> «Starker» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 4,3 °C wärmer und der Niederschlag ist 19% geringer.</2></5><p>Die Anzahl angezeigte Reiter bedeutet Folgendes:</p><7><0>Im Fall von drei Reitern ergibt die Anwendung der zwei Klimaprojektionen unterschiedliche Standortstypen für das heutige Klima, für «mässigen» Klimawandel und für «starken» Klimawandel.</0><1>Im Fall von nur einem Reiter ergibt die Anwendung der zwei Klimaprojektionen heute und in Zukunft denselben Standortstyp.</1><2>Im Fall von zwei Reitern fallen die Höhenstufen für jeweils zwei Klimaprojektionen zusammen; entweder für das heutige Klima und den «mässigen» Klimawandel oder für den «mässigen» und den «starken» Klimawandel.</2></7><p>Klickt man auf diese ein bis drei Reiter, werden die für den jeweiligen (heutigen oder zukünftigen) Standortstyp empfohlenen Baumarten aufgeführt. Dies geschieht in den Kategorien «Dominante Naturwaldbaumart», «wichtige beigemischte Naturwaldbaumart» und «weitere Baumarten». Aus diesen Angaben ist ableitbar, bei welcher Klimaprojektion eine Baumart allenfalls nicht mehr empfohlen wird (sie fehlt dann beim Standortstyp der entsprechenden Klimaprojektion) oder erstmals empfohlen wird (sie erscheint nur in Standortstypen des zukünftigen, nicht aber der heutigen Klimas).</p>",
+    "recommendation": "<p>Der Screen Baumartenempfehlung zeigt oben die geografischen Koordinaten des ausgewählten Ortes (siebenstellig, Bezugssystem LV95), den heutigen Standortstyp und die heutige Höhenstufe. Darunter werden die für den gewählten Standortstyp und Ort empfohlenen Baumarten aufgelistet. Der Screen zeigt die Baumartenempfehlung auf zwei bis vier Screens (Reiter).</p><1><strong>Synthetische Darstellung</strong> (Reiter links: «Baumartenempfehlung»). Diese Darstellung wird zuerst angezeigt (Default) und listet in weiss Baumarten auf, die auch im heutigen Klima empfohlen werden, und in gelb Baumarten, die heute noch nicht empfohlen sind, sondern erst in Zukunft klimatisch geeignet sein dürften. Mit dem Button ganz unten können die in Zukunft erwarteten Baumarten ein- und ausgeblendet werden. Die Kategorien der Eignung der Baumarten für den gewählten Standortstyp und Ort haben folgende Bedeutung (zu beachten: bei  Baumarten in gelber Schrift ist die Eignung im heutigen Klima fraglich): </1><2><0><0></0> empfohlene Baumarten: Diese Baumarten sollen gefördert werden. Sie sind <strong>in Zukunft entweder in beiden Klimazukünften dominante oder wichtige beigemischte Naturwaldbaumarten (fett)</strong> oder dies trifft entweder bei «mässigem» oder «starkem» Klimawandel zu, während sie in der anderen Klimazukunft nur weitere Baumart sind (Normalschrift).</0><1><0></0> bedingt empfohlene Baumarten: Diese Baumarten können gefördert werden. Sie sind entweder im heutigen Standortstyp empfohlen (dominante oder wichtige beigemischte Naturwaldbaumart oder weitere Baumart, weisse Schrift) und <strong>bei beiden Klimazukünften weitere Baumart (fett)</strong>. Oder sie sind heute empfohlen und nur in einer Klimazukunft dominante oder wichtige beigemischte Naturwaldbaumart (Normalschrift). </1><2><0></0> gefährdete Baumarten: Diese Baumarten sollen nicht gefördert werden, da sie klimatisch zunehmend gefährdet sind. Es sind im heutigen Standortstyp empfohlene Baumarten (dominante, wichtige beigemischte Naturwaldbaumart oder weitere Baumart), die in Zukunft <strong>in nur einer Klimazukunft als weitere Baumart oder in keiner Klimazukunft vorkommen (fett)</strong>. </2><3><0></0> Götterbaum: Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <3>Vollzugshilfe des Bundes</3>.</3></2><3><4><0></0>Nicht aufgeführte Baumarten sind nicht empfohlen, oder gebietsfremd und zu wenig bekannt.<3>Darstellung für einzelne Klimaannahmen</3><p>Bei Anwendung der Klimaannahmen für den gewählten Ort ergeben sich ein bis drei verschiedene Höhenstufen. Pro Höhenstufe erscheint rechts vom Reiter «Baumartenempfehlung» als Zusatzinformation ein Reiter, der bezeichnet ist mit einem Symbol für die Klimaannahme, der Höhenstufe (z.B. «submontan») und den zutreffenden Klimannahmen (z.B. «mässiger und starker Klimawandel»). Die Symbole für die Klimaannahmen sind:</p><5><0><0></0> Heutiges Klima (Periode 1981-2010)</0><1><0></0> «Mässiger» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 3,1 °C wärmer und der Niederschlag ist 2% geringer.</1><2><0></0> «Starker» Klimawandel (Periode 2070-2099). Das Klima ist im Schweizer Mittel von April bis September im Vergleich zur Periode 1981-2010 4,3 °C wärmer und der Niederschlag ist 19% geringer.</2></5><p>Die Anzahl angezeigte Reiter bedeutet Folgendes:</p><7><0>Im Fall von drei Reitern ergibt die Anwendung der zwei Klimazukünfte unterschiedliche Standortstypen für das heutige Klima, für «mässigen» Klimawandel und für «starken» Klimawandel.</0><1>Im Fall von nur einem Reiter ergibt die Anwendung der drei Klimaanahmen heute und in Zukunft denselben Standortstyp.</1><2>Im Fall von zwei Reitern fallen die Höhenstufen für jeweils zwei Klimaannahmen zusammen; entweder für das heutige Klima und den «mässigen» Klimawandel oder für den «mässigen» und den «starken» Klimawandel.</2></7><p>Klickt man auf diese ein bis drei Reiter, werden die für den jeweiligen (heutigen oder zukünftigen) Standortstyp empfohlenen Baumarten aufgeführt. Dies geschieht in den Kategorien «Dominante Naturwaldbaumart», «wichtige beigemischte Naturwaldbaumart» und «weitere Baumarten». Aus diesen Angaben ist ableitbar, bei welcher Klimaprojektion eine Baumart allenfalls nicht mehr empfohlen wird (sie fehlt dann beim Standortstyp der entsprechenden Klimaprojektion) oder erstmals empfohlen wird (sie erscheint nur in Standortstypen des zukünftigen, nicht aber der heutigen Klimas).</p>",
     "recommendationTitle": "Baumartenempfehlungen",
     "reportsTitle": "Zugrundeliegende Berichte",
     "usage": "<p><strong>Kartenansicht</strong></p><p>In der Kartenansicht kannst Du den Ort wählen, der Dich interessiert. In der mobilen Version kannst Du Deinen aktuellen Standpunkt in die App übertrgen, indem Du auf den Pfeil rechts unten klickst. Der Button links unten verändert den angezeigten Hintergrund: Du kannst die Schweizer Landeskarte oder ein Luftbild anzeigen. Mit den Buttons links oben kannst Du den Ausschnitt vergrössern oder verkleinern. Der Button rechts oben erlaubt das Anzeigen verschiedener Flächeninformationen: Kantonsgrenzen, Standortsregionen, Tannenareale und die Vegetationshöhenstufen für das Klima 1961-1990 („Klima heute“) und für zwei Projektionen des Klimas 2070-2099 („mässiger Klimawandel“ und „starker Klimawandel“).</p><p><strong>Ansicht zur Standortsbestimmung</strong></p><p>Diese Ansicht erreichst Du durch Anklicken des Buttons „Standort“ (unten auf dem Screen). Sie unterstützt Dich beim Bestimmen des Standortstyps. Dies geschieht standardmässig im Kartenmodus (Kartensymbol rechts oben). Wer die Waldstandorte gut kennt, kann den Standortstyp direkt in der Ansicht zur Baumartenempfehlung (s. nächster Punkt) angeben. Er/Sie kann auch in den manuellen Modus wechseln (Bleistiftsymbol rechts oben) und die Vorgaben zu Standortsregion, Höhenstufe heute und Tannenareal überschreiben.</p><p><strong>Ansicht zur Anzeige der Baumartenempfehlung</strong></p><p>Wenn Du in der Ansicht zur Standortsbestimmung einen Standort bestimmt hast, wirst Du direkt in diese Ansicht geleitet. Sie zeigt die empfohlenen, bedingt empfohlenen und gefährdeten Baumarten an. Diese Ansicht erreichst Du auch durch Anklicken des Buttons „Empfehlung“ (unten auf dem Screen). Die Buttons rechts oben erlauben es, aus dem Kartenmodus (Standardeinstellung) in den manuellen Modus zu wechseln.</p>",
