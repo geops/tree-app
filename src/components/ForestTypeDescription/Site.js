@@ -8,7 +8,7 @@ import { getStyle } from './utils';
 function Site({ altitude, aspect, slope }) {
   const { t } = useTranslation();
   return (
-    <svg viewBox="0 0 400 400">
+    <svg viewBox="0 0 400 400" style={{ margin: '20px 200px 0px' }}>
       <path
         className={getStyle(aspect, '15')}
         d="M303.1 312.4L282 265.6c6-2.9 13.1-4.5 21.2-4.5v51.3z"

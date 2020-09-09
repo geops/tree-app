@@ -203,7 +203,7 @@ function Humus({ humus, humusVariants }) {
       <text x="688" y="67" className={styles.header}>
         {t('forestTypeDiagram.humus.mull')}
       </text>
-      <text y="90" className={styles.label}>
+      <text y="90" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.humus.morLike">
           <tspan x="375">mor</tspan>
           <tspan x="375" dy="20">
@@ -214,7 +214,7 @@ function Humus({ humus, humusVariants }) {
           </tspan>
         </Trans>
       </text>
-      <text y="90" className={styles.label}>
+      <text y="90" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.humus.moderLike">
           <tspan x="470">moderLike</tspan>
           <tspan x="470" dy="20">
@@ -222,7 +222,7 @@ function Humus({ humus, humusVariants }) {
           </tspan>
         </Trans>
       </text>
-      <text y="90" className={styles.label}>
+      <text y="90" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.humus.mullLike">
           <tspan x="564">mullLike</tspan>
           <tspan x="564" dy="20">
