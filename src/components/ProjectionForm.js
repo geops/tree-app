@@ -63,6 +63,8 @@ function ProjectionForm() {
       [value] = options[field];
     } else if (options[field].includes(location[name])) {
       value = location[name];
+    } else if (options[field].includes('unknown')) {
+      value = 'unknown';
     }
     return value;
   };

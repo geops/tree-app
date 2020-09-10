@@ -363,6 +363,7 @@
   },
   "recommendation": {
     "attention": "Achtung",
+    "checkField": "Keine Empfehlung möglich, bitte prüfen Sie folgende Angabe: {{ field }}",
     "future": "In Zukunft zusätzlich passende Baumarten einblenden",
     "header": "Empfehlung",
     "negative": "Reduzieren",

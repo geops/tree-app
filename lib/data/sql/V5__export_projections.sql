@@ -23,7 +23,7 @@ SELECT DISTINCT processed_forest_ecoregion AS forest_ecoregion,
            WHEN TRUE THEN 'unknown'
            ELSE additional_meta.target
        END AS additional,
-       CASE silver_fir_area is null
+       CASE silver_fir_area_meta.target is null
            WHEN TRUE THEN 'unknown'
            ELSE silver_fir_area_meta.target
        END AS silver_fir_area,

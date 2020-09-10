@@ -109,36 +109,35 @@ function Recommendation({ sameAltitudinalZone }) {
               <TreeTypeList className={styles.bold} codes={r[8]} />
             </Grid.Column>
           </Grid.Row>
-          {r[9].length > 0 ||
-            (r[10].length > 0 && (
-              <Grid.Row centered>
-                <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
-                  <AttentionIcon fill="white" className={styles.icon} />
-                </Grid.Column>
-                <Grid.Column width={1}>
-                  <HelpModal header={t('help.recommendationAttentionHeader')}>
-                    <Trans i18nKey="help.recommendationAttention">
-                      help text{' '}
-                      <a
-                        href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        link
-                      </a>
-                    </Trans>
-                  </HelpModal>
-                </Grid.Column>
-                <Grid.Column width={11}>
-                  <div className={styles.medium}>
-                    <TreeTypeList className={styles.bold} codes={r[9]} />
-                    <div className={styles.yellow}>
-                      <TreeTypeList className={styles.bold} codes={r[10]} />
-                    </div>
+          {(r[9].length > 0 || r[10].length > 0) && (
+            <Grid.Row centered>
+              <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
+                <AttentionIcon fill="white" className={styles.icon} />
+              </Grid.Column>
+              <Grid.Column width={1}>
+                <HelpModal header={t('help.recommendationAttentionHeader')}>
+                  <Trans i18nKey="help.recommendationAttention">
+                    help text{' '}
+                    <a
+                      href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      link
+                    </a>
+                  </Trans>
+                </HelpModal>
+              </Grid.Column>
+              <Grid.Column width={11}>
+                <div className={styles.medium}>
+                  <TreeTypeList className={styles.bold} codes={r[9]} />
+                  <div className={styles.yellow}>
+                    <TreeTypeList className={styles.bold} codes={r[10]} />
                   </div>
-                </Grid.Column>
-              </Grid.Row>
-            ))}
+                </div>
+              </Grid.Column>
+            </Grid.Row>
+          )}
           <Grid.Row>
             <Grid.Column textAlign="center" width={4} />
             <Grid.Column width={12}>
