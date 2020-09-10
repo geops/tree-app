@@ -10,7 +10,7 @@ import TreeTypeList from './TreeTypeList';
 import styles from './ProjectionTab.module.css';
 
 function ProjectionTab({ location }) {
-  const [one, two, three] = useMemo(() => list(location), [location]);
+  const [one, two, three] = useMemo(() => list(location, true), [location]);
   const { t } = useTranslation();
   return (
     <Tab.Pane>
