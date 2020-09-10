@@ -65,6 +65,7 @@ function getPane(scenario, projection, language, t) {
     }
   );
 }
+const checkFields = ['slope', 'additional', 'silverFirArea', 'relief'];
 
 function ProjectionResult() {
   const { location, projectionMode, projectionResult } = useSelector(
@@ -79,6 +80,8 @@ function ProjectionResult() {
   const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
   const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
   const sameAltitudinalZone = AZToday === TAZModerate && AZToday === TAZExtreme;
+  const { options } =
+    projectionMode === 'm' ? projectionResult.extreme : projectionResult.form;
 
   const panes = [];
   panes.push({
@@ -118,9 +121,18 @@ function ProjectionResult() {
   }
 
   const finalPanes = panes.filter((p) => p);
+  const foundProjection = sameAltitudinalZone || finalPanes.length > 2;
+  const checkField =
+    foundProjection === false &&
+    checkFields.find(
+      (field) =>
+        Array.isArray(options[field]) &&
+        options[field].filter((o) => o !== 'unknown').length > 0,
+    );
+
   return location.altitudinalZone && location.forestType ? (
     <div className={styles.container}>
-      {sameAltitudinalZone || finalPanes.length > 2 ? (
+      {foundProjection ? (
         <Tab
           className={styles.tab}
           menu={{
@@ -133,7 +145,12 @@ function ProjectionResult() {
         />
       ) : (
         <Header className={styles.notFound} inverted>
-          {t('recommendation.noProjectionFound')}
+          {t(
+            checkField
+              ? `recommendation.checkField`
+              : 'recommendation.noProjectionFound',
+            { field: t(`${checkField}.label`) },
+          )}
         </Header>
       )}
     </div>
