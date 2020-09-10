@@ -12,7 +12,7 @@ import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
 import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
-import { setMapLocation } from '../store/actions';
+import { setFormLocation, setMapLocation } from '../store/actions';
 
 const getKey = (sl) =>
   (
@@ -43,13 +43,20 @@ const vectorSource = new VectorSource({
   features: [iconFeature],
 });
 
+const initialFormLocation = {
+  forestEcoregion: null,
+  altitudinalZone: null,
+  silverFirArea: null,
+  targetAltitudinalZone: null,
+};
+
 function MapLocation() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
   const mapLocation = useSelector((state) => state.mapLocation);
 
   useEffect(() => {
-    const handleCoords = ({ coordinate }) => {
+    const handleCoords = ({ coordinate }, resetFormLocation = true) => {
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
@@ -57,6 +64,9 @@ function MapLocation() {
         .filter((feature) => feature.properties && feature.properties.code)
         .reduce(featuresToLocation, {});
       dispatch(setMapLocation({ ...location, coordinate: to2056(coordinate) }));
+      if (resetFormLocation) {
+        dispatch(setFormLocation(initialFormLocation));
+      }
     };
     const waitForLoad = () => {
       const mapboxLayer = map
@@ -65,7 +75,7 @@ function MapLocation() {
         .find((layer) => layer instanceof Mapbox.Layer);
       if (mapboxLayer && mapLocation && mapLocation.coordinate) {
         const coordinate = to3857(mapLocation.coordinate);
-        mapboxLayer.on('loadend', () => handleCoords({ coordinate }));
+        mapboxLayer.on('loadend', () => handleCoords({ coordinate }, false));
         map.getLayers().un('propertychange', waitForLoad);
       }
     };
