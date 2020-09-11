@@ -2,7 +2,7 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "version": "1.2.0-beta.2",
+  "version": "1.2.0-beta.3",
   "private": true,
   "dependencies": {
     "history": "4.10.1",
@@ -30,8 +30,8 @@
     "semantic-ui-react": "1.2.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.0.1",
-    "@typescript-eslint/parser": "4.0.1",
+    "@typescript-eslint/eslint-plugin": "4.1.0",
+    "@typescript-eslint/parser": "4.1.0",
     "babel-eslint": "10.1.0",
     "cra-append-sw": "2.7.0",
     "csv-parse": "4.12.0",
@@ -46,7 +46,7 @@
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.20.6",
-    "eslint-plugin-react-hooks": "4.1.0",
+    "eslint-plugin-react-hooks": "4.1.2",
     "husky": "4.3.0",
     "lint-staged": "10.3.0",
     "lodash.set": "4.3.2",
