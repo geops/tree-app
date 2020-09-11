@@ -8,6 +8,21 @@
   fill: none;
   stroke-width: 0.5;
 }
+.dashedLine {
+  fill: none;
+  stroke-dasharray: 10, 10;
+}
+.greyLine {
+  fill: none;
+  stroke: #999;
+}
+.bgLine {
+  fill: none;
+  fill-rule: nonzero;
+  stroke: #fff;
+  stroke-width: 8.52px;
+  stroke-miterlimit: 4;
+}
 
 .header {
   font-size: 20px;
@@ -22,6 +37,12 @@
   text-anchor: middle;
 }
 
+.labelMiddleBold {
+  font-size: 16px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
 .rare {
   fill: #eee;
 }
@@ -30,4 +51,14 @@
 }
 .often {
   fill: #74bd70;
+}
+
+.svg {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.group {
+  column-count: 2;
+  column-gap: 20px;
 }
