@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 
 import AltitudinalZone from './AltitudinalZoneForestEcoregion';
+import Legend from './Legend';
 import Site from './Site';
 
 function TerrainTab({ data }) {
@@ -11,6 +12,7 @@ function TerrainTab({ data }) {
 
   return (
     <>
+      <Legend />
       <AltitudinalZone data={data.altitudinalZoneForestEcoregion} />
       <Site altitude={data.altitude} aspect={data.aspect} slope={data.slope} />
       <Table basic padded structured unstackable>

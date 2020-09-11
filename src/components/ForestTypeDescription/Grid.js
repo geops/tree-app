@@ -6,7 +6,7 @@ import { getStyle } from './utils';
 
 function Grid({ data, header, headerX, headerY, labelX, labelY }) {
   return (
-    <svg viewBox="0 0 400 400">
+    <svg viewBox="0 0 400 400" className={styles.svg}>
       <text x="10" y="15" className={styles.header}>
         {header}
       </text>

@@ -11,276 +11,6 @@ function AltitudinalZoneForestEcoregion({ data }) {
   const { i18n, t } = useTranslation();
   return (
     <svg x="0px" y="0px" viewBox="0 0 800 400" style={{ marginTop: '20px' }}>
-      <path
-        className={getStyle(data, '8.1')}
-        d="M799.773,244.881l0.093,93.222l-58.943,0.049l0.023,-74.869l58.827,-18.402Z"
-      />
-      <path
-        className={getStyle(data, '8.2')}
-        d="M740.917,212.153l26.071,2.938l33.012,15.935l-0.227,13.855l-58.827,18.402l-0.029,-51.13Z"
-      />
-      <path
-        className={getStyle(data, '8.3')}
-        d="M740.917,212.153l26.062,2.936l-26.062,-12.638l0,9.702Z"
-      />
-      <path
-        className={getStyle(data, '7.1')}
-        d="M740.923,245.502l-0,92.65l-64.11,0.055l0.05,-74.318l64.06,-18.387Z"
-      />
-      <path
-        className={getStyle(data, '7.3')}
-        d="M676.813,254.668l0.05,9.22l64.06,-18.386l-0,-33.369l-64.11,42.535Z"
-      />
-      <path
-        className={getStyle(data, '7.4')}
-        d="M676.816,204.862l0,49.805l64.101,-42.514l-64.101,-7.291Z"
-      />
-      <path
-        className={getStyle(data, '7.5')}
-        d="M676.816,204.862l64.101,7.291l0,-9.702l-64.005,-31.03l-0.096,33.441Z"
-      />
-      <path
-        className={getStyle(data, '6.0')}
-        d="M676.813,254.668l0,83.539l-2.951,-0l-55.923,-43.163l0.048,-31.025l58.826,-9.351Z"
-      />
-      <path
-        className={getStyle(data, '6.1')}
-        d="M617.939,198.184l0.048,65.835l58.829,-9.352l0,-49.805l-58.877,-6.678Z"
-      />
-      <path
-        className={getStyle(data, '6.2')}
-        d="M617.939,198.184l58.973,6.69l-0,-33.453l-13.032,-6.248l-45.941,-7.245l0,40.256Z"
-      />
-      <path
-        className={getStyle(data, '6.3')}
-        d="M617.939,157.928l45.941,7.245l-45.941,-22.341l0,15.096Z"
-      />
-      <path
-        className={getStyle(data, '5.0')}
-        d="M617.939,295.044l0,-96.86l-33.957,-3.851l-46.314,6.074l-0,96.658l41.212,-32.169l39.059,30.148Z"
-      />
-      <path
-        className={getStyle(data, '5.1')}
-        d="M537.668,200.407l46.314,-6.074l33.957,3.851l0,-40.256l-34.298,-5.411l-45.973,8.669l-0,39.221Z"
-      />
-      <path
-        className={getStyle(data, '5.2')}
-        d="M537.668,161.186l45.973,-8.669l34.298,5.411l0,-15.096l-41.892,-20.311l-38.379,29.995l-0,8.67Z"
-      />
-      <path
-        className={getStyle(data, '4.0')}
-        d="M485.357,299.331l15.874,0.692l36.437,-54.937l-0,51.979l-52.228,41.032l-0.083,-38.766Z"
-      />
-      <path
-        className={getStyle(data, '4.1')}
-        d="M485.304,200.407l0.053,98.924l15.874,0.692l36.437,-54.937l-0,-44.679l-52.364,-0Z"
-      />
-      <path
-        className={getStyle(data, '4.2')}
-        d="M536.512,246.829l-51.19,-0l0.035,52.502l15.874,0.692l35.281,-53.194Z"
-      />
-      <rect
-        className={getStyle(data, '4.3')}
-        x="485.304"
-        y="200.407"
-        width="52.363"
-        height="12.542"
-      />
-      <path
-        className={getStyle(data, 'forestEcoregion.2b.90')}
-        d="M485.304,200.407l52.364,-0l-0,-39.221l-52.364,9.439l0,29.782Z"
-      />
-      <path
-        className={getStyle(data, 'forestEcoregion.2b.100')}
-        d="M523.246,163.784l14.422,-2.598l-0,-8.67l-14.422,11.268Z"
-      />
-      <path
-        className={getStyle(data, '3.0')}
-        d="M432.652,338.097l52.788,0l-0.136,-63.895l-9.233,10.869l-9.195,19.472l-34.224,10.128l0,23.426Z"
-      />
-      <path
-        className={getStyle(data, '3.1')}
-        d="M432.652,314.671l34.224,-10.128l9.195,-19.472l-43.435,17.313l0.016,12.287Z"
-      />
-      <path
-        className={getStyle(data, '3.2')}
-        d="M432.636,302.384l-0.071,-41.335l0.984,-0.088l51.773,-14.132l-0.018,27.419l-9.233,10.823l-23.124,9.217l-20.311,8.096Z"
-      />
-      <path
-        className={getStyle(data, '3.3')}
-        d="M432.718,229.138l-0.16,31.91l52.764,-14.219l-0.018,-33.881l-52.586,16.19Z"
-      />
-      <path
-        className={getStyle(data, '3.4')}
-        d="M432.774,200.407l-0.056,28.731l52.586,-16.19l0,-12.541l-52.53,-0Z"
-      />
-      <path
-        className={getStyle(data, '3.5')}
-        d="M432.774,179.928l-0,20.479l52.53,-0l0,-29.782l-52.53,9.303Z"
-      />
-      <path
-        className={getStyle(data, '2.0')}
-        d="M432.652,314.671l0,23.426l-117.269,0l-0.01,-23.448l117.279,0.022Z"
-      />
-      <path
-        className={getStyle(data, '2.1')}
-        d="M432.636,302.384l0.016,12.287l-117.278,-0.022l-0.085,-30.961l117.347,18.696Z"
-      />
-      <path
-        className={getStyle(data, '2.2')}
-        d="M432.565,261.049l0.071,41.335l-117.347,-18.696l-0.108,-40.707l117.384,18.068Z"
-      />
-      <path
-        className={getStyle(data, '2.3')}
-        d="M315.076,213.332l0.105,29.649l117.377,18.067l0.16,-31.91l-117.642,-15.806Z"
-      />
-      <path
-        className={getStyle(data, '2.4')}
-        d="M315.076,213.332l117.642,15.806l0.096,-28.731l-115.675,-0l-19.752,19.12l17.689,-6.195Z"
-      />
-      <path
-        className={getStyle(data, '2.5')}
-        d="M317.139,200.407l115.635,-0l-0,-20.479l-115.635,20.479Z"
-      />
-      <path
-        className={getStyle(data, '1.0')}
-        d="M315.383,314.649l-0,23.448l-129.809,0l-0.001,-11.824l12.154,-11.624l117.656,-0Z"
-      />
-      <path
-        className={getStyle(data, '1.1')}
-        d="M315.289,283.688l0.094,30.961l-117.656,-0l14.491,-13.706l103.071,-17.255Z"
-      />
-      <path
-        className={getStyle(data, '1.2')}
-        d="M315.289,283.688l-103.071,17.255l45.418,-43.653l57.545,-14.309l0.108,40.707Z"
-      />
-      <path
-        className={getStyle(data, '1.3')}
-        d="M257.636,257.29l57.545,-14.309l-0.105,-29.649l-17.689,6.195l-39.751,37.763Z"
-      />
-      <path
-        className={getStyle(data, '0.0')}
-        d="M185.574,326.276l-0,11.821l-123.842,0l0.067,-23.529l115.837,0.058l7.938,11.65Z"
-      />
-      <path
-        className={getStyle(data, '0.1')}
-        d="M68.229,298.039l-6.429,16.529l115.837,0.058l-22.886,-33.811l-86.522,17.224Z"
-      />
-      <path
-        className={getStyle(data, '0.4')}
-        d="M96.707,224.834l14.403,-8.627l-6.947,-10.539l-7.456,19.166Z"
-      />
-      <path
-        className={getStyle(data, '0.3')}
-        d="M83.055,260.294l48.477,-14.032l-20.422,-30.055l-14.403,8.627l-13.652,35.46Z"
-      />
-      <path
-        className={getStyle(data, '0.2')}
-        d="M83.055,260.294l48.477,-14.032l23.219,34.553l-86.522,17.224l14.826,-37.745Z"
-      />
-      <text x="30.216px" y="22.621px" className={styles.header}>
-        {t('forestTypeDiagram.altitudinalZoneForestEcoregion')}
-      </text>
-      <text x="4.736px" y="87.303px">
-        {t('forestTypeDiagram.meter')}
-      </text>
-      <text x="15.806px" y="107.33px">
-        {t('forestTypeDiagram.aboveSeaLevel')}
-      </text>
-      <text x="14.917px" y="161.585px" className={styles.label}>
-        2000
-      </text>
-      <text x="14.917px" y="206.115px" className={styles.label}>
-        1600
-      </text>
-      <text x="24.33px" y="278.364px" className={styles.label}>
-        800
-      </text>
-      <text x="119.961px" y="94.887px" className={styles.label}>
-        J
-      </text>
-      <text x="243.31px" y="94.887px" className={styles.label}>
-        M
-      </text>
-      <text x="369.017px" y="94.887px" className={styles.label}>
-        1
-      </text>
-      <text x="480.518px" y="94.887px" className={styles.label}>
-        2
-      </text>
-      <text x="573.15px" y="94.887px" className={styles.label}>
-        3
-      </text>
-      <text x="642.729px" y="94.887px" className={styles.label}>
-        4
-      </text>
-      <text x="735.232px" y="94.887px" className={styles.label}>
-        5
-      </text>
-      <text x="449.203px" y="111.237px" className={styles.label}>
-        2a
-      </text>
-      <text x="502.006px" y="111.237px" className={styles.label}>
-        2b
-      </text>
-      <text x="699.118px" y="111.237px" className={styles.label}>
-        5a
-      </text>
-      <text x="760.999px" y="111.237px" className={styles.label}>
-        5b
-      </text>
-      <text x="122.64px" y="52.924px" className={styles.labelMiddle}>
-        {info('forestEcoregion', 'J')[i18n.language]}
-      </text>
-      <text x="252.282px" y="53.924px" className={styles.labelMiddle}>
-        {info('forestEcoregion', 'M')[i18n.language]}
-      </text>
-      <text y="31.924px" className={styles.labelMiddle}>
-        <Trans i18nKey="forestTypeDiagram.forestEcoregion.1">
-          <tspan x="375px">Northern</tspan>
-          <tspan x="375px" dy="20">
-            Pre-Alps
-          </tspan>
-        </Trans>
-      </text>
-      <text y="31.924px" className={styles.labelMiddle}>
-        <Trans i18nKey="forestTypeDiagram.forestEcoregion.2">
-          <tspan x="485px">Northern</tspan>
-          <tspan x="485px" dy="20">
-            intermediate
-          </tspan>
-          <tspan x="485px" dy="20">
-            Alps
-          </tspan>
-        </Trans>
-      </text>
-      <text y="31.846px" className={styles.labelMiddle}>
-        <Trans i18nKey="forestTypeDiagram.forestEcoregion.3">
-          <tspan x="575px">Continental</tspan>
-          <tspan x="575px" dy="20">
-            Alps
-          </tspan>
-        </Trans>
-      </text>
-      <text y="32.062px" className={styles.labelMiddle}>
-        <Trans i18nKey="forestTypeDiagram.forestEcoregion.4">
-          <tspan x="650px">Southern</tspan>
-          <tspan x="650px" dy="20">
-            intermediate
-          </tspan>
-          <tspan x="650px" dy="20">
-            Alps
-          </tspan>
-        </Trans>
-      </text>
-      <text y="32.062px" className={styles.labelMiddle}>
-        <Trans i18nKey="forestTypeDiagram.forestEcoregion.5">
-          <tspan x="738px">Southern</tspan>
-          <tspan x="738" dy="20">
-            Pre-Alps
-          </tspan>
-        </Trans>
-      </text>
       <text x="64.672px" y="369.094px">
         {t('forestTypeDiagram.altitudinalZoneAbbr.100')}
       </text>
@@ -323,110 +53,819 @@ function AltitudinalZoneForestEcoregion({ data }) {
       <text x="732.291px" y="369.094px">
         {info('altitudinalZone', '20')[i18n.language]}
       </text>
-      <text x="575.483px" y="149.548px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.100')}
-      </text>
-      <text x="537.742px" y="188.286px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.90')}
-      </text>
-      <text x="667.122px" y="188.286px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.90')}
-      </text>
-      <text x="611.078px" y="230.178px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.80')}
-      </text>
-      <text x="423.741px" y="216.318px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.80')}
-      </text>
-      <text x="110.712px" y="214.096px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.80')}
-      </text>
-      <text x="308.21px" y="232.177px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.60')}
-      </text>
-      <text x="727.9px" y="234.449px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.60')} /
-      </text>
-      <text x="96.19px" y="245.137px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.60')}
-      </text>
-      <text x="115.276px" y="269.568px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.50')}
-      </text>
-      <text x="308.669px" y="266.416px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.50')}
-      </text>
-      <text x="749.033px" y="248.108px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.50')}
-      </text>
-      <text x="118.825px" y="305.816px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.40')}
-      </text>
-      <text x="310.062px" y="303.445px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.40')}
-      </text>
-      <text x="124.433px" y="330.081px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.20')}
-      </text>
-      <text x="740.272px" y="303.445px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.20')}
-      </text>
-      <text x="316.1px" y="330.214px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.20')}
-      </text>
-      <text x="484.595px" y="320.721px">
-        {t('forestTypeDiagram.altitudinalZoneAbbr.20')}
-      </text>
-      <path className={styles.line} d="M61.838,73.235l-0.038,239.993" />
       <path
-        className={styles.line}
-        d="M61.8,338.532l-0,-23.964l42.363,-108.9l81.411,120.608l131.564,-125.869l205.91,-36.467l52.999,-41.419l223.779,108.489l0.04,107.093l-126.001,0.106l-94.985,-73.313l-93.44,73.201l-423.708,0"
-      />
-      <path className={styles.line} d="M96.569,224.917l14.541,-8.71" />
-      <path className={styles.line} d="M82.903,260.309l48.629,-14.047" />
-      <path className={styles.line} d="M68.133,298.059l86.618,-17.244" />
-      <path className={styles.line} d="M61.8,314.568l115.837,0.058" />
-      <path
-        className={styles.line}
-        d="M523.049,163.941l60.592,-11.424l80.239,12.656"
+        id="Me-HY"
+        d="M776.613,318.476l-15.234,-17.146l-0,27.769l15.234,-10.623Z"
+        className={getStyle(data, '9.0')}
       />
       <path
-        className={styles.line}
-        d="M197.676,314.626l234.976,0.045l34.224,-10.128l9.195,-19.472l9.233,-10.823l-0.036,25.08l15.963,0.695l36.437,-54.937l-0,51.979"
+        id="Me-CB"
+        d="M784.501,296.659l-0,32.44l-23.122,-0.126l15.234,-10.741l-15.234,-16.902l-0,-58.344l23.122,53.673Z"
+        className={getStyle(data, '9.1')}
       />
       <path
-        className={styles.line}
-        d="M297.387,219.527l17.689,-6.195l117.642,15.806l52.586,-16.19l0,61.299"
+        id="_5b-HY"
+        d="M761.379,329.099l-0,-27.769l-62.143,16.974l0,10.795l62.143,0Z"
+        className={getStyle(data, '8.0')}
       />
       <path
-        className={styles.line}
-        d="M257.745,257.035l57.436,-14.054l117.384,18.068l52.594,-14.22"
+        id="_5b-CB"
+        d="M761.379,242.87l-62.143,21.556l0,54.087l62.143,-17.183l-0,-58.46Z"
+        className={getStyle(data, '8.2')}
       />
       <path
-        className={styles.line}
-        d="M212.218,300.943l103.071,-17.255l117.347,18.696l43.435,-17.313"
+        id="_5b-OM-UM"
+        d="M754.218,183.204l-55.132,-4.728l0,86.22l62.293,-21.826l-7.161,-59.666Z"
+        className={getStyle(data, '8.2')}
       />
       <path
-        className={styles.line}
-        d="M767.047,215.097l-183.065,-20.764l-46.314,6.074l-220.533,-0"
+        id="_5b-SA"
+        d="M699.086,162.327l53.966,10.321l1.175,10.66l-54.991,-4.832l-0.15,-16.149Z"
+        className={getStyle(data, '8.3')}
       />
       <path
-        className={styles.line}
-        d="M617.939,295.165l0.048,-31.146l58.829,-9.352l0.048,9.222l64.059,-18.387l0.023,17.78l58.827,-18.401"
+        id="_5a-HY"
+        d="M635.969,329.099l63.267,-32.44l0,32.44l-63.267,0Z"
+        className={getStyle(data, '7.0')}
       />
-      <path className={styles.line} d="M740.917,212.153l-64.104,42.515" />
-      <path className={styles.line} d="M56.185,155.852l743.408,0" />
-      <path className={styles.line} d="M56.296,200.389l743.408,0" />
-      <path className={styles.line} d="M56.087,272.826l743.408,0" />
-      <path className={styles.line} d="M185.573,73.308l-0,251.141" />
-      <path className={styles.line} d="M315.128,73.248l0,127.548" />
-      <path className={styles.line} d="M432.774,73.103l-0,105.921" />
-      <path className={styles.line} d="M485.304,100.579l0,68.915" />
-      <path className={styles.line} d="M537.668,73.301l-0,78.038" />
-      <path className={styles.line} d="M617.939,73.022l0,68.884" />
-      <path className={styles.line} d="M676.816,73.312l0,96.811" />
-      <path className={styles.line} d="M740.917,100.269l0,100.376" />
-      <path className={styles.line} d="M799.866,73.219l0,157.807" />
+      <path
+        id="_5a-C"
+        d="M635.969,312.305l18.994,6.777l-18.994,10.016l-0,-16.793Z"
+        className={getStyle(data, '7.1')}
+      />
+      <path
+        id="_5a-CB"
+        d="M699.236,296.659l0,-53.789l-62.963,21.577l-0.304,47.858l18.994,6.777l44.273,-22.423Z"
+        className={getStyle(data, '7.2')}
+      />
+      <path
+        id="_5a-OM-UM"
+        d="M699.086,178.505l-44.123,16.991l-18.996,47.374l0.002,21.644l63.117,-21.528l0,-64.481Z"
+        className={getStyle(data, '7.3')}
+      />
+      <path
+        id="_5a-HM"
+        d="M635.969,173.167l54.409,-0l8.708,5.309l-43.929,16.869l-19.19,47.525l0.002,-69.703Z"
+        className={getStyle(data, '7.4')}
+      />
+      <path
+        id="_5a-SA"
+        d="M635.967,148.569l63.269,13.758l-0.15,16.149l-8.774,-5.309l-54.343,-0l-0.002,-24.598Z"
+        className={getStyle(data, '7.5')}
+      />
+      <path
+        id="_5a-OSA"
+        d="M635.967,116.297l35.008,8.714l28.261,37.316l-63.269,-13.758l0,-32.272Z"
+        className={getStyle(data, '7.6')}
+      />
+      <path
+        id="_4-C"
+        d="M635.969,329.099l-0,-86.229l-57.405,10.956l-0.109,42.833l57.514,32.44Z"
+        className={getStyle(data, '6.0')}
+      />
+      <path
+        id="_4-HM"
+        d="M635.967,173.167l-57.403,-0l0,80.505l57.405,-10.802l-0.002,-69.703Z"
+        className={getStyle(data, '6.1')}
+      />
+      <path
+        id="_4-SA"
+        d="M635.969,148.61l-57.405,-12.541l0,37.098l57.405,-0l0,-24.557Z"
+        className={getStyle(data, '6.2')}
+      />
+      <path
+        id="_4-OSA"
+        d="M635.969,116.372l-57.405,-13.987l0,33.684l57.405,12.594l0,-32.291Z"
+        className={getStyle(data, '6.3')}
+      />
+      <path
+        id="_3-HM"
+        d="M578.452,243.295l-80.609,-0l0,-64.53l42.281,-5.598l38.331,-0l-0.003,70.128Z"
+        className={getStyle(data, '5.0')}
+      />
+      <path
+        id="_3-SA"
+        d="M578.455,136.08l-38.33,-8.376l-42.282,10.441l0,40.331l42.282,-5.309l38.33,-0l-0,-37.087Z"
+        className={getStyle(data, '5.1')}
+      />
+      <path
+        id="_3-OSA"
+        d="M578.455,102.335l-38.341,-9.416l-42.271,16.731l0,28.612l42.282,-10.521l38.33,8.337l-0,-33.743Z"
+        className={getStyle(data, '5.2')}
+      />
+      <path
+        id="_2b-C"
+        d="M497.867,296.976l-0.024,-64.622l-38.581,64.234l-16.287,-0l-0.144,26.835l55.036,-26.447Z"
+        className={getStyle(data, '4.0')}
+      />
+      <path
+        id="_2b-HM"
+        d="M497.843,178.476l-54.867,0l-0.145,118.112l16.336,-0l38.676,-64.234l0,-53.878Z"
+        className={getStyle(data, '4.1')}
+      />
+      <path
+        id="_2b-SA"
+        d="M497.843,178.565l0,-40.322l-54.917,13.377l-0,26.856l54.917,0.089Z"
+        className={getStyle(data, '4.4')}
+      />
+      <path
+        id="_2b-OSA"
+        d="M497.843,109.667l-54.917,21.687l-0.095,20.266l55.012,-13.377l0,-28.576Z"
+        className={getStyle(data, '4.5')}
+      />
+      <path
+        id="_2a-C"
+        d="M442.975,264.701l-0.144,58.722l-55.609,-0l-0,-10.574l32.861,-11.594l22.892,-36.554Z"
+        className={getStyle(data, '3.0')}
+      />
+      <path
+        id="_2a-SM"
+        d="M387.399,312.537l-0,-26.699l45.389,-4.672l-12.349,20.024l-33.04,11.347Z"
+        className={getStyle(data, '3.1')}
+      />
+      <path
+        id="_2a-UM"
+        d="M387.399,285.837l0.334,-26.365l55.067,-16.353l0.333,21.025l-10.345,17.021l-45.389,4.672Z"
+        className={getStyle(data, '3.2')}
+      />
+      <path
+        id="_2a-OM"
+        d="M442.831,199.862l-55.609,6.001l0.177,53.695l55.431,-16.439l0.001,-43.257Z"
+        className={getStyle(data, '3.3')}
+      />
+      <path
+        id="_2a-HM"
+        d="M443.095,178.476l-55.696,0l-0.177,27.387l55.608,-6.002l0.265,-21.385Z"
+        className={getStyle(data, '3.4')}
+      />
+      <path
+        id="_2a-SA"
+        d="M442.926,151.62l-55.704,11.045l-0,15.811l55.704,0l-0,-26.856Z"
+        className={getStyle(data, '3.5')}
+      />
+      <path
+        id="_2a-OSA"
+        d="M442.926,131.459l-55.704,22.048l-0,9.299l55.753,-11.151l-0.049,-20.196Z"
+        className={getStyle(data, '3.6')}
+      />
+      <path
+        id="_1-C"
+        d="M279.755,323.423l-0,-10.574l107.644,0.096l-0.196,10.478l-107.448,-0Z"
+        className={getStyle(data, '2.0')}
+      />
+      <path
+        id="_1-SM"
+        d="M387.399,285.837l-0,26.7l-107.134,-0l0,-37.046l107.134,10.346Z"
+        className={getStyle(data, '2.1')}
+      />
+      <path
+        id="_1-UM"
+        d="M387.733,259.472l-0.334,26.365l-107.134,-10.346l0,-32.373l107.468,16.354Z"
+        className={getStyle(data, '2.2')}
+      />
+      <path
+        id="_1-OM"
+        d="M387.189,205.863l-107.434,-6.002l-0,43.257l107.467,16.44l-0.033,-53.695Z"
+        className={getStyle(data, '2.3')}
+      />
+      <path
+        id="_1-HM"
+        d="M279.755,183.785l-0,16.076l107.467,6.002l-0,-27.387l-107.467,5.309Z"
+        className={getStyle(data, '2.4')}
+      />
+      <path
+        id="_1-SA"
+        d="M387.222,162.76l-0,15.716l-107.093,5.309l107.093,-21.025Z"
+        className={getStyle(data, '2.5')}
+      />
+      <path
+        id="_1-OSA"
+        d="M387.189,153.481l-45.824,18.077l45.857,-8.798l-0.033,-9.279Z"
+        className={getStyle(data, '2.6')}
+      />
+      <path
+        id="M-C"
+        d="M279.755,323.423l-0,-10.478l-114.545,-0.095l-0.417,10.573l114.962,-0Z"
+        className={getStyle(data, '1.0')}
+      />
+      <path
+        id="M-SM"
+        d="M280.266,312.537l-114.143,0.334l24.364,-27.367l89.779,-10.012l-0,37.045Z"
+        className={getStyle(data, '1.1')}
+      />
+      <path
+        id="M-UM"
+        d="M280.266,275.491l-89.779,10.013l23.361,-26.366l66.418,-16.019l-0,32.372Z"
+        className={getStyle(data, '1.2')}
+      />
+      <path
+        id="M-OM"
+        d="M279.755,199.861l-19.05,6.002l-47.524,53.695l66.574,-16.553l-0,-43.144Z"
+        className={getStyle(data, '1.3')}
+      />
+      <path
+        id="M-HM"
+        d="M279.755,183.785l-19.05,22.078l19.05,-6.002l-0,-16.076Z"
+        className={getStyle(data, '1.4')}
+      />
+      <path
+        id="J-C"
+        d="M38.113,323.423l126.68,-0l-0.025,-10.478l-126.655,5.703l-0,4.775Z"
+        className={getStyle(data, '0.0')}
+      />
+      <path
+        id="J-SM"
+        d="M52.649,285.504l93.117,-10.68l20.358,38.046l-127.158,5.34l13.683,-32.706Z"
+        className={getStyle(data, '0.1')}
+      />
+      <path
+        id="J-UM"
+        d="M68.001,248.458l62.079,-5.34l15.686,31.705l-93.117,10.68l15.352,-37.045Z"
+        className={getStyle(data, '0.2')}
+      />
+      <path
+        id="J-OM"
+        d="M129.245,243.118l-62.275,5.273l21.996,-53.583l12.949,-5.054l27.33,53.364Z"
+        className={getStyle(data, '0.3')}
+      />
+      <path
+        id="J-HM"
+        d="M88.966,194.808l12.949,-5.054l-5.842,-11.881l-7.107,16.935Z"
+        className={getStyle(data, '0.4')}
+      />
+      <path d="M33.995,296.745l750.33,0" className={styles.greyLine} />
+      <path d="M33.995,243.027l750.33,0" className={styles.greyLine} />
+      <path d="M33.995,189.31l750.327,-0" className={styles.greyLine} />
+      <path d="M33.995,135.591l750.33,-0" className={styles.greyLine} />
+      <path d="M33.995,81.873l750.33,-0" className={styles.greyLine} />
+      <path
+        d="M33.995,307.489l750.327,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,253.771l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,200.053l750.324,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,146.335l750.327,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,92.617l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,318.233l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,264.514l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,210.796l750.324,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,157.078l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,103.359l750.327,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,328.977l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,275.257l750.327,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,221.54l750.324,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,167.822l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,114.103l750.327,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,286l750.327,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,232.283l750.324,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,178.565l750.327,-0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path
+        d="M33.995,124.846l750.327,0"
+        className={`${styles.thinLine} ${styles.greyLine}`}
+      />
+      <path d="M164.768,65.757l0,2.843" className={styles.greyLine} />
+      <path
+        d="M164.768,74.193l0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M164.768,331.505l0,2.842" className={styles.greyLine} />
+      <path d="M279.755,65.757l-0,2.843" className={styles.greyLine} />
+      <path
+        d="M279.755,74.193l-0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M279.755,331.505l-0,2.842" className={styles.greyLine} />
+      <path d="M387.189,65.757l-0,2.843" className={styles.greyLine} />
+      <path
+        d="M387.189,74.193l-0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M387.189,331.505l-0,2.842" className={styles.greyLine} />
+      <path d="M497.629,65.757l-0,2.843" className={styles.greyLine} />
+      <path
+        d="M497.629,74.193l-0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M497.629,331.505l-0,2.842" className={styles.greyLine} />
+      <path d="M578.485,65.757l0,2.843" className={styles.greyLine} />
+      <path
+        d="M578.485,74.193l0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M578.485,331.505l0,2.842" className={styles.greyLine} />
+      <path d="M635.969,65.757l0,2.843" className={styles.greyLine} />
+      <path
+        d="M635.969,74.193l0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M635.969,331.505l0,2.842" className={styles.greyLine} />
+      <path d="M698.98,65.757l-0,2.843" className={styles.greyLine} />
+      <path
+        d="M698.98,74.193l-0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M698.98,331.505l-0,2.842" className={styles.greyLine} />
+      <path d="M761.293,65.757l-0,2.843" className={styles.greyLine} />
+      <path
+        d="M761.293,74.193l-0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M761.293,331.505l-0,2.842" className={styles.greyLine} />
+      <path d="M38.024,65.757l-0,268.589" className={styles.line} />
+      <path d="M442.83,65.757l-0,2.843" className={styles.greyLine} />
+      <path
+        d="M442.83,74.193l-0,254.514"
+        className={`${styles.greyLine} ${styles.dashedLine}`}
+      />
+      <path d="M442.83,331.505l-0,2.842" className={styles.greyLine} />
+      <path d="M164.768,65.757l0,247.021" className={styles.greyLine} />
+      <path d="M279.755,65.757l-0,118.42" className={styles.greyLine} />
+      <path d="M387.189,65.757l-0,88.166" className={styles.greyLine} />
+      <path d="M497.629,65.757l-0,44.218" className={styles.greyLine} />
+      <path d="M578.485,65.757l0,37.243" className={styles.greyLine} />
+      <path d="M635.969,65.757l0,51.416" className={styles.greyLine} />
+      <path d="M698.98,90.19l-0,71.913" className={styles.greyLine} />
+      <path d="M761.293,65.757l-0,177.375" className={styles.greyLine} />
+      <path d="M38.024,65.757l-0,268.589" className={styles.line} />
+      <path d="M442.83,88.718l-0,42.911" className={styles.greyLine} />
+      <path d="M784.729,65.757l-0,268.589" className={styles.greyLine} />
+      <path d="M784.729,65.757l-0,268.589" className={styles.greyLine} />
+      <g opacity="0.8">
+        <path d="M38.432,317.67l57.642,-139.798" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path d="M96.073,177.873l68.72,135.373" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path d="M165.001,313.247l114.963,-129.293" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path d="M280.129,183.733l162.846,-32.078" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path d="M341.365,171.558l198.759,-78.637" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path
+          d="M540.114,92.919l130.609,31.947l28.516,37.574l53.785,10.162l8.355,70.27"
+          className={styles.line}
+        />
+      </g>
+      <g opacity="0.8">
+        <path d="M88.966,194.808l12.949,-5.054" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path d="M66.97,248.391l61.133,-5.064" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path d="M51.78,285.708l92.449,-10.502" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path
+          d="M442.976,323.492l54.867,-26.721l-0,-53.476l80.643,-0l-0,53.429l57.484,32.375"
+          className={styles.line}
+        />
+      </g>
+      <g opacity="0.8">
+        <path d="M635.969,329.098l148.949,-0.125" className={styles.line} />
+      </g>
+      <g opacity="0.8">
+        <path d="M38.113,323.423l404.863,-0" className={styles.line} />
+      </g>
+      <path d="M38.454,318.648l126.235,-5.401" className={styles.line} />
+      <path d="M165.21,313.039l221.993,-0.189" className={styles.line} />
+      <path
+        d="M387.202,312.849l32.876,-11.703l22.589,-36.516"
+        className={styles.line}
+      />
+      <path
+        d="M189.345,285.977l90.463,-10.607l107.423,10.983l44.267,-4.909"
+        className={styles.line}
+      />
+      <path
+        d="M213.181,259.269l66.523,-16.264l107.528,16.553l55.863,-16.462"
+        className={styles.line}
+      />
+      <path
+        d="M260.705,205.616l19.048,-5.755l107.437,6.002l55.64,-6.002"
+        className={styles.line}
+      />
+      <path
+        d="M280.117,183.785l107.209,-5.392l110.679,0.269l42.366,-5.495l149.777,-0l8.936,5.337l55.134,4.772"
+        className={styles.line}
+      />
+      <path d="M442.831,199.862l0,96.726" className={styles.line} />
+      <path
+        d="M442.831,296.588l16.49,-0l38.522,-64.234l0,11.102"
+        className={styles.line}
+      />
+      <path d="M540.125,127.704l159.111,34.623" className={styles.line} />
+      <path d="M442.926,151.62l97.199,-23.879" className={styles.line} />
+      <path
+        d="M578.564,253.711l57.404,-10.841l0.036,69.59l18.959,6.622"
+        className={styles.line}
+      />
+      <path
+        d="M635.967,242.87l18.862,-47.561l44.257,-16.804"
+        className={styles.line}
+      />
+      <path
+        d="M636.273,264.401l62.629,-21.207l0,21.371l62.354,-21.579l23.245,53.916"
+        className={styles.line}
+      />
+      <path
+        d="M761.383,328.988l15.23,-10.694l-15.444,-16.957l-62.248,16.949l0.002,-21.627l-62.954,32.44"
+        className={styles.line}
+      />
+      <path
+        d="M1,81.736l6.169,-0l-0,-1.277l-4.539,0c2.539,-2.539 4.372,-5.568 4.372,-7.617c-0,-1.614 -1.146,-2.957 -2.959,-2.957c-0.724,0 -1.75,0.217 -2.757,0.704l0.187,1.479c0.67,-0.536 1.577,-0.906 2.25,-0.906c1.16,-0 1.732,0.906 1.732,1.966c0,1.563 -1.479,3.899 -4.455,7.315l-0,1.293Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M9.472,81.382c0.69,0.303 1.547,0.473 2.303,0.473c2.506,0 3.782,-1.616 3.782,-4.055c0,-2.319 -1.496,-3.496 -3.226,-3.496c-0.439,0 -0.959,0.07 -1.329,0.187l-0,-3.279l3.985,-0l0,-1.21l-5.398,-0l0,5.899c0.809,-0.251 1.346,-0.387 1.933,-0.387c1.582,-0 2.489,0.876 2.489,2.472c0,1.533 -0.943,2.656 -2.436,2.656c-0.673,0 -1.53,-0.319 -2.033,-0.62l-0.07,1.36Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M18.617,75.868c0,-3.295 0.59,-4.775 1.933,-4.775c1.343,0 1.933,1.48 1.933,4.775c-0,3.296 -0.59,4.776 -1.933,4.776c-1.343,-0 -1.933,-1.48 -1.933,-4.776Zm-1.48,0c0,3.916 1.21,5.985 3.413,5.985c2.203,0 3.412,-2.069 3.412,-5.985c0,-3.916 -1.209,-5.985 -3.412,-5.985c-2.203,0 -3.413,2.069 -3.413,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M26.686,75.868c0,-3.295 0.59,-4.775 1.933,-4.775c1.343,0 1.933,1.48 1.933,4.775c-0,3.296 -0.59,4.776 -1.933,4.776c-1.343,-0 -1.933,-1.48 -1.933,-4.776Zm-1.48,0c0,3.916 1.21,5.985 3.413,5.985c2.203,0 3.412,-2.069 3.412,-5.985c0,-3.916 -1.209,-5.985 -3.412,-5.985c-2.203,0 -3.413,2.069 -3.413,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M9.471,296.148c0.69,0.303 1.547,0.473 2.303,0.473c2.506,0 3.783,-1.616 3.783,-4.055c-0,-2.319 -1.497,-3.496 -3.227,-3.496c-0.439,0 -0.959,0.07 -1.329,0.187l0,-3.279l3.986,-0l-0,-1.21l-5.399,-0l0,5.899c0.81,-0.251 1.346,-0.387 1.933,-0.387c1.583,-0 2.489,0.876 2.489,2.472c0,1.533 -0.942,2.656 -2.436,2.656c-0.673,0 -1.53,-0.319 -2.033,-0.62l-0.07,1.36Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M18.616,290.635c0,-3.296 0.59,-4.776 1.933,-4.776c1.343,0 1.933,1.48 1.933,4.776c0,3.295 -0.59,4.775 -1.933,4.775c-1.343,-0 -1.933,-1.48 -1.933,-4.775Zm-1.479,-0c-0,3.915 1.209,5.985 3.412,5.985c2.203,-0 3.413,-2.07 3.413,-5.985c-0,-3.916 -1.21,-5.985 -3.413,-5.985c-2.203,-0 -3.412,2.069 -3.412,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M26.685,290.635c-0,-3.296 0.59,-4.776 1.933,-4.776c1.343,0 1.933,1.48 1.933,4.776c-0,3.295 -0.59,4.775 -1.933,4.775c-1.343,-0 -1.933,-1.48 -1.933,-4.775Zm-1.48,-0c0,3.915 1.21,5.985 3.413,5.985c2.203,-0 3.412,-2.07 3.412,-5.985c0,-3.916 -1.209,-5.985 -3.412,-5.985c-2.203,-0 -3.413,2.069 -3.413,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M3.774,242.946l1.477,0l0,-11.733l-1.343,-0l-2.403,2.286l0.773,1.093l1.496,-1.683l0,10.037Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M10.548,237.079c0,-3.296 0.59,-4.775 1.933,-4.775c1.344,-0 1.933,1.479 1.933,4.775c0,3.296 -0.589,4.775 -1.933,4.775c-1.343,0 -1.933,-1.479 -1.933,-4.775Zm-1.479,-0c-0,3.916 1.21,5.985 3.412,5.985c2.203,0 3.413,-2.069 3.413,-5.985c-0,-3.916 -1.21,-5.985 -3.413,-5.985c-2.202,-0 -3.412,2.069 -3.412,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M18.617,237.079c0,-3.296 0.59,-4.775 1.933,-4.775c1.343,-0 1.933,1.479 1.933,4.775c-0,3.296 -0.59,4.775 -1.933,4.775c-1.343,0 -1.933,-1.479 -1.933,-4.775Zm-1.48,-0c0,3.916 1.21,5.985 3.413,5.985c2.203,0 3.412,-2.069 3.412,-5.985c0,-3.916 -1.209,-5.985 -3.412,-5.985c-2.203,-0 -3.413,2.069 -3.413,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M26.686,237.079c0,-3.296 0.59,-4.775 1.933,-4.775c1.343,-0 1.933,1.479 1.933,4.775c-0,3.296 -0.59,4.775 -1.933,4.775c-1.343,0 -1.933,-1.479 -1.933,-4.775Zm-1.48,-0c0,3.916 1.21,5.985 3.413,5.985c2.203,0 3.412,-2.069 3.412,-5.985c0,-3.916 -1.209,-5.985 -3.412,-5.985c-2.203,-0 -3.413,2.069 -3.413,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M3.774,189.432l1.477,-0l0,-11.734l-1.343,-0l-2.403,2.286l0.773,1.093l1.496,-1.683l0,10.038Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M9.472,189.078c0.69,0.303 1.547,0.473 2.303,0.473c2.506,-0 3.782,-1.616 3.782,-4.055c0,-2.32 -1.496,-3.496 -3.226,-3.496c-0.439,-0 -0.959,0.069 -1.329,0.186l-0,-3.279l3.985,0l0,-1.21l-5.398,0l0,5.899c0.809,-0.25 1.346,-0.384 1.933,-0.384c1.582,0 2.489,0.874 2.489,2.47c0,1.532 -0.943,2.656 -2.436,2.656c-0.673,0 -1.53,-0.32 -2.033,-0.62l-0.07,1.36Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M18.617,183.564c0,-3.295 0.59,-4.775 1.933,-4.775c1.343,-0 1.933,1.48 1.933,4.775c-0,3.296 -0.59,4.775 -1.933,4.775c-1.343,0 -1.933,-1.479 -1.933,-4.775Zm-1.48,0c0,3.916 1.21,5.985 3.413,5.985c2.203,0 3.412,-2.069 3.412,-5.985c0,-3.916 -1.209,-5.985 -3.412,-5.985c-2.203,0 -3.413,2.069 -3.413,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M26.686,183.564c0,-3.295 0.59,-4.775 1.933,-4.775c1.343,-0 1.933,1.48 1.933,4.775c-0,3.296 -0.59,4.775 -1.933,4.775c-1.343,0 -1.933,-1.479 -1.933,-4.775Zm-1.48,0c0,3.916 1.21,5.985 3.413,5.985c2.203,0 3.412,-2.069 3.412,-5.985c0,-3.916 -1.209,-5.985 -3.412,-5.985c-2.203,0 -3.413,2.069 -3.413,5.985Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M1,135.876l6.169,0l-0,-1.276l-4.539,-0c2.539,-2.539 4.372,-5.568 4.372,-7.618c-0,-1.613 -1.146,-2.956 -2.959,-2.956c-0.724,-0 -1.75,0.217 -2.757,0.703l0.187,1.48c0.67,-0.537 1.577,-0.907 2.25,-0.907c1.16,0 1.732,0.907 1.732,1.967c0,1.563 -1.479,3.899 -4.455,7.314l-0,1.293Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M10.548,130.009c0,-3.296 0.59,-4.776 1.933,-4.776c1.344,0 1.933,1.48 1.933,4.776c0,3.295 -0.589,4.775 -1.933,4.775c-1.343,-0 -1.933,-1.48 -1.933,-4.775Zm-1.479,-0c-0,3.915 1.21,5.985 3.412,5.985c2.203,-0 3.413,-2.07 3.413,-5.985c-0,-3.916 -1.21,-5.986 -3.413,-5.986c-2.202,0 -3.412,2.07 -3.412,5.986Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M18.617,130.009c0,-3.296 0.59,-4.776 1.933,-4.776c1.343,0 1.933,1.48 1.933,4.776c-0,3.295 -0.59,4.775 -1.933,4.775c-1.343,-0 -1.933,-1.48 -1.933,-4.775Zm-1.48,-0c0,3.915 1.21,5.985 3.413,5.985c2.203,-0 3.412,-2.07 3.412,-5.985c0,-3.916 -1.209,-5.986 -3.412,-5.986c-2.203,0 -3.413,2.07 -3.413,5.986Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M26.686,130.009c0,-3.296 0.59,-4.776 1.933,-4.776c1.343,0 1.933,1.48 1.933,4.776c-0,3.295 -0.59,4.775 -1.933,4.775c-1.343,-0 -1.933,-1.48 -1.933,-4.775Zm-1.48,-0c0,3.915 1.21,5.985 3.413,5.985c2.203,-0 3.412,-2.07 3.412,-5.985c0,-3.916 -1.209,-5.986 -3.412,-5.986c-2.203,0 -3.413,2.07 -3.413,5.986Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M99.81,87.187c0.387,0.05 0.84,0.122 1.227,0.122c1.766,0 2.555,-1.371 2.555,-3.295l0,-8.925l-1.479,-0l-0,8.841c-0,1.263 -0.47,1.922 -1.48,1.922c-0.283,-0 -0.57,-0.103 -0.823,-0.173l0,1.508Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M215.207,87.187l1.413,-0l0,-10.435l0.033,-0l3.193,10.435l1.077,-0l3.329,-10.435l0.033,-0l0,10.435l1.41,-0l0,-12.098l-2.217,-0l-3.009,9.62l-0.033,-0l-2.943,-9.62l-2.286,-0l0,12.098Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M335.72,87.187l1.476,-0l0,-12.098l-1.343,-0l-2.403,2.358l0.773,1.127l1.497,-1.733l-0,10.346Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M439.544,87.187l6.172,-0l-0,-1.318l-4.542,-0c2.539,-2.618 4.372,-5.735 4.372,-7.852c-0,-1.663 -1.146,-3.051 -2.959,-3.051c-0.721,0 -1.75,0.226 -2.759,0.729l0.186,1.527c0.676,-0.556 1.58,-0.937 2.256,-0.937c1.157,-0 1.73,0.937 1.73,2.027c-0,1.613 -1.48,4.022 -4.456,7.54l0,1.335Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M534.008,86.857c0.639,0.259 1.646,0.451 2.503,0.451c2.556,-0 3.816,-1.577 3.816,-3.485c-0,-1.524 -0.824,-2.789 -2.267,-2.979l-0,-0.036c1.243,-0.258 2.166,-1.179 2.166,-2.842c0,-2.028 -1.443,-2.998 -3.276,-2.998c-0.909,-0 -1.816,0.139 -2.572,0.503l0.136,1.421c0.67,-0.417 1.527,-0.678 2.15,-0.678c1.226,-0 2.086,0.781 2.086,1.977c-0,1.246 -0.91,2.133 -2.74,2.133l-0.609,0l0,1.246l1.096,0c1.427,0 2.286,0.832 2.286,2.064c0,1.471 -1.126,2.425 -2.406,2.425c-0.653,0 -1.463,-0.259 -2.236,-0.692l-0.133,1.49Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M608.429,87.187l1.413,-0l-0,-2.74l1.277,0l-0,-1.248l-1.277,-0l-0,-8.11l-1.799,-0l-4.22,7.904l0,1.454l4.606,0l0,2.74Zm0,-3.988l-3.362,-0l3.329,-6.583l0.033,-0l0,6.583Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M696.181,86.823c0.687,0.312 1.546,0.484 2.302,0.484c2.506,-0 3.783,-1.663 3.783,-4.175c-0,-2.391 -1.496,-3.607 -3.226,-3.607c-0.44,0 -0.96,0.07 -1.327,0.192l0,-3.382l3.98,0l-0,-1.246l-5.393,0l0,6.083c0.807,-0.259 1.341,-0.398 1.93,-0.398c1.583,0 2.492,0.901 2.492,2.548c0,1.576 -0.945,2.736 -2.442,2.736c-0.67,0 -1.526,-0.325 -2.033,-0.639l-0.066,1.404Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M411.268,103.666l6.172,-0l-0,-1.318l-4.542,-0c2.539,-2.618 4.372,-5.735 4.372,-7.852c-0,-1.663 -1.146,-3.051 -2.959,-3.051c-0.721,0 -1.75,0.228 -2.759,0.729l0.186,1.527c0.676,-0.556 1.58,-0.937 2.256,-0.937c1.157,-0 1.73,0.937 1.73,2.027c-0,1.613 -1.48,4.022 -4.456,7.54l0,1.335Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M420.227,96.803c0.489,-0.556 1.329,-0.918 2.203,-0.918c0.589,-0 1.143,0.153 1.429,0.553c0.27,0.381 0.32,0.762 0.32,1.422l-0,0.397l-0.826,0c-2.94,0 -4.033,1.266 -4.033,2.982c0,1.699 1.06,2.55 2.47,2.55c1.313,0 2.019,-0.642 2.406,-1.318l0.03,-0l0.086,1.196l1.277,-0c-0.031,-0.312 -0.067,-0.832 -0.067,-1.352l0,-4.611c0,-1.249 -0.367,-1.786 -0.74,-2.167c-0.267,-0.278 -1.026,-0.831 -2.286,-0.831c-0.84,-0 -1.713,0.258 -2.419,0.726l0.15,1.371Zm3.952,3.638c-0,1.215 -0.773,2.236 -2.002,2.236c-0.974,-0 -1.444,-0.607 -1.444,-1.541c0,-1.024 0.79,-1.839 2.453,-1.839c0.387,0 0.74,0 0.993,0.037l-0,1.107Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M465.549,103.666l6.171,-0l0,-1.318l-4.541,-0c2.539,-2.618 4.372,-5.735 4.372,-7.852c-0,-1.663 -1.146,-3.051 -2.959,-3.051c-0.721,0 -1.75,0.228 -2.759,0.729l0.186,1.527c0.676,-0.556 1.58,-0.937 2.255,-0.937c1.157,-0 1.73,0.937 1.73,2.027c0,1.613 -1.479,4.022 -4.455,7.54l-0,1.335Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M475.298,99.247c0,-2.22 0.59,-3.363 1.883,-3.363c1.296,0 1.883,1.143 1.883,3.363c0,2.216 -0.587,3.362 -1.883,3.362c-1.293,0 -1.883,-1.146 -1.883,-3.362Zm-1.413,2.789c0,0.54 -0.047,1.09 -0.066,1.63l1.362,-0l0.051,-1.299l0.033,0c0.37,0.693 1.009,1.421 2.253,1.421c1.766,0 2.959,-1.493 2.959,-4.541c-0,-3.051 -1.193,-4.542 -2.959,-4.542c-0.974,-0 -1.616,0.398 -2.184,1.335l-0.036,-0l0,-5.373l-1.413,-0l0,11.369Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M663.315,103.302c0.687,0.312 1.547,0.484 2.303,0.484c2.506,-0 3.782,-1.663 3.782,-4.175c0,-2.391 -1.496,-3.607 -3.226,-3.607c-0.439,0 -0.959,0.07 -1.326,0.192l-0,-3.382l3.98,0l-0,-1.246l-5.393,0l-0,6.083c0.806,-0.259 1.34,-0.398 1.93,-0.398c1.582,0 2.492,0.901 2.492,2.548c-0,1.577 -0.946,2.736 -2.442,2.736c-0.67,0 -1.527,-0.325 -2.033,-0.639l-0.067,1.404Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M671.871,96.803c0.489,-0.556 1.329,-0.918 2.202,-0.918c0.59,-0 1.143,0.153 1.43,0.553c0.27,0.381 0.32,0.762 0.32,1.422l-0,0.397l-0.826,0c-2.94,0 -4.033,1.266 -4.033,2.982c0,1.699 1.06,2.55 2.47,2.55c1.312,0 2.019,-0.642 2.405,-1.318l0.031,-0l0.086,1.196l1.277,-0c-0.031,-0.312 -0.067,-0.832 -0.067,-1.352l0,-4.611c0,-1.249 -0.367,-1.786 -0.74,-2.167c-0.267,-0.278 -1.026,-0.831 -2.286,-0.831c-0.84,-0 -1.713,0.258 -2.419,0.726l0.15,1.371Zm3.952,3.638c-0,1.215 -0.773,2.236 -2.003,2.236c-0.973,-0 -1.443,-0.607 -1.443,-1.541c-0,-1.024 0.79,-1.839 2.453,-1.839c0.386,0 0.74,0 0.993,0.037l-0,1.107Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M725.267,103.304c0.687,0.312 1.546,0.484 2.303,0.484c2.506,-0 3.782,-1.663 3.782,-4.175c0,-2.391 -1.496,-3.607 -3.226,-3.607c-0.439,0 -0.959,0.07 -1.327,0.192l0,-3.382l3.98,0l0,-1.246l-5.392,0l-0,6.083c0.806,-0.259 1.34,-0.398 1.93,-0.398c1.582,-0 2.492,0.901 2.492,2.548c-0,1.576 -0.946,2.736 -2.442,2.736c-0.67,0 -1.527,-0.325 -2.033,-0.639l-0.067,1.404Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M734.613,99.248c-0,-2.219 0.589,-3.362 1.883,-3.362c1.296,-0 1.883,1.143 1.883,3.362c-0,2.217 -0.587,3.363 -1.883,3.363c-1.294,-0 -1.883,-1.146 -1.883,-3.363Zm-1.413,2.79c-0,0.539 -0.047,1.093 -0.064,1.63l1.36,-0l0.05,-1.299l0.033,-0c0.37,0.692 1.01,1.421 2.253,1.421c1.766,-0 2.959,-1.494 2.959,-4.542c0,-3.051 -1.193,-4.541 -2.959,-4.541c-0.973,-0 -1.616,0.397 -2.183,1.335l-0.036,-0l-0,-5.374l-1.413,0l-0,11.37Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M13.115,36.46l1.413,0l-0,-5.459c-0,-1.594 0.57,-2.253 1.613,-2.253c0.84,0 1.313,0.52 1.313,1.646l-0,6.066l1.41,0l-0,-5.459c-0,-1.594 0.57,-2.253 1.613,-2.253c0.843,0 1.313,0.52 1.313,1.646l-0,6.066l1.41,0l-0,-6.135c-0,-1.941 -1.007,-2.826 -2.487,-2.826c-0.976,0 -1.63,0.52 -2.083,1.385c-0.439,-0.898 -1.11,-1.385 -2.019,-1.385c-0.94,0 -1.663,0.434 -2.116,1.441l-0.037,-0l-0.05,-1.321l-1.362,-0c0.019,0.626 0.069,1.265 0.069,1.908l0,6.933Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M5.568,45.973l1.343,0l-0,-1.732l-1.343,-0l-0,1.732Zm2.689,0l1.346,0l-0,-1.732l-1.346,-0l-0,1.732Zm2.353,1.819l-1.41,0l-0,5.32c-0,1.597 -0.709,2.392 -1.816,2.392c-0.91,0 -1.413,-0.606 -1.413,-2.01l-0,-5.702l-1.413,0l-0,6.135c-0,1.942 1.01,2.826 2.506,2.826c0.993,0 1.713,-0.434 2.169,-1.438l0.033,0l0.051,1.318l1.362,0c-0.016,-0.625 -0.069,-1.265 -0.069,-1.907l-0,-6.934Z"
+        className={styles.bgLine}
+      />
+      <rect
+        x="12.846"
+        y="54.691"
+        width="1.616"
+        height="1.941"
+        className={styles.bgLine}
+      />
+      <path
+        d="M16.964,56.632l1.413,0l0,-10.435l0.034,0l3.192,10.435l1.077,0l3.329,-10.435l0.033,0l0,10.435l1.41,0l0,-12.098l-2.216,-0l-3.01,9.62l-0.033,0l-2.942,-9.62l-2.287,-0l0,12.098Z"
+        className={styles.bgLine}
+      />
+      <rect
+        x="29.959"
+        y="54.691"
+        width="1.616"
+        height="1.941"
+        className={styles.bgLine}
+      />
+      <path
+        d="M762.298,87.187l1.413,-0l0,-10.435l0.033,-0l3.193,10.435l1.077,-0l3.329,-10.435l0.033,-0l0,10.435l1.41,-0l0,-12.098l-2.217,-0l-3.009,9.62l-0.033,-0l-2.943,-9.62l-2.286,-0l0,12.098Z"
+        className={styles.bgLine}
+      />
+      <path
+        d="M781.008,83.201l0,-0.782c0,-2.6 -1.076,-4.194 -3.009,-4.194c-2.133,0 -3.309,1.769 -3.309,4.542c-0,2.773 1.176,4.541 3.443,4.541c0.859,0 1.73,-0.192 2.403,-0.52l-0.067,-1.318c-0.487,0.364 -1.26,0.729 -1.966,0.729c-1.564,-0 -2.337,-0.954 -2.337,-2.998l4.842,-0Zm-4.842,-1.11c0.034,-2.064 0.843,-2.756 1.75,-2.756c1.126,-0 1.68,0.918 1.68,2.756l-3.43,-0Z"
+        className={styles.bgLine}
+      />
+      <text x="0.378px" y="81.736px" className={styles.label}>
+        2500
+      </text>
+      <text x="8.446px" y="296.502px" className={styles.label}>
+        500
+      </text>
+      <text x="0.378px" y="242.946px" className={styles.label}>
+        1000
+      </text>
+      <text x="0.378px" y="189.432px" className={styles.label}>
+        1500
+      </text>
+      <text x="0.378px" y="135.876px" className={styles.label}>
+        2000
+      </text>
+      <text x="99.423px" y="87.187px" className={styles.label}>
+        J
+      </text>
+      <text x="213.913px" y="87.187px" className={styles.label}>
+        M
+      </text>
+      <text x="332.324px" y="87.187px" className={styles.label}>
+        1
+      </text>
+      <text x="438.922px" y="87.187px" className={styles.label}>
+        2
+      </text>
+      <text x="533.386px" y="87.187px" className={styles.label}>
+        3
+      </text>
+      <text x="603.436px" y="87.187px" className={styles.label}>
+        4
+      </text>
+      <text x="695.156px" y="87.187px" className={styles.label}>
+        5
+      </text>
+      <text x="410.646px" y="103.666px" className={styles.label}>
+        2a
+      </text>
+      <text x="464.927px" y="103.666px" className={styles.label}>
+        2b
+      </text>
+      <text x="662.29px" y="103.666px" className={styles.label}>
+        5a
+      </text>
+      <text x="724.242px" y="103.668px" className={styles.label}>
+        5b
+      </text>
+      <text x="87.632px" y="36.454px" className={styles.labelMiddle}>
+        {info('forestEcoregion', 'J')[i18n.language]}
+      </text>
+      <text x="183.6px" y="37.234px" className={styles.labelMiddle}>
+        {info('forestEcoregion', 'M')[i18n.language]}
+      </text>
+      <text y="31.896px" className={styles.labelMiddle}>
+        <Trans i18nKey="forestTypeDiagram.forestEcoregion.1">
+          <tspan x="316.718px">Northern</tspan>
+          <tspan x="316.718px" dy="20">
+            Pre-Alps
+          </tspan>
+        </Trans>
+      </text>
+      <text y="19.677px" className={styles.labelMiddle}>
+        <Trans i18nKey="forestTypeDiagram.forestEcoregion.2">
+          <tspan x="422.032px">Northern</tspan>
+          <tspan x="422.032px" dy="20">
+            intermediate
+          </tspan>
+          <tspan x="422.032px" dy="20">
+            Alps
+          </tspan>
+        </Trans>
+      </text>
+      <text y="19.677px" className={styles.labelMiddle}>
+        <Trans i18nKey="forestTypeDiagram.forestEcoregion.3">
+          <tspan x="500.888px">Continental</tspan>
+          <tspan x="500.888px" dy="20">
+            Alps
+          </tspan>
+        </Trans>
+      </text>
+      <text y="19.677px" className={styles.labelMiddle}>
+        <Trans i18nKey="forestTypeDiagram.forestEcoregion.4">
+          <tspan x="590.586px">Southern</tspan>
+          <tspan x="590.586px" dy="20">
+            intermediate
+          </tspan>
+          <tspan x="590.586px" dy="20">
+            Alps
+          </tspan>
+        </Trans>
+      </text>
+      <text y="31.896px" className={styles.labelMiddle}>
+        <Trans i18nKey="forestTypeDiagram.forestEcoregion.5">
+          <tspan x="682.452px">Southern</tspan>
+          <tspan x="682.452px" dy="20">
+            Pre-Alps
+          </tspan>
+        </Trans>
+      </text>
+      <text x="12.09px" y="36.46px" className={styles.label}>
+        m
+      </text>
+      <text x="3.534px" y="56.635px" className={styles.label}>
+        {t('forestTypeDiagram.aboveSeaLevel')}
+      </text>
+      <text x="761.004px" y="87.187px" className={styles.label}>
+        Me
+      </text>
+      <text y="31.898px" className={styles.labelMiddle}>
+        <Trans i18nKey="forestTypeDiagram.forestEcoregion.Me">
+          <tspan x="740.277px">Mendris-</tspan>
+          <tspan x="740.277px" dy="20">
+            iotto
+          </tspan>
+        </Trans>
+      </text>
+      <text x="439.64px" y="315.366px" className={styles.label}>
+        C
+      </text>
+      <text x="604.949px" y="280.754px" className={styles.label}>
+        C
+      </text>
+      <text x="689.655px" y="279.801px" className={styles.label}>
+        CB
+      </text>
+      <text x="671.349px" y="324.379px" className={styles.label}>
+        HY
+      </text>
+      <text x="528.195px" y="120px" className={styles.label}>
+        OSA
+      </text>
+      <text x="533.877px" y="161.666px" className={styles.label}>
+        SA
+      </text>
+      <text x="379.511px" y="196.192px" className={styles.label}>
+        HM
+      </text>
+      <text x="529.977px" y="212.657px" className={styles.label}>
+        HM
+      </text>
+      <text x="700.951px" y="211.583px" className={styles.label}>
+        OM /
+      </text>
+      <text x="717.543px" y="231.757px" className={styles.label}>
+        UM
+      </text>
+      <text x="109.039px" y="182.118px" className={styles.label}>
+        HM
+      </text>
+      <text x="84.816px" y="218.03px" className={styles.label}>
+        OM
+      </text>
+      <text x="69.468px" y="267.634px" className={styles.label}>
+        UM
+      </text>
+      <text x="54.591px" y="301.951px" className={styles.label}>
+        SM
+      </text>
+      <text x="268.851px" y="218.03px" className={styles.label}>
+        OM
+      </text>
+      <text x="268.212px" y="268.899px" className={styles.label}>
+        UM
+      </text>
+      <text x="269.456px" y="303.217px" className={styles.label}>
+        SN
+      </text>
     </svg>
   );
 }

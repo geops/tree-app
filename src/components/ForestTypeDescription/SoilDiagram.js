@@ -8,7 +8,7 @@ import { getStyle } from './utils';
 function SoilDiagram({ soil, soilVariants }) {
   const { t } = useTranslation();
   return (
-    <svg viewBox="0 0 800 470">
+    <svg viewBox="0 0 800 470" className={styles.svg}>
       <rect
         className={getStyle(soil, '0.0')}
         x="229.253"

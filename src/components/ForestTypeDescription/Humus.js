@@ -8,7 +8,7 @@ import { getStyle } from './utils';
 function Humus({ humus, humusVariants }) {
   const { t } = useTranslation();
   return (
-    <svg viewBox="0 0 800 400">
+    <svg viewBox="0 0 800 400" className={styles.svg}>
       <rect
         className={getStyle(humus, '0.0')}
         x="515.996"
@@ -194,13 +194,13 @@ function Humus({ humus, humusVariants }) {
         d="M231 163h568M231 139h568M421 73v190M611 42v220M327 42v221M516 73v190"
       />
       <path className={styles.line} d="M705 73v189" />
-      <text x="235" y="67" className={styles.header}>
+      <text x="280" y="67" className={styles.labelMiddleBold}>
         {t('forestTypeDiagram.humus.mor')}
       </text>
-      <text x="444" y="67" className={styles.header}>
+      <text x="470" y="67" className={styles.labelMiddleBold}>
         {t('forestTypeDiagram.humus.moder')}
       </text>
-      <text x="688" y="67" className={styles.header}>
+      <text x="700" y="67" className={styles.labelMiddleBold}>
         {t('forestTypeDiagram.humus.mull')}
       </text>
       <text y="90" className={styles.labelMiddle}>
@@ -230,52 +230,52 @@ function Humus({ humus, humusVariants }) {
           </tspan>
         </Trans>
       </text>
-      <text x="636" y="107">
+      <text x="660" y="107" className={styles.labelMiddle}>
         {t('forestTypeDiagram.humus.fmull')}
       </text>
-      <text x="730" y="107">
+      <text x="750" y="107" className={styles.labelMiddle}>
         {t('forestTypeDiagram.humus.lmull')}
       </text>
       <path className={styles.line} d="M0 162h190M0 238h190" />
-      <text x="1" y="129">
+      <text x="1" y="129" className={styles.label}>
         {t('forestTypeDiagram.humus.dry')}
       </text>
-      <text x="1" y="151">
+      <text x="1" y="151" className={styles.label}>
         {t('forestTypeDiagram.humus.xero')}
       </text>
-      <text x="1" y="261">
+      <text x="1" y="261" className={styles.label}>
         {t('forestTypeDiagram.humus.wet')}
       </text>
-      <text x="1" y="283">
+      <text x="1" y="283" className={styles.label}>
         {t('forestTypeDiagram.humus.hydro')}
       </text>
-      <text x="644" y="354">
+      <text x="644" y="354" className={styles.label}>
         {t('forestTypeDiagram.humus.tangel')}
       </text>
-      <text x="644" y="391">
+      <text x="644" y="391" className={styles.label}>
         {t('forestTypeDiagram.humus.eroded')}
       </text>
       <path
         className={styles.line}
         d="M604 334h29v29h-29zM604 370h29v29h-29z"
       />
-      <text x="2" y="352">
+      <text x="2" y="352" className={styles.header}>
         {t('forestTypeDiagram.humus.variants')}
       </text>
-      <text x="458" y="354">
+      <text x="458" y="354" className={styles.label}>
         {t('forestTypeDiagram.humus.limeMull')}
       </text>
-      <text x="458" y="391">
+      <text x="458" y="391" className={styles.label}>
         {t('forestTypeDiagram.humus.limeModer')}
       </text>
       <path
         className={styles.line}
         d="M418 334h29v29h-29zM418 369h29v29h-29z"
       />
-      <text x="273" y="354">
+      <text x="273" y="354" className={styles.label}>
         {t('forestTypeDiagram.humus.halfBog')}
       </text>
-      <text x="273" y="391">
+      <text x="273" y="391" className={styles.label}>
         {t('forestTypeDiagram.humus.turf')}
       </text>
       <path

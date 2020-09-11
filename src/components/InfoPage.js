@@ -4,6 +4,7 @@ import { Accordion } from 'semantic-ui-react';
 
 import InfoAbout from './InfoAbout';
 import InfoBugs from './InfoBugs';
+import InfoContact from './InfoContact';
 import InfoGlossary from './InfoGlossary';
 import InfoLocation from './InfoLocation';
 import InfoParticipants from './InfoParticipants';
@@ -71,6 +72,11 @@ function InfoPage() {
       key: 'info.disclaimer',
       title: { content: t('info.disclaimerTitle') },
       content: { content: t('info.disclaimer') },
+    },
+    {
+      key: 'info.contact',
+      title: { content: t('info.contactTitle') },
+      content: { content: <InfoContact /> },
     },
   ];
   return (

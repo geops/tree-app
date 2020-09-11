@@ -8,160 +8,149 @@ import { getStyle } from './utils';
 function Graininess({ graininess, rawMaterial }) {
   const { t } = useTranslation();
   return (
-    <svg viewBox="0 0 800 450">
+    <svg viewBox="0 0 400 400" className={styles.svg}>
       <rect
-        x="1.39"
-        y="322.726"
-        width="26.669"
-        height="26.669"
-        className={`${styles.often} ${styles.line}`}
-      />
-      <rect
-        x="1.39"
-        y="357.453"
-        width="26.669"
-        height="26.669"
-        className={`${styles.medium} ${styles.line}`}
-      />
-      <rect
-        x="1.39"
-        y="391.719"
-        width="26.669"
-        height="26.669"
-        className={`${styles.rare} ${styles.line}`}
-      />
-      <text x="-1" y="274" className={styles.header}>
-        {t('forestTypeDiagram.legend.label')}
-      </text>
-      <text x="1" y="309">
-        {t('forestTypeDiagram.legend.distribution')}
-      </text>
-      <text x="43" y="342">
-        {t('forestTypeDiagram.legend.often')}
-      </text>
-      <text x="43" y="376">
-        {t('forestTypeDiagram.legend.medium')}
-      </text>
-      <text x="43" y="410">
-        {t('forestTypeDiagram.legend.rare')}
-      </text>
-      <rect
-        x="454.164"
-        y="229.317"
-        width="15.464"
-        height="165.083"
         className={getStyle(graininess, '2')}
+        x="58.282"
+        y="203.993"
+        width="13.917"
+        height="148.564"
       />
       <rect
         className={getStyle(graininess, '7')}
-        x="486.186"
-        y="229.317"
-        width="33.117"
-        height="165.083"
+        x="87.101"
+        y="203.993"
+        width="29.803"
+        height="148.564"
       />
       <rect
         className={getStyle(graininess, '8')}
-        x="552.42"
-        y="229.317"
-        width="33.117"
-        height="165.083"
+        x="146.707"
+        y="203.993"
+        width="29.803"
+        height="148.564"
       />
       <path
         className={getStyle(graininess, '3')}
-        d="M618.653,229.669l-0,165.229l164.376,-0.5l-164.376,-164.729Z"
+        d="M206.313,204.31l-0,148.696l147.928,-0.45l-147.928,-148.246Z"
       />
       <path
         className={getStyle(graininess, '6')}
-        d="M486.186,96.918l0,132.397l66.233,-0l0,-66.022l-66.233,-66.375Z"
+        d="M87.101,84.842l-0,119.149l59.606,0l-0,-59.415l-59.606,-59.734Z"
       />
       <path
         className={getStyle(graininess, '4')}
-        d="M486.186,229.315l0,-132.397l-32.023,-32.092l0,164.489l32.023,-0Z"
+        d="M87.101,203.991l-0,-119.149l-28.819,-28.88l0,148.029l28.819,0Z"
       />
       <path
         className={getStyle(graininess, '9')}
-        d="M552.419,163.293l65.881,66.022l-65.881,-0l0,-66.022Z"
+        d="M146.707,144.576l59.288,59.415l-59.288,0l-0,-59.415Z"
       />
       <rect
         className={getStyle(graininess, '0')}
-        x="469.628"
-        y="229.317"
-        width="16.558"
-        height="165.083"
+        x="72.199"
+        y="203.993"
+        width="14.902"
+        height="148.564"
       />
       <rect
         className={getStyle(graininess, '1')}
-        x="519.303"
-        y="229.317"
-        width="33.117"
-        height="165.083"
+        x="116.904"
+        y="203.993"
+        width="29.803"
+        height="148.564"
       />
       <rect
         className={getStyle(graininess, '5')}
-        x="585.536"
-        y="229.317"
-        width="33.117"
-        height="165.083"
+        x="176.51"
+        y="203.993"
+        width="29.803"
+        height="148.564"
       />
-      <text x="581" y="440">
+      <text x="172.752px" y="393.468px" className={styles.label}>
         {t('forestTypeDiagram.graininess.clay')} [%]
       </text>
-      <text x="406" y="297" transform="rotate(-90 406 297)">
+      <text
+        x="16.938px"
+        y="264.892px"
+        className={styles.label}
+        transform="matrix(-3.82857e-16,-1,1,-3.82857e-16,-247.954,281.83)"
+      >
         {t('forestTypeDiagram.graininess.silt')} [%]
       </text>
-      <text x="391" y="27" className={styles.header}>
+      <text x="3.378px" y="22.147px" className={styles.header}>
         {t('forestTypeDiagram.graininess.label')}
       </text>
       <path
-        fill="none"
-        stroke="#231f20"
-        d="M454 64v330h329L453 64M449 229h170M486 395V97M470 395V229M519 395V229M552 395V163M586 395V229M619 395V229M449 64h5"
+        d="M58.282,55.295l0,297.261l295.959,-0l-296.625,-297.261"
+        className={styles.line}
       />
-      <text x="424" y="229">
+      <path d="M53.547,203.991l152.766,0" className={styles.thinLine} />
+      <path d="M87.101,353.006l-0,-268.17" className={styles.thinLine} />
+      <path d="M72.199,353.006l0,-149.016" className={styles.thinLine} />
+      <path d="M116.904,353.006l-0,-149.016" className={styles.thinLine} />
+      <path d="M146.707,353.006l-0,-208.483" className={styles.thinLine} />
+      <path d="M176.509,353.006l0,-149.016" className={styles.thinLine} />
+      <path d="M206.313,353.006l-0,-149.016" className={styles.thinLine} />
+      <path d="M53.547,55.415l4.994,-0" className={styles.thinLine} />
+      <text x="31.189px" y="204.017px" className={styles.label}>
         50
       </text>
-      <text x="413" y="67">
+      <text x="21.446px" y="57.502px" className={styles.label}>
         100
       </text>
-      <text x="464" y="416">
+      <text x="66.89px" y="372.076px" className={styles.label}>
         5
       </text>
-      <text x="542" y="416">
+      <text x="136.964px" y="372.076px" className={styles.label}>
         30
       </text>
-      <text x="607" y="416">
+      <text x="196.132px" y="372.076px" className={styles.label}>
         50
       </text>
-      <text x="768" y="415">
+      <text x="330.814px" y="371.445px" className={styles.label}>
         100
       </text>
       <rect
-        x="0.629"
-        y="56.98"
-        width="33.491"
-        height="33.101"
+        x="202.004"
+        y="39.658"
+        width="30.14"
+        height="29.789"
         className={getStyle(rawMaterial, '1')}
       />
       <rect
-        x="0.629"
-        y="104.104"
-        width="33.491"
-        height="33.491"
+        x="202.004"
+        y="82.067"
+        width="30.14"
+        height="30.14"
         className={getStyle(rawMaterial, '0')}
       />
-      <text y="27" className={styles.header}>
+      <text x="176.845px" y="22.14px" className={styles.header}>
         {t('forestTypeDiagram.rawMaterial.label')}
       </text>
-      <text x="47" y="82">
+      <text x="243.757px" y="62.494px" className={styles.label}>
         {t('forestTypeDiagram.rawMaterial.acid')}
       </text>
-      <text x="47" y="126">
+      <text x="243.757px" y="101.629px" className={styles.label}>
         {t('forestTypeDiagram.rawMaterial.alkaline')}
       </text>
-      <text x="47" y="169">
+      <text x="243.757px" y="140.764px" className={styles.label}>
         {t('forestTypeDiagram.rawMaterial.unkown')}
       </text>
-      <path className={styles.line} d="M0 57h34v34H0zM0 104h34v34H0z" />
+      <rect
+        x="201.692"
+        y="39.532"
+        width="30.183"
+        height="30.183"
+        className={styles.line}
+      />
+      <rect
+        x="201.692"
+        y="82.271"
+        width="30.183"
+        height="30.183"
+        className={styles.line}
+      />
     </svg>
   );
 }
