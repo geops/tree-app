@@ -10,6 +10,7 @@ const participants = {
   conception:
     'Monika Frehner, Urs Rutishauser, Cornel Broder, Elke Ehrhardt, Uli Müller, Thomas Bettler, Christian Küchli, Andreas Zischg, Peter Brang',
   projectManagement: 'Peter Brang',
+  projectSupervision: 'Pierre Alfter',
   projectControl: 'Marco Ferretti, Christoph Dürr, Ueli Meier',
   wslUsers:
     'Daniel Müller, Noémie Schaffter, Samuel Scheibler, Sabine Augustin, Christoph Dürr, Stéphane Losey, Claudio de Sassi, Pascal Junod, Lukas Glanzmann, Hans-Ulrich Frey, Stefan Biermann, Thomas Studer, Grégory Guichard',
@@ -32,6 +33,7 @@ function InfoParticipants() {
         </a>
       </p>
       <p>{{ projectManagement: participants.projectManagement }}</p>
+      <p>{{ projectSupervision: participants.projectSupervision }}</p>
       <p>{{ projectControl: participants.projectControl }}</p>
       <p>funding</p>
       <p>{{ wslUsers: participants.wslUsers }}</p>

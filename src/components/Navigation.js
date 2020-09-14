@@ -11,7 +11,6 @@ import InfoPage from './InfoPage';
 import LocationPage from './LocationPage';
 import Map from './Map';
 import ProjectionPage from './ProjectionPage';
-import Ribbon from './Ribbon';
 import useIsMobile from '../hooks/useIsMobile';
 
 import styles from './Navigation.module.css';
@@ -79,7 +78,6 @@ function Navigation() {
           {!isMobile && t('app.info')}
         </Menu.Item>
       </Menu>
-      <Ribbon label={t('app.ribbon')} />
     </div>
   );
 }

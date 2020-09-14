@@ -746,55 +746,72 @@ function AltitudinalZoneForestEcoregion({ data }) {
       <text x="724.242px" y="103.668px" className={styles.label}>
         5b
       </text>
-      <text x="87.632px" y="36.454px" className={styles.labelMiddle}>
+      <text x="103px" y="36.454px" className={styles.labelMiddle}>
         {info('forestEcoregion', 'J')[i18n.language]}
       </text>
-      <text x="183.6px" y="37.234px" className={styles.labelMiddle}>
+      <text x="222px" y="37.234px" className={styles.labelMiddle}>
         {info('forestEcoregion', 'M')[i18n.language]}
       </text>
-      <text y="31.896px" className={styles.labelMiddle}>
+      <text y="19.677px" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.forestEcoregion.1">
-          <tspan x="316.718px">Northern</tspan>
-          <tspan x="316.718px" dy="20">
-            Pre-Alps
+          <tspan x="335px">Northern</tspan>
+          <tspan x="335px" dy="20">
+            Pre-
+          </tspan>
+          <tspan x="335px" dy="20">
+            Alps
           </tspan>
         </Trans>
       </text>
       <text y="19.677px" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.forestEcoregion.2">
-          <tspan x="422.032px">Northern</tspan>
-          <tspan x="422.032px" dy="20">
+          <tspan x="440px">Northern</tspan>
+          <tspan x="440px" dy="20">
             intermediate
           </tspan>
-          <tspan x="422.032px" dy="20">
+          <tspan x="440px" dy="20">
             Alps
           </tspan>
         </Trans>
       </text>
       <text y="19.677px" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.forestEcoregion.3">
-          <tspan x="500.888px">Continental</tspan>
-          <tspan x="500.888px" dy="20">
+          <tspan x="530px">Continental</tspan>
+          <tspan x="530px" dy="20">
+            high
+          </tspan>
+          <tspan x="530px" dy="20">
             Alps
           </tspan>
         </Trans>
       </text>
       <text y="19.677px" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.forestEcoregion.4">
-          <tspan x="590.586px">Southern</tspan>
-          <tspan x="590.586px" dy="20">
+          <tspan x="610px">Southern</tspan>
+          <tspan x="610px" dy="20">
             intermediate
           </tspan>
-          <tspan x="590.586px" dy="20">
+          <tspan x="610px" dy="20">
             Alps
           </tspan>
         </Trans>
       </text>
-      <text y="31.896px" className={styles.labelMiddle}>
+      <text y="19.677px" className={styles.labelMiddle}>
         <Trans i18nKey="forestTypeDiagram.forestEcoregion.5">
-          <tspan x="682.452px">Southern</tspan>
-          <tspan x="682.452px" dy="20">
-            Pre-Alps
+          <tspan x="695px">Southern</tspan>
+          <tspan x="695px" dy="20">
+            Pre-
+          </tspan>
+          <tspan x="695px" dy="20">
+            Alps
+          </tspan>
+        </Trans>
+      </text>
+      <text y="31.898px" className={styles.labelMiddle}>
+        <Trans i18nKey="forestTypeDiagram.forestEcoregion.Me">
+          <tspan x="768px">Mendris-</tspan>
+          <tspan x="768px" dy="20">
+            iotto
           </tspan>
         </Trans>
       </text>
@@ -806,14 +823,6 @@ function AltitudinalZoneForestEcoregion({ data }) {
       </text>
       <text x="761.004px" y="87.187px" className={styles.label}>
         Me
-      </text>
-      <text y="31.898px" className={styles.labelMiddle}>
-        <Trans i18nKey="forestTypeDiagram.forestEcoregion.Me">
-          <tspan x="740.277px">Mendris-</tspan>
-          <tspan x="740.277px" dy="20">
-            iotto
-          </tspan>
-        </Trans>
       </text>
       <text x="439.64px" y="315.366px" className={styles.label}>
         C
@@ -864,7 +873,7 @@ function AltitudinalZoneForestEcoregion({ data }) {
         UM
       </text>
       <text x="269.456px" y="303.217px" className={styles.label}>
-        SN
+        SM
       </text>
     </svg>
   );
