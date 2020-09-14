@@ -48,11 +48,11 @@
       "W": "W"
     },
     "forestEcoregion": {
-      "1": "<0>Nördl.</0><1>Randalpen</1>",
+      "1": "<0>Nördl.</0><1>Rand-</1><2>alpen</2>",
       "2": "<0>Nördl.</0><1>Zwischen-</1><2>alpen</2>",
-      "3": "<0>Kontinent.</0><1>Hochalpen</1>",
+      "3": "<0>Kontinent.</0><1>Hoch-</1><2>alpen</2>",
       "4": "<0>Südl.</0><1>Zwischen-</1><2>alpen</2>",
-      "5": "<0>Südl.</0><1>Randalpen</1>",
+      "5": "<0>Südl.</0><1>Rand-</1><2>alpen</2>",
       "Me": "<0>Mendris-</0><1>iotto</1>"
     },
     "graininess": {

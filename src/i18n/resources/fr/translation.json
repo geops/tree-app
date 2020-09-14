@@ -48,11 +48,11 @@
       "W": "O"
     },
     "forestEcoregion": {
-      "1": "<0>Alpes externes</0><1>du Nord</1>",
+      "1": "<0>Alpes</0><1>externes</1><2>du Nord</2>",
       "2": "<0>Alpes</0><1>intermédiaires</1><2>du Nord</2>",
-      "3": "<0>Hautes Alpes</0><1>continentales",
+      "3": "<0>Hautes</0><1>Alpes</1><2>continentales</2>",
       "4": "<0>Alpes</0><1>intermédiaires</1><2>du Sud</2>",
-      "5": "<0>Alpes externes</0><1>du Sud</1>"
+      "5": "<0>Alpes</0><1>externes</1><2>du Sud</1>"
     },
     "graininess": {
       "label": "Texture",
