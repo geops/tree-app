@@ -17,7 +17,11 @@ function ForestTypeModal({ compact, data, setIsForestTypeModalOpen }) {
           <ForestTypeDescription data={data} />
         </Modal.Content>
       }
-      header={`${data.code} - ${data[i18n.language]} (${data.la})`}
+      header={
+        <Modal.Header>
+          {data.code} - {data[i18n.language]} (<i>{data.la}</i>)
+        </Modal.Header>
+      }
       onClose={() => setIsForestTypeModalOpen(false)}
       onOpen={() => setIsForestTypeModalOpen(true)}
       trigger={<Button active compact={compact} icon="info" />}

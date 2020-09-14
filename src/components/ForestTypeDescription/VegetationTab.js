@@ -5,15 +5,24 @@ import { Table } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info, list, vegetation } from 'lib/src';
 
+const concat = (prev, cur) => [prev, ', ', cur];
+
 function VegetationTab({ data }) {
   const { i18n, t } = useTranslation();
   const location = { forestType: data.code };
-  const treeList = list(location);
-  const vegInfo = vegetation(location);
+  const [t1, t2, t3] = list(location);
+  const vegetationInfo = vegetation(location);
+  const [b1, b2] = vegetationInfo.bush;
+  const [h1, h2] = vegetationInfo.herb;
+  const [m1, m2] = vegetationInfo.moss;
 
   const getInfo = (type) => (typeCode) => {
     const typeInfo = info(type, typeCode);
-    return `${typeInfo[i18n.language]} (${typeInfo.la})`;
+    return (
+      <>
+        {typeInfo[i18n.language]} (<i>{typeInfo.la}</i>)
+      </>
+    );
   };
 
   return (
@@ -50,19 +59,19 @@ function VegetationTab({ data }) {
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesOne')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {treeList[0].map(getInfo('treeType')).join(', ') || '-'}
+            {t1.map(getInfo('treeType')).reduce(concat) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesTwo')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {treeList[1].map(getInfo('treeType')).join(', ') || '-'}
+            {t2.map(getInfo('treeType')).reduce(concat) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesThree')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {treeList[2].map(getInfo('treeType')).join(', ') || '-'}
+            {t3.map(getInfo('treeType')).reduce(concat) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -70,7 +79,7 @@ function VegetationTab({ data }) {
             {t('forestType.bush')} {t('forestType.often')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {vegInfo.bush[0].map(getInfo('bushType')).join(', ') || '-'}
+            {b1.length ? b1.map(getInfo('bushType')).reduce(concat) : '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -78,7 +87,7 @@ function VegetationTab({ data }) {
             {t('forestType.bush')} {t('forestType.rare')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {vegInfo.bush[1].map(getInfo('bushType')).join(', ') || '-'}
+            {b2.length ? b2.map(getInfo('bushType')).reduce(concat) : '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -86,7 +95,7 @@ function VegetationTab({ data }) {
             {t('forestType.herb')} {t('forestType.often')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {vegInfo.herb[0].map(getInfo('herbType')).join(', ') || '-'}
+            {h1.length ? h1.map(getInfo('herbType')).reduce(concat) : '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -94,7 +103,7 @@ function VegetationTab({ data }) {
             {t('forestType.herb')} {t('forestType.rare')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {vegInfo.herb[1].map(getInfo('herbType')).join(', ') || '-'}
+            {h2.length ? h2.map(getInfo('herbType')).reduce(concat) : '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -102,7 +111,7 @@ function VegetationTab({ data }) {
             {t('forestType.moss')} {t('forestType.often')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {vegInfo.moss[0].map(getInfo('mossType')).join(', ') || '-'}
+            {m1.length ? m1.map(getInfo('mossType')).reduce(concat) : '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -110,7 +119,7 @@ function VegetationTab({ data }) {
             {t('forestType.moss')} {t('forestType.rare')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {vegInfo.moss[1].map(getInfo('mossType')).join(', ') || '-'}
+            {m2.length ? m2.map(getInfo('mossType')).reduce(concat) : '-'}
           </Table.Cell>
         </Table.Row>
       </Table.Body>
