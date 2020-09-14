@@ -26,7 +26,7 @@ function VegetationTab({ data }) {
   };
 
   return (
-    <Table basic padded structured unstackable>
+    <Table basic padded structured>
       <Table.Body>
         <Table.Row>
           <Table.HeaderCell>{t('forestType.naturalForest')}</Table.HeaderCell>

@@ -6,8 +6,10 @@ import { Table } from 'semantic-ui-react';
 import AltitudinalZone from './AltitudinalZoneForestEcoregion';
 import Legend from './Legend';
 import Site from './Site';
+import useIsMobile from '../../hooks/useIsMobile';
 
 function TerrainTab({ data }) {
+  const isMobile = useIsMobile();
   const { t } = useTranslation();
 
   return (
@@ -15,7 +17,7 @@ function TerrainTab({ data }) {
       <Legend />
       <AltitudinalZone data={data.altitudinalZoneForestEcoregion} />
       <Site altitude={data.altitude} aspect={data.aspect} slope={data.slope} />
-      <Table basic padded structured unstackable>
+      <Table basic padded={isMobile === false} structured unstackable>
         <Table.Body>
           <Table.Row>
             <Table.HeaderCell rowSpan="2">

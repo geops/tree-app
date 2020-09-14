@@ -22,7 +22,7 @@ const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
   key,
   content: includeKey ? (
     <>
-      <ForestTypeModal compact data={info(type, key)} />
+      <ForestTypeModal data={info(type, key)} />
       {key} - {info(type, key)[lng]}
     </>
   ) : (
