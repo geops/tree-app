@@ -32,7 +32,7 @@ function ForestTypeDescription({ data }) {
 }
 
 ForestTypeDescription.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.shape().isRequired,
 };
 
 export default ForestTypeDescription;

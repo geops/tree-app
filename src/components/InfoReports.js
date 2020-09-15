@@ -16,7 +16,7 @@ function InfoReports() {
         Forschungsanstalt WSL, Birmensdorf.
         <br />
         <a
-          href="https://www.research-collection.ethz.ch/handle/20.500.11850/156262/eth-50707-01.pdf"
+          href="https://www.research-collection.ethz.ch/handle/20.500.11850/156262"
           target="reports"
         >
           Link
@@ -59,7 +59,7 @@ function InfoReports() {
         <br /> Chur, Abenis AG. 194 S
         <br />
         <a
-          href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108/AdaptierteOekogramme_EndberichtTeil1_inkl_Anhang_20190430_inkl_LesehilfeV2.pdf"
+          href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108"
           target="reports"
         >
           Link
@@ -77,7 +77,7 @@ function InfoReports() {
         Sargans, Forstingenieurbüro Frehner und Rabius, Gadola AG. 24 S
         <br />
         <a
-          href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108/AdaptierteOekogramme_EndberichtTeil5_20190430.pdf"
+          href="https://www.research-collection.ethz.ch/handle/20.500.11850/341108"
           target="reports"
         >
           Link
