@@ -452,7 +452,7 @@ SET altitudinal_zone_forest_ecoregion = ARRAY[ ARRAY[HS_01b_01C_J::int,
                                                                                                                                                                                                                      null,
                                                                                                                                                                                                                      null]]
 FROM nat_lage
-LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_lage.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -495,7 +495,7 @@ SET skeletal_fraction_soil_depth = ARRAY[ ARRAY[gs_01::int,
        gs_36::int] --Gündigkeit äusserst tief
  ]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -532,7 +532,7 @@ SET soil_wetness_groundwater = ARRAY[ ARRAY[wvg_01::int,
                                                                                                                                                 wvg_35::int,
                                                                                                                                                 wvg_36::int] ]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -574,7 +574,7 @@ SET soil_wetness_tailwater = ARRAY[ ARRAY[wvs_01::int,
                                                                                                                                                                   wvs_41::int,
                                                                                                                                                                   wvs_42::int] ]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -596,7 +596,7 @@ SET aspect = ARRAY[ E_001_025_n_nne::int,
                     E_351_375_nw_nnww::int,
                     E_376_400_nnw_n::int ]
 FROM nat_lage
-LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_lage.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -608,7 +608,7 @@ SET slope = ARRAY[ HN_000_010::int,
                    HN_075_100::int,
                    HN_100::int ]
 FROM nat_lage
-LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_lage.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -738,7 +738,7 @@ SET altitude = ARRAY[ ARRAY[HL_N_0250::int,
                                                                            HL_S_2250::int,
                                                                            HL_S_2300::int] ]
 FROM nat_lage
-LEFT JOIN nat_naistyp ON regexp_replace(nat_lage.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_lage.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -754,7 +754,7 @@ SET graininess = ARRAY[KO_IS::int,
                        KO_tL::int,
                        KO_tU::int ]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -773,7 +773,7 @@ SET humus = ARRAY[ ARRAY[HUF_mo_mull_hydro::int,
                                                                                                                                                                       HUF_rh_norm::int,
                                                                                                                                                                       HUF_rh_xero::int] ]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -785,7 +785,7 @@ SET humus_variants = ARRAY[HUF_V_Anmoor::int,
                            HUF_V_Torf::int,
                            HUF_V_erod::int]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -793,7 +793,7 @@ UPDATE foresttype_meta
 SET raw_material = ARRAY[AM_B::int,
                          AM_S::int ]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -820,7 +820,7 @@ SET soil = ARRAY[ ARRAY[BE_GestRohB::int,
                                                                                                                                                                                                                                                                                 BE_Grundw_nassgebl::int,
                                                                                                                                                                                                                                                                                 null] ]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
@@ -831,7 +831,7 @@ SET soil_variants = ARRAY[BE_V_Auenb::int,
                           BE_V_OrgB::int,
                           BE_V_neutrBraune::int]
 FROM nat_boden
-LEFT JOIN nat_naistyp ON regexp_replace(nat_boden.naistyp_sort, ',', '.') = nat_naistyp.naistyp_sort
+LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
 
