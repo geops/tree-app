@@ -65,7 +65,7 @@ function getPane(scenario, projection, language, t) {
     }
   );
 }
-const checkFields = ['slope', 'additional', 'silverFirArea', 'relief'];
+const checkFields = ['slope', 'additional', 'relief'];
 
 function ProjectionResult() {
   const { location, projectionMode, projectionResult } = useSelector(
