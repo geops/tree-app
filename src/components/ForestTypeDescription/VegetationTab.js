@@ -36,17 +36,23 @@ function VegetationTab({ data }) {
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('forestType.treeLayerHeight')}</Table.HeaderCell>
-          <Table.Cell>
-            {data.height[2]}m - {data.height[3]}m
-          </Table.Cell>
-          <Table.Cell>
-            <strong>{t('forestType.coniferTreeHeightMax')}</strong>{' '}
-            {data.height[0]}m
-          </Table.Cell>
-          <Table.Cell>
-            <strong>{t('forestType.deciduousTreeHeightMax')}</strong>{' '}
-            {data.height[1]}m
-          </Table.Cell>
+          {data.height ? (
+            <>
+              <Table.Cell>
+                {data.height[2]}m - {data.height[3]}m
+              </Table.Cell>
+              <Table.Cell>
+                <strong>{t('forestType.coniferTreeHeightMax')}</strong>{' '}
+                {data.height[0]}m
+              </Table.Cell>
+              <Table.Cell>
+                <strong>{t('forestType.deciduousTreeHeightMax')}</strong>{' '}
+                {data.height[1]}m
+              </Table.Cell>{' '}
+            </>
+          ) : (
+            <Table.Cell colSpan="3">-</Table.Cell>
+          )}
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('forestType.location')}</Table.HeaderCell>
