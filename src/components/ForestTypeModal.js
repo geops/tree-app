@@ -36,7 +36,10 @@ function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
 }
 
 ForestTypeModal.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.shape({
+    code: PropTypes.string,
+    la: PropTypes.string,
+  }).isRequired,
   setIsForestTypeModalOpen: PropTypes.func,
 };
 

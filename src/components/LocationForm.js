@@ -158,14 +158,14 @@ function LocationForm() {
               onChange={(e, { checked: carbonateFine }) =>
                 dispatch(setFormLocation({ carbonateFine }))
               }
-              checked={formLocation.carbonateFine || ''}
+              checked={formLocation.carbonateFine || false}
             />
             <Checkbox
               label={t('forestType.carbonate.rock')}
               onChange={(e, { checked: carbonateRock }) =>
                 dispatch(setFormLocation({ carbonateRock }))
               }
-              checked={formLocation.carbonateRock || ''}
+              checked={formLocation.carbonateRock || false}
             />
           </>
         ),
@@ -190,28 +190,28 @@ function LocationForm() {
                 onChange={(e, { checked: geomorphologyRockBand }) =>
                   dispatch(setFormLocation({ geomorphologyRockBand }))
                 }
-                checked={formLocation.geomorphologyRockBand || ''}
+                checked={formLocation.geomorphologyRockBand || false}
               />
               <Checkbox
                 label={t('forestType.geomorphology.blockyRockyStrong')}
                 onChange={(e, { checked: geomorphologyBlockyRockyStrong }) =>
                   dispatch(setFormLocation({ geomorphologyBlockyRockyStrong }))
                 }
-                checked={formLocation.geomorphologyBlockyRockyStrong || ''}
+                checked={formLocation.geomorphologyBlockyRockyStrong || false}
               />
               <Checkbox
                 label={t('forestType.geomorphology.blockyRockyLittle')}
                 onChange={(e, { checked: geomorphologyBlockyRockyLittle }) =>
                   dispatch(setFormLocation({ geomorphologyBlockyRockyLittle }))
                 }
-                checked={formLocation.geomorphologyBlockyRockyLittle || ''}
+                checked={formLocation.geomorphologyBlockyRockyLittle || false}
               />
               <Checkbox
                 label={t('forestType.geomorphology.limestonePavement')}
                 onChange={(e, { checked: geomorphologyLimestonePavement }) =>
                   dispatch(setFormLocation({ geomorphologyLimestonePavement }))
                 }
-                checked={formLocation.geomorphologyLimestonePavement || ''}
+                checked={formLocation.geomorphologyLimestonePavement || false}
               />
               <Checkbox
                 label={t('forestType.geomorphology.rocksModeratelyMoved')}
@@ -220,21 +220,23 @@ function LocationForm() {
                     setFormLocation({ geomorphologyRocksModeratelyMoved }),
                   )
                 }
-                checked={formLocation.geomorphologyRocksModeratelyMoved || ''}
+                checked={
+                  formLocation.geomorphologyRocksModeratelyMoved || false
+                }
               />
               <Checkbox
                 label={t('forestType.geomorphology.rocksStronglyMoved')}
                 onChange={(e, { checked: geomorphologyRocksStronglyMoved }) =>
                   dispatch(setFormLocation({ geomorphologyRocksStronglyMoved }))
                 }
-                checked={formLocation.geomorphologyRocksStronglyMoved || ''}
+                checked={formLocation.geomorphologyRocksStronglyMoved || false}
               />
               <Checkbox
                 label={t('forestType.geomorphology.rocksStabilised')}
                 onChange={(e, { checked: geomorphologyRocksStabilised }) =>
                   dispatch(setFormLocation({ geomorphologyRocksStabilised }))
                 }
-                checked={formLocation.geomorphologyRocksStabilised || ''}
+                checked={formLocation.geomorphologyRocksStabilised || false}
               />
             </Segment>
             <Segment>
@@ -244,35 +246,35 @@ function LocationForm() {
                 onChange={(e, { checked: reliefTypeCentralSlope }) =>
                   dispatch(setFormLocation({ reliefTypeCentralSlope }))
                 }
-                checked={formLocation.reliefTypeCentralSlope || ''}
+                checked={formLocation.reliefTypeCentralSlope || false}
               />
               <Checkbox
                 label={t('forestType.reliefType.hollow')}
                 onChange={(e, { checked: reliefTypeHollow }) =>
                   dispatch(setFormLocation({ reliefTypeHollow }))
                 }
-                checked={formLocation.reliefTypeHollow || ''}
+                checked={formLocation.reliefTypeHollow || false}
               />
               <Checkbox
                 label={t('forestType.reliefType.dome')}
                 onChange={(e, { checked: reliefTypeDome }) =>
                   dispatch(setFormLocation({ reliefTypeDome }))
                 }
-                checked={formLocation.reliefTypeDome || ''}
+                checked={formLocation.reliefTypeDome || false}
               />
               <Checkbox
                 label={t('forestType.reliefType.plateau')}
                 onChange={(e, { checked: reliefTypePlateau }) =>
                   dispatch(setFormLocation({ reliefTypePlateau }))
                 }
-                checked={formLocation.reliefTypePlateau || ''}
+                checked={formLocation.reliefTypePlateau || false}
               />
               <Checkbox
                 label={t('forestType.reliefType.steep')}
                 onChange={(e, { checked: reliefTypeSteep }) =>
                   dispatch(setFormLocation({ reliefTypeSteep }))
                 }
-                checked={formLocation.reliefTypeSteep || ''}
+                checked={formLocation.reliefTypeSteep || false}
               />
             </Segment>
           </>

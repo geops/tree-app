@@ -68,7 +68,7 @@ function LocationResult() {
             <Dropdown.Menu>
               {otherForestTypeGroups
                 .map((group) => (
-                  <>
+                  <React.Fragment key={group}>
                     <Dropdown.Header content={t(`forestType.group.${group}`)} />
                     {forestTypes[group].map((key) => {
                       const ftInfo = info('forestType', key);
@@ -80,6 +80,7 @@ function LocationResult() {
                               {key} - {ftInfo[i18n.language]}
                             </>
                           }
+                          key={key}
                           value={key}
                           onClick={(e, { value: forestType }) =>
                             selectForestType(forestType)
@@ -87,7 +88,7 @@ function LocationResult() {
                         />
                       );
                     })}
-                  </>
+                  </React.Fragment>
                 ))
                 .reduce((ttft, ft) => ttft.concat(ft), [])}
             </Dropdown.Menu>
