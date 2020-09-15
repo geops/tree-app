@@ -335,11 +335,11 @@ sort,
        typ.ntyp_wass_quell::int AS water_spring,
        typ.ntyp_wechself::int AS water_change,
        regexp_replace(typ.naistyp_stao, '\r|\n', '', 'g') AS location_de,
-       NULL AS location_fr,
+       regexp_replace(typ.naistyp_stao_fr, '\r|\n', '', 'g') AS location_fr,
        regexp_replace(typ.naistyp_nwld, '\r|\n', '', 'g') AS natural_forest_de,
-       NULL AS natural_forest_fr,
+       regexp_replace(typ.naistyp_nwld_fr, '\r|\n', '', 'g') AS natural_forest_fr,
        regexp_replace(typ.naistyp_vasp, '\r|\n', '', 'g') AS vegetation_de,
-       NULL AS vegetation_fr
+       regexp_replace(typ.naistyp_vasp_fr, '\r|\n', '', 'g') AS vegetation_fr
 FROM nat_naistyp_mstr mstr
 LEFT JOIN nat_naistyp typ USING (naistyp_c)
 WHERE naistyp_s20 = 'Y'
