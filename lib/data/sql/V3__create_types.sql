@@ -301,7 +301,7 @@ CREATE TABLE foresttype_meta (code TEXT PRIMARY KEY,
 
 INSERT INTO foresttype_meta (code, de, fr, la, tree_layer_height_min, tree_layer_height_max, conifer_tree_height_max, deciduous_tree_height_max,
                              sort, carbonate_fine, carbonate_rock, geomorphology_rock_band, geomorphology_blocky_rocky_strong, geomorphology_blocky_rocky_little, geomorphology_limestone_pavement, geomorphology_rocks_moderately_moved, geomorphology_rocks_strongly_moved, geomorphology_rocks_stabilised, relief_type_central_slope, relief_type_hollow, relief_type_dome, relief_type_plateau, relief_type_steep, process_rockfall, process_avalanche, process_landslide, process_erosion, water_stream, water_small, water_spring, water_change, location_de, location_fr, natural_forest_de, natural_forest_fr, vegetation_de, vegetation_fr)
-SELECT trim(naistyp_c) AS code,
+SELECT trim(mstr.naistyp_c) AS code,
        COALESCE(trim(naistyp_name_deu), trim(naistyp_namk_deu), trim(naistyp_wges)) AS de,
        COALESCE(trim(naistyp_name_frz), trim(naistyp_namk_frz)) AS fr,
        naistyp_name_lat AS la,
@@ -341,7 +341,7 @@ sort,
        regexp_replace(typ.naistyp_vasp, '\r|\n', '', 'g') AS vegetation_de,
        regexp_replace(typ.naistyp_vasp_fr, '\r|\n', '', 'g') AS vegetation_fr
 FROM nat_naistyp_mstr mstr
-LEFT JOIN nat_naistyp typ USING (naistyp_c)
+LEFT JOIN nat_naistyp typ ON trim(mstr.naistyp_c) = trim(typ.naistyp_c)
 WHERE naistyp_s20 = 'Y'
 UNION
 SELECT trim(BOTH
