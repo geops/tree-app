@@ -1,34 +1,35 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import NoData from './NoData';
 import styles from './Diagram.module.css';
 import { getStyle } from './utils';
 
 function Grid({ data, header, headerX, headerY, labelX, labelY }) {
   return (
     <svg viewBox="0 0 400 400" className={styles.svg}>
-      <text x="10" y="15" className={styles.header}>
+      <text x="10" y="13" className={styles.labelBold}>
         {header}
       </text>
-      <text x="10" y="45" className={styles.header}>
+      <text x="10" y="45" className={styles.labelBold}>
         {headerX}
       </text>
-      <text x="23" y="114" transform="rotate(-45 23 114)">
+      <text x="23" y="118" transform="rotate(-45 23 114)">
         {labelX[0]}
       </text>
-      <text x="68" y="114" transform="rotate(-45 67 114)">
+      <text x="68" y="118" transform="rotate(-45 67 114)">
         {labelX[1]}
       </text>
-      <text x="116" y="115" transform="rotate(-45 116 115)">
+      <text x="116" y="118" transform="rotate(-45 116 115)">
         {labelX[2]}
       </text>
-      <text x="161" y="115" transform="rotate(-45 161 115)">
+      <text x="161" y="118" transform="rotate(-45 161 115)">
         {labelX[3]}
       </text>
-      <text x="208" y="112" transform="rotate(-45 208 112)">
+      <text x="208" y="118" transform="rotate(-45 208 112)">
         {labelX[4]}
       </text>
-      <text x="255" y="114" transform="rotate(-45 255 114)">
+      <text x="255" y="118" transform="rotate(-45 255 114)">
         {labelX[5]}
       </text>
       <path d="M1 121h46v46H1z" className={getStyle(data, '0.0')} />
@@ -67,7 +68,7 @@ function Grid({ data, header, headerX, headerY, labelX, labelY }) {
       <path d="M140 354h47v46h-47z" className={getStyle(data, '5.3')} />
       <path d="M187 354h47v46h-47z" className={getStyle(data, '5.4')} />
       <path d="M233 354h47v46h-46z" className={getStyle(data, '5.5')} />
-      <text x="278" y="116" className={styles.header}>
+      <text x="278" y="116" className={styles.labelBold}>
         {headerY}
       </text>
       <text x="289" y="148">
@@ -93,6 +94,7 @@ function Grid({ data, header, headerX, headerY, labelX, labelY }) {
         className={styles.line}
         d="M47 121v280M93 121v280M140 121v280M187 121v280M233 121v279M1 354h279M1 307h279M1 260h279M1 213h279M1 167h279"
       />
+      {!data && <NoData height={400} width={400} />}
     </svg>
   );
 }

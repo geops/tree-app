@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import NoData from './NoData';
 import styles from './Diagram.module.css';
 import { getStyle } from './utils';
 
@@ -311,7 +312,6 @@ function Site({ altitude, aspect, slope }) {
         d="M69.7 347.7h26.5v5.4H69.7z"
         className={getStyle(altitude, '0.0')}
       />
-
       <path
         d="M96.2 120.3h26.5v5.6H96.2z"
         className={getStyle(altitude, '1.41')}
@@ -480,7 +480,6 @@ function Site({ altitude, aspect, slope }) {
         d="M96.2 347.7h26.5v5.4H96.2z"
         className={getStyle(altitude, '1.0')}
       />
-
       <path
         d="M122.7 120.3H149v5.6h-26.3z"
         className={getStyle(altitude, '2.41')}
@@ -697,6 +696,7 @@ function Site({ altitude, aspect, slope }) {
         200
       </text>
       <path className={styles.line} d="M63 120h6M63 353h6" />
+      {!altitude && !aspect && !slope && <NoData height={400} width={400} />}
     </svg>
   );
 }

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import NoData from './NoData';
 import styles from './Diagram.module.css';
 import { getStyle } from './utils';
 
@@ -307,6 +308,7 @@ function SoilDiagram({ soil, soilVariants }) {
         className={styles.line}
         d="M229 299h570M317 141v258M656 46v353M458 46v353M586 141v257M800 422v24M317 398h339M656 422h144M656 446h144M458 422v24M586 422v24M656 422v24M317 422h270M317 446h270"
       />
+      {!soil && !soilVariants && <NoData height={470} width={800} />}
     </svg>
   );
 }

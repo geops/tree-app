@@ -11,6 +11,11 @@ import useIsMobile from '../../hooks/useIsMobile';
 function TerrainTab({ data }) {
   const isMobile = useIsMobile();
   const { t } = useTranslation();
+  const [c0, c1] = data.carbonate;
+  const [r0, r1, r2, r3, r4] = data.reliefType;
+  const [p0, p1, p2, p3] = data.process;
+  const [g0, g1, g2, g3, g4, g5, g6] = data.geomorphology;
+  const [w0, w1, w2, w3] = data.water;
 
   return (
     <>
@@ -27,7 +32,7 @@ function TerrainTab({ data }) {
               {t('forestType.carbonate.fine')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.carbonate[0]}`)}
+              {c0 !== null ? t(`forestType.frequency.${c0}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -35,7 +40,7 @@ function TerrainTab({ data }) {
               {t('forestType.carbonate.rock')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.carbonate[1]}`)}
+              {c1 !== null ? t(`forestType.frequency.${c1}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -46,7 +51,7 @@ function TerrainTab({ data }) {
               {t('forestType.reliefType.centralSlope')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.reliefType[0]}`)}
+              {r0 !== null ? t(`forestType.frequency.${r0}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -54,7 +59,7 @@ function TerrainTab({ data }) {
               {t('forestType.reliefType.hollow')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.reliefType[1]}`)}
+              {r1 !== null ? t(`forestType.frequency.${r1}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -62,7 +67,7 @@ function TerrainTab({ data }) {
               {t('forestType.reliefType.dome')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.reliefType[2]}`)}
+              {r2 !== null ? t(`forestType.frequency.${r2}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -70,7 +75,7 @@ function TerrainTab({ data }) {
               {t('forestType.reliefType.plateau')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.reliefType[3]}`)}
+              {r3 !== null ? t(`forestType.frequency.${r3}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -78,7 +83,7 @@ function TerrainTab({ data }) {
               {t('forestType.reliefType.steep')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.reliefType[4]}`)}
+              {r4 !== null ? t(`forestType.frequency.${r4}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -89,7 +94,7 @@ function TerrainTab({ data }) {
               {t('forestType.process.rockfall')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.process[0]}`)}
+              {p0 !== null ? t(`forestType.frequency.${p0}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -97,7 +102,7 @@ function TerrainTab({ data }) {
               {t('forestType.process.avalanche')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.process[1]}`)}
+              {p1 !== null ? t(`forestType.frequency.${p1}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -105,7 +110,7 @@ function TerrainTab({ data }) {
               {t('forestType.process.landslide')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.process[2]}`)}
+              {p2 !== null ? t(`forestType.frequency.${p2}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -113,7 +118,7 @@ function TerrainTab({ data }) {
               {t('forestType.process.erosion')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.process[3]}`)}
+              {p3 !== null ? t(`forestType.frequency.${p3}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -124,7 +129,7 @@ function TerrainTab({ data }) {
               {t('forestType.geomorphology.blockyRockyStrong')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.geomorphology[1]}`)}
+              {g1 !== null ? t(`forestType.frequency.${g1}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -132,7 +137,7 @@ function TerrainTab({ data }) {
               {t('forestType.geomorphology.blockyRockyLittle')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.geomorphology[2]}`)}
+              {g2 !== null ? t(`forestType.frequency.${g2}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -140,7 +145,7 @@ function TerrainTab({ data }) {
               {t('forestType.geomorphology.rocksStronglyMoved')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.geomorphology[5]}`)}
+              {g5 !== null ? t(`forestType.frequency.${g5}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -148,7 +153,7 @@ function TerrainTab({ data }) {
               {t('forestType.geomorphology.rocksModeratelyMoved')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.geomorphology[4]}`)}
+              {g4 !== null ? t(`forestType.frequency.${g4}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -156,7 +161,7 @@ function TerrainTab({ data }) {
               {t('forestType.geomorphology.rocksStabilised')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.geomorphology[6]}`)}
+              {g6 !== null ? t(`forestType.frequency.${g6}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -164,7 +169,7 @@ function TerrainTab({ data }) {
               {t('forestType.geomorphology.limestonePavement')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.geomorphology[3]}`)}
+              {g3 !== null ? t(`forestType.frequency.${g3}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -172,7 +177,7 @@ function TerrainTab({ data }) {
               {t('forestType.geomorphology.rockBand')}
             </Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.geomorphology[0]}`)}
+              {g0 !== null ? t(`forestType.frequency.${g0}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -181,26 +186,26 @@ function TerrainTab({ data }) {
             </Table.HeaderCell>
             <Table.HeaderCell>{t('forestType.water.stream')}</Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.water[0]}`)}
+              {w0 !== null ? t(`forestType.frequency.${w0}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.HeaderCell>{t('forestType.water.small')}</Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.water[1]}`)}
+              {w1 !== null ? t(`forestType.frequency.${w1}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.HeaderCell>{t('forestType.water.spring')}</Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.water[2]}`)}
+              {w2 !== null ? t(`forestType.frequency.${w2}`) : '-'}
             </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.HeaderCell />
             <Table.HeaderCell>{t('forestType.water.change')}</Table.HeaderCell>
             <Table.Cell colSpan="2">
-              {t(`forestType.frequency.${data.water[3]}`)}
+              {w3 !== null ? t(`forestType.frequency.${w3}`) : '-'}
             </Table.Cell>
           </Table.Row>
         </Table.Body>

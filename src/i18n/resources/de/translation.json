@@ -90,6 +90,7 @@
       "rare": "selten"
     },
     "meter": "m",
+    "noData": "Keine Daten vorhanden",
     "rawMaterial": {
       "label": "Ausgangsmaterial",
       "acid": "sauer",

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 
+import NoData from './NoData';
 import styles from './Diagram.module.css';
 import { getStyle } from './utils';
 
@@ -282,6 +283,7 @@ function Humus({ humus, humusVariants }) {
         className={styles.line}
         d="M234 334h29v29h-29zM234 370h29v29h-29z"
       />
+      {!humus && !humusVariants && <NoData height={400} width={800} />}
     </svg>
   );
 }
