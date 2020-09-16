@@ -16,4 +16,9 @@ i18n
     resources,
   });
 
+// Catch missing language for old versions
+if (!i18n.language) {
+  i18n.changeLanguage('de');
+}
+
 export default i18n;
