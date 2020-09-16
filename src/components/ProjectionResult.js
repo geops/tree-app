@@ -48,7 +48,7 @@ function getPane(scenario, projection, language, t) {
   return (
     forestType && {
       menuItem: (
-        <Menu.Item key={altitudinalZone} className={styles.arrow}>
+        <Menu.Item className={styles.arrow}>
           <div className={styles.icons}>{icons}</div>
           <div data-cypress="projectionResultMenuItem">
             {transitionForestType
