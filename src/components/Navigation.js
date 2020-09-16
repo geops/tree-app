@@ -7,6 +7,7 @@ import { ReactComponent as MapIcon } from '../icons/map.svg';
 import { ReactComponent as LocationIcon } from '../icons/location.svg';
 import { ReactComponent as TreeIcon } from '../icons/tree.svg';
 
+import ForestTypePage from './ForestTypePage';
 import InfoPage from './InfoPage';
 import LocationPage from './LocationPage';
 import Map from './Map';
@@ -30,6 +31,9 @@ function Navigation() {
       </div>
       <div className={`${styles.page} ${is('') && 'frontpage'}`}>
         <Switch>
+          <Route path="/forest">
+            <ForestTypePage />
+          </Route>
           <Route path="/info">
             <InfoPage />
           </Route>
