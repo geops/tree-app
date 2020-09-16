@@ -19,7 +19,8 @@ function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
       }
       header={
         <Modal.Header>
-          {data.code} - {data[i18n.language]} (<i>{data.la}</i>)
+          {data.code} - {data[i18n.language]}{' '}
+          {data.la ? <i>{data.la}</i> : null}
         </Modal.Header>
       }
       onClose={(e) => {
