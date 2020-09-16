@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import NoData from './NoData';
 import styles from './Diagram.module.css';
 import { getStyle } from './utils';
 
@@ -93,6 +94,7 @@ function Grid({ data, header, headerX, headerY, labelX, labelY }) {
         className={styles.line}
         d="M47 121v280M93 121v280M140 121v280M187 121v280M233 121v279M1 354h279M1 307h279M1 260h279M1 213h279M1 167h279"
       />
+      {!data && <NoData height={400} width={400} />}
     </svg>
   );
 }

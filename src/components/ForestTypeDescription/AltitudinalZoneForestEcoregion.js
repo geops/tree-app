@@ -4,6 +4,7 @@ import { Trans, useTranslation } from 'react-i18next';
 // eslint-disable-next-line import/no-unresolved
 import { info } from 'lib/src';
 
+import NoData from './NoData';
 import styles from './Diagram.module.css';
 import { getStyle } from './utils';
 
@@ -875,6 +876,7 @@ function AltitudinalZoneForestEcoregion({ data }) {
       <text x="269.456px" y="303.217px" className={styles.label}>
         SM
       </text>
+      {!data && <NoData height={400} width={800} />}
     </svg>
   );
 }

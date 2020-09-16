@@ -90,6 +90,7 @@
       "rare": "rare"
     },
     "meter": "m",
+    "noData": "Aucune donnée disponible",
     "rawMaterial": {
       "label": "Matérieu parental",
       "acid": "acide",
