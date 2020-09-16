@@ -32,6 +32,11 @@
   font-size: 16px;
 }
 
+.labelBold {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .labelMiddle {
   font-size: 16px;
   text-anchor: middle;
