@@ -19,7 +19,7 @@
     "husky": "4.3.0",
     "jest": "26.4.2",
     "lint-staged": "10.3.0",
-    "netlify-cli": "2.63.2",
+    "netlify-cli": "2.63.3",
     "neutrino": "9.4.0",
     "prettier": "2.1.2",
     "semantic-release": "17.1.1",
