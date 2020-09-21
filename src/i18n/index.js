@@ -12,12 +12,10 @@ i18n
     interpolation: {
       escapeValue: false, // not needed for React as it escapes by default
     },
-    language: 'de',
     resources,
   });
 
-// Catch missing language for old versions
-if (!i18n.language) {
+if (['de', 'fr'].includes(i18n.language) === false) {
   i18n.changeLanguage('de');
 }
 

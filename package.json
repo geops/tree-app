@@ -2,7 +2,7 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": true,
   "dependencies": {
     "history": "4.10.1",
@@ -48,11 +48,11 @@
     "eslint-plugin-react": "7.20.6",
     "eslint-plugin-react-hooks": "4.1.2",
     "husky": "4.3.0",
-    "lint-staged": "10.3.0",
+    "lint-staged": "10.4.0",
     "lodash.set": "4.3.2",
     "prettier": "2.1.2",
     "react-test-renderer": "16.13.1",
-    "start-server-and-test": "1.11.3"
+    "start-server-and-test": "1.11.4"
   },
   "browserslist": {
     "production": [
