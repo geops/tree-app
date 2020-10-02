@@ -82,9 +82,11 @@ function LocationResult() {
                           }
                           key={key}
                           value={key}
-                          onClick={(e, { value: forestType }) =>
-                            selectForestType(forestType)
-                          }
+                          onClick={(e, { value: forestType }) => {
+                            if (e.target.getAttribute('role') === 'option') {
+                              selectForestType(forestType);
+                            }
+                          }}
                         />
                       );
                     })}

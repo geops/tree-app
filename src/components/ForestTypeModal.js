@@ -23,14 +23,8 @@ function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
           {data.la ? <i>{data.la}</i> : null}
         </Modal.Header>
       }
-      onClose={(e) => {
-        e.stopPropagation();
-        setIsForestTypeModalOpen(false);
-      }}
-      onOpen={(e) => {
-        e.stopPropagation();
-        setIsForestTypeModalOpen(true);
-      }}
+      onClose={(e) => setIsForestTypeModalOpen(false)}
+      onOpen={(e) => setIsForestTypeModalOpen(true)}
       trigger={<Button active icon="info" />}
     />
   );
