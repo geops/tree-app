@@ -133,10 +133,10 @@
       "skeletalFraction": "Profondeur et pierrosité",
       "veryShallow": "très superficiel",
       "shallow": "superficiel",
-      "medium": "moyennement profond",
+      "medium": "moyenn. profond",
       "deep": "profond",
       "veryDeep": "très profond",
-      "extremelyDeep": "extrèmement profond"
+      "extremelyDeep": "extrèm. profond"
     },
     "soilWetness": {
       "label": "Hydromorphie",
@@ -390,7 +390,7 @@
     "transition": "Transition vers l’étage de végétation futur"
   },
   "welcome": {
-    "close": "Vers le prototype",
+    "close": "Vers la Tree App",
     "header": "Le climat change"
   }
 }
