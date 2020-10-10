@@ -7,6 +7,7 @@ import {
   SET_FORM_LOCATION,
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
+  setFormLocation,
   setLocation,
   setLocationResult,
   setProjectionResult,
@@ -70,6 +71,15 @@ const projection = (store) => (next) => (action) => {
         } = mapLocation;
         projectionResult.moderate = runProject(location, targetAZModerate);
         projectionResult.extreme = runProject(location, targetAZExtreme);
+
+        const { options } = projectionResult.extreme;
+        if (
+          location.forestType &&
+          options.forestType &&
+          options.forestType.includes(location.forestType) === false
+        ) {
+          store.dispatch(setFormLocation({ forestType: null }));
+        }
       } else {
         const { targetAltitudinalZone: targetAZForm } = formLocation;
         projectionResult.form = runProject(location, targetAZForm);
