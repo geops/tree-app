@@ -38,7 +38,7 @@ describe('Projection in form mode', () => {
     selectField('ForestEcoregion', '.item:first-child');
     selectField('AltitudinalZone', '.item:last-child');
     selectField('ForestType', '.item:first-child');
-    selectField('TargetAltitudinalZone', '.item:first-child', true);
+    selectField('TargetAltitudinalZone', '.item:nth-child(2)', true);
     cy.get('[data-cypress=recommendationPane]')
       .scrollIntoView()
       .should('be.visible');
@@ -53,7 +53,7 @@ describe('Projection in form mode', () => {
     });
     selectField('TransitionForestType', '.item:first-child', true);
     selectField('TransitionAltitudinalZone', '.item:last-child', true);
-    selectField('TargetAltitudinalZone', '.item:first-child', true);
+    selectField('TargetAltitudinalZone', '.item:nth-child(2)', true);
     cy.get('[data-cypress=projectionResultMenuItem]').contains(/\w+\s\(\w+\)/);
   });
 });
