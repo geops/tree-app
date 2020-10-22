@@ -23,8 +23,8 @@
     "neutrino": "9.4.0",
     "prettier": "2.1.2",
     "semantic-release": "17.2.1",
-    "webpack": "4",
-    "webpack-cli": "3"
+    "webpack": "4.44.2",
+    "webpack-cli": "3.3.12"
   },
   "scripts": {
     "data:nais:ecogram": "node data/nais/ecogram.js && prettier --write data/*.json",
