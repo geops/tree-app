@@ -24,7 +24,7 @@
     "netlify-cli": "2.65.7",
     "neutrino": "9.4.0",
     "prettier": "2.1.2",
-    "semantic-release": "17.2.1",
+    "semantic-release": "17.2.2",
     "webpack": "4.44.2",
     "webpack-cli": "3.3.12"
   },
