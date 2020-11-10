@@ -21,10 +21,22 @@ const getKey = (sl) =>
     }
   ).metadata.mapping;
 
-const featuresToLocation = (location, f) => ({
-  ...location,
-  [getKey(f.sourceLayer) || f.sourceLayer]: f.properties.code.toString(),
-});
+const featuresToLocation = (location, f) => {
+  const key = getKey(f.sourceLayer) || f.sourceLayer;
+  const value = f.properties.code.toString();
+
+  if (f.sourceLayer === 'forest_types') {
+    const transition = value.includes('(') && value.endsWith(')');
+    let forestType = value;
+    let transitionForestType = null;
+    if (transition) {
+      [, forestType, transitionForestType] = value.match(/(.*)\((.*)\)/);
+    }
+    return { ...location, forestType, transitionForestType, transition };
+  }
+
+  return { ...location, [key]: value };
+};
 
 const to2056 = (coordinate) => transform(coordinate, 'EPSG:3857', EPSG2056);
 const to3857 = (coordinate) => transform(coordinate, EPSG2056, 'EPSG:3857');
