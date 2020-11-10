@@ -22,19 +22,18 @@ const getLayerStyle = (layerId) =>
 const getStyle = (sourceLayer) => {
   return {
     ...mapStyle,
-    layers: mapStyle.layers.map((layer) => ({
-      ...layer,
-      paint:
-        layer.type === 'fill'
-          ? {
-              ...layer.paint,
-              'fill-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
-            }
-          : {
-              ...layer.paint,
-              'line-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
-            },
-    })),
+    layers: mapStyle.layers.map((layer) => {
+      const isSourceLayer = layer['source-layer'] === sourceLayer;
+      const paint = { ...layer.paint };
+      if (layer.type === 'fill') {
+        paint['fill-opacity'] = isSourceLayer ? 0.5 : 0.0;
+      } else if (layer.type === 'line') {
+        paint['line-opacity'] = isSourceLayer ? 0.5 : 0.0;
+      } else if (layer.type === 'symbol') {
+        paint['text-opacity'] = isSourceLayer ? 1 : 0.0;
+      }
+      return { ...layer, paint };
+    }),
   };
 };
 const getLayersByGroup = (group) =>
@@ -68,6 +67,7 @@ function MapVectorLayer() {
     const { type } = layerStyle.metadata;
     return (
       type &&
+      Array.isArray(layerStyle.paint['fill-color']) &&
       layerStyle.paint['fill-color']
         .map((fc) => {
           const row = { color: fc };
