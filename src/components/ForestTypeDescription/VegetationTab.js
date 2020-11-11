@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { info, list, vegetation } from 'lib/src';
+import { info, list, vegetation } from '@geops/tree-lib';
 
 const concat = (prev, cur) => [prev, ', ', cur];
 

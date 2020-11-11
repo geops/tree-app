@@ -8,7 +8,7 @@
   ],
   "main": "build/index.js",
   "devDependencies": {
-    "@geops/mapbox-gl-fonts": "3.0.0",
+    "@geops/mapbox-gl-fonts": "3.0.1",
     "@neutrinojs/airbnb-base": "9.4.0",
     "@neutrinojs/jest": "9.4.0",
     "@neutrinojs/library": "9.4.0",
@@ -21,7 +21,7 @@
     "husky": "4.3.0",
     "jest": "26.6.3",
     "lint-staged": "10.5.1",
-    "netlify-cli": "2.68.0",
+    "netlify-cli": "2.68.4",
     "neutrino": "9.4.0",
     "prettier": "2.1.2",
     "semantic-release": "17.2.3",
