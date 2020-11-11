@@ -6,4 +6,6 @@ const forestTypeStyles = [styles.rare, styles.often, styles.medium];
 
 export const getStyle = (data, path) => forestTypeStyles[get(data, path, 0)];
 
-export default null;
+const utils = null;
+
+export default utils;

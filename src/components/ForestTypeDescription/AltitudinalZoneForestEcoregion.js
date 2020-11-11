@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 // eslint-disable-next-line import/no-unresolved
-import { info } from 'lib/src';
+import { info } from '@geops/tree-lib';
 
 import NoData from './NoData';
 import styles from './Diagram.module.css';

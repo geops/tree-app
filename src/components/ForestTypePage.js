@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Form } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { info } from 'lib/src';
+import { info } from '@geops/tree-lib';
 
 import Dropdown from './Dropdown';
 import ForestTypeModal from './ForestTypeModal';

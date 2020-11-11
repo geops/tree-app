@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 // eslint-disable-next-line import/no-unresolved
-import { info } from 'lib/src';
+import { info } from '@geops/tree-lib';
 
 function TreeTypeList({ className, codes }) {
   const { i18n } = useTranslation();

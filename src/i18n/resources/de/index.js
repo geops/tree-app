@@ -1,3 +1,5 @@
 import translation from './translation.json';
 
-export default { translation };
+const de = { translation };
+
+export default de;

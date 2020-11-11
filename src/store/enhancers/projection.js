@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { applyMiddleware } from 'redux';
 // eslint-disable-next-line import/no-unresolved
-import { locate, project } from 'lib/src';
+import { locate, project } from '@geops/tree-lib';
 
 import {
   SET_FORM_LOCATION,
@@ -93,4 +93,6 @@ const projection = (store) => (next) => (action) => {
   return result;
 };
 
-export default applyMiddleware(projection);
+const middlewareProjection = applyMiddleware(projection);
+
+export default middlewareProjection;

@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import App from './App';
 import Button from './components/Button';
 import i18n from './i18n';
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 import 'react-toastify/dist/ReactToastify.css';
 import 'semantic-ui-css/semantic.min.css';
@@ -15,7 +15,7 @@ toast.configure();
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.register({
+serviceWorkerRegistration.register({
   onUpdate: (registration) =>
     toast(
       <Button
