@@ -40,7 +40,7 @@ function Recommendation({ sameAltitudinalZone }) {
     }
 
     try {
-      if (projections && projections.length === 0) {
+      if ((projections && projections.length === 0) || sameAltitudinalZone) {
         result = recommend(location, [location], future);
       } else {
         result = recommend(location, projections, future);
