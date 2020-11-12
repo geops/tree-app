@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - run: yarn build
+        working-directory: ./lib
+
       - name: Run and record Cypress tests
         run: yarn run cypress:ci
         env:
