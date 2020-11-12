@@ -34,7 +34,7 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
       className={styles.popup}
       context={target}
       flowing
-      position="top center"
+      positionFixed
       open={forestTypes.length > 0}
     >
       <div ref={container}>
