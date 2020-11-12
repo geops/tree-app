@@ -1,4 +1,6 @@
 import de from './de';
 import fr from './fr';
 
-export default { de, fr };
+const resources = { de, fr };
+
+export default resources;
