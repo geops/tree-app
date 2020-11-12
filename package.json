@@ -125,6 +125,7 @@
     "cypress:open": "cypress open",
     "cypress:ci": "start-server-and-test start http://localhost:3000 'cypress run --record'",
     "start": "react-scripts start",
+    "prebuild": "cd lib && yarn build",
     "build": "react-scripts build",
     "lint": "eslint src",
     "format": "prettier --write 'src/**/*.js'",
