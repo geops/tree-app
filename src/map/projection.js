@@ -10,4 +10,6 @@ proj4.defs(
 register(proj4);
 export const EPSG2056 = get('EPSG:2056');
 
-export default {};
+const projection = {};
+
+export default projection;
