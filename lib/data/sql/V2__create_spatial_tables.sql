@@ -153,8 +153,28 @@ ALTER TABLE "forest_types_tg" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','forest_types_tg','geom','2056','MULTIPOLYGON',2);
 
 
+CREATE TABLE "forest_types_lu" (gid serial, "waldgesell" int8, "wagneu_imp" varchar(254),
+                                                                            "wagneu_i_1" varchar(254),
+                                                                                         "wagneu_i_2" varchar(254),
+                                                                                                      "wagneu_i_3" varchar(254));
+
+
+ALTER TABLE "forest_types_lu" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','forest_types_lu','geom','2056','MULTIPOLYGON',2);
+
+
 CREATE VIEW forest_types_export AS
 SELECT nais as code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_tg
-WHERE nais IS NOT NULL;
+WHERE nais IS NOT NULL
+UNION
+SELECT CASE wagneu_i_3 is null
+           WHEN TRUE THEN wagneu_i_2
+           ELSE wagneu_i_2 || '(' || wagneu_i_3 || ')'
+       END AS code,
+       ST_Transform(geom, 3857) as geometry
+FROM forest_types_lu
+WHERE wagneu_i_2 IS NOT NULL;
