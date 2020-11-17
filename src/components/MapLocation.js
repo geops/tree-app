@@ -5,14 +5,16 @@ import OLFeature from 'ol/Feature';
 import VectorSource from 'ol/source/Vector';
 import React, { useContext, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 
+import useIsMobile from '../hooks/useIsMobile';
 import { EPSG2056 } from '../map/projection';
 import { layers } from '../map/style.json';
 import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
 import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
-import { setFormLocation, setMapLocation } from '../store/actions';
+import { setMapLocation } from '../store/actions';
 
 const getKey = (sl) =>
   (
@@ -55,16 +57,11 @@ const vectorSource = new VectorSource({
   features: [iconFeature],
 });
 
-const initialFormLocation = {
-  forestEcoregion: null,
-  altitudinalZone: null,
-  silverFirArea: null,
-  targetAltitudinalZone: null,
-};
-
 function MapLocation() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
+  const history = useHistory();
+  const isMobile = useIsMobile();
   const mapLocation = useSelector((state) => state.mapLocation);
 
   useEffect(() => {
@@ -74,10 +71,17 @@ function MapLocation() {
       const features = map.getFeaturesAtPixel(pixel) || [];
       const location = features
         .filter((feature) => feature.properties && feature.properties.code)
-        .reduce(featuresToLocation, {});
-      dispatch(setMapLocation({ ...location, coordinate: to2056(coordinate) }));
-      if (resetFormLocation) {
-        dispatch(setFormLocation(initialFormLocation));
+        .reduce(featuresToLocation, {
+          forestType: null,
+          forestEcoregion: null,
+          altitudinalZone: null,
+          silverFirArea: null,
+          targetAltitudinalZone: null,
+        });
+      location.coordinate = to2056(coordinate);
+      dispatch(setMapLocation(location, resetFormLocation));
+      if (isMobile === false && location.forestType) {
+        history.push(`/projection${window.location.search}`);
       }
     };
     const waitForLoad = () => {

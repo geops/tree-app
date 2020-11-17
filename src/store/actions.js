@@ -29,8 +29,8 @@ export function setMapView(mapView) {
   return { type: SET_MAP_VIEW, mapView };
 }
 
-export function setMapLocation(mapLocation) {
-  return { type: SET_MAP_LOCATION, mapLocation };
+export function setMapLocation(mapLocation, resetFormLocation) {
+  return { type: SET_MAP_LOCATION, mapLocation, resetFormLocation };
 }
 
 export function setProjectionMode(projectionMode) {
