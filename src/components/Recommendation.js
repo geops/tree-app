@@ -50,7 +50,7 @@ function Recommendation({ sameAltitudinalZone }) {
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [location, projectionMode, projectionResult, future]);
+  }, [location, projectionMode, projectionResult, future, sameAltitudinalZone]);
 
   return (
     <Tab.Pane data-cypress="recommendationPane">

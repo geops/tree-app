@@ -30,6 +30,13 @@ export const initialState = {
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
 };
 
+const initialFormLocation = {
+  forestEcoregion: null,
+  altitudinalZone: null,
+  silverFirArea: null,
+  targetAltitudinalZone: null,
+};
+
 const getFormLocation = (state, action) => {
   const formLocation = { ...state.formLocation, ...action.formLocation };
   const formLocationFields = Object.keys(action.formLocation);
@@ -62,15 +69,29 @@ function tree(state = initialState, action) {
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
     case SET_MAP_LOCATION: {
+      const { resetFormLocation } = action;
+      const formLocation = resetFormLocation
+        ? getFormLocation(state, { formLocation: initialFormLocation })
+        : state.formLocation;
       const mapLocation = { ...state.mapLocation, ...action.mapLocation };
-      return { ...state, mapLocation, projectionMode: 'm' };
+      return { ...state, formLocation, mapLocation, projectionMode: 'm' };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };
     case SET_PROJECTION_MODE:
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {
-      return { ...state, projectionResult: action.projectionResult };
+      const { projectionResult } = action;
+      let { formLocation } = state;
+      const { options } = projectionResult.extreme;
+      if (
+        state.location.forestType &&
+        options.forestType &&
+        options.forestType.includes(state.location.forestType) === false
+      ) {
+        formLocation = { ...state.formLocation, forestType: null };
+      }
+      return { ...state, formLocation, projectionResult };
     }
     case SET_TARGET_ALTITUDINAL_ZONE: {
       return { ...state, targetAltitudinalZone: action.targetAltitudinalZone };
