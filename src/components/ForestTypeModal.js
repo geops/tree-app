@@ -25,7 +25,7 @@ function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
       }
       onClose={(e) => setIsForestTypeModalOpen(false)}
       onOpen={(e) => setIsForestTypeModalOpen(true)}
-      trigger={<Button active icon="info" />}
+      trigger={<Button active compact icon="info" />}
     />
   );
 }
