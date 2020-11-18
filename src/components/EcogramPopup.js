@@ -8,8 +8,10 @@ import { info } from '@geops/tree-lib';
 import Button from './Button';
 import ForestTypeModal from './ForestTypeModal';
 import styles from './EcogramPopup.module.css';
+import useIsMobile from '../hooks/useIsMobile';
 
-function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
+function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
+  const isMobile = useIsMobile();
   const container = useRef();
   const [isForestTypeModalOpen, setIsForestTypeModalOpen] = useState(false);
   const { t, i18n } = useTranslation();
@@ -29,12 +31,19 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   });
 
+  let position = 'top center';
+  if (x < 200) {
+    position = 'top right';
+  } else if (x > 800) {
+    position = 'top left';
+  }
+
   return (
     <Popup
       className={styles.popup}
       context={target}
-      flowing
-      positionFixed
+      flowing={isMobile === false}
+      position={position}
       open={forestTypes.length > 0}
     >
       <div ref={container}>
@@ -47,14 +56,16 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType }) {
                   data={ftInfo}
                   setIsForestTypeModalOpen={setIsForestTypeModalOpen}
                 />
-                <Button active onClick={() => selectForestType(ftCode)}>
+                <Button active compact onClick={() => selectForestType(ftCode)}>
                   {ftCode} - {ftInfo[i18n.language]}
                 </Button>
               </List.Item>
             );
           })}
           <List.Item>
-            <Button onClick={() => onClose()}>{t('forestType.cancel')}</Button>
+            <Button compact onClick={() => onClose()}>
+              {t('forestType.cancel')}
+            </Button>
           </List.Item>
         </List>
       </div>
@@ -67,6 +78,7 @@ EcogramPopup.propTypes = {
   onClose: PropTypes.func.isRequired,
   target: PropTypes.node.isRequired,
   selectForestType: PropTypes.func.isRequired,
+  x: PropTypes.number.isRequired,
 };
 
 export default EcogramPopup;
