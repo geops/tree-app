@@ -71,13 +71,7 @@ function MapLocation() {
       const features = map.getFeaturesAtPixel(pixel) || [];
       const location = features
         .filter((feature) => feature.properties && feature.properties.code)
-        .reduce(featuresToLocation, {
-          forestType: null,
-          forestEcoregion: null,
-          altitudinalZone: null,
-          silverFirArea: null,
-          targetAltitudinalZone: null,
-        });
+        .reduce(featuresToLocation, {});
       location.coordinate = to2056(coordinate);
       dispatch(setMapLocation(location, resetFormLocation));
       if (isMobile === false && location.forestType) {
