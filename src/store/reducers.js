@@ -82,14 +82,14 @@ function tree(state = initialState, action) {
       return { ...state, projectionMode: action.projectionMode };
     case SET_PROJECTION_RESULT: {
       const { projectionResult } = action;
-      let { formLocation } = state;
+      const { formLocation } = state;
       const { options } = projectionResult.extreme;
       if (
         state.location.forestType &&
         options.forestType &&
         options.forestType.includes(state.location.forestType) === false
       ) {
-        formLocation = { ...state.formLocation, forestType: null };
+        delete formLocation.forestType;
       }
       return { ...state, formLocation, projectionResult };
     }
