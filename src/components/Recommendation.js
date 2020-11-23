@@ -13,6 +13,7 @@ import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 import styles from './Recommendation.module.css';
+import RecommendationDoc from './RecommendationDoc';
 
 function Recommendation({ sameAltitudinalZone }) {
   const { t } = useTranslation();
@@ -156,6 +157,7 @@ function Recommendation({ sameAltitudinalZone }) {
           {t('recommendation.sameAltitudinalZone')}
         </Message>
       )}
+      <RecommendationDoc result={r} />
     </Tab.Pane>
   );
 }

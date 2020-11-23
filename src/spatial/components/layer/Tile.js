@@ -20,7 +20,9 @@ Tile.propTypes = {
 
 Tile.defaultProps = {
   children: null,
-  source: new XYZSource(),
+  source: new XYZSource({
+    crossOrigin: 'anonymous',
+  }),
 };
 
 export default Tile;
