@@ -29,6 +29,7 @@ class MapboxLayer extends Layer {
       touchZoomRotate: false,
     });
     this.mapboxMap.on('load', () => this.dispatchEvent('loadend'));
+    window.mapboxMap = this.mapboxMap;
 
     this.map = map;
 
