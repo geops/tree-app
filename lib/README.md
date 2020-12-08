@@ -6,7 +6,7 @@ This library provides tree recommendations for different climate change scenario
 
 Data for tree type projections is provided as a [CSV file](./data/projections.csv) and needs to be converted into JSON to be usable by the library.
 
-1. Install NodeJS 10, Yarn and Docker Compose.
+1. Install NodeJS, Yarn and Docker Compose.
 2. Install dependencies: `yarn install`
 3. Make sure Docker can overwrite JSON files (ie. on Linux `chmod 777 data/*.json`)
 4. Run transformation: `yarn run data:transform`
@@ -22,7 +22,7 @@ Spatial data is downloaded from different sources and imported into the database
 1. Start database: `yarn run data:start`
 2. Export spatial data to GeoJSON files (might take a long time): `yarn run data:spatial:export`
 3. Transform GeoJSON files to single vector tileset: `yarn run data:spatial:tile`
-4. Generate font glyphs for Mapbox GL (currently only NodeJS 10): `yarn run data:spatial:fonts`
+4. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
 5. Deploy tiles to a webserver or to Netlify (currently maintained by geOps): `yarn run data:spatial:deploy`
 
 ## Bugs

@@ -1,13 +1,12 @@
 /* eslint-disable no-console */
 import { applyMiddleware } from 'redux';
 // eslint-disable-next-line import/no-unresolved
-import { locate, project } from 'lib/src';
+import { locate, project } from '@geops/tree-lib';
 
 import {
   SET_FORM_LOCATION,
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
-  setFormLocation,
   setLocation,
   setLocationResult,
   setProjectionResult,
@@ -71,15 +70,6 @@ const projection = (store) => (next) => (action) => {
         } = mapLocation;
         projectionResult.moderate = runProject(location, targetAZModerate);
         projectionResult.extreme = runProject(location, targetAZExtreme);
-
-        const { options } = projectionResult.extreme;
-        if (
-          location.forestType &&
-          options.forestType &&
-          options.forestType.includes(location.forestType) === false
-        ) {
-          store.dispatch(setFormLocation({ forestType: null }));
-        }
       } else {
         const { targetAltitudinalZone: targetAZForm } = formLocation;
         projectionResult.form = runProject(location, targetAZForm);
@@ -93,4 +83,6 @@ const projection = (store) => (next) => (action) => {
   return result;
 };
 
-export default applyMiddleware(projection);
+const middlewareProjection = applyMiddleware(projection);
+
+export default middlewareProjection;

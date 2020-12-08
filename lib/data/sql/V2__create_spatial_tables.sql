@@ -141,65 +141,40 @@ SELECT code_ta as code,
 FROM silver_fir_areas;
 
 ----------------------------------------------
--- nawalges_v1_py
+-- Forest types TG
 
-CREATE TABLE "nawalges_v1_py" (gid serial, "farbe" int4,
-                                           "g1" int4,
-                                           "g2" int4,
-                                           "g3" int4,
-                                           "g4" int4,
-                                           "g5" int4,
-                                           "typ" int4,
-                                           "nass" int4,
-                                           "code" int4,
-                                           "plottxt" varchar(50),
-                                                     "g1_txt" varchar(7),
-                                                              "g2_txt" varchar(7),
-                                                                       "g3_txt" varchar(7),
-                                                                                "g4_txt" varchar(7),
-                                                                                         "g5_txt" varchar(7),
-                                                                                                  "verdrisk" int4,
-                                                                                                  "mg_nat" int4,
-                                                                                                  "shape_area" numeric, "shape_len" numeric);
+CREATE TABLE "forest_types_tg" (gid serial, "fid" numeric, "tgneu" varchar(50),
+                                                                   "nais" varchar(50));
 
 
-ALTER TABLE "nawalges_v1_py" ADD PRIMARY KEY (gid);
+ALTER TABLE "forest_types_tg" ADD PRIMARY KEY (gid);
 
 
-SELECT AddGeometryColumn('','nawalges_v1_py','geom','2056','MULTIPOLYGON',2);
+SELECT AddGeometryColumn('','forest_types_tg','geom','2056','MULTIPOLYGON',2);
 
 
-CREATE TABLE "nawalges_v1_py_mod" (gid serial, "farbe" int4,
-                                               "g1" int4,
-                                               "g2" int4,
-                                               "g3" int4,
-                                               "g4" int4,
-                                               "g5" int4,
-                                               "typ" int4,
-                                               "nass" int4,
-                                               "code" int4,
-                                               "plottxt" varchar(50),
-                                                         "g1_txt" varchar(7),
-                                                                  "g2_txt" varchar(7),
-                                                                           "g3_txt" varchar(7),
-                                                                                    "g4_txt" varchar(7),
-                                                                                             "g5_txt" varchar(7),
-                                                                                                      "verdrisk" int4,
-                                                                                                      "mg_nat" int4,
-                                                                                                      "shape_area" numeric, "shape_len" numeric, "id" int4);
+CREATE TABLE "forest_types_lu" (gid serial, "waldgesell" int8, "wagneu_imp" varchar(254),
+                                                                            "wagneu_i_1" varchar(254),
+                                                                                         "wagneu_i_2" varchar(254),
+                                                                                                      "wagneu_i_3" varchar(254));
 
 
-ALTER TABLE "nawalges_v1_py_mod" ADD PRIMARY KEY (gid);
+ALTER TABLE "forest_types_lu" ADD PRIMARY KEY (gid);
 
 
-SELECT AddGeometryColumn('','nawalges_v1_py_mod','geom','2056','MULTIPOLYGON',2);
+SELECT AddGeometryColumn('','forest_types_lu','geom','2056','MULTIPOLYGON',2);
 
 
 CREATE VIEW forest_types_export AS
 SELECT nais as code,
        ST_Transform(geom, 3857) as geometry
-FROM nawalges_v1_py_mod
-LEFT JOIN mapping_luzern ON nawalges_v1_py_mod.g1_txt = mapping_luzern.luzern
+FROM forest_types_tg
 WHERE nais IS NOT NULL
-        AND nais !~ '\(';
-
+UNION
+SELECT CASE wagneu_i_3 is null
+           WHEN TRUE THEN wagneu_i_2
+           ELSE wagneu_i_2 || '(' || wagneu_i_3 || ')'
+       END AS code,
+       ST_Transform(geom, 3857) as geometry
+FROM forest_types_lu
+WHERE wagneu_i_2 IS NOT NULL;

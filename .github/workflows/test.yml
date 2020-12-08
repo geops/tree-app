@@ -11,22 +11,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: 10
-
-      - run: yarn install --frozen-lockfile
-
-      - run: yarn lint
-
-      - run: yarn test
-
-  lib:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 10
+          node-version: 12
 
       - name: Get yarn cache
         id: yarn-cache
@@ -40,7 +25,35 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - run: yarn install --frozen-lockfile
+
+      - run: yarn build
         working-directory: ./lib
+
+      - run: yarn lint
+
+      - run: yarn test
+
+  lib:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - uses: actions/cache@v2
+        with:
+          path: ${{ steps.yarn-cache.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - run: yarn install --frozen-lockfile
 
       - run: yarn lint
         working-directory: ./lib

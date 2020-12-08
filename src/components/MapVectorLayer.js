@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Header, List, Segment } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { info } from 'lib/src';
+import { info } from '@geops/tree-lib';
 
 import Button from './Button';
 import Dropdown from './Dropdown';
@@ -19,24 +19,21 @@ mapStyle.sources.tree.tiles = [`${endpoint}/tree/{z}/{x}/{y}.pbf`];
 const getLayerStyle = (layerId) =>
   mapStyle.layers.find((l) => l.id === layerId) || {};
 
-const getStyle = (sourceLayer) => {
-  return {
-    ...mapStyle,
-    layers: mapStyle.layers.map((layer) => ({
-      ...layer,
-      paint:
-        layer.type === 'fill'
-          ? {
-              ...layer.paint,
-              'fill-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
-            }
-          : {
-              ...layer.paint,
-              'line-opacity': layer['source-layer'] === sourceLayer ? 0.5 : 0.0,
-            },
-    })),
-  };
-};
+const getStyle = (sourceLayer) => ({
+  ...mapStyle,
+  layers: mapStyle.layers.map((layer) => {
+    const isSourceLayer = layer['source-layer'] === sourceLayer;
+    const paint = { ...layer.paint };
+    if (layer.type === 'fill') {
+      paint['fill-opacity'] = isSourceLayer ? 0.5 : 0.0;
+    } else if (layer.type === 'line') {
+      paint['line-opacity'] = isSourceLayer ? 0.5 : 0.0;
+    } else if (layer.type === 'symbol') {
+      paint['text-opacity'] = isSourceLayer ? 1 : 0.0;
+    }
+    return { ...layer, paint };
+  }),
+});
 const getLayersByGroup = (group) =>
   mapStyle.layers.filter((l) => l.metadata && l.metadata.group === group);
 
@@ -68,6 +65,7 @@ function MapVectorLayer() {
     const { type } = layerStyle.metadata;
     return (
       type &&
+      Array.isArray(layerStyle.paint['fill-color']) &&
       layerStyle.paint['fill-color']
         .map((fc) => {
           const row = { color: fc };

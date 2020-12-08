@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
 import { Checkbox, Grid, Tab, Message } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { recommend } from 'lib/src';
+import { recommend } from '@geops/tree-lib';
 
 import HelpModal from './HelpModal';
 import TreeTypeList from './TreeTypeList';
@@ -40,7 +40,7 @@ function Recommendation({ sameAltitudinalZone }) {
     }
 
     try {
-      if (projections && projections.length === 0) {
+      if ((projections && projections.length === 0) || sameAltitudinalZone) {
         result = recommend(location, [location], future);
       } else {
         result = recommend(location, projections, future);
@@ -50,7 +50,7 @@ function Recommendation({ sameAltitudinalZone }) {
       console.log('Recommendation error: ', error);
     }
     return result;
-  }, [location, projectionMode, projectionResult, future]);
+  }, [location, projectionMode, projectionResult, future, sameAltitudinalZone]);
 
   return (
     <Tab.Pane data-cypress="recommendationPane">

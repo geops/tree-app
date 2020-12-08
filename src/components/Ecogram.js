@@ -16,6 +16,7 @@ function Ecogram({ data, selectForestType }) {
         onClose={() => setPopup({ forestTypes: [] })}
         selectForestType={selectForestType}
         target={popup.target}
+        x={popup.x}
       />
       <g transform="translate(49,1)">
         <line x1="200" y1="0" x2="200" y2="1000" className={styles.grid} />
@@ -36,7 +37,9 @@ function Ecogram({ data, selectForestType }) {
                 width={w}
                 height={h}
                 className={`${styles.box} ${a && styles.active}`}
-                onClick={({ target }) => setPopup({ target, forestTypes: f })}
+                onClick={({ target }) =>
+                  setPopup({ target, forestTypes: f, x: x + w / 2 })
+                }
               />
               {r || ox || oy ? (
                 [...new Array(r)].map((_, i) => (

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { info } from 'lib/src';
+import { info } from '@geops/tree-lib';
 
 import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
 import ProjectionTab from './ProjectionTab';
