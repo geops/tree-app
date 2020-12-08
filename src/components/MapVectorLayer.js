@@ -19,23 +19,21 @@ mapStyle.sources.tree.tiles = [`${endpoint}/tree/{z}/{x}/{y}.pbf`];
 const getLayerStyle = (layerId) =>
   mapStyle.layers.find((l) => l.id === layerId) || {};
 
-const getStyle = (sourceLayer) => {
-  return {
-    ...mapStyle,
-    layers: mapStyle.layers.map((layer) => {
-      const isSourceLayer = layer['source-layer'] === sourceLayer;
-      const paint = { ...layer.paint };
-      if (layer.type === 'fill') {
-        paint['fill-opacity'] = isSourceLayer ? 0.5 : 0.0;
-      } else if (layer.type === 'line') {
-        paint['line-opacity'] = isSourceLayer ? 0.5 : 0.0;
-      } else if (layer.type === 'symbol') {
-        paint['text-opacity'] = isSourceLayer ? 1 : 0.0;
-      }
-      return { ...layer, paint };
-    }),
-  };
-};
+const getStyle = (sourceLayer) => ({
+  ...mapStyle,
+  layers: mapStyle.layers.map((layer) => {
+    const isSourceLayer = layer['source-layer'] === sourceLayer;
+    const paint = { ...layer.paint };
+    if (layer.type === 'fill') {
+      paint['fill-opacity'] = isSourceLayer ? 0.5 : 0.0;
+    } else if (layer.type === 'line') {
+      paint['line-opacity'] = isSourceLayer ? 0.5 : 0.0;
+    } else if (layer.type === 'symbol') {
+      paint['text-opacity'] = isSourceLayer ? 1 : 0.0;
+    }
+    return { ...layer, paint };
+  }),
+});
 const getLayersByGroup = (group) =>
   mapStyle.layers.filter((l) => l.metadata && l.metadata.group === group);
 

@@ -58,8 +58,8 @@ self.addEventListener('message', (event) => {
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return fetch(`${endpoint}/tiles.txt`)
+    caches.open(CACHE_NAME).then((cache) =>
+      fetch(`${endpoint}/tiles.txt`)
         .then((response) => response.text())
         .then(async (response) => {
           const tiles = response.split(/\r?\n/);
@@ -78,8 +78,8 @@ self.addEventListener('install', (event) => {
             }
           }
           return true;
-        });
-    }),
+        }),
+    ),
   );
 });
 
@@ -87,9 +87,9 @@ self.addEventListener('install', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.url.startsWith(endpoint)) {
     event.respondWith(
-      caches.match(event.request).then((response) => {
-        return response || fetch(event.request);
-      }),
+      caches
+        .match(event.request)
+        .then((response) => response || fetch(event.request)),
     );
   }
 });

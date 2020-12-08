@@ -74,9 +74,11 @@ function LocationForm() {
   const { t, i18n } = useTranslation();
   const lng = i18n.language;
   const isDifferent = (field) => mapLocation[field] !== formLocation[field];
-  const getTranslatedOption = (category) => (key) => {
-    return { key, text: t(`forestType.${category}.${key}`), value: key };
-  };
+  const getTranslatedOption = (category) => (key) => ({
+    key,
+    text: t(`forestType.${category}.${key}`),
+    value: key,
+  });
 
   options.aspect = translationOptions.aspect.map(getTranslatedOption('aspect'));
   options.group = translationOptions.group.map(getTranslatedOption('group'));
