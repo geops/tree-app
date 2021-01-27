@@ -5,7 +5,8 @@ const participants = {
   locationBasics:
     'Monika Frehner, Jacques Burnand, Hans-Ueli Frey, Peter Lüscher, Brächt Wasser',
   climateChangeBasics:
-    'Monika Frehner, Barabara Huber, Päivi Gubelmann, Nora Zürcher-Gasser, Niklaus E. Zimmermann, Sabine Braun, Martin Scherler, Andreas Zischg, Jacques Burnand, Gabriele Carraro, Harald Bugmann, Achilleas Psomas',
+    'Monika Frehner, Barbara Huber, Päivi Gubelmann, Nora Zürcher-Gasser, Niklaus E. Zimmermann, Sabine Braun, Martin Scherler, Andreas Zischg, Jacques Burnand, Gabriele Carraro, Harald Bugmann, Achilleas Psomas',
+  forestTypeMap: 'Michiel Fehr, Jochen Breschan',
   idea: 'Urs Rutishauser, Monika Frehner, Cornel Broder',
   conception:
     'Monika Frehner, Urs Rutishauser, Cornel Broder, Elke Ehrhardt, Uli Müller, Thomas Bettler, Christian Küchli, Andreas Zischg, Peter Brang',
@@ -24,6 +25,7 @@ function InfoParticipants() {
       <p>introduction</p>
       <p>{{ locationBasics: participants.locationBasics }}</p>
       <p>{{ climateChangeBasics: participants.climateChangeBasics }}</p>
+      <p>{{ forestTypeMap: participants.forestTypeMap }}</p>
       <p>{{ idea: participants.idea }}</p>
       <p>{{ conception: participants.conception }}</p>
       <p>

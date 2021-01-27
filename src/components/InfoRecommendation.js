@@ -1,5 +1,5 @@
 import React from 'react';
-import { Trans } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 
 import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
@@ -12,6 +12,7 @@ import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.
 import styles from './InfoRecommendation.module.css';
 
 function InfoRecommendation() {
+  const { t } = useTranslation();
   return (
     <Trans i18nKey="info.recommendation">
       <p>general description</p>
@@ -20,21 +21,27 @@ function InfoRecommendation() {
       </p>
       <ul className={styles.iconList}>
         <li>
-          <PositiveIcon /> positive
+          <PositiveIcon />{' '}
+          {{ positiveTitle: t('help.recommendationPositiveHeader') }}:{' '}
+          {{ positive: t('help.recommendationPositive') }}
         </li>
         <li>
-          <NeutralIcon /> neutral
+          <NeutralIcon />{' '}
+          {{ neutralTitle: t('help.recommendationNeutralHeader') }}:{' '}
+          {{ neutral: t('help.recommendationNeutral') }}
         </li>
         <li>
-          <NegativeIcon /> negative
+          <NegativeIcon />{' '}
+          {{ negativeTitle: t('help.recommendationNegativeHeader') }}:{' '}
+          {{ negative: t('help.recommendationNegative') }}
         </li>
         <li>
-          <AttentionIcon /> attention{' '}
-          <a href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html">
-            link
-          </a>
+          <AttentionIcon />{' '}
+          {{ attentionTitle: t('help.recommendationAttentionHeader') }}:{' '}
+          {{ attention: t('help.recommendationAttention') }}
         </li>
       </ul>
+      <p>description</p>
       <h3>scenarios</h3>
       <p>description</p>
       <ul className={styles.iconList}>
