@@ -153,10 +153,19 @@ ALTER TABLE "forest_types_tg" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','forest_types_tg','geom','2056','MULTIPOLYGON',2);
 
 
-CREATE TABLE "forest_types_lu" (gid serial, "waldgesell" int8, "wagneu_imp" varchar(254),
-                                                                            "wagneu_i_1" varchar(254),
-                                                                                         "wagneu_i_2" varchar(254),
-                                                                                                      "wagneu_i_3" varchar(254));
+CREATE TABLE "forest_types_lu" (gid serial, "objectid_1" int8, "farbe" numeric, "wag1" numeric, "wag2" varchar(254),
+                                                                                                       "wag3" varchar(254),
+                                                                                                              "wag4" varchar(254),
+                                                                                                                     "wag5" varchar(254),
+                                                                                                                            "plottxt" varchar(254),
+                                                                                                                                      "wag1_txt" varchar(254),
+                                                                                                                                                 "wag2_txt" varchar(254),
+                                                                                                                                                            "wag3_txt" varchar(254),
+                                                                                                                                                                       "wag4_txt" varchar(254),
+                                                                                                                                                                                  "wag5_txt" varchar(254),
+                                                                                                                                                                                             "nais1_txt" varchar(254),
+                                                                                                                                                                                                         "nais2_txt" varchar(254),
+                                                                                                                                                                                                                     "typ" numeric, "shape_leng" numeric, "shape_area" numeric);
 
 
 ALTER TABLE "forest_types_lu" ADD PRIMARY KEY (gid);
@@ -171,10 +180,10 @@ SELECT nais as code,
 FROM forest_types_tg
 WHERE nais IS NOT NULL
 UNION
-SELECT CASE wagneu_i_3 is null
-           WHEN TRUE THEN wagneu_i_2
-           ELSE wagneu_i_2 || '(' || wagneu_i_3 || ')'
+SELECT CASE nais2_txt is null
+           WHEN TRUE THEN nais1_txt
+           ELSE nais1_txt || '(' || nais2_txt || ')'
        END AS code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_lu
-WHERE wagneu_i_2 IS NOT NULL;
+WHERE nais1_txt IS NOT NULL;
