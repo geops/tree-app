@@ -74,6 +74,9 @@ function tree(state = initialState, action) {
         ? getFormLocation(state, { formLocation: initialFormLocation })
         : state.formLocation;
       const mapLocation = { ...state.mapLocation, ...action.mapLocation };
+      if (mapLocation.forestType) {
+        formLocation.forestType = undefined;
+      }
       return { ...state, formLocation, mapLocation, projectionMode: 'm' };
     }
     case SET_MAP_VIEW:

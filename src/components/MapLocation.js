@@ -43,6 +43,21 @@ const featuresToLocation = (location, f) => {
 const to2056 = (coordinate) => transform(coordinate, 'EPSG:3857', EPSG2056);
 const to3857 = (coordinate) => transform(coordinate, EPSG2056, 'EPSG:3857');
 
+const initialMapLocation = layers
+  .filter((l) => l.metadata?.mapping)
+  .reduce((location, layer) => {
+    const key = layer.metadata.mapping;
+    if (layer['source-layer'] === 'forest_types') {
+      return {
+        ...location,
+        forestType: null,
+        transitionForestType: null,
+        transition: null,
+      };
+    }
+    return { ...location, [key]: null };
+  }, {});
+
 const iconFeature = new OLFeature({ geometry: new Point([0, 0]) });
 iconFeature.setStyle(
   new Style({
@@ -71,7 +86,7 @@ function MapLocation() {
       const features = map.getFeaturesAtPixel(pixel) || [];
       const location = features
         .filter((feature) => feature.properties && feature.properties.code)
-        .reduce(featuresToLocation, {});
+        .reduce(featuresToLocation, initialMapLocation);
       location.coordinate = to2056(coordinate);
       dispatch(setMapLocation(location, resetFormLocation));
       if (isMobile === false && location.forestType) {

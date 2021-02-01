@@ -16,13 +16,11 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorkerRegistration.register({
-  onUpdate: (registration) =>
+  onUpdate: (swr) =>
     toast(
       <Button
         active
-        onClick={() =>
-          registration.unregister().then(() => window.location.reload(true))
-        }
+        onClick={() => swr.unregister().then(() => window.location.reload())}
       >
         {i18n.t('offline.update')}
       </Button>,
