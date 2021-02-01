@@ -2,7 +2,7 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "private": true,
   "dependencies": {
     "@geops/tree-lib": "^2.0.0",
@@ -24,7 +24,7 @@
     "react-redux": "7.2.2",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.1",
-    "react-toastify": "7.0.2",
+    "react-toastify": "7.0.3",
     "redux": "4.0.5",
     "redux-query-sync": "0.1.10",
     "semantic-ui-css": "2.4.1",
