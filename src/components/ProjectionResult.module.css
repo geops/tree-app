@@ -104,3 +104,10 @@
 .notFound:global(.ui.inverted.header) {
   margin: 20px;
 }
+
+.checkMapLocation:global(.ui.inverted.header) {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-weight: normal;
+  margin: 20px;
+}
