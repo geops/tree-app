@@ -68,13 +68,17 @@ function getPane(scenario, projection, language, t) {
 const checkFields = ['slope', 'additional', 'relief'];
 
 function ProjectionResult() {
-  const { location, projectionMode, projectionResult } = useSelector(
-    (state) => ({
-      location: state.location,
-      projectionMode: state.projectionMode,
-      projectionResult: state.projectionResult,
-    }),
-  );
+  const {
+    location,
+    mapLocationForestType,
+    projectionMode,
+    projectionResult,
+  } = useSelector((state) => ({
+    location: state.location,
+    mapLocationForestType: state.mapLocation.forestType,
+    projectionMode: state.projectionMode,
+    projectionResult: state.projectionResult,
+  }));
   const { i18n, t } = useTranslation();
   const AZToday = getAZ(location.altitudinalZone);
   const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
@@ -144,14 +148,21 @@ function ProjectionResult() {
           panes={finalPanes}
         />
       ) : (
-        <Header className={styles.notFound} inverted>
-          {t(
-            checkField
-              ? `recommendation.checkField`
-              : 'recommendation.noProjectionFound',
-            { field: t(`${checkField}.label`) },
+        <>
+          <Header className={styles.notFound} inverted>
+            {t(
+              checkField
+                ? `recommendation.checkField`
+                : 'recommendation.noProjectionFound',
+              { field: t(`${checkField}.label`) },
+            )}
+          </Header>
+          {mapLocationForestType && (
+            <Header className={styles.checkMapLocation} inverted>
+              {t('recommendation.checkMapLocation')}
+            </Header>
           )}
-        </Header>
+        </>
       )}
     </div>
   ) : null;
