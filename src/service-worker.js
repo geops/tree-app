@@ -11,7 +11,7 @@ import { clientsClaim } from 'workbox-core';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 
-const CACHE_NAME = 'tree-app-tiles-v3';
+const CACHE_NAME = 'tree-app-tiles-v4';
 const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
 
 clientsClaim();
