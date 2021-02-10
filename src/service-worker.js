@@ -12,6 +12,11 @@ import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 
 const CACHE_NAME = 'tree-app-tiles-v4';
+const OLD_CACHES = [
+  'tree-app-tiles-v1',
+  'tree-app-tiles-v2',
+  'tree-app-tiles-v3',
+];
 const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
 
 clientsClaim();
@@ -55,6 +60,8 @@ self.addEventListener('message', (event) => {
     self.skipWaiting();
   }
 });
+
+OLD_CACHES.forEach((OLD_CACHE) => caches.delete(OLD_CACHE));
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
