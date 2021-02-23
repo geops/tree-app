@@ -45,17 +45,17 @@ const to3857 = (coordinate) => transform(coordinate, EPSG2056, 'EPSG:3857');
 
 const initialMapLocation = layers
   .filter((l) => l.metadata?.mapping)
-  .reduce((location, layer) => {
+  .reduce((previousLocation, layer) => {
+    const location = { ...previousLocation };
     const key = layer.metadata.mapping;
     if (layer['source-layer'] === 'forest_types') {
-      return {
-        ...location,
-        forestType: null,
-        transitionForestType: null,
-        transition: null,
-      };
+      delete location.forestType;
+      delete location.transitionForestType;
+      delete location.transition;
+      return location;
     }
-    return { ...location, [key]: null };
+    delete location[key];
+    return location;
   }, {});
 
 const iconFeature = new OLFeature({ geometry: new Point([0, 0]) });

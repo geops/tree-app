@@ -57,3 +57,36 @@ describe('Projection in form mode', () => {
     cy.get('[data-cypress=projectionResultMenuItem]').contains(/\w+\s\(\w+\)/);
   });
 });
+
+describe('Projection in map mode', () => {
+  const selectField = (name, item, force) => {
+    cy.get(`[data-cypress=projectionForm${name}]`)
+      .scrollIntoView()
+      .click({ force });
+    cy.get(`[data-cypress=projectionForm${name}] ${item}`).click({ force });
+  };
+  beforeEach(() => {
+    cy.visit('/projection?mp=2654151%7C1205108&mv=18%7C2654195%7C1205068');
+    cy.get('[data-cypress=welcomeModalGo]').click();
+    cy.get('.ui.menu > :nth-child(2)').click();
+  });
+
+  it('shows a recommendation', () => {
+    cy.get('[data-cypress=recommendationPane]', { timeout: 10000 })
+      .scrollIntoView()
+      .should('be.visible');
+  });
+
+  it('shows a recommendation for a transition location', () => {
+    cy.get(`[data-cypress=projectionFormTransition] .ui:last-child`, {
+      timeout: 10000,
+    }).click({
+      force: true,
+    });
+    selectField('TransitionForestType', '.item:first-child', true);
+    selectField('TransitionAltitudinalZone', '.item:last-child', true);
+    cy.get('[data-cypress=recommendationPane]')
+      .scrollIntoView()
+      .should('be.visible');
+  });
+});
