@@ -23,7 +23,7 @@ Spatial data is downloaded from different sources and imported into the database
 2. Export spatial data to GeoJSON files (might take a long time): `yarn run data:spatial:export`
 3. Transform GeoJSON files to single vector tileset: `yarn run data:spatial:tile`
 4. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
-5. Setup local Tile Server with `yarn run netlify dev -d ./data/spatial/tiles` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `yarn start`)
+5. Deploy tiles local `yarn run deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `yarn start`)
 6. Deploy tiles to a webserver or to Netlify (currently maintained by geOps) production `yarn run data:spatial:deploy` or staging `yarn run data:spatial:deploy:staging`
 
 ## Bugs
