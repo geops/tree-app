@@ -37,6 +37,7 @@
     "data:spatial:tile": "cd data && docker-compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
     "data:spatial:fonts": "./data/spatial/4-fonts.sh",
     "data:spatial:deploy": "netlify deploy --dir=data/spatial/tiles --prod --site=5dc39927-3ba0-485e-b01d-2e15385ce212",
+    "data:spatial:deploy:staging": "netlify deploy --dir=data/spatial/tiles --prod --site=25c2d3a9-948d-4f31-a534-44830dcd5e12",
     "doc:build": "documentation build src/** --format html --output doc --config documentation.yml",
     "doc:serve": "documentation serve --config documentation.yml --watch src/**",
     "build": "webpack --mode production",
@@ -45,7 +46,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "prepublishOnly": "yarn build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "deploy:local": "yarn run netlify dev -d ./data/spatial/tiles"
   },
   "dependencies": {
     "lodash.difference": "^4.5.0",

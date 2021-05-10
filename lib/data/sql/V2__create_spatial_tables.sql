@@ -152,6 +152,8 @@ ALTER TABLE "forest_types_tg" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_tg','geom','2056','MULTIPOLYGON',2);
 
+----------------------------------------------
+-- Forest types LU 
 
 CREATE TABLE "forest_types_lu" (gid serial, "objectid_1" int8, "farbe" numeric, "wag1" numeric, "wag2" varchar(254),
                                                                                                        "wag3" varchar(254),
@@ -173,6 +175,26 @@ ALTER TABLE "forest_types_lu" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_lu','geom','2056','MULTIPOLYGON',2);
 
+----------------------------------------------
+-- Forest types FL
+
+CREATE TABLE "forest_types_fl" (gid serial,
+"objekt" varchar(32),
+"text" varchar(64),
+"bonitaet" varchar(32),
+"rep" varchar(32),
+"dxf_text" varchar(32),
+"color" varchar(32),
+"dxf_neu" varchar(50),
+"text_neu" varchar(254),
+"typ_nais" varchar(254),
+"text_nais" varchar(100));
+
+
+ALTER TABLE "forest_types_fl" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','forest_types_fl','geom','2056','MULTIPOLYGON',2);
 
 CREATE VIEW forest_types_export AS
 SELECT nais as code,
@@ -186,4 +208,9 @@ SELECT CASE nais2_txt is null
        END AS code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_lu
-WHERE nais1_txt IS NOT NULL;
+WHERE nais1_txt IS NOT NULL
+UNION
+SELECT typ_nais AS code,
+       ST_Transform(geom, 3857) as geometry
+FROM forest_types_fl
+WHERE typ_nais IS NOT NULL;

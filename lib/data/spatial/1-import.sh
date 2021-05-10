@@ -44,3 +44,8 @@ _import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d-kanton-flaeche
 #_import "Download manually" "forest_types_tg" "forest_types_tg" "forest_types_tg"
 
 _import "Download manually" "forest_types_lu" "forest_types_lu" "forest_types_lu"
+
+
+echo 'Test-----------------------------------------------------'
+
+_import "Download manually" "forest_types_fl" "forest_types_fl" "forest_types_fl"
