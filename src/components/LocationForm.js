@@ -50,11 +50,15 @@ const translationOptions = {
   slope: Object.keys(translation.forestType.slope).filter(noLabel).sort(),
 };
 
-const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
-  key,
-  text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
-  value: key,
-});
+const getDropdownOptions =
+  (type, lng, includeKey = false) =>
+  (key) => ({
+    key,
+    text: includeKey
+      ? `${key} - ${info(type, key)[lng]}`
+      : info(type, key)[lng],
+    value: key,
+  });
 
 function LocationForm() {
   const dispatch = useDispatch();
