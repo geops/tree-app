@@ -18,19 +18,23 @@ const getButtonOptions = (type, lng) => (key) => ({
   key,
   label: info(type, key)[lng],
 });
-const getDropdownOptions = (type, lng, includeKey = false) => (key) => ({
-  key,
-  content: includeKey ? (
-    <>
-      <ForestTypeModal data={info(type, key)} />
-      {key} - {info(type, key)[lng]}
-    </>
-  ) : (
-    info(type, key)[lng]
-  ),
-  text: includeKey ? `${key} - ${info(type, key)[lng]}` : info(type, key)[lng],
-  value: key,
-});
+const getDropdownOptions =
+  (type, lng, includeKey = false) =>
+  (key) => ({
+    key,
+    content: includeKey ? (
+      <>
+        <ForestTypeModal data={info(type, key)} />
+        {key} - {info(type, key)[lng]}
+      </>
+    ) : (
+      info(type, key)[lng]
+    ),
+    text: includeKey
+      ? `${key} - ${info(type, key)[lng]}`
+      : info(type, key)[lng],
+    value: key,
+  });
 
 function ProjectionForm() {
   const dispatch = useDispatch();
