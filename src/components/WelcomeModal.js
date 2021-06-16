@@ -6,6 +6,7 @@ import { Icon, Image, Modal } from 'semantic-ui-react';
 import Button from './Button';
 import InfoAbout from './InfoAbout';
 import LanguageSwitcher from './LanguageSwitcher';
+import ProfileSwitcher from './ProfileSwitcher';
 import { ReactComponent as Logo } from '../icons/logo.svg';
 import { setWelcomeModal } from '../store/actions';
 import styles from './WelcomeModal.module.css';
@@ -26,6 +27,7 @@ function WelcomeModal() {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
+        <ProfileSwitcher />
         <LanguageSwitcher />
         <Button
           active

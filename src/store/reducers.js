@@ -9,9 +9,24 @@ import {
   SET_PROJECTION_RESULT,
   SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
+  SET_ACTIVE_PROFILE,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
+const profiles = [
+  {
+    id: 'bund',
+    name: 'Bund',
+  },
+  {
+    id: 'bern',
+    name: 'Bern',
+  },
+  {
+    id: 'luzern',
+    name: 'Luzern',
+  },
+];
 export const initialState = {
   location: {},
   formLocation: {},
@@ -28,6 +43,11 @@ export const initialState = {
   },
   targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
+  activeProfile:
+    profiles.find(
+      (profile) => profile.id === localStorage.getItem('tree.profile'),
+    ) || profiles[0],
+  profiles,
 };
 
 const initialFormLocation = {
@@ -102,6 +122,9 @@ function tree(state = initialState, action) {
     case SET_WELCOME_MODAL:
       localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');
       return { ...state, welcomeModalOpen: action.open };
+    case SET_ACTIVE_PROFILE:
+      localStorage.setItem('tree.profile', action.activeProfile.id);
+      return { ...state, activeProfile: action.activeProfile };
     default:
       return state;
   }
