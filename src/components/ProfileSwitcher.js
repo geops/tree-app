@@ -1,11 +1,11 @@
 import React from 'react';
 // import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Dropdown } from 'semantic-ui-react';
+import Dropdown from './Dropdown';
 
 import { setActiveProfile } from '../store/actions';
 
-// import styles from './WelcomeModal.module.css';
+import styles from './ProfileSwitcher.module.css';
 
 function ProfileSwitcher() {
   // const { t } = useTranslation();
@@ -14,7 +14,10 @@ function ProfileSwitcher() {
   const profiles = useSelector((state) => state.profiles);
 
   return (
-    <Dropdown text={`${activeProfile.name}`}>
+    <Dropdown
+      text={`${activeProfile.name}`}
+      className={styles['profile-switcher']}
+    >
       <Dropdown.Menu>
         {profiles.map((profile) => (
           <Dropdown.Item

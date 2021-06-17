@@ -7,6 +7,7 @@ import {
   setMapView,
   setProjectionMode,
   setMapLocation,
+  setActiveProfile,
 } from '../actions';
 import { initialState } from '../reducers';
 
@@ -82,6 +83,11 @@ const querySync = ReduxQuerySync.enhancer({
       selector: (state) => state.projectionMode,
       action: setProjectionMode,
       defaultValue: initialState.projectionMode,
+    },
+    prfl: {
+      selector: (state) => state.activeProfile.id,
+      action: setActiveProfile,
+      defaultValue: initialState.activeProfile.id,
     },
   },
   initialTruth: 'location',

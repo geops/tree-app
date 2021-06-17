@@ -27,15 +27,17 @@ function WelcomeModal() {
         </Modal.Description>
       </Modal.Content>
       <Modal.Actions>
-        <ProfileSwitcher />
-        <LanguageSwitcher />
-        <Button
-          active
-          data-cypress="welcomeModalGo"
-          onClick={() => dispatch(setWelcomeModal(false))}
-        >
-          <Icon name="checkmark" /> {t('welcome.close')}
-        </Button>
+        <div className={styles.actions}>
+          <ProfileSwitcher />
+          <LanguageSwitcher />
+          <Button
+            active
+            data-cypress="welcomeModalGo"
+            onClick={() => dispatch(setWelcomeModal(false))}
+          >
+            <Icon name="checkmark" /> {t('welcome.close')}
+          </Button>
+        </div>
       </Modal.Actions>
     </Modal>
   );
