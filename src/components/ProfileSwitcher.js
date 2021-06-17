@@ -35,6 +35,7 @@ function ProfileSwitcher() {
       className={styles['profile-switcher']}
       options={profiles}
       onChange={(e, { value }) => dispatch(setActiveProfile(value))}
+      data-cypress="profileSwitcher"
     />
   );
 }
