@@ -28,8 +28,8 @@ function WelcomeModal() {
       </Modal.Content>
       <Modal.Actions>
         <div className={styles.actions}>
-          <ProfileSwitcher />
           <LanguageSwitcher />
+          <ProfileSwitcher />
           <Button
             active
             data-cypress="welcomeModalGo"
