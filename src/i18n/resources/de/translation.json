@@ -393,5 +393,10 @@
   "welcome": {
     "close": "Weiter zur Tree App",
     "header": "Das Klima ändert sich"
+  },
+  "profiles": {
+    "bund": "Bund",
+    "bern": "Bern",
+    "luzern": "Luzern"
   }
 }

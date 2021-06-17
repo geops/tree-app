@@ -84,10 +84,10 @@ const querySync = ReduxQuerySync.enhancer({
       action: setProjectionMode,
       defaultValue: initialState.projectionMode,
     },
-    prfl: {
-      selector: (state) => state.activeProfile.id,
+    p: {
+      selector: (state) => state.activeProfile,
       action: setActiveProfile,
-      defaultValue: initialState.activeProfile.id,
+      defaultValue: localStorage.getItem('tree.profile') || 'ch',
     },
   },
   initialTruth: 'location',

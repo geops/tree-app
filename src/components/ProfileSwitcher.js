@@ -1,5 +1,5 @@
-import React from 'react';
-// import { useTranslation } from 'react-i18next';
+import React, { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import Dropdown from './Dropdown';
 
@@ -8,26 +8,34 @@ import { setActiveProfile } from '../store/actions';
 import styles from './ProfileSwitcher.module.css';
 
 function ProfileSwitcher() {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const activeProfile = useSelector((state) => state.activeProfile);
-  const profiles = useSelector((state) => state.profiles);
+  const profiles = useMemo(
+    () => [
+      {
+        value: 'ch',
+        text: t('profiles.bund'),
+      },
+      {
+        value: 'be',
+        text: t('profiles.bern'),
+      },
+      {
+        value: 'lu',
+        text: t('profiles.luzern'),
+      },
+    ],
+    [t],
+  );
 
   return (
     <Dropdown
-      text={`${activeProfile.name}`}
+      value={activeProfile}
       className={styles['profile-switcher']}
-    >
-      <Dropdown.Menu>
-        {profiles.map((profile) => (
-          <Dropdown.Item
-            key={profile.id}
-            text={`${profile.name}`}
-            onClick={() => dispatch(setActiveProfile(profile))}
-          />
-        ))}
-      </Dropdown.Menu>
-    </Dropdown>
+      options={profiles}
+      onChange={(e, { value }) => dispatch(setActiveProfile(value))}
+    />
   );
 }
 
