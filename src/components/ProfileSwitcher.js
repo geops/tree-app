@@ -16,14 +16,19 @@ function ProfileSwitcher() {
       {
         value: 'ch',
         text: t('profiles.ch'),
+        content: <span>{t('profiles.ch')}</span>,
       },
       {
         value: 'be',
         text: t('profiles.bern'),
+        content: <span>{t('profiles.bern')}</span>,
       },
       {
         value: 'lu',
         text: t('profiles.luzern'),
+        content: (
+          <span data-cypress="lucerneOption">{t('profiles.luzern')}</span>
+        ),
       },
     ],
     [t],
