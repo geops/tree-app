@@ -15,7 +15,7 @@ function ProfileSwitcher() {
     () => [
       {
         value: 'ch',
-        text: t('profiles.bund'),
+        text: t('profiles.ch'),
       },
       {
         value: 'be',
@@ -36,6 +36,7 @@ function ProfileSwitcher() {
       options={profiles}
       onChange={(e, { value }) => dispatch(setActiveProfile(value))}
       data-cypress="profileSwitcher"
+      search={false}
     />
   );
 }
