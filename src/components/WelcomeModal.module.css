@@ -8,3 +8,13 @@
   bottom: 20px;
   right: 20px;
 }
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.actions > * {
+  margin: 10px !important;
+}

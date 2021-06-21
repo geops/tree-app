@@ -9,6 +9,7 @@
   "app": {
     "info": "Infos",
     "language": "Sprache",
+    "profile": "Profil",
     "location": "Standort",
     "map": "Karte",
     "recommendation": "Empfehlung",
@@ -393,5 +394,10 @@
   "welcome": {
     "close": "Weiter zur Tree App",
     "header": "Das Klima ändert sich"
+  },
+  "profiles": {
+    "ch": "Bund",
+    "bern": "Bern",
+    "luzern": "Luzern"
   }
 }

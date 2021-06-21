@@ -9,6 +9,7 @@ import {
   SET_PROJECTION_RESULT,
   SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
+  SET_ACTIVE_PROFILE,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
@@ -102,6 +103,9 @@ function tree(state = initialState, action) {
     case SET_WELCOME_MODAL:
       localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');
       return { ...state, welcomeModalOpen: action.open };
+    case SET_ACTIVE_PROFILE:
+      localStorage.setItem('tree.profile', action.activeProfile);
+      return { ...state, activeProfile: action.activeProfile };
     default:
       return state;
   }

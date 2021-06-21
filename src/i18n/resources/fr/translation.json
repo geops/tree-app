@@ -9,6 +9,7 @@
   "app": {
     "info": "Informations",
     "language": "Langue",
+    "profile": "Profil",
     "location": "Station",
     "map": "Carte",
     "recommendation": "Recommandations",
@@ -393,5 +394,10 @@
   "welcome": {
     "close": "Vers la Tree App",
     "header": "Le climat change"
+  },
+  "profiles": {
+    "ch": "Fédération",
+    "bern": "Berne",
+    "luzern": "Luzerne"
   }
 }
