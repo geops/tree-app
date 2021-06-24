@@ -277,6 +277,9 @@ COPY
           mosstype AS (
             SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la)) AS values FROM mosstype_meta
           ),
+          lutyp AS (
+            SELECT json_agg(jsonb_build_object('lutyp_name_deu', lutyp_name_deu, 'lutyp_name_lat', lutyp_name_lat)) AS values FROM lu_standorttypen
+          ),
           relief as
          (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
@@ -306,6 +309,7 @@ COPY
                                                         values,'herbType', herbtype.
                                                         values,'indicator',indicators.
                                                         values,'mossType', mosstype.
+                                                        values,'luType', lutyp.
                                                         values,'relief',relief.
                                                         values,'silverFirArea',silver_fir_areas.
                                                         values,'slope',slope.
@@ -319,6 +323,7 @@ COPY
           herbtype,
           indicators,
           mosstype,
+          lutyp,
           relief,
           silver_fir_areas,
           slope,

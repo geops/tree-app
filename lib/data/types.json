@@ -8,15 +8,383 @@
     { "de": ">70%", "fr": ">70%", "code": ">70" },
     { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
   ],
+  "luType": [
+    {
+      "lutyp_name_deu": "Typischer Hainsimsen-Buchenwald",
+      "lutyp_name_lat": "Luzulo silvaticae-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Artenarmer Waldsimsen-Tannen-Buchenwald",
+      "lutyp_name_lat": "Luzulo-Abieti-Fagetum, artenarme Ausb."
+    },
+    {
+      "lutyp_name_deu": "Hainsimsen-Buchenwald mit Weissmoos",
+      "lutyp_name_lat": "Luzulo-Fagetum leucobryetosum"
+    },
+    {
+      "lutyp_name_deu": "Waldmeister-Buchenwald mit Hainsimse",
+      "lutyp_name_lat": "Galio-Fagetum luzuletosum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Waldmeister-Buchenwald",
+      "lutyp_name_lat": "Galio-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Waldmeister-Buchenwald mit Lockerähriger Segge",
+      "lutyp_name_lat": "Galio-Fagetum caricetosum remotae"
+    },
+    {
+      "lutyp_name_deu": "Waldmeister-Buchenwald, artenarme Ausb.",
+      "lutyp_name_lat": "Galio-Fagetum, artenarme Ausb."
+    },
+    {
+      "lutyp_name_deu": "Waldmeister-Buchenwald mit Hornstrauch",
+      "lutyp_name_lat": "Galio-Fagetum cornetosum"
+    },
+    {
+      "lutyp_name_deu": "Waldmeister-Buchenwald mit Lungenkraut",
+      "lutyp_name_lat": "Galio-Fagetum pulmonarietosum"
+    },
+    {
+      "lutyp_name_deu": "Feuchter Waldmeister-Buchenwald",
+      "lutyp_name_lat": "Galio-Fagetum stachyetosum sylvaticae"
+    },
+    {
+      "lutyp_name_deu": "Waldmeister-Buchenwald mit Rippenfarn",
+      "lutyp_name_lat": "Galio-Fagetum blechnetosum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Waldhirsen-\\nBuchenwald",
+      "lutyp_name_lat": "Milio-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Waldhirsen-Buchenwald mit Lockerähriger Segge",
+      "lutyp_name_lat": "Milio-Fagetum caricetosum\\nremotae"
+    },
+    {
+      "lutyp_name_deu": "Waldhirsen-Buchenwald mit Breitem Wurmfarn",
+      "lutyp_name_lat": "Milio-Fagetum \\ndryopterietosum dilatatae"
+    },
+    {
+      "lutyp_name_deu": "Waldhirsen-Buchenwald \\nmit Hainsimse",
+      "lutyp_name_lat": "Milio-Fagetum luzuletosum"
+    },
+    {
+      "lutyp_name_deu": "Waldhirsen-Buchenwald \\nmit Hornstrauch",
+      "lutyp_name_lat": "Milio-Fagetum \\ncornetosum"
+    },
+    {
+      "lutyp_name_deu": "Waldhirsen-Buchenwald \\nmit Lungenkraut",
+      "lutyp_name_lat": "Milio-Fagetum \\npulmonarietosum"
+    },
+    {
+      "lutyp_name_deu": "Feuchter Waldhirsen-\\nBuchenwald",
+      "lutyp_name_lat": "Milio-Fagetum stachyetosum sylvaticae"
+    },
+    {
+      "lutyp_name_deu": "Waldhirsen-Buchenwald \\nmit Rippenfarn",
+      "lutyp_name_lat": "Milio-Fagetum \\nblechnetosum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Lungenkraut-\\nBuchenwald",
+      "lutyp_name_lat": "Pulmonario-Fagetum \\ntypicum"
+    },
+    {
+      "lutyp_name_deu": "Wechselfeuchter Lungenkraut-Buchenwald",
+      "lutyp_name_lat": "Pulmonario-Fagetum caricetosum flaccae"
+    },
+    {
+      "lutyp_name_deu": "Wechseltrockener Lungenkraut-Buchenwald mit Immenblatt",
+      "lutyp_name_lat": "Pulmonario-Fagetum melittetosum, Ausb. mit Carex flacca"
+    },
+    {
+      "lutyp_name_deu": "Aronstab-Buchenwald",
+      "lutyp_name_lat": "Aro-Fagetum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Zahnwurz-\\nBuchenwald",
+      "lutyp_name_lat": "Cardamino-Fagetum \\ntypicum"
+    },
+    {
+      "lutyp_name_deu": "Trockener Zahnwurz-Buchenwald",
+      "lutyp_name_lat": "Cardamino-Fagetum caricetosum albae"
+    },
+    {
+      "lutyp_name_deu": "Feuchter Zahnwurz-Buchenwald",
+      "lutyp_name_lat": "Cardamino-Fagetum circaetosum"
+    },
+    {
+      "lutyp_name_deu": "Wechselfeuchter Zahnwurz-Buchenwald\\n",
+      "lutyp_name_lat": "Cardamino-Fagetum caricetosum flaccae"
+    },
+    {
+      "lutyp_name_deu": "Typischer Linden-Buchenwald",
+      "lutyp_name_lat": "Tilio-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Trockener Linden-Buchenwald",
+      "lutyp_name_lat": "Tilio-Fagetum caricetosum albae"
+    },
+    {
+      "lutyp_name_deu": "Typischer Alpendost-Buchenwald",
+      "lutyp_name_lat": "Adenostylo-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Seggen-Buchenwald mit Weissegge",
+      "lutyp_name_lat": "Carici albae-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Seggen-Buchenwald mit Bergsegge",
+      "lutyp_name_lat": "Carici-Fagetum caricetosum montanae\\n"
+    },
+    {
+      "lutyp_name_deu": "Typischer Blaugras-Buchenwald",
+      "lutyp_name_lat": "Seslerio-Fagetum"
+    },
+    { "lutyp_name_deu": "Eiben-Buchenwald", "lutyp_name_lat": "Taxo-Fagetum" },
+    {
+      "lutyp_name_deu": "Waldschwingel-Tannen-Buchenwald",
+      "lutyp_name_lat": "Festuco-Abieti-Fagetum"
+    },
+    {
+      "lutyp_name_deu": "Tannen-Buchenwald mit Breitem Wurmfarn",
+      "lutyp_name_lat": "Abieti-Fagetum dryopterietosum dilatatae"
+    },
+    {
+      "lutyp_name_deu": "Typischer Karbonat-Tannen-Buchenwald",
+      "lutyp_name_lat": "Adenostylo glabrae-Abieti-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Buntreitgras-Tannen-Buchenwald mit Rostsegge",
+      "lutyp_name_lat": "Adenostylo glabrae Abieti-Fagetum calamagrostietosumvariae, Ausb. mit Carex ferruginea"
+    },
+    {
+      "lutyp_name_deu": "Typischer Buntreitgras-Tannen-Buchenwald",
+      "lutyp_name_lat": "Adenostylo glabrae Abieti-Fagetum calamagrostietosumvariae"
+    },
+    {
+      "lutyp_name_deu": "Karbonat-Tannen-Buchenwald mit Weissegge",
+      "lutyp_name_lat": "Adenostylo glabrae-Abieti-Fagetum caricetosum albae"
+    },
+    {
+      "lutyp_name_deu": "Typischer Waldsimsen-Tannen-Buchenwald",
+      "lutyp_name_lat": "Luzulo-Abieti-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Waldsimsen-Tannen-Buchenwald auf Pseudogley",
+      "lutyp_name_lat": "Luzulo-Abieti Fagetum, Ausb. auf Pseudogley"
+    },
+    {
+      "lutyp_name_deu": "Hochstauden-Tannen-Buchenwald ",
+      "lutyp_name_lat": "Adenostylo alliariae-Abieti-Fagetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Waldgersten-Tannen-Buchenwald",
+      "lutyp_name_lat": "Adenostylo alliariae-\\nAbieti-Fagetum hordelymetosum"
+    },
+    { "lutyp_name_deu": "Ahorn-Buchenwald", "lutyp_name_lat": "Aceri-Fagetum" },
+    {
+      "lutyp_name_deu": "Hirschzungen-Ahornwald",
+      "lutyp_name_lat": "Phyllitido-Aceretum"
+    },
+    {
+      "lutyp_name_deu": "Geissbart-Ahornwald",
+      "lutyp_name_lat": "Arunco-Aceretum"
+    },
+    {
+      "lutyp_name_deu": "Mehlbeer-Ahornwald",
+      "lutyp_name_lat": "Sorbo-Aceretum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Ulmen-Ahornwald",
+      "lutyp_name_lat": "Ulmo-Aceretum typicum"
+    },
+    {
+      "lutyp_name_deu": "Ahorn-Eschenwald",
+      "lutyp_name_lat": "Aceri-Fraxinetum"
+    },
+    {
+      "lutyp_name_deu": "Ahorn-Eschenwald mit Waldschachtelhalm",
+      "lutyp_name_lat": "Aceri-Fraxinetum equisetosum silvaticae"
+    },
+    {
+      "lutyp_name_deu": "Ahorn-Eschenwald, Höhenausb.",
+      "lutyp_name_lat": "Aceri-Fraxinetum, Höhenausb."
+    },
+    {
+      "lutyp_name_deu": "Ahorn-Eschenwald, wechselfeuchte Ausb. tiefer Lagen",
+      "lutyp_name_lat": "Aceri-Fraxinetum, wechselfeuchte Ausb. tiefer Lagen"
+    },
+    {
+      "lutyp_name_deu": "Ahorn-Eschenwald mit Schlaffer Segge",
+      "lutyp_name_lat": "Aceri-Fraxinetum calamagrostietosum variae"
+    },
+    {
+      "lutyp_name_deu": "Bach-Eschenwald",
+      "lutyp_name_lat": "Carici remotae-Fraxinetum"
+    },
+    {
+      "lutyp_name_deu": "Bach-Eschenwald, Höhenausbildung",
+      "lutyp_name_lat": "Carici remotae-Fraxinetum, Ausb. mit Petasites albus"
+    },
+    {
+      "lutyp_name_deu": "Ulmen-Eschen-Auenwald",
+      "lutyp_name_lat": "Ulmo-Fraxinetum equisetosum hyemalis"
+    },
+    {
+      "lutyp_name_deu": "Ulmen-Eschenwald",
+      "lutyp_name_lat": "Ulmo-Fraxinetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Zweiblatt-Eschen-Auenwald",
+      "lutyp_name_lat": "Ulmo-Fraxinetum listeretosum"
+    },
+    {
+      "lutyp_name_deu": "Ulmen-Eschen-Auenwald mit Weissegge",
+      "lutyp_name_lat": "Ulmo-Fraxinetum caricetosum albae"
+    },
+    {
+      "lutyp_name_deu": "Ulmen-Eschenwald mit Waldschachtelhalm",
+      "lutyp_name_lat": "Ulmo-Fraxinetum equisetosum silvaticae"
+    },
+    {
+      "lutyp_name_deu": "Zweiblatt-Eschenmischwald, Ausb. auf Lehmböden tiefer Lagen",
+      "lutyp_name_lat": "Ulmo-Fraxinetum listeretosum, Ausb. tiefer Lagen"
+    },
+    {
+      "lutyp_name_deu": "Traubenkirschen-Eschenwald",
+      "lutyp_name_lat": "Pruno-Fraxinetum"
+    },
+    {
+      "lutyp_name_deu": "Untermontaner Grauerlen-Auenwald",
+      "lutyp_name_lat": "Calamagrostio-Alnetum incanae"
+    },
+    {
+      "lutyp_name_deu": "Obermontaner Grauerlen-Auenwald",
+      "lutyp_name_lat": "Violo-Alnetum incanae"
+    },
+    {
+      "lutyp_name_deu": "Seggen-Schwarzerlen-Bruchwald",
+      "lutyp_name_lat": "Carici elongatae-Alnetum glutinosae"
+    },
+    {
+      "lutyp_name_deu": "Föhren-Birken-Bruchwald",
+      "lutyp_name_lat": "Pino-Betuletum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Heidelbeer-Tannen-Fichtenwald",
+      "lutyp_name_lat": "Vaccinio myrtillii-Abieti-Piceetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Peitschenmoos-Fichten-Tannenwald",
+      "lutyp_name_lat": "Bazzanio-Abietetum"
+    },
+    {
+      "lutyp_name_deu": "Heidelbeer-Tannen-Fichtenwald mit Torfmoos",
+      "lutyp_name_lat": "Vaccinio myrtilli-Abieti-Piceetum sphagnetosum"
+    },
+    {
+      "lutyp_name_deu": "Blockschutt-Tannen-Fichtenwald",
+      "lutyp_name_lat": "Asplenio-Abieti-Piceetum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Schachtelhalm-Tannen-Fichtenwald",
+      "lutyp_name_lat": "Equiseto-Abieti-Piceetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Hochstauden-Tannen-Fichtenwald",
+      "lutyp_name_lat": "Adenostylo alliariae-Abieti-Piceetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Hochstauden-Tannen-Fichtenwald, artenarme Ausb.",
+      "lutyp_name_lat": "Adenostylo alliariae-Abieti-Piceetum, artenarme Ausb."
+    },
+    {
+      "lutyp_name_deu": "Hochstauden-Tannen-Fichtenwald mit Alpenmilchlattich",
+      "lutyp_name_lat": "Adenostylo alliariae-Abieti-Piceetum cicerbitetosum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Zwergbuchs-Fichtenwald",
+      "lutyp_name_lat": "Polygala-chamaebuxi-Piceetum"
+    },
+    {
+      "lutyp_name_deu": "Typischer Zwergbuchs-Fichtenwald mit Tanne",
+      "lutyp_name_lat": "Polygala-chamaebuxi-Piceetum mit Tanne"
+    },
+    {
+      "lutyp_name_deu": "Moorrand-Fichtenwald",
+      "lutyp_name_lat": "Sphagno-Piceetum"
+    },
+    {
+      "lutyp_name_deu": "Alpenlattich-Fichtenwald mit Torfmoos, Ausb. mit Bergföhre",
+      "lutyp_name_lat": "Homogyno-Piceetum sphagnetosum, Ausb. mit Pinus mugo"
+    },
+    {
+      "lutyp_name_deu": "Alpenlattich-Fichtenwald, Blockausbildung",
+      "lutyp_name_lat": "Homogyno-Piceetum, Blockausbildung"
+    },
+    {
+      "lutyp_name_deu": "Alpenlattich-Fichtenwald mit Torfmoos",
+      "lutyp_name_lat": "Homogyno-Piceetum sphagnetosum"
+    },
+    {
+      "lutyp_name_deu": "Alpenlattich-Fichtenwald mit Heidelbeere",
+      "lutyp_name_lat": "Homogyno-Piceetum vaccinietosum myrtilli"
+    },
+    {
+      "lutyp_name_deu": "Typischer Hochstauden-Fichtenwald",
+      "lutyp_name_lat": "Adenostylo-Piceetum typicum"
+    },
+    {
+      "lutyp_name_deu": "Buntreitgras-Fichtenwald",
+      "lutyp_name_lat": "Calamgrostio variae-Piceetum"
+    },
+    {
+      "lutyp_name_deu": "Buntreitgras-Tannen-Fichtenwald",
+      "lutyp_name_lat": "Calamgrostio variae-Abieti-Piceetum"
+    },
+    {
+      "lutyp_name_deu": "Orchideen-Föhrenwald",
+      "lutyp_name_lat": "Cephalanthero-Pinetum silvestris"
+    },
+    {
+      "lutyp_name_deu": "Erika-Föhrenwald ",
+      "lutyp_name_lat": "Erico-Pinetum silvestris"
+    },
+    {
+      "lutyp_name_deu": "Erika-Bergföhrenwald",
+      "lutyp_name_lat": "Erico-Pinetum montanae"
+    },
+    {
+      "lutyp_name_deu": "Steinrosen-Bergföhrenwald",
+      "lutyp_name_lat": "Rhododendro hirsuti-Pinetum montanae"
+    },
+    {
+      "lutyp_name_deu": "Alpenrosen-Bergföhrenwald",
+      "lutyp_name_lat": "Rhododendro ferruginei-Pinetum montanae"
+    },
+    {
+      "lutyp_name_deu": "Torfmoos-Bergföhrenwald",
+      "lutyp_name_lat": "Sphagno-Pinetum montanae"
+    },
+    {
+      "lutyp_name_deu": "Torfmoos-Bergföhrenwald mit Wacholder",
+      "lutyp_name_lat": "Sphagno-Pinetum montanae juniperetosum communis"
+    },
+    {
+      "lutyp_name_deu": "Grünerlen-Gebüsch",
+      "lutyp_name_lat": "Alnenion viridis"
+    }
+  ],
   "relief": [
+    { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
+    { "de": "normal", "fr": "normal", "code": "normal" },
     {
       "de": "Hang- und Muldenlage",
       "fr": "en pente ou dans une dépression",
       "code": "h_and_m"
     },
-    { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
-    { "de": "normal", "fr": "normal", "code": "normal" },
-    { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" }
+    { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
   ],
   "bushType": [
     {
@@ -91986,44 +92354,5 @@
       "code": "100"
     }
   ],
-  "forestEcoregion": [
-    {
-      "de": "Nördliche Randalpen",
-      "fr": "Alpes externes du Nord",
-      "code": "1"
-    },
-    {
-      "de": "Nördliche Zwischenalpen mit Buche",
-      "fr": "Alpes intermédiaires du Nord avec hêtre",
-      "code": "2a"
-    },
-    {
-      "de": "Nördliche Zwischenalpen ohne Buche",
-      "fr": "Alpes intermédiaires du Nord sans hêtre",
-      "code": "2b"
-    },
-    {
-      "de": "Kontinentale Hochalpen",
-      "fr": "Hautes Alpes continentales",
-      "code": "3"
-    },
-    {
-      "de": "Südliche Zwischenalpen",
-      "fr": "Alpes intermédiaires du Sud",
-      "code": "4"
-    },
-    {
-      "de": "Südliche Randalpen mit Fichte",
-      "fr": "Alpes externes du Sud avec épicéa",
-      "code": "5a"
-    },
-    {
-      "de": "Südliche Randalpen ohne Fichte",
-      "fr": "Alpes externes du Sud sans épicéa",
-      "code": "5b"
-    },
-    { "de": "Jura", "fr": "Jura", "code": "J" },
-    { "de": "Mittelland", "fr": "Plateau", "code": "M" },
-    { "de": "Mendrisiotto", "fr": "Mendrisiotto", "code": "Me" }
-  ]
+  "forestEcoregion": null
 }
