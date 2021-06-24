@@ -192,7 +192,51 @@ COPY (
 ----- types
 
 COPY
-    (WITH additional AS
+    (SELECT jsonb_build_object(
+      'lu', (SELECT jsonb_build_object('standortTypen', (SELECT json_agg(jsonb_build_object('stoNr', sto_nr,
+                                                                                            'stoDeu', sto_deu,
+                                                                                            'stoLat', sto_lat,
+                                                                                            'eignung', eignung,
+                                                                                            'wbVerjEnt', wb_verj_ent,
+                                                                                            'wbPfl', wb_pfl,
+                                                                                            'beschreibung', beschreibung,
+                                                                                            'hoehenverbreitung', hoehenverbreitung,
+                                                                                            'vegetation', vegetation,
+                                                                                            'vorwaldbaumarten', vorwaldbaumarten,
+                                                                                            'gesGrNr', gesgr_nr,
+                                                                                            'verdrisk', verdrisk,
+                                                                                            'prioritaet', prioritaet)) AS
+          values
+          FROM lu_standorttypen), 'gesellschaftsGruppen', (SELECT json_agg(jsonb_build_object('gesGrNr', gesgr_nr,
+                                                                                              'gesGrDeu', gesgr_deu,
+                                                                                              'gesGrLat', gesgruppe_lat,
+                                                                                              'beschreibung', beschreibung,
+                                                                                              'standort', standort,
+                                                                                              'boden', boden,
+                                                                                              'eignungBedeutung', eignung_bedeutung,
+                                                                                              'hoehenverbreitung', hoehenverbreitung)) AS
+          values
+          FROM lu_gesellschaftsgruppen), 'artenGruppen', (SELECT json_agg(jsonb_build_object('stoNr', sto_nr,
+                                                                                             'a', a,
+                                                                                             'b', b,
+                                                                                             'c', c,
+                                                                                             'e', e,
+                                                                                             'f', f,
+                                                                                             'g', g,
+                                                                                             'h', h,
+                                                                                             'i', i,
+                                                                                             'j', j,
+                                                                                             'k', k,
+                                                                                             'l', l,
+                                                                                             'm', m,
+                                                                                             'n', n,
+                                                                                             'o', o,
+                                                                                             'p', p,
+                                                                                             'bemerkung', bemerkung,
+                                                                                             'gesGrNr', gesgr_nr)) AS
+          values
+          FROM lu_artengruppen))),
+      'ch', (WITH additional AS
          (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
           FROM additional_meta),
@@ -277,9 +321,6 @@ COPY
           mosstype AS (
             SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la)) AS values FROM mosstype_meta
           ),
-          lutyp AS (
-            SELECT json_agg(jsonb_build_object('lutyp_name_deu', lutyp_name_deu, 'lutyp_name_lat', lutyp_name_lat)) AS values FROM lu_standorttypen
-          ),
           relief as
          (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
@@ -309,7 +350,6 @@ COPY
                                                         values,'herbType', herbtype.
                                                         values,'indicator',indicators.
                                                         values,'mossType', mosstype.
-                                                        values,'luType', lutyp.
                                                         values,'relief',relief.
                                                         values,'silverFirArea',silver_fir_areas.
                                                         values,'slope',slope.
@@ -323,11 +363,10 @@ COPY
           herbtype,
           indicators,
           mosstype,
-          lutyp,
           relief,
           silver_fir_areas,
           slope,
-          treetype) TO '/data/types.json';
+          treetype))) TO '/data/types.json';
 
      GET DIAGNOSTICS x = ROW_COUNT;
   RETURN x;
