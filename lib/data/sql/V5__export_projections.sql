@@ -193,9 +193,9 @@ COPY (
 
 COPY
     (SELECT jsonb_build_object(
-      'lu', (SELECT jsonb_build_object('locationTypes', (SELECT json_agg(jsonb_build_object('locationNr', sto_nr,
-                                                                                            'locationDe', sto_deu,
-                                                                                            'locationLat', sto_lat,
+      'lu', (SELECT jsonb_build_object('locationTypes', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                            'de', sto_deu,
+                                                                                            'lat', sto_lat,
                                                                                             'aptitude', eignung,
                                                                                             'forestryRejuvDev', wb_verj_ent,
                                                                                             'forestryCare', wb_pfl,
@@ -207,16 +207,16 @@ COPY
                                                                                             'compactRisk', verdrisk,
                                                                                             'priority', prioritaet)) AS
           values
-          FROM lu_standorttypen), 'associationGroups', (SELECT json_agg(jsonb_build_object('associationGroupNr', gesgr_nr,
-                                                                                              'associationGroupDe', gesgr_deu,
-                                                                                              'associationGroupLat', gesgruppe_lat,
+          FROM lu_standorttypen), 'associationGroups', (SELECT json_agg(jsonb_build_object('code', gesgr_nr,
+                                                                                              'de', gesgr_deu,
+                                                                                              'lat', gesgruppe_lat,
                                                                                               'description', beschreibung,
                                                                                               'location', standort,
                                                                                               'soil', boden,
                                                                                               'aptitudeMeaning', eignung_bedeutung,
                                                                                               'heightDispersion', hoehenverbreitung)) AS
           values
-          FROM lu_gesellschaftsgruppen), 'speciesGroups', (SELECT json_agg(jsonb_build_object('locationNr', sto_nr,
+          FROM lu_gesellschaftsgruppen), 'speciesGroups', (SELECT json_agg(jsonb_build_object('code', sto_nr,
                                                                                              'a', a,
                                                                                              'b', b,
                                                                                              'c', c,
