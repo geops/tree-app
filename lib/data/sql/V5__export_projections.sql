@@ -193,7 +193,7 @@ COPY (
 
 COPY
     (SELECT jsonb_build_object(
-      'lu', (SELECT jsonb_build_object('locationTypes', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+      'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
                                                                                             'de', sto_deu,
                                                                                             'lat', sto_lat,
                                                                                             'aptitude', eignung,
@@ -207,7 +207,7 @@ COPY
                                                                                             'compactRisk', verdrisk,
                                                                                             'priority', prioritaet)) AS
           values
-          FROM lu_standorttypen), 'associationGroups', (SELECT json_agg(jsonb_build_object('code', gesgr_nr,
+          FROM lu_standorttypen), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', gesgr_nr,
                                                                                               'de', gesgr_deu,
                                                                                               'lat', gesgruppe_lat,
                                                                                               'description', beschreibung,
@@ -216,7 +216,7 @@ COPY
                                                                                               'aptitudeMeaning', eignung_bedeutung,
                                                                                               'heightDispersion', hoehenverbreitung)) AS
           values
-          FROM lu_gesellschaftsgruppen), 'speciesGroups', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+          FROM lu_gesellschaftsgruppen), 'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
                                                                                              'a', a,
                                                                                              'b', b,
                                                                                              'c', c,

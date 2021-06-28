@@ -92097,7 +92097,7 @@
     ]
   },
   "lu": {
-    "locationTypes": [
+    "forestType": [
       {
         "de": "Typischer Hainsimsen-Buchenwald",
         "lat": "Luzulo silvaticae-Fagetum typicum",
@@ -93494,7 +93494,7 @@
         "associationGroupNr": "AV"
       }
     ],
-    "speciesGroups": [
+    "speciesGroup": [
       {
         "a": null,
         "b": "2",
@@ -95356,7 +95356,7 @@
         "associationGroupNr": "AV"
       }
     ],
-    "associationGroups": [
+    "associationGroup": [
       {
         "de": "Hainsimsen-Buchenwald",
         "lat": "Luzulo-Fagetum",
