@@ -193,7 +193,7 @@ COPY (
 
 COPY
     (SELECT jsonb_build_object(
-      'lu', (SELECT jsonb_build_object('standortTypen', (SELECT json_agg(jsonb_build_object('locationNr', sto_nr,
+      'lu', (SELECT jsonb_build_object('locationTypes', (SELECT json_agg(jsonb_build_object('locationNr', sto_nr,
                                                                                             'locationDe', sto_deu,
                                                                                             'locationLat', sto_lat,
                                                                                             'aptitude', eignung,
@@ -203,20 +203,20 @@ COPY
                                                                                             'heightDispersion', hoehenverbreitung,
                                                                                             'vegetation', vegetation,
                                                                                             'pioneerTreeTypes', vorwaldbaumarten,
-                                                                                            'associationNr', gesgr_nr,
+                                                                                            'associationGroupNr', gesgr_nr,
                                                                                             'compactRisk', verdrisk,
                                                                                             'priority', prioritaet)) AS
           values
-          FROM lu_standorttypen), 'gesellschaftsGruppen', (SELECT json_agg(jsonb_build_object('associationNr', gesgr_nr,
-                                                                                              'associationDe', gesgr_deu,
-                                                                                              'associationLat', gesgruppe_lat,
+          FROM lu_standorttypen), 'associationGroups', (SELECT json_agg(jsonb_build_object('associationGroupNr', gesgr_nr,
+                                                                                              'associationGroupDe', gesgr_deu,
+                                                                                              'associationGroupLat', gesgruppe_lat,
                                                                                               'description', beschreibung,
                                                                                               'location', standort,
                                                                                               'soil', boden,
                                                                                               'aptitudeMeaning', eignung_bedeutung,
                                                                                               'heightDispersion', hoehenverbreitung)) AS
           values
-          FROM lu_gesellschaftsgruppen), 'artenGruppen', (SELECT json_agg(jsonb_build_object('locationNr', sto_nr,
+          FROM lu_gesellschaftsgruppen), 'speciesGroups', (SELECT json_agg(jsonb_build_object('locationNr', sto_nr,
                                                                                              'a', a,
                                                                                              'b', b,
                                                                                              'c', c,
@@ -233,7 +233,7 @@ COPY
                                                                                              'o', o,
                                                                                              'p', p,
                                                                                              'note', bemerkung,
-                                                                                             'associationNr', gesgr_nr)) AS
+                                                                                             'associationGroupNr', gesgr_nr)) AS
           values
           FROM lu_artengruppen))),
       'ch', (WITH additional AS
