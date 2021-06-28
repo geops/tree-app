@@ -192,7 +192,51 @@ COPY (
 ----- types
 
 COPY
-    (WITH additional AS
+    (SELECT jsonb_build_object(
+      'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                            'de', sto_deu,
+                                                                                            'lat', sto_lat,
+                                                                                            'aptitude', eignung,
+                                                                                            'forestryRejuvDev', wb_verj_ent,
+                                                                                            'forestryCare', wb_pfl,
+                                                                                            'description', beschreibung,
+                                                                                            'heightDispersion', hoehenverbreitung,
+                                                                                            'vegetation', vegetation,
+                                                                                            'pioneerTreeTypes', vorwaldbaumarten,
+                                                                                            'associationGroupNr', gesgr_nr,
+                                                                                            'compactRisk', verdrisk,
+                                                                                            'priority', prioritaet)) AS
+          values
+          FROM lu_standorttypen), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', gesgr_nr,
+                                                                                              'de', gesgr_deu,
+                                                                                              'lat', gesgruppe_lat,
+                                                                                              'description', beschreibung,
+                                                                                              'location', standort,
+                                                                                              'soil', boden,
+                                                                                              'aptitudeMeaning', eignung_bedeutung,
+                                                                                              'heightDispersion', hoehenverbreitung)) AS
+          values
+          FROM lu_gesellschaftsgruppen), 'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                             'a', a,
+                                                                                             'b', b,
+                                                                                             'c', c,
+                                                                                             'e', e,
+                                                                                             'f', f,
+                                                                                             'g', g,
+                                                                                             'h', h,
+                                                                                             'i', i,
+                                                                                             'j', j,
+                                                                                             'k', k,
+                                                                                             'l', l,
+                                                                                             'm', m,
+                                                                                             'n', n,
+                                                                                             'o', o,
+                                                                                             'p', p,
+                                                                                             'note', bemerkung,
+                                                                                             'associationGroupNr', gesgr_nr)) AS
+          values
+          FROM lu_artengruppen))),
+      'ch', (WITH additional AS
          (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
           FROM additional_meta),
@@ -322,7 +366,7 @@ COPY
           relief,
           silver_fir_areas,
           slope,
-          treetype) TO '/data/types.json';
+          treetype))) TO '/data/types.json';
 
      GET DIAGNOSTICS x = ROW_COUNT;
   RETURN x;
