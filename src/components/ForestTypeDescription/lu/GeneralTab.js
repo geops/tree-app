@@ -17,20 +17,20 @@ function GeneralTab({ data }) {
   return (
     <>
       <div style={styles.section}>
-        <h4>{t('forestType.appearance')}</h4>
+        <h4>{t('lu.forestType.appearance')}</h4>
         <p>{parseHtml(data.description)}</p>
         <p>{parseHtml(data.vegetation)}</p>
       </div>
       <div style={styles.section}>
-        <h4>{t('forestType.aptitude')}</h4>
+        <h4>{t('lu.forestType.aptitude')}</h4>
         <p>{parseHtml(data.aptitude)}</p>
       </div>
       <div style={styles.section}>
-        <h4>{t('forestType.rejuvDev')}</h4>
+        <h4>{t('lu.forestType.rejuvDev')}</h4>
         <p>{parseHtml(data.forestryRejuvDev)}</p>
       </div>
       <div style={styles.section}>
-        <h4>{t('forestType.care')}</h4>
+        <h4>{t('lu.forestType.care')}</h4>
         <p>{parseHtml(data.forestryCare)}</p>
       </div>
     </>

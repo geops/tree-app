@@ -24,7 +24,7 @@ function AssociationsTab({ data }) {
   return (
     <>
       <div style={styles.section}>
-        <h4>{t('forestType.location')}</h4>
+        <h4>{t('lu.forestType.location')}</h4>
         <p>{parseHtml(associationGroup.location)}</p>
       </div>
       <div style={styles.section}>
@@ -32,7 +32,7 @@ function AssociationsTab({ data }) {
         <p>{parseHtml(associationGroup.soil)}</p>
       </div>
       <div style={styles.section}>
-        <h4>{t('forestType.meaning')}</h4>
+        <h4>{t('lu.forestType.meaning')}</h4>
         <p>{parseHtml(associationGroup.aptitudeMeaning)}</p>
       </div>
     </>

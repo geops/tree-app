@@ -20,10 +20,8 @@ function ProfileSwitcher() {
       },
       {
         value: 'lu',
-        text: t('profiles.luzern'),
-        content: (
-          <span data-cypress="lucerneOption">{t('profiles.luzern')}</span>
-        ),
+        text: t('profiles.lu'),
+        content: <span data-cypress="lucerneOption">{t('profiles.lu')}</span>,
       },
     ],
     [t],

@@ -159,8 +159,7 @@
       "permeability": "Perméabilité"
     },
     "terrain": "Terrain",
-    "vegetation": "Végétation aspect",
-    "general": "Général"
+    "vegetation": "Végétation aspect"
   },
   "dropdown": {
     "noResultsMessage": "Aucune entrée trouvée",
@@ -239,8 +238,7 @@
       "placeholder": "Veuillez indiquer les espèces indicatrices"
     },
     "label": "Type de station",
-    "location": "Standort",
-    "locationGeneral": "Station générale",
+    "location": "Station générale",
     "moss": "Mousses",
     "naturalForest": "Forêt naturelle",
     "often": "souvent",
@@ -284,12 +282,7 @@
       "small": "Petits ruisseaux",
       "spring": "Source",
       "stream": "le long de ruisseaux"
-    },
-    "appearance": "Apparence",
-    "aptitude": "Aptitude",
-    "rejuvDev": "Rajeunissement et développement",
-    "care": "Maintenance",
-    "meaning": "Sens"
+    }
   },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
@@ -404,7 +397,20 @@
   },
   "profiles": {
     "ch": "Fédération",
-    "bern": "Berne",
-    "luzern": "Luzerne"
+    "lu": "Luzerne"
+  },
+  "lu": {
+    "forestType": {
+      "appearance": "Apparence",
+      "aptitude": "Aptitude",
+      "rejuvDev": "Rajeunissement et développement",
+      "care": "Maintenance",
+      "meaning": "Sens",
+      "location": "Standort"
+    },
+    "forestTypeDiagram": {
+      "general": "Général",
+      "associations": "Associations"
+    }
   }
 }

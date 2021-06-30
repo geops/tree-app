@@ -12,11 +12,11 @@ function LuForestTypeDescription({ data }) {
       <Tab
         panes={[
           {
-            menuItem: t('forestTypeDiagram.general'),
+            menuItem: t('lu.forestTypeDiagram.general'),
             render: () => <GeneralTab data={data} />,
           },
           {
-            menuItem: t('forestTypeDiagram.associations'),
+            menuItem: t('lu.forestTypeDiagram.associations'),
             render: () => <AssociationsTab data={data} />,
           },
           //   {

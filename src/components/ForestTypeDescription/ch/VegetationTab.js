@@ -55,7 +55,7 @@ function VegetationTab({ data }) {
           )}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('forestType.locationGeneral')}</Table.HeaderCell>
+          <Table.HeaderCell>{t('forestType.location')}</Table.HeaderCell>
           <Table.Cell colSpan="3">{data.location[i18n.language]}</Table.Cell>
         </Table.Row>
         <Table.Row>

@@ -159,9 +159,7 @@
       "permeability": "Durchlässigkeit"
     },
     "terrain": "Gelände",
-    "vegetation": "Vegetation",
-    "general": "Allgemein",
-    "associations": "Gesellschaftsgruppen"
+    "vegetation": "Vegetation"
   },
   "dropdown": {
     "noResultsMessage": "Kein Eintrag gefunden",
@@ -240,8 +238,7 @@
       "placeholder": "Bitte Zeigerarten eingeben"
     },
     "label": "Standortstyp",
-    "location": "Standort",
-    "locationGeneral": "Standort allgemein",
+    "location": "Standort allgemein",
     "moss": "Moos",
     "naturalForest": "Naturwald",
     "often": "oft",
@@ -285,12 +282,7 @@
       "small": "kleine Bachläufe",
       "spring": "Quellaufstoss",
       "stream": "entlang Bachlauf"
-    },
-    "appearance": "Waldbild",
-    "aptitude": "Eignung",
-    "rejuvDev": "Verjüngung und Entwicklung",
-    "care": "Pflege",
-    "meaning": "Bedeutung"
+    }
   },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
@@ -405,7 +397,20 @@
   },
   "profiles": {
     "ch": "Bund",
-    "bern": "Bern",
-    "luzern": "Luzern"
+    "lu": "Luzern"
+  },
+  "lu": {
+    "forestType": {
+      "appearance": "Waldbild",
+      "aptitude": "Eignung",
+      "rejuvDev": "Verjüngung und Entwicklung",
+      "care": "Pflege",
+      "meaning": "Bedeutung",
+      "location": "Standort"
+    },
+    "forestTypeDiagram": {
+      "general": "Allgemein",
+      "associations": "Gesellschaftsgruppen"
+    }
   }
 }
