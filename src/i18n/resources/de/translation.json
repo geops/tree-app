@@ -159,7 +159,9 @@
       "permeability": "Durchlässigkeit"
     },
     "terrain": "Gelände",
-    "vegetation": "Vegetation"
+    "vegetation": "Vegetation",
+    "general": "Allgemein",
+    "associations": "Gesellschaftsgruppen"
   },
   "dropdown": {
     "noResultsMessage": "Kein Eintrag gefunden",
@@ -238,7 +240,8 @@
       "placeholder": "Bitte Zeigerarten eingeben"
     },
     "label": "Standortstyp",
-    "location": "Standort allgemein",
+    "location": "Standort",
+    "locationGeneral": "Standort allgemein",
     "moss": "Moos",
     "naturalForest": "Naturwald",
     "often": "oft",
@@ -282,7 +285,12 @@
       "small": "kleine Bachläufe",
       "spring": "Quellaufstoss",
       "stream": "entlang Bachlauf"
-    }
+    },
+    "appearance": "Waldbild",
+    "aptitude": "Eignung",
+    "rejuvDev": "Verjüngung und Entwicklung",
+    "care": "Pflege",
+    "meaning": "Bedeutung"
   },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",

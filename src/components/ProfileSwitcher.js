@@ -19,11 +19,6 @@ function ProfileSwitcher() {
         content: <span>{t('profiles.ch')}</span>,
       },
       {
-        value: 'be',
-        text: t('profiles.bern'),
-        content: <span>{t('profiles.bern')}</span>,
-      },
-      {
         value: 'lu',
         text: t('profiles.luzern'),
         content: (
