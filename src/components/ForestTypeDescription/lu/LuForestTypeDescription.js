@@ -17,7 +17,11 @@ function LuForestTypeDescription({ data }) {
           },
           {
             menuItem: t('lu.forestTypeDiagram.associations'),
-            render: () => <AssociationsTab data={data} />,
+            render: () => (
+              <AssociationsTab
+                associationGroupCode={data.associationGroupCode}
+              />
+            ),
           },
           //   {
           //     menuItem: t('forestTypeDiagram.soil.header'),

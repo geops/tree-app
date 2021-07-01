@@ -14,11 +14,13 @@ const styles = {
   },
 };
 
-function AssociationsTab({ data }) {
+function AssociationsTab({ associationGroupCode }) {
   const { t } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
-  const associationGroup = info('associationGroup', null, activeProfile).find(
-    (group) => group.code === data.associationGroupCode,
+  const associationGroup = info(
+    'associationGroup',
+    associationGroupCode,
+    activeProfile,
   );
 
   return (
@@ -40,7 +42,7 @@ function AssociationsTab({ data }) {
 }
 
 AssociationsTab.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  associationGroupCode: PropTypes.string.isRequired,
 };
 
 export default AssociationsTab;

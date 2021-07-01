@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Form } from 'semantic-ui-react';
 import { useSelector } from 'react-redux';
 // eslint-disable-next-line import/no-unresolved
@@ -20,10 +20,6 @@ function ForestTypePage() {
     [activeProfile],
   );
   const [data, setData] = useState(null);
-
-  useEffect(() => {
-    setData(null);
-  }, [activeProfile]);
 
   return (
     <Form style={{ margin: 20 }}>
