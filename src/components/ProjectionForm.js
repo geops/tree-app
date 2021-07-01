@@ -24,7 +24,7 @@ const getDropdownOptions =
     key,
     content: includeKey ? (
       <>
-        <ForestTypeModal data={info(type, key)} />
+        <ForestTypeModal code={key} />
         {key} - {info(type, key)[lng]}
       </>
     ) : (

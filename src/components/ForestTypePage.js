@@ -35,7 +35,7 @@ function ForestTypePage() {
           setData(info('forestType', value, activeProfile))
         }
       />
-      <Form.Field>{data && <ForestTypeModal data={data} />}</Form.Field>
+      <Form.Field>{data && <ForestTypeModal code={data.code} />}</Form.Field>
       <Form.Field>
         <LanguageSwitcher />
       </Form.Field>

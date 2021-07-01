@@ -399,6 +399,10 @@
     "ch": "Bund",
     "lu": "Luzern"
   },
+  "forestTypeModal": {
+    "noDataHeader": "Keine Daten vorhanden",
+    "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?"
+  },
   "lu": {
     "forestType": {
       "appearance": "Waldbild",
