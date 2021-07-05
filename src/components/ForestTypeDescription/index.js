@@ -1,32 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Tab } from 'semantic-ui-react';
-
-import SoilTab from './SoilTab';
-import TerrainTab from './TerrainTab';
-import VegetationTab from './VegetationTab';
+import { useSelector } from 'react-redux';
+import ChForestTypeDescription from './ch/ChForestTypesDescription';
+import LuForestTypeDescription from './lu/LuForestTypeDescription';
 
 function ForestTypeDescription({ data }) {
-  const { t } = useTranslation();
+  const activeProfile = useSelector((state) => state.activeProfile);
   return (
     <>
-      <Tab
-        panes={[
-          {
-            menuItem: t('forestTypeDiagram.vegetation'),
-            render: () => <VegetationTab data={data} />,
-          },
-          {
-            menuItem: t('forestTypeDiagram.terrain'),
-            render: () => <TerrainTab data={data} />,
-          },
-          {
-            menuItem: t('forestTypeDiagram.soil.header'),
-            render: () => <SoilTab data={data} />,
-          },
-        ]}
-      />
+      {activeProfile === 'ch' && <ChForestTypeDescription data={data} />}
+      {activeProfile === 'lu' && <LuForestTypeDescription data={data} />}
     </>
   );
 }

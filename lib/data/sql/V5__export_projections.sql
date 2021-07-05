@@ -195,7 +195,7 @@ COPY
     (SELECT jsonb_build_object(
       'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
                                                                                             'de', sto_deu,
-                                                                                            'lat', sto_lat,
+                                                                                            'la', sto_lat,
                                                                                             'aptitude', eignung,
                                                                                             'forestryRejuvDev', wb_verj_ent,
                                                                                             'forestryCare', wb_pfl,
@@ -203,13 +203,13 @@ COPY
                                                                                             'heightDispersion', hoehenverbreitung,
                                                                                             'vegetation', vegetation,
                                                                                             'pioneerTreeTypes', vorwaldbaumarten,
-                                                                                            'associationGroupNr', gesgr_nr,
+                                                                                            'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                             'compactRisk', verdrisk,
                                                                                             'priority', prioritaet)) AS
           values
-          FROM lu_standorttypen), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', gesgr_nr,
+          FROM lu_standorttypen), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                               'de', gesgr_deu,
-                                                                                              'lat', gesgruppe_lat,
+                                                                                              'la', gesgruppe_lat,
                                                                                               'description', beschreibung,
                                                                                               'location', standort,
                                                                                               'soil', boden,
@@ -233,7 +233,7 @@ COPY
                                                                                              'o', o,
                                                                                              'p', p,
                                                                                              'note', bemerkung,
-                                                                                             'associationGroupNr', gesgr_nr)) AS
+                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
           values
           FROM lu_artengruppen))),
       'ch', (WITH additional AS

@@ -397,7 +397,24 @@
   },
   "profiles": {
     "ch": "Fédération",
-    "bern": "Berne",
-    "luzern": "Luzerne"
+    "lu": "Luzerne"
+  },
+  "forestTypeModal": {
+    "noDataHeader": "Pas de données disponibles",
+    "noDataMessage": "Il n'y a pas de données pour cet emplacement dans le profil actuel. Êtes-vous dans le bon profil?"
+  },
+  "lu": {
+    "forestType": {
+      "appearance": "Apparence",
+      "aptitude": "Aptitude",
+      "rejuvDev": "Rajeunissement et développement",
+      "care": "Maintenance",
+      "meaning": "Sens",
+      "location": "Standort"
+    },
+    "forestTypeDiagram": {
+      "general": "Général",
+      "associations": "Associations"
+    }
   }
 }
