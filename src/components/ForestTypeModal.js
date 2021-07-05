@@ -26,7 +26,6 @@ function ForestTypeModal({ code, setIsForestTypeModalOpen }) {
 
   return (
     <Modal
-      closeOnDimmerClick
       actions={
         <Modal.Actions
           style={{ display: 'flex', justifyContent: 'flex-end' }}
