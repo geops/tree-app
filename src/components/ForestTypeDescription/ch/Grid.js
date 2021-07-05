@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import NoData from './NoData';
-import styles from './Diagram.module.css';
-import { getStyle } from './utils';
+import NoData from '../NoData';
+import styles from '../Diagram.module.css';
+import { getStyle } from '../utils';
 
 function Grid({ data, header, headerX, headerY, labelX, labelY }) {
   return (

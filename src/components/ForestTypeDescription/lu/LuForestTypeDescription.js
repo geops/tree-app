@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Tab } from 'semantic-ui-react';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
+import Site from './Site';
 
 function LuForestTypeDescription({ data }) {
   const { t } = useTranslation();
@@ -23,10 +24,10 @@ function LuForestTypeDescription({ data }) {
               />
             ),
           },
-          //   {
-          //     menuItem: t('forestTypeDiagram.soil.header'),
-          //     render: () => <SoilTab data={data} />,
-          //   },
+          {
+            menuItem: t('forestTypeDiagram.soil.header'),
+            render: () => <Site />,
+          },
         ]}
       />
     </>

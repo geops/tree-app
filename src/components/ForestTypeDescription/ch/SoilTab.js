@@ -8,7 +8,7 @@ import SkeletalFraction from './SkeletalFraction';
 import SoilDiagram from './SoilDiagram';
 import SoilWetnessGroundwater from './SoilWetnessGroundwater';
 import SoilWetnessTailwater from './SoilWetnessTailwater';
-import styles from './Diagram.module.css';
+import styles from '../Diagram.module.css';
 
 function SoilTab({ data }) {
   return (
