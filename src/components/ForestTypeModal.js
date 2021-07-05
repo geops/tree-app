@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
-import { Modal, Button as SUIButton } from 'semantic-ui-react';
+import { Modal } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
 import Button from './Button';
@@ -11,7 +11,6 @@ import ProfileSwitcher from './ProfileSwitcher';
 
 function ForestTypeModal({ code, setIsForestTypeModalOpen }) {
   const activeProfile = useSelector((state) => state.activeProfile);
-  const [modalOpen, setModalOpen] = useState(false);
   const { i18n, t } = useTranslation();
   const data = useMemo(() => {
     let result;
@@ -27,16 +26,18 @@ function ForestTypeModal({ code, setIsForestTypeModalOpen }) {
 
   return (
     <Modal
-      open={modalOpen}
+      closeOnDimmerClick
       actions={
-        <Modal.Actions>
-          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-            <span style={{ marginRight: 15 }}>
-              <ProfileSwitcher />
-            </span>
-            <SUIButton onClick={() => setModalOpen(false)}>Ok</SUIButton>
-          </div>
-        </Modal.Actions>
+        <Modal.Actions
+          style={{ display: 'flex', justifyContent: 'flex-end' }}
+          actions={[
+            {
+              key: 'profileSwitcher',
+              as: ProfileSwitcher,
+            },
+            { key: 'done', content: 'Ok' },
+          ]}
+        />
       }
       content={
         <Modal.Content>
@@ -61,9 +62,7 @@ function ForestTypeModal({ code, setIsForestTypeModalOpen }) {
       }
       onClose={(e) => setIsForestTypeModalOpen(false)}
       onOpen={(e) => setIsForestTypeModalOpen(true)}
-      trigger={
-        <Button active compact icon="info" onClick={() => setModalOpen(true)} />
-      }
+      trigger={<Button active compact icon="info" />}
     />
   );
 }

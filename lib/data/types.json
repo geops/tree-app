@@ -11,13 +11,13 @@
     ],
     "relief": [
       { "de": "normal", "fr": "normal", "code": "normal" },
-      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
-      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
       {
         "de": "Hang- und Muldenlage",
         "fr": "en pente ou dans une dépression",
         "code": "h_and_m"
-      }
+      },
+      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
+      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" }
     ],
     "bushType": [
       {
@@ -27114,7 +27114,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "3L/4L med",
+        "code": "3L/4L hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -27149,7 +27149,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "3L/4L hyp",
+        "code": "3L/4L med",
         "soil": null,
         "group": {
           "main": false,
@@ -37014,7 +37014,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25O med",
+        "code": "25O hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -37049,7 +37049,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25O hyp",
+        "code": "25O med",
         "soil": null,
         "group": {
           "main": false,
@@ -37443,7 +37443,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25a hyp",
+        "code": "25a med",
         "soil": null,
         "group": {
           "main": false,
@@ -37478,7 +37478,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25a med",
+        "code": "25a hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -37621,7 +37621,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25as med",
+        "code": "25as hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -37656,7 +37656,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25as hyp",
+        "code": "25as med",
         "soil": null,
         "group": {
           "main": false,
@@ -38298,7 +38298,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25au hyp",
+        "code": "25au med",
         "soil": null,
         "group": {
           "main": false,
@@ -38333,7 +38333,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "25au med",
+        "code": "25au hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -39334,7 +39334,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "27O hyp",
+        "code": "27Omed",
         "soil": null,
         "group": {
           "main": false,
@@ -39369,7 +39369,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "27Omed",
+        "code": "27O hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -40510,7 +40510,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "30 collin",
+        "code": "30 med",
         "soil": null,
         "group": {
           "main": false,
@@ -40545,7 +40545,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "30 med",
+        "code": "30 collin",
         "soil": null,
         "group": {
           "main": false,
@@ -40723,41 +40723,6 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "31 collin",
-        "soil": null,
-        "group": {
-          "main": false,
-          "pioneer": false,
-          "special": false,
-          "volatile": false,
-          "riverside": false
-        },
-        "humus": null,
-        "slope": null,
-        "water": [null, null, null, null],
-        "aspect": null,
-        "height": null,
-        "process": [null, null, null, null],
-        "altitude": null,
-        "location": { "de": null, "fr": null },
-        "carbonate": [null, null],
-        "graininess": null,
-        "reliefType": [null, null, null, null, null],
-        "vegetation": { "de": null, "fr": null },
-        "rawMaterial": null,
-        "soilVariants": null,
-        "geomorphology": [null, null, null, null, null, null, null],
-        "humusVariants": null,
-        "naturalForest": { "de": null, "fr": null },
-        "soilWetnessTailwater": null,
-        "soilWetnessGroundwater": null,
-        "skeletalFractionSoilDepth": null,
-        "altitudinalZoneForestEcoregion": null
-      },
-      {
-        "de": null,
-        "fr": null,
-        "la": null,
         "code": "31 hyp",
         "soil": null,
         "group": {
@@ -40794,6 +40759,41 @@
         "fr": null,
         "la": null,
         "code": "31 med",
+        "soil": null,
+        "group": {
+          "main": false,
+          "pioneer": false,
+          "special": false,
+          "volatile": false,
+          "riverside": false
+        },
+        "humus": null,
+        "slope": null,
+        "water": [null, null, null, null],
+        "aspect": null,
+        "height": null,
+        "process": [null, null, null, null],
+        "altitude": null,
+        "location": { "de": null, "fr": null },
+        "carbonate": [null, null],
+        "graininess": null,
+        "reliefType": [null, null, null, null, null],
+        "vegetation": { "de": null, "fr": null },
+        "rawMaterial": null,
+        "soilVariants": null,
+        "geomorphology": [null, null, null, null, null, null, null],
+        "humusVariants": null,
+        "naturalForest": { "de": null, "fr": null },
+        "soilWetnessTailwater": null,
+        "soilWetnessGroundwater": null,
+        "skeletalFractionSoilDepth": null,
+        "altitudinalZoneForestEcoregion": null
+      },
+      {
+        "de": null,
+        "fr": null,
+        "la": null,
+        "code": "31 collin",
         "soil": null,
         "group": {
           "main": false,
@@ -40936,6 +40936,41 @@
         "de": null,
         "fr": null,
         "la": null,
+        "code": "32C med",
+        "soil": null,
+        "group": {
+          "main": false,
+          "pioneer": false,
+          "special": false,
+          "volatile": false,
+          "riverside": false
+        },
+        "humus": null,
+        "slope": null,
+        "water": [null, null, null, null],
+        "aspect": null,
+        "height": null,
+        "process": [null, null, null, null],
+        "altitude": null,
+        "location": { "de": null, "fr": null },
+        "carbonate": [null, null],
+        "graininess": null,
+        "reliefType": [null, null, null, null, null],
+        "vegetation": { "de": null, "fr": null },
+        "rawMaterial": null,
+        "soilVariants": null,
+        "geomorphology": [null, null, null, null, null, null, null],
+        "humusVariants": null,
+        "naturalForest": { "de": null, "fr": null },
+        "soilWetnessTailwater": null,
+        "soilWetnessGroundwater": null,
+        "skeletalFractionSoilDepth": null,
+        "altitudinalZoneForestEcoregion": null
+      },
+      {
+        "de": null,
+        "fr": null,
+        "la": null,
         "code": "32C collin",
         "soil": null,
         "group": {
@@ -40972,41 +41007,6 @@
         "fr": null,
         "la": null,
         "code": "32C hyp",
-        "soil": null,
-        "group": {
-          "main": false,
-          "pioneer": false,
-          "special": false,
-          "volatile": false,
-          "riverside": false
-        },
-        "humus": null,
-        "slope": null,
-        "water": [null, null, null, null],
-        "aspect": null,
-        "height": null,
-        "process": [null, null, null, null],
-        "altitude": null,
-        "location": { "de": null, "fr": null },
-        "carbonate": [null, null],
-        "graininess": null,
-        "reliefType": [null, null, null, null, null],
-        "vegetation": { "de": null, "fr": null },
-        "rawMaterial": null,
-        "soilVariants": null,
-        "geomorphology": [null, null, null, null, null, null, null],
-        "humusVariants": null,
-        "naturalForest": { "de": null, "fr": null },
-        "soilWetnessTailwater": null,
-        "soilWetnessGroundwater": null,
-        "skeletalFractionSoilDepth": null,
-        "altitudinalZoneForestEcoregion": null
-      },
-      {
-        "de": null,
-        "fr": null,
-        "la": null,
-        "code": "32C med",
         "soil": null,
         "group": {
           "main": false,
@@ -41829,7 +41829,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "33b med",
+        "code": "33b hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -41864,7 +41864,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "33b hyp",
+        "code": "33b med",
         "soil": null,
         "group": {
           "main": false,
@@ -42007,7 +42007,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "33m hyp",
+        "code": "33m med",
         "soil": null,
         "group": {
           "main": false,
@@ -42042,7 +42042,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "33m med",
+        "code": "33m hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -42185,7 +42185,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "34a med",
+        "code": "34a hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -42220,7 +42220,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "34a hyp",
+        "code": "34a med",
         "soil": null,
         "group": {
           "main": false,
@@ -42900,7 +42900,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "35Q med",
+        "code": "35Q hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -42935,7 +42935,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "35Q hyp",
+        "code": "35Q med",
         "soil": null,
         "group": {
           "main": false,
@@ -43542,7 +43542,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "37 hyp",
+        "code": "37 med",
         "soil": null,
         "group": {
           "main": false,
@@ -43577,7 +43577,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "37 med",
+        "code": "37 hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -44470,7 +44470,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "40P med",
+        "code": "40P collin",
         "soil": null,
         "group": {
           "main": false,
@@ -44505,7 +44505,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "40P collin",
+        "code": "40P med",
         "soil": null,
         "group": {
           "main": false,
@@ -44648,6 +44648,41 @@
         "de": null,
         "fr": null,
         "la": null,
+        "code": "40PBl med",
+        "soil": null,
+        "group": {
+          "main": false,
+          "pioneer": false,
+          "special": false,
+          "volatile": false,
+          "riverside": false
+        },
+        "humus": null,
+        "slope": null,
+        "water": [null, null, null, null],
+        "aspect": null,
+        "height": null,
+        "process": [null, null, null, null],
+        "altitude": null,
+        "location": { "de": null, "fr": null },
+        "carbonate": [null, null],
+        "graininess": null,
+        "reliefType": [null, null, null, null, null],
+        "vegetation": { "de": null, "fr": null },
+        "rawMaterial": null,
+        "soilVariants": null,
+        "geomorphology": [null, null, null, null, null, null, null],
+        "humusVariants": null,
+        "naturalForest": { "de": null, "fr": null },
+        "soilWetnessTailwater": null,
+        "soilWetnessGroundwater": null,
+        "skeletalFractionSoilDepth": null,
+        "altitudinalZoneForestEcoregion": null
+      },
+      {
+        "de": null,
+        "fr": null,
+        "la": null,
         "code": "40PBl collin",
         "soil": null,
         "group": {
@@ -44684,41 +44719,6 @@
         "fr": null,
         "la": null,
         "code": "40PBl hyp",
-        "soil": null,
-        "group": {
-          "main": false,
-          "pioneer": false,
-          "special": false,
-          "volatile": false,
-          "riverside": false
-        },
-        "humus": null,
-        "slope": null,
-        "water": [null, null, null, null],
-        "aspect": null,
-        "height": null,
-        "process": [null, null, null, null],
-        "altitude": null,
-        "location": { "de": null, "fr": null },
-        "carbonate": [null, null],
-        "graininess": null,
-        "reliefType": [null, null, null, null, null],
-        "vegetation": { "de": null, "fr": null },
-        "rawMaterial": null,
-        "soilVariants": null,
-        "geomorphology": [null, null, null, null, null, null, null],
-        "humusVariants": null,
-        "naturalForest": { "de": null, "fr": null },
-        "soilWetnessTailwater": null,
-        "soilWetnessGroundwater": null,
-        "skeletalFractionSoilDepth": null,
-        "altitudinalZoneForestEcoregion": null
-      },
-      {
-        "de": null,
-        "fr": null,
-        "la": null,
-        "code": "40PBl med",
         "soil": null,
         "group": {
           "main": false,
@@ -45506,7 +45506,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42C hyp",
+        "code": "42C med",
         "soil": null,
         "group": {
           "main": false,
@@ -45541,7 +45541,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42C med",
+        "code": "42C hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -45862,7 +45862,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42V med",
+        "code": "42V hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -45897,7 +45897,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42V hyp",
+        "code": "42V med",
         "soil": null,
         "group": {
           "main": false,
@@ -46218,7 +46218,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42B med",
+        "code": "42B hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -46253,7 +46253,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42B hyp",
+        "code": "42B med",
         "soil": null,
         "group": {
           "main": false,
@@ -46396,7 +46396,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42t hyp",
+        "code": "42t med",
         "soil": null,
         "group": {
           "main": false,
@@ -46431,7 +46431,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "42t med",
+        "code": "42t hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -46574,7 +46574,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "43 med",
+        "code": "43 hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -46609,7 +46609,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "43 hyp",
+        "code": "43 med",
         "soil": null,
         "group": {
           "main": false,
@@ -46787,7 +46787,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "43S collin",
+        "code": "43S med",
         "soil": null,
         "group": {
           "main": false,
@@ -46822,7 +46822,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "43S med",
+        "code": "43S collin",
         "soil": null,
         "group": {
           "main": false,
@@ -47178,7 +47178,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "44 hyp",
+        "code": "44 collin",
         "soil": null,
         "group": {
           "main": false,
@@ -47213,7 +47213,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "44 collin",
+        "code": "44 hyp",
         "soil": null,
         "group": {
           "main": false,
@@ -51331,10 +51331,10 @@
         ]
       },
       {
-        "de": "Typischer Zwergbuchs-Fichtenwald; Lärchenausbildung",
-        "fr": "Pessière à  Polygala petit buis avec Mélèze",
-        "la": "Polygalo chamaebuxi-Piceetum; Lärchenausbildung",
-        "code": "53Lä",
+        "de": null,
+        "fr": null,
+        "la": null,
+        "code": "53 collin",
         "soil": null,
         "group": {
           "main": false,
@@ -51366,10 +51366,10 @@
         "altitudinalZoneForestEcoregion": null
       },
       {
-        "de": null,
-        "fr": null,
-        "la": null,
-        "code": "53 collin",
+        "de": "Typischer Zwergbuchs-Fichtenwald; Lärchenausbildung",
+        "fr": "Pessière à  Polygala petit buis avec Mélèze",
+        "la": "Polygalo chamaebuxi-Piceetum; Lärchenausbildung",
+        "code": "53Lä",
         "soil": null,
         "group": {
           "main": false,
@@ -57679,7 +57679,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "66 med",
+        "code": "66 collin",
         "soil": null,
         "group": {
           "main": false,
@@ -57714,7 +57714,7 @@
         "de": null,
         "fr": null,
         "la": null,
-        "code": "66 collin",
+        "code": "66 med",
         "soil": null,
         "group": {
           "main": false,

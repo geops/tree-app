@@ -12,3 +12,8 @@ CREATE TABLE lu_artengruppen (STO_Nr TEXT, A TEXT, B TEXT, C TEXT, E TEXT, F TEX
 COPY lu_artengruppen
 FROM '/data/profiles/lu/artengruppen.csv'
 DELIMITER ';' CSV HEADER;
+
+CREATE TABLE lu_boden (STO_Nr TEXT, L TEXT, F TEXT, H TEXT, Ahh TEXT, Ah TEXT, BASEN TEXT, FEUCHTE TEXT, BESONDERHEITEN TEXT, BEMERKUNG TEXT, GESGR_Nr TEXT);
+COPY lu_boden
+FROM '/data/profiles/lu/boden.csv'
+DELIMITER ';' CSV HEADER;
