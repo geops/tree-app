@@ -25,8 +25,8 @@ function LuForestTypeDescription({ data }) {
             ),
           },
           {
-            menuItem: t('forestTypeDiagram.soil.header'),
-            render: () => <Site />,
+            menuItem: t('forestTypeDiagram.terrain'),
+            render: () => <Site data={data.expoAndAspect} />,
           },
         ]}
       />
