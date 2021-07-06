@@ -204,6 +204,7 @@ COPY
                                                                                             'vegetation', vegetation,
                                                                                             'pioneerTreeTypes', vorwaldbaumarten,
                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
+                                                                                            'expoAndAspect', array_to_json(expoAndAspect),
                                                                                             'compactRisk', verdrisk,
                                                                                             'priority', prioritaet)) AS
           values
