@@ -20,6 +20,14 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
+          <Table.HeaderCell>
+            {t('forestTypeDiagram.vegetation')}
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseHtml(data.vegetation)}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.aptitude')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseHtml(data.aptitude)}</p>
@@ -35,6 +43,14 @@ function GeneralTab({ data }) {
           <Table.HeaderCell>{t('lu.forestType.care')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseHtml(data.forestryCare)}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>
+            {t('forestTypeDiagram.altitude.label')}
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseHtml(data.heightDispersion)}</p>
           </Table.Cell>
         </Table.Row>
       </Table.Body>
