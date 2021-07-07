@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,7 +8,7 @@ import { setActiveProfile } from '../store/actions';
 
 import styles from './ProfileSwitcher.module.css';
 
-function ProfileSwitcher() {
+function ProfileSwitcher({ onChange }) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const activeProfile = useSelector((state) => state.activeProfile);
@@ -38,5 +39,13 @@ function ProfileSwitcher() {
     />
   );
 }
+
+ProfileSwitcher.propTypes = {
+  onChange: PropTypes.func,
+};
+
+ProfileSwitcher.defaultProps = {
+  onChange: () => {},
+};
 
 export default ProfileSwitcher;

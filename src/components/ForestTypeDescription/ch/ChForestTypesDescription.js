@@ -9,6 +9,7 @@ import VegetationTab from './VegetationTab';
 
 function ChForestTypeDescription({ data }) {
   const { t } = useTranslation();
+
   return (
     <>
       <Tab
