@@ -8,7 +8,6 @@ import { getStyle } from '../utils';
 
 function Site({ altitude, aspect, slope }) {
   const { t } = useTranslation();
-  console.log(aspect);
   return (
     <svg viewBox="0 0 800 400" style={{ marginTop: '20px' }}>
       <path
