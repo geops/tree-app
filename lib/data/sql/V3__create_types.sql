@@ -834,44 +834,44 @@ FROM nat_boden
 LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
-ALTER TABLE lu_standorttypen
-ADD expoAndAspect INTEGER[];
+-- ALTER TABLE lu_standorttypen
+-- ADD expoAndAspect INTEGER[];
 
-UPDATE lu_standorttypen
-SET expoAndAspect = ARRAY[NNO_25::int,
-                          NNO_50::int,
-                          NNO_75::int,
-                          NNO_100::int,
-                          NOO_25::int,
-                          NOO_50::int,
-                          NOO_75::int,
-                          NOO_100::int,
-                          OSO_25::int,
-                          OSO_50::int,
-                          OSO_75::int,
-                          OSO_100::int,
-                          SOS_25::int,
-                          SOS_50::int,
-                          SOS_75::int,
-                          SOS_100::int,
-                          SSW_25::int,
-                          SSW_50::int,
-                          SSW_75::int,
-                          SSW_100::int,
-                          WSW_25::int,
-                          WSW_50::int,
-                          WSW_75::int,
-                          WSW_100::int,
-                          WNW_25::int,
-                          WNW_50::int,
-                          WNW_75::int,
-                          WNW_100::int,
-                          NNW_25::int,
-                          NNW_50::int,
-                          NNW_75::int,
-                          NNW_100::int]
-FROM lu_expo_hanglage
-WHERE lu_expo_hanglage.STO_Nr = lu_standorttypen.STO_Nr;
+-- UPDATE lu_standorttypen
+-- SET expoAndAspect = ARRAY[NNO_25::int,
+--                           NNO_50::int,
+--                           NNO_75::int,
+--                           NNO_100::int,
+--                           NOO_25::int,
+--                           NOO_50::int,
+--                           NOO_75::int,
+--                           NOO_100::int,
+--                           OSO_25::int,
+--                           OSO_50::int,
+--                           OSO_75::int,
+--                           OSO_100::int,
+--                           SOS_25::int,
+--                           SOS_50::int,
+--                           SOS_75::int,
+--                           SOS_100::int,
+--                           SSW_25::int,
+--                           SSW_50::int,
+--                           SSW_75::int,
+--                           SSW_100::int,
+--                           WSW_25::int,
+--                           WSW_50::int,
+--                           WSW_75::int,
+--                           WSW_100::int,
+--                           WNW_25::int,
+--                           WNW_50::int,
+--                           WNW_75::int,
+--                           WNW_100::int,
+--                           NNW_25::int,
+--                           NNW_50::int,
+--                           NNW_75::int,
+--                           NNW_100::int]
+-- FROM lu_expo_hanglage
+-- WHERE lu_expo_hanglage.STO_Nr = lu_standorttypen.STO_Nr;
 
 
 CREATE TYPE foresttype_group_type AS ENUM ('main', 'special', 'volatile', 'riverside', 'pioneer');
