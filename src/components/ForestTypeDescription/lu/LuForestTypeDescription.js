@@ -7,7 +7,6 @@ import AssociationsTab from './AssociationsTab';
 
 function LuForestTypeDescription({ data }) {
   const { t } = useTranslation();
-  console.log(data);
   return (
     <>
       <Tab
