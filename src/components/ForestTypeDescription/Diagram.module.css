@@ -67,7 +67,3 @@
   column-count: 2;
   column-gap: 20px;
 }
-
-.pane {
-  overflow: auto hidden;
-}

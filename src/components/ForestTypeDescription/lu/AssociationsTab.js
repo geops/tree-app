@@ -7,17 +7,9 @@ import parse from 'html-react-parser';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 import { setForestTypeInfo } from '../../../store/actions';
+import styles from '../ForestTypeDescription.module.css';
 
 const parseHtml = (string) => parse(string.slice().replace(/\\n/g, '<br>'));
-
-const subTypeLinkStyles = {
-  backgroundColor: 'white',
-  border: 'none',
-  padding: 0,
-  color: '#069',
-  textDecoration: 'underline',
-  cursor: 'pointer',
-};
 
 function AssociationsTab({ associationGroupCode }) {
   const dispatch = useDispatch();
@@ -72,7 +64,7 @@ function AssociationsTab({ associationGroupCode }) {
               {forestSubTypes.map((type, idx, array) => (
                 <span key={type.code}>
                   <button
-                    style={subTypeLinkStyles}
+                    className={styles.link}
                     type="button"
                     onClick={() => dispatch(setForestTypeInfo(type))}
                   >
