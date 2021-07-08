@@ -59,7 +59,14 @@ function GeneralTab({ data }) {
 }
 
 GeneralTab.propTypes = {
-  data: PropTypes.shape().isRequired,
+  data: PropTypes.shape({
+    description: PropTypes.string,
+    vegetation: PropTypes.string,
+    aptitude: PropTypes.string,
+    forestryRejuvDev: PropTypes.string,
+    forestryCare: PropTypes.string,
+    heightDispersion: PropTypes.string,
+  }).isRequired,
 };
 
 export default GeneralTab;

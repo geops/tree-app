@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 
 import AltitudinalZone from './AltitudinalZoneForestEcoregion';
-import Legend from './Legend';
+import Legend from '../Legend';
 import Site from './Site';
 import useIsMobile from '../../../hooks/useIsMobile';
 
