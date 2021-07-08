@@ -5,12 +5,14 @@ import { Tab } from 'semantic-ui-react';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
 import TerrainTab from './TerrainTab';
+import styles from '../Diagram.module.css';
 
 function LuForestTypeDescription({ data }) {
   const { t } = useTranslation();
   return (
     <>
       <Tab
+        menu={{ className: styles.pane, attached: true, tabular: true }}
         panes={[
           {
             menuItem: t('lu.forestTypeDiagram.general'),

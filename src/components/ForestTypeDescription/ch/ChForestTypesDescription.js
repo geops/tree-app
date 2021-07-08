@@ -6,6 +6,7 @@ import { Tab } from 'semantic-ui-react';
 import SoilTab from './SoilTab';
 import TerrainTab from './TerrainTab';
 import VegetationTab from './VegetationTab';
+import styles from '../Diagram.module.css';
 
 function ChForestTypeDescription({ data }) {
   const { t } = useTranslation();
@@ -13,6 +14,7 @@ function ChForestTypeDescription({ data }) {
   return (
     <>
       <Tab
+        menu={{ className: styles.pane, attached: true, tabular: true }}
         panes={[
           {
             menuItem: t('forestTypeDiagram.vegetation'),
