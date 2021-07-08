@@ -100,7 +100,7 @@ function Grid({ data, header, headerX, headerY, labelX, labelY }) {
 }
 
 Grid.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.shape().isRequired,
   header: PropTypes.string.isRequired,
   headerX: PropTypes.string.isRequired,
   headerY: PropTypes.string.isRequired,

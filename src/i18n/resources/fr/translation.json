@@ -410,7 +410,8 @@
       "rejuvDev": "Rajeunissement et développement",
       "care": "Maintenance",
       "meaning": "Sens",
-      "location": "Standort"
+      "location": "Emplacement",
+      "subGroups": "Sous-unités"
     },
     "forestTypeDiagram": {
       "general": "Général",

@@ -1,15 +1,18 @@
 import React, { useMemo, useState } from 'react';
 import { Form } from 'semantic-ui-react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
+import Button from './Button';
 import Dropdown from './Dropdown';
-import ForestTypeModal from './ForestTypeModal';
 import LanguageSwitcher from './LanguageSwitcher';
 import ProfileSwitcher from './ProfileSwitcher';
 
+import { setForestTypeInfo } from '../store/actions';
+
 function ForestTypePage() {
+  const dispatch = useDispatch();
   const activeProfile = useSelector((state) => state.activeProfile);
   const forestTypes = useMemo(
     () =>
@@ -31,7 +34,16 @@ function ForestTypePage() {
           setData(info('forestType', value, activeProfile))
         }
       />
-      <Form.Field>{data && <ForestTypeModal code={data.code} />}</Form.Field>
+      <Form.Field>
+        {data && (
+          <Button
+            active
+            compact
+            icon="info"
+            onClick={() => dispatch(setForestTypeInfo(data))}
+          />
+        )}
+      </Form.Field>
       <Form.Field>
         <LanguageSwitcher />
       </Form.Field>

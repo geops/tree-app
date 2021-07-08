@@ -1,0 +1,17 @@
+.pane {
+  overflow: auto hidden;
+}
+
+.link {
+  background-color: white !important;
+  border: 0px;
+  padding: 0px;
+  color: var(--primary-color-500);
+  text-decoration: underline;
+  cursor: pointer;
+  text-align: left;
+}
+
+.link:hover {
+  color: var(--primary-color-100);
+}

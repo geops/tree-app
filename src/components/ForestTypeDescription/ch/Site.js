@@ -702,9 +702,15 @@ function Site({ altitude, aspect, slope }) {
 }
 
 Site.propTypes = {
-  altitude: PropTypes.arrayOf(PropTypes.number).isRequired,
-  aspect: PropTypes.arrayOf(PropTypes.number).isRequired,
-  slope: PropTypes.arrayOf(PropTypes.number).isRequired,
+  altitude: PropTypes.arrayOf(PropTypes.number),
+  aspect: PropTypes.arrayOf(PropTypes.number),
+  slope: PropTypes.arrayOf(PropTypes.number),
+};
+
+Site.defaultProps = {
+  altitude: null,
+  aspect: null,
+  slope: null,
 };
 
 export default Site;

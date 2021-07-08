@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import styles from './Diagram.module.css';
 
-function NoData({ height, width }) {
+function NoData({ height, width, className }) {
   const { t } = useTranslation();
   return (
     <>
@@ -15,7 +15,11 @@ function NoData({ height, width }) {
         height={height}
         style={{ fill: 'white', opacity: 0.8 }}
       />
-      <text x={width / 2} y={height / 2} className={styles.labelMiddleBold}>
+      <text
+        x={width / 2}
+        y={height / 2}
+        className={className || styles.labelMiddleBold}
+      >
         {t('forestTypeDiagram.noData')}
       </text>
     </>
@@ -25,6 +29,11 @@ function NoData({ height, width }) {
 NoData.propTypes = {
   height: PropTypes.number.isRequired,
   width: PropTypes.number.isRequired,
+  className: PropTypes.string,
+};
+
+NoData.defaultProps = {
+  className: null,
 };
 
 export default NoData;

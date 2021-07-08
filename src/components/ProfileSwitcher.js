@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
+import lib from '@geops/tree-lib';
 import Dropdown from './Dropdown';
 
 import { setActiveProfile } from '../store/actions';
@@ -11,19 +12,16 @@ function ProfileSwitcher() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const activeProfile = useSelector((state) => state.activeProfile);
+
   const profiles = useMemo(
-    () => [
-      {
-        value: 'ch',
-        text: t('profiles.ch'),
-        content: <span>{t('profiles.ch')}</span>,
-      },
-      {
-        value: 'lu',
-        text: t('profiles.lu'),
-        content: <span data-cypress="lucerneOption">{t('profiles.lu')}</span>,
-      },
-    ],
+    () =>
+      Object.keys(lib.types).map((key) => ({
+        value: `${key}`,
+        text: t(`profiles.${key}`),
+        content: (
+          <span data-cypress={`${key}Option`}>{t(`profiles.${key}`)}</span>
+        ),
+      })),
     [t],
   );
 

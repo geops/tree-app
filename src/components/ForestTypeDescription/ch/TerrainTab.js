@@ -215,7 +215,23 @@ function TerrainTab({ data }) {
 }
 
 TerrainTab.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.shape({
+    carbonate: PropTypes.arrayOf(PropTypes.number),
+    reliefType: PropTypes.arrayOf(PropTypes.number),
+    water: PropTypes.arrayOf(PropTypes.number),
+    geomorphology: PropTypes.arrayOf(PropTypes.number),
+    process: PropTypes.arrayOf(PropTypes.number),
+    slope: PropTypes.arrayOf(PropTypes.number),
+    altitudinalZoneForestEcoregion: PropTypes.arrayOf(
+      PropTypes.arrayOf(PropTypes.number),
+    ),
+    altitude: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
+    aspect: PropTypes.arrayOf(PropTypes.number),
+  }),
+};
+
+TerrainTab.defaultProps = {
+  data: {},
 };
 
 export default TerrainTab;

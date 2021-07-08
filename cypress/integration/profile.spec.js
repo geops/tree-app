@@ -9,7 +9,7 @@ describe('Info', () => {
 
   it('should set the profile in local storage on change', () => {
     cy.get('[data-cypress=profileSwitcher]').click();
-    cy.get('[data-cypress=lucerneOption]').click().should(() => {
+    cy.get('[data-cypress=luOption]').click().should(() => {
       expect(localStorage.getItem('tree.profile')).to.equal('lu');
     }).then(() => {
       cy.get('[data-cypress=profileSwitcher]').first().contains('Luzern');

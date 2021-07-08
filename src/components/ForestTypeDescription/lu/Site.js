@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import NoData from '../NoData';
 import { getStyle } from '../utils';
+import styles from '../Diagram.module.css';
 
 function Site({ data }) {
   const { t } = useTranslation();
@@ -14,14 +15,14 @@ function Site({ data }) {
         width="251"
         height="251"
         version="1.1"
-        viewBox="0 -20 121.121 108.697"
+        viewBox="0 0 121.121 108.697"
       >
-        <text x="0" y="0" fontSize="10">
+        <text x="0" y="10" fontSize="10">
           {`${t('forestTypeDiagram.slope')} & ${t(
             'forestTypeDiagram.aspect.label',
           )}`}
         </text>
-        <g transform="translate(-55.537 -30.346)">
+        <g transform="translate(-55.537 -20.346)">
           <g transform="matrix(.26458 0 0 .26458 -9.069 -.212)">
             <path
               fill="#ddd"
@@ -283,7 +284,14 @@ function Site({ data }) {
             </g>
           </g>
         </g>
-        {!data && <NoData height={100} width={100} />}
+        {!data ||
+          (data.includes(null) && (
+            <NoData
+              height={100}
+              width={120}
+              className={styles.labelSmallBold}
+            />
+          ))}
       </svg>
     </div>
   );
