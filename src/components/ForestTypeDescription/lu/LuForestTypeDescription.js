@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Tab } from 'semantic-ui-react';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
-import Site from './Site';
+import TerrainTab from './TerrainTab';
 
 function LuForestTypeDescription({ data }) {
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ function LuForestTypeDescription({ data }) {
           },
           {
             menuItem: t('forestTypeDiagram.terrain'),
-            render: () => <Site data={data.expoAndAspect} />,
+            render: () => <TerrainTab data={data} />,
           },
         ]}
       />

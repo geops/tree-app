@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import styles from '../Diagram.module.css';
+import styles from './Diagram.module.css';
 
 function Legend() {
   const { t } = useTranslation();
