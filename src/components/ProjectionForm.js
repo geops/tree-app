@@ -7,10 +7,11 @@ import { Form, Message, Segment } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
+import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
 // import ForestTypeModal from './ForestTypeModal';
-import { setFormLocation } from '../store/actions';
+import { setFormLocation, setForestTypeInfo } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
@@ -19,12 +20,19 @@ const getButtonOptions = (type, lng) => (key) => ({
   label: info(type, key)[lng],
 });
 const getDropdownOptions =
-  (type, lng, includeKey = false) =>
+  (type, lng, dispatch, profile, includeKey = false) =>
   (key) => ({
     key,
     content: includeKey ? (
       <>
-        {/* <ForestTypeModal code={key} /> */}
+        <Button
+          active
+          compact
+          icon="info"
+          onClick={() =>
+            dispatch(setForestTypeInfo(info(type, key, profile, true)))
+          }
+        />
         {key} - {info(type, key)[lng]}
       </>
     ) : (
@@ -44,12 +52,14 @@ function ProjectionForm() {
     formLocation,
     projectionMode,
     projectionResult,
+    activeProfile,
   } = useSelector((state) => ({
     location: state.location,
     mapLocation: state.mapLocation,
     formLocation: state.formLocation,
     projectionMode: state.projectionMode,
     projectionResult: state.projectionResult,
+    activeProfile: state.activeProfile,
   }));
   const options =
     projectionMode === 'm'
@@ -121,7 +131,13 @@ function ProjectionForm() {
             data-cypress="projectionFormForestType"
             label={t('forestType.label')}
             options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
+              getDropdownOptions(
+                'forestType',
+                i18n.language,
+                dispatch,
+                activeProfile,
+                true,
+              ),
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
             onBlur={deactivateField}
@@ -165,7 +181,13 @@ function ProjectionForm() {
             clearable
             label={t('forestType.transition')}
             options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
+              getDropdownOptions(
+                'forestType',
+                i18n.language,
+                dispatch,
+                activeProfile,
+                true,
+              ),
             )}
             onChange={(e, { value }) =>
               setLocation('transitionForestType', value)
