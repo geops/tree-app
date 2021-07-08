@@ -9,6 +9,7 @@
   color: var(--primary-color-500);
   text-decoration: underline;
   cursor: pointer;
+  text-align: left;
 }
 
 .link:hover {
