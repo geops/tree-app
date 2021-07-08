@@ -8,9 +8,9 @@ import { info } from '@geops/tree-lib';
 
 import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
-// import ForestTypeModal from './ForestTypeModal';
+import Button from './Button';
 import HelpModal from './HelpModal';
-import { setFormLocation } from '../store/actions';
+import { setFormLocation, setForestTypeInfo } from '../store/actions';
 import styles from './LocationResult.module.css';
 
 const otherForestTypeGroups = ['special', 'volatile', 'riverside', 'pioneer'];
@@ -21,9 +21,11 @@ function LocationResult() {
   const {
     formLocation,
     locationResult: { ecogram, forestTypes },
+    activeProfile,
   } = useSelector((state) => ({
     formLocation: state.formLocation,
     locationResult: state.locationResult,
+    activeProfile: state.activeProfile,
   }));
 
   const history = useHistory();
@@ -71,12 +73,24 @@ function LocationResult() {
                   <React.Fragment key={group}>
                     <Dropdown.Header content={t(`forestType.group.${group}`)} />
                     {forestTypes[group].map((key) => {
-                      const ftInfo = info('forestType', key);
+                      const ftInfo = info(
+                        'forestType',
+                        key,
+                        activeProfile,
+                        true,
+                      );
                       return (
                         <Dropdown.Item
                           content={
                             <>
-                              {/* <ForestTypeModal code={key} /> */}
+                              <Button
+                                active
+                                compact
+                                icon="info"
+                                onClick={() =>
+                                  dispatch(setForestTypeInfo(ftInfo))
+                                }
+                              />
                               {key} - {ftInfo[i18n.language]}
                             </>
                           }
