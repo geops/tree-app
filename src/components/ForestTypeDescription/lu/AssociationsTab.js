@@ -1,15 +1,26 @@
 import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import parse from 'html-react-parser';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
+import { setForestTypeInfo } from '../../../store/actions';
 
 const parseHtml = (string) => parse(string.slice().replace(/\\n/g, '<br>'));
 
+const subTypeLinkStyles = {
+  backgroundColor: 'white',
+  border: 'none',
+  padding: 0,
+  color: '#069',
+  textDecoration: 'underline',
+  cursor: 'pointer',
+};
+
 function AssociationsTab({ associationGroupCode }) {
+  const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
   const associationGroup = info(
@@ -17,7 +28,7 @@ function AssociationsTab({ associationGroupCode }) {
     associationGroupCode,
     activeProfile,
   );
-  const linkedForestTypes = info('forestType', null, activeProfile).filter(
+  const forestSubTypes = info('forestType', null, activeProfile).filter(
     (type) => type.associationGroupCode === associationGroupCode,
   );
 
@@ -58,10 +69,18 @@ function AssociationsTab({ associationGroupCode }) {
           <Table.Row>
             <Table.HeaderCell>{t('lu.forestType.subGroups')}</Table.HeaderCell>
             <Table.Cell colSpan="3">
-              {linkedForestTypes.map(
-                (type, idx, array) =>
-                  `${type.de}${idx < array.length - 1 ? ', ' : ''}`,
-              )}
+              {forestSubTypes.map((type, idx, array) => (
+                <>
+                  <button
+                    style={subTypeLinkStyles}
+                    type="button"
+                    onClick={() => dispatch(setForestTypeInfo(type))}
+                  >
+                    {type.de}
+                  </button>
+                  {idx < array.length - 1 ? ', ' : ''}
+                </>
+              ))}
             </Table.Cell>
           </Table.Row>
         </Table.Body>

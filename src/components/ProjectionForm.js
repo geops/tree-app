@@ -10,7 +10,6 @@ import { info } from '@geops/tree-lib';
 import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
-// import ForestTypeModal from './ForestTypeModal';
 import { setFormLocation, setForestTypeInfo } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
