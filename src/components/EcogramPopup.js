@@ -52,7 +52,8 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
       <div ref={container}>
         <List>
           {forestTypes.map((ftCode) => {
-            const ftInfo = info('forestType', ftCode, activeProfile);
+            const ftInfo = info('forestType', ftCode, activeProfile, true);
+            console.log(ftInfo);
             return (
               <List.Item style={{ display: 'flex' }}>
                 <Button

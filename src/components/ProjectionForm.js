@@ -9,7 +9,7 @@ import { info } from '@geops/tree-lib';
 
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
-import ForestTypeModal from './ForestTypeModal';
+// import ForestTypeModal from './ForestTypeModal';
 import { setFormLocation } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
@@ -24,7 +24,7 @@ const getDropdownOptions =
     key,
     content: includeKey ? (
       <>
-        <ForestTypeModal code={key} />
+        {/* <ForestTypeModal code={key} /> */}
         {key} - {info(type, key)[lng]}
       </>
     ) : (

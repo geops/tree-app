@@ -3,7 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { Modal } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+// import { info } from '@geops/tree-lib';
 
 import ForestTypeDescription from './ForestTypeDescription';
 import ProfileSwitcher from './ProfileSwitcher';

@@ -8,7 +8,7 @@ import { info } from '@geops/tree-lib';
 
 import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
-import ForestTypeModal from './ForestTypeModal';
+// import ForestTypeModal from './ForestTypeModal';
 import HelpModal from './HelpModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
@@ -76,7 +76,7 @@ function LocationResult() {
                         <Dropdown.Item
                           content={
                             <>
-                              <ForestTypeModal code={key} />
+                              {/* <ForestTypeModal code={key} /> */}
                               {key} - {ftInfo[i18n.language]}
                             </>
                           }

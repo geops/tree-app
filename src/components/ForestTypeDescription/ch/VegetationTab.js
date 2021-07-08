@@ -65,19 +65,19 @@ function VegetationTab({ data }) {
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesOne')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {t1.map(getInfo('treeType')).reduce(concat) || '-'}
+            {(t1.length && t1.map(getInfo('treeType')).reduce(concat)) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesTwo')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {t2.map(getInfo('treeType')).reduce(concat) || '-'}
+            {(t2.length && t2.map(getInfo('treeType')).reduce(concat)) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesThree')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {t3.map(getInfo('treeType')).reduce(concat) || '-'}
+            {(t3.length && t3.map(getInfo('treeType')).reduce(concat)) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
