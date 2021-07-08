@@ -59,7 +59,7 @@ function GeneralTab({ data }) {
 }
 
 GeneralTab.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.shape().isRequired,
 };
 
 export default GeneralTab;

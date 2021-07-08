@@ -70,7 +70,7 @@ function AssociationsTab({ associationGroupCode }) {
             <Table.HeaderCell>{t('lu.forestType.subGroups')}</Table.HeaderCell>
             <Table.Cell colSpan="3">
               {forestSubTypes.map((type, idx, array) => (
-                <>
+                <span key={type.code}>
                   <button
                     style={subTypeLinkStyles}
                     type="button"
@@ -79,7 +79,7 @@ function AssociationsTab({ associationGroupCode }) {
                     {type.de}
                   </button>
                   {idx < array.length - 1 ? ', ' : ''}
-                </>
+                </span>
               ))}
             </Table.Cell>
           </Table.Row>
