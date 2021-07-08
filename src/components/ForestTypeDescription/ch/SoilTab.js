@@ -3,12 +3,12 @@ import React from 'react';
 
 import Graininess from './Graininess';
 import Humus from './Humus';
-import Legend from './Legend';
+import Legend from '../Legend';
 import SkeletalFraction from './SkeletalFraction';
 import SoilDiagram from './SoilDiagram';
 import SoilWetnessGroundwater from './SoilWetnessGroundwater';
 import SoilWetnessTailwater from './SoilWetnessTailwater';
-import styles from './Diagram.module.css';
+import styles from '../Diagram.module.css';
 
 function SoilTab({ data }) {
   return (
