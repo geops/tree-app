@@ -76,7 +76,7 @@ function LocationResult() {
                         <Dropdown.Item
                           content={
                             <>
-                              <ForestTypeModal data={ftInfo} />
+                              <ForestTypeModal code={key} />
                               {key} - {ftInfo[i18n.language]}
                             </>
                           }

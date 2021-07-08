@@ -8,6 +8,7 @@ export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
 export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
 export const SET_TARGET_ALTITUDINAL_ZONE = 'SET_TARGET_ALTITUDINAL_ZONE';
 export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
+export const SET_ACTIVE_PROFILE = 'SET_ACTIVE_PROFILE';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -47,4 +48,8 @@ export function setTargetAltitudinalZone(targetAltitudinalZone) {
 
 export function setWelcomeModal(open) {
   return { type: SET_WELCOME_MODAL, open };
+}
+
+export function setActiveProfile(activeProfile) {
+  return { type: SET_ACTIVE_PROFILE, activeProfile };
 }

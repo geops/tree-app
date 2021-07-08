@@ -53,7 +53,7 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
             return (
               <List.Item style={{ display: 'flex' }}>
                 <ForestTypeModal
-                  data={ftInfo}
+                  code={ftCode}
                   setIsForestTypeModalOpen={setIsForestTypeModalOpen}
                 />
                 <Button active compact onClick={() => selectForestType(ftCode)}>

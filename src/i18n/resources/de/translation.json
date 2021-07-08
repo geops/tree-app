@@ -9,6 +9,7 @@
   "app": {
     "info": "Infos",
     "language": "Sprache",
+    "profile": "Profil",
     "location": "Standort",
     "map": "Karte",
     "recommendation": "Empfehlung",
@@ -393,5 +394,27 @@
   "welcome": {
     "close": "Weiter zur Tree App",
     "header": "Das Klima ändert sich"
+  },
+  "profiles": {
+    "ch": "Bund",
+    "lu": "Luzern"
+  },
+  "forestTypeModal": {
+    "noDataHeader": "Keine Daten vorhanden",
+    "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?"
+  },
+  "lu": {
+    "forestType": {
+      "appearance": "Waldbild",
+      "aptitude": "Eignung",
+      "rejuvDev": "Verjüngung und Entwicklung",
+      "care": "Pflege",
+      "meaning": "Bedeutung",
+      "location": "Standort"
+    },
+    "forestTypeDiagram": {
+      "general": "Allgemein",
+      "associations": "Gesellschaftsgruppen"
+    }
   }
 }

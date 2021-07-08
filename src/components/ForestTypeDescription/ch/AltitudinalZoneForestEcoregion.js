@@ -4,9 +4,9 @@ import { Trans, useTranslation } from 'react-i18next';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
-import NoData from './NoData';
-import styles from './Diagram.module.css';
-import { getStyle } from './utils';
+import NoData from '../NoData';
+import styles from '../Diagram.module.css';
+import { getStyle } from '../utils';
 
 function AltitudinalZoneForestEcoregion({ data }) {
   const { i18n, t } = useTranslation();

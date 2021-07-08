@@ -192,7 +192,83 @@ COPY (
 ----- types
 
 COPY
-    (WITH additional AS
+    (SELECT jsonb_build_object(
+      'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                            'de', sto_deu,
+                                                                                            'la', sto_lat,
+                                                                                            'aptitude', eignung,
+                                                                                            'forestryRejuvDev', wb_verj_ent,
+                                                                                            'forestryCare', wb_pfl,
+                                                                                            'description', beschreibung,
+                                                                                            'heightDispersion', hoehenverbreitung,
+                                                                                            'vegetation', vegetation,
+                                                                                            'pioneerTreeTypes', vorwaldbaumarten,
+                                                                                            'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
+                                                                                            'expoAndAspect', jsonb_build_array(NNO_25,
+                                                                                                                            NNO_50,
+                                                                                                                            NNO_75,
+                                                                                                                            NNO_100,
+                                                                                                                            NOO_25,
+                                                                                                                            NOO_50,
+                                                                                                                            NOO_75,
+                                                                                                                            NOO_100,
+                                                                                                                            OSO_25,
+                                                                                                                            OSO_50,
+                                                                                                                            OSO_75,
+                                                                                                                            OSO_100,
+                                                                                                                            SOS_25,
+                                                                                                                            SOS_50,
+                                                                                                                            SOS_75,
+                                                                                                                            SOS_100,
+                                                                                                                            SSW_25,
+                                                                                                                            SSW_50,
+                                                                                                                            SSW_75,
+                                                                                                                            SSW_100,
+                                                                                                                            WSW_25,
+                                                                                                                            WSW_50,
+                                                                                                                            WSW_75,
+                                                                                                                            WSW_100,
+                                                                                                                            WNW_25,
+                                                                                                                            WNW_50,
+                                                                                                                            WNW_75,
+                                                                                                                            WNW_100,
+                                                                                                                            NNW_25,
+                                                                                                                            NNW_50,
+                                                                                                                            NNW_75,
+                                                                                                                            NNW_100),
+                                                                                            'compactRisk', verdrisk,
+                                                                                            'priority', prioritaet)) AS
+          values
+          FROM lu_standorttypen LEFT JOIN lu_expo_hanglage USING(STO_Nr)), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
+                                                                                              'de', gesgr_deu,
+                                                                                              'la', gesgruppe_lat,
+                                                                                              'description', beschreibung,
+                                                                                              'location', standort,
+                                                                                              'soil', boden,
+                                                                                              'aptitudeMeaning', eignung_bedeutung,
+                                                                                              'heightDispersion', hoehenverbreitung)) AS
+          values
+          FROM lu_gesellschaftsgruppen), 'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                             'a', a,
+                                                                                             'b', b,
+                                                                                             'c', c,
+                                                                                             'e', e,
+                                                                                             'f', f,
+                                                                                             'g', g,
+                                                                                             'h', h,
+                                                                                             'i', i,
+                                                                                             'j', j,
+                                                                                             'k', k,
+                                                                                             'l', l,
+                                                                                             'm', m,
+                                                                                             'n', n,
+                                                                                             'o', o,
+                                                                                             'p', p,
+                                                                                             'note', bemerkung,
+                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
+          values
+          FROM lu_artengruppen))),
+      'ch', (WITH additional AS
          (SELECT json_agg(jsonb_build_object('code', target, 'de', de, 'fr', fr)) AS
           values
           FROM additional_meta),
@@ -322,7 +398,7 @@ COPY
           relief,
           silver_fir_areas,
           slope,
-          treetype) TO '/data/types.json';
+          treetype))) TO '/data/types.json';
 
      GET DIAGNOSTICS x = ROW_COUNT;
   RETURN x;

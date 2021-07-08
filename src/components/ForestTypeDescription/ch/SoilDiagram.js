@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import NoData from './NoData';
-import styles from './Diagram.module.css';
-import { getStyle } from './utils';
+import NoData from '../NoData';
+import styles from '../Diagram.module.css';
+import { getStyle } from '../utils';
 
 function SoilDiagram({ soil, soilVariants }) {
   const { t } = useTranslation();
