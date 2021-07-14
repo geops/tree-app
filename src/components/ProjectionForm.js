@@ -19,18 +19,16 @@ const getButtonOptions = (type, lng) => (key) => ({
   label: info(type, key)[lng],
 });
 const getDropdownOptions =
-  (type, lng, dispatch, profile, includeKey = false) =>
+  (type, lng, dispatch, includeKey = false) =>
   (key) => ({
     key,
-    content: includeKey ? (
+    content: dispatch ? (
       <>
         <Button
           active
           compact
           icon="info"
-          onClick={() =>
-            dispatch(setForestTypeInfo(info(type, key, profile, true)))
-          }
+          onClick={() => dispatch(setForestTypeInfo(info(type, key)))}
         />
         {key} - {info(type, key)[lng]}
       </>
@@ -51,14 +49,12 @@ function ProjectionForm() {
     formLocation,
     projectionMode,
     projectionResult,
-    activeProfile,
   } = useSelector((state) => ({
     location: state.location,
     mapLocation: state.mapLocation,
     formLocation: state.formLocation,
     projectionMode: state.projectionMode,
     projectionResult: state.projectionResult,
-    activeProfile: state.activeProfile,
   }));
   const options =
     projectionMode === 'm'
@@ -130,13 +126,7 @@ function ProjectionForm() {
             data-cypress="projectionFormForestType"
             label={t('forestType.label')}
             options={options.forestType.map(
-              getDropdownOptions(
-                'forestType',
-                i18n.language,
-                dispatch,
-                activeProfile,
-                true,
-              ),
+              getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
             onBlur={deactivateField}
@@ -180,13 +170,7 @@ function ProjectionForm() {
             clearable
             label={t('forestType.transition')}
             options={options.forestType.map(
-              getDropdownOptions(
-                'forestType',
-                i18n.language,
-                dispatch,
-                activeProfile,
-                true,
-              ),
+              getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) =>
               setLocation('transitionForestType', value)

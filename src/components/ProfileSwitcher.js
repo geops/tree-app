@@ -1,10 +1,10 @@
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import lib from '@geops/tree-lib';
 import Dropdown from './Dropdown';
 
 import { setActiveProfile } from '../store/actions';
+import translation from '../i18n/resources/de/translation.json';
 
 import styles from './ProfileSwitcher.module.css';
 
@@ -15,7 +15,7 @@ function ProfileSwitcher() {
 
   const profiles = useMemo(
     () =>
-      Object.keys(lib.types).map((key) => ({
+      Object.keys(translation.profiles).map((key) => ({
         value: `${key}`,
         text: t(`profiles.${key}`),
         content: (

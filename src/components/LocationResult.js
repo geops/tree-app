@@ -21,11 +21,9 @@ function LocationResult() {
   const {
     formLocation,
     locationResult: { ecogram, forestTypes },
-    activeProfile,
   } = useSelector((state) => ({
     formLocation: state.formLocation,
     locationResult: state.locationResult,
-    activeProfile: state.activeProfile,
   }));
 
   const history = useHistory();
@@ -73,12 +71,7 @@ function LocationResult() {
                   <React.Fragment key={group}>
                     <Dropdown.Header content={t(`forestType.group.${group}`)} />
                     {forestTypes[group].map((key) => {
-                      const ftInfo = info(
-                        'forestType',
-                        key,
-                        activeProfile,
-                        true,
-                      );
+                      const ftInfo = info('forestType', key);
                       return (
                         <Dropdown.Item
                           content={

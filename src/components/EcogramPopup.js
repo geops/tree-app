@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { List, Popup } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
@@ -15,21 +15,14 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
   const dispatch = useDispatch();
   const isMobile = useIsMobile();
   const container = useRef();
-
-  const activeProfile = useSelector((state) => state.activeProfile);
   const { t, i18n } = useTranslation();
 
-  const handleClickOutside = (e) => {
-    if (
-      container.current &&
-      container.current.contains(e.target) === false
-      // isForestTypeModalOpen === false
-    ) {
-      onClose();
-    }
-  };
-
   useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (container.current && container.current.contains(e.target) === false) {
+        onClose();
+      }
+    };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   });
@@ -52,7 +45,7 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
       <div ref={container}>
         <List>
           {forestTypes.map((ftCode) => {
-            const ftInfo = info('forestType', ftCode, activeProfile, true);
+            const ftInfo = info('forestType', ftCode);
             return (
               <List.Item style={{ display: 'flex' }}>
                 <Button
