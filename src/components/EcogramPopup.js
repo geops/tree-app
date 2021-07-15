@@ -1,32 +1,28 @@
 import PropTypes from 'prop-types';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useDispatch } from 'react-redux';
 import { List, Popup } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
 import Button from './Button';
-import ForestTypeModal from './ForestTypeModal';
 import styles from './EcogramPopup.module.css';
 import useIsMobile from '../hooks/useIsMobile';
+import { setForestTypeInfo } from '../store/actions';
 
 function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
+  const dispatch = useDispatch();
   const isMobile = useIsMobile();
   const container = useRef();
-  const [isForestTypeModalOpen, setIsForestTypeModalOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
-  const handleClickOutside = (e) => {
-    if (
-      container.current &&
-      container.current.contains(e.target) === false &&
-      isForestTypeModalOpen === false
-    ) {
-      onClose();
-    }
-  };
-
   useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (container.current && container.current.contains(e.target) === false) {
+        onClose();
+      }
+    };
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   });
@@ -52,9 +48,11 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
             const ftInfo = info('forestType', ftCode);
             return (
               <List.Item style={{ display: 'flex' }}>
-                <ForestTypeModal
-                  code={ftCode}
-                  setIsForestTypeModalOpen={setIsForestTypeModalOpen}
+                <Button
+                  active
+                  compact
+                  icon="info"
+                  onClick={() => dispatch(setForestTypeInfo(ftInfo))}
                 />
                 <Button active compact onClick={() => selectForestType(ftCode)}>
                   {ftCode} - {ftInfo[i18n.language]}

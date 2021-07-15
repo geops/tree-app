@@ -19,9 +19,9 @@ function VegetationTab({ data }) {
   const getInfo = (type) => (typeCode) => {
     const typeInfo = info(type, typeCode);
     return (
-      <>
+      <span key={typeCode}>
         {typeInfo[i18n.language]} (<i>{typeInfo.la}</i>)
-      </>
+      </span>
     );
   };
 
@@ -48,7 +48,7 @@ function VegetationTab({ data }) {
               <Table.Cell>
                 <strong>{t('forestType.deciduousTreeHeightMax')}</strong>{' '}
                 {data.height[1]}m
-              </Table.Cell>{' '}
+              </Table.Cell>
             </>
           ) : (
             <Table.Cell colSpan="3">-</Table.Cell>
@@ -65,19 +65,19 @@ function VegetationTab({ data }) {
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesOne')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {t1.map(getInfo('treeType')).reduce(concat) || '-'}
+            {(t1.length && t1.map(getInfo('treeType')).reduce(concat)) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesTwo')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {t2.map(getInfo('treeType')).reduce(concat) || '-'}
+            {(t2.length && t2.map(getInfo('treeType')).reduce(concat)) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('projection.treeTypesThree')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {t3.map(getInfo('treeType')).reduce(concat) || '-'}
+            {(t3.length && t3.map(getInfo('treeType')).reduce(concat)) || '-'}
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -134,7 +134,26 @@ function VegetationTab({ data }) {
 }
 
 VegetationTab.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.shape({
+    code: PropTypes.string,
+    naturalForest: PropTypes.shape({
+      de: PropTypes.string,
+      fr: PropTypes.string,
+    }),
+    height: PropTypes.arrayOf(PropTypes.number),
+    location: PropTypes.shape({
+      de: PropTypes.string,
+      fr: PropTypes.string,
+    }),
+    vegetation: PropTypes.shape({
+      de: PropTypes.string,
+      fr: PropTypes.string,
+    }),
+  }),
+};
+
+VegetationTab.defaultProps = {
+  data: {},
 };
 
 export default VegetationTab;

@@ -48,6 +48,12 @@
   text-anchor: middle;
 }
 
+.labelSmallBold {
+  font-size: 8px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
 .rare {
   fill: #eee;
 }

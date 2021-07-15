@@ -8,9 +8,9 @@ import { info } from '@geops/tree-lib';
 
 import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
-import ForestTypeModal from './ForestTypeModal';
+import Button from './Button';
 import HelpModal from './HelpModal';
-import { setFormLocation } from '../store/actions';
+import { setFormLocation, setForestTypeInfo } from '../store/actions';
 import styles from './LocationResult.module.css';
 
 const otherForestTypeGroups = ['special', 'volatile', 'riverside', 'pioneer'];
@@ -76,7 +76,14 @@ function LocationResult() {
                         <Dropdown.Item
                           content={
                             <>
-                              <ForestTypeModal code={key} />
+                              <Button
+                                active
+                                compact
+                                icon="info"
+                                onClick={() =>
+                                  dispatch(setForestTypeInfo(ftInfo))
+                                }
+                              />
                               {key} - {ftInfo[i18n.language]}
                             </>
                           }

@@ -410,7 +410,8 @@
       "rejuvDev": "Verjüngung und Entwicklung",
       "care": "Pflege",
       "meaning": "Bedeutung",
-      "location": "Standort"
+      "location": "Standort",
+      "subGroups": "Untereinheiten"
     },
     "forestTypeDiagram": {
       "general": "Allgemein",

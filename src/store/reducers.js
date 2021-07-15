@@ -10,6 +10,7 @@ import {
   SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
   SET_ACTIVE_PROFILE,
+  SET_FORESTTYPE_INFO,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
@@ -106,6 +107,8 @@ function tree(state = initialState, action) {
     case SET_ACTIVE_PROFILE:
       localStorage.setItem('tree.profile', action.activeProfile);
       return { ...state, activeProfile: action.activeProfile };
+    case SET_FORESTTYPE_INFO:
+      return { ...state, forestTypeInfo: action.forestTypeInfo };
     default:
       return state;
   }

@@ -20,6 +20,14 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
+          <Table.HeaderCell>
+            {t('forestTypeDiagram.vegetation')}
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseHtml(data.vegetation)}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.aptitude')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseHtml(data.aptitude)}</p>
@@ -37,6 +45,14 @@ function GeneralTab({ data }) {
             <p>{parseHtml(data.forestryCare)}</p>
           </Table.Cell>
         </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>
+            {t('forestTypeDiagram.altitude.label')}
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseHtml(data.heightDispersion)}</p>
+          </Table.Cell>
+        </Table.Row>
       </Table.Body>
     </Table>
   );
@@ -49,6 +65,7 @@ GeneralTab.propTypes = {
     aptitude: PropTypes.string,
     forestryRejuvDev: PropTypes.string,
     forestryCare: PropTypes.string,
+    heightDispersion: PropTypes.string,
   }).isRequired,
 };
 
