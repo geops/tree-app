@@ -70,7 +70,7 @@ function AssociationsTab({ associationGroupCode }) {
                   >
                     {type.de}
                   </button>
-                  {idx < array.length - 1 ? ', ' : ''}
+                  <br />
                 </span>
               ))}
             </Table.Cell>
