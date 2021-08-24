@@ -62134,7 +62134,7 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch Lichtungshiebe mit Seiten- und Schachtlicht. \\nDirektes Sonnenlicht und Wind erzeugen besonders starke Aushagerung.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen.\\n",
-        "heightDispersion": "obermontan 900-\\n1300m",
+        "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "VBe, MBe",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62166,7 +62166,7 @@
         "priority": null,
         "vegetation": "C: Busch-Hainsimse, Wald-Hainsimse, Wald-Frauenhaar.\\nE: Waldmeister, Busch-Windröschen",
         "compactRisk": "2",
-        "description": "Recht wüchsige Hallen-Buchenwälder auf Kuppen, an Hangkanten und mässig steilen Hängen, vorwiegend in Südwestlage.\\nUnterwuchs spärlich und lückig. Boden leicht trocken, sandig bis sandig-schluffig und schwach sauer.",
+        "description": "Recht wüchsige Hallen-Buchenwälder auf Kuppen, an Hangkanten und mässig steilen Hängen, vorwiegend in Südwestlage. Unterwuchs spärlich und lückig. \\nBoden leicht trocken, sandig bis sandig-schluffig und schwach sauer.",
         "forestryCare": "N: Mischungsregulierung ab Dickung, Durchforstung bis Beginn BH 2.\\nMischbaumarten einzeln bis truppweise.\\n",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0,
@@ -62174,7 +62174,7 @@
           0, 0, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken.\\nMit kurzen Verjüngungs-Zeiträumen werden Mischbaumarten gefördert.\\nFemelschlag.",
-        "heightDispersion": "submontan, 500-800m",
+        "heightDispersion": "submontan; 500-800m",
         "pioneerTreeTypes": "Kast, Wei",
         "associationGroupCode": "6,7"
       },
@@ -62186,15 +62186,15 @@
         "priority": null,
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-\\nWindröschen\\nF: Wald-Segge, Berg-Goldnessel",
         "compactRisk": "2",
-        "description": "Wüchsige Hallen-Buchenwälder in \\nflachen bis mässig steilen Lagen aller \\nExpositionen, oft auch in Bacheinhängen. \\nKrautschicht spärlich bis gut ausgebildet. Mittlere Standorte mit mittel- bis tiefgründigem, sandig-schluffig oder sandig-lehmigem Boden",
+        "description": "Wüchsige Hallen-Buchenwälder in flachen bis mässig steilen Lagen aller Expositionen, oft auch in Bacheinhängen. Krautschicht spärlich bis gut ausgebildet. \\nMittlere Standorte mit mittel- bis tiefgründigem, sandig-schluffig oder sandig-lehmigem Boden.",
         "forestryCare": "N: In Edellaubholzverjüngungen frühe Mischungsregulierung (ab Ende Jungwuchs); grosse Kronen ausbilden; Ende Durchforstung im BH 2.\\nMischungsform: Es und BAh trupp- bis gruppenweise, Fi truppweise.",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
           0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2,
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
-        "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken. Mit \\nLichtungshieben wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Vorhandene Ansamung begünstigen!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig öffnen zur Ansamung von Es und BAh. Auch gruppenweise Bu unterpflanzen, v.a. in Brombeerbeständen.\\nVerjüngungsflächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\n\\n",
-        "heightDispersion": "submontan, 500-700m",
+        "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken. \\nMit Lichtungshieben wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Vorhandene Ansamung begünstigen!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig öffnen zur Ansamung von Es und BAh. Auch gruppenweise Bu unterpflanzen, v.a. in Brombeerbeständen.\\nVerjüngungsflächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\n\\n",
+        "heightDispersion": "submontan; 500-700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "6,7"
       },
@@ -62206,7 +62206,7 @@
         "priority": null,
         "vegetation": "C: Wald-Frauenhaar, Tamariskenmoos\\nK: Wald-Gilbweiderich, Abgerücktährige Segge",
         "compactRisk": "3",
-        "description": "Wüchsige Buchenmischwälder auf fla-chen Rücken und an mässig steilen Hängen. Boden schluffig, leicht versauert und vernässt, oft Brombeere dominant.\\n",
+        "description": "Wüchsige Buchenmischwälder auf flachen Rücken und an mässig steilen Hängen. \\nBoden schluffig, leicht versauert und vernässt, oft Brombeere dominant.\\n",
         "forestryCare": "N: Mischungsregulierung ab Dickung, Durchforstung bis BH 2. \\nMischungsform: Nadelholz einzeln bis truppweise, Laubholz bis gruppenweise, SEi-Flächen rein.\\nBei schluffreichen Böden grosse Verdichtungsgefahr durch Befahren; Konzentration auf Rückegassen.\\nU: Mischungsregulierung verbunden mit Schlagpflege nach Räumung des Altbestandes. \\n",
         "expoAndAspect": [
           1, 1, 1, 2, 2, 0, 0, 0, 1, 1, 1, 2, 2, 0, 0, 0, 1, 1, 1, 2, 2, 0, 0,
@@ -62214,7 +62214,7 @@
           0, 0, 1, 1, 1, 2, 2, 0, 0, 0, 1, 1, 1, 2, 2, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer bei geringer Bodenauflage in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten in Lichtschächten auf günstigen Kleinstandorten.\\nGruppen-Plenterung oder kleinflächiger Femelschlag.\\nU: Vorhandenes Edellaubholz konsequent fördern; Auflichtung für Vorverjüngung von Bu, Ta und Fi. \\nAb Anfang Dickung weiteres starkes Auflichten; Räumung des Altbestandes Ende Dickung.\\nVariante: In Windwurf-Flächen oder Umwandlungsbeständen >1/2 ha: flächig räumen für SEi-Reinbestände mit Nebenbestand von WLi und Hagebuche; diese später pflanzen.\\n",
-        "heightDispersion": "submontan, 400-700m",
+        "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
         "associationGroupCode": "6,7"
       },
@@ -62226,7 +62226,7 @@
         "priority": null,
         "vegetation": "C: Wald-Hainsimse, Wald-Frauenhaar, Tamariskenmoos, Zweiblättrige Schattenblume\\nE: Waldmeister (vereinzelt)\\n",
         "compactRisk": "2",
-        "description": "Wüchsige Hallen-Buchenwälder auf leichten Kuppen, Plateaus und wenig geneigten Hanglagen. Unterwuchs spärlich und artenarm, oft mit dominanter Brombeere. Boden leicht versauert, etwas nährstoffärmer als 7a.\\n",
+        "description": "Wüchsige Hallen-Buchenwälder auf leichten Kuppen, Plateaus und wenig geneigten Hanglagen. Unterwuchs spärlich und artenarm, oft mit dominanter Brombeere. \\nBoden leicht versauert, etwas nährstoffärmer als 7a.\\n",
         "forestryCare": "N: Mischungsregulierung ab Dickung, Durchforstung bis BH 2.\\nMischungsform: Fi und Ta einzeln bis truppweise.\\nU: Mischungsregulierung verbunden mit Schlagpflege nach Räumung des Altbestandes.",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
@@ -62234,7 +62234,7 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Übrige in Lücken.\\nVerjüngung durch Lichtungshiebe einleiten. Grosser Spielraum bezüglich Verjüngungszeitraum, für Lichtbaumarten kurz.\\nFemelschlag. Mit Ta und Fi kleinflächig.\\nU: Vorhandenes Edellaubholz konsequent fördern; Auflichtung für Vorverjüngung von Bu, Ta und Fi. Ab Anfang Dickung weiteres starkes Auflichten; Räumung des Altbestandes Ende Dickung.\\nWenn Bu grossflächig fehlt: nesterweise unterpflanzen.\\nVariante: In Windwurf-Flächen oder Umwandlungsbeständen >1/2 ha: flächig räumen für SEi-Reinbestände mit Nebenbestand von WLi und Hagebuche; diese später pflanzen.\\n\\n",
-        "heightDispersion": "submontan, 400-700m",
+        "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "HBi, WFö",
         "associationGroupCode": "6,7"
       },
@@ -62246,7 +62246,7 @@
         "priority": null,
         "vegetation": "E: Waldmeister, Ähren-Rapunzel, Busch-Windröschen\\nF: Wald-Segge, Berg-Goldnessel\\nM: Wald-Zwenke, Stechpalme, Weissdorn, Wolliger Schneeball, Gefingerte Segge; Bingelkraut (auf Schotter)\\nO: Schlaffe Segge\\nP: Weisse Segge (oberflächlich schotterig)",
         "compactRisk": "1",
-        "description": "Mässig wüchsige Hallen-Buchenwälder in sonnigen Hanglagen. Unterwuchs mit ‚Kalksträuchern’. Boden oft skelettreich, etwas trockener als 7a, ab ca. 30 cm kalkhaltig.\\nMit Weisser Segge: Auf Bachschottern, an der Rigi auf Bergsturzflächen, oberflächlich austrocknend.\\n",
+        "description": "Mässig wüchsige Hallen-Buchenwälder in sonnigen Hanglagen. Unterwuchs mit ‚Kalksträuchern’. \\nBoden oft skelettreich, etwas trockener als 7a, ab ca. 30 cm kalkhaltig.\\nMit Weisser Segge: Auf Bachschottern, an der Rigi auf Bergsturzflächen, oberflächlich austrocknend.\\n",
         "forestryCare": "N: Mischungsregulierung ab Dickung. Starke Durchforstung bis Ende BH 1.\\nMischungsform: Bu trupp- bis gruppenweise oder rein, Übrige einzeln bis truppweise.\\n\\n",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 0,
@@ -62254,7 +62254,7 @@
           0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: In lichten Beständen für alle Baumarten meist problemlos. Durch starke, kleinflächige Auflichtung kann Verjüngung beschleunigt werden, v.a. für Lichtbaumarten. Räumungsschlag Ende Dickung.\\nFemelschlag.\\nU: Nach kleinflächigen Verjüngungshieben samen alle Baumarten reichlich an.",
-        "heightDispersion": "submontan, 500-800m",
+        "heightDispersion": "submontan; 500-800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "6,7"
       },
@@ -62266,7 +62266,7 @@
         "priority": null,
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel, Aronstab.\\nM: Bingelkraut oft stark, Wald-Zwenke\\n",
         "compactRisk": "2",
-        "description": "Sehr wüchsige Hallen-Buchenwälder an wenig bis stark geneigten Hängen aller Expositionen. Boden basen- und nährstoffreicher als 7a, Streu früh zersetzt, ab ca. 30 cm Tiefe kalkhaltig.\\n",
+        "description": "Sehr wüchsige Hallen-Buchenwälder an wenig bis stark geneigten Hängen aller Expositionen. \\nBoden basen- und nährstoffreicher als 7a, Streu früh zersetzt, ab ca. 30 cm Tiefe kalkhaltig.\\n",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs.\\nMischungsform: Gruppen- bis horstweise.\\nHäufige Durchforstung bis BH 1. Auf starke Kronenausbildung achten. Pflege sehr lohnend!",
         "expoAndAspect": [
           2, 1, 1, 1, 2, 2, 0, 0, 2, 1, 1, 1, 2, 2, 0, 0, 2, 1, 1, 1, 2, 2, 0,
@@ -62274,7 +62274,7 @@
           0, 0, 2, 1, 1, 1, 2, 2, 0, 0, 2, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm, Übrige in Lücken.\\nEinleitung für Bu durch kleinflächige Auflichtungen; Edellaubhölzer durch Verjüngungshiebe bis Horstgrösse.\\nKurze Verjüngungszeiträume.\\nFemelschlag.\\nU: Ansamung von BAh und Es begünstigen durch grösserflächige Verjüngungshiebe.\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Verjüngungs-Flächen mit Edellaubholz spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nBei Wildverbiss oder schlechtem Wuchs: Es und BAh auf Stock setzen.\\n\\n",
-        "heightDispersion": "submontan, 400-700m",
+        "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "6,7"
       },
@@ -62286,7 +62286,7 @@
         "priority": null,
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Wald-Segge, Berg-Goldnessel\\nH: Wald-Ziest, Wald-Springkraut\\nK: Pariser-Hexenkraut\\n",
         "compactRisk": "3",
-        "description": "Sehr wüchsige Laubmischwälder, oft mit dominanter Bu. Krautschicht meist üppig, da sehr aktiver, tiefgründiger, leicht vergleyter Boden; Aufweise Kalk ab 30 cm. \\nBevorzugt in Hangfuss- und Muldenlagen.\\n",
+        "description": "Sehr wüchsige Laubmischwälder, oft mit dominanter Bu. Krautschicht meist üppig, da sehr aktiver, tiefgründiger, leicht vergleyter Boden.\\nBevorzugt in Hangfuss- und Muldenlagen.\\n",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs, Durchforstung bis BH 1.\\nMischungsform: BAh und Es trupp- bis gruppenweise, Ta einzeln bis truppweise. \\nPflege sehr lohnend.",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
@@ -62294,7 +62294,7 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken.\\nMit Lichtungshieben wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Vorhandene Ansamung begünstigen, v.a. von BAh und Es!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig; Ansamung von Es und BAh.\\nVerjüngungsflächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\n",
-        "heightDispersion": "submontan, 400-700m",
+        "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "6,7"
       },
@@ -62306,7 +62306,7 @@
         "priority": null,
         "vegetation": "C: Heidelbeere, Gabelzahnmoos, Wald-Frauenhaar, Rippenfarn (wenig häufig), Tamariskenmoos, Wald-Hainsimse.\\n\\n",
         "compactRisk": "3",
-        "description": "Recht wüchsige Buchen-Mischwälder auf flachen Hängen, Plateaus und Kuppen. Deutlich nährstoffärmer und saurer als 7a, daher mit deutlichem Nadelholzanteil; moos- und heidelbeerreicher Unterwuchs, deutliche Moderauflage. Oft dominante Brombeere.\\n",
+        "description": "Recht wüchsige Buchenmischwälder auf flachen Hängen, Plateaus und Kuppen. Deutlich nährstoffärmer und saurer als 7a, daher mit deutlichem Nadelholzanteil; moos- und heidelbeerreicher Unterwuchs, deutliche Moderauflage. Oft dominante Brombeere.\\n",
         "forestryCare": "N: Kann sich auf Schlagpflege be-schränken.\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.\\n\\n",
         "expoAndAspect": [
           1, 1, 1, 2, 2, 0, 0, 0, 1, 1, 1, 2, 2, 0, 0, 0, 1, 1, 1, 2, 2, 0, 0,
@@ -62314,19 +62314,19 @@
           0, 0, 1, 1, 1, 2, 2, 0, 0, 0, 1, 1, 1, 2, 2, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch schwache Lichtungshiebe.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen Variante. \\nVariante: SEi-Flächen rein.\\n",
-        "heightDispersion": "submontan, 400-700m",
+        "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "HBi, VBe, Wei, ZPa",
         "associationGroupCode": "6,7"
       },
       {
-        "de": "Typischer Waldhirsen-\\nBuchenwald",
+        "de": "Typischer Waldhirsen-Buchenwald",
         "la": "Milio-Fagetum typicum",
         "code": "8a",
         "aptitude": "PR: Produktiver Standort mit grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, wenn in Steilhängen gelegen.\\nNS: Besonderheiten selten.\\n\\n\\n\\n",
         "priority": null,
         "vegetation": "D: Weiblicher Waldfarn \\nE: Waldmeister, Wald-Veilchen, Echter Wurmfarn\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nL: Gelappter Schildfarn\\n",
         "compactRisk": "2",
-        "description": "Wüchsige Buchen-Mischwälder in \\nflachen bis recht steilen Lagen aller\\nExpositionen. Krautschicht spärlich bis \\ngut ausgebildet. Mittlere Standorte mit  \\nmittel- bis tiefgründigem, sandig-schluffig \\noder sandig-lehmigem Boden.",
+        "description": "Wüchsige Buchenmischwälder in flachen bis recht steilen Lagen aller Expositionen. Krautschicht spärlich bis gut ausgebildet. \\nMittlere Standorte mit mittel- bis tiefgründigem, sandig-schluffig oder sandig-lehmigem Boden.",
         "forestryCare": "N: In Edellaubholzverjüngungen frühe Mischungsregulierung (ab Ende Jungwuchs). Grosse Kronen ausbilden. Ende Durchforstung im BH 2.\\nMischungsform: Es und BAh trupp- bis gruppenweise, Fi truppweise, Ta einzeln bis truppweise.\\n",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
@@ -62334,19 +62334,19 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken.\\nMit Lichtungshieben wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Vorhandene Ansamung begünstigen!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig öffnen zur Ansamung von Es und BAh.\\nVerjüngungs-Flächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nBei Wildverbiss oder schlechtem Wuchs: Es und BAh auf Stock setzen.\\n",
-        "heightDispersion": "untermontan, 600-\\n1000m",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Lockerähriger Segge",
-        "la": "Milio-Fagetum caricetosum\\nremotae",
+        "la": "Milio-Fagetum caricetosum remotae",
         "code": "8b",
         "aptitude": "PR: Recht produktiver Standort, aber wenig vielseitig für Wertträger.\\nNG: Gute Schutzwirkung, da meist stabile Standorte; bei schlechter Bestockung anfällig.\\nNS: Ohne Besonderheiten.\\n",
         "priority": null,
         "vegetation": "C: Breiter Wurmfarn, Heidelbeere spärlich, \\nTamariskenmoos\\nD: Weiblicher Waldfarn\\nK: Wald-Schachtelhalm, Wald-Gilbweiderich, Abgerücktährige Segge \\n",
         "compactRisk": "3",
-        "description": "Recht wüchsige Buchen-Mischwälder auf flachen Rücken, Plateaus und mässig steilen Hängen. \\nFeuchter und basenärmer als 8a, daher mit konkurrenzstarker Ta; zeitweise vernässter, oberflächlich versauerter Boden. Oft Brombeere dominant.",
+        "description": "Recht wüchsige Buchenmischwälder auf flachen Rücken, Plateaus und mässig steilen Hängen. \\nFeuchter und basenärmer als 8a, daher mit konkurrenzstarker Ta; zeitweise vernässter, oberflächlich versauerter Boden. Oft Brombeere dominant.",
         "forestryCare": "N: Mischungsregulierung ab Dickung, Durchforstung bis BH 2. \\nMischungsform: Nadelholz einzeln bis truppweise, Laubholz einzeln bis gruppenweise.\\nBei schluffreichen Böden grosse Verdichtungsgefahr durch Befahren; Konzentration auf Rückegassen.\\nU: Mischungsregulierung verbunden mit Schlagpflege nach Räumung des Altbestandes.\\n",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
@@ -62354,39 +62354,39 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer in Lücken, wenn Auflage gering.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten auf günstigen Kleinstandorten.\\nGruppen-Plenterung oder kleinflächiger Femelschlag.\\nU: Vorhandenes Edellaubholz konsequent fördern. Auflichtung für Vorverjüngung von Bu, Ta und Fi. \\nWenn Bu grossflächig fehlt: nesterweise unterpflanzen.\\nAb Anfang Dickung weiteres starkes Auflichten; Räumung des Altbestandes Ende Dickung.\\n",
-        "heightDispersion": "untermontan, 500-\\n900m",
+        "heightDispersion": "untermontan; 500-900m",
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Breitem Wurmfarn",
-        "la": "Milio-Fagetum \\ndryopterietosum dilatatae",
+        "la": "Milio-Fagetum dryopterietosum dilatatae",
         "code": "8c",
         "aptitude": "PR: Ziemlich produktiv, mässig vielseitig.\\nNG: Ohne Besonderheiten.\\nNS: Ohne Besonderheiten\\n",
         "priority": null,
         "vegetation": "C: Breiter Wurmfarn, Wald-Hainsimse, Tamariskenmoos\\nD: Weiblicher Waldfarn\\n",
         "compactRisk": "2",
-        "description": "Recht wüchsige Buchen-Mischwälder auf Kuppen und an Hängen aller Expositionen. Boden nährstoffärmer als 8a, daher höherer Nadelholzanteil und oberflächlich versauert. Unterwuchs spärlich und artenarm. Oft Brombeere dominant.",
-        "forestryCare": "N: Mischungsregulierung ab \\nDickung, Durchforstung bis BH 2.\\nMischungsform: Fi und Ta einzeln \\nbis truppweise.\\nU: Mischungsregulierung mit \\nSchlagpflege nach Altbestandräumung.\\n",
+        "description": "Recht wüchsige Buchenmischwälder auf Kuppen und an Hängen aller Expositionen. Unterwuchs spärlich und artenarm. Oft Brombeere dominant.\\nBoden nährstoffärmer als 8a, daher höherer Nadelholzanteil und oberflächlich versauert.",
+        "forestryCare": "N: Mischungsregulierung ab Dickung, Durchforstung bis BH 2.\\nMischungsform: Fi und Ta einzeln bis truppweise.\\nU: Mischungsregulierung mit Schlagpflege nach Altbestandräumung.\\n",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
           0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2,
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm; Übrige in Lücken. Verjüngung durch Lichtungshiebe einleiten.\\nGrosser Spielraum bezüglich Verjüngungszeitraum, für Lichtbaumarten kurz.\\nFemelschlag. Mit Ta und Fi kleinflächig; auch Plenterung empfohlen.\\nU: Vorhandenes Edellaubholz konsequent fördern; Auflichtung für Vorverjüngung von Bu, Ta und Fi. Wenn Bu grossflächig fehlt: nesterweise unterpflanzen. Ab Anfang Dickung weiteres starkes Auflichten; Räumung des Altbestandes Ende Dickung.\\n",
-        "heightDispersion": "untermontan 500-\\n1000m",
+        "heightDispersion": "untermontan; 500-1000m",
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wie",
         "associationGroupCode": "8"
       },
       {
-        "de": "Waldhirsen-Buchenwald \\nmit Hainsimse",
+        "de": "Waldhirsen-Buchenwald mit Hainsimse",
         "la": "Milio-Fagetum luzuletosum",
         "code": "8d",
         "aptitude": "PR: Mässig geeignet, da Zuwachs vermindert.\\nNG: Gute Schutzwirkung durch stabile Standorte.\\nNS: Wenige Besonderheiten.\\n",
         "priority": null,
         "vegetation": "C: Wald-Hainsimse, Heidelbeere spärlich, Rundblättriges Labkraut, Tamariskenmoos \\nD: Weiblicher Waldfarn \\n",
         "compactRisk": "2",
-        "description": "Ziemlich wüchsige Buchen-Mischwälder \\nauf Kuppen sowie an Süd- und Westhängen. Boden sandig-schluffig, nährstoffärmer und trockener als 8a, daher mit trocken-saurem Oberboden und Säurezeigern im Unterwuchs.",
+        "description": "Ziemlich wüchsige Buchenmischwälder auf Kuppen sowie an Süd- und Westhängen. \\nBoden sandig-schluffig, nährstoffärmer und trockener als 8a, daher mit trocken-saurem Oberboden und Säurezeigern im Unterwuchs.",
         "forestryCare": "N: Mischungsregulierung in Dickung.\\nDurchforstung bis BH 1.\\nMischungsform: Mischbaumarten einzeln bis truppweise. \\n\\n",
         "expoAndAspect": [
           1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 0,
@@ -62394,19 +62394,19 @@
           0, 0, 1, 1, 2, 2, 2, 2, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken.\\nMit kurzen Verjüngungszeiträumen werden die lichtbedürftigeren Mischbaumarten gefördert.\\nFemelschlag.\\n",
-        "heightDispersion": "untermontan 600-\\n1000m",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "HBi, VBe, Wei",
         "associationGroupCode": "8"
       },
       {
-        "de": "Waldhirsen-Buchenwald \\nmit Hornstrauch",
-        "la": "Milio-Fagetum \\ncornetosum",
+        "de": "Waldhirsen-Buchenwald mit Hornstrauch",
+        "la": "Milio-Fagetum cornetosum",
         "code": "8e",
         "aptitude": "PR: Wüchsiger und vielseitiger Standort.\\nNG: Ohne Besonderheiten.\\nNS: Erhöhte Bedeutung durch Kalk im Untergrund.",
         "priority": null,
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nM: Bingelkraut, Wald-Zwenke, Weissdorn, Wolliger Schneeball\\nO: Schlaffe Segge \\nP: Weiss-Segge auf schottrigem Oberboden\\n",
         "compactRisk": "1",
-        "description": "Recht wüchsige Buchen-Mischwälder in sonnigen Hanglagen und auf Bachschottern. Boden trockener als 8a, ab ca. 30 cm kalkhaltig, oberflächlich austrocknend, oft skelettreich.",
+        "description": "Recht wüchsige Buchenmischwälder in sonnigen Hanglagen und auf Bachschottern. \\nBoden trockener als 8a, ab ca. 30 cm kalkhaltig, oberflächlich austrocknend, oft skelettreich.",
         "forestryCare": "N: Mischungsregulierung ab Dickung. Starke Durchforstung bis Ende BH 1.\\nMischungsform: Bu trupp- bis gruppenweise, Übrige einzeln bis truppweise.",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0,
@@ -62419,14 +62419,14 @@
         "associationGroupCode": "8"
       },
       {
-        "de": "Waldhirsen-Buchenwald \\nmit Lungenkraut",
-        "la": "Milio-Fagetum \\npulmonarietosum",
+        "de": "Waldhirsen-Buchenwald mit Lungenkraut",
+        "la": "Milio-Fagetum pulmonarietosum",
         "code": "8f",
         "aptitude": "PR: Sehr wüchsiger und vielseitiger Standort.\\nNG: Ohne Besonderheiten.\\nNS: Leicht erhöhte Bedeutung durch Kalk im Untergrund.\\n",
         "priority": null,
         "vegetation": "E: Echter Wurmfarn, Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nM: Bingelkraut, Wald-Zwenke",
         "compactRisk": "2",
-        "description": "Sehr wüchsige Buchen-Mischwälder an Hängen aller Expositionen,  Boden basen- und nährstoffreicher als 8a, ab ca. 30 cm kalkhaltig.",
+        "description": "Sehr wüchsige Buchenmischwälder an Hängen aller Expositionen.\\nBoden basen- und nährstoffreicher als 8a, ab ca. 30 cm kalkhaltig.",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs.\\nMischungsform: Gruppen- bis horst-weise.\\nHäufige Durchforstung bis BH 1. Auf starke Kronenausbildung achten.\\nPflege sehr lohnend!\\n",
         "expoAndAspect": [
           2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0,
@@ -62434,19 +62434,19 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm, Übrige in Lücken.\\nBu durch kleinflächige Auflichtungen; Edellaubhölzer durch Verjüngungshiebe bis Horstgrösse.\\nKurze Verjüngungszeiträume für lichtbedürftige Baumarten.\\nFemelschlag.\\nU: Oft vorhandene Ansamung von BAh und Es begünstigen durch flächige Verjüngungshiebe.\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen.\\nVerjüngungs-Flächen mit Edellaubholz spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nBei Wildverbiss oder schlechtem Wuchs: Es + BAh auf Stock setzen.\\n\\n",
-        "heightDispersion": "untermontan 600-\\n1000m",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "8"
       },
       {
-        "de": "Feuchter Waldhirsen-\\nBuchenwald",
+        "de": "Feuchter Waldhirsen-Buchenwald",
         "la": "Milio-Fagetum stachyetosum sylvaticae",
         "code": "8S",
         "aptitude": "PR: Sehr produktiver Standort mit sehr grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, v.a. in Bacheinhängen.\\nNS: Feuchte bietet besonderen Lebensraum, wenn basenhaltig, dann noch deutlicher.",
         "priority": null,
         "vegetation": "D: Weiblicher Waldfarn \\nE: Echter Wurmfarn, Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nH: Wald-Ziest\\nK: Hängende Segge, Pariser-Hexenkraut, Wald-Schachtelhalm\\n",
         "compactRisk": "3",
-        "description": "Sehr wüchsige Buchen-Mischwälder in Runsen, Hangfuss- und Muldenlagen. Feuchter als 8a, daher BAh, Es und BUl mit starker Konkurrenzkraft; üppige Krautschicht und aktiver, nährstoffreicher, mittel- bis tiefgründiger Boden, oft leicht vergleyt. Teilweise Kalk im Untergrund. \\n",
+        "description": "Sehr wüchsige Buchenmischwälder in Runsen, Hangfuss- und Muldenlagen. Feuchter als 8a, daher BAh, Es und BUl mit starker Konkurrenzkraft; üppige Krautschicht.\\nAktiver, nährstoffreicher, mittel- bis tiefgründiger Boden, oft leicht vergleyt. Teilweise Kalk im Untergrund. \\n",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs, Durchforstung bis BH 1.\\nMischungsform: BAh und Es trupp- bis gruppenweise, Ta einzeln bis truppweise.\\nPflege sehr lohnend!\\n",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
@@ -62454,19 +62454,19 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken.\\nMit Lichtungshieben werden v.a. Bu und Ta gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nIn schattigen Lagen bei hohem Ta-Anteil auch Plenterung empfohlen.\\nU: Vorhandene Ansamung begünstigen!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. \\nOhne Bu grösserflächig; Ansamung von Es und BAh. Auch gruppenweise Bu unterpflanzen, v.a. in Brombeeren.\\nVerjüngungsflächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen. Bu-Verjüngungen behutsam erweitern; mit Es und BAh zügig.\\nBei Wildverbiss oder schlechtem Wuchs: Es und BAh auf Stock setzen.\\n",
-        "heightDispersion": "untermontan, 600-\\n1000m",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "8"
       },
       {
-        "de": "Waldhirsen-Buchenwald \\nmit Rippenfarn",
-        "la": "Milio-Fagetum \\nblechnetosum",
+        "de": "Waldhirsen-Buchenwald mit Rippenfarn",
+        "la": "Milio-Fagetum blechnetosum",
         "code": "8*",
         "aptitude": "PR: Wuchskraft mässig, wenig vielseitig; sehr gute Qualität von Ta und Fi\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeer- und Moosbestände.\\n",
         "priority": null,
-        "vegetation": "C: Rippenfarn (ab und zu), Breiter Wurmfarn, Heidelbeere, Gabelzahnmoos, Wald-Frauenhaar, \\nTamariskenmoos, Wald-Hainsimse",
+        "vegetation": "C: Rippenfarn (ab und zu), Breiter Wurmfarn, Heidelbeere, Gabelzahnmoos, Wald-Frauenhaar, Tamariskenmoos, Wald-Hainsimse",
         "compactRisk": "3",
-        "description": "Ziemlich wüchsige Buchen-Mischwälder \\nmit starkem Nadelholzanteil, vorwiegend \\nauf flachen Hängen, Plateaus und \\nKuppen. Deutlich nährstoffärmer und \\nsaurer als 8a; moos- und heidel-\\nbeerreicher Unterwuchs und deutliche Moderauflage. Oft Brombeere dominant.",
+        "description": "Ziemlich wüchsige Buchenmischwälder mit starkem Nadelholzanteil, vorwiegend auf flachen Hängen, Plateaus und Kuppen. Deutlich nährstoffärmer und saurer als 8a; moos- und heidelbeerreicher Unterwuchs und deutliche Moderauflage. Oft Brombeere dominant.",
         "forestryCare": "N: Schlagpflege genügt i.d.R.\\nMischungsform: einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur\\n",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
@@ -62474,19 +62474,19 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm, im Lichtschacht und Seitenlicht. Verjüngung fördern durch schwache Lich-tungshiebe und kleinflächige Eingriffe zur Schaffung von Seitenlicht und Lichtschächten.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen.\\n",
-        "heightDispersion": "untermontan 600-\\n1000m",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "HBi, VBe, ZPa",
         "associationGroupCode": "8"
       },
       {
-        "de": "Typischer Lungenkraut-\\nBuchenwald",
-        "la": "Pulmonario-Fagetum \\ntypicum",
+        "de": "Typischer Lungenkraut-Buchenwald",
+        "la": "Pulmonario-Fagetum typicum",
         "code": "9a",
         "aptitude": "PR: Recht produktiver Standort mit grossem Spektrum an Baumarten.\\nNG: Erhöhte Gefährdung, wenn in Bacheinhängen (im Mittelland häufig).\\nNS: Reichhaltig und wertvoll, da oft in wilden Tobeln und an Hängen.\\n",
         "priority": null,
-        "vegetation": "E: Waldmeister, Wald-Veilchen, \\nBusch-Windröschen\\nF: Berg-Goldnessel, Wald-Segge\\nM: Bingelkraut, Weissdorn, Wolliger und Gem. Schneeball, Gewöhnl. Seidelbast, Gewöhnl. Schmerwurz, Süsse Wolfsmilch\\n",
+        "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Berg-Goldnessel, Wald-Segge\\nM: Bingelkraut, Weissdorn, Wolliger und Gem. Schneeball, Gewöhnl. Seidelbast, Gewöhnl. Schmerwurz, Süsse Wolfsmilch\\n",
         "compactRisk": "2",
-        "description": "Sehr wüchsige, edellaubreiche Hallen-\\nBuchenwälder in bevorzugt sonnigen \\nHanglagen über kalkreichem Untergrund; \\nim Gebiet meist in steiler Lage, deshalb \\nMischbaumarten häufig. Oft mit \\nBingelkraut-Teppich. Boden aktiv, \\nnährstoff- und basenreich, Kalk bis in \\nden Oberboden, teils tonhaltig und leicht vernässt.",
+        "description": "Sehr wüchsige, edellaubreiche Hallen-Buchenwälder in bevorzugt sonnigen Hanglagen über kalkreichem Untergrund; im Gebiet meist in steiler Lage, deshalb Mischbaumarten häufig. Oft mit Bingelkraut-Teppich. \\nBoden aktiv, nährstoff- und basenreich, Kalk bis in den Oberboden, teils tonhaltig und leicht vernässt.",
         "forestryCare": "Bei Edellaubhölzern Mischungsregulierung ab Ende Jungwuchs, bei reiner Bu ab Ende Dickung, Durchforstung bis BH 2, grosse Kronen ausbilden.\\nMischungsform: Es und BAh trupp- bis gruppenweise, Ki und BUl einzeln.\\n",
         "expoAndAspect": [
           2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0,
@@ -62494,7 +62494,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 2, 2, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Mischbaumarten unter lockerem Schirm und in Lücken.\\nMit Lichtungshieben und langen Verjüngungszeiträumen wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Vorhandene Ansamung begünstigen! Wenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen.\\n",
-        "heightDispersion": "submontan, 500-\\n800m",
+        "heightDispersion": "submontan; 500-800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "9,10,11"
       },
@@ -62506,7 +62506,7 @@
         "priority": null,
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Berg-Goldnessel, Wald-Segge\\nM:  Bingelkraut, Weissdorn, Wolliger und Gem. Schneeball, Gewöhnl. Seidelbast, Gewöhnl. Schmerwurz, Süsse Wolfsmilch\\nO:  Schlaffe Segge\\n",
         "compactRisk": "3",
-        "description": "Wüchsige, edellaubreiche  Hallen-Buchenwälder, über kalkreichem Untergrund; im Gebiet meist in steiler Lage, deshalb Mischbaumarten häufig. Oft mit Bingelkraut-Teppich. \\nBoden aktiv, nährstoff- und basenreich, Kalk bis in den Oberboden, mergelig und wechselfeucht.",
+        "description": "Wüchsige, edellaubreiche Hallen-Buchenwälder, über kalkreichem Untergrund; im Gebiet meist in steiler Lage, deshalb Mischbaumarten häufig. Oft mit Bingelkraut-Teppich. \\nBoden aktiv, nährstoff- und basenreich, Kalk bis in den Oberboden, mergelig und wechselfeucht.",
         "forestryCare": "Bei Edellaubhölzern Mischungsregulierung ab Ende Jungwuchs, bei reiner Bu ab Ende Dickung, Durchforstung bis BH 2, grosse Kronen ausbilden.\\nMischungsform: Es und BAh trupp- bis gruppenweise, Ki und BUl einzeln.",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0,
@@ -62514,7 +62514,7 @@
           0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Mischbaumarten unter lockerem Schirm und in Lücken.\\nMischbaumarten empfohlen; Förderung mit flächigen Verjüngungshieben bis Gruppengrösse; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Meist naturnahe Bestände.",
-        "heightDispersion": "submontan 500-\\n800m",
+        "heightDispersion": "submontan; 500-800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "9,10,11"
       },
@@ -62526,7 +62526,7 @@
         "priority": null,
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen, \\nF: \\tBerg-Goldnessel, Wald-Segge, \\nM: \\tBingelkraut, Wald-Zwenke, Weissdorn, Wolliger Schneeball, Feld-Rose, Leberblümchen, Süsse Wolfsmilch\\nO: \\tSchlaffe Segge, Liguster\\n",
         "compactRisk": "3",
-        "description": "Ziemlich wüchsige, edellaubreiche  Bu-chenwälder südexponierter Hanglagen über kalkreichem Untergrund. Vielfältige Kraut- und Strauchschicht. Boden aktiv, nährstoff- und basenreich; teils mergelig, wechseltrocken.\\n ",
+        "description": "Ziemlich wüchsige, edellaubreiche  Buchenwälder südexponierter Hanglagen über kalkreichem Untergrund. Vielfältige Kraut- und Strauchschicht. \\nBoden aktiv, nährstoff- und basenreich; teils mergelig, wechseltrocken.",
         "forestryCare": "Bei Edellaubhölzern Mischungs-regulierung ab Ende Jungwuchs, bei reiner Bu ab Ende Dickung, Durchforstung bis BH 2, grosse Kronen ausbilden.\\nMischungsform: Es und BAh trupp- bis gruppenweise, Ki einzeln.",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0,
@@ -62534,7 +62534,7 @@
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Mischbaumarten unter lockerem Schirm und in Lücken.\\nMit Lichtungshieben und langen Verjüngungszeiträumen wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.",
-        "heightDispersion": "submontan 500-\\n800m",
+        "heightDispersion": "submontan; 500-800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "9,10,11"
       },
@@ -62546,7 +62546,7 @@
         "priority": null,
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Aronstab, Wald-Segge, Berg-Goldnessel \\nG: Bärlauch (oft als Teppich)\\nK: Welliges Sternmoos\\nM: Bingelkraut\\n",
         "compactRisk": "3",
-        "description": "Sehr wüchsige Laubmischwälder, meist in Gewinnlagen von lehmreichen \\nHangfüssen, an flachen Hängen oder in Bacheinhängen. Oft flächige Bärlauch-Teppiche. \\nBoden feucht, sehr aktiv, neutral bis basisch, oft kalkhaltig, tiefgründig, leicht vergleyt.",
+        "description": "Sehr wüchsige Laubmischwälder, meist in Gewinnlagen von lehmreichen Hangfüssen, an flachen Hängen oder in Bacheinhängen. Oft flächige Bärlauch-Teppiche. \\nBoden feucht, sehr aktiv, neutral bis basisch, oft kalkhaltig, tiefgründig, leicht vergleyt.",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs, Durchforstung bis BH 2, grosse Kronen ausbilden.\\nMischungsform: BAh und Es trupp- bis gruppenweise, Ki und BUl einzeln bis truppweise.\\n",
         "expoAndAspect": [
           2, 2, 1, 1, 2, 2, 0, 0, 2, 2, 1, 1, 2, 2, 0, 0, 2, 2, 1, 1, 2, 2, 0,
@@ -62554,19 +62554,19 @@
           0, 0, 2, 2, 1, 1, 2, 2, 0, 0, 2, 2, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu unter Schirm, Übrige unter lockerem Schirm und in Lücken.\\nMit schwachen Lichtungshieben und langen Verjüngungszeiträumen wird v.a. Bu gefördert, mit starker Lichtung oder flächigen Verjüngungshieben bis Gruppengrösse und kurzen Verjüngungszeiträumen die Lichtbaumarten.\\nAusrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag, eher grossflächig.\\nU: Wenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. \\nOhne Bu grösserflächig; Ansamung von Es und BAh.\\nVerjüngungflächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\n",
-        "heightDispersion": "submontan 400-700m",
+        "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "9,10,11"
       },
       {
-        "de": "Typischer Zahnwurz-\\nBuchenwald",
-        "la": "Cardamino-Fagetum \\ntypicum",
+        "de": "Typischer Zahnwurz-Buchenwald",
+        "la": "Cardamino-Fagetum typicum",
         "code": "12a",
         "aptitude": "PR: Produktiver Standort mit grossem Spektrum an Baumarten, Nutzung durch oft steile Lage erschwert.\\nNG: Erhöhte Gefährdung durch oft steile Lage. Auf Dauerbestockung achten.\\nNS: Durch kalkhaltigen Boden relativ bedeutend, insbesondere bei steiler Lage.\\n",
         "priority": null,
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel \\nL: Gelappter Schildfarn, Hoher \\nSchwingel\\nM: Bingelkraut, Zahnwurz, Roter Hartriegel \\n",
         "compactRisk": "2",
-        "description": "Wüchsige Buchenwälder kalkreicher \\nHanglagen aller Expositionen. Unter-\\nwuchs oft von Bingelkraut dominiert. \\nBoden oft skelettreich, gut durchlässig \\nund aktiv, Kalk im Oberboden. ",
+        "description": "Wüchsige Buchenwälder kalkreicher Hanglagen aller Expositionen. Unterwuchs oft von Bingelkraut dominiert. \\nBoden oft skelettreich, gut durchlässig und aktiv, Kalk im Oberboden.",
         "forestryCare": "N: Mischungsregulierung ab Dickung, Durchforstung bis BH 2. \\nMischungsform trupp- bis gruppenweise.\\n",
         "expoAndAspect": [
           0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0,
@@ -62574,7 +62574,7 @@
           0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe bis Gruppengrösse.\\nFemelschlag, in Steillagen sehr kleinflächig.\\nU: Analog; variieren je nach vorhandenen Samenbäumen.\\nVerjüngung-Flächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nSchutzwald: Frühzeitig auflichten für Vorverjüngung; dauernde Bodenbedeckung zentral. ",
-        "heightDispersion": "untermontan 600-\\n1000m",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "12,13"
       },
@@ -62586,7 +62586,7 @@
         "priority": null,
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nL: \\tGelappter Schildfarn\\nM: \\tBingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: \\tSchlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\nP: \\tWeisse Segge",
         "compactRisk": "1",
-        "description": "Ziemlich wüchsige, etwas lichte Bu-\\nchenmischwälder in kalkreichen, vor-\\nwiegend sonnigen Hanglagen. Boden \\noberflächlich trockener und tiefgründiger, nicht tonig.",
+        "description": "Ziemlich wüchsige, etwas lichte Buchenmischwälder in kalkreichen, vorwiegend sonnigen Hanglagen. \\nBoden oberflächlich trockener und tiefgründiger, nicht tonig.",
         "forestryCare": "N: Mischregulierung in Dickung. Starke Durchforstung bis Ende BH1. \\nMischungsform: Bu trupp- bis gruppenweise oder rein, Übrige einzeln bis truppweise. ",
         "expoAndAspect": [
           0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 0,
@@ -62594,7 +62594,7 @@
           0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: In lichten Beständen für alle Baumarten meist problemlos.\\nDurch starke, kleinflächige Auflichtung kann Verjüngung beschleunigt werden, v.a. für Lichtbaumarten.\\nRäumungsschlag Ende Dickung.\\nFemelschlag; in den häufigen Steillagen kleinflächig.\\nU: Nach kleinflächigen Verjüngungshieben samen alle Baumarten meist reichlich an.\\n",
-        "heightDispersion": "untermontan 600-\\n1000m",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "12,13"
       },
@@ -62606,7 +62606,7 @@
         "priority": null,
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nG: \\tBärlauch (auf Teilflächen teppichartig)\\nH: Wald-Ziest, Wald-Springkraut \\nK: Hängende Segge\\nL: \\tGelappter Schildfarn, Haargerste\\nM: \\tBingelkraut, Zahnwurz, Roter Hartriegel",
         "compactRisk": "3",
-        "description": "Sehr wüchsige Buchen-Mischwälder \\nfeuchter, kalkreicher Hanglagen aller \\nExpositionen. Unterwuchs üppig, \\nartenreich, teils mit Bärlauch.\\nBoden sehr aktiv und tiefgründig, \\nfeuchter als 12a. ",
+        "description": "Sehr wüchsige Buchenmischwälder feuchter, kalkreicher Hanglagen aller Expositionen. Unterwuchs üppig, artenreich, teils mit Bärlauch. \\nBoden sehr aktiv und tiefgründig, feuchter als 12a.",
         "forestryCare": "N: Bei Edellaubhölzern Mischungsregulierung ab Ende Jungwuchs, bei reiner Bu ab Ende Dickung, Durchforstung bis BH 2. \\nMischungsform: Trupp- bis gruppenweise.\\nPflege lohnend!",
         "expoAndAspect": [
           0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0,
@@ -62614,7 +62614,7 @@
           0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe bis Gruppengrösse. \\nFemelschlag.\\nU: Wenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig; dadurch Ansamung von Es und BAh.\\nVerjüngung-Flächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nBei Wildverbiss oder schlechtem Wuchs: Es und BAh auf Stock setzen.",
-        "heightDispersion": "untermontan 600-\\n900m",
+        "heightDispersion": "untermontan; 600-900m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "12,13"
       },
@@ -62626,7 +62626,7 @@
         "priority": null,
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nL: \\tGelappter Schildfarn\\nM: \\tBingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: Schlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\n",
         "compactRisk": "3",
-        "description": "Mässig wüchsige, etwas lichte Bu-\\nchenmischwälder in kalkreichen, vor-\\nwiegend sonnigen Hanglagen. Boden \\ntonig, leicht wasserzügig, oft rutschig \\nund flachgründig, Kalk im Oberboden.",
+        "description": "Mässig wüchsige, etwas lichte Buchenmischwälder in kalkreichen, vorwiegend sonnigen Hanglagen. \\nBoden tonig, leicht wasserzügig, oft rutschig und flachgründig, Kalk im Oberboden.",
         "forestryCare": "N: Mischregulierung in Dickung. Starke Durchforstung bis Ende BH1. \\nMischungsform: Bu trupp- bis gruppenweise oder rein, Übrige einzeln bis truppweise.\\nSchutzwald: Standfeste Einzelbäume und grosse Artenpalette fördern.",
         "expoAndAspect": [
           0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0,
@@ -62634,7 +62634,7 @@
           0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: In lichten Beständen für alle Baumarten meist problemlos.\\nDurch starke, kleinflächige Auflichtung kann Verjüngung beschleunigt werden, v.a. für Lichtbaumarten; diese werden empfohlen. \\nRäumungsschlag Ende Dickung.\\nFemelschlag; in den häufigen Steillagen kleinflächig.\\nU: Nach kleinflächigen Verjüngungshieben samen alle Baumarten meist reichlich an.\\n",
-        "heightDispersion": "untermontan 700-1100m",
+        "heightDispersion": "untermontan; 700-1100m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "12,13"
       },
@@ -62646,7 +62646,7 @@
         "priority": null,
         "vegetation": "SS: Artenreich, oft gut ausgebildet, oft viel Hasel und Schwarzer Holunder.\\nKS: Artenreich, meist gut ausgebildet. Mit Herden von Bingelkraut und Zahnwurz, vereinzelt Hirschzunge. ",
         "compactRisk": "2",
-        "description": "Wüchsige bis mässig wüchsige Buchenmischwälder mit Li, BAh, SAh und BUl. Säbelwuchs und Stamm-verletzungen weisen auf stetigen Stein-schlag hin. \\n",
+        "description": "Wüchsige bis mässig wüchsige Buchenmischwälder mit Li, BAh, SAh und BUl. Säbelwuchs und Stammverletzungen weisen auf stetigen Steinschlag hin. \\n",
         "forestryCare": "Nur punktuelle Eingriffe zur Förderung von Struktur und Mischung; \\nbei wichtiger Steinschlagfunktion hohe Stammzahl anstreben.",
         "expoAndAspect": [
           0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0,
@@ -62654,7 +62654,7 @@
           0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe. Dauernde Bodenbedeckung zentral. ",
-        "heightDispersion": "submontan, untermontan 400-\\n1000m",
+        "heightDispersion": "submontan, untermontan; 400-1000m",
         "pioneerTreeTypes": "HBi",
         "associationGroupCode": "12,13"
       },
@@ -62674,7 +62674,7 @@
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe. Dauernde Bodenbedeckung zentral. ",
-        "heightDispersion": "untermontan, obermontan 700-\\n1200m",
+        "heightDispersion": "untermontan, obermontan; 700-1200m",
         "pioneerTreeTypes": null,
         "associationGroupCode": "12,13"
       },
@@ -62687,14 +62687,14 @@
         "vegetation": "SS: Artenreich, oft gut ausgebildet, oft viel Hasel, Schwarzer Holunder, Schwarzes Geissblatt.\\nKS: Artenreich, meist gut ausgebildet. Mit Herden von Bingelkraut und Zahnwurz, vereinzelt Hirschzunge, Kahler Alpendost.",
         "compactRisk": "2",
         "description": "Wüchsige bis mässig wüchsige Buchenmischwälder mit Li, Es, BAh und BUl. Säbelwuchs und Stammverletzungen weisen auf stetigen Steinschlag hin. \\n",
-        "forestryCare": "bei wichtiger Steinschlagfunktion hohe Stammzahl anstreben.\\nbei wichtiger Steinschlagfunktion hohe Stammzahl anstreben.",
+        "forestryCare": "Nur punktuelle Eingriffe zur Förderung von Struktur und Mischung; \\nbei wichtiger Steinschlagfunktion hohe Stammzahl anstreben.",
         "expoAndAspect": [
           0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0,
           0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2,
           0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe. Dauernde Bodenbedeckung zentral. ",
-        "heightDispersion": "obermontan 1000-\\n1400m",
+        "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "HBi, VBe",
         "associationGroupCode": "12,13"
       },
@@ -62714,7 +62714,7 @@
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In lichten Beständen für alle Baumarten meist problemlos.",
-        "heightDispersion": "submontan, untermontan 500-\\n1000m",
+        "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "14,15,16"
       },
@@ -62734,7 +62734,7 @@
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In lichten Beständen für alle Baumarten meist problemlos.",
-        "heightDispersion": "submontan, untermontan 600-\\n1100m",
+        "heightDispersion": "submontan, untermontan; 600-1100m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "14,15,16"
       },
@@ -62746,7 +62746,7 @@
         "priority": "4",
         "vegetation": "SS: Artenreich (Kalksträucher), mässig bis üppig ausgebildet. \\nKS: Artenreich mit meist grasigem Aspekt, Blaugras.",
         "compactRisk": "1",
-        "description": "Lichte, schwach wüchsige Buchen-Mischwälder mit knorrigen Kronen und krummschaftigen Stämmen.\\n.",
+        "description": "Lichte, schwach wüchsige Buchenmischwälder mit knorrigen Kronen und krummschaftigen Stämmen.\\n.",
         "forestryCare": "Höchstens punktuelle Eingriffe zu Gunsten von Naturschutzzielen, z.B. für erhöhten Lichteinfall.",
         "expoAndAspect": [
           2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0,
@@ -62754,7 +62754,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "In lichten Beständen für alle Baumarten meist problemlos.",
-        "heightDispersion": "obermontan, 1100-1400m",
+        "heightDispersion": "obermontan; 1100-1400m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "14,15,16"
       },
@@ -62766,7 +62766,7 @@
         "priority": "k",
         "vegetation": "C: Heidelbeere (auf Rippen)\\nE: Sanikel, Wald-Veilchen\\nF: Berg-Goldnessel\\nM: Bingelkraut, Wolliger Schneeball\\nO: Buntes Reitgras, Schlaffe Segge, Liguster\\nP: Weisse Segge (an Sonnenhängen)\\n",
         "compactRisk": "1",
-        "description": "Ziemlich bis schwach wüchsige Buchen-Mischwälder an Steilhängen aller Expositionen. Unterwuchs teils grasig und artenreich. \\nEinige Bestände mit viel Eibe (selten im Napfgebiet); südexponierte teils mit Weisser Segge.\\nBoden mergelig oder felsig, wechseltrocken, Streu rutscht meist weg. ",
+        "description": "Ziemlich bis schwach wüchsige Buchenmischwälder an Steilhängen aller Expositionen. Unterwuchs teils grasig und artenreich. Einige Bestände mit viel Eibe (selten im Napfgebiet); südexponierte teils mit Weisser Segge.\\nBoden mergelig oder felsig, wechseltrocken, Streu rutscht meist weg. ",
         "forestryCare": "Kaum notwendig; vereinzelte Eingriffe zur Förderung standfester Einzelbäume.\\nSchutzwald: Förderung eines grossen Baumartenspektrums mit guter Struktur ist Hauptziel; punktuelle Eingriffe bei Bedarf, in Bachnähe bei Gefährdung schwere Einzelbäume fällen.",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2,
@@ -62774,7 +62774,7 @@
           1, 1, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In lichtem Bestand für alle Baumarten meist reichlich. In dichteren Beständen genügen leichte Verjüngungshiebe.\\nEinzel- bis Gruppenplenterung.",
-        "heightDispersion": "submontan, untermontan 500-\\n1000m",
+        "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "17"
       },
@@ -62786,7 +62786,7 @@
         "priority": null,
         "vegetation": "C: Breiter Wurmfarn \\nE: \\tBreitblättriger Ehrenpreis, Ährige Rapunzel, Sanikel, Wald-Veilchen\\nF: \\tWald-Segge, Weisse Pestwurz\\nL: Hoher Schwingel (örtlich mit hoher Deckung) Schwarzes Geissblatt, Gelappter Schildfarn, Haargerste",
         "compactRisk": "2",
-        "description": "Wüchsige Mischbestände von Bu, Ta \\nund Fi an mässig steilen bis steilen\\nHängen aller Expositionen. \\nMittlere Standorte mit aktiven, mittel- \\nbis tiefgründigen Böden; nur oberflächlich nesterweise versauernd.",
+        "description": "Wüchsige Mischbestände von Bu, Ta und Fi an mässig steilen bis steilen Hängen aller Expositionen. \\nMittlere Standorte mit aktiven, mittel- bis tiefgründigen Böden; nur oberflächlich nesterweise versauernd.",
         "forestryCare": "N: Bei Plenterung Eingriffe zur Holzernte und Strukturausformung, Pflege kann sich auf Schlagpflege beschränken.\\nIn flächigen Verjüngungen Jungwaldpflege ab Dickung (Mischungsregulierung, Stabilitätsauslese). Durchforstungen bis BH 1.\\nMischungsform: Einzeln bis truppweise, in Verjüngung auch gruppenweise. Ta fördern.\\nU: Punktuelle Eingriffe zur Förderung einer kleinflächig stufigen Struktur.\\n",
         "expoAndAspect": [
           2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0,
@@ -62794,7 +62794,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm; im Lichtschacht oder Seitenlicht; meist freudig.\\nVerjüngung fördern durch kleine Verjüngungshiebe, Schaffen von Lichtschächten und Seitenlicht. Gleichmässiges Auflichten fördert die flächige Verjüngung der Bu. Einzel- bis Gruppenplenterung oder kleinflächiger Femelschlag.\\nU: Überführung in Plenterstruktur ist erwünscht: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten, v.a in der Nähe geeigneter Samenbäume. Einzelbäume mit grösster Lebenserwartung stehen lassen.\\n",
-        "heightDispersion": "obermontan 900-\\n1400m",
+        "heightDispersion": "obermontan; 900-1400m",
         "pioneerTreeTypes": "HBi, VBe",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62806,7 +62806,7 @@
         "priority": null,
         "vegetation": "C: Heidelbeere, Rippenfarn, Breiter Wurmfarn, Wald-Hainsimse, Zweibl. Schattenblume, Hainmoos, Wald-Frauenhaar, Tamariskenmoos  \\nL: Hoher Schwingel\\n",
         "compactRisk": "2",
-        "description": "Ziemlich wüchsige Mischbestände von\\nTa, Fi und Bu auf flachen Hängen, Pla­\\nteaus und Rippen. Nährstoffärmer und \\nsaurer als 18, daher mit hohem Nadel­\\nholzanteil; moos- und heidelbeerreicher \\nUnterwuchs und deutliche Moderauflage. ",
+        "description": "Ziemlich wüchsige Mischbestände von Ta, Fi und Bu auf flachen Hängen, Plateaus und Rippen. Nährstoffärmer und saurer als 18, daher mit hohem Nadelholzanteil; moos- und heidelbeerreicher Unterwuchs und deutliche Moderauflage. ",
         "forestryCare": "N: Kann sich auf Schlagpflege be-schränken. Nebenbestand aller Baum- und Straucharten fördern.\\nMischungsform: einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.\\n",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0,
@@ -62814,7 +62814,7 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch schwache Lichtungshiebe oder das Öffnen von Lichtschächten.\\nEinzel- bis Gruppenplenterung.\\nU: Gleichförmige Fi-Bestände häufig. Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta fördern.\\n",
-        "heightDispersion": "obermontan 900-\\n1300m",
+        "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "VBe, HBi, RHol",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62834,7 +62834,7 @@
           0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken und im Seitenlicht.\\nDurch kleinflächige Auflichtungen und das Schaffen von Seitenlicht wird meist reiche Ansamung gefördert; für Lichtbaumarten Verjüngungshiebe bis Gruppengrösse (in steilen Lagen kleinflächiger).\\nGruppenplenterung bis kleinflächiger Femelschlag.\\nU: Oft vorhandene Ansamung durch Verjüngungshiebe begünstigen. Kleinflächig vorgehen, nur in Ausnahmen mehr als Truppgrösse.\\n",
-        "heightDispersion": "obermontan 900-\\n1400m",
+        "heightDispersion": "obermontan; 900-1400m",
         "pioneerTreeTypes": "HBi, RHol",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62854,7 +62854,7 @@
           1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1
         ],
         "forestryRejuvDev": "In sehr lichtem Bestand für alle Baumarten meist reichlich. \\n",
-        "heightDispersion": "obermontan 900-\\n1400m",
+        "heightDispersion": "obermontan; 900-1400m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62866,7 +62866,7 @@
         "priority": null,
         "vegetation": "C: Breiter Wurmfarn, Heidelbeere (auf Rippen) \\nE: \\tÄhrige Rapunzel, Wald-Veilchen\\nF: \\tWald-Segge\\nL: Kahler Alpendost \\nM: \\tBingelkraut, Wald-Zwenke, \\nO: Buntes Reitgras, Schlaffe Segge, Berg-Flockenblume, Alpenmasslieb, Rostfarbene Segge, Dreiblatt-Baldrian",
         "compactRisk": "2",
-        "description": " Wenig bis ziemlich wüchsige, eher lichte und vielfältige Mischbestände von Bu, Fi und Ta an Steilhängen aller Expositionen. Unterwuchs oft mit mit grasigem Aspekt. \\nBoden flach- bis mittelgründig, wechseltrocken, basenreich. ",
+        "description": "Wenig bis ziemlich wüchsige, eher lichte und vielfältige Mischbestände von Bu, Fi und Ta an Steilhängen aller Expositionen. Unterwuchs oft mit mit grasigem Aspekt. \\nBoden flach- bis mittelgründig, wechseltrocken, basenreich. ",
         "forestryCare": "N: Kaum notwendig; vereinzelte Eingriffe zur Förderung standfester Einzelbäume.\\nMischungsform: Einzeln bis trupp-weise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.\\nSchutzwald: Förderung eines grossen Baumartenspektrums mit guter Struktur und stabilen Einzelbäumen oder Gruppen ist Hauptziel; punktuelle Eingriffe bei Bedarf.\\n",
         "expoAndAspect": [
           0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0,
@@ -62874,7 +62874,7 @@
           0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "In lichtem Bestand für alle Baumarten meist reichlich. \\nIn dichteren Beständen genügen leichte Verjüngungshiebe an verjüngungsgünstigen Stellen.\\nEinzel- bis Gruppenplenterung.",
-        "heightDispersion": "obermontan 1000-\\n1400m",
+        "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62894,7 +62894,7 @@
           0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken und im Seitenlicht.\\nDurch kleinflächige Auflichtungen und das Schaffen von Seitenlicht wird meist reiche Ansamung gefördert; für Lichtbaumarten Verjüngungshiebe bis Gruppengrösse;  in steilen Lagen kleinflächiger. \\nGruppenplenterung bis kleinflächiger Femelschlag.\\nU: Oft vorhandene Ansamung durch Verjüngungshiebe begünstigen. Kleinflächig vorgehen, nur in Ausnahmen mehr als Truppgrösse.\\n",
-        "heightDispersion": "obermontan 1000-\\n1400m",
+        "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "HBi, RHol",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62914,7 +62914,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch Lichtungshiebe mit Seiten- und Schachtlicht. Direktes Sonnenlicht und Wind erzeugen Aushagerung.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung.",
-        "heightDispersion": "obermontan 900-\\n1300m",
+        "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "HBi, VBe, MBe",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62926,7 +62926,7 @@
         "priority": null,
         "vegetation": "C: Breiter Wurmfarn, Hainmoos, Wald-Frauenhaar, Heidelbeere, Wald-Hainsimse \\nK: Wald-Schachtelhalm, Pariser Hexenkraut\\nL: Hoher Schwingel\\n",
         "compactRisk": "3",
-        "description": "Recht wüchsige Mischbestände von \\nTa, Fi und Bu auf flachen Rücken und \\nmässig steilen Hanglagen. Feuchter \\nund basenärmer als 18, daher mit \\nzeitweise vernässtem und oberflächlich \\nversauertem Boden.",
+        "description": "Recht wüchsige Mischbestände von Ta, Fi und Bu auf flachen Rücken und mässig steilen Hanglagen. \\nFeuchter und basenärmer als 18, daher mit zeitweise vernässtem und oberflächlich versauertem Boden.",
         "forestryCare": "N: Schlagpflege genügt i.d.R.\\nMischungsform: einzeln bis truppweise.\\nU: Förderung der Plenterstruktur.\\nTa fördern. ",
         "expoAndAspect": [
           1, 1, 1, 1, 2, 0, 0, 0, 1, 1, 1, 1, 2, 0, 0, 0, 1, 1, 1, 1, 2, 0, 0,
@@ -62934,7 +62934,7 @@
           0, 0, 1, 1, 1, 1, 2, 0, 0, 0, 1, 1, 1, 1, 2, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm, im Lichtschacht und Seitenlicht. Verjüngung fördern durch kleinflächige Eingriffe.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche. Bäume mit grösster Lebenserwartung stehen lassen. Hoher Ta-Anteil wertvoll.\\n",
-        "heightDispersion": "obermontan, 1000-1400m",
+        "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "VBe, RHol",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62954,13 +62954,13 @@
           0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "Starkes Vorkommen von Hochstauden und Farnen hemmen die Verjüngung. Verjüngung einleiten und fördern durch Schaffung von kleinen Lücken oder Seitenlicht (Schlitze) an verjüngungsgünstigen Stellen (trockene, warme oder erhöhte Stellen, Moderholz).\\nKeine diffusen Auflichtungen, da damit Hochstauden und Farne gefördert werden. Bei Fehlschlagen der Naturverjüngung Stützpunktpflanzungen vornehmen.\\nEinzel- bis Gruppenplenterung. Hoher Ta-Anteil wertvoll. \\n",
-        "heightDispersion": "obermontan, 1000-1400m",
+        "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Waldgersten-Tannen-Buchenwald",
-        "la": "Adenostylo alliariae-\\nAbieti-Fagetum hordelymetosum",
+        "la": "Adenostylo alliariae-Abieti-Fagetum hordelymetosum",
         "code": "20E",
         "aptitude": "PR: Sehr produktiver Standort mit erhöhter Vielseitigkeit. Holzernte durch steile Lagen oder feuchten Boden teils erschwert.\\nNG: Starke Gefährdung, v. a. in Bacheinhängen; Dauerbestockung und eine grosse Standfestigkeit der Bäume haben oberste Priorität.\\nNS: Feuchte bietet besonderen Lebensraum, vor allem wenn basenhaltig.\\n",
         "priority": null,
@@ -62974,7 +62974,7 @@
           0, 0, 2, 2, 1, 1, 2, 2, 0, 0, 2, 2, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm, im Lichtschacht oder Seitenlicht.\\nVerjüngung durch kleine Verjüngungshiebe (Es, BAh) oder Schaffen von Lichtschächten oder Seitenlicht (Ta, Bu, BAh, Fi).\\nGruppenplenterung; in flacheren Partien mit viel BAh und Es kleinflächiger Femelschlag.\\nU: Überführung in Plenterstruktur ist erwünscht, im Schutzwald zwingend; früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Hoher Ta-teil wertvoll.\\n",
-        "heightDispersion": "obermontan 900-\\n1400m",
+        "heightDispersion": "obermontan; 900-1400m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "18,19,20,21"
       },
@@ -62986,7 +62986,7 @@
         "priority": "4",
         "vegetation": "C: Breiter Wurmfarn  \\nE: Echter Wurmfarn, Wald-Veilchen\\nF: Weisse Pestwurz, Wald-Segge, Gew. Schlüsselblume\\nJ: Grauer Alpendost, Rundblättriger Steinbrech, Alpen-Milchlattich, Zweiblütiges Veilchen\\nK: Welliges Sternmoos, Wald-Schachtelhalm\\nL: Gelappter Schildfarn, Haargerste, Schwarzes Geissblatt\\n",
         "compactRisk": "2",
-        "description": "Schwach wüchsig, Bestand aufgelichtet mit sehr kurzen BAh und Bu sowie vereinzelten Fi; Sonderstandort mit sehr langer Schneebedeckung, direkt unterhalb Kammlagen.\\n",
+        "description": "Schwach wüchsig, Bestand aufgelichtet mit sehr kurzen BAh und Bu sowie vereinzelten Fi.\\nSonderstandort mit sehr langer Schneebedeckung, direkt unterhalb Kammlagen.\\n",
         "forestryCare": "Kann sich auf Schlagpflege beschränken; wo nötig BAh im Jungwuchs herauspflegen. \\nMischungsform: Einzeln bis truppweise.",
         "expoAndAspect": [
           0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -62994,7 +62994,7 @@
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "Starkes Vorkommen von Hochstauden und Farnen kann die Verjüngung hemmen. Verjüngung einleiten und fördern durch Schaffung von kleinen Lücken oder Seitenlicht (Schlitze) an verjüngungsgünstigen Stellen (trockene, warme oder erhöhte Stellen, Moderholz).\\nEinzel- bis Gruppenplenterung.",
-        "heightDispersion": "obermontan bis hochmontan, 1200-1500m",
+        "heightDispersion": "obermontan, hochmontan; 1200-1500m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "18,19,20,21"
       },
@@ -63004,9 +63004,9 @@
         "code": "22",
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Durch Steinschlagsituation wichtiger Schutzwald.\\nNS: Dynamischer, vielfältiger und seltener Sonderstandort. Deshalb sehr wertvoll.\\n",
         "priority": "4",
-        "vegetation": "KS: Wenig bis gut ausgebildet, Hirschzunge, \\nMondviole, Geissbart.\\nSS: Wenig bis gut ausgebildet. Häufig mit Schwarzem Holunder und Hasel.",
+        "vegetation": "KS: Wenig bis gut ausgebildet, Hirschzunge, Mondviole, Geissbart.\\nSS: Wenig bis gut ausgebildet. Häufig mit Schwarzem Holunder und Hasel.",
         "compactRisk": "2",
-        "description": "Ziemlich bis mässig wüchsige, teils lückige Laubmischwälder auf Schutthal-den, die von BAh oder von Li und Es dominiert werden. Oft schiefe oder säbelwüchsige Stämme mit Verletzungen.\\n\\n\\n",
+        "description": "Ziemlich bis mässig wüchsige, teils lückige Laubmischwälder auf Schutthalden, die von BAh oder von Li und Es dominiert werden. Oft schiefe oder säbelwüchsige Stämme mit Verletzungen.\\n\\n\\n",
         "forestryCare": "Bei besonderer Schutzfunktion auf grosse Stammzahl achten, ebenso standfeste Einzelbäume fördern. \\nEinflussmöglichkeiten gering.",
         "expoAndAspect": [
           0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 2, 2, 2, 2, 0,
@@ -63014,7 +63014,7 @@
           0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "Verjüngung in lichten Beständen meist gut; teilweise durch Steinschlag bedrängt.\\nKeine Massnahmen nötig, in Sonderfällen punktuell auflichten.",
-        "heightDispersion": "untermontan 400-\\n800m",
+        "heightDispersion": "untermontan; 400-800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "22,23,24"
       },
@@ -63034,7 +63034,7 @@
           0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "In sehr lichtem Bestand für alle Baumarten meist reichlich. \\n",
-        "heightDispersion": "untermontan, 700-\\n1000m",
+        "heightDispersion": "untermontan; 700-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "22,23,24"
       },
@@ -63044,7 +63044,7 @@
         "code": "23",
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Durch Steinschlagsituation und steile Lage wichtiger Schutzwald.\\nNS: Dynamischer, vielfältiger und seltener Sonderstandort. Deshalb sehr wertvoll.\\n",
         "priority": "2",
-        "vegetation": "KS: Wenig bis gut ausgebildet, grasig, \\nmit Trockenzeigern.\\nSS: Wenig bis gut ausgebildet. Häufig mit Mehlbeere und Hasel.",
+        "vegetation": "KS: Wenig bis gut ausgebildet, grasig, mit Trockenzeigern.\\nSS: Wenig bis gut ausgebildet. Häufig mit Mehlbeere und Hasel.",
         "compactRisk": "1",
         "description": "Wenig wüchsige, lückige Laubmischwälder auf Schutthalden, die von BAh oder von Li und Es dominiert werden. Oft schiefe oder säbelwüchsige Stämme mit Verletzungen.\\n\\n",
         "forestryCare": "Bei besonderer Schutzfunktion auf grosse Stammzahl achten, ebenso standfeste Einzelbäume fördern. \\nEinflussmöglichkeiten gering.",
@@ -63054,7 +63054,7 @@
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "Verjüngung in lichten Beständen problemlos; teilweise durch Steinschlag bedrängt.\\nKeine Massnahmen nötig, in Sonderfällen punktuell auflichten.\\n",
-        "heightDispersion": "obermontan 1100-1400m",
+        "heightDispersion": "obermontan; 1100-1400m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "22,23,24"
       },
@@ -63074,7 +63074,7 @@
           0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "Verjüngung in lichten Beständen variabel; teilweise durch Steinschlag und durch Lawinen bedrängt.\\nKeine Massnahmen nötig, in Sonderfällen punktuell auflichten.",
-        "heightDispersion": "obermontan, hochmontan 1300-\\n1500m",
+        "heightDispersion": "obermontan, hochmontan; 1300-1500m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "22,23,24"
       },
@@ -63094,7 +63094,7 @@
           0, 0, 2, 2, 1, 1, 2, 2, 0, 0, 2, 2, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Vorverjüngung und  Anwuchs unter lichtem Schirm und in kleinen Lücken, für Aufwuchs Öffnungen schaffen.\\nVerjüngungshiebe in Gruppen- bis Horstgrösse. Kurze Verjüngungszeiträume.\\nFemelschlag, eher grossflächig.\\nIm Schutzwald: BAh mit grösserem Anteil; Aufwuchs in Lichtschächten. Hier: Kleinflächiger Femelschlag bis Gruppenplenterung.\\n",
-        "heightDispersion": "submontan, untermontan, 500-\\n1000m",
+        "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "26,27"
       },
@@ -63106,7 +63106,7 @@
         "priority": null,
         "vegetation": "C: \\tHeidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: \\tWeiblicher Waldfarn\\nK: \\tWald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n ",
         "compactRisk": "4",
-        "description": "Mässig wüchsige Mischwälder mit sehr hohem Ta- und Fi-Anteil. Bevorzugt auf vergleyten, schwach geneigten Hangterrassen. \\nBoden saurer und nährstoffärmer als 26, mit geringer Aktivität, dadurch Moder-Auflage. Erschwerte Keimung der Laubhölzer.",
+        "description": "Mässig wüchsige Mischwälder mit sehr hohem Ta- und Fi-Anteil. \\nBevorzugt auf vergleyten, schwach geneigten Hangterrassen. Boden saurer und nährstoffärmer als 26, mit geringer Aktivität, dadurch Moder-Auflage. Erschwerte Keimung der Laubhölzer.",
         "forestryCare": "N: Kann sich auf Schlagpflege nach Plentereingriff beschränken.\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur, insbesondere kleinflächiges Abdecken von Verjüngungskegeln. \\nVorwaldarten nutzen, v. a. VBe und HBi.",
         "expoAndAspect": [
           2, 1, 1, 1, 0, 0, 0, 0, 2, 1, 1, 1, 0, 0, 0, 0, 2, 1, 1, 1, 0, 0, 0,
@@ -63114,7 +63114,7 @@
           0, 0, 2, 1, 1, 1, 0, 0, 0, 0, 2, 1, 1, 1, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Ta unter Schirm, Übrige in Lücken an günstigen Kleinstandorten.\\nDurch schwache Lichtungshiebe wird genügend Vorverjüngung erreicht; Lichtschächte für BAh. \\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist oberstes Ziel auf diesem nass-sauren Standort! Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten oder Vorhandenes fördern, insbesondere auch Vorwaldarten. Gesunde, stabile Einzelbäume (aller Baumarten) mit grösster Lebenserwartung stehen lassen.",
-        "heightDispersion": "obermontan, 900-\\n1300m",
+        "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "VBe, HBi",
         "associationGroupCode": "26,27"
       },
@@ -63134,7 +63134,7 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Vorverjüngung und Anwuchs oft unter lichtem Schirm und in kleinen Lücken, Ta unter Schirm, für Aufwuchs Öffnungen schaffen.\\nVerjüngungshiebe in Gruppen- bis Horstgrösse.\\nVerjüngungszeiträume auf BAh ausrichten.\\nFemelschlag, eher grossflächig.\\nIm Schutzwald: BAh und Ta mit grossem Anteil. Hier: Kleinflächiger Femelschlag bis Gruppenplenterung.\\n ",
-        "heightDispersion": "obermontan, 900-1300m",
+        "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "26,27"
       },
@@ -63154,7 +63154,7 @@
           0, 0, 2, 2, 2, 2, 1, 1, 0, 0, 2, 2, 2, 2, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: In den lichten Beständen gute Verjüngung aller Baumarten. Aufwuchs erfolgt meist einzeln oder truppweise; für Schutzfunktion optimal.\\nEinzel- bis Gruppenplenterung.\\nU: Selten vorhanden; durch Lichtungshieb Vorverjüngung einleiten, falls notwendig. Aufwuchs kleinflächig rasch abdecken.",
-        "heightDispersion": "untermontan 700-\\n1000m",
+        "heightDispersion": "untermontan; 700-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "26,27"
       },
@@ -63174,7 +63174,7 @@
           0, 0, 2, 2, 2, 2, 1, 1, 0, 0, 2, 2, 2, 2, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: In den lichten Beständen gute Verjüngung aller Baumarten. Aufwuchs erfolgt meist einzeln oder truppweise; für Schutzfunktion optimal.\\nEinzel- bis Gruppenplenterung.\\nU: Selten vorhanden; durch Lichtungshieb Vorverjüngung einleiten, falls notwendig. Aufwuchs kleinflächig rasch abdecken.",
-        "heightDispersion": "obermontan, 900-\\n1300m",
+        "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "26,27"
       },
@@ -63186,7 +63186,7 @@
         "priority": null,
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut\\nI: \\tSumpf-Dotterblume, Riesenschachtelhalm, Sumpf-Pippau, Bach-Nelkenwurz, Wiesen-Spierstaude, Milzkraut \\nK: \\tPariser-Hexenkraut, Wald-Brustwurz",
         "compactRisk": "5",
-        "description": "Sehr wüchsige Eschen-Mischwälder mit üppiger Krautschicht an Bächen oder Quellaufstössen, ebenso in vernässten Mulden und auf Terrassen. Boden sehr aktiv, dauernd wassergesättigt und wegen Zufuhrlage nährstoff- und basenreich.",
+        "description": "Sehr wüchsige Eschenmischwälder mit üppiger Krautschicht an Bächen oder Quellaufstössen, ebenso in vernässten Mulden und auf Terrassen. \\nBoden sehr aktiv, dauernd wassergesättigt und wegen Zufuhrlage nährstoff- und basenreich.",
         "forestryCare": "Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2 (Kronenpflege).\\nPositive Auslese und Pflege sehr lohnend!\\nMischungsform: Gruppen- bis horstweise.\\nIm Schutzwald: Bäume in Bacheinhängen nicht zu schwer werden lassen, schief stehende Bäume fällen. \\n\\n",
         "expoAndAspect": [
           1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0,
@@ -63194,7 +63194,7 @@
           0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Vereinzelt unter Schirm, schon bei schwachen Auflichtungen freudig.\\nAuf geeigneten Flächen Verjüngungshiebe bis Gruppengrösse, sehr kurze Verjüngungszeiträume.\\nGrossflächiger Femelschlag.\\nIm Schutzwald: Auf Dauerbestockung achten! Kleinflächig arbeiten. Kleinflächiger Femelschlag.\\nU: Grosse Gefahr des Windwurfs in Fichten-Altbeständen! Vorverjüngung durch Auflichtung einleiten. Sorgfältiges Öffnen, auf vorhandene Ansamung und windgeschützte Stellen ausrichten. Räumung des Altbestandes Anfang Dickung (labile Phase mit gelichtetem Bestand möglichst kurz halten). Schlagränder mit langkronigen Einzelbäumen.",
-        "heightDispersion": "submontan, untermontan, 500-1000m",
+        "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "26,27"
       },
@@ -63206,7 +63206,7 @@
         "priority": null,
         "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\t\\nH: \\tWald-Ziest, Wald-Springkraut\\nI: Sumpf-Dotterblume\\nSumpf-Pippau, Bach-Nelkenwurz, Milzkraut \\nK: Wald-Brustwurz",
         "compactRisk": "5",
-        "description": "Wüchsige Eschen-Mischwälder mit Ta-Beimischung; üppige Krautschicht an Bächen oder Quellaufstössen, ebenso in vernässten Mulden und auf Terrassen. \\nBoden sehr aktiv, dauernd wassergesättigt und wegen Zufuhrlage nährstoff- und basenreich.",
+        "description": "Wüchsige Eschenmischwälder mit Ta-Beimischung; üppige Krautschicht an Bächen oder Quellaufstössen, ebenso in vernässten Mulden und auf Terrassen. \\nBoden sehr aktiv, dauernd wassergesättigt und wegen Zufuhrlage nährstoff- und basenreich.",
         "forestryCare": "Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 1 (Kronenpflege).\\nMischungsform: Gruppenweise.\\nIm Schutzwald: Bäume in Bacheinhängen nicht zu schwer werden lassen, schief stehende Bäume fällen. ",
         "expoAndAspect": [
           1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0,
@@ -63214,7 +63214,7 @@
           0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Ta unter Schirm, Übrige vereinzelt; schon bei schwachen Auflichtungen Lbh freudig.\\nAuf geeigneten Flächen Verjüngungshiebe bis Gruppengrösse, eher kurze Verjüngungszeiträume.\\nKleinflächiger Femelschlag oder Gruppenplenterung.\\nIm Schutzwald: Auf Dauerbestockung achten! Kleinflächig arbeiten. Gruppenplenterung.\\nU: Grosse Gefahr des Windwurfs in Fichten-Altbeständen! Vorverjüngung durch Auflichtung einleiten. Sorgfältiges Öffnen auf vorhandene Ansamung und windgeschützte Stellen ausrichten. Räumung des Altbestandes Anfang Dickung. ",
-        "heightDispersion": "obermontan 900-1300m",
+        "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "26,27"
       },
@@ -63226,7 +63226,7 @@
         "priority": "4",
         "vegetation": "E: \\tBusch-Windröschen\\nF: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch\\nH: Wald-Ziest, Wald-Springkraut\\nI: Scharfkantige Segge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n",
         "compactRisk": "4",
-        "description": "Sehr wüchsige Eschen-Mischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden.\\n ",
+        "description": "Sehr wüchsige Eschenmischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden.\\n ",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2, grosse Kronen ausbilden.\\nSpezialitäten wie FUl und SAh fördern, einzeln bis truppweise beigemischt oder zumindest in Nebenbestand mitnehmen.\\nPositive Auslese und Pflege lohnend.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Räumung des Altbestandes in Dickung; Mischungsregulierung mit Schlagräumung.",
         "expoAndAspect": [
           1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
@@ -63234,7 +63234,7 @@
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Meist auffallend üppige Verjüngung unter Schirm und in Lücken, trotz 'Konkurrenz' durch viele Sträucher.\\nVerjüngung wenn nötig durch Lichtungshiebe fördern; stark deckende Sträucher vorgängig auf Stock setzen.\\nVerjüngungsflächen in Gruppen- bis Horstgrösse.\\nGrossflächiger Femelschlag.\\nU: Je nach vorhandener Ansamung mit starkem Lichtungshieb die Verjüngung verstärken.",
-        "heightDispersion": "submontan, 400-500m",
+        "heightDispersion": "submontan; 400-500m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63246,7 +63246,7 @@
         "priority": null,
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich\\nM: Roter Hartriegel",
         "compactRisk": "4",
-        "description": "Wüchsige Eschen-Mischwälder in lehmreichen Plateaulagen. Unterwuchs gut ausgebildet, jedoch nicht sehr vielfältig. \\nBoden schluffig-tonig und zeitweise vernässt, wegen raschen Abbaus nährstoff- und basenreich bis neutral, oft entwässert.",
+        "description": "Wüchsige Eschenmischwälder in lehmreichen Plateaulagen. Unterwuchs gut ausgebildet, jedoch nicht sehr vielfältig. \\nBoden schluffig-tonig und zeitweise vernässt, wegen raschen Abbaus nährstoff- und basenreich bis neutral, oft entwässert.",
         "forestryCare": "N: Mischungsregulierung ab Beginn  Dickung; Durchforstung bis BH 2. Kurze Intervalle; auf grosse Kronen achten.\\nPositive Auslese und Pflege sehr lohnend. \\nMischungsform: Laubholz trupp- bis gruppenweise, Ta einzeln bis truppweise beigemischt.\\nU: Mischungsregulierung Ende Dickung, gleichzeitig Erweiterung der Verjüngungsflächen um 1 Baumlänge.",
         "expoAndAspect": [
           1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
@@ -63254,7 +63254,7 @@
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Unter Schirm; in kleinen Öffnungen reichlich. Durch Lichtungshiebe wird genügende Verjüngung erreicht. Verjüngungsflächen bis Horstgrösse.\\nMittel- bis grossflächiger Femelschlag (oft ausgedehnte Flächen in ebener Lage).\\nU: Durch sorgfältige Lichtungshiebe Vorverjüngung auslösen; v.a. um bestehende Verjüngungsflächen. Hauptwindrichtung beachten. Räumung des Altbestandes in Gruppengrösse ab Anfang Dickung.\\n",
-        "heightDispersion": "submontan, untermontan, \\n400-900m",
+        "heightDispersion": "submontan, untermontan; 400-900m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63264,9 +63264,9 @@
         "code": "29A",
         "aptitude": "PR: Sehr produktiver und vielseitiger Standort; oft aber nur klein und schwer zugänglich.\\nNG: Periodisch von Hochwasser überschwemmt, an der regulierten Reuss nur mehr in Extremfällen.\\nNS: Durch Kalkreichtum und Dynamik sehr wertvoll, sehr reichhaltige Strauchschicht.",
         "priority": null,
-        "vegetation": "F: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch (örtlich)\\nH: Wald-Ziest, Wald-Springkraut\\nSegge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n ",
+        "vegetation": "F: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch (örtlich)\\nH: Wald-Ziest, Wald-Springkraut, Segge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n ",
         "compactRisk": "3",
-        "description": "Sehr wüchsige Eschen-Mischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. Skelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden, oft mit Lehmschicht.\\n ",
+        "description": "Sehr wüchsige Eschenmischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden, oft mit Lehmschicht.\\n ",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2, grosse Kronen ausbilden.\\nSpezialitäten wie FUl und SAh fördern, einzeln bis truppweise beigemischt oder zumindest in Nebenbestand mitnehmen.\\nPositive Auslese und Pflege lohnend.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Räumung des Altbestandes in Dickung; Mischungsregulierung mit Schlagräumung.\\n",
         "expoAndAspect": [
           1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
@@ -63274,7 +63274,7 @@
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Meist auffallend üppige Verjüngung unter Schirm und in Lücken, trotz 'Konkurrenz' durch viele Sträucher.\\nVerjüngung wenn nötig durch Lichtungshiebe fördern; stark deckende Sträucher vorgängig auf Stock setzen.\\nVerjüngungsflächen in Gruppen- bis Horstgrösse.\\nGrossflächiger Femelschlag.\\nU: Je nach vorhandener Ansamung mit starkem Lichtungshieb die Verjüngung verstärken.",
-        "heightDispersion": "submontan, untermontan 400-900m",
+        "heightDispersion": "submontan, untermontan; 400-900m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63286,7 +63286,7 @@
         "priority": null,
         "vegetation": "E: \\tBusch-Windröschen\\nF: \\tBerg-Goldnessel, Baumtropf \\nH: Wald-Springkraut\\nK: \\tGrosses Zweiblatt, Gundelrebe\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schnellball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\nP: Weisse Segge ",
         "compactRisk": "2",
-        "description": "Wüchsige Eschen-Mischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden, oberflächlich recht trocken. ",
+        "description": "Wüchsige Eschenmischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden, oberflächlich recht trocken. ",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2, grosse Kronen ausbilden.\\nSpezialitäten wie FUl und SAh fördern, einzeln bis truppweise beigemischt oder zumindest in Nebenbestand mitnehmen.\\nPositive Auslese und Pflege lohnend.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Räumung des Altbestandes in Dickung; Mischungsregulierung mit Schlagräumung.\\n",
         "expoAndAspect": [
           1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
@@ -63294,7 +63294,7 @@
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Meist auffallende Verjüngung unter Schirm und in Lücken, trotz 'Konkurrenz' durch viele Sträucher.\\nVerjüngung wenn nötig durch Lichtungshiebe fördern; stark deckende Sträucher vorgängig auf Stock setzen.\\nVerjüngungsflächen in Gruppen- bis Horstgrösse.\\nGrossflächiger Femelschlag.\\nU: Je nach vorhandener Ansamung mit starkem Lichtungshieb die Verjüngung verstärken.",
-        "heightDispersion": "submontan, untermontan 400-900m",
+        "heightDispersion": "submontan, untermontan; 400-900m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63306,7 +63306,7 @@
         "priority": null,
         "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\t\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich",
         "compactRisk": "4",
-        "description": "Ziemlich wüchsige Eschen-Mischwälder in lehmreichen Plateaulagen. Unterwuchs gut ausgebildet, jedoch nicht sehr vielfältig. \\nBoden schluffig-tonig und zeitweise vernässt, wegen raschen Abbaus nährstoffund basenreich bis neutral, oft entwässert.",
+        "description": "Ziemlich wüchsige Eschenmischwälder in lehmreichen Plateaulagen. Unterwuchs gut ausgebildet, jedoch nicht sehr vielfältig. \\nBoden schluffig-tonig und zeitweise vernässt, wegen raschen Abbaus nährstoffund basenreich bis neutral, oft entwässert.",
         "forestryCare": "N: Mischungsregulierung ab Beginn  Dickung; Durchforstung bis BH 1. Auf grosse Kronen achten. Nassschneerisiko, bes. für Es.\\nMischungsform: Laubholz trupp- bis gruppenweise, Ta einzeln bis truppweise beigemischt.\\nU: Mischungsregulierung Ende Dickung, gleichzeitig Erweiterung der Verjüngungsflächen um 1 Baumlänge.",
         "expoAndAspect": [
           1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
@@ -63314,7 +63314,7 @@
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Unter Schirm; in kleinen Öffnungen reichlich. Durch Lichtungshiebe wird genügende Verjüngung erreicht. Verjüngungsflächen bis Horstgrösse.\\nMittel- bis grossflächiger Femelschlag.\\nU: Durch sorgfältige Lichtungshiebe Vorverjüngung auslösen; v.a. um bestehende Verjüngungsflächen. Hauptwindrichtung beachten. Räumung des Altbestandes in Gruppengrösse ab Anfang Dickung.\\n",
-        "heightDispersion": "obermontan, 900-1110m",
+        "heightDispersion": "obermontan; 900-1110m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63334,7 +63334,7 @@
           0, 0, 2, 1, 1, 1, 0, 0, 0, 0, 2, 1, 1, 1, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Ta unter Schirm, Edellaubhölzer in Lücken an günstigen Kleinstandorten.\\nDurch schwache Lichtungshiebe wird genügend Vorverjüngung erreicht; Lichtschächte für Es, BAh, HBi und VBe. \\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist oberstes Ziel auf diesem nass-sauren Standort! Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten oder Vorhandenes fördern. Gesunde, stabile Einzelbäume (aller Baumarten) mit grösster Lebenserwartung stehen lassen. SEi-Flächen rein (nur submontan).",
-        "heightDispersion": "submontan, untermontan, 600-\\n900m",
+        "heightDispersion": "submontan, untermontan; 600-900m",
         "pioneerTreeTypes": "VBe, HBi, Wei",
         "associationGroupCode": "26,27"
       },
@@ -63346,7 +63346,7 @@
         "priority": "4",
         "vegetation": "C: \\tsaurer ‚Flügel’: Heidelbeere, Breitblättriger Wurmfarn, Wald-Frauenhaar\\nE: \\tWaldmeister \\nF: \\tBerg-Goldnessel\\nH: \\tTraubenkirsche, Wald-Ziest, Wald-Springkraut\\nI: \\tSumpf-Dotterblume, Sumpf-Pippau, Wechselblättriges Milzkraut \\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge ",
         "compactRisk": "5",
-        "description": "Mässig bis gut wüchsige Eschenmisch-wälder mit üppiger Kraut- oder Moos-schicht in flachen, dauernd nassen Mulden, v.a. auf Plateaus. \\nBoden lehmig, dauernd vernässt, Oberboden mit saurem Anmoor oder basischem Hydromull; bei stärkerer Säure von Moderschicht überdeckt. In diesem Fall mit beigemischten Ta und Fi.\\n ",
+        "description": "Mässig bis gut wüchsige Eschenmischwälder mit üppiger Kraut- oder Moosschicht in flachen, dauernd nassen Mulden, v.a. auf Plateaus. \\nBoden lehmig, dauernd vernässt, Oberboden mit saurem Anmoor oder basischem Hydromull; bei stärkerer Säure von Moderschicht überdeckt. In diesem Fall mit beigemischten Ta und Fi.\\n ",
         "forestryCare": "N: Punktuelle Eingriffe mit leichten Auflichtungen, um stabile Einzelbäume zu fördern. Auf tiefen Schlankheitsgrad, v.a. der Es, achten.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Falls Ta vorhanden: Stabilste Einzelbäume als Gerüst stehen lassen.",
         "expoAndAspect": [
           1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
@@ -63354,7 +63354,7 @@
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Auf aktiven Böden: Es unter Schirm, in Öffnungen reichlich; übrige Arten vereinzelt. Auf sauren Böden: Ta und auch Fi unter Schirm.\\nDurch Lichtungshieb wird reichliche Vorverjüngung erreicht.",
-        "heightDispersion": "submontan, untermontan, 400-\\n1000m",
+        "heightDispersion": "submontan, untermontan; 400-1000m",
         "pioneerTreeTypes": "VBe, HBi",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63366,15 +63366,15 @@
         "priority": "2",
         "vegetation": "E: \\tWaldmeister, Walderdbeere \\nF: \\tWeisse Pestwurz \\nH: \\tRasen-Schmiele, Berg-Kerbel\\nI: Rote Waldnelke, Sumpf-Dotterblume, Sumpf-Pippau\\nJ: Kohldistel\\nK: \\tWald-Brustwurz \\nM: \\tBingelkraut, Wald-Zwenke, Wolliger Schneeball\\nO: \\tBuntes Reitgras, Wald-Witwenblume ",
         "compactRisk": "2",
-        "description": "Mässig wüchsige, dicht aufwachsende Erlenwälder an häufig überschwemmten Bach- und Flussauen mit üppiger und hoher Krautschicht. Wenig entwickelte, schotterreiche Auenböden, die wegen des sehr raschen Abbaus nährstoff- und basenreich sind.\\n",
+        "description": "Mässig wüchsige, dicht aufwachsende Erlenwälder an häufig überschwemmten Bach- und Flussauen mit üppiger und hoher Krautschicht. \\nWenig entwickelte, schotterreiche Auenböden, die wegen des sehr raschen Abbaus nährstoff- und basenreich sind.\\n",
         "forestryCare": "N: Nicht erforderlich.",
         "expoAndAspect": [
           1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
           0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0,
           0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0
         ],
-        "forestryRejuvDev": "N: Je nach Hochwasserereignissen dynamische \\nWechsel in der Verjüngung.",
-        "heightDispersion": "untermontan, 600-1000m",
+        "forestryRejuvDev": "N: Je nach Hochwasserereignissen dynamische Wechsel in der Verjüngung.",
+        "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63386,15 +63386,15 @@
         "priority": "2",
         "vegetation": "E: Walderdbeere \\nF: Weisse Pestwurz \\nH: Rasen-Schmiele\\nI: Rote Waldnelke, Sumpf-Pippau\\nJ: Kohldistel, Wald-Storchenschnabel\\nK: Wald-Brustwurz \\nM: Wald-Zwenke\\nO: Buntes Reitgras, Wald-Witwenblume \\n",
         "compactRisk": "2",
-        "description": "Mässig wüchsige, dicht aufwachsende Erlenwälder an häufig überschwemmten Bach- und Flussauen mit üppiger und hoher Krautschicht. Wenig entwickelte, grobschotterige Auenböden, basenreich.\\n",
+        "description": "Mässig wüchsige, dicht aufwachsende Erlenwälder an häufig überschwemmten Bach- und Flussauen mit üppiger und hoher Krautschicht. \\nWenig entwickelte, grobschotterige Auenböden, basenreich.\\n",
         "forestryCare": "N: Nicht erforderlich.",
         "expoAndAspect": [
           1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
           0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0,
           0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0
         ],
-        "forestryRejuvDev": "N: Je nach Hochwasserereignissen dynamische \\nWechsel in der Verjüngung.",
-        "heightDispersion": "obermontan, 900-1100m",
+        "forestryRejuvDev": "N: Je nach Hochwasserereignissen dynamische Wechsel in der Verjüngung.",
+        "heightDispersion": "obermontan; 900-1100m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "28,29,30,32"
       },
@@ -63407,14 +63407,14 @@
         "vegetation": "KS: Scharfkantige Segge, Gewöhnlicher Gilbweiderich.\\nMS: spärlich.\\n",
         "compactRisk": "5",
         "description": "Mässig wüchsige, lichte und lückige Schwarzerlen- bzw. Weidenbestände. Unterwuchs grasig, von Seggen und offenen Wasserflächen beherrscht. ",
-        "forestryCare": "N: Kaum notwendig.\\nU: Gemäss Einzelprojekten",
+        "forestryCare": "N: Kaum notwendig.\\nU: Gemäss Einzelprojekten.",
         "expoAndAspect": [
           1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
           0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Verjüngung in lichten Beständen meist reichlich.\\nU: Standorte meist entwässert, mit Fi-Pflanzungen, zudem oft abgetorft. Renaturierungen gemäss sorgfältigen Einzelprojekten.",
-        "heightDispersion": "submontan, untermontan, 400-\\n800m",
+        "heightDispersion": "submontan, untermontan; 400-800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "44,45"
       },
@@ -63434,7 +63434,7 @@
           0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Verjüngung in lichten Beständen meist reichlich.\\nU: Standorte meist entwässert, mit Fi-Pflanzungen, zudem oft abgetorft. Renaturierungen gemäss sorgfältigen Einzelprojekten.",
-        "heightDispersion": "submontan, untermontan, 400-\\n900m ",
+        "heightDispersion": "submontan, untermontan; 400-900m ",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "44,45"
       },
@@ -63454,7 +63454,7 @@
           0, 0, 1, 1, 1, 2, 2, 2, 0, 0, 1, 1, 1, 2, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Ta und Fi unter Schirm und in Lücken.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta-Samenbäume konsequent begünstigen; wenn solche fehlen, Ta unterpflanzen.",
-        "heightDispersion": "obermontan, hochmontan, 900-1500m",
+        "heightDispersion": "obermontan, hochmontan; 900-1500m",
         "pioneerTreeTypes": "VBe",
         "associationGroupCode": "46"
       },
@@ -63474,7 +63474,7 @@
           0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Ta und Fi unter Schirm und in Lücken.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta-Samenbäume begünstigen; wenn solche fehlen, Ta unterpflanzen.",
-        "heightDispersion": "submontan, untermontan, 500-1000m",
+        "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "VBe",
         "associationGroupCode": "46"
       },
@@ -63486,7 +63486,7 @@
         "priority": null,
         "vegetation": "A: \\tTorfmoose, Straussenfedermoos, Rotstengelmoos, \\nB: Gewelltes Wurmmoos\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn ",
         "compactRisk": "4",
-        "description": "Mässig wüchsige, oft stufige Nadelwälder in nassen Mulden- und Plateaulagen.\\nUnterwuchs von kniehohen Heidelbeeren und von Torfmoos dominiert. \\nBoden extrem sauer, mit mächtiger Rohhumusauflage. Im Untergrund dau-\\nernd und zeitweise auch im Oberboden vernässt.",
+        "description": "Mässig wüchsige, oft stufige Nadelwälder in nassen Mulden- und Plateaulagen. Unterwuchs von kniehohen Heidelbeeren und von Torfmoos dominiert. \\nBoden extrem sauer, mit mächtiger Rohhumusauflage. Im Untergrund dauernd und zeitweise auch im Oberboden vernässt.",
         "forestryCare": "N: Kann sich auf Schlagpflege be-schränken.\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.\\n \\n ",
         "expoAndAspect": [
           1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0,
@@ -63494,7 +63494,7 @@
           0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Ta und Fi unter Schirm und in Lücken.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta-Samenbäume konsequent begünstigen.",
-        "heightDispersion": "obermontan, hochmontan, 900-1500m",
+        "heightDispersion": "obermontan, hochmontan; 900-1500m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "46"
       },
@@ -63506,7 +63506,7 @@
         "priority": null,
         "vegetation": "SS: Vielfältig und meist stark: Schwarzes Geissblatt, Roter Holunder, Alpen-Geissblatt, Alpen-Hagrose.\\nKS: Auf Blöcken mit Heidelbeere, Tannen-Bärlapp, Eichenfarn, Ruprechtsfarn. In Nischen: Rundblättriger Steinbrech, Grauer Alpendost, Wolliger Hahnenfuss.\\nMS: Hainmoos, Tamariskenmoos, Wald-Frauenhaar.",
         "compactRisk": "1",
-        "description": "Bergsturzgebiet oder Schutthang mit wüchsigen bis mässig wüchsigen, stufigen Nadelmischwäldern. \\nVon weitreichenden Wurzeln übersponnene Blöcke wechseln mit krautreichen Nischen.",
+        "description": "Bergsturzgebiet oder Schutthang mit wüchsigen bis mässig wüchsigen, stufigen Nadelmischwäldern. Von weitreichenden Wurzeln übersponnene Blöcke wechseln mit krautreichen Nischen.",
         "forestryCare": "Bei besonderer Schutzfunktion punktuelle Eingriffe zur Verbesserung der Struktur.\\n",
         "expoAndAspect": [
           2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0,
@@ -63514,7 +63514,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Neben Bu und Ta auch Fi unter lichtem Schirm; Lichtbaumarten in Lücken.\\nU: Bei besonderer Schutzfunktion punktuell auflichten.",
-        "heightDispersion": "obermontan, hochmontan, 1100-\\n1600",
+        "heightDispersion": "obermontan, hochmontan; 1100-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "48"
       },
@@ -63534,7 +63534,7 @@
           0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "N: Ta und Fi vorwiegend auf trockeneren Kleinstandorten mit wenig Hochstauden sowie auf Moderholz; Verjüngung generell schwierig.\\nFörderung durch Schlitze an besonnten Rändern. In Schattenlagen auf Seitenlicht achten. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden.\\nFür Moderholz Bäume quer in Blössen hineinfällen.\\nGruppenplenterung.\\nU: Wirksame Ta-Förderung hat auf diesem Standort oberste Priorität. Dazu in der Umgebung Samen tragender Ta günstige Keim- und Aufwuchsbedingungen schaffen. Die spärliche Verjüngung gegen Wildverbiss schützen. Falls Naturverjüngung nicht erfolgreich: Stützpunktpflanzungen mit Ta anlegen. Alle Ta als Strukturträger und Samenbäume stehen lassen!",
-        "heightDispersion": "obermontan, hochmontan, 1200- 1500m",
+        "heightDispersion": "obermontan, hochmontan; 1200- 1500m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "49,50"
       },
@@ -63546,7 +63546,7 @@
         "priority": null,
         "vegetation": "B: \\tGewöhnl. Alpenlattich\\nC: Heidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich\\nE: \\tÄhrige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: \\tWeisse Pestwurz\\nH: \\tGelber Eisenhut\\nJ: \\tGrauer Alpendost ",
         "compactRisk": "2",
-        "description": "Ziemlich wüchsige Tannen-Fichtenwälder mit Plenter- und leichter Rottenstruktur an Hängen aller Expositionen. \\nAuf leichten Erhöhungen oft schwache Versauerung, daneben aktive Böden mit Nährstoffzeigern sowie einzelnen Hochstauden. \\nAusgeglichene, aktive, gut nährstoffversorgte und gut durchlässige Braunerden. Oberboden je nach Kleinstandort mit basischem Mull oder saurem Moder.",
+        "description": "Ziemlich wüchsige Tannen-Fichtenwälder mit Plenter- und leichter Rottenstruktur an Hängen aller Expositionen. Auf leichten Erhöhungen oft schwache Versauerung, daneben aktive Böden mit Nährstoffzeigern sowie einzelnen Hochstauden. \\nAusgeglichene, aktive, gut nährstoffversorgte und gut durchlässige Braunerden. Oberboden je nach Kleinstandort mit basischem Mull oder saurem Moder.",
         "forestryCare": "N: Bei der Gebirgsplenterung auf die Erhaltung von Rotten und Gruppen achten. Dicke, standfeste Bäume teilweise stehen lassen. \\nAlle Ta konsequent freistellen, in der Jugend behutsam, später stärker. \\nIm Übrigen einzig Schlagpflege notwendig. \\nMischungsform: Trupp- oder gruppenweise.\\nU: Punktuelle Eingriffe zur Förderung der Rottenstruktur. ",
         "expoAndAspect": [
           2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0,
@@ -63554,7 +63554,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Ta und meist auch Fi unter lichtem Schirm. Konkurrenz durch Hochstauden und Farne kann Verjüngung behindern.\\nDurch schlitzartige Öffnungen Verjüngung auf geeigneten Kleinstandorten (erhöhte Stellen, Moderholz u.a.) einleiten. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden; Rotten zusammenhalten.\\nIn Schattenlagen auf Richtung des Seitenlichts achten. Moderholz liegen lassen.\\nGebirgsplenterung.\\nU: Verbesserung der häufig einschichtigen Strukturen durch punktuelle Lichtungshiebe und Begünstigung von Verjüngungsansätzen, insbesondere in der Umgebung Samen tragender Ta. Falls Naturverjüngung nicht erfolgreich: Stützpunktpflanzungen mit Ta anlegen.\\nAlle Ta als Strukturträger und Samenbäume stehen lassen!",
-        "heightDispersion": "hochmontan 1300-\\n1600m",
+        "heightDispersion": "hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "49,50"
       },
@@ -63566,7 +63566,7 @@
         "priority": null,
         "vegetation": "B: \\tGewöhnl. Alpenlattich, Preiselbeere\\nC: Heidelbeere, Wald-Frauenhaar, Hainmoos, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich, Echte Goldrute, Wald-Habichtskraut\\nE: \\tBreitblättriger Ehrenpreis",
         "compactRisk": "2",
-        "description": "Mässig wüchsige Tannen-Fichtenwälder an Hängen aller Expositionen, v.a. auf breiten Rücken. Oberboden saurer als bei 50, daher leicht höherer Fi-Anteil. Unterwuchs lückig und eher artenarm. \\nNährstoffarme, meist gut durchlässige Braunerden mit saurer Moderauflage.",
+        "description": "Mässig wüchsige Tannen-Fichtenwälder an Hängen aller Expositionen, v.a. auf breiten Rücken. Unterwuchs lückig und eher artenarm.\\nOberboden saurer als bei 50, daher leicht höherer Fi-Anteil. Nährstoffarme, meist gut durchlässige Braunerden mit saurer Moderauflage.",
         "forestryCare": "N: Fördern der Rottenstruktur. Alle Ta konsequent freistellen, in der Jugend behutsam, später stärker. Im Übrigen einzig Schlagpflege notwendig.\\nMischungsform: Trupp- oder gruppenweise.\\nU: Punktuelle Eingriffe zur Förderung der Rottenstruktur. ",
         "expoAndAspect": [
           2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0,
@@ -63574,7 +63574,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Ta und meist auch Fi unter lichtem Schirm.\\nDurch schlitzartige Öffnungen wird Verjüngung gefördert. Verjüngungsgünstige Kleinstandorte meist vorhanden: Stöcke, Kuppen. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden.",
-        "heightDispersion": "hochmontan 1300-\\n1600m",
+        "heightDispersion": "hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "49,50"
       },
@@ -63594,7 +63594,7 @@
           0, 0, 2, 2, 1, 1, 1, 1, 0, 0, 2, 2, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "N: Ta und meist auch Fi v.a. in Schlitzen an besonnten Rändern. Oft Konkurrenz durch üppige Hochstauden und Farne. \\nDurch schlitzartige Öffnungen wird Verjüngung gefördert. In Schattenlagen auf Seitenlicht achten. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden.\\nModerholz für gute Verjüngung unentbehrlich, dazu Bäume quer in Blössen hineinfällen. Zeit lassen!\\nGruppenplenterung.\\nU: Verbesserung der häufig einschichtigen Strukturen durch punktuelle Lichtungshiebe und Begünstigung von Verjüngungsansätzen, insbesondere in der Umgebung Samen tragender Ta. Falls Naturverjüngung nicht erfolgreich: Stützpunktpflanzungen mit Ta anlegen. Alle Ta als Strukturträger und Samenbaum stehen lassen!",
-        "heightDispersion": "hochmontan 1300-\\n1600m",
+        "heightDispersion": "hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "49,50"
       },
@@ -63613,8 +63613,8 @@
           2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2,
           2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
-        "forestryRejuvDev": "Problemlose Verjüngung von Fi und vereinzelten \\nMischbaumarten.",
-        "heightDispersion": "subalpin 1600-1800m",
+        "forestryRejuvDev": "Problemlose Verjüngung von Fi und vereinzelten Mischbaumarten.",
+        "heightDispersion": "subalpin; 1600-1800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63634,7 +63634,7 @@
           2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "Ta und Fi unter Schirm in meist lichten Beständen.",
-        "heightDispersion": "hochmontan, 1400-1600m",
+        "heightDispersion": "hochmontan; 1400-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63654,7 +63654,7 @@
           0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In kleinen Rotten um Stöcke, auf Moderholz und an erhöhten Stellen, meist im Trauf von Altbäumen.\\nNur punktuelle Eingriffe nutzbringend.\\nGebirgsplenterung.",
-        "heightDispersion": "obermontan, hochmontan, 1000-1500m",
+        "heightDispersion": "obermontan, hochmontan; 1000-1500m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63674,7 +63674,7 @@
           0, 0, 1, 1, 2, 2, 0, 0, 0, 0, 1, 1, 2, 2, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In kleinen Rotten um Stöcke, auf Moderholz und an erhöhten Stellen, meist im Trauf von Altbäumen. BFö auch im Freien.\\nNur punktuelle Eingriffe nutzbringend.\\nGebirgsplenterung.",
-        "heightDispersion": "hochmontan, subalpin, 1400-1700m",
+        "heightDispersion": "hochmontan, subalpin; 1400-1700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63694,7 +63694,7 @@
           0, 0, 2, 2, 1, 1, 2, 2, 0, 0, 2, 2, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "N: Neben Bu und Ta auch die Fi unter lichtem Schirm; Lichtbaumarten in Lücken.\\nU: Bei besonderer Schutzfunktion punktuell auflichten.",
-        "heightDispersion": "obermontan, hochmontan, 1300-\\n1600",
+        "heightDispersion": "obermontan, hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63714,7 +63714,7 @@
           0, 0, 1, 1, 1, 1, 2, 2, 0, 0, 1, 1, 1, 1, 2, 2, 0, 0
         ],
         "forestryRejuvDev": "In kleinen Rotten um Stöcke, auf Moderholz und an erhöhten Stellen, meist im Trauf von Altbäumen. Verjüngungsgünstige Lagen sind auf den meist flachen Standorten selten. \\nNur punktuelle Eingriffe nutzbringend.\\nGebirgsplenterung.",
-        "heightDispersion": "hochmontan, subalpin, 1400-1700m",
+        "heightDispersion": "hochmontan, subalpin; 1400-1700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63726,7 +63726,7 @@
         "priority": null,
         "vegetation": "B: \\tGewöhnl. Alpenlattich, Wald-Schmiele, Preiselbeere\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse, Tamariskenmoos",
         "compactRisk": "2",
-        "description": "Mässig wüchsige Fichtenwälder mit deutlicher Rottenstruktur an flachen bis steilen Hängen aller Expositionen. Un-terwuchs von der Heidelbeere und von Farnen dominiert. Boden meist deutlich podsoliert, extrem bis sehr sauer mit starker Rohhumusauflage, frischem bis feuchtem Oberboden und gut bis gehemmt durchlässigem Untergrund.\\n",
+        "description": "Mässig wüchsige Fichtenwälder mit deutlicher Rottenstruktur an flachen bis steilen Hängen aller Expositionen. Unterwuchs von der Heidelbeere und von Farnen dominiert. \\nBoden meist deutlich podsoliert, extrem bis sehr sauer mit starker Rohhumusauflage, frischem bis feuchtem Oberboden und gut bis gehemmt durchlässigem Untergrund.\\n",
         "forestryCare": "Gezielte Eingriffe zur Förderung der Verjüngung und der Rottenstruktur. ",
         "expoAndAspect": [
           0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0,
@@ -63734,7 +63734,7 @@
           0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "In kleinen Rotten um Stöcke, auf Moderholz und an erhöhten Stellen, meist im Trauf von Altbäumen oder an sonnigen Stellen.\\nFörderung mit Schlitzöffnungen v.a. auf wärmebegünstigten Stellen, gleichzeitig Austrocknung durch zu viel Nachmittagssonne vermeiden. Keine diffusen Öffnungen, da dies Schneedruck und Farnbestände fördert.\\nGebirgsplenterung.",
-        "heightDispersion": "subalpin 1500-1800m",
+        "heightDispersion": "subalpin; 1500-1800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63754,7 +63754,7 @@
           0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "Nur im Trauf von Altbäumen und auf Moderholz.  \\nEinzel- bis Gruppenplenterung.\\n",
-        "heightDispersion": "hochmontan, subalpin, 1400-1700m",
+        "heightDispersion": "hochmontan, subalpin; 1400-1700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63774,7 +63774,7 @@
           1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1
         ],
         "forestryRejuvDev": "In lichtem Bestand für alle Baumarten meist reichlich. \\nEinzel- bis Gruppenplenterung.\\n",
-        "heightDispersion": "subalpin 1600-1800m",
+        "heightDispersion": "subalpin; 1600-1800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63794,7 +63794,7 @@
           1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1
         ],
         "forestryRejuvDev": "In lichtem Bestand für alle Baumarten meist reichlich; in gleichförmigen Beständen oft gering. \\nEinzel- bis Gruppenplenterung.\\n",
-        "heightDispersion": "obermontan, hochmontan 1300-\\n1600m",
+        "heightDispersion": "obermontan, hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "53,56,57,60"
       },
@@ -63806,7 +63806,7 @@
         "priority": "2",
         "vegetation": "SS: Kalksträucher, Strauch-Kronwicke, Felsenmispel\\nKS: Pfeifengras, Buntes Reitgras, Schlaffe und Weisse Segge; Buchsblättrige Kreuzblume, Berg-Distel, Ochideen\\n",
         "compactRisk": "3",
-        "description": "Lichte, oft lückige, schwachwüchsige  Waldföhrenwälder, die von MBe, Vbe und Wei begleitet  werden. Artenreiche Strauch- und Krauschicht, die von Gräsern dominiert wird.\\nBoden lehmig, wechseltrocken.\\n\\n",
+        "description": "Lichte, oft lückige, schwachwüchsige  Waldföhrenwälder, die von MBe, Vbe und Wei begleitet werden. Artenreiche Strauch- und Krauschicht, die von Gräsern dominiert wird.\\nBoden lehmig, wechseltrocken.\\n\\n",
         "forestryCare": "Punktuell zur gezielten Förderung von Arten mit besonderem Lichtbedarf. ",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -63814,7 +63814,7 @@
           1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In den sehr lichten Beständen meist problemlos.",
-        "heightDispersion": "submontan, untermontan, 600-\\n1000m",
+        "heightDispersion": "submontan, untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "62,65"
       },
@@ -63834,7 +63834,7 @@
           1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1
         ],
         "forestryRejuvDev": "In den sehr lichten Beständen meist problemlos.",
-        "heightDispersion": "submontan, untermontan, ober-\\nmontan, 500-1300m",
+        "heightDispersion": "submontan, untermontan, obermontan; 500-1300m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "62,65"
       },
@@ -63846,15 +63846,15 @@
         "priority": "4",
         "vegetation": "SS: Sehr spärlich. \\nKS: Behaarte Alpenrose, Blaugras, Erika, Berg-Distel, Kugelblume, Buntes Reitgras.\\n\\n",
         "compactRisk": "1",
-        "description": "Lückige, schwachwüchsige Bergföhren-\\nwälder; Unterwuchs von Gräsern dominiert.",
-        "forestryCare": "In der Regel nicht nötig; nur in \\nAusnahmefällen punktuelle Auflichtungen. ",
+        "description": "Lückige, schwachwüchsige Bergföhrenwälder; Unterwuchs von Gräsern dominiert.",
+        "forestryCare": "In der Regel nicht nötig; nur in Ausnahmefällen punktuelle Auflichtungen. ",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1,
           1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0,
           1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1
         ],
         "forestryRejuvDev": "In den sehr lichten Beständen meist problemlos.",
-        "heightDispersion": "obermontan, hochmontan 1200-\\n1500m",
+        "heightDispersion": "obermontan, hochmontan; 1200-1500m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "67,69,70,71"
       },
@@ -63866,15 +63866,15 @@
         "priority": "2",
         "vegetation": "SS: Sehr spärlich, Zwerg-Eberesche\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose.\\nBehaarte Alpenrose, Blaugras, Erika, Berg-Distel, Kugelblume.\\n\\n\\n",
         "compactRisk": "1",
-        "description": "Lückige, schwachwüchsige Bergföhren-\\nwälder; Unterwuchs von Zwergsträuchern dominiert.",
-        "forestryCare": "In der Regel nicht nötig; nur in \\nAusnahmefällen punktuelle Auflichtungen. ",
+        "description": "Lückige, schwachwüchsige Bergföhrenwälder; Unterwuchs von Zwergsträuchern dominiert.",
+        "forestryCare": "In der Regel nicht nötig; nur in Ausnahmefällen punktuelle Auflichtungen. ",
         "expoAndAspect": [
           0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0,
           0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1
         ],
         "forestryRejuvDev": "In den sehr lichten Beständen meist problemlos.",
-        "heightDispersion": "hochmontan, 1400-1700m",
+        "heightDispersion": "hochmontan; 1400-1700m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "67,69,70,71"
       },
@@ -63886,15 +63886,15 @@
         "priority": "2",
         "vegetation": "SS: Sehr spärlich\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose\\nMS: Torfmoose oft deckend, daneben Rotstengelmoos\\n",
         "compactRisk": "1",
-        "description": "Lückige, schwachwüchsige Bergföhren-\\nwälder; Unterwuchs von Zwergsträuchern dominiert.",
-        "forestryCare": "In der Regel nicht nötig; nur in \\nAusnahmefällen punktuelle Auflichtungen. ",
+        "description": "Lückige, schwachwüchsige Bergföhrenwälder; Unterwuchs von Zwergsträuchern dominiert.",
+        "forestryCare": "In der Regel nicht nötig; nur in Ausnahmefällen punktuelle Auflichtungen. ",
         "expoAndAspect": [
           1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
           0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
           0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
         ],
         "forestryRejuvDev": "In den sehr lichten Beständen meist problemlos.",
-        "heightDispersion": "hochmontan, subalpin, 1400-1800m",
+        "heightDispersion": "hochmontan, subalpin; 1400-1800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "67,69,70,71"
       },
@@ -63906,15 +63906,15 @@
         "priority": "2",
         "vegetation": "SS: Sehr spärlich\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose, Hochmoorarten\\nMS: Torfmoose oft deckend, daneben Rotstengelmoos\\n",
         "compactRisk": "5",
-        "description": "Lückige, sehr schwachwüchsige Bergföhren-Wälder; Unterwuchs von Zwergsträuchern dominiert.",
-        "forestryCare": "In der Regel nicht nötig; nur in \\nAusnahmefällen punktuelle Auflichtungen. ",
+        "description": "Lückige, sehr schwachwüchsige Bergföhrenwälder; Unterwuchs von Zwergsträuchern dominiert.",
+        "forestryCare": "In der Regel nicht nötig; nur in Ausnahmefällen punktuelle Auflichtungen. ",
         "expoAndAspect": [
           1, 1, 2, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 0, 0,
           0, 1, 1, 2, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 0,
           0, 0, 1, 1, 2, 0, 0, 0, 0, 0, 1, 1, 2, 0, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In den sehr lichten Beständen meist problemlos.",
-        "heightDispersion": "obermontan, hochmontan, 1300-\\n1600m",
+        "heightDispersion": "obermontan, hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "67,69,70,71"
       },
@@ -63927,14 +63927,14 @@
         "vegetation": "SS: Sehr spärlich, Wachholder\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose\\nMS: Torfmoose oft deckend, daneben Rotstengelmoos\\n",
         "compactRisk": "5",
         "description": "Lückige, sehr schwachwüchsige Bergföhrenwälder; Unterwuchs von Zwergsträuchern dominiert.",
-        "forestryCare": "In der Regel nicht nötig; nur in \\nAusnahmefällen punktuelle Auflichtungen. ",
+        "forestryCare": "In der Regel nicht nötig; nur in Ausnahmefällen punktuelle Auflichtungen. ",
         "expoAndAspect": [
           2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0,
           0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0,
           0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0
         ],
         "forestryRejuvDev": "In den sehr lichten Beständen meist problemlos.",
-        "heightDispersion": "obermontan, hochmontan, sub-\\nalpin 1300-1800m",
+        "heightDispersion": "obermontan, hochmontan, subalpin; 1300-1800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "67,69,70,71"
       },
@@ -63954,7 +63954,7 @@
           0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 0, 1, 1, 1, 1
         ],
         "forestryRejuvDev": "Trotz hoher Schneelast problemlos, da AE den Schneedruck erträgt.",
-        "heightDispersion": "hochmontan, subalpin, 1300-1800m",
+        "heightDispersion": "hochmontan, subalpin; 1300-1800m",
         "pioneerTreeTypes": "−",
         "associationGroupCode": "AV"
       }
