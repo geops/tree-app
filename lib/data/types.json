@@ -65827,20 +65827,20 @@
         "la": "Luzulo-Fagetum",
         "code": "1,2",
         "soil": "Stark saure, in 2 extrem saure Braunerde.\\nOberboden und Auflage: Moder mit geringer biologischer Aktivität, Wurmtätigkeit meist fehlend. In 2 rohhumusartig.\\nMineralboden: Gut bis sehr gut durchlässig (2) und gut durchlüftet. Feinerde sandig bis sandig-schluffig. Skelettarm bis skelettreich. Stark bis extrem sauer (2), flach- bis mittelgründig, 2 meist flachgründig.",
-        "location": "Meist kleinflächiges Vorkommen an sonnigen Hang- und Rippenlagen mit  schlechter Nährstoffversorgung. \\n2 auf ausgehagerte Rippen beschränkt, Streu regelmässig durch den Wind weggeblasen.\\nUntergrund: kalkarme bis kalkfreie Moräne oder Molasse.",
+        "location": "Meist kleinflächiges Vorkommen an sonnigen Hang- und Rippenlagen mit schlechter Nährstoffversorgung. 2 auf ausgehagerte Rippen beschränkt, Streu regelmässig durch den Wind weggeblasen.\\nUntergrund: kalkarme bis kalkfreie Moräne oder Molasse.",
         "description": "Hallenartige Buchenwälder mit mittlerer, in 2 mit mässiger Wüchsigkeit. Bestände meist licht, mit beigemischter WFö und TEi. Stammformen etwas gekrümmt, oft astig (alles in 2 ausgeprägter).\\nSS: Meist fehlend.\\nKS: Spärlich, mit Heidelbeere, Busch- und Wald-Hainsimse; in 2 Besenheide.\\nMS: Zypressenmoos; in 2 Weissmoos.",
-        "aptitudeMeaning": "Reduzierte Wüchsigkeit, deshalb spielt Holzpro-\\nduktion nur in 1 eine gewisse Rolle. Vor allem 2 \\ndurch extremen Standort und Seltenheit für den \\nNaturschutz bedeutsam.",
-        "heightDispersion": "submontan, untermontan, \\n400-900m"
+        "aptitudeMeaning": "Reduzierte Wüchsigkeit, deshalb spielt Holzproduktion nur in 1 eine gewisse Rolle. Vor allem 2 durch extremen Standort und Seltenheit für den Naturschutz bedeutsam.",
+        "heightDispersion": "submontan, untermontan; 400-900m"
       },
       {
         "de": "Waldmeister-Buchenwald",
         "la": "Galio odorati-Fagetum",
         "code": "6,7",
-        "soil": "Braunerden mit mittlerer bis guter Nährstoffverfügbarkeit.\\nOberboden und Auflage: Mull bis mull-artiger Moder; 7* typ. Moder mit F- und Ahh-Horizont. Kalkfrei, schwach bis stark sauer.\\nMineralboden: Mittel- bis tiefgründig. Grosse Variation in der Körnung der Feinerde. Skelettarm bis skelettreich. Vorwiegend normal durchlässig, im Nebenwurzelraum oft schwach gehemmt.\\nStark sauer bis neutral.\\n7e, 7f, 7S: kalkhaltig ab ca. 30 cm",
+        "soil": "Braunerden mit mittlerer bis guter Nährstoffverfügbarkeit.\\nOberboden und Auflage: Mull bis mull-artiger Moder; 7* typ. Moder mit F- und Ahh-Horizont. Kalkfrei, schwach bis stark sauer.\\nMineralboden: Mittel- bis tiefgründig. Grosse Variation in der Körnung der Feinerde. Skelettarm bis skelettreich. Vorwiegend normal durchlässig, im Nebenwurzelraum oft schwach gehemmt. Stark sauer bis neutral. \\n7e, 7f, 7S: kalkhaltig ab ca. 30 cm",
         "location": "Fruchtbare, 'mittlere' Standorte mit ausgeglichener Feuchte, ohne extreme Faktoren. Je nach Untereinheit deutliche Abweichungen bezüglich Säure und Wasserhaushalt.\\nUntergrund meist Molasse mit schwacher Moränenüberdeckung (meist weniger als 1 Meter).",
         "description": "Sehr wüchsige Buchenwälder mit gestreckten Stämmen, Mischbaumarten eingestreut. Ta und Fi bei verstärkter Bodensäure.\\nSS: Meist spärlich, artenarm, bei kalkhaltigem Unterboden vielfältiger. Oft Schwarzer Holunder.\\nKS: Spärlich bis üppig, je nach Untereinheit und Lichtangebot.",
         "aptitudeMeaning": "Meist verbreitete Einheiten in den milderen Lagen des Mittellandes. Mehrheitlich gute Produktionsstandorte. Heutige Bestände meist mit gepflanzter Fi.",
-        "heightDispersion": "submontan, 400-800m"
+        "heightDispersion": "submontan; 400-800m"
       },
       {
         "de": "Waldhirsen-Buchenwald",
@@ -65850,17 +65850,17 @@
         "location": "Flache bis mässig steile Lagen aller Expositionen. Mittlere Standorte mit weit fortgeschrittener Bodenreifung. Untereinheiten mit wichtigen Abweichungen.\\nUntergrund meist Molasse, Moräne oder karbonatfreier, stabiler Gehängeschutt.",
         "description": "Sehr wüchsige, teils reine, teils nadel-holzreiche Buchenwälder mit Ta, Fi, BAh, BUl und Es. Hoher, astfreier Stammraum und gute Qualitäten. \\nSS: Meist spärlich, artenarm, bei kalkhaltigem Unterboden vielfältiger.\\nKS: Häufig mit deutlichem Farn-Aspekt, weitere Arten je nach Untereinheit und Lichtangebot.",
         "aptitudeMeaning": "Weitestverbreitete Einheit der Unteren Bergstufe, ebenso im Mittelland wie in den tiefgelegenen Bergwäldern. Bei geeigneter Lage und Zugänglichkeit gute Produktionsstandorte. Heutige Bestände oft mit gepflanzter Fi.",
-        "heightDispersion": "untermontan, 600-1000m"
+        "heightDispersion": "untermontan; 600-1000m"
       },
       {
-        "de": "Lungenkraut-Buchenwald, Aronstab-\\nBuchenwald",
+        "de": "Lungenkraut-Buchenwald, Aronstab-Buchenwald",
         "la": "Pulmonario-Fagetum, Aro-Fagetum",
         "code": "9,10,11",
         "soil": "Rendzinen und Kalk-Braunerden.\\nOberboden und Auflage: Aktiver Kalkmull. In 11 sehr rascher Abbau der Streuauflage. In 9 und 10 Oberboden oft mit dichtem Wurzelfilz.\\nMineralboden: Mittel- bis tiefgründig, 10 mittelgründig. Gut durchlässig bis leicht gehemmt. Skelettreich bis skelettarm, 11 mit hohem Tonanteil. Kalkhaltig, neutral bis basisch.",
         "location": "9 und 10 in milden, bevorzugt sonnigen Hanglagen, 11 in Mulden oder leicht geneigten Hangfusslagen aller Expositionen, mit basenreicher Nährstoffversorgung.\\nUntergrund: 9 und 10 meist an karbonatreichen Abbruchstellen von Molasseschichten, 11 oft auf basen- und feinerdereicher Moräne oder Molasse.",
         "description": "Wüchsige bis mässig wüchsige (10), hallenartige Buchenwälder mit beigemischten Edellaubhölzern; im Gebiet 9 und 10 oft in steileren Lagen.\\nSS: Artenreich (Kalksträucher); mässig, in 10 üppig ausgebildet.\\nKS: Artenreich, meist mit viel Bingelkraut, in 11 mit Bärlauch-Teppich.",
         "aptitudeMeaning": "Die schweizerisch relativ häufigen Einheiten sind in Luzern selten bis extrem selten und oft an Steilhängen zu finden. Deshalb ist die wirtschaftliche Bedeutung gering. Einzig 11 mit guten Produktionsflächen. Generell wertvolle Lebensräume.",
-        "heightDispersion": "submontan, 400-800m"
+        "heightDispersion": "submontan; 400-800m"
       },
       {
         "de": "Zahnwurz-Buchenwald, Linden-Buchenwald",
@@ -65870,17 +65870,17 @@
         "location": "Vorwiegend mittlere bis steile Hanglagen aller Expositionen mit guter Nährstoffversorgung. \\nUntergrund Kalkgestein oder kalkhaltiger, stabilisierter Gehängeschutt.",
         "description": "Wüchsige, oft hallenartig geschlossene, einschichtige Buchenwälder mit beigemischten Laub- und Nadelhölzern. Lange und gerade Stämme in 12; in 13 weniger ausgeprägt. \\nSS: Artenarm und meist wenig entwickelt bis reichhaltig, je nach Untereinheit.\\nKS: Artenarm und lückig bis vielfältig, oft mit grossen Flecken von Bingelkraut. ",
         "aptitudeMeaning": "Vorwiegend beschränkt auf das von Kalkstein dominierte Gebiet; dort lokale wirtschaftliche Bedeutung. Durch Seltenheit und Kalkgehalt für den Naturschutz bedeutsam.\\n",
-        "heightDispersion": "untermontan, 600-1100m\\n(obermontan 13h)"
+        "heightDispersion": "untermontan; 600-1100m\\n(13h: obermontan)"
       },
       {
-        "de": "Seggen-\\nBuchenwald, Blaugras-Buchenwald",
+        "de": "Seggen-Buchenwald, Blaugras-Buchenwald",
         "la": "Carici-Fagetum, Seslerio-Fagetum",
         "code": "14,15,16",
         "soil": "Flachgründige Rendzinen und Kalk-Braunerden. 14 und 15 wegen hohem Tonanteil oft wechseltrocken.\\nOberboden und Auflage: Geringmächtiger Kalk-Mull. Streuabbau durch Trockenheit gehemmt, z.T. Tendenz zur Versauerung (15, 16).\\nMineralboden: Flach- bis mittelgründig. Skelettreich oder felsig (16) und gut durchlässig, z.T. skelettarm. Kalkhaltig, basisch.",
         "location": "Warme, sonnige süd- bis westexponierte, meist steile Hanglagen oder Kuppen (16). An der Rigi oft felsige Terrassen.\\nUntergrund aus Kalk oder Mergelbändern (14, 15) oder kalkhaltigem, stabilem Fels- oder Moränenschutt.",
         "description": "Lichte, wenig bis schwach wüchsige Buchenwälder mit knorrigen Kronen und krummschaftigen Stämmen.\\nSS: Artenreich (Kalksträucher), mässig bis üppig ausgebildet. \\nKS: Artenreich mit meist grasigem Aspekt der Weissen Segge (14), der Berg-Segge (15), der Schlaffen Segge (14, 15) oder dem Blaugras (16).",
         "aptitudeMeaning": "Verbreitung auf Sonderstandorte beschränkt. Wegen der Seltenheit und dem Vorkommen von seltenen und geschützten Arten (Orchideen, etc.) mit grosser Bedeutung für den Naturschutz. Ohne wirtschaftliches Interesse.",
-        "heightDispersion": "submontan, untermontan, 500-1100m\\n(obermontan 16)"
+        "heightDispersion": "submontan, untermontan; 500-1100m\\n(16: obermontan)"
       },
       {
         "de": "Eiben-Buchenwald",
@@ -65889,8 +65889,8 @@
         "soil": "Rohböden bis wenig entwickelte Rendzinen und Braunerden. \\nOberboden und Auflage: Typischer Mull; in Taschen mit akkumulierter Streu oder in Rippenlage moderartiger Mull. Leicht bewegte Oberfläche mit stetiger Bodenneubildung.\\nMineralboden: Flach bis mittelgründig, sandig bis tonig, skelettarm bis skelettfrei, gut durchlässig bis leicht gehemmt. Kalkhaltig, neutral bis basisch.",
         "location": "Felsige Steilhänge aller Expositionen, oft in Bachtobeln. Meist über 80% Neigung. Laub und Erde rutschen stetig ab, was auch bei Kalkarmut eine Bodenversauerung verhindert. Mehrheitlich basische und wechseltrockene Bodenverhältnisse. \\nUntergrund: Molasse (oft Nagelfluh), Moräne oder Kalkstein, z.T. mergelig, auch stabiler Gehängeschutt.",
         "description": "Steilhänge mit knapp geschlossenen bis sehr lichten, ziemlich bis schwach wüchsigen Buchenmischwäldern. Gerade, krumme und schiefe Stammformen wechselnd. \\nSS: Karg in lichtarmen Beständen, artenreich und oft üppig in den Lücken.\\nKS: In den offenen Lücken grasiger Aspekt vorherrschend, artenreich. Im geschlossenen Bestand oft fehlend.",
-        "aptitudeMeaning": "Im Mittelland selten, im Berggebiet häufig. Wirtschaftliche Bedeutung minim, da Zugang meist sehr schwierig. \\nWichtige Schutzfunktion durch steile Lage. Vielfalt an Kleinstandorten mit kalkhaltigen Böden und lichten Beständen ergeben grosse Bedeutung für Naturschutz.",
-        "heightDispersion": "submontan, untermontan, 500-1000m "
+        "aptitudeMeaning": "Im Mittelland selten, im Berggebiet häufig. Wirtschaftliche Bedeutung minim, da Zugang meist sehr schwierig. Wichtige Schutzfunktion durch steile Lage. Vielfalt an Kleinstandorten mit kalkhaltigen Böden und lichten Beständen ergeben grosse Bedeutung für Naturschutz.",
+        "heightDispersion": "submontan, untermontan; 500-1000m "
       },
       {
         "de": "Tannen-Buchenwald, Ahorn-Buchenwald",
@@ -65900,17 +65900,17 @@
         "location": "Flache bis steile Hanglagen aller Expositionen in der Oberen Bergstufe. Mittlere Standorte mit gut entwickelten Böden; kleine Abweichungen je nach Untereinheit. 19 an ausgehagerten, nährstoffarmen Hängen und Kuppen,  20 und 21 an schattigen Hängen mit langer Schneebedeckung. \\nUntergrund: alle Gesteinsunterlagen möglich.",
         "description": "Wüchsige, in die Höhe strebende  Mischbestände aus Bu, Ta und Fi. Oft natürliche, femel- bis plenterartige Struktur mit  sehr starken Stämmen und gruppenweiser Verjüngung, vor allem der Tanne.\\n21: Aufgelichtete, schwachwüchsige Mischbestände aus BAh, Bu, und Fi.\\nSS: Eher artenarm und wenig entwickelt.\\nKS: Farnaspekt oft vorherrschend; in 20 und 21 zusätzlich Hochstauden.",
         "aptitudeMeaning": "Im Berggebiet weit verbreitet. Flachere Lagen mit guter Zugänglichkeit bieten oft gute Produktionsbedingungen. In Steilhängen meist wichtige Schutzwälder. Heutige Bestände oft mit hohem Fi-Anteil.",
-        "heightDispersion": "obermontan, 900-1400m\\n(hochmontan 21)"
+        "heightDispersion": "obermontan; 900-1400m\\n(21: hochmontan)"
       },
       {
         "de": "Ahornwälder",
-        "la": "Phyllitido-Aceretum, Arunco-Aceretum, Sorbo- \\nund Ulmo-Aceretum, ",
+        "la": "Phyllitido-Aceretum, Arunco-Aceretum, Sorbo- und Ulmo-Aceretum",
         "code": "22,23,24",
         "soil": "Wenig entwickelte, schuttige Rohböden.\\nOberboden und Auflage: Rascher Abbau der basisch reagierenden Laubstreu. Akkumulation von schwarzem, schmierigem Kalkmull in den Hohlräumen der Gesteinsbrocken.\\nMineralboden: Flach- bis mittelgründig, skelettreich, sandig, gut durchlässig bis leicht gehemmt und tonreich (22A, 24*). Kalkhaltig, basisch.",
-        "location": "Aktive Schutthalden unterhalb von Felsen. Meist luftfeuchte, bevorzugt schattige Nordlagen; 23 in sonnigen Südwestlagen. Grober Blockschutt an der Oberfläche und im Boden in 22 vorherrschend, teilweise mit grösserem Feinerdeanteil. \\nBewegter Feinschutt an der Oberfläche und im Boden in 23; in 22A und 24* im Boden grösserer Feinerdeanteil. 24* in Steinschlagrunsen und Lawinenzügen.\\nUntergrund: kalkreicher, bewegter Hangschutt.",
+        "location": "Aktive Schutthalden unterhalb von Felsen. Meist luftfeuchte, bevorzugt schattige Nordlagen; 23 in sonnigen Südwestlagen. Grober Blockschutt an der Oberfläche und im Boden in 22 vorherrschend, teilweise mit grösserem Feinerdeanteil. Bewegter Feinschutt an der Oberfläche und im Boden in 23; in 22A und 24* im Boden grösserer Feinerdeanteil. 24* in Steinschlagrunsen und Lawinenzügen.\\nUntergrund: kalkreicher, bewegter Hangschutt.",
         "description": "Ziemlich bis schwach wüchsige, teils lückige Laubmischwälder auf Schutthalden, die von BAh oder von Li und Es dominiert werden. Oft schiefe oder säbelwüchsige Stämme mit Verletzungen.\\nSS: Wenig bis gut ausgebildet. Häufig mit Schwarzem Holunder und Hasel.\\nKS: Wenig bis gut ausgebildet. 22 mit Hirschzunge und Mondviole, 22A mit Geissbart, 23 grasig, mit Trockenzeigern, 24* krautig. \\nMS: Nur auf länger nicht bewegten Steinen (22). ",
         "aptitudeMeaning": "Selten vorkommende Sonderstandorte. Der Schutz vor Naturgefahren und die Naturvielfalt stehen im Vordergrund. Wirtschaftlich bedeutungslos.",
-        "heightDispersion": "submontan-hochmontan \\n400-1500m"
+        "heightDispersion": "submontan-hochmontan; 400-1500m"
       },
       {
         "de": "Ahorn-Eschenwald, Bach-Eschenwald",
@@ -65919,8 +65919,8 @@
         "soil": "Vorwiegend Gley, teilweise leicht verbraunt.\\nOberboden und Auflage: Rascher Abbau, hohe biologische Aktivität. (Hydro)-mull, in 27 vielfach anmoorig. Leicht sauer bis basisch. Nur in 26c deutliche Auflage.\\nMineralboden: Flach- bis tiefgründig. Skelettarm bis skelettfrei (Ausnahme: Standorte auf Nagelfluh-Schutt) . Lehmig, mit hohem bis sehr hohem Tonanteil. Meist schlecht wasserdurchlässig, zeitweilig bis ganzjährig (27) wassergesättigt. Basisch bis leicht sauer, 26c stark sauer.",
         "location": "Basenhaltige Feucht- und Nassstandorte aller Expositionen. Stets in Gewinnlagen; an Bächen, in Mulden, auf Hangterrassen und an Hangfüssen, Wurzelraum oft vernässt. 26c oberflächlich versauert.\\nUntergrund: alluviale Lehme, lehmiger Gehängeschutt oder lehmreiche Schichten diverser Gesteine.",
         "description": "Von Es oder BAh dominierte, sehr wüchsige, meist geschlossene, buchenfreie Laubwälder mit geraden Stämmen. In 26w und 26P oft krummwüchsig. Oft starke, flächige Verjüngung von Es und BAh. \\nSS: Artenreich, jedoch oft nur mässig ausgebildet.\\nKS: Artenreich und üppig, mit Nährstoff-, Feuchte- und Nässezeigern. In 26c spärlich.\\nMS: Oft gut ausgebildet.",
-        "aptitudeMeaning": "In tieferen Lagen meist hervorragende Eignung für die Wertholzproduktion. Vor allem in höheren Lagen zentrale Funktion im Hochwasserschutz, speziell durch 26w. \\nEbenso bedeutsam für Naturschutz, durch wertvolle Nasslebensräume und seltene Einheiten.\\n",
-        "heightDispersion": "submontan, untermontan, \\nobermontan 500-1300m"
+        "aptitudeMeaning": "In tieferen Lagen meist hervorragende Eignung für die Wertholzproduktion. Vor allem in höheren Lagen zentrale Funktion im Hochwasserschutz, speziell durch 26w. Ebenso bedeutsam für Naturschutz, durch wertvolle Nasslebensräume und seltene Einheiten.\\n",
+        "heightDispersion": "submontan, untermontan, obermontan; 500-1300m"
       },
       {
         "de": "Eschenwälder, Grauerlen-Auenwald",
@@ -65930,17 +65930,17 @@
         "location": "28, 29A und 29C: Ehemalige, heute oft nicht mehr überschwemmte, vom Grundwasser beeinflusste Hartholzauen der Flüsse. 29C: oberflächlich trockener, 29A: tonreich, 28: näher am Grundwasser und häufiger überschwemmt. \\n29, 30: Lehmreiche Plateaus, flache Mulden und Terrassen. 29Ls: oberflächlich sauer, 30 dauernd vernässt.\\n32a: Auen der Bergbäche, die periodisch stark überschwemmt werden.\\nUntergrund: Alluvionen oder lehmreiche Schichten diverser Gesteine (29, 30).",
         "description": "Sehr wüchsige bis mittelwüchsige, mehrheitlich geschlossene, geradschaftige Laubmischwälder mit dominanter Es in flachen Lagen. In 29Ls Ta und Fi stets stark vertreten. 32: Dicht aufwachsender, mässig wüchsiger Grauerlenwald.\\nSS: In den Auen ausgesprochen artenreich, mässig bis stark ausgebildet, oft dicht; in 32V: Fi-Aufwuchs. \\nKS: Artenreich und üppig. In 29 weniger ausgeprägt, 29Ls mit Säurezeigern.",
         "aptitudeMeaning": "Auenstandorte mit speziellem Artenreichtum und hoher Produktionskraft. Auf Lehmböden ebenfalls gutwüchsige Edellaubwälder, aber mit erschwerter Holzernte. Häufig mit Fi-Pflanzungen; Laubholzförderung in ehemaligen Auenwäldern prioritär.",
-        "heightDispersion": "submontan, untermontan, 400-900m\\n(obermontan 32V)"
+        "heightDispersion": "submontan, untermontan; 400-900m\\n(32V: obermontan)"
       },
       {
-        "de": "Schwarzerlen-Bruchwald, \\nFöhren-Birken-Bruchwald",
+        "de": "Schwarzerlen-Bruchwald, Föhren-Birken-Bruchwald",
         "la": "Alnetum glutinosae, Pino-Betuletum",
         "code": "44,45",
         "soil": "Ausgeprägte, nährstoffreiche bis nährstoffarme (45) Gleyböden.\\nOberboden und Auflage: Oft sehr mächtiger, schwarz-schmieriger, schwach sauer bis basisch reagierender Anmoor (44) oder sehr mächtiger (über 80 cm), schwarzer, extrem sauer reagierender Torf (45). Nach Abtorfungen Torfschicht zum Teil geringermächtig.\\nMineralboden Skelettfreier, wasserundurchlässiger, dauernd wassergesättigter Ton von blauer Farbe. In 45:  Meist erst ab einer Tiefe von 80 cm erschlossen.",
-        "location": "Ausgeprägte Nassstandorte in flachen Muldenlagen am Rand von Seen (44) oder an Hochmoorstandorten (45). \\nGrundwasser und Untergrund basenreich, schwach sauer bis basisch (44) oder basenarm und extrem sauer (45). \\nOft durch Entwässerungsgräben verändertes Wasserregime. ",
+        "location": "Ausgeprägte Nassstandorte in flachen Muldenlagen am Rand von Seen (44) oder an Hochmoorstandorten (45). Grundwasser und Untergrund basenreich, schwach sauer bis basisch (44) oder basenarm und extrem sauer (45). Oft durch Entwässerungsgräben verändertes Wasserregime. ",
         "description": "Schwach wüchsige, lichte und lückige Schwarzerlen- (44) bzw. Föhren-Birkenbestände. Unterwuchs in 44 grasig, von Seggen und offenen Wasserflächen beherrscht, in 45 mit deckender Zwergstrauch- und Moosschicht. \\nSS: Faulbaum.\\nKS 44: Scharfkantige Segge, Gewöhnlicher Gilbweiderich.\\nKS 45: Rauschbeere, Pfeifengras, Scheidiges Wollgras.\\nMS 44: spärlich.\\nMS 45: üppig, mit Torfmoos, Gemeinem Frauenhaar.",
-        "aptitudeMeaning": "Sehr seltene, oft durch Drainage, Abtorfung und Pflanzung stark veränderte Standorte. \\nFür Naturschutz von höchstem Interesse. Keine wirtschaftliche Bedeutung.",
-        "heightDispersion": "submontan, untermontan, \\n400-900m"
+        "aptitudeMeaning": "Sehr seltene, oft durch Drainage, Abtorfung und Pflanzung stark veränderte Standorte. Für Naturschutz von höchstem Interesse. Keine wirtschaftliche Bedeutung.",
+        "heightDispersion": "submontan, untermontan; 400-900m"
       },
       {
         "de": "Heidelbeer-Tannen-Fichtenwald",
@@ -65950,7 +65950,7 @@
         "location": "Plateaus, Rippen und leicht bis mittel geneigte Hänge aller Expositionen auf stark saurer, nährstoffarmer und teilweise wasserundurchlässiger (46*) Unterlage. \\nUntergrund: Basenarme Molasse, verdichtete Moräne, Flysch.",
         "description": "Mässig bis ziemlich wüchsige Nadelwälder. Meist stufige Plenterstruktur mit starker Verjüngung von Ta und Fi. Laubbäume nur vereinzelt im Nebenbestand. Boden mit ’federndem’ Rohhumus und oft kniehohen Zwergsträuchern.\\nSS: Artenarm, wenig ausgebildet.\\nKS: Säurezeigende Zwergsträucher und Farne. Keine Nährstoffzeiger.\\nMS: Oft deckende Schicht aus Säurezeigern, 46* zusätzlich mit Torfmoosen.",
         "aptitudeMeaning": "Vorkommen zerstreut, im Meggerwald, im Hinterland und im flyschreichen Berggebiet lokal verbreitet. Sehr stabile Standorte mit langsamer, aber qualitativ bedeutender Holzproduktion.",
-        "heightDispersion": "submontan, untermontan, \\nobermontan, hochmontan, 500-1500m"
+        "heightDispersion": "submontan-hochmontan; 500-1500m"
       },
       {
         "de": "Blockschutt-Nadelwälder",
@@ -65960,17 +65960,17 @@
         "location": "Grobe, ruhende Blockschutthalden, welche als lokale Kältespeicher wirken. Standortmosaik aus sauren, rohhumusbedeckten, trockenen Blöcken und feuchten, nährstoff- und feinerdereichen Nischen. \\nUntergrund: Bergsturz oder Hangschutt, meist aus Kalk. Vereinzelt grobblockige Bachschotter oder Karren.",
         "description": "Bergsturzgebiet oder Schutthang mit mässig wüchsigen, stufigen Nadelmischwäldern. Von weitreichenden Wurzeln übersponnene Blöcke.\\nSS: vielfältig und meist stark: Schwarzes Geissblatt, Roter Holunder, Alpen-Geissblatt, Alpen-Hagrose.\\nKS: Auf Blöcken mit Heidelbeere, Tannen-Bärlapp, Eichenfarn, Ruprechtsfarn. In Nischen (48): Rundblättriger Steinbrech, Grauer Alpendost, Wolliger Hahnenfuss.\\nMS: Üppig: Hainmoos, Tamariskenmoos, Wald-Frauenhaar.",
         "aptitudeMeaning": "Seltene Gesellschaften mit wichtiger Naturschutzfunktion.",
-        "heightDispersion": "obermontan, hochmontan, \\n1100-1600"
+        "heightDispersion": "obermontan, hochmontan; 1100-1600m"
       },
       {
         "de": "Tannen-Fichtenwälder",
         "la": "Abieti-Piceetum",
         "code": "49,50",
         "soil": "Braunerden, in 49 Hanggleye.\\nOberboden und Auflage: Saurer Moder bis basischer Mull. In 49: Rohhumus neben Hydromull.\\nMineralboden: Mittel- bis tiefgründig. Skelettarm bis skelettreich. Sandig, schluffig oder lehmig, jedoch stets normal bis leicht gehemmt durchlässig. Ausnahme: 49 = tonig, stark gehemmt durchlässig und dauernd vernässt, basisch bis mässig sauer, teilweise kalkhaltig.",
-        "location": "Mittlere bis steile Hanglagen aller Expositionen mit mittleren bis sauren Standortbedingungen, 49 oft in flachen, stets wasserzügigen Hangfusslagen mit Quellaufstössen.\\nTendenz zu Kleinstandorten mit versauerten Kuppen und nährstoffreichen Senken. \\nIn 49 markantes Standortmosaik nass/ sauer-trocken. Untergrund: Verschieden, teils kalkhaltig, in 49 wasserundurchlässig.",
+        "location": "Mittlere bis steile Hanglagen aller Expositionen mit mittleren bis sauren Standortbedingungen, 49 oft in flachen, stets wasserzügigen Hangfusslagen mit Quellaufstössen. Tendenz zu Kleinstandorten mit versauerten Kuppen und nährstoffreichen Senken. In 49 markantes Standortmosaik nass/ sauer-trocken. \\nUntergrund: Verschieden, teils kalkhaltig, in 49 wasserundurchlässig.",
         "description": "Wüchsige bis mässig wüchsige, leicht gestufte bis lückige (49) Tannen-Fichtenwälder mit Ansätzen zur Rottenstruktur.\\nSS: Geringe Artenvielfalt, meist schwach ausgebildet.\\nKS und MS: Artenarm bis vielfältig, meist inhomogen. Säurezeiger auf leichten Erhöhungen. Nährstoffzeiger und Hochstauden in leichten Mulden; in 49 zusätzlich Nässezeiger.",
         "aptitudeMeaning": "Im hohen Lagen weit verbreitet. In guten Lagen für Holzproduktion geeignet. Für Schutzfunktion hat Stabilität der Bestände erste Priorität. Diese ist gegenwärtig durch das weitgehende Fehlen der Ta stark reduziert.",
-        "heightDispersion": "hochmontan, \\n1200-1600m"
+        "heightDispersion": "hochmontan; 1200-1600m"
       },
       {
         "de": "Fichtenwälder",
@@ -65980,7 +65980,7 @@
         "location": "Mehr oder weniger steile, nährstoffarme Hanglagen aller Expositionen. 53 wechseltrocken mit anstehendem Kalkfels. 56 am Moorrand. 60: Luftfreuchte Lagen mit langer Schneebedeckung. 60*: Steilhänge.\\nUntergrund: In 53 Kalkfels, sonst variabel, oft kalkarm. In 60 tonreich. In 60* felsig bis mergelig.",
         "description": "Mässig bis schwach wüchsige Fichtenwälder mit deutlicher Rottenstruktur. 53 stark lückig, 60 teils aufgelöst.\\nSS: Meist spärlich; 53 oft vielfältig ausgebildet. In 60 AE, VBe. In 60* Alpenhagrose.\\nKS: Heidelbeere oft stark deckend. Mit weiteren Säurezeigern. In 53 zusätzlich Wechseltrocken- und Trockenzeiger. In 60 Nässezeiger. In 60* grasig.\\nMS: Artenreich und oft deckend, in 53 lückig.",
         "aptitudeMeaning": "Vorwiegend seltene Gesellschaften, bei denen der Schutz vor Naturgefahren und die Naturvielfalt im Vordergrund stehen. 57V bedingt wirtschaftlich nutzbar.",
-        "heightDispersion": "hochmontan, subalpin, 1300-1800"
+        "heightDispersion": "hochmontan, subalpin; 1300-1800m"
       },
       {
         "de": "Waldföhrenwälder",
@@ -65989,8 +65989,8 @@
         "soil": "Wenig entwickelte Rendzinen.\\nOberboden und Auflage: Stark austrocknend, jedoch rascher Abbau. Basischer Mull. \\nMineralboden: An Felsstandorten sehr geringmächtig. Flachgründig und skelettreich, sandig bis tonig, jedoch meist gut durchlässig, im Sommer stark austrocknend. Basisch und kalkhaltig.",
         "location": "62: Mehr oder weniger stabile, wechseltrockene, sonnige und warme Mergelhänge (kleinflächig auch instabil).\\n65: Steile, sehr trockene bis wechseltrockene, sonnige Felsstandorte. Lokal auch mergelig.",
         "description": "Lichte, meist lückige, schwachwüchsige  Waldföhrenwälder, die von MBe, VBe und Fi begleitet  werden. Artenreiche Strauch- und Krauschicht, die von Gräsern dominiert wird.\\nSS: Kalksträucher, Strauch-Kronwicke, Felsenmispel\\nKS: Pfeifengras, Buntes Reitgras, Blaugras; Schlaffe, Weisse und Niedrige Segge;  Erika, Buchsblättrige Kreuzblume, Berg-Distel, Hornklee.",
-        "aptitudeMeaning": "Sehr seltene bis extrem seltene Gesellschaften. \\nFür den Naturschutz sehr bedeutend.",
-        "heightDispersion": "submontan, untermontan, obermontan, \\n600-1300m"
+        "aptitudeMeaning": "Sehr seltene bis extrem seltene Gesellschaften. Für den Naturschutz sehr bedeutend.",
+        "heightDispersion": "submontan, untermontan, obermontan; 600-1300m"
       },
       {
         "de": "Bergföhrenwälder",
@@ -65999,8 +65999,8 @@
         "soil": "67: Flachgründige, kalkreiche Rendzinen mit  raschem Abbau (Kalkmull).\\n69: Flachgründige kalkreiche Rendzinen, jedoch mit gehemmtem Abbau, saure Rohhumusauflage.\\n70: Flach- bis mittelgründige, nährstoffarme Podsole mit stark gehemmtem Abbau (Rohhumus).\\n71: Moorboden mit extrem saurem und nährstoffarmem Hochmoortorf.\\n71*: Gleyboden mit mächtiger, extrem saurer und nährstoffarmer Torfschicht.",
         "location": "67: Sehr steile, trockene Kalkfels-Standorte aller Expositionen.\\n69: Mässig steile, trockene Kalk-Felsstandorte mit Rohhumusauflage.\\n70: Flache bis steile, extrem versauerte, trockene Sandstein-Felsrippen.\\n71: Flache und wenig geneigte, typische Hochmoorstandorte.\\n71*: Wenig geneigte, extrem saure Flächen am Rand von Hochmooren.",
         "description": "Lückige, schwachwüchsige Bergföhrenwälder; Unterwuchs von Zwergsträuchern oder von Gräsern (67) dominiert.\\nSS: Sehr spärlich. In 69 Zwerg-Eberesche, in 71* Wacholder.\\nKS: 69, 70, 71: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose, in 71a zusätzlich Hochmoorarten.\\n67 und 69: Behaarte Alpenrose, Blaugras, Erika, Berg-Distel, Kugelblume.\\n67: Buntes Reitgras, Blaugras.\\nMS: In 70 und 71 Torfmoose oft deckend, daneben Rotstengelmoos.",
-        "aptitudeMeaning": "Ausserordentliche Bedeutung für den Naturschutz. \\nKein Nutzholz.",
-        "heightDispersion": "obermontan, hochmontan, \\nsubalpin, 1200-1800m"
+        "aptitudeMeaning": "Ausserordentliche Bedeutung für den Naturschutz. Kein Nutzholz.",
+        "heightDispersion": "obermontan, hochmontan, subalpin; 1200-1800m"
       },
       {
         "de": "Grünerlen-Gebüsch",
@@ -66010,7 +66010,7 @@
         "location": "Steile, schattige Runsen und Lawinenhänge sowie Pionierflächen auf alten Murgängen und Schlipfen. Vorwiegend kühle und luftfeuchte Lagen der Gebirgsstufe.",
         "description": "Dichte bis aufgelöste, durch Schneedruck hangabwärts 'liegende' Bestände. Im Unterwuchs und in den Lücken üppige Hochstaudenflur.",
         "aptitudeMeaning": "Der Schutz vor Naturgefahren steht im Vordergrund: Stabilisierung der Hänge, Förderung von Mischbaumarten.",
-        "heightDispersion": "hochmontan, subalpin, 1300-1800m"
+        "heightDispersion": "hochmontan, subalpin; 1300-1800m"
       }
     ]
   }
