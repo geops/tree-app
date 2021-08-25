@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '../../Button';
 import tillingStyles from './Tillering.module.css';
 import styles from '../Diagram.module.css';
+import Legend from '../Legend';
 
 // const testTillingData = {
 //   NW: {
@@ -199,6 +200,9 @@ function Tillering({ data = testTillingData }) {
           />
         </Button.Group>
       )}
+      <div className={tillingStyles.legend}>
+        <Legend rare={false} title={false} />
+      </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height={barItems.length * 35}

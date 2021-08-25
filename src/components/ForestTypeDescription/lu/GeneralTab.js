@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import { Table } from 'semantic-ui-react';
 import Tillering from './Tillering';
-import Legend from '../Legend';
 
 const parseHtml = (string) => parse(string.slice().replace(/\\n/g, '<br>'));
 
@@ -60,7 +59,6 @@ function GeneralTab({ data }) {
             {t('forestTypeDiagram.tillering')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <Legend rare={false} title={false} />
             <Tillering />
           </Table.Cell>
         </Table.Row>

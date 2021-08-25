@@ -22,3 +22,8 @@ CREATE TABLE lu_expo_hanglage (STO_Nr TEXT, NNO_12 INT, NNO_25 INT, NNO_37 INT, 
 COPY lu_expo_hanglage
 FROM '/data/profiles/lu/exposition_hanglage.csv'
 DELIMITER ';' CSV HEADER;
+
+CREATE TABLE lu_bestockung (STO_Nr TEXT, Kategorie TEXT, Fi TEXT, Ta TEXT, WFö TEXT, BFö TEXT, Ei TEXT, Lä TEXT, Dg TEXT, Bu TEXT, Es TEXT, BAh TEXT, SAh TEXT, SEi TEXT, TEi TEXT, WLi TEXT, SLi TEXT, Ki TEXT, BUl TEXT, FUl TEXT, SEr TEXT, GEr TEXT, AEr TEXT, HBi TEXT, TKi TEXT, VBe TEXT, MBe TEXT, Wei TEXT);
+COPY lu_bestockung
+FROM '/data/profiles/lu/bestockung.csv'
+DELIMITER ';' CSV HEADER;

@@ -4,6 +4,7 @@
   padding: 20px 0;
 }
 
+.barchart .legend,
 .barchart .modeswitcher {
   padding-left: 38px;
 }
