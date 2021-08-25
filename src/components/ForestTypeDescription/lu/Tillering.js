@@ -5,28 +5,121 @@ import { useTranslation } from 'react-i18next';
 import tillingStyles from './Tillering.module.css';
 import styles from '../Diagram.module.css';
 
-const testTillingData = {
-  NW: {
-    Bu: [40, 80],
-    Ta: [0, 10],
-    Fi: [0, 10],
-    VBe: [0, 5],
-    WFö: [10, 20],
-    WLi: [0, 5],
-    TEi: [0, 10],
-    WAN: [90, 100],
-  },
-  WW: {
-    Bu: [0, 80],
-    Ta: [0, 10],
-    Fi: [0, 10],
-    VBe: null,
-    WFö: [0, 10],
-    WLi: [0, 5],
-    TEi: [0, 5],
-    WAN: [0, 5],
-  },
-};
+// const testTillingData = {
+//   NW: {
+//     Bu: [40, 80],
+//     Ta: [0, 10],
+//     Fi: [0, 10],
+//     VBe: [0, 5],
+//     WFö: [10, 20],
+//     WLi: [0, 5],
+//     TEi: [0, 10],
+//     WAN: [90, 100],
+//   },
+//   WW: {
+//     Bu: [0, 80],
+//     Ta: [0, 10],
+//     Fi: [0, 10],
+//     VBe: null,
+//     WFö: [0, 10],
+//     WLi: [0, 5],
+//     TEi: [0, 5],
+//     WAN: [0, 5],
+//   },
+// };
+
+const isArrayPlottable = (array) =>
+  array?.length && !array.every((val) => val === null);
+
+const treeMapping = [
+  'Fi',
+  'Ta',
+  'WFö',
+  'BFö',
+  'Ei',
+  'Lä',
+  'Dg',
+  'Bu',
+  'Es',
+  'BAh',
+  'SAh',
+  'SEi',
+  'TEi',
+  'WLi',
+  'SLi',
+  'Ki',
+  'BUl',
+  'FUl',
+  'SEr',
+  'GEr',
+  'AEr',
+  'HBi',
+  'TKi',
+  'VBe',
+  'MBe',
+  'Wei',
+];
+
+const testTillingData = [
+  [
+    [0, 20],
+    [0, 10],
+    [0, 10],
+    null,
+    null,
+    null,
+    null,
+    [80, 100],
+    null,
+    null,
+    null,
+    null,
+    [0, 5],
+    [0, 5],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  // [null, null, null, null, null, null, null, null,null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+  [
+    [0, 20],
+    [0, 10],
+    [0, 10],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    [50, 70],
+    [0, 5],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  // null,
+];
 
 const getBarWidth = (value) => value * 2.5;
 
@@ -65,31 +158,44 @@ const BAR_WIDTH_100 = getBarWidth(100);
 
 function Tillering({ data = testTillingData }) {
   const { t } = useTranslation();
-  const [chartMode, setChartMode] = useState('NW');
-  const keys = useMemo(
-    () => (data[chartMode] ? Object.keys(data[chartMode]) : []),
+  const [chartMode, setChartMode] = useState(0);
+  const barItems = useMemo(
+    () =>
+      data[chartMode].reduce(
+        (accumulated = [], currentValue, index) =>
+          currentValue?.length !== 2
+            ? accumulated
+            : [
+                ...accumulated,
+                {
+                  treeType: treeMapping[index],
+                  value: currentValue,
+                },
+              ],
+        [],
+      ),
     [data, chartMode],
   );
 
-  if (!keys.length) {
+  if (!data.length && !data.every((arr) => isArrayPlottable(arr))) {
     return null;
   }
 
   return (
     <div className={tillingStyles.barchart}>
       <h2>{`${t('forestTypeDiagram.tillering')} (${
-        chartMode === 'NW'
+        chartMode === 0
           ? `${t('forestType.naturalForest')}`
           : `${t('forestType.commercialForest')}`
       })`}</h2>
-      {Object.keys(data).length === 2 && (
+      {data.length === 2 && (
         <Form className={tillingStyles.radioButtons}>
           <Form.Field>
             <Checkbox
               radio
               label={`${t('forestType.naturalForest')}`}
-              checked={chartMode === 'NW'}
-              onChange={() => setChartMode('NW')}
+              checked={chartMode === 0}
+              onChange={() => setChartMode(0)}
               className={tillingStyles.checkbox}
             />
           </Form.Field>
@@ -97,8 +203,8 @@ function Tillering({ data = testTillingData }) {
             <Checkbox
               radio
               label={`${t('forestType.commercialForest')}`}
-              checked={chartMode === 'WW'}
-              onChange={() => setChartMode('WW')}
+              checked={chartMode === 1}
+              onChange={() => setChartMode(1)}
               className={tillingStyles.checkbox}
             />
           </Form.Field>
@@ -107,18 +213,16 @@ function Tillering({ data = testTillingData }) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="420"
-        height={keys.length * 40}
+        height={barItems.length * 40}
         ariaLabelledby="title"
         alignmentBaseline="middle"
       >
-        {keys.map((treeType, idx) =>
-          renderBar(treeType, idx, data[chartMode][treeType]),
-        )}
+        {barItems.map((item, idx) => renderBar(item.treeType, idx, item.value))}
         <line
           x1="40"
-          y1={keys.length * 28}
+          y1={barItems.length * 28}
           x2={BAR_WIDTH_100 + 40}
-          y2={keys.length * 28}
+          y2={barItems.length * 28}
           stroke="black"
         />
         {[...Array(11).keys()].map((i) => {
@@ -130,14 +234,14 @@ function Tillering({ data = testTillingData }) {
                 x1={BAR_WIDTH_100 * factor + 40}
                 y1="0"
                 x2={BAR_WIDTH_100 * factor + 40}
-                y2={keys.length * 28 + 5}
+                y2={barItems.length * 28 + 5}
                 stroke="black"
                 opacity={i > 0 ? 0.5 : 1}
                 strokeDasharray={i > 0 && 4}
               />
               <text
                 x={BAR_WIDTH_100 * factor + 32}
-                y={keys.length * 28 + 12}
+                y={barItems.length * 28 + 12}
                 alignmentBaseline="middle"
                 fontSize="10"
               >
