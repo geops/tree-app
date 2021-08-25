@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Form, Checkbox } from 'semantic-ui-react';
 import tillingStyles from './Tilling.module.css';
 import styles from '../Diagram.module.css';
@@ -58,8 +58,11 @@ const BAR_WIDTH_100 = getBarWidth(100);
 
 function Tilling({ data = testTillingData }) {
   const [chartMode, setChartMode] = useState('NW');
+  const keys = useMemo(() => Object.keys(data), [data]);
 
-  if (!Object.keys(data).length) {
+  console.log(keys);
+
+  if (!keys.length) {
     return null;
   }
 
@@ -89,18 +92,18 @@ function Tilling({ data = testTillingData }) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="420"
-        height={Object.keys(data).length * 40}
+        height={keys.length * 40}
         ariaLabelledby="title"
         alignmentBaseline="middle"
       >
-        {Object.keys(data).map((treeType, idx) =>
+        {keys.map((treeType, idx) =>
           renderBar(treeType, idx, data[treeType], chartMode),
         )}
         <line
           x1="40"
-          y1={Object.keys(data).length * 28}
+          y1={keys.length * 28}
           x2={BAR_WIDTH_100 + 40}
-          y2={Object.keys(data).length * 28}
+          y2={keys.length * 28}
           stroke="black"
         />
         {[...Array(11).keys()].map((i) => {
@@ -112,14 +115,14 @@ function Tilling({ data = testTillingData }) {
                 x1={BAR_WIDTH_100 * factor + 40}
                 y1="0"
                 x2={BAR_WIDTH_100 * factor + 40}
-                y2={Object.keys(data).length * 28 + 5}
+                y2={keys.length * 28 + 5}
                 stroke="black"
                 opacity={i > 0 ? 0.5 : 1}
                 strokeDasharray={i > 0 && 4}
               />
               <text
                 x={BAR_WIDTH_100 * factor + 32}
-                y={Object.keys(data).length * 28 + 12}
+                y={keys.length * 28 + 12}
                 alignmentBaseline="middle"
                 fontSize="10"
               >
