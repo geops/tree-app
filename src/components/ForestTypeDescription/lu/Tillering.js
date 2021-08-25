@@ -6,19 +6,31 @@ import tillingStyles from './Tillering.module.css';
 import styles from '../Diagram.module.css';
 
 const testTillingData = {
-  Bu: { WW: [0, 80], NW: [40, 80] },
-  Ta: { WW: [0, 10], NW: [0, 10] },
-  Fi: { WW: [0, 10], NW: [0, 10] },
-  VBe: { WW: null, NW: [0, 5] },
-  WFö: { WW: [0, 10], NW: [10, 20] },
-  WLi: { WW: [0, 5], NW: [0, 5] },
-  TEi: { WW: [0, 5], NW: [0, 10] },
-  WAN: { WW: [0, 5], NW: [90, 100] },
+  NW: {
+    Bu: [40, 80],
+    Ta: [0, 10],
+    Fi: [0, 10],
+    VBe: [0, 5],
+    WFö: [10, 20],
+    WLi: [0, 5],
+    TEi: [0, 10],
+    WAN: [90, 100],
+  },
+  WW: {
+    Bu: [0, 80],
+    Ta: [0, 10],
+    Fi: [0, 10],
+    VBe: null,
+    WFö: [0, 10],
+    WLi: [0, 5],
+    TEi: [0, 5],
+    WAN: [0, 5],
+  },
 };
 
 const getBarWidth = (value) => value * 2.5;
 
-const renderBar = (name, index, incidencesObj, chartMode) => {
+const renderBar = (name, index, incidence, chartMode) => {
   const barPadding = 1.6;
   const barHeight = 20 + barPadding;
   const barY = barPadding * 0.5 * index * 35;
@@ -28,19 +40,15 @@ const renderBar = (name, index, incidencesObj, chartMode) => {
       <rect
         y={barY}
         x="40"
-        width={
-          incidencesObj[chartMode]
-            ? getBarWidth(incidencesObj[chartMode][1])
-            : 0
-        }
+        width={incidence ? getBarWidth(incidence[1]) : 0}
         height={barHeight - barPadding}
         className={styles.medium}
       />
-      {incidencesObj[chartMode] && incidencesObj[chartMode][0] !== 0 && (
+      {incidence && incidence[0] !== 0 && (
         <rect
           y={barY}
           x="40"
-          width={getBarWidth(incidencesObj[chartMode][0])}
+          width={getBarWidth(incidence[0])}
           height={barHeight - barPadding}
           className={styles.often}
         />
@@ -58,7 +66,10 @@ const BAR_WIDTH_100 = getBarWidth(100);
 function Tillering({ data = testTillingData }) {
   const { t } = useTranslation();
   const [chartMode, setChartMode] = useState('NW');
-  const keys = useMemo(() => Object.keys(data), [data]);
+  const keys = useMemo(
+    () => (data[chartMode] ? Object.keys(data[chartMode]) : []),
+    [data, chartMode],
+  );
 
   if (!keys.length) {
     return null;
@@ -66,27 +77,33 @@ function Tillering({ data = testTillingData }) {
 
   return (
     <div className={tillingStyles.barchart}>
-      <h2>{t('forestTypeDiagram.tillering')}</h2>
-      <Form className={tillingStyles.radioButtons}>
-        <Form.Field>
-          <Checkbox
-            radio
-            label={`${t('forestType.naturalForest')}`}
-            checked={chartMode === 'NW'}
-            onChange={() => setChartMode('NW')}
-            className={tillingStyles.checkbox}
-          />
-        </Form.Field>
-        <Form.Field>
-          <Checkbox
-            radio
-            label={`${t('forestType.commercialForest')}`}
-            checked={chartMode === 'WW'}
-            onChange={() => setChartMode('WW')}
-            className={tillingStyles.checkbox}
-          />
-        </Form.Field>
-      </Form>
+      <h2>{`${t('forestTypeDiagram.tillering')} (${
+        chartMode === 'NW'
+          ? `${t('forestType.naturalForest')}`
+          : `${t('forestType.commercialForest')}`
+      })`}</h2>
+      {Object.keys(data).length === 2 && (
+        <Form className={tillingStyles.radioButtons}>
+          <Form.Field>
+            <Checkbox
+              radio
+              label={`${t('forestType.naturalForest')}`}
+              checked={chartMode === 'NW'}
+              onChange={() => setChartMode('NW')}
+              className={tillingStyles.checkbox}
+            />
+          </Form.Field>
+          <Form.Field>
+            <Checkbox
+              radio
+              label={`${t('forestType.commercialForest')}`}
+              checked={chartMode === 'WW'}
+              onChange={() => setChartMode('WW')}
+              className={tillingStyles.checkbox}
+            />
+          </Form.Field>
+        </Form>
+      )}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="420"
@@ -95,7 +112,7 @@ function Tillering({ data = testTillingData }) {
         alignmentBaseline="middle"
       >
         {keys.map((treeType, idx) =>
-          renderBar(treeType, idx, data[treeType], chartMode),
+          renderBar(treeType, idx, data[chartMode][treeType]),
         )}
         <line
           x1="40"
