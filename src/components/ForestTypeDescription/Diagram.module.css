@@ -82,3 +82,13 @@
   column-count: 2;
   column-gap: 20px;
 }
+
+.legend {
+  padding: 10px 0;
+}
+
+.legenditems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
