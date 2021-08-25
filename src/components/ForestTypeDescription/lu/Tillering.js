@@ -2,7 +2,7 @@
 import React, { useState, useMemo } from 'react';
 import { Form, Checkbox } from 'semantic-ui-react';
 import { useTranslation } from 'react-i18next';
-import tillingStyles from './Tilling.module.css';
+import tillingStyles from './Tillering.module.css';
 import styles from '../Diagram.module.css';
 
 const testTillingData = {
@@ -24,40 +24,38 @@ const renderBar = (name, index, incidencesObj, chartMode) => {
   const barY = barPadding * 0.5 * index * 35;
 
   return (
-    <g className="bar-group">
-      <>
+    <g>
+      <rect
+        y={barY}
+        x="40"
+        width={
+          incidencesObj[chartMode]
+            ? getBarWidth(incidencesObj[chartMode][1])
+            : 0
+        }
+        height={barHeight - barPadding}
+        className={styles.medium}
+      />
+      {incidencesObj[chartMode] && incidencesObj[chartMode][0] !== 0 && (
         <rect
           y={barY}
           x="40"
-          width={
-            incidencesObj[chartMode]
-              ? getBarWidth(incidencesObj[chartMode][1])
-              : 0
-          }
+          width={getBarWidth(incidencesObj[chartMode][0])}
           height={barHeight - barPadding}
-          className={styles.medium}
+          className={styles.often}
         />
-        {incidencesObj[chartMode] && incidencesObj[chartMode][0] !== 0 && (
-          <rect
-            y={barY}
-            x="40"
-            width={getBarWidth(incidencesObj[chartMode][0])}
-            height={barHeight - barPadding}
-            className={styles.often}
-          />
-        )}
+      )}
 
-        <text y={barY + 12} alignmentBaseline="middle">
-          {name}
-        </text>
-      </>
+      <text y={barY + 12} alignmentBaseline="middle">
+        {name}
+      </text>
     </g>
   );
 };
 
 const BAR_WIDTH_100 = getBarWidth(100);
 
-function Tilling({ data = testTillingData }) {
+function Tillering({ data = testTillingData }) {
   const { t } = useTranslation();
   const [chartMode, setChartMode] = useState('NW');
   const keys = useMemo(() => Object.keys(data), [data]);
@@ -136,4 +134,4 @@ function Tilling({ data = testTillingData }) {
   );
 }
 
-export default Tilling;
+export default Tillering;

@@ -3,7 +3,7 @@ import React from 'react';
 
 import Legend from '../Legend';
 import Site from './Site';
-import Tilling from './Tilling';
+import Tillering from './Tillering';
 
 import styles from './TerrainTab.module.css';
 
@@ -13,7 +13,7 @@ function TerrainTab({ data }) {
       <Legend />
       <div className={styles.diagrams}>
         <Site data={data.expoAndAspect} />
-        <Tilling />
+        <Tillering />
       </div>
     </>
   );
