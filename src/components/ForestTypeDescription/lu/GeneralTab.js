@@ -3,6 +3,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import { Table } from 'semantic-ui-react';
+import Tillering from './Tillering';
 
 const parseHtml = (string) => parse(string.slice().replace(/\\n/g, '<br>'));
 
@@ -51,6 +52,14 @@ function GeneralTab({ data }) {
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseHtml(data.heightDispersion)}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>
+            {t('forestTypeDiagram.tillering')}
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <Tillering />
           </Table.Cell>
         </Table.Row>
       </Table.Body>

@@ -4,15 +4,11 @@
   padding: 20px 0;
 }
 
-.barchart svg {
-  width: 100%;
+.barchart .modeswitcher {
+  padding-left: 38px;
 }
 
-.radioButtons {
+.modeswitcher {
   display: flex;
   padding-bottom: 20px;
-}
-
-.barchart .checkbox {
-  margin-right: 30px;
 }

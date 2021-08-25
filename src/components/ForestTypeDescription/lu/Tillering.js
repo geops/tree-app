@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useMemo } from 'react';
-import { Form, Checkbox } from 'semantic-ui-react';
 import { useTranslation } from 'react-i18next';
+import Button from '../../Button';
 import tillingStyles from './Tillering.module.css';
 import styles from '../Diagram.module.css';
 
@@ -146,10 +146,11 @@ const renderBar = (name, index, incidence, chartMode) => {
           className={styles.often}
         />
       )}
-
-      <text y={barY + 12} alignmentBaseline="middle">
-        {name}
-      </text>
+      <svg y={barY + 12} x="35" style={{ overflow: 'visible' }}>
+        <text alignmentBaseline="middle" textAnchor="end">
+          {name}
+        </text>
+      </svg>
     </g>
   );
 };
@@ -158,11 +159,11 @@ const BAR_WIDTH_100 = getBarWidth(100);
 
 function Tillering({ data = testTillingData }) {
   const { t } = useTranslation();
-  const [chartMode, setChartMode] = useState(0);
+  const [chartMode, setChartMode] = useState(isArrayPlottable(data[0]) ? 0 : 1);
   const barItems = useMemo(
     () =>
-      data[chartMode].reduce(
-        (accumulated = [], currentValue, index) =>
+      data[chartMode]?.reduce(
+        (accumulated, currentValue, index) =>
           currentValue?.length !== 2
             ? accumulated
             : [
@@ -177,45 +178,32 @@ function Tillering({ data = testTillingData }) {
     [data, chartMode],
   );
 
-  if (!data.length && !data.every((arr) => isArrayPlottable(arr))) {
+  if (!data.length && data.every((arr) => !isArrayPlottable(arr))) {
     return null;
   }
 
   return (
     <div className={tillingStyles.barchart}>
-      <h2>{`${t('forestTypeDiagram.tillering')} (${
-        chartMode === 0
-          ? `${t('forestType.naturalForest')}`
-          : `${t('forestType.commercialForest')}`
-      })`}</h2>
-      {data.length === 2 && (
-        <Form className={tillingStyles.radioButtons}>
-          <Form.Field>
-            <Checkbox
-              radio
-              label={`${t('forestType.naturalForest')}`}
-              checked={chartMode === 0}
-              onChange={() => setChartMode(0)}
-              className={tillingStyles.checkbox}
-            />
-          </Form.Field>
-          <Form.Field>
-            <Checkbox
-              radio
-              label={`${t('forestType.commercialForest')}`}
-              checked={chartMode === 1}
-              onChange={() => setChartMode(1)}
-              className={tillingStyles.checkbox}
-            />
-          </Form.Field>
-        </Form>
+      {data.length === 2 && data.every((arr) => isArrayPlottable(arr)) && (
+        <Button.Group className={tillingStyles.modeswitcher}>
+          <Button
+            active={chartMode !== 1}
+            content={t('forestType.naturalForest')}
+            onClick={() => setChartMode(0)}
+            className={tillingStyles.modebutton}
+          />
+          <Button
+            active={chartMode !== 0}
+            content={t('forestType.commercialForest')}
+            onClick={() => setChartMode(1)}
+          />
+        </Button.Group>
       )}
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="420"
-        height={barItems.length * 40}
-        ariaLabelledby="title"
-        alignmentBaseline="middle"
+        height={barItems.length * 35}
+        viewBox={`0 0 310 ${barItems.length * 35}`}
+        x="0"
       >
         {barItems.map((item, idx) => renderBar(item.treeType, idx, item.value))}
         <line
@@ -236,7 +224,7 @@ function Tillering({ data = testTillingData }) {
                 x2={BAR_WIDTH_100 * factor + 40}
                 y2={barItems.length * 28 + 5}
                 stroke="black"
-                opacity={i > 0 ? 0.5 : 1}
+                opacity={i > 0 ? 0.3 : 1}
                 strokeDasharray={i > 0 && 4}
               />
               <text
