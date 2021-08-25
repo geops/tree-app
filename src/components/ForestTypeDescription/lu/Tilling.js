@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useMemo } from 'react';
 import { Form, Checkbox } from 'semantic-ui-react';
+import { useTranslation } from 'react-i18next';
 import tillingStyles from './Tilling.module.css';
 import styles from '../Diagram.module.css';
 
@@ -57,10 +58,9 @@ const renderBar = (name, index, incidencesObj, chartMode) => {
 const BAR_WIDTH_100 = getBarWidth(100);
 
 function Tilling({ data = testTillingData }) {
+  const { t } = useTranslation();
   const [chartMode, setChartMode] = useState('NW');
   const keys = useMemo(() => Object.keys(data), [data]);
-
-  console.log(keys);
 
   if (!keys.length) {
     return null;
@@ -68,12 +68,12 @@ function Tilling({ data = testTillingData }) {
 
   return (
     <div className={tillingStyles.barchart}>
-      <h2>{`Bestockungsziel (${chartMode})`}</h2>
+      <h2>{t('forestTypeDiagram.tillering')}</h2>
       <Form className={tillingStyles.radioButtons}>
         <Form.Field>
           <Checkbox
             radio
-            label="Naturwald"
+            label={`${t('forestType.naturalForest')}`}
             checked={chartMode === 'NW'}
             onChange={() => setChartMode('NW')}
             className={tillingStyles.checkbox}
@@ -82,7 +82,7 @@ function Tilling({ data = testTillingData }) {
         <Form.Field>
           <Checkbox
             radio
-            label="Wirschaftswald"
+            label={`${t('forestType.commercialForest')}`}
             checked={chartMode === 'WW'}
             onChange={() => setChartMode('WW')}
             className={tillingStyles.checkbox}

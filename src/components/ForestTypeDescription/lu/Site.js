@@ -9,7 +9,7 @@ import styles from '../Diagram.module.css';
 function Site({ data }) {
   const { t } = useTranslation();
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: 'relative', padding: '20px 0' }}>
       <h2>{`${t('forestTypeDiagram.slope')} & ${t(
         'forestTypeDiagram.aspect.label',
       )}`}</h2>

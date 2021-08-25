@@ -5,18 +5,22 @@ import Legend from '../Legend';
 import Site from './Site';
 import Tilling from './Tilling';
 
+import styles from './TerrainTab.module.css';
+
 function TerrainTab({ data }) {
   return (
     <>
       <Legend />
-      <Site data={data.expoAndAspect} />
-      <Tilling />
+      <div className={styles.diagrams}>
+        <Site data={data.expoAndAspect} />
+        <Tilling />
+      </div>
     </>
   );
 }
 
 TerrainTab.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.objectOf().isRequired,
 };
 
 export default TerrainTab;

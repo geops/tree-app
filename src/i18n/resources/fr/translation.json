@@ -99,6 +99,7 @@
       "unkown": "indeterminé"
     },
     "slope": "Pente",
+    "tillering": "Tallage",
     "skeletalFraction": "Pierrosité",
     "soil": {
       "header": "Sol",
@@ -241,6 +242,7 @@
     "location": "Station générale",
     "moss": "Mousses",
     "naturalForest": "Forêt naturelle",
+    "commercialForest": "Forêt commerciale",
     "often": "souvent",
     "process": {
       "avalanche": "Avalanches",

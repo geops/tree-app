@@ -98,6 +98,7 @@
       "alkaline": "basisch",
       "unkown": "nicht bestimmt"
     },
+    "tillering": "Bestockung",
     "slope": "Hangneigung",
     "skeletalFraction": "Skelettgehalt",
     "soil": {
@@ -241,6 +242,7 @@
     "location": "Standort allgemein",
     "moss": "Moos",
     "naturalForest": "Naturwald",
+    "commercialForest": "Wirtschaftswald",
     "often": "oft",
     "process": {
       "avalanche": "Lawinen",
