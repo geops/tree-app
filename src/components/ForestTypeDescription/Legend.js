@@ -20,7 +20,7 @@ function Legend({ title, rare, medium, often }) {
         }}
       >
         {often && (
-          <svg height="30" viewBox="0 0 150 50">
+          <svg height="30" viewBox="0 0 160 50">
             <text className={styles.label} x="40" y="18">
               {t('forestTypeDiagram.legend.often')}
             </text>
@@ -32,7 +32,7 @@ function Legend({ title, rare, medium, often }) {
           </svg>
         )}
         {medium && (
-          <svg height="30" viewBox="0 0 150 50">
+          <svg height="30" viewBox="0 0 160 50">
             <text className={styles.label} x="40" y="18">
               {t('forestTypeDiagram.legend.medium')}
             </text>
@@ -44,7 +44,7 @@ function Legend({ title, rare, medium, often }) {
           </svg>
         )}
         {rare && (
-          <svg height="30" viewBox="0 0 150 50">
+          <svg height="30" viewBox="0 0 160 50">
             <text className={styles.label} x="40" y="18">
               {t('forestTypeDiagram.legend.rare')}
             </text>
