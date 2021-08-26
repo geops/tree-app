@@ -31,27 +31,26 @@ SET
 CREATE TABLE tillering_export (STO_NR TEXT, NW VARCHAR, WW VARCHAR);
 INSERT INTO tillering_export (STO_NR) SELECT DISTINCT STO_NR FROM lu_bestockung;
 
-with nw as (select * from tillering_export
-	inner join 
+with naturwald as (select STO_NR as nr, fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei from tillering_export
+	join 
 		(SELECT * FROM tillering_meta WHERE tillering_meta.Kategorie = 'NW') b
 	using(STO_NR)
 )
 
-update tillering_export
-set NW = ARRAY(
-	select (Fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei ) from nw WHERE tillering_export.STO_NR = nw.STO_NR
-);
+update tillering_export 
+  set NW = ARRAY [fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]
+  from tillering_export as te left join naturwald as natwal on te.STO_NR = natwal.nr;
 
-with ww as (select * from tillering_export
-	inner join 
+
+with wirtschaftswald as (select STO_NR as nr, fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei from tillering_export
+	join 
 		(SELECT * FROM tillering_meta WHERE tillering_meta.Kategorie = 'WW') b
 	using(STO_NR)
 )
 
-update tillering_export
-set WW = ARRAY(
-	select (Fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei ) from ww WHERE tillering_export.STO_NR = ww.STO_NR
-);
+update tillering_export 
+  set WW = ARRAY [fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]
+  from tillering_export as te left join wirtschaftswald as wirwal on te.STO_NR = wirwal.nr;
 
 
 COPY
