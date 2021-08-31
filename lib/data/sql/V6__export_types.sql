@@ -1,56 +1,64 @@
-CREATE TABLE tillering_meta as (select * from lu_bestockung);
-UPDATE tillering_meta
-SET
-    Fi = string_to_array(replace(Fi, '*', ''), '-'),
-	Ta = string_to_array(replace(Ta, '*', ''), '-'),
-	WFö = string_to_array(replace(WFö, '*', ''), '-'),
-	BFö = string_to_array(replace(BFö, '*', ''), '-'),
-	Ei = string_to_array(replace(Ei, '*', ''), '-'),
-	Lä =string_to_array(replace(Lä, '*', ''), '-'),
-	Dg = string_to_array(replace(Dg, '*', ''), '-'),
-	Bu = string_to_array(replace(Bu, '*', ''), '-'),
-	Es = string_to_array(replace(Es, '*', ''), '-'),
-	BAh = string_to_array(replace(BAh, '*', ''), '-'),
-	SAh = string_to_array(replace(SAh, '*', ''), '-'),
-	SEi = string_to_array(replace(SEi, '*', ''), '-'),
-	TEi = string_to_array(replace(TEi, '*', ''), '-'),
-	WLi = string_to_array(replace(WLi, '*', ''), '-'),
-	SLi = string_to_array(replace(SLi, '*', ''), '-'),
-	Ki = string_to_array(replace(Ki, '*', ''), '-'),
-	BUl = string_to_array(replace(BUl, '*', ''), '-'),
-	FUl = string_to_array(replace(FUl, '*', ''), '-'),
-	SEr = string_to_array(replace(SEr, '*', ''), '-'),
-	GEr = string_to_array(replace(GEr, '*', ''), '-'),
-	AEr = string_to_array(replace(AEr, '*', ''), '-'),
-	HBi = string_to_array(replace(HBi, '*', ''), '-'),
-	TKi = string_to_array(replace(TKi, '*', ''), '-'),
-	VBe = string_to_array(replace(VBe, '*', ''), '-'),
-	MBe = string_to_array(replace(MBe, '*', ''), '-'),
-	Wei = string_to_array(replace(Wei, '*', ''), '-');
+CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood int[]);
 
-CREATE TABLE tillering_export (STO_NR TEXT, NW VARCHAR, WW VARCHAR);
-INSERT INTO tillering_export (STO_NR) SELECT DISTINCT STO_NR FROM lu_bestockung;
-
-with naturwald as (select STO_NR as nr, fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei from tillering_export
-	join 
-		(SELECT * FROM tillering_meta WHERE tillering_meta.Kategorie = 'NW') b
-	using(STO_NR)
+WITH lu_tillering_data AS (
+  SELECT 
+    sto_nr,
+    kategorie,
+    coalesce(string_to_array(replace(Fi, '*', ''), '-'), ARRAY[null, null]) Fi,
+    coalesce(string_to_array(replace(Ta, '*', ''), '-'), ARRAY[null, null]) Ta,
+    coalesce(string_to_array(replace(WFö, '*', ''), '-'), ARRAY[null, null]) WFö,
+    coalesce(string_to_array(replace(BFö, '*', ''), '-'), ARRAY[null, null]) BFö,
+    coalesce(string_to_array(replace(Ei, '*', ''), '-'), ARRAY[null, null]) Ei,
+    coalesce(string_to_array(replace(Lä, '*', ''), '-'), ARRAY[null, null]) Lä,
+    coalesce(string_to_array(replace(Dg, '*', ''), '-'), ARRAY[null, null]) Dg,
+    coalesce(string_to_array(replace(Bu, '*', ''), '-'), ARRAY[null, null]) Bu,
+    coalesce(string_to_array(replace(Es, '*', ''), '-'), ARRAY[null, null]) Es,
+    coalesce(string_to_array(replace(BAh, '*', ''), '-'), ARRAY[null, null]) BAh,
+    coalesce(string_to_array(replace(SAh, '*', ''), '-'), ARRAY[null, null]) SAh,
+    coalesce(string_to_array(replace(SEi, '*', ''), '-'), ARRAY[null, null]) SEi,
+    coalesce(string_to_array(replace(TEi, '*', ''), '-'), ARRAY[null, null]) TEi,
+    coalesce(string_to_array(replace(WLi, '*', ''), '-'), ARRAY[null, null]) WLi,
+    coalesce(string_to_array(replace(SLi, '*', ''), '-'), ARRAY[null, null]) SLi,
+    coalesce(string_to_array(replace(Ki, '*', ''), '-'), ARRAY[null, null]) Ki,
+    coalesce(string_to_array(replace(BUl, '*', ''), '-'), ARRAY[null, null]) BUl,
+    coalesce(string_to_array(replace(FUl, '*', ''), '-'), ARRAY[null, null]) FUl,
+    coalesce(string_to_array(replace(SEr, '*', ''), '-'), ARRAY[null, null]) SEr,
+    coalesce(string_to_array(replace(GEr, '*', ''), '-'), ARRAY[null, null]) GEr,
+    coalesce(string_to_array(replace(AEr, '*', ''), '-'), ARRAY[null, null]) AEr,
+    coalesce(string_to_array(replace(HBi, '*', ''), '-'), ARRAY[null, null]) HBi,
+    coalesce(string_to_array(replace(TKi, '*', ''), '-'), ARRAY[null, null]) TKi,
+    coalesce(string_to_array(replace(VBe, '*', ''), '-'), ARRAY[null, null]) VBe,
+    coalesce(string_to_array(replace(MBe, '*', ''), '-'), ARRAY[null, null]) MBe,
+    coalesce(string_to_array(replace(Wei, '*', ''), '-'), ARRAY[null, null]) Wei,
+    Lbh_min::int,
+    Lbh_opt::int,
+    ((split_part(Ta_min, '/', 1)::float / split_part(Ta_min, '/', 2)::float) * 100)::int AS Ta_min,
+    ((split_part(Ta_opt, '/', 1)::float / split_part(Ta_opt, '/', 2)::float) * 100)::int AS Ta_opt
+  FROM lu_bestockung
+),
+lu_tillering_natural_forest_data AS (
+  SELECT
+    sto_nr,
+    ARRAY [Fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]::int[][] AS forest_types
+  FROM lu_tillering_data
+  WHERE kategorie = 'NW'
+),
+lu_tillering_farm_forest_data AS (
+  SELECT
+    sto_nr,
+    ARRAY [Fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]::int[][] AS forest_types
+  FROM lu_tillering_data
+  WHERE kategorie = 'WW'
 )
-
-update tillering_export 
-  set NW = ARRAY [fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]
-  from tillering_export as te left join naturwald as natwal on te.STO_NR = natwal.nr;
-
-
-with wirtschaftswald as (select STO_NR as nr, fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei from tillering_export
-	join 
-		(SELECT * FROM tillering_meta WHERE tillering_meta.Kategorie = 'WW') b
-	using(STO_NR)
-)
-
-update tillering_export 
-  set WW = ARRAY [fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]
-  from tillering_export as te left join wirtschaftswald as wirwal on te.STO_NR = wirwal.nr;
+INSERT INTO lu_tillering_export SELECT
+  d.sto_nr AS code,
+  nfd.forest_types AS natural_forest_types,
+  ffd.forest_types AS farm_forest_types,
+  ARRAY [d.Lbh_min, Lbh_opt] AS hardwood,
+  ARRAY [d.Ta_min, Ta_opt] AS firwood
+FROM lu_tillering_data AS d
+LEFT JOIN lu_tillering_natural_forest_data AS nfd ON d.sto_nr = nfd.sto_nr
+LEFT JOIN lu_tillering_farm_forest_data AS ffd ON d.sto_nr = ffd.sto_nr;
 
 
 COPY
@@ -66,7 +74,9 @@ COPY
                                                                                             'vegetation', vegetation,
                                                                                             'pioneerTreeTypes', vorwaldbaumarten,
                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
-                                                                                            --'tillering', jsonb_build_array(array_to_json(NW), array_to_json(WW)),
+                                                                                            'tillering', jsonb_build_array(array_to_json(natural_forest_types), array_to_json(farm_forest_types), array_to_json(lbh), array_to_json(ta)),
+                                                                                            'tilleringHardwood', array_to_json(hardwood),
+                                                                                            'tilleringFirwood', array_to_json(firwood),
                                                                                             'expoAndAspect', jsonb_build_array(NNO_12,
                                                                                                                             NNO_25,
                                                                                                                             NNO_37,
