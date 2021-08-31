@@ -29,7 +29,7 @@ function AssociationsTab({ associationGroupCode }) {
       <h3>
         {associationGroup ? (
           <>
-            {associationGroup[i18n.language]}{' '}
+            {associationGroup.code} - {associationGroup[i18n.language]}{' '}
             {associationGroup.la ? <i>{associationGroup.la}</i> : null}
           </>
         ) : (
@@ -38,6 +38,30 @@ function AssociationsTab({ associationGroupCode }) {
       </h3>
       <Table basic padded structured>
         <Table.Body>
+          <Table.Row>
+            <Table.HeaderCell>
+              {t('lu.forestType.aptitudeMeaning')}
+            </Table.HeaderCell>
+            <Table.Cell colSpan="3">
+              <p>{parseHtml(associationGroup.aptitudeMeaning)}</p>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.HeaderCell>
+              {t('lu.forestType.description')}
+            </Table.HeaderCell>
+            <Table.Cell colSpan="3">
+              <p>{parseHtml(associationGroup.description)}</p>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.HeaderCell>
+              {t('lu.forestType.heightDispersion')}
+            </Table.HeaderCell>
+            <Table.Cell colSpan="3">
+              <p>{parseHtml(associationGroup.heightDispersion)}</p>
+            </Table.Cell>
+          </Table.Row>
           <Table.Row>
             <Table.HeaderCell>{t('lu.forestType.location')}</Table.HeaderCell>
             <Table.Cell colSpan="3">
@@ -53,22 +77,16 @@ function AssociationsTab({ associationGroupCode }) {
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>{t('lu.forestType.meaning')}</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <p>{parseHtml(associationGroup.aptitudeMeaning)}</p>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
             <Table.HeaderCell>{t('lu.forestType.subGroups')}</Table.HeaderCell>
             <Table.Cell colSpan="3">
-              {forestSubTypes.map((type, idx, array) => (
+              {forestSubTypes.map((type) => (
                 <span key={type.code}>
                   <button
                     className={styles.link}
                     type="button"
                     onClick={() => dispatch(setForestTypeInfo(type))}
                   >
-                    {type.de}
+                    {type.code} - {type.de}
                   </button>
                   <br />
                 </span>

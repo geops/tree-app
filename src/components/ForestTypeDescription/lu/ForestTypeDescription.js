@@ -4,10 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { Tab } from 'semantic-ui-react';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
-import TerrainTab from './TerrainTab';
 import styles from '../ForestTypeDescription.module.css';
 
-function LuForestTypeDescription({ data }) {
+function ForestTypeDescription({ data }) {
   const { t } = useTranslation();
   return (
     <Tab
@@ -23,17 +22,13 @@ function LuForestTypeDescription({ data }) {
             <AssociationsTab associationGroupCode={data.associationGroupCode} />
           ),
         },
-        {
-          menuItem: t('forestTypeDiagram.terrain'),
-          render: () => <TerrainTab data={data} />,
-        },
       ]}
     />
   );
 }
 
-LuForestTypeDescription.propTypes = {
+ForestTypeDescription.propTypes = {
   data: PropTypes.shape().isRequired,
 };
 
-export default LuForestTypeDescription;
+export default ForestTypeDescription;

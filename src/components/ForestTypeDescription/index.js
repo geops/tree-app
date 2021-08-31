@@ -2,15 +2,15 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import ChForestTypeDescription from './ch/ChForestTypesDescription';
-import LuForestTypeDescription from './lu/LuForestTypeDescription';
+import ChForestTypesDescription from './ch/ForestTypesDescription';
+import LuForestTypeDescription from './lu/ForestTypeDescription';
 
 function ForestTypeDescription({ data }) {
   const activeProfile = useSelector((state) => state.activeProfile);
 
   return (
     <>
-      {activeProfile === 'ch' && <ChForestTypeDescription data={data} />}
+      {activeProfile === 'ch' && <ChForestTypesDescription data={data} />}
       {activeProfile === 'lu' && <LuForestTypeDescription data={data} />}
     </>
   );

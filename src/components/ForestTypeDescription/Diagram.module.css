@@ -72,6 +72,14 @@
   fill: #74bd70;
   stroke: #74bd70;
 }
+.mediumSecondary {
+  fill: #a5bae1;
+  stroke: #a5bae1;
+}
+.oftenSecondary {
+  fill: #254185;
+  stroke: #254185;
+}
 
 .svg {
   display: block;

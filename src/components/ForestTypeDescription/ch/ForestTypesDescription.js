@@ -8,7 +8,7 @@ import TerrainTab from './TerrainTab';
 import VegetationTab from './VegetationTab';
 import styles from '../ForestTypeDescription.module.css';
 
-function ChForestTypeDescription({ data }) {
+function ForestTypeDescription({ data }) {
   const { t } = useTranslation();
 
   return (
@@ -32,8 +32,8 @@ function ChForestTypeDescription({ data }) {
   );
 }
 
-ChForestTypeDescription.propTypes = {
+ForestTypeDescription.propTypes = {
   data: PropTypes.shape().isRequired,
 };
 
-export default ChForestTypeDescription;
+export default ForestTypeDescription;
