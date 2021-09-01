@@ -120,18 +120,21 @@ function LocationForm() {
       title: { content: t('forestType.indicator.label') },
       content: {
         content: options && options.indicator && (
-          <Dropdown
-            multiple
-            search
-            placeholder={t('forestType.indicator.placeholder')}
-            options={options.indicator.map(
-              getDropdownOptions('indicator', lng),
-            )}
-            onChange={(e, { value: indicators }) =>
-              dispatch(setFormLocation({ indicators }))
-            }
-            value={formLocation.indicators || ''}
-          />
+          <>
+            <LatinSwitcher className={styles.latinSwitcher} />
+            <Dropdown
+              multiple
+              search
+              placeholder={t('forestType.indicator.placeholder')}
+              options={options.indicator.map(
+                getDropdownOptions('indicator', latinActive ? 'la' : lng),
+              )}
+              onChange={(e, { value: indicators }) =>
+                dispatch(setFormLocation({ indicators }))
+              }
+              value={formLocation.indicators || ''}
+            />
+          </>
         ),
       },
     },
@@ -167,6 +170,26 @@ function LocationForm() {
       content: {
         content: (
           <>
+            {/* <Button.Group>
+              <Button
+                active={i18n.language !== 'de'}
+                disabled={i18n.language === 'de'}
+                content="nein"
+                onClick={() => i18n.changeLanguage('de')}
+              />
+              <Button
+                active={i18n.language !== 'fr'}
+                disabled={i18n.language === 'fr'}
+                content="ja"
+                onClick={() => i18n.changeLanguage('fr')}
+              />
+              <Button
+                active={i18n.language !== 'fr'}
+                disabled={i18n.language === 'fr'}
+                content="nicht angesprochen"
+                onClick={() => dispatch(setFormLocation({ carbonateFine: 9 }))}
+              />
+            </Button.Group> */}
             <Checkbox
               label={t('forestType.carbonate.fine')}
               onChange={(e, { checked: carbonateFine }) =>
