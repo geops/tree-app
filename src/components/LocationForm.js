@@ -11,6 +11,7 @@ import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
 import HelpModal from './HelpModal';
 import Input from './Input';
+import LatinSwitcher from './LatinSwitcher';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
 import translation from '../i18n/resources/de/translation.json';
@@ -64,12 +65,14 @@ function LocationForm() {
   const dispatch = useDispatch();
   const {
     formLocation,
+    latinActive,
     locationResult: { options },
     location,
     mapLocation,
     projectionMode,
   } = useSelector((state) => ({
     formLocation: state.formLocation,
+    latinActive: state.latinActive,
     locationResult: state.locationResult,
     location: state.location,
     mapLocation: state.mapLocation,
@@ -94,16 +97,21 @@ function LocationForm() {
       title: { content: t('forestType.treeType.label') },
       content: {
         content: options && options.treeType && (
-          <Dropdown
-            multiple
-            search
-            placeholder={t('forestType.treeType.placeholder')}
-            options={options.treeType.map(getDropdownOptions('treeType', lng))}
-            onChange={(e, { value: treeTypes }) =>
-              dispatch(setFormLocation({ treeTypes }))
-            }
-            value={formLocation.treeTypes || ''}
-          />
+          <>
+            <LatinSwitcher className={styles.latinSwitcher} />
+            <Dropdown
+              multiple
+              search
+              placeholder={t('forestType.treeType.placeholder')}
+              options={options.treeType.map(
+                getDropdownOptions('treeType', latinActive ? 'la' : lng),
+              )}
+              onChange={(e, { value: treeTypes }) =>
+                dispatch(setFormLocation({ treeTypes }))
+              }
+              value={formLocation.treeTypes || ''}
+            />
+          </>
         ),
       },
     },

@@ -9,6 +9,7 @@
   "app": {
     "info": "Informations",
     "language": "Langue",
+    "latinActive": "Noms d'espèces en latin",
     "location": "Station",
     "map": "Carte",
     "recommendation": "Recommandations",
