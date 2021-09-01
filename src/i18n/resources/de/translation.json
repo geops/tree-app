@@ -9,6 +9,7 @@
   "app": {
     "info": "Infos",
     "language": "Sprache",
+    "latinActive": "Lateinische Artnamen anzeigen",
     "location": "Standort",
     "map": "Karte",
     "recommendation": "Empfehlung",
