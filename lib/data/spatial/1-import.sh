@@ -3,6 +3,12 @@ _import () {
     local TARGET=$2 # cantonal_boundaries
     local ZIPFILE=$3 # SHAPEFILE_LV95_LN02
     local SHPFILE=$4 # swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET
+
+    if [ "$URL" == "Download manually" ] && [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
+        echo "Manual unzipped download for ${TARGET} is missing! Do nothing ..."
+        return
+    fi
+
     if [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
         echo "Downloading ${TARGET} ..."
         cd /data/spatial
@@ -41,7 +47,7 @@ _import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_f
 
 _import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill/shp/2056/ch.swisstopo.swissboundaries3d-kanton-flaeche.fill.zip" "cantonal_boundaries" "SHAPEFILE_LV95_LN02" "swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET"
 
-#_import "Download manually" "forest_types_tg" "forest_types_tg" "forest_types_tg"
+_import "Download manually" "forest_types_tg" "forest_types_tg" "forest_types_tg"
 
 _import "Download manually" "forest_types_lu" "forest_types_lu" "forest_types_lu"
 
