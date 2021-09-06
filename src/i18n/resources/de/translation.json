@@ -283,6 +283,11 @@
       "small": "kleine Bachläufe",
       "spring": "Quellaufstoss",
       "stream": "entlang Bachlauf"
+    },
+    "yesNoUnknown": {
+      "yes": "Ja",
+      "no": "Nein",
+      "unknown": "nicht angesprochen"
     }
   },
   "help": {
