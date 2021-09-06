@@ -49,6 +49,7 @@ const translationOptions = {
   aspect: Object.keys(translation.forestType.aspect).filter(noLabel).sort(),
   group: Object.keys(translation.forestType.group).filter(noLabel),
   slope: Object.keys(translation.forestType.slope).filter(noLabel).sort(),
+  yesNoUnknown: Object.keys(translation.forestType.yesNoUnknown),
 };
 
 const getDropdownOptions =
@@ -90,6 +91,9 @@ function LocationForm() {
   options.aspect = translationOptions.aspect.map(getTranslatedOption('aspect'));
   options.group = translationOptions.group.map(getTranslatedOption('group'));
   options.slope = translationOptions.slope.map(getTranslatedOption('slope'));
+  options.yesNoUnknown = translationOptions.yesNoUnknown.map(
+    getTranslatedOption('yesNoUnknown'),
+  );
 
   const panels = [
     {
@@ -170,39 +174,25 @@ function LocationForm() {
       content: {
         content: (
           <>
-            {/* <Button.Group>
-              <Button
-                active={i18n.language !== 'de'}
-                disabled={i18n.language === 'de'}
-                content="nein"
-                onClick={() => i18n.changeLanguage('de')}
-              />
-              <Button
-                active={i18n.language !== 'fr'}
-                disabled={i18n.language === 'fr'}
-                content="ja"
-                onClick={() => i18n.changeLanguage('fr')}
-              />
-              <Button
-                active={i18n.language !== 'fr'}
-                disabled={i18n.language === 'fr'}
-                content="nicht angesprochen"
-                onClick={() => dispatch(setFormLocation({ carbonateFine: 9 }))}
-              />
-            </Button.Group> */}
-            <Checkbox
+            <Dropdown
+              clearable
+              search={false}
               label={t('forestType.carbonate.fine')}
-              onChange={(e, { checked: carbonateFine }) =>
+              options={options.yesNoUnknown}
+              onChange={(e, { value: carbonateFine }) =>
                 dispatch(setFormLocation({ carbonateFine }))
               }
-              checked={formLocation.carbonateFine || false}
+              value={formLocation.carbonateFine || ''}
             />
-            <Checkbox
+            <Dropdown
+              clearable
+              search={false}
               label={t('forestType.carbonate.rock')}
-              onChange={(e, { checked: carbonateRock }) =>
+              options={options.yesNoUnknown}
+              onChange={(e, { value: carbonateRock }) =>
                 dispatch(setFormLocation({ carbonateRock }))
               }
-              checked={formLocation.carbonateRock || false}
+              value={formLocation.carbonateRock || ''}
             />
           </>
         ),
