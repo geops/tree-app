@@ -18,7 +18,7 @@ const toggle = (baseLayer) => (baseLayer === 'map' ? 'aerial' : 'map');
 function MapBaseLayer() {
   const { t } = useTranslation();
   const layer = useContext(LayerContext);
-  const [baseLayer, setBaseLayer] = useState('aerial');
+  const [baseLayer, setBaseLayer] = useState('map');
   useEffect(() => layer.getSource().setUrl(getUrl(baseLayer)));
   return (
     <Button
