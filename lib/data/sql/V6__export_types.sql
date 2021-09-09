@@ -1,4 +1,6 @@
 CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood int[]);
+CREATE TABLE lu_soil_export (code TEXT, data int[], characteristics text, note text);
+CREATE TABLE lu_vegetation_indicator_export (code TEXT, data int[], note text);
 
 WITH lu_tillering_data AS (
   SELECT 
@@ -61,6 +63,24 @@ LEFT JOIN lu_tillering_natural_forest_data AS nfd ON d.sto_nr = nfd.sto_nr
 LEFT JOIN lu_tillering_farm_forest_data AS ffd ON d.sto_nr = ffd.sto_nr;
 
 
+INSERT INTO lu_soil_export 
+SELECT
+  sto_nr AS code,
+  ARRAY [l, f, h, ahh, ah, basen, feuchte]::int[] AS data,
+  besonderheiten AS characteristics,
+  bemerkung AS note
+FROM lu_boden;
+
+
+INSERT INTO lu_vegetation_indicator_export 
+SELECT
+  sto_nr AS code,
+  ARRAY [a,b,c,e,f,g,h,i,j,k,l,m,n,o,p]::int[] AS data,
+  bemerkung AS note
+FROM lu_artengruppen;
+
+
+
 COPY
     (SELECT jsonb_build_object(
       'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
@@ -72,9 +92,11 @@ COPY
                                                                                             'description', beschreibung,
                                                                                             'heightDispersion', hoehenverbreitung,
                                                                                             'vegetation', vegetation,
+                                                                                            'vegetationIndicator', array_to_json(vegetation_indicator.data),
                                                                                             'pioneerTreeTypes', vorwaldbaumarten,
                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
-                                                                                            'tillering', jsonb_build_array(array_to_json(natural_forest_types), array_to_json(farm_forest_types), array_to_json(lbh), array_to_json(ta)),
+                                                                                            'soil', array_to_json(lu_soil_export.data),
+                                                                                            'tillering', jsonb_build_array(array_to_json(natural_forest_types), array_to_json(farm_forest_types)),
                                                                                             'tilleringHardwood', array_to_json(hardwood),
                                                                                             'tilleringFirwood', array_to_json(firwood),
                                                                                             'expoAndAspect', jsonb_build_array(NNO_12,
@@ -144,7 +166,12 @@ COPY
                                                                                             'compactRisk', verdrisk,
                                                                                             'priority', prioritaet)) AS
           values
-          FROM lu_standorttypen LEFT JOIN lu_expo_hanglage USING(STO_Nr) LEFT JOIN tillering_export USING(STO_NR)), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
+          FROM lu_standorttypen
+          LEFT JOIN lu_expo_hanglage USING(STO_Nr)
+          LEFT JOIN lu_tillering_export ON lu_standorttypen.sto_nr = lu_tillering_export.code
+          LEFT JOIN lu_soil_export ON lu_standorttypen.sto_nr = lu_soil_export.code
+          LEFT JOIN lu_vegetation_indicator_export vegetation_indicator ON lu_standorttypen.sto_nr = vegetation_indicator.code
+      ), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                               'de', gesgr_deu,
                                                                                               'la', gesgruppe_lat,
                                                                                               'description', beschreibung,

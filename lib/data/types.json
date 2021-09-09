@@ -62102,6 +62102,7 @@
         "de": "Typischer Hainsimsen-Buchenwald",
         "la": "Luzulo silvaticae-Fagetum typicum",
         "code": "1",
+        "soil": [3, 3, null, 2, null, null, null],
         "aptitude": "PR: Mässig geeignet, da Zuwachs reduziert und Wuchsform etwas wild.\\nNG: Gute Schutzwirkung durch stabile Standorte.\\nNS: Einige Besonderheiten durch trocken-sauren Standort.",
         "priority": null,
         "tillering": [
@@ -62133,9 +62134,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [70, 80],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Meist fehlend.\\nKS: Spärlich, mit Heidelbeere, Busch- und Wald-Hainsimse.\\nMS: Zypressenmoos.",
         "compactRisk": "1",
@@ -62151,12 +62150,30 @@
         "pioneerTreeTypes": "VBe, MBe, Kast",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [70, 80],
+        "vegetationIndicator": [
+          null,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "1,2"
       },
       {
         "de": "Artenarmer Waldsimsen-Tannen-Buchenwald",
         "la": "Luzulo-Abieti-Fagetum, artenarme Ausb.",
         "code": "1h",
+        "soil": [3, 3, null, 2, null, null, null],
         "aptitude": "PR: Wuchskraft gering, wenig vielseitig. \\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte; mit Dauerbestockung wird dies betont.\\nNS: Wenig Besonderheiten, extreme Säurezeiger.",
         "priority": null,
         "tillering": [
@@ -62188,9 +62205,7 @@
             [0, 5],
             [null, null]
           ],
-          null,
-          [10, 20],
-          [33, 33]
+          null
         ],
         "vegetation": "B: Preiselbeere, Zypressenmoos, Weissmoos, Besenheide\\nC: Heidelbeere, Rippenfarn, Wald-Hainsimse, Tamariskenmoos\\n",
         "compactRisk": "1",
@@ -62206,12 +62221,30 @@
         "pioneerTreeTypes": "VBe, MBe",
         "tilleringFirwood": [33, 33],
         "tilleringHardwood": [10, 20],
+        "vegetationIndicator": [
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Hainsimsen-Buchenwald mit Weissmoos",
         "la": "Luzulo-Fagetum leucobryetosum",
         "code": "2",
+        "soil": [3, 3, null, 3, null, null, null],
         "aptitude": "PR: Wenig geeignet, da Zuwachs reduziert und Wuchsform recht wild.\\nNG: Gute Schutzwirkung durch stabile Standorte.\\nNS: Besonderheiten durch trocken-sauren Standort.",
         "priority": "3",
         "tillering": [
@@ -62243,9 +62276,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [80, 90],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Meist fehlend.\\nKS: oft niedrig; Heidelbeere, Busch- und Wald-Hainsimse, Preiselbeere, ev. Besenheide.\\nMS: Zypressenmoos, Weissmoos.",
         "compactRisk": "1",
@@ -62261,12 +62292,30 @@
         "pioneerTreeTypes": "VBe, MBe, Kast",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [80, 90],
+        "vegetationIndicator": [
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "1,2"
       },
       {
         "de": "Waldmeister-Buchenwald mit Hainsimse",
         "la": "Galio-Fagetum luzuletosum",
         "code": "6",
+        "soil": [3, 2, null, 1, 1, null, null],
         "aptitude": "PR: Mässig geeignet, da Zuwachs vermindert, Auswahl an Baumarten eher gering.\\nNG: Gute Schutzwirkung durch stabile Standorte.\\nNS: Wenige Besonderheiten.",
         "priority": null,
         "tillering": [
@@ -62325,9 +62374,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [60, 80],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Busch-Hainsimse, Wald-Hainsimse, Wald-Frauenhaar.\\nE: Waldmeister, Busch-Windröschen",
         "compactRisk": "2",
@@ -62343,12 +62390,30 @@
         "pioneerTreeTypes": "Kast, Wei",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Hainsimse",
         "la": "Galio-Fagetum luzuletosum",
         "code": "6",
+        "soil": [3, 2, null, 1, 1, null, null],
         "aptitude": "PR: Mässig geeignet, da Zuwachs vermindert, Auswahl an Baumarten eher gering.\\nNG: Gute Schutzwirkung durch stabile Standorte.\\nNS: Wenige Besonderheiten.",
         "priority": null,
         "tillering": [
@@ -62407,9 +62472,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Busch-Hainsimse, Wald-Hainsimse, Wald-Frauenhaar.\\nE: Waldmeister, Busch-Windröschen",
         "compactRisk": "2",
@@ -62425,12 +62488,30 @@
         "pioneerTreeTypes": "Kast, Wei",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Typischer Waldmeister-Buchenwald",
         "la": "Galio-Fagetum typicum",
         "code": "7a",
+        "soil": [2, null, null, null, 2, null, null],
         "aptitude": "PR: Produktiver Standort mit grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, wenn Lage in Bacheinhängen (oft im Mittelland).\\nNS: Besonderheiten selten.",
         "priority": null,
         "tillering": [
@@ -62489,9 +62570,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [50, 80],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-\\nWindröschen\\nF: Wald-Segge, Berg-Goldnessel",
         "compactRisk": "2",
@@ -62507,12 +62586,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [50, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Typischer Waldmeister-Buchenwald",
         "la": "Galio-Fagetum typicum",
         "code": "7a",
+        "soil": [2, null, null, null, 2, null, null],
         "aptitude": "PR: Produktiver Standort mit grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, wenn Lage in Bacheinhängen (oft im Mittelland).\\nNS: Besonderheiten selten.",
         "priority": null,
         "tillering": [
@@ -62571,9 +62668,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-\\nWindröschen\\nF: Wald-Segge, Berg-Goldnessel",
         "compactRisk": "2",
@@ -62589,12 +62684,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Lockerähriger Segge",
         "la": "Galio-Fagetum caricetosum remotae",
         "code": "7b",
+        "soil": [3, 3, null, 1, 1, null, 2],
         "aptitude": "PR: Produktiver Standort, aber kleine Baumartenauswahl für Wertträger.\\nNG: Gute Schutzwirkung, da meist stabile Standorte; bei schlechter Bestockung anfällig.\\nNS: Ohne Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -62653,9 +62766,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [50, 70],
-          [50, 50]
+          ]
         ],
         "vegetation": "C: Wald-Frauenhaar, Tamariskenmoos\\nK: Wald-Gilbweiderich, Abgerücktährige Segge",
         "compactRisk": "3",
@@ -62671,12 +62782,30 @@
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [50, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Lockerähriger Segge",
         "la": "Galio-Fagetum caricetosum remotae",
         "code": "7b",
+        "soil": [3, 3, null, 1, 1, null, 2],
         "aptitude": "PR: Produktiver Standort, aber kleine Baumartenauswahl für Wertträger.\\nNG: Gute Schutzwirkung, da meist stabile Standorte; bei schlechter Bestockung anfällig.\\nNS: Ohne Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -62735,9 +62864,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Wald-Frauenhaar, Tamariskenmoos\\nK: Wald-Gilbweiderich, Abgerücktährige Segge",
         "compactRisk": "3",
@@ -62753,12 +62880,30 @@
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald, artenarme Ausb.",
         "la": "Galio-Fagetum, artenarme Ausb.",
         "code": "7d",
+        "soil": [3, 2, null, 1, 1, null, null],
         "aptitude": "PR: Recht produktiv, aber reduzierte Baumartenauswahl für Wertträger (ausser Gastbaumarten).\\nNG: Ohne Besonderheiten.\\nNS: Ohne Besonderheiten.",
         "priority": null,
         "tillering": [
@@ -62817,9 +62962,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [50, 70],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Wald-Hainsimse, Wald-Frauenhaar, Tamariskenmoos, Zweiblättrige Schattenblume\\nE: Waldmeister (vereinzelt)\\n",
         "compactRisk": "2",
@@ -62835,12 +62978,30 @@
         "pioneerTreeTypes": "HBi, WFö",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [50, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald, artenarme Ausb.",
         "la": "Galio-Fagetum, artenarme Ausb.",
         "code": "7d",
+        "soil": [3, 2, null, 1, 1, null, null],
         "aptitude": "PR: Recht produktiv, aber reduzierte Baumartenauswahl für Wertträger (ausser Gastbaumarten).\\nNG: Ohne Besonderheiten.\\nNS: Ohne Besonderheiten.",
         "priority": null,
         "tillering": [
@@ -62899,9 +63060,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Wald-Hainsimse, Wald-Frauenhaar, Tamariskenmoos, Zweiblättrige Schattenblume\\nE: Waldmeister (vereinzelt)\\n",
         "compactRisk": "2",
@@ -62917,12 +63076,30 @@
         "pioneerTreeTypes": "HBi, WFö",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Hornstrauch",
         "la": "Galio-Fagetum cornetosum",
         "code": "7e",
+        "soil": [1, null, null, null, 2, 1, null],
         "aptitude": "PR: Mässig wüchsig, aber vielseitig.\\nNG: Erhöhte Gefährdung, wenn steil.\\nNS: Deutlich erhöhte Bedeutung, besonders vielfältige Strauchschicht.",
         "priority": null,
         "tillering": [
@@ -62981,9 +63158,7 @@
             [null, null],
             [0, 10],
             [null, null]
-          ],
-          [50, 80],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Ähren-Rapunzel, Busch-Windröschen\\nF: Wald-Segge, Berg-Goldnessel\\nM: Wald-Zwenke, Stechpalme, Weissdorn, Wolliger Schneeball, Gefingerte Segge; Bingelkraut (auf Schotter)\\nO: Schlaffe Segge\\nP: Weisse Segge (oberflächlich schotterig)",
         "compactRisk": "1",
@@ -62999,12 +63174,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [50, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          2,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Hornstrauch",
         "la": "Galio-Fagetum cornetosum",
         "code": "7e",
+        "soil": [1, null, null, null, 2, 1, null],
         "aptitude": "PR: Mässig wüchsig, aber vielseitig.\\nNG: Erhöhte Gefährdung, wenn steil.\\nNS: Deutlich erhöhte Bedeutung, besonders vielfältige Strauchschicht.",
         "priority": null,
         "tillering": [
@@ -63063,9 +63256,7 @@
             [null, null],
             [0, 10],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Ähren-Rapunzel, Busch-Windröschen\\nF: Wald-Segge, Berg-Goldnessel\\nM: Wald-Zwenke, Stechpalme, Weissdorn, Wolliger Schneeball, Gefingerte Segge; Bingelkraut (auf Schotter)\\nO: Schlaffe Segge\\nP: Weisse Segge (oberflächlich schotterig)",
         "compactRisk": "1",
@@ -63081,12 +63272,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          2,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Lungenkraut",
         "la": "Galio-Fagetum pulmonarietosum",
         "code": "7f",
+        "soil": [null, null, null, null, 3, 1, null],
         "aptitude": "PR: Sehr wüchsiger und vielseitiger Standort.\\nNG: Ohne Besonderheiten.\\nNS: Leicht erhöhte Bedeutung durch Kalk im Untergrund.\\n",
         "priority": null,
         "tillering": [
@@ -63145,9 +63354,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [50, 80],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel, Aronstab.\\nM: Bingelkraut oft stark, Wald-Zwenke\\n",
         "compactRisk": "2",
@@ -63163,12 +63370,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [50, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Lungenkraut",
         "la": "Galio-Fagetum pulmonarietosum",
         "code": "7f",
+        "soil": [null, null, null, null, 3, 1, null],
         "aptitude": "PR: Sehr wüchsiger und vielseitiger Standort.\\nNG: Ohne Besonderheiten.\\nNS: Leicht erhöhte Bedeutung durch Kalk im Untergrund.\\n",
         "priority": null,
         "tillering": [
@@ -63227,9 +63452,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel, Aronstab.\\nM: Bingelkraut oft stark, Wald-Zwenke\\n",
         "compactRisk": "2",
@@ -63245,12 +63468,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Feuchter Waldmeister-Buchenwald",
         "la": "Galio-Fagetum stachyetosum sylvaticae",
         "code": "7S",
+        "soil": [null, null, null, null, 3, null, 2],
         "aptitude": "PR: Sehr produktiver Standort mit grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, v.a. in Bacheinhängen.\\nNS: Feuchte bietet besonderen Lebensraum; wenn basenhaltig noch deutlicher.",
         "priority": null,
         "tillering": [
@@ -63309,9 +63550,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [70, 80],
-          [50, 67]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Wald-Segge, Berg-Goldnessel\\nH: Wald-Ziest, Wald-Springkraut\\nK: Pariser-Hexenkraut\\n",
         "compactRisk": "3",
@@ -63327,12 +63566,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [50, 67],
         "tilleringHardwood": [70, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          null,
+          null,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Feuchter Waldmeister-Buchenwald",
         "la": "Galio-Fagetum stachyetosum sylvaticae",
         "code": "7S",
+        "soil": [null, null, null, null, 3, null, 2],
         "aptitude": "PR: Sehr produktiver Standort mit grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, v.a. in Bacheinhängen.\\nNS: Feuchte bietet besonderen Lebensraum; wenn basenhaltig noch deutlicher.",
         "priority": null,
         "tillering": [
@@ -63391,9 +63648,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Wald-Segge, Berg-Goldnessel\\nH: Wald-Ziest, Wald-Springkraut\\nK: Pariser-Hexenkraut\\n",
         "compactRisk": "3",
@@ -63409,12 +63664,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          null,
+          null,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Rippenfarn",
         "la": "Galio-Fagetum blechnetosum",
         "code": "7*",
+        "soil": [3, 3, null, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mässig, wenig vielseitig; sehr gute Qualität von Fi und Ta.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeer- und Moosbestände.\\n",
         "priority": null,
         "tillering": [
@@ -63473,9 +63746,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [30, 50],
-          [50, 50]
+          ]
         ],
         "vegetation": "C: Heidelbeere, Gabelzahnmoos, Wald-Frauenhaar, Rippenfarn (wenig häufig), Tamariskenmoos, Wald-Hainsimse.\\n\\n",
         "compactRisk": "3",
@@ -63491,12 +63762,30 @@
         "pioneerTreeTypes": "HBi, VBe, Wei, ZPa",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [30, 50],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Waldmeister-Buchenwald mit Rippenfarn",
         "la": "Galio-Fagetum blechnetosum",
         "code": "7*",
+        "soil": [3, 3, null, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mässig, wenig vielseitig; sehr gute Qualität von Fi und Ta.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeer- und Moosbestände.\\n",
         "priority": null,
         "tillering": [
@@ -63555,9 +63844,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Heidelbeere, Gabelzahnmoos, Wald-Frauenhaar, Rippenfarn (wenig häufig), Tamariskenmoos, Wald-Hainsimse.\\n\\n",
         "compactRisk": "3",
@@ -63573,12 +63860,30 @@
         "pioneerTreeTypes": "HBi, VBe, Wei, ZPa",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "6,7"
       },
       {
         "de": "Typischer Waldhirsen-Buchenwald",
         "la": "Milio-Fagetum typicum",
         "code": "8a",
+        "soil": [2, 1, null, null, 2, null, null],
         "aptitude": "PR: Produktiver Standort mit grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, wenn in Steilhängen gelegen.\\nNS: Besonderheiten selten.\\n\\n\\n\\n",
         "priority": null,
         "tillering": [
@@ -63637,9 +63942,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [40, 60],
-          [50, 50]
+          ]
         ],
         "vegetation": "D: Weiblicher Waldfarn \\nE: Waldmeister, Wald-Veilchen, Echter Wurmfarn\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nL: Gelappter Schildfarn\\n",
         "compactRisk": "2",
@@ -63655,12 +63958,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [40, 60],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Typischer Waldhirsen-Buchenwald",
         "la": "Milio-Fagetum typicum",
         "code": "8a",
+        "soil": [2, 1, null, null, 2, null, null],
         "aptitude": "PR: Produktiver Standort mit grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, wenn in Steilhängen gelegen.\\nNS: Besonderheiten selten.\\n\\n\\n\\n",
         "priority": null,
         "tillering": [
@@ -63719,9 +64040,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "D: Weiblicher Waldfarn \\nE: Waldmeister, Wald-Veilchen, Echter Wurmfarn\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nL: Gelappter Schildfarn\\n",
         "compactRisk": "2",
@@ -63737,12 +64056,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Lockerähriger Segge",
         "la": "Milio-Fagetum caricetosum remotae",
         "code": "8b",
+        "soil": [3, 3, null, 2, 1, null, 2],
         "aptitude": "PR: Recht produktiver Standort, aber wenig vielseitig für Wertträger.\\nNG: Gute Schutzwirkung, da meist stabile Standorte; bei schlechter Bestockung anfällig.\\nNS: Ohne Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -63801,9 +64138,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [40, 60],
-          [50, 67]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Heidelbeere spärlich, \\nTamariskenmoos\\nD: Weiblicher Waldfarn\\nK: Wald-Schachtelhalm, Wald-Gilbweiderich, Abgerücktährige Segge \\n",
         "compactRisk": "3",
@@ -63819,12 +64154,30 @@
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
         "tilleringFirwood": [50, 67],
         "tilleringHardwood": [40, 60],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Lockerähriger Segge",
         "la": "Milio-Fagetum caricetosum remotae",
         "code": "8b",
+        "soil": [3, 3, null, 2, 1, null, 2],
         "aptitude": "PR: Recht produktiver Standort, aber wenig vielseitig für Wertträger.\\nNG: Gute Schutzwirkung, da meist stabile Standorte; bei schlechter Bestockung anfällig.\\nNS: Ohne Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -63883,9 +64236,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Heidelbeere spärlich, \\nTamariskenmoos\\nD: Weiblicher Waldfarn\\nK: Wald-Schachtelhalm, Wald-Gilbweiderich, Abgerücktährige Segge \\n",
         "compactRisk": "3",
@@ -63901,12 +64252,30 @@
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Breitem Wurmfarn",
         "la": "Milio-Fagetum dryopterietosum dilatatae",
         "code": "8c",
+        "soil": [3, 3, null, 1, 1, null, null],
         "aptitude": "PR: Ziemlich produktiv, mässig vielseitig.\\nNG: Ohne Besonderheiten.\\nNS: Ohne Besonderheiten\\n",
         "priority": null,
         "tillering": [
@@ -63965,9 +64334,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [40, 60],
-          [50, 50]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Wald-Hainsimse, Tamariskenmoos\\nD: Weiblicher Waldfarn\\n",
         "compactRisk": "2",
@@ -63983,12 +64350,30 @@
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wie",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [40, 60],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Breitem Wurmfarn",
         "la": "Milio-Fagetum dryopterietosum dilatatae",
         "code": "8c",
+        "soil": [3, 3, null, 1, 1, null, null],
         "aptitude": "PR: Ziemlich produktiv, mässig vielseitig.\\nNG: Ohne Besonderheiten.\\nNS: Ohne Besonderheiten\\n",
         "priority": null,
         "tillering": [
@@ -64047,9 +64432,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Wald-Hainsimse, Tamariskenmoos\\nD: Weiblicher Waldfarn\\n",
         "compactRisk": "2",
@@ -64065,12 +64448,30 @@
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wie",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Hainsimse",
         "la": "Milio-Fagetum luzuletosum",
         "code": "8d",
+        "soil": [3, 3, null, 1, 1, null, null],
         "aptitude": "PR: Mässig geeignet, da Zuwachs vermindert.\\nNG: Gute Schutzwirkung durch stabile Standorte.\\nNS: Wenige Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -64129,9 +64530,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [50, 70],
-          [50, 50]
+          ]
         ],
         "vegetation": "C: Wald-Hainsimse, Heidelbeere spärlich, Rundblättriges Labkraut, Tamariskenmoos \\nD: Weiblicher Waldfarn \\n",
         "compactRisk": "2",
@@ -64147,12 +64546,30 @@
         "pioneerTreeTypes": "HBi, VBe, Wei",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [50, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Hainsimse",
         "la": "Milio-Fagetum luzuletosum",
         "code": "8d",
+        "soil": [3, 3, null, 1, 1, null, null],
         "aptitude": "PR: Mässig geeignet, da Zuwachs vermindert.\\nNG: Gute Schutzwirkung durch stabile Standorte.\\nNS: Wenige Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -64211,9 +64628,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Wald-Hainsimse, Heidelbeere spärlich, Rundblättriges Labkraut, Tamariskenmoos \\nD: Weiblicher Waldfarn \\n",
         "compactRisk": "2",
@@ -64229,12 +64644,30 @@
         "pioneerTreeTypes": "HBi, VBe, Wei",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Hornstrauch",
         "la": "Milio-Fagetum cornetosum",
         "code": "8e",
+        "soil": [1, null, null, null, 2, 1, null],
         "aptitude": "PR: Wüchsiger und vielseitiger Standort.\\nNG: Ohne Besonderheiten.\\nNS: Erhöhte Bedeutung durch Kalk im Untergrund.",
         "priority": null,
         "tillering": [
@@ -64266,9 +64699,7 @@
             [0, 5],
             [null, null]
           ],
-          null,
-          [40, 70],
-          [null, null]
+          null
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nM: Bingelkraut, Wald-Zwenke, Weissdorn, Wolliger Schneeball\\nO: Schlaffe Segge \\nP: Weiss-Segge auf schottrigem Oberboden\\n",
         "compactRisk": "1",
@@ -64284,12 +64715,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [40, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          2,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Lungenkraut",
         "la": "Milio-Fagetum pulmonarietosum",
         "code": "8f",
+        "soil": [null, null, null, null, 3, 1, null],
         "aptitude": "PR: Sehr wüchsiger und vielseitiger Standort.\\nNG: Ohne Besonderheiten.\\nNS: Leicht erhöhte Bedeutung durch Kalk im Untergrund.\\n",
         "priority": null,
         "tillering": [
@@ -64348,9 +64797,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [40, 70],
-          [33, 33]
+          ]
         ],
         "vegetation": "E: Echter Wurmfarn, Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nM: Bingelkraut, Wald-Zwenke",
         "compactRisk": "2",
@@ -64366,12 +64813,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 33],
         "tilleringHardwood": [40, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Lungenkraut",
         "la": "Milio-Fagetum pulmonarietosum",
         "code": "8f",
+        "soil": [null, null, null, null, 3, 1, null],
         "aptitude": "PR: Sehr wüchsiger und vielseitiger Standort.\\nNG: Ohne Besonderheiten.\\nNS: Leicht erhöhte Bedeutung durch Kalk im Untergrund.\\n",
         "priority": null,
         "tillering": [
@@ -64430,9 +64895,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Echter Wurmfarn, Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nM: Bingelkraut, Wald-Zwenke",
         "compactRisk": "2",
@@ -64448,12 +64911,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Feuchter Waldhirsen-Buchenwald",
         "la": "Milio-Fagetum stachyetosum sylvaticae",
         "code": "8S",
+        "soil": [null, null, null, null, 3, null, 2],
         "aptitude": "PR: Sehr produktiver Standort mit sehr grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, v.a. in Bacheinhängen.\\nNS: Feuchte bietet besonderen Lebensraum, wenn basenhaltig, dann noch deutlicher.",
         "priority": null,
         "tillering": [
@@ -64512,9 +64993,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [50, 70],
-          [50, 67]
+          ]
         ],
         "vegetation": "D: Weiblicher Waldfarn \\nE: Echter Wurmfarn, Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nH: Wald-Ziest\\nK: Hängende Segge, Pariser-Hexenkraut, Wald-Schachtelhalm\\n",
         "compactRisk": "3",
@@ -64530,12 +65009,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [50, 67],
         "tilleringHardwood": [50, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          null,
+          null,
+          3,
+          2,
+          1,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Feuchter Waldhirsen-Buchenwald",
         "la": "Milio-Fagetum stachyetosum sylvaticae",
         "code": "8S",
+        "soil": [null, null, null, null, 3, null, 2],
         "aptitude": "PR: Sehr produktiver Standort mit sehr grossem Spielraum in der Baumartenwahl.\\nNG: Erhöhte Gefährdung, v.a. in Bacheinhängen.\\nNS: Feuchte bietet besonderen Lebensraum, wenn basenhaltig, dann noch deutlicher.",
         "priority": null,
         "tillering": [
@@ -64594,9 +65091,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "D: Weiblicher Waldfarn \\nE: Echter Wurmfarn, Waldmeister, Wald-Veilchen\\nF: Waldhirse, Wald-Segge, Berg-Goldnessel\\nH: Wald-Ziest\\nK: Hängende Segge, Pariser-Hexenkraut, Wald-Schachtelhalm\\n",
         "compactRisk": "3",
@@ -64612,12 +65107,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          null,
+          null,
+          3,
+          2,
+          1,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Rippenfarn",
         "la": "Milio-Fagetum blechnetosum",
         "code": "8*",
+        "soil": [3, 3, null, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mässig, wenig vielseitig; sehr gute Qualität von Ta und Fi\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeer- und Moosbestände.\\n",
         "priority": null,
         "tillering": [
@@ -64676,9 +65189,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [20, 40],
-          [50, 67]
+          ]
         ],
         "vegetation": "C: Rippenfarn (ab und zu), Breiter Wurmfarn, Heidelbeere, Gabelzahnmoos, Wald-Frauenhaar, Tamariskenmoos, Wald-Hainsimse",
         "compactRisk": "3",
@@ -64694,12 +65205,30 @@
         "pioneerTreeTypes": "HBi, VBe, ZPa",
         "tilleringFirwood": [50, 67],
         "tilleringHardwood": [20, 40],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Waldhirsen-Buchenwald mit Rippenfarn",
         "la": "Milio-Fagetum blechnetosum",
         "code": "8*",
+        "soil": [3, 3, null, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mässig, wenig vielseitig; sehr gute Qualität von Ta und Fi\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeer- und Moosbestände.\\n",
         "priority": null,
         "tillering": [
@@ -64758,9 +65287,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Rippenfarn (ab und zu), Breiter Wurmfarn, Heidelbeere, Gabelzahnmoos, Wald-Frauenhaar, Tamariskenmoos, Wald-Hainsimse",
         "compactRisk": "3",
@@ -64776,12 +65303,30 @@
         "pioneerTreeTypes": "HBi, VBe, ZPa",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "8"
       },
       {
         "de": "Typischer Lungenkraut-Buchenwald",
         "la": "Pulmonario-Fagetum typicum",
         "code": "9a",
+        "soil": [null, null, null, null, 3, 3, null],
         "aptitude": "PR: Recht produktiver Standort mit grossem Spektrum an Baumarten.\\nNG: Erhöhte Gefährdung, wenn in Bacheinhängen (im Mittelland häufig).\\nNS: Reichhaltig und wertvoll, da oft in wilden Tobeln und an Hängen.\\n",
         "priority": null,
         "tillering": [
@@ -64840,9 +65385,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [70, 90],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Berg-Goldnessel, Wald-Segge\\nM: Bingelkraut, Weissdorn, Wolliger und Gem. Schneeball, Gewöhnl. Seidelbast, Gewöhnl. Schmerwurz, Süsse Wolfsmilch\\n",
         "compactRisk": "2",
@@ -64858,12 +65401,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [70, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "9,10,11"
       },
       {
         "de": "Typischer Lungenkraut-Buchenwald",
         "la": "Pulmonario-Fagetum typicum",
         "code": "9a",
+        "soil": [null, null, null, null, 3, 3, null],
         "aptitude": "PR: Recht produktiver Standort mit grossem Spektrum an Baumarten.\\nNG: Erhöhte Gefährdung, wenn in Bacheinhängen (im Mittelland häufig).\\nNS: Reichhaltig und wertvoll, da oft in wilden Tobeln und an Hängen.\\n",
         "priority": null,
         "tillering": [
@@ -64922,9 +65483,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Berg-Goldnessel, Wald-Segge\\nM: Bingelkraut, Weissdorn, Wolliger und Gem. Schneeball, Gewöhnl. Seidelbast, Gewöhnl. Schmerwurz, Süsse Wolfsmilch\\n",
         "compactRisk": "2",
@@ -64940,12 +65499,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "9,10,11"
       },
       {
         "de": "Wechselfeuchter Lungenkraut-Buchenwald",
         "la": "Pulmonario-Fagetum caricetosum flaccae",
         "code": "9w",
+        "soil": [null, null, null, null, 2, 3, 1],
         "aptitude": "PR: Produktiver Standort mit grossem Spektrum an Baumarten, Stammform oft mässig.\\nNG: Erhöhte Gefährdung, wenn in Bacheinhängen (im Mittelland häufig).\\nNS: Reichhaltig und wertvoll, da meist in wilden Tobeln und an Hängen.",
         "priority": null,
         "tillering": [
@@ -64977,9 +65554,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [60, 90],
-          [null, null]
+          null
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen, Busch-Windröschen\\nF: Berg-Goldnessel, Wald-Segge\\nM:  Bingelkraut, Weissdorn, Wolliger und Gem. Schneeball, Gewöhnl. Seidelbast, Gewöhnl. Schmerwurz, Süsse Wolfsmilch\\nO:  Schlaffe Segge\\n",
         "compactRisk": "3",
@@ -64995,12 +65570,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          3,
+          null,
+          3,
+          null
+        ],
         "associationGroupCode": "9,10,11"
       },
       {
         "de": "Wechseltrockener Lungenkraut-Buchenwald mit Immenblatt",
         "la": "Pulmonario-Fagetum melittetosum, Ausb. mit Carex flacca",
         "code": "10w",
+        "soil": [null, null, null, null, 2, 2, null],
         "aptitude": "PR: Ziemlich produktiver Standort mit grossem Spektrum an Baumarten. Wegen Seltenheit unbedeutend.\\nNG: Erhöhte Gefährdung, wenn an mergeligen Hängen. \\nNS: Reichhaltig und wertvoll, da kalkreich und meist sonnig.",
         "priority": null,
         "tillering": [
@@ -65032,9 +65625,7 @@
             [0, 5],
             [null, null]
           ],
-          null,
-          [60, 90],
-          [null, null]
+          null
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen, \\nF: \\tBerg-Goldnessel, Wald-Segge, \\nM: \\tBingelkraut, Wald-Zwenke, Weissdorn, Wolliger Schneeball, Feld-Rose, Leberblümchen, Süsse Wolfsmilch\\nO: \\tSchlaffe Segge, Liguster\\n",
         "compactRisk": "3",
@@ -65050,12 +65641,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "9,10,11"
       },
       {
         "de": "Aronstab-Buchenwald",
         "la": "Aro-Fagetum",
         "code": "11",
+        "soil": [null, null, null, null, 3, 3, 2],
         "aptitude": "PR: Sehr produktiver Standort, mit grossem Spektrum an Baumarten.\\nNG: Erhöhte Gefährdung in steileren Lagen.\\nNS: Feuchtigkeit und Kalk bieten besonderen Lebensraum.\\n",
         "priority": null,
         "tillering": [
@@ -65114,9 +65723,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [90, 100],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Aronstab, Wald-Segge, Berg-Goldnessel \\nG: Bärlauch (oft als Teppich)\\nK: Welliges Sternmoos\\nM: Bingelkraut\\n",
         "compactRisk": "3",
@@ -65132,12 +65739,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [90, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          3,
+          2,
+          1,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "9,10,11"
       },
       {
         "de": "Aronstab-Buchenwald",
         "la": "Aro-Fagetum",
         "code": "11",
+        "soil": [null, null, null, null, 3, 3, 2],
         "aptitude": "PR: Sehr produktiver Standort, mit grossem Spektrum an Baumarten.\\nNG: Erhöhte Gefährdung in steileren Lagen.\\nNS: Feuchtigkeit und Kalk bieten besonderen Lebensraum.\\n",
         "priority": null,
         "tillering": [
@@ -65196,9 +65821,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Aronstab, Wald-Segge, Berg-Goldnessel \\nG: Bärlauch (oft als Teppich)\\nK: Welliges Sternmoos\\nM: Bingelkraut\\n",
         "compactRisk": "3",
@@ -65214,12 +65837,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          3,
+          2,
+          1,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "9,10,11"
       },
       {
         "de": "Typischer Zahnwurz-Buchenwald",
         "la": "Cardamino-Fagetum typicum",
         "code": "12a",
+        "soil": [null, null, null, null, 3, 3, null],
         "aptitude": "PR: Produktiver Standort mit grossem Spektrum an Baumarten, Nutzung durch oft steile Lage erschwert.\\nNG: Erhöhte Gefährdung durch oft steile Lage. Auf Dauerbestockung achten.\\nNS: Durch kalkhaltigen Boden relativ bedeutend, insbesondere bei steiler Lage.\\n",
         "priority": null,
         "tillering": [
@@ -65278,9 +65919,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [70, 100],
-          [25, 50]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel \\nL: Gelappter Schildfarn, Hoher \\nSchwingel\\nM: Bingelkraut, Zahnwurz, Roter Hartriegel \\n",
         "compactRisk": "2",
@@ -65296,12 +65935,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [25, 50],
         "tilleringHardwood": [70, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          3,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Typischer Zahnwurz-Buchenwald",
         "la": "Cardamino-Fagetum typicum",
         "code": "12a",
+        "soil": [null, null, null, null, 3, 3, null],
         "aptitude": "PR: Produktiver Standort mit grossem Spektrum an Baumarten, Nutzung durch oft steile Lage erschwert.\\nNG: Erhöhte Gefährdung durch oft steile Lage. Auf Dauerbestockung achten.\\nNS: Durch kalkhaltigen Boden relativ bedeutend, insbesondere bei steiler Lage.\\n",
         "priority": null,
         "tillering": [
@@ -65360,9 +66017,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel \\nL: Gelappter Schildfarn, Hoher \\nSchwingel\\nM: Bingelkraut, Zahnwurz, Roter Hartriegel \\n",
         "compactRisk": "2",
@@ -65378,12 +66033,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          3,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Trockener Zahnwurz-Buchenwald",
         "la": "Cardamino-Fagetum caricetosum albae",
         "code": "12e",
+        "soil": [1, 1, null, null, 2, 3, null],
         "aptitude": "PR: Recht wüchsig, mit grossem Baumartenspektrum.\\nNG: Oft steil, lokal bedeutend. \\nNS: Meist lichte Bestände auf trockenem, kalkreichem Boden ergeben hohe Bedeutung; Orchideen-Standorte.",
         "priority": null,
         "tillering": [
@@ -65415,9 +66088,7 @@
             [0, 5],
             [null, null]
           ],
-          null,
-          [60, 80],
-          [null, null]
+          null
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nL: \\tGelappter Schildfarn\\nM: \\tBingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: \\tSchlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\nP: \\tWeisse Segge",
         "compactRisk": "1",
@@ -65433,12 +66104,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          3,
+          null,
+          2,
+          2
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Feuchter Zahnwurz-Buchenwald",
         "la": "Cardamino-Fagetum circaetosum",
         "code": "12S",
+        "soil": [null, null, null, null, 3, 3, 2],
         "aptitude": "PR: Sehr produktiver Standort mit sehr grossem Spektrum an Baumarten, Nutzung durch tonigen Boden erschwert.\\nNG: Rutschgefährdung durch tonigen Boden in meist geneigten Lagen. Auf Dauerbestockung achten.\\nNS: Durch kalkhaltigen Boden und Feuchtigkeit bedeutend.",
         "priority": null,
         "tillering": [
@@ -65497,9 +66186,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [60, 90],
-          [50, 67]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nG: \\tBärlauch (auf Teilflächen teppichartig)\\nH: Wald-Ziest, Wald-Springkraut \\nK: Hängende Segge\\nL: \\tGelappter Schildfarn, Haargerste\\nM: \\tBingelkraut, Zahnwurz, Roter Hartriegel",
         "compactRisk": "3",
@@ -65515,12 +66202,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [50, 67],
         "tilleringHardwood": [60, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          null,
+          null,
+          3,
+          2,
+          3,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Feuchter Zahnwurz-Buchenwald",
         "la": "Cardamino-Fagetum circaetosum",
         "code": "12S",
+        "soil": [null, null, null, null, 3, 3, 2],
         "aptitude": "PR: Sehr produktiver Standort mit sehr grossem Spektrum an Baumarten, Nutzung durch tonigen Boden erschwert.\\nNG: Rutschgefährdung durch tonigen Boden in meist geneigten Lagen. Auf Dauerbestockung achten.\\nNS: Durch kalkhaltigen Boden und Feuchtigkeit bedeutend.",
         "priority": null,
         "tillering": [
@@ -65579,9 +66284,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nG: \\tBärlauch (auf Teilflächen teppichartig)\\nH: Wald-Ziest, Wald-Springkraut \\nK: Hängende Segge\\nL: \\tGelappter Schildfarn, Haargerste\\nM: \\tBingelkraut, Zahnwurz, Roter Hartriegel",
         "compactRisk": "3",
@@ -65597,12 +66300,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          null,
+          null,
+          3,
+          2,
+          3,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Wechselfeuchter Zahnwurz-Buchenwald\\n",
         "la": "Cardamino-Fagetum caricetosum flaccae",
         "code": "12w",
+        "soil": [1, 1, null, null, 2, 3, null],
         "aptitude": "PR: Rechtv wüchsig, mit sehr grossem Baumartenspektrum; durch mergeligen Boden und oft steile Lage aber nur beschränkt nutzbar. \\nNG: Auf Rutschungen anfällig, oft steil. Deshalb sehr hohe Bedeutung.\\nNS: Meist lichte Bestände auf wechseltrockenem, kalkreichem Boden ergeben sehr hohe Bedeutung; Orchideen-Standorte.",
         "priority": null,
         "tillering": [
@@ -65661,9 +66382,7 @@
             [0, 5],
             [0, 10],
             [null, null]
-          ],
-          [60, 80],
-          [null, null]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nL: \\tGelappter Schildfarn\\nM: \\tBingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: Schlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\n",
         "compactRisk": "3",
@@ -65679,12 +66398,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          3,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Wechselfeuchter Zahnwurz-Buchenwald\\n",
         "la": "Cardamino-Fagetum caricetosum flaccae",
         "code": "12w",
+        "soil": [1, 1, null, null, 2, 3, null],
         "aptitude": "PR: Rechtv wüchsig, mit sehr grossem Baumartenspektrum; durch mergeligen Boden und oft steile Lage aber nur beschränkt nutzbar. \\nNG: Auf Rutschungen anfällig, oft steil. Deshalb sehr hohe Bedeutung.\\nNS: Meist lichte Bestände auf wechseltrockenem, kalkreichem Boden ergeben sehr hohe Bedeutung; Orchideen-Standorte.",
         "priority": null,
         "tillering": [
@@ -65743,9 +66480,7 @@
             [0, 5],
             [0, 10],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nL: \\tGelappter Schildfarn\\nM: \\tBingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: Schlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\n",
         "compactRisk": "3",
@@ -65761,12 +66496,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          3,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Typischer Linden-Buchenwald",
         "la": "Tilio-Fagetum typicum",
         "code": "13a",
+        "soil": [null, null, null, null, 3, 3, null],
         "aptitude": "PR: Lage meist steil und schwer zugänglich, zudem oft krumme oder verletzte Stämme, deshalb wirtschaftlich unbedeutend.\\nNG: Hohe Bedeutung als Schutzwald gegen Steinschlag.\\nNS: Eher durchschnittlich.",
         "priority": null,
         "tillering": [
@@ -65798,9 +66551,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [40, 60],
-          [25, 50]
+          null
         ],
         "vegetation": "SS: Artenreich, oft gut ausgebildet, oft viel Hasel und Schwarzer Holunder.\\nKS: Artenreich, meist gut ausgebildet. Mit Herden von Bingelkraut und Zahnwurz, vereinzelt Hirschzunge. ",
         "compactRisk": "2",
@@ -65816,12 +66567,30 @@
         "pioneerTreeTypes": "HBi",
         "tilleringFirwood": [25, 50],
         "tilleringHardwood": [40, 60],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          3,
+          2,
+          null,
+          null
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Trockener Linden-Buchenwald",
         "la": "Tilio-Fagetum caricetosum albae",
         "code": "13e",
+        "soil": [null, null, null, null, 2, 3, null],
         "aptitude": "PR: Lage meist steil und schwer zugänglich, zudem oft krumme oder verletzte Stämme, deshalb wirtschaftlich unbedeutend.\\nNG: Hohe Bedeutung als Schutzwald gegen Steinschlag.\\nNS: Durch steile, besonnte Lage von erhöhtem Interesse.",
         "priority": null,
         "tillering": [
@@ -65853,9 +66622,7 @@
             [0, 10],
             [null, null]
           ],
-          null,
-          [50, 70],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Artenreich, oft gut ausgebildet, oft viel Hasel und Schwarzer Holunder.\\nKS: Artenreich, meist gut ausgebildet. Mit Herden von Bingelkraut und Zahnwurz, vereinzelt Hirschzunge, Weiss-Segge.",
         "compactRisk": "1",
@@ -65871,12 +66638,30 @@
         "pioneerTreeTypes": null,
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [50, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          3,
+          2,
+          1,
+          2
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Typischer Alpendost-Buchenwald",
         "la": "Adenostylo-Fagetum typicum",
         "code": "13h",
+        "soil": [null, null, null, null, 3, 3, null],
         "aptitude": "PR: Lage meist steil und schwer zugänglich, zudem oft krumme oder verletzte Stämme, deshalb wirtschaftlich unbedeutend.\\nNG: Hohe Bedeutung als Schutzwald gegen Steinschlag.\\nNS: Eher durchschnittlich.",
         "priority": "3",
         "tillering": [
@@ -65908,9 +66693,7 @@
             [0, 5],
             [null, null]
           ],
-          null,
-          [40, 50],
-          [33, 50]
+          null
         ],
         "vegetation": "SS: Artenreich, oft gut ausgebildet, oft viel Hasel, Schwarzer Holunder, Schwarzes Geissblatt.\\nKS: Artenreich, meist gut ausgebildet. Mit Herden von Bingelkraut und Zahnwurz, vereinzelt Hirschzunge, Kahler Alpendost.",
         "compactRisk": "2",
@@ -65926,12 +66709,30 @@
         "pioneerTreeTypes": "HBi, VBe",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [40, 50],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null,
+          3,
+          2,
+          1,
+          null,
+          null
+        ],
         "associationGroupCode": "12,13"
       },
       {
         "de": "Seggen-Buchenwald mit Weissegge",
         "la": "Carici albae-Fagetum typicum",
         "code": "14",
+        "soil": [null, null, null, null, 2, 3, null],
         "aptitude": "PR: Nicht wüchsige Standorte mit knorrigen Stammformen, deshalb ohne Bedeutung.\\nNG: Oft in steileren Hängen; dort Erhaltung der Stabilität wichtig.\\nNS: Grosse Bedeutung durch seltene Kalkstandorte.",
         "priority": null,
         "tillering": [
@@ -65963,9 +66764,7 @@
             [0, 10],
             [null, null]
           ],
-          null,
-          [60, 90],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Artenreich (Kalksträucher), mässig bis üppig ausgebildet. \\nKS: Artenreich mit oft grasigem Aspekt, Weisse Segge, Schlaffe Segge, Orchideen. ",
         "compactRisk": "1",
@@ -65981,12 +66780,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          1,
+          2
+        ],
         "associationGroupCode": "14,15,16"
       },
       {
         "de": "Seggen-Buchenwald mit Bergsegge",
         "la": "Carici-Fagetum caricetosum montanae\\n",
         "code": "15",
+        "soil": [2, 2, null, null, 1, 2, null],
         "aptitude": "PR: Nicht wüchsige Standorte mit knorrigen Stammformen, deshalb ohne Bedeutung.\\nNG: Oft im Bereich von steileren Hängen; dort Erhaltung der Stabilität wichtig.\\nNS: Grosse Bedeutung durch seltene Kalkstandorte.",
         "priority": null,
         "tillering": [
@@ -66018,9 +66835,7 @@
             [0, 10],
             [null, null]
           ],
-          null,
-          [60, 90],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Artenreich (Kalksträucher), mässig bis üppig ausgebildet. \\nKS: Artenreich mit meist grasigem Aspekt, Berg-Segge, Schlaffe Segge, Orchideen.",
         "compactRisk": "1",
@@ -66036,12 +66851,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          1,
+          2
+        ],
         "associationGroupCode": "14,15,16"
       },
       {
         "de": "Typischer Blaugras-Buchenwald",
         "la": "Seslerio-Fagetum",
         "code": "16",
+        "soil": [1, 2, null, 1, 1, 3, null],
         "aptitude": "PR: Nicht wüchsige Standorte mit knorrigen Stammformen, deshalb ohne Bedeutung.\\nNG: Oft im Bereich von Kuppen und angrenzenden Steilhängen; Erhaltung der Stabilität wichtig.\\nNS: Grosse Bedeutung durch seltene Kalkstandorte.",
         "priority": "4",
         "tillering": [
@@ -66073,9 +66906,7 @@
             [0, 20],
             [0, 10]
           ],
-          null,
-          [50, 90],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Artenreich (Kalksträucher), mässig bis üppig ausgebildet. \\nKS: Artenreich mit meist grasigem Aspekt, Blaugras.",
         "compactRisk": "1",
@@ -66091,12 +66922,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [50, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          2,
+          3
+        ],
         "associationGroupCode": "14,15,16"
       },
       {
         "de": "Eiben-Buchenwald",
         "la": "Taxo-Fagetum",
         "code": "17",
+        "soil": [1, 1, null, null, 2, 2, null],
         "aptitude": "PR: Kein Wirtschaftswald, da steil und felsig-rutschig.\\nNG: Oberflächlich oft bewegt, aber meist mit solidem Untergrund. Dauerbestockung anstreben.\\nNS: Durch offenen Charakter und kalkig-felsigen Untergrund erhöhte Vielfalt.",
         "priority": "k",
         "tillering": [
@@ -66128,9 +66977,7 @@
             [0, 10],
             [0, 10]
           ],
-          null,
-          [60, 70],
-          [33, 50]
+          null
         ],
         "vegetation": "C: Heidelbeere (auf Rippen)\\nE: Sanikel, Wald-Veilchen\\nF: Berg-Goldnessel\\nM: Bingelkraut, Wolliger Schneeball\\nO: Buntes Reitgras, Schlaffe Segge, Liguster\\nP: Weisse Segge (an Sonnenhängen)\\n",
         "compactRisk": "1",
@@ -66146,12 +66993,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [60, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          null,
+          2,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "17"
       },
       {
         "de": "Waldschwingel-Tannen-Buchenwald",
         "la": "Festuco-Abieti-Fagetum",
         "code": "18",
+        "soil": [2, 1, null, null, 2, null, null],
         "aptitude": "PR: Produktiver Standort mit vielseitigen Möglichkeiten; gute Erträge mit wenig Risiko.\\nNG: Erhöhte Gefährdung, wenn  steil.\\nNS: Besonderheiten in Steillagen.\\n",
         "priority": null,
         "tillering": [
@@ -66210,9 +67075,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [30, 50],
-          [33, 50]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn \\nE: \\tBreitblättriger Ehrenpreis, Ährige Rapunzel, Sanikel, Wald-Veilchen\\nF: \\tWald-Segge, Weisse Pestwurz\\nL: Hoher Schwingel (örtlich mit hoher Deckung) Schwarzes Geissblatt, Gelappter Schildfarn, Haargerste",
         "compactRisk": "2",
@@ -66228,12 +67091,30 @@
         "pioneerTreeTypes": "HBi, VBe",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [30, 50],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Waldschwingel-Tannen-Buchenwald",
         "la": "Festuco-Abieti-Fagetum",
         "code": "18",
+        "soil": [2, 1, null, null, 2, null, null],
         "aptitude": "PR: Produktiver Standort mit vielseitigen Möglichkeiten; gute Erträge mit wenig Risiko.\\nNG: Erhöhte Gefährdung, wenn  steil.\\nNS: Besonderheiten in Steillagen.\\n",
         "priority": null,
         "tillering": [
@@ -66292,9 +67173,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn \\nE: \\tBreitblättriger Ehrenpreis, Ährige Rapunzel, Sanikel, Wald-Veilchen\\nF: \\tWald-Segge, Weisse Pestwurz\\nL: Hoher Schwingel (örtlich mit hoher Deckung) Schwarzes Geissblatt, Gelappter Schildfarn, Haargerste",
         "compactRisk": "2",
@@ -66310,12 +67189,30 @@
         "pioneerTreeTypes": "HBi, VBe",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Tannen-Buchenwald mit Breitem Wurmfarn",
         "la": "Abieti-Fagetum dryopterietosum dilatatae",
         "code": "18c",
+        "soil": [3, 3, null, 2, 1, null, null],
         "aptitude": "PR: Wuchskraft reduziert, Baumartenwahl eingeschränkt; gute Qualität von Ta und Fi.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeer- und Moosbestände\\n",
         "priority": null,
         "tillering": [
@@ -66374,9 +67271,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [20, 30],
-          [50, 50]
+          ]
         ],
         "vegetation": "C: Heidelbeere, Rippenfarn, Breiter Wurmfarn, Wald-Hainsimse, Zweibl. Schattenblume, Hainmoos, Wald-Frauenhaar, Tamariskenmoos  \\nL: Hoher Schwingel\\n",
         "compactRisk": "2",
@@ -66392,12 +67287,30 @@
         "pioneerTreeTypes": "VBe, HBi, RHol",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [20, 30],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Tannen-Buchenwald mit Breitem Wurmfarn",
         "la": "Abieti-Fagetum dryopterietosum dilatatae",
         "code": "18c",
+        "soil": [3, 3, null, 2, 1, null, null],
         "aptitude": "PR: Wuchskraft reduziert, Baumartenwahl eingeschränkt; gute Qualität von Ta und Fi.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeer- und Moosbestände\\n",
         "priority": null,
         "tillering": [
@@ -66456,9 +67369,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Heidelbeere, Rippenfarn, Breiter Wurmfarn, Wald-Hainsimse, Zweibl. Schattenblume, Hainmoos, Wald-Frauenhaar, Tamariskenmoos  \\nL: Hoher Schwingel\\n",
         "compactRisk": "2",
@@ -66474,12 +67385,30 @@
         "pioneerTreeTypes": "VBe, HBi, RHol",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Typischer Karbonat-Tannen-Buchenwald",
         "la": "Adenostylo glabrae-Abieti-Fagetum typicum",
         "code": "18M",
+        "soil": [1, null, null, null, 3, 2, null],
         "aptitude": "PR: Sehr wüchsiger Standort mit grossem Baumartenspektrum.\\nNG: In steilen Lagen etwas rutschgefährdet, da labile Oberfläche.\\nNS: Etwas erhöhte Bedeutung, v. a. wenn kalkreich.",
         "priority": null,
         "tillering": [
@@ -66538,9 +67467,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [30, 40],
-          [50, 50]
+          ]
         ],
         "vegetation": "E: Ährige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: Wald-Segge, Weisse Pestwurz\\nL: Schwarzes Geissblatt, Alpen-Hagrose, Gelappter Schildfarn\\nM: Bingelkraut, Wald-Zwenke\\nO: Berg-Flockenblume, Dreiblatt-Baldrian\\n\\n",
         "compactRisk": "2",
@@ -66556,12 +67483,30 @@
         "pioneerTreeTypes": "HBi, RHol",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [30, 40],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          1,
+          null,
+          1,
+          null,
+          3,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Typischer Karbonat-Tannen-Buchenwald",
         "la": "Adenostylo glabrae-Abieti-Fagetum typicum",
         "code": "18M",
+        "soil": [1, null, null, null, 3, 2, null],
         "aptitude": "PR: Sehr wüchsiger Standort mit grossem Baumartenspektrum.\\nNG: In steilen Lagen etwas rutschgefährdet, da labile Oberfläche.\\nNS: Etwas erhöhte Bedeutung, v. a. wenn kalkreich.",
         "priority": null,
         "tillering": [
@@ -66620,9 +67565,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Ährige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: Wald-Segge, Weisse Pestwurz\\nL: Schwarzes Geissblatt, Alpen-Hagrose, Gelappter Schildfarn\\nM: Bingelkraut, Wald-Zwenke\\nO: Berg-Flockenblume, Dreiblatt-Baldrian\\n\\n",
         "compactRisk": "2",
@@ -66638,12 +67581,30 @@
         "pioneerTreeTypes": "HBi, RHol",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          1,
+          null,
+          1,
+          null,
+          3,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Buntreitgras-Tannen-Buchenwald mit Rostsegge",
         "la": "Adenostylo glabrae Abieti-Fagetum calamagrostietosumvariae, Ausb. mit Carex ferruginea",
         "code": "18v",
+        "soil": [null, null, null, null, 2, 3, 1],
         "aptitude": "PR: Kein Wirtschaftswald, steil und felsig-rutschig, nur beschränkt waldfähig.\\nNG: Oberflächlich oft bewegt, aber meist mit solidem Untergrund. Dauerbestockung anstreben.\\nNS: Durch offenen Charakter und mergelig-felsigen Untergrund erhöhte Vielfalt.",
         "priority": null,
         "tillering": [
@@ -66675,9 +67636,7 @@
             [0, 10],
             [10, 20]
           ],
-          null,
-          [100, 100],
-          [null, null]
+          null
         ],
         "vegetation": "E: Sanikel\\nF: Berg-Goldnessel\\nL: Kahler Alpendost, Alpen-Hagrose, Alpengeissblatt\\nO: Buntes Reitgras, Schlaffe Segge, Berg-Flockenblume, Dreiblatt-Baldrian, Wald-Witwenblume, Rostfarbene Segge\\n",
         "compactRisk": "3",
@@ -66693,12 +67652,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [100, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          null,
+          3,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Typischer Buntreitgras-Tannen-Buchenwald",
         "la": "Adenostylo glabrae Abieti-Fagetum calamagrostietosumvariae",
         "code": "18w",
+        "soil": [1, null, null, null, 2, 3, null],
         "aptitude": "PR: Oft steiler und teils rutschiger Standort; nur ausnahmsweise Wirtschaftswald.\\nNG: Oberflächlich oft bewegt, Untergrund meist solid. Dauerbestockung ist zentral!\\nNS: Durch oft offenen Charakter und kalkig-mergeligen Untergrund deutlich erhöhte Vielfalt.",
         "priority": null,
         "tillering": [
@@ -66757,9 +67734,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [40, 60],
-          [33, 50]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Heidelbeere (auf Rippen) \\nE: \\tÄhrige Rapunzel, Wald-Veilchen\\nF: \\tWald-Segge\\nL: Kahler Alpendost \\nM: \\tBingelkraut, Wald-Zwenke, \\nO: Buntes Reitgras, Schlaffe Segge, Berg-Flockenblume, Alpenmasslieb, Rostfarbene Segge, Dreiblatt-Baldrian",
         "compactRisk": "2",
@@ -66775,12 +67750,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [40, 60],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          1,
+          null,
+          1,
+          1,
+          3,
+          2,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Zweiblatt-Eschen-Auenwald",
         "la": "Ulmo-Fraxinetum listeretosum",
         "code": "29A",
+        "soil": [null, null, null, null, 3, 3, 3],
         "aptitude": "PR: Sehr produktiver und vielseitiger Standort; oft aber nur klein und schwer zugänglich.\\nNG: Periodisch von Hochwasser überschwemmt, an der regulierten Reuss nur mehr in Extremfällen.\\nNS: Durch Kalkreichtum und Dynamik sehr wertvoll, sehr reichhaltige Strauchschicht.",
         "priority": null,
         "tillering": [
@@ -66839,9 +67832,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "F: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch (örtlich)\\nH: Wald-Ziest, Wald-Springkraut, Segge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n ",
         "compactRisk": "3",
@@ -66857,12 +67848,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Typischer Buntreitgras-Tannen-Buchenwald",
         "la": "Adenostylo glabrae Abieti-Fagetum calamagrostietosumvariae",
         "code": "18w",
+        "soil": [1, null, null, null, 2, 3, null],
         "aptitude": "PR: Oft steiler und teils rutschiger Standort; nur ausnahmsweise Wirtschaftswald.\\nNG: Oberflächlich oft bewegt, Untergrund meist solid. Dauerbestockung ist zentral!\\nNS: Durch oft offenen Charakter und kalkig-mergeligen Untergrund deutlich erhöhte Vielfalt.",
         "priority": null,
         "tillering": [
@@ -66921,9 +67930,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Heidelbeere (auf Rippen) \\nE: \\tÄhrige Rapunzel, Wald-Veilchen\\nF: \\tWald-Segge\\nL: Kahler Alpendost \\nM: \\tBingelkraut, Wald-Zwenke, \\nO: Buntes Reitgras, Schlaffe Segge, Berg-Flockenblume, Alpenmasslieb, Rostfarbene Segge, Dreiblatt-Baldrian",
         "compactRisk": "2",
@@ -66939,12 +67946,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          1,
+          null,
+          1,
+          1,
+          3,
+          2,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Karbonat-Tannen-Buchenwald mit Weissegge",
         "la": "Adenostylo glabrae-Abieti-Fagetum caricetosum albae",
         "code": "18*",
+        "soil": [1, null, null, null, 2, 3, null],
         "aptitude": "PR: Mässig wüchsiger Standort mit grossem Baumartenspektrum.\\nNG: In steilen Lagen etwas rutschgefährdet, da labile Oberfläche.\\nNS: Erhöhte Bedeutung, v. a. wenn kalkreich.\\n",
         "priority": null,
         "tillering": [
@@ -66976,9 +68001,7 @@
             [0, 10],
             [null, null]
           ],
-          null,
-          [40, 60],
-          [33, 33]
+          null
         ],
         "vegetation": "E: Ährige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: Wald-Segge, Weisse Pestwurz\\nL: Schwarzes Geissblatt, Alpen-Hagrose, Gelappter Schildfarn\\nM: Bingelkraut, Wald-Zwenke, Dunkelrote Sumpfwurz\\nO: Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\nP: Blaugras, Weisse Segge\\n",
         "compactRisk": "1",
@@ -66994,12 +68017,30 @@
         "pioneerTreeTypes": "HBi, RHol",
         "tilleringFirwood": [33, 33],
         "tilleringHardwood": [40, 60],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          2,
+          2
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Typischer Waldsimsen-Tannen-Buchenwald",
         "la": "Luzulo-Abieti-Fagetum typicum",
         "code": "19",
+        "soil": [3, 3, null, 2, null, null, null],
         "aptitude": "PR: Wuchskraft mässig, wenig vielseitig. \\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte; mit Dauerbestockung wird dies betont.\\nNS: Wenig Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -67058,9 +68099,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [30, 40],
-          [50, 50]
+          ]
         ],
         "vegetation": "C: Heidelbeere, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse, Tamariskenmoos\\nL: Hoher Schwingel\\n",
         "compactRisk": "2",
@@ -67076,12 +68115,30 @@
         "pioneerTreeTypes": "HBi, VBe, MBe",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [30, 40],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Typischer Waldsimsen-Tannen-Buchenwald",
         "la": "Luzulo-Abieti-Fagetum typicum",
         "code": "19",
+        "soil": [3, 3, null, 2, null, null, null],
         "aptitude": "PR: Wuchskraft mässig, wenig vielseitig. \\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte; mit Dauerbestockung wird dies betont.\\nNS: Wenig Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -67140,9 +68197,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Heidelbeere, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse, Tamariskenmoos\\nL: Hoher Schwingel\\n",
         "compactRisk": "2",
@@ -67158,12 +68213,30 @@
         "pioneerTreeTypes": "HBi, VBe, MBe",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Waldsimsen-Tannen-Buchenwald auf Pseudogley",
         "la": "Luzulo-Abieti Fagetum, Ausb. auf Pseudogley",
         "code": "19f",
+        "soil": [3, 3, null, 2, 1, null, 2],
         "aptitude": "PR: Wuchskraft recht hoch , Baumartenwahl eingeschränkt.\\nNG: Gute Schutzwirkung, da meist stabile Standorte; Dauerbestockung!\\nNS: Ohne Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -67222,9 +68295,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [20, 30],
-          [67, 67]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Hainmoos, Wald-Frauenhaar, Heidelbeere, Wald-Hainsimse \\nK: Wald-Schachtelhalm, Pariser Hexenkraut\\nL: Hoher Schwingel\\n",
         "compactRisk": "3",
@@ -67240,12 +68311,30 @@
         "pioneerTreeTypes": "VBe, RHol",
         "tilleringFirwood": [67, 67],
         "tilleringHardwood": [20, 30],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Waldsimsen-Tannen-Buchenwald auf Pseudogley",
         "la": "Luzulo-Abieti Fagetum, Ausb. auf Pseudogley",
         "code": "19f",
+        "soil": [3, 3, null, 2, 1, null, 2],
         "aptitude": "PR: Wuchskraft recht hoch , Baumartenwahl eingeschränkt.\\nNG: Gute Schutzwirkung, da meist stabile Standorte; Dauerbestockung!\\nNS: Ohne Besonderheiten.\\n",
         "priority": null,
         "tillering": [
@@ -67304,9 +68393,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn, Hainmoos, Wald-Frauenhaar, Heidelbeere, Wald-Hainsimse \\nK: Wald-Schachtelhalm, Pariser Hexenkraut\\nL: Hoher Schwingel\\n",
         "compactRisk": "3",
@@ -67322,12 +68409,30 @@
         "pioneerTreeTypes": "VBe, RHol",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Hochstauden-Tannen-Buchenwald ",
         "la": "Adenostylo alliariae-Abieti-Fagetum typicum",
         "code": "20",
+        "soil": [null, null, null, null, 3, 1, 2],
         "aptitude": "PR: Produktiver Standort, aber mit ungünstiger, schneereicher Lage; für Produktion wenig geeignet.\\nNG: Erhöhte Bedeutung; Dauerbestockung und eine grosse Standfestigkeit der Bäume haben oberste Priorität.\\nNS: Erhöhte Bedeutung durch Feuchtigkeit und üppige Hochstauden. \\n",
         "priority": null,
         "tillering": [
@@ -67386,9 +68491,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [30, 50],
-          [67, 67]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn  \\nE: Echter Wurmfarn, Wald-Veilchen\\nF: Weisse Pestwurz, Wald-Segge, Gew. Schlüsselblume\\nJ: Grauer Alpendost, Rundblättriger Steinbrech \\nK: Welliges Sternmoos, Wald-Schachtelhalm\\nL: Gelappter Schildfarn, Haargerste, Schwarzes Geissblatt\\n",
         "compactRisk": "3",
@@ -67404,12 +68507,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [67, 67],
         "tilleringHardwood": [30, 50],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          2,
+          1,
+          3,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Hochstauden-Tannen-Buchenwald ",
         "la": "Adenostylo alliariae-Abieti-Fagetum typicum",
         "code": "20",
+        "soil": [null, null, null, null, 3, 1, 2],
         "aptitude": "PR: Produktiver Standort, aber mit ungünstiger, schneereicher Lage; für Produktion wenig geeignet.\\nNG: Erhöhte Bedeutung; Dauerbestockung und eine grosse Standfestigkeit der Bäume haben oberste Priorität.\\nNS: Erhöhte Bedeutung durch Feuchtigkeit und üppige Hochstauden. \\n",
         "priority": null,
         "tillering": [
@@ -67468,9 +68589,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: Breiter Wurmfarn  \\nE: Echter Wurmfarn, Wald-Veilchen\\nF: Weisse Pestwurz, Wald-Segge, Gew. Schlüsselblume\\nJ: Grauer Alpendost, Rundblättriger Steinbrech \\nK: Welliges Sternmoos, Wald-Schachtelhalm\\nL: Gelappter Schildfarn, Haargerste, Schwarzes Geissblatt\\n",
         "compactRisk": "3",
@@ -67486,12 +68605,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          2,
+          1,
+          3,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Waldgersten-Tannen-Buchenwald",
         "la": "Adenostylo alliariae-Abieti-Fagetum hordelymetosum",
         "code": "20E",
+        "soil": [1, null, null, null, 3, 1, 2],
         "aptitude": "PR: Sehr produktiver Standort mit erhöhter Vielseitigkeit. Holzernte durch steile Lagen oder feuchten Boden teils erschwert.\\nNG: Starke Gefährdung, v. a. in Bacheinhängen; Dauerbestockung und eine grosse Standfestigkeit der Bäume haben oberste Priorität.\\nNS: Feuchte bietet besonderen Lebensraum, vor allem wenn basenhaltig.\\n",
         "priority": null,
         "tillering": [
@@ -67550,9 +68687,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [40, 60],
-          [67, 67]
+          ]
         ],
         "vegetation": "E: Ährige Rapunzel, Sanikel\\nF: Wald-Segge, Gew. Schlüsselblume, Weisse Pestwurz\\nH: Wald-Ziest, Wolliger Hahnenfuss\\nJ: Rundblättriger Steinbrech\\nK: Welliges Sternmoos, Hexenkraut, Hängende Segge\\nL: Haargerste, Schwarzes Geissblatt\\n",
         "compactRisk": "3",
@@ -67568,12 +68703,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [67, 67],
         "tilleringHardwood": [40, 60],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          1,
+          3,
+          1,
+          2,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Waldgersten-Tannen-Buchenwald",
         "la": "Adenostylo alliariae-Abieti-Fagetum hordelymetosum",
         "code": "20E",
+        "soil": [1, null, null, null, 3, 1, 2],
         "aptitude": "PR: Sehr produktiver Standort mit erhöhter Vielseitigkeit. Holzernte durch steile Lagen oder feuchten Boden teils erschwert.\\nNG: Starke Gefährdung, v. a. in Bacheinhängen; Dauerbestockung und eine grosse Standfestigkeit der Bäume haben oberste Priorität.\\nNS: Feuchte bietet besonderen Lebensraum, vor allem wenn basenhaltig.\\n",
         "priority": null,
         "tillering": [
@@ -67632,9 +68785,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Ährige Rapunzel, Sanikel\\nF: Wald-Segge, Gew. Schlüsselblume, Weisse Pestwurz\\nH: Wald-Ziest, Wolliger Hahnenfuss\\nJ: Rundblättriger Steinbrech\\nK: Welliges Sternmoos, Hexenkraut, Hängende Segge\\nL: Haargerste, Schwarzes Geissblatt\\n",
         "compactRisk": "3",
@@ -67650,12 +68801,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          1,
+          3,
+          1,
+          2,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Ahorn-Buchenwald",
         "la": "Aceri-Fagetum",
         "code": "21",
+        "soil": [null, null, null, null, 3, 2, 2],
         "aptitude": "PR: Wenig produktiver Standort, aber mit ungünstiger, schneereicher Lage; kein Wirtschaftswald.\\nNG: Erhöhte Bedeutung; Dauerbestockung und eine grosse Standfestigkeit der Bäume haben oberste Priorität.\\nNS: Feuchte und üppige Hochstauden. \\n",
         "priority": "4",
         "tillering": [
@@ -67687,9 +68856,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [80, 90],
-          [null, null]
+          null
         ],
         "vegetation": "C: Breiter Wurmfarn  \\nE: Echter Wurmfarn, Wald-Veilchen\\nF: Weisse Pestwurz, Wald-Segge, Gew. Schlüsselblume\\nJ: Grauer Alpendost, Rundblättriger Steinbrech, Alpen-Milchlattich, Zweiblütiges Veilchen\\nK: Welliges Sternmoos, Wald-Schachtelhalm\\nL: Gelappter Schildfarn, Haargerste, Schwarzes Geissblatt\\n",
         "compactRisk": "2",
@@ -67705,12 +68872,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [80, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          2,
+          2,
+          3,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "18,19,20,21"
       },
       {
         "de": "Hirschzungen-Ahornwald",
         "la": "Phyllitido-Aceretum",
         "code": "22",
+        "soil": [null, null, null, null, 2, 3, null],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Durch Steinschlagsituation wichtiger Schutzwald.\\nNS: Dynamischer, vielfältiger und seltener Sonderstandort. Deshalb sehr wertvoll.\\n",
         "priority": "4",
         "tillering": [
@@ -67742,9 +68927,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [60, 70],
-          [null, null]
+          null
         ],
         "vegetation": "KS: Wenig bis gut ausgebildet, Hirschzunge, Mondviole, Geissbart.\\nSS: Wenig bis gut ausgebildet. Häufig mit Schwarzem Holunder und Hasel.",
         "compactRisk": "2",
@@ -67760,12 +68943,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 70],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          2,
+          3,
+          null,
+          null
+        ],
         "associationGroupCode": "22,23,24"
       },
       {
         "de": "Geissbart-Ahornwald",
         "la": "Arunco-Aceretum",
         "code": "22A",
+        "soil": [null, null, null, null, 2, 3, 1],
         "aptitude": "PR: Kein Wirtschaftswald, steil und felsig-rutschig, nur beschränkt waldfähig.\\nNG: Oberflächlich oft bewegt, aber meist mit solidem Untergrund. Dauerbestockung anstreben.\\nNS: Durch offenen Charakter und mergelig-felsigen Untergrund erhöhte Vielfalt.",
         "priority": "3",
         "tillering": [
@@ -67797,9 +68998,7 @@
             [0, 10],
             [10, 20]
           ],
-          null,
-          [100, 100],
-          [null, null]
+          null
         ],
         "vegetation": "E: Ährige Rapunzel\\nL: Kahler Alpendost, Alpen-Hagrose, Alpengeissblatt, Wald-Geissbart\\nO: Buntes Reitgras, Schlaffe Segge, Berg-Flockenblume, Wald-Witwenblume",
         "compactRisk": "3",
@@ -67815,12 +69014,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [100, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          1,
+          2,
+          1,
+          1,
+          2,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "22,23,24"
       },
       {
         "de": "Mehlbeer-Ahornwald",
         "la": "Sorbo-Aceretum",
         "code": "23",
+        "soil": [null, null, null, null, 1, 3, null],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Durch Steinschlagsituation und steile Lage wichtiger Schutzwald.\\nNS: Dynamischer, vielfältiger und seltener Sonderstandort. Deshalb sehr wertvoll.\\n",
         "priority": "2",
         "tillering": [
@@ -67852,9 +69069,7 @@
             [5, 30],
             [0, 10]
           ],
-          null,
-          [80, 100],
-          [null, null]
+          null
         ],
         "vegetation": "KS: Wenig bis gut ausgebildet, grasig, mit Trockenzeigern.\\nSS: Wenig bis gut ausgebildet. Häufig mit Mehlbeere und Hasel.",
         "compactRisk": "1",
@@ -67870,12 +69085,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [80, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          3,
+          1,
+          3,
+          2
+        ],
         "associationGroupCode": "22,23,24"
       },
       {
         "de": "Typischer Ulmen-Ahornwald",
         "la": "Ulmo-Aceretum typicum",
         "code": "24*",
+        "soil": [null, null, null, null, 2, 3, 1],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Steile Lage in Lawinenrunse, dadurch wichtiger Schutzwald.\\nNS: Dynamischer, vielfältiger und seltener Sonderstandort. Deshalb sehr wertvoll.\\n",
         "priority": "3",
         "tillering": [
@@ -67907,9 +69140,7 @@
             [null, null],
             [0, 10]
           ],
-          null,
-          [80, 100],
-          [null, null]
+          null
         ],
         "vegetation": "KS: Gut ausgebildet, krautig-grasig.\\nSS: gut ausgebildet. Mit Weiden und AE.",
         "compactRisk": "2",
@@ -67925,12 +69156,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [80, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          2,
+          null,
+          2,
+          1,
+          3,
+          2,
+          1,
+          2,
+          null
+        ],
         "associationGroupCode": "22,23,24"
       },
       {
         "de": "Ahorn-Eschenwald",
         "la": "Aceri-Fraxinetum",
         "code": "26",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Sehr produktiver Standort für Edellaubhölzer; nutzbar v.a. bei grösseren Flächen; Vernässungen schränken Befahrbarkeit ein und erschweren Holzernte.\\nNG: Oft vernässt; in Hanglagen mit grosser Bedeutung; biologische Entwässerung und Dauerbestockung sind zentral.\\nNS: Als feuchter bis nasser Standort von grosser Bedeutung, besonders wenn basenreich.\\n",
         "priority": null,
         "tillering": [
@@ -67989,9 +69238,7 @@
             [null, null],
             [0, 5],
             [0, 10]
-          ],
-          [80, 100],
-          [33, 67]
+          ]
         ],
         "vegetation": "E: Waldmeister, Sanikel, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel, Baumtropf\\nH: Wald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nI: Sumpf-Dotterblume, Rote Waldnelke, Bach-Nelkenwurz\\nK: Pariser-Hexenkraut, Hängende Segge, Wald-Brustwurz \\nM: Bingelkraut, Wald-Zwenke, Wolliger und Gemeiner Schneeball (wenn kalkhaltig)\\n",
         "compactRisk": "4",
@@ -68007,12 +69254,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 67],
         "tilleringHardwood": [80, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          2,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald",
         "la": "Aceri-Fraxinetum",
         "code": "26",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Sehr produktiver Standort für Edellaubhölzer; nutzbar v.a. bei grösseren Flächen; Vernässungen schränken Befahrbarkeit ein und erschweren Holzernte.\\nNG: Oft vernässt; in Hanglagen mit grosser Bedeutung; biologische Entwässerung und Dauerbestockung sind zentral.\\nNS: Als feuchter bis nasser Standort von grosser Bedeutung, besonders wenn basenreich.\\n",
         "priority": null,
         "tillering": [
@@ -68071,9 +69336,7 @@
             [null, null],
             [0, 5],
             [0, 10]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Waldmeister, Sanikel, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel, Baumtropf\\nH: Wald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nI: Sumpf-Dotterblume, Rote Waldnelke, Bach-Nelkenwurz\\nK: Pariser-Hexenkraut, Hängende Segge, Wald-Brustwurz \\nM: Bingelkraut, Wald-Zwenke, Wolliger und Gemeiner Schneeball (wenn kalkhaltig)\\n",
         "compactRisk": "4",
@@ -68089,12 +69352,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          2,
+          null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald mit Waldschachtelhalm",
         "la": "Aceri-Fraxinetum equisetosum silvaticae",
         "code": "26c",
+        "soil": [3, 3, null, 3, 1, null, 3],
         "aptitude": "PR: Mässig wüchsig, kleines Spektrum an Baumarten; nur auf stabilen Teilflächen bedingt wirtschaftlich nutzbar.\\nNG: Wegen Gleyboden grosse Bedeutung; mit Dauerbestockung können Wasserabfluss und Stabilität positiv beeinflusst werden.\\nNS: Wenig bedeutend.",
         "priority": null,
         "tillering": [
@@ -68153,9 +69434,7 @@
             [10, 20],
             [null, null],
             [null, null]
-          ],
-          [10, 30],
-          [67, 75]
+          ]
         ],
         "vegetation": "C: \\tHeidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: \\tWeiblicher Waldfarn\\nK: \\tWald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n ",
         "compactRisk": "4",
@@ -68171,12 +69450,30 @@
         "pioneerTreeTypes": "VBe, HBi",
         "tilleringFirwood": [67, 75],
         "tilleringHardwood": [10, 30],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald mit Waldschachtelhalm",
         "la": "Aceri-Fraxinetum equisetosum silvaticae",
         "code": "26c",
+        "soil": [3, 3, null, 3, 1, null, 3],
         "aptitude": "PR: Mässig wüchsig, kleines Spektrum an Baumarten; nur auf stabilen Teilflächen bedingt wirtschaftlich nutzbar.\\nNG: Wegen Gleyboden grosse Bedeutung; mit Dauerbestockung können Wasserabfluss und Stabilität positiv beeinflusst werden.\\nNS: Wenig bedeutend.",
         "priority": null,
         "tillering": [
@@ -68235,9 +69532,7 @@
             [10, 20],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "C: \\tHeidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: \\tWeiblicher Waldfarn\\nK: \\tWald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n ",
         "compactRisk": "4",
@@ -68253,12 +69548,30 @@
         "pioneerTreeTypes": "VBe, HBi",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald, Höhenausb.",
         "la": "Aceri-Fraxinetum, Höhenausb.",
         "code": "26h",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Produktiver Standort für Edellaubhölzer; aufgrund der Meereshöhe begrenzt nutzbar, BAh im Vordergrund; Vernässungen schränken Befahrbarkeit ein und erschweren Holzernte.\\nNG: Oft vernässt; in Hanglagen von grosser Bedeutung; biologische Entwässerung und Dauerbestockung sind zentral.\\nNS: Als feuchter bis nasser Standort von besonderer Bedeutung, vor allem wenn kalkhaltig.",
         "priority": null,
         "tillering": [
@@ -68317,9 +69630,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [80, 100],
-          [67, 75]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: Aronstab, Berg-Goldnessel, Baumtropf \\nG: \\tBärlauch (wenn kalkreich)\\nH: \\tWal-Ziest, tt,  Wald-Springkraut, Berg-Kerbel, Wolliger Hahnenfuss\\nI: \\tSumpf-Dotterblum\\nK: \\tPariser-Hexenkraut, Wald-Brustwurz\\nL: Quirlblättriger Salomonssiegel\\nM: Bingelkraut, Wald-Zwenke (wenn kalkhaltig)",
         "compactRisk": "4",
@@ -68335,12 +69646,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [67, 75],
         "tilleringHardwood": [80, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          2,
+          2,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald, Höhenausb.",
         "la": "Aceri-Fraxinetum, Höhenausb.",
         "code": "26h",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Produktiver Standort für Edellaubhölzer; aufgrund der Meereshöhe begrenzt nutzbar, BAh im Vordergrund; Vernässungen schränken Befahrbarkeit ein und erschweren Holzernte.\\nNG: Oft vernässt; in Hanglagen von grosser Bedeutung; biologische Entwässerung und Dauerbestockung sind zentral.\\nNS: Als feuchter bis nasser Standort von besonderer Bedeutung, vor allem wenn kalkhaltig.",
         "priority": null,
         "tillering": [
@@ -68399,9 +69728,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: Aronstab, Berg-Goldnessel, Baumtropf \\nG: \\tBärlauch (wenn kalkreich)\\nH: \\tWal-Ziest, tt,  Wald-Springkraut, Berg-Kerbel, Wolliger Hahnenfuss\\nI: \\tSumpf-Dotterblum\\nK: \\tPariser-Hexenkraut, Wald-Brustwurz\\nL: Quirlblättriger Salomonssiegel\\nM: Bingelkraut, Wald-Zwenke (wenn kalkhaltig)",
         "compactRisk": "4",
@@ -68417,12 +69744,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          2,
+          2,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald, wechselfeuchte Ausb. tiefer Lagen",
         "la": "Aceri-Fraxinetum, wechselfeuchte Ausb. tiefer Lagen",
         "code": "26P",
+        "soil": [null, null, null, null, 2, 3, 3],
         "aptitude": "PR: In der Regel kein Wirtschaftswald, da zu unstabil; vereinzelt in grösseren, flachen Partien nutzbar.\\nNG: Grösste Bedeutung, da oft in Bacheinhängen, oft rutschig!\\nNS: Sehr bedeutend, da meist offene, wilde Strukturen, wechselfeucht und kalkreich.",
         "priority": null,
         "tillering": [
@@ -68454,9 +69799,7 @@
             [0, 10],
             [5, 10]
           ],
-          null,
-          [90, 100],
-          [null, null]
+          null
         ],
         "vegetation": "E: Wald-Veilchen\\nF: Berg-Goldnessel, Baumtropf\\nH: Wald-Ziest\\nJ: Kohldistel\\nK: Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast\\nO: Schlaffe Segge, Buntes Reitgras, Liguster, Berg-Flockenblume, Wald-Witwenblume",
         "compactRisk": "3",
@@ -68472,12 +69815,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [90, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2,
+          null,
+          3,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald mit Schlaffer Segge",
         "la": "Aceri-Fraxinetum calamagrostietosum variae",
         "code": "26w",
+        "soil": [null, null, null, null, 2, 3, 3],
         "aptitude": "PR: Meist kein Wirtschaftswald, da zu unstabil; vereinzelt in grösseren, flachen Partien nutzbar.\\nNG: Grösste Bedeutung, da oft in Bacheinhängen, oft rutschig!\\nNS: Sehr bedeutend, da meist offene, wilde Strukturen, wechselfeucht und kalkreich.",
         "priority": null,
         "tillering": [
@@ -68536,9 +69897,7 @@
             [0, 5],
             [0, 10],
             [0, 10]
-          ],
-          [80, 90],
-          [33, 50]
+          ]
         ],
         "vegetation": "E: Wald-Veilchen\\nF: Berg-Goldnessel\\nH: Wald-Ziest, Wolliger Hahnenfuss\\nJ: Kohl-Distel\\nK: Wald-Brustwurz\\nM: Bindelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast\\nO: Buntes Reitgras, Berg-Flockenblume, Wald-Witwenblume, Alpenmasslieb",
         "compactRisk": "4",
@@ -68554,12 +69913,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [80, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          null,
+          3,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ahorn-Eschenwald mit Schlaffer Segge",
         "la": "Aceri-Fraxinetum calamagrostietosum variae",
         "code": "26w",
+        "soil": [null, null, null, null, 2, 3, 3],
         "aptitude": "PR: Meist kein Wirtschaftswald, da zu unstabil; vereinzelt in grösseren, flachen Partien nutzbar.\\nNG: Grösste Bedeutung, da oft in Bacheinhängen, oft rutschig!\\nNS: Sehr bedeutend, da meist offene, wilde Strukturen, wechselfeucht und kalkreich.",
         "priority": null,
         "tillering": [
@@ -68618,9 +69995,7 @@
             [0, 5],
             [0, 10],
             [0, 10]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Wald-Veilchen\\nF: Berg-Goldnessel\\nH: Wald-Ziest, Wolliger Hahnenfuss\\nJ: Kohl-Distel\\nK: Wald-Brustwurz\\nM: Bindelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast\\nO: Buntes Reitgras, Berg-Flockenblume, Wald-Witwenblume, Alpenmasslieb",
         "compactRisk": "4",
@@ -68636,12 +70011,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          null,
+          3,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Bach-Eschenwald",
         "la": "Carici remotae-Fraxinetum",
         "code": "27",
+        "soil": [null, null, null, null, 3, 2, 3],
         "aptitude": "PR: Sehr wüchsiger Standort, aber nur geeignet für Es und SEr; Vernässungen schränken Befahrbarkeit stark ein und erschweren Holzernte.\\nNG: Ausserordentliche Bedeutung entlang von Bächen; wichtig auch in ausgedehnten Nassflächen.\\nNS: Markante Nässe bietet ausserordentliche Bedingungen für viele Pflanzen und Tiere.",
         "priority": null,
         "tillering": [
@@ -68700,9 +70093,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [80, 100],
-          [67, 75]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut\\nI: \\tSumpf-Dotterblume, Riesenschachtelhalm, Sumpf-Pippau, Bach-Nelkenwurz, Wiesen-Spierstaude, Milzkraut \\nK: \\tPariser-Hexenkraut, Wald-Brustwurz",
         "compactRisk": "5",
@@ -68718,12 +70109,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [67, 75],
         "tilleringHardwood": [80, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          3,
+          1,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Bach-Eschenwald",
         "la": "Carici remotae-Fraxinetum",
         "code": "27",
+        "soil": [null, null, null, null, 3, 2, 3],
         "aptitude": "PR: Sehr wüchsiger Standort, aber nur geeignet für Es und SEr; Vernässungen schränken Befahrbarkeit stark ein und erschweren Holzernte.\\nNG: Ausserordentliche Bedeutung entlang von Bächen; wichtig auch in ausgedehnten Nassflächen.\\nNS: Markante Nässe bietet ausserordentliche Bedingungen für viele Pflanzen und Tiere.",
         "priority": null,
         "tillering": [
@@ -68782,9 +70191,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut\\nI: \\tSumpf-Dotterblume, Riesenschachtelhalm, Sumpf-Pippau, Bach-Nelkenwurz, Wiesen-Spierstaude, Milzkraut \\nK: \\tPariser-Hexenkraut, Wald-Brustwurz",
         "compactRisk": "5",
@@ -68800,12 +70207,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          3,
+          1,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Bach-Eschenwald, Höhenausbildung",
         "la": "Carici remotae-Fraxinetum, Ausb. mit Petasites albus",
         "code": "27h",
+        "soil": [null, null, null, null, 3, 2, 3],
         "aptitude": "PR: Wüchsiger Standort, aber nur geeignet für Es, bedingt für BAh und Ta; Vernässungen schränken Befahrbarkeit stark ein und erschweren Holzernte. Meist kein Wirtschaftswald.\\nNG: Ausserordentliche Bedeutung entlang von Bächen; wichtig auch in ausgedehnten Nassflächen.\\nNS: Markante Nässe bietet ausserordentliche Bedingungen für viele Pflanzen und Tiere.",
         "priority": null,
         "tillering": [
@@ -68837,9 +70262,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [60, 100],
-          [67, 75]
+          null
         ],
         "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\t\\nH: \\tWald-Ziest, Wald-Springkraut\\nI: Sumpf-Dotterblume\\nSumpf-Pippau, Bach-Nelkenwurz, Milzkraut \\nK: Wald-Brustwurz",
         "compactRisk": "5",
@@ -68855,12 +70278,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [67, 75],
         "tilleringHardwood": [60, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          3,
+          3,
+          3,
+          3,
+          3,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Ulmen-Eschen-Auenwald",
         "la": "Ulmo-Fraxinetum equisetosum hyemalis",
         "code": "28",
+        "soil": [null, null, null, null, 3, 3, 3],
         "aptitude": "PR: Sehr produktiver und vielseitiger Standort; oft aber nur klein und schwer zugänglich.\\nNG: Periodisch von Hochwasser überschwemmt, an der regulierten Reuss nur mehr in Extremfällen.\\nNS: Durch Kalkreichtum und Dynamik sehr wertvoll, sehr reichhaltige Strauchschicht.",
         "priority": "4",
         "tillering": [
@@ -68892,9 +70333,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [90, 100],
-          [null, null]
+          null
         ],
         "vegetation": "E: \\tBusch-Windröschen\\nF: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch\\nH: Wald-Ziest, Wald-Springkraut\\nI: Scharfkantige Segge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n",
         "compactRisk": "4",
@@ -68910,12 +70349,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [90, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          1,
+          2,
+          null,
+          1,
+          2,
+          null,
+          2,
+          null,
+          1,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Ulmen-Eschenwald",
         "la": "Ulmo-Fraxinetum typicum",
         "code": "29",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Produktiver Standort, Befahrbarkeit eingeschränkt.\\nNG: Wichtige Funktion als Wasserspeicher in flacher Lage, biologische Entwässerung wichtig.\\nNS: Wertvoller Nassstandort.",
         "priority": null,
         "tillering": [
@@ -68974,9 +70431,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [80, 100],
-          [67, 75]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich\\nM: Roter Hartriegel",
         "compactRisk": "4",
@@ -68992,12 +70447,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [67, 75],
         "tilleringHardwood": [80, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          1,
+          null,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Ulmen-Eschenwald",
         "la": "Ulmo-Fraxinetum typicum",
         "code": "29",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Produktiver Standort, Befahrbarkeit eingeschränkt.\\nNG: Wichtige Funktion als Wasserspeicher in flacher Lage, biologische Entwässerung wichtig.\\nNS: Wertvoller Nassstandort.",
         "priority": null,
         "tillering": [
@@ -69056,9 +70529,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich\\nM: Roter Hartriegel",
         "compactRisk": "4",
@@ -69074,12 +70545,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          1,
+          null,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Zweiblatt-Eschen-Auenwald",
         "la": "Ulmo-Fraxinetum listeretosum",
         "code": "29A",
+        "soil": [null, null, null, null, 3, 3, 3],
         "aptitude": "PR: Sehr produktiver und vielseitiger Standort; oft aber nur klein und schwer zugänglich.\\nNG: Periodisch von Hochwasser überschwemmt, an der regulierten Reuss nur mehr in Extremfällen.\\nNS: Durch Kalkreichtum und Dynamik sehr wertvoll, sehr reichhaltige Strauchschicht.",
         "priority": null,
         "tillering": [
@@ -69138,9 +70627,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [90, 100],
-          [null, null]
+          ]
         ],
         "vegetation": "F: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch (örtlich)\\nH: Wald-Ziest, Wald-Springkraut, Segge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n ",
         "compactRisk": "3",
@@ -69156,12 +70643,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [90, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          3,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Ulmen-Eschen-Auenwald mit Weissegge",
         "la": "Ulmo-Fraxinetum caricetosum albae",
         "code": "29C",
+        "soil": [null, null, null, null, 2, 3, 2],
         "aptitude": "PR: Produktiver und vielseitiger Standort; oft aber nur klein und schwer zugänglich.\\nNG: Periodisch von Hochwasser überschwemmt, an der regulierten Reuss nur mehr in Extremfällen.\\nNS: Durch Kalkreichtum und Dynamik sehr wertvoll, sehr reichhaltige Strauchschicht.",
         "priority": null,
         "tillering": [
@@ -69193,9 +70698,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [80, 100],
-          [null, null]
+          null
         ],
         "vegetation": "E: \\tBusch-Windröschen\\nF: \\tBerg-Goldnessel, Baumtropf \\nH: Wald-Springkraut\\nK: \\tGrosses Zweiblatt, Gundelrebe\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schnellball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\nP: Weisse Segge ",
         "compactRisk": "2",
@@ -69211,12 +70714,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [80, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          3,
+          null,
+          1,
+          2
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Ulmen-Eschenwald mit Waldschachtelhalm",
         "la": "Ulmo-Fraxinetum equisetosum silvaticae",
         "code": "29h",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Ziemlich produktiver Standort, Befahrbarkeit eingeschränkt, Holzernte erschwert.\\nNG: Wichtige Funktion als Wasserspeicher in flacher Lage, biologische Entwässerung wichtig.\\nNS: Wertvoller Nassstandort.",
         "priority": null,
         "tillering": [
@@ -69275,9 +70796,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [60, 90],
-          [67, 75]
+          ]
         ],
         "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\t\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich",
         "compactRisk": "4",
@@ -69293,12 +70812,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [67, 75],
         "tilleringHardwood": [60, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          1,
+          2,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Ulmen-Eschenwald mit Waldschachtelhalm",
         "la": "Ulmo-Fraxinetum equisetosum silvaticae",
         "code": "29h",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Ziemlich produktiver Standort, Befahrbarkeit eingeschränkt, Holzernte erschwert.\\nNG: Wichtige Funktion als Wasserspeicher in flacher Lage, biologische Entwässerung wichtig.\\nNS: Wertvoller Nassstandort.",
         "priority": null,
         "tillering": [
@@ -69357,9 +70894,7 @@
             [null, null],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\t\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich",
         "compactRisk": "4",
@@ -69375,12 +70910,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          3,
+          1,
+          2,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Zweiblatt-Eschenmischwald, Ausb. auf Lehmböden tiefer Lagen",
         "la": "Ulmo-Fraxinetum listeretosum, Ausb. tiefer Lagen",
         "code": "29Ls",
+        "soil": [3, 3, null, 3, 1, null, 3],
         "aptitude": "PR: Mässig wüchsig, kleines Spektrum an Baumarten; nur auf stabilen Teilflächen bedingt wirtschaftlich nutzbar.\\nNG: Wegen Gleyboden grosse Bedeutung; mit Dauerbestockung können Wasserabfluss und Stabilität positiv beeinflusst werden.\\nNS: Wenig bedeutend.",
         "priority": null,
         "tillering": [
@@ -69439,9 +70992,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [20, 40],
-          [50, 67]
+          ]
         ],
         "vegetation": "B: Faulbaum\\nC: \\tHeidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: \\tWeiblicher Waldfarn\\nK: \\tWald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n",
         "compactRisk": "4",
@@ -69457,12 +71008,30 @@
         "pioneerTreeTypes": "VBe, HBi, Wei",
         "tilleringFirwood": [50, 67],
         "tilleringHardwood": [20, 40],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Zweiblatt-Eschenmischwald, Ausb. auf Lehmböden tiefer Lagen",
         "la": "Ulmo-Fraxinetum listeretosum, Ausb. tiefer Lagen",
         "code": "29Ls",
+        "soil": [3, 3, null, 3, 1, null, 3],
         "aptitude": "PR: Mässig wüchsig, kleines Spektrum an Baumarten; nur auf stabilen Teilflächen bedingt wirtschaftlich nutzbar.\\nNG: Wegen Gleyboden grosse Bedeutung; mit Dauerbestockung können Wasserabfluss und Stabilität positiv beeinflusst werden.\\nNS: Wenig bedeutend.",
         "priority": null,
         "tillering": [
@@ -69521,9 +71090,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "B: Faulbaum\\nC: \\tHeidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: \\tWeiblicher Waldfarn\\nK: \\tWald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n",
         "compactRisk": "4",
@@ -69539,12 +71106,30 @@
         "pioneerTreeTypes": "VBe, HBi, Wei",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "26,27"
       },
       {
         "de": "Traubenkirschen-Eschenwald",
         "la": "Pruno-Fraxinetum",
         "code": "30",
+        "soil": [2, 2, null, 1, 2, 1, 3],
         "aptitude": "PR:  Ziemlich produktiver Nassstandort, wenn nicht zu sauer; bei zunehmender Säure nimmt Wuchskraft deutlich ab. Erschwerte Holzernte, da nicht befahrbar.\\nEher seltener Standort, meist kleinflächig, i.d.R. kein Wirtschaftswald.\\nNG: Wichtige Funktion zur Wasserrückhaltung, biologische Entwässerung durch Tiefwurzler prioritär.\\nNS: Grosse Bedeutung als Nassstandort.",
         "priority": "4",
         "tillering": [
@@ -69576,9 +71161,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [70, 80],
-          [67, 75]
+          null
         ],
         "vegetation": "C: \\tsaurer ‚Flügel’: Heidelbeere, Breitblättriger Wurmfarn, Wald-Frauenhaar\\nE: \\tWaldmeister \\nF: \\tBerg-Goldnessel\\nH: \\tTraubenkirsche, Wald-Ziest, Wald-Springkraut\\nI: \\tSumpf-Dotterblume, Sumpf-Pippau, Wechselblättriges Milzkraut \\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge ",
         "compactRisk": "5",
@@ -69594,12 +71177,30 @@
         "pioneerTreeTypes": "VBe, HBi",
         "tilleringFirwood": [67, 75],
         "tilleringHardwood": [70, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          3,
+          1,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Untermontaner Grauerlen-Auenwald",
         "la": "Calamagrostio-Alnetum incanae",
         "code": "32C",
+        "soil": [null, null, null, null, 1, 3, 1],
         "aptitude": "PR: Kein Wirtschaftswald.\\nNG: Wird regelmässig von Hochwassern überflutet.\\nNS: Interessanter Spezialstandort.",
         "priority": "2",
         "tillering": [
@@ -69631,9 +71232,7 @@
             [null, null],
             [0, 20]
           ],
-          null,
-          [60, 90],
-          [null, null]
+          null
         ],
         "vegetation": "E: \\tWaldmeister, Walderdbeere \\nF: \\tWeisse Pestwurz \\nH: \\tRasen-Schmiele, Berg-Kerbel\\nI: Rote Waldnelke, Sumpf-Dotterblume, Sumpf-Pippau\\nJ: Kohldistel\\nK: \\tWald-Brustwurz \\nM: \\tBingelkraut, Wald-Zwenke, Wolliger Schneeball\\nO: \\tBuntes Reitgras, Wald-Witwenblume ",
         "compactRisk": "2",
@@ -69649,12 +71248,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 90],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          2,
+          1,
+          1,
+          2,
+          null,
+          2,
+          null,
+          2,
+          1
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Obermontaner Grauerlen-Auenwald",
         "la": "Violo-Alnetum incanae",
         "code": "32V",
+        "soil": [null, null, null, null, 2, 3, 1],
         "aptitude": "PR: Kein Wirtschaftswald.\\nNG: Wird regelmässig von Hochwassern überflutet.\\nNS: Interessanter Spezialstandort.",
         "priority": "2",
         "tillering": [
@@ -69686,9 +71303,7 @@
             [null, null],
             [0, 20]
           ],
-          null,
-          [60, 80],
-          [null, null]
+          null
         ],
         "vegetation": "E: Walderdbeere \\nF: Weisse Pestwurz \\nH: Rasen-Schmiele\\nI: Rote Waldnelke, Sumpf-Pippau\\nJ: Kohldistel, Wald-Storchenschnabel\\nK: Wald-Brustwurz \\nM: Wald-Zwenke\\nO: Buntes Reitgras, Wald-Witwenblume \\n",
         "compactRisk": "2",
@@ -69704,12 +71319,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 80],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          2,
+          2,
+          null,
+          2,
+          1,
+          2,
+          2,
+          1,
+          2,
+          null,
+          2,
+          1
+        ],
         "associationGroupCode": "28,29,30,32"
       },
       {
         "de": "Seggen-Schwarzerlen-Bruchwald",
         "la": "Carici elongatae-Alnetum glutinosae",
         "code": "44",
+        "soil": [null, null, null, null, 3, 3, 3],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Bedeutung minim, da in ebenen Lagen; wenn entwässert, verstärkter Spitzenabfluss.\\nNS: Ausserordentlich seltener Sonderstandort von höchstem Wert; oft Renaturierungen notwendig.",
         "priority": "3",
         "tillering": [
@@ -69741,9 +71374,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [95, 100],
-          [null, null]
+          null
         ],
         "vegetation": "KS: Scharfkantige Segge, Gewöhnlicher Gilbweiderich.\\nMS: spärlich.\\n",
         "compactRisk": "5",
@@ -69759,12 +71390,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [95, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          3,
+          2,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "44,45"
       },
       {
         "de": "Föhren-Birken-Bruchwald",
         "la": "Pino-Betuletum",
         "code": "45",
+        "soil": [2, 2, 3, 3, null, null, 3],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Bedeutung minim, da in ebenen Lagen; wenn entwässert, verstärkter Spitzenabfluss.\\nNS: Ausserordentlich seltener Sonderstandort von höchstem Wert; oft Renaturierungen notwendig.",
         "priority": "3",
         "tillering": [
@@ -69796,9 +71445,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [30, 30],
-          [null, null]
+          null
         ],
         "vegetation": "KS: Rauschbeere, Pfeifengras, Scheidiges Wollgras.\\nMS: üppig, mit Torfmoos, Gemeinem Frauenhaar.",
         "compactRisk": "5",
@@ -69814,12 +71461,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [30, 30],
+        "vegetationIndicator": [
+          3,
+          3,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "44,45"
       },
       {
         "de": "Typischer Heidelbeer-Tannen-Fichtenwald",
         "la": "Vaccinio myrtillii-Abieti-Piceetum typicum",
         "code": "46",
+        "soil": [3, 3, 2, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mässig, nur Ta und Fi als Wertträger; diese aber mit sehr guten Qualitäten.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Oft hohe Heidelbeerbestände und spezialisierte Moosflora.",
         "priority": null,
         "tillering": [
@@ -69878,9 +71543,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [0, 5],
-          [33, 50]
+          ]
         ],
         "vegetation": "A: Torfmoose, Roststengelmoos\\nB: \\tDreilapp. Peitschenmoos, Gewelltes Wurmmoos, Rostrote Alpenrose, Wald-Schmiele \\nC: \\tHeidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, ",
         "compactRisk": "3",
@@ -69896,12 +71559,30 @@
         "pioneerTreeTypes": "VBe",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [0, 5],
+        "vegetationIndicator": [
+          2,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "46"
       },
       {
         "de": "Typischer Heidelbeer-Tannen-Fichtenwald",
         "la": "Vaccinio myrtillii-Abieti-Piceetum typicum",
         "code": "46",
+        "soil": [3, 3, 2, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mässig, nur Ta und Fi als Wertträger; diese aber mit sehr guten Qualitäten.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Oft hohe Heidelbeerbestände und spezialisierte Moosflora.",
         "priority": null,
         "tillering": [
@@ -69960,9 +71641,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "A: Torfmoose, Roststengelmoos\\nB: \\tDreilapp. Peitschenmoos, Gewelltes Wurmmoos, Rostrote Alpenrose, Wald-Schmiele \\nC: \\tHeidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, ",
         "compactRisk": "3",
@@ -69978,12 +71657,30 @@
         "pioneerTreeTypes": "VBe",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          2,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "46"
       },
       {
         "de": "Peitschenmoos-Fichten-Tannenwald",
         "la": "Bazzanio-Abietetum",
         "code": "46t",
+        "soil": [3, 3, 2, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mittel; nur Ta und Fi als Wertträger; diese aber mit sehr guten Qualitäten.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Oft hohe Heidelbeerbestände und spezialisierte Moosflora.",
         "priority": null,
         "tillering": [
@@ -70042,9 +71739,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [0, 10],
-          [33, 50]
+          ]
         ],
         "vegetation": "A: Torfmoose (auf Lehmboden), Rotstengelmoos\\nB: Peitschenmoos, Gewelltes Wurmmoos, Wald-Schmiele \\nC: \\tHeidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn",
         "compactRisk": "3",
@@ -70060,12 +71755,30 @@
         "pioneerTreeTypes": "VBe",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [0, 10],
+        "vegetationIndicator": [
+          2,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "46"
       },
       {
         "de": "Peitschenmoos-Fichten-Tannenwald",
         "la": "Bazzanio-Abietetum",
         "code": "46t",
+        "soil": [3, 3, 2, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft mittel; nur Ta und Fi als Wertträger; diese aber mit sehr guten Qualitäten.\\nNG: Ausgezeichnete Schutzwirkung, da sehr stabile Standorte.\\nNS: Oft hohe Heidelbeerbestände und spezialisierte Moosflora.",
         "priority": null,
         "tillering": [
@@ -70124,9 +71837,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "A: Torfmoose (auf Lehmboden), Rotstengelmoos\\nB: Peitschenmoos, Gewelltes Wurmmoos, Wald-Schmiele \\nC: \\tHeidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn",
         "compactRisk": "3",
@@ -70142,12 +71853,30 @@
         "pioneerTreeTypes": "VBe",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          2,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "46"
       },
       {
         "de": "Heidelbeer-Tannen-Fichtenwald mit Torfmoos",
         "la": "Vaccinio myrtilli-Abieti-Piceetum sphagnetosum",
         "code": "46*",
+        "soil": [3, 3, 3, 3, null, null, 3],
         "aptitude": "PR: Wuchskraft mässig bis gering, nur Ta und Fi als Wertträger; diese aber mit guten Qualitäten. Boden nicht befahrbar. Holzernte sehr anspruchsvoll.\\nNG: Gute Schutzwirkung mit Dauerbestockung.\\nNS: Oft sehr hohe Heidelbeerbestände und spezialisierte Moosflora.",
         "priority": null,
         "tillering": [
@@ -70179,9 +71908,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 10],
-          [50, 50]
+          null
         ],
         "vegetation": "A: \\tTorfmoose, Straussenfedermoos, Rotstengelmoos, \\nB: Gewelltes Wurmmoos\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn ",
         "compactRisk": "4",
@@ -70197,12 +71924,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [50, 50],
         "tilleringHardwood": [0, 10],
+        "vegetationIndicator": [
+          3,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "46"
       },
       {
         "de": "Blockschutt-Tannen-Fichtenwald",
         "la": "Asplenio-Abieti-Piceetum",
         "code": "48",
+        "soil": [1, 1, null, null, null, null, null],
         "aptitude": "PR: Wuchskraft mässig bis mittel, Holzernte durch Lage und Felsblöcke oft erschwert, deshalb unbedeutend.\\nNG: Meist in Steinschlagsituationen im Ablagerungsgebiet; wichtige Schutzfunktion. Ausnahme: spezielle Variante auf Karst.\\nNS: Relativ seltene und teilweise sehr vielseitige Sonderstandorte von hohem Wert.",
         "priority": null,
         "tillering": [
@@ -70234,9 +71979,7 @@
             [0, 10],
             [null, null]
           ],
-          null,
-          [10, 20],
-          [33, 33]
+          null
         ],
         "vegetation": "SS: Vielfältig und meist stark: Schwarzes Geissblatt, Roter Holunder, Alpen-Geissblatt, Alpen-Hagrose.\\nKS: Auf Blöcken mit Heidelbeere, Tannen-Bärlapp, Eichenfarn, Ruprechtsfarn. In Nischen: Rundblättriger Steinbrech, Grauer Alpendost, Wolliger Hahnenfuss.\\nMS: Hainmoos, Tamariskenmoos, Wald-Frauenhaar.",
         "compactRisk": "1",
@@ -70252,12 +71995,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 33],
         "tilleringHardwood": [10, 20],
+        "vegetationIndicator": [
+          null,
+          2,
+          3,
+          2,
+          2,
+          null,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          3,
+          2,
+          null
+        ],
         "associationGroupCode": "48"
       },
       {
         "de": "Typischer Schachtelhalm-Tannen-Fichtenwald",
         "la": "Equiseto-Abieti-Piceetum typicum",
         "code": "49",
+        "soil": [2, 2, 2, 3, 3, 1, 3],
         "aptitude": "PR: Mässig wüchsiger Standort, Holzqualität teilweise gut, nicht befahrbar.\\nNG: Durch tonreichen Untergrund und grosse Ausdehnung in hohen Lagen für Schutzfunktion sehr bedeutend. Häufig mit Drainagegräben, dadurch hoher Spitzenabfluss.\\nNS: Wertvolle Nassstandorte.",
         "priority": null,
         "tillering": [
@@ -70289,9 +72050,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [10, 20],
-          [33, 50]
+          null
         ],
         "vegetation": "A: \\tRotstengelmoos\\nC: \\tHeidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nF: \\tWeisse Pestwurz, Gew. Schlüsselblume\\nH: \\tBerg-Kerbel, Wolliger Hahnenfuss\\nI: \\tEisenhutblättriger Hahnenfuss, Sumpf-Dotterblume, Sumpf-Pippau\\nJ: \\tKohldistel, Wald-Storchenschnabel, Grauer Alpendost\\nA-C: trocken-saure Inseln",
         "compactRisk": "4",
@@ -70307,12 +72066,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [10, 20],
+        "vegetationIndicator": [
+          2,
+          2,
+          3,
+          2,
+          2,
+          null,
+          3,
+          3,
+          3,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "49,50"
       },
       {
         "de": "Typischer Hochstauden-Tannen-Fichtenwald",
         "la": "Adenostylo alliariae-Abieti-Piceetum typicum",
         "code": "50",
+        "soil": [2, 1, null, 1, 2, null, null],
         "aptitude": "PR: Relativ wüchsiger, meist stabiler Standort mit guten Holzqualitäten; bei guter Zugänglichkeit nutzbar.\\nNG: Erhöhte Bedeutung in steilen Lagen. Erzielung stabiler Bestände als oberstes Ziel.\\nNS: Wenige Besonderheiten, ausser in steilen Lagen.",
         "priority": null,
         "tillering": [
@@ -70371,9 +72148,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [10, 20],
-          [33, 50]
+          ]
         ],
         "vegetation": "B: \\tGewöhnl. Alpenlattich\\nC: Heidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich\\nE: \\tÄhrige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: \\tWeisse Pestwurz\\nH: \\tGelber Eisenhut\\nJ: \\tGrauer Alpendost ",
         "compactRisk": "2",
@@ -70389,12 +72164,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 50],
         "tilleringHardwood": [10, 20],
+        "vegetationIndicator": [
+          null,
+          1,
+          2,
+          3,
+          2,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "49,50"
       },
       {
         "de": "Typischer Hochstauden-Tannen-Fichtenwald",
         "la": "Adenostylo alliariae-Abieti-Piceetum typicum",
         "code": "50",
+        "soil": [2, 1, null, 1, 2, null, null],
         "aptitude": "PR: Relativ wüchsiger, meist stabiler Standort mit guten Holzqualitäten; bei guter Zugänglichkeit nutzbar.\\nNG: Erhöhte Bedeutung in steilen Lagen. Erzielung stabiler Bestände als oberstes Ziel.\\nNS: Wenige Besonderheiten, ausser in steilen Lagen.",
         "priority": null,
         "tillering": [
@@ -70453,9 +72246,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "B: \\tGewöhnl. Alpenlattich\\nC: Heidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich\\nE: \\tÄhrige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: \\tWeisse Pestwurz\\nH: \\tGelber Eisenhut\\nJ: \\tGrauer Alpendost ",
         "compactRisk": "2",
@@ -70471,12 +72262,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          1,
+          2,
+          3,
+          2,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "49,50"
       },
       {
         "de": "Hochstauden-Tannen-Fichtenwald, artenarme Ausb.",
         "la": "Adenostylo alliariae-Abieti-Piceetum, artenarme Ausb.",
         "code": "50d",
+        "soil": [2, 3, null, 3, 1, null, null],
         "aptitude": "PR: Wuchskraft mässig, gute Holzqualitäten.\\nNG: Gute Schutzwirkung, da meist stabile Standorte. Robuste Strukturen fördern.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeerbestände.",
         "priority": null,
         "tillering": [
@@ -70535,9 +72344,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [5, 10],
-          [33, 33]
+          ]
         ],
         "vegetation": "B: \\tGewöhnl. Alpenlattich, Preiselbeere\\nC: Heidelbeere, Wald-Frauenhaar, Hainmoos, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich, Echte Goldrute, Wald-Habichtskraut\\nE: \\tBreitblättriger Ehrenpreis",
         "compactRisk": "2",
@@ -70553,12 +72360,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [33, 33],
         "tilleringHardwood": [5, 10],
+        "vegetationIndicator": [
+          null,
+          2,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "49,50"
       },
       {
         "de": "Hochstauden-Tannen-Fichtenwald, artenarme Ausb.",
         "la": "Adenostylo alliariae-Abieti-Piceetum, artenarme Ausb.",
         "code": "50d",
+        "soil": [2, 3, null, 3, 1, null, null],
         "aptitude": "PR: Wuchskraft mässig, gute Holzqualitäten.\\nNG: Gute Schutzwirkung, da meist stabile Standorte. Robuste Strukturen fördern.\\nNS: Wenig Besonderheiten; oft schöne Heidelbeerbestände.",
         "priority": null,
         "tillering": [
@@ -70617,9 +72442,7 @@
             [0, 10],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "B: \\tGewöhnl. Alpenlattich, Preiselbeere\\nC: Heidelbeere, Wald-Frauenhaar, Hainmoos, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich, Echte Goldrute, Wald-Habichtskraut\\nE: \\tBreitblättriger Ehrenpreis",
         "compactRisk": "2",
@@ -70635,12 +72458,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          2,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "49,50"
       },
       {
         "de": "Hochstauden-Tannen-Fichtenwald mit Alpenmilchlattich",
         "la": "Adenostylo alliariae-Abieti-Piceetum cicerbitetosum",
         "code": "50f",
+        "soil": [null, null, null, null, 3, 2, 2],
         "aptitude": "PR: Recht wüchsiger Standort, Holzqualität teilweise gut, in steilen und schneereichen Lagen nur bedingt.\\nNG: Erhöhte Bedeutung in steilen Lagen. Erzielung stabiler Bestände als oberstes Ziel.\\nNS: Spezieller Lebensraum durch sehr üppige und vielfältige Krautschicht.",
         "priority": null,
         "tillering": [
@@ -70699,9 +72540,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [10, 20],
-          [50, 67]
+          ]
         ],
         "vegetation": "D: \\tPurpur-Hasenlattich, Waldfarn\\nE: \\tEchter Wurmfarn, Ährige Rapunzel, Sanikel\\nF: \\tWeisse Pestwurz, Gewöhnl. Schlüsselblume\\nH: \\tBerg-Kerbel, Gelber Eisenhut, Wolliger Hahnenfuss\\nI: \\tEisenhutblättriger Hahnenfuss\\nJ: \\tGrauer Alpendost, Rundblättriger Steinbrech, Zweiblütiges Veilchen, Alpen-Milchlattich",
         "compactRisk": "3",
@@ -70717,12 +72556,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [50, 67],
         "tilleringHardwood": [10, 20],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          3,
+          2,
+          3,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "49,50"
       },
       {
         "de": "Hochstauden-Tannen-Fichtenwald mit Alpenmilchlattich",
         "la": "Adenostylo alliariae-Abieti-Piceetum cicerbitetosum",
         "code": "50f",
+        "soil": [null, null, null, null, 3, 2, 2],
         "aptitude": "PR: Recht wüchsiger Standort, Holzqualität teilweise gut, in steilen und schneereichen Lagen nur bedingt.\\nNG: Erhöhte Bedeutung in steilen Lagen. Erzielung stabiler Bestände als oberstes Ziel.\\nNS: Spezieller Lebensraum durch sehr üppige und vielfältige Krautschicht.",
         "priority": null,
         "tillering": [
@@ -70781,9 +72638,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "D: \\tPurpur-Hasenlattich, Waldfarn\\nE: \\tEchter Wurmfarn, Ährige Rapunzel, Sanikel\\nF: \\tWeisse Pestwurz, Gewöhnl. Schlüsselblume\\nH: \\tBerg-Kerbel, Gelber Eisenhut, Wolliger Hahnenfuss\\nI: \\tEisenhutblättriger Hahnenfuss\\nJ: \\tGrauer Alpendost, Rundblättriger Steinbrech, Zweiblütiges Veilchen, Alpen-Milchlattich",
         "compactRisk": "3",
@@ -70799,12 +72654,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          3,
+          2,
+          3,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "49,50"
       },
       {
         "de": "Typischer Zwergbuchs-Fichtenwald",
         "la": "Polygala-chamaebuxi-Piceetum",
         "code": "53",
+        "soil": [2, 2, null, 3, null, 3, null],
         "aptitude": "PR: Ohne Bedeutung für Holzproduktion.\\nNG: Meist sehr stabile Standorte; vereinzelt in Steinschlaggebieten.\\nNS: Ausserordentlich wertvolle Standorte durch lichten Bestand, v.a. aber durch Mischvegetation von kalkreichem Untergrund mit saurer Auflage.",
         "priority": "2",
         "tillering": [
@@ -70836,9 +72709,7 @@
             [0, 5],
             [0, 5]
           ],
-          null,
-          [0, 10],
-          [null, null]
+          null
         ],
         "vegetation": "B: \\tBesenheide, Preiselbeere\\nC: \\tHeidelbeere, Wald-Frauenhaar\\nM: \\tBingelkraut\\nO: \\tBuntes Reitgras, Schlaffe Segge\\nP: \\tBlaugras, Weisse Segge, Berg-Segge, Buchsblättrige Kreuzblume, Berg-Distel, Behaarte Alpenrose",
         "compactRisk": "1",
@@ -70854,12 +72725,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 10],
+        "vegetationIndicator": [
+          null,
+          2,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          3,
+          3
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Typischer Zwergbuchs-Fichtenwald mit Tanne",
         "la": "Polygala-chamaebuxi-Piceetum mit Tanne",
         "code": "53Ta",
+        "soil": [2, 2, null, 3, null, 3, null],
         "aptitude": "PR: Ohne Bedeutung für Holzproduktion\\nNG: Meist unbedeutend, beschränkte Wirkung für Wasserspeicherung.\\nNS: Sehr wertvolle Standorte durch lichten Bestand, v.a. aber durch Mischvegetation von kalkreichem Untergrund mit saurer Auflage.",
         "priority": "2",
         "tillering": [
@@ -70891,9 +72780,7 @@
             [0, 10],
             [0, 5]
           ],
-          null,
-          [0, 10],
-          [20, 25]
+          null
         ],
         "vegetation": "B: \\tBesenheide, Preiselbeere\\nC: \\tHeidelbeere, Wald-Frauenhaar\\nM: \\tBingelkraut\\nO: \\tBuntes Reitgras, Schlaffe Segge\\nP: \\tBlaugras, Weisse Segge, Berg-Segge, Buchsblättrige Kreuzblume, Berg-Distel, Behaarte Alpenrose",
         "compactRisk": "1",
@@ -70909,12 +72796,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [20, 25],
         "tilleringHardwood": [0, 10],
+        "vegetationIndicator": [
+          null,
+          2,
+          3,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          null,
+          3,
+          3
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Moorrand-Fichtenwald",
         "la": "Sphagno-Piceetum",
         "code": "56",
+        "soil": [3, 3, 3, 3, null, null, 3],
         "aptitude": "PR: Wuchskraft sehr gering, oft tiefastig, stets feinjährig. Befahren sehr heikel. Ohne Bedeutung.\\nNG: Wichtige Funktion als Wasserspeicher in Einzugsgebieten von Wildbächen; mit Moospolstern und Zwergsträuchern sehr wertvoll.\\nNS: Meist dichte Torfmoosbestände mit hochwachsenden Heidelbeeren. Wertvolle Moose, vereinzelt Hochmoorarten.",
         "priority": "3",
         "tillering": [
@@ -70946,9 +72851,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 0],
-          [null, null]
+          null
         ],
         "vegetation": "A: \\tTorfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: \\tGewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: \\tHeidelbeer",
         "compactRisk": "5",
@@ -70964,12 +72867,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 0],
+        "vegetationIndicator": [
+          3,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Alpenlattich-Fichtenwald mit Torfmoos, Ausb. mit Bergföhre",
         "la": "Homogyno-Piceetum sphagnetosum, Ausb. mit Pinus mugo",
         "code": "57B",
+        "soil": [3, 3, 3, 3, null, null, 3],
         "aptitude": "PR: Wuchskraft sehr gering, oft tiefastig, stets feinjährig. Befahren sehr heikel. Ohne Bedeutung.\\nNG: Wichtige Funktion als Wasserspeicher in Einzugsgebieten von Wildbächen; mit Moospolstern und Zwergsträuchern sehr wertvoll.\\nNS: Meist dichte Torfmoosbestände mit hochwachsenden Heidelbeeren; Bergföhrenanteil.",
         "priority": null,
         "tillering": [
@@ -71001,9 +72922,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 0],
-          [null, null]
+          null
         ],
         "vegetation": "A: \\tTorfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: \\tGewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: \\tHeidelbeer",
         "compactRisk": "5",
@@ -71019,12 +72938,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 0],
+        "vegetationIndicator": [
+          3,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Alpenlattich-Fichtenwald, Blockausbildung",
         "la": "Homogyno-Piceetum, Blockausbildung",
         "code": "57Bl",
+        "soil": [2, 2, 3, 3, null, null, 3],
         "aptitude": "PR: Wuchskraft mässig, Holzernte durch Lage und Felsblöcke erschwert, deshalb unbedeutend.\\nNG: Meist in Steinschlagsituationen im Ablagerungsgebiet; wichtige Schutzfunktion. Ausnahme: spezielle Variante auf Karst.\\nNS: Relativ seltene und teilweise sehr vielseitige Sonderstandorte von hohem Wert.",
         "priority": null,
         "tillering": [
@@ -71056,9 +72993,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 5],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Schwarzes Geissblatt, Alpen-Hagrose, Vogelbeere.\\nKS: Heidelbeere, Tannen-Bärlapp, Eichenfarn, Ruprechtsfarn.\\nMS: Üppig: Hainmoos, Tamariskenmoos, Wald-Frauenhaar.",
         "compactRisk": "1",
@@ -71074,12 +73009,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 5],
+        "vegetationIndicator": [
+          2,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Alpenlattich-Fichtenwald mit Torfmoos",
         "la": "Homogyno-Piceetum sphagnetosum",
         "code": "57S",
+        "soil": [3, 3, 3, 3, null, null, 3],
         "aptitude": "PR: Wuchskraft gering, oft tiefastig, stets feinjährig. Befahren heikel, deshalb erschwerte Holzernte. Nur punktuell bedeutend.\\nNG: Wichtige Funktion als Wasserspeicher in Einzugsgebieten von Wildbächen; mit Moospolstern und Zwergsträuchern sehr wertvoll.\\nNS: Meist dichte Torfmoosbestände mit hochwachsenden Heidelbeeren.",
         "priority": null,
         "tillering": [
@@ -71111,9 +73064,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 5],
-          [null, null]
+          null
         ],
         "vegetation": "A: \\tTorfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: \\tGewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: \\tHeidelbeere, Breiter Wurmfarn",
         "compactRisk": "4",
@@ -71129,12 +73080,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 5],
+        "vegetationIndicator": [
+          3,
+          2,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Alpenlattich-Fichtenwald mit Heidelbeere",
         "la": "Homogyno-Piceetum vaccinietosum myrtilli",
         "code": "57V",
+        "soil": [2, 2, null, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft gering; gute Holzqualitäten, aber oft tiefastig. Insgesamt wenig Bedeutung für Holzproduktion.\\nNG: Gute Schutzwirkung, da meist stabile Standorte. Gute Strukturen fördern.\\nNS: Wenig Besonderheiten; zum Teil schöne Heidelbeerbestände.",
         "priority": null,
         "tillering": [
@@ -71193,9 +73162,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [0, 5],
-          [null, null]
+          ]
         ],
         "vegetation": "B: \\tGewöhnl. Alpenlattich, Wald-Schmiele, Preiselbeere\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse, Tamariskenmoos",
         "compactRisk": "2",
@@ -71211,12 +73178,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 5],
+        "vegetationIndicator": [
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Alpenlattich-Fichtenwald mit Heidelbeere",
         "la": "Homogyno-Piceetum vaccinietosum myrtilli",
         "code": "57V",
+        "soil": [2, 2, null, 3, null, null, 1],
         "aptitude": "PR: Wuchskraft gering; gute Holzqualitäten, aber oft tiefastig. Insgesamt wenig Bedeutung für Holzproduktion.\\nNG: Gute Schutzwirkung, da meist stabile Standorte. Gute Strukturen fördern.\\nNS: Wenig Besonderheiten; zum Teil schöne Heidelbeerbestände.",
         "priority": null,
         "tillering": [
@@ -71275,9 +73260,7 @@
             [0, 5],
             [null, null],
             [null, null]
-          ],
-          [null, null],
-          [null, null]
+          ]
         ],
         "vegetation": "B: \\tGewöhnl. Alpenlattich, Wald-Schmiele, Preiselbeere\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse, Tamariskenmoos",
         "compactRisk": "2",
@@ -71293,12 +73276,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [null, null],
+        "vegetationIndicator": [
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Typischer Hochstauden-Fichtenwald",
         "la": "Adenostylo-Piceetum typicum",
         "code": "60",
+        "soil": [null, null, null, null, 3, 1, 3],
         "aptitude": "PR: Kein Wirtschaftswald, da Wuchskraft gering, Bestand locker, Befahren nicht möglich.\\nNG: Nasser, ruschanfälliger Standort. Grösstmögliche Bestockung anstreben, auch mit VBe und AE.\\nNS: Durch offenen Charakter und ausgeprägte Nassstandorte bedeutend.\\n",
         "priority": null,
         "tillering": [
@@ -71330,9 +73331,7 @@
             [null, null],
             [0, 5]
           ],
-          null,
-          [5, 10],
-          [null, null]
+          null
         ],
         "vegetation": "SS: AE, VBe, Roter Holunder, Alpen-Hagrose, Alpen-Geissblatt. \\nKS: Meist vielfältig, üppig: Grauer Alpendost, Alpen-Milchlattich, Aronstabblättriger Ampfer, Zweiblütiges Veilchen, Gelber Eisenhut, Germer. ",
         "compactRisk": "4",
@@ -71348,12 +73347,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [5, 10],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          2,
+          3,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Buntreitgras-Fichtenwald",
         "la": "Calamgrostio variae-Piceetum",
         "code": "60*",
+        "soil": [null, null, null, null, 2, 3, 1],
         "aptitude": "PR: Kein Wirtschaftswald, da meist steil und felsig-rutschig.\\nNG: Oberflächlich oft bewegt, aber meist mit solidem Untergrund. Häufig in Anrisslagen von Lawinen. Dauerbestockung anstreben.\\nNS: Durch offenen Charakter und oft kalkig-felsigen Untergrund deutlich erhöhte Vielfalt.\\n",
         "priority": "4",
         "tillering": [
@@ -71385,9 +73402,7 @@
             [0, 5],
             [0, 5]
           ],
-          null,
-          [5, 10],
-          [null, null]
+          null
         ],
         "vegetation": "SS: AE, VBe, Alpen-Hagrose, Alpen-Geissblatt. \\nKS: Meist vielfältig: Buntes Reitgras, Rostfarbene Segge, Berg-Flockenblume, Dreiblatt-Baldrian.\\n",
         "compactRisk": "2",
@@ -71403,12 +73418,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [5, 10],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          2,
+          null,
+          2,
+          2,
+          2,
+          1,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Buntreitgras-Tannen-Fichtenwald",
         "la": "Calamgrostio variae-Abieti-Piceetum",
         "code": "60*Ta",
+        "soil": [null, null, null, null, 2, 3, 1],
         "aptitude": "PR: Kein Wirtschaftswald, da meist steil und felsig-rutschig.\\nNG: Oberflächlich oft bewegt, aber meist mit solidem Untergrund. Häufig in Anrisslagen für Lawinen. Dauerbestockung anstreben.\\nNS: Durch offenen Charakter und oft kalkig-felsigen Untergrund deutlich erhöhte Vielfalt.\\n",
         "priority": "4",
         "tillering": [
@@ -71440,9 +73473,7 @@
             [0, 10],
             [0, 5]
           ],
-          null,
-          [10, 20],
-          [25, 33]
+          null
         ],
         "vegetation": "SS: AE, VBe, Roter Holunder, Alpen-Hagrose, Alpen-Geissblatt. \\nKS: Meist vielfältig: Buntes Reitgras, Rostfarbene Segge, Berg-Flockenblume, Dreiblatt-Baldrian.\\n",
         "compactRisk": "2",
@@ -71458,12 +73489,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [25, 33],
         "tilleringHardwood": [10, 20],
+        "vegetationIndicator": [
+          null,
+          null,
+          1,
+          2,
+          1,
+          null,
+          2,
+          null,
+          2,
+          1,
+          2,
+          1,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "53,56,57,60"
       },
       {
         "de": "Orchideen-Föhrenwald",
         "la": "Cephalanthero-Pinetum silvestris",
         "code": "62",
+        "soil": [null, null, null, null, 2, 3, null],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: In rutschgfährdeten Lagen; unbedeutend, weil Fläche minim.\\nNS: Ausserordentlich seltene Sonderstandorte von höchstem Wert.\\n",
         "priority": "2",
         "tillering": [
@@ -71495,9 +73544,7 @@
             [0, 10],
             [null, null]
           ],
-          null,
-          [5, 10],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Kalksträucher, Strauch-Kronwicke, Felsenmispel\\nKS: Pfeifengras, Buntes Reitgras, Schlaffe und Weisse Segge; Buchsblättrige Kreuzblume, Berg-Distel, Ochideen\\n",
         "compactRisk": "3",
@@ -71513,12 +73560,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [5, 10],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          3,
+          1
+        ],
         "associationGroupCode": "62,65"
       },
       {
         "de": "Erika-Föhrenwald ",
         "la": "Erico-Pinetum silvestris",
         "code": "65",
+        "soil": [null, null, null, null, 2, 3, null],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Unbedeutend, weil Fläche minim.\\nNS: Ausserordentlich seltene Sonderstandorte von höchstem Wert.\\n",
         "priority": "4",
         "tillering": [
@@ -71550,9 +73615,7 @@
             [0, 20],
             [0, 5]
           ],
-          null,
-          [10, 20],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Kalksträucher, Strauch-Kronwicke, Felsenmispel\\nKS: Buntes Reitgras, Blaugras; Schlaffe und Niedrige Segge; Erika, Buchsblättrige Kreuzblume, Berg-Distel, Hornklee",
         "compactRisk": "1",
@@ -71568,12 +73631,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [10, 20],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          3,
+          3
+        ],
         "associationGroupCode": "62,65"
       },
       {
         "de": "Erika-Bergföhrenwald",
         "la": "Erico-Pinetum montanae",
         "code": "67",
+        "soil": [1, null, null, null, 1, 3, null],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Meist unbedeutend. \\nNS: Ausserordentlich seltene Einheiten mit hochspezialisierten Pflanzen und Tieren.\\n",
         "priority": "4",
         "tillering": [
@@ -71605,9 +73686,7 @@
             [0, 5],
             [0, 5]
           ],
-          null,
-          [5, 10],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Sehr spärlich. \\nKS: Behaarte Alpenrose, Blaugras, Erika, Berg-Distel, Kugelblume, Buntes Reitgras.\\n\\n",
         "compactRisk": "1",
@@ -71623,12 +73702,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [5, 10],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3,
+          3
+        ],
         "associationGroupCode": "67,69,70,71"
       },
       {
         "de": "Steinrosen-Bergföhrenwald",
         "la": "Rhododendro hirsuti-Pinetum montanae",
         "code": "69",
+        "soil": [1, 2, null, 2, null, 2, null],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Meist unbedeutend. \\nNS: Ausserordentlich seltene Einheiten mit hochspezialisierten Pflanzen und Tieren.\\n",
         "priority": "2",
         "tillering": [
@@ -71660,9 +73757,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 5],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Sehr spärlich, Zwerg-Eberesche\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose.\\nBehaarte Alpenrose, Blaugras, Erika, Berg-Distel, Kugelblume.\\n\\n\\n",
         "compactRisk": "1",
@@ -71678,12 +73773,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 5],
+        "vegetationIndicator": [
+          null,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          2,
+          2
+        ],
         "associationGroupCode": "67,69,70,71"
       },
       {
         "de": "Alpenrosen-Bergföhrenwald",
         "la": "Rhododendro ferruginei-Pinetum montanae",
         "code": "70",
+        "soil": [2, 2, 2, 3, null, null, 3],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Unbedeutend. \\nNS: Ausserordentlich seltene Einheiten mit hochspezialisierten Pflanzen und Tieren.",
         "priority": "2",
         "tillering": [
@@ -71715,9 +73828,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 5],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Sehr spärlich\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose\\nMS: Torfmoose oft deckend, daneben Rotstengelmoos\\n",
         "compactRisk": "1",
@@ -71733,12 +73844,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 5],
+        "vegetationIndicator": [
+          2,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "67,69,70,71"
       },
       {
         "de": "Torfmoos-Bergföhrenwald",
         "la": "Sphagno-Pinetum montanae",
         "code": "71",
+        "soil": [3, 3, 3, 3, null, null, 3],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Meist unbedeutend; wenn entwässert, dann schneller Wasserabfluss.\\nNS: Ausserordentlich seltene Einheit mit hochspezialisierten Pflanzen und Tieren.\\n",
         "priority": "2",
         "tillering": [
@@ -71770,9 +73899,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 0],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Sehr spärlich\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose, Hochmoorarten\\nMS: Torfmoose oft deckend, daneben Rotstengelmoos\\n",
         "compactRisk": "5",
@@ -71788,12 +73915,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 0],
+        "vegetationIndicator": [
+          3,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "67,69,70,71"
       },
       {
         "de": "Torfmoos-Bergföhrenwald mit Wacholder",
         "la": "Sphagno-Pinetum montanae juniperetosum communis",
         "code": "71*",
+        "soil": [3, 3, 3, 3, null, null, 3],
         "aptitude": "PR: Ohne Bedeutung.\\nNG: Meist unbedeutend; wenn entwässert, dann schneller Wasserabfluss.\\nNS: Ausserordentlich seltene Einheit mit hochspezialisierten Pflanzen und Tieren.\\n",
         "priority": "2",
         "tillering": [
@@ -71825,9 +73970,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [0, 0],
-          [null, null]
+          null
         ],
         "vegetation": "SS: Sehr spärlich, Wachholder\\nKS: Heidelbeere, Preiselbeere, Rauschbeere, Rostrote Alpenrose\\nMS: Torfmoose oft deckend, daneben Rotstengelmoos\\n",
         "compactRisk": "5",
@@ -71843,12 +73986,30 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [0, 0],
+        "vegetationIndicator": [
+          3,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "67,69,70,71"
       },
       {
         "de": "Grünerlen-Gebüsch",
         "la": "Alnenion viridis",
         "code": "AV",
+        "soil": [null, null, null, null, 3, 2, 2],
         "aptitude": "PR: Kein Nutzholz\\nNG: Durch Lage in Steilhängen hoher Lagen wichtiger Bodenbefestiger.\\nNS: Seltene Sonderstandorte von hohem Wert.",
         "priority": null,
         "tillering": [
@@ -71880,9 +74041,7 @@
             [null, null],
             [null, null]
           ],
-          null,
-          [100, 100],
-          [null, null]
+          null
         ],
         "vegetation": "SS: AE, vereinzelt VBe, Wei\\nKS: Grauer Alpendost, Alpen-Milchlattich, Blauer und Gelber Eisenhut, Zweiblütiges Veilchen, Rote Waldnelke, Rundblättriger Steinbrech, Eisenhutblättriger Hahnenfuss",
         "compactRisk": "3",
@@ -71898,6 +74057,23 @@
         "pioneerTreeTypes": "−",
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [100, 100],
+        "vegetationIndicator": [
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
+          1,
+          3,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ],
         "associationGroupCode": "AV"
       }
     ],
