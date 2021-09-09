@@ -12,7 +12,8 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {  "id": 1,
+      "properties": {
+        "id": 1,
         "z": "1",
         "forestTypes": "44",
         "otherForestTypes": null
