@@ -35,7 +35,8 @@ const runProject = (location, targetAltitudinalZone) => {
 const projection = (store) => (next) => (action) => {
   const result = next(action);
   if (projectionActionTypes.includes(action.type)) {
-    const { formLocation, mapLocation, projectionMode } = store.getState();
+    const { activeProfile, formLocation, mapLocation, projectionMode } =
+      store.getState();
     const location =
       projectionMode === 'm'
         ? { ...formLocation, ...mapLocation }
@@ -59,7 +60,7 @@ const projection = (store) => (next) => (action) => {
     store.dispatch(setLocation(location));
 
     try {
-      const locateResult = locate(location);
+      const locateResult = locate(location, activeProfile);
       store.dispatch(setLocationResult(locateResult));
     } catch (error) {
       console.log('Locate error: ', error);
