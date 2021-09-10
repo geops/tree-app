@@ -98,7 +98,6 @@
       "alkaline": "basisch",
       "unkown": "nicht bestimmt"
     },
-    "tillering": "Bestockung",
     "slope": "Hangneigung",
     "skeletalFraction": "Skelettgehalt",
     "soil": {
@@ -409,15 +408,65 @@
     "forestType": {
       "appearance": "Waldbild",
       "aptitude": "Eignung",
-      "rejuvDev": "Verjüngung und Entwicklung",
+      "aptitudeMeaning": "Eignung und Bedeutung",
+      "associations": "Gesellschaftsgruppen",
       "care": "Pflege",
-      "meaning": "Bedeutung",
-      "location": "Standort",
-      "subGroups": "Untereinheiten"
-    },
-    "forestTypeDiagram": {
+      "compactRisk": {
+        "label": "Verdichtungsrisiko",
+        "0": "keine Angabe",
+        "1": "geringes Verdichtungsrisiko (auch bei nassem Wetter nur unbedeutende Verdichtung der Böden)",
+        "2": "mittleres Verdichtungsrisiko (nach Niederschlägen bedeutende Verdichtung möglich)",
+        "3": "hohes Verdichtungsrisiko (nach Niederschlägen über längere Zeit starke Verdichtung)",
+        "4": "sehr hohes Verdichtungsrisiko (meist starke Verdichtung, ausser in langen Trockenperioden)",
+        "5": "nicht befahrbar (dauernd wassergesättigt)"
+      },
+      "description": "Beschreibung",
       "general": "Allgemein",
-      "associations": "Gesellschaftsgruppen"
+      "heightDispersion": "Höhenverbreitung",
+      "location": "Standort",
+      "meaning": "Bedeutung",
+      "pioneerTreeTypes": "Vorwaldarten",
+      "priority": {
+        "label": "Priorität",
+        "1": "sehr hoch",
+        "2": "hoch",
+        "3": "mittel",
+        "4": "mässig",
+        "k": "kantonale Priorität"
+      },
+      "rejuvDev": "Verjüngung und Entwicklung",
+      "subGroups": "Untereinheiten",
+      "soil": {
+        "label": "Boden",
+        "l": "Auflage L",
+        "f": "Auflage F",
+        "h": "Auflage H",
+        "ahh": "Oberboden Ahh",
+        "ah": "Oberboden Ah",
+        "alkali": "Kalk",
+        "wet": "vergleyt"
+      },
+      "tillering": "Bestockung",
+      "tilleringFirwood": "Tannenanteil",
+      "tilleringHardwood": "Laubholzanteil",
+      "vegetationIndicator": {
+        "label": "Zeigergruppen",
+        "a": "Starke Säurezeiger, feucht-nass",
+        "b": "Starke Säurezeiger, frisch / trocken",
+        "c": "Schwache Säurezeiger",
+        "e": "Buchenwaldarten",
+        "f": "Nährstoffzeiger, frisch",
+        "g": "Nährstoffzeiger, tonig",
+        "h": "Nährstoffzeiger, feucht",
+        "i": "Nässezeiger",
+        "j": "Hochstauden",
+        "k": "Feuchtezeiger, basenarm",
+        "l": "Montan-Zeiger (Bergstufe)",
+        "m": "Basen- und Kalkzeiger",
+        "n": "Arten auf Blockschutt",
+        "o": "Basenzeiger wechselfeucht / wechseltrocken",
+        "p": "Trockenheitszeiger"
+      }
     }
   }
 }

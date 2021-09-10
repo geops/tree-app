@@ -3,12 +3,32 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import { Table } from 'semantic-ui-react';
+import DataTable from './DataTable';
 import Legend from '../Legend';
 import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
 
 const replaceLineBreaks = (str) => parse(str.slice().replace(/\\n/g, '<br>'));
+
+const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'alkali', 'wet'];
+const vegetationMapping = [
+  'a',
+  'b',
+  'c',
+  'e',
+  'f',
+  'g',
+  'h',
+  'i',
+  'j',
+  'k',
+  'l',
+  'm',
+  'n',
+  'o',
+  'p',
+];
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
@@ -26,23 +46,21 @@ function GeneralTab({ data }) {
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>
-            {t('forestTypeDiagram.tilleringHardwood')}
+            {t('lu.forestType.tilleringHardwood')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
             <TilleringSingle data={data.tilleringHardwood} />
           </Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>
-            {t('forestTypeDiagram.tillering')}
-          </Table.HeaderCell>
+          <Table.HeaderCell>{t('lu.forestType.tillering')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <Tillering data={data.tillering} />
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>
-            {t('forestTypeDiagram.tilleringFirwood')}
+            {t('lu.forestType.tilleringFirwood')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
             <TilleringSingle data={data.tilleringFirwood} />
@@ -126,6 +144,28 @@ function GeneralTab({ data }) {
             <p>{replaceLineBreaks(data.vegetation)}</p>
           </Table.Cell>
         </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>
+            {t('lu.forestType.vegetationIndicator.label')}
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <DataTable
+              data={data.vegetationIndicator}
+              getLabel={(i) =>
+                t(`lu.forestType.vegetationIndicator.${vegetationMapping[i]}`)
+              }
+            />
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.soil.label')}</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <DataTable
+              data={data.soil}
+              getLabel={(i) => t(`lu.forestType.soil.${soilMapping[i]}`)}
+            />
+          </Table.Cell>
+        </Table.Row>
       </Table.Body>
     </Table>
   );
@@ -143,9 +183,11 @@ GeneralTab.propTypes = {
     heightDispersion: PropTypes.string,
     pioneerTreeTypes: PropTypes.string,
     priority: PropTypes.string,
+    soil: PropTypes.arrayOf(PropTypes.number),
     tillering: PropTypes.arrayOf(PropTypes.number),
     tilleringFirwood: PropTypes.arrayOf(PropTypes.number),
     tilleringHardwood: PropTypes.arrayOf(PropTypes.number),
+    vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
 };
 

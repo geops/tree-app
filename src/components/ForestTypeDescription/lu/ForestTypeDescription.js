@@ -13,11 +13,11 @@ function ForestTypeDescription({ data }) {
       menu={{ className: styles.pane, attached: true, tabular: true }}
       panes={[
         {
-          menuItem: t('lu.forestTypeDiagram.general'),
+          menuItem: t('lu.forestType.general'),
           render: () => <GeneralTab data={data} />,
         },
         {
-          menuItem: t('lu.forestTypeDiagram.associations'),
+          menuItem: t('lu.forestType.associations'),
           render: () => (
             <AssociationsTab associationGroupCode={data.associationGroupCode} />
           ),
