@@ -4,7 +4,7 @@ import { TilleringGrid, getRowWidth } from './Tillering';
 import styles from '../Diagram.module.css';
 
 function TilleringSingle({ data }) {
-  if (data || data.filter((i) => i).length === 0) {
+  if (!data || data.filter((i) => i).length === 0) {
     return '-';
   }
 
