@@ -196,6 +196,29 @@ ALTER TABLE "forest_types_fl" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_fl','geom','2056','MULTIPOLYGON',2);
 
+
+----------------------------------------------
+-- Forest types ZH
+
+CREATE TABLE "forest_types_zh" (gid serial,
+"vecode" float8,
+"ek72" varchar(10),
+"vename" varchar(80),
+"nais" varchar(15),
+"hstufe" varchar(15),
+"shape_area" numeric,
+"shape_len" numeric);
+
+
+ALTER TABLE "forest_types_zh" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','forest_types_zh','geom','2056','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types View
+
 CREATE VIEW forest_types_export AS
 SELECT nais as code,
        ST_Transform(geom, 3857) as geometry
@@ -213,4 +236,9 @@ UNION
 SELECT typ_nais AS code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_fl
-WHERE typ_nais IS NOT NULL;
+WHERE typ_nais IS NOT NULL
+UNION
+SELECT nais as code,
+       ST_Transform(geom, 3857) as geometry
+FROM forest_types_zh
+WHERE nais IS NOT NULL;
