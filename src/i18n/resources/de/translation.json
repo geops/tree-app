@@ -421,7 +421,7 @@
         "5": "nicht befahrbar (dauernd wassergesättigt)"
       },
       "description": "Beschreibung",
-      "general": "Allgemein",
+      "general": "Standortstyp",
       "heightDispersion": "Höhenverbreitung",
       "location": "Standort",
       "meaning": "Bedeutung",
@@ -435,7 +435,7 @@
         "k": "kantonale Priorität"
       },
       "rejuvDev": "Verjüngung und Entwicklung",
-      "subGroups": "Untereinheiten",
+      "subGroups": "Standortstypen",
       "soil": {
         "label": "Boden",
         "l": "Auflage L",
