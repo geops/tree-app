@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { List, Popup } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
@@ -13,6 +13,7 @@ import { setForestTypeInfo } from '../store/actions';
 
 function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
   const dispatch = useDispatch();
+  const activeProfile = useSelector((state) => state.activeProfile);
   const isMobile = useIsMobile();
   const container = useRef();
   const { t, i18n } = useTranslation();
@@ -45,7 +46,7 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
       <div ref={container}>
         <List>
           {forestTypes.map((ftCode) => {
-            const ftInfo = info('forestType', ftCode);
+            const ftInfo = info('forestType', ftCode, activeProfile);
             return (
               <List.Item style={{ display: 'flex' }}>
                 <Button
