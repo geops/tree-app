@@ -41,7 +41,11 @@ WITH lu_tillering_data AS (
 lu_tillering_natural_forest_data AS (
   SELECT
     sto_nr,
-    ARRAY [Fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]::int[][] AS forest_types
+    ARRAY [Fi, Ta, WFö, BFö, Ei, Lä, Dg, Bu, Es, BAh, SAh, SEi, TEi, WLi, SLi, Ki, BUl, FUl, SEr, GEr, AEr, HBi, TKi, VBe, MBe, Wei]::int[][] AS forest_types,
+    Lbh_min,
+    Lbh_opt,
+    Ta_min,
+    Ta_opt
   FROM lu_tillering_data
   WHERE kategorie = 'NW'
 ),
@@ -53,14 +57,13 @@ lu_tillering_farm_forest_data AS (
   WHERE kategorie = 'WW'
 )
 INSERT INTO lu_tillering_export SELECT
-  d.sto_nr AS code,
+  nfd.sto_nr AS code,
   nfd.forest_types AS natural_forest_types,
   ffd.forest_types AS farm_forest_types,
-  ARRAY [d.Lbh_min, Lbh_opt] AS hardwood,
-  ARRAY [d.Ta_min, Ta_opt] AS firwood
-FROM lu_tillering_data AS d
-LEFT JOIN lu_tillering_natural_forest_data AS nfd ON d.sto_nr = nfd.sto_nr
-LEFT JOIN lu_tillering_farm_forest_data AS ffd ON d.sto_nr = ffd.sto_nr;
+  ARRAY [Lbh_min, Lbh_opt] AS hardwood,
+  ARRAY [Ta_min, Ta_opt] AS firwood
+FROM lu_tillering_natural_forest_data AS nfd
+LEFT JOIN lu_tillering_farm_forest_data AS ffd ON nfd.sto_nr = ffd.sto_nr;
 
 
 INSERT INTO lu_soil_export 
