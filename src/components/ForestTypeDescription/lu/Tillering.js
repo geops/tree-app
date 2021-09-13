@@ -144,33 +144,36 @@ function Tillering({ data }) {
     return null;
   }
 
+  const gridHeight = rows.length * 28;
+  const legendHeight = 40;
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      height={rows.length * 34}
-      viewBox={`0 0 310 ${rows.length * 34}`}
+      height={gridHeight + legendHeight}
+      viewBox={`0 0 310 ${gridHeight + legendHeight}`}
       x="0"
     >
       {rows.map((row, index) => renderRow(row, index))}
-      <TilleringGrid height={rows.length * 28} />
-      <text className={styles.label} x="40" y={rows.length * 34 - 3}>
+      <TilleringGrid height={gridHeight} />
+      <text className={styles.label} x="40" y={gridHeight + legendHeight}>
         Naturwald
       </text>
       <rect
         width="20"
-        height="20"
+        height="10"
         x="10"
-        y={rows.length * 33 - 10}
+        y={gridHeight + legendHeight - 10}
         className={`${styles.often} ${styles.line}`}
       />
-      <text className={styles.label} x="180" y={rows.length * 34 - 3}>
+      <text className={styles.label} x="180" y={gridHeight + legendHeight}>
         Wirtschaftswald
       </text>
       <rect
         width="20"
-        height="20"
+        height="10"
         x="150"
-        y={rows.length * 33 - 10}
+        y={gridHeight + legendHeight - 10}
         className={`${styles.oftenSecondary} ${styles.line}`}
       />
     </svg>
