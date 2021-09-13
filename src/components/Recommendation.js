@@ -7,6 +7,7 @@ import { Checkbox, Grid, Tab, Message } from 'semantic-ui-react';
 import { recommend } from '@geops/tree-lib';
 
 import HelpModal from './HelpModal';
+import LatinSwitcher from './LatinSwitcher';
 import TreeTypeList from './TreeTypeList';
 import { ReactComponent as AttentionIcon } from '../icons/recommendationAttention.svg';
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
@@ -147,6 +148,12 @@ function Recommendation({ sameAltitudinalZone }) {
                 label={t('recommendation.future')}
                 onClick={() => setFuture(!future)}
               />
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row>
+            <Grid.Column textAlign="center" width={4} />
+            <Grid.Column width={12}>
+              <LatinSwitcher className={styles.checkbox} />
             </Grid.Column>
           </Grid.Row>
         </Grid>

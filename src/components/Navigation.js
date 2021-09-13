@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Switch, Route, useHistory, useLocation } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { Icon, Menu } from 'semantic-ui-react';
 
 import { ReactComponent as MapIcon } from '../icons/map.svg';
@@ -47,14 +48,13 @@ function Navigation() {
       </div>
       <Menu
         fluid
-        widths={isMobile ? 4 : 3}
+        widths={isMobile ? 5 : 3}
         icon="labeled"
         className={styles.menu}
       >
         {isMobile && (
           <Menu.Item active={is('')} onClick={go('')} className={styles.item}>
             <MapIcon className={styles.icon} />
-            {!isMobile && t('app.map')}
           </Menu.Item>
         )}
         <Menu.Item
@@ -81,6 +81,22 @@ function Navigation() {
           <Icon name="info" className={styles.icon} />
           {!isMobile && t('app.info')}
         </Menu.Item>
+        {isMobile && (
+          <Menu.Item
+            onClick={() => {
+              const copyInput = document.createElement('input');
+              document.body.appendChild(copyInput);
+              copyInput.value = window.location.href;
+              copyInput.select();
+              document.execCommand('copy');
+              document.body.removeChild(copyInput);
+              toast(t('app.shared'), { type: toast.TYPE.SUCCESS });
+            }}
+            className={styles.shareItem}
+          >
+            <Icon name="share square" />
+          </Menu.Item>
+        )}
       </Menu>
     </div>
   );

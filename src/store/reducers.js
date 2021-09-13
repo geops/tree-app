@@ -1,5 +1,6 @@
 import {
   SET_FORM_LOCATION,
+  SET_LATIN_ACTIVE,
   SET_LOCATION_RESULT,
   SET_LOCATION,
   SET_MAP_LAYER,
@@ -15,6 +16,7 @@ import {
 
 const initialProjection = { options: {}, projections: [] };
 export const initialState = {
+  latinActive: false,
   location: {},
   formLocation: {},
   locationResult: { options: {} },
@@ -61,6 +63,9 @@ function tree(state = initialState, action) {
   switch (action.type) {
     case SET_FORM_LOCATION: {
       return { ...state, formLocation: getFormLocation(state, action) };
+    }
+    case SET_LATIN_ACTIVE: {
+      return { ...state, latinActive: action.latinActive };
     }
     case SET_LOCATION_RESULT: {
       return { ...state, locationResult: action.locationResult };

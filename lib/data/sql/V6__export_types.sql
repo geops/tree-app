@@ -278,7 +278,7 @@ COPY
             SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la)) AS values FROM herbtype_meta
           ),
           indicators as
-         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'forestTypes',
+         (SELECT json_agg(jsonb_build_object('code', code, 'de', de, 'fr', fr, 'la', la, 'forestTypes',
                                                  (SELECT json_agg(trim(BOTH FROM naistyp_c))
                                                   FROM nat_naistyp_art
                                                   WHERE vorh IN ('1', '2', '3') AND sisf_nr::int = indicator_meta.code)

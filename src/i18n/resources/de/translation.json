@@ -9,11 +9,13 @@
   "app": {
     "info": "Infos",
     "language": "Sprache",
-    "profile": "Profil",
+    "latinActive": "Lateinische Artnamen anzeigen",
     "location": "Standort",
     "map": "Karte",
+    "profile": "Profil",
     "recommendation": "Empfehlung",
     "result": "Baumartenempfehlung",
+    "shared": "Link wurde in die Zwischenablage kopiert.",
     "title": "Tree App"
   },
   "forestTypeDiagram": {
@@ -283,6 +285,11 @@
       "small": "kleine Bachläufe",
       "spring": "Quellaufstoss",
       "stream": "entlang Bachlauf"
+    },
+    "yesNoUnknown": {
+      "yes": "Ja",
+      "no": "Nein",
+      "unknown": "nicht angesprochen"
     }
   },
   "help": {

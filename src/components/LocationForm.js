@@ -11,6 +11,7 @@ import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
 import HelpModal from './HelpModal';
 import Input from './Input';
+import LatinSwitcher from './LatinSwitcher';
 import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
 import translation from '../i18n/resources/de/translation.json';
@@ -48,6 +49,7 @@ const translationOptions = {
   aspect: Object.keys(translation.forestType.aspect).filter(noLabel).sort(),
   group: Object.keys(translation.forestType.group).filter(noLabel),
   slope: Object.keys(translation.forestType.slope).filter(noLabel).sort(),
+  yesNoUnknown: Object.keys(translation.forestType.yesNoUnknown),
 };
 
 const getDropdownOptions =
@@ -64,12 +66,14 @@ function LocationForm() {
   const dispatch = useDispatch();
   const {
     formLocation,
+    latinActive,
     locationResult: { options },
     location,
     mapLocation,
     projectionMode,
   } = useSelector((state) => ({
     formLocation: state.formLocation,
+    latinActive: state.latinActive,
     locationResult: state.locationResult,
     location: state.location,
     mapLocation: state.mapLocation,
@@ -87,6 +91,9 @@ function LocationForm() {
   options.aspect = translationOptions.aspect.map(getTranslatedOption('aspect'));
   options.group = translationOptions.group.map(getTranslatedOption('group'));
   options.slope = translationOptions.slope.map(getTranslatedOption('slope'));
+  options.yesNoUnknown = translationOptions.yesNoUnknown.map(
+    getTranslatedOption('yesNoUnknown'),
+  );
 
   const panels = [
     {
@@ -94,16 +101,21 @@ function LocationForm() {
       title: { content: t('forestType.treeType.label') },
       content: {
         content: options && options.treeType && (
-          <Dropdown
-            multiple
-            search
-            placeholder={t('forestType.treeType.placeholder')}
-            options={options.treeType.map(getDropdownOptions('treeType', lng))}
-            onChange={(e, { value: treeTypes }) =>
-              dispatch(setFormLocation({ treeTypes }))
-            }
-            value={formLocation.treeTypes || ''}
-          />
+          <>
+            <LatinSwitcher className={styles.latinSwitcher} />
+            <Dropdown
+              multiple
+              search
+              placeholder={t('forestType.treeType.placeholder')}
+              options={options.treeType.map(
+                getDropdownOptions('treeType', latinActive ? 'la' : lng),
+              )}
+              onChange={(e, { value: treeTypes }) =>
+                dispatch(setFormLocation({ treeTypes }))
+              }
+              value={formLocation.treeTypes || ''}
+            />
+          </>
         ),
       },
     },
@@ -112,18 +124,21 @@ function LocationForm() {
       title: { content: t('forestType.indicator.label') },
       content: {
         content: options && options.indicator && (
-          <Dropdown
-            multiple
-            search
-            placeholder={t('forestType.indicator.placeholder')}
-            options={options.indicator.map(
-              getDropdownOptions('indicator', lng),
-            )}
-            onChange={(e, { value: indicators }) =>
-              dispatch(setFormLocation({ indicators }))
-            }
-            value={formLocation.indicators || ''}
-          />
+          <>
+            <LatinSwitcher className={styles.latinSwitcher} />
+            <Dropdown
+              multiple
+              search
+              placeholder={t('forestType.indicator.placeholder')}
+              options={options.indicator.map(
+                getDropdownOptions('indicator', latinActive ? 'la' : lng),
+              )}
+              onChange={(e, { value: indicators }) =>
+                dispatch(setFormLocation({ indicators }))
+              }
+              value={formLocation.indicators || ''}
+            />
+          </>
         ),
       },
     },
@@ -159,19 +174,25 @@ function LocationForm() {
       content: {
         content: (
           <>
-            <Checkbox
+            <Dropdown
+              clearable
+              search={false}
               label={t('forestType.carbonate.fine')}
-              onChange={(e, { checked: carbonateFine }) =>
+              options={options.yesNoUnknown}
+              onChange={(e, { value: carbonateFine }) =>
                 dispatch(setFormLocation({ carbonateFine }))
               }
-              checked={formLocation.carbonateFine || false}
+              value={formLocation.carbonateFine || ''}
             />
-            <Checkbox
+            <Dropdown
+              clearable
+              search={false}
               label={t('forestType.carbonate.rock')}
-              onChange={(e, { checked: carbonateRock }) =>
+              options={options.yesNoUnknown}
+              onChange={(e, { value: carbonateRock }) =>
                 dispatch(setFormLocation({ carbonateRock }))
               }
-              checked={formLocation.carbonateRock || false}
+              value={formLocation.carbonateRock || ''}
             />
           </>
         ),

@@ -9,11 +9,13 @@
   "app": {
     "info": "Informations",
     "language": "Langue",
-    "profile": "Profil",
+    "latinActive": "Noms d'espèces en latin",
     "location": "Station",
     "map": "Carte",
+    "profile": "Profil",
     "recommendation": "Recommandations",
     "result": "Recommandations pour le choix des essences",
+    "shared": "Le lien a été copié dans le presse-papiers.",
     "title": "Tree App"
   },
   "forestTypeDiagram": {

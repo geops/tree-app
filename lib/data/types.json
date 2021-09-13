@@ -9939,6 +9939,7 @@
       {
         "de": "Grossblättrige Schafgarbe",
         "fr": "Achillée à grandes feuilles",
+        "la": "Achillea macrophylla",
         "code": 1600,
         "forestTypes": [
           "21",
@@ -9976,6 +9977,7 @@
       {
         "de": "Christophskraut",
         "fr": "Actée en épi",
+        "la": "Actaea spicata",
         "code": 5200,
         "forestTypes": [
           "12*",
@@ -10068,6 +10070,7 @@
       {
         "de": "Grauer Alpendost",
         "fr": "Adénostyle à feuilles d'alliaire",
+        "la": "Adenostyles alliariae",
         "code": 5400,
         "forestTypes": [
           "13h",
@@ -10124,6 +10127,7 @@
       {
         "de": "Kahler Alpendost",
         "fr": "Adenostyle glabre",
+        "la": "Adenostyles glabra",
         "code": 5500,
         "forestTypes": [
           "12*",
@@ -10184,6 +10188,7 @@
       {
         "de": "Geissfuss",
         "fr": "Herbe aux goutteux",
+        "la": "Aegopodium podagraria",
         "code": 6800,
         "forestTypes": [
           "11",
@@ -10246,6 +10251,7 @@
       {
         "de": "Kriechender Günsel",
         "fr": "Bugle rampante",
+        "la": "Ajuga reptans",
         "code": 10400,
         "forestTypes": [
           "10a",
@@ -10376,6 +10382,7 @@
       {
         "de": "Bärlauch",
         "fr": "Ail des ours",
+        "la": "Allium ursinum",
         "code": 24800,
         "forestTypes": [
           "11",
@@ -10411,6 +10418,7 @@
       {
         "de": "Felsenmispel",
         "fr": "Amélanchier",
+        "la": "Amelanchier ovalis",
         "code": 29300,
         "forestTypes": [
           "13eh",
@@ -10473,12 +10481,14 @@
       {
         "de": "Rosmarinheide",
         "fr": "Andromède à feuilles de romarin",
+        "la": "Andromeda polifolia",
         "code": 31000,
         "forestTypes": ["71", "71G"]
       },
       {
         "de": "Buschwindröschen",
         "fr": "Anémone des bois",
+        "la": "Anemone nemorosa",
         "code": 33600,
         "forestTypes": [
           "10a",
@@ -10564,6 +10574,7 @@
       {
         "de": "Wilde Brustwurz",
         "fr": "Angélique sauvage",
+        "la": "Angelica sylvestris",
         "code": 34100,
         "forestTypes": [
           "11",
@@ -10614,6 +10625,7 @@
       {
         "de": "Gemeines Katzenpfötchen",
         "fr": "Pied de chat dioïque",
+        "la": "Antennaria dioica",
         "code": 34400,
         "forestTypes": [
           "58",
@@ -10629,6 +10641,7 @@
       {
         "de": "Astlose Graslilie",
         "fr": "Anthéric à fleurs de lis",
+        "la": "Anthericum liliago",
         "code": 35100,
         "forestTypes": [
           "35",
@@ -10647,6 +10660,7 @@
       {
         "de": "Aestige Graslilie",
         "fr": "Anthéric rameux",
+        "la": "Anthericum ramosum",
         "code": 35200,
         "forestTypes": [
           "12w",
@@ -10677,6 +10691,7 @@
       {
         "de": "Hainlattich",
         "fr": "Aposéris fétide",
+        "la": "Aposeris foetida",
         "code": 38700,
         "forestTypes": [
           "12*h",
@@ -10700,6 +10715,7 @@
       {
         "de": "Dunkle Akelei",
         "fr": "Ancolie noirâtre",
+        "la": "Aquilegia atrata",
         "code": 38900,
         "forestTypes": [
           "12w",
@@ -10733,6 +10749,7 @@
       {
         "de": "Gemeine Akelei",
         "fr": "Ancolie commune",
+        "la": "Aquilegia vulgaris",
         "code": 39100,
         "forestTypes": [
           "10a",
@@ -10784,6 +10801,7 @@
       {
         "de": "Turm-Gänsekresse",
         "fr": "Arabette tourette",
+        "la": "Arabis turrita",
         "code": 42100,
         "forestTypes": [
           "13eh",
@@ -10804,12 +10822,14 @@
       {
         "de": "Alpen-Bärentraube",
         "fr": "Raisin d'ours des Alpes",
+        "la": "Arctostaphylos alpina",
         "code": 43000,
         "forestTypes": ["59H", "69", "69G"]
       },
       {
         "de": "Immergrüne Bärentraube",
         "fr": "Raisin d'ours commun",
+        "la": "Arctostaphylos uva-ursi",
         "code": 43100,
         "forestTypes": [
           "38S",
@@ -10829,6 +10849,7 @@
       {
         "de": "Arnika",
         "fr": "Arnica",
+        "la": "Arnica montana",
         "code": 45700,
         "forestTypes": [
           "55*",
@@ -10847,6 +10868,7 @@
       {
         "de": "Aronstab",
         "fr": "Gouet",
+        "la": "Arum maculatum",
         "code": 48200,
         "forestTypes": [
           "11",
@@ -10889,6 +10911,7 @@
       {
         "de": "Waldgeissbart",
         "fr": "Reine des bois",
+        "la": "Aruncus dioicus",
         "code": 48300,
         "forestTypes": [
           "12*",
@@ -10983,6 +11006,7 @@
       {
         "de": "Haselwurz",
         "fr": "Asaret d'Europe",
+        "la": "Asarum europaeum",
         "code": 48700,
         "forestTypes": [
           "10a",
@@ -11022,18 +11046,21 @@
       {
         "de": "Zartblättrige Spargel",
         "fr": "Asperge à feuilles étroites",
+        "la": "Asparagus tenuifolius",
         "code": 49000,
         "forestTypes": ["25O", "36", "37", "38*", "38S"]
       },
       {
         "de": "Purpur-Waldmeister",
         "fr": "Aspérule pourpre",
+        "la": "Asperula purpurea",
         "code": 49500,
         "forestTypes": ["38*"]
       },
       {
         "de": "Turiner Waldmeister",
         "fr": "Aspérule de Turin",
+        "la": "Asperula taurina",
         "code": 49600,
         "forestTypes": [
           "11",
@@ -11064,18 +11091,21 @@
       {
         "de": "Mauerraute",
         "fr": "Rue des murailles",
+        "la": "Asplenium ruta-muraria",
         "code": 50900,
         "forestTypes": ["39*"]
       },
       {
         "de": "Nordischer Streifenfarn",
         "fr": "Capillaire septentrional",
+        "la": "Asplenium septentrionale",
         "code": 51200,
         "forestTypes": ["58Bl", "59R"]
       },
       {
         "de": "Alpenmasslieb",
         "fr": "Aster pâquerette",
+        "la": "Aster bellidiastrum",
         "code": 52000,
         "forestTypes": [
           "17",
@@ -11132,6 +11162,7 @@
       {
         "de": "Drahtschmiele",
         "fr": "Canche flexueuse",
+        "la": "Avenella flexuosa",
         "code": 57400,
         "forestTypes": [
           "1",
@@ -11282,6 +11313,7 @@
       {
         "de": "Gemeine Berberitze",
         "fr": "Epine-vinette",
+        "la": "Berberis vulgaris",
         "code": 59200,
         "forestTypes": [
           "10a",
@@ -11393,12 +11425,14 @@
       {
         "de": "Glattes Brillenschötchen",
         "fr": "Biscutelle",
+        "la": "Biscutella laevigata",
         "code": 62000,
         "forestTypes": ["67", "67*", "67G"]
       },
       {
         "de": "Rippenfarn",
         "fr": "Blechnum pectiné",
+        "la": "Blechnum spicant",
         "code": 62500,
         "forestTypes": [
           "19",
@@ -11461,12 +11495,14 @@
       {
         "de": "Schmetterlingsstrauch",
         "fr": "Buddléia de David",
+        "la": "Buddleja davidii",
         "code": 67700,
         "forestTypes": ["43*", "43S", "91", "92a", "92z", "93"]
       },
       {
         "de": "Weidenblättriges Rindsauge",
         "fr": "Buphthalme à feuilles de saule",
+        "la": "Buphthalmum salicifolium",
         "code": 68600,
         "forestTypes": [
           "16",
@@ -11499,12 +11535,14 @@
       {
         "de": "Buchs",
         "fr": "Buis",
+        "la": "Buxus sempervirens",
         "code": 70500,
         "forestTypes": ["15", "61", "62"]
       },
       {
         "de": "Wald-Reitgras",
         "fr": "Calamagrostide des forêts",
+        "la": "Calamagrostis arundinacea",
         "code": 70600,
         "forestTypes": [
           "12*",
@@ -11544,6 +11582,7 @@
       {
         "de": "Buntreitgras, Buntes Reitgras",
         "fr": "Calamagrostide bigarrée",
+        "la": "Calamagrostis varia",
         "code": 71400,
         "forestTypes": [
           "10w",
@@ -11621,6 +11660,7 @@
       {
         "de": "Wollreitgras",
         "fr": "Calamagrostide velue",
+        "la": "Calamagrostis villosa",
         "code": 71500,
         "forestTypes": [
           "19L",
@@ -11739,6 +11779,7 @@
       {
         "de": "Besenheide",
         "fr": "Callune",
+        "la": "Calluna vulgaris",
         "code": 73600,
         "forestTypes": [
           "2",
@@ -11786,6 +11827,7 @@
       {
         "de": "Sumpfdotterblume",
         "fr": "Populage",
+        "la": "Caltha palustris",
         "code": 73700,
         "forestTypes": [
           "26w",
@@ -11812,6 +11854,7 @@
       {
         "de": "Bärtige Glockenblume",
         "fr": "Campanule barbue",
+        "la": "Campanula barbata",
         "code": 74700,
         "forestTypes": [
           "55*",
@@ -11835,18 +11878,21 @@
       {
         "de": "Bitteres Schaumkraut",
         "fr": "Cardamine amère",
+        "la": "Cardamine amara",
         "code": 78350,
         "forestTypes": ["27", "27*", "27h", "27hG", "60E"]
       },
       {
         "de": "Knöllchentragende Zahnwurz",
         "fr": "Dentaire à bulbilles",
+        "la": "Cardamine bulbifera",
         "code": 78500,
         "forestTypes": ["12*", "13*"]
       },
       {
         "de": "Fiederblättrige Zahnwurz",
         "fr": "Dentaire à sept folioles",
+        "la": "Cardamine heptaphylla",
         "code": 78800,
         "forestTypes": [
           "12*",
@@ -11896,6 +11942,7 @@
       {
         "de": "Kitaibels Zahnwurz",
         "fr": "Dentaire de Kitaibel",
+        "la": "Cardamine kitaibelii",
         "code": 79100,
         "forestTypes": [
           "12*",
@@ -11911,6 +11958,7 @@
       {
         "de": "Fingerblättrige Zahnwurz",
         "fr": "Dentaire à cinq folioles",
+        "la": "Cardamine pentaphyllos",
         "code": 79600,
         "forestTypes": [
           "12S",
@@ -11962,6 +12010,7 @@
       {
         "de": "Bergdistel",
         "fr": "Chardon décapité",
+        "la": "Carduus defloratus aggr.",
         "code": 81595,
         "forestTypes": [
           "13e",
@@ -12014,12 +12063,14 @@
       {
         "de": "Scharfkantige Segge",
         "fr": "Laiche à angles aigus",
+        "la": "Carex acutiformis",
         "code": 83000,
         "forestTypes": ["27", "28", "30", "31", "43", "44"]
       },
       {
         "de": "Weissegge",
         "fr": "Laiche blanche",
+        "la": "Carex alba",
         "code": 83100,
         "forestTypes": [
           "10a",
@@ -12081,6 +12132,7 @@
       {
         "de": "Rostsegge",
         "fr": "Laiche ferrugineuse",
+        "la": "Carex ferruginea",
         "code": 87200,
         "forestTypes": [
           "18v",
@@ -12113,6 +12165,7 @@
       {
         "de": "Schlaffe Segge",
         "fr": "Laiche glauque",
+        "la": "Carex flacca",
         "code": 87500,
         "forestTypes": [
           "10a",
@@ -12190,6 +12243,7 @@
       {
         "de": "Niedrige Segge",
         "fr": "Laiche humble",
+        "la": "Carex humilis",
         "code": 88800,
         "forestTypes": [
           "14",
@@ -12246,6 +12300,7 @@
       {
         "de": "Bergsegge",
         "fr": "Laiche des montagnes",
+        "la": "Carex montana",
         "code": 90300,
         "forestTypes": [
           "10a",
@@ -12321,12 +12376,14 @@
       {
         "de": "Rispensegge",
         "fr": "Laiche paniculée",
+        "la": "Carex paniculata",
         "code": 91800,
         "forestTypes": ["27*", "49*", "49*Ta", "60E"]
       },
       {
         "de": "Hängende Segge",
         "fr": "Laiche à épis pendants",
+        "la": "Carex pendula",
         "code": 92300,
         "forestTypes": [
           "11",
@@ -12368,6 +12425,7 @@
       {
         "de": "Lockerährige Segge",
         "fr": "Laiche à épis espacés",
+        "la": "Carex remota",
         "code": 93300,
         "forestTypes": [
           "11",
@@ -12411,6 +12469,7 @@
       {
         "de": "Immergrüne Segge",
         "fr": "Laiche toujours verte",
+        "la": "Carex sempervirens",
         "code": 93900,
         "forestTypes": [
           "53*s",
@@ -12429,6 +12488,7 @@
       {
         "de": "Waldsegge",
         "fr": "Laiche des forêts",
+        "la": "Carex sylvatica",
         "code": 94700,
         "forestTypes": [
           "10a",
@@ -12556,6 +12616,7 @@
       {
         "de": "Stengellose Eberwurz",
         "fr": "Carlina acaulis",
+        "la": "Carlina acaulis",
         "code": 95900,
         "forestTypes": [
           "53*s",
@@ -12574,6 +12635,7 @@
       {
         "de": "Bergflockenblume",
         "fr": "Centaurée des montagnes",
+        "la": "Centaurea montana",
         "code": 99200,
         "forestTypes": [
           "17",
@@ -12614,18 +12676,21 @@
       {
         "de": "Fedrige Flockenblume",
         "fr": "Centaurée nervée",
+        "la": "Centaurea nervosa",
         "code": 99400,
         "forestTypes": ["59J"]
       },
       {
         "de": "Gewöhnliche Skabiosen-Flockenblume",
         "fr": "Centaurée scabieuse",
+        "la": "Centaurea scabiosa s.l.",
         "code": 100000,
         "forestTypes": ["38S", "65*", "67", "67*", "67G"]
       },
       {
         "de": "Weisses Waldvögelein",
         "fr": "Céphalanthère blanche",
+        "la": "Cephalanthera damasonium",
         "code": 101800,
         "forestTypes": [
           "10a",
@@ -12663,6 +12728,7 @@
       {
         "de": "Langblättriges Waldvögelein",
         "fr": "Céphalanthère à longues feuilles",
+        "la": "Cephalanthera longifolia",
         "code": 101900,
         "forestTypes": [
           "10a",
@@ -12704,6 +12770,7 @@
       {
         "de": "Rotes Waldvögelein",
         "fr": "Céphalanthère rouge",
+        "la": "Cephalanthera rubra",
         "code": 102000,
         "forestTypes": [
           "10a",
@@ -12746,18 +12813,21 @@
       {
         "de": "Schöllkraut",
         "fr": "Chélidoine",
+        "la": "Chelidonium majus",
         "code": 108200,
         "forestTypes": ["91", "92a", "92z", "93"]
       },
       {
         "de": "Goldbart",
         "fr": "Chrysopogon grillon",
+        "la": "Chrysopogon gryllus",
         "code": 112400,
         "forestTypes": ["38*", "42B", "42r"]
       },
       {
         "de": "Alpenmilchlattich",
         "fr": "Cicerbite des Alpes",
+        "la": "Cicerbita alpina",
         "code": 112800,
         "forestTypes": [
           "21",
@@ -12797,6 +12867,7 @@
       {
         "de": "Alpen-Hexenkraut",
         "fr": "Circée des Alpes",
+        "la": "Circaea alpina",
         "code": 113400,
         "forestTypes": [
           "19LP",
@@ -12812,6 +12883,7 @@
       {
         "de": "Gemeines Hexenkraut",
         "fr": "Circée commune",
+        "la": "Circaea lutetiana",
         "code": 113500,
         "forestTypes": [
           "11",
@@ -12875,12 +12947,14 @@
       {
         "de": "Verschiedenblättrige Kratzdistel",
         "fr": "Cirse hélénie",
+        "la": "Cirsium helenioides",
         "code": 114400,
         "forestTypes": ["32S", "60E"]
       },
       {
         "de": "Kohldistel",
         "fr": "Cirse maraîcher",
+        "la": "Cirsium oleraceum",
         "code": 114800,
         "forestTypes": [
           "18v",
@@ -12928,12 +13002,14 @@
       {
         "de": "Salbeiblättrige Zistrose",
         "fr": "Ciste à feuilles de sauge",
+        "la": "Cistus salviifolius",
         "code": 115600,
         "forestTypes": ["42B", "42r"]
       },
       {
         "de": "Alpenrebe",
         "fr": "Clématite des Alpes",
+        "la": "Clematis alpina",
         "code": 116000,
         "forestTypes": [
           "24",
@@ -12954,6 +13030,7 @@
       {
         "de": "Waldrebe",
         "fr": "Clématite blanche",
+        "la": "Clematis vitalba",
         "code": 116400,
         "forestTypes": [
           "10a",
@@ -13086,18 +13163,21 @@
       {
         "de": "Herbst-Zeitlose",
         "fr": "Colchique d'automne",
+        "la": "Colchicum autumnale",
         "code": 117700,
         "forestTypes": ["25F", "25FFe", "35S"]
       },
       {
         "de": "Blasenstrauch",
         "fr": "Baguenaudier arborescent",
+        "la": "Colutea arborescens aggr.",
         "code": 118100,
         "forestTypes": ["10w", "22", "22Fe", "52", "52Re", "65", "65*"]
       },
       {
         "de": "Maiglöcklein",
         "fr": "Muguet",
+        "la": "Convallaria majalis",
         "code": 118800,
         "forestTypes": [
           "10a",
@@ -13149,12 +13229,14 @@
       {
         "de": "Hohlknolliger Lerchensporn",
         "fr": "Corydale creuse",
+        "la": "Corydalis cava",
         "code": 121100,
         "forestTypes": ["11", "11Fe", "22A", "22C"]
       },
       {
         "de": "Haselstrauch",
         "fr": "Noisetier",
+        "la": "Corylus avellana",
         "code": 121600,
         "forestTypes": [
           "1",
@@ -13381,12 +13463,14 @@
       {
         "de": "Perückenstrauch",
         "fr": "Arbre à perruque",
+        "la": "Cotinus coggygria",
         "code": 121700,
         "forestTypes": ["37", "38*"]
       },
       {
         "de": "Kahle Steinmispel",
         "fr": "Cotonéaster à feuilles entières",
+        "la": "Cotoneaster integerrimus",
         "code": 121800,
         "forestTypes": [
           "14",
@@ -13438,6 +13522,7 @@
       {
         "de": "Filzige Steinmispel",
         "fr": "Cotonéaster tomenteux",
+        "la": "Cotoneaster tomentosus",
         "code": 122000,
         "forestTypes": [
           "16",
@@ -13500,18 +13585,21 @@
       {
         "de": "Frühlings-Kreuzlabkraut",
         "fr": "Croisette glabre",
+        "la": "Cruciata glabra",
         "code": 126200,
         "forestTypes": ["34b", "36", "37", "38*"]
       },
       {
         "de": "Krauser Rollfarn",
         "fr": "Cryptogramme crépu",
+        "la": "Cryptogramma crispa",
         "code": 126600,
         "forestTypes": ["40PBl", "59C", "59R"]
       },
       {
         "de": "Gemeines Alpenveilchen",
         "fr": "Cyclamen d'Europe",
+        "la": "Cyclamen purpurascens",
         "code": 128400,
         "forestTypes": [
           "10a",
@@ -13549,12 +13637,14 @@
       {
         "de": "Frauenschuh",
         "fr": "Sabot de Vénus",
+        "la": "Cypripedium calceolus",
         "code": 130400,
         "forestTypes": ["12w", "17", "17G", "18w", "18wG", "54A"]
       },
       {
         "de": "Geflecktes Knabenkraut",
         "fr": "Orchis tacheté",
+        "la": "Dactylorhiza maculata aggr.",
         "code": 132650,
         "forestTypes": [
           "19LP",
@@ -13609,6 +13699,7 @@
       {
         "de": "Loorbeer-Seidelbast",
         "fr": "Daphné lauréole",
+        "la": "Daphne laureola",
         "code": 133500,
         "forestTypes": [
           "10a",
@@ -13664,6 +13755,7 @@
       {
         "de": "Echter Seidelbast",
         "fr": "Bois gentil",
+        "la": "Daphne mezereum",
         "code": 133600,
         "forestTypes": [
           "10a",
@@ -13794,6 +13886,7 @@
       {
         "de": "Gestreifter Seidelbast",
         "fr": "Daphné strié",
+        "la": "Daphne striata",
         "code": 133700,
         "forestTypes": [
           "53*s",
@@ -13810,6 +13903,7 @@
       {
         "de": "Rasenschmiele",
         "fr": "Canche gazonnante",
+        "la": "Deschampsia caespitosa",
         "code": 134800,
         "forestTypes": [
           "11",
@@ -13907,18 +14001,21 @@
       {
         "de": "Stein-Nelke",
         "fr": "Oeillet des rochers",
+        "la": "Dianthus sylvestris",
         "code": 136900,
         "forestTypes": ["65*"]
       },
       {
         "de": "Kriechende Gemswurz",
         "fr": "Doronic pardalianche",
+        "la": "Doronicum paralianches",
         "code": 140100,
         "forestTypes": ["25b"]
       },
       {
         "de": "Silberwurz",
         "fr": "Dryade à huit pétales",
+        "la": "Dryas octopetala",
         "code": 142500,
         "forestTypes": [
           "59E",
@@ -13936,6 +14033,7 @@
       {
         "de": "Schwarze Krähenbeere",
         "fr": "Camarine",
+        "la": "Empetrum nigrum s.l.",
         "code": 146795,
         "forestTypes": [
           "59",
@@ -13959,6 +14057,7 @@
       {
         "de": "Braunrote Sumpfwurz",
         "fr": "Epipactis pourpre noirâtre",
+        "la": "Epipactis atrorubens",
         "code": 149600,
         "forestTypes": [
           "10a",
@@ -14018,6 +14117,7 @@
       {
         "de": "Gewöhnliche Breitblättrige Stendelwurz",
         "fr": "Epipactis à larges feuilles",
+        "la": "Epipactis helleborine",
         "code": 149660,
         "forestTypes": [
           "18*",
@@ -14042,6 +14142,7 @@
       {
         "de": "Kleinblättrige Stendelwurz",
         "fr": "Epipactis à petites feuilles",
+        "la": "Epipactis microphylla",
         "code": 150100,
         "forestTypes": [
           "13e",
@@ -14058,6 +14159,7 @@
       {
         "de": "Ackerschachtelhalm",
         "fr": "Prêle des champs",
+        "la": "Equisetum arvense",
         "code": 150600,
         "forestTypes": [
           "22A",
@@ -14102,6 +14204,7 @@
       {
         "de": "Winter-Schachtelhalm",
         "fr": "Prêle d'hiver",
+        "la": "Equisetum hyemale",
         "code": 150800,
         "forestTypes": [
           "22A",
@@ -14123,6 +14226,7 @@
       {
         "de": "Waldschachtelhalm",
         "fr": "Prêle des bois",
+        "la": "Equisetum sylvaticum",
         "code": 151400,
         "forestTypes": [
           "19f",
@@ -14154,12 +14258,14 @@
       {
         "de": "Riesenschachtelhalm",
         "fr": "Prêle géante",
+        "la": "Equisetum telmateia",
         "code": 151500,
         "forestTypes": ["20E", "20EG", "27", "27h", "27hG", "35S"]
       },
       {
         "de": "Erika",
         "fr": "Bruyère carnée",
+        "la": "Erica carnea",
         "code": 152400,
         "forestTypes": [
           "14*",
@@ -14201,12 +14307,14 @@
       {
         "de": "Wasserdost",
         "fr": "Eupatoire chanvrine",
+        "la": "Eupatorium cannabinum",
         "code": 159300,
         "forestTypes": ["23H", "25F", "25FFe", "32C", "32V", "32VG"]
       },
       {
         "de": "Mandelblättrige Wolfsmilch",
         "fr": "Euphorbe à feuilles d'amandier",
+        "la": "Euphorbia amygdaloides",
         "code": 159400,
         "forestTypes": [
           "10a",
@@ -14252,6 +14360,7 @@
       {
         "de": "Zypressenblättrige Wolfsmilch",
         "fr": "Euphorbe petit cyprès",
+        "la": "Euphorbia cyparissias",
         "code": 159800,
         "forestTypes": [
           "23",
@@ -14288,6 +14397,7 @@
       {
         "de": "Waldschwingel",
         "fr": "Grande fétuque",
+        "la": "Festuca altissima",
         "code": 165800,
         "forestTypes": [
           "12S",
@@ -14364,6 +14474,7 @@
       {
         "de": "Moor-Geissbart",
         "fr": "Reine des prés",
+        "la": "Filipendula ulmaria",
         "code": 173100,
         "forestTypes": [
           "26",
@@ -14391,6 +14502,7 @@
       {
         "de": "Kletten-Labkraut",
         "fr": "Gaillet gratteron",
+        "la": "Galium aparine",
         "code": 177600,
         "forestTypes": [
           "23",
@@ -14409,6 +14521,7 @@
       {
         "de": "Echter Waldmeister",
         "fr": "Gaillet odorant",
+        "la": "Galium odoratum",
         "code": 179300,
         "forestTypes": [
           "10a",
@@ -14562,6 +14675,7 @@
       {
         "de": "Rundblättriges Labkraut",
         "fr": "Gaillet à feuilles rondes",
+        "la": "Galium rotundifolium",
         "code": 179900,
         "forestTypes": [
           "1",
@@ -14642,6 +14756,7 @@
       {
         "de": "Wald-Labkraut",
         "fr": "Gaillet des forêts",
+        "la": "Galium sylvaticum",
         "code": 180400,
         "forestTypes": [
           "15",
@@ -14666,6 +14781,7 @@
       {
         "de": "Schwalbenwurzenzian",
         "fr": "Gentiane à feuilles d'asclépiade",
+        "la": "Gentiana asclepiadea",
         "code": 182700,
         "forestTypes": [
           "17",
@@ -14714,18 +14830,21 @@
       {
         "de": "Getüpfelter Enzian",
         "fr": "Gentiane ponctuée",
+        "la": "Gentiana punctata",
         "code": 184800,
         "forestTypes": ["59", "59G", "59Lä"]
       },
       {
         "de": "Purpur-Enzian",
         "fr": "Gentiane pourpre",
+        "la": "Gentiana purpurea L.",
         "code": 184900,
         "forestTypes": ["56"]
       },
       {
         "de": "Ruprechtskraut",
         "fr": "Géranium herbe à Robert",
+        "la": "Geranium robertianum",
         "code": 188800,
         "forestTypes": [
           "11",
@@ -14827,6 +14946,7 @@
       {
         "de": "Blutroter Storchenschnabel",
         "fr": "Géranium sanguin",
+        "la": "Geranium sanguineum",
         "code": 189100,
         "forestTypes": [
           "14",
@@ -14857,6 +14977,7 @@
       {
         "de": "Bach-Nelkenwurz",
         "fr": "Benoîte des ruisseaux",
+        "la": "Geum rivale",
         "code": 189600,
         "forestTypes": [
           "26h",
@@ -14889,6 +15010,7 @@
       {
         "de": "Gemeine Nelkwurz",
         "fr": "Benoîte commune",
+        "la": "Geum urbanum",
         "code": 189700,
         "forestTypes": [
           "10w",
@@ -14988,6 +15110,7 @@
       {
         "de": "Gundelrebe",
         "fr": "Lierre terrestre",
+        "la": "Glechoma hederacea s.l.",
         "code": 190500,
         "forestTypes": [
           "11",
@@ -15030,12 +15153,14 @@
       {
         "de": "Herzblättrige Kugelblume",
         "fr": "Globulaire à feuilles en cœur",
+        "la": "Globularia cordifolia",
         "code": 191000,
         "forestTypes": ["61", "65", "65*", "67", "67*", "67G", "69", "69G"]
       },
       {
         "de": "Schaft-Kugelblume",
         "fr": "Globulaire à tige nue",
+        "la": "Globularia nudicaulis",
         "code": 191200,
         "forestTypes": [
           "53",
@@ -15053,6 +15178,7 @@
       {
         "de": "Moosorchis",
         "fr": "Goodyère rampante",
+        "la": "Goodyera repens",
         "code": 192800,
         "forestTypes": [
           "53*",
@@ -15070,12 +15196,14 @@
       {
         "de": "Langspornige Handwurz",
         "fr": "Orchis moucheron",
+        "la": "Gymnadenia conopsea",
         "code": 193200,
         "forestTypes": ["53A", "53ATa", "61", "65", "65*", "67", "67G"]
       },
       {
         "de": "Wohlriechende Handwurz",
         "fr": "Gymnadénie odorante",
+        "la": "Gymnadenia odoratissima",
         "code": 193300,
         "forestTypes": [
           "53*",
@@ -15094,6 +15222,7 @@
       {
         "de": "Efeu",
         "fr": "Lierre",
+        "la": "Hedera helix",
         "code": 194000,
         "forestTypes": [
           "10a",
@@ -15237,6 +15366,7 @@
       {
         "de": "Stinkende Nieswurz",
         "fr": "Hellébore fétide",
+        "la": "Helleborus foetidus",
         "code": 197300,
         "forestTypes": [
           "10a",
@@ -15284,18 +15414,21 @@
       {
         "de": "Christrose",
         "fr": "Rose de Noël",
+        "la": "Helleborus niger",
         "code": 197400,
         "forestTypes": ["12*h", "14*", "16*", "37", "38*"]
       },
       {
         "de": "Grüne Nieswurz",
         "fr": "Hellébore vert",
+        "la": "Helleborus viridis",
         "code": 197500,
         "forestTypes": ["12*", "13*", "14*", "22*", "25O", "25b", "36"]
       },
       {
         "de": "Leberblümchen",
         "fr": "Hépatique à trois lobes",
+        "la": "Hepatica nobilis",
         "code": 197900,
         "forestTypes": [
           "10a",
@@ -15411,6 +15544,7 @@
       {
         "de": "Strauchwicke",
         "fr": "Hippocrépide émérus",
+        "la": "Hippocrepis emerus",
         "code": 206400,
         "forestTypes": [
           "10a",
@@ -15479,12 +15613,14 @@
       {
         "de": "Sanddorn",
         "fr": "Argousier",
+        "la": "Hippophaë rhamnoides L.",
         "code": 206500,
         "forestTypes": ["40PBlt", "43*", "43S"]
       },
       {
         "de": "Alpenlattich",
         "fr": "Homogyne des Alpes",
+        "la": "Homogyne alpina",
         "code": 207300,
         "forestTypes": [
           "12*h",
@@ -15610,6 +15746,7 @@
       {
         "de": "Waldgerste",
         "fr": "Orge d'Europe",
+        "la": "Hordelymus europaeus",
         "code": 207400,
         "forestTypes": [
           "12S",
@@ -15685,6 +15822,7 @@
       {
         "de": "Hopfen",
         "fr": "Houblon",
+        "la": "Humulus lupulus",
         "code": 208800,
         "forestTypes": [
           "23H",
@@ -15703,6 +15841,7 @@
       {
         "de": "Tannenbärlapp",
         "fr": "Lycopode sélagine",
+        "la": "Huperzia selago",
         "code": 208900,
         "forestTypes": [
           "19a",
@@ -15768,6 +15907,7 @@
       {
         "de": "Stechpalme",
         "fr": "Houx",
+        "la": "Ilex aquifolium",
         "code": 213300,
         "forestTypes": [
           "1",
@@ -15906,6 +16046,7 @@
       {
         "de": "Wald-Springkraut",
         "fr": "Impatiente ne-me-touchez-pas",
+        "la": "Impatiens noli-tangere",
         "code": 213700,
         "forestTypes": [
           "11",
@@ -15970,12 +16111,14 @@
       {
         "de": "Kleines Springkraut",
         "fr": "Impatiente à petites fleurs",
+        "la": "Impatiens parviflora",
         "code": 213800,
         "forestTypes": ["24", "24G", "35Q", "91", "92a", "92z"]
       },
       {
         "de": "Gewöhnlicher Wacholder",
         "fr": "Genévrier commun",
+        "la": "Juniperus communis",
         "code": 220400,
         "forestTypes": [
           "12a",
@@ -16061,6 +16204,7 @@
       {
         "de": "Zwergwachholder",
         "fr": "Genévrier nain",
+        "la": "Juniperus nana Willd.",
         "code": 220700,
         "forestTypes": [
           "47",
@@ -16137,12 +16281,14 @@
       {
         "de": "Sefistrauch",
         "fr": "Genévrier sabine",
+        "la": "Juniperus sabina",
         "code": 220800,
         "forestTypes": ["68*"]
       },
       {
         "de": "Wald-Witwenblume",
         "fr": "Knautie à feuilles de cardère",
+        "la": "Knautia dipsacifolia",
         "code": 221500,
         "forestTypes": [
           "12S",
@@ -16254,12 +16400,14 @@
       {
         "de": "Walliser Kammschmiele",
         "fr": "Koelérie du Valais",
+        "la": "Koeleria vallesiana",
         "code": 224100,
         "forestTypes": ["38S"]
       },
       {
         "de": "Alpen-Goldregen",
         "fr": "Cytise des Alpes",
+        "la": "Laburnum alpinum",
         "code": 224200,
         "forestTypes": [
           "12*",
@@ -16308,6 +16456,7 @@
       {
         "de": "Goldregen",
         "fr": "Cytise faux ébénier",
+        "la": "Laburnum anagyroides",
         "code": 224300,
         "forestTypes": [
           "10a",
@@ -16364,12 +16513,14 @@
       {
         "de": "Blauer Lattich",
         "fr": "Laitue vivace",
+        "la": "Lactuca perennis",
         "code": 224400,
         "forestTypes": ["38S"]
       },
       {
         "de": "Blassgelbe Goldnessel",
         "fr": "Lamier jaunâtre",
+        "la": "Lamium galeobdolon ssp. flavidum",
         "code": 225900,
         "forestTypes": [
           "12*",
@@ -16408,6 +16559,7 @@
       {
         "de": "Berggoldnessel",
         "fr": "Lamier des montagnes",
+        "la": "Lamium galeobdolon ssp. montanum",
         "code": 226000,
         "forestTypes": [
           "10a",
@@ -16540,6 +16692,7 @@
       {
         "de": "Gaudins Laserkraut",
         "fr": "Laser de Gaudin",
+        "la": "Laserpitium gaudinii",
         "code": 227400,
         "forestTypes": [
           "12*h",
@@ -16566,6 +16719,7 @@
       {
         "de": "Hallers Laserkraut",
         "fr": "Laser de Haller",
+        "la": "Laserpitium halleri",
         "code": 227500,
         "forestTypes": [
           "55*",
@@ -16583,6 +16737,7 @@
       {
         "de": "Breitblättriges Laserkraut",
         "fr": "Laser à larges feuilles",
+        "la": "Laserpitium latifolium",
         "code": 227700,
         "forestTypes": [
           "12w",
@@ -16622,6 +16777,7 @@
       {
         "de": "Berg-Laserkraut",
         "fr": "Laser siler",
+        "la": "Laserpitium siler",
         "code": 228100,
         "forestTypes": [
           "16",
@@ -16647,12 +16803,14 @@
       {
         "de": "Schwarze Platterbse",
         "fr": "Gesse noire",
+        "la": "Lathyrus niger",
         "code": 230000,
         "forestTypes": ["35", "40*", "41*"]
       },
       {
         "de": "Frühlingsplatterbse",
         "fr": "Gesse printanière",
+        "la": "Lathyrus vernus ssp. vernus",
         "code": 231200,
         "forestTypes": [
           "10a",
@@ -16721,12 +16879,14 @@
       {
         "de": "Märzenglöckchen",
         "fr": "Nivéole du printemps",
+        "la": "Leucojum vernum",
         "code": 237100,
         "forestTypes": ["11", "11Fe", "22A", "22C", "35S"]
       },
       {
         "de": "Liguster",
         "fr": "Troène vulgaire",
+        "la": "Ligustrum vulgare",
         "code": 238100,
         "forestTypes": [
           "10a",
@@ -16845,12 +17005,14 @@
       {
         "de": "Feuerlilie",
         "fr": "Lis safrané à bulbilles",
+        "la": "Lilium bulbiferum s.l.",
         "code": 238200,
         "forestTypes": ["33V", "38*", "42B", "42r", "59R"]
       },
       {
         "de": "Türkenbund",
         "fr": "Lis martagon",
+        "la": "Lilium martagon",
         "code": 238500,
         "forestTypes": [
           "10a",
@@ -16915,6 +17077,7 @@
       {
         "de": "Moosglöcklein",
         "fr": "Linnée boréale",
+        "la": "Linnaea borealis",
         "code": 240600,
         "forestTypes": [
           "48",
@@ -16948,6 +17111,7 @@
       {
         "de": "Kleines Zweiblatt",
         "fr": "Listère en coeur",
+        "la": "Listera cordata",
         "code": 241900,
         "forestTypes": [
           "46*",
@@ -16991,6 +17155,7 @@
       {
         "de": "Grosses Zweiblatt",
         "fr": "Listère ovale",
+        "la": "Listera ovata",
         "code": 242000,
         "forestTypes": [
           "11",
@@ -17048,12 +17213,14 @@
       {
         "de": "Alpenazalee",
         "fr": "Azalée des Alpes",
+        "la": "Loiseleuria procumbens",
         "code": 242600,
         "forestTypes": ["59C", "70", "70G"]
       },
       {
         "de": "Alpen-Heckenkirsche",
         "fr": "Chèvrefeuille alpestre",
+        "la": "Lonicera alpigena",
         "code": 243400,
         "forestTypes": [
           "12*h",
@@ -17185,6 +17352,7 @@
       {
         "de": "Blaue Heckenkirsche",
         "fr": "Chèvrefeuille bleu",
+        "la": "Lonicera caerulea",
         "code": 243500,
         "forestTypes": [
           "21L",
@@ -17221,6 +17389,7 @@
       {
         "de": "Japanisches Geissblatt",
         "fr": "Chèvrefeuille du Japon",
+        "la": "Lonicera japonica",
         "code": 243800,
         "forestTypes": [
           "27O",
@@ -17237,6 +17406,7 @@
       {
         "de": "Wald-Geissblatt",
         "fr": "Chèvrefeuille des bois",
+        "la": "Lonicera periclymenum",
         "code": 244000,
         "forestTypes": [
           "1",
@@ -17263,6 +17433,7 @@
       {
         "de": "Wilde Mondviole",
         "fr": "Lunaire vivace",
+        "la": "Lunaria rediviva",
         "code": 245500,
         "forestTypes": [
           "22",
@@ -17280,6 +17451,7 @@
       {
         "de": "Gelbliche Hainsimse",
         "fr": "Luzule jaunâtre",
+        "la": "Luzula luzulina",
         "code": 246700,
         "forestTypes": [
           "46",
@@ -17348,6 +17520,7 @@
       {
         "de": "Gewöhnliche Weissliche Hainsimse",
         "fr": "Luzule des bosquets",
+        "la": "Luzula luzuloides",
         "code": 246900,
         "forestTypes": [
           "1",
@@ -17388,6 +17561,7 @@
       {
         "de": "Vielblütige Hainsimse",
         "fr": "Luzule multiflore",
+        "la": "Luzula multiflora",
         "code": 247100,
         "forestTypes": [
           "19",
@@ -17408,6 +17582,7 @@
       {
         "de": "Schneesimse, Schneeweisse Hainsimse",
         "fr": "Luzule blanc-de-neige",
+        "la": "Luzula nivea",
         "code": 247300,
         "forestTypes": [
           "1",
@@ -17558,6 +17733,7 @@
       {
         "de": "Behaarte Hainsimse",
         "fr": "Luzule poilue",
+        "la": "Luzula pilosa",
         "code": 247500,
         "forestTypes": [
           "1",
@@ -17591,6 +17767,7 @@
       {
         "de": "Waldsimse, Wald-Hainsimse",
         "fr": "Luzule des forêts",
+        "la": "Luzula sylvatica",
         "code": 248300,
         "forestTypes": [
           "1",
@@ -17729,6 +17906,7 @@
       {
         "de": "Bergbärlapp",
         "fr": "Lycopode à rameaux d'un an",
+        "la": "Lycopodium annotinum",
         "code": 249700,
         "forestTypes": [
           "18v",
@@ -17809,18 +17987,21 @@
       {
         "de": "Gemeiner Gilbweiderich",
         "fr": "Lysimaque commune",
+        "la": "Lysimachia vulgaris",
         "code": 251800,
         "forestTypes": ["27", "30", "31", "43", "44"]
       },
       {
         "de": "Blut-Weiderich",
         "fr": "Salicaire commune",
+        "la": "Lythrum salicaria",
         "code": 252100,
         "forestTypes": ["27", "30", "31", "43", "44"]
       },
       {
         "de": "Zweiblättrige Schattenblume",
         "fr": "Maïanthème à deux feuilles",
+        "la": "Majanthemum bifolium",
         "code": 252400,
         "forestTypes": [
           "1",
@@ -17987,6 +18168,7 @@
       {
         "de": "Wiesenwachtelweizen",
         "fr": "Mélampyre des prés",
+        "la": "Melampyrum pratense",
         "code": 256500,
         "forestTypes": [
           "1",
@@ -18052,6 +18234,7 @@
       {
         "de": "Waldwachtelweizen",
         "fr": "Mélampyre des forêts",
+        "la": "Melampyrum sylvaticum",
         "code": 256600,
         "forestTypes": [
           "1",
@@ -18176,6 +18359,7 @@
       {
         "de": "Nickendes Perlgras",
         "fr": "Mélique penchée",
+        "la": "Melica nutans",
         "code": 256900,
         "forestTypes": [
           "10a",
@@ -18279,6 +18463,7 @@
       {
         "de": "Immenblatt",
         "fr": "Mélitte à feuilles de mélisse",
+        "la": "Melittis melissophyllum",
         "code": 257900,
         "forestTypes": [
           "10a",
@@ -18326,6 +18511,7 @@
       {
         "de": "Ausdauerndes Bingelkraut",
         "fr": "Mercuriale vivace",
+        "la": "Mercurialis perennis",
         "code": 259100,
         "forestTypes": [
           "10a",
@@ -18427,6 +18613,7 @@
       {
         "de": "Waldhirse",
         "fr": "Millet étalé",
+        "la": "Milium effusum",
         "code": 259800,
         "forestTypes": [
           "10a",
@@ -18537,6 +18724,7 @@
       {
         "de": "Moos-Nabelmiere",
         "fr": "Moehringie mousse",
+        "la": "Moehringia muscosa",
         "code": 262900,
         "forestTypes": [
           "13a",
@@ -18580,6 +18768,7 @@
       {
         "de": "Moosauge",
         "fr": "Pyrole à une fleur",
+        "la": "Moneses uniflora",
         "code": 263700,
         "forestTypes": [
           "46M",
@@ -18611,6 +18800,7 @@
       {
         "de": "Mauerlattich",
         "fr": "Laitue des murs",
+        "la": "Mycelis muralis",
         "code": 265700,
         "forestTypes": [
           "1",
@@ -18699,6 +18889,7 @@
       {
         "de": "Borstgras",
         "fr": "Nard raide",
+        "la": "Nardus stricta",
         "code": 269700,
         "forestTypes": [
           "55*",
@@ -18721,6 +18912,7 @@
       {
         "de": "Nestwurz",
         "fr": "Néottie nid d'oiseau",
+        "la": "Neottia nidus-avis",
         "code": 270100,
         "forestTypes": [
           "10a",
@@ -18808,24 +19000,28 @@
       {
         "de": "Saat-Esparsette",
         "fr": "Esparcette à feuilles de vesce",
+        "la": "Onobrychis viciifolia",
         "code": 275600,
         "forestTypes": ["65*"]
       },
       {
         "de": "Rundblättriger Hauhechel",
         "fr": "Bugrane à feuilles rondes",
+        "la": "Ononis rotundifolia",
         "code": 276500,
         "forestTypes": ["65*"]
       },
       {
         "de": "Grannenhirse",
         "fr": "Oplismène à feuilles ondulées",
+        "la": "Oplismenus undulatifolius",
         "code": 279400,
         "forestTypes": ["25a", "25au", "27O", "33m", "91", "92z"]
       },
       {
         "de": "Echter Dost",
         "fr": "Origan, Marjolaine",
+        "la": "Origanum vulgare",
         "code": 282600,
         "forestTypes": [
           "14",
@@ -18852,6 +19048,7 @@
       {
         "de": "Birngrün",
         "fr": "Pyrole unilatérale",
+        "la": "Orthilia secunda",
         "code": 286800,
         "forestTypes": [
           "17",
@@ -18883,12 +19080,14 @@
       {
         "de": "Königsfarn",
         "fr": "Fougère royale",
+        "la": "Osmunda regalis",
         "code": 287000,
         "forestTypes": ["27O"]
       },
       {
         "de": "Sauerklee",
         "fr": "Oxalis petite oseille",
+        "la": "Oxalis acetosella",
         "code": 287300,
         "forestTypes": [
           "1",
@@ -19116,6 +19315,7 @@
       {
         "de": "Vierblättrige Einbeere",
         "fr": "Parisette à quatre feuilles",
+        "la": "Paris quadrifolia",
         "code": 292600,
         "forestTypes": [
           "10a",
@@ -19248,6 +19448,7 @@
       {
         "de": "Sumpf-Herzblatt",
         "fr": "Parnassie des marais",
+        "la": "Parnassia palustris",
         "code": 292700,
         "forestTypes": [
           "49*",
@@ -19263,6 +19464,7 @@
       {
         "de": "Weisse Pestwurz",
         "fr": "Pétasite blanc",
+        "la": "Petasites albus",
         "code": 295700,
         "forestTypes": [
           "12S",
@@ -19338,6 +19540,7 @@
       {
         "de": "Rote Pestwurz",
         "fr": "Pétasite hybride",
+        "la": "Petasites hybridus",
         "code": 295900,
         "forestTypes": [
           "23",
@@ -19354,12 +19557,14 @@
       {
         "de": "Hirschwurz",
         "fr": "Peucédan cervaire",
+        "la": "Peucedanum cervaria",
         "code": 296900,
         "forestTypes": ["38", "39", "39*", "40*", "61", "65"]
       },
       {
         "de": "Berg-Haarstrang",
         "fr": "Peucédan des montagnes",
+        "la": "Peucedanum oreoselinum",
         "code": 297100,
         "forestTypes": [
           "23*",
@@ -19379,6 +19584,7 @@
       {
         "de": "Meisterwurz",
         "fr": "Peucédan impératoire",
+        "la": "Peucedanum ostruthium",
         "code": 297200,
         "forestTypes": [
           "21L",
@@ -19416,6 +19622,7 @@
       {
         "de": "Buchenfarn",
         "fr": "Phégoptère commun",
+        "la": "Phegopteris connectilis",
         "code": 298400,
         "forestTypes": [
           "19L",
@@ -19463,6 +19670,7 @@
       {
         "de": "Hirschzunge",
         "fr": "Langue de cerf",
+        "la": "Phyllitis scolopendrium",
         "code": 300500,
         "forestTypes": [
           "13a",
@@ -19484,6 +19692,7 @@
       {
         "de": "Betonienblättrige Rapunzel",
         "fr": "Raiponce à feuilles de bétoine",
+        "la": "Phyteuma betonicifolium",
         "code": 300800,
         "forestTypes": [
           "19a",
@@ -19546,6 +19755,7 @@
       {
         "de": "Aehrige Rapunzel",
         "fr": "Raiponce en épi",
+        "la": "Phyteuma spicatum",
         "code": 302400,
         "forestTypes": [
           "10a",
@@ -19687,18 +19897,21 @@
       {
         "de": "Alpen-Fettblatt",
         "fr": "Grassette des Alpes",
+        "la": "Pinguicula alpina",
         "code": 304300,
         "forestTypes": ["69", "69G"]
       },
       {
         "de": "Gemeines Fettblatt",
         "fr": "Grassette commune",
+        "la": "Pinguicula vulgaris",
         "code": 304800,
         "forestTypes": ["49*", "49*Ta"]
       },
       {
         "de": "Legföhre",
         "fr": "Pin couché",
+        "la": "Pinus mugo",
         "code": 305500,
         "forestTypes": [
           "12*h",
@@ -19808,6 +20021,7 @@
       {
         "de": "Weisses Breitkölbchen",
         "fr": "Platanthère à deux feuilles",
+        "la": "Platanthera bifolia",
         "code": 308400,
         "forestTypes": [
           "16",
@@ -19832,12 +20046,14 @@
       {
         "de": "Alpen-Rispengras",
         "fr": "Pâturin des Alpes",
+        "la": "Poa alpina",
         "code": 309000,
         "forestTypes": ["59E", "59EG", "59ELä", "67", "67G"]
       },
       {
         "de": "Hainrispengras",
         "fr": "Pâturin des bois",
+        "la": "Poa nemoralis",
         "code": 310500,
         "forestTypes": [
           "1",
@@ -19908,6 +20124,7 @@
       {
         "de": "Zwergbuchs, Buchsblättrige Kreuzblume",
         "fr": "Polygale petit buis",
+        "la": "Polygala chamaebuxus",
         "code": 312700,
         "forestTypes": [
           "14",
@@ -19973,6 +20190,7 @@
       {
         "de": "Vielblütiges Salomonssiegel",
         "fr": "Sceau de Salomon multiflore",
+        "la": "Polygonatum multiflorum",
         "code": 313400,
         "forestTypes": [
           "10a",
@@ -20060,6 +20278,7 @@
       {
         "de": "Echtes Salomonssiegel",
         "fr": "Sceau de Salomon officinal",
+        "la": "Polygonatum odoratum",
         "code": 313500,
         "forestTypes": [
           "12e",
@@ -20101,6 +20320,7 @@
       {
         "de": "Quirlblättriges Salomonssiegel",
         "fr": "Sceau de Salomon verticillé",
+        "la": "Polygonatum verticillatum",
         "code": 313700,
         "forestTypes": [
           "12*",
@@ -20201,6 +20421,7 @@
       {
         "de": "Knöllchen-Knöterich",
         "fr": "Renouée vivipare",
+        "la": "Polygonum viviparum",
         "code": 315800,
         "forestTypes": [
           "59E",
@@ -20217,6 +20438,7 @@
       {
         "de": "Gemeiner Tüpfelfarn",
         "fr": "Polypode commun",
+        "la": "Polypodium vulgare",
         "code": 316400,
         "forestTypes": [
           "13a",
@@ -20278,6 +20500,7 @@
       {
         "de": "Lanzenfarn",
         "fr": "Polystic en lance",
+        "la": "Polystichum lonchitis",
         "code": 316800,
         "forestTypes": [
           "12S",
@@ -20326,6 +20549,7 @@
       {
         "de": "Blutwurz",
         "fr": "Potentille dressée, Tormentille",
+        "la": "Potentilla erecta",
         "code": 322400,
         "forestTypes": [
           "42B",
@@ -20349,6 +20573,7 @@
       {
         "de": "Hasenlattich",
         "fr": "Prénanthe pourpre",
+        "la": "Prenanthes purpurea",
         "code": 325200,
         "forestTypes": [
           "1",
@@ -20559,6 +20784,7 @@
       {
         "de": "Stängellose Schlüsselblume",
         "fr": "Primevère acaule",
+        "la": "Primula acaulis",
         "code": 325500,
         "forestTypes": [
           "10a",
@@ -20614,12 +20840,14 @@
       {
         "de": "Aurikel",
         "fr": "Primevère auricule",
+        "la": "Primula auricula",
         "code": 325700,
         "forestTypes": ["69", "69G"]
       },
       {
         "de": "Waldschlüsselblume",
         "fr": "Primevère élevée",
+        "la": "Primula elatior",
         "code": 326000,
         "forestTypes": [
           "10a",
@@ -20721,12 +20949,14 @@
       {
         "de": "Rote Felsenprimel",
         "fr": "Primevère à gorge blanche",
+        "la": "Primula hirsuta",
         "code": 326600,
         "forestTypes": ["59C", "68"]
       },
       {
         "de": "Gewöhnliche Frühlings-Schlüsselblume",
         "fr": "Primevère du printemps",
+        "la": "Primula veris",
         "code": 327200,
         "forestTypes": [
           "12e",
@@ -20756,6 +20986,7 @@
       {
         "de": "Grosse Brunelle",
         "fr": "Brunelle à grandes fleurs",
+        "la": "Prunella grandiflora",
         "code": 327900,
         "forestTypes": [
           "38",
@@ -20786,6 +21017,7 @@
       {
         "de": "Kirschlorbeer",
         "fr": "Laurier-cerise",
+        "la": "Prunus laurocerasus",
         "code": 329400,
         "forestTypes": [
           "13*",
@@ -20811,6 +21043,7 @@
       {
         "de": "Felsenkirsche",
         "fr": "Merisier odorant",
+        "la": "Prunus mahaleb",
         "code": 329500,
         "forestTypes": [
           "25*",
@@ -20833,6 +21066,7 @@
       {
         "de": "Schwarzdorn",
         "fr": "Epine noire",
+        "la": "Prunus spinosa",
         "code": 330300,
         "forestTypes": [
           "10a",
@@ -20931,6 +21165,7 @@
       {
         "de": "Adlerfarn",
         "fr": "Fougère aigle",
+        "la": "Pteridium aqulinium",
         "code": 330800,
         "forestTypes": [
           "1",
@@ -20981,6 +21216,7 @@
       {
         "de": "Dunkelgrünes Lungenkraut",
         "fr": "Pulmonaire sombre",
+        "la": "Pulmonaria obscura ",
         "code": 332800,
         "forestTypes": [
           "10a",
@@ -21020,6 +21256,7 @@
       {
         "de": "Gebräuchliches Lungenkraut",
         "fr": "Pulmonaire officinale",
+        "la": "Pulmonaria officinalis",
         "code": 332900,
         "forestTypes": [
           "10a",
@@ -21063,12 +21300,14 @@
       {
         "de": "Schwefel-Anemone",
         "fr": "Pulsatille soufrée",
+        "la": "Pulsatilla apiifolia",
         "code": 333400,
         "forestTypes": ["58L", "58LG", "58LLä", "59C", "59L"]
       },
       {
         "de": "Eisenhutblättriger Hahnenfuss",
         "fr": "Renoncule à feuilles d'aconit",
+        "la": "Ranunculus aconitifolius",
         "code": 336500,
         "forestTypes": [
           "23",
@@ -21109,6 +21348,7 @@
       {
         "de": "Scharbockskraut",
         "fr": "Ficaire",
+        "la": "Ranunculus ficaria",
         "code": 338200,
         "forestTypes": [
           "11",
@@ -21151,6 +21391,7 @@
       {
         "de": "Wolliger Hahnenfuss",
         "fr": "Renoncule laineuse",
+        "la": "Ranunculus lanuginosus",
         "code": 339300,
         "forestTypes": [
           "12*",
@@ -21214,6 +21455,7 @@
       {
         "de": "Platanenblättriger Hahnenfuss",
         "fr": "Renoncule à feuilles de platane",
+        "la": "Ranunculus platanifolius",
         "code": 340300,
         "forestTypes": [
           "12*",
@@ -21258,6 +21500,7 @@
       {
         "de": "Kriechender Hahnenfuss",
         "fr": "Renoncule rampante",
+        "la": "Ranunculus repens",
         "code": 340900,
         "forestTypes": [
           "27",
@@ -21275,6 +21518,7 @@
       {
         "de": "Rostblättrige Alpenrose",
         "fr": "Rhododendron ferrugineux",
+        "la": "Rhododendron ferrugineum",
         "code": 345300,
         "forestTypes": [
           "19a",
@@ -21365,6 +21609,7 @@
       {
         "de": "Bewimperte Alpenrose, Steinrose",
         "fr": "Rhododendron cilié",
+        "la": "Rhododendron hirsutum",
         "code": 345400,
         "forestTypes": [
           "16*",
@@ -21399,6 +21644,7 @@
       {
         "de": "Alpen-Hagrose",
         "fr": "Rosier des Alpes",
+        "la": "Rosa pendulina",
         "code": 349500,
         "forestTypes": [
           "12*h",
@@ -21560,6 +21806,7 @@
       {
         "de": "Blaue Brombeere",
         "fr": "Ronce bleuâtre",
+        "la": "Rubus caesius",
         "code": 352200,
         "forestTypes": [
           "25*",
@@ -21591,6 +21838,7 @@
       {
         "de": "Brombeere",
         "fr": "Ronce commune",
+        "la": "Rubus fruticosus aggr.",
         "code": 353100,
         "forestTypes": [
           "1",
@@ -21759,6 +22007,7 @@
       {
         "de": "Himbeere",
         "fr": "Framboisier",
+        "la": "Rubus idaeus",
         "code": 354400,
         "forestTypes": [
           "1",
@@ -21996,6 +22245,7 @@
       {
         "de": "Steinbeere",
         "fr": "Ronce des rochers",
+        "la": "Rubus saxatilis",
         "code": 357400,
         "forestTypes": [
           "12*h",
@@ -22067,12 +22317,14 @@
       {
         "de": "Schildblättriger Ampfer",
         "fr": "Rumex à écussons",
+        "la": "Rumex scutatus",
         "code": 360900,
         "forestTypes": ["21L", "43*", "43S", "59R", "92a"]
       },
       {
         "de": "Mäusedorn",
         "fr": "Fragon piquant",
+        "la": "Ruscus aculeatus",
         "code": 361200,
         "forestTypes": [
           "14*",
@@ -22091,18 +22343,21 @@
       {
         "de": "Netz-Weide",
         "fr": "Saule réticulé",
+        "la": "Salix reticulata",
         "code": 366100,
         "forestTypes": ["59H", "69", "69G"]
       },
       {
         "de": "Stumpfblättrige Weide",
         "fr": "Saule à feuilles émoussées",
+        "la": "Salix retusa",
         "code": 366200,
         "forestTypes": ["69", "69G"]
       },
       {
         "de": "Klebrige Salbei",
         "fr": "Sauge glutineuse",
+        "la": "Salvia glutinosa",
         "code": 367300,
         "forestTypes": [
           "10a",
@@ -22177,12 +22432,14 @@
       {
         "de": "Grosser Wiesenknopf",
         "fr": "Pimprenelle officinale",
+        "la": "Sanguisorba officinalis",
         "code": 369000,
         "forestTypes": ["32S"]
       },
       {
         "de": "Sanikel",
         "fr": "Sanicle d'Europe",
+        "la": "Sanicula europaea",
         "code": 369100,
         "forestTypes": [
           "10a",
@@ -22294,6 +22551,7 @@
       {
         "de": "Rotes Seifenkraut",
         "fr": "Saponaire rose",
+        "la": "Saponaria ocymoides",
         "code": 369400,
         "forestTypes": [
           "38",
@@ -22316,18 +22574,21 @@
       {
         "de": "Echtes Seifenkraut",
         "fr": "Saponaire officinale",
+        "la": "Saponaria officinalis",
         "code": 369500,
         "forestTypes": ["43*", "43S"]
       },
       {
         "de": "Bewimperter Steinbrech",
         "fr": "Saxifrage des ruisseaux",
+        "la": "Saxifraga aizoides",
         "code": 371600,
         "forestTypes": ["49*", "49*Ta", "59H", "60*", "60*G", "60*Lä", "60*Ta"]
       },
       {
         "de": "Keilblättriger Steinbrech",
         "fr": "Saxifrage à feuilles en coin",
+        "la": "Saxifraga cuneifolia",
         "code": 372800,
         "forestTypes": [
           "19",
@@ -22382,6 +22643,7 @@
       {
         "de": "Rundblättriger Steinbrech",
         "fr": "Saxifrage à feuilles rondes",
+        "la": "Saxifraga rotundifolia",
         "code": 375400,
         "forestTypes": [
           "12*",
@@ -22439,60 +22701,70 @@
       {
         "de": "Zweiblättriger Blaustern",
         "fr": "Scille à deux feuilles",
+        "la": "Scilla bifolia",
         "code": 379300,
         "forestTypes": ["11", "11Fe", "12*", "22A", "22C", "35", "35S"]
       },
       {
         "de": "Waldbinse",
         "fr": "Scirpe des forêts",
+        "la": "Scirpus sylvaticus",
         "code": 379700,
         "forestTypes": ["27", "27h", "27hG", "30", "31", "43", "44", "56"]
       },
       {
         "de": "Weisser Mauerpfeffer",
         "fr": "Orpin blanc",
+        "la": "Sedum album",
         "code": 383200,
         "forestTypes": ["47H", "47HG", "68"]
       },
       {
         "de": "Alpen-Mauerpfeffer",
         "fr": "Orpin des Alpes",
+        "la": "Sedum alpestre",
         "code": 383300,
         "forestTypes": ["59R"]
       },
       {
         "de": "Dickblättriger Mauerpfeffer",
         "fr": "Orpin à feuilles épaisses",
+        "la": "Sedum dasyphyllum",
         "code": 383900,
         "forestTypes": ["68"]
       },
       {
         "de": "Grosses Fettkraut",
         "fr": "Grand orpin",
+        "la": "Sedum telephium ssp. maximum",
         "code": 385900,
         "forestTypes": ["38*", "38S", "39*", "41*", "42B", "42r", "68"]
       },
       {
         "de": "Spinnweb-Hauswurz",
         "fr": "Joubarbe aranéeuse",
+        "la": "Sempervivum arachnoideum",
         "code": 386700,
         "forestTypes": ["57Bl", "57BlG", "57BlTa", "58Bl", "65*", "68"]
       },
       {
         "de": "Berghauswurz",
         "fr": "Joubarbe des montagnes",
+        "la": "Sempervivum montanum",
         "code": 387000,
         "forestTypes": ["58Bl", "58L", "58LG", "58LLä", "59C", "59L"]
       },
       {
         "de": "Gämswurz-Greiskraut",
         "fr": "Séneçon doronic",
+        "la": "Senecio doronicum",
         "code": 388200,
         "forestTypes": ["59E", "59EG", "59ELä"]
       },
       {
         "de": "Fuchs-Kreuzkraut",
         "fr": "Séneçon ovale",
+        "la": "Senecio ovatus",
         "code": 389800,
         "forestTypes": [
           "12S",
@@ -22597,12 +22869,14 @@
       {
         "de": "Hirschheil",
         "fr": "Séséli libanotis",
+        "la": "Seseli libanotis",
         "code": 391700,
         "forestTypes": ["38", "40P", "40PG"]
       },
       {
         "de": "Blaugras",
         "fr": "Seslérie bleuâtre",
+        "la": "Sesleria caerulea",
         "code": 392200,
         "forestTypes": [
           "13e",
@@ -22670,6 +22944,7 @@
       {
         "de": "Rote Waldnelke",
         "fr": "Silène dioïque",
+        "la": "Silene dioica",
         "code": 394900,
         "forestTypes": [
           "21",
@@ -22707,6 +22982,7 @@
       {
         "de": "Gewöhnliches Nickendes Leimkraut",
         "fr": "Silène penché",
+        "la": "Silene nutans",
         "code": 396100,
         "forestTypes": [
           "23H",
@@ -22735,12 +23011,14 @@
       {
         "de": "Öhrchen-Leimkraut",
         "fr": "Silène otitès",
+        "la": "Silene otites",
         "code": 396300,
         "forestTypes": ["38S"]
       },
       {
         "de": "Felsenleimkraut",
         "fr": "Silène des rochers",
+        "la": "Silene rupestris",
         "code": 396800,
         "forestTypes": [
           "21L",
@@ -22772,6 +23050,7 @@
       {
         "de": "Bittersüsser Nachtschatten",
         "fr": "Morelle douce-amère",
+        "la": "Solanum dulcamara",
         "code": 399500,
         "forestTypes": [
           "24*",
@@ -22788,6 +23067,7 @@
       {
         "de": "Grosses Alpenglöckchen",
         "fr": "Soldanelle des Alpes",
+        "la": "Soldanella alpina",
         "code": 400600,
         "forestTypes": [
           "27*",
@@ -22818,6 +23098,7 @@
       {
         "de": "Zwergmispel",
         "fr": "Sorbier petit néflier",
+        "la": "Sorbus chamaemespilus",
         "code": 402400,
         "forestTypes": [
           "16*",
@@ -22864,6 +23145,7 @@
       {
         "de": "Alpen-Ziest",
         "fr": "Epiaire des Alpes",
+        "la": "Stachys alpina",
         "code": 405400,
         "forestTypes": [
           "23",
@@ -22879,6 +23161,7 @@
       {
         "de": "Echte Betonie",
         "fr": "Bétoine officinale",
+        "la": "Stachys officinalis",
         "code": 406100,
         "forestTypes": [
           "12w",
@@ -22904,12 +23187,14 @@
       {
         "de": "Gewöhnlicher Aufrechter Ziest",
         "fr": "Epiaire droite",
+        "la": "Stachys recta",
         "code": 406600,
         "forestTypes": ["37", "38", "39", "42B"]
       },
       {
         "de": "Waldziest",
         "fr": "Epiaire des forêts",
+        "la": "Stachys sylvatica",
         "code": 406800,
         "forestTypes": [
           "11",
@@ -22960,12 +23245,14 @@
       {
         "de": "Pimpernuss",
         "fr": "Staphylier penné",
+        "la": "Staphylea pinnata",
         "code": 407000,
         "forestTypes": ["25*"]
       },
       {
         "de": "Knotenfuss",
         "fr": "Streptope à feuilles embrassantes",
+        "la": "Streptopus amplexifolius",
         "code": 409800,
         "forestTypes": [
           "21L",
@@ -22990,18 +23277,21 @@
       {
         "de": "Abbisskraut",
         "fr": "Succise des prés",
+        "la": "Succisa pratensis",
         "code": 410100,
         "forestTypes": ["12w", "61", "62"]
       },
       {
         "de": "Knotige Wallwurz",
         "fr": "Consoude tubéreuse",
+        "la": "Symphytum tuberosum",
         "code": 410900,
         "forestTypes": ["14*", "22*", "25b", "35S", "91", "92z", "93"]
       },
       {
         "de": "Schmerwurz",
         "fr": "Tamier commun",
+        "la": "Tamus communis",
         "code": 411200,
         "forestTypes": [
           "10a",
@@ -23073,6 +23363,7 @@
       {
         "de": "Straussblütige Margerite",
         "fr": "Tanaisie en corymbe",
+        "la": "Tanacetum corymbosum",
         "code": 411500,
         "forestTypes": [
           "12e",
@@ -23100,6 +23391,7 @@
       {
         "de": "Edelgamander",
         "fr": "Germandrée petit chêne",
+        "la": "Teucrium chamaedrys",
         "code": 415000,
         "forestTypes": [
           "16",
@@ -23140,12 +23432,14 @@
       {
         "de": "Berg-Gamander",
         "fr": "Germandrée des montagnes",
+        "la": "Teucrium montanum",
         "code": 415100,
         "forestTypes": ["38", "38*", "39", "61", "65", "65*", "67", "67G"]
       },
       {
         "de": "Salbeiblättriger Gamander",
         "fr": "Germandrée des bois",
+        "la": "Teucrium scorodonia",
         "code": 415300,
         "forestTypes": [
           "1",
@@ -23194,6 +23488,7 @@
       {
         "de": "Alpen-Bergflachs",
         "fr": "Thésium des Alpes",
+        "la": "Thesium alpinum",
         "code": 417200,
         "forestTypes": [
           "53",
@@ -23209,6 +23504,7 @@
       {
         "de": "Kelch-Simsenlilie",
         "fr": "Tofieldie à calicule",
+        "la": "Tofieldia calyculata",
         "code": 421600,
         "forestTypes": [
           "49*",
@@ -23225,12 +23521,14 @@
       {
         "de": "Purpur-Klee",
         "fr": "Trèfle pourpre",
+        "la": "Trifolium rubens",
         "code": 427500,
         "forestTypes": ["38", "39", "39*", "40*"]
       },
       {
         "de": "Europäische Trollblume",
         "fr": "Trolle d'Europe",
+        "la": "Trollius europaeus",
         "code": 430600,
         "forestTypes": [
           "32*",
@@ -23246,12 +23544,14 @@
       {
         "de": "Huflattich",
         "fr": "Tussilage",
+        "la": "Tussilago farfara",
         "code": 432000,
         "forestTypes": ["32*", "66PM", "91"]
       },
       {
         "de": "Grosse Brennessel",
         "fr": "Ortie dioïque",
+        "la": "Urtica dioica",
         "code": 433400,
         "forestTypes": [
           "11",
@@ -23318,6 +23618,7 @@
       {
         "de": "Kleinblättrige Moorbeere",
         "fr": "Airelle à petites feuilles",
+        "la": "Vaccinium gaultherioides",
         "code": 434500,
         "forestTypes": [
           "59",
@@ -23343,6 +23644,7 @@
       {
         "de": "Heidelbeere",
         "fr": "Myrtille",
+        "la": "Vaccinium myrtillus",
         "code": 434800,
         "forestTypes": [
           "1",
@@ -23533,18 +23835,21 @@
       {
         "de": "Gemeine Moosbeere",
         "fr": "Canneberge",
+        "la": "Vaccinium oxycoccus",
         "code": 434900,
         "forestTypes": ["45", "70", "70G", "71", "71G"]
       },
       {
         "de": "Echte Moorbeere",
         "fr": "Airelle des marais",
+        "la": "Vaccinium uliginosum",
         "code": 435000,
         "forestTypes": ["45", "56", "57S", "57STa", "71", "71G"]
       },
       {
         "de": "Preiselbeere",
         "fr": "Airelle rouge",
+        "la": "Vaccinium vitis-idaea",
         "code": 435300,
         "forestTypes": [
           "3s",
@@ -23674,6 +23979,7 @@
       {
         "de": "Sumpfbaldrian",
         "fr": "Valériane dioïque",
+        "la": "Valeriana dioica",
         "code": 435600,
         "forestTypes": [
           "27",
@@ -23690,6 +23996,7 @@
       {
         "de": "Bergbaldrian",
         "fr": "Valériane des montagnes",
+        "la": "Valeriana montana",
         "code": 435700,
         "forestTypes": [
           "12S",
@@ -23768,6 +24075,7 @@
       {
         "de": "Gewöhnlicher Arznei-Baldrian",
         "fr": "Valériane officinale",
+        "la": "Valeriana officinalis",
         "code": 435800,
         "forestTypes": [
           "20",
@@ -23797,6 +24105,7 @@
       {
         "de": "Dreiblattbaldrian",
         "fr": "Valériane triséquée",
+        "la": "Valeriana tripteris",
         "code": 436700,
         "forestTypes": [
           "12*h",
@@ -23873,6 +24182,7 @@
       {
         "de": "Weisser Germer",
         "fr": "Vératre blanc",
+        "la": "Veratrum album s.l.",
         "code": 437900,
         "forestTypes": [
           "12*h",
@@ -23925,12 +24235,14 @@
       {
         "de": "Felsenehrenpreis",
         "fr": "Véronique buissonnante",
+        "la": "Veronica fruticans",
         "code": 441700,
         "forestTypes": ["59C"]
       },
       {
         "de": "Gebräuchlicher Ehrenpreis",
         "fr": "Véronique officinale",
+        "la": "Veronica officinalis",
         "code": 442400,
         "forestTypes": [
           "1",
@@ -23980,6 +24292,7 @@
       {
         "de": "Nesselblättriger Ehrenpreis",
         "fr": "Véronique à feuilles d'ortie",
+        "la": "Veronica urticifolia",
         "code": 444100,
         "forestTypes": [
           "1",
@@ -24166,6 +24479,7 @@
       {
         "de": "Wolliger Schneeball",
         "fr": "Viorne lantane",
+        "la": "Viburnum lantana",
         "code": 444300,
         "forestTypes": [
           "10a",
@@ -24301,6 +24615,7 @@
       {
         "de": "Gemeiner Schneeball",
         "fr": "Viorne obier",
+        "la": "Viburnum opulus",
         "code": 444400,
         "forestTypes": [
           "10a",
@@ -24399,6 +24714,7 @@
       {
         "de": "Kleines Immergrün",
         "fr": "Petite pervenche",
+        "la": "Vinca minor",
         "code": 448400,
         "forestTypes": [
           "25O",
@@ -24416,6 +24732,7 @@
       {
         "de": "Schwalbenwurz",
         "fr": "Dompte-venin officinal",
+        "la": "Vincetoxicum hirundinaria",
         "code": 448500,
         "forestTypes": [
           "12e",
@@ -24477,6 +24794,7 @@
       {
         "de": "Gelbes Bergveilchen",
         "fr": "Violette à deux fleurs",
+        "la": "Viola biflora",
         "code": 449100,
         "forestTypes": [
           "19L",
@@ -24569,6 +24887,7 @@
       {
         "de": "Waldveilchen",
         "fr": "Violette des forêts",
+        "la": "Viola reichenbachiana",
         "code": 451600,
         "forestTypes": [
           "1",
@@ -24737,6 +25056,7 @@
       {
         "de": "Ctenidium molluscum",
         "fr": "Ctenidium molluscum",
+        "la": "Ctenidium molluscum",
         "code": 1000146,
         "forestTypes": [
           "14",
@@ -24784,6 +25104,7 @@
       {
         "de": "Besenartiges Gabelzahnmoos",
         "fr": "Dicranum scoparium",
+        "la": "Dicranum scoparium",
         "code": 1000171,
         "forestTypes": [
           "1",
@@ -24952,6 +25273,7 @@
       {
         "de": "Etagenmoos",
         "fr": "Hylocomium splendens",
+        "la": "Hylocomium splendens",
         "code": 1000283,
         "forestTypes": [
           "15",
@@ -25113,6 +25435,7 @@
       {
         "de": "Dunkles Hainmoos",
         "fr": "Hylocomium umbratum",
+        "la": "Hylocomium umbratum",
         "code": 1000284,
         "forestTypes": [
           "48",
@@ -25165,6 +25488,7 @@
       {
         "de": "Zypressenschlafmoos",
         "fr": "Hypnum cupressiforme aggr.",
+        "la": "Hypnum cupressiforme aggr.",
         "code": 1000289,
         "forestTypes": [
           "1",
@@ -25291,6 +25615,7 @@
       {
         "de": "Gemeines Weissmoos",
         "fr": "Leucobryum glaucum",
+        "la": "Leucobryum glaucum",
         "code": 1000328,
         "forestTypes": [
           "2",
@@ -25309,18 +25634,21 @@
       {
         "de": "Neckera crispa",
         "fr": "Neckera crispa",
+        "la": "Neckera crispa",
         "code": 1000375,
         "forestTypes": ["15", "17", "17G", "22", "22Fe"]
       },
       {
         "de": "Starknervenmoos",
         "fr": "Cratoneuron commutatum",
+        "la": "Cratoneuron commutatum",
         "code": 1000399,
         "forestTypes": ["27*", "27h", "27hG", "49*", "49*Ta", "60E"]
       },
       {
         "de": "Gewelltes Wurmmoos",
         "fr": "Plagiothecium undulatum",
+        "la": "Plagiothecium undulatum",
         "code": 1000427,
         "forestTypes": [
           "45",
@@ -25379,6 +25707,7 @@
       {
         "de": "Rotstengelmoos",
         "fr": "Pleurozeum schreberi",
+        "la": "Pleurozeum schreberi",
         "code": 1000434,
         "forestTypes": [
           "1",
@@ -25519,12 +25848,14 @@
       {
         "de": "Grosses Haarmützenmoos",
         "fr": "Polytrichum commune aggr.",
+        "la": "Polytrichum commune aggr.",
         "code": 1000446,
         "forestTypes": ["45", "56", "57S", "57STa"]
       },
       {
         "de": "Waldhaarmützenmoos",
         "fr": "Polytrichum formosum aggr.",
+        "la": "Polytrichum formosum aggr.",
         "code": 1000447,
         "forestTypes": [
           "1",
@@ -25699,6 +26030,7 @@
       {
         "de": "Federmoos",
         "fr": "Ptilium crista-castrensis",
+        "la": "Ptilium crista-castrensis",
         "code": 1000473,
         "forestTypes": [
           "46",
@@ -25779,6 +26111,7 @@
       {
         "de": "Grosses Kranzmoos",
         "fr": "Rhytidiadelphus triquetrus",
+        "la": "Rhytidiadelphus triquetrus",
         "code": 1000499,
         "forestTypes": [
           "16",
@@ -25933,6 +26266,7 @@
       {
         "de": "Torfmoose",
         "fr": "Sphagnum sp. ",
+        "la": "Sphagnum sp. ",
         "code": 1000544,
         "forestTypes": [
           "45",
@@ -25967,12 +26301,14 @@
       {
         "de": "Thamnobryum alopecurum",
         "fr": "Thamnobryum alopecurum",
+        "la": "Thamnobryum alopecurum",
         "code": 1000574,
         "forestTypes": ["22", "22Fe"]
       },
       {
         "de": "Thujamoos",
         "fr": "Thuidium tamariscinum",
+        "la": "Thuidium tamariscinum",
         "code": 1000577,
         "forestTypes": [
           "1",
@@ -26052,6 +26388,7 @@
       {
         "de": "Tortella tortuosa aggr.",
         "fr": "Tortella tortuosa aggr.",
+        "la": "Tortella tortuosa aggr.",
         "code": 1000585,
         "forestTypes": [
           "14",
@@ -26098,6 +26435,7 @@
       {
         "de": "Isländisch Moos",
         "fr": "Cetraria islandica",
+        "la": "Cetraria islandica",
         "code": 2000001,
         "forestTypes": [
           "46M",

@@ -968,7 +968,7 @@ WHERE art = 'M'
 -- indicator
 
 CREATE TABLE indicator_meta (code INTEGER PRIMARY KEY,
-                                                  de TEXT, fr TEXT);
+                                                  de TEXT, fr TEXT, la TEXT);
 
 
 CREATE TABLE indicator_foresttype (indicator_code INTEGER REFERENCES indicator_meta,
@@ -983,10 +983,11 @@ CREATE TABLE indicator_forest_ecoregion (indicator_code INTEGER REFERENCES indic
                                                                            forest_ecoregion_code TEXT);
 
 
-INSERT INTO indicator_meta (code, de, fr)
+INSERT INTO indicator_meta (code, de, fr, la)
 SELECT sisf_nr::int AS code,
        COALESCE(art_nam_deu, art_nam_lat) AS de,
-       COALESCE(art_nam_frz, art_nam_lat) AS fr
+       COALESCE(art_nam_frz, art_nam_lat) AS fr,
+       art_nam_lat AS la
 FROM nat_arten_mstr
 WHERE art_erk_zeik = '1';
 
