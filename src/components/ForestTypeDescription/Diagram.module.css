@@ -64,13 +64,30 @@
   fill: #eee;
   stroke: #eee;
 }
+.rareBackground {
+  background-color: #eee !important;
+}
 .medium {
   fill: #b7ddae;
   stroke: #b7ddae;
 }
+.mediumBackground {
+  background-color: #b7ddae !important;
+}
 .often {
   fill: #74bd70;
   stroke: #74bd70;
+}
+.oftenBackground {
+  background-color: #74bd70 !important;
+}
+.mediumSecondary {
+  fill: #a5bae1;
+  stroke: #a5bae1;
+}
+.oftenSecondary {
+  fill: #254185;
+  stroke: #254185;
 }
 
 .svg {
@@ -81,4 +98,14 @@
 .group {
   column-count: 2;
   column-gap: 20px;
+}
+
+.legend {
+  padding: 10px 0;
+}
+
+.legenditems {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
