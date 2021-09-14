@@ -2,42 +2,43 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
-import { Modal, Ref } from 'semantic-ui-react';
+import { Divider, Form, Modal, Ref } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
+import Dropdown from './Dropdown';
+import ForestTypeComparison from './ForestTypeComparison';
 import ForestTypeDescription from './ForestTypeDescription';
 import ProfileSwitcher from './ProfileSwitcher';
-import { setForestTypeInfo } from '../store/actions';
+import { setForestTypeInfo, setForestTypeCompare } from '../store/actions';
 
 function ForestTypeModal({ setIsForestTypeModalOpen }) {
   const dispatch = useDispatch();
   const modalRef = useRef();
+  const ftRef = useRef();
   const forestTypeInfo = useSelector((state) => state.forestTypeInfo);
+  const forestTypeCompare = useSelector((state) => state.forestTypeCompare);
   const activeProfile = useSelector((state) => state.activeProfile);
   const { i18n, t } = useTranslation();
 
-  const data = useMemo(() => {
-    if (forestTypeInfo) {
-      let result;
-      try {
-        result = info('forestType', forestTypeInfo.code, activeProfile);
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.error(error);
-        result = undefined;
-      }
-      return result;
-    }
-    return null;
-  }, [activeProfile, forestTypeInfo]);
+  const forestTypeOptions = useMemo(
+    () =>
+      info('forestType', null, activeProfile)
+        .map((ft) => {
+          if (ft.code === forestTypeInfo) {
+            ftRef.current = ft;
+          }
+          return {
+            text: `${ft.code} - ${ft[i18n.language]}`,
+            value: ft.code,
+          };
+        })
+        .filter((option) => option.value !== forestTypeInfo),
+    [activeProfile, forestTypeInfo, i18n.language],
+  );
 
   useEffect(() => {
     if (modalRef?.current) {
-      modalRef.current.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      });
+      modalRef.current.scroll({ top: 0, left: 0, behavior: 'smooth' });
     }
   }, [forestTypeInfo, activeProfile]);
 
@@ -59,19 +60,36 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
         }
         content={
           <Modal.Content>
-            {data ? (
-              <ForestTypeDescription data={data} />
-            ) : (
-              <>{t('forestTypeModal.noDataMessage')}</>
+            <Form>
+              <Dropdown
+                label={t('forestTypeModal.compare')}
+                multiple
+                options={forestTypeOptions}
+                onChange={(e, { value }) =>
+                  dispatch(setForestTypeCompare(value))
+                }
+                value={forestTypeCompare}
+              />
+            </Form>
+            <Divider hidden />
+            {ftRef.current && forestTypeCompare.length > 0 && (
+              <ForestTypeComparison
+                info={ftRef.current}
+                compare={forestTypeCompare}
+              />
             )}
+            {ftRef.current && forestTypeCompare.length === 0 && (
+              <ForestTypeDescription info={ftRef.current} />
+            )}
+            {!ftRef.current && <>{t('forestTypeModal.noDataMessage')}</>}
           </Modal.Content>
         }
         header={
           <Modal.Header>
-            {data ? (
+            {ftRef.current ? (
               <>
-                {data.code} - {data[i18n.language]}{' '}
-                {data.la ? <i>{data.la}</i> : null}
+                {ftRef.current.code} - {ftRef.current[i18n.language]}{' '}
+                {ftRef.current.la ? <i>{ftRef.current.la}</i> : null}
               </>
             ) : (
               t('forestTypeModal.noDataHeader')

@@ -10,6 +10,7 @@ export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
 export const SET_TARGET_ALTITUDINAL_ZONE = 'SET_TARGET_ALTITUDINAL_ZONE';
 export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
 export const SET_ACTIVE_PROFILE = 'SET_ACTIVE_PROFILE';
+export const SET_FORESTTYPE_COMPARE = 'SET_FORESTTYPE_COMPARE';
 export const SET_FORESTTYPE_INFO = 'SET_FORESTTYPE_INFO';
 
 export function setFormLocation(formLocation) {
@@ -58,6 +59,10 @@ export function setWelcomeModal(open) {
 
 export function setActiveProfile(activeProfile) {
   return { type: SET_ACTIVE_PROFILE, activeProfile };
+}
+
+export function setForestTypeCompare(forestTypeCompare) {
+  return { type: SET_FORESTTYPE_COMPARE, forestTypeCompare };
 }
 
 export function setForestTypeInfo(forestTypeInfo) {

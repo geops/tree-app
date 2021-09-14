@@ -5,19 +5,19 @@ import { useSelector } from 'react-redux';
 import ChForestTypesDescription from './ch/ForestTypesDescription';
 import LuForestTypeDescription from './lu/ForestTypeDescription';
 
-function ForestTypeDescription({ data }) {
+function ForestTypeDescription({ info }) {
   const activeProfile = useSelector((state) => state.activeProfile);
 
   return (
     <>
-      {activeProfile === 'ch' && <ChForestTypesDescription data={data} />}
-      {activeProfile === 'lu' && <LuForestTypeDescription data={data} />}
+      {activeProfile === 'ch' && <ChForestTypesDescription data={info} />}
+      {activeProfile === 'lu' && <LuForestTypeDescription data={info} />}
     </>
   );
 }
 
 ForestTypeDescription.propTypes = {
-  data: PropTypes.shape().isRequired,
+  info: PropTypes.shape().isRequired,
 };
 
 export default ForestTypeDescription;
