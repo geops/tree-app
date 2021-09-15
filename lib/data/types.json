@@ -56363,7 +56363,7 @@
       "group": {
         "main": true,
         "pioneer": false,
-        "special": true,
+        "special": false,
         "volatile": false,
         "riverside": false
       },

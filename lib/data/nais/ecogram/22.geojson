@@ -154,9 +154,9 @@
       "type": "Feature",
       "properties": {
         "id": 7,
-        "z": "60",
-        "forestTypes": "60Lä",
-        "otherForestTypes": null
+        "z": "1",
+        "forestTypes": "60",
+        "otherForestTypes": "60Lä"
       },
       "geometry": {
         "type": "MultiPolygon",
