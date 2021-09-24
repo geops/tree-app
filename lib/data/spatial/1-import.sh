@@ -48,3 +48,5 @@ _import "Download manually" "forest_types_lu" "forest_types_lu" "forest_types_lu
 _import "Download manually" "forest_types_fl" "forest_types_fl" "forest_types_fl"
 
 _import "Download manually" "forest_types_zh" "forest_types_zh" "forest_types_zh"
+
+_import "Download manually" "forest_types_ne" "forest_types_ne" "forest_types_ne"
