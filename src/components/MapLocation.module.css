@@ -1,0 +1,8 @@
+.item:global(.item .header),
+.item:global(.item .description) {
+  color: var(--primary-color-500) !important;
+}
+
+.modal {
+  background-color: red;
+}
