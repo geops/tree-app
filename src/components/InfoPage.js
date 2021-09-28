@@ -12,6 +12,7 @@ import InfoRecommendation from './InfoRecommendation';
 import InfoReports from './InfoReports';
 import InfoUsage from './InfoUsage';
 import LanguageSwitcher from './LanguageSwitcher';
+import LatinSwitcher from './LatinSwitcher';
 
 import styles from './InfoPage.module.css';
 
@@ -26,7 +27,18 @@ function InfoPage() {
     {
       key: 'info.language',
       title: { content: t('app.language') },
-      content: { content: <LanguageSwitcher /> },
+      content: {
+        content: (
+          <>
+            <p>
+              <LanguageSwitcher />
+            </p>
+            <p>
+              <LatinSwitcher />
+            </p>
+          </>
+        ),
+      },
     },
     {
       key: 'info.bugs',
