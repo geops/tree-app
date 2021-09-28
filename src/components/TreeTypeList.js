@@ -13,14 +13,14 @@ function TreeTypeList({ className, codes }) {
       {codes.map((code) => {
         const treeInfo = info('treeType', code);
         return (
-          <>
+          <React.Fragment key={code}>
             {treeInfo[latinActive ? 'la' : i18n.language]}
             <sup>
               {treeInfo.endangered && '†'}
               {treeInfo.nonresident && '°'}
               {treeInfo.pioneer && '*'}
             </sup>{' '}
-          </>
+          </React.Fragment>
         );
       })}
     </span>
