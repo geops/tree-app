@@ -409,6 +409,7 @@
   },
   "forestTypeModal": {
     "compare": "Standortstypen vergleichen",
+    "forestTypeDescription": "Standortbeschreibung",
     "noDataHeader": "Keine Daten vorhanden",
     "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?"
   },

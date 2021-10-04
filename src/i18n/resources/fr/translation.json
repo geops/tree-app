@@ -405,7 +405,9 @@
   },
   "forestTypeModal": {
     "noDataHeader": "Pas de données disponibles",
-    "noDataMessage": "Il n'y a pas de données pour cet emplacement dans le profil actuel. Êtes-vous dans le bon profil?"
+    "noDataMessage": "Il n'y a pas de données pour cet emplacement dans le profil actuel. Êtes-vous dans le bon profil?",
+    "forestTypeDescription": "Description de l'emplacement",
+    "compare": "Comparer les types d'emplacements"
   },
   "lu": {
     "forestType": {

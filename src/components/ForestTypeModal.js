@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
-import React, { useEffect, useMemo, useRef } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { Divider, Form, Modal, Ref } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
 import Dropdown from './Dropdown';
+import Button from './Button';
 import ForestTypeComparison from './ForestTypeComparison';
 import ForestTypeDescription from './ForestTypeDescription';
 import ProfileSwitcher from './ProfileSwitcher';
@@ -15,6 +16,7 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
   const dispatch = useDispatch();
   const modalRef = useRef();
   const ftRef = useRef();
+  const [comparisonIsOpen, setComparisonIsOpen] = useState(false);
   const forestTypeInfo = useSelector((state) => state.forestTypeInfo);
   const forestTypeCompare = useSelector((state) => state.forestTypeCompare);
   const activeProfile = useSelector((state) => state.activeProfile);
@@ -60,25 +62,26 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
         }
         content={
           <Modal.Content>
-            <Form>
-              <Dropdown
-                label={t('forestTypeModal.compare')}
-                multiple
-                options={forestTypeOptions}
-                onChange={(e, { value }) =>
-                  dispatch(setForestTypeCompare(value))
-                }
-                value={forestTypeCompare}
-              />
-            </Form>
+            <Button
+              compact
+              active
+              onClick={() => setComparisonIsOpen(!comparisonIsOpen)}
+            >
+              {comparisonIsOpen
+                ? `${t('forestTypeModal.forestTypeDescription')} ${
+                    ftRef.current.code
+                  }`
+                : t('forestTypeModal.compare')}
+            </Button>
             <Divider hidden />
-            {ftRef.current && forestTypeCompare.length > 0 && (
+            {ftRef.current && comparisonIsOpen > 0 && (
               <ForestTypeComparison
                 info={ftRef.current}
                 compare={forestTypeCompare}
+                options={forestTypeOptions}
               />
             )}
-            {ftRef.current && forestTypeCompare.length === 0 && (
+            {ftRef.current && !comparisonIsOpen && (
               <ForestTypeDescription info={ftRef.current} />
             )}
             {!ftRef.current && <>{t('forestTypeModal.noDataMessage')}</>}
@@ -98,7 +101,9 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
         }
         onClose={(e) => {
           setIsForestTypeModalOpen(false);
+          setComparisonIsOpen(false);
           dispatch(setForestTypeInfo(null));
+          dispatch(setForestTypeCompare([]));
         }}
         onOpen={(e) => setIsForestTypeModalOpen(true)}
       />
