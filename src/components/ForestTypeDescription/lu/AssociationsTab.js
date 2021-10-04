@@ -24,6 +24,8 @@ function AssociationsTab({ associationGroupCode }) {
     (type) => type.associationGroupCode === associationGroupCode,
   );
 
+  console.log(forestSubTypes);
+
   return (
     <>
       <h3>
@@ -84,7 +86,7 @@ function AssociationsTab({ associationGroupCode }) {
                   <button
                     className={styles.link}
                     type="button"
-                    onClick={() => dispatch(setForestTypeInfo(type))}
+                    onClick={() => dispatch(setForestTypeInfo(type.code))}
                   >
                     {type.code} - {type.de}
                   </button>

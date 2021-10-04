@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
-import { Divider, Form, Modal, Ref } from 'semantic-ui-react';
+import { Divider, Modal, Ref } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
-import Dropdown from './Dropdown';
 import Button from './Button';
 import ForestTypeComparison from './ForestTypeComparison';
 import ForestTypeDescription from './ForestTypeDescription';

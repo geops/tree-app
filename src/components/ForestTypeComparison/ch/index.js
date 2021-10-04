@@ -1,12 +1,24 @@
 import PropTypes from 'prop-types';
-import React, { useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { info } from '@geops/tree-lib';
 
+import { setForestTypeCompare } from '../../../store/actions';
+
 function ForestTypeComparison({ data, compare }) {
-  const compareData = useMemo(
-    () => compare.map((ft) => info('forestType', ft)),
-    [compare],
-  );
+  const dispatch = useDispatch();
+  const activeProfile = useSelector((state) => state.activeProfile);
+  const [compareData, setCompareData] = useState([]);
+
+  useEffect(() => {
+    try {
+      const newData = compare.map((ft) => info('forestType', ft, 'ch'));
+      setCompareData(newData);
+    } catch {
+      dispatch(setForestTypeCompare([]));
+      setCompareData([]);
+    }
+  }, [activeProfile, compare, dispatch]);
 
   return (
     <>
