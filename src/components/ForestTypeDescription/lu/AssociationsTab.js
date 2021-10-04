@@ -24,8 +24,6 @@ function AssociationsTab({ associationGroupCode }) {
     (type) => type.associationGroupCode === associationGroupCode,
   );
 
-  console.log(forestSubTypes);
-
   return (
     <>
       <h3>
