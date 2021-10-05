@@ -43,8 +43,6 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
     }
   }, [forestTypeInfo, activeProfile]);
 
-  console.log(forestTypeInfo);
-
   return (
     <Ref innerRef={modalRef}>
       <Modal
