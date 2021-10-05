@@ -12,6 +12,7 @@ export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
 export const SET_ACTIVE_PROFILE = 'SET_ACTIVE_PROFILE';
 export const SET_FORESTTYPE_COMPARE = 'SET_FORESTTYPE_COMPARE';
 export const SET_FORESTTYPE_INFO = 'SET_FORESTTYPE_INFO';
+export const SET_COMPARISON_IS_OPEN = 'SET_COMPARISON_IS_OPEN';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -67,4 +68,8 @@ export function setForestTypeCompare(forestTypeCompare) {
 
 export function setForestTypeInfo(forestTypeInfo) {
   return { type: SET_FORESTTYPE_INFO, forestTypeInfo };
+}
+
+export function setComparisonIsOpen(comparisonIsOpen) {
+  return { type: SET_COMPARISON_IS_OPEN, comparisonIsOpen };
 }

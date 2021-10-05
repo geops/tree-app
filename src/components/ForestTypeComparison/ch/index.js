@@ -1,35 +1,11 @@
 import PropTypes from 'prop-types';
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { info } from '@geops/tree-lib';
-
-import { setForestTypeCompare } from '../../../store/actions';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function ForestTypeComparison({ data, compare }) {
-  const dispatch = useDispatch();
-  const activeProfile = useSelector((state) => state.activeProfile);
-  const [compareData, setCompareData] = useState([]);
+  const { t } = useTranslation();
 
-  useEffect(() => {
-    try {
-      const newData = compare.map((ft) => info('forestType', ft, 'ch'));
-      setCompareData(newData);
-    } catch {
-      dispatch(setForestTypeCompare([]));
-      setCompareData([]);
-    }
-  }, [activeProfile, compare, dispatch]);
-
-  return (
-    <>
-      <p>TODO: Vergleich für folgende Standortstypen implementieren:</p>
-      <ul>
-        {compareData.map((ft) => (
-          <li key={ft.code}>{ft.de}</li>
-        ))}
-      </ul>
-    </>
-  );
+  return <p>{t('forestTypeModal.noComparisonMessage')}</p>;
 }
 
 ForestTypeComparison.propTypes = {

@@ -39,7 +39,10 @@ function ForestTypePage() {
             active
             compact
             icon="info"
-            onClick={() => dispatch(setForestTypeInfo(forestType))}
+            onClick={() => {
+              const ft = info('forestType', forestType, activeProfile);
+              dispatch(setForestTypeInfo(ft));
+            }}
           />
         )}
       </Form.Field>

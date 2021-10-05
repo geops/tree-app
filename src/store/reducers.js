@@ -13,6 +13,7 @@ import {
   SET_ACTIVE_PROFILE,
   SET_FORESTTYPE_COMPARE,
   SET_FORESTTYPE_INFO,
+  SET_COMPARISON_IS_OPEN,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
@@ -119,6 +120,8 @@ function tree(state = initialState, action) {
       return { ...state, forestTypeCompare: action.forestTypeCompare };
     case SET_FORESTTYPE_INFO:
       return { ...state, forestTypeInfo: action.forestTypeInfo };
+    case SET_COMPARISON_IS_OPEN:
+      return { ...state, comparisonIsOpen: action.comparisonIsOpen };
     default:
       return state;
   }

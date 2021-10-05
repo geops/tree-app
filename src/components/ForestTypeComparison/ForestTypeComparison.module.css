@@ -1,3 +1,8 @@
 .comparisonIsSame {
   color: var(--primary-color-500);
 }
+
+.maximumLocationsMessage {
+  color: red;
+  margin: 5px 0;
+}
