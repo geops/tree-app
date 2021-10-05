@@ -25,7 +25,7 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
     () =>
       info('forestType', null, activeProfile)
         .map((ft) => {
-          if (ft.code === forestTypeInfo) {
+          if (ft.code === forestTypeInfo?.code) {
             ftRef.current = ft;
           }
           return {
@@ -33,7 +33,7 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
             value: ft.code,
           };
         })
-        .filter((option) => option.value !== forestTypeInfo),
+        .filter((option) => option.value !== forestTypeInfo?.code),
     [activeProfile, forestTypeInfo, i18n.language],
   );
 
@@ -42,6 +42,8 @@ function ForestTypeModal({ setIsForestTypeModalOpen }) {
       modalRef.current.scroll({ top: 0, left: 0, behavior: 'smooth' });
     }
   }, [forestTypeInfo, activeProfile]);
+
+  console.log(forestTypeInfo);
 
   return (
     <Ref innerRef={modalRef}>

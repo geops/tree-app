@@ -84,7 +84,7 @@ function AssociationsTab({ associationGroupCode }) {
                   <button
                     className={styles.link}
                     type="button"
-                    onClick={() => dispatch(setForestTypeInfo(type.code))}
+                    onClick={() => dispatch(setForestTypeInfo(type))}
                   >
                     {type.code} - {type.de}
                   </button>

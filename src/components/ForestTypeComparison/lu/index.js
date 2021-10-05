@@ -11,6 +11,7 @@ import { setForestTypeCompare } from '../../../store/actions';
 
 function ForestTypeComparison({ data, compare }) {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
   const [compareData, setCompareData] = useState([]);
 
@@ -23,8 +24,6 @@ function ForestTypeComparison({ data, compare }) {
       setCompareData([]);
     }
   }, [activeProfile, compare, dispatch]);
-
-  const { t } = useTranslation();
 
   return (
     <Tab
