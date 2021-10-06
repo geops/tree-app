@@ -61,8 +61,6 @@ const projection = (store) => (next) => (action) => {
 
     try {
       const locateResult = locate(location, activeProfile);
-      console.log('result: ', locateResult);
-      console.log('location: ', location.coordinate);
       store.dispatch(setLocationResult(locateResult));
     } catch (error) {
       console.log('Locate error: ', error);
