@@ -1,35 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useMemo } from 'react';
 import styles from '../Diagram.module.css';
-
-const forestTypeMapping = [
-  'Fi',
-  'Ta',
-  'WFö',
-  'BFö',
-  'Ei',
-  'Lä',
-  'Dg',
-  'Bu',
-  'Es',
-  'BAh',
-  'SAh',
-  'SEi',
-  'TEi',
-  'WLi',
-  'SLi',
-  'Ki',
-  'BUl',
-  'FUl',
-  'SEr',
-  'GEr',
-  'AEr',
-  'HBi',
-  'TKi',
-  'VBe',
-  'MBe',
-  'Wei',
-];
+import { forestTypeMapping } from '../utils';
 
 export const getRowWidth = (value) => value * 2.5;
 

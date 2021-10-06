@@ -5,50 +5,24 @@ import { Table } from 'semantic-ui-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { info as getInfo } from '@geops/tree-lib';
 
+import { forestTypeMapping } from '../../ForestTypeDescription/utils';
 import { setForestTypeInfo, setComparisonIsOpen } from '../../../store/actions';
 
 import comparisonStyles from '../ForestTypeComparison.module.css';
 import descriptionStyles from '../../ForestTypeDescription/ForestTypeDescription.module.css';
 
-const forestTypeMapping = [
-  'Fi',
-  'Ta',
-  'WFö',
-  'BFö',
-  'Ei',
-  'Lä',
-  'Dg',
-  'Bu',
-  'Es',
-  'BAh',
-  'SAh',
-  'SEi',
-  'TEi',
-  'WLi',
-  'SLi',
-  'Ki',
-  'BUl',
-  'FUl',
-  'SEr',
-  'GEr',
-  'AEr',
-  'HBi',
-  'TKi',
-  'VBe',
-  'MBe',
-  'Wei',
-];
-
 const infoPropTypes = {
   info: PropTypes.shape().isRequired,
 };
 
-const getPrecentageData = (arr) =>
+const getPrecentageString = (arr) =>
   arr.every((val) => val !== null && val !== undefined)
     ? `${arr.join('-')}%`
     : '-';
+
 const getValueIsSame = (arr1, arr2) =>
-  getPrecentageData(arr1) === getPrecentageData(arr2);
+  getPrecentageString(arr1) === getPrecentageString(arr2);
+
 const getHasSameValues = (currentInfo, infoArray, field) =>
   infoArray.some(
     (ft) =>
@@ -84,7 +58,7 @@ HeaderRowCell.propTypes = infoPropTypes;
 function TilleringCell({ hasSameValues, treePercentage }) {
   return (
     <Table.Cell className={hasSameValues && comparisonStyles.comparisonIsSame}>
-      {getPrecentageData(treePercentage)}
+      {getPrecentageString(treePercentage)}
     </Table.Cell>
   );
 }
@@ -96,7 +70,7 @@ TilleringCell.propTypes = {
 function TilleringHardwoodCell({ hasSameValues, info }) {
   return (
     <Table.Cell className={hasSameValues && comparisonStyles.comparisonIsSame}>
-      {getPrecentageData(info.tilleringHardwood)}
+      {getPrecentageString(info.tilleringHardwood)}
     </Table.Cell>
   );
 }
@@ -108,7 +82,7 @@ TilleringHardwoodCell.propTypes = {
 function TilleringFirwoodCell({ hasSameValues, info }) {
   return (
     <Table.Cell className={hasSameValues && comparisonStyles.comparisonIsSame}>
-      {getPrecentageData(info.tilleringFirwood)}
+      {getPrecentageString(info.tilleringFirwood)}
     </Table.Cell>
   );
 }
