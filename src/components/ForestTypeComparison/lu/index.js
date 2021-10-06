@@ -74,7 +74,7 @@ function ForestTypeComparison({ data, compare, options }) {
 ForestTypeComparison.propTypes = {
   data: PropTypes.shape().isRequired,
   compare: PropTypes.arrayOf(PropTypes.string).isRequired,
-  options: PropTypes.shape().isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 export default ForestTypeComparison;

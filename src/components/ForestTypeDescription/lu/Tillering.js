@@ -11,7 +11,7 @@ const renderRow = (row, index) => {
   const barY = barPadding * 0.5 * index * 35;
 
   return (
-    <g>
+    <g key={row.type}>
       <rect
         y={barY}
         x="40"
@@ -68,7 +68,7 @@ export function TilleringGrid({ height }) {
       {[...Array(11).keys()].map((i) => {
         const factor = i / 10;
         return (
-          <>
+          <div key={i}>
             <line
               x1={BAR_WIDTH_100 * factor + 40}
               y1="0"
@@ -76,7 +76,7 @@ export function TilleringGrid({ height }) {
               y2={height}
               stroke="black"
               opacity={i > 0 ? 0.3 : 1}
-              strokeDasharray={i > 0 && i % 2 !== 0 && 4}
+              strokeDasharray={i > 0 && i % 2 !== 0 ? 4 : undefined}
             />
             {i % 2 === 0 && (
               <text
@@ -88,7 +88,7 @@ export function TilleringGrid({ height }) {
                 {`${i * 10}%`}
               </text>
             )}
-          </>
+          </div>
         );
       })}
     </>

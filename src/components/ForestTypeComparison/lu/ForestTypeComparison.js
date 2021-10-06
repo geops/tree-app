@@ -57,7 +57,9 @@ HeaderRowCell.propTypes = infoPropTypes;
 
 function TilleringCell({ hasSameValues, treePercentage }) {
   return (
-    <Table.Cell className={hasSameValues && comparisonStyles.comparisonIsSame}>
+    <Table.Cell
+      className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
+    >
       {getPrecentageString(treePercentage)}
     </Table.Cell>
   );
@@ -69,7 +71,9 @@ TilleringCell.propTypes = {
 
 function TilleringHardwoodCell({ hasSameValues, info }) {
   return (
-    <Table.Cell className={hasSameValues && comparisonStyles.comparisonIsSame}>
+    <Table.Cell
+      className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
+    >
       {getPrecentageString(info.tilleringHardwood)}
     </Table.Cell>
   );
@@ -81,7 +85,9 @@ TilleringHardwoodCell.propTypes = {
 
 function TilleringFirwoodCell({ hasSameValues, info }) {
   return (
-    <Table.Cell className={hasSameValues && comparisonStyles.comparisonIsSame}>
+    <Table.Cell
+      className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
+    >
       {getPrecentageString(info.tilleringFirwood)}
     </Table.Cell>
   );
