@@ -46,7 +46,7 @@
   height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   .map :global(.ol-scale-line) {
     bottom: 79px;
   }
