@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useMemo } from 'react';
 import styles from '../Diagram.module.css';
-import { forestTypeMapping } from '../utils';
+import { forestTypeMapping } from './utils';
 
 export const getRowWidth = (value) => value * 2.5;
 

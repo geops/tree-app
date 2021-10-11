@@ -46,22 +46,8 @@
   height: 100vh;
 }
 
-/* Tablet */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px),
-  only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media (max-width: 768px) {
   .map :global(.ol-scale-line) {
-    right: 70px;
-  }
-}
-
-/* Mobile */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
-  only screen and (min-width: 321px) and (max-width: 768px) {
-  .map :global(.ol-scale-line) {
-    right: 70px;
-  }
-
-  .map {
-    height: calc(100%) !important;
+    bottom: 79px;
   }
 }

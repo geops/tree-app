@@ -5,7 +5,7 @@ import { Table } from 'semantic-ui-react';
 import { useDispatch, useSelector } from 'react-redux';
 import { info as getInfo } from '@geops/tree-lib';
 
-import { forestTypeMapping } from '../../ForestTypeDescription/utils';
+import { forestTypeMapping } from '../../ForestTypeDescription/lu/utils';
 import { setForestTypeInfo, setComparisonIsOpen } from '../../../store/actions';
 
 import comparisonStyles from '../ForestTypeComparison.module.css';
