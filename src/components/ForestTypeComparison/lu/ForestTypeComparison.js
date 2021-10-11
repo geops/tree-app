@@ -64,7 +64,7 @@ const Cell = ({ data, hasSameValues }) => (
 );
 
 Cell.propTypes = {
-  data: PropTypes.shape().isRequired,
+  data: PropTypes.arrayOf(PropTypes.number).isRequired,
   hasSameValues: PropTypes.bool.isRequired,
 };
 
