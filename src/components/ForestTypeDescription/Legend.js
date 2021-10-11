@@ -64,7 +64,7 @@ Legend.propTypes = {
   rare: PropTypes.bool,
   medium: PropTypes.bool,
   often: PropTypes.bool,
-  title: PropTypes.oneOfType(PropTypes.string, PropTypes.bool),
+  title: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 };
 
 Legend.defaultProps = {

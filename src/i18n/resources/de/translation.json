@@ -408,8 +408,12 @@
     "lu": "Luzern"
   },
   "forestTypeModal": {
+    "compare": "Standortstypen vergleichen",
+    "forestTypeDescription": "Standortbeschreibung",
     "noDataHeader": "Keine Daten vorhanden",
-    "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?"
+    "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?",
+    "noComparisonMessage": "Der Standortvergleich is im aktuellen Profil deaktiviert. Sind Sie im richtigen Profil?",
+    "maximumForestTypes": "Maximum an Vergleichsstandorte erreicht!"
   },
   "lu": {
     "forestType": {

@@ -405,7 +405,11 @@
   },
   "forestTypeModal": {
     "noDataHeader": "Pas de données disponibles",
-    "noDataMessage": "Il n'y a pas de données pour cet emplacement dans le profil actuel. Êtes-vous dans le bon profil?"
+    "noDataMessage": "Il n'y a pas de données pour cet emplacement dans le profil actuel. Êtes-vous dans le bon profil?",
+    "noComparisonMessage": "La comparaison de localisation est désactivée dans le profil actuel. Êtes-vous dans le bon profil?",
+    "forestTypeDescription": "Description de l'emplacement",
+    "compare": "Comparer les types d'emplacements",
+    "maximumForestTypes": "Maximum d'emplacements de comparaison a été atteint"
   },
   "lu": {
     "forestType": {

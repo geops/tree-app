@@ -11,13 +11,17 @@ import {
   SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
   SET_ACTIVE_PROFILE,
+  SET_FORESTTYPE_COMPARE,
   SET_FORESTTYPE_INFO,
+  SET_COMPARISON_IS_OPEN,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
 export const initialState = {
   latinActive: false,
   location: {},
+  forestTypeInfo: null,
+  forestTypeCompare: [],
   formLocation: {},
   locationResult: { options: {} },
   mapLayer: 'cb',
@@ -112,8 +116,12 @@ function tree(state = initialState, action) {
     case SET_ACTIVE_PROFILE:
       localStorage.setItem('tree.profile', action.activeProfile);
       return { ...state, activeProfile: action.activeProfile };
+    case SET_FORESTTYPE_COMPARE:
+      return { ...state, forestTypeCompare: action.forestTypeCompare };
     case SET_FORESTTYPE_INFO:
       return { ...state, forestTypeInfo: action.forestTypeInfo };
+    case SET_COMPARISON_IS_OPEN:
+      return { ...state, comparisonIsOpen: action.comparisonIsOpen };
     default:
       return state;
   }

@@ -37,7 +37,10 @@ Dropdown.propTypes = {
   children: PropTypes.node,
   label: PropTypes.string,
   multiple: PropTypes.bool,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
 };
 
 Dropdown.defaultProps = {
@@ -45,6 +48,7 @@ Dropdown.defaultProps = {
   children: null,
   label: null,
   multiple: false,
+  value: undefined,
 };
 
 Dropdown.Divider = SUIDropdown.Divider;

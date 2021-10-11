@@ -20,8 +20,8 @@ function DataTable({ data, getLabel }) {
             value: soilStyleMapping[value],
           }))
           .filter((row) => row.value)
-          .map((row) => (
-            <Table.Row>
+          .map((row, index) => (
+            <Table.Row key={getLabel(index)}>
               <Table.Cell>{row.label}</Table.Cell>
               <Table.Cell className={row.value} />
             </Table.Row>
@@ -32,7 +32,7 @@ function DataTable({ data, getLabel }) {
 }
 
 DataTable.propTypes = {
-  data: PropTypes.arrayOf().isRequired,
+  data: PropTypes.arrayOf(PropTypes.number).isRequired,
   getLabel: PropTypes.func.isRequired,
 };
 

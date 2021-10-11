@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { Form } from 'semantic-ui-react';
+import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
+import { Form } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
@@ -13,34 +14,35 @@ import { setForestTypeInfo } from '../store/actions';
 
 function ForestTypePage() {
   const dispatch = useDispatch();
+  const { i18n } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
-  const forestTypes = useMemo(
+  const forestTypeOptions = useMemo(
     () =>
-      info('forestType', null, activeProfile).map(({ code }) => ({
-        text: code,
-        value: code,
+      info('forestType', null, activeProfile).map((ft) => ({
+        text: `${ft.code} - ${ft[i18n.language]}`,
+        value: ft.code,
       })),
-    [activeProfile],
+    [activeProfile, i18n.language],
   );
-  const [data, setData] = useState(null);
+  const [forestType, setForestType] = useState(null);
 
   return (
     <Form style={{ margin: 20 }}>
       <Dropdown
-        value={data ? data.de : ''}
-        text={data?.de}
-        options={forestTypes}
-        onChange={(e, { value }) =>
-          setData(info('forestType', value, activeProfile))
-        }
+        options={forestTypeOptions}
+        onChange={(e, { value }) => setForestType(value)}
+        value={forestType}
       />
       <Form.Field>
-        {data && (
+        {forestType && (
           <Button
             active
             compact
             icon="info"
-            onClick={() => dispatch(setForestTypeInfo(data))}
+            onClick={() => {
+              const ft = info('forestType', forestType, activeProfile);
+              dispatch(setForestTypeInfo(ft));
+            }}
           />
         )}
       </Form.Field>
