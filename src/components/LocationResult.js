@@ -2,11 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { Form, Header, Message } from 'semantic-ui-react';
+import { Form, Header, List, Message } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
-import Dropdown from './Dropdown';
+import Button from './Button';
 import Ecogram from './Ecogram';
 import ForestTypeModal from './ForestTypeModal';
 import HelpModal from './HelpModal';
@@ -42,7 +42,7 @@ function LocationResult() {
       {hasMainGroup && (
         <>
           <Header>{t('forestType.group.main')}</Header>
-          <div className={styles.mainHelp}>
+          <div className={styles.help}>
             <HelpModal color="#006268" header={t('forestType.group.main')}>
               {t('location.mainResultHelp')}
             </HelpModal>
@@ -55,46 +55,32 @@ function LocationResult() {
       {hasMainGroup && !ecogram && <Message>{t('location.noEcogram')}</Message>}
       {hasOtherGroup && (
         <>
-          <div className={styles.otherHelp}>
+          <Header>{t('forestType.group.other')}</Header>
+          <div className={styles.help}>
             <HelpModal color="#006268" header={t('forestType.group.other')}>
               {t('location.otherResultHelp')}
             </HelpModal>
           </div>
-          <Dropdown
-            search={false}
-            label={t('forestType.group.other')}
-            value={formLocation.forestType}
-          >
-            <Dropdown.Menu>
-              {otherForestTypeGroups
-                .map((group) => (
-                  <React.Fragment key={group}>
-                    <Dropdown.Header content={t(`forestType.group.${group}`)} />
-                    {forestTypes[group].map((key) => {
-                      const ftInfo = info('forestType', key);
-                      return (
-                        <Dropdown.Item
-                          content={
-                            <>
-                              <ForestTypeModal data={ftInfo} />
-                              {key} - {ftInfo[i18n.language]}
-                            </>
-                          }
-                          key={key}
-                          value={key}
-                          onClick={(e, { value: forestType }) => {
-                            if (e.target.getAttribute('role') === 'option') {
-                              selectForestType(forestType);
-                            }
-                          }}
-                        />
-                      );
-                    })}
-                  </React.Fragment>
-                ))
-                .reduce((ttft, ft) => ttft.concat(ft), [])}
-            </Dropdown.Menu>
-          </Dropdown>
+          {otherForestTypeGroups
+            .filter((group) => forestTypes[group].length > 0)
+            .map((group) => (
+              <List key={group}>
+                <Header content={t(`forestType.group.${group}`)} sub />
+                {forestTypes[group].map((ftCode) => {
+                  const ftInfo = info('forestType', ftCode);
+                  const onClick = () => selectForestType(ftCode);
+                  return (
+                    <List.Item key={ftCode}>
+                      <ForestTypeModal data={ftInfo} />
+                      <Button active compact onClick={onClick}>
+                        {ftCode} - {ftInfo[i18n.language]}
+                      </Button>
+                    </List.Item>
+                  );
+                })}
+              </List>
+            ))
+            .reduce((ttft, ft) => ttft.concat(ft), [])}
         </>
       )}
     </Form>
