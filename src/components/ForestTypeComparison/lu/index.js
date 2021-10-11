@@ -2,15 +2,13 @@ import PropTypes from 'prop-types';
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Tab, Form } from 'semantic-ui-react';
+import { Tab, Form, Message } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
 import Dropdown from '../../Dropdown';
 import LuForestTypeComparison from './ForestTypeComparison';
 
 import { setForestTypeCompare } from '../../../store/actions';
-
-import styles from '../ForestTypeComparison.module.css';
 
 function ForestTypeComparison({ data, compare, options }) {
   const dispatch = useDispatch();
@@ -51,9 +49,11 @@ function ForestTypeComparison({ data, compare, options }) {
         />
       </Form>
       {compareData.length > 3 && (
-        <p className={styles.maximumLocationsMessage}>
-          {t('forestTypeModal.maximumForestTypes')}
-        </p>
+        <Message negative>
+          <Message.Header>
+            {t('forestTypeModal.maximumForestTypes')}
+          </Message.Header>
+        </Message>
       )}
       <br />
       <Tab

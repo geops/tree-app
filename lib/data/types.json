@@ -11,13 +11,13 @@
     ],
     "relief": [
       { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
-      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
-      { "de": "normal", "fr": "normal", "code": "normal" },
       {
         "de": "Hang- und Muldenlage",
         "fr": "en pente ou dans une dépression",
         "code": "h_and_m"
-      }
+      },
+      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
+      { "de": "normal", "fr": "normal", "code": "normal" }
     ],
     "bushType": [
       {

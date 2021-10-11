@@ -55,45 +55,16 @@ function HeaderRowCell({ info }) {
 }
 HeaderRowCell.propTypes = infoPropTypes;
 
-function TilleringCell({ hasSameValues, treePercentage }) {
-  return (
-    <Table.Cell
-      className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
-    >
-      {getPrecentageString(treePercentage)}
-    </Table.Cell>
-  );
-}
-TilleringCell.propTypes = {
-  treePercentage: PropTypes.arrayOf(PropTypes.number).isRequired,
-  hasSameValues: PropTypes.bool.isRequired,
-};
+const Cell = ({ data, hasSameValues }) => (
+  <Table.Cell
+    className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
+  >
+    {getPrecentageString(data)}
+  </Table.Cell>
+);
 
-function TilleringHardwoodCell({ hasSameValues, info }) {
-  return (
-    <Table.Cell
-      className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
-    >
-      {getPrecentageString(info.tilleringHardwood)}
-    </Table.Cell>
-  );
-}
-TilleringHardwoodCell.propTypes = {
-  ...infoPropTypes,
-  hasSameValues: PropTypes.bool.isRequired,
-};
-
-function TilleringFirwoodCell({ hasSameValues, info }) {
-  return (
-    <Table.Cell
-      className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
-    >
-      {getPrecentageString(info.tilleringFirwood)}
-    </Table.Cell>
-  );
-}
-TilleringFirwoodCell.propTypes = {
-  ...infoPropTypes,
+Cell.propTypes = {
+  data: PropTypes.shape().isRequired,
   hasSameValues: PropTypes.bool.isRequired,
 };
 
@@ -114,59 +85,55 @@ function ForestTypeComparison({ info, compare }) {
             {t('lu.forestType.tilleringHardwood')}
           </Table.HeaderCell>
           {compare.map((ft) => (
-            <TilleringHardwoodCell
+            <Cell
               key={ft.code}
               hasSameValues={getHasSameValues(
                 ft,
                 info ? [info, ...compare] : compare,
                 'tilleringHardwood',
               )}
-              info={ft}
+              data={ft.tilleringHardwood}
             />
           ))}
         </Table.Row>
-        {forestTypeMapping
-          .map((treeType, idx) => {
-            const cells = compare.map((ft) => ({
-              code: ft.code,
-              value: ft.tillering[0][idx],
-            }));
-            if (
-              cells.every(
-                (cell) =>
-                  cell.value[0] === (undefined || null) &&
-                  cell.value[1] === (undefined || null),
-              )
-            ) {
-              return null;
-            }
-            return (
-              <Table.Row key={treeType}>
-                <Table.HeaderCell>{treeType}</Table.HeaderCell>
-                {cells.map((cell) => (
-                  <TilleringCell
-                    key={`${treeType} - ${cell.code}`}
-                    treePercentage={cell.value}
-                    hasSameValues={getHasSameValues(cell, cells, 'value')}
-                  />
-                ))}
-              </Table.Row>
-            );
-          })
-          .filter((row) => !!row)}
+        {forestTypeMapping.reduce((rows, currTreeType, idx) => {
+          const cells = compare.map((ft) => ({
+            code: ft.code,
+            value: ft.tillering[0][idx],
+          }));
+          return cells.every(
+            (cell) =>
+              cell.value[0] === (undefined || null) &&
+              cell.value[1] === (undefined || null),
+          )
+            ? rows
+            : [
+                ...rows,
+                <Table.Row key={currTreeType}>
+                  <Table.HeaderCell>{currTreeType}</Table.HeaderCell>
+                  {cells.map((cell) => (
+                    <Cell
+                      key={`${currTreeType} - ${cell.code}`}
+                      data={cell.value}
+                      hasSameValues={getHasSameValues(cell, cells, 'value')}
+                    />
+                  ))}
+                </Table.Row>,
+              ];
+        }, [])}
         <Table.Row>
           <Table.HeaderCell>
             {t('lu.forestType.tilleringFirwood')}
           </Table.HeaderCell>
           {compare.map((ft) => (
-            <TilleringFirwoodCell
+            <Cell
               key={ft.code}
               hasSameValues={getHasSameValues(
                 ft,
                 info ? [info, ...compare] : compare,
                 'tilleringFirwood',
               )}
-              info={ft}
+              data={ft.tilleringFirwood}
             />
           ))}
         </Table.Row>
