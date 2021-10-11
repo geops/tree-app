@@ -13,6 +13,7 @@ import InfoReports from './InfoReports';
 import InfoUsage from './InfoUsage';
 import LanguageSwitcher from './LanguageSwitcher';
 import ProfileSwitcher from './ProfileSwitcher';
+import LatinSwitcher from './LatinSwitcher';
 
 import styles from './InfoPage.module.css';
 
@@ -33,6 +34,8 @@ function InfoPage() {
             <LanguageSwitcher />
             <br /> <br />
             <ProfileSwitcher />
+            <br />
+            <LatinSwitcher />
           </>
         ),
       },

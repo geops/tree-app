@@ -21,6 +21,11 @@ function getAZ(altitudinalZone) {
   return altitudinalZone;
 }
 
+function getResultKey(location) {
+  const { altitudinalZone, forestType, transitionForestType } = location;
+  return `${getAZ(altitudinalZone)}|${forestType}|${transitionForestType}`;
+}
+
 function getPane(scenario, projection, language, t) {
   const icons = [];
   const scenarios = [];
@@ -100,17 +105,18 @@ function ProjectionResult() {
     const extremeLoc = projectionResult.extreme.projections
       ? projectionResult.extreme.projections.slice(-1)[0] || {}
       : {};
-    if (TAZModerate === TAZExtreme) {
-      if (AZToday === TAZModerate) {
-        panes.push(getPane('todayModerateExtreme', location, i18n.language, t));
-      } else {
-        panes.push(getPane('today', location, i18n.language, t));
-        panes.push(getPane('moderateExtreme', moderateLoc, i18n.language, t));
-      }
-    } else if (AZToday === TAZModerate) {
+    const todayKey = getResultKey(location);
+    const moderateKey = getResultKey(moderateLoc);
+    const extremeKey = getResultKey(extremeLoc);
+    if (moderateKey === extremeKey && todayKey === moderateKey) {
+      panes.push(getPane('todayModerateExtreme', location, i18n.language, t));
+    } else if (moderateKey === extremeKey) {
+      panes.push(getPane('today', location, i18n.language, t));
+      panes.push(getPane('moderateExtreme', moderateLoc, i18n.language, t));
+    } else if (todayKey === moderateKey) {
       panes.push(getPane('todayModerate', location, i18n.language, t));
       panes.push(getPane('extreme', extremeLoc, i18n.language, t));
-    } else if (AZToday === TAZExtreme) {
+    } else if (todayKey === extremeKey) {
       panes.push(getPane('todayExtreme', location, i18n.language, t));
       panes.push(getPane('moderate', moderateLoc, i18n.language, t));
     } else {
