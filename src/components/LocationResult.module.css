@@ -8,12 +8,8 @@
   font-size: 18px !important;
 }
 
-.mainHelp {
+.help {
   position: absolute;
   right: 15px;
   margin-top: -35px;
-}
-.otherHelp {
-  position: absolute;
-  right: 15px;
 }
