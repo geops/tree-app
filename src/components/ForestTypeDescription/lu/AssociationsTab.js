@@ -6,7 +6,7 @@ import { Table } from 'semantic-ui-react';
 import parse from 'html-react-parser';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
-import { setForestTypeInfo } from '../../../store/actions';
+import { setForestTypeDescription } from '../../../store/actions';
 import styles from '../ForestTypeDescription.module.css';
 
 const parseHtml = (string) => parse(string.slice().replace(/\\n/g, '<br>'));
@@ -78,15 +78,18 @@ function AssociationsTab({ associationGroupCode }) {
           </Table.Row>
           <Table.Row>
             <Table.HeaderCell>{t('lu.forestType.subGroups')}</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              {forestSubTypes.map((type) => (
-                <span key={type.code}>
+            <Table.Cell
+              colSpan="3"
+              data-cypress="forestTypeDescription.lu.associationsTabSubGroups"
+            >
+              {forestSubTypes.map(({ code, de }) => (
+                <span key={code}>
                   <button
                     className={styles.link}
                     type="button"
-                    onClick={() => dispatch(setForestTypeInfo(type))}
+                    onClick={() => dispatch(setForestTypeDescription(code))}
                   >
-                    {type.code} - {type.de}
+                    {code} - {de}
                   </button>
                   <br />
                 </span>

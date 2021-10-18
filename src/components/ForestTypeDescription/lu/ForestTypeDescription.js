@@ -1,29 +1,54 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Tab } from 'semantic-ui-react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Divider, Tab } from 'semantic-ui-react';
+
+import Button from '../../Button';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
 import styles from '../ForestTypeDescription.module.css';
+import { setForestTypeComparison } from '../../../store/actions';
 
 function ForestTypeDescription({ data }) {
+  const dispatch = useDispatch();
+  const comparison = useSelector((state) => state.forestTypeComparison) || [];
   const { t } = useTranslation();
   return (
-    <Tab
-      menu={{ className: styles.pane, attached: true, tabular: true }}
-      panes={[
-        {
-          menuItem: t('lu.forestType.general'),
-          render: () => <GeneralTab data={data} />,
-        },
-        {
-          menuItem: t('lu.forestType.associations'),
-          render: () => (
-            <AssociationsTab associationGroupCode={data.associationGroupCode} />
-          ),
-        },
-      ]}
-    />
+    <>
+      <Button
+        compact
+        active
+        onClick={() =>
+          dispatch(
+            setForestTypeComparison([...new Set([...comparison, data.code])]),
+          )
+        }
+      >
+        {t('forestTypeModal.compare')}
+      </Button>
+      <Divider hidden />
+      <Tab
+        menu={{ className: styles.pane, attached: true, tabular: true }}
+        panes={[
+          {
+            menuItem: t('lu.forestType.general'),
+            render: () => <GeneralTab data={data} />,
+          },
+          {
+            menuItem: {
+              content: t('lu.forestType.associations'),
+              'data-cypress': 'forestTypeDescription.lu.associationsMenuItem',
+            },
+            render: () => (
+              <AssociationsTab
+                associationGroupCode={data.associationGroupCode}
+              />
+            ),
+          },
+        ]}
+      />
+    </>
   );
 }
 

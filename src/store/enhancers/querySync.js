@@ -2,6 +2,9 @@ import ReduxQuerySync from 'redux-query-sync';
 
 import history from '../../history';
 import {
+  setForestTypeComparison,
+  setForestTypeDescription,
+  setForestTypeModal,
   setFormLocation,
   setMapLayer,
   setMapView,
@@ -62,6 +65,21 @@ const querySync = ReduxQuerySync.enhancer({
       selector: (s) => s.formLocation && s.formLocation.targetAltitudinalZone,
       action: (targetAltitudinalZone) =>
         setFormLocation({ targetAltitudinalZone }),
+    },
+    ftc: {
+      selector: (state) => state.forestTypeComparison,
+      valueToString: (value) => value && value.join(),
+      stringToValue: (value) => value.split(',').filter((v) => v),
+      action: (ftc) => setForestTypeComparison(ftc, false),
+    },
+    ftd: {
+      selector: (s) =>
+        s.forestTypeDescription !== null && s.forestTypeDescription,
+      action: (ftd) => setForestTypeDescription(ftd, false),
+    },
+    ftm: {
+      selector: (state) => state.forestTypeModal,
+      action: setForestTypeModal,
     },
     ml: {
       selector: (state) => state.mapLayer,

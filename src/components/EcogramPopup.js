@@ -9,7 +9,7 @@ import { info } from '@geops/tree-lib';
 import Button from './Button';
 import styles from './EcogramPopup.module.css';
 import useIsMobile from '../hooks/useIsMobile';
-import { setForestTypeInfo } from '../store/actions';
+import { setForestTypeDescription } from '../store/actions';
 
 function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
   const dispatch = useDispatch();
@@ -58,7 +58,7 @@ function EcogramPopup({ target, forestTypes, onClose, selectForestType, x }) {
                   active
                   compact
                   icon="info"
-                  onClick={() => dispatch(setForestTypeInfo(ftInfo))}
+                  onClick={() => dispatch(setForestTypeDescription(ftCode))}
                 />
                 <Button active compact onClick={() => selectForestType(ftCode)}>
                   {ftCode} - {ftInfo[i18n.language]}
