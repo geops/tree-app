@@ -2,18 +2,16 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
-import { useDispatch, useSelector } from 'react-redux';
-import { info as getInfo } from '@geops/tree-lib';
+import { useDispatch } from 'react-redux';
 
 import { forestTypeMapping } from '../../ForestTypeDescription/lu/utils';
-import { setForestTypeInfo, setComparisonIsOpen } from '../../../store/actions';
+import {
+  setForestTypeDescription,
+  setForestTypeModal,
+} from '../../../store/actions';
 
 import comparisonStyles from '../ForestTypeComparison.module.css';
 import descriptionStyles from '../../ForestTypeDescription/ForestTypeDescription.module.css';
-
-const infoPropTypes = {
-  info: PropTypes.shape().isRequired,
-};
 
 const getPrecentageString = (arr) =>
   arr.every((val) => val !== null && val !== undefined)
@@ -30,31 +28,6 @@ const getHasSameValues = (currentInfo, infoArray, field) =>
       getValueIsSame(currentInfo[field], ft[field]),
   );
 
-function HeaderRowCell({ info }) {
-  const dispatch = useDispatch();
-  const activeProfile = useSelector((state) => state.activeProfile);
-
-  return (
-    <Table.HeaderCell>
-      <span key={info.code}>
-        <button
-          className={descriptionStyles.link}
-          type="button"
-          onClick={() => {
-            dispatch(setComparisonIsOpen(false));
-            const forestType = getInfo('forestType', info.code, activeProfile);
-            dispatch(setForestTypeInfo(forestType));
-          }}
-        >
-          {info.code}
-        </button>
-        <br />
-      </span>
-    </Table.HeaderCell>
-  );
-}
-HeaderRowCell.propTypes = infoPropTypes;
-
 const Cell = ({ data, hasSameValues }) => (
   <Table.Cell
     className={hasSameValues ? comparisonStyles.comparisonIsSame : undefined}
@@ -68,7 +41,8 @@ Cell.propTypes = {
   hasSameValues: PropTypes.bool.isRequired,
 };
 
-function ForestTypeComparison({ info, compare }) {
+function ForestTypeTab({ data }) {
+  const dispatch = useDispatch();
   const { t } = useTranslation();
 
   return (
@@ -76,28 +50,35 @@ function ForestTypeComparison({ info, compare }) {
       <Table.Body>
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.general')}</Table.HeaderCell>
-          {compare.map((ft) => (
-            <HeaderRowCell key={ft.code} info={ft} />
+          {data.map((ft) => (
+            <Table.HeaderCell key={ft.code}>
+              <button
+                className={descriptionStyles.link}
+                type="button"
+                onClick={() => {
+                  dispatch(setForestTypeModal('d'));
+                  dispatch(setForestTypeDescription(ft.code));
+                }}
+              >
+                {ft.code}
+              </button>
+            </Table.HeaderCell>
           ))}
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>
             {t('lu.forestType.tilleringHardwood')}
           </Table.HeaderCell>
-          {compare.map((ft) => (
+          {data.map((ft) => (
             <Cell
               key={ft.code}
-              hasSameValues={getHasSameValues(
-                ft,
-                info ? [info, ...compare] : compare,
-                'tilleringHardwood',
-              )}
+              hasSameValues={getHasSameValues(ft, data, 'tilleringHardwood')}
               data={ft.tilleringHardwood}
             />
           ))}
         </Table.Row>
         {forestTypeMapping.reduce((rows, currTreeType, idx) => {
-          const cells = compare.map((ft) => ({
+          const cells = data.map((ft) => ({
             code: ft.code,
             value: ft.tillering[0][idx],
           }));
@@ -125,14 +106,10 @@ function ForestTypeComparison({ info, compare }) {
           <Table.HeaderCell>
             {t('lu.forestType.tilleringFirwood')}
           </Table.HeaderCell>
-          {compare.map((ft) => (
+          {data.map((ft) => (
             <Cell
               key={ft.code}
-              hasSameValues={getHasSameValues(
-                ft,
-                info ? [info, ...compare] : compare,
-                'tilleringFirwood',
-              )}
+              hasSameValues={getHasSameValues(ft, data, 'tilleringFirwood')}
               data={ft.tilleringFirwood}
             />
           ))}
@@ -142,9 +119,8 @@ function ForestTypeComparison({ info, compare }) {
   );
 }
 
-ForestTypeComparison.propTypes = {
-  compare: PropTypes.arrayOf(infoPropTypes.info).isRequired,
-  ...infoPropTypes,
+ForestTypeTab.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
-export default ForestTypeComparison;
+export default ForestTypeTab;

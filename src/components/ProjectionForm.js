@@ -10,7 +10,7 @@ import { info } from '@geops/tree-lib';
 import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
-import { setFormLocation, setForestTypeInfo } from '../store/actions';
+import { setFormLocation, setForestTypeDescription } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
@@ -28,7 +28,7 @@ const getDropdownOptions =
           active
           compact
           icon="info"
-          onClick={() => dispatch(setForestTypeInfo(info(type, key)))}
+          onClick={() => dispatch(setForestTypeDescription(key))}
         />
         {key} - {info(type, key)[lng]}
       </>

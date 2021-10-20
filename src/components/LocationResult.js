@@ -10,7 +10,7 @@ import Dropdown from './Dropdown';
 import Ecogram from './Ecogram';
 import Button from './Button';
 import HelpModal from './HelpModal';
-import { setFormLocation, setForestTypeInfo } from '../store/actions';
+import { setFormLocation, setForestTypeDescription } from '../store/actions';
 import styles from './LocationResult.module.css';
 
 const otherForestTypeGroups = ['special', 'volatile', 'riverside', 'pioneer'];
@@ -81,7 +81,7 @@ function LocationResult() {
                                 compact
                                 icon="info"
                                 onClick={() =>
-                                  dispatch(setForestTypeInfo(ftInfo))
+                                  dispatch(setForestTypeDescription(key))
                                 }
                               />
                               {key} - {ftInfo[i18n.language]}

@@ -10,7 +10,7 @@ import Dropdown from './Dropdown';
 import LanguageSwitcher from './LanguageSwitcher';
 import ProfileSwitcher from './ProfileSwitcher';
 
-import { setForestTypeInfo } from '../store/actions';
+import { setForestTypeDescription } from '../store/actions';
 
 function ForestTypePage() {
   const dispatch = useDispatch();
@@ -39,10 +39,7 @@ function ForestTypePage() {
             active
             compact
             icon="info"
-            onClick={() => {
-              const ft = info('forestType', forestType, activeProfile);
-              dispatch(setForestTypeInfo(ft));
-            }}
+            onClick={() => dispatch(setForestTypeDescription(forestType))}
           />
         )}
       </Form.Field>

@@ -11,9 +11,9 @@ import {
   SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
   SET_ACTIVE_PROFILE,
-  SET_FORESTTYPE_COMPARE,
-  SET_FORESTTYPE_INFO,
-  SET_COMPARISON_IS_OPEN,
+  SET_FORESTTYPE_COMPARISON,
+  SET_FORESTTYPE_DESCRIPTION,
+  SET_FORESTTYPE_MODAL,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
@@ -116,12 +116,26 @@ function tree(state = initialState, action) {
     case SET_ACTIVE_PROFILE:
       localStorage.setItem('tree.profile', action.activeProfile);
       return { ...state, activeProfile: action.activeProfile };
-    case SET_FORESTTYPE_COMPARE:
-      return { ...state, forestTypeCompare: action.forestTypeCompare };
-    case SET_FORESTTYPE_INFO:
-      return { ...state, forestTypeInfo: action.forestTypeInfo };
-    case SET_COMPARISON_IS_OPEN:
-      return { ...state, comparisonIsOpen: action.comparisonIsOpen };
+    case SET_FORESTTYPE_COMPARISON:
+      return {
+        ...state,
+        forestTypeComparison: action.forestTypeComparison,
+        forestTypeModal:
+          action.forestTypeComparison && action.openModal
+            ? 'c'
+            : state.forestTypeModal,
+      };
+    case SET_FORESTTYPE_DESCRIPTION:
+      return {
+        ...state,
+        forestTypeDescription: action.forestTypeDescription,
+        forestTypeModal:
+          action.forestTypeDescription && action.openModal
+            ? 'd'
+            : state.forestTypeModal,
+      };
+    case SET_FORESTTYPE_MODAL:
+      return { ...state, forestTypeModal: action.forestTypeModal };
     default:
       return state;
   }

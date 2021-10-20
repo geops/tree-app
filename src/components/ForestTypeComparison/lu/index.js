@@ -1,80 +1,28 @@
 import PropTypes from 'prop-types';
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Tab, Form, Message } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+import { Tab } from 'semantic-ui-react';
 
-import Dropdown from '../../Dropdown';
-import LuForestTypeComparison from './ForestTypeComparison';
+import ForestTypeTab from './ForestTypeTab';
 
-import { setForestTypeCompare } from '../../../store/actions';
-
-function ForestTypeComparison({ data, compare, options }) {
-  const dispatch = useDispatch();
+function ForestTypeComparisonIndex({ data }) {
   const { t } = useTranslation();
-  const forestTypeCompare = useSelector((state) => state.forestTypeCompare);
-  const activeProfile = useSelector((state) => state.activeProfile);
-  const [compareData, setCompareData] = useState([]);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    if (data) {
-      dispatch(setForestTypeCompare([data.code]));
-    }
-  }, [data, dispatch]);
-
-  useEffect(() => {
-    try {
-      const newData = compare.map((ft) => info('forestType', ft, 'lu'));
-      setCompareData(newData);
-    } catch {
-      dispatch(setForestTypeCompare([]));
-      setCompareData([]);
-    }
-  }, [activeProfile, compare, dispatch]);
 
   return (
-    <>
-      <Form>
-        <Dropdown
-          label={t('forestTypeModal.compare')}
-          multiple
-          options={options}
-          onChange={(e, { value }) => dispatch(setForestTypeCompare(value))}
-          value={forestTypeCompare}
-          open={dropdownOpen && compareData.length < 4}
-          onClick={() => setDropdownOpen(!dropdownOpen)}
-          onBlur={() => setDropdownOpen(false)}
-        />
-      </Form>
-      {compareData.length > 3 && (
-        <Message negative>
-          <Message.Header>
-            {t('forestTypeModal.maximumForestTypes')}
-          </Message.Header>
-        </Message>
-      )}
-      <br />
-      <Tab
-        menu={{ attached: true, tabular: true }}
-        panes={[
-          {
-            menuItem: t('lu.forestType.general'),
-            render: () => (
-              <LuForestTypeComparison info={data} compare={compareData} />
-            ),
-          },
-        ]}
-      />
-    </>
+    <Tab
+      menu={{ attached: true, tabular: true }}
+      panes={[
+        {
+          menuItem: t('lu.forestType.general'),
+          render: () => <ForestTypeTab data={data} />,
+        },
+      ]}
+    />
   );
 }
 
-ForestTypeComparison.propTypes = {
-  data: PropTypes.shape().isRequired,
-  compare: PropTypes.arrayOf(PropTypes.string).isRequired,
-  options: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+ForestTypeComparisonIndex.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
-export default ForestTypeComparison;
+export default ForestTypeComparisonIndex;

@@ -1,33 +1,64 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useMemo, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
+import { Form, Message } from 'semantic-ui-react';
+import { info } from '@geops/tree-lib';
+
+import Dropdown from '../Dropdown';
+import { setForestTypeComparison } from '../../store/actions';
 
 import ChForestTypeComparison from './ch';
 import LuForestTypeComparison from './lu';
 
-function ForestTypeComparison({ info, compare, options }) {
+function ForestTypeComparison() {
+  const dispatch = useDispatch();
   const activeProfile = useSelector((state) => state.activeProfile);
+  const codes = useSelector((state) => state.forestTypeComparison) || [];
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const { i18n, t } = useTranslation();
+
+  const data = codes.map((code) => info('forestType', code, activeProfile));
+
+  const options = useMemo(
+    () =>
+      info('forestType', null, activeProfile).map((ft) => ({
+        text: `${ft.code} - ${ft[i18n.language]}`,
+        value: ft.code,
+      })),
+    [activeProfile, i18n.language],
+  );
 
   return (
     <>
-      {activeProfile === 'ch' && (
-        <ChForestTypeComparison data={info} compare={compare} />
-      )}
-      {activeProfile === 'lu' && (
-        <LuForestTypeComparison
-          data={info}
-          compare={compare}
+      <Form>
+        <Dropdown
+          label={t('forestTypeModal.compare')}
+          multiple
           options={options}
+          onChange={(e, { value }) => dispatch(setForestTypeComparison(value))}
+          value={codes}
+          open={dropdownOpen && codes.length < 4}
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+          onBlur={() => setDropdownOpen(false)}
         />
+      </Form>
+      {codes.length > 3 && (
+        <Message negative>
+          <Message.Header>
+            {t('forestTypeModal.maximumForestTypes')}
+          </Message.Header>
+        </Message>
       )}
+      <br />
+      {activeProfile === 'ch' && <ChForestTypeComparison />}
+      {activeProfile === 'lu' && <LuForestTypeComparison data={data} />}
     </>
   );
 }
 
-ForestTypeComparison.propTypes = {
-  info: PropTypes.shape().isRequired,
-  options: PropTypes.arrayOf(PropTypes.shape()).isRequired,
-  compare: PropTypes.arrayOf(PropTypes.string).isRequired,
+ForestTypeComparison.Header = function ForestTypeComparisonHeader() {
+  const { t } = useTranslation();
+  return <>{t('forestTypeModal.compare')}</>;
 };
 
 export default ForestTypeComparison;
