@@ -100,11 +100,11 @@ function ProjectionResult() {
     panes.push(getPane('form', form, i18n.language, t));
   } else {
     const moderateLoc = projectionResult.moderate.projections
-      ? projectionResult.moderate.projections.slice(-1)[0] || {}
-      : {};
+      ? projectionResult.moderate.projections.slice(-1)[0] || location
+      : location;
     const extremeLoc = projectionResult.extreme.projections
-      ? projectionResult.extreme.projections.slice(-1)[0] || {}
-      : {};
+      ? projectionResult.extreme.projections.slice(-1)[0] || location
+      : location;
     const todayKey = getResultKey(location);
     const moderateKey = getResultKey(moderateLoc);
     const extremeKey = getResultKey(extremeLoc);
