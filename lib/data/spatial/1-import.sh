@@ -9,7 +9,7 @@ _import () {
         return
     fi
 
-    if [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
+    if [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ] && [ ! -f "/data/spatial/${TARGET}/${ZIPFILE}.gpkg" ]; then
         echo "Downloading ${TARGET} ..."
         cd /data/spatial
         wget --no-check-certificate "${URL}" -O "${TARGET}.zip"
@@ -28,18 +28,23 @@ _import () {
 
     local COUNT=$(psql -d tree -U postgres -At -c "SELECT COUNT(*) FROM ${TARGET}")
     if [ "$COUNT" == "0" ]; then
-        echo "Importing ${TARGET} ..."
-        shp2pgsql -D -a -s 2056 "/data/spatial/${TARGET}/${TARGET}.shp" | psql -d tree -U postgres
+        if [ -f "/data/spatial/${TARGET}/${ZIPFILE}.gpkg" ]; then
+            echo "Importing GeoPackage ${ZIPFILE}.gpkg ..."
+            ogr2ogr -f PostgreSQL "PG:dbname=tree user=postgres" -nln ${TARGET} /data/spatial/${TARGET}/${ZIPFILE}.gpkg
+        else
+            echo "Importing Shapefile ${TARGET}.shp ..."
+            shp2pgsql -D -a -s 2056 "/data/spatial/${TARGET}/${TARGET}.shp" | psql -d tree -U postgres
+        fi
     else
         echo "$TARGET already imported! Do nothing ..."
     fi
 }
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_1995/data.zip" "altitudinal_zones_1995" "Vegetationshoehenstufen_1995" "Vegetationshhenstufen_1995"
+_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_1975/data.zip" "altitudinal_zones_1995" "vegetationshoehenstufen_1975"
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_trocken/data.zip" "altitudinal_zones_2085_dry" "Vegetationshoehenstufen_2085_trocken" "Vegetationshhenstufen_2085_trocken"
+_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_trocken/data.zip" "altitudinal_zones_2085_dry" "vegetationshoehenstufen_2085_trocken"
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_weniger_trocken/data.zip" "altitudinal_zones_2085_less_dry" "Vegetationshoehenstufen_2085_maessig_trocken" "Vegetationshhenstufen_2085_mssig_trocken"
+_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_weniger_trocken/data.zip" "altitudinal_zones_2085_less_dry" "vegetationshoehenstufen_2085_weniger_trocken"
 
 _import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/data.zip" "forest_ecoregions" "Waldstandortsregionen" "Waldstandortsregionen"
 
