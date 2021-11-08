@@ -116,7 +116,46 @@ function InfoReports() {
           Link
         </a>
       </li>
-      <li>Schlussbericht Projekt NaiS-LFI (folgt)</li>
+      <li>
+        <strong>
+          NaiS-LFI - Zuordnung der LFI-Stichprobenpunkte zu Waldgesellschaften.
+          Erläuternder Schlussbericht.
+        </strong>
+        <br />
+        <em>
+          ARGE Frehner M, Dionea SA und IWA - Wald und Landschaft AG. 2020.
+        </em>
+        <br />
+        Im Auftrag des Bundesamt für Umwelt BAFU, 68 S.
+      </li>
+      <li>
+        <strong>
+          Berechnung der Vegetationshöhenstufen auf der Grundlage der CH2018
+          Szenarien für die Schweiz.
+        </strong>
+        <br />
+        <em>Zischg A, Huber B, Frehner M, Könz G. 2021.</em>
+        <br />
+        Abenis AG, Chur &amp; Geographisches Institut der Universität Bern,
+        Bern, 72 S.
+      </li>
+      <li>
+        <strong>
+          Downscaling CH2018. Berechnung von Meteo- und Trockenheitsindizes für
+          die Waldforschung. Methoden und Resultate - Version 2.
+        </strong>
+        <br />
+        <em>Remund J. 2020.</em>
+        <br />
+        Meteotest, Bern, 25 S.
+        <br />
+        <a
+          href="https://www.bafu.admin.ch/dam/bafu/de/dokumente/wald-holz/externe-studien-berichte/downscaling-ch2018-berechnung-von-meteo-und-trockenheitsindizes-fuer-die-waldforschung.pdf.download.pdf/Downscaling%20CH2018_resultate_final_20210802.pdf"
+          target="reports"
+        >
+          Link
+        </a>
+      </li>
     </ul>
   );
 }
