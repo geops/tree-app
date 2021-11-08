@@ -201,7 +201,7 @@ VALUES ('',
 ----------------------------------------------
 -- altitudinal zones
 
-CREATE TABLE altitudinal_zone_meta (source TEXT, de TEXT, fr TEXT, nais TEXT, code TEXT, id SERIAL);
+CREATE TABLE altitudinal_zone_meta (source TEXT, de TEXT, fr TEXT, nais TEXT, code TEXT, zh TEXT, id SERIAL);
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
@@ -220,12 +220,13 @@ VALUES ('hyperinsubrisch',
         '10');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('collin',
         'collin',
         'collinéen',
         'C',
-        '20');
+        '20',
+        'co');
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
@@ -236,28 +237,31 @@ VALUES ('collin mit Buche',
         '30');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('submontan',
         'submontan',
         'submontagnard',
         'SM',
-        '40');
+        '40',
+        'sm');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('untermontan',
         'untermontan',
         'montagnard inférieur',
         'UM',
-        '50');
+        '50',
+        'um');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('obermontan',
         'obermontan',
         'montagnard supérieur',
         'OM',
-        '60');
+        '60',
+        'om');
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
@@ -268,12 +272,13 @@ VALUES ('unter- & obermontan',
         '70');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('hochmontan',
         'hochmontan',
         'haut-montagnard',
         'HM',
-        '80');
+        '80',
+        'hm');
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
