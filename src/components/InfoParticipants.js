@@ -6,17 +6,15 @@ const participants = {
     'Monika Frehner, Jacques Burnand, Hans-Ueli Frey, Peter Lüscher, Brächt Wasser',
   climateChangeBasics:
     'Monika Frehner, Barbara Huber, Päivi Gubelmann, Nora Zürcher-Gasser, Niklaus E. Zimmermann, Sabine Braun, Martin Scherler, Andreas Zischg, Jacques Burnand, Gabriele Carraro, Harald Bugmann, Achilleas Psomas',
-  forestTypeMap: 'Michiel Fehr, Jochen Breschan',
+  forestTypeMap: 'Michiel Fehr, Daniel Oertig',
   idea: 'Urs Rutishauser, Monika Frehner, Cornel Broder',
   conception:
     'Monika Frehner, Urs Rutishauser, Cornel Broder, Elke Ehrhardt, Uli Müller, Thomas Bettler, Christian Küchli, Andreas Zischg, Peter Brang',
   projectManagement: 'Peter Brang',
-  projectSupervision: 'Pierre Alfter',
+  projectSupervision: 'Pierre Alfter, Robert Jenni',
   projectControl: 'Marco Ferretti, Christoph Dürr, Ueli Meier',
   wslUsers:
-    'Daniel Müller, Noémie Schaffter, Samuel Scheibler, Sabine Augustin, Christoph Dürr, Stéphane Losey, Claudio de Sassi, Pascal Junod, Lukas Glanzmann, Hans-Ulrich Frey, Stefan Biermann, Thomas Studer, Grégory Guichard',
-  itUsers:
-    'Pierre Cothéreau, Michiel Fehr, Christian Rosset, Viola Sala, Thomas Bettler',
+    'Sabine Augustin, Thomas Bettler, Stefan Biermann, Pierre Cothéreau, Christoph Dürr, Michiel Fehr, Hans-Ulrich Frey, Lukas Glanzmann, Grégory Guichard, Pascal Junod, Stéphane Losey, Daniel Müller, Christian Rosset, Viola Sala, Claudio de Sassi, Noémie Schaffter, Samuel Scheibler, Thomas Studer',
 };
 
 function InfoParticipants() {
@@ -39,7 +37,6 @@ function InfoParticipants() {
       <p>{{ projectControl: participants.projectControl }}</p>
       <p>funding</p>
       <p>{{ wslUsers: participants.wslUsers }}</p>
-      <p>{{ itUsers: participants.itUsers }}</p>
     </Trans>
   );
 }
