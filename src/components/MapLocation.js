@@ -44,7 +44,10 @@ const featuresToLocation = (location, f) => {
     } catch (error) {
       // ignore missing forest types
     }
-    if (forestTypeInfo) {
+    if (
+      forestTypeInfo &&
+      !location.forestTypes.find((t) => t.forestType === forestType)
+    ) {
       return {
         ...location,
         forestTypes: [
