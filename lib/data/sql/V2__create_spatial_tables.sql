@@ -197,6 +197,7 @@ SELECT AddGeometryColumn('','forest_types_zh','geom','2056','MULTIPOLYGON',2);
 CREATE TABLE "forest_types_ne" (gid serial,
 "code_neuch" float8,
 "associatio" varchar(254),
+"hohenstufe" integer,
 "code_nais" varchar(5));
 
 ALTER TABLE "forest_types_ne" ADD PRIMARY KEY (gid);

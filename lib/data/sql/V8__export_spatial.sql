@@ -3,21 +3,32 @@
 -- altitudinal_zones_1995
 
 CREATE OR REPLACE VIEW altitudinal_zones_1995_export AS
-WITH altitudinal_zones_zh AS
-  (SELECT 
-    ST_Union(geom) AS geom,
-    meta.code
-  FROM (SELECT *, (regexp_matches(hstufe, '(\w*)'))[1] code FROM forest_types_zh) zh
-  LEFT JOIN altitudinal_zone_meta meta ON zh.code = meta.zh
-  WHERE meta.code IS NOT NULL
-  GROUP BY meta.code)
+WITH altitudinal_zones AS
+  (SELECT foo.geom, foo.code 
+       FROM (
+              SELECT
+              ST_Union(geom) AS geom,
+              meta.code
+              FROM (SELECT *, (regexp_matches(hstufe, '(\w*)'))[1] code FROM forest_types_zh) zh
+                LEFT JOIN altitudinal_zone_meta meta ON zh.code = meta.zh
+                WHERE meta.code IS NOT NULL
+                GROUP BY meta.code
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  hohenstufe::text as code
+              FROM forest_types_ne
+                WHERE hohenstufe IS NOT NULL
+                GROUP BY hohenstufe)
+       )foo )
+
 SELECT (code::TEXT || subcode::TEXT) AS code,
-       ST_Transform(ST_Difference(geom, (SELECT ST_Union(geom) FROM altitudinal_zones_zh)), 3857) AS geometry
+       ST_Transform(ST_Difference(geom, (SELECT ST_Union(geom) FROM altitudinal_zones)), 3857) AS geometry
 FROM altitudinal_zones_1995
 UNION
-SELECT zh.code,
-       ST_Transform(zh.geom, 3857) AS geometry
-FROM altitudinal_zones_zh zh;
+SELECT az.code,
+       ST_Transform(az.geom, 3857) AS geometry
+FROM altitudinal_zones az;
 
 
 ----------------------------------------------
