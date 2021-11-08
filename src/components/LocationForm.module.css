@@ -8,6 +8,10 @@
   margin-top: 15px;
 }
 
+.latinSwitcher {
+  margin-bottom: 20px;
+}
+
 .resetButton:global(.ui.button) {
   margin-top: 1em;
 }

@@ -57,6 +57,12 @@ body {
   fill: var(--primary-color-500);
 }
 
+.shareItem {
+  border-radius: 0 !important;
+  background-color: var(--primary-color-500) !important;
+  color: #eee !important;
+}
+
 @media (max-width: 768px) {
   .map,
   .page:global(.frontpage) {

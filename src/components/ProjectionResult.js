@@ -21,6 +21,17 @@ function getAZ(altitudinalZone) {
   return altitudinalZone;
 }
 
+function getResultLocation(scenario, location) {
+  return scenario.projections
+    ? scenario.projections.slice(-1)[0] || location
+    : location;
+}
+
+function getResultKey(location) {
+  const { altitudinalZone, forestType, transitionForestType } = location;
+  return `${getAZ(altitudinalZone)}|${forestType}|${transitionForestType}`;
+}
+
 function getPane(scenario, projection, language, t) {
   const icons = [];
   const scenarios = [];
@@ -68,17 +79,13 @@ function getPane(scenario, projection, language, t) {
 const checkFields = ['slope', 'additional', 'relief'];
 
 function ProjectionResult() {
-  const {
-    location,
-    mapLocationForestType,
-    projectionMode,
-    projectionResult,
-  } = useSelector((state) => ({
-    location: state.location,
-    mapLocationForestType: state.mapLocation.forestType,
-    projectionMode: state.projectionMode,
-    projectionResult: state.projectionResult,
-  }));
+  const { location, mapLocationForestType, projectionMode, projectionResult } =
+    useSelector((state) => ({
+      location: state.location,
+      mapLocationForestType: state.mapLocation.forestType,
+      projectionMode: state.projectionMode,
+      projectionResult: state.projectionResult,
+    }));
   const { i18n, t } = useTranslation();
   const AZToday = getAZ(location.altitudinalZone);
   const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
@@ -98,29 +105,26 @@ function ProjectionResult() {
     panes.push(getPane('today', location, i18n.language, t));
     panes.push(getPane('form', form, i18n.language, t));
   } else {
-    const moderateLoc = projectionResult.moderate.projections
-      ? projectionResult.moderate.projections.slice(-1)[0] || {}
-      : {};
-    const extremeLoc = projectionResult.extreme.projections
-      ? projectionResult.extreme.projections.slice(-1)[0] || {}
-      : {};
-    if (TAZModerate === TAZExtreme) {
-      if (AZToday === TAZModerate) {
-        panes.push(getPane('todayModerateExtreme', location, i18n.language, t));
-      } else {
-        panes.push(getPane('today', location, i18n.language, t));
-        panes.push(getPane('moderateExtreme', moderateLoc, i18n.language, t));
-      }
-    } else if (AZToday === TAZModerate) {
+    const moderate = getResultLocation(projectionResult.moderate, location);
+    const extreme = getResultLocation(projectionResult.extreme, location);
+    const todayKey = getResultKey(location);
+    const moderateKey = getResultKey(moderate);
+    const extremeKey = getResultKey(extreme);
+    if (moderateKey === extremeKey && todayKey === moderateKey) {
+      panes.push(getPane('todayModerateExtreme', location, i18n.language, t));
+    } else if (moderateKey === extremeKey) {
+      panes.push(getPane('today', location, i18n.language, t));
+      panes.push(getPane('moderateExtreme', moderate, i18n.language, t));
+    } else if (todayKey === moderateKey) {
       panes.push(getPane('todayModerate', location, i18n.language, t));
-      panes.push(getPane('extreme', extremeLoc, i18n.language, t));
-    } else if (AZToday === TAZExtreme) {
+      panes.push(getPane('extreme', extreme, i18n.language, t));
+    } else if (todayKey === extremeKey) {
       panes.push(getPane('todayExtreme', location, i18n.language, t));
-      panes.push(getPane('moderate', moderateLoc, i18n.language, t));
+      panes.push(getPane('moderate', moderate, i18n.language, t));
     } else {
       panes.push(getPane('today', location, i18n.language, t));
-      panes.push(getPane('moderate', moderateLoc, i18n.language, t));
-      panes.push(getPane('extreme', extremeLoc, i18n.language, t));
+      panes.push(getPane('moderate', moderate, i18n.language, t));
+      panes.push(getPane('extreme', extreme, i18n.language, t));
     }
   }
 

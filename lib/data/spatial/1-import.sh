@@ -3,6 +3,7 @@ _import () {
     local TARGET=$2 # cantonal_boundaries
     local ZIPFILE=$3 # SHAPEFILE_LV95_LN02
     local SHPFILE=$4 # swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET
+
     if [ "$URL" == "Download manually" ] && [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
         echo "Manual unzipped download for ${TARGET} is missing! Do nothing ..."
         return

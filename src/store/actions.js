@@ -1,4 +1,5 @@
 export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
+export const SET_LATIN_ACTIVE = 'SET_LATIN_ACTIVE';
 export const SET_LOCATION_RESULT = 'SET_LOCATION_RESULT';
 export const SET_LOCATION = 'SET_LOCATION';
 export const SET_MAP_LAYER = 'SET_MAP_LAYER';
@@ -11,6 +12,10 @@ export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
+}
+
+export function setLatinActive(latinActive) {
+  return { type: SET_LATIN_ACTIVE, latinActive };
 }
 
 export function setLocationResult(locationResult) {
