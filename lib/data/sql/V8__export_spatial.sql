@@ -3,7 +3,7 @@
 -- altitudinal_zones_1995
 
 CREATE OR REPLACE VIEW altitudinal_zones_1995_export AS
-WITH altitudinal_zones AS
+WITH altitudinal_zones_cantonal AS
   (SELECT foo.geom, foo.code 
        FROM (
               SELECT
@@ -22,13 +22,13 @@ WITH altitudinal_zones AS
                 GROUP BY hohenstufe)
        )foo )
 
-SELECT (code::TEXT || subcode::TEXT) AS code,
-       ST_Transform(ST_Difference(geom, (SELECT ST_Union(geom) FROM altitudinal_zones)), 3857) AS geometry
+SELECT (code::TEXT || subcode::TEXT)::integer AS code,
+       ST_Transform(ST_Difference(geom, (SELECT ST_Union(geom) FROM altitudinal_zones_cantonal)), 3857) AS geometry
 FROM altitudinal_zones_1995
 UNION
-SELECT az.code,
-       ST_Transform(az.geom, 3857) AS geometry
-FROM altitudinal_zones az;
+SELECT azc.code::integer,
+       ST_Transform(azc.geom, 3857) AS geometry
+FROM altitudinal_zones_cantonal azc;
 
 
 ----------------------------------------------
