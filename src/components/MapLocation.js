@@ -133,7 +133,11 @@ function MapLocation() {
       <Vector source={vectorSource} zIndex={999} />
       <Modal
         className={styles.modal}
+        closeIcon
         open={!mapLocation.forestType && mapLocation.forestTypes?.length > 1}
+        onClose={() =>
+          dispatch(setMapLocation({ ...mapLocation, forestTypes: [] }))
+        }
       >
         <Modal.Header>{t('forestType.select')}</Modal.Header>
         <Modal.Content>
