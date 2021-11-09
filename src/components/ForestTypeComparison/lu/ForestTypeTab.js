@@ -7,7 +7,7 @@ import useIsMobile from '../../../hooks/useIsMobile';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
 import { forestTypeMapping } from '../../ForestTypeDescription/lu/utils';
-import { getHasSameValues } from './utils';
+import { getHasSameValues } from '../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
 
 const getPioneerTreeTypes = (info, allInfos) => {

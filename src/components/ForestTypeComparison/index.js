@@ -2,10 +2,11 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { Form, Message } from 'semantic-ui-react';
-import { info, sort } from '@geops/tree-lib';
+import { info } from '@geops/tree-lib';
 
 import Dropdown from '../Dropdown';
 import { setForestTypeComparison } from '../../store/actions';
+import { forestTypeSortFct } from '../../utils/sortForestTypes';
 
 import ChForestTypeComparison from './ch';
 import LuForestTypeComparison from './lu';
@@ -37,10 +38,12 @@ function ForestTypeComparison() {
 
   const options = useMemo(
     () =>
-      sort(info('forestType', null, activeProfile)).map((ft) => ({
-        text: `${ft.code} - ${ft[i18n.language]}`,
-        value: ft.code,
-      })),
+      info('forestType', null, activeProfile)
+        .sort(forestTypeSortFct)
+        .map((ft) => ({
+          text: `${ft.code} - ${ft[i18n.language]}`,
+          value: ft.code,
+        })),
     [activeProfile, i18n.language],
   );
 
