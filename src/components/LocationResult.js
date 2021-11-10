@@ -70,7 +70,7 @@ function LocationResult() {
                   const ftInfo = info('forestType', ftCode);
                   const onClick = () => selectForestType(ftCode);
                   return (
-                    <List.Item key={ftCode}>
+                    <List.Item key={ftCode} className={styles.listitem}>
                       <ForestTypeModal data={ftInfo} />
                       <Button active compact onClick={onClick}>
                         {ftCode} - {ftInfo[i18n.language]}
