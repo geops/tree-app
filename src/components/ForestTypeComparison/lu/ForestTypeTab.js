@@ -12,32 +12,27 @@ import comparisonStyles from '../ForestTypeComparison.module.css';
 
 const getPioneerTreeTypes = (info, allInfos) => {
   const allTreeTypes = allInfos.reduce((pioneerTypes, current) => {
-    const currentPioneersTypes = current.pioneerTreeTypes
-      ?.replace(' ', '')
-      .split(',');
+    const currentPioneersTypes = current.pioneerTreeTypes;
     return currentPioneersTypes && currentPioneersTypes.length
       ? [...pioneerTypes, ...currentPioneersTypes]
       : pioneerTypes;
   }, []);
-  return info.pioneerTreeTypes
-    .replace(' ', '')
-    .split(',')
-    ?.map((treeType, idx, arr) => {
-      const hasDuplicate =
-        allTreeTypes.filter((ptt) => ptt === treeType).length > 1;
-      return (
-        <span key={treeType}>
-          <span
-            className={
-              hasDuplicate ? comparisonStyles.comparisonIsSame : undefined
-            }
-          >
-            {treeType}
-          </span>
-          {idx + 1 !== arr.length && ', '}
+  return info.pioneerTreeTypes.map((treeType, idx, arr) => {
+    const hasDuplicate =
+      allTreeTypes.filter((ptt) => ptt === treeType).length > 1;
+    return (
+      <span key={treeType}>
+        <span
+          className={
+            hasDuplicate ? comparisonStyles.comparisonIsSame : undefined
+          }
+        >
+          {treeType}
         </span>
-      );
-    });
+        {idx + 1 !== arr.length && ', '}
+      </span>
+    );
+  });
 };
 
 function ForestTypeTab({ data }) {
