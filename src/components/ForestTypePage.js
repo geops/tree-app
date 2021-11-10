@@ -2,7 +2,6 @@ import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { Form } from 'semantic-ui-react';
-// eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
 import Button from './Button';
@@ -10,6 +9,7 @@ import Dropdown from './Dropdown';
 import LanguageSwitcher from './LanguageSwitcher';
 import ProfileSwitcher from './ProfileSwitcher';
 
+import { forestTypeSortFct } from '../utils/sortForestTypes';
 import { setForestTypeDescription } from '../store/actions';
 
 function ForestTypePage() {
@@ -18,10 +18,12 @@ function ForestTypePage() {
   const activeProfile = useSelector((state) => state.activeProfile);
   const forestTypeOptions = useMemo(
     () =>
-      info('forestType', null, activeProfile).map((ft) => ({
-        text: `${ft.code} - ${ft[i18n.language]}`,
-        value: ft.code,
-      })),
+      info('forestType', null, activeProfile)
+        .sort(forestTypeSortFct)
+        .map((ft) => ({
+          text: `${ft.code} - ${ft[i18n.language]}`,
+          value: ft.code,
+        })),
     [activeProfile, i18n.language],
   );
   const [forestType, setForestType] = useState(null);
