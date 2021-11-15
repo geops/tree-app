@@ -17,7 +17,7 @@ import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
 import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
-import { setMapLocation } from '../store/actions';
+import { setMapLocation, setFormLocation } from '../store/actions';
 import styles from './MapLocation.module.css';
 
 const getKey = (sl) =>
@@ -109,6 +109,7 @@ function MapLocation() {
         location.transition = null;
       }
       dispatch(setMapLocation(location, resetFormLocation));
+      dispatch(setFormLocation(location));
       if (isMobile === false && location.forestType) {
         history.push(`/projection${window.location.search}`);
       }
