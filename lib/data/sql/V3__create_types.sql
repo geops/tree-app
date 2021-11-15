@@ -205,7 +205,7 @@ CREATE TABLE altitudinal_zone_meta (source TEXT, de TEXT, fr TEXT, nais TEXT, co
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
-VALUES ('collin -mediterran',
+VALUES ('mediterran',
         'collin-mediterran',
         'collinéen à méditerranéen',
         '01C',
