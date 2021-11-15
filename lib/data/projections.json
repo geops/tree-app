@@ -1227,7 +1227,7 @@
           "unknown": {
             "1": { "unknown": { "80": "49*Ta" } },
             "2": { "unknown": { "80": "49*Ta" } },
-            "3": { "unknown": { "80": "49* " } },
+            "3": { "unknown": { "80": "49*" } },
             "unknown": { "unknown": { "20": "49* collin" } }
           }
         }
@@ -2009,7 +2009,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Lä" } } } }
       },
       "57Bl ": {
-        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl " } } } }
+        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl" } } } }
       },
       "57BlG": {
         "unknown": {
@@ -2160,7 +2160,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "57VM" } } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L " } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
       },
       "59L": {
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
@@ -3327,7 +3327,7 @@
           "unknown": {
             "1": { "unknown": { "80": "49*Ta" } },
             "2": { "unknown": { "80": "49*Ta" } },
-            "3": { "unknown": { "80": "49* " } },
+            "3": { "unknown": { "80": "49*" } },
             "unknown": { "unknown": { "20": "49* collin" } }
           }
         }
@@ -4109,7 +4109,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Lä" } } } }
       },
       "57Bl ": {
-        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl " } } } }
+        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl" } } } }
       },
       "57BlG": {
         "unknown": {
@@ -4260,7 +4260,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "57VM" } } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L " } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
       },
       "59L": {
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
@@ -6519,7 +6519,7 @@
           "unknown": {
             "1": { "unknown": { "80": "49*Ta" } },
             "2": { "unknown": { "80": "49*Ta" } },
-            "3": { "unknown": { "80": "49* " } },
+            "3": { "unknown": { "80": "49*" } },
             "unknown": { "unknown": { "20": "49* collin" } }
           }
         }
@@ -7301,7 +7301,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Lä" } } } }
       },
       "57Bl ": {
-        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl " } } } }
+        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl" } } } }
       },
       "57BlG": {
         "unknown": {
@@ -7452,7 +7452,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "57VM" } } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L " } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
       },
       "59L": {
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
@@ -8741,7 +8741,7 @@
           "unknown": {
             "1": { "unknown": { "80": "49*Ta" } },
             "2": { "unknown": { "80": "49*Ta" } },
-            "3": { "unknown": { "80": "49* " } },
+            "3": { "unknown": { "80": "49*" } },
             "unknown": { "unknown": { "20": "49* collin" } }
           }
         }
@@ -9523,7 +9523,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Lä" } } } }
       },
       "57Bl ": {
-        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl " } } } }
+        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl" } } } }
       },
       "57BlG": {
         "unknown": {
@@ -9674,7 +9674,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "57VM" } } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L " } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
       },
       "59L": {
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
@@ -10963,7 +10963,7 @@
           "unknown": {
             "1": { "unknown": { "80": "49*Ta" } },
             "2": { "unknown": { "80": "49*Ta" } },
-            "3": { "unknown": { "80": "49* " } },
+            "3": { "unknown": { "80": "49*" } },
             "unknown": { "unknown": { "20": "49* collin" } }
           }
         }
@@ -11745,7 +11745,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Lä" } } } }
       },
       "57Bl ": {
-        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl " } } } }
+        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl" } } } }
       },
       "57BlG": {
         "unknown": {
@@ -11896,7 +11896,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "57VM" } } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L " } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
       },
       "59L": {
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
@@ -13185,7 +13185,7 @@
           "unknown": {
             "1": { "unknown": { "80": "49*Ta" } },
             "2": { "unknown": { "80": "49*Ta" } },
-            "3": { "unknown": { "80": "49* " } },
+            "3": { "unknown": { "80": "49*" } },
             "unknown": { "unknown": { "20": "49* collin" } }
           }
         }
@@ -13967,7 +13967,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "80": "53Lä" } } } }
       },
       "57Bl ": {
-        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl " } } } }
+        "unknown": { "unknown": { "3": { "unknown": { "80": "57Bl" } } } }
       },
       "57BlG": {
         "unknown": {
@@ -14118,7 +14118,7 @@
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "57VM" } } } }
       },
       "59J": {
-        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L " } } } }
+        "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
       },
       "59L": {
         "unknown": { "unknown": { "unknown": { "unknown": { "90": "58L" } } } }
@@ -14184,119 +14184,153 @@
       "27": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "27 hyp", "30": "27" } }
+            "unknown": {
+              "unknown": { "0": "27 med", "10": "27 hyp", "30": "27" }
+            }
           }
         }
       },
       "28": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "28" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "28" }
+            }
           }
         }
       },
       "30": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "30 hyp", "30": "30" } }
+            "unknown": {
+              "unknown": { "0": "30 med", "10": "30 hyp", "30": "30" }
+            }
           }
         }
       },
       "31": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "31 hyp", "30": "31" } }
+            "unknown": {
+              "unknown": { "0": "31 med", "10": "31 hyp", "30": "31" }
+            }
           }
         }
       },
       "36": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "36 hyp", "30": "36" } }
+            "unknown": {
+              "unknown": { "0": "36 med", "10": "36 hyp", "30": "36" }
+            }
           }
         }
       },
       "37": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "37 hyp", "30": "37" } }
+            "unknown": {
+              "unknown": { "0": "37 med", "10": "37 hyp", "30": "37" }
+            }
           }
         }
       },
       "43": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43 hyp", "30": "43" } }
+            "unknown": {
+              "unknown": { "0": "43 med", "10": "43 hyp", "30": "43" }
+            }
           }
         }
       },
       "44": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "44 hyp", "30": "44" } }
+            "unknown": {
+              "unknown": { "0": "44 med", "10": "44 hyp", "30": "44" }
+            }
           }
         }
       },
       "66": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "66 hyp", "30": "66" } }
+            "unknown": {
+              "unknown": { "0": "66 med", "10": "66 hyp", "30": "66" }
+            }
           }
         }
       },
       "91": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "91 hyp", "30": "91" } }
+            "unknown": {
+              "unknown": { "0": "91 med", "10": "91 hyp", "30": "91" }
+            }
           }
         }
       },
       "93": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "93 hyp", "30": "93" } }
+            "unknown": {
+              "unknown": { "0": "93 med", "10": "93 hyp", "30": "93" }
+            }
           }
         }
       },
       "13*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "13* hyp", "30": "13*" } }
+            "unknown": {
+              "unknown": { "0": "13* med", "10": "13* hyp", "30": "13*" }
+            }
           }
         }
       },
       "22*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "22* hyp", "30": "22*" } }
+            "unknown": {
+              "unknown": { "0": "22* med", "10": "22* hyp", "30": "22*" }
+            }
           }
         }
       },
       "25O": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25O hyp", "30": "25O" } }
+            "unknown": {
+              "unknown": { "0": "25O med", "10": "25O hyp", "30": "25O" }
+            }
           }
         }
       },
       "25a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25a hyp", "30": "25a" } }
+            "unknown": {
+              "unknown": { "0": "25a med", "10": "25a hyp", "30": "25a" }
+            }
           }
         }
       },
       "25b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25b hyp", "30": "25b" } }
+            "unknown": {
+              "unknown": { "0": "25b med", "10": "25b hyp", "30": "25b" }
+            }
           }
         }
       },
       "25f": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25f hyp", "30": "25f" } }
+            "unknown": {
+              "unknown": { "0": "25f med", "10": "25f hyp", "30": "25f" }
+            }
           }
         }
       },
@@ -14310,182 +14344,234 @@
       "29A": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "29A" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "29A" }
+            }
           }
         }
       },
       "32C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "32C hyp", "30": "32C" } }
+            "unknown": {
+              "unknown": { "0": "32C med", "10": "32C hyp", "30": "32C" }
+            }
           }
         }
       },
       "33a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33a hyp", "30": "33a" } }
+            "unknown": {
+              "unknown": { "0": "33a med", "10": "33a hyp", "30": "33a" }
+            }
           }
         }
       },
       "33b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33b hyp", "30": "33b" } }
+            "unknown": {
+              "unknown": { "0": "33b med", "10": "33b hyp", "30": "33b" }
+            }
           }
         }
       },
       "33m": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33m hyp", "30": "33m" } }
+            "unknown": {
+              "unknown": { "0": "33m med", "10": "33m hyp", "30": "33m" }
+            }
           }
         }
       },
       "34a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34a hyp", "30": "34a" } }
+            "unknown": {
+              "unknown": { "0": "34a med", "10": "34a hyp", "30": "34a" }
+            }
           }
         }
       },
       "34b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34b hyp", "30": "34b" } }
+            "unknown": {
+              "unknown": { "0": "34b med", "10": "34b hyp", "30": "34b" }
+            }
           }
         }
       },
       "35Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35Q hyp", "30": "35Q" } }
+            "unknown": {
+              "unknown": { "0": "35Q med", "10": "35Q hyp", "30": "35Q" }
+            }
           }
         }
       },
       "35S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35S hyp", "30": "35S" } }
+            "unknown": {
+              "unknown": { "0": "35S med", "10": "35S hyp", "30": "35S" }
+            }
           }
         }
       },
       "38*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "38* hyp", "30": "38*" } }
+            "unknown": {
+              "unknown": { "0": "38* med", "10": "38* hyp", "30": "38*" }
+            }
           }
         }
       },
       "3LV": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3LV hyp", "30": "3LV" } }
+            "unknown": {
+              "unknown": { "0": "3LV med", "10": "3LV hyp", "30": "3LV" }
+            }
           }
         }
       },
       "42B": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42B hyp", "30": "42B" } }
+            "unknown": {
+              "unknown": { "0": "42B med", "10": "42B hyp", "30": "42B" }
+            }
           }
         }
       },
       "42C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42C hyp", "30": "42C" } }
+            "unknown": {
+              "unknown": { "0": "42C med", "10": "42C hyp", "30": "42C" }
+            }
           }
         }
       },
       "42Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42Q hyp", "30": "42Q" } }
+            "unknown": {
+              "unknown": { "0": "42Q med", "10": "42Q hyp", "30": "42Q" }
+            }
           }
         }
       },
       "42V": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42V hyp", "30": "42V" } }
+            "unknown": {
+              "unknown": { "0": "42V med", "10": "42V hyp", "30": "42V" }
+            }
           }
         }
       },
       "42r": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42r hyp", "30": "42r" } }
+            "unknown": {
+              "unknown": { "0": "42r med", "10": "42r hyp", "30": "42r" }
+            }
           }
         }
       },
       "42t": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42t hyp", "30": "42t" } }
+            "unknown": {
+              "unknown": { "0": "42t med", "10": "42t hyp", "30": "42t" }
+            }
           }
         }
       },
       "43*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43* hyp", "30": "43*" } }
+            "unknown": {
+              "unknown": { "0": "43* med", "10": "43* hyp", "30": "43*" }
+            }
           }
         }
       },
       "43S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43S hyp", "30": "43S" } }
+            "unknown": {
+              "unknown": { "0": "43S med", "10": "43S hyp", "30": "43S" }
+            }
           }
         }
       },
       "92a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92a hyp", "30": "92a" } }
+            "unknown": {
+              "unknown": { "0": "92a med", "10": "92a hyp", "30": "92a" }
+            }
           }
         }
       },
       "92z": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92z hyp", "30": "92z" } }
+            "unknown": {
+              "unknown": { "0": "92z med", "10": "92z hyp", "30": "92z" }
+            }
           }
         }
       },
       "25as": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25as hyp", "30": "25as" } }
+            "unknown": {
+              "unknown": { "0": "25as med", "10": "25as hyp", "30": "25as" }
+            }
           }
         }
       },
       "25au": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25au hyp", "30": "25au" } }
+            "unknown": {
+              "unknown": { "0": "25au med", "10": "25au hyp", "30": "25au" }
+            }
           }
         }
       },
       "40Pt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40P hyp", "30": "40Pt" } }
+            "unknown": {
+              "unknown": { "0": "40P med", "10": "40P hyp", "30": "40Pt" }
+            }
           }
         }
       },
       "3L/4L": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3L/4L hyp", "30": "3L/4L" } }
+            "unknown": {
+              "unknown": { "0": "3L/4L med", "10": "3L/4L hyp", "30": "3L/4L" }
+            }
           }
         }
       },
       "40PBlt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40PBl hyp", "30": "40PBlt" } }
+            "unknown": {
+              "unknown": { "0": "40PBl med", "10": "40PBl hyp", "30": "40PBlt" }
+            }
           }
         }
       }
@@ -14804,119 +14890,153 @@
       "27": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "27 hyp", "30": "27" } }
+            "unknown": {
+              "unknown": { "0": "27 med", "10": "27 hyp", "30": "27" }
+            }
           }
         }
       },
       "28": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "28" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "28" }
+            }
           }
         }
       },
       "30": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "30 hyp", "30": "30" } }
+            "unknown": {
+              "unknown": { "0": "30 med", "10": "30 hyp", "30": "30" }
+            }
           }
         }
       },
       "31": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "31 hyp", "30": "31" } }
+            "unknown": {
+              "unknown": { "0": "31 med", "10": "31 hyp", "30": "31" }
+            }
           }
         }
       },
       "36": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "36 hyp", "30": "36" } }
+            "unknown": {
+              "unknown": { "0": "36 med", "10": "36 hyp", "30": "36" }
+            }
           }
         }
       },
       "37": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "37 hyp", "30": "37" } }
+            "unknown": {
+              "unknown": { "0": "37 med", "10": "37 hyp", "30": "37" }
+            }
           }
         }
       },
       "43": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43 hyp", "30": "43" } }
+            "unknown": {
+              "unknown": { "0": "43 med", "10": "43 hyp", "30": "43" }
+            }
           }
         }
       },
       "44": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "44 hyp", "30": "44" } }
+            "unknown": {
+              "unknown": { "0": "44 med", "10": "44 hyp", "30": "44" }
+            }
           }
         }
       },
       "66": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "66 hyp", "30": "66" } }
+            "unknown": {
+              "unknown": { "0": "66 med", "10": "66 hyp", "30": "66" }
+            }
           }
         }
       },
       "91": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "91 hyp", "30": "91" } }
+            "unknown": {
+              "unknown": { "0": "91 med", "10": "91 hyp", "30": "91" }
+            }
           }
         }
       },
       "93": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "93 hyp", "30": "93" } }
+            "unknown": {
+              "unknown": { "0": "93 med", "10": "93 hyp", "30": "93" }
+            }
           }
         }
       },
       "13*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "13* hyp", "30": "13*" } }
+            "unknown": {
+              "unknown": { "0": "13* med", "10": "13* hyp", "30": "13*" }
+            }
           }
         }
       },
       "22*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "22* hyp", "30": "22*" } }
+            "unknown": {
+              "unknown": { "0": "22* med", "10": "22* hyp", "30": "22*" }
+            }
           }
         }
       },
       "25O": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25O hyp", "30": "25O" } }
+            "unknown": {
+              "unknown": { "0": "25O med", "10": "25O hyp", "30": "25O" }
+            }
           }
         }
       },
       "25a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25a hyp", "30": "25a" } }
+            "unknown": {
+              "unknown": { "0": "25a med", "10": "25a hyp", "30": "25a" }
+            }
           }
         }
       },
       "25b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25b hyp", "30": "25b" } }
+            "unknown": {
+              "unknown": { "0": "25b med", "10": "25b hyp", "30": "25b" }
+            }
           }
         }
       },
       "25f": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25f hyp", "30": "25f" } }
+            "unknown": {
+              "unknown": { "0": "25f med", "10": "25f hyp", "30": "25f" }
+            }
           }
         }
       },
@@ -14930,182 +15050,234 @@
       "29A": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "29A" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "29A" }
+            }
           }
         }
       },
       "32C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "32C hyp", "30": "32C" } }
+            "unknown": {
+              "unknown": { "0": "32C med", "10": "32C hyp", "30": "32C" }
+            }
           }
         }
       },
       "33a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33a hyp", "30": "33a" } }
+            "unknown": {
+              "unknown": { "0": "33a med", "10": "33a hyp", "30": "33a" }
+            }
           }
         }
       },
       "33b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33b hyp", "30": "33b" } }
+            "unknown": {
+              "unknown": { "0": "33b med", "10": "33b hyp", "30": "33b" }
+            }
           }
         }
       },
       "33m": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33m hyp", "30": "33m" } }
+            "unknown": {
+              "unknown": { "0": "33m med", "10": "33m hyp", "30": "33m" }
+            }
           }
         }
       },
       "34a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34a hyp", "30": "34a" } }
+            "unknown": {
+              "unknown": { "0": "34a med", "10": "34a hyp", "30": "34a" }
+            }
           }
         }
       },
       "34b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34b hyp", "30": "34b" } }
+            "unknown": {
+              "unknown": { "0": "34b med", "10": "34b hyp", "30": "34b" }
+            }
           }
         }
       },
       "35Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35Q hyp", "30": "35Q" } }
+            "unknown": {
+              "unknown": { "0": "35Q med", "10": "35Q hyp", "30": "35Q" }
+            }
           }
         }
       },
       "35S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35S hyp", "30": "35S" } }
+            "unknown": {
+              "unknown": { "0": "35S med", "10": "35S hyp", "30": "35S" }
+            }
           }
         }
       },
       "38*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "38* hyp", "30": "38*" } }
+            "unknown": {
+              "unknown": { "0": "38* med", "10": "38* hyp", "30": "38*" }
+            }
           }
         }
       },
       "3LV": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3LV hyp", "30": "3LV" } }
+            "unknown": {
+              "unknown": { "0": "3LV med", "10": "3LV hyp", "30": "3LV" }
+            }
           }
         }
       },
       "42B": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42B hyp", "30": "42B" } }
+            "unknown": {
+              "unknown": { "0": "42B med", "10": "42B hyp", "30": "42B" }
+            }
           }
         }
       },
       "42C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42C hyp", "30": "42C" } }
+            "unknown": {
+              "unknown": { "0": "42C med", "10": "42C hyp", "30": "42C" }
+            }
           }
         }
       },
       "42Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42Q hyp", "30": "42Q" } }
+            "unknown": {
+              "unknown": { "0": "42Q med", "10": "42Q hyp", "30": "42Q" }
+            }
           }
         }
       },
       "42V": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42V hyp", "30": "42V" } }
+            "unknown": {
+              "unknown": { "0": "42V med", "10": "42V hyp", "30": "42V" }
+            }
           }
         }
       },
       "42r": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42r hyp", "30": "42r" } }
+            "unknown": {
+              "unknown": { "0": "42r med", "10": "42r hyp", "30": "42r" }
+            }
           }
         }
       },
       "42t": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42t hyp", "30": "42t" } }
+            "unknown": {
+              "unknown": { "0": "42t med", "10": "42t hyp", "30": "42t" }
+            }
           }
         }
       },
       "43*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43* hyp", "30": "43*" } }
+            "unknown": {
+              "unknown": { "0": "43* med", "10": "43* hyp", "30": "43*" }
+            }
           }
         }
       },
       "43S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43S hyp", "30": "43S" } }
+            "unknown": {
+              "unknown": { "0": "43S med", "10": "43S hyp", "30": "43S" }
+            }
           }
         }
       },
       "92a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92a hyp", "30": "92a" } }
+            "unknown": {
+              "unknown": { "0": "92a med", "10": "92a hyp", "30": "92a" }
+            }
           }
         }
       },
       "92z": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92z hyp", "30": "92z" } }
+            "unknown": {
+              "unknown": { "0": "92z med", "10": "92z hyp", "30": "92z" }
+            }
           }
         }
       },
       "25as": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25as hyp", "30": "25as" } }
+            "unknown": {
+              "unknown": { "0": "25as med", "10": "25as hyp", "30": "25as" }
+            }
           }
         }
       },
       "25au": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25au hyp", "30": "25au" } }
+            "unknown": {
+              "unknown": { "0": "25au med", "10": "25au hyp", "30": "25au" }
+            }
           }
         }
       },
       "40Pt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40P hyp", "30": "40Pt" } }
+            "unknown": {
+              "unknown": { "0": "40P med", "10": "40P hyp", "30": "40Pt" }
+            }
           }
         }
       },
       "3L/4L": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3L/4L hyp", "30": "3L/4L" } }
+            "unknown": {
+              "unknown": { "0": "3L/4L med", "10": "3L/4L hyp", "30": "3L/4L" }
+            }
           }
         }
       },
       "40PBlt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40PBl hyp", "30": "40PBlt" } }
+            "unknown": {
+              "unknown": { "0": "40PBl med", "10": "40PBl hyp", "30": "40PBlt" }
+            }
           }
         }
       }
@@ -15808,119 +15980,153 @@
       "27": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "27 hyp", "30": "27" } }
+            "unknown": {
+              "unknown": { "0": "27 med", "10": "27 hyp", "30": "27" }
+            }
           }
         }
       },
       "28": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "28" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "28" }
+            }
           }
         }
       },
       "30": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "30 hyp", "30": "30" } }
+            "unknown": {
+              "unknown": { "0": "30 med", "10": "30 hyp", "30": "30" }
+            }
           }
         }
       },
       "31": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "31 hyp", "30": "31" } }
+            "unknown": {
+              "unknown": { "0": "31 med", "10": "31 hyp", "30": "31" }
+            }
           }
         }
       },
       "36": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "36 hyp", "30": "36" } }
+            "unknown": {
+              "unknown": { "0": "36 med", "10": "36 hyp", "30": "36" }
+            }
           }
         }
       },
       "37": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "37 hyp", "30": "37" } }
+            "unknown": {
+              "unknown": { "0": "37 med", "10": "37 hyp", "30": "37" }
+            }
           }
         }
       },
       "43": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43 hyp", "30": "43" } }
+            "unknown": {
+              "unknown": { "0": "43 med", "10": "43 hyp", "30": "43" }
+            }
           }
         }
       },
       "44": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "44 hyp", "30": "44" } }
+            "unknown": {
+              "unknown": { "0": "44 med", "10": "44 hyp", "30": "44" }
+            }
           }
         }
       },
       "66": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "66 hyp", "30": "66" } }
+            "unknown": {
+              "unknown": { "0": "66 med", "10": "66 hyp", "30": "66" }
+            }
           }
         }
       },
       "91": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "91 hyp", "30": "91" } }
+            "unknown": {
+              "unknown": { "0": "91 med", "10": "91 hyp", "30": "91" }
+            }
           }
         }
       },
       "93": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "93 hyp", "30": "93" } }
+            "unknown": {
+              "unknown": { "0": "93 med", "10": "93 hyp", "30": "93" }
+            }
           }
         }
       },
       "13*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "13* hyp", "30": "13*" } }
+            "unknown": {
+              "unknown": { "0": "13* med", "10": "13* hyp", "30": "13*" }
+            }
           }
         }
       },
       "22*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "22* hyp", "30": "22*" } }
+            "unknown": {
+              "unknown": { "0": "22* med", "10": "22* hyp", "30": "22*" }
+            }
           }
         }
       },
       "25O": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25O hyp", "30": "25O" } }
+            "unknown": {
+              "unknown": { "0": "25O med", "10": "25O hyp", "30": "25O" }
+            }
           }
         }
       },
       "25a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25a hyp", "30": "25a" } }
+            "unknown": {
+              "unknown": { "0": "25a med", "10": "25a hyp", "30": "25a" }
+            }
           }
         }
       },
       "25b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25b hyp", "30": "25b" } }
+            "unknown": {
+              "unknown": { "0": "25b med", "10": "25b hyp", "30": "25b" }
+            }
           }
         }
       },
       "25f": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25f hyp", "30": "25f" } }
+            "unknown": {
+              "unknown": { "0": "25f med", "10": "25f hyp", "30": "25f" }
+            }
           }
         }
       },
@@ -15934,182 +16140,234 @@
       "29A": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "29A" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "29A" }
+            }
           }
         }
       },
       "32C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "32C hyp", "30": "32C" } }
+            "unknown": {
+              "unknown": { "0": "32C med", "10": "32C hyp", "30": "32C" }
+            }
           }
         }
       },
       "33a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33a hyp", "30": "33a" } }
+            "unknown": {
+              "unknown": { "0": "33a med", "10": "33a hyp", "30": "33a" }
+            }
           }
         }
       },
       "33b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33b hyp", "30": "33b" } }
+            "unknown": {
+              "unknown": { "0": "33b med", "10": "33b hyp", "30": "33b" }
+            }
           }
         }
       },
       "33m": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33m hyp", "30": "33m" } }
+            "unknown": {
+              "unknown": { "0": "33m med", "10": "33m hyp", "30": "33m" }
+            }
           }
         }
       },
       "34a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34a hyp", "30": "34a" } }
+            "unknown": {
+              "unknown": { "0": "34a med", "10": "34a hyp", "30": "34a" }
+            }
           }
         }
       },
       "34b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34b hyp", "30": "34b" } }
+            "unknown": {
+              "unknown": { "0": "34b med", "10": "34b hyp", "30": "34b" }
+            }
           }
         }
       },
       "35Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35Q hyp", "30": "35Q" } }
+            "unknown": {
+              "unknown": { "0": "35Q med", "10": "35Q hyp", "30": "35Q" }
+            }
           }
         }
       },
       "35S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35S hyp", "30": "35S" } }
+            "unknown": {
+              "unknown": { "0": "35S med", "10": "35S hyp", "30": "35S" }
+            }
           }
         }
       },
       "38*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "38* hyp", "30": "38*" } }
+            "unknown": {
+              "unknown": { "0": "38* med", "10": "38* hyp", "30": "38*" }
+            }
           }
         }
       },
       "3LV": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3LV hyp", "30": "3LV" } }
+            "unknown": {
+              "unknown": { "0": "3LV med", "10": "3LV hyp", "30": "3LV" }
+            }
           }
         }
       },
       "42B": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42B hyp", "30": "42B" } }
+            "unknown": {
+              "unknown": { "0": "42B med", "10": "42B hyp", "30": "42B" }
+            }
           }
         }
       },
       "42C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42C hyp", "30": "42C" } }
+            "unknown": {
+              "unknown": { "0": "42C med", "10": "42C hyp", "30": "42C" }
+            }
           }
         }
       },
       "42Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42Q hyp", "30": "42Q" } }
+            "unknown": {
+              "unknown": { "0": "42Q med", "10": "42Q hyp", "30": "42Q" }
+            }
           }
         }
       },
       "42V": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42V hyp", "30": "42V" } }
+            "unknown": {
+              "unknown": { "0": "42V med", "10": "42V hyp", "30": "42V" }
+            }
           }
         }
       },
       "42r": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42r hyp", "30": "42r" } }
+            "unknown": {
+              "unknown": { "0": "42r med", "10": "42r hyp", "30": "42r" }
+            }
           }
         }
       },
       "42t": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42t hyp", "30": "42t" } }
+            "unknown": {
+              "unknown": { "0": "42t med", "10": "42t hyp", "30": "42t" }
+            }
           }
         }
       },
       "43*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43* hyp", "30": "43*" } }
+            "unknown": {
+              "unknown": { "0": "43* med", "10": "43* hyp", "30": "43*" }
+            }
           }
         }
       },
       "43S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43S hyp", "30": "43S" } }
+            "unknown": {
+              "unknown": { "0": "43S med", "10": "43S hyp", "30": "43S" }
+            }
           }
         }
       },
       "92a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92a hyp", "30": "92a" } }
+            "unknown": {
+              "unknown": { "0": "92a med", "10": "92a hyp", "30": "92a" }
+            }
           }
         }
       },
       "92z": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92z hyp", "30": "92z" } }
+            "unknown": {
+              "unknown": { "0": "92z med", "10": "92z hyp", "30": "92z" }
+            }
           }
         }
       },
       "25as": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25as hyp", "30": "25as" } }
+            "unknown": {
+              "unknown": { "0": "25as med", "10": "25as hyp", "30": "25as" }
+            }
           }
         }
       },
       "25au": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25au hyp", "30": "25au" } }
+            "unknown": {
+              "unknown": { "0": "25au med", "10": "25au hyp", "30": "25au" }
+            }
           }
         }
       },
       "40Pt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40P hyp", "30": "40Pt" } }
+            "unknown": {
+              "unknown": { "0": "40P med", "10": "40P hyp", "30": "40Pt" }
+            }
           }
         }
       },
       "3L/4L": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3L/4L hyp", "30": "3L/4L" } }
+            "unknown": {
+              "unknown": { "0": "3L/4L med", "10": "3L/4L hyp", "30": "3L/4L" }
+            }
           }
         }
       },
       "40PBlt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40PBl hyp", "30": "40PBlt" } }
+            "unknown": {
+              "unknown": { "0": "40PBl med", "10": "40PBl hyp", "30": "40PBlt" }
+            }
           }
         }
       }
@@ -16428,119 +16686,153 @@
       "27": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "27 hyp", "30": "27" } }
+            "unknown": {
+              "unknown": { "0": "27 med", "10": "27 hyp", "30": "27" }
+            }
           }
         }
       },
       "28": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "28" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "28" }
+            }
           }
         }
       },
       "30": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "30 hyp", "30": "30" } }
+            "unknown": {
+              "unknown": { "0": "30 med", "10": "30 hyp", "30": "30" }
+            }
           }
         }
       },
       "31": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "31 hyp", "30": "31" } }
+            "unknown": {
+              "unknown": { "0": "31 med", "10": "31 hyp", "30": "31" }
+            }
           }
         }
       },
       "36": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "36 hyp", "30": "36" } }
+            "unknown": {
+              "unknown": { "0": "36 med", "10": "36 hyp", "30": "36" }
+            }
           }
         }
       },
       "37": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "37 hyp", "30": "37" } }
+            "unknown": {
+              "unknown": { "0": "37 med", "10": "37 hyp", "30": "37" }
+            }
           }
         }
       },
       "43": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43 hyp", "30": "43" } }
+            "unknown": {
+              "unknown": { "0": "43 med", "10": "43 hyp", "30": "43" }
+            }
           }
         }
       },
       "44": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "44 hyp", "30": "44" } }
+            "unknown": {
+              "unknown": { "0": "44 med", "10": "44 hyp", "30": "44" }
+            }
           }
         }
       },
       "66": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "66 hyp", "30": "66" } }
+            "unknown": {
+              "unknown": { "0": "66 med", "10": "66 hyp", "30": "66" }
+            }
           }
         }
       },
       "91": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "91 hyp", "30": "91" } }
+            "unknown": {
+              "unknown": { "0": "91 med", "10": "91 hyp", "30": "91" }
+            }
           }
         }
       },
       "93": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "93 hyp", "30": "93" } }
+            "unknown": {
+              "unknown": { "0": "93 med", "10": "93 hyp", "30": "93" }
+            }
           }
         }
       },
       "13*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "13* hyp", "30": "13*" } }
+            "unknown": {
+              "unknown": { "0": "13* med", "10": "13* hyp", "30": "13*" }
+            }
           }
         }
       },
       "22*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "22* hyp", "30": "22*" } }
+            "unknown": {
+              "unknown": { "0": "22* med", "10": "22* hyp", "30": "22*" }
+            }
           }
         }
       },
       "25O": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25O hyp", "30": "25O" } }
+            "unknown": {
+              "unknown": { "0": "25O med", "10": "25O hyp", "30": "25O" }
+            }
           }
         }
       },
       "25a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25a hyp", "30": "25a" } }
+            "unknown": {
+              "unknown": { "0": "25a med", "10": "25a hyp", "30": "25a" }
+            }
           }
         }
       },
       "25b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25b hyp", "30": "25b" } }
+            "unknown": {
+              "unknown": { "0": "25b med", "10": "25b hyp", "30": "25b" }
+            }
           }
         }
       },
       "25f": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25f hyp", "30": "25f" } }
+            "unknown": {
+              "unknown": { "0": "25f med", "10": "25f hyp", "30": "25f" }
+            }
           }
         }
       },
@@ -16554,182 +16846,234 @@
       "29A": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "28 hyp", "30": "29A" } }
+            "unknown": {
+              "unknown": { "0": "28 med", "10": "28 hyp", "30": "29A" }
+            }
           }
         }
       },
       "32C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "32C hyp", "30": "32C" } }
+            "unknown": {
+              "unknown": { "0": "32C med", "10": "32C hyp", "30": "32C" }
+            }
           }
         }
       },
       "33a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33a hyp", "30": "33a" } }
+            "unknown": {
+              "unknown": { "0": "33a med", "10": "33a hyp", "30": "33a" }
+            }
           }
         }
       },
       "33b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33b hyp", "30": "33b" } }
+            "unknown": {
+              "unknown": { "0": "33b med", "10": "33b hyp", "30": "33b" }
+            }
           }
         }
       },
       "33m": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "33m hyp", "30": "33m" } }
+            "unknown": {
+              "unknown": { "0": "33m med", "10": "33m hyp", "30": "33m" }
+            }
           }
         }
       },
       "34a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34a hyp", "30": "34a" } }
+            "unknown": {
+              "unknown": { "0": "34a med", "10": "34a hyp", "30": "34a" }
+            }
           }
         }
       },
       "34b": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "34b hyp", "30": "34b" } }
+            "unknown": {
+              "unknown": { "0": "34b med", "10": "34b hyp", "30": "34b" }
+            }
           }
         }
       },
       "35Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35Q hyp", "30": "35Q" } }
+            "unknown": {
+              "unknown": { "0": "35Q med", "10": "35Q hyp", "30": "35Q" }
+            }
           }
         }
       },
       "35S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "35S hyp", "30": "35S" } }
+            "unknown": {
+              "unknown": { "0": "35S med", "10": "35S hyp", "30": "35S" }
+            }
           }
         }
       },
       "38*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "38* hyp", "30": "38*" } }
+            "unknown": {
+              "unknown": { "0": "38* med", "10": "38* hyp", "30": "38*" }
+            }
           }
         }
       },
       "3LV": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3LV hyp", "30": "3LV" } }
+            "unknown": {
+              "unknown": { "0": "3LV med", "10": "3LV hyp", "30": "3LV" }
+            }
           }
         }
       },
       "42B": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42B hyp", "30": "42B" } }
+            "unknown": {
+              "unknown": { "0": "42B med", "10": "42B hyp", "30": "42B" }
+            }
           }
         }
       },
       "42C": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42C hyp", "30": "42C" } }
+            "unknown": {
+              "unknown": { "0": "42C med", "10": "42C hyp", "30": "42C" }
+            }
           }
         }
       },
       "42Q": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42Q hyp", "30": "42Q" } }
+            "unknown": {
+              "unknown": { "0": "42Q med", "10": "42Q hyp", "30": "42Q" }
+            }
           }
         }
       },
       "42V": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42V hyp", "30": "42V" } }
+            "unknown": {
+              "unknown": { "0": "42V med", "10": "42V hyp", "30": "42V" }
+            }
           }
         }
       },
       "42r": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42r hyp", "30": "42r" } }
+            "unknown": {
+              "unknown": { "0": "42r med", "10": "42r hyp", "30": "42r" }
+            }
           }
         }
       },
       "42t": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "42t hyp", "30": "42t" } }
+            "unknown": {
+              "unknown": { "0": "42t med", "10": "42t hyp", "30": "42t" }
+            }
           }
         }
       },
       "43*": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43* hyp", "30": "43*" } }
+            "unknown": {
+              "unknown": { "0": "43* med", "10": "43* hyp", "30": "43*" }
+            }
           }
         }
       },
       "43S": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "43S hyp", "30": "43S" } }
+            "unknown": {
+              "unknown": { "0": "43S med", "10": "43S hyp", "30": "43S" }
+            }
           }
         }
       },
       "92a": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92a hyp", "30": "92a" } }
+            "unknown": {
+              "unknown": { "0": "92a med", "10": "92a hyp", "30": "92a" }
+            }
           }
         }
       },
       "92z": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "92z hyp", "30": "92z" } }
+            "unknown": {
+              "unknown": { "0": "92z med", "10": "92z hyp", "30": "92z" }
+            }
           }
         }
       },
       "25as": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25as hyp", "30": "25as" } }
+            "unknown": {
+              "unknown": { "0": "25as med", "10": "25as hyp", "30": "25as" }
+            }
           }
         }
       },
       "25au": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "25au hyp", "30": "25au" } }
+            "unknown": {
+              "unknown": { "0": "25au med", "10": "25au hyp", "30": "25au" }
+            }
           }
         }
       },
       "40Pt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40P hyp", "30": "40Pt" } }
+            "unknown": {
+              "unknown": { "0": "40P med", "10": "40P hyp", "30": "40Pt" }
+            }
           }
         }
       },
       "3L/4L": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "3L/4L hyp", "30": "3L/4L" } }
+            "unknown": {
+              "unknown": { "0": "3L/4L med", "10": "3L/4L hyp", "30": "3L/4L" }
+            }
           }
         }
       },
       "40PBlt": {
         "unknown": {
           "unknown": {
-            "unknown": { "unknown": { "10": "40PBl hyp", "30": "40PBlt" } }
+            "unknown": {
+              "unknown": { "0": "40PBl med", "10": "40PBl hyp", "30": "40PBlt" }
+            }
           }
         }
       }
@@ -17493,102 +17837,142 @@
     "30": {
       "28": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "28 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "28 med", "10": "28 hyp" } }
+          }
         }
       },
       "30": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "30 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "30 med", "10": "30 hyp" } }
+          }
         }
       },
       "31": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "31 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "31 med", "10": "31 hyp" } }
+          }
         }
       },
       "36": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "36 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "36 med", "10": "36 hyp" } }
+          }
         }
       },
       "37": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "37 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "37 med", "10": "37 hyp" } }
+          }
         }
       },
       "43": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "43 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "43 med", "10": "43 hyp" } }
+          }
         }
       },
       "7a": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "7a hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "7a med", "10": "7a hyp" } }
+          }
         }
       },
       "91": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "91 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "91 med", "10": "91 hyp" } }
+          }
         }
       },
       "93": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "93 hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "93 med", "10": "93 hyp" } }
+          }
         }
       },
       "33a": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "33a hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "33a med", "10": "33a hyp" } }
+          }
         }
       },
       "33b": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "33b hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "33b med", "10": "33b hyp" } }
+          }
         }
       },
       "33m": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "33m hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "33m med", "10": "33m hyp" } }
+          }
         }
       },
       "34a": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "34a hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "34a med", "10": "34a hyp" } }
+          }
         }
       },
       "34b": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "34b hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "34b med", "10": "34b hyp" } }
+          }
         }
       },
       "35S": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "35S hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "35S med", "10": "35S hyp" } }
+          }
         }
       },
       "42C": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "42C hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "42C med", "10": "42C hyp" } }
+          }
         }
       },
       "42V": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "42V hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "42V med", "10": "42V hyp" } }
+          }
         }
       },
       "43*": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "43* hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "43* med", "10": "43* hyp" } }
+          }
         }
       },
       "92a": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "92a hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "92a med", "10": "92a hyp" } }
+          }
         }
       },
       "92z": {
         "unknown": {
-          "unknown": { "unknown": { "unknown": { "10": "92z hyp" } } }
+          "unknown": {
+            "unknown": { "unknown": { "0": "92z med", "10": "92z hyp" } }
+          }
         }
       }
     }

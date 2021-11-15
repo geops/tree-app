@@ -36,8 +36,8 @@ SELECT DISTINCT processed_forest_ecoregion AS forest_ecoregion,
            ELSE slopes.parsed_slope
        END AS slope,
        target_altitudinal_zone_meta.code AS target_altitudinal_zone,
-       CASE trim(both from target_forest_type) = any(SELECT code FROM foresttype_meta)
-           WHEN TRUE THEN target_forest_type
+       CASE processed_target_forest_type = any(SELECT code FROM foresttype_meta)
+           WHEN TRUE THEN processed_target_forest_type
            ELSE null
        END AS target_forest_type
 FROM
@@ -54,6 +54,7 @@ FROM
                    WHEN target_altitudinal_zone ~ 'hochmontan' THEN 'hochmontan'
                    ELSE trim(target_altitudinal_zone)
                  END as processed_target_altitudinal_zone,
+                 regexp_replace(trim(both from target_forest_type), '  ', ' ') AS processed_target_forest_type,
             *
      FROM
          (SELECT (regexp_matches(regexp_split_to_table(regexp_replace(regexp_replace(coalesce(trim(lower(silver_fir_area)),'nicht relevant'), 'haupt- und nebenareal', 'hauptareal,nebenareal'),'haupt- oder nebenareal', 'hauptareal,nebenareal'),',\s?') ,
@@ -66,7 +67,8 @@ LEFT JOIN altitudinal_zone_meta target_altitudinal_zone_meta ON lower(target_alt
 LEFT JOIN additional_meta ON lower(additional_meta.source) = lower(import.additional)
 LEFT JOIN silver_fir_area_meta ON lower(silver_fir_area_meta.source) = import.processed_silver_fir_area2
 LEFT JOIN relief_meta ON relief_meta.source = import.relief
-LEFT JOIN slopes ON slopes.slope = import.slope;
+LEFT JOIN slopes ON slopes.slope = import.slope
+ORDER BY forest_ecoregion, altitudinal_zone, forest_type, target_altitudinal_zone, target_forest_type;
 
 ----------------------------------------------
 -- export projections_export to json
@@ -186,7 +188,8 @@ COPY (
           GROUP BY forest_ecoregion) SELECT jsonb_object_agg(forest_ecoregion::text, altitudinal_zone.json)
      FROM projections_export
      LEFT JOIN altitudinal_zone USING (forest_ecoregion)
-     WHERE altitudinal_zone.json IS NOT NULL) To '/data/projections.json';
+     WHERE altitudinal_zone.json IS NOT NULL
+) TO '/data/projections.json';
 
 ------------------------------
 ----- types
