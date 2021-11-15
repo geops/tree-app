@@ -98,7 +98,7 @@ function MapLocation() {
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
       let location = features
-        .filter((feature) => feature.properties && feature.properties.code)
+        .filter((feature) => feature.properties?.code !== undefined)
         .reduce(featuresToLocation, { forestTypes: [] });
       location.coordinate = to2056(coordinate);
       if (location.forestTypes.length === 1) {

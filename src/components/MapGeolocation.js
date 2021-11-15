@@ -20,7 +20,7 @@ function MapGeolocation() {
 
   geoloc.on('change:position', () => {
     const coordinate = geoloc.getPosition();
-    map.dispatchEvent({ type: 'click', coordinate });
+    map.dispatchEvent({ type: 'singleclick', coordinate });
     map.getView().setCenter(coordinate);
     geoloc.setTracking(false);
   });

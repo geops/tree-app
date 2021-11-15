@@ -18,7 +18,7 @@ const parseMapViewString = (mapViewString) => {
   return { center, zoom };
 };
 // Swiss extent in EPSG:3857
-const extent = [660000, 5740000, 1180000, 6090000];
+const extent = [660000, 5740000, 1180000, 6110000];
 const maxZoom = 20;
 const minZoom = 2;
 
