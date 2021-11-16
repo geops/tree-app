@@ -6,7 +6,10 @@
   "private": true,
   "dependencies": {
     "@geops/tree-lib": "^2.0.0",
+    "docx": "^7.1.2",
+    "file-saver": "^2.0.5",
     "history": "4.10.1",
+    "html-to-image": "^1.9.0",
     "i18next": "21.4.1",
     "i18next-browser-languagedetector": "6.1.2",
     "lodash.difference": "4.5.0",

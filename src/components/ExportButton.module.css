@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.togglebutton {
+  margin: 10px !important;
+}

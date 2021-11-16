@@ -8,6 +8,7 @@ import { info } from '@geops/tree-lib';
 import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';
+import ExportButton from './ExportButton';
 import styles from './ProjectionResult.module.css';
 
 import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
@@ -141,16 +142,19 @@ function ProjectionResult() {
   return location.altitudinalZone && location.forestType ? (
     <div className={styles.container}>
       {foundProjection ? (
-        <Tab
-          className={styles.tab}
-          menu={{
-            className: styles.tabMenu,
-            inverted: true,
-            secondary: true,
-            widths: finalPanes.length,
-          }}
-          panes={finalPanes}
-        />
+        <>
+          <Tab
+            className={styles.tab}
+            menu={{
+              className: styles.tabMenu,
+              inverted: true,
+              secondary: true,
+              widths: finalPanes.length,
+            }}
+            panes={finalPanes}
+          />
+          <ExportButton />
+        </>
       ) : (
         <>
           <Header className={styles.notFound} inverted>

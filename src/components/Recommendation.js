@@ -54,7 +54,7 @@ function Recommendation({ sameAltitudinalZone }) {
   }, [location, projectionMode, projectionResult, future, sameAltitudinalZone]);
 
   return (
-    <Tab.Pane data-cypress="recommendationPane">
+    <Tab.Pane data-cypress="recommendationPane" id="recommendationPane">
       {r && (
         <Grid columns={3} padded verticalAlign="middle">
           <Grid.Row centered>
