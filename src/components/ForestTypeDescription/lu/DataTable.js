@@ -38,8 +38,8 @@ Icon.propTypes = {
 
 function DataTable({ data, getLabel }) {
   return (
-    <div style={{ width: '100%', maxWidth: 350 }}>
-      <Table basic columns={2} compact>
+    <div style={{ width: '100%', maxWidth: 400 }}>
+      <Table basic columns={2} compact padded>
         <Table.Body>
           {data.reduce(
             (rows, row, index) =>
