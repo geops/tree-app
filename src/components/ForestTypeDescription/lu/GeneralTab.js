@@ -70,7 +70,12 @@ function GeneralTab({ data }) {
             {t('lu.forestType.pioneerTreeTypes')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{data.pioneerTreeTypes}</p>
+            <p>
+              {data.pioneerTreeTypes.map(
+                (ptt, idx, arr) =>
+                  `${ptt}${idx + 1 !== arr.length ? ', ' : ''}`,
+              )}
+            </p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>

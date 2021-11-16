@@ -1,6 +1,7 @@
 CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood text[]);
 CREATE TABLE lu_soil_export (code TEXT, data int[], characteristics text, note text);
 CREATE TABLE lu_vegetation_indicator_export (code TEXT, data int[], note text);
+CREATE TABLE lu_pioneer_export (code TEXT, data text[]);
 
 WITH lu_tillering_data AS (
   SELECT 
@@ -82,7 +83,18 @@ SELECT
   bemerkung AS note
 FROM lu_artengruppen;
 
+WITH lu_pioneer_data AS (
+  SELECT 
+    sto_nr,
+    coalesce(string_to_array(replace(vorwaldbaumarten, ' ', ''), ','), ARRAY['-']) pioneer
+  FROM lu_standorttypen
+)
 
+INSERT INTO lu_pioneer_export 
+SELECT
+  sto_nr AS code,
+  pioneer::text[] as data
+FROM lu_pioneer_data;
 
 COPY
     (SELECT jsonb_build_object(
@@ -96,7 +108,7 @@ COPY
                                                                                             'heightDispersion', hoehenverbreitung,
                                                                                             'vegetation', vegetation,
                                                                                             'vegetationIndicator', array_to_json(vegetation_indicator.data),
-                                                                                            'pioneerTreeTypes', vorwaldbaumarten,
+                                                                                            'pioneerTreeTypes', array_to_json(pioneer_tree_types.data),
                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                             'soil', array_to_json(lu_soil_export.data),
                                                                                             'tillering', jsonb_build_array(array_to_json(natural_forest_types), array_to_json(farm_forest_types)),
@@ -174,6 +186,7 @@ COPY
           LEFT JOIN lu_tillering_export ON lu_standorttypen.sto_nr = lu_tillering_export.code
           LEFT JOIN lu_soil_export ON lu_standorttypen.sto_nr = lu_soil_export.code
           LEFT JOIN lu_vegetation_indicator_export vegetation_indicator ON lu_standorttypen.sto_nr = vegetation_indicator.code
+          LEFT JOIN lu_pioneer_export pioneer_tree_types ON lu_standorttypen.sto_nr = pioneer_tree_types.code
       ), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                               'de', gesgr_deu,
                                                                                               'la', gesgruppe_lat,
