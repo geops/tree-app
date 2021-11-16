@@ -109,7 +109,6 @@ function MapLocation() {
         location.transition = null;
       }
       dispatch(setMapLocation(location, resetFormLocation));
-      dispatch(setFormLocation(location));
       if (isMobile === false && location.forestType) {
         history.push(`/projection${window.location.search}`);
       }
