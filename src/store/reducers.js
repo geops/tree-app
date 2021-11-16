@@ -82,6 +82,9 @@ function tree(state = initialState, action) {
       if (mapLocation.forestType) {
         formLocation.forestType = undefined;
       }
+      if (mapLocation.transitionForestType) {
+        formLocation.transitionForestType = undefined;
+      }
       return { ...state, formLocation, mapLocation, projectionMode: 'm' };
     }
     case SET_MAP_VIEW:
