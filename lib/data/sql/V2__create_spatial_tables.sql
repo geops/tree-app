@@ -13,12 +13,6 @@ ALTER TABLE "altitudinal_zones_1995" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','altitudinal_zones_1995','geom','2056','MULTIPOLYGON',2);
 
-
-CREATE VIEW altitudinal_zones_1995_export AS
-SELECT (code::TEXT || subcode::TEXT)::INT AS code,
-       ST_Transform(geom, 3857) AS geometry
-FROM altitudinal_zones_1995;
-
 ----------------------------------------------
 -- altitudinal_zones_2085_dry
 
@@ -35,11 +29,6 @@ ALTER TABLE "altitudinal_zones_2085_dry" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','altitudinal_zones_2085_dry','geom','2056','MULTIPOLYGON',2);
 
 
-CREATE VIEW altitudinal_zones_2085_dry_export AS
-SELECT (code::TEXT || subcode::TEXT)::INT AS code,
-       ST_Transform(geom, 3857) AS geometry
-FROM altitudinal_zones_2085_dry;
-
 ----------------------------------------------
 -- altitudinal_zones_2085_less_dry
 
@@ -55,11 +44,6 @@ ALTER TABLE "altitudinal_zones_2085_less_dry" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','altitudinal_zones_2085_less_dry','geom','2056','MULTIPOLYGON',2);
 
-
-CREATE VIEW altitudinal_zones_2085_less_dry_export AS
-SELECT (code::TEXT || subcode::TEXT)::INT AS code,
-       ST_Transform(geom, 3857) AS geometry
-FROM altitudinal_zones_2085_less_dry;
 
 ----------------------------------------------
 -- cantonal_boundaries
@@ -112,12 +96,6 @@ ALTER TABLE "forest_ecoregions" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','forest_ecoregions','geom','2056','MULTIPOLYGON',2);
 
 
-CREATE VIEW forest_ecoregions_export AS
-SELECT subcode as code,
-       ST_Transform(ST_Union(ST_MakeValid(geom)),3857) as geometry
-FROM forest_ecoregions
-GROUP BY subcode;
-
 ----------------------------------------------
 -- silver_fir_areas
 
@@ -135,11 +113,6 @@ ALTER TABLE "silver_fir_areas" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','silver_fir_areas','geom','2056','MULTIPOLYGON',2);
 
 
-CREATE VIEW silver_fir_areas_export AS
-SELECT code_ta as code,
-       ST_Transform(geom, 3857) as geometry
-FROM silver_fir_areas;
-
 ----------------------------------------------
 -- Forest types TG
 
@@ -151,6 +124,7 @@ ALTER TABLE "forest_types_tg" ADD PRIMARY KEY (gid);
 
 
 SELECT AddGeometryColumn('','forest_types_tg','geom','2056','MULTIPOLYGON',2);
+
 
 ----------------------------------------------
 -- Forest types LU 
@@ -196,21 +170,38 @@ ALTER TABLE "forest_types_fl" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_fl','geom','2056','MULTIPOLYGON',2);
 
-CREATE VIEW forest_types_export AS
-SELECT nais as code,
-       ST_Transform(geom, 3857) as geometry
-FROM forest_types_tg
-WHERE nais IS NOT NULL
-UNION
-SELECT CASE nais2_txt is null
-           WHEN TRUE THEN nais1_txt
-           ELSE nais1_txt || '(' || nais2_txt || ')'
-       END AS code,
-       ST_Transform(geom, 3857) as geometry
-FROM forest_types_lu
-WHERE nais1_txt IS NOT NULL
-UNION
-SELECT typ_nais AS code,
-       ST_Transform(geom, 3857) as geometry
-FROM forest_types_fl
-WHERE typ_nais IS NOT NULL;
+
+----------------------------------------------
+-- Forest types ZH
+
+CREATE TABLE "forest_types_zh" (gid serial,
+"vecode" float8,
+"ek72" varchar(10),
+"vename" varchar(80),
+"nais" varchar(15),
+"hstufe" varchar(15),
+"shape_area" numeric,
+"shape_len" numeric);
+
+
+ALTER TABLE "forest_types_zh" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','forest_types_zh','geom','2056','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types NE
+
+
+CREATE TABLE "forest_types_ne" (gid serial,
+"code_neuch" float8,
+"associatio" varchar(254),
+"hohenstufe" integer,
+"code_nais" varchar(5));
+
+ALTER TABLE "forest_types_ne" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','forest_types_ne','geom','2056','MULTIPOLYGON',2);
+

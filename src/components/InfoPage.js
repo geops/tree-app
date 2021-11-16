@@ -90,6 +90,11 @@ function InfoPage() {
       title: { content: t('info.contactTitle') },
       content: { content: <InfoContact /> },
     },
+    {
+      key: 'info.changelog',
+      title: { content: t('info.changelogTitle') },
+      content: { content: t('info.changelog') },
+    },
   ];
   return (
     <div className={styles.page}>
