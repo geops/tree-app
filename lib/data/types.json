@@ -62753,7 +62753,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe bis Gruppengrösse.\\nFemelschlag, in Steillagen sehr kleinflächig.\\nU: Analog; variieren je nach vorhandenen Samenbäumen.\\nVerjüngung-Flächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nSchutzwald: Frühzeitig auflichten für Vorverjüngung; dauernde Bodenbedeckung zentral. ",
         "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [25, 50],
+        "tilleringFirwood": ["1/4", "1/2"],
         "tilleringHardwood": [70, 100],
         "vegetationIndicator": [
           null,
@@ -62922,7 +62922,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe bis Gruppengrösse. \\nFemelschlag.\\nU: Wenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig; dadurch Ansamung von Es und BAh.\\nVerjüngung-Flächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nBei Wildverbiss oder schlechtem Wuchs: Es und BAh auf Stock setzen.",
         "heightDispersion": "untermontan; 600-900m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [50, 67],
+        "tilleringFirwood": ["1/2", "2/3"],
         "tilleringHardwood": [60, 90],
         "vegetationIndicator": [
           null,
@@ -63091,7 +63091,7 @@
         "forestryRejuvDev": "Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe. Dauernde Bodenbedeckung zentral. ",
         "heightDispersion": "submontan, untermontan; 400-1000m",
         "pioneerTreeTypes": "HBi",
-        "tilleringFirwood": [25, 50],
+        "tilleringFirwood": ["1/4", "1/2"],
         "tilleringHardwood": [40, 60],
         "vegetationIndicator": [
           null,
@@ -63233,7 +63233,7 @@
         "forestryRejuvDev": "Bu und Ta unter Schirm; Edellaubhölzer in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten durch Verjüngungshiebe. Dauernde Bodenbedeckung zentral. ",
         "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "HBi, VBe",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [40, 50],
         "vegetationIndicator": [
           null,
@@ -63517,7 +63517,7 @@
         "forestryRejuvDev": "In lichtem Bestand für alle Baumarten meist reichlich. In dichteren Beständen genügen leichte Verjüngungshiebe.\\nEinzel- bis Gruppenplenterung.",
         "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [60, 70],
         "vegetationIndicator": [
           null,
@@ -63615,7 +63615,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm; im Lichtschacht oder Seitenlicht; meist freudig.\\nVerjüngung fördern durch kleine Verjüngungshiebe, Schaffen von Lichtschächten und Seitenlicht. Gleichmässiges Auflichten fördert die flächige Verjüngung der Bu. Einzel- bis Gruppenplenterung oder kleinflächiger Femelschlag.\\nU: Überführung in Plenterstruktur ist erwünscht: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten, v.a in der Nähe geeigneter Samenbäume. Einzelbäume mit grösster Lebenserwartung stehen lassen.\\n",
         "heightDispersion": "obermontan; 900-1400m",
         "pioneerTreeTypes": "HBi, VBe",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [30, 50],
         "vegetationIndicator": [
           null,
@@ -63686,7 +63686,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken und im Seitenlicht.\\nDurch kleinflächige Auflichtungen und das Schaffen von Seitenlicht wird meist reiche Ansamung gefördert; für Lichtbaumarten Verjüngungshiebe bis Gruppengrösse;  in steilen Lagen kleinflächiger. \\nGruppenplenterung bis kleinflächiger Femelschlag.\\nU: Oft vorhandene Ansamung durch Verjüngungshiebe begünstigen. Kleinflächig vorgehen, nur in Ausnahmen mehr als Truppgrösse.\\n",
         "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "HBi, RHol",
-        "tilleringFirwood": [33, 33],
+        "tilleringFirwood": ["1/3", "1/3"],
         "tilleringHardwood": [40, 60],
         "vegetationIndicator": [
           null,
@@ -63784,7 +63784,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch schwache Lichtungshiebe oder das Öffnen von Lichtschächten.\\nEinzel- bis Gruppenplenterung.\\nU: Gleichförmige Fi-Bestände häufig. Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta fördern.\\n",
         "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "VBe, HBi, RHol",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [20, 30],
         "vegetationIndicator": [
           null,
@@ -63882,7 +63882,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken und im Seitenlicht.\\nDurch kleinflächige Auflichtungen und das Schaffen von Seitenlicht wird meist reiche Ansamung gefördert; für Lichtbaumarten Verjüngungshiebe bis Gruppengrösse (in steilen Lagen kleinflächiger).\\nGruppenplenterung bis kleinflächiger Femelschlag.\\nU: Oft vorhandene Ansamung durch Verjüngungshiebe begünstigen. Kleinflächig vorgehen, nur in Ausnahmen mehr als Truppgrösse.\\n",
         "heightDispersion": "obermontan; 900-1400m",
         "pioneerTreeTypes": "HBi, RHol",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [30, 40],
         "vegetationIndicator": [
           null,
@@ -64051,7 +64051,7 @@
         "forestryRejuvDev": "In lichtem Bestand für alle Baumarten meist reichlich. \\nIn dichteren Beständen genügen leichte Verjüngungshiebe an verjüngungsgünstigen Stellen.\\nEinzel- bis Gruppenplenterung.",
         "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [40, 60],
         "vegetationIndicator": [
           null,
@@ -64149,7 +64149,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch Lichtungshiebe mit Seiten- und Schachtlicht. Direktes Sonnenlicht und Wind erzeugen Aushagerung.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung.",
         "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "HBi, VBe, MBe",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [30, 40],
         "vegetationIndicator": [
           null,
@@ -64247,7 +64247,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm, im Lichtschacht und Seitenlicht. Verjüngung fördern durch kleinflächige Eingriffe.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche. Bäume mit grösster Lebenserwartung stehen lassen. Hoher Ta-Anteil wertvoll.\\n",
         "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "VBe, RHol",
-        "tilleringFirwood": [67, 67],
+        "tilleringFirwood": ["2/3", "2/3"],
         "tilleringHardwood": [20, 30],
         "vegetationIndicator": [
           null,
@@ -64318,7 +64318,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch Lichtungshiebe mit Seiten- und Schachtlicht. \\nDirektes Sonnenlicht und Wind erzeugen besonders starke Aushagerung.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen.\\n",
         "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "VBe, MBe",
-        "tilleringFirwood": [33, 33],
+        "tilleringFirwood": ["1/3", "1/3"],
         "tilleringHardwood": [10, 20],
         "vegetationIndicator": [
           null,
@@ -64487,7 +64487,7 @@
         "forestryRejuvDev": "Starkes Vorkommen von Hochstauden und Farnen hemmen die Verjüngung. Verjüngung einleiten und fördern durch Schaffung von kleinen Lücken oder Seitenlicht (Schlitze) an verjüngungsgünstigen Stellen (trockene, warme oder erhöhte Stellen, Moderholz).\\nKeine diffusen Auflichtungen, da damit Hochstauden und Farne gefördert werden. Bei Fehlschlagen der Naturverjüngung Stützpunktpflanzungen vornehmen.\\nEinzel- bis Gruppenplenterung. Hoher Ta-Anteil wertvoll. \\n",
         "heightDispersion": "obermontan; 1000-1400m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [67, 67],
+        "tilleringFirwood": ["2/3", "2/3"],
         "tilleringHardwood": [30, 50],
         "vegetationIndicator": [
           null,
@@ -64585,7 +64585,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm, im Lichtschacht oder Seitenlicht.\\nVerjüngung durch kleine Verjüngungshiebe (Es, BAh) oder Schaffen von Lichtschächten oder Seitenlicht (Ta, Bu, BAh, Fi).\\nGruppenplenterung; in flacheren Partien mit viel BAh und Es kleinflächiger Femelschlag.\\nU: Überführung in Plenterstruktur ist erwünscht, im Schutzwald zwingend; früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Hoher Ta-teil wertvoll.\\n",
         "heightDispersion": "obermontan; 900-1400m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [67, 67],
+        "tilleringFirwood": ["2/3", "2/3"],
         "tilleringHardwood": [40, 60],
         "vegetationIndicator": [
           null,
@@ -65038,7 +65038,7 @@
         "forestryRejuvDev": "N: Vorverjüngung und  Anwuchs unter lichtem Schirm und in kleinen Lücken, für Aufwuchs Öffnungen schaffen.\\nVerjüngungshiebe in Gruppen- bis Horstgrösse. Kurze Verjüngungszeiträume.\\nFemelschlag, eher grossflächig.\\nIm Schutzwald: BAh mit grösserem Anteil; Aufwuchs in Lichtschächten. Hier: Kleinflächiger Femelschlag bis Gruppenplenterung.\\n",
         "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 67],
+        "tilleringFirwood": ["1/3", "2/3"],
         "tilleringHardwood": [80, 100],
         "vegetationIndicator": [
           null,
@@ -65136,7 +65136,7 @@
         "forestryRejuvDev": "N: Ta unter Schirm, Übrige in Lücken an günstigen Kleinstandorten.\\nDurch schwache Lichtungshiebe wird genügend Vorverjüngung erreicht; Lichtschächte für BAh. \\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist oberstes Ziel auf diesem nass-sauren Standort! Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten oder Vorhandenes fördern, insbesondere auch Vorwaldarten. Gesunde, stabile Einzelbäume (aller Baumarten) mit grösster Lebenserwartung stehen lassen.",
         "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "VBe, HBi",
-        "tilleringFirwood": [67, 75],
+        "tilleringFirwood": ["2/3", "3/4"],
         "tilleringHardwood": [10, 30],
         "vegetationIndicator": [
           null,
@@ -65234,7 +65234,7 @@
         "forestryRejuvDev": "N: Vorverjüngung und Anwuchs oft unter lichtem Schirm und in kleinen Lücken, Ta unter Schirm, für Aufwuchs Öffnungen schaffen.\\nVerjüngungshiebe in Gruppen- bis Horstgrösse.\\nVerjüngungszeiträume auf BAh ausrichten.\\nFemelschlag, eher grossflächig.\\nIm Schutzwald: BAh und Ta mit grossem Anteil. Hier: Kleinflächiger Femelschlag bis Gruppenplenterung.\\n ",
         "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [67, 75],
+        "tilleringFirwood": ["2/3", "3/4"],
         "tilleringHardwood": [80, 100],
         "vegetationIndicator": [
           null,
@@ -65403,7 +65403,7 @@
         "forestryRejuvDev": "N: In den lichten Beständen gute Verjüngung aller Baumarten. Aufwuchs erfolgt meist einzeln oder truppweise; für Schutzfunktion optimal.\\nEinzel- bis Gruppenplenterung.\\nU: Selten vorhanden; durch Lichtungshieb Vorverjüngung einleiten, falls notwendig. Aufwuchs kleinflächig rasch abdecken.",
         "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [80, 90],
         "vegetationIndicator": [
           null,
@@ -65501,7 +65501,7 @@
         "forestryRejuvDev": "N: Vereinzelt unter Schirm, schon bei schwachen Auflichtungen freudig.\\nAuf geeigneten Flächen Verjüngungshiebe bis Gruppengrösse, sehr kurze Verjüngungszeiträume.\\nGrossflächiger Femelschlag.\\nIm Schutzwald: Auf Dauerbestockung achten! Kleinflächig arbeiten. Kleinflächiger Femelschlag.\\nU: Grosse Gefahr des Windwurfs in Fichten-Altbeständen! Vorverjüngung durch Auflichtung einleiten. Sorgfältiges Öffnen, auf vorhandene Ansamung und windgeschützte Stellen ausrichten. Räumung des Altbestandes Anfang Dickung (labile Phase mit gelichtetem Bestand möglichst kurz halten). Schlagränder mit langkronigen Einzelbäumen.",
         "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [67, 75],
+        "tilleringFirwood": ["2/3", "3/4"],
         "tilleringHardwood": [80, 100],
         "vegetationIndicator": [
           null,
@@ -65572,7 +65572,7 @@
         "forestryRejuvDev": "N: Ta unter Schirm, Übrige vereinzelt; schon bei schwachen Auflichtungen Lbh freudig.\\nAuf geeigneten Flächen Verjüngungshiebe bis Gruppengrösse, eher kurze Verjüngungszeiträume.\\nKleinflächiger Femelschlag oder Gruppenplenterung.\\nIm Schutzwald: Auf Dauerbestockung achten! Kleinflächig arbeiten. Gruppenplenterung.\\nU: Grosse Gefahr des Windwurfs in Fichten-Altbeständen! Vorverjüngung durch Auflichtung einleiten. Sorgfältiges Öffnen auf vorhandene Ansamung und windgeschützte Stellen ausrichten. Räumung des Altbestandes Anfang Dickung. ",
         "heightDispersion": "obermontan; 900-1300m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [67, 75],
+        "tilleringFirwood": ["2/3", "3/4"],
         "tilleringHardwood": [60, 100],
         "vegetationIndicator": [
           null,
@@ -65741,7 +65741,7 @@
         "forestryRejuvDev": "N: Unter Schirm; in kleinen Öffnungen reichlich. Durch Lichtungshiebe wird genügende Verjüngung erreicht. Verjüngungsflächen bis Horstgrösse.\\nMittel- bis grossflächiger Femelschlag (oft ausgedehnte Flächen in ebener Lage).\\nU: Durch sorgfältige Lichtungshiebe Vorverjüngung auslösen; v.a. um bestehende Verjüngungsflächen. Hauptwindrichtung beachten. Räumung des Altbestandes in Gruppengrösse ab Anfang Dickung.\\n",
         "heightDispersion": "submontan, untermontan; 400-900m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [67, 75],
+        "tilleringFirwood": ["2/3", "3/4"],
         "tilleringHardwood": [80, 100],
         "vegetationIndicator": [
           null,
@@ -66008,7 +66008,7 @@
         "forestryRejuvDev": "N: Unter Schirm; in kleinen Öffnungen reichlich. Durch Lichtungshiebe wird genügende Verjüngung erreicht. Verjüngungsflächen bis Horstgrösse.\\nMittel- bis grossflächiger Femelschlag.\\nU: Durch sorgfältige Lichtungshiebe Vorverjüngung auslösen; v.a. um bestehende Verjüngungsflächen. Hauptwindrichtung beachten. Räumung des Altbestandes in Gruppengrösse ab Anfang Dickung.\\n",
         "heightDispersion": "obermontan; 900-1110m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [67, 75],
+        "tilleringFirwood": ["2/3", "3/4"],
         "tilleringHardwood": [60, 90],
         "vegetationIndicator": [
           null,
@@ -66106,7 +66106,7 @@
         "forestryRejuvDev": "N: Ta unter Schirm, Edellaubhölzer in Lücken an günstigen Kleinstandorten.\\nDurch schwache Lichtungshiebe wird genügend Vorverjüngung erreicht; Lichtschächte für Es, BAh, HBi und VBe. \\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist oberstes Ziel auf diesem nass-sauren Standort! Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten oder Vorhandenes fördern. Gesunde, stabile Einzelbäume (aller Baumarten) mit grösster Lebenserwartung stehen lassen. SEi-Flächen rein (nur submontan).",
         "heightDispersion": "submontan, untermontan; 600-900m",
         "pioneerTreeTypes": "VBe, HBi, Wei",
-        "tilleringFirwood": [50, 67],
+        "tilleringFirwood": ["1/2", "2/3"],
         "tilleringHardwood": [20, 40],
         "vegetationIndicator": [
           null,
@@ -66177,7 +66177,7 @@
         "forestryRejuvDev": "N: Auf aktiven Böden: Es unter Schirm, in Öffnungen reichlich; übrige Arten vereinzelt. Auf sauren Böden: Ta und auch Fi unter Schirm.\\nDurch Lichtungshieb wird reichliche Vorverjüngung erreicht.",
         "heightDispersion": "submontan, untermontan; 400-1000m",
         "pioneerTreeTypes": "VBe, HBi",
-        "tilleringFirwood": [67, 75],
+        "tilleringFirwood": ["2/3", "3/4"],
         "tilleringHardwood": [70, 80],
         "vegetationIndicator": [
           null,
@@ -66559,7 +66559,7 @@
         "forestryRejuvDev": "N: Ta und Fi unter Schirm und in Lücken.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta-Samenbäume konsequent begünstigen; wenn solche fehlen, Ta unterpflanzen.",
         "heightDispersion": "obermontan, hochmontan; 900-1500m",
         "pioneerTreeTypes": "VBe",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [0, 5],
         "vegetationIndicator": [
           2,
@@ -66630,7 +66630,7 @@
         "forestryRejuvDev": "N: Ta und Fi unter Schirm und in Lücken.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta-Samenbäume konsequent begünstigen.",
         "heightDispersion": "obermontan, hochmontan; 900-1500m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [0, 10],
         "vegetationIndicator": [
           3,
@@ -66728,7 +66728,7 @@
         "forestryRejuvDev": "N: Ta und Fi unter Schirm und in Lücken.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen. Ta-Samenbäume begünstigen; wenn solche fehlen, Ta unterpflanzen.",
         "heightDispersion": "submontan, untermontan; 500-1000m",
         "pioneerTreeTypes": "VBe",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [0, 10],
         "vegetationIndicator": [
           2,
@@ -66799,7 +66799,7 @@
         "forestryRejuvDev": "N: Neben Bu und Ta auch Fi unter lichtem Schirm; Lichtbaumarten in Lücken.\\nU: Bei besonderer Schutzfunktion punktuell auflichten.",
         "heightDispersion": "obermontan, hochmontan; 1100-1600m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 33],
+        "tilleringFirwood": ["1/3", "1/3"],
         "tilleringHardwood": [10, 20],
         "vegetationIndicator": [
           null,
@@ -66870,7 +66870,7 @@
         "forestryRejuvDev": "N: Ta und Fi vorwiegend auf trockeneren Kleinstandorten mit wenig Hochstauden sowie auf Moderholz; Verjüngung generell schwierig.\\nFörderung durch Schlitze an besonnten Rändern. In Schattenlagen auf Seitenlicht achten. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden.\\nFür Moderholz Bäume quer in Blössen hineinfällen.\\nGruppenplenterung.\\nU: Wirksame Ta-Förderung hat auf diesem Standort oberste Priorität. Dazu in der Umgebung Samen tragender Ta günstige Keim- und Aufwuchsbedingungen schaffen. Die spärliche Verjüngung gegen Wildverbiss schützen. Falls Naturverjüngung nicht erfolgreich: Stützpunktpflanzungen mit Ta anlegen. Alle Ta als Strukturträger und Samenbäume stehen lassen!",
         "heightDispersion": "obermontan, hochmontan; 1200- 1500m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [10, 20],
         "vegetationIndicator": [
           2,
@@ -66968,7 +66968,7 @@
         "forestryRejuvDev": "N: Ta und meist auch Fi unter lichtem Schirm. Konkurrenz durch Hochstauden und Farne kann Verjüngung behindern.\\nDurch schlitzartige Öffnungen Verjüngung auf geeigneten Kleinstandorten (erhöhte Stellen, Moderholz u.a.) einleiten. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden; Rotten zusammenhalten.\\nIn Schattenlagen auf Richtung des Seitenlichts achten. Moderholz liegen lassen.\\nGebirgsplenterung.\\nU: Verbesserung der häufig einschichtigen Strukturen durch punktuelle Lichtungshiebe und Begünstigung von Verjüngungsansätzen, insbesondere in der Umgebung Samen tragender Ta. Falls Naturverjüngung nicht erfolgreich: Stützpunktpflanzungen mit Ta anlegen.\\nAlle Ta als Strukturträger und Samenbäume stehen lassen!",
         "heightDispersion": "hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 50],
+        "tilleringFirwood": ["1/3", "1/2"],
         "tilleringHardwood": [10, 20],
         "vegetationIndicator": [
           null,
@@ -67066,7 +67066,7 @@
         "forestryRejuvDev": "N: Ta und meist auch Fi unter lichtem Schirm.\\nDurch schlitzartige Öffnungen wird Verjüngung gefördert. Verjüngungsgünstige Kleinstandorte meist vorhanden: Stöcke, Kuppen. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden.",
         "heightDispersion": "hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 33],
+        "tilleringFirwood": ["1/3", "1/3"],
         "tilleringHardwood": [5, 10],
         "vegetationIndicator": [
           null,
@@ -67164,7 +67164,7 @@
         "forestryRejuvDev": "N: Ta und meist auch Fi v.a. in Schlitzen an besonnten Rändern. Oft Konkurrenz durch üppige Hochstauden und Farne. \\nDurch schlitzartige Öffnungen wird Verjüngung gefördert. In Schattenlagen auf Seitenlicht achten. Diffuse Auflichtung und Löcherhiebe wegen Förderung der Hochstauden und Schneeablagerung vermeiden.\\nModerholz für gute Verjüngung unentbehrlich, dazu Bäume quer in Blössen hineinfällen. Zeit lassen!\\nGruppenplenterung.\\nU: Verbesserung der häufig einschichtigen Strukturen durch punktuelle Lichtungshiebe und Begünstigung von Verjüngungsansätzen, insbesondere in der Umgebung Samen tragender Ta. Falls Naturverjüngung nicht erfolgreich: Stützpunktpflanzungen mit Ta anlegen. Alle Ta als Strukturträger und Samenbaum stehen lassen!",
         "heightDispersion": "hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [50, 67],
+        "tilleringFirwood": ["1/2", "2/3"],
         "tilleringHardwood": [10, 20],
         "vegetationIndicator": [
           null,
@@ -67306,7 +67306,7 @@
         "forestryRejuvDev": "Ta und Fi unter Schirm in meist lichten Beständen.",
         "heightDispersion": "hochmontan; 1400-1600m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [20, 25],
+        "tilleringFirwood": ["1/5", "1/4"],
         "tilleringHardwood": [0, 10],
         "vegetationIndicator": [
           null,
@@ -67999,7 +67999,7 @@
         "forestryRejuvDev": "In lichtem Bestand für alle Baumarten meist reichlich; in gleichförmigen Beständen oft gering. \\nEinzel- bis Gruppenplenterung.\\n",
         "heightDispersion": "obermontan, hochmontan; 1300-1600m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [25, 33],
+        "tilleringFirwood": ["1/4", "1/3"],
         "tilleringHardwood": [10, 20],
         "vegetationIndicator": [
           null,
@@ -68381,7 +68381,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm und im Lichtschacht. Verjüngung fördern durch schwache Lichtungshiebe.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen Variante. \\nVariante: SEi-Flächen rein.\\n",
         "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "HBi, VBe, Wei, ZPa",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [30, 50],
         "vegetationIndicator": [
           null,
@@ -68790,7 +68790,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer bei geringer Bodenauflage in Lücken.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten in Lichtschächten auf günstigen Kleinstandorten.\\nGruppen-Plenterung oder kleinflächiger Femelschlag.\\nU: Vorhandenes Edellaubholz konsequent fördern; Auflichtung für Vorverjüngung von Bu, Ta und Fi. \\nAb Anfang Dickung weiteres starkes Auflichten; Räumung des Altbestandes Ende Dickung.\\nVariante: In Windwurf-Flächen oder Umwandlungsbeständen >1/2 ha: flächig räumen für SEi-Reinbestände mit Nebenbestand von WLi und Hagebuche; diese später pflanzen.\\n",
         "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [50, 70],
         "vegetationIndicator": [
           null,
@@ -69182,7 +69182,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken.\\nMit Lichtungshieben wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Vorhandene Ansamung begünstigen, v.a. von BAh und Es!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig; Ansamung von Es und BAh.\\nVerjüngungsflächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\n",
         "heightDispersion": "submontan; 400-700m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [50, 67],
+        "tilleringFirwood": ["1/2", "2/3"],
         "tilleringHardwood": [70, 80],
         "vegetationIndicator": [
           null,
@@ -69280,7 +69280,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm, im Lichtschacht und Seitenlicht. Verjüngung fördern durch schwache Lich-tungshiebe und kleinflächige Eingriffe zur Schaffung von Seitenlicht und Lichtschächten.\\nEinzel- bis Gruppenplenterung.\\nU: Überführung in Plenterstruktur ist zentral: Früh punktuelle Vorverjüngung auf ganzer Fläche einleiten. Einzelbäume mit grösster Lebenserwartung stehen lassen.\\n",
         "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "HBi, VBe, ZPa",
-        "tilleringFirwood": [50, 67],
+        "tilleringFirwood": ["1/2", "2/3"],
         "tilleringHardwood": [20, 40],
         "vegetationIndicator": [
           null,
@@ -69378,7 +69378,7 @@
         "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken.\\nMit Lichtungshieben wird v.a. Bu gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nU: Vorhandene Ansamung begünstigen!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. Ohne Bu grösserflächig öffnen zur Ansamung von Es und BAh.\\nVerjüngungs-Flächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nBei Wildverbiss oder schlechtem Wuchs: Es und BAh auf Stock setzen.\\n",
         "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [40, 60],
         "vegetationIndicator": [
           null,
@@ -69476,7 +69476,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Edellaubhölzer in Lücken, wenn Auflage gering.\\nMit Lichtungshieben Bu-Verjüngung fördern; Lichtbaumarten auf günstigen Kleinstandorten.\\nGruppen-Plenterung oder kleinflächiger Femelschlag.\\nU: Vorhandenes Edellaubholz konsequent fördern. Auflichtung für Vorverjüngung von Bu, Ta und Fi. \\nWenn Bu grossflächig fehlt: nesterweise unterpflanzen.\\nAb Anfang Dickung weiteres starkes Auflichten; Räumung des Altbestandes Ende Dickung.\\n",
         "heightDispersion": "untermontan; 500-900m",
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wei",
-        "tilleringFirwood": [50, 67],
+        "tilleringFirwood": ["1/2", "2/3"],
         "tilleringHardwood": [40, 60],
         "vegetationIndicator": [
           null,
@@ -69574,7 +69574,7 @@
         "forestryRejuvDev": "N: Hauptbaumarten unter Schirm; Übrige in Lücken. Verjüngung durch Lichtungshiebe einleiten.\\nGrosser Spielraum bezüglich Verjüngungszeitraum, für Lichtbaumarten kurz.\\nFemelschlag. Mit Ta und Fi kleinflächig; auch Plenterung empfohlen.\\nU: Vorhandenes Edellaubholz konsequent fördern; Auflichtung für Vorverjüngung von Bu, Ta und Fi. Wenn Bu grossflächig fehlt: nesterweise unterpflanzen. Ab Anfang Dickung weiteres starkes Auflichten; Räumung des Altbestandes Ende Dickung.\\n",
         "heightDispersion": "untermontan; 500-1000m",
         "pioneerTreeTypes": "VBe, HBi, ZPa, Wie",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [40, 60],
         "vegetationIndicator": [
           null,
@@ -69672,7 +69672,7 @@
         "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken.\\nMit kurzen Verjüngungszeiträumen werden die lichtbedürftigeren Mischbaumarten gefördert.\\nFemelschlag.\\n",
         "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "HBi, VBe, Wei",
-        "tilleringFirwood": [50, 50],
+        "tilleringFirwood": ["1/2", "1/2"],
         "tilleringHardwood": [50, 70],
         "vegetationIndicator": [
           null,
@@ -69841,7 +69841,7 @@
         "forestryRejuvDev": "N: Bu unter Schirm, Übrige in Lücken.\\nBu durch kleinflächige Auflichtungen; Edellaubhölzer durch Verjüngungshiebe bis Horstgrösse.\\nKurze Verjüngungszeiträume für lichtbedürftige Baumarten.\\nFemelschlag.\\nU: Oft vorhandene Ansamung von BAh und Es begünstigen durch flächige Verjüngungshiebe.\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen.\\nVerjüngungs-Flächen mit Edellaubholz spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen.\\nBei Wildverbiss oder schlechtem Wuchs: Es + BAh auf Stock setzen.\\n\\n",
         "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [33, 33],
+        "tilleringFirwood": ["1/3", "1/3"],
         "tilleringHardwood": [40, 70],
         "vegetationIndicator": [
           null,
@@ -69939,7 +69939,7 @@
         "forestryRejuvDev": "N: Bu und Ta unter Schirm, Übrige in Lücken.\\nMit Lichtungshieben werden v.a. Bu und Ta gefördert, mit flächigen Verjüngungshieben bis Gruppengrösse die Lichtbaumarten; Ausrichtung der Hiebsränder zur Förderung der Baumartenvielfalt variieren.\\nFemelschlag.\\nIn schattigen Lagen bei hohem Ta-Anteil auch Plenterung empfohlen.\\nU: Vorhandene Ansamung begünstigen!\\nWenn Bu vorhanden, dann kleinflächig auflichten zur Vorverjüngung, Ansamung in kleinen Säumen. \\nOhne Bu grösserflächig; Ansamung von Es und BAh. Auch gruppenweise Bu unterpflanzen, v.a. in Brombeeren.\\nVerjüngungsflächen mit BAh und Es spätestens Ende Dickung kräftig erweitern (ca. 1 Baumlänge), Bu erlaubt langsameres Vorgehen. Bu-Verjüngungen behutsam erweitern; mit Es und BAh zügig.\\nBei Wildverbiss oder schlechtem Wuchs: Es und BAh auf Stock setzen.\\n",
         "heightDispersion": "untermontan; 600-1000m",
         "pioneerTreeTypes": "−",
-        "tilleringFirwood": [50, 67],
+        "tilleringFirwood": ["1/2", "2/3"],
         "tilleringHardwood": [50, 70],
         "vegetationIndicator": [
           null,

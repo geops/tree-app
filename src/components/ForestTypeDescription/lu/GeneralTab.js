@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import { Table } from 'semantic-ui-react';
 import DataTable from './DataTable';
-import Legend from '../Legend';
 import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
@@ -38,14 +37,6 @@ function GeneralTab({ data }) {
       <Table.Body>
         <Table.Row>
           <Table.HeaderCell>
-            {t('forestTypeDiagram.legend.label')}
-          </Table.HeaderCell>
-          <Table.Cell colSpan="3">
-            <Legend rare={false} title={false} />
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>
             {t('lu.forestType.tilleringHardwood')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
@@ -60,10 +51,18 @@ function GeneralTab({ data }) {
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>
-            {t('lu.forestType.tilleringFirwood')}
+            {`${t('lu.forestType.tilleringFirwood')} min (opt)`}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <TilleringSingle data={data.tilleringFirwood} />
+            <p>
+              {data.tilleringFirwood.every((val) => !val)
+                ? '-'
+                : `${data.tilleringFirwood[0]}${
+                    data.tilleringFirwood[1]
+                      ? ` (${data.tilleringFirwood[1]})`
+                      : ''
+                  }`}
+            </p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -152,7 +151,9 @@ function GeneralTab({ data }) {
             <DataTable
               data={data.vegetationIndicator}
               getLabel={(i) =>
-                t(`lu.forestType.vegetationIndicator.${vegetationMapping[i]}`)
+                `${vegetationMapping[i]}: ${t(
+                  `lu.forestType.vegetationIndicator.${vegetationMapping[i]}`,
+                )}`
               }
             />
           </Table.Cell>
@@ -162,7 +163,11 @@ function GeneralTab({ data }) {
           <Table.Cell colSpan="3">
             <DataTable
               data={data.soil}
-              getLabel={(i) => t(`lu.forestType.soil.${soilMapping[i]}`)}
+              getLabel={(i) =>
+                `${soilMapping[i]}: ${t(
+                  `lu.forestType.soil.${soilMapping[i]}`,
+                )}`
+              }
             />
           </Table.Cell>
         </Table.Row>
@@ -188,7 +193,7 @@ GeneralTab.propTypes = {
       PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
     ),
     tilleringFirwood: PropTypes.arrayOf(PropTypes.number),
-    tilleringHardwood: PropTypes.arrayOf(PropTypes.number),
+    tilleringHardwood: PropTypes.arrayOf(PropTypes.string),
     vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
 };

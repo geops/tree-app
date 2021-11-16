@@ -102,7 +102,7 @@ function ForestTypeTab({ data }) {
                 </Table.Row>,
               ];
         }, [])}
-        <Table.Row>
+        {/* <Table.Row>
           <Table.HeaderCell>
             {t('lu.forestType.tilleringFirwood')}
           </Table.HeaderCell>
@@ -113,7 +113,7 @@ function ForestTypeTab({ data }) {
               data={ft.tilleringFirwood}
             />
           ))}
-        </Table.Row>
+        </Table.Row> */}
       </Table.Body>
     </Table>
   );
