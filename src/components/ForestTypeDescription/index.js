@@ -20,6 +20,9 @@ function ForestTypeDescription() {
   const data = getForestTypeData(code, activeProfile);
   const { t } = useTranslation();
 
+  console.log(activeProfile);
+  console.log(getForestTypeData(code, activeProfile));
+
   return data ? (
     <>
       {activeProfile === 'ch' && <ChForestTypesDescription data={data} />}
