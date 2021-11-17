@@ -68,7 +68,7 @@ export function TilleringGrid({ height }) {
       {[...Array(11).keys()].map((i) => {
         const factor = i / 10;
         return (
-          <div key={i}>
+          <g key={i}>
             <line
               x1={BAR_WIDTH_100 * factor + 40}
               y1="0"
@@ -88,7 +88,7 @@ export function TilleringGrid({ height }) {
                 {`${i * 10}%`}
               </text>
             )}
-          </div>
+          </g>
         );
       })}
     </>

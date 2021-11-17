@@ -44,7 +44,10 @@ const featuresToLocation = (location, f) => {
     } catch (error) {
       // ignore missing forest types
     }
-    if (forestTypeInfo) {
+    if (
+      forestTypeInfo &&
+      !location.forestTypes.find((t) => t.forestType === forestType)
+    ) {
       return {
         ...location,
         forestTypes: [
@@ -95,7 +98,7 @@ function MapLocation() {
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
       let location = features
-        .filter((feature) => feature.properties && feature.properties.code)
+        .filter((feature) => feature.properties?.code !== undefined)
         .reduce(featuresToLocation, { forestTypes: [] });
       location.coordinate = to2056(coordinate);
       if (location.forestTypes.length === 1) {
@@ -130,7 +133,11 @@ function MapLocation() {
       <Vector source={vectorSource} zIndex={999} />
       <Modal
         className={styles.modal}
+        closeIcon
         open={!mapLocation.forestType && mapLocation.forestTypes?.length > 1}
+        onClose={() =>
+          dispatch(setMapLocation({ ...mapLocation, forestTypes: [] }))
+        }
       >
         <Modal.Header>{t('forestType.select')}</Modal.Header>
         <Modal.Content>

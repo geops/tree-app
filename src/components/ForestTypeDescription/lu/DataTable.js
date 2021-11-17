@@ -2,32 +2,73 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Table } from 'semantic-ui-react';
 
-import diagramStyles from '../Diagram.module.css';
+const Icon = ({ value }) => (
+  <div style={{ display: 'flex', alignItems: 'center' }}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height={16}
+      width={16}
+      viewBox="0 0 16 16"
+    >
+      {value === 1 && (
+        <>
+          <line y1={0} y2={16} x1={8} x2={8} stroke="black" strokeWidth={2} />
+          <line y1={8} y2={8} x1={0} x2={16} stroke="black" strokeWidth={2} />
+        </>
+      )}
+      {value === 2 && (
+        <rect
+          height={16}
+          width={16}
+          stroke="black"
+          strokeWidth={2}
+          fill="none"
+        />
+      )}
+      {value === 3 && (
+        <rect height={16} width={16} stroke="black" strokeWidth={2} />
+      )}
+    </svg>
+  </div>
+);
 
-const soilStyleMapping = {
-  1: diagramStyles.rareBackground,
-  2: diagramStyles.mediumBackground,
-  3: diagramStyles.oftenBackground,
+Icon.propTypes = {
+  value: PropTypes.number.isRequired,
 };
 
 function DataTable({ data, getLabel }) {
   return (
-    <Table basic columns={2} compact>
-      <Table.Body>
-        {data
-          .map((value, index) => ({
-            label: getLabel(index),
-            value: soilStyleMapping[value],
-          }))
-          .filter((row) => row.value)
-          .map((row, index) => (
-            <Table.Row key={getLabel(index)}>
-              <Table.Cell>{row.label}</Table.Cell>
-              <Table.Cell className={row.value} />
-            </Table.Row>
-          ))}
-      </Table.Body>
-    </Table>
+    <div style={{ width: '100%', maxWidth: 400 }}>
+      <Table basic columns={2} compact padded>
+        <Table.Body>
+          {data.reduce(
+            (rows, row, index) =>
+              row
+                ? [
+                    ...rows,
+                    <Table.Row key={getLabel(index)}>
+                      <Table.Cell>
+                        <div
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-around',
+                          }}
+                        >
+                          <span style={{ width: '90%', maxWidth: 300 }}>
+                            {getLabel(index)}
+                          </span>
+                          <Icon value={row} />
+                        </div>
+                      </Table.Cell>
+                    </Table.Row>,
+                  ]
+                : rows,
+            [],
+          )}
+        </Table.Body>
+      </Table>
+    </div>
   );
 }
 

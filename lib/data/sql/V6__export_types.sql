@@ -1,4 +1,4 @@
-CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood int[]);
+CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood text[]);
 CREATE TABLE lu_soil_export (code TEXT, data int[], characteristics text, note text);
 CREATE TABLE lu_vegetation_indicator_export (code TEXT, data int[], note text);
 CREATE TABLE lu_pioneer_export (code TEXT, data text[]);
@@ -35,8 +35,8 @@ WITH lu_tillering_data AS (
     coalesce(string_to_array(replace(Wei, '*', ''), '-'), ARRAY[null, null]) Wei,
     Lbh_min::int,
     Lbh_opt::int,
-    ((split_part(Ta_min, '/', 1)::float / split_part(Ta_min, '/', 2)::float) * 100)::int AS Ta_min,
-    ((split_part(Ta_opt, '/', 1)::float / split_part(Ta_opt, '/', 2)::float) * 100)::int AS Ta_opt
+    Ta_min,
+    Ta_opt
   FROM lu_bestockung
 ),
 lu_tillering_natural_forest_data AS (
@@ -113,7 +113,7 @@ COPY
                                                                                             'soil', array_to_json(lu_soil_export.data),
                                                                                             'tillering', jsonb_build_array(array_to_json(natural_forest_types), array_to_json(farm_forest_types)),
                                                                                             'tilleringHardwood', array_to_json(hardwood),
-                                                                                            'tilleringFirwood', array_to_json(firwood),
+                                                                                            'tilleringFirwood', firwood,
                                                                                             'expoAndAspect', jsonb_build_array(NNO_12,
                                                                                                                             NNO_25,
                                                                                                                             NNO_37,
