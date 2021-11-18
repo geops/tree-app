@@ -2,6 +2,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { toLonLat } from 'ol/proj';
 import { saveAs } from 'file-saver';
 import {
   Document,
@@ -17,6 +18,7 @@ import {
 import { list, info } from '@geops/tree-lib';
 import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
 import Button from './Button';
+import docxStyle from '../utils/docxStyles';
 
 function getAZ(altitudinalZone) {
   if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
@@ -76,11 +78,16 @@ function getColumn(scenario, projection, language, t) {
   );
 }
 
-const createTitle = (location, language, t) =>
-  new Paragraph({
-    text: `${location.info.code}: ${location.info[language]}`,
-    heading: HeadingLevel.HEADING_2,
-  });
+const createTitle = (text, heading = 'HEADING_2', children) => {
+  const options = {
+    text,
+    heading: HeadingLevel[heading],
+  };
+  if (children) {
+    options.children = children;
+  }
+  return new Paragraph(options);
+};
 
 const createTable = (
   location,
@@ -228,13 +235,21 @@ const createTable = (
 
 function ExportButton({ sameAltitudinalZone }) {
   const { t, i18n } = useTranslation();
-  const { location, projectionMode, projectionResult, latinActive } =
-    useSelector((state) => ({
-      location: state.location,
-      projectionMode: state.projectionMode,
-      projectionResult: state.projectionResult,
-      latinActive: state.latinActive,
-    }));
+  const {
+    location,
+    projectionMode,
+    projectionResult,
+    latinActive,
+    mapLocation,
+  } = useSelector((state) => ({
+    location: state.location,
+    projectionMode: state.projectionMode,
+    projectionResult: state.projectionResult,
+    latinActive: state.latinActive,
+    mapLocation: state.mapLocation,
+  }));
+
+  console.log(mapLocation);
 
   // const recommendation = useMemo(() => {
   //   let projections;
@@ -266,7 +281,20 @@ function ExportButton({ sameAltitudinalZone }) {
   // console.log(recommendation);
   const exportDocX = useCallback(() => {
     if (projectionResult) {
-      const title = createTitle(location, i18n.language, t, latinActive);
+      const mainTitle = createTitle(
+        t('export.recommendationMainTitle'),
+        'HEADING_1',
+      );
+      const date = new Paragraph(
+        `${new Date().toLocaleDateString(
+          `${i18n.language}-${i18n.language.toUpperCase()}`,
+        )}`,
+      );
+      const locationCoords = toLonLat(mapLocation.coordinate.reverse()).reduce(
+        (string, val, idx) =>
+          idx !== 0 ? `${string}, ${val.toFixed(3)}` : `${val.toFixed(3)}`,
+      );
+      const coordinates = new Paragraph(locationCoords);
       const table = createTable(
         location,
         projectionResult,
@@ -276,22 +304,10 @@ function ExportButton({ sameAltitudinalZone }) {
         latinActive,
       );
       const doc = new Document({
+        style: docxStyle,
         sections: [
           {
-            children: [
-              {
-                children: [
-                  new TextRun({
-                    text: 'Some monospaced content',
-                    font: {
-                      name: 'Monospace',
-                    },
-                  }),
-                ],
-              },
-              title,
-              table,
-            ],
+            children: [mainTitle, date, coordinates, table],
           },
         ],
       });
@@ -307,9 +323,10 @@ function ExportButton({ sameAltitudinalZone }) {
     t,
     latinActive,
     projectionMode,
+    mapLocation,
   ]);
 
-  return <Button onClick={exportDocX}>{t('app.export')}</Button>;
+  return <Button onClick={exportDocX}>{t('export.export')}</Button>;
 }
 
 ExportButton.propTypes = {

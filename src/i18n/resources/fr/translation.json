@@ -15,8 +15,11 @@
     "recommendation": "Recommandations",
     "result": "Recommandations pour le choix des essences",
     "shared": "Le lien a été copié dans le presse-papiers.",
-    "title": "Tree App",
-    "export": "Exporter"
+    "title": "Tree App"
+  },
+  "export": {
+    "export": "Exporter",
+    "recommendationMainTitle": "Extrait de le Tree-App"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",
