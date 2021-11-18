@@ -17,3 +17,8 @@
 .listitem {
   display: flex !important;
 }
+
+.forestTypeButton {
+  text-align: left !important;
+  text-align-last: center;
+}

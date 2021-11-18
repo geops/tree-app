@@ -72,8 +72,15 @@ function LocationResult() {
                   return (
                     <List.Item key={ftCode} className={styles.listitem}>
                       <ForestTypeModal data={ftInfo} />
-                      <Button active compact onClick={onClick}>
-                        {ftCode} - {ftInfo[i18n.language]}
+                      <Button
+                        active
+                        compact
+                        onClick={onClick}
+                        className={styles.forestTypeButton}
+                      >
+                        <div className={styles.forestTypeButton}>
+                          {ftCode} - {ftInfo[i18n.language]}
+                        </div>
                       </Button>
                     </List.Item>
                   );
