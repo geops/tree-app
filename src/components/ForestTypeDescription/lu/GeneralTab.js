@@ -156,7 +156,7 @@ function GeneralTab({ data }) {
             <DataTable
               data={data.vegetationIndicator}
               getLabel={(i) =>
-                `${vegetationMapping[i]}: ${t(
+                `${vegetationMapping[i]?.toUpperCase()}: ${t(
                   `lu.forestType.vegetationIndicator.${vegetationMapping[i]}`,
                 )}`
               }
@@ -169,7 +169,7 @@ function GeneralTab({ data }) {
             <DataTable
               data={data.soil}
               getLabel={(i) =>
-                `${soilMapping[i]}: ${t(
+                `${soilMapping[i]?.toUpperCase()}: ${t(
                   `lu.forestType.soil.${soilMapping[i]}`,
                 )}`
               }
