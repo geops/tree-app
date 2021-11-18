@@ -290,7 +290,7 @@ function ExportButton({ sameAltitudinalZone }) {
           `${i18n.language}-${i18n.language.toUpperCase()}`,
         )}`,
       );
-      const locationCoords = toLonLat(mapLocation.coordinate.reverse()).reduce(
+      const locationCoords = toLonLat(mapLocation.coordinate).reduce(
         (string, val, idx) =>
           idx !== 0 ? `${string}, ${val.toFixed(3)}` : `${val.toFixed(3)}`,
       );
