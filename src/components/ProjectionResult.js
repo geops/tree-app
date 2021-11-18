@@ -153,7 +153,9 @@ function ProjectionResult() {
             }}
             panes={finalPanes}
           />
-          <ExportButton />
+          <div className={styles.exportButtonWrapper}>
+            <ExportButton />
+          </div>
         </>
       ) : (
         <>

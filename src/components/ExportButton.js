@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
@@ -18,8 +18,6 @@ import { list, info } from '@geops/tree-lib';
 import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
 import Button from './Button';
 
-import styles from './ExportButton.module.css';
-
 function getAZ(altitudinalZone) {
   if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
     return '80';
@@ -38,7 +36,12 @@ function getResultKey(location) {
   return `${getAZ(altitudinalZone)}|${forestType}|${transitionForestType}`;
 }
 
-function getColumn(scenario, projection, language, t, treeValues) {
+const treeTypesReducer = (language) => (string, type, index, arr) =>
+  `${string}${index !== 0 ? ', ' : ''}${type[language]}${
+    type.endangered ? '†' : ''
+  }${type.nonresident ? '°' : ''}${type.pioneer ? '*' : ''}`;
+
+function getColumn(scenario, projection, language, t) {
   const scenarios = [];
   const { forestType, transitionForestType } = projection;
   const altitudinalZone = getAZ(projection.altitudinalZone);
@@ -55,6 +58,8 @@ function getColumn(scenario, projection, language, t, treeValues) {
   } else if (scenario.toLowerCase().includes('extreme')) {
     scenarios.push(t('projectionScenario.extreme'));
   }
+
+  const treeValues = list(projection, true).slice(0, 3);
 
   return (
     forestType && {
@@ -85,7 +90,6 @@ const createTable = (
   t,
   latinActive,
 ) => {
-  const treeValues = list(location, true).slice(0, 3);
   const columns = [];
   if (projectionMode === 'f' && projectionResult.form.projections) {
     const form = projectionResult.form.projections.slice(-1)[0] || {};
@@ -98,28 +102,20 @@ const createTable = (
     const moderateKey = getResultKey(moderate);
     const extremeKey = getResultKey(extreme);
     if (moderateKey === extremeKey && todayKey === moderateKey) {
-      columns.push(
-        getColumn('todayModerateExtreme', location, language, t, treeValues),
-      );
+      columns.push(getColumn('todayModerateExtreme', location, language, t));
     } else if (moderateKey === extremeKey) {
-      columns.push(getColumn('today', location, language, t, treeValues));
-      columns.push(
-        getColumn('moderateExtreme', moderate, language, t, treeValues),
-      );
+      columns.push(getColumn('today', location, language, t));
+      columns.push(getColumn('moderateExtreme', moderate, language, t));
     } else if (todayKey === moderateKey) {
-      columns.push(
-        getColumn('todayModerate', location, language, t, treeValues),
-      );
-      columns.push(getColumn('extreme', extreme, language, t, treeValues));
+      columns.push(getColumn('todayModerate', location, language, t));
+      columns.push(getColumn('extreme', extreme, language, t));
     } else if (todayKey === extremeKey) {
-      columns.push(
-        getColumn('todayExtreme', location, language, t, treeValues),
-      );
-      columns.push(getColumn('moderate', moderate, language, t, treeValues));
+      columns.push(getColumn('todayExtreme', location, language, t));
+      columns.push(getColumn('moderate', moderate, language, t));
     } else {
-      columns.push(getColumn('today', location, language, t, treeValues));
-      columns.push(getColumn('moderate', moderate, language, t, treeValues));
-      columns.push(getColumn('extreme', extreme, language, t, treeValues));
+      columns.push(getColumn('today', location, language, t));
+      columns.push(getColumn('moderate', moderate, language, t));
+      columns.push(getColumn('extreme', extreme, language, t));
     }
   }
   return new Table({
@@ -142,8 +138,8 @@ const createTable = (
                   type: WidthType.DXA,
                 },
                 children: [
-                  new Paragraph(t(column.header)),
-                  new Paragraph(t(column.subHeader)),
+                  new Paragraph(column.header),
+                  new Paragraph(column.subHeader),
                 ],
               }),
           ),
@@ -189,12 +185,7 @@ const createTable = (
                 children: [
                   new Paragraph({
                     text: column.importantTypes.reduce(
-                      (string, type, index, arr) =>
-                        `${string}${index !== 0 ? ', ' : ''}${type[language]}${
-                          type.endangered ? '†' : ''
-                        }${type.nonresident ? '°' : ''}${
-                          type.pioneer ? '*' : ''
-                        }`,
+                      treeTypesReducer(language),
                       '',
                     ),
                   }),
@@ -219,7 +210,14 @@ const createTable = (
                   size: 3505,
                   type: WidthType.DXA,
                 },
-                children: [new Paragraph(t(column.header))],
+                children: [
+                  new Paragraph({
+                    text: column.otherTypes.reduce(
+                      treeTypesReducer(language),
+                      '',
+                    ),
+                  }),
+                ],
               }),
           ),
         ],
@@ -237,10 +235,6 @@ function ExportButton({ sameAltitudinalZone }) {
       projectionResult: state.projectionResult,
       latinActive: state.latinActive,
     }));
-  const treeValues = useMemo(() => list(location, true), [location]).slice(
-    0,
-    3,
-  );
 
   // const recommendation = useMemo(() => {
   //   let projections;
@@ -280,15 +274,21 @@ function ExportButton({ sameAltitudinalZone }) {
         i18n.language,
         t,
         latinActive,
-        treeValues,
       );
       const doc = new Document({
         sections: [
           {
             children: [
-              new TextRun(
-                'My awesome text here for my university dissertation',
-              ),
+              {
+                children: [
+                  new TextRun({
+                    text: 'Some monospaced content',
+                    font: {
+                      name: 'Monospace',
+                    },
+                  }),
+                ],
+              },
               title,
               table,
             ],
@@ -297,7 +297,7 @@ function ExportButton({ sameAltitudinalZone }) {
       });
 
       Packer.toBlob(doc).then((blob) => {
-        saveAs(blob, 'tree-app.docx');
+        saveAs(blob, 'treeapp_recommendation.docx');
       });
     }
   }, [
@@ -306,17 +306,10 @@ function ExportButton({ sameAltitudinalZone }) {
     i18n.language,
     t,
     latinActive,
-    treeValues,
     projectionMode,
   ]);
 
-  return (
-    <div className={styles.container}>
-      <Button className={styles.togglebutton} onClick={exportDocX}>
-        {t('DOCX exportieren')}
-      </Button>
-    </div>
-  );
+  return <Button onClick={exportDocX}>{t('app.export')}</Button>;
 }
 
 ExportButton.propTypes = {

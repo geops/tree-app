@@ -15,7 +15,8 @@
     "recommendation": "Empfehlung",
     "result": "Baumartenempfehlung",
     "shared": "Link wurde in die Zwischenablage kopiert.",
-    "title": "Tree App"
+    "title": "Tree App",
+    "export": "Exportieren"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "ü.M.",

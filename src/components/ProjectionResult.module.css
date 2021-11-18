@@ -111,3 +111,12 @@
   font-weight: normal;
   margin: 20px;
 }
+
+.exportButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exportButtonWrapper button {
+  margin: 8px !important;
+}
