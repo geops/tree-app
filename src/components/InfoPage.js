@@ -93,7 +93,12 @@ function InfoPage() {
     {
       key: 'info.changelog',
       title: { content: t('info.changelogTitle') },
-      content: { content: t('info.changelog') },
+      content: {
+        content: (
+          // eslint-disable-next-line react/no-danger
+          <div dangerouslySetInnerHTML={{ __html: t('info.changelog') }} />
+        ),
+      },
     },
   ];
   return (
