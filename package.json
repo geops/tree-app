@@ -2,7 +2,7 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "version": "2.3.4",
+  "version": "2.4.0",
   "private": true,
   "dependencies": {
     "@geops/tree-lib": "^2.0.0",
