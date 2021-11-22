@@ -38,7 +38,16 @@ function InfoRecommendation() {
         <li>
           <AttentionIcon />{' '}
           {{ attentionTitle: t('help.recommendationAttentionHeader') }}:{' '}
-          <Trans i18nKey="help.recommendationAttention">help text</Trans>
+          <Trans i18nKey="help.recommendationAttention">
+            help text{' '}
+            <a
+              href="https://www.bafu.admin.ch/bafu/de/home/themen/wald/publikationen-studien/publikationen/vollzugshilfe-waldschutz.html"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              link
+            </a>
+          </Trans>
         </li>
       </ul>
       <p>description</p>
