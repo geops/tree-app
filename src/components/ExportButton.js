@@ -13,7 +13,6 @@ import {
   WidthType,
   TableCell,
   HeadingLevel,
-  TextRun,
 } from 'docx';
 import { list, info } from '@geops/tree-lib';
 import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
@@ -180,7 +179,12 @@ const createTable = (
               size: 3505,
               type: WidthType.DXA,
             },
-            children: [new Paragraph(t('projection.treeTypesTwo'))],
+            children: [
+              new Paragraph({
+                text: t('projection.treeTypesTwo'),
+                style: 'table',
+              }),
+            ],
           }),
           ...columns.map(
             (column) =>
@@ -195,6 +199,7 @@ const createTable = (
                       treeTypesReducer(language),
                       '',
                     ),
+                    style: 'table',
                   }),
                 ],
               }),
@@ -208,7 +213,12 @@ const createTable = (
               size: 3505,
               type: WidthType.DXA,
             },
-            children: [new Paragraph(t('projection.treeTypesThree'))],
+            children: [
+              new Paragraph({
+                text: t('projection.treeTypesThree'),
+                style: 'table',
+              }),
+            ],
           }),
           ...columns.map(
             (column) =>
@@ -223,6 +233,7 @@ const createTable = (
                       treeTypesReducer(language),
                       '',
                     ),
+                    style: 'table',
                   }),
                 ],
               }),
@@ -249,36 +260,6 @@ function ExportButton({ sameAltitudinalZone }) {
     mapLocation: state.mapLocation,
   }));
 
-  console.log(mapLocation);
-
-  // const recommendation = useMemo(() => {
-  //   let projections;
-  //   let result;
-
-  //   if (projectionMode === 'f') {
-  //     projections = projectionResult.form.projections?.slice(-1) || [];
-  //   } else {
-  //     const { moderate, extreme } = projectionResult;
-  //     projections = [
-  //       ...(moderate.projections ? moderate.projections.slice(-1) : [location]),
-  //       ...(extreme.projections ? extreme.projections.slice(-1) : [location]),
-  //     ];
-  //   }
-
-  //   try {
-  //     if ((projections && projections.length === 0) || sameAltitudinalZone) {
-  //       result = recommend(location, [location], false);
-  //     } else {
-  //       result = recommend(location, projections, false);
-  //     }
-  //   } catch (error) {
-  //     // eslint-disable-next-line no-console
-  //     console.log('Recommendation error: ', error);
-  //   }
-  //   return result;
-  // }, [location, projectionMode, projectionResult, sameAltitudinalZone]);
-
-  // console.log(recommendation);
   const exportDocX = useCallback(() => {
     if (projectionResult) {
       const mainTitle = createTitle(
@@ -304,7 +285,10 @@ function ExportButton({ sameAltitudinalZone }) {
         latinActive,
       );
       const doc = new Document({
-        style: docxStyle,
+        creator: 'Clippy',
+        title: 'Sample Document',
+        description: 'A brief example of using docx',
+        styles: docxStyle,
         sections: [
           {
             children: [mainTitle, date, coordinates, table],
