@@ -23,22 +23,22 @@ function InfoRecommendation() {
         <li>
           <PositiveIcon />{' '}
           {{ positiveTitle: t('help.recommendationPositiveHeader') }}:{' '}
-          {{ positive: t('help.recommendationPositive') }}
+          <Trans i18nKey="help.recommendationPositive">help text</Trans>
         </li>
         <li>
           <NeutralIcon />{' '}
           {{ neutralTitle: t('help.recommendationNeutralHeader') }}:{' '}
-          {{ neutral: t('help.recommendationNeutral') }}
+          <Trans i18nKey="help.recommendationNeutral">help text</Trans>
         </li>
         <li>
           <NegativeIcon />{' '}
           {{ negativeTitle: t('help.recommendationNegativeHeader') }}:{' '}
-          {{ negative: t('help.recommendationNegative') }}
+          <Trans i18nKey="help.recommendationNegative">help text</Trans>
         </li>
         <li>
           <AttentionIcon />{' '}
           {{ attentionTitle: t('help.recommendationAttentionHeader') }}:{' '}
-          {{ attention: t('help.recommendationAttention') }}
+          <Trans i18nKey="help.recommendationAttention">help text</Trans>
         </li>
       </ul>
       <p>description</p>
