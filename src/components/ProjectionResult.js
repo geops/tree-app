@@ -14,7 +14,7 @@ import {
   getScenarioColumns,
   getAZ,
 } from '../utils/projectionUtils';
-import { exportScenarios } from '../utils/exportUtils';
+import { exportRecommendations } from '../utils/exportUtils';
 
 function getPane(scenario, projection, language, t) {
   const { forestType, transitionForestType } = projection;
@@ -101,7 +101,7 @@ function ProjectionResult() {
             panes={finalPanes}
           />
           <div className={styles.exportButtonWrapper}>
-            <ExportButton exportFunction={exportScenarios} />
+            <ExportButton exportFunction={exportRecommendations} />
           </div>
         </>
       ) : (

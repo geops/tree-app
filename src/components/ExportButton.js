@@ -6,26 +6,19 @@ import Button from './Button';
 
 function ExportButton({ sameAltitudinalZone, exportFunction }) {
   const { t, i18n } = useTranslation();
-  const {
-    location,
-    projectionMode,
-    projectionResult,
-    latinActive,
-    mapLocation,
-    future,
-  } = useSelector((state) => ({
-    location: state.location,
-    projectionMode: state.projectionMode,
-    projectionResult: state.projectionResult,
-    latinActive: state.latinActive,
-    mapLocation: state.mapLocation,
-    future: state.future,
-  }));
+  const { location, projectionMode, projectionResult, latinActive, future } =
+    useSelector((state) => ({
+      location: state.location,
+      projectionMode: state.projectionMode,
+      projectionResult: state.projectionResult,
+      latinActive: state.latinActive,
+      future: state.future,
+    }));
 
+  console.log(location);
   const exportDocX = useCallback(() => {
     exportFunction(
       location,
-      mapLocation,
       projectionResult,
       projectionMode,
       future,
@@ -40,7 +33,6 @@ function ExportButton({ sameAltitudinalZone, exportFunction }) {
     t,
     latinActive,
     projectionMode,
-    mapLocation,
     exportFunction,
     future,
   ]);

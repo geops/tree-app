@@ -21,7 +21,7 @@ export const getResultKey = (location) => {
   return `${getAZ(altitudinalZone)}|${forestType}|${transitionForestType}`;
 };
 
-const styleIcon = { fontSize: '0.8em', margin: 5 };
+const styleIcon = { fontSize: '0.8em' };
 
 export const getScenarios = (scenario, t) => {
   const icons = [];

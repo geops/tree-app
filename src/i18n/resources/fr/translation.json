@@ -19,7 +19,10 @@
   },
   "export": {
     "export": "Exporter",
-    "recommendationMainTitle": "Extrait de le Tree-App"
+    "recommendationMainTitle": "Extrait de le Tree-App",
+    "coordinate": "Coordonner",
+    "date": "Date",
+    "future": "Les essences qui, ultérieurement, seront également adaptées"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",

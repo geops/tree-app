@@ -30,6 +30,7 @@
     "react-toastify": "8.1.0",
     "redux": "4.1.2",
     "redux-query-sync": "0.1.10",
+    "save-svg-as-png": "^1.4.17",
     "semantic-ui-css": "2.4.1",
     "semantic-ui-react": "2.0.4",
     "workbox-background-sync": "^6.3.0",

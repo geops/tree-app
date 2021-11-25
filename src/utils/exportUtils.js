@@ -8,12 +8,20 @@ import {
   Document,
   Packer,
   ShadingType,
+  ImageRun,
+  BorderStyle,
+  VerticalAlign,
 } from 'docx';
+import { svgAsPngUri } from 'save-svg-as-png';
 import { saveAs } from 'file-saver';
 import { toLonLat } from 'ol/proj';
 import { list, info } from '@geops/tree-lib';
 import { getAZ, getScenarios, getScenarioColumns } from './projectionUtils';
 import { getRecommendation } from './recommendationUtils';
+import negative from '../icons/recommendationNegative.svg';
+import positive from '../icons/recommendationPositive.svg';
+import neutral from '../icons/recommendationNeutral.svg';
+import attention from '../icons/recommendationAttention.svg';
 
 const pageWidthDXA = 9000;
 const cellPadding = {
@@ -23,12 +31,19 @@ const cellPadding = {
   bottom: 200,
   right: 200,
 };
+const cellIconPadding = {
+  marginUnitType: WidthType.DXA,
+  top: 200,
+  left: 400,
+  bottom: 200,
+  right: 200,
+};
 
 export const style = {
   default: {
     heading1: {
       run: {
-        size: 28,
+        size: 36,
         bold: true,
         color: '000000',
         font: 'Calibri',
@@ -49,6 +64,12 @@ export const style = {
         color: '000000',
         font: 'Calibri',
       },
+      paragraph: {
+        spacing: {
+          before: 120,
+          after: 120,
+        },
+      },
     },
     {
       id: 'scenarios-primary-bold',
@@ -59,6 +80,12 @@ export const style = {
         font: 'Calibri',
         bold: true,
       },
+      paragraph: {
+        spacing: {
+          before: 120,
+          after: 120,
+        },
+      },
     },
     {
       id: 'recommendation-positive',
@@ -66,7 +93,7 @@ export const style = {
       run: {
         color: 'FFFFFF',
         font: 'Calibri',
-        size: 32,
+        size: 30,
       },
     },
     {
@@ -159,7 +186,18 @@ export const getTitle = (text, heading = 'HEADING_2', children) => {
   return new Paragraph(options);
 };
 
-const createRecommendationsTable = (
+const svgToBlob = async (dataUri) =>
+  fetch(dataUri)
+    .then((response) => response.text())
+    .then((string) => {
+      const temp = document.createElement('div');
+      temp.innerHTML = string;
+      const svg = temp.firstChild;
+      return svgAsPngUri(svg);
+    })
+    .then((uri) => fetch(uri).then((res) => res.blob()));
+
+const createRecommendationsTable = async (
   location,
   projectionResult,
   projectionMode,
@@ -171,118 +209,182 @@ const createRecommendationsTable = (
   const recommendations = transformRecomendations(
     getRecommendation(location, projectionResult, projectionMode, future),
   );
-  // console.log(recommendations);
+
   const backgroundColorCell = {
     fill: '006268',
     type: ShadingType.CLEAR,
     color: 'auto',
   };
 
-  return new Table({
-    columnWidths: [pageWidthDXA / 5, (pageWidthDXA / 5) * 4],
-    rows: [
-      // Headers
+  const noBorderStyle = {
+    top: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+    bottom: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+    left: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+    right: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+  };
+
+  const negativeIcon = await svgToBlob(negative);
+  const positiveIcon = await svgToBlob(positive);
+  const neutralIcon = await svgToBlob(neutral);
+  const attentionIcon = await svgToBlob(attention);
+
+  const rows = [
+    new TableRow({
+      children: [
+        new TableCell({
+          verticalAlign: VerticalAlign.CENTER,
+          borders: noBorderStyle,
+          shading: backgroundColorCell,
+          margins: cellIconPadding,
+          children: [
+            new Paragraph({
+              children: [
+                new ImageRun({
+                  data: positiveIcon,
+                  transformation: {
+                    width: 50,
+                    height: 50,
+                  },
+                }),
+              ],
+            }),
+          ],
+        }),
+        new TableCell({
+          verticalAlign: VerticalAlign.CENTER,
+          borders: noBorderStyle,
+          shading: backgroundColorCell,
+          margins: cellPadding,
+          children: [
+            new Paragraph({
+              text: recommendations.positive.current.reduce(
+                treeTypesReducer(latinActive ? 'la' : language),
+                '',
+              ),
+              style: 'recommendation-positive',
+            }),
+            new Paragraph({
+              text: recommendations.positive.future.reduce(
+                treeTypesReducer(latinActive ? 'la' : language),
+                '',
+              ),
+              style: 'recommendation-future',
+            }),
+          ],
+        }),
+      ],
+    }),
+    new TableRow({
+      children: [
+        new TableCell({
+          verticalAlign: VerticalAlign.CENTER,
+          borders: noBorderStyle,
+          shading: backgroundColorCell,
+          margins: cellIconPadding,
+          children: [
+            new Paragraph({
+              children: [
+                new ImageRun({
+                  data: neutralIcon,
+                  transformation: {
+                    width: 50,
+                    height: 50,
+                  },
+                }),
+              ],
+            }),
+          ],
+        }),
+        new TableCell({
+          verticalAlign: VerticalAlign.CENTER,
+          borders: noBorderStyle,
+          shading: backgroundColorCell,
+          margins: cellPadding,
+          children: [
+            new Paragraph({
+              text: recommendations.neutral.current.reduce(
+                treeTypesReducer(latinActive ? 'la' : language),
+                '',
+              ),
+              style: 'recommendation-neutral',
+            }),
+            new Paragraph({
+              text: recommendations.neutral.future.reduce(
+                treeTypesReducer(latinActive ? 'la' : language),
+                '',
+              ),
+              style: 'recommendation-future',
+            }),
+          ],
+        }),
+      ],
+    }),
+    new TableRow({
+      children: [
+        new TableCell({
+          verticalAlign: VerticalAlign.CENTER,
+          borders: noBorderStyle,
+          shading: backgroundColorCell,
+          margins: cellIconPadding,
+          children: [
+            new Paragraph({
+              children: [
+                new ImageRun({
+                  data: negativeIcon,
+                  transformation: {
+                    width: 50,
+                    height: 50,
+                  },
+                }),
+              ],
+            }),
+          ],
+        }),
+        new TableCell({
+          verticalAlign: VerticalAlign.CENTER,
+          shading: backgroundColorCell,
+          borders: noBorderStyle,
+          margins: cellPadding,
+          children: [
+            new Paragraph({
+              text: recommendations.negative.reduce(
+                treeTypesReducer(latinActive ? 'la' : language),
+                '',
+              ),
+              style: 'recommendation-negative',
+            }),
+          ],
+        }),
+      ],
+    }),
+  ];
+  if (recommendations.attention.length) {
+    rows.push(
       new TableRow({
+        verticalAlign: VerticalAlign.CENTER,
         children: [
           new TableCell({
+            verticalAlign: VerticalAlign.CENTER,
+            borders: noBorderStyle,
             shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [],
-          }),
-          new TableCell({
-            shading: backgroundColorCell,
-            margins: cellPadding,
+            margins: cellIconPadding,
             children: [
               new Paragraph({
-                text: recommendations.positive.current.reduce(
-                  treeTypesReducer(latinActive ? 'la' : language),
-                  '',
-                ),
-                style: 'recommendation-positive',
-              }),
-              new Paragraph({
-                text: recommendations.positive.future.reduce(
-                  treeTypesReducer(latinActive ? 'la' : language),
-                  '',
-                ),
-                style: 'recommendation-future',
+                children: [
+                  new ImageRun({
+                    data: attentionIcon,
+                    transformation: {
+                      width: 50,
+                      height: 50,
+                    },
+                  }),
+                ],
               }),
             ],
           }),
-        ],
-      }),
-      new TableRow({
-        children: [
           new TableCell({
-            shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [
-              new Paragraph({
-                text: 'placeholder',
-                style: 'recommendation-neutral',
-              }),
-            ],
-          }),
-          new TableCell({
-            shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [
-              new Paragraph({
-                text: recommendations.neutral.current.reduce(
-                  treeTypesReducer(latinActive ? 'la' : language),
-                  '',
-                ),
-                style: 'recommendation-neutral',
-              }),
-              new Paragraph({
-                text: recommendations.neutral.future.reduce(
-                  treeTypesReducer(latinActive ? 'la' : language),
-                  '',
-                ),
-                style: 'recommendation-future',
-              }),
-            ],
-          }),
-        ],
-      }),
-      new TableRow({
-        children: [
-          new TableCell({
-            width: {
-              size: 500,
-              type: WidthType.DXA,
-            },
-            shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [],
-          }),
-          new TableCell({
-            shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [
-              new Paragraph({
-                text: recommendations.negative.reduce(
-                  treeTypesReducer(latinActive ? 'la' : language),
-                  '',
-                ),
-                style: 'recommendation-negative',
-              }),
-            ],
-          }),
-        ],
-      }),
-      new TableRow({
-        children: [
-          new TableCell({
-            width: {
-              size: 500,
-              type: WidthType.DXA,
-            },
-            shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [],
-          }),
-          new TableCell({
+            verticalAlign: VerticalAlign.CENTER,
+            borders: noBorderStyle,
             shading: backgroundColorCell,
             margins: cellPadding,
             children: [
@@ -297,7 +399,39 @@ const createRecommendationsTable = (
           }),
         ],
       }),
-    ],
+    );
+  }
+
+  if (future) {
+    rows.push(
+      new TableRow({
+        verticalAlign: VerticalAlign.CENTER,
+        children: [
+          new TableCell({
+            borders: noBorderStyle,
+            shading: backgroundColorCell,
+            margins: cellIconPadding,
+            children: [],
+          }),
+          new TableCell({
+            borders: noBorderStyle,
+            shading: backgroundColorCell,
+            margins: cellPadding,
+            children: [
+              new Paragraph({
+                text: `✓ ${t('export.future')}`,
+                style: 'recommendation-future',
+              }),
+            ],
+          }),
+        ],
+      }),
+    );
+  }
+
+  return new Table({
+    columnWidths: [pageWidthDXA / 6, (pageWidthDXA / 6) * 5],
+    rows,
   });
 };
 
@@ -455,9 +589,8 @@ export const createScenariosTable = (
   });
 };
 
-export const exportScenarios = (
+export const exportRecommendations = async (
   location,
-  mapLocation,
   projectionResult,
   projectionMode,
   future,
@@ -471,20 +604,27 @@ export const exportScenarios = (
       'HEADING_1',
     );
     const date = new Paragraph({
-      text: `${new Date().toLocaleDateString(
+      text: `${t('export.date')}: ${new Date().toLocaleDateString(
         `${i18n.language}-${i18n.language.toUpperCase()}`,
       )}`,
       style: 'scenarios-primary',
     });
-    const locationCoords = toLonLat(mapLocation.coordinate)
+    const locationCoords = toLonLat(location.coordinate)
       .map((val) => val.toFixed(3))
       .toString()
       .replace(',', ', ');
     const coordinates = new Paragraph({
-      text: locationCoords,
+      text: `${t('export.coordinate')}: ${locationCoords}`,
       style: 'scenarios-primary',
     });
-    const recommendationsTable = createRecommendationsTable(
+    const selectedLocation = info('forestType', location.forestType);
+    const locationString = new Paragraph({
+      text: `${t('info.locationTitle')}: ${location.forestType} - ${
+        selectedLocation[latinActive ? 'la' : i18n.language]
+      }`,
+      style: 'scenarios-primary',
+    });
+    const recommendationsTable = await createRecommendationsTable(
       location,
       projectionResult,
       projectionMode,
@@ -509,6 +649,7 @@ export const exportScenarios = (
             mainTitle,
             date,
             coordinates,
+            locationString,
             recommendationsTable,
             ...verticalSpace(3),
             scenariosTable,
