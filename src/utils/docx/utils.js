@@ -1,4 +1,5 @@
 import { Paragraph, TextRun, WidthType } from 'docx';
+import { svgAsPngUri } from 'save-svg-as-png';
 
 export const style = {
   default: {
@@ -125,5 +126,16 @@ export const cellIconPadding = {
   bottom: 200,
   right: 200,
 };
+
+export const svgToBlob = async (dataUri) =>
+  fetch(dataUri)
+    .then((response) => response.text())
+    .then((string) => {
+      const temp = document.createElement('div');
+      temp.innerHTML = string;
+      const svg = temp.firstChild;
+      return svgAsPngUri(svg);
+    })
+    .then((uri) => fetch(uri).then((res) => res.blob()));
 
 export default style;

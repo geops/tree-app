@@ -8,16 +8,20 @@ import {
   BorderStyle,
   VerticalAlign,
 } from 'docx';
-import { svgAsPngUri } from 'save-svg-as-png';
 import { info } from '@geops/tree-lib';
 import { getRecommendation } from '../recommendationUtils';
-import { treeTypesReducer, cellIconPadding, cellPadding } from './utils';
+import {
+  treeTypesReducer,
+  cellIconPadding,
+  cellPadding,
+  svgToBlob,
+} from './utils';
 import negative from '../../icons/recommendationNegative.svg';
 import positive from '../../icons/recommendationPositive.svg';
 import neutral from '../../icons/recommendationNeutral.svg';
 import attention from '../../icons/recommendationAttention.svg';
 
-const pageWidthDXA = 9000;
+const PAGE_WIDTH_DXA = 9000;
 
 const transformRecomendations = (treeTypes) => ({
   positive: {
@@ -39,17 +43,6 @@ const transformRecomendations = (treeTypes) => ({
   negative: treeTypes[8].map((code) => info('treeType', code)),
   attention: treeTypes[9].map((code) => info('treeType', code)),
 });
-
-const svgToBlob = async (dataUri) =>
-  fetch(dataUri)
-    .then((response) => response.text())
-    .then((string) => {
-      const temp = document.createElement('div');
-      temp.innerHTML = string;
-      const svg = temp.firstChild;
-      return svgAsPngUri(svg);
-    })
-    .then((uri) => fetch(uri).then((res) => res.blob()));
 
 export const writeRecommendationsTable = async (
   location,
@@ -284,7 +277,7 @@ export const writeRecommendationsTable = async (
   }
 
   return new Table({
-    columnWidths: [pageWidthDXA / 6, (pageWidthDXA / 6) * 5],
+    columnWidths: [PAGE_WIDTH_DXA / 6, (PAGE_WIDTH_DXA / 6) * 5],
     rows,
   });
 };
