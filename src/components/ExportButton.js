@@ -2,9 +2,9 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import Button from './Button';
+import { Button } from 'semantic-ui-react';
 
-function ExportButton({ sameAltitudinalZone, exportFunction }) {
+function ExportButton({ exportFunction }) {
   const { t, i18n } = useTranslation();
   const { location, projectionMode, projectionResult, latinActive, future } =
     useSelector((state) => ({
@@ -15,7 +15,6 @@ function ExportButton({ sameAltitudinalZone, exportFunction }) {
       future: state.future,
     }));
 
-  console.log(location);
   const exportDocX = useCallback(() => {
     exportFunction(
       location,
@@ -41,12 +40,7 @@ function ExportButton({ sameAltitudinalZone, exportFunction }) {
 }
 
 ExportButton.propTypes = {
-  sameAltitudinalZone: PropTypes.bool,
   exportFunction: PropTypes.func.isRequired,
-};
-
-ExportButton.defaultProps = {
-  sameAltitudinalZone: false,
 };
 
 export default ExportButton;

@@ -22,7 +22,9 @@
     "recommendationMainTitle": "Extrait de le Tree-App",
     "coordinate": "Coordonner",
     "date": "Date",
-    "future": "Les essences qui, ultérieurement, seront également adaptées"
+    "future": "Les essences qui, ultérieurement, seront également adaptées",
+    "mode": "La recommandation d'emplacement a été créée en mode manuel.",
+    "link": "Lien permanent"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",

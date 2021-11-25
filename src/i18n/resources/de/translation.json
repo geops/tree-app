@@ -22,7 +22,9 @@
     "recommendationMainTitle": "Auszug aus der Tree-App",
     "coordinate": "Koordinate",
     "date": "Datum",
-    "future": "In Zukunft zusätzlich passende Baumarten"
+    "future": "In Zukunft zusätzlich passende Baumarten",
+    "mode": "Die Standort-Empfehlung wurde im manuellen Modus erstellt.",
+    "link": "Permalink"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "ü.M.",

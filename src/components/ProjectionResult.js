@@ -14,7 +14,7 @@ import {
   getScenarioColumns,
   getAZ,
 } from '../utils/projectionUtils';
-import { exportRecommendations } from '../utils/exportUtils';
+import { exportRecommendations } from '../utils/docx/exportRecommendations';
 
 function getPane(scenario, projection, language, t) {
   const { forestType, transitionForestType } = projection;
