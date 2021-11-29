@@ -14,11 +14,3 @@
   grid-template-columns: 80% 20%;
   font-weight: bold;
 }
-
-.treeTypeHeader:first-child {
-  min-width: 80%;
-}
-
-.table.ui.table:not(.unstackable) tr {
-  color: red;
-}
