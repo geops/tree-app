@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table } from 'semantic-ui-react';
 
 import ForestTypeLink from './ForestTypeLink';
 import comparisonStyles from '../ForestTypeComparison.module.css';
@@ -14,10 +13,11 @@ const ComparisonCell = ({
   children,
   footer,
   code,
+  className,
 }) => {
   const isMobile = useIsMobile();
   return (
-    <Table.Cell>
+    <td colSpan="2" className={className}>
       <>
         <span style={{ display: 'flex' }}>
           {isMobile && (
@@ -35,7 +35,7 @@ const ComparisonCell = ({
         </span>
         {footer}
       </>
-    </Table.Cell>
+    </td>
   );
 };
 
@@ -56,6 +56,7 @@ ComparisonCell.propTypes = {
     PropTypes.number,
   ]),
   code: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 ComparisonCell.defaultProps = {
@@ -64,6 +65,7 @@ ComparisonCell.defaultProps = {
   unit: null,
   children: null,
   footer: null,
+  className: undefined,
 };
 
 export default ComparisonCell;

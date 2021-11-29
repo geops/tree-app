@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import useIsMobile from '../../../hooks/useIsMobile';
@@ -7,7 +7,10 @@ import useIsMobile from '../../../hooks/useIsMobile';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
 import { forestTypeMapping } from '../../ForestTypeDescription/lu/utils';
-import { getHasSameValues } from '../../../utils/comparisonUtils';
+import {
+  getHasSameValues,
+  getStringWithUnit,
+} from '../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
 
 const getPioneerTreeTypes = (info, allInfos) => {
@@ -39,14 +42,51 @@ function ForestTypeTab({ data }) {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
 
+  const treeTypeCells = useMemo(
+    () =>
+      forestTypeMapping.reduce((treeTypes, currTreeType, idx) => {
+        const cells = data.map((ft) => ({
+          code: ft.code,
+          natural: ft.tillering[0][idx],
+          commercial: ft.tillering[1] && ft.tillering[1][idx],
+        }));
+        return cells.every(
+          (cell) =>
+            cell.natural[0] === (undefined || null) &&
+            cell.natural[1] === (undefined || null),
+        )
+          ? treeTypes
+          : [
+              ...treeTypes,
+              {
+                treeType: currTreeType,
+                cells: cells.map((cell) => (
+                  <ComparisonCell
+                    key={`${currTreeType} - ${cell.code}`}
+                    code={cell.code}
+                    hasSameValues={getHasSameValues(cell, cells, 'natural')}
+                    className={comparisonStyles.treeTypeCell}
+                  >
+                    <div>{`${getStringWithUnit(cell.natural, '%')}`}</div>
+                    {getStringWithUnit(cell.commercial, '%') !== '-' && (
+                      <div>({getStringWithUnit(cell.commercial, '%')})</div>
+                    )}
+                  </ComparisonCell>
+                )),
+              },
+            ];
+      }, []),
+    [data],
+  );
+
   return (
-    <Table basic padded structured>
+    <Table basic padded structured className={comparisonStyles.table}>
       <Table.Body>
         {!isMobile && (
           <Table.Row>
             <Table.HeaderCell>{t('lu.forestType.general')}</Table.HeaderCell>
             {data.map((ft) => (
-              <Table.HeaderCell key={ft.code}>
+              <Table.HeaderCell colSpan="2" key={ft.code}>
                 <ForestTypeLink code={ft.code} />
               </Table.HeaderCell>
             ))}
@@ -80,33 +120,31 @@ function ForestTypeTab({ data }) {
             />
           ))}
         </Table.Row>
-        {forestTypeMapping.reduce((rows, currTreeType, idx) => {
-          const cells = data.map((ft) => ({
-            code: ft.code,
-            value: ft.tillering[0][idx],
-          }));
-          return cells.every(
-            (cell) =>
-              cell.value[0] === (undefined || null) &&
-              cell.value[1] === (undefined || null),
-          )
-            ? rows
-            : [
-                ...rows,
-                <Table.Row key={currTreeType}>
-                  <Table.HeaderCell>{currTreeType}</Table.HeaderCell>
-                  {cells.map((cell) => (
-                    <ComparisonCell
-                      key={`${currTreeType} - ${cell.code}`}
-                      code={cell.code}
-                      data={cell.value}
-                      hasSameValues={getHasSameValues(cell, cells, 'value')}
-                      unit="%"
-                    />
-                  ))}
-                </Table.Row>,
-              ];
-        }, [])}
+        {treeTypeCells.map((tt, idx, arr) => (
+          <tr
+            key={tt.treeType}
+            className={idx + 1 !== arr.length && comparisonStyles.treeTypeCell}
+            ref={(el) => {
+              // We need to use this hack for mobile view because react-semantic-ui sets a box shadow with !important
+              if (el) {
+                el.style.setProperty('box-shadow', 'none', 'important');
+              }
+            }}
+          >
+            <>
+              <td
+                className={comparisonStyles.treeTypeCell}
+                style={{ boxShadow: '0px solid black !important' }}
+              >
+                <div className={!isMobile && comparisonStyles.treeTypeHeader}>
+                  <span>{idx === 0 && t('lu.forestType.tillering')}</span>
+                  <div>{tt.treeType}</div>
+                </div>
+              </td>
+              {tt.cells}
+            </>
+          </tr>
+        ))}
         <Table.Row>
           <Table.HeaderCell>
             {t('lu.forestType.pioneerTreeTypes')}
