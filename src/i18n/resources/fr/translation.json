@@ -426,11 +426,59 @@
       "care": "Maintenance",
       "meaning": "Sens",
       "location": "Emplacement",
-      "subGroups": "Sous-unités"
-    },
-    "forestTypeDiagram": {
-      "general": "Général",
-      "associations": "Associations"
+      "subGroups": "Sous-unités",
+      "compactRisk": {
+        "label": "Risque de compactage",
+        "0": "non précisé",
+        "1": "faible risque de compactage (même par temps humide seulement compactage insignifiant du sol)",
+        "2": "risque de compactage moyen (compactage important possible après précipitation)",
+        "3": "risque de compactage élevé (après précipitation sur une longue période de temps fort compactageg)",
+        "4": "risque de compactage très élevé (la plupart du temps fort compactage, sauf pendant les longues périodes sèches)",
+        "5": "pas passable (saturé d'eau en permanence)"
+      },
+      "description": "Description",
+      "general": "Type de lieu",
+      "heightDispersion": "Propagation de l'altitude",
+      "pioneerTreeTypes": "Espèces forestières",
+      "priority": {
+        "label": "Priorité",
+        "1": "Très élevé",
+        "2": "Élevé",
+        "3": "Moyen",
+        "4": "Modérer",
+        "k": "Cantonal priorité"
+      },
+      "soil": {
+        "label": "Sol",
+        "l": "Horizon de dispersion",
+        "f": "Horizon de fermentation",
+        "h": "Horizon d'humus",
+        "ahh": "Horizon de mélange de terre minérale (mécaniquement)",
+        "ah": "Horizon de mélange de terre minérale (biologique)",
+        "basen": "Chaux",
+        "feuchte": "gleyifié"
+      },
+      "tillering": "Tallage",
+      "tilleringFirwood": "Partie de sapin",
+      "tilleringHardwood": "Teneur en bois dur",
+      "vegetationIndicator": {
+        "label": "Groupes de indicateurs",
+        "a": "Mains fortement acides, humides et mouillées",
+        "b": "Mains acides fortes, fraîches / sèches",
+        "c": "Mains acides faibles",
+        "e": "Espèces forestières de hêtres",
+        "f": "Indicateur nutritif, frais",
+        "g": "Indicateur nutritif, argileux",
+        "h": "Indicateur nutritif, femouillerucht",
+        "i": "Indicateur d'humidité",
+        "j": "Grandes vivaces",
+        "k": "Indicateur d'humidité, pauvre en base",
+        "l": "Indicateur de montagne (étape de montagne)",
+        "m": "Indicateur de base/chaux",
+        "n": "Espèce sur bloc de gravats",
+        "o": "Indicateur de base alternativement humide/sécher",
+        "p": "Indicateur de sécheresse"
+      }
     }
   }
 }

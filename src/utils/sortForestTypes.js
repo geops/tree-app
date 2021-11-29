@@ -1,4 +1,4 @@
-const getFirstLetterIndex = (string) => {
+export const getFirstLetterIndex = (string) => {
   const exec = /^[0-9]/i.exec(string);
   return exec?.index;
 };

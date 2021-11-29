@@ -451,13 +451,13 @@
       "subGroups": "Standortstypen",
       "soil": {
         "label": "Boden",
-        "l": "Auflage L",
-        "f": "Auflage F",
-        "h": "Auflage H",
-        "ahh": "Oberboden Ahh",
-        "ah": "Oberboden Ah",
-        "alkali": "Kalk",
-        "wet": "vergleyt"
+        "l": "Streuhorizont",
+        "f": "Fermentations-Horizont",
+        "h": "Humus-Horizont",
+        "ahh": "Mineralerde-Durchmischungs-Horizont (mechanisch)",
+        "ah": "Mineralerde-Durchmischungs-Horizont (biologisch)",
+        "basen": "Kalk",
+        "feuchte": "vergleyt"
       },
       "tillering": "Bestockung",
       "tilleringFirwood": "Tannenanteil",
