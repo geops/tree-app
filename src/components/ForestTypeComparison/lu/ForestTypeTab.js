@@ -86,7 +86,7 @@ function ForestTypeTab({ data }) {
           <Table.Row>
             <Table.HeaderCell>{t('lu.forestType.general')}</Table.HeaderCell>
             {data.map((ft) => (
-              <Table.HeaderCell colSpan="2" key={ft.code}>
+              <Table.HeaderCell key={ft.code}>
                 <ForestTypeLink code={ft.code} />
               </Table.HeaderCell>
             ))}
