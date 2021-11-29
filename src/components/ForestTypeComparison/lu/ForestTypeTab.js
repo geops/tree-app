@@ -80,7 +80,7 @@ function ForestTypeTab({ data }) {
   );
 
   return (
-    <Table basic padded structured className={comparisonStyles.table}>
+    <Table basic padded structured>
       <Table.Body>
         {!isMobile && (
           <Table.Row>
@@ -132,10 +132,7 @@ function ForestTypeTab({ data }) {
             }}
           >
             <>
-              <td
-                className={comparisonStyles.treeTypeCell}
-                style={{ boxShadow: '0px solid black !important' }}
-              >
+              <td className={comparisonStyles.treeTypeCell}>
                 <div className={!isMobile && comparisonStyles.treeTypeHeader}>
                   <span>{idx === 0 && t('lu.forestType.tillering')}</span>
                   <div>{tt.treeType}</div>
