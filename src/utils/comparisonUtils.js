@@ -1,6 +1,6 @@
 import parse from 'html-react-parser';
 
-const parseString = (str) => parse(str.slice().replace(/\\n/g, '<br>'));
+export const parseString = (str) => parse(str.slice().replace(/\\n/g, '<br>'));
 
 export const getStringWithUnit = (data, unit) => {
   if (Array.isArray(data)) {

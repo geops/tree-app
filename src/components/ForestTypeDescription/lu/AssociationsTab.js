@@ -3,13 +3,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
-import parse from 'html-react-parser';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 import { setForestTypeDescription } from '../../../store/actions';
 import styles from '../ForestTypeDescription.module.css';
-
-const parseHtml = (string) => parse(string.slice().replace(/\\n/g, '<br>'));
+import { parseString } from '../../../utils/comparisonUtils';
 
 function AssociationsTab({ associationGroupCode }) {
   const dispatch = useDispatch();
@@ -43,7 +41,7 @@ function AssociationsTab({ associationGroupCode }) {
               {t('lu.forestType.aptitudeMeaning')}
             </Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <p>{parseHtml(associationGroup.aptitudeMeaning)}</p>
+              <p>{parseString(associationGroup.aptitudeMeaning)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -51,7 +49,7 @@ function AssociationsTab({ associationGroupCode }) {
               {t('lu.forestType.description')}
             </Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <p>{parseHtml(associationGroup.description)}</p>
+              <p>{parseString(associationGroup.description)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -59,13 +57,13 @@ function AssociationsTab({ associationGroupCode }) {
               {t('lu.forestType.heightDispersion')}
             </Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <p>{parseHtml(associationGroup.heightDispersion)}</p>
+              <p>{parseString(associationGroup.heightDispersion)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
             <Table.HeaderCell>{t('lu.forestType.location')}</Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <p>{parseHtml(associationGroup.location)}</p>
+              <p>{parseString(associationGroup.location)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -73,7 +71,7 @@ function AssociationsTab({ associationGroupCode }) {
               {t('forestTypeDiagram.soil.header')}
             </Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <p>{parseHtml(associationGroup.soil)}</p>
+              <p>{parseString(associationGroup.soil)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>

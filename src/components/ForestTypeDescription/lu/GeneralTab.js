@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import parse from 'html-react-parser';
 import { Table } from 'semantic-ui-react';
 import DataTable from './DataTable';
 import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
+import { parseString } from '../../../utils/comparisonUtils';
 
-const replaceLineBreaks = (str) => parse(str.slice().replace(/\\n/g, '<br>'));
-
-const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'alkali', 'wet'];
+const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'basen', 'feuchte'];
 const vegetationMapping = [
   'a',
   'b',
@@ -101,25 +99,25 @@ function GeneralTab({ data }) {
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.aptitude')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{replaceLineBreaks(data.aptitude)}</p>
+            <p>{parseString(data.aptitude)}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.rejuvDev')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{replaceLineBreaks(data.forestryRejuvDev)}</p>
+            <p>{parseString(data.forestryRejuvDev)}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.care')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{replaceLineBreaks(data.forestryCare)}</p>
+            <p>{parseString(data.forestryCare)}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.description')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{replaceLineBreaks(data.description)}</p>
+            <p>{parseString(data.description)}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -127,7 +125,7 @@ function GeneralTab({ data }) {
             {t('lu.forestType.heightDispersion')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{replaceLineBreaks(data.heightDispersion)}</p>
+            <p>{parseString(data.heightDispersion)}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -145,7 +143,7 @@ function GeneralTab({ data }) {
             {t('forestTypeDiagram.vegetation')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{replaceLineBreaks(data.vegetation)}</p>
+            <p>{parseString(data.vegetation)}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
