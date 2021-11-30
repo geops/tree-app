@@ -62393,46 +62393,7 @@
         "code": "100"
       }
     ],
-    "forestEcoregion": [
-      {
-        "de": "Nördliche Randalpen",
-        "fr": "Alpes externes du Nord",
-        "code": "1"
-      },
-      {
-        "de": "Nördliche Zwischenalpen mit Buche",
-        "fr": "Alpes intermédiaires du Nord avec hêtre",
-        "code": "2a"
-      },
-      {
-        "de": "Nördliche Zwischenalpen ohne Buche",
-        "fr": "Alpes intermédiaires du Nord sans hêtre",
-        "code": "2b"
-      },
-      {
-        "de": "Kontinentale Hochalpen",
-        "fr": "Hautes Alpes continentales",
-        "code": "3"
-      },
-      {
-        "de": "Südliche Zwischenalpen",
-        "fr": "Alpes intermédiaires du Sud",
-        "code": "4"
-      },
-      {
-        "de": "Südliche Randalpen mit Fichte",
-        "fr": "Alpes externes du Sud avec épicéa",
-        "code": "5a"
-      },
-      {
-        "de": "Südliche Randalpen ohne Fichte",
-        "fr": "Alpes externes du Sud sans épicéa",
-        "code": "5b"
-      },
-      { "de": "Jura", "fr": "Jura", "code": "J" },
-      { "de": "Mittelland", "fr": "Plateau", "code": "M" },
-      { "de": "Mendrisiotto", "fr": "Mendrisiotto", "code": "Me" }
-    ]
+    "forestEcoregion": null
   },
   "lu": {
     "forestType": [
@@ -62485,7 +62446,7 @@
         ],
         "forestryRejuvDev": "N: Bu und Ta unter Schirm; Übrige in Lücken.\\nMit stärkerer Lichtung und kurzen Verjüngungs-Zeiträumen werden Mischbaumarten (TEi, WFö) gefördert.\\nSehr kleinflächiger Femelschlag. Grosse Lücken führen zu Aushagerung.",
         "heightDispersion": "submontan, untermontan; 400-900m",
-        "pioneerTreeTypes": ["VBe", "MBe", "Kast"],
+        "pioneerTreeTypes": ["VBe", "MBe", "Ka"],
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [70, 80],
         "vegetationIndicator": [
@@ -64388,7 +64349,7 @@
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken.\\nMit stärkerer Lichtung und kurzen Verjüngungs-Zeiträumen werden Mischbaumarten (TEi, WFö) gefördert.\\nKleinflächiger Femelschlag. Grosse Lücken führen zu starker Aushagerung.",
         "heightDispersion": "submontan, untermontan; 400-800m",
-        "pioneerTreeTypes": ["VBe", "MBe", "Kast"],
+        "pioneerTreeTypes": ["VBe", "MBe", "Ka"],
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [80, 90],
         "vegetationIndicator": [
@@ -67785,7 +67746,7 @@
         ],
         "forestryRejuvDev": "N: Bu unter Schirm; Übrige in Lücken.\\nMit kurzen Verjüngungs-Zeiträumen werden Mischbaumarten gefördert.\\nFemelschlag.",
         "heightDispersion": "submontan; 500-800m",
-        "pioneerTreeTypes": ["Kast", "Wei"],
+        "pioneerTreeTypes": ["Ka", "Wei"],
         "tilleringFirwood": [null, null],
         "tilleringHardwood": [60, 80],
         "vegetationIndicator": [
