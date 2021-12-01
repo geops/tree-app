@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import useIsMobile from '../../../hooks/useIsMobile';
 
+import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
 import { forestTypeMapping } from '../../ForestTypeDescription/lu/utils';
@@ -227,6 +228,14 @@ function ForestTypeTab({ data }) {
               />
             ))}
           </>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          {data.map((ft, idx, arr) => (
+            <ComparisonCell code={ft.code}>
+              <Relief code={ft.code} />
+            </ComparisonCell>
+          ))}
         </Table.Row>
       </Table.Body>
     </Table>
