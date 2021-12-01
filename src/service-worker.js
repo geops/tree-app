@@ -80,19 +80,19 @@ self.addEventListener('install', (event) => {
         .then(async (response) => {
           const tiles = response.split(/\r?\n/);
           // eslint-disable-next-line no-plusplus
-          // for (let index = 0; index < tiles.length; index++) {
-          //   const tileUrl = `${endpoint}/${tiles[index]}`;
-          //   // eslint-disable-next-line no-await-in-loop
-          //   if (tiles[index] && !(await cache.match(tileUrl))) {
-          //     try {
-          //       // eslint-disable-next-line no-await-in-loop
-          //       const tileResponse = await fetch(tileUrl);
-          //       cache.put(tileUrl, tileResponse);
-          //     } catch (error) {
-          //       // Some tiles do not exist.
-          //     }
-          //   }
-          // }
+          for (let index = 0; index < tiles.length; index++) {
+            const tileUrl = `${endpoint}/${tiles[index]}`;
+            // eslint-disable-next-line no-await-in-loop
+            if (tiles[index] && !(await cache.match(tileUrl))) {
+              try {
+                // eslint-disable-next-line no-await-in-loop
+                const tileResponse = await fetch(tileUrl);
+                cache.put(tileUrl, tileResponse);
+              } catch (error) {
+                // Some tiles do not exist.
+              }
+            }
+          }
           return true;
         }),
     ),
