@@ -197,14 +197,14 @@ GeneralTab.propTypes = {
     forestryRejuvDev: PropTypes.string,
     forestryCare: PropTypes.string,
     heightDispersion: PropTypes.string,
-    pioneerTreeTypes: PropTypes.string,
+    pioneerTreeTypes: PropTypes.arrayOf(PropTypes.string),
     priority: PropTypes.string,
     soil: PropTypes.arrayOf(PropTypes.number),
     tillering: PropTypes.arrayOf(
       PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
     ),
-    tilleringFirwood: PropTypes.arrayOf(PropTypes.number),
-    tilleringHardwood: PropTypes.arrayOf(PropTypes.string),
+    tilleringFirwood: PropTypes.arrayOf(PropTypes.string),
+    tilleringHardwood: PropTypes.arrayOf(PropTypes.number),
     vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
 };
