@@ -18,14 +18,14 @@ import {
 import comparisonStyles from '../ForestTypeComparison.module.css';
 
 const ComparedString = ({ data, hasDuplicate, isLast }) => (
-  <span key={data}>
+  <>
     <span
       className={hasDuplicate ? comparisonStyles.comparisonIsSame : undefined}
     >
       {data}
     </span>
     {!isLast && ', '}
-  </span>
+  </>
 );
 
 ComparedString.propTypes = {
@@ -49,6 +49,7 @@ const getPioneerTreeTypes = (info, allInfos) => {
         isLast={idx + 1 === arr.length}
         data={treeType}
         hasDuplicate={hasDuplicate}
+        key={treeType}
       />
     );
   });
@@ -70,6 +71,7 @@ const getSoilTypes = (info, otherInfos) => {
         isLast={idx + 1 === arr.length}
         data={soilType}
         hasDuplicate={hasDuplicate}
+        key={soilType}
       />
     );
   });
@@ -160,7 +162,9 @@ function ForestTypeTab({ data }) {
         {treeTypeCells.map((tt, idx, arr) => (
           <tr
             key={tt.treeType}
-            className={idx + 1 !== arr.length && comparisonStyles.treeTypeCell}
+            className={
+              idx + 1 !== arr.length ? comparisonStyles.treeTypeCell : undefined
+            }
             ref={(el) => {
               // We need to use this hack for mobile view because react-semantic-ui sets a box shadow with !important
               if (el) {
@@ -170,7 +174,11 @@ function ForestTypeTab({ data }) {
           >
             <>
               <td className={comparisonStyles.treeTypeCell}>
-                <div className={!isMobile && comparisonStyles.treeTypeHeader}>
+                <div
+                  className={
+                    !isMobile ? comparisonStyles.treeTypeHeader : undefined
+                  }
+                >
                   <span>{idx === 0 && t('lu.forestType.tillering')}</span>
                   <div>{tt.treeType}</div>
                 </div>
@@ -279,7 +287,7 @@ function ForestTypeTab({ data }) {
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
           {data.map((ft) => (
-            <ComparisonCell code={ft.code}>
+            <ComparisonCell code={ft.code} key={ft.code}>
               <Relief code={ft.code} />
             </ComparisonCell>
           ))}

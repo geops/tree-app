@@ -17,7 +17,7 @@ const ComparisonCell = ({
 }) => {
   const isMobile = useIsMobile();
   return (
-    <td className={className}>
+    <td className={className || undefined}>
       <>
         <span style={{ display: 'flex' }}>
           {isMobile && (
@@ -41,7 +41,9 @@ const ComparisonCell = ({
 
 ComparisonCell.propTypes = {
   data: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.number),
+    PropTypes.arrayOf(
+      PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    ),
     PropTypes.string,
   ]),
   hasSameValues: PropTypes.bool,
