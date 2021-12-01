@@ -231,7 +231,7 @@ function ForestTypeTab({ data }) {
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
-          {data.map((ft, idx, arr) => (
+          {data.map((ft) => (
             <ComparisonCell code={ft.code}>
               <Relief code={ft.code} />
             </ComparisonCell>
