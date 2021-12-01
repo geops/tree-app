@@ -6,6 +6,7 @@ import DataTable from './DataTable';
 import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
+import Relief from './Relief';
 import { parseString } from '../../../utils/comparisonUtils';
 
 const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'basen', 'feuchte'];
@@ -139,6 +140,12 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <Relief code={data.code} />
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
           <Table.HeaderCell>
             {t('forestTypeDiagram.vegetation')}
           </Table.HeaderCell>
@@ -181,6 +188,7 @@ function GeneralTab({ data }) {
 
 GeneralTab.propTypes = {
   data: PropTypes.shape({
+    code: PropTypes.string.isRequired,
     compactRisk: PropTypes.string,
     description: PropTypes.string,
     vegetation: PropTypes.string,

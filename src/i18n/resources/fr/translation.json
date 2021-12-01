@@ -478,7 +478,8 @@
         "n": "Espèce sur bloc de gravats",
         "o": "Indicateur de base alternativement humide/sécher",
         "p": "Indicateur de sécheresse"
-      }
+      },
+      "terrain": "Terrain"
     }
   }
 }

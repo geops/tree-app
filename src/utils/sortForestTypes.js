@@ -1,7 +1,4 @@
-export const getFirstLetterIndex = (string) => {
-  const exec = /^[0-9]/i.exec(string);
-  return exec?.index;
-};
+export const getFirstLetterIndex = (string) => string.match(/\D/)?.index;
 
 export const forestTypeSortFct = (optA, optB) => {
   const numberA = getFirstLetterIndex(optA.code)
