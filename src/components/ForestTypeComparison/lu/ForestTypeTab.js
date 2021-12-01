@@ -7,12 +7,32 @@ import useIsMobile from '../../../hooks/useIsMobile';
 import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
-import { forestTypeMapping } from '../../ForestTypeDescription/lu/utils';
+import {
+  forestTypeMapping,
+  soilMapping,
+} from '../../ForestTypeDescription/lu/utils';
 import {
   getHasSameValues,
   getStringWithUnit,
 } from '../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
+
+const ComparedString = ({ data, hasDuplicate, isLast }) => (
+  <span key={data}>
+    <span
+      className={hasDuplicate ? comparisonStyles.comparisonIsSame : undefined}
+    >
+      {data}
+    </span>
+    {!isLast && ', '}
+  </span>
+);
+
+ComparedString.propTypes = {
+  data: PropTypes.string.isRequired,
+  hasDuplicate: PropTypes.bool.isRequired,
+  isLast: PropTypes.bool.isRequired,
+};
 
 const getPioneerTreeTypes = (info, allInfos) => {
   const allTreeTypes = allInfos.reduce((pioneerTypes, current) => {
@@ -25,16 +45,32 @@ const getPioneerTreeTypes = (info, allInfos) => {
     const hasDuplicate =
       allTreeTypes.filter((ptt) => ptt === treeType).length > 1;
     return (
-      <span key={treeType}>
-        <span
-          className={
-            hasDuplicate ? comparisonStyles.comparisonIsSame : undefined
-          }
-        >
-          {treeType}
-        </span>
-        {idx + 1 !== arr.length && ', '}
-      </span>
+      <ComparedString
+        isLast={idx + 1 === arr.length}
+        data={treeType}
+        hasDuplicate={hasDuplicate}
+      />
+    );
+  });
+};
+
+const soulTypeReducer = (soilTypes, type, idx) =>
+  type ? [...soilTypes, `${soilMapping[idx]?.toUpperCase()}`] : soilTypes;
+
+const getSoilTypes = (info, otherInfos) => {
+  const otherSoilTypes = otherInfos.reduce((soilTypes, dataInfo) => {
+    const soils = dataInfo.soil.reduce(soulTypeReducer, []);
+    return soils.length ? [...soilTypes, ...soils] : soilTypes;
+  }, []);
+  const currentSoilTypes = info.soil.reduce(soulTypeReducer, []);
+  return currentSoilTypes.map((soilType, idx, arr) => {
+    const hasDuplicate = otherSoilTypes.includes(soilType);
+    return (
+      <ComparedString
+        isLast={idx + 1 === arr.length}
+        data={soilType}
+        hasDuplicate={hasDuplicate}
+      />
     );
   });
 };
@@ -228,6 +264,17 @@ function ForestTypeTab({ data }) {
               />
             ))}
           </>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.soil.label')}</Table.HeaderCell>
+          {data.map((ft) => (
+            <ComparisonCell key={ft.code} code={ft.code}>
+              {getSoilTypes(
+                ft,
+                data.filter((forestType) => forestType.code !== ft.code),
+              )}
+            </ComparisonCell>
+          ))}
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>

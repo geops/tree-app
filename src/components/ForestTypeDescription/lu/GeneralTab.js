@@ -8,25 +8,7 @@ import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
 import Relief from './Relief';
 import { parseString } from '../../../utils/comparisonUtils';
-
-const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'basen', 'feuchte'];
-const vegetationMapping = [
-  'a',
-  'b',
-  'c',
-  'e',
-  'f',
-  'g',
-  'h',
-  'i',
-  'j',
-  'k',
-  'l',
-  'm',
-  'n',
-  'o',
-  'p',
-];
+import { soilMapping, vegetationMapping } from './utils';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
