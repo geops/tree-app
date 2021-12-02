@@ -5,15 +5,12 @@ import {
   ImageRun,
   VerticalAlign,
   TextRun,
-  AlignmentType,
-  WidthType,
 } from 'docx';
 import { info } from '@geops/tree-lib';
 import { getRecommendation } from '../recommendationUtils';
 import {
   treeTypesReducer,
   cellIconPadding,
-  cellPadding,
   svgToBlob,
   PAGE_WIDTH_DXA,
   getRecommendationCell,
@@ -65,10 +62,10 @@ export const writeRecommendationsTable = async (
   const rows = [
     new TableRow({
       children: [
+        getRecommendationCell([]),
         getRecommendationCell(
           [
             new Paragraph({
-              alignment: AlignmentType.CENTER,
               style: 'recommendation-positive',
               children: [
                 new TextRun({
@@ -78,8 +75,12 @@ export const writeRecommendationsTable = async (
               ],
             }),
           ],
-          cellPadding,
-          { size: PAGE_WIDTH_DXA, type: WidthType.DXA },
+          {
+            top: 200,
+            bottom: 200,
+            right: 200,
+            left: (PAGE_WIDTH_DXA / 6) * (language === 'de' ? 1.5 : 1.2), // Unfortunately, we need this ugly centering because docxjs cell layouts are cross OS compatible
+          },
         ),
       ],
     }),
