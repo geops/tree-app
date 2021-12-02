@@ -259,6 +259,14 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          {data.map((ft) => (
+            <ComparisonCell code={ft.code} key={ft.code}>
+              <Relief code={ft.code} />
+            </ComparisonCell>
+          ))}
+        </Table.Row>
+        <Table.Row>
           <Table.HeaderCell>
             {t('forestTypeDiagram.vegetation')}
           </Table.HeaderCell>
@@ -281,14 +289,6 @@ function ForestTypeTab({ data }) {
                 ft,
                 data.filter((forestType) => forestType.code !== ft.code),
               )}
-            </ComparisonCell>
-          ))}
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
-          {data.map((ft) => (
-            <ComparisonCell code={ft.code} key={ft.code}>
-              <Relief code={ft.code} />
             </ComparisonCell>
           ))}
         </Table.Row>

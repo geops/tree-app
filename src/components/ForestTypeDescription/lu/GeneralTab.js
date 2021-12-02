@@ -112,6 +112,12 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <Relief code={data.code} />
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
           <Table.HeaderCell>
             {`${t('forestTypeDiagram.slope')} & ${t(
               'forestTypeDiagram.aspect.label',
@@ -119,12 +125,6 @@ function GeneralTab({ data }) {
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
             <Site data={data.expoAndAspect} />
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
-          <Table.Cell colSpan="3">
-            <Relief code={data.code} />
           </Table.Cell>
         </Table.Row>
         <Table.Row>
