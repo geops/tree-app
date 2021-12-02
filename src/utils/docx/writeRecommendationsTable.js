@@ -2,11 +2,11 @@ import {
   Paragraph,
   Table,
   TableRow,
-  TableCell,
-  ShadingType,
   ImageRun,
-  BorderStyle,
   VerticalAlign,
+  TextRun,
+  AlignmentType,
+  WidthType,
 } from 'docx';
 import { info } from '@geops/tree-lib';
 import { getRecommendation } from '../recommendationUtils';
@@ -15,13 +15,13 @@ import {
   cellIconPadding,
   cellPadding,
   svgToBlob,
+  PAGE_WIDTH_DXA,
+  getRecommendationCell,
 } from './utils';
 import negative from '../../icons/recommendationNegative.svg';
 import positive from '../../icons/recommendationPositive.svg';
 import neutral from '../../icons/recommendationNeutral.svg';
 import attention from '../../icons/recommendationAttention.svg';
-
-const PAGE_WIDTH_DXA = 9000;
 
 const transformRecomendations = (treeTypes) => ({
   positive: {
@@ -57,19 +57,6 @@ export const writeRecommendationsTable = async (
     getRecommendation(location, projectionResult, projectionMode, future),
   );
 
-  const backgroundColorCell = {
-    fill: '006268',
-    type: ShadingType.CLEAR,
-    color: 'auto',
-  };
-
-  const noBorderStyle = {
-    top: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
-    bottom: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
-    left: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
-    right: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
-  };
-
   const negativeIcon = await svgToBlob(negative);
   const positiveIcon = await svgToBlob(positive);
   const neutralIcon = await svgToBlob(neutral);
@@ -78,12 +65,28 @@ export const writeRecommendationsTable = async (
   const rows = [
     new TableRow({
       children: [
-        new TableCell({
-          verticalAlign: VerticalAlign.CENTER,
-          borders: noBorderStyle,
-          shading: backgroundColorCell,
-          margins: cellIconPadding,
-          children: [
+        getRecommendationCell(
+          [
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              style: 'recommendation-positive',
+              children: [
+                new TextRun({
+                  text: t('app.recommendation'),
+                  bold: true,
+                }),
+              ],
+            }),
+          ],
+          cellPadding,
+          { size: PAGE_WIDTH_DXA, type: WidthType.DXA },
+        ),
+      ],
+    }),
+    new TableRow({
+      children: [
+        getRecommendationCell(
+          [
             new Paragraph({
               children: [
                 new ImageRun({
@@ -96,39 +99,30 @@ export const writeRecommendationsTable = async (
               ],
             }),
           ],
-        }),
-        new TableCell({
-          verticalAlign: VerticalAlign.CENTER,
-          borders: noBorderStyle,
-          shading: backgroundColorCell,
-          margins: cellPadding,
-          children: [
-            new Paragraph({
-              text: recommendations.positive.current.reduce(
-                treeTypesReducer(latinActive ? 'la' : language),
-                '',
-              ),
-              style: 'recommendation-positive',
-            }),
-            new Paragraph({
-              text: recommendations.positive.future.reduce(
-                treeTypesReducer(latinActive ? 'la' : language),
-                '',
-              ),
-              style: 'recommendation-future',
-            }),
-          ],
-        }),
+          cellIconPadding,
+        ),
+        getRecommendationCell([
+          new Paragraph({
+            text: recommendations.positive.current.reduce(
+              treeTypesReducer(latinActive ? 'la' : language),
+              '',
+            ),
+            style: 'recommendation-positive',
+          }),
+          new Paragraph({
+            text: recommendations.positive.future.reduce(
+              treeTypesReducer(latinActive ? 'la' : language),
+              '',
+            ),
+            style: 'recommendation-future',
+          }),
+        ]),
       ],
     }),
     new TableRow({
       children: [
-        new TableCell({
-          verticalAlign: VerticalAlign.CENTER,
-          borders: noBorderStyle,
-          shading: backgroundColorCell,
-          margins: cellIconPadding,
-          children: [
+        getRecommendationCell(
+          [
             new Paragraph({
               children: [
                 new ImageRun({
@@ -141,39 +135,30 @@ export const writeRecommendationsTable = async (
               ],
             }),
           ],
-        }),
-        new TableCell({
-          verticalAlign: VerticalAlign.CENTER,
-          borders: noBorderStyle,
-          shading: backgroundColorCell,
-          margins: cellPadding,
-          children: [
-            new Paragraph({
-              text: recommendations.neutral.current.reduce(
-                treeTypesReducer(latinActive ? 'la' : language),
-                '',
-              ),
-              style: 'recommendation-neutral',
-            }),
-            new Paragraph({
-              text: recommendations.neutral.future.reduce(
-                treeTypesReducer(latinActive ? 'la' : language),
-                '',
-              ),
-              style: 'recommendation-future',
-            }),
-          ],
-        }),
+          cellIconPadding,
+        ),
+        getRecommendationCell([
+          new Paragraph({
+            text: recommendations.neutral.current.reduce(
+              treeTypesReducer(latinActive ? 'la' : language),
+              '',
+            ),
+            style: 'recommendation-neutral',
+          }),
+          new Paragraph({
+            text: recommendations.neutral.future.reduce(
+              treeTypesReducer(latinActive ? 'la' : language),
+              '',
+            ),
+            style: 'recommendation-future',
+          }),
+        ]),
       ],
     }),
     new TableRow({
       children: [
-        new TableCell({
-          verticalAlign: VerticalAlign.CENTER,
-          borders: noBorderStyle,
-          shading: backgroundColorCell,
-          margins: cellIconPadding,
-          children: [
+        getRecommendationCell(
+          [
             new Paragraph({
               children: [
                 new ImageRun({
@@ -186,22 +171,17 @@ export const writeRecommendationsTable = async (
               ],
             }),
           ],
-        }),
-        new TableCell({
-          verticalAlign: VerticalAlign.CENTER,
-          shading: backgroundColorCell,
-          borders: noBorderStyle,
-          margins: cellPadding,
-          children: [
-            new Paragraph({
-              text: recommendations.negative.reduce(
-                treeTypesReducer(latinActive ? 'la' : language),
-                '',
-              ),
-              style: 'recommendation-negative',
-            }),
-          ],
-        }),
+          cellIconPadding,
+        ),
+        getRecommendationCell([
+          new Paragraph({
+            text: recommendations.negative.reduce(
+              treeTypesReducer(latinActive ? 'la' : language),
+              '',
+            ),
+            style: 'recommendation-negative',
+          }),
+        ]),
       ],
     }),
   ];
@@ -210,12 +190,8 @@ export const writeRecommendationsTable = async (
       new TableRow({
         verticalAlign: VerticalAlign.CENTER,
         children: [
-          new TableCell({
-            verticalAlign: VerticalAlign.CENTER,
-            borders: noBorderStyle,
-            shading: backgroundColorCell,
-            margins: cellIconPadding,
-            children: [
+          getRecommendationCell(
+            [
               new Paragraph({
                 children: [
                   new ImageRun({
@@ -228,22 +204,17 @@ export const writeRecommendationsTable = async (
                 ],
               }),
             ],
-          }),
-          new TableCell({
-            verticalAlign: VerticalAlign.CENTER,
-            borders: noBorderStyle,
-            shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [
-              new Paragraph({
-                text: recommendations.attention.reduce(
-                  treeTypesReducer(latinActive ? 'la' : language),
-                  '',
-                ),
-                style: 'recommendation-neutral',
-              }),
-            ],
-          }),
+            cellIconPadding,
+          ),
+          getRecommendationCell([
+            new Paragraph({
+              text: recommendations.attention.reduce(
+                treeTypesReducer(latinActive ? 'la' : language),
+                '',
+              ),
+              style: 'recommendation-neutral',
+            }),
+          ]),
         ],
       }),
     );
@@ -254,23 +225,13 @@ export const writeRecommendationsTable = async (
       new TableRow({
         verticalAlign: VerticalAlign.CENTER,
         children: [
-          new TableCell({
-            borders: noBorderStyle,
-            shading: backgroundColorCell,
-            margins: cellIconPadding,
-            children: [],
-          }),
-          new TableCell({
-            borders: noBorderStyle,
-            shading: backgroundColorCell,
-            margins: cellPadding,
-            children: [
-              new Paragraph({
-                text: `✓ ${t('export.future')}`,
-                style: 'recommendation-future',
-              }),
-            ],
-          }),
+          getRecommendationCell([]),
+          getRecommendationCell([
+            new Paragraph({
+              text: t('export.future'),
+              style: 'recommendation-future',
+            }),
+          ]),
         ],
       }),
     );

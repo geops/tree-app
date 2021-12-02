@@ -24,7 +24,9 @@
     "date": "Date",
     "future": "Les essences qui, ultérieurement, seront également adaptées",
     "mode": "La recommandation d'emplacement a été créée en mode manuel.",
-    "link": "Lien permanent"
+    "link": "Lien permanent",
+    "locationType": "Type de lieu",
+    "exporting": "En cours..."
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",

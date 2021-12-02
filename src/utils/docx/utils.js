@@ -1,14 +1,57 @@
-import { Paragraph, TextRun, WidthType } from 'docx';
+import {
+  Paragraph,
+  TextRun,
+  WidthType,
+  ShadingType,
+  TableCell,
+  VerticalAlign,
+  BorderStyle,
+} from 'docx';
 import { svgAsPngUri } from 'save-svg-as-png';
+
+// Cell styles
+export const cellPadding = {
+  marginUnitType: WidthType.DXA,
+  top: 200,
+  left: 200,
+  bottom: 200,
+  right: 200,
+};
+export const cellIconPadding = {
+  marginUnitType: WidthType.DXA,
+  top: 200,
+  left: 400,
+  bottom: 200,
+  right: 200,
+};
+
+const noBorderStyle = {
+  top: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+  bottom: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+  left: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+  right: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+};
+
+// Colors
+export const getColor = (hex) => ({
+  fill: hex,
+  type: ShadingType.CLEAR,
+  color: 'auto',
+});
+
+export const treeAppColorMain = getColor('006268');
+export const treeAppColorToday = getColor('004d4f');
+export const treeAppColorModerate = getColor('003c3e');
+export const treeAppColorExtreme = getColor('002c2d');
 
 export const style = {
   default: {
     heading1: {
       run: {
-        size: 36,
+        size: 40,
         bold: true,
-        color: '000000',
-        font: 'Calibri',
+        color: treeAppColorMain.fill,
+        font: 'Arial',
       },
       paragraph: {
         spacing: {
@@ -19,12 +62,27 @@ export const style = {
   },
   paragraphStyles: [
     {
+      id: 'main',
+      name: 'main',
+      run: {
+        size: 24,
+        color: '000000',
+        font: 'Arial',
+      },
+      paragraph: {
+        spacing: {
+          before: 120,
+          after: 120,
+        },
+      },
+    },
+    {
       id: 'scenarios-primary',
       name: 'scenarios-primary',
       run: {
         size: 24,
-        color: '000000',
-        font: 'Calibri',
+        color: 'FFFFFF',
+        font: 'Arial',
       },
       paragraph: {
         spacing: {
@@ -38,8 +96,8 @@ export const style = {
       name: 'scenarios-primary-bold',
       run: {
         size: 24,
-        color: '000000',
-        font: 'Calibri',
+        color: 'FFFFFF',
+        font: 'Arial',
         bold: true,
       },
       paragraph: {
@@ -54,7 +112,7 @@ export const style = {
       name: 'recommendation-positive',
       run: {
         color: 'FFFFFF',
-        font: 'Calibri',
+        font: 'Arial',
         size: 30,
       },
     },
@@ -63,7 +121,7 @@ export const style = {
       name: 'recommendation-neutral',
       run: {
         color: 'FFFFFF',
-        font: 'Calibri',
+        font: 'Arial',
         size: 24,
       },
     },
@@ -72,7 +130,7 @@ export const style = {
       name: 'recommendation-negative',
       run: {
         color: 'FFFFFF',
-        font: 'Calibri',
+        font: 'Arial',
         size: 20,
       },
     },
@@ -81,14 +139,17 @@ export const style = {
       name: 'recommendation-future',
       run: {
         color: 'fbf0b2',
-        font: 'Calibri',
+        font: 'Arial',
         size: 18,
       },
     },
   ],
 };
 
-export const treeTypesReducer = (language) => (string, type, index, arr) =>
+export const PAGE_WIDTH_DXA = 9000;
+
+// Helpers
+export const treeTypesReducer = (language) => (string, type, index) =>
   `${string}${index !== 0 ? ', ' : ''}${type[language]}${
     type.endangered ? '†' : ''
   }${type.nonresident ? '°' : ''}${type.pioneer ? '*' : ''}`;
@@ -108,23 +169,8 @@ export const writeLine = (text, key) => {
   }
   return new Paragraph({
     children,
-    style: 'scenarios-primary',
+    style: 'main',
   });
-};
-
-export const cellPadding = {
-  marginUnitType: WidthType.DXA,
-  top: 200,
-  left: 200,
-  bottom: 200,
-  right: 200,
-};
-export const cellIconPadding = {
-  marginUnitType: WidthType.DXA,
-  top: 200,
-  left: 400,
-  bottom: 200,
-  right: 200,
 };
 
 export const svgToBlob = async (dataUri) =>
@@ -137,5 +183,32 @@ export const svgToBlob = async (dataUri) =>
       return svgAsPngUri(svg);
     })
     .then((uri) => fetch(uri).then((res) => res.blob()));
+
+export const pageBreak = new Paragraph({
+  pageBreakBefore: true,
+  text: ' ',
+});
+
+export const getScenariosTextCell = (text, bgColor, fontStyle) =>
+  new TableCell({
+    shading: bgColor,
+    margins: cellPadding,
+    children: [
+      new Paragraph({
+        text,
+        style: fontStyle,
+      }),
+    ],
+  });
+
+export const getRecommendationCell = (children, padding = cellPadding, width) =>
+  new TableCell({
+    verticalAlign: VerticalAlign.CENTER,
+    borders: noBorderStyle,
+    shading: treeAppColorMain,
+    margins: padding,
+    children,
+    width,
+  });
 
 export default style;
