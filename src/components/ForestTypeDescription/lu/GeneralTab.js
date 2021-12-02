@@ -6,26 +6,9 @@ import DataTable from './DataTable';
 import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
+import Relief from './Relief';
 import { parseString } from '../../../utils/comparisonUtils';
-
-const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'basen', 'feuchte'];
-const vegetationMapping = [
-  'a',
-  'b',
-  'c',
-  'e',
-  'f',
-  'g',
-  'h',
-  'i',
-  'j',
-  'k',
-  'l',
-  'm',
-  'n',
-  'o',
-  'p',
-];
+import { soilMapping, vegetationMapping } from './utils';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
@@ -129,6 +112,12 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <Relief code={data.code} />
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
           <Table.HeaderCell>
             {`${t('forestTypeDiagram.slope')} & ${t(
               'forestTypeDiagram.aspect.label',
@@ -181,6 +170,7 @@ function GeneralTab({ data }) {
 
 GeneralTab.propTypes = {
   data: PropTypes.shape({
+    code: PropTypes.string.isRequired,
     compactRisk: PropTypes.string,
     description: PropTypes.string,
     vegetation: PropTypes.string,
@@ -189,14 +179,14 @@ GeneralTab.propTypes = {
     forestryRejuvDev: PropTypes.string,
     forestryCare: PropTypes.string,
     heightDispersion: PropTypes.string,
-    pioneerTreeTypes: PropTypes.string,
+    pioneerTreeTypes: PropTypes.arrayOf(PropTypes.string),
     priority: PropTypes.string,
     soil: PropTypes.arrayOf(PropTypes.number),
     tillering: PropTypes.arrayOf(
       PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)),
     ),
-    tilleringFirwood: PropTypes.arrayOf(PropTypes.number),
-    tilleringHardwood: PropTypes.arrayOf(PropTypes.string),
+    tilleringFirwood: PropTypes.arrayOf(PropTypes.string),
+    tilleringHardwood: PropTypes.arrayOf(PropTypes.number),
     vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
 };

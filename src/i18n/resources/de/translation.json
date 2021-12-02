@@ -479,7 +479,8 @@
         "n": "Arten auf Blockschutt",
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
-      }
+      },
+      "terrain": "Relief"
     }
   }
 }

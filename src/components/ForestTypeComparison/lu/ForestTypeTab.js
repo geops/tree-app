@@ -4,14 +4,35 @@ import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import useIsMobile from '../../../hooks/useIsMobile';
 
+import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
-import { forestTypeMapping } from '../../ForestTypeDescription/lu/utils';
+import {
+  forestTypeMapping,
+  soilMapping,
+} from '../../ForestTypeDescription/lu/utils';
 import {
   getHasSameValues,
   getStringWithUnit,
 } from '../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
+
+const ComparedString = ({ data, hasDuplicate, isLast }) => (
+  <>
+    <span
+      className={hasDuplicate ? comparisonStyles.comparisonIsSame : undefined}
+    >
+      {data}
+    </span>
+    {!isLast && ', '}
+  </>
+);
+
+ComparedString.propTypes = {
+  data: PropTypes.string.isRequired,
+  hasDuplicate: PropTypes.bool.isRequired,
+  isLast: PropTypes.bool.isRequired,
+};
 
 const getPioneerTreeTypes = (info, allInfos) => {
   const allTreeTypes = allInfos.reduce((pioneerTypes, current) => {
@@ -24,16 +45,34 @@ const getPioneerTreeTypes = (info, allInfos) => {
     const hasDuplicate =
       allTreeTypes.filter((ptt) => ptt === treeType).length > 1;
     return (
-      <span key={treeType}>
-        <span
-          className={
-            hasDuplicate ? comparisonStyles.comparisonIsSame : undefined
-          }
-        >
-          {treeType}
-        </span>
-        {idx + 1 !== arr.length && ', '}
-      </span>
+      <ComparedString
+        isLast={idx + 1 === arr.length}
+        data={treeType}
+        hasDuplicate={hasDuplicate}
+        key={treeType}
+      />
+    );
+  });
+};
+
+const soulTypeReducer = (soilTypes, type, idx) =>
+  type ? [...soilTypes, `${soilMapping[idx]?.toUpperCase()}`] : soilTypes;
+
+const getSoilTypes = (info, otherInfos) => {
+  const otherSoilTypes = otherInfos.reduce((soilTypes, dataInfo) => {
+    const soils = dataInfo.soil.reduce(soulTypeReducer, []);
+    return soils.length ? [...soilTypes, ...soils] : soilTypes;
+  }, []);
+  const currentSoilTypes = info.soil.reduce(soulTypeReducer, []);
+  return currentSoilTypes.map((soilType, idx, arr) => {
+    const hasDuplicate = otherSoilTypes.includes(soilType);
+    return (
+      <ComparedString
+        isLast={idx + 1 === arr.length}
+        data={soilType}
+        hasDuplicate={hasDuplicate}
+        key={soilType}
+      />
     );
   });
 };
@@ -123,7 +162,9 @@ function ForestTypeTab({ data }) {
         {treeTypeCells.map((tt, idx, arr) => (
           <tr
             key={tt.treeType}
-            className={idx + 1 !== arr.length && comparisonStyles.treeTypeCell}
+            className={
+              idx + 1 !== arr.length ? comparisonStyles.treeTypeCell : undefined
+            }
             ref={(el) => {
               // We need to use this hack for mobile view because react-semantic-ui sets a box shadow with !important
               if (el) {
@@ -133,7 +174,11 @@ function ForestTypeTab({ data }) {
           >
             <>
               <td className={comparisonStyles.treeTypeCell}>
-                <div className={!isMobile && comparisonStyles.treeTypeHeader}>
+                <div
+                  className={
+                    !isMobile ? comparisonStyles.treeTypeHeader : undefined
+                  }
+                >
                   <span>{idx === 0 && t('lu.forestType.tillering')}</span>
                   <div>{tt.treeType}</div>
                 </div>
@@ -214,6 +259,14 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          {data.map((ft) => (
+            <ComparisonCell code={ft.code} key={ft.code}>
+              <Relief code={ft.code} />
+            </ComparisonCell>
+          ))}
+        </Table.Row>
+        <Table.Row>
           <Table.HeaderCell>
             {t('forestTypeDiagram.vegetation')}
           </Table.HeaderCell>
@@ -227,6 +280,17 @@ function ForestTypeTab({ data }) {
               />
             ))}
           </>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>{t('lu.forestType.soil.label')}</Table.HeaderCell>
+          {data.map((ft) => (
+            <ComparisonCell key={ft.code} code={ft.code}>
+              {getSoilTypes(
+                ft,
+                data.filter((forestType) => forestType.code !== ft.code),
+              )}
+            </ComparisonCell>
+          ))}
         </Table.Row>
       </Table.Body>
     </Table>

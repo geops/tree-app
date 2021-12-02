@@ -34,7 +34,7 @@
     "workbox-broadcast-update": "^6.3.0",
     "workbox-cacheable-response": "^6.3.0",
     "workbox-core": "^6.3.0",
-    "workbox-precaching": "^6.3.0",
+    "workbox-precaching": "^6.4.1",
     "workbox-routing": "^6.3.0"
   },
   "devDependencies": {
