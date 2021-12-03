@@ -18,6 +18,7 @@ import ProfileSwitcher from './ProfileSwitcher';
 import LatinSwitcher from './LatinSwitcher';
 
 import styles from './InfoPage.module.css';
+import InfoImpressum from './InfoImpressum';
 
 function InfoPage() {
   const activeProfile = useSelector((state) => state.activeProfile);
@@ -81,7 +82,7 @@ function InfoPage() {
     {
       key: 'info.impressum',
       title: { content: t('info.impressumTitle') },
-      content: { content: t('info.impressum') },
+      content: { content: <InfoImpressum /> },
     },
     {
       key: 'info.disclaimer',
