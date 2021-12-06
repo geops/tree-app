@@ -1,5 +1,6 @@
 import React from 'react';
 import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
+import styles from '../components/ProjectionResult.module.css';
 import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
@@ -21,32 +22,25 @@ export const getResultKey = (location) => {
   return `${getAZ(altitudinalZone)}|${forestType}|${transitionForestType}`;
 };
 
-const styleIcon = { fontSize: '0.8em' };
-
 export const getScenarios = (scenario, t) => {
   const icons = [];
   const names = [];
   if (scenario.toLowerCase().includes('today')) {
-    icons.push(
-      <EarthTodayIcon
-        key="today"
-        style={{ fontSize: '0.8em', margin: '4px 5px 0 0' }}
-      />,
-    );
+    icons.push(<EarthTodayIcon key="today" className={styles.iconToday} />);
     names.push(t('projectionScenario.today'));
   }
   if (scenario.toLowerCase().includes('form')) {
     names.push(t('projectionScenario.manual'));
   }
   if (scenario.toLowerCase().includes('moderateextreme')) {
-    icons.push(<EarthModerateIcon key="mod" style={styleIcon} />);
-    icons.push(<EarthExtremeIcon key="extreme" style={styleIcon} />);
+    icons.push(<EarthModerateIcon key="mod" className={styles.icon} />);
+    icons.push(<EarthExtremeIcon key="extreme" className={styles.icon} />);
     names.push(t('projectionScenario.moderateExtreme'));
   } else if (scenario.toLowerCase().includes('moderate')) {
-    icons.push(<EarthModerateIcon key="mod" style={styleIcon} />);
+    icons.push(<EarthModerateIcon key="mod" className={styles.icon} />);
     names.push(t('projectionScenario.moderate'));
   } else if (scenario.toLowerCase().includes('extreme')) {
-    icons.push(<EarthExtremeIcon key="extreme" style={styleIcon} />);
+    icons.push(<EarthExtremeIcon key="extreme" className={styles.icon} />);
     names.push(t('projectionScenario.extreme'));
   }
   return { names, icons };
