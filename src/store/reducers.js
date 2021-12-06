@@ -10,6 +10,7 @@ import {
   SET_PROJECTION_RESULT,
   SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
+  SET_FUTURE,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
@@ -30,6 +31,7 @@ export const initialState = {
   },
   targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
+  future: true,
 };
 
 const initialFormLocation = {
@@ -106,6 +108,9 @@ function tree(state = initialState, action) {
     }
     case SET_TARGET_ALTITUDINAL_ZONE: {
       return { ...state, targetAltitudinalZone: action.targetAltitudinalZone };
+    }
+    case SET_FUTURE: {
+      return { ...state, future: action.future };
     }
     case SET_WELCOME_MODAL:
       localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');

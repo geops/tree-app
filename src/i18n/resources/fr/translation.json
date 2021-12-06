@@ -17,6 +17,17 @@
     "shared": "Le lien a été copié dans le presse-papiers.",
     "title": "Tree App"
   },
+  "export": {
+    "export": "Exporter",
+    "recommendationMainTitle": "Extrait de le Tree-App",
+    "coordinate": "Coordonner",
+    "date": "Date",
+    "future": "Les essences qui, ultérieurement, seront également adaptées",
+    "mode": "La recommandation d'emplacement a été créée en mode manuel.",
+    "link": "Lien permanent",
+    "locationType": "Type de lieu",
+    "exporting": "En cours..."
+  },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",
     "altitudinalZoneAbbr": {
