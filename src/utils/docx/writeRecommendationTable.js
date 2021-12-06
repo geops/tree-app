@@ -41,7 +41,7 @@ const transformRecomendations = (treeTypes) => ({
   attention: treeTypes[9].map((code) => info('treeType', code)),
 });
 
-export const writeRecommendationsTable = async (
+export const writeRecommendationTable = async (
   location,
   projectionResult,
   projectionMode,
@@ -244,4 +244,4 @@ export const writeRecommendationsTable = async (
   });
 };
 
-export default writeRecommendationsTable;
+export default writeRecommendationTable;

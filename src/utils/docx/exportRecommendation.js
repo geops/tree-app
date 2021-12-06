@@ -9,10 +9,10 @@ import {
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
 import { writeLine, style, verticalSpace, pageBreak } from './utils';
-import { writeRecommendationsTable } from './writeRecommendationsTable';
+import { writeRecommendationTable } from './writeRecommendationTable';
 import { writeScenariosTable } from './writeScenariosTable';
 
-export const exportRecommendations = async (
+export const exportRecommendation = async (
   location,
   projectionResult,
   projectionMode,
@@ -96,7 +96,7 @@ export const exportRecommendations = async (
     details.push(writeLine(t('export.mode')));
   }
 
-  const recommendationsTable = await writeRecommendationsTable(
+  const recommendationsTable = await writeRecommendationTable(
     location,
     projectionResult,
     projectionMode,
@@ -135,4 +135,4 @@ export const exportRecommendations = async (
   });
 };
 
-export default exportRecommendations;
+export default exportRecommendation;
