@@ -2,14 +2,14 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "version": "2.3.4",
+  "version": "2.4.1",
   "private": true,
   "dependencies": {
     "@geops/tree-lib": "^2.0.0",
     "docx": "^7.1.2",
     "file-saver": "^2.0.5",
     "history": "4.10.1",
-    "html-to-image": "^1.9.0",
+    "html-react-parser": "^1.2.7",
     "i18next": "21.4.1",
     "i18next-browser-languagedetector": "6.1.2",
     "lodash.difference": "4.5.0",
@@ -37,7 +37,7 @@
     "workbox-broadcast-update": "^6.3.0",
     "workbox-cacheable-response": "^6.3.0",
     "workbox-core": "^6.3.0",
-    "workbox-precaching": "^6.3.0",
+    "workbox-precaching": "^6.4.1",
     "workbox-routing": "^6.3.0"
   },
   "devDependencies": {

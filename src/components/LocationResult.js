@@ -8,8 +8,8 @@ import { info } from '@geops/tree-lib';
 
 import Button from './Button';
 import Ecogram from './Ecogram';
-import ForestTypeModal from './ForestTypeModal';
 import HelpModal from './HelpModal';
+import ForestTypeModal from './ForestTypeModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
 
@@ -72,7 +72,12 @@ function LocationResult() {
                   return (
                     <List.Item key={ftCode} className={styles.listitem}>
                       <ForestTypeModal data={ftInfo} />
-                      <Button active compact onClick={onClick}>
+                      <Button
+                        active
+                        compact
+                        onClick={onClick}
+                        className={styles.forestTypeButton}
+                      >
                         {ftCode} - {ftInfo[i18n.language]}
                       </Button>
                     </List.Item>

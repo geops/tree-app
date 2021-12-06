@@ -7,10 +7,10 @@ import { Form, Message, Segment } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
+import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
-import ForestTypeModal from './ForestTypeModal';
-import { setFormLocation } from '../store/actions';
+import { setFormLocation, setForestTypeDescription } from '../store/actions';
 import styles from './ProjectionForm.module.css';
 
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
@@ -19,12 +19,17 @@ const getButtonOptions = (type, lng) => (key) => ({
   label: info(type, key)[lng],
 });
 const getDropdownOptions =
-  (type, lng, includeKey = false) =>
+  (type, lng, dispatch, includeKey = false) =>
   (key) => ({
     key,
-    content: includeKey ? (
+    content: dispatch ? (
       <>
-        <ForestTypeModal data={info(type, key)} />
+        <Button
+          active
+          compact
+          icon="info"
+          onClick={() => dispatch(setForestTypeDescription(key))}
+        />
         {key} - {info(type, key)[lng]}
       </>
     ) : (
@@ -121,7 +126,7 @@ function ProjectionForm() {
             data-cypress="projectionFormForestType"
             label={t('forestType.label')}
             options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
+              getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
             onBlur={deactivateField}
@@ -165,7 +170,7 @@ function ProjectionForm() {
             clearable
             label={t('forestType.transition')}
             options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
+              getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) =>
               setLocation('transitionForestType', value)

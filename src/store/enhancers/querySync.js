@@ -2,11 +2,15 @@ import ReduxQuerySync from 'redux-query-sync';
 
 import history from '../../history';
 import {
+  setForestTypeComparison,
+  setForestTypeDescription,
+  setForestTypeModal,
   setFormLocation,
   setMapLayer,
   setMapView,
   setProjectionMode,
   setMapLocation,
+  setActiveProfile,
 } from '../actions';
 import { initialState } from '../reducers';
 
@@ -62,6 +66,21 @@ const querySync = ReduxQuerySync.enhancer({
       action: (targetAltitudinalZone) =>
         setFormLocation({ targetAltitudinalZone }),
     },
+    ftc: {
+      selector: (state) => state.forestTypeComparison,
+      valueToString: (value) => value && value.join(),
+      stringToValue: (value) => value.split(',').filter((v) => v),
+      action: (ftc) => setForestTypeComparison(ftc, false),
+    },
+    ftd: {
+      selector: (s) =>
+        s.forestTypeDescription !== null && s.forestTypeDescription,
+      action: (ftd) => setForestTypeDescription(ftd, false),
+    },
+    ftm: {
+      selector: (state) => state.forestTypeModal,
+      action: setForestTypeModal,
+    },
     ml: {
       selector: (state) => state.mapLayer,
       action: setMapLayer,
@@ -82,6 +101,11 @@ const querySync = ReduxQuerySync.enhancer({
       selector: (state) => state.projectionMode,
       action: setProjectionMode,
       defaultValue: initialState.projectionMode,
+    },
+    p: {
+      selector: (state) => state.activeProfile,
+      action: setActiveProfile,
+      defaultValue: localStorage.getItem('tree.profile') || 'ch',
     },
   },
   initialTruth: 'location',

@@ -18,6 +18,7 @@ export const exportRecommendation = async (
   projectionMode,
   future,
   latinActive,
+  activeProfile,
   i18n,
   t,
 ) => {
@@ -48,7 +49,12 @@ export const exportRecommendation = async (
     `${t('silverFirArea.label')}`,
   );
 
-  const selectedLocation = info('forestType', location.forestType);
+  let selectedLocation;
+  try {
+    selectedLocation = info('forestType', location.forestType, activeProfile);
+  } catch {
+    selectedLocation = info('forestType', location.forestType);
+  }
   const locationString = writeLine(
     `: ${location.forestType} - ${
       selectedLocation[latinActive ? 'la' : i18n.language]

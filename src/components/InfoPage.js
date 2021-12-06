@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 import { Accordion } from 'semantic-ui-react';
 
 import InfoAbout from './InfoAbout';
@@ -7,16 +8,20 @@ import InfoBugs from './InfoBugs';
 import InfoContact from './InfoContact';
 import InfoGlossary from './InfoGlossary';
 import InfoLocation from './InfoLocation';
+import InfoLucerne from './InfoLucerne';
 import InfoParticipants from './InfoParticipants';
 import InfoRecommendation from './InfoRecommendation';
 import InfoReports from './InfoReports';
 import InfoUsage from './InfoUsage';
 import LanguageSwitcher from './LanguageSwitcher';
+import ProfileSwitcher from './ProfileSwitcher';
 import LatinSwitcher from './LatinSwitcher';
 
 import styles from './InfoPage.module.css';
+import InfoImpressum from './InfoImpressum';
 
 function InfoPage() {
+  const activeProfile = useSelector((state) => state.activeProfile);
   const { t } = useTranslation();
   const panels = [
     {
@@ -25,17 +30,16 @@ function InfoPage() {
       content: { content: <InfoAbout /> },
     },
     {
-      key: 'info.language',
-      title: { content: t('app.language') },
+      key: 'info.language&profile',
+      title: { content: `${t('app.language')} & ${t('app.profile')}` },
       content: {
         content: (
           <>
-            <p>
-              <LanguageSwitcher />
-            </p>
-            <p>
-              <LatinSwitcher />
-            </p>
+            <LanguageSwitcher />
+            <br /> <br />
+            <ProfileSwitcher />
+            <br />
+            <LatinSwitcher />
           </>
         ),
       },
@@ -78,7 +82,7 @@ function InfoPage() {
     {
       key: 'info.impressum',
       title: { content: t('info.impressumTitle') },
-      content: { content: t('info.impressum') },
+      content: { content: <InfoImpressum /> },
     },
     {
       key: 'info.disclaimer',
@@ -93,9 +97,23 @@ function InfoPage() {
     {
       key: 'info.changelog',
       title: { content: t('info.changelogTitle') },
-      content: { content: t('info.changelog') },
+      content: {
+        content: (
+          // eslint-disable-next-line react/no-danger
+          <div dangerouslySetInnerHTML={{ __html: t('info.changelog') }} />
+        ),
+      },
     },
   ];
+
+  if (activeProfile === 'lu') {
+    panels.push({
+      key: 'info.lu',
+      title: { content: InfoLucerne.title },
+      content: { content: <InfoLucerne /> },
+    });
+  }
+
   return (
     <div className={styles.page}>
       <Accordion fluid panels={panels} styled />

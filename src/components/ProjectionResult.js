@@ -51,6 +51,7 @@ function ProjectionResult() {
     projectionResult,
     latinActive,
     future,
+    activeProfile,
   } = useSelector((state) => ({
     location: state.location,
     mapLocationForestType: state.mapLocation.forestType,
@@ -58,6 +59,7 @@ function ProjectionResult() {
     projectionResult: state.projectionResult,
     latinActive: state.latinActive,
     future: state.future,
+    activeProfile: state.activeProfile,
   }));
   const { i18n, t } = useTranslation();
   const AZToday = getAZ(location.altitudinalZone);
@@ -94,7 +96,7 @@ function ProjectionResult() {
         options[field].filter((o) => o !== 'unknown').length > 0,
     );
 
-  const exportDoc = useCallback(
+  const exportDocx = useCallback(
     () =>
       exportRecommendation(
         location,
@@ -102,10 +104,20 @@ function ProjectionResult() {
         projectionMode,
         future,
         latinActive,
+        activeProfile,
         i18n,
         t,
       ),
-    [location, projectionResult, projectionMode, future, latinActive, i18n, t],
+    [
+      location,
+      projectionResult,
+      projectionMode,
+      future,
+      latinActive,
+      activeProfile,
+      i18n,
+      t,
+    ],
   );
 
   return location.altitudinalZone && location.forestType ? (
@@ -123,7 +135,7 @@ function ProjectionResult() {
             panes={finalPanes}
           />
           <div className={styles.exportButtonWrapper}>
-            <ExportButton exportFunction={exportDoc} />
+            <ExportButton exportFunction={exportDocx} />
           </div>
         </>
       ) : (

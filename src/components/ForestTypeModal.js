@@ -1,45 +1,72 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Modal } from 'semantic-ui-react';
+import React, { useEffect, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Modal, Ref } from 'semantic-ui-react';
 
-import Button from './Button';
+import ForestTypeComparison from './ForestTypeComparison';
 import ForestTypeDescription from './ForestTypeDescription';
+import ProfileSwitcher from './ProfileSwitcher';
+import {
+  setForestTypeModal,
+  setForestTypeComparison,
+  setForestTypeDescription,
+} from '../store/actions';
 
-function ForestTypeModal({ data, setIsForestTypeModalOpen }) {
-  const { i18n } = useTranslation();
+const modalModes = ['c', 'd'];
+
+function ForestTypeModal() {
+  const dispatch = useDispatch();
+  const modalRef = useRef();
+  const forestTypeModal = useSelector((state) => state.forestTypeModal);
+
+  useEffect(
+    () =>
+      modalRef.current &&
+      modalRef.current.scroll({ top: 0, left: 0, behavior: 'smooth' }),
+  );
 
   return (
-    <Modal
-      actions={[{ key: 'done', content: 'Ok' }]}
-      content={
-        <Modal.Content>
-          <ForestTypeDescription data={data} />
-        </Modal.Content>
-      }
-      header={
-        <Modal.Header>
-          {data.code} - {data[i18n.language]}{' '}
-          {data.la ? <i>{data.la}</i> : null}
-        </Modal.Header>
-      }
-      onClose={(e) => setIsForestTypeModalOpen(false)}
-      onOpen={(e) => setIsForestTypeModalOpen(true)}
-      trigger={<Button active compact icon="info" />}
-    />
+    <Ref innerRef={modalRef}>
+      <Modal
+        data-cypress="forestTypeModal"
+        open={modalModes.includes(forestTypeModal)}
+        actions={
+          <Modal.Actions
+            style={{ display: 'flex', justifyContent: 'flex-end' }}
+            actions={[
+              {
+                key: 'profileSwitcher',
+                as: ProfileSwitcher,
+              },
+              { key: 'done', content: 'Ok' },
+            ]}
+          />
+        }
+        content={
+          <Modal.Content>
+            {forestTypeModal === 'c' ? (
+              <ForestTypeComparison />
+            ) : (
+              <ForestTypeDescription />
+            )}
+          </Modal.Content>
+        }
+        header={
+          <Modal.Header>
+            {forestTypeModal === 'c' ? (
+              <ForestTypeComparison.Header />
+            ) : (
+              <ForestTypeDescription.Header />
+            )}
+          </Modal.Header>
+        }
+        onClose={(e) => {
+          dispatch(setForestTypeComparison());
+          dispatch(setForestTypeDescription());
+          dispatch(setForestTypeModal());
+        }}
+      />
+    </Ref>
   );
 }
-
-ForestTypeModal.propTypes = {
-  data: PropTypes.shape({
-    code: PropTypes.string,
-    la: PropTypes.string,
-  }).isRequired,
-  setIsForestTypeModalOpen: PropTypes.func,
-};
-
-ForestTypeModal.defaultProps = {
-  setIsForestTypeModalOpen: () => null,
-};
 
 export default ForestTypeModal;

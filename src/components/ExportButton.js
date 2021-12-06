@@ -8,22 +8,22 @@ function ExportButton({ exportFunction }) {
   const { t } = useTranslation();
   const [exporting, setExporting] = useState(false);
 
-  const exportDocX = useCallback(() => {
+  const exportDocx = useCallback(() => {
     setExporting(true);
     // exportFunction needs to return a promise (e.g. Packer.toBlob() from docxjs)
     exportFunction()
       .then(() => {
         setExporting(false);
       })
-      .catch(() => {
+      .catch((error) => {
         setExporting(false);
-        console.error('Could not export document');
+        console.error('Could not export document', error);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [exportFunction]);
 
   return (
-    <Button onClick={exportDocX} disabled={exporting}>
+    <Button onClick={exportDocx} disabled={exporting}>
       {exporting ? t('export.exporting') : t('export.export')}
     </Button>
   );
