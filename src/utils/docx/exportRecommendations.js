@@ -7,9 +7,7 @@ import {
   ExternalHyperlink,
 } from 'docx';
 import { saveAs } from 'file-saver';
-import { toLonLat, transform } from 'ol/proj';
 import { info } from '@geops/tree-lib';
-import { EPSG2056 } from '../../map/projection';
 import { writeLine, style, verticalSpace, pageBreak } from './utils';
 import { writeRecommendationsTable } from './writeRecommendationsTable';
 import { writeScenariosTable } from './writeScenariosTable';
@@ -35,14 +33,8 @@ export const exportRecommendations = async (
     t('export.date'),
   );
 
-  const locationCoords = toLonLat(
-    transform(location.coordinate, EPSG2056, 'EPSG:3857'),
-  )
-    .map((val) => val.toFixed(3))
-    .toString()
-    .replace(',', ', ');
   const coordinates = writeLine(
-    `: ${locationCoords}`,
+    `: ${location.coordinate.toString().replace(',', ', ')}`,
     `${t('export.coordinate')}`,
   );
 
@@ -65,9 +57,7 @@ export const exportRecommendations = async (
   );
 
   const altitudinalZone = writeLine(
-    `: ${t(
-      `forestTypeDiagram.altitudinalZoneAbbr.${location.altitudinalZone}`,
-    )}`,
+    `: ${info('altitudinalZone', location.altitudinalZone)[i18n.language]}`,
     `${t('altitudinalZone.label')}`,
   );
 

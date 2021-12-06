@@ -48,7 +48,7 @@ function ExportButton({ exportFunction }) {
   ]);
 
   return (
-    <Button onClick={exportDocX}>
+    <Button onClick={exportDocX} disabled={exporting}>
       {exporting ? t('export.exporting') : t('export.export')}
     </Button>
   );

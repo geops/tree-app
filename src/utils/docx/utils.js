@@ -26,10 +26,10 @@ export const cellIconPadding = {
 };
 
 const noBorderStyle = {
-  top: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
-  bottom: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
-  left: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
-  right: { style: BorderStyle.SINGLE, size: 1, color: '006268' },
+  top: { style: BorderStyle.NIL, size: 1, color: '006268' },
+  bottom: { style: BorderStyle.NIL, size: 1, color: '006268' },
+  left: { style: BorderStyle.NIL, size: 1, color: '006268' },
+  right: { style: BorderStyle.NIL, size: 1, color: '006268' },
 };
 
 // Colors
