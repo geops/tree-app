@@ -29,7 +29,7 @@ const getKey = (sl) =>
 
 const featuresToLocation = (location, f) => {
   const key = getKey(f.sourceLayer) || f.sourceLayer;
-  const value = f.properties.code.toString();
+  let value = f.properties.code.toString();
 
   if (f.sourceLayer === 'forest_types') {
     const transition = value.includes('(') && value.endsWith(')');
@@ -62,6 +62,10 @@ const featuresToLocation = (location, f) => {
       };
     }
     return location;
+  }
+
+  if (f.sourceLayer.startsWith('altitudinal_zones_') && value === '-10') {
+    value = null;
   }
 
   return { ...location, [key]: value };

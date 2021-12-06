@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
-import React, { useMemo, useState } from 'react';
-import { useSelector } from 'react-redux';
+import React, { useMemo } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
 import { Checkbox, Grid, Tab, Message } from 'semantic-ui-react';
-// eslint-disable-next-line import/no-unresolved
-import { recommend } from '@geops/tree-lib';
 
 import HelpModal from './HelpModal';
 import LatinSwitcher from './LatinSwitcher';
@@ -13,45 +11,33 @@ import { ReactComponent as AttentionIcon } from '../icons/recommendationAttentio
 import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
 import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
 import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
+import { getRecommendation } from '../utils/recommendationUtils';
+import { setFuture } from '../store/actions';
 import styles from './Recommendation.module.css';
 
 function Recommendation({ sameAltitudinalZone }) {
   const { t } = useTranslation();
-  const [future, setFuture] = useState(true);
-  const { location, projectionMode, projectionResult } = useSelector(
+  const dispatch = useDispatch();
+  const { location, projectionMode, projectionResult, future } = useSelector(
     (state) => ({
       location: state.location,
       projectionMode: state.projectionMode,
       projectionResult: state.projectionResult,
+      future: state.future,
     }),
   );
 
-  const r = useMemo(() => {
-    let projections;
-    let result;
-
-    if (projectionMode === 'f') {
-      projections = projectionResult.form.projections?.slice(-1) || [];
-    } else {
-      const { moderate, extreme } = projectionResult;
-      projections = [
-        ...(moderate.projections ? moderate.projections.slice(-1) : [location]),
-        ...(extreme.projections ? extreme.projections.slice(-1) : [location]),
-      ];
-    }
-
-    try {
-      if ((projections && projections.length === 0) || sameAltitudinalZone) {
-        result = recommend(location, [location], future);
-      } else {
-        result = recommend(location, projections, future);
-      }
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.log('Recommendation error: ', error);
-    }
-    return result;
-  }, [location, projectionMode, projectionResult, future, sameAltitudinalZone]);
+  const r = useMemo(
+    () =>
+      getRecommendation(
+        location,
+        projectionResult,
+        projectionMode,
+        future,
+        sameAltitudinalZone,
+      ),
+    [location, projectionMode, projectionResult, future, sameAltitudinalZone],
+  );
 
   return (
     <Tab.Pane data-cypress="recommendationPane">
@@ -146,7 +132,7 @@ function Recommendation({ sameAltitudinalZone }) {
                 className={styles.checkbox}
                 checked={future}
                 label={t('recommendation.future')}
-                onClick={() => setFuture(!future)}
+                onClick={() => dispatch(setFuture(!future))}
               />
             </Grid.Column>
           </Grid.Row>

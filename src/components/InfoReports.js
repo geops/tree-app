@@ -127,6 +127,13 @@ function InfoReports() {
         </em>
         <br />
         Im Auftrag des Bundesamt für Umwelt BAFU, 68 S.
+        <br />
+        <a
+          href="https://www.research-collection.ethz.ch/handle/20.500.11850/468765"
+          target="reports"
+        >
+          Link
+        </a>
       </li>
       <li>
         <strong>
