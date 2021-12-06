@@ -6,6 +6,7 @@ import {
   TableCell,
   VerticalAlign,
   BorderStyle,
+  TableRow,
 } from 'docx';
 import { svgAsPngUri } from 'save-svg-as-png';
 
@@ -25,11 +26,18 @@ export const cellIconPadding = {
   right: 200,
 };
 
-const noBorderStyle = {
+export const noBorderStyle = {
   top: { style: BorderStyle.NIL, size: 1, color: '006268' },
   bottom: { style: BorderStyle.NIL, size: 1, color: '006268' },
   left: { style: BorderStyle.NIL, size: 1, color: '006268' },
   right: { style: BorderStyle.NIL, size: 1, color: '006268' },
+};
+
+export const locationBorderStyle = {
+  top: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
+  bottom: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
+  left: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
+  right: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
 };
 
 // Colors
@@ -68,6 +76,22 @@ export const style = {
         size: 24,
         color: '000000',
         font: 'Arial',
+      },
+      paragraph: {
+        spacing: {
+          before: 120,
+          after: 120,
+        },
+      },
+    },
+    {
+      id: 'main-bold',
+      name: 'main-bold',
+      run: {
+        size: 24,
+        color: '000000',
+        font: 'Arial',
+        bold: true,
       },
       paragraph: {
         spacing: {
@@ -165,6 +189,9 @@ export const writeLine = (text, key) => {
         text: key,
         bold: true,
       }),
+      new TextRun({
+        text: ': ',
+      }),
     );
   }
   return new Paragraph({
@@ -173,23 +200,28 @@ export const writeLine = (text, key) => {
   });
 };
 
-export const svgToBlob = async (dataUri) =>
+export const svgStringToBlob = async (string) => {
+  const temp = document.createElement('div');
+  temp.innerHTML = string;
+  const svg = temp.firstChild;
+  return svgAsPngUri(svg).then((uri) => fetch(uri).then((res) => res.blob()));
+};
+
+export const svgUriToBlob = async (dataUri) =>
   fetch(dataUri)
     .then((response) => response.text())
-    .then((string) => {
-      const temp = document.createElement('div');
-      temp.innerHTML = string;
-      const svg = temp.firstChild;
-      return svgAsPngUri(svg);
-    })
-    .then((uri) => fetch(uri).then((res) => res.blob()));
+    .then(await svgStringToBlob);
 
 export const pageBreak = new Paragraph({
   pageBreakBefore: true,
   text: ' ',
 });
 
-export const getScenariosTextCell = (text, bgColor, fontStyle) =>
+export const getScenariosTextCell = (
+  text,
+  bgColor,
+  fontStyle = 'scenarios-primary',
+) =>
   new TableCell({
     shading: bgColor,
     margins: cellPadding,
@@ -209,6 +241,37 @@ export const getRecommendationCell = (children, padding = cellPadding, width) =>
     margins: padding,
     children,
     width,
+  });
+
+export const getLocationCell = (
+  content,
+  fontStyle = 'main',
+  padding = cellPadding,
+) => {
+  let children = [...content];
+  if (typeof content === 'string') {
+    children = content.split('\\n').map(
+      (string) =>
+        new Paragraph({
+          text: string,
+          style: fontStyle,
+        }),
+    );
+  }
+  return new TableCell({
+    verticalAlign: VerticalAlign.CENTER,
+    borders: locationBorderStyle,
+    margins: padding,
+    children,
+  });
+};
+
+export const getLocationRow = (headerText, valueContent) =>
+  new TableRow({
+    children: [
+      getLocationCell(headerText, 'main-bold'),
+      getLocationCell(valueContent),
+    ],
   });
 
 export default style;

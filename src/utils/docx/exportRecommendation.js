@@ -28,24 +28,24 @@ export const exportRecommendation = async (
   });
 
   const date = writeLine(
-    `: ${new Date().toLocaleDateString(
+    `${new Date().toLocaleDateString(
       `${i18n.language}-${i18n.language.toUpperCase()}`,
     )}`,
     t('export.date'),
   );
 
   const coordinates = writeLine(
-    `: ${location.coordinate.toString().replace(',', ', ')}`,
+    `${location.coordinate.toString().replace(',', ', ')}`,
     `${t('export.coordinate')}`,
   );
 
   const forestEcoregion = writeLine(
-    `: ${info('forestEcoregion', location.forestEcoregion)[i18n.language]}`,
+    `${info('forestEcoregion', location.forestEcoregion)[i18n.language]}`,
     `${t('forestEcoregion.label')}`,
   );
 
   const silverFirArea = writeLine(
-    `: ${info('silverFirArea', location.silverFirArea)[i18n.language]}`,
+    `${info('silverFirArea', location.silverFirArea)[i18n.language]}`,
     `${t('silverFirArea.label')}`,
   );
 
@@ -56,14 +56,14 @@ export const exportRecommendation = async (
     selectedLocation = info('forestType', location.forestType);
   }
   const locationString = writeLine(
-    `: ${location.forestType} - ${
+    `${location.forestType} - ${
       selectedLocation[latinActive ? 'la' : i18n.language]
     }`,
     `${t('export.locationType')}`,
   );
 
   const altitudinalZone = writeLine(
-    `: ${info('altitudinalZone', location.altitudinalZone)[i18n.language]}`,
+    `${info('altitudinalZone', location.altitudinalZone)[i18n.language]}`,
     `${t('altitudinalZone.label')}`,
   );
 

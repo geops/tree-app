@@ -11,7 +11,7 @@ import { getRecommendation } from '../recommendationUtils';
 import {
   treeTypesReducer,
   cellIconPadding,
-  svgToBlob,
+  svgUriToBlob,
   PAGE_WIDTH_DXA,
   getRecommendationCell,
 } from './utils';
@@ -54,10 +54,10 @@ export const writeRecommendationTable = async (
     getRecommendation(location, projectionResult, projectionMode, future),
   );
 
-  const negativeIcon = await svgToBlob(negative);
-  const positiveIcon = await svgToBlob(positive);
-  const neutralIcon = await svgToBlob(neutral);
-  const attentionIcon = await svgToBlob(attention);
+  const negativeIcon = await svgUriToBlob(negative);
+  const positiveIcon = await svgUriToBlob(positive);
+  const neutralIcon = await svgUriToBlob(neutral);
+  const attentionIcon = await svgUriToBlob(attention);
 
   const rows = [
     new TableRow({
