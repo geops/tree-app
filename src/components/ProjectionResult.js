@@ -135,7 +135,7 @@ function ProjectionResult() {
             panes={finalPanes}
           />
           <div className={styles.exportButtonWrapper}>
-            <ExportButton exportFunction={exportDocx} />
+            <ExportButton onClick={exportDocx} />
           </div>
         </>
       ) : (

@@ -5,14 +5,14 @@ import { useTranslation } from 'react-i18next';
 import { Button } from 'semantic-ui-react';
 import styles from './ExportButton.module.css';
 
-function ExportButton({ exportFunction }) {
+function ExportButton({ onClick }) {
   const { t } = useTranslation();
   const [exporting, setExporting] = useState(false);
 
   const exportDocx = useCallback(() => {
     setExporting(true);
     // exportFunction needs to return a promise (e.g. Packer.toBlob() from docxjs)
-    exportFunction()
+    onClick()
       .then(() => {
         setExporting(false);
       })
@@ -20,7 +20,7 @@ function ExportButton({ exportFunction }) {
         setExporting(false);
         console.error('Could not export document', err);
       });
-  }, [exportFunction]);
+  }, [onClick]);
 
   return (
     <Button
@@ -34,7 +34,7 @@ function ExportButton({ exportFunction }) {
 }
 
 ExportButton.propTypes = {
-  exportFunction: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default ExportButton;

@@ -36,7 +36,7 @@ function ForestTypeDescription({ data }) {
         >
           {t('forestTypeModal.compare')}
         </Button>
-        <ExportButton exportFunction={exportDocx} />
+        <ExportButton onClick={exportDocx} />
       </div>
       <Divider hidden />
       <Tab
