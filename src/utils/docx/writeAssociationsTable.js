@@ -1,39 +1,45 @@
-import {
-  //   Paragraph,
-  Table,
-  TableRow,
-  //   ImageRun,
-  //   VerticalAlign,
-  //   TextRun,
-} from 'docx';
-// import { info } from '@geops/tree-lib';
-// import { getRecommendation } from '../recommendationUtils';
-import {
-  //   treeTypesReducer,
-  //   cellIconPadding,
-  //   svgToBlob,
-  PAGE_WIDTH_DXA,
-  //   getRecommendationCell,
-} from './utils';
+import { Table } from 'docx';
+import { info } from '@geops/tree-lib';
+import { PAGE_WIDTH_DXA, getLocationRow } from './utils';
 
-export const writeAssociationsTable = async (
-  location,
-  projectionResult,
-  projectionMode,
-  future,
-  latinActive,
+export const writeAssociationsTable = (
+  associationGroup,
+  activeProfile,
   language,
   t,
 ) => {
-  const rows = [
-    new TableRow({
-      children: [],
-    }),
-  ];
+  const forestSubTypes = info('forestType', null, activeProfile).filter(
+    (type) => type.associationGroupCode === associationGroup.code,
+  );
 
   return new Table({
-    columnWidths: [PAGE_WIDTH_DXA / 6, (PAGE_WIDTH_DXA / 6) * 5],
-    rows,
+    columnWidths: [(PAGE_WIDTH_DXA / 6) * 2, (PAGE_WIDTH_DXA / 6) * 4],
+    rows: [
+      getLocationRow(
+        t('lu.forestType.aptitudeMeaning'),
+        associationGroup.aptitudeMeaning,
+      ),
+      getLocationRow(
+        t('lu.forestType.description'),
+        associationGroup.description,
+      ),
+      getLocationRow(
+        t('lu.forestType.heightDispersion'),
+        associationGroup.heightDispersion,
+      ),
+      getLocationRow(t('lu.forestType.location'), associationGroup.location),
+      getLocationRow(t('forestTypeDiagram.soil.header'), associationGroup.soil),
+      getLocationRow(
+        t('lu.forestType.heightDispersion'),
+        forestSubTypes.reduce(
+          (all, type, idx, arr) =>
+            `${all}${type.code} - ${type[language]}${
+              idx + 1 !== arr ? '\\n' : ''
+            }`,
+          [],
+        ),
+      ),
+    ],
   });
 };
 

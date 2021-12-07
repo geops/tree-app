@@ -7,10 +7,10 @@ import {
   ExternalHyperlink,
 } from 'docx';
 import { saveAs } from 'file-saver';
-// import { info } from '@geops/tree-lib';
+import { info } from '@geops/tree-lib';
 import { writeLine, style, verticalSpace, pageBreak } from './utils';
 import { writeLocationTable } from './writeLocationTable';
-// import { writeAssociationsTable } from './writeAssociationsTable';
+import { writeAssociationsTable } from './writeAssociationsTable';
 
 export const exportLocation = async (location, activeProfile, language, t) => {
   const mainTitle = new Paragraph({
@@ -23,10 +23,16 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     t('export.date'),
   );
 
-  const locationString = writeLine(
-    `${location.code} - ${location[language]} (${location.la})`,
-    `${t('app.location')}`,
-  );
+  const locationTitle = new Paragraph({
+    children: [
+      new TextRun(`${location.code} - ${location[language]} `),
+      new TextRun({
+        text: location.la,
+        italics: true,
+      }),
+    ],
+    heading: HeadingLevel.HEADING_3,
+  });
 
   const permalink = new Paragraph({
     style: 'main',
@@ -55,14 +61,29 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     t,
   );
 
-  // const scenariosTable = writeAssociationsTable(
-  //   location,
-  //   projectionResult,
-  //   projectionMode,
-  //   latinActive,
-  //   i18n.language,
-  //   t,
-  // );
+  const associationGroup = info(
+    'associationGroup',
+    location.associationGroupCode,
+    activeProfile,
+  );
+
+  const associationsTitle = new Paragraph({
+    children: [
+      new TextRun(`${associationGroup.code} - ${associationGroup[language]} `),
+      new TextRun({
+        text: associationGroup.la,
+        italics: true,
+      }),
+    ],
+    heading: HeadingLevel.HEADING_3,
+  });
+
+  const associationsTable = writeAssociationsTable(
+    associationGroup,
+    activeProfile,
+    language,
+    t,
+  );
 
   const doc = new Document({
     styles: style,
@@ -71,12 +92,13 @@ export const exportLocation = async (location, activeProfile, language, t) => {
         children: [
           mainTitle,
           date,
-          locationString,
           permalink,
-          ...verticalSpace(3),
+          ...verticalSpace(2),
+          locationTitle,
           locationTable,
           pageBreak,
-          // scenariosTable,
+          associationsTitle,
+          associationsTable,
         ],
       },
     ],

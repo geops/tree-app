@@ -67,6 +67,19 @@ export const style = {
         },
       },
     },
+    heading3: {
+      run: {
+        size: 28,
+        bold: true,
+        color: '000000',
+        font: 'Arial',
+      },
+      paragraph: {
+        spacing: {
+          after: 150,
+        },
+      },
+    },
   },
   paragraphStyles: [
     {
@@ -200,6 +213,7 @@ export const writeLine = (text, key) => {
   });
 };
 
+// Image helpers
 export const svgStringToBlob = async (string) => {
   const temp = document.createElement('div');
   temp.innerHTML = string;
@@ -217,6 +231,7 @@ export const pageBreak = new Paragraph({
   text: ' ',
 });
 
+// Docx table helpers
 export const getScenariosTextCell = (
   text,
   bgColor,

@@ -18,6 +18,7 @@ import {
   vegetationMapping,
   soilMapping,
   getTilleringTreeTypes,
+  getImageUrl,
 } from '../../components/ForestTypeDescription/lu/utils';
 
 const getTypesString = (array, mapping, translationPath, t) =>
@@ -45,6 +46,9 @@ export const writeLocationTable = async (
   );
   const sitePng = await svgStringToBlob(
     renderToString(<Site data={location.expoAndAspect} />),
+  );
+  const reliefPng = await fetch(getImageUrl(location.code)).then((response) =>
+    response.blob(),
   );
 
   const rows = [
@@ -107,7 +111,19 @@ export const writeLocationTable = async (
       t('lu.forestType.heightDispersion'),
       location.heightDispersion,
     ),
-    getLocationRow(t('lu.forestType.terrain'), 'location.terrain.placeholder'),
+    getLocationRow(t('lu.forestType.terrain'), [
+      new Paragraph({
+        children: [
+          new ImageRun({
+            data: reliefPng,
+            transformation: {
+              width: 300,
+              height: 180,
+            },
+          }),
+        ],
+      }),
+    ]),
     getLocationRow(
       `${t('forestTypeDiagram.slope')} & ${t(
         'forestTypeDiagram.aspect.label',
@@ -118,8 +134,8 @@ export const writeLocationTable = async (
             new ImageRun({
               data: sitePng,
               transformation: {
-                width: 200,
-                height: 200,
+                width: 250,
+                height: 250,
               },
             }),
           ],
@@ -129,18 +145,6 @@ export const writeLocationTable = async (
     getLocationRow(t('forestTypeDiagram.vegetation'), location.vegetation),
     getLocationRow(
       t('lu.forestType.vegetationIndicator.label'),
-      location.vegetationIndicator.reduce(
-        (all, indicator, index, arr) =>
-          indicator
-            ? `${all}${vegetationMapping[index]?.toUpperCase()}: ${t(
-                `lu.forestType.vegetationIndicator.${vegetationMapping[index]}`,
-              )}${index + 1 !== arr.length ? '\\n' : ''}`
-            : all,
-        '',
-      ),
-    ),
-    getLocationRow(
-      t('lu.forestType.soil.label'),
       getTypesString(
         location.vegetationIndicator,
         vegetationMapping,

@@ -124,7 +124,9 @@ function GeneralTab({ data }) {
             )}`}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <Site data={data.expoAndAspect} />
+            <div style={{ padding: '10px 0' }}>
+              <Site data={data.expoAndAspect} />
+            </div>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
