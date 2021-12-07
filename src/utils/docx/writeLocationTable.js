@@ -1,10 +1,9 @@
 import React from 'react';
-import { Paragraph, Table, ImageRun } from 'docx';
-import { renderToString } from 'react-dom/server';
+import { Paragraph, Table, ImageRun, TextRun } from 'docx';
 import TilleringSingle from '../../components/ForestTypeDescription/lu/TilleringSingle';
 import Tillering from '../../components/ForestTypeDescription/lu/Tillering';
 import Site from '../../components/ForestTypeDescription/lu/Site';
-import { PAGE_WIDTH_DXA, getLocationRow, svgStringToBlob } from './utils';
+import { PAGE_WIDTH_DXA, getLocationRow, jsxToBlob } from './utils';
 import {
   vegetationMapping,
   soilMapping,
@@ -27,44 +26,46 @@ const getTypesString = (array, mapping, translationPath, t) =>
   }, '');
 
 export const writeLocationTable = async (location, profile, t) => {
-  const tilleringHardwoodPng = await svgStringToBlob(
-    renderToString(<TilleringSingle data={location.tilleringHardwood} />),
+  const tilleringHardwoodPng = await jsxToBlob(
+    <TilleringSingle data={location.tilleringHardwood} />,
   );
-  const tilleringPng = await svgStringToBlob(
-    renderToString(<Tillering data={location.tillering} />),
-  );
-  const sitePng = await svgStringToBlob(
-    renderToString(<Site data={location.expoAndAspect} />),
-  );
-  const reliefPng = await fetch(getImageUrl(location.code, profile)).then(
-    (response) => response.blob(),
-  );
+  const tilleringPng = await jsxToBlob(<Tillering data={location.tillering} />);
+  const sitePng = await jsxToBlob(<Site data={location.expoAndAspect} />);
+  const reliefPng =
+    getImageUrl(location.code, profile) &&
+    (await fetch(getImageUrl(location.code, profile)).then((response) =>
+      response.blob(),
+    ));
 
   const rows = [
     getLocationRow(t('lu.forestType.tilleringHardwood'), [
       new Paragraph({
         children: [
-          new ImageRun({
-            data: tilleringHardwoodPng,
-            transformation: {
-              width: 300,
-              height: 40,
-            },
-          }),
+          tilleringHardwoodPng
+            ? new ImageRun({
+                data: tilleringHardwoodPng,
+                transformation: {
+                  width: 300,
+                  height: 40,
+                },
+              })
+            : new TextRun('-'),
         ],
       }),
     ]),
     getLocationRow(t('lu.forestType.tillering'), [
       new Paragraph({
         children: [
-          new ImageRun({
-            data: tilleringPng,
-            transformation: {
-              width: 300,
-              height:
-                getTilleringTreeTypes(location.tillering).length * 25 + 30,
-            },
-          }),
+          tilleringPng
+            ? new ImageRun({
+                data: tilleringPng,
+                transformation: {
+                  width: 300,
+                  height:
+                    getTilleringTreeTypes(location.tillering).length * 25 + 30,
+                },
+              })
+            : new TextRun('-'),
         ],
       }),
     ]),
@@ -103,13 +104,15 @@ export const writeLocationTable = async (location, profile, t) => {
     getLocationRow(t('lu.forestType.terrain'), [
       new Paragraph({
         children: [
-          new ImageRun({
-            data: reliefPng,
-            transformation: {
-              width: 300,
-              height: 180,
-            },
-          }),
+          reliefPng
+            ? new ImageRun({
+                data: reliefPng,
+                transformation: {
+                  width: 300,
+                  height: 180,
+                },
+              })
+            : new TextRun('-'),
         ],
       }),
     ]),
@@ -120,13 +123,15 @@ export const writeLocationTable = async (location, profile, t) => {
       [
         new Paragraph({
           children: [
-            new ImageRun({
-              data: sitePng,
-              transformation: {
-                width: 250,
-                height: 250,
-              },
-            }),
+            sitePng
+              ? new ImageRun({
+                  data: sitePng,
+                  transformation: {
+                    width: 250,
+                    height: 250,
+                  },
+                })
+              : new TextRun('-'),
           ],
         }),
       ],

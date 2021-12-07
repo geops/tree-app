@@ -9,6 +9,8 @@ import {
   TableRow,
 } from 'docx';
 import { svgAsPngUri } from 'save-svg-as-png';
+import { renderToString } from 'react-dom/server';
+import isSvg from 'is-svg';
 
 // Cell styles
 export const cellPadding = {
@@ -213,6 +215,11 @@ export const writeLine = (text, key) => {
   });
 };
 
+export const pageBreak = new Paragraph({
+  pageBreakBefore: true,
+  text: ' ',
+});
+
 // Image helpers
 export const svgStringToBlob = async (string) => {
   const temp = document.createElement('div');
@@ -226,10 +233,8 @@ export const svgUriToBlob = async (dataUri) =>
     .then((response) => response.text())
     .then(await svgStringToBlob);
 
-export const pageBreak = new Paragraph({
-  pageBreakBefore: true,
-  text: ' ',
-});
+export const jsxToBlob = (jsx) =>
+  isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
 // Docx table helpers
 export const getScenariosTextCell = (
