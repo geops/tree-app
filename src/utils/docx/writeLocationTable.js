@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Paragraph,
-  Table,
-  // TableRow,
-  ImageRun,
-  //   VerticalAlign,
-  // TableCell,
-} from 'docx';
-// import { info } from '@geops/tree-lib';
-// import { getRecommendation } from '../recommendationUtils';
+import { Paragraph, Table, ImageRun } from 'docx';
 import { renderToString } from 'react-dom/server';
 import TilleringSingle from '../../components/ForestTypeDescription/lu/TilleringSingle';
 import Tillering from '../../components/ForestTypeDescription/lu/Tillering';
@@ -32,12 +23,7 @@ const getTypesString = (array, mapping, translationPath, t) =>
     '',
   );
 
-export const writeLocationTable = async (
-  location,
-  activeProfile,
-  language,
-  t,
-) => {
+export const writeLocationTable = async (location, t) => {
   const tilleringHardwoodPng = await svgStringToBlob(
     renderToString(<TilleringSingle data={location.tilleringHardwood} />),
   );

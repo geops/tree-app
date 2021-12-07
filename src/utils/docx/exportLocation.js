@@ -59,12 +59,7 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     `${location.code} - ${location[language]} `,
     location.la,
   );
-  const locationTable = await writeLocationTable(
-    location,
-    language,
-    activeProfile,
-    t,
-  );
+  const locationTable = await writeLocationTable(location, t);
 
   const associationGroup = info(
     'associationGroup',
