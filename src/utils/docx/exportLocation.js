@@ -12,6 +12,18 @@ import { writeLine, style, verticalSpace, pageBreak } from './utils';
 import { writeLocationTable } from './writeLocationTable';
 import { writeAssociationsTable } from './writeAssociationsTable';
 
+const getTitle = (title, latin) =>
+  new Paragraph({
+    children: [
+      new TextRun(title),
+      new TextRun({
+        text: latin,
+        italics: true,
+      }),
+    ],
+    heading: HeadingLevel.HEADING_3,
+  });
+
 export const exportLocation = async (location, activeProfile, language, t) => {
   const mainTitle = new Paragraph({
     text: t('export.recommendationMainTitle'),
@@ -22,17 +34,6 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     `${new Date().toLocaleDateString(`${language}-${language.toUpperCase()}`)}`,
     t('export.date'),
   );
-
-  const locationTitle = new Paragraph({
-    children: [
-      new TextRun(`${location.code} - ${location[language]} `),
-      new TextRun({
-        text: location.la,
-        italics: true,
-      }),
-    ],
-    heading: HeadingLevel.HEADING_3,
-  });
 
   const permalink = new Paragraph({
     style: 'main',
@@ -54,6 +55,10 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     ],
   });
 
+  const locationTitle = getTitle(
+    `${location.code} - ${location[language]} `,
+    location.la,
+  );
   const locationTable = await writeLocationTable(
     location,
     language,
@@ -67,17 +72,10 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     activeProfile,
   );
 
-  const associationsTitle = new Paragraph({
-    children: [
-      new TextRun(`${associationGroup.code} - ${associationGroup[language]} `),
-      new TextRun({
-        text: associationGroup.la,
-        italics: true,
-      }),
-    ],
-    heading: HeadingLevel.HEADING_3,
-  });
-
+  const associationsTitle = getTitle(
+    `${associationGroup.code} - ${associationGroup[language]} `,
+    associationGroup.la,
+  );
   const associationsTable = writeAssociationsTable(
     associationGroup,
     activeProfile,
