@@ -492,7 +492,8 @@
         "o": "Indicateur de base alternativement humide/sécher",
         "p": "Indicateur de sécheresse"
       },
-      "terrain": "Terrain"
+      "terrain": "Terrain",
+      "cantonalForestType": "Type de lieu cantonale"
     }
   }
 }

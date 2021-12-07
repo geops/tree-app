@@ -495,7 +495,8 @@
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
       },
-      "terrain": "Relief"
+      "terrain": "Relief",
+      "cantonalForestType": "Kantonaler Standortstyp"
     }
   }
 }

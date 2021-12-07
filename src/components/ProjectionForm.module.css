@@ -15,3 +15,9 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+.cantonalForestTypeLabel {
+  margin: 0 0 0.28571429rem 0 !important;
+  font-weight: 700;
+  color: var(--primary-color-500);
+}
