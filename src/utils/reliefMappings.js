@@ -1,3 +1,5 @@
+import { getFirstLetterIndex } from './sortForestTypes';
+
 const lu = [
   '1,2',
   '6,7',
@@ -22,6 +24,18 @@ const lu = [
 
 const reliefMappings = {
   lu,
+};
+
+export const getImageUrl = (code, activeProfile) => {
+  const imageName = reliefMappings[activeProfile].find((string) => {
+    const forestTypeCodeNumber = code.slice(
+      0,
+      getFirstLetterIndex(code) || code.length,
+    );
+    const forestTypes = string.split(',');
+    return forestTypes.includes(forestTypeCodeNumber);
+  });
+  return imageName && `/images/${activeProfile}/relief/${imageName}.png`;
 };
 
 export default reliefMappings;

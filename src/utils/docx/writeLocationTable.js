@@ -9,8 +9,8 @@ import {
   vegetationMapping,
   soilMapping,
   getTilleringTreeTypes,
-  getImageUrl,
 } from '../../components/ForestTypeDescription/lu/utils';
+import { getImageUrl } from '../reliefMappings';
 
 const getTypesString = (array, mapping, translationPath, t) =>
   array.reduce((all, indicator, index, arr) => {
@@ -26,7 +26,7 @@ const getTypesString = (array, mapping, translationPath, t) =>
     )}    ${icon}${index + 1 !== arr.length ? '\\n' : ''}`;
   }, '');
 
-export const writeLocationTable = async (location, t) => {
+export const writeLocationTable = async (location, profile, t) => {
   const tilleringHardwoodPng = await svgStringToBlob(
     renderToString(<TilleringSingle data={location.tilleringHardwood} />),
   );
@@ -36,8 +36,8 @@ export const writeLocationTable = async (location, t) => {
   const sitePng = await svgStringToBlob(
     renderToString(<Site data={location.expoAndAspect} />),
   );
-  const reliefPng = await fetch(getImageUrl(location.code)).then((response) =>
-    response.blob(),
+  const reliefPng = await fetch(getImageUrl(location.code, profile)).then(
+    (response) => response.blob(),
   );
 
   const rows = [

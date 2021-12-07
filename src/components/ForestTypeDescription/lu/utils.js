@@ -1,6 +1,3 @@
-import { getFirstLetterIndex } from '../../../utils/sortForestTypes';
-import reliefMappings from '../../../utils/reliefMappings';
-
 export const treeTypeMapping = [
   'Fi',
   'Ta',
@@ -48,18 +45,6 @@ export const vegetationMapping = [
   'o',
   'p',
 ];
-
-export const getImageUrl = (code) => {
-  const imageName = reliefMappings.lu.find((string) => {
-    const forestTypeCodeNumber = code.slice(
-      0,
-      getFirstLetterIndex(code) || code.length,
-    );
-    const forestTypes = string.split(',');
-    return forestTypes.includes(forestTypeCodeNumber);
-  });
-  return imageName && `/images/lu/relief/${imageName}.png`;
-};
 
 export const getTilleringTreeTypes = (data) =>
   data[0]
