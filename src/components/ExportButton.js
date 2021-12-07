@@ -20,7 +20,6 @@ function ExportButton({ exportFunction }) {
         setExporting(false);
         console.error('Could not export document', err);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [exportFunction]);
 
   return (
