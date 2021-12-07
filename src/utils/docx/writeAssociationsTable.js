@@ -30,7 +30,7 @@ export const writeAssociationsTable = (
       getLocationRow(t('lu.forestType.location'), associationGroup.location),
       getLocationRow(t('forestTypeDiagram.soil.header'), associationGroup.soil),
       getLocationRow(
-        t('lu.forestType.heightDispersion'),
+        t('lu.forestType.subGroups'),
         forestSubTypes.reduce(
           (all, type, idx, arr) =>
             `${all}${type.code} - ${type[language]}${

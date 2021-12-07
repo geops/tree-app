@@ -10,20 +10,7 @@ import {
   getTilleringTreeTypes,
 } from '../../components/ForestTypeDescription/lu/utils';
 import { getImageUrl } from '../reliefMappings';
-
-const getTypesString = (array, mapping, translationPath, t) =>
-  array.reduce((all, indicator, index, arr) => {
-    if (!indicator) {
-      return all;
-    }
-    let icon = '+';
-    if (indicator !== 1) {
-      icon = indicator === 2 ? '□' : '■';
-    }
-    return `${all}${mapping[index]?.toUpperCase()}: ${t(
-      `${translationPath}.${mapping[index]}`,
-    )}    ${icon}${index + 1 !== arr.length ? '\\n' : ''}`;
-  }, '');
+import { writeDataTable } from './writeDataTable';
 
 export const writeLocationTable = async (location, profile, t) => {
   const tilleringHardwoodPng = await jsxToBlob(
@@ -54,6 +41,7 @@ export const writeLocationTable = async (location, profile, t) => {
       }),
     ]),
     getLocationRow(t('lu.forestType.tillering'), [
+      new Paragraph(''),
       new Paragraph({
         children: [
           tilleringPng
@@ -68,6 +56,7 @@ export const writeLocationTable = async (location, profile, t) => {
             : new TextRun('-'),
         ],
       }),
+      new Paragraph(''),
     ]),
     getLocationRow(
       `${t('lu.forestType.tilleringFirwood')} min (opt)`,
@@ -137,19 +126,17 @@ export const writeLocationTable = async (location, profile, t) => {
       ],
     ),
     getLocationRow(t('forestTypeDiagram.vegetation'), location.vegetation),
-    getLocationRow(
-      t('lu.forestType.vegetationIndicator.label'),
-      getTypesString(
+    getLocationRow(t('lu.forestType.vegetationIndicator.label'), [
+      writeDataTable(
         location.vegetationIndicator,
         vegetationMapping,
         'lu.forestType.vegetationIndicator',
         t,
       ),
-    ),
-    getLocationRow(
-      t('lu.forestType.soil.label'),
-      getTypesString(location.soil, soilMapping, 'lu.forestType.soil', t),
-    ),
+    ]),
+    getLocationRow(t('lu.forestType.soil.label'), [
+      writeDataTable(location.soil, soilMapping, 'lu.forestType.soil', t),
+    ]),
   ];
 
   return new Table({
