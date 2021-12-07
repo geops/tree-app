@@ -13,15 +13,18 @@ import {
 } from '../../components/ForestTypeDescription/lu/utils';
 
 const getTypesString = (array, mapping, translationPath, t) =>
-  array.reduce(
-    (all, indicator, index, arr) =>
-      indicator
-        ? `${all}${mapping[index]?.toUpperCase()}: ${t(
-            `${translationPath}.${mapping[index]}`,
-          )}${index + 1 !== arr.length ? '\\n' : ''}`
-        : all,
-    '',
-  );
+  array.reduce((all, indicator, index, arr) => {
+    if (!indicator) {
+      return all;
+    }
+    let icon = '+';
+    if (indicator !== 1) {
+      icon = indicator === 2 ? '□' : '■';
+    }
+    return `${all}${mapping[index]?.toUpperCase()}: ${t(
+      `${translationPath}.${mapping[index]}`,
+    )}    ${icon}${index + 1 !== arr.length ? '\\n' : ''}`;
+  }, '');
 
 export const writeLocationTable = async (location, t) => {
   const tilleringHardwoodPng = await svgStringToBlob(
