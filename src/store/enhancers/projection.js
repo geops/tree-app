@@ -4,6 +4,7 @@ import { applyMiddleware } from 'redux';
 import { locate, project } from '@geops/tree-lib';
 
 import {
+  SET_ACTIVE_PROFILE,
   SET_FORM_LOCATION,
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
@@ -14,6 +15,7 @@ import {
 import { initialState } from '../reducers';
 
 const projectionActionTypes = [
+  SET_ACTIVE_PROFILE,
   SET_FORM_LOCATION,
   SET_MAP_LOCATION,
   SET_PROJECTION_MODE,
