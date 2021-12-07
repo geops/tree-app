@@ -28,7 +28,8 @@
     "mode": "Die Standort-Empfehlung wurde im manuellen Modus erstellt.",
     "link": "Permalink",
     "locationType": "Standortstyp",
-    "exporting": "Vorgang läuft..."
+    "exporting": "Vorgang läuft...",
+    "error": "Exportieren fehlgeschlagen"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "ü.M.",

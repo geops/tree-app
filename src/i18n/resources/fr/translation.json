@@ -28,7 +28,8 @@
     "mode": "La recommandation d'emplacement a été créée en mode manuel.",
     "link": "Lien permanent",
     "locationType": "Type de lieu",
-    "exporting": "En cours..."
+    "exporting": "En cours...",
+    "error": "Échec de l'exportation"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",

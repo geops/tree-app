@@ -3,6 +3,7 @@ import React, { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { Button } from 'semantic-ui-react';
+import styles from './ExportButton.module.css';
 
 function ExportButton({ exportFunction }) {
   const { t } = useTranslation();
@@ -15,15 +16,19 @@ function ExportButton({ exportFunction }) {
       .then(() => {
         setExporting(false);
       })
-      .catch((error) => {
+      .catch((err) => {
         setExporting(false);
-        console.error('Could not export document', error);
+        console.error('Could not export document', err);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [exportFunction]);
 
   return (
-    <Button onClick={exportDocx} disabled={exporting}>
+    <Button
+      onClick={exportDocx}
+      disabled={exporting}
+      className={styles.exportButton}
+    >
       {exporting ? t('export.exporting') : t('export.export')}
     </Button>
   );
