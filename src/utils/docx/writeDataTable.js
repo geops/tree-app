@@ -1,5 +1,5 @@
 import { Table, TableRow } from 'docx';
-import { PAGE_WIDTH_DXA, getLocationCell } from './utils';
+import { PAGE_WIDTH_DXA, getLocationTableCell } from './exportUtils';
 
 export const writeDataTable = (soils, mapping, translationPath, t) => {
   const rows = soils.reduce((all, indicator, index, arr) => {
@@ -14,19 +14,19 @@ export const writeDataTable = (soils, mapping, translationPath, t) => {
       ...all,
       new TableRow({
         children: [
-          getLocationCell(
+          getLocationTableCell(
             `${mapping[index]?.toUpperCase()}: ${t(
               `${translationPath}.${mapping[index]}`,
             )}`,
           ),
-          getLocationCell(icon),
+          getLocationTableCell(icon),
         ],
       }),
     ];
   }, []);
 
   return new Table({
-    columnWidths: [(PAGE_WIDTH_DXA / 6) * 4, PAGE_WIDTH_DXA / 12],
+    columnWidths: [(PAGE_WIDTH_DXA / 8) * 5, PAGE_WIDTH_DXA / 12],
     rows,
   });
 };

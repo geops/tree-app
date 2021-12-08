@@ -1,6 +1,6 @@
 import { Table } from 'docx';
 import { info } from '@geops/tree-lib';
-import { PAGE_WIDTH_DXA, getLocationRow } from './utils';
+import { PAGE_WIDTH_DXA, getLocationTableRow } from './exportUtils';
 
 export const writeAssociationsTable = (
   associationGroup,
@@ -15,21 +15,27 @@ export const writeAssociationsTable = (
   return new Table({
     columnWidths: [(PAGE_WIDTH_DXA / 6) * 2, (PAGE_WIDTH_DXA / 6) * 4],
     rows: [
-      getLocationRow(
+      getLocationTableRow(
         t('lu.forestType.aptitudeMeaning'),
         associationGroup.aptitudeMeaning,
       ),
-      getLocationRow(
+      getLocationTableRow(
         t('lu.forestType.description'),
         associationGroup.description,
       ),
-      getLocationRow(
+      getLocationTableRow(
         t('lu.forestType.heightDispersion'),
         associationGroup.heightDispersion,
       ),
-      getLocationRow(t('lu.forestType.location'), associationGroup.location),
-      getLocationRow(t('forestTypeDiagram.soil.header'), associationGroup.soil),
-      getLocationRow(
+      getLocationTableRow(
+        t('lu.forestType.location'),
+        associationGroup.location,
+      ),
+      getLocationTableRow(
+        t('forestTypeDiagram.soil.header'),
+        associationGroup.soil,
+      ),
+      getLocationTableRow(
         t('lu.forestType.subGroups'),
         forestSubTypes.reduce(
           (all, type, idx, arr) =>

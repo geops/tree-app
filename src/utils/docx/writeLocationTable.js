@@ -3,7 +3,7 @@ import { Paragraph, Table, ImageRun, TextRun } from 'docx';
 import TilleringSingle from '../../components/ForestTypeDescription/lu/TilleringSingle';
 import Tillering from '../../components/ForestTypeDescription/lu/Tillering';
 import Site from '../../components/ForestTypeDescription/lu/Site';
-import { PAGE_WIDTH_DXA, getLocationRow, jsxToBlob } from './utils';
+import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from './exportUtils';
 import {
   vegetationMapping,
   soilMapping,
@@ -25,7 +25,7 @@ export const writeLocationTable = async (location, profile, t) => {
     ));
 
   const rows = [
-    getLocationRow(t('lu.forestType.tilleringHardwood'), [
+    getLocationTableRow(t('lu.forestType.tilleringHardwood'), [
       new Paragraph({
         children: [
           tilleringHardwoodPng
@@ -40,7 +40,7 @@ export const writeLocationTable = async (location, profile, t) => {
         ],
       }),
     ]),
-    getLocationRow(t('lu.forestType.tillering'), [
+    getLocationTableRow(t('lu.forestType.tillering'), [
       new Paragraph(''),
       new Paragraph({
         children: [
@@ -58,7 +58,7 @@ export const writeLocationTable = async (location, profile, t) => {
       }),
       new Paragraph(''),
     ]),
-    getLocationRow(
+    getLocationTableRow(
       `${t('lu.forestType.tilleringFirwood')} min (opt)`,
       location.tilleringFirwood.every((val) => !val)
         ? '-'
@@ -68,29 +68,29 @@ export const writeLocationTable = async (location, profile, t) => {
               : ''
           }`,
     ),
-    getLocationRow(
+    getLocationTableRow(
       t('lu.forestType.pioneerTreeTypes'),
       location.pioneerTreeTypes.toString().replace(',', ', '),
     ),
-    getLocationRow(
+    getLocationTableRow(
       t('lu.forestType.compactRisk.label'),
       t(`lu.forestType.compactRisk.${location.compactRisk}`),
     ),
-    getLocationRow(
+    getLocationTableRow(
       t('lu.forestType.priority.label'),
       location.priority
         ? t(`lu.forestType.priority.${location.priority}`)
         : '-',
     ),
-    getLocationRow(t('lu.forestType.aptitude'), location.aptitude),
-    getLocationRow(t('lu.forestType.rejuvDev'), location.forestryRejuvDev),
-    getLocationRow(t('lu.forestType.care'), location.forestryCare),
-    getLocationRow(t('lu.forestType.description'), location.description),
-    getLocationRow(
+    getLocationTableRow(t('lu.forestType.aptitude'), location.aptitude),
+    getLocationTableRow(t('lu.forestType.rejuvDev'), location.forestryRejuvDev),
+    getLocationTableRow(t('lu.forestType.care'), location.forestryCare),
+    getLocationTableRow(t('lu.forestType.description'), location.description),
+    getLocationTableRow(
       t('lu.forestType.heightDispersion'),
       location.heightDispersion,
     ),
-    getLocationRow(t('lu.forestType.terrain'), [
+    getLocationTableRow(t('lu.forestType.terrain'), [
       new Paragraph({
         children: [
           reliefPng
@@ -105,7 +105,7 @@ export const writeLocationTable = async (location, profile, t) => {
         ],
       }),
     ]),
-    getLocationRow(
+    getLocationTableRow(
       `${t('forestTypeDiagram.slope')} & ${t(
         'forestTypeDiagram.aspect.label',
       )}`,
@@ -125,8 +125,8 @@ export const writeLocationTable = async (location, profile, t) => {
         }),
       ],
     ),
-    getLocationRow(t('forestTypeDiagram.vegetation'), location.vegetation),
-    getLocationRow(t('lu.forestType.vegetationIndicator.label'), [
+    getLocationTableRow(t('forestTypeDiagram.vegetation'), location.vegetation),
+    getLocationTableRow(t('lu.forestType.vegetationIndicator.label'), [
       writeDataTable(
         location.vegetationIndicator,
         vegetationMapping,
@@ -134,7 +134,7 @@ export const writeLocationTable = async (location, profile, t) => {
         t,
       ),
     ]),
-    getLocationRow(t('lu.forestType.soil.label'), [
+    getLocationTableRow(t('lu.forestType.soil.label'), [
       writeDataTable(location.soil, soilMapping, 'lu.forestType.soil', t),
     ]),
   ];

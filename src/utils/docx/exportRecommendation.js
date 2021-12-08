@@ -8,7 +8,7 @@ import {
 } from 'docx';
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
-import { writeLine, style, verticalSpace, pageBreak } from './utils';
+import { writeLine, style, verticalSpace, pageBreak } from './exportUtils';
 import { writeRecommendationTable } from './writeRecommendationTable';
 import { writeScenariosTable } from './writeScenariosTable';
 

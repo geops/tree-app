@@ -12,6 +12,8 @@ import { svgAsPngUri } from 'save-svg-as-png';
 import { renderToString } from 'react-dom/server';
 import isSvg from 'is-svg';
 
+export const PAGE_WIDTH_DXA = 9000;
+
 // Cell styles
 export const cellPadding = {
   marginUnitType: WidthType.DXA,
@@ -28,19 +30,19 @@ export const cellIconPadding = {
   right: 200,
 };
 
-export const noBorderStyle = {
-  top: { style: BorderStyle.NIL, size: 1, color: '006268' },
-  bottom: { style: BorderStyle.NIL, size: 1, color: '006268' },
-  left: { style: BorderStyle.NIL, size: 1, color: '006268' },
-  right: { style: BorderStyle.NIL, size: 1, color: '006268' },
-};
+export const getBorderStyle = (
+  color = '000000',
+  style = BorderStyle.SINGLE,
+  size = 1,
+) => ({
+  top: { style, size, color },
+  bottom: { style, size, color },
+  left: { style, size, color },
+  right: { style, size, color },
+});
 
-export const locationBorderStyle = {
-  top: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
-  bottom: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
-  left: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
-  right: { style: BorderStyle.SINGLE, size: 1, color: 'e0e1e2' },
-};
+export const noBorderStyle = getBorderStyle('006268', BorderStyle.NIL);
+export const locationBorderStyle = getBorderStyle('e0e1e2');
 
 // Colors
 export const getColor = (hex) => ({
@@ -54,6 +56,7 @@ export const treeAppColorToday = getColor('004d4f');
 export const treeAppColorModerate = getColor('003c3e');
 export const treeAppColorExtreme = getColor('002c2d');
 
+// Main docx style https://docx.js.org/#/usage/styling-with-js
 export const style = {
   default: {
     heading1: {
@@ -185,9 +188,7 @@ export const style = {
   ],
 };
 
-export const PAGE_WIDTH_DXA = 9000;
-
-// Helpers
+// Docx layout/formatting helpers
 export const treeTypesReducer = (language) => (string, type, index) =>
   `${string}${index !== 0 ? ', ' : ''}${type[language]}${
     type.endangered ? '†' : ''
@@ -237,7 +238,7 @@ export const jsxToBlob = (jsx) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
 // Docx table helpers
-export const getScenariosTextCell = (
+export const getScenariosTableCell = (
   text,
   bgColor,
   fontStyle = 'scenarios-primary',
@@ -253,7 +254,11 @@ export const getScenariosTextCell = (
     ],
   });
 
-export const getRecommendationCell = (children, padding = cellPadding, width) =>
+export const getRecommendationTableCell = (
+  children,
+  padding = cellPadding,
+  width,
+) =>
   new TableCell({
     verticalAlign: VerticalAlign.CENTER,
     borders: noBorderStyle,
@@ -263,7 +268,7 @@ export const getRecommendationCell = (children, padding = cellPadding, width) =>
     width,
   });
 
-export const getLocationCell = (
+export const getLocationTableCell = (
   content,
   fontStyle = 'main',
   padding = cellPadding,
@@ -286,11 +291,11 @@ export const getLocationCell = (
   });
 };
 
-export const getLocationRow = (headerText, valueContent) =>
+export const getLocationTableRow = (headerText, valueContent) =>
   new TableRow({
     children: [
-      getLocationCell(headerText, 'main-bold'),
-      getLocationCell(valueContent),
+      getLocationTableCell(headerText, 'main-bold'),
+      getLocationTableCell(valueContent),
     ],
   });
 
