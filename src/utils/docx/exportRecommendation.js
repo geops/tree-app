@@ -8,11 +8,11 @@ import {
 } from 'docx';
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
-import { writeLine, style, verticalSpace, pageBreak } from './utils';
-import { writeRecommendationsTable } from './writeRecommendationsTable';
+import { writeLine, style, verticalSpace, pageBreak } from './exportUtils';
+import { writeRecommendationTable } from './writeRecommendationTable';
 import { writeScenariosTable } from './writeScenariosTable';
 
-export const exportRecommendations = async (
+export const exportRecommendation = async (
   location,
   projectionResult,
   projectionMode,
@@ -28,24 +28,24 @@ export const exportRecommendations = async (
   });
 
   const date = writeLine(
-    `: ${new Date().toLocaleDateString(
+    `${new Date().toLocaleDateString(
       `${i18n.language}-${i18n.language.toUpperCase()}`,
     )}`,
     t('export.date'),
   );
 
   const coordinates = writeLine(
-    `: ${location.coordinate.toString().replace(',', ', ')}`,
+    `${location.coordinate.toString().replace(',', ', ')}`,
     `${t('export.coordinate')}`,
   );
 
   const forestEcoregion = writeLine(
-    `: ${info('forestEcoregion', location.forestEcoregion)[i18n.language]}`,
+    `${info('forestEcoregion', location.forestEcoregion)[i18n.language]}`,
     `${t('forestEcoregion.label')}`,
   );
 
   const silverFirArea = writeLine(
-    `: ${info('silverFirArea', location.silverFirArea)[i18n.language]}`,
+    `${info('silverFirArea', location.silverFirArea)[i18n.language]}`,
     `${t('silverFirArea.label')}`,
   );
 
@@ -56,14 +56,14 @@ export const exportRecommendations = async (
     selectedLocation = info('forestType', location.forestType);
   }
   const locationString = writeLine(
-    `: ${location.forestType} - ${
+    `${location.forestType} - ${
       selectedLocation[latinActive ? 'la' : i18n.language]
     }`,
     `${t('export.locationType')}`,
   );
 
   const altitudinalZone = writeLine(
-    `: ${info('altitudinalZone', location.altitudinalZone)[i18n.language]}`,
+    `${info('altitudinalZone', location.altitudinalZone)[i18n.language]}`,
     `${t('altitudinalZone.label')}`,
   );
 
@@ -102,7 +102,7 @@ export const exportRecommendations = async (
     details.push(writeLine(t('export.mode')));
   }
 
-  const recommendationsTable = await writeRecommendationsTable(
+  const recommendationsTable = await writeRecommendationTable(
     location,
     projectionResult,
     projectionMode,
@@ -141,4 +141,4 @@ export const exportRecommendations = async (
   });
 };
 
-export default exportRecommendations;
+export default exportRecommendation;

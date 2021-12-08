@@ -8,7 +8,7 @@ import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
 import {
-  forestTypeMapping,
+  treeTypeMapping,
   soilMapping,
 } from '../../ForestTypeDescription/lu/utils';
 import {
@@ -83,7 +83,7 @@ function ForestTypeTab({ data }) {
 
   const treeTypeCells = useMemo(
     () =>
-      forestTypeMapping.reduce((treeTypes, currTreeType, idx) => {
+      treeTypeMapping.reduce((treeTypes, currTreeType, idx) => {
         const cells = data.map((ft) => ({
           code: ft.code,
           natural: ft.tillering[0][idx],

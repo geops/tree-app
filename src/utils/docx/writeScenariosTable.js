@@ -9,8 +9,8 @@ import {
   treeAppColorToday,
   treeAppColorModerate,
   treeAppColorExtreme,
-  getScenariosTextCell,
-} from './utils';
+  getScenariosTableCell,
+} from './exportUtils';
 
 const getColumnColor = (index) => {
   if (index === 1) {
@@ -93,19 +93,18 @@ export const writeScenariosTable = (
       // Dominant forest type
       new TableRow({
         children: [
-          getScenariosTextCell(
+          getScenariosTableCell(
             t('projection.treeTypesOne'),
             treeAppColorMain,
             'scenarios-primary-bold',
           ),
           ...columns.map((column, idx) =>
-            getScenariosTextCell(
+            getScenariosTableCell(
               column.dominantTypes.reduce(
                 treeTypesReducer(latinActive ? 'la' : language),
                 '',
               ),
               getColumnColor(idx),
-              'scenarios-primary',
             ),
           ),
         ],
@@ -113,19 +112,18 @@ export const writeScenariosTable = (
       // Important forest types
       new TableRow({
         children: [
-          getScenariosTextCell(
+          getScenariosTableCell(
             t('projection.treeTypesTwo'),
             treeAppColorMain,
             'scenarios-primary-bold',
           ),
           ...columns.map((column, idx) =>
-            getScenariosTextCell(
+            getScenariosTableCell(
               column.importantTypes.reduce(
                 treeTypesReducer(latinActive ? 'la' : language),
                 '',
               ),
               getColumnColor(idx),
-              'scenarios-primary',
             ),
           ),
         ],
@@ -133,19 +131,18 @@ export const writeScenariosTable = (
       // Other forest types
       new TableRow({
         children: [
-          getScenariosTextCell(
+          getScenariosTableCell(
             t('projection.treeTypesThree'),
             treeAppColorMain,
             'scenarios-primary-bold',
           ),
           ...columns.map((column, idx) =>
-            getScenariosTextCell(
+            getScenariosTableCell(
               column.otherTypes.reduce(
                 treeTypesReducer(latinActive ? 'la' : language),
                 '',
               ),
               getColumnColor(idx),
-              'scenarios-primary',
             ),
           ),
         ],

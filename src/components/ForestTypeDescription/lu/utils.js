@@ -1,4 +1,4 @@
-export const forestTypeMapping = [
+export const treeTypeMapping = [
   'Fi',
   'Ta',
   'WFö',
@@ -46,9 +46,22 @@ export const vegetationMapping = [
   'p',
 ];
 
+export const getTilleringTreeTypes = (data) =>
+  data[0]
+    .map((naturalForest, index) => {
+      const farmForest = data[1] && data[1][index];
+      const type = treeTypeMapping[index];
+      return { naturalForest, farmForest, type };
+    })
+    .filter(
+      (r) =>
+        (r.naturalForest && r.naturalForest.filter((t) => t).length) ||
+        (r.farmForest && r.farmForest.filter((t) => t).length),
+    );
+
 const utils = {
   soilMapping,
   vegetationMapping,
-  forestTypeMapping,
+  treeTypeMapping,
 };
 export default utils;

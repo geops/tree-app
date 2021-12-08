@@ -11,6 +11,7 @@
     "language": "Sprache",
     "latinActive": "Lateinische Artnamen anzeigen",
     "location": "Standort",
+    "locationDescription": "Standortbeschreibung",
     "map": "Karte",
     "profile": "Profil",
     "recommendation": "Empfehlung",
@@ -27,7 +28,8 @@
     "mode": "Die Standort-Empfehlung wurde im manuellen Modus erstellt.",
     "link": "Permalink",
     "locationType": "Standortstyp",
-    "exporting": "Vorgang läuft..."
+    "exporting": "Vorgang läuft...",
+    "error": "Exportieren fehlgeschlagen"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "ü.M.",
@@ -493,7 +495,8 @@
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
       },
-      "terrain": "Relief"
+      "terrain": "Relief",
+      "cantonalForestType": "Kantonaler Standortstyp"
     }
   }
 }

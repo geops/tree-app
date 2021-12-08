@@ -1,24 +1,16 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import NoData from '../NoData';
 import styles from '../ForestTypeDescription.module.css';
-import { getFirstLetterIndex } from '../../../utils/sortForestTypes';
-import reliefMappings from '../../../utils/reliefMappings';
-
-const getImageUrl = (code) => {
-  const imageName = reliefMappings.lu.find((string) => {
-    const forestTypeCodeNumber = code.slice(
-      0,
-      getFirstLetterIndex(code) || code.length,
-    );
-    const forestTypes = string.split(',');
-    return forestTypes.includes(forestTypeCodeNumber);
-  });
-  return imageName && `/images/lu/relief/${imageName}.png`;
-};
+import { getImageUrl } from '../../../utils/reliefMappings';
 
 function Relief({ code }) {
-  const imageUrl = useMemo(() => getImageUrl(code), [code]);
+  const activeProfile = useSelector((state) => state.activeProfile);
+  const imageUrl = useMemo(
+    () => getImageUrl(code, activeProfile),
+    [code, activeProfile],
+  );
   return imageUrl ? (
     <img src={imageUrl} alt={`${code}-relief`} className={styles.relief} />
   ) : (

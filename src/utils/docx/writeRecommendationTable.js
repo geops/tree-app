@@ -11,10 +11,10 @@ import { getRecommendation } from '../recommendationUtils';
 import {
   treeTypesReducer,
   cellIconPadding,
-  svgToBlob,
+  svgUriToBlob,
   PAGE_WIDTH_DXA,
-  getRecommendationCell,
-} from './utils';
+  getRecommendationTableCell,
+} from './exportUtils';
 import negative from '../../icons/recommendationNegative.svg';
 import positive from '../../icons/recommendationPositive.svg';
 import neutral from '../../icons/recommendationNeutral.svg';
@@ -41,7 +41,7 @@ const transformRecomendations = (treeTypes) => ({
   attention: treeTypes[9].map((code) => info('treeType', code)),
 });
 
-export const writeRecommendationsTable = async (
+export const writeRecommendationTable = async (
   location,
   projectionResult,
   projectionMode,
@@ -54,16 +54,16 @@ export const writeRecommendationsTable = async (
     getRecommendation(location, projectionResult, projectionMode, future),
   );
 
-  const negativeIcon = await svgToBlob(negative);
-  const positiveIcon = await svgToBlob(positive);
-  const neutralIcon = await svgToBlob(neutral);
-  const attentionIcon = await svgToBlob(attention);
+  const negativeIcon = await svgUriToBlob(negative);
+  const positiveIcon = await svgUriToBlob(positive);
+  const neutralIcon = await svgUriToBlob(neutral);
+  const attentionIcon = await svgUriToBlob(attention);
 
   const rows = [
     new TableRow({
       children: [
-        getRecommendationCell([]),
-        getRecommendationCell(
+        getRecommendationTableCell([]),
+        getRecommendationTableCell(
           [
             new Paragraph({
               style: 'recommendation-positive',
@@ -86,7 +86,7 @@ export const writeRecommendationsTable = async (
     }),
     new TableRow({
       children: [
-        getRecommendationCell(
+        getRecommendationTableCell(
           [
             new Paragraph({
               children: [
@@ -102,7 +102,7 @@ export const writeRecommendationsTable = async (
           ],
           cellIconPadding,
         ),
-        getRecommendationCell([
+        getRecommendationTableCell([
           new Paragraph({
             text: recommendations.positive.current.reduce(
               treeTypesReducer(latinActive ? 'la' : language),
@@ -122,7 +122,7 @@ export const writeRecommendationsTable = async (
     }),
     new TableRow({
       children: [
-        getRecommendationCell(
+        getRecommendationTableCell(
           [
             new Paragraph({
               children: [
@@ -138,7 +138,7 @@ export const writeRecommendationsTable = async (
           ],
           cellIconPadding,
         ),
-        getRecommendationCell([
+        getRecommendationTableCell([
           new Paragraph({
             text: recommendations.neutral.current.reduce(
               treeTypesReducer(latinActive ? 'la' : language),
@@ -158,7 +158,7 @@ export const writeRecommendationsTable = async (
     }),
     new TableRow({
       children: [
-        getRecommendationCell(
+        getRecommendationTableCell(
           [
             new Paragraph({
               children: [
@@ -174,7 +174,7 @@ export const writeRecommendationsTable = async (
           ],
           cellIconPadding,
         ),
-        getRecommendationCell([
+        getRecommendationTableCell([
           new Paragraph({
             text: recommendations.negative.reduce(
               treeTypesReducer(latinActive ? 'la' : language),
@@ -191,7 +191,7 @@ export const writeRecommendationsTable = async (
       new TableRow({
         verticalAlign: VerticalAlign.CENTER,
         children: [
-          getRecommendationCell(
+          getRecommendationTableCell(
             [
               new Paragraph({
                 children: [
@@ -207,7 +207,7 @@ export const writeRecommendationsTable = async (
             ],
             cellIconPadding,
           ),
-          getRecommendationCell([
+          getRecommendationTableCell([
             new Paragraph({
               text: recommendations.attention.reduce(
                 treeTypesReducer(latinActive ? 'la' : language),
@@ -226,8 +226,8 @@ export const writeRecommendationsTable = async (
       new TableRow({
         verticalAlign: VerticalAlign.CENTER,
         children: [
-          getRecommendationCell([]),
-          getRecommendationCell([
+          getRecommendationTableCell([]),
+          getRecommendationTableCell([
             new Paragraph({
               text: t('export.future'),
               style: 'recommendation-future',
@@ -244,4 +244,4 @@ export const writeRecommendationsTable = async (
   });
 };
 
-export default writeRecommendationsTable;
+export default writeRecommendationTable;

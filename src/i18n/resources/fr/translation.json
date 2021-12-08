@@ -10,7 +10,8 @@
     "info": "Informations",
     "language": "Langue",
     "latinActive": "Afficher les noms d'espèces en latin",
-    "location": "Station",
+    "locationDescription": "Description de l'emplacement",
+    "location": "Emplacement",
     "map": "Carte",
     "profile": "Profil",
     "recommendation": "Recommandations",
@@ -27,7 +28,8 @@
     "mode": "La recommandation d'emplacement a été créée en mode manuel.",
     "link": "Lien permanent",
     "locationType": "Type de lieu",
-    "exporting": "En cours..."
+    "exporting": "En cours...",
+    "error": "Échec de l'exportation"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",
@@ -490,7 +492,8 @@
         "o": "Indicateur de base alternativement humide/sécher",
         "p": "Indicateur de sécheresse"
       },
-      "terrain": "Terrain"
+      "terrain": "Terrain",
+      "cantonalForestType": "Type de lieu cantonale"
     }
   }
 }

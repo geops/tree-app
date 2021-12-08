@@ -1,5 +1,5 @@
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Divider, Tab } from 'semantic-ui-react';
@@ -7,26 +7,37 @@ import { Divider, Tab } from 'semantic-ui-react';
 import Button from '../../Button';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
+import ExportButton from '../../ExportButton';
 import styles from '../ForestTypeDescription.module.css';
+import { exportLocation } from '../../../utils/docx/exportLocation';
 import { setForestTypeComparison } from '../../../store/actions';
 
 function ForestTypeDescription({ data }) {
   const dispatch = useDispatch();
   const comparison = useSelector((state) => state.forestTypeComparison) || [];
-  const { t } = useTranslation();
+  const activeProfile = useSelector((state) => state.activeProfile);
+  const { t, i18n } = useTranslation();
+
+  const exportDocx = useCallback(
+    () => exportLocation(data, activeProfile, i18n.language, t),
+    [i18n.language, t, activeProfile, data],
+  );
+
   return (
     <>
-      <Button
-        compact
-        active
-        onClick={() =>
-          dispatch(
-            setForestTypeComparison([...new Set([...comparison, data.code])]),
-          )
-        }
-      >
-        {t('forestTypeModal.compare')}
-      </Button>
+      <div className={styles.buttons}>
+        <Button
+          active
+          onClick={() =>
+            dispatch(
+              setForestTypeComparison([...new Set([...comparison, data.code])]),
+            )
+          }
+        >
+          {t('forestTypeModal.compare')}
+        </Button>
+        <ExportButton onClick={exportDocx} />
+      </div>
       <Divider hidden />
       <Tab
         menu={{ className: styles.pane, attached: true, tabular: true }}

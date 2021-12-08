@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useMemo } from 'react';
 import styles from '../Diagram.module.css';
-import { forestTypeMapping } from './utils';
+import { getTilleringTreeTypes } from './utils';
 
 export const getRowWidth = (value) => value * 2.5;
 
@@ -45,7 +45,11 @@ const renderRow = (row, index) => {
         />
       )}
       <svg y={barY + 12} x="35" style={{ overflow: 'visible' }}>
-        <text alignmentBaseline="middle" textAnchor="end">
+        <text
+          alignmentBaseline="middle"
+          textAnchor="end"
+          fontFamily="Lato,'Helvetica Neue',Arial,Helvetica,sans-serif"
+        >
           {row.type}
         </text>
       </svg>
@@ -84,6 +88,7 @@ export function TilleringGrid({ height }) {
                 y={height + 12}
                 alignmentBaseline="middle"
                 fontSize="10"
+                fontFamily="Lato,'Helvetica Neue',Arial,Helvetica,sans-serif"
               >
                 {`${i * 10}%`}
               </text>
@@ -96,21 +101,7 @@ export function TilleringGrid({ height }) {
 }
 
 function Tillering({ data }) {
-  const rows = useMemo(
-    () =>
-      data[0]
-        .map((naturalForest, index) => {
-          const farmForest = data[1] && data[1][index];
-          const type = forestTypeMapping[index];
-          return { naturalForest, farmForest, type };
-        })
-        .filter(
-          (r) =>
-            (r.naturalForest && r.naturalForest.filter((t) => t).length) ||
-            (r.farmForest && r.farmForest.filter((t) => t).length),
-        ),
-    [data],
-  );
+  const rows = useMemo(() => getTilleringTreeTypes(data), [data]);
 
   if (rows.length === 0) {
     return null;
@@ -128,7 +119,12 @@ function Tillering({ data }) {
     >
       {rows.map((row, index) => renderRow(row, index))}
       <TilleringGrid height={gridHeight} />
-      <text className={styles.label} x="40" y={gridHeight + legendHeight}>
+      <text
+        className={styles.label}
+        x="40"
+        y={gridHeight + legendHeight}
+        fontFamily="Lato,'Helvetica Neue',Arial,Helvetica,sans-serif"
+      >
         Naturwald
       </text>
       <rect
@@ -138,7 +134,12 @@ function Tillering({ data }) {
         y={gridHeight + legendHeight - 10}
         className={`${styles.often} ${styles.line}`}
       />
-      <text className={styles.label} x="180" y={gridHeight + legendHeight}>
+      <text
+        className={styles.label}
+        x="180"
+        y={gridHeight + legendHeight}
+        fontFamily="Lato,'Helvetica Neue',Arial,Helvetica,sans-serif"
+      >
         Wirtschaftswald
       </text>
       <rect
