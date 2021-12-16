@@ -27,6 +27,11 @@ export const exportRecommendation = async (
     heading: HeadingLevel.HEADING_1,
   });
 
+  const profile = writeLine(
+    t(`profiles.${activeProfile}`),
+    t('export.profile'),
+  );
+
   const date = writeLine(
     `${new Date().toLocaleDateString(
       `${i18n.language}-${i18n.language.toUpperCase()}`,
@@ -70,15 +75,10 @@ export const exportRecommendation = async (
   const permalink = new Paragraph({
     style: 'main',
     children: [
-      new TextRun({
-        text: t('export.link'),
-        bold: true,
-      }),
-      new TextRun(': '),
       new ExternalHyperlink({
         children: [
           new TextRun({
-            text: `${window.location.href}`,
+            text: t('export.link'),
             style: 'Hyperlink',
           }),
         ],
@@ -89,6 +89,7 @@ export const exportRecommendation = async (
 
   const details = [
     mainTitle,
+    profile,
     date,
     coordinates,
     forestEcoregion,
@@ -127,7 +128,7 @@ export const exportRecommendation = async (
       {
         children: [
           ...details,
-          ...verticalSpace(3),
+          ...verticalSpace(1),
           recommendationsTable,
           pageBreak,
           scenariosTable,

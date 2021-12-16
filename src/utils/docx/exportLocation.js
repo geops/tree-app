@@ -30,6 +30,11 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     heading: HeadingLevel.HEADING_1,
   });
 
+  const profile = writeLine(
+    t(`profiles.${activeProfile}`),
+    t('export.profile'),
+  );
+
   const date = writeLine(
     `${new Date().toLocaleDateString(`${language}-${language.toUpperCase()}`)}`,
     t('export.date'),
@@ -38,15 +43,10 @@ export const exportLocation = async (location, activeProfile, language, t) => {
   const permalink = new Paragraph({
     style: 'main',
     children: [
-      new TextRun({
-        text: t('export.link'),
-        bold: true,
-      }),
-      new TextRun(': '),
       new ExternalHyperlink({
         children: [
           new TextRun({
-            text: `${window.location.href}`,
+            text: t('export.link'),
             style: 'Hyperlink',
           }),
         ],
@@ -84,9 +84,10 @@ export const exportLocation = async (location, activeProfile, language, t) => {
       {
         children: [
           mainTitle,
+          profile,
           date,
           permalink,
-          ...verticalSpace(2),
+          ...verticalSpace(1),
           locationTitle,
           locationTable,
           pageBreak,

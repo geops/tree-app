@@ -116,8 +116,8 @@ export const writeLocationTable = async (location, profile, t) => {
               ? new ImageRun({
                   data: sitePng,
                   transformation: {
-                    width: 250,
-                    height: 250,
+                    width: 150,
+                    height: 150,
                   },
                 })
               : new TextRun('-'),
