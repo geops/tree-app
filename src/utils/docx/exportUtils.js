@@ -130,7 +130,7 @@ export const getRecommendationTableCell = (
 ) =>
   new TableCell({
     verticalAlign: VerticalAlign.CENTER,
-    borders: defaultBorder,
+    borders: darkBorder,
     margins: padding,
     children,
     width,
