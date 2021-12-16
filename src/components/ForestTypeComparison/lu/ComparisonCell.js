@@ -17,7 +17,7 @@ const ComparisonCell = ({
 }) => {
   const isMobile = useIsMobile();
   return (
-    <td className={className || undefined}>
+    <td className={className || undefined} style={{ verticalAlign: 'top' }}>
       <>
         <span style={{ display: 'flex' }}>
           {isMobile && (

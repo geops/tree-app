@@ -34,6 +34,19 @@ ComparedString.propTypes = {
   isLast: PropTypes.bool.isRequired,
 };
 
+const HeaderCell = ({ ...props }) => {
+  const { children } = props;
+  return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <Table.HeaderCell {...props} verticalAlign="top">
+      {children}
+    </Table.HeaderCell>
+  );
+};
+HeaderCell.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+};
+
 const getPioneerTreeTypes = (info, allInfos) => {
   const allTreeTypes = allInfos.reduce((pioneerTypes, current) => {
     const currentPioneersTypes = current.pioneerTreeTypes;
@@ -123,32 +136,16 @@ function ForestTypeTab({ data }) {
       <Table.Body>
         {!isMobile && (
           <Table.Row>
-            <Table.HeaderCell>{t('lu.forestType.general')}</Table.HeaderCell>
+            <HeaderCell>{t('lu.forestType.general')}</HeaderCell>
             {data.map((ft) => (
-              <Table.HeaderCell key={ft.code}>
+              <HeaderCell key={ft.code}>
                 <ForestTypeLink code={ft.code} />
-              </Table.HeaderCell>
+              </HeaderCell>
             ))}
           </Table.Row>
         )}
         <Table.Row>
-          <Table.HeaderCell>
-            {t('lu.forestType.tilleringFirwood')}
-          </Table.HeaderCell>
-          {data.map((ft) => (
-            <ComparisonCell
-              key={ft.code}
-              code={ft.code}
-              hasSameValues={getHasSameValues(ft, data, 'tilleringFirwood')}
-              data={ft.tilleringFirwood}
-              unit="%"
-            />
-          ))}
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>
-            {t('lu.forestType.tilleringHardwood')}
-          </Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.tilleringHardwood')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell
               key={ft.code}
@@ -188,9 +185,18 @@ function ForestTypeTab({ data }) {
           </tr>
         ))}
         <Table.Row>
-          <Table.HeaderCell>
-            {t('lu.forestType.pioneerTreeTypes')}
-          </Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.tilleringFirwood')}</HeaderCell>
+          {data.map((ft) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              hasSameValues={getHasSameValues(ft, data, 'tilleringFirwood')}
+              data={ft.tilleringFirwood}
+            />
+          ))}
+        </Table.Row>
+        <Table.Row>
+          <HeaderCell>{t('lu.forestType.pioneerTreeTypes')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} hasSameValues={false} code={ft.code}>
               {getPioneerTreeTypes(ft, data)}
@@ -198,9 +204,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>
-            {t('lu.forestType.priority.label')}
-          </Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.priority.label')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell
               key={ft.code}
@@ -213,7 +217,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.aptitude')}</Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.aptitude')}</HeaderCell>
           {data.map((ft, idx, arr) => (
             <ComparisonCell
               code={ft.code}
@@ -224,7 +228,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.rejuvDev')}</Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.rejuvDev')}</HeaderCell>
           {data.map((ft, idx, arr) => (
             <ComparisonCell
               key={ft.code}
@@ -235,7 +239,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.care')}</Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.care')}</HeaderCell>
           {data.map((ft, idx, arr) => (
             <ComparisonCell
               key={ft.code}
@@ -246,9 +250,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>
-            {t('lu.forestType.heightDispersion')}
-          </Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.heightDispersion')}</HeaderCell>
           {data.map((ft, idx, arr) => (
             <ComparisonCell
               key={ft.code}
@@ -259,7 +261,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.terrain')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell code={ft.code} key={ft.code}>
               <Relief code={ft.code} />
@@ -267,9 +269,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>
-            {t('forestTypeDiagram.vegetation')}
-          </Table.HeaderCell>
+          <HeaderCell>{t('forestTypeDiagram.vegetation')}</HeaderCell>
           <>
             {data.map((ft, idx, arr) => (
               <ComparisonCell
@@ -282,7 +282,7 @@ function ForestTypeTab({ data }) {
           </>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.soil.label')}</Table.HeaderCell>
+          <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
               {getSoilTypes(
