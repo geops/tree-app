@@ -26,10 +26,11 @@
     "date": "Date",
     "future": "Les essences qui, ultérieurement, seront également adaptées",
     "mode": "La recommandation d'emplacement a été créée en mode manuel.",
-    "link": "Lien permanent",
+    "link": "Lien",
     "locationType": "Type de lieu",
     "exporting": "En cours...",
-    "error": "Échec de l'exportation"
+    "error": "Échec de l'exportation",
+    "profile": "Profil"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "m",

@@ -26,10 +26,11 @@
     "date": "Datum",
     "future": "In Zukunft zusätzlich passende Baumarten",
     "mode": "Die Standort-Empfehlung wurde im manuellen Modus erstellt.",
-    "link": "Permalink",
+    "link": "Link",
     "locationType": "Standortstyp",
     "exporting": "Vorgang läuft...",
-    "error": "Exportieren fehlgeschlagen"
+    "error": "Exportieren fehlgeschlagen",
+    "profile": "Profil"
   },
   "forestTypeDiagram": {
     "aboveSeaLevel": "ü.M.",

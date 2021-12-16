@@ -32,8 +32,8 @@ export const writeLocationTable = async (location, profile, t) => {
             ? new ImageRun({
                 data: tilleringHardwoodPng,
                 transformation: {
-                  width: 300,
-                  height: 40,
+                  width: 225,
+                  height: 30,
                 },
               })
             : new TextRun('-'),
@@ -48,9 +48,9 @@ export const writeLocationTable = async (location, profile, t) => {
             ? new ImageRun({
                 data: tilleringPng,
                 transformation: {
-                  width: 300,
+                  width: 225,
                   height:
-                    getTilleringTreeTypes(location.tillering).length * 25 + 30,
+                    getTilleringTreeTypes(location.tillering).length * 19 + 30,
                 },
               })
             : new TextRun('-'),
@@ -97,8 +97,8 @@ export const writeLocationTable = async (location, profile, t) => {
             ? new ImageRun({
                 data: reliefPng,
                 transformation: {
-                  width: 300,
-                  height: 180,
+                  width: 150,
+                  height: 90,
                 },
               })
             : new TextRun('-'),
@@ -116,8 +116,8 @@ export const writeLocationTable = async (location, profile, t) => {
               ? new ImageRun({
                   data: sitePng,
                   transformation: {
-                    width: 250,
-                    height: 250,
+                    width: 120,
+                    height: 120,
                   },
                 })
               : new TextRun('-'),

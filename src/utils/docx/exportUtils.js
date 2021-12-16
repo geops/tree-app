@@ -17,10 +17,10 @@ export const PAGE_WIDTH_DXA = 9000;
 // Cell styles
 export const cellPadding = {
   marginUnitType: WidthType.DXA,
-  top: 200,
-  left: 200,
-  bottom: 200,
-  right: 200,
+  top: 100,
+  left: 50,
+  bottom: 100,
+  right: 50,
 };
 export const cellIconPadding = {
   marginUnitType: WidthType.DXA,
@@ -61,27 +61,27 @@ export const style = {
   default: {
     heading1: {
       run: {
-        size: 40,
+        size: 34,
         bold: true,
         color: treeAppColorMain.fill,
         font: 'Arial',
       },
       paragraph: {
         spacing: {
-          after: 240,
+          after: 40,
         },
       },
     },
     heading3: {
       run: {
-        size: 28,
+        size: 24,
         bold: true,
         color: '000000',
         font: 'Arial',
       },
       paragraph: {
         spacing: {
-          after: 150,
+          after: 40,
         },
       },
     },
@@ -91,14 +91,14 @@ export const style = {
       id: 'main',
       name: 'main',
       run: {
-        size: 24,
+        size: 20,
         color: '000000',
         font: 'Arial',
       },
       paragraph: {
         spacing: {
-          before: 120,
-          after: 120,
+          before: 0,
+          after: 0,
         },
       },
     },
@@ -106,15 +106,15 @@ export const style = {
       id: 'main-bold',
       name: 'main-bold',
       run: {
-        size: 24,
+        size: 20,
         color: '000000',
         font: 'Arial',
         bold: true,
       },
       paragraph: {
         spacing: {
-          before: 120,
-          after: 120,
+          before: 0,
+          after: 0,
         },
       },
     },
@@ -122,14 +122,14 @@ export const style = {
       id: 'scenarios-primary',
       name: 'scenarios-primary',
       run: {
-        size: 24,
+        size: 20,
         color: 'FFFFFF',
         font: 'Arial',
       },
       paragraph: {
         spacing: {
-          before: 120,
-          after: 120,
+          before: 80,
+          after: 80,
         },
       },
     },
@@ -137,15 +137,15 @@ export const style = {
       id: 'scenarios-primary-bold',
       name: 'scenarios-primary-bold',
       run: {
-        size: 24,
+        size: 20,
         color: 'FFFFFF',
         font: 'Arial',
         bold: true,
       },
       paragraph: {
         spacing: {
-          before: 120,
-          after: 120,
+          before: 80,
+          after: 80,
         },
       },
     },
