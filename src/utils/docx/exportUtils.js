@@ -61,14 +61,14 @@ export const style = {
   default: {
     heading1: {
       run: {
-        size: 40,
+        size: 34,
         bold: true,
         color: treeAppColorMain.fill,
         font: 'Arial',
       },
       paragraph: {
         spacing: {
-          after: 240,
+          after: 40,
         },
       },
     },
@@ -81,7 +81,7 @@ export const style = {
       },
       paragraph: {
         spacing: {
-          after: 150,
+          after: 40,
         },
       },
     },
