@@ -28,7 +28,7 @@ HeaderCell.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 };
 
-const soilTypeReducer = (ft) => (soilType, idx) => {
+const soilTypeMap = (ft) => (soilType, idx) => {
   const value = ft.soil[idx];
   return (
     <span
@@ -242,7 +242,7 @@ function ForestTypeTab({ data }) {
           <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
-              {soilMapping.map(soilTypeReducer(ft))}
+              {soilMapping.map(soilTypeMap(ft))}
             </ComparisonCell>
           ))}
         </Table.Row>
