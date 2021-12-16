@@ -7,32 +7,13 @@ import useIsMobile from '../../../hooks/useIsMobile';
 import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
+import SoilIcon from '../../SoilIcon';
 import {
   treeTypeMapping,
   soilMapping,
 } from '../../ForestTypeDescription/lu/utils';
-import {
-  getHasSameValues,
-  getStringWithUnit,
-} from '../../../utils/comparisonUtils';
+import { getStringWithUnit } from '../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
-
-const ComparedString = ({ data, hasDuplicate, isLast }) => (
-  <>
-    <span
-      className={hasDuplicate ? comparisonStyles.comparisonIsSame : undefined}
-    >
-      {data}
-    </span>
-    {!isLast && ', '}
-  </>
-);
-
-ComparedString.propTypes = {
-  data: PropTypes.string.isRequired,
-  hasDuplicate: PropTypes.bool.isRequired,
-  isLast: PropTypes.bool.isRequired,
-};
 
 const HeaderCell = ({ ...props }) => {
   const { children } = props;
@@ -47,48 +28,23 @@ HeaderCell.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 };
 
-const getPioneerTreeTypes = (info, allInfos) => {
-  const allTreeTypes = allInfos.reduce((pioneerTypes, current) => {
-    const currentPioneersTypes = current.pioneerTreeTypes;
-    return currentPioneersTypes && currentPioneersTypes.length
-      ? [...pioneerTypes, ...currentPioneersTypes]
-      : pioneerTypes;
-  }, []);
-  return info.pioneerTreeTypes.map((treeType, idx, arr) => {
-    const hasDuplicate =
-      allTreeTypes.filter((ptt) => ptt === treeType).length > 1;
-    return (
-      <ComparedString
-        isLast={idx + 1 === arr.length}
-        data={treeType}
-        hasDuplicate={hasDuplicate}
-        key={treeType}
-      />
-    );
-  });
-};
-
-const soulTypeReducer = (soilTypes, type, idx) =>
-  type ? [...soilTypes, `${soilMapping[idx]?.toUpperCase()}`] : soilTypes;
-
-const getSoilTypes = (info, otherInfos) => {
-  const otherSoilTypes = otherInfos.reduce((soilTypes, dataInfo) => {
-    const soils = dataInfo.soil.reduce(soulTypeReducer, []);
-    return soils.length ? [...soilTypes, ...soils] : soilTypes;
-  }, []);
-  const currentSoilTypes = info.soil.reduce(soulTypeReducer, []);
-  return currentSoilTypes.map((soilType, idx, arr) => {
-    const hasDuplicate = otherSoilTypes.includes(soilType);
-    return (
-      <ComparedString
-        isLast={idx + 1 === arr.length}
-        data={soilType}
-        hasDuplicate={hasDuplicate}
-        key={soilType}
-      />
-    );
-  });
-};
+const soulTypeReducer = (isMobile) => (soilTypes, type, idx) =>
+  type
+    ? [
+        ...soilTypes,
+        <span
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            gap: 10,
+            minWidth: isMobile && 90,
+          }}
+        >
+          {`${soilMapping[idx]?.toUpperCase()} `}
+          <SoilIcon value={type} size={10} />
+        </span>,
+      ]
+    : soilTypes;
 
 function ForestTypeTab({ data }) {
   const { t } = useTranslation();
@@ -116,7 +72,6 @@ function ForestTypeTab({ data }) {
                   <ComparisonCell
                     key={`${currTreeType} - ${cell.code}`}
                     code={cell.code}
-                    hasSameValues={getHasSameValues(cell, cells, 'natural')}
                     className={comparisonStyles.treeTypeCell}
                   >
                     <div>{`${getStringWithUnit(cell.natural, '%')}`}</div>
@@ -150,7 +105,6 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              hasSameValues={getHasSameValues(ft, data, 'tilleringHardwood')}
               data={ft.tilleringHardwood}
               unit="%"
             />
@@ -190,7 +144,6 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              hasSameValues={getHasSameValues(ft, data, 'tilleringFirwood')}
               data={ft.tilleringFirwood}
             />
           ))}
@@ -198,9 +151,12 @@ function ForestTypeTab({ data }) {
         <Table.Row>
           <HeaderCell>{t('lu.forestType.pioneerTreeTypes')}</HeaderCell>
           {data.map((ft) => (
-            <ComparisonCell key={ft.code} hasSameValues={false} code={ft.code}>
-              {getPioneerTreeTypes(ft, data)}
-            </ComparisonCell>
+            <ComparisonCell
+              key={ft.code}
+              hasSameValues={false}
+              code={ft.code}
+              data={ft.pioneerTreeTypes}
+            />
           ))}
         </Table.Row>
         <Table.Row>
@@ -209,7 +165,6 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              hasSameValues={getHasSameValues(ft, data, 'priority')}
               data={
                 ft.priority ? t(`lu.forestType.priority.${ft.priority}`) : '-'
               }
@@ -255,7 +210,6 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              hasSameValues={getHasSameValues(ft, data, 'heightDispersion')}
               data={ft.heightDispersion ? ft.heightDispersion : null}
             />
           ))}
@@ -285,10 +239,7 @@ function ForestTypeTab({ data }) {
           <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
-              {getSoilTypes(
-                ft,
-                data.filter((forestType) => forestType.code !== ft.code),
-              )}
+              {ft.soil.reduce(soulTypeReducer(isMobile), [])}
             </ComparisonCell>
           ))}
         </Table.Row>
