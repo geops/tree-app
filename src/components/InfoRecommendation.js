@@ -1,13 +1,13 @@
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 
+import PositiveIcon from '../icons/RecommendationPositive';
+import NegativeIcon from '../icons/RecommendationNegative';
+import NeutralIcon from '../icons/RecommendationNeutral';
+import AttentionIcon from '../icons/RecommendationAttention';
 import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
-import { ReactComponent as AttentionIcon } from '../icons/recommendationAttention.svg';
-import { ReactComponent as NegativeIcon } from '../icons/recommendationNegative.svg';
-import { ReactComponent as NeutralIcon } from '../icons/recommendationNeutral.svg';
-import { ReactComponent as PositiveIcon } from '../icons/recommendationPositive.svg';
 
 import styles from './InfoRecommendation.module.css';
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Table } from 'semantic-ui-react';
 
-import SoilIcon from '../../SoilIcon';
+import SoilIcon from '../../../icons/SoilIcon';
 
 function DataTable({ data, getLabel }) {
   return (

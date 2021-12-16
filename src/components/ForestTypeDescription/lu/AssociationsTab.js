@@ -3,13 +3,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
-// eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 import { setForestTypeDescription } from '../../../store/actions';
 import styles from '../ForestTypeDescription.module.css';
 import { parseString } from '../../../utils/comparisonUtils';
 
-function AssociationsTab({ associationGroupCode }) {
+function AssociationsTab({ associationGroupCode, onForestTypeChange }) {
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
@@ -85,7 +84,10 @@ function AssociationsTab({ associationGroupCode }) {
                   <button
                     className={styles.link}
                     type="button"
-                    onClick={() => dispatch(setForestTypeDescription(code))}
+                    onClick={() => {
+                      dispatch(setForestTypeDescription(code));
+                      onForestTypeChange();
+                    }}
                   >
                     {code} - {de}
                   </button>
@@ -102,6 +104,11 @@ function AssociationsTab({ associationGroupCode }) {
 
 AssociationsTab.propTypes = {
   associationGroupCode: PropTypes.string.isRequired,
+  onForestTypeChange: PropTypes.func,
+};
+
+AssociationsTab.defaultProps = {
+  onForestTypeChange: () => {},
 };
 
 export default AssociationsTab;

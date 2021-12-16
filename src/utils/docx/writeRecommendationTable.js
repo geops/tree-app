@@ -1,24 +1,25 @@
+import React from 'react';
 import {
   Paragraph,
   Table,
   TableRow,
   ImageRun,
   VerticalAlign,
-  TextRun,
+  AlignmentType,
 } from 'docx';
 import { info } from '@geops/tree-lib';
 import { getRecommendation } from '../recommendationUtils';
 import {
   treeTypesReducer,
   cellIconPadding,
-  svgUriToBlob,
+  jsxToBlob,
   PAGE_WIDTH_DXA,
   getRecommendationTableCell,
 } from './exportUtils';
-import negative from '../../icons/recommendationNegative.svg';
-import positive from '../../icons/recommendationPositive.svg';
-import neutral from '../../icons/recommendationNeutral.svg';
-import attention from '../../icons/recommendationAttention.svg';
+import NegativeIcon from '../../icons/RecommendationNegative';
+import PositiveIcon from '../../icons/RecommendationPositive';
+import NeutralIcon from '../../icons/RecommendationNeutral';
+import AttentionIcon from '../../icons/RecommendationAttention';
 
 const transformRecomendations = (treeTypes) => ({
   positive: {
@@ -54,47 +55,24 @@ export const writeRecommendationTable = async (
     getRecommendation(location, projectionResult, projectionMode, future),
   );
 
-  const negativeIcon = await svgUriToBlob(negative);
-  const positiveIcon = await svgUriToBlob(positive);
-  const neutralIcon = await svgUriToBlob(neutral);
-  const attentionIcon = await svgUriToBlob(attention);
+  const negativeIcon = await jsxToBlob(<NegativeIcon color="#000000" />);
+  const positiveIcon = await jsxToBlob(<PositiveIcon color="#000000" />);
+  const neutralIcon = await jsxToBlob(<NeutralIcon color="#000000" />);
+  const attentionIcon = await jsxToBlob(<AttentionIcon color="#000000" />);
 
   const rows = [
     new TableRow({
       children: [
-        getRecommendationTableCell([]),
         getRecommendationTableCell(
           [
             new Paragraph({
-              style: 'recommendation-positive',
-              children: [
-                new TextRun({
-                  text: t('app.recommendation'),
-                  bold: true,
-                }),
-              ],
-            }),
-          ],
-          {
-            top: 200,
-            bottom: 200,
-            right: 200,
-            left: (PAGE_WIDTH_DXA / 6) * (language === 'de' ? 1.5 : 1.2), // Unfortunately, we need this ugly centering because docxjs cell layouts are cross OS compatible
-          },
-        ),
-      ],
-    }),
-    new TableRow({
-      children: [
-        getRecommendationTableCell(
-          [
-            new Paragraph({
+              alignment: AlignmentType.CENTER,
               children: [
                 new ImageRun({
                   data: positiveIcon,
                   transformation: {
-                    width: 50,
-                    height: 50,
+                    width: 25,
+                    height: 25,
                   },
                 }),
               ],
@@ -108,7 +86,7 @@ export const writeRecommendationTable = async (
               treeTypesReducer(latinActive ? 'la' : language),
               '',
             ),
-            style: 'recommendation-positive',
+            style: 'main-24',
           }),
           new Paragraph({
             text: recommendations.positive.future.reduce(
@@ -125,12 +103,13 @@ export const writeRecommendationTable = async (
         getRecommendationTableCell(
           [
             new Paragraph({
+              alignment: AlignmentType.CENTER,
               children: [
                 new ImageRun({
                   data: neutralIcon,
                   transformation: {
-                    width: 50,
-                    height: 50,
+                    width: 25,
+                    height: 25,
                   },
                 }),
               ],
@@ -144,7 +123,7 @@ export const writeRecommendationTable = async (
               treeTypesReducer(latinActive ? 'la' : language),
               '',
             ),
-            style: 'recommendation-neutral',
+            style: 'main-20',
           }),
           new Paragraph({
             text: recommendations.neutral.future.reduce(
@@ -161,12 +140,13 @@ export const writeRecommendationTable = async (
         getRecommendationTableCell(
           [
             new Paragraph({
+              alignment: AlignmentType.CENTER,
               children: [
                 new ImageRun({
                   data: negativeIcon,
                   transformation: {
-                    width: 50,
-                    height: 50,
+                    width: 25,
+                    height: 25,
                   },
                 }),
               ],
@@ -180,7 +160,7 @@ export const writeRecommendationTable = async (
               treeTypesReducer(latinActive ? 'la' : language),
               '',
             ),
-            style: 'recommendation-negative',
+            style: 'main-16',
           }),
         ]),
       ],
@@ -194,12 +174,13 @@ export const writeRecommendationTable = async (
           getRecommendationTableCell(
             [
               new Paragraph({
+                alignment: AlignmentType.CENTER,
                 children: [
                   new ImageRun({
                     data: attentionIcon,
                     transformation: {
-                      width: 50,
-                      height: 50,
+                      width: 25,
+                      height: 25,
                     },
                   }),
                 ],
@@ -213,24 +194,7 @@ export const writeRecommendationTable = async (
                 treeTypesReducer(latinActive ? 'la' : language),
                 '',
               ),
-              style: 'recommendation-neutral',
-            }),
-          ]),
-        ],
-      }),
-    );
-  }
-
-  if (future) {
-    rows.push(
-      new TableRow({
-        verticalAlign: VerticalAlign.CENTER,
-        children: [
-          getRecommendationTableCell([]),
-          getRecommendationTableCell([
-            new Paragraph({
-              text: t('export.future'),
-              style: 'recommendation-future',
+              style: 'main-20',
             }),
           ]),
         ],

@@ -7,7 +7,7 @@ import useIsMobile from '../../../hooks/useIsMobile';
 import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
-import SoilIcon from '../../SoilIcon';
+import SoilIcon from '../../../icons/SoilIcon';
 import {
   treeTypeMapping,
   soilMapping,

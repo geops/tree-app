@@ -8,7 +8,7 @@ import {
 } from 'docx';
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
-import { writeLine, style, verticalSpace, pageBreak } from './exportUtils';
+import { writeLine, style, verticalSpace } from './exportUtils';
 import { writeRecommendationTable } from './writeRecommendationTable';
 import { writeScenariosTable } from './writeScenariosTable';
 
@@ -73,7 +73,7 @@ export const exportRecommendation = async (
   );
 
   const permalink = new Paragraph({
-    style: 'main',
+    style: 'main-20',
     children: [
       new ExternalHyperlink({
         children: [
@@ -86,6 +86,18 @@ export const exportRecommendation = async (
       }),
     ],
   });
+
+  const recommendationTitle = new Paragraph({
+    text: t('app.recommendation'),
+    heading: HeadingLevel.HEADING_3,
+  });
+
+  const futureInfo =
+    future &&
+    new Paragraph({
+      text: t('export.future'),
+      style: 'recommendation-future',
+    });
 
   const details = [
     mainTitle,
@@ -129,8 +141,10 @@ export const exportRecommendation = async (
         children: [
           ...details,
           ...verticalSpace(1),
+          recommendationTitle,
           recommendationsTable,
-          pageBreak,
+          futureInfo,
+          ...verticalSpace(2),
           scenariosTable,
         ],
       },

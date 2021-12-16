@@ -41,7 +41,7 @@ export const exportLocation = async (location, activeProfile, language, t) => {
   );
 
   const permalink = new Paragraph({
-    style: 'main',
+    style: 'main-20',
     children: [
       new ExternalHyperlink({
         children: [

@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -17,6 +17,8 @@ function ForestTypeDescription({ data }) {
   const comparison = useSelector((state) => state.forestTypeComparison) || [];
   const activeProfile = useSelector((state) => state.activeProfile);
   const { t, i18n } = useTranslation();
+
+  const [activeTab, setActiveTab] = useState(0);
 
   const exportDocx = useCallback(
     () => exportLocation(data, activeProfile, i18n.language, t),
@@ -40,6 +42,8 @@ function ForestTypeDescription({ data }) {
       </div>
       <Divider hidden />
       <Tab
+        activeIndex={activeTab}
+        onTabChange={(evt, tab) => setActiveTab(tab.activeIndex)}
         menu={{ className: styles.pane, attached: true, tabular: true }}
         panes={[
           {
@@ -55,6 +59,7 @@ function ForestTypeDescription({ data }) {
             },
             render: () => (
               <AssociationsTab
+                onForestTypeChange={() => setActiveTab(0)}
                 associationGroupCode={data.associationGroupCode}
               />
             ),
