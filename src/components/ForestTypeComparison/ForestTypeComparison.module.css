@@ -14,7 +14,3 @@
   grid-template-columns: 80% 20%;
   font-weight: bold;
 }
-
-.greyedOut {
-  opacity: 0.2;
-}
