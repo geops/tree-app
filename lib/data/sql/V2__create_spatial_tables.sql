@@ -129,19 +129,27 @@ SELECT AddGeometryColumn('','forest_types_tg','geom','2056','MULTIPOLYGON',2);
 ----------------------------------------------
 -- Forest types LU 
 
-CREATE TABLE "forest_types_lu" (gid serial, "objectid_1" int8, "farbe" numeric, "wag1" numeric, "wag2" varchar(254),
-                                                                                                       "wag3" varchar(254),
-                                                                                                              "wag4" varchar(254),
-                                                                                                                     "wag5" varchar(254),
-                                                                                                                            "plottxt" varchar(254),
-                                                                                                                                      "wag1_txt" varchar(254),
-                                                                                                                                                 "wag2_txt" varchar(254),
-                                                                                                                                                            "wag3_txt" varchar(254),
-                                                                                                                                                                       "wag4_txt" varchar(254),
-                                                                                                                                                                                  "wag5_txt" varchar(254),
-                                                                                                                                                                                             "nais1_txt" varchar(254),
-                                                                                                                                                                                                         "nais2_txt" varchar(254),
-                                                                                                                                                                                                                     "typ" numeric, "shape_leng" numeric, "shape_area" numeric);
+CREATE TABLE "forest_types_lu" (gid serial,
+"farbe" int4,
+"sto1" int4,
+"sto2" int4,
+"sto3" int4,
+"sto4" int4,
+"sto5" int4,
+"typ" int4,
+"plottxt" varchar(50),
+"sto1_txt" varchar(7),
+"sto2_txt" varchar(7),
+"sto3_txt" varchar(7),
+"sto4_txt" varchar(7),
+"sto5_txt" varchar(7),
+"nais1" varchar(7),
+"nais2" varchar(7),
+"prio" int4,
+"hs" int4,
+"verdrisk" int4,
+"shape_leng" numeric,
+"shape_area" numeric);
 
 
 ALTER TABLE "forest_types_lu" ADD PRIMARY KEY (gid);
@@ -205,3 +213,54 @@ ALTER TABLE "forest_types_ne" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_ne','geom','2056','MULTIPOLYGON',2);
 
+
+----------------------------------------------
+-- Forest types FR
+
+
+CREATE TABLE "forest_types_fr" (gid serial,
+"objectid" float8,
+"legende" varchar(10),
+"wg_1" varchar(10),
+"ueh_hoch_1" varchar(10),
+"ueh_tief_1" varchar(10),
+"td_1" varchar(20),
+"taux_1" numeric,
+"wg_2" varchar(10),
+"ueh_hoch_2" varchar(10),
+"ueh_tief_2" varchar(10),
+"td_2" varchar(20),
+"taux_2" numeric,
+"wg_3" varchar(10),
+"ueh_hoch_3" varchar(10),
+"ueh_tief_3" varchar(10),
+"td_3" varchar(20),
+"taux_3" numeric,
+"wgr" varchar(20),
+"annee" varchar(2),
+"lot" varchar(10),
+"etat" float8,
+"assoc_tot_" varchar(35),
+"pdf" varchar(20),
+"pdf_fr" varchar(50),
+"pdf_de" varchar(50),
+"wg_tot" varchar(50),
+"id_legende" int4,
+"legende_fr" varchar(150),
+"legende_de" varchar(150),
+"legende_la" varchar(150),
+"fertilite_" float8,
+"fertilite1" float8,
+"prop_feuil" float8,
+"prop_feu_1" float8,
+"ass_remarq" varchar(100),
+"score_ass_" numeric,
+"shape_star" numeric,
+"shape_stle" numeric,
+"namensuber" varchar(254),
+"nais" varchar(10));
+
+ALTER TABLE "forest_types_fr" ADD PRIMARY KEY (gid);
+
+
+SELECT AddGeometryColumn('','forest_types_fr','geom','2056','MULTIPOLYGON',2);

@@ -20,6 +20,13 @@ WITH altitudinal_zones_cantonal AS
               FROM forest_types_ne
                 WHERE hohenstufe IS NOT NULL
                 GROUP BY hohenstufe)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  hs::text as code
+              FROM forest_types_lu
+                WHERE hs IS NOT NULL
+                GROUP BY hs)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::integer AS code,
@@ -75,13 +82,13 @@ SELECT nais as code,
 FROM forest_types_tg
 WHERE nais IS NOT NULL
 UNION
-SELECT CASE nais2_txt is null
-           WHEN TRUE THEN nais1_txt
-           ELSE nais1_txt || '(' || nais2_txt || ')'
+SELECT CASE nais2 is null
+           WHEN TRUE THEN nais1
+           ELSE nais1 || '(' || nais2 || ')'
        END AS code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_lu
-WHERE nais1_txt IS NOT NULL
+WHERE nais1 IS NOT NULL
 UNION
 SELECT typ_nais AS code,
        ST_Transform(geom, 3857) as geometry
@@ -96,4 +103,9 @@ UNION
 SELECT code_nais AS code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_ne
-WHERE code_nais IS NOT NULL;
+WHERE code_nais IS NOT NULL
+UNION
+SELECT nais AS code,
+       ST_Transform(geom, 3857) as geometry
+FROM forest_types_fr
+WHERE nais IS NOT NULL;
