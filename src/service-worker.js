@@ -12,11 +12,12 @@ import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import reliefMappings from './utils/reliefMappings';
 
-const CACHE_NAME = 'tree-app-tiles-v4';
+const CACHE_NAME = 'tree-app-tiles-v5';
 const OLD_CACHES = [
   'tree-app-tiles-v1',
   'tree-app-tiles-v2',
   'tree-app-tiles-v3',
+  'tree-app-tiles-v4',
 ];
 const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
 
