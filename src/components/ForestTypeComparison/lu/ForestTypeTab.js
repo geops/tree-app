@@ -28,24 +28,6 @@ HeaderCell.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
 };
 
-const soulTypeReducer = (isMobile) => (soilTypes, type, idx) =>
-  type
-    ? [
-        ...soilTypes,
-        <span
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            gap: 10,
-            minWidth: isMobile && 90,
-          }}
-        >
-          {`${soilMapping[idx]?.toUpperCase()} `}
-          <SoilIcon value={type} size={10} />
-        </span>,
-      ]
-    : soilTypes;
-
 function ForestTypeTab({ data }) {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
@@ -239,7 +221,24 @@ function ForestTypeTab({ data }) {
           <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
-              {ft.soil.reduce(soulTypeReducer(isMobile), [])}
+              {soilMapping.map((soilType, idx) => {
+                const value = ft.soil[idx];
+                return (
+                  <span
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      gap: 10,
+                      minWidth: 80,
+                      opacity: value ? 1 : 0.4,
+                    }}
+                  >
+                    {/* eslint-disable-next-line react/destructuring-assignment */}
+                    {soilType.toUpperCase()}
+                    {value && <SoilIcon value={value} size={10} />}
+                  </span>
+                );
+              })}
             </ComparisonCell>
           ))}
         </Table.Row>
