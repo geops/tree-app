@@ -230,7 +230,7 @@ function ForestTypeTab({ data }) {
                       justifyContent: 'space-between',
                       gap: 10,
                       minWidth: 80,
-                      opacity: value ? 1 : 0.2,
+                      opacity: value ? 1 : 0.4,
                     }}
                   >
                     {/* eslint-disable-next-line react/destructuring-assignment */}
