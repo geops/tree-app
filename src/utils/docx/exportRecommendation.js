@@ -8,7 +8,7 @@ import {
 } from 'docx';
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
-import { writeLine, style, verticalSpace } from './exportUtils';
+import { writeLine, style, verticalSpace, pageProperties } from './exportUtils';
 import { writeRecommendationTable } from './writeRecommendationTable';
 import { writeScenariosTable } from './writeScenariosTable';
 
@@ -138,6 +138,7 @@ export const exportRecommendation = async (
     styles: style,
     sections: [
       {
+        properties: pageProperties,
         children: [
           ...details,
           ...verticalSpace(1),

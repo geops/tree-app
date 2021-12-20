@@ -12,7 +12,7 @@ import { svgAsPngUri } from 'save-svg-as-png';
 import { renderToString } from 'react-dom/server';
 import isSvg from 'is-svg';
 
-export const PAGE_WIDTH_DXA = 9000;
+export const PAGE_WIDTH_DXA = 10764;
 
 // Cell styles
 export const cellPadding = {
@@ -141,7 +141,7 @@ export const getLocationTableCell = (
   fontStyle = 'main-20',
   padding = cellPadding,
 ) => {
-  let children = [...content];
+  let children = [];
   if (typeof content === 'string') {
     children = content.split('\\n').map(
       (string) =>
@@ -150,6 +150,9 @@ export const getLocationTableCell = (
           style: fontStyle,
         }),
     );
+  }
+  if (Array.isArray(content)) {
+    children = [...content];
   }
   return new TableCell({
     verticalAlign: VerticalAlign.CENTER,
@@ -166,6 +169,17 @@ export const getLocationTableRow = (headerText, valueContent) =>
       getLocationTableCell(valueContent),
     ],
   });
+
+export const pageProperties = {
+  page: {
+    margin: {
+      top: 700,
+      bottom: 700,
+      left: 568,
+      right: 568,
+    },
+  },
+};
 
 const fontSizes = [24, 20, 16]; // large, medium, small font sizes
 
