@@ -62545,7 +62545,7 @@
           ],
           null
         ],
-        "vegetation": "E: \\tWaldmeister, Wald-Veilchen, \\nF: \\tBerg-Goldnessel, Wald-Segge, \\nM: \\tBingelkraut, Wald-Zwenke, Weissdorn, Wolliger Schneeball, Feld-Rose, Leberblümchen, Süsse Wolfsmilch\\nO: \\tSchlaffe Segge, Liguster\\n",
+        "vegetation": "E: Waldmeister, Wald-Veilchen, \\nF: Berg-Goldnessel, Wald-Segge, \\nM: Bingelkraut, Wald-Zwenke, Weissdorn, Wolliger Schneeball, Feld-Rose, Leberblümchen, Süsse Wolfsmilch\\nO: Schlaffe Segge, Liguster\\n",
         "compactRisk": "3",
         "description": "Ziemlich wüchsige, edellaubreiche  Buchenwälder südexponierter Hanglagen über kalkreichem Untergrund. Vielfältige Kraut- und Strauchschicht. \\nBoden aktiv, nährstoff- und basenreich; teils mergelig, wechseltrocken.",
         "forestryCare": "Bei Edellaubhölzern Mischungs-regulierung ab Ende Jungwuchs, bei reiner Bu ab Ende Dickung, Durchforstung bis BH 2, grosse Kronen ausbilden.\\nMischungsform: Es und BAh trupp- bis gruppenweise, Ki einzeln.",
@@ -62812,7 +62812,7 @@
           ],
           null
         ],
-        "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nL: \\tGelappter Schildfarn\\nM: \\tBingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: \\tSchlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\nP: \\tWeisse Segge",
+        "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel\\nL: Gelappter Schildfarn\\nM: Bingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: Schlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\nP: Weisse Segge",
         "compactRisk": "1",
         "description": "Ziemlich wüchsige, etwas lichte Buchenmischwälder in kalkreichen, vorwiegend sonnigen Hanglagen. \\nBoden oberflächlich trockener und tiefgründiger, nicht tonig.",
         "forestryCare": "N: Mischregulierung in Dickung. Starke Durchforstung bis Ende BH1. \\nMischungsform: Bu trupp- bis gruppenweise oder rein, Übrige einzeln bis truppweise. ",
@@ -62910,7 +62910,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nG: \\tBärlauch (auf Teilflächen teppichartig)\\nH: Wald-Ziest, Wald-Springkraut \\nK: Hängende Segge\\nL: \\tGelappter Schildfarn, Haargerste\\nM: \\tBingelkraut, Zahnwurz, Roter Hartriegel",
+        "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel\\nG: Bärlauch (auf Teilflächen teppichartig)\\nH: Wald-Ziest, Wald-Springkraut \\nK: Hängende Segge\\nL: Gelappter Schildfarn, Haargerste\\nM: Bingelkraut, Zahnwurz, Roter Hartriegel",
         "compactRisk": "3",
         "description": "Sehr wüchsige Buchenmischwälder feuchter, kalkreicher Hanglagen aller Expositionen. Unterwuchs üppig, artenreich, teils mit Bärlauch. \\nBoden sehr aktiv und tiefgründig, feuchter als 12a.",
         "forestryCare": "N: Bei Edellaubhölzern Mischungsregulierung ab Ende Jungwuchs, bei reiner Bu ab Ende Dickung, Durchforstung bis BH 2. \\nMischungsform: Trupp- bis gruppenweise.\\nPflege lohnend!",
@@ -63008,7 +63008,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: \\tWald-Segge, Berg-Goldnessel\\nL: \\tGelappter Schildfarn\\nM: \\tBingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: Schlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\n",
+        "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Wald-Segge, Berg-Goldnessel\\nL: Gelappter Schildfarn\\nM: Bingelkraut, Zahnwurz, Wolliger Schneeball, Verzweigte Trespe \\nO: Schlaffe Segge, Liguster, Buntes Reitgras, Berg-Flockenblume, Dreiblatt-Baldrian\\n",
         "compactRisk": "3",
         "description": "Mässig wüchsige, etwas lichte Buchenmischwälder in kalkreichen, vorwiegend sonnigen Hanglagen. \\nBoden tonig, leicht wasserzügig, oft rutschig und flachgründig, Kalk im Oberboden.",
         "forestryCare": "N: Mischregulierung in Dickung. Starke Durchforstung bis Ende BH1. \\nMischungsform: Bu trupp- bis gruppenweise oder rein, Übrige einzeln bis truppweise.\\nSchutzwald: Standfeste Einzelbäume und grosse Artenpalette fördern.",
@@ -63603,7 +63603,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "C: Breiter Wurmfarn \\nE: \\tBreitblättriger Ehrenpreis, Ährige Rapunzel, Sanikel, Wald-Veilchen\\nF: \\tWald-Segge, Weisse Pestwurz\\nL: Hoher Schwingel (örtlich mit hoher Deckung) Schwarzes Geissblatt, Gelappter Schildfarn, Haargerste",
+        "vegetation": "C: Breiter Wurmfarn \\nE: Breitblättriger Ehrenpreis, Ährige Rapunzel, Sanikel, Wald-Veilchen\\nF: Wald-Segge, Weisse Pestwurz\\nL: Hoher Schwingel (örtlich mit hoher Deckung) Schwarzes Geissblatt, Gelappter Schildfarn, Haargerste",
         "compactRisk": "2",
         "description": "Wüchsige Mischbestände von Bu, Ta und Fi an mässig steilen bis steilen Hängen aller Expositionen. \\nMittlere Standorte mit aktiven, mittel- bis tiefgründigen Böden; nur oberflächlich nesterweise versauernd.",
         "forestryCare": "N: Bei Plenterung Eingriffe zur Holzernte und Strukturausformung, Pflege kann sich auf Schlagpflege beschränken.\\nIn flächigen Verjüngungen Jungwaldpflege ab Dickung (Mischungsregulierung, Stabilitätsauslese). Durchforstungen bis BH 1.\\nMischungsform: Einzeln bis truppweise, in Verjüngung auch gruppenweise. Ta fördern.\\nU: Punktuelle Eingriffe zur Förderung einer kleinflächig stufigen Struktur.\\n",
@@ -64039,7 +64039,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "C: Breiter Wurmfarn, Heidelbeere (auf Rippen) \\nE: \\tÄhrige Rapunzel, Wald-Veilchen\\nF: \\tWald-Segge\\nL: Kahler Alpendost \\nM: \\tBingelkraut, Wald-Zwenke, \\nO: Buntes Reitgras, Schlaffe Segge, Berg-Flockenblume, Alpenmasslieb, Rostfarbene Segge, Dreiblatt-Baldrian",
+        "vegetation": "C: Breiter Wurmfarn, Heidelbeere (auf Rippen) \\nE: Ährige Rapunzel, Wald-Veilchen\\nF: Wald-Segge\\nL: Kahler Alpendost \\nM: Bingelkraut, Wald-Zwenke, \\nO: Buntes Reitgras, Schlaffe Segge, Berg-Flockenblume, Alpenmasslieb, Rostfarbene Segge, Dreiblatt-Baldrian",
         "compactRisk": "2",
         "description": "Wenig bis ziemlich wüchsige, eher lichte und vielfältige Mischbestände von Bu, Fi und Ta an Steilhängen aller Expositionen. Unterwuchs oft mit mit grasigem Aspekt. \\nBoden flach- bis mittelgründig, wechseltrocken, basenreich. ",
         "forestryCare": "N: Kaum notwendig; vereinzelte Eingriffe zur Förderung standfester Einzelbäume.\\nMischungsform: Einzeln bis trupp-weise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.\\nSchutzwald: Förderung eines grossen Baumartenspektrums mit guter Struktur und stabilen Einzelbäumen oder Gruppen ist Hauptziel; punktuelle Eingriffe bei Bedarf.\\n",
@@ -65124,7 +65124,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "C: \\tHeidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: \\tWeiblicher Waldfarn\\nK: \\tWald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n ",
+        "vegetation": "C: Heidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: Weiblicher Waldfarn\\nK: Wald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n ",
         "compactRisk": "4",
         "description": "Mässig wüchsige Mischwälder mit sehr hohem Ta- und Fi-Anteil. \\nBevorzugt auf vergleyten, schwach geneigten Hangterrassen. Boden saurer und nährstoffärmer als 26, mit geringer Aktivität, dadurch Moder-Auflage. Erschwerte Keimung der Laubhölzer.",
         "forestryCare": "N: Kann sich auf Schlagpflege nach Plentereingriff beschränken.\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur, insbesondere kleinflächiges Abdecken von Verjüngungskegeln. \\nVorwaldarten nutzen, v. a. VBe und HBi.",
@@ -65222,7 +65222,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "E: \\tWaldmeister, Wald-Veilchen\\nF: Aronstab, Berg-Goldnessel, Baumtropf \\nG: \\tBärlauch (wenn kalkreich)\\nH: \\tWal-Ziest, tt,  Wald-Springkraut, Berg-Kerbel, Wolliger Hahnenfuss\\nI: \\tSumpf-Dotterblum\\nK: \\tPariser-Hexenkraut, Wald-Brustwurz\\nL: Quirlblättriger Salomonssiegel\\nM: Bingelkraut, Wald-Zwenke (wenn kalkhaltig)",
+        "vegetation": "E: Waldmeister, Wald-Veilchen\\nF: Aronstab, Berg-Goldnessel, Baumtropf \\nG: Bärlauch (wenn kalkreich)\\nH: Wal-Ziest, tt,  Wald-Springkraut, Berg-Kerbel, Wolliger Hahnenfuss\\nI: Sumpf-Dotterblum\\nK: Pariser-Hexenkraut, Wald-Brustwurz\\nL: Quirlblättriger Salomonssiegel\\nM: Bingelkraut, Wald-Zwenke (wenn kalkhaltig)",
         "compactRisk": "4",
         "description": "Wüchsige Laubwälder mit beigemischtem Nadelholz, mit üppigem Unterwuchs, meist in Hangfuss- und Muldenlagen. \\nBoden zeitweise bis in den Oberboden vernässt, teils basenreich.\\n ",
         "forestryCare": "Mischungsregulierung ab Beginn Dickung, Durchforstung bis Ende BH 1; kurze Intervalle; auf grosse Kronen achten.\\nMit positiver Auslese und konsequenter Kronenpflege: Wertvolle Sortimente bei einer Umtriebszeit von ca. 100 Jahren, v.a. BAh, ev. BUl und Ta. \\nMischungsform: Trupp- bis gruppenweise.\\nIm Schutzwald: Ta einzeln bis truppweise; Laubhölzer trupp- bis gruppenweise; Standfestigkeit der Einzelbäume als Hauptziel.\\n",
@@ -65489,7 +65489,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut\\nI: \\tSumpf-Dotterblume, Riesenschachtelhalm, Sumpf-Pippau, Bach-Nelkenwurz, Wiesen-Spierstaude, Milzkraut \\nK: \\tPariser-Hexenkraut, Wald-Brustwurz",
+        "vegetation": "E: Waldmeister, Wald-Veilchen \\nF: Berg-Goldnessel, Baumtropf\\nH: Wald-Ziest, Wald-Springkraut\\nI: Sumpf-Dotterblume, Riesenschachtelhalm, Sumpf-Pippau, Bach-Nelkenwurz, Wiesen-Spierstaude, Milzkraut \\nK: Pariser-Hexenkraut, Wald-Brustwurz",
         "compactRisk": "5",
         "description": "Sehr wüchsige Eschenmischwälder mit üppiger Krautschicht an Bächen oder Quellaufstössen, ebenso in vernässten Mulden und auf Terrassen. \\nBoden sehr aktiv, dauernd wassergesättigt und wegen Zufuhrlage nährstoff- und basenreich.",
         "forestryCare": "Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2 (Kronenpflege).\\nPositive Auslese und Pflege sehr lohnend!\\nMischungsform: Gruppen- bis horstweise.\\nIm Schutzwald: Bäume in Bacheinhängen nicht zu schwer werden lassen, schief stehende Bäume fällen. \\n\\n",
@@ -65560,7 +65560,7 @@
           ],
           null
         ],
-        "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\t\\nH: \\tWald-Ziest, Wald-Springkraut\\nI: Sumpf-Dotterblume\\nSumpf-Pippau, Bach-Nelkenwurz, Milzkraut \\nK: Wald-Brustwurz",
+        "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\nH: Wald-Ziest, Wald-Springkraut\\nI: Sumpf-Dotterblume\\nSumpf-Pippau, Bach-Nelkenwurz, Milzkraut \\nK: Wald-Brustwurz",
         "compactRisk": "5",
         "description": "Wüchsige Eschenmischwälder mit Ta-Beimischung; üppige Krautschicht an Bächen oder Quellaufstössen, ebenso in vernässten Mulden und auf Terrassen. \\nBoden sehr aktiv, dauernd wassergesättigt und wegen Zufuhrlage nährstoff- und basenreich.",
         "forestryCare": "Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 1 (Kronenpflege).\\nMischungsform: Gruppenweise.\\nIm Schutzwald: Bäume in Bacheinhängen nicht zu schwer werden lassen, schief stehende Bäume fällen. ",
@@ -65631,7 +65631,7 @@
           ],
           null
         ],
-        "vegetation": "E: \\tBusch-Windröschen\\nF: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch\\nH: Wald-Ziest, Wald-Springkraut\\nI: Scharfkantige Segge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n",
+        "vegetation": "E: Busch-Windröschen\\nF: Berg-Goldnessel, Baumtropf \\nG: Bärlauch\\nH: Wald-Ziest, Wald-Springkraut\\nI: Scharfkantige Segge\\nK: Grosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n",
         "compactRisk": "4",
         "description": "Sehr wüchsige Eschenmischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden.\\n ",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2, grosse Kronen ausbilden.\\nSpezialitäten wie FUl und SAh fördern, einzeln bis truppweise beigemischt oder zumindest in Nebenbestand mitnehmen.\\nPositive Auslese und Pflege lohnend.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Räumung des Altbestandes in Dickung; Mischungsregulierung mit Schlagräumung.",
@@ -65729,7 +65729,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "E: \\tWaldmeister, Wald-Veilchen \\nF: \\tBerg-Goldnessel, Baumtropf\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich\\nM: Roter Hartriegel",
+        "vegetation": "E: Waldmeister, Wald-Veilchen \\nF: Berg-Goldnessel, Baumtropf\\nH: Wald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: Welliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich\\nM: Roter Hartriegel",
         "compactRisk": "4",
         "description": "Wüchsige Eschenmischwälder in lehmreichen Plateaulagen. Unterwuchs gut ausgebildet, jedoch nicht sehr vielfältig. \\nBoden schluffig-tonig und zeitweise vernässt, wegen raschen Abbaus nährstoff- und basenreich bis neutral, oft entwässert.",
         "forestryCare": "N: Mischungsregulierung ab Beginn  Dickung; Durchforstung bis BH 2. Kurze Intervalle; auf grosse Kronen achten.\\nPositive Auslese und Pflege sehr lohnend. \\nMischungsform: Laubholz trupp- bis gruppenweise, Ta einzeln bis truppweise beigemischt.\\nU: Mischungsregulierung Ende Dickung, gleichzeitig Erweiterung der Verjüngungsflächen um 1 Baumlänge.",
@@ -65827,7 +65827,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "F: \\tBerg-Goldnessel, Baumtropf \\nG: Bärlauch (örtlich)\\nH: Wald-Ziest, Wald-Springkraut, Segge\\nK: \\tGrosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n ",
+        "vegetation": "F: Berg-Goldnessel, Baumtropf \\nG: Bärlauch (örtlich)\\nH: Wald-Ziest, Wald-Springkraut, Segge\\nK: Grosses Zweiblatt, Gundelrebe, Wald-Brustwurz\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\n ",
         "compactRisk": "3",
         "description": "Sehr wüchsige Eschenmischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden, oft mit Lehmschicht.\\n ",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2, grosse Kronen ausbilden.\\nSpezialitäten wie FUl und SAh fördern, einzeln bis truppweise beigemischt oder zumindest in Nebenbestand mitnehmen.\\nPositive Auslese und Pflege lohnend.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Räumung des Altbestandes in Dickung; Mischungsregulierung mit Schlagräumung.\\n",
@@ -65898,7 +65898,7 @@
           ],
           null
         ],
-        "vegetation": "E: \\tBusch-Windröschen\\nF: \\tBerg-Goldnessel, Baumtropf \\nH: Wald-Springkraut\\nK: \\tGrosses Zweiblatt, Gundelrebe\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schnellball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\nP: Weisse Segge ",
+        "vegetation": "E: Busch-Windröschen\\nF: Berg-Goldnessel, Baumtropf \\nH: Wald-Springkraut\\nK: Grosses Zweiblatt, Gundelrebe\\nM: Bingelkraut, Wald-Zwenke, Wolliger Schnellball, Seidelbast, Feld-Rose; weitere Kalkzeiger!\\nP: Weisse Segge ",
         "compactRisk": "2",
         "description": "Wüchsige Eschenmischwälder der Hartholzauen, die heute kaum mehr überschwemmt, jedoch vom Grundwasser beeinflusst werden. Unterwuchs artenreich und vielfältig. \\nSkelettreiche, nährstoff- und basenreiche, gut durchlässige Auenböden, oberflächlich recht trocken. ",
         "forestryCare": "N: Mischungsregulierung ab Ende Jungwuchs; Durchforstung bis BH 2, grosse Kronen ausbilden.\\nSpezialitäten wie FUl und SAh fördern, einzeln bis truppweise beigemischt oder zumindest in Nebenbestand mitnehmen.\\nPositive Auslese und Pflege lohnend.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Räumung des Altbestandes in Dickung; Mischungsregulierung mit Schlagräumung.\\n",
@@ -65996,7 +65996,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\t\\nH: \\tWald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich",
+        "vegetation": "E: Wald-Veilchen \\nF: Berg-Goldnessel\\nH: Wald-Ziest, Wald-Springkraut, Rasen-Schmiele\\nK: Welliges Sternmoos, Pariser-Hexenkraut, Hängende Segge, Wald-Gilbweiderich",
         "compactRisk": "4",
         "description": "Ziemlich wüchsige Eschenmischwälder in lehmreichen Plateaulagen. Unterwuchs gut ausgebildet, jedoch nicht sehr vielfältig. \\nBoden schluffig-tonig und zeitweise vernässt, wegen raschen Abbaus nährstoffund basenreich bis neutral, oft entwässert.",
         "forestryCare": "N: Mischungsregulierung ab Beginn  Dickung; Durchforstung bis BH 1. Auf grosse Kronen achten. Nassschneerisiko, bes. für Es.\\nMischungsform: Laubholz trupp- bis gruppenweise, Ta einzeln bis truppweise beigemischt.\\nU: Mischungsregulierung Ende Dickung, gleichzeitig Erweiterung der Verjüngungsflächen um 1 Baumlänge.",
@@ -66094,7 +66094,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "B: Faulbaum\\nC: \\tHeidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: \\tWeiblicher Waldfarn\\nK: \\tWald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n",
+        "vegetation": "B: Faulbaum\\nC: Heidelbeere, Breiter Wurmfarn, Ta-mariskenmoos, Wald-Frauenhaar\\nD: Weiblicher Waldfarn\\nK: Wald Schachtelhalm, Pariser-Hexenkraut, Welliges Sternmoos\\n",
         "compactRisk": "4",
         "description": "Mässig wüchsige Mischwälder mit hohem Ta- und Fi-Anteil. Bevorzugt auf vergleyten, schwach geneigten Hangterrassen. \\nBoden saurer und nährstoffärmer als 26, mit geringer Aktivität, dadurch Moder-Auflage. Erschwerte Keimung der Laubhölzer.",
         "forestryCare": "N: Kann sich auf Schlagpflege nach Plentereingriff beschränken (naturnahe Bestände fehlen weitgehend).\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur, insbesondere kleinflächiges Abdecken von Verjüngungskegeln. Vorwaldarten nutzen, v.a. VBe und HBi.",
@@ -66165,7 +66165,7 @@
           ],
           null
         ],
-        "vegetation": "C: \\tsaurer ‚Flügel’: Heidelbeere, Breitblättriger Wurmfarn, Wald-Frauenhaar\\nE: \\tWaldmeister \\nF: \\tBerg-Goldnessel\\nH: \\tTraubenkirsche, Wald-Ziest, Wald-Springkraut\\nI: \\tSumpf-Dotterblume, Sumpf-Pippau, Wechselblättriges Milzkraut \\nK: \\tWelliges Sternmoos, Pariser-Hexenkraut, Hängende Segge ",
+        "vegetation": "C: saurer ‚Flügel’: Heidelbeere, Breitblättriger Wurmfarn, Wald-Frauenhaar\\nE: Waldmeister \\nF: Berg-Goldnessel\\nH: Traubenkirsche, Wald-Ziest, Wald-Springkraut\\nI: Sumpf-Dotterblume, Sumpf-Pippau, Wechselblättriges Milzkraut \\nK: Welliges Sternmoos, Pariser-Hexenkraut, Hängende Segge ",
         "compactRisk": "5",
         "description": "Mässig bis gut wüchsige Eschenmischwälder mit üppiger Kraut- oder Moosschicht in flachen, dauernd nassen Mulden, v.a. auf Plateaus. \\nBoden lehmig, dauernd vernässt, Oberboden mit saurem Anmoor oder basischem Hydromull; bei stärkerer Säure von Moderschicht überdeckt. In diesem Fall mit beigemischten Ta und Fi.\\n ",
         "forestryCare": "N: Punktuelle Eingriffe mit leichten Auflichtungen, um stabile Einzelbäume zu fördern. Auf tiefen Schlankheitsgrad, v.a. der Es, achten.\\nMischungsform: Trupp- bis gruppenweise.\\nU: Falls Ta vorhanden: Stabilste Einzelbäume als Gerüst stehen lassen.",
@@ -66236,7 +66236,7 @@
           ],
           null
         ],
-        "vegetation": "E: \\tWaldmeister, Walderdbeere \\nF: \\tWeisse Pestwurz \\nH: \\tRasen-Schmiele, Berg-Kerbel\\nI: Rote Waldnelke, Sumpf-Dotterblume, Sumpf-Pippau\\nJ: Kohldistel\\nK: \\tWald-Brustwurz \\nM: \\tBingelkraut, Wald-Zwenke, Wolliger Schneeball\\nO: \\tBuntes Reitgras, Wald-Witwenblume ",
+        "vegetation": "E: Waldmeister, Walderdbeere \\nF: Weisse Pestwurz \\nH: Rasen-Schmiele, Berg-Kerbel\\nI: Rote Waldnelke, Sumpf-Dotterblume, Sumpf-Pippau\\nJ: Kohldistel\\nK: Wald-Brustwurz \\nM: Bingelkraut, Wald-Zwenke, Wolliger Schneeball\\nO: Buntes Reitgras, Wald-Witwenblume ",
         "compactRisk": "2",
         "description": "Mässig wüchsige, dicht aufwachsende Erlenwälder an häufig überschwemmten Bach- und Flussauen mit üppiger und hoher Krautschicht. \\nWenig entwickelte, schotterreiche Auenböden, die wegen des sehr raschen Abbaus nährstoff- und basenreich sind.\\n",
         "forestryCare": "N: Nicht erforderlich.",
@@ -66547,7 +66547,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "A: Torfmoose, Roststengelmoos\\nB: \\tDreilapp. Peitschenmoos, Gewelltes Wurmmoos, Rostrote Alpenrose, Wald-Schmiele \\nC: \\tHeidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, ",
+        "vegetation": "A: Torfmoose, Roststengelmoos\\nB: Dreilapp. Peitschenmoos, Gewelltes Wurmmoos, Rostrote Alpenrose, Wald-Schmiele \\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, ",
         "compactRisk": "3",
         "description": "Mässig wüchsige Nadelwälder auf Plateaus, Terrassen und leicht bis mittel geneigten Hängen; am Kuppenrand.\\nBoden meist podsoliert.",
         "forestryCare": "N: Kann sich auf Schlagpflege beschränken.\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.",
@@ -66618,7 +66618,7 @@
           ],
           null
         ],
-        "vegetation": "A: \\tTorfmoose, Straussenfedermoos, Rotstengelmoos, \\nB: Gewelltes Wurmmoos\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn ",
+        "vegetation": "A: Torfmoose, Straussenfedermoos, Rotstengelmoos, \\nB: Gewelltes Wurmmoos\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn ",
         "compactRisk": "4",
         "description": "Mässig wüchsige, oft stufige Nadelwälder in nassen Mulden- und Plateaulagen. Unterwuchs von kniehohen Heidelbeeren und von Torfmoos dominiert. \\nBoden extrem sauer, mit mächtiger Rohhumusauflage. Im Untergrund dauernd und zeitweise auch im Oberboden vernässt.",
         "forestryCare": "N: Kann sich auf Schlagpflege be-schränken.\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.\\n \\n ",
@@ -66716,7 +66716,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "A: Torfmoose (auf Lehmboden), Rotstengelmoos\\nB: Peitschenmoos, Gewelltes Wurmmoos, Wald-Schmiele \\nC: \\tHeidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn",
+        "vegetation": "A: Torfmoose (auf Lehmboden), Rotstengelmoos\\nB: Peitschenmoos, Gewelltes Wurmmoos, Wald-Schmiele \\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn",
         "compactRisk": "3",
         "description": "Wüchsige bis mässig wüchsige Nadelwälder auf Plateaus, Terrassen und leicht bis mittel geneigten Hängen.\\nBoden oft podsoliert, in Muldenlagen auch vergleyt.",
         "forestryCare": "N: Kann sich auf Schlagpflege be-schränken.\\nMischungsform: Einzeln bis truppweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur.",
@@ -66858,7 +66858,7 @@
           ],
           null
         ],
-        "vegetation": "A: \\tRotstengelmoos\\nC: \\tHeidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nF: \\tWeisse Pestwurz, Gew. Schlüsselblume\\nH: \\tBerg-Kerbel, Wolliger Hahnenfuss\\nI: \\tEisenhutblättriger Hahnenfuss, Sumpf-Dotterblume, Sumpf-Pippau\\nJ: \\tKohldistel, Wald-Storchenschnabel, Grauer Alpendost\\nA-C: trocken-saure Inseln",
+        "vegetation": "A: Rotstengelmoos\\nC: Heidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nF: Weisse Pestwurz, Gew. Schlüsselblume\\nH: Berg-Kerbel, Wolliger Hahnenfuss\\nI: Eisenhutblättriger Hahnenfuss, Sumpf-Dotterblume, Sumpf-Pippau\\nJ: Kohldistel, Wald-Storchenschnabel, Grauer Alpendost\\nA-C: trocken-saure Inseln",
         "compactRisk": "4",
         "description": "Lückige, mässig wüchsige Tannen-Fichtenwälder an meist grossflächig vernässten Hängen. Mosaik von Kleinstandorten aus sauren, heidelbeerreichen Erhöhungen und oft baumfreien, nassen und nährstoffreichen Senken mit üppiger Krautschicht. \\nBoden im Untergrund tonig und dauernd nass. Oberboden gemäss Kleinstandorten mit trocken-saurer Rohhumusauflage bzw. nass-basischem Hydromull.",
         "forestryCare": "N: Alle Ta konsequent freistellen, in der Jugend behutsam, später stärker. Im Übrigen einzig Schlagpflege notwendig.\\nMischungsform: Trupp- oder gruppenweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur. Vorhandene Ta-, BAh- oder Fi-Verjüngung herausarbeiten. ",
@@ -66956,7 +66956,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "B: \\tGewöhnl. Alpenlattich\\nC: Heidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich\\nE: \\tÄhrige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: \\tWeisse Pestwurz\\nH: \\tGelber Eisenhut\\nJ: \\tGrauer Alpendost ",
+        "vegetation": "B: Gewöhnl. Alpenlattich\\nC: Heidelbeere, Wald-Frauenhaar, Breiter Wurmfarn, Wald-Hainsimse\\nD: Purpur-Hasenlattich\\nE: Ährige Rapunzel, Breitblättriger Ehrenpreis, Sanikel\\nF: Weisse Pestwurz\\nH: Gelber Eisenhut\\nJ: Grauer Alpendost ",
         "compactRisk": "2",
         "description": "Ziemlich wüchsige Tannen-Fichtenwälder mit Plenter- und leichter Rottenstruktur an Hängen aller Expositionen. Auf leichten Erhöhungen oft schwache Versauerung, daneben aktive Böden mit Nährstoffzeigern sowie einzelnen Hochstauden. \\nAusgeglichene, aktive, gut nährstoffversorgte und gut durchlässige Braunerden. Oberboden je nach Kleinstandort mit basischem Mull oder saurem Moder.",
         "forestryCare": "N: Bei der Gebirgsplenterung auf die Erhaltung von Rotten und Gruppen achten. Dicke, standfeste Bäume teilweise stehen lassen. \\nAlle Ta konsequent freistellen, in der Jugend behutsam, später stärker. \\nIm Übrigen einzig Schlagpflege notwendig. \\nMischungsform: Trupp- oder gruppenweise.\\nU: Punktuelle Eingriffe zur Förderung der Rottenstruktur. ",
@@ -67054,7 +67054,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "B: \\tGewöhnl. Alpenlattich, Preiselbeere\\nC: Heidelbeere, Wald-Frauenhaar, Hainmoos, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nD: \\tPurpur-Hasenlattich, Echte Goldrute, Wald-Habichtskraut\\nE: \\tBreitblättriger Ehrenpreis",
+        "vegetation": "B: Gewöhnl. Alpenlattich, Preiselbeere\\nC: Heidelbeere, Wald-Frauenhaar, Hainmoos, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse\\nD: Purpur-Hasenlattich, Echte Goldrute, Wald-Habichtskraut\\nE: Breitblättriger Ehrenpreis",
         "compactRisk": "2",
         "description": "Mässig wüchsige Tannen-Fichtenwälder an Hängen aller Expositionen, v.a. auf breiten Rücken. Unterwuchs lückig und eher artenarm.\\nOberboden saurer als bei 50, daher leicht höherer Fi-Anteil. Nährstoffarme, meist gut durchlässige Braunerden mit saurer Moderauflage.",
         "forestryCare": "N: Fördern der Rottenstruktur. Alle Ta konsequent freistellen, in der Jugend behutsam, später stärker. Im Übrigen einzig Schlagpflege notwendig.\\nMischungsform: Trupp- oder gruppenweise.\\nU: Punktuelle Eingriffe zur Förderung der Rottenstruktur. ",
@@ -67152,7 +67152,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "D: \\tPurpur-Hasenlattich, Waldfarn\\nE: \\tEchter Wurmfarn, Ährige Rapunzel, Sanikel\\nF: \\tWeisse Pestwurz, Gewöhnl. Schlüsselblume\\nH: \\tBerg-Kerbel, Gelber Eisenhut, Wolliger Hahnenfuss\\nI: \\tEisenhutblättriger Hahnenfuss\\nJ: \\tGrauer Alpendost, Rundblättriger Steinbrech, Zweiblütiges Veilchen, Alpen-Milchlattich",
+        "vegetation": "D: Purpur-Hasenlattich, Waldfarn\\nE: Echter Wurmfarn, Ährige Rapunzel, Sanikel\\nF: Weisse Pestwurz, Gewöhnl. Schlüsselblume\\nH: Berg-Kerbel, Gelber Eisenhut, Wolliger Hahnenfuss\\nI: Eisenhutblättriger Hahnenfuss\\nJ: Grauer Alpendost, Rundblättriger Steinbrech, Zweiblütiges Veilchen, Alpen-Milchlattich",
         "compactRisk": "3",
         "description": "Wüchsige Tannen-Fichtenwälder mit Plenter- und leichter Rottenstruktur, v.a. in schattig-feuchten Hang- und Muldenlagen. Unterwuchs von Nährstoffzeigern und oft üppigen Hochstauden beherrscht. Runsen und Mulden manchmal als baumfeindliche Flächen. \\nAktive, nährstoff- und basenreiche Braunerden mit raschem Abbau und tonreichem, mässig durchlässigen Mineralboden.",
         "forestryCare": "N: Alle Ta konsequent freistellen, in der Jugend behutsam, später stärker. Im Übrigen einzig Schlagpflege notwendig.\\nMischungsform: Trupp- oder gruppenweise.\\nU: Punktuelle Eingriffe zur Förderung der Plenterstruktur. Aus Vorwaldbeständen geeignete Ta-, BAh- oder Fi-Verjüngung herausarbeiten. ",
@@ -67223,7 +67223,7 @@
           ],
           null
         ],
-        "vegetation": "B: \\tBesenheide, Preiselbeere\\nC: \\tHeidelbeere, Wald-Frauenhaar\\nM: \\tBingelkraut\\nO: \\tBuntes Reitgras, Schlaffe Segge\\nP: \\tBlaugras, Weisse Segge, Berg-Segge, Buchsblättrige Kreuzblume, Berg-Distel, Behaarte Alpenrose",
+        "vegetation": "B: Besenheide, Preiselbeere\\nC: Heidelbeere, Wald-Frauenhaar\\nM: Bingelkraut\\nO: Buntes Reitgras, Schlaffe Segge\\nP: Blaugras, Weisse Segge, Berg-Segge, Buchsblättrige Kreuzblume, Berg-Distel, Behaarte Alpenrose",
         "compactRisk": "1",
         "description": "Schwach wüchsige, lichte bis aufgelöste Fichtenwälder an sonnigen, wechseltrockenen Felsstandorten. Unterwuchs artenreich, mit stellenweise grasigem Aspekt. \\nBoden flachgründig, skelettreich, wenig entwickelt und stark austrocknend. Auf dem anstehenden Kalkfels Bildung von Rohhumustaschen.",
         "forestryCare": "I.d.R. nicht notwendig. Punktuelle Eingriffe in Steinschlagsituationen.",
@@ -67294,7 +67294,7 @@
           ],
           null
         ],
-        "vegetation": "B: \\tBesenheide, Preiselbeere\\nC: \\tHeidelbeere, Wald-Frauenhaar\\nM: \\tBingelkraut\\nO: \\tBuntes Reitgras, Schlaffe Segge\\nP: \\tBlaugras, Weisse Segge, Berg-Segge, Buchsblättrige Kreuzblume, Berg-Distel, Behaarte Alpenrose",
+        "vegetation": "B: Besenheide, Preiselbeere\\nC: Heidelbeere, Wald-Frauenhaar\\nM: Bingelkraut\\nO: Buntes Reitgras, Schlaffe Segge\\nP: Blaugras, Weisse Segge, Berg-Segge, Buchsblättrige Kreuzblume, Berg-Distel, Behaarte Alpenrose",
         "compactRisk": "1",
         "description": "Schwach wüchsige, lichte bis aufgelöste Fichten-Mischwälder an sonnigen, wechseltrockenen, felsigen Standorten. Unterwuchs artenreich, mit stellenweise grasigem Aspekt. \\nBoden flachgründig, skelettreich, wenig entwickelt und stark austrocknend. Auf dem oft anstehenden Kalkfels Bildung von Rohhumustaschen.",
         "forestryCare": "Nicht notwendig.",
@@ -67365,7 +67365,7 @@
           ],
           null
         ],
-        "vegetation": "A: \\tTorfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: \\tGewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: \\tHeidelbeer",
+        "vegetation": "A: Torfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: Gewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: Heidelbeer",
         "compactRisk": "5",
         "description": "Schwach wüchsige Fichtenwälder mit Tanne, mit deutlicher Rottenstruktur auf flachen Hängen sowie auf Terrassen. Unterwuchs von Heidelbeeren und Torfmoosen dominiert. \\nBoden tonreich, undurchlässig, extrem sauer mit mächtiger Rohhumusauflage; meist am Rande von Hochmooren.",
         "forestryCare": "Punktuelle Eingriffe zur Förderung der Verjüngung und der Rottenstruktur.",
@@ -67436,7 +67436,7 @@
           ],
           null
         ],
-        "vegetation": "A: \\tTorfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: \\tGewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: \\tHeidelbeer",
+        "vegetation": "A: Torfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: Gewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: Heidelbeer",
         "compactRisk": "5",
         "description": "Schwach wüchsige Fichtenwälder mit Bergföhre, mit deutlicher Rottenstruktur auf flachen Hängen sowie auf Terrassen. Unterwuchs von Heidelbeeren und Torfmoosen dominiert. \\nBoden tonreich, undurchlässig, extrem sauer mit mächtiger Rohhumusauflage; meist am Rande von Hochmooren.",
         "forestryCare": "Punktuelle Eingriffe zur Förderung der Verjüngung und der Rottenstruktur.",
@@ -67578,7 +67578,7 @@
           ],
           null
         ],
-        "vegetation": "A: \\tTorfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: \\tGewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: \\tHeidelbeere, Breiter Wurmfarn",
+        "vegetation": "A: Torfmoose, Gemeines Haarmützenmoos, Herzblättriges Zweiblatt, Straussenfedermoos, Rotstengelmoos\\nB: Gewelltes Wurmmoos, Gewöhnl. Alpenlattich, Wald-Schmiele\\nC: Heidelbeere, Breiter Wurmfarn",
         "compactRisk": "4",
         "description": "Mässig bis schwach wüchsige Fichtenwälder mit deutlicher Rottenstruktur auf flachen Hängen sowie auf Terrassen. Unterwuchs von Heidelbeeren und Torfmoosen dominiert. \\nBoden tonreich, undurchlässig, extrem sauer mit starker Rohhumusauflage.",
         "forestryCare": "Gezielte Eingriffe zur Förderung der Verjüngung und der Rottenstruktur.",
@@ -67676,7 +67676,7 @@
             [null, null]
           ]
         ],
-        "vegetation": "B: \\tGewöhnl. Alpenlattich, Wald-Schmiele, Preiselbeere\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse, Tamariskenmoos",
+        "vegetation": "B: Gewöhnl. Alpenlattich, Wald-Schmiele, Preiselbeere\\nC: Heidelbeere, Hainmoos, Wald-Frauenhaar, Breiter Wurmfarn, Rippenfarn, Wald-Hainsimse, Tamariskenmoos",
         "compactRisk": "2",
         "description": "Mässig wüchsige Fichtenwälder mit deutlicher Rottenstruktur an flachen bis steilen Hängen aller Expositionen. Unterwuchs von der Heidelbeere und von Farnen dominiert. \\nBoden meist deutlich podsoliert, extrem bis sehr sauer mit starker Rohhumusauflage, frischem bis feuchtem Oberboden und gut bis gehemmt durchlässigem Untergrund.\\n",
         "forestryCare": "Gezielte Eingriffe zur Förderung der Verjüngung und der Rottenstruktur. ",
