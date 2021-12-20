@@ -1,4 +1,4 @@
-import { Table, TableRow } from 'docx';
+import { Table, TableRow, Paragraph, AlignmentType } from 'docx';
 import { PAGE_WIDTH_DXA, getLocationTableCell } from './exportUtils';
 
 export const writeDataTable = (soils, mapping, translationPath, t) => {
@@ -19,7 +19,12 @@ export const writeDataTable = (soils, mapping, translationPath, t) => {
               `${translationPath}.${mapping[index]}`,
             )}`,
           ),
-          getLocationTableCell(icon),
+          getLocationTableCell([
+            new Paragraph({
+              alignment: AlignmentType.CENTER,
+              text: icon,
+            }),
+          ]),
         ],
       }),
     ];

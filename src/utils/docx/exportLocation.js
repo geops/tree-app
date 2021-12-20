@@ -8,7 +8,13 @@ import {
 } from 'docx';
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
-import { writeLine, style, verticalSpace, pageBreak } from './exportUtils';
+import {
+  writeLine,
+  style,
+  verticalSpace,
+  pageBreak,
+  pageProperties,
+} from './exportUtils';
 import { writeLocationTable } from './writeLocationTable';
 import { writeAssociationsTable } from './writeAssociationsTable';
 
@@ -82,6 +88,7 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     styles: style,
     sections: [
       {
+        properties: pageProperties,
         children: [
           mainTitle,
           profile,
