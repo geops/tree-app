@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 function InfoImpressumLucerne() {
@@ -37,10 +37,9 @@ function InfoImpressumLucerne() {
 
 export default function InfoImpressum() {
   const activeProfile = useSelector((state) => state.activeProfile);
-  const { t } = useTranslation();
   return (
     <div>
-      <p>{t('info.impressum')}</p>
+      <Trans i18nKey="info.impressum">impressum</Trans>
       {activeProfile === 'lu' && <InfoImpressumLucerne />}
     </div>
   );
