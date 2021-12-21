@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
@@ -150,7 +150,7 @@ function ProjectionResult() {
           </Header>
           {mapLocationForestType && (
             <Header className={styles.checkMapLocation} inverted>
-              {t('recommendation.checkMapLocation')}
+              <Trans i18nKey="recommendation.checkMapLocation" />
             </Header>
           )}
         </>
