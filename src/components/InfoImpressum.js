@@ -40,6 +40,7 @@ export default function InfoImpressum() {
   const { t } = useTranslation();
   return (
     <div>
+      <h3>{t('info.impressumGeneralTitle')}</h3>
       <p>{t('info.impressum')}</p>
       {activeProfile === 'lu' && <InfoImpressumLucerne />}
     </div>
