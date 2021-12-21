@@ -107,11 +107,15 @@ function InfoPage() {
   ];
 
   if (activeProfile === 'lu') {
-    panels.push({
-      key: 'info.lu',
-      title: { content: InfoLucerne.title },
-      content: { content: <InfoLucerne /> },
-    });
+    panels.splice(
+      panels.findIndex((panel) => panel.key === 'info.language&profile') + 1,
+      0,
+      {
+        key: 'info.lu',
+        title: { content: InfoLucerne.title },
+        content: { content: <InfoLucerne /> },
+      },
+    );
   }
 
   return (
