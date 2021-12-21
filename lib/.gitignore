@@ -20,4 +20,5 @@ data/spatial/forest_types_ne
 data/spatial/forest_types_fr
 data/spatial/silver_fir_areas
 data/spatial/cantonal_boundaries.zip
+data/spatial/*.zip
 doc

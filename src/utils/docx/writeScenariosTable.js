@@ -5,22 +5,10 @@ import {
   treeTypesReducer,
   PAGE_WIDTH_DXA,
   cellPadding,
-  treeAppColorMain,
-  treeAppColorToday,
-  treeAppColorModerate,
-  treeAppColorExtreme,
-  getScenariosTextCell,
-} from './utils';
+  darkBorder,
+  getScenariosTableCell,
+} from './exportUtils';
 
-const getColumnColor = (index) => {
-  if (index === 1) {
-    return treeAppColorModerate;
-  }
-  if (index === 2) {
-    return treeAppColorExtreme;
-  }
-  return treeAppColorToday;
-};
 const getScenarioColumn = (scenario, projection, language, t) => {
   const { forestType, transitionForestType } = projection;
   const altitudinalZone = getAZ(projection.altitudinalZone);
@@ -67,23 +55,23 @@ export const writeScenariosTable = (
         tableHeader: true,
         children: [
           new TableCell({
-            shading: treeAppColorMain,
             margins: cellPadding,
+            borders: darkBorder,
             children: [],
           }),
           ...columns.map(
             (column, idx) =>
               new TableCell({
-                shading: getColumnColor(idx),
                 margins: cellPadding,
+                borders: darkBorder,
                 children: [
                   new Paragraph({
                     text: column.header,
-                    style: 'scenarios-primary-bold',
+                    style: 'main-20-bold',
                   }),
                   new Paragraph({
                     text: column.subHeader,
-                    style: 'scenarios-primary',
+                    style: 'main-20',
                   }),
                 ],
               }),
@@ -93,19 +81,17 @@ export const writeScenariosTable = (
       // Dominant forest type
       new TableRow({
         children: [
-          getScenariosTextCell(
+          getScenariosTableCell(
             t('projection.treeTypesOne'),
-            treeAppColorMain,
-            'scenarios-primary-bold',
+            'main-20-bold',
+            darkBorder,
           ),
           ...columns.map((column, idx) =>
-            getScenariosTextCell(
+            getScenariosTableCell(
               column.dominantTypes.reduce(
                 treeTypesReducer(latinActive ? 'la' : language),
                 '',
               ),
-              getColumnColor(idx),
-              'scenarios-primary',
             ),
           ),
         ],
@@ -113,19 +99,17 @@ export const writeScenariosTable = (
       // Important forest types
       new TableRow({
         children: [
-          getScenariosTextCell(
+          getScenariosTableCell(
             t('projection.treeTypesTwo'),
-            treeAppColorMain,
-            'scenarios-primary-bold',
+            'main-20-bold',
+            darkBorder,
           ),
           ...columns.map((column, idx) =>
-            getScenariosTextCell(
+            getScenariosTableCell(
               column.importantTypes.reduce(
                 treeTypesReducer(latinActive ? 'la' : language),
                 '',
               ),
-              getColumnColor(idx),
-              'scenarios-primary',
             ),
           ),
         ],
@@ -133,19 +117,17 @@ export const writeScenariosTable = (
       // Other forest types
       new TableRow({
         children: [
-          getScenariosTextCell(
+          getScenariosTableCell(
             t('projection.treeTypesThree'),
-            treeAppColorMain,
-            'scenarios-primary-bold',
+            'main-20-bold',
+            darkBorder,
           ),
           ...columns.map((column, idx) =>
-            getScenariosTextCell(
+            getScenariosTableCell(
               column.otherTypes.reduce(
                 treeTypesReducer(latinActive ? 'la' : language),
                 '',
               ),
-              getColumnColor(idx),
-              'scenarios-primary',
             ),
           ),
         ],

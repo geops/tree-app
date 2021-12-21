@@ -8,8 +8,8 @@ import { info } from '@geops/tree-lib';
 
 import Button from './Button';
 import Ecogram from './Ecogram';
-import ForestTypeModal from './ForestTypeModal';
 import HelpModal from './HelpModal';
+import ForestTypeModal from './ForestTypeModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
 

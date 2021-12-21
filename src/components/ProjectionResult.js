@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useCallback } from 'react';
+import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
@@ -14,7 +14,7 @@ import {
   getScenarioColumns,
   getAZ,
 } from '../utils/projectionUtils';
-import { exportRecommendations } from '../utils/docx/exportRecommendations';
+import { exportRecommendation } from '../utils/docx/exportRecommendation';
 
 function getPane(scenario, projection, language, t) {
   const { forestType, transitionForestType } = projection;
@@ -44,13 +44,23 @@ function getPane(scenario, projection, language, t) {
 const checkFields = ['slope', 'additional', 'relief'];
 
 function ProjectionResult() {
-  const { location, mapLocationForestType, projectionMode, projectionResult } =
-    useSelector((state) => ({
-      location: state.location,
-      mapLocationForestType: state.mapLocation.forestType,
-      projectionMode: state.projectionMode,
-      projectionResult: state.projectionResult,
-    }));
+  const {
+    location,
+    mapLocationForestType,
+    projectionMode,
+    projectionResult,
+    latinActive,
+    future,
+    activeProfile,
+  } = useSelector((state) => ({
+    location: state.location,
+    mapLocationForestType: state.mapLocation.forestType,
+    projectionMode: state.projectionMode,
+    projectionResult: state.projectionResult,
+    latinActive: state.latinActive,
+    future: state.future,
+    activeProfile: state.activeProfile,
+  }));
   const { i18n, t } = useTranslation();
   const AZToday = getAZ(location.altitudinalZone);
   const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
@@ -86,6 +96,30 @@ function ProjectionResult() {
         options[field].filter((o) => o !== 'unknown').length > 0,
     );
 
+  const exportDocx = useCallback(
+    () =>
+      exportRecommendation(
+        location,
+        projectionResult,
+        projectionMode,
+        future,
+        latinActive,
+        activeProfile,
+        i18n,
+        t,
+      ),
+    [
+      location,
+      projectionResult,
+      projectionMode,
+      future,
+      latinActive,
+      activeProfile,
+      i18n,
+      t,
+    ],
+  );
+
   return location.altitudinalZone && location.forestType ? (
     <div className={styles.container}>
       {foundProjection ? (
@@ -101,7 +135,7 @@ function ProjectionResult() {
             panes={finalPanes}
           />
           <div className={styles.exportButtonWrapper}>
-            <ExportButton exportFunction={exportRecommendations} />
+            <ExportButton onClick={exportDocx} />
           </div>
         </>
       ) : (
@@ -116,7 +150,7 @@ function ProjectionResult() {
           </Header>
           {mapLocationForestType && (
             <Header className={styles.checkMapLocation} inverted>
-              {t('recommendation.checkMapLocation')}
+              <Trans i18nKey="recommendation.checkMapLocation" />
             </Header>
           )}
         </>

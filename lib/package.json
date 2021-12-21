@@ -29,7 +29,7 @@
     "webpack-cli": "3.3.12"
   },
   "scripts": {
-    "data:nais:ecogram": "node data/nais/ecogram.js && prettier --write data/*.json",
+    "data:ecogram": "node data/ecogram/process.js && prettier --write data/*.json",
     "data:transform": "yarn data:stop && yarn data:start && yarn data:stop",
     "data:start": "cd data && ./docker-start.sh",
     "data:stop": "cd data && docker-compose down --remove-orphans --volumes",
