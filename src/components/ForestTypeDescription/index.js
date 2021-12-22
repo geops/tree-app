@@ -1,38 +1,48 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Tab } from 'semantic-ui-react';
+import { info } from '@geops/tree-lib';
 
-import SoilTab from './SoilTab';
-import TerrainTab from './TerrainTab';
-import VegetationTab from './VegetationTab';
+import ChForestTypesDescription from './ch/ForestTypesDescription';
+import LuForestTypeDescription from './lu/ForestTypeDescription';
 
-function ForestTypeDescription({ data }) {
+function getForestTypeData(code, profile) {
+  try {
+    return code && info('forestType', code, profile);
+  } catch (error) {
+    return null;
+  }
+}
+
+function ForestTypeDescription() {
+  const activeProfile = useSelector((state) => state.activeProfile);
+  const code = useSelector((state) => state.forestTypeDescription);
+  const data = getForestTypeData(code, activeProfile);
   const { t } = useTranslation();
-  return (
+
+  return data ? (
     <>
-      <Tab
-        panes={[
-          {
-            menuItem: t('forestTypeDiagram.vegetation'),
-            render: () => <VegetationTab data={data} />,
-          },
-          {
-            menuItem: t('forestTypeDiagram.terrain'),
-            render: () => <TerrainTab data={data} />,
-          },
-          {
-            menuItem: t('forestTypeDiagram.soil.header'),
-            render: () => <SoilTab data={data} />,
-          },
-        ]}
-      />
+      {activeProfile === 'ch' && <ChForestTypesDescription data={data} />}
+      {activeProfile === 'lu' && <LuForestTypeDescription data={data} />}
     </>
+  ) : (
+    t('forestTypeModal.noDataMessage')
   );
 }
 
-ForestTypeDescription.propTypes = {
-  data: PropTypes.shape().isRequired,
+ForestTypeDescription.Header = function ForestTypeDescriptionHeader() {
+  const data = useSelector((state) =>
+    getForestTypeData(state.forestTypeDescription, state.activeProfile),
+  );
+  const { i18n, t } = useTranslation();
+
+  return data ? (
+    <>
+      {data.code} - {data[i18n.language]} {data.la && <i>{data.la}</i>}
+    </>
+  ) : (
+    t('forestTypeModal.noDataHeader')
+  );
 };
 
 export default ForestTypeDescription;

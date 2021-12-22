@@ -9,6 +9,11 @@ export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
 export const SET_PROJECTION_RESULT = 'SET_PROJECTION_RESULT';
 export const SET_TARGET_ALTITUDINAL_ZONE = 'SET_TARGET_ALTITUDINAL_ZONE';
 export const SET_WELCOME_MODAL = 'SET_WELCOME_MODAL';
+export const SET_ACTIVE_PROFILE = 'SET_ACTIVE_PROFILE';
+export const SET_FORESTTYPE_COMPARISON = 'SET_FORESTTYPE_COMPARISON';
+export const SET_FORESTTYPE_DESCRIPTION = 'SET_FORESTTYPE_DESCRIPTION';
+export const SET_FORESTTYPE_MODAL = 'SET_FORESTTYPE_MODAL';
+export const SET_FUTURE = 'SET_FUTURE';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -52,4 +57,30 @@ export function setTargetAltitudinalZone(targetAltitudinalZone) {
 
 export function setWelcomeModal(open) {
   return { type: SET_WELCOME_MODAL, open };
+}
+
+export function setActiveProfile(activeProfile) {
+  return { type: SET_ACTIVE_PROFILE, activeProfile };
+}
+
+export function setForestTypeComparison(
+  forestTypeComparison,
+  openModal = true,
+) {
+  return { type: SET_FORESTTYPE_COMPARISON, forestTypeComparison, openModal };
+}
+
+export function setForestTypeDescription(
+  forestTypeDescription,
+  openModal = true,
+) {
+  return { type: SET_FORESTTYPE_DESCRIPTION, forestTypeDescription, openModal };
+}
+
+export function setForestTypeModal(forestTypeModal) {
+  return { type: SET_FORESTTYPE_MODAL, forestTypeModal };
+}
+
+export function setFuture(future) {
+  return { type: SET_FUTURE, future };
 }

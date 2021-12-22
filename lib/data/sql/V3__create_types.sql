@@ -839,7 +839,6 @@ FROM nat_boden
 LEFT JOIN nat_naistyp ON nat_boden.naistyp_sort = nat_naistyp.naistyp_sort
 WHERE trim(nat_naistyp.naistyp_c) = foresttype_meta.code;
 
-
 CREATE TYPE foresttype_group_type AS ENUM ('main', 'special', 'volatile', 'riverside', 'pioneer');
 
 

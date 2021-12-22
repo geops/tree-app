@@ -145,6 +145,10 @@ function InfoReports() {
         <br />
         Abenis AG, Chur &amp; Geographisches Institut der Universität Bern,
         Bern, 72 S.
+        <br />
+        <a href="https://doi.org/10.3929/ethz-b-000519584" target="reports">
+          Link
+        </a>
       </li>
       <li>
         <strong>

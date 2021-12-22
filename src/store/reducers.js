@@ -10,12 +10,19 @@ import {
   SET_PROJECTION_RESULT,
   SET_TARGET_ALTITUDINAL_ZONE,
   SET_WELCOME_MODAL,
+  SET_ACTIVE_PROFILE,
+  SET_FORESTTYPE_COMPARISON,
+  SET_FORESTTYPE_DESCRIPTION,
+  SET_FORESTTYPE_MODAL,
+  SET_FUTURE,
 } from './actions';
 
 const initialProjection = { options: {}, projections: [] };
 export const initialState = {
   latinActive: false,
   location: {},
+  forestTypeInfo: null,
+  forestTypeCompare: [],
   formLocation: {},
   locationResult: { options: {} },
   mapLayer: 'cb',
@@ -30,6 +37,7 @@ export const initialState = {
   },
   targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
+  future: true,
 };
 
 const initialFormLocation = {
@@ -107,9 +115,35 @@ function tree(state = initialState, action) {
     case SET_TARGET_ALTITUDINAL_ZONE: {
       return { ...state, targetAltitudinalZone: action.targetAltitudinalZone };
     }
+    case SET_FUTURE: {
+      return { ...state, future: action.future };
+    }
     case SET_WELCOME_MODAL:
       localStorage.setItem('tree.welcomeModal', action.open ? 'open' : 'close');
       return { ...state, welcomeModalOpen: action.open };
+    case SET_ACTIVE_PROFILE:
+      localStorage.setItem('tree.profile', action.activeProfile);
+      return { ...state, activeProfile: action.activeProfile };
+    case SET_FORESTTYPE_COMPARISON:
+      return {
+        ...state,
+        forestTypeComparison: action.forestTypeComparison,
+        forestTypeModal:
+          action.forestTypeComparison && action.openModal
+            ? 'c'
+            : state.forestTypeModal,
+      };
+    case SET_FORESTTYPE_DESCRIPTION:
+      return {
+        ...state,
+        forestTypeDescription: action.forestTypeDescription,
+        forestTypeModal:
+          action.forestTypeDescription && action.openModal
+            ? 'd'
+            : state.forestTypeModal,
+      };
+    case SET_FORESTTYPE_MODAL:
+      return { ...state, forestTypeModal: action.forestTypeModal };
     default:
       return state;
   }

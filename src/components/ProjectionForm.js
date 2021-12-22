@@ -4,13 +4,14 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
-// eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
+import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
-import ForestTypeModal from './ForestTypeModal';
-import { setFormLocation } from '../store/actions';
+import { setFormLocation, setForestTypeDescription } from '../store/actions';
+import { transitionMapping } from '../utils/luTransitionMapping';
+
 import styles from './ProjectionForm.module.css';
 
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
@@ -19,12 +20,17 @@ const getButtonOptions = (type, lng) => (key) => ({
   label: info(type, key)[lng],
 });
 const getDropdownOptions =
-  (type, lng, includeKey = false) =>
+  (type, lng, dispatch, includeKey = false) =>
   (key) => ({
     key,
-    content: includeKey ? (
+    content: dispatch ? (
       <>
-        <ForestTypeModal data={info(type, key)} />
+        <Button
+          active
+          compact
+          icon="info"
+          onClick={() => dispatch(setForestTypeDescription(key))}
+        />
         {key} - {info(type, key)[lng]}
       </>
     ) : (
@@ -38,18 +44,21 @@ const getDropdownOptions =
 
 function ProjectionForm() {
   const dispatch = useDispatch();
+  const { t, i18n } = useTranslation();
   const {
     location,
     mapLocation,
     formLocation,
     projectionMode,
     projectionResult,
+    activeProfile,
   } = useSelector((state) => ({
     location: state.location,
     mapLocation: state.mapLocation,
     formLocation: state.formLocation,
     projectionMode: state.projectionMode,
     projectionResult: state.projectionResult,
+    activeProfile: state.activeProfile,
   }));
   const options =
     projectionMode === 'm'
@@ -80,8 +89,12 @@ function ProjectionForm() {
     dispatch(setFormLocation({ [key]: value }));
   };
 
-  const { t, i18n } = useTranslation();
   const formActive = projectionMode === 'm' || fieldActive;
+  const cantonalForestType =
+    activeProfile === 'lu' &&
+    transitionMapping[
+      `${location.forestType}(${location.transitionForestType})`
+    ];
 
   return (
     <Form className={formActive ? styles.formActive : styles.form}>
@@ -121,7 +134,7 @@ function ProjectionForm() {
             data-cypress="projectionFormForestType"
             label={t('forestType.label')}
             options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
+              getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) => setLocation('forestType', value)}
             onBlur={deactivateField}
@@ -165,7 +178,7 @@ function ProjectionForm() {
             clearable
             label={t('forestType.transition')}
             options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, true),
+              getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) =>
               setLocation('transitionForestType', value)
@@ -255,6 +268,23 @@ function ProjectionForm() {
             value={getValue('targetAltitudinalZone')}
           />
         )}
+      {cantonalForestType && (
+        <>
+          <p className={styles.cantonalForestTypeLabel}>
+            {t('lu.forestType.cantonalForestType')}
+          </p>
+          <Button
+            active
+            compact
+            icon="info"
+            onClick={() =>
+              dispatch(setForestTypeDescription(cantonalForestType))
+            }
+          />
+          {cantonalForestType} -{' '}
+          {info('forestType', cantonalForestType, activeProfile)[i18n.language]}
+        </>
+      )}
     </Form>
   );
 }
