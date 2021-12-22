@@ -30,7 +30,7 @@ export default function InfoLucerne() {
         In folgendem Dokument sind diese Grundgedanken mit allgemeiner
         Gültigkeit in der Form praktischer Richtlinien formuliert:{' '}
         <a
-          href="https://www.geo.lu.ch/src/pdf/doc_Kommentar_Waldbau_Luzern.pdf"
+          href="https://lawa.lu.ch/-/media/LAWA/Dokumente/Wald/waldplanung/Grundlagen/AN_Kommentar_Waldbau_2021.pdf"
           target="info-lucerne"
         >
           Waldbaukommentar Luzern

@@ -322,7 +322,7 @@
     "bugs": "<p>In der aktuellen Version sind folgende Fehler bekannt oder Features noch nicht implementiert:</p><p>1) Die App funktioniert mit den Browsern Firefox, Edge, Chrome, Samsung Internet und Safari. Bei anderen Browsern können Fehlfunktionen auftreten.</p><p>2) Wenn die Tree App in einer früheren Version geladen wurde, kann es sein, dass sie nicht aktualisiert wird. Um dies zu erreichen, muss der Cache manuell geleert werden (s. Browser-spezifische Anleitungen im Internet). </p><p>3) In den Standortsregionen 2b und 4 können Buchen in der Oberschicht vorkommen. Dann müssen die Ökogramme der Standortsregionen 2a bzw. 5 verwendet werden. Dies ist sowohl in der Ansicht „Standort“ als auch in der Ansicht „Empfehlung“ im manuellen Modus möglich.</p><p>4) Im Tannenreliktareal können Tannen in der Oberschicht vorkommen. Dann müssen die Ökogramme des Tannenhaupt- und Nebenareals verwendet werden. Dies ist bei der Ansicht „Standort“ nicht implementiert, und in der Ansicht „Empfehlung“ nur im manuellen Modus möglich.</p><p>5) Einige kantonale Waldstandortskarten sind in die TreeApp eingebunden. Hier wird der Standortstyp direkt aus der Standortskarte übernommen. Die Anzeige weiterer kantonaler Standortskarten ist in Arbeit. </p><p>6) Die gemäss Tree App empfohlenen Baumarten können von den in den kantonalen Fachgrundlagen empfohlenen Baumarten abweichen, denn sie wurden aus mehreren kantonalen Grundlagenwerken zusammengestellt. </p><p>7) Die Hintergrundkarten sind nicht offline-fähig. Man kann sie aber, bevor die Verbindung abbricht, in den Browser laden. </p><p>8) Bei gewissen heute in der Schweiz noch nicht vorkommenden Standortstypen sind keine dominanten Naturwaldbaumarten angegeben, da sie nicht bekannt sind. </p>",
     "bugsTitle": "Bekannte Bugs und geplante Erweiterungen",
     "changelogTitle": "Versionen",
-    "changelog": "<p>Die Version 2.5 wurde am 22.12.2021 veröffentlicht. Die wichtigsten Verbesserungen sind: </p><p>1) Es wurde eine Exportfunktion für die Baumartenempfehlungen eingebaut. </p><p>2) Es wurden weitere kantonale Standortskarten integriert.</p><p>3) Es wurden Beschreibungen der Standortstypen im Kanton Luzern integriert, die auch den Vergleich von bis zu 4 Standortstypen erlaubt. Man kann auswählen, ob man diese Luzerner Version anzeigen will.</p><p><p> Die Version 2.4.1 wurde am 22.11.2021 veröffentlicht. Die wichtigsten Verbesserungen waren: </p><p>1) Die Vegetationshöhenstufenkarten wurden aktualisiert. Sie basieren nun auf Klimamodellen von 2018 (NCCS 2018). Das Ausmass der Klimaänderung bis zur Periode 2070-2099 für «mässigen» und «starken» Klimawandel bleibt aber weitgehend unverändert. Die neue Höhenstufenmodellierung stützt sich auch sonst auf verbesserte Datengrundlagen. Zudem wurde ein Ansteigen der oberen Waldgrenze modelliert. </p><p>2) In Tieflagen der Südschweiz wurde zusätzlich zur hyperinsubrischen eine mediterrane Höhenstufe modelliert und die Standortsregion Mendrisiotto geschaffen. </p><p>3) Bei Nutzung des Kartenmodus auf einem Handy ist es nun möglich, die URL via Sharelink zu teilen (Button unten rechts auf der Karte). </p><p>4) Es ist nun möglich, lateinische Artnamen der Baum- und Zeigerarten anzeigen zu lassen. </p><p>5) Gebietsfremde Baumarten sind mit einem Gradzeichen (°) kenntlich gemacht. </p><p>6) In einigen Kantonen ist die Standortskarte in der App hinterlegt. Sie kann im Kartenmodus angezeigt werden, indem man anstelle der Standardanzeige «Kantonsgrenzen» das Feld «Standortskarte» auswählt. </p>.",
+    "changelog": "<p>Die Version 2.5 wurde am 22.12.2021 veröffentlicht. Die wichtigsten Verbesserungen sind: </p><p>1) Es wurde eine Exportfunktion für die Baumartenempfehlungen eingebaut. </p><p>2) Es wurden weitere kantonale Standortskarten integriert.</p><p>3) Es wurden Beschreibungen der Standortstypen im Kanton Luzern integriert, die auch den Vergleich von bis zu 4 Standortstypen erlauben. Man kann auswählen, ob man diese Luzerner Version anzeigen will.</p><p><p> Die Version 2.4.1 wurde am 22.11.2021 veröffentlicht. Die wichtigsten Verbesserungen waren: </p><p>1) Die Vegetationshöhenstufenkarten wurden aktualisiert. Sie basieren nun auf Klimamodellen von 2018 (NCCS 2018). Das Ausmass der Klimaänderung bis zur Periode 2070-2099 für «mässigen» und «starken» Klimawandel bleibt aber weitgehend unverändert. Die neue Höhenstufenmodellierung stützt sich auch sonst auf verbesserte Datengrundlagen. Zudem wurde ein Ansteigen der oberen Waldgrenze modelliert. </p><p>2) In Tieflagen der Südschweiz wurde zusätzlich zur hyperinsubrischen eine mediterrane Höhenstufe modelliert und die Standortsregion Mendrisiotto geschaffen. </p><p>3) Bei Nutzung des Kartenmodus auf einem Handy ist es nun möglich, die URL via Sharelink zu teilen (Button unten rechts auf der Karte). </p><p>4) Es ist nun möglich, lateinische Artnamen der Baum- und Zeigerarten anzeigen zu lassen. </p><p>5) Gebietsfremde Baumarten sind mit einem Gradzeichen (°) kenntlich gemacht. </p><p>6) In einigen Kantonen ist die Standortskarte in der App hinterlegt. Sie kann im Kartenmodus angezeigt werden, indem man anstelle der Standardanzeige «Kantonsgrenzen» das Feld «Standortskarte» auswählt. </p>",
     "contact": "Bei Problemen oder Verbesserungsvorschlägen wende Dich bitte an: <2>info@tree-app.ch</2>",
     "contactBody": "Aktuelle URL: {{ url }}",
     "contactTitle": "Kontakt",
@@ -429,7 +429,7 @@
     "forestTypeDescription": "Standortbeschreibung",
     "noDataHeader": "Keine Daten vorhanden",
     "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?",
-    "noComparisonMessage": "Der Standortvergleich is im aktuellen Profil deaktiviert. Sind Sie im richtigen Profil?",
+    "noComparisonMessage": "Der Standortvergleich ist im aktuellen Profil deaktiviert. Sind Sie im richtigen Profil?",
     "maximumForestTypes": "Maximum an Vergleichsstandorte erreicht!"
   },
   "lu": {
@@ -440,13 +440,13 @@
       "associations": "Gesellschaftsgruppen",
       "care": "Pflege",
       "compactRisk": {
-        "label": "Verdichtungsrisiko",
         "0": "keine Angabe",
         "1": "geringes Verdichtungsrisiko (auch bei nassem Wetter nur unbedeutende Verdichtung der Böden)",
         "2": "mittleres Verdichtungsrisiko (nach Niederschlägen bedeutende Verdichtung möglich)",
         "3": "hohes Verdichtungsrisiko (nach Niederschlägen über längere Zeit starke Verdichtung)",
         "4": "sehr hohes Verdichtungsrisiko (meist starke Verdichtung, ausser in langen Trockenperioden)",
-        "5": "nicht befahrbar (dauernd wassergesättigt)"
+        "5": "nicht befahrbar (dauernd wassergesättigt)",
+        "label": "Verdichtungsrisiko"
       },
       "description": "Beschreibung",
       "general": "Standortstyp",
@@ -455,11 +455,11 @@
       "meaning": "Bedeutung",
       "pioneerTreeTypes": "Vorwaldarten",
       "priority": {
-        "label": "Priorität",
         "1": "sehr hoch",
         "2": "hoch",
         "3": "mittel",
         "4": "mässig",
+        "label": "Priorität",
         "k": "kantonale Priorität"
       },
       "rejuvDev": "Verjüngung und Entwicklung",

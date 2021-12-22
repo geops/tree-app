@@ -12,7 +12,7 @@ import { svgAsPngUri } from 'save-svg-as-png';
 import { renderToString } from 'react-dom/server';
 import isSvg from 'is-svg';
 
-export const PAGE_WIDTH_DXA = 10764;
+export const PAGE_WIDTH_DXA = 10264; // Actual available page space for content
 
 // Cell styles
 export const cellPadding = {
@@ -175,7 +175,7 @@ export const pageProperties = {
     margin: {
       top: 700,
       bottom: 700,
-      left: 568,
+      left: 1068, // left margin larger to have space to punch holes
       right: 568,
     },
   },
