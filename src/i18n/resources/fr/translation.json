@@ -498,5 +498,72 @@
       "terrain": "Terrain",
       "cantonalForestType": "Type de station cantonal"
     }
+  },
+  "bl": {
+    "forestType": {
+      "appearance": "Apparence",
+      "aptitude": "Aptitude",
+      "aptitudeMeaning": "",
+      "associations": "",
+      "care": "Maintenance",
+      "compactRisk": {
+        "0": "non précisé",
+        "1": "faible risque de compactage (même par temps humide seulement compactage insignifiant du sol)",
+        "2": "risque de compactage moyen (compactage important possible après précipitation)",
+        "3": "risque de compactage élevé (après précipitation sur une longue période de temps fort compactageg)",
+        "4": "risque de compactage très élevé (la plupart du temps fort compactage, sauf pendant les longues périodes sèches)",
+        "5": "pas passable (saturé d'eau en permanence)",
+        "label": "Risque de compactage"
+      },
+      "description": "Description",
+      "general": "Type de station",
+      "heightDispersion": "Répartition en altitude",
+      "location": "Emplacement",
+      "meaning": "Sens",
+      "pioneerTreeTypes": "Espèces pionnières",
+      "priority": {
+        "1": "Très élevé",
+        "2": "Élevé",
+        "3": "Moyen",
+        "4": "Modéré",
+        "label": "Priorité",
+        "k": "Priorité cantonale"
+      },
+      "rejuvDev": "Rajeunissement et développement",
+      "subGroups": "Types de stations",
+      "soil": {
+        "label": "Sol",
+        "l": "Horizon de dispersion",
+        "f": "Horizon de fermentation",
+        "h": "Horizon d'humus",
+        "ahh": "Horizon de mélange de terre minérale (mécaniquement)",
+        "ah": "Horizon de mélange de terre minérale (biologique)",
+        "basen": "Chaux",
+        "feuchte": "gleyifié"
+      },
+      "tillering": "Peuplement",
+      "tilleringFirwood": "Proportion de sapin",
+      "tilleringHardwood": "Proportion de feuillus",
+      "vegetationIndicator": {
+        "label": "Groupes d'indicateurs",
+        "a": "Indicateurs de conditions très acides, milieux humides à mouillés",
+        "b": "Indicateurs de conditions très acides, fraîches à sèches",
+        "c": "Indicateurs de conditions faiblement acides",
+        "e": "Espèces des hêtraies",
+        "f": "Indicateur nutritif, frais",
+        "g": "Indicateur nutritif, argileux",
+        "h": "Indicateur nutritif, femouillerucht",
+        "i": "Indicateur d'humidité",
+        "j": "Grandes vivaces",
+        "k": "Indicateur d'humidité, pauvre en base",
+        "l": "Indicateur de montagne (étape de montagne)",
+        "m": "Indicateur de base/chaux",
+        "n": "Espèce sur bloc de gravats",
+        "o": "Indicateur de base alternativement humide/séche",
+        "p": "Indicateur de sécheresse"
+      },
+      "terrain": "Terrain",
+      "cantonalForestType": "Type de station cantonal"
+    }
   }
 }
