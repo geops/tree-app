@@ -505,6 +505,8 @@
       "appearance": "Waldbild",
       "transitions": "Übergänge zu:",
       "aptitude": "Eignung",
+      "area": "Fläche",
+      "useAndCare": "Nutzung und Pflege",
       "aptitudeMeaning": "Eignung und Bedeutung",
       "associations": "Gesellschaftsgruppen",
       "care": "Pflege",
@@ -524,7 +526,7 @@
       "location": "Standort",
       "meaning": "Bedeutung",
       "geology": "Geologie",
-      "locationDesc": "Standortbeschreibung",
+      "locationDescription": "Standortbeschreibung",
       "priority": {
         "1": "sehr hoch",
         "2": "hoch",

@@ -15,7 +15,9 @@ function GeneralTab({ data }) {
           <Table.Cell colSpan="3">{data.geology || '-'}</Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('bl.forestType.locationDesc')}</Table.HeaderCell>
+          <Table.HeaderCell>
+            {t('bl.forestType.locationDescription')}
+          </Table.HeaderCell>
           <Table.Cell colSpan="3">{data.location || '-'}</Table.Cell>
         </Table.Row>
         <Table.Row>

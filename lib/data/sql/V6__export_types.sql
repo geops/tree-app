@@ -107,12 +107,27 @@ COPY
                                                                                             'forestryCare', wb_pfl,
                                                                                             'descriptionNaturalForest', beschrieb_naturwald,
                                                                                             'heightDispersion', hoehenverbreitung,
-                                                                                            'location', standort,
+                                                                                            'location', bl_standorttypen.standort,
                                                                                             'geology', geologie,
                                                                                             'vegetation', vegetation,
-                                                                                            'transitions', uebergaenge_zu)) AS
+                                                                                            'transitions', uebergaenge_zu,
+                                                                                            'associationGroupCode', gesgr_cat)) AS
           values
-          FROM bl_standorttypen))),
+          FROM bl_standorttypen
+          LEFT JOIN bl_gesellschaftsgruppen USING(STO_Nr)
+          ), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                              'category', gesgr_cat,
+                                                                                              'de', gesgr_deu,
+                                                                                              'forestAppearance', waldbild,
+                                                                                              'location', standort,
+                                                                                              'useAndCare', nutzung_pflege,
+                                                                                              'heightDispersion', vegetationsstufe,
+                                                                                              'areaBl', flaechenanteil_bl,
+                                                                                              'areaBs', flaechenanteil_bs,
+                                                                                              'areaBlBs', flaechenanteil_blbs,
+                                                                                              'areaBlBsPercent', flaeche_blbs_prozent)) AS
+          values
+          FROM bl_gesellschaftsgruppen))),
       'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
                                                                                             'de', sto_deu,
                                                                                             'la', sto_lat,
