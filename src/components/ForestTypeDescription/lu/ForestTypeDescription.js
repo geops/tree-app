@@ -47,8 +47,8 @@ function ForestTypeDescription({ data }) {
         menu={{ className: styles.pane, attached: true, tabular: true }}
         panes={[
           {
-            key: t('lu.forestType.general'),
-            menuItem: t('lu.forestType.general'),
+            key: t('forestType.label'),
+            menuItem: t('forestType.label'),
             render: () => <GeneralTab data={data} />,
           },
           {

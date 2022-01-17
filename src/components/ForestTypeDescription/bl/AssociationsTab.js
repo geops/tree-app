@@ -36,35 +36,31 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
       <Table basic padded structured>
         <Table.Body>
           <Table.Row>
-            <Table.HeaderCell>
-              {t('bl.forestType.locationDescription')}
-            </Table.HeaderCell>
+            <Table.HeaderCell>Standortbeschreibung</Table.HeaderCell>
             <Table.Cell colSpan="3">
               <p>{parseString(associationGroup.location)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>{t('bl.forestType.appearance')}</Table.HeaderCell>
+            <Table.HeaderCell>Waldbild</Table.HeaderCell>
             <Table.Cell colSpan="3">
               <p>{parseString(associationGroup.forestAppearance)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>
-              {t('bl.forestType.heightDispersion')}
-            </Table.HeaderCell>
+            <Table.HeaderCell>Höhenverbreitung</Table.HeaderCell>
             <Table.Cell colSpan="3">
               <p>{parseString(associationGroup.heightDispersion)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>{t('bl.forestType.useAndCare')}</Table.HeaderCell>
+            <Table.HeaderCell>Nutzung und Pflege</Table.HeaderCell>
             <Table.Cell colSpan="3">
               <p>{parseString(associationGroup.useAndCare)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>{t('bl.forestType.area')}</Table.HeaderCell>
+            <Table.HeaderCell>Fläche</Table.HeaderCell>
             <Table.Cell colSpan="3">
               <div>
                 <strong>Basel-Land:</strong>
@@ -81,11 +77,8 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>{t('lu.forestType.subGroups')}</Table.HeaderCell>
-            <Table.Cell
-              colSpan="3"
-              data-cypress="forestTypeDescription.lu.associationsTabSubGroups"
-            >
+            <Table.HeaderCell>Standortstypen</Table.HeaderCell>
+            <Table.Cell colSpan="3">
               {forestSubTypes.map(({ code, de }) => (
                 <span key={code}>
                   <button
