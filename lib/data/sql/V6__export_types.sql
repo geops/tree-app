@@ -376,4 +376,4 @@ COPY
           relief,
           silver_fir_areas,
           slope,
-          treetype))) TO PROGRAM $$sed 's/\\\\\"/\\\"/g' > '/data/types.json'$$;
+          treetype))) TO PROGRAM $$sed 's/\\\\\"/\\\"/g' > '/data/types.json'$$; --filter + replace double backslash escapes
