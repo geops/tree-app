@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 import { setForestTypeDescription } from '../../../store/actions';
-import styles from '../ForestTypeDescription.module.css';
+import ForestTypeLinksList from '../ForestTypeLinksList';
 import { parseString } from '../../../utils/comparisonUtils';
 
 function AssociationsTab({ associationGroupCode, onForestTypeChange }) {
@@ -79,21 +79,13 @@ function AssociationsTab({ associationGroupCode, onForestTypeChange }) {
               colSpan="3"
               data-cypress="forestTypeDescription.lu.associationsTabSubGroups"
             >
-              {forestSubTypes.map(({ code, de }) => (
-                <span key={code}>
-                  <button
-                    className={styles.link}
-                    type="button"
-                    onClick={() => {
-                      dispatch(setForestTypeDescription(code));
-                      onForestTypeChange();
-                    }}
-                  >
-                    {code} - {de}
-                  </button>
-                  <br />
-                </span>
-              ))}
+              <ForestTypeLinksList
+                forestTypes={forestSubTypes}
+                onClick={(evt, code) => {
+                  dispatch(setForestTypeDescription(code));
+                  onForestTypeChange();
+                }}
+              />
             </Table.Cell>
           </Table.Row>
         </Table.Body>

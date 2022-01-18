@@ -1,9 +1,26 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Table } from 'semantic-ui-react';
+import { info } from '@geops/tree-lib';
 import { parseString } from '../../../utils/comparisonUtils';
+import ForestTypeLinksList from '../ForestTypeLinksList';
+import { setForestTypeDescription } from '../../../store/actions';
 
 function GeneralTab({ data }) {
+  const activeProfile = useSelector((state) => state.activeProfile);
+  const dispatch = useDispatch();
+  const transitions = data.transitions
+    ?.split(',')
+    .reduce((finalTypes, code) => {
+      let ft = null;
+      try {
+        ft = info('forestType', code.replace(' ', ''), activeProfile);
+      } catch {
+        ft = null;
+      }
+      return ft ? [...finalTypes, ft] : finalTypes;
+    }, []);
   return (
     <Table basic padded structured>
       <Table.Body>
@@ -50,7 +67,10 @@ function GeneralTab({ data }) {
         <Table.Row>
           <Table.HeaderCell>Übergänge zu</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{parseString(data.transitions) || '-'}</p>
+            <ForestTypeLinksList
+              forestTypes={transitions}
+              onClick={(evt, code) => dispatch(setForestTypeDescription(code))}
+            />
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -67,23 +87,21 @@ function GeneralTab({ data }) {
 GeneralTab.propTypes = {
   data: PropTypes.shape({
     code: PropTypes.string.isRequired,
+    de: PropTypes.string,
     geology: PropTypes.string,
     location: PropTypes.string,
     descriptionNaturalForest: PropTypes.string,
-    vegetation: PropTypes.string,
     aptitude: PropTypes.string,
     expoAndAspect: PropTypes.arrayOf(PropTypes.number),
     forestryRejuvDev: PropTypes.string,
     forestryCare: PropTypes.string,
     heightDispersion: PropTypes.string,
-    pioneerTreeTypes: PropTypes.arrayOf(PropTypes.string),
     properties: PropTypes.string,
     soil: PropTypes.arrayOf(PropTypes.number),
     tillering: PropTypes.string,
     transitions: PropTypes.string,
-    tilleringFirwood: PropTypes.arrayOf(PropTypes.string),
-    tilleringHardwood: PropTypes.arrayOf(PropTypes.number),
-    vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
+    associationGroupCode: PropTypes.string,
+    vegetation: PropTypes.string,
   }).isRequired,
 };
 
