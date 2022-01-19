@@ -10,7 +10,7 @@ import { setForestTypeDescription } from '../../../store/actions';
 function GeneralTab({ data }) {
   const activeProfile = useSelector((state) => state.activeProfile);
   const dispatch = useDispatch();
-  const transitions = data.transitions.reduce((finalTypes, code) => {
+  const transitions = data.transitions?.reduce((finalTypes, code) => {
     let ft = null;
     try {
       ft = info('forestType', code.replace(' ', ''), activeProfile);

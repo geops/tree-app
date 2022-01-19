@@ -27,7 +27,7 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
       <h3>
         {associationGroup ? (
           <>
-            {associationGroup.code} - {associationGroup[i18n.language]}{' '}
+            {associationGroup.category} - {associationGroup[i18n.language]}{' '}
             {associationGroup.la ? <i>{associationGroup.la}</i> : null}
           </>
         ) : (
@@ -39,7 +39,7 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
           <Table.Row>
             <Table.HeaderCell>Standortbeschreibung</Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <p>{parseString(associationGroup.location)}</p>
+              <p>{parseString(associationGroup.description)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
@@ -73,7 +73,7 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
               </div>
               <div>
                 <strong>Gesamter Flächenanteil:</strong>
-                {` ${associationGroup.areaBlBsPercent * 100}%`}
+                {` ${associationGroup.areaBlBsPercent}%`}
               </div>
             </Table.Cell>
           </Table.Row>
