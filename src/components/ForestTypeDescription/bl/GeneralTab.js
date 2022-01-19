@@ -97,7 +97,7 @@ GeneralTab.propTypes = {
     properties: PropTypes.string,
     soil: PropTypes.arrayOf(PropTypes.number),
     tillering: PropTypes.string,
-    transitions: PropTypes.string,
+    transitions: PropTypes.arrayOf(PropTypes.string),
     vegetation: PropTypes.string,
   }).isRequired,
 };
