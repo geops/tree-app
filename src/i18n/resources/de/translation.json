@@ -422,6 +422,7 @@
   },
   "profiles": {
     "ch": "Bund",
+    "bl": "Basel",
     "lu": "Luzern"
   },
   "forestTypeModal": {
@@ -449,7 +450,6 @@
         "label": "Verdichtungsrisiko"
       },
       "description": "Beschreibung",
-      "general": "Standortstyp",
       "heightDispersion": "Höhenverbreitung",
       "location": "Standort",
       "meaning": "Bedeutung",

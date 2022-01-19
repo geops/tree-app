@@ -98,6 +98,33 @@ FROM lu_pioneer_data;
 
 COPY
     (SELECT jsonb_build_object(
+      'bl', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                            'de', sto_deu,
+                                                                                            'la', sto_lat,
+                                                                                            'properties', eigenschaften,
+                                                                                            'tillering', bestockungsziele,
+                                                                                            'forestryRejuvDev', wb_verj_ent,
+                                                                                            'forestryCare', wb_pfl,
+                                                                                            'descriptionNaturalForest', beschrieb_naturwald,
+                                                                                            'heightDispersion', hoehenverbreitung,
+                                                                                            'location', bl_standorttypen.standort,
+                                                                                            'geology', geologie,
+                                                                                            'vegetation', vegetation,
+                                                                                            'transitions', to_jsonb(string_to_array(regexp_replace(uebergaenge_zu, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
+          values
+          FROM bl_standorttypen
+          ), 'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
+                                                                      'de', gesgr_deu,
+                                                                      'forestAppearance', waldbild,
+                                                                      'description', standort,
+                                                                      'useAndCare', nutzung_pflege,
+                                                                      'heightDispersion', vegetationsstufe,
+                                                                      'areaBl', flaechenanteil_bl,
+                                                                      'areaBs', flaechenanteil_bs,
+                                                                      'areaBlBsPercent', flaeche_blbs_prozent,
+                                                                      'locations', to_jsonb(string_to_array(regexp_replace(standorte, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
+          values
+          FROM bl_gesellschaftsgruppen))),
       'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
                                                                                             'de', sto_deu,
                                                                                             'la', sto_lat,
@@ -346,4 +373,4 @@ COPY
           relief,
           silver_fir_areas,
           slope,
-          treetype))) TO '/data/types.json';
+          treetype))) TO PROGRAM $$sed 's/\\\\\"/\\\"/g' > '/data/types.json'$$; --filter + replace double backslash escapes

@@ -437,7 +437,7 @@
       "appearance": "Apparence",
       "aptitude": "Aptitude",
       "aptitudeMeaning": "",
-      "associations": "",
+      "associations": "Associations",
       "care": "Maintenance",
       "compactRisk": {
         "0": "non précisé",
@@ -449,7 +449,6 @@
         "label": "Risque de compactage"
       },
       "description": "Description",
-      "general": "Type de station",
       "heightDispersion": "Répartition en altitude",
       "location": "Emplacement",
       "meaning": "Sens",
