@@ -14,11 +14,12 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
   const activeProfile = useSelector((state) => state.activeProfile);
   const associationGroup = info(
     'associationGroup',
-    forestTypeCode,
+    undefined,
     activeProfile,
-  );
-  const forestSubTypes = info('forestType', null, activeProfile).filter(
-    (type) => type.associationGroupCode === associationGroup.category,
+  ).find((group) => group.locations.includes(forestTypeCode));
+
+  const forestSubTypes = associationGroup.locations?.map((code) =>
+    info('forestType', code, activeProfile),
   );
 
   return (

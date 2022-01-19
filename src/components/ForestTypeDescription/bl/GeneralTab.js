@@ -10,17 +10,15 @@ import { setForestTypeDescription } from '../../../store/actions';
 function GeneralTab({ data }) {
   const activeProfile = useSelector((state) => state.activeProfile);
   const dispatch = useDispatch();
-  const transitions = data.transitions
-    ?.split(',')
-    .reduce((finalTypes, code) => {
-      let ft = null;
-      try {
-        ft = info('forestType', code.replace(' ', ''), activeProfile);
-      } catch {
-        ft = null;
-      }
-      return ft ? [...finalTypes, ft] : finalTypes;
-    }, []);
+  const transitions = data.transitions.reduce((finalTypes, code) => {
+    let ft = null;
+    try {
+      ft = info('forestType', code.replace(' ', ''), activeProfile);
+    } catch {
+      ft = null;
+    }
+    return ft ? [...finalTypes, ft] : finalTypes;
+  }, []);
   return (
     <Table basic padded structured>
       <Table.Body>
@@ -100,7 +98,6 @@ GeneralTab.propTypes = {
     soil: PropTypes.arrayOf(PropTypes.number),
     tillering: PropTypes.string,
     transitions: PropTypes.string,
-    associationGroupCode: PropTypes.string,
     vegetation: PropTypes.string,
   }).isRequired,
 };

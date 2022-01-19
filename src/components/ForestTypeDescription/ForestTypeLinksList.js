@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './ForestTypeDescription.module.css';
 
 function ForestTypeLinksList({ forestTypes, onClick }) {
-  if (!forestTypes || forestTypes.length === 0) {
+  if (!forestTypes || !forestTypes.length) {
     return '-';
   }
 

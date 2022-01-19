@@ -110,22 +110,19 @@ COPY
                                                                                             'location', bl_standorttypen.standort,
                                                                                             'geology', geologie,
                                                                                             'vegetation', vegetation,
-                                                                                            'transitions', uebergaenge_zu,
-                                                                                            'associationGroupCode', gesgr_cat)) AS
+                                                                                            'transitions', to_jsonb(string_to_array(regexp_replace(uebergaenge_zu, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
           values
           FROM bl_standorttypen
-          LEFT JOIN bl_gesellschaftsgruppen USING(STO_Nr)
-          ), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
-                                                                                              'category', gesgr_cat,
-                                                                                              'de', gesgr_deu,
-                                                                                              'forestAppearance', waldbild,
-                                                                                              'location', standort,
-                                                                                              'useAndCare', nutzung_pflege,
-                                                                                              'heightDispersion', vegetationsstufe,
-                                                                                              'areaBl', flaechenanteil_bl,
-                                                                                              'areaBs', flaechenanteil_bs,
-                                                                                              'areaBlBs', flaechenanteil_blbs,
-                                                                                              'areaBlBsPercent', flaeche_blbs_prozent)) AS
+          ), 'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
+                                                                      'de', gesgr_deu,
+                                                                      'forestAppearance', waldbild,
+                                                                      'description', standort,
+                                                                      'useAndCare', nutzung_pflege,
+                                                                      'heightDispersion', vegetationsstufe,
+                                                                      'areaBl', flaechenanteil_bl,
+                                                                      'areaBs', flaechenanteil_bs,
+                                                                      'areaBlBsPercent', flaeche_blbs_prozent,
+                                                                      'locations', to_jsonb(string_to_array(regexp_replace(standorte, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
           values
           FROM bl_gesellschaftsgruppen))),
       'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
