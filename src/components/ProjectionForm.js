@@ -74,9 +74,9 @@ function ProjectionForm() {
     let value = '';
     if (first && options[field] && !location[name]) {
       [value] = options[field];
-    } else if (options[field].includes(location[name])) {
+    } else if (options[field]?.includes(location[name])) {
       value = location[name];
-    } else if (options[field].includes('unknown')) {
+    } else if (options[field]?.includes('unknown')) {
       value = 'unknown';
     }
     return value;
@@ -170,14 +170,14 @@ function ProjectionForm() {
           </Message>
         )
       )}
-      {location.transition && options.transitionForestType && (
+      {location.transition && (
         <Segment>
           <Dropdown
             className={styles.forestType}
             data-cypress="projectionFormTransitionForestType"
             clearable
             label={t('forestType.transition')}
-            options={options.transitionForestType.map(
+            options={(options.transitionForestType || options.forestType).map(
               getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) =>
