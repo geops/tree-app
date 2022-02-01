@@ -170,14 +170,14 @@ function ProjectionForm() {
           </Message>
         )
       )}
-      {location.transition && options.forestType && (
+      {location.transition && options.transitionForestType && (
         <Segment>
           <Dropdown
             className={styles.forestType}
             data-cypress="projectionFormTransitionForestType"
             clearable
             label={t('forestType.transition')}
-            options={options.forestType.map(
+            options={options.transitionForestType.map(
               getDropdownOptions('forestType', i18n.language, dispatch, true),
             )}
             onChange={(e, { value }) =>
@@ -187,7 +187,7 @@ function ProjectionForm() {
             onFocus={() => activateField('transitionForestType')}
             placeholder={t('dropdown.placeholder')}
             search
-            value={getValue('forestType', { transition: true })}
+            value={getValue('transitionForestType')}
           />
           <Dropdown
             clearable
