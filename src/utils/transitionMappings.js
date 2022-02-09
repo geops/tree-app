@@ -1,4 +1,4 @@
-export const luTransitionMapping = {
+const lu = {
   '7a(6)': ['7d'],
   '7a(10a)': ['7e'],
   '7a(9a)': ['7f'],
@@ -15,7 +15,7 @@ export const luTransitionMapping = {
   '71(70)': ['71*'],
 };
 
-export const blTransitionMapping = {
+const bl = {
   '12a(9a)': ['12t'],
   '14(16)': ['14e'],
   '16(48)': ['16l'],
@@ -29,8 +29,8 @@ export const blTransitionMapping = {
 };
 
 const transitionMappings = {
-  lu: luTransitionMapping,
-  bl: blTransitionMapping,
+  lu,
+  bl,
 };
 
 export default transitionMappings;
