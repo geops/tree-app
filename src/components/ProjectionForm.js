@@ -275,7 +275,10 @@ function ProjectionForm() {
             {t('forestType.cantonalForestTypes')}
           </p>
           {cantonalForestTypes.map((cft) => (
-            <div className={styles.cantonalForestType}>
+            <div
+              className={styles.cantonalForestType}
+              key={`cantonal-ft-${cft}`}
+            >
               <Button
                 active
                 compact
