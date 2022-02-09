@@ -10,7 +10,7 @@ import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
 import { setFormLocation, setForestTypeDescription } from '../store/actions';
-import { transitionMapping } from '../utils/luTransitionMapping';
+import transitionMappings from '../utils/transitionMappings';
 
 import styles from './ProjectionForm.module.css';
 
@@ -90,9 +90,9 @@ function ProjectionForm() {
   };
 
   const formActive = projectionMode === 'm' || fieldActive;
-  const cantonalForestType =
-    activeProfile === 'lu' &&
-    transitionMapping[
+  const cantonalForestTypes =
+    transitionMappings[activeProfile] &&
+    transitionMappings[activeProfile][
       `${location.forestType}(${location.transitionForestType})`
     ];
 
@@ -268,21 +268,22 @@ function ProjectionForm() {
             value={getValue('targetAltitudinalZone')}
           />
         )}
-      {cantonalForestType && (
+      {cantonalForestTypes?.length && (
         <>
           <p className={styles.cantonalForestTypeLabel}>
-            {t('lu.forestType.cantonalForestType')}
+            {t('forestType.cantonalForestTypes')}
           </p>
-          <Button
-            active
-            compact
-            icon="info"
-            onClick={() =>
-              dispatch(setForestTypeDescription(cantonalForestType))
-            }
-          />
-          {cantonalForestType} -{' '}
-          {info('forestType', cantonalForestType, activeProfile)[i18n.language]}
+          {cantonalForestTypes.map((cft) => (
+            <div className={styles.cantonalForestType}>
+              <Button
+                active
+                compact
+                icon="info"
+                onClick={() => dispatch(setForestTypeDescription(cft))}
+              />
+              {cft} - {info('forestType', cft, activeProfile)[i18n.language]}
+            </div>
+          ))}
         </>
       )}
     </Form>
