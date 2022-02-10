@@ -770,12 +770,7 @@
         "tillering": "Li-Mischwald mit eingestreuten Edellaubbäumen in unterschiedlicher Zusammensetzung. Schutzwald. Eventuell nur extensiv oder gar nicht bewirtschaften.",
         "properties": "Wüchsigkeit schlecht bis mässig. Die schlechtwüchsigeren Bestände sind nicht für die Holzproduktion geeignet. Nutzen als Steinschlag- und Erosionsschutz. Säbelwuchs, Steinschlagschäden; oft Stockausschläge. Baumarten; SLi, WLi, BAh, SAh, TEi, MBe und eventuell Fö. Meist nicht befahrbar.",
         "vegetation": "BS: SLi, Es, SAh, BAh, MBe ; SS: Hasel, Roter Hornstrauch, Wolliger Schneeball, Berberitze, Schwarzdorn, Weissdorn-Arten, Strauchwicke, Feld-Rose ; KS: Schmerwurz, Maiglöckchen, Bingelkraut, Turm-Gänsekresse, Immenblatt, Breitblättriges Laserkraut, Waldmeister, Gemeine Weisswurz, Schwalbenwurz",
-        "transitions": [
-          "13e",
-          "16",
-          "22",
-          "38.AmÜbergangzuwaldfreienSchutthängenfindetsichofteinHaselgebüsch-SaummitderselbenKrautschicht."
-        ],
+        "transitions": ["13e", "16", "22", "38"],
         "forestryCare": "Kleinflächige Niederwaldnutzung kann die Schutzfunktion gegen Steinschlag stützen, da so Stockausschlagbestände mit hohen Stammzahlen entstehen.",
         "expoAndAspect": [
           0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
