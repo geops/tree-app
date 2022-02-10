@@ -115,7 +115,7 @@ COPY
           values
           FROM bl_standorttypen
         ),
-        'transitionMapping', (SELECT json_object_agg(sto_nr_nais, to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ','))) FROM bl_uebergaenge),
+        'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM bl_uebergaenge),
         'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
                                                                 'de', gesgr_deu,
                                                                 'forestAppearance', waldbild,
@@ -218,7 +218,7 @@ COPY
           LEFT JOIN lu_vegetation_indicator_export vegetation_indicator ON lu_standorttypen.sto_nr = vegetation_indicator.code
           LEFT JOIN lu_pioneer_export pioneer_tree_types ON lu_standorttypen.sto_nr = pioneer_tree_types.code
       ), 
-      'transitionMapping', (SELECT json_object_agg(sto_nr_nais, to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ','))) FROM lu_uebergaenge),
+      'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM lu_uebergaenge),
       'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                               'de', gesgr_deu,
                                                                                               'la', gesgruppe_lat,

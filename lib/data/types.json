@@ -1007,16 +1007,16 @@
         "heightDispersion": "submontane bis hochmontane Stufe"
       }
     ],
-    "transitionMapping": {
-      "7S(9a)": ["7S(9a)"],
-      "7a(9a)": ["7a(9a)"],
-      "9a(11)": ["9a(11)"],
-      "12a(9a)": ["12a(9a)"],
-      "7S(10a)": ["7S(10a)"],
-      "7a(10a)": ["7a(10a)"],
-      "8a(12a)": ["8a(12a)"],
-      "8a(12e)": ["8a(12e)"]
-    }
+    "transitionMapping": [
+      { "code": "7a(10a)", "cantonalForestTypes": ["7a(10a)"] },
+      { "code": "7S(10a)", "cantonalForestTypes": ["7S(10a)"] },
+      { "code": "7a(9a)", "cantonalForestTypes": ["7a(9a)"] },
+      { "code": "7S(9a)", "cantonalForestTypes": ["7S(9a)"] },
+      { "code": "8a(12a)", "cantonalForestTypes": ["8a(12a)"] },
+      { "code": "8a(12e)", "cantonalForestTypes": ["8a(12e)"] },
+      { "code": "9a(11)", "cantonalForestTypes": ["9a(11)"] },
+      { "code": "12a(9a)", "cantonalForestTypes": ["12a(9a)"] }
+    ]
   },
   "ch": {
     "slope": [
@@ -63412,46 +63412,7 @@
         "code": "100"
       }
     ],
-    "forestEcoregion": [
-      {
-        "de": "Nördliche Randalpen",
-        "fr": "Alpes externes du Nord",
-        "code": "1"
-      },
-      {
-        "de": "Nördliche Zwischenalpen mit Buche",
-        "fr": "Alpes intermédiaires du Nord avec hêtre",
-        "code": "2a"
-      },
-      {
-        "de": "Nördliche Zwischenalpen ohne Buche",
-        "fr": "Alpes intermédiaires du Nord sans hêtre",
-        "code": "2b"
-      },
-      {
-        "de": "Kontinentale Hochalpen",
-        "fr": "Hautes Alpes continentales",
-        "code": "3"
-      },
-      {
-        "de": "Südliche Zwischenalpen",
-        "fr": "Alpes intermédiaires du Sud",
-        "code": "4"
-      },
-      {
-        "de": "Südliche Randalpen mit Fichte",
-        "fr": "Alpes externes du Sud avec épicéa",
-        "code": "5a"
-      },
-      {
-        "de": "Südliche Randalpen ohne Fichte",
-        "fr": "Alpes externes du Sud sans épicéa",
-        "code": "5b"
-      },
-      { "de": "Jura", "fr": "Jura", "code": "J" },
-      { "de": "Mittelland", "fr": "Plateau", "code": "M" },
-      { "de": "Mendrisiotto", "fr": "Mendrisiotto", "code": "Me" }
-    ]
+    "forestEcoregion": null
   },
   "lu": {
     "forestType": [
@@ -73274,21 +73235,21 @@
         "heightDispersion": "hochmontan, subalpin; 1300-1800m"
       }
     ],
-    "transitionMapping": {
-      "7a(6)": ["7d"],
-      "18(46)": ["18c"],
-      "26(17)": ["26P"],
-      "50(46)": ["50d"],
-      "71(70)": ["71*"],
-      "7a(9a)": ["7f"],
-      "8a(8*)": ["8c"],
-      "29(46t)": ["29Ls"],
-      "29h(46)": ["26c"],
-      "57S(71)": ["57B"],
-      "7a(10a)": ["7e"],
-      "8a(12a)": ["8f"],
-      "8a(12e)": ["8e"],
-      "50(49*Ta)": ["50f"]
-    }
+    "transitionMapping": [
+      { "code": "7a(6)", "cantonalForestTypes": ["7d"] },
+      { "code": "7a(10a)", "cantonalForestTypes": ["7e"] },
+      { "code": "7a(9a)", "cantonalForestTypes": ["7f"] },
+      { "code": "8a(8*)", "cantonalForestTypes": ["8c"] },
+      { "code": "8a(12e)", "cantonalForestTypes": ["8e"] },
+      { "code": "8a(12a)", "cantonalForestTypes": ["8f"] },
+      { "code": "18(46)", "cantonalForestTypes": ["18c"] },
+      { "code": "29h(46)", "cantonalForestTypes": ["26c"] },
+      { "code": "26(17)", "cantonalForestTypes": ["26P"] },
+      { "code": "29(46t)", "cantonalForestTypes": ["29Ls"] },
+      { "code": "50(46)", "cantonalForestTypes": ["50d"] },
+      { "code": "50(49*Ta)", "cantonalForestTypes": ["50f"] },
+      { "code": "57S(71)", "cantonalForestTypes": ["57B"] },
+      { "code": "71(70)", "cantonalForestTypes": ["71*"] }
+    ]
   }
 }
