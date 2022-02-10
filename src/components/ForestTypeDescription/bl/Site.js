@@ -770,10 +770,9 @@ function Site({ data }) {
           </g>
         </g>
       </g>
-      {!data ||
-        (data.includes(null) && (
-          <NoData height={80} width={85} className={styles.labelXsBold} />
-        ))}
+      {(!data || data.includes(null)) && (
+        <NoData height="100%" width="100%" className={styles.labelMiddleBold} />
+      )}
     </svg>
   );
 }

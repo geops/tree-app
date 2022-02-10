@@ -1,10 +1,12 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { Table } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
-import { parseString } from '../../../utils/comparisonUtils';
+
+import Site from './Site';
 import ForestTypeLinksList from '../ForestTypeLinksList';
+import { parseString } from '../../../utils/comparisonUtils';
 import { setForestTypeDescription } from '../../../store/actions';
 
 function GeneralTab({ data }) {
@@ -60,6 +62,14 @@ function GeneralTab({ data }) {
           <Table.HeaderCell>Höhenverbreitung</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseString(data.heightDispersion) || '-'}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Hangneigung & Exposition</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <div style={{ padding: '10px 0' }}>
+              <Site data={data.expoAndAspect} />
+            </div>
           </Table.Cell>
         </Table.Row>
         <Table.Row>

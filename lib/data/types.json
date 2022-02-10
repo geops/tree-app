@@ -12,6 +12,11 @@
         "vegetation": "BS: Bu, TEi, (Fö) ; SS: Fehlend.\\nKS: Weissliche und Wald-Hainsimse, Wiesen-Wachtelweizen, Wald-Habichtskraut, Berg-Platterbse\\nMS: Widerton, Weissmoos",
         "transitions": ["6"],
         "forestryCare": "Hauptwertträger in grossen Gruppen gemischt. Intensive Durchforstung von Fö-Beständen mittleren Alters, da sonst Produktivitätsrückgang und Vitalitätseinbussen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0,
+          0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "TEi grossflächig verjüngen, wenn die Samenbäume fehlen, durch Pflanzung. Fö je nach Qualität der Stammbäume natürlich verjüngen oder pflanzen. Die Naturverjüngung wird durch Rohhumusauflagen gehemmt.",
         "heightDispersion": "submontan, 300-400m",
         "descriptionNaturalForest": "Mässig wüchsige Buchenbestände, die leer wirken, da die Strauchschicht fehlt und die Krautschicht lückig ist; oft viele Moose. Auf trockeneren Flächen (Allschwiler Wald) sind viele Eichen im Buchenverstand miteingemischt."
@@ -27,6 +32,11 @@
         "vegetation": "BS: Bu, HBu, TEi ; SS: Gewöhliche Heckenkirsche ; KS: Hainsimsen-Arten, Busch-Windröschen, Sauerklee, Ährige Rapunzel, Gemeiner Waldfarn, Wald-Veilchen, Goldnessel (spärlich)",
         "transitions": ["1", "7a", "7e"],
         "forestryCare": "Hauptwertträger in grossen Gruppen gemischt. Intensive Durchforstung von Fö-Beständen mittleren Alters, da sonst Produktivitätsrückgang und Vitalitätseinbussen. Starke Förderung der Lichtbaumarten nötig.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+          0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0,
+          0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Verstärkte oberflächen Versauerung, verbunden mit Rohhumusbildung hemmt die Naturverjüngung. TEi grossflächig verjüngen.",
         "heightDispersion": "submontan, 310-600m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Hallen-Buchenwald, fast ohne Strauchschicht und oft mit lückiger Krautschicht; Moosschicht mässig entwickelt."
@@ -42,6 +52,11 @@
         "vegetation": "BS: Bu, SEi, TEi, HBu, Ki, Es, BAh, SAh ; SS: Brombeere, Gewöhnliches Geissblatt ; KS: Wald-Segge, Goldnessel, Sauerklee, Behaarte Hainsimse, Einbeere, Waldmeister, Wald-Zwecke, Rasen-Schmiele; dazu in den Sundgauer Hügeln Hexenkraut, Scharbockskraut",
         "transitions": ["6", "7b", "7S", "8a"],
         "forestryCare": "Regelmässige Jungwuchspflege in Mischbeständen und starke Förderung von Lichtbaumarten nötig.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1,
+          0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0,
+          1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0
+        ],
         "forestryRejuvDev": "Schon bei geschlossener Baumschicht oft stark Bu-, Es- oder BAh-Verjüngung. Die Naturverjüngung aller Arten unter Schirm deshalb ist leicht möglich, wenn der Widerstand nicht zu hoch ist. Lichtbaumarten grossflächig verjüngen. Nebenbestandbaumarten wie WLi möglich früh einbringen.",
         "heightDispersion": "submontan, 300-600m",
         "descriptionNaturalForest": "Gut wüchsiger Hallen-Buchenwald mit starken geraden Stämmen. Die Krautschicht ist manchmal  artenreich, die Moosschicht unauffällig."
@@ -57,6 +72,11 @@
         "vegetation": "BS: Bu, SEi, Es, BAh ; SS: Gemeiner Schneeball, Traubenkirsche ; KS: Wald-Seegras (Seggenart!), Lockerährige Segge, Wald-Segge, Wald-Ziest, Rasen-Schmiele, Hexenkraut, Busch-Windröschen, Sauerklee, Gemeiner Waldfarn, Dorniger Wurmfarn",
         "transitions": ["7a"],
         "forestryCare": "Regelmässige Jungwuchspflege in Mischbeständen und starke Förderung von Lichtbaumarten nötig.",
+        "expoAndAspect": [
+          1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+          0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0,
+          0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung bei zu starker Auflichtung durch Verunkrautung (Seegras) behindert.",
         "heightDispersion": "submontan, 300-400m",
         "descriptionNaturalForest": "Gut wüchsiger Buchenwald mit starker Beimischung von Edellaubhölzern und Stieleichen. Meist mit Seegras-Teppich. Teils ist die Traubenkirsche in der Strauch- und Krautschicht stark vorhanden."
@@ -72,6 +92,11 @@
         "vegetation": "BS: Bu, HBu, TEi, Es, FAh, BAh, Ki, WLi ; SS: Weissdorn, Liguster, Hornstrauch, Wolliger Schneeball, Feld-Rose, Seidelbast ; KS: Goldnessel, Wald-Zwenke, Wald-Segge, Waldmeister, Schlaffe Segge, Mandelblättrige Wolfsmilch.",
         "transitions": ["7a", "9a", "9w", "10a", "10w"],
         "forestryCare": "Intensive Durchforstung, insbesondere der Mischbestände, nötig.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung manchmal der dichten Strauchschicht wegen problematisch. ",
         "heightDispersion": "submontan, 300-650m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Hallen-Buchenwald, oft mit stark entwickelter Strauchschicht oder Teppich von Schlaffer Segge."
@@ -87,6 +112,11 @@
         "vegetation": "BS: Bu, HBu, TEi, Es, FAh, BAh, Ki, WLi ; SS: Weissdorn, Liguster, Hornstrauch, Wolliger Schneeball, Feld-Rose, Seidelbast ; KS: Goldnessel, Wald-Zwenke, Wald-Segge, Waldmeister, Schlaffe Segge, Mandelblättrige Wolfsmilch.",
         "transitions": ["7a", "9a", "9w", "10a", "10w"],
         "forestryCare": "Intensive Durchforstung, insbesondere der Mischbestände, nötig.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung manchmal der dichten Strauchschicht wegen problematisch. ",
         "heightDispersion": "submontan, 300-650m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Hallen-Buchenwald, oft mit stark entwickelter Strauchschicht oder Teppich von Schlaffer Segge. Im Frühling fällt der Gold-Hahnenfuss auf."
@@ -102,6 +132,11 @@
         "vegetation": "BS: Bu, HBu, Es, Ki, BAh, (SAh, WLi) ; SS: Weissdorn, Liguster, Feld-Rose (weniger dicht als bei Nr. 7e) ; KS: Aronstab, Lungenkaut, Wald-Segge, Goldnessel, Wald-Zwenke, Waldmeister; in den Sundauer Hügeln auch Hexenkraut, Scharbockskraut",
         "transitions": ["7a", "7S", "9a"],
         "forestryCare": "Intensive Durchforstung insbesondere der Mischbestände nötig.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0,
+          0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0,
+          0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0
+        ],
         "forestryRejuvDev": "Wie bei Nr. 7a.",
         "heightDispersion": "submontan, 270-700m",
         "descriptionNaturalForest": "Gut wüchsiger Hallen-buchenwald mit starken geraden Stämmen. Die Krautschicht ist manchmal artenreich, Moose sind unauffällig."
@@ -117,6 +152,11 @@
         "vegetation": "BS: Bu, HBu, Es, Ki, BAh, (SAh, WLi) ; SS: Weissdorn, Liguster, Feld-Rose (weniger dicht als bei Nr. 7e) ; KS: Aronstab, Lungenkaut, Wald-Segge, Goldnessel, Wald-Zwenke, Waldmeister; in den Sundauer Hügeln auch Hexenkraut, Scharbockskraut",
         "transitions": ["7a", "7S", "9a"],
         "forestryCare": "Intensive Durchforstung insbesondere der Mischbestände nötig.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0,
+          0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0,
+          0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0
+        ],
         "forestryRejuvDev": "Wie bei Nr. 7a.",
         "heightDispersion": "submontan, 270-700m",
         "descriptionNaturalForest": "Gut wüchsiger Hallen-buchenwald mit starken geraden Stämmen. Die Krautschicht ist manchmal artenreich, Moose sind unauffällig. Im Frühling fällt der Gold-Hahnenfuss auf."
@@ -132,6 +172,11 @@
         "vegetation": "BS: Bu, Es, BAh, SEi ; SS: Weissdorn, Feld-Rose, Seidelbast, Pfaffenhütchen, Schwarzer Holunder ; KS: Wald-Ziest, überhängende Segge, Lockerährige Segge, Riesen-Schwingel, Hexenkraut, Scharbockskraut, Waldmeister , Ruprechtskraut, Wald-Schlüsselblume, Wald-Segge, Horstbildende Schmiele, Einbeere, Lungenkraut, Aronstab",
         "transitions": ["7a", "11", "26"],
         "forestryCare": "Es, Ki, SEr in Einzelmischung; BAh, SAh, BUl und Li in Gruppen und Horsten. SEi auf grösseren Flächen ohne Beimischung anderer Baumarten nachziehen; Nebenbestand schon früh einbringen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0,
+          0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0,
+          0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Infolge der Vernässungs- und Verunkrautungsgefahr sind grossflächige Eingriffe zu vermeiden. Forstempfindliche Baumarten nicht in Muldenlagen. Alle standortsheimischen Arten samen sich leicht unter dem Bestandesschirm an, wobei der Verjüngungszeitraum dem Lichtbedarf der Baumart angepasst wird.",
         "heightDispersion": "submontan, 270-600m",
         "descriptionNaturalForest": "Sehr wüchsiger Buchenwald mit hohem Bergahorn- und Eschenanteil, oft üppige Krautschicht. Strauchschicht meist sehr lückig."
@@ -147,21 +192,11 @@
         "vegetation": "BS: Bu, Ta, (BAh, Es) ; SS: Himbeere, Schwarzer Holunder, Brombeere ; KS: Aronstab, Waldmeister, Lungenkraut, Goldnessel, Wald-Segge, Wald-Schwingel, Fuchs' Kreuzkraut, Gemeiner Wurmfarn",
         "transitions": ["12a"],
         "forestryCare": "Bei einem hohen Ta-Anteil (sofern der Wildbestand es zulässt) Plenterung möglich; sonst Femelschlagbewirtschaftung.",
-        "forestryRejuvDev": "Natürliche Verjüngung im Femelschlagverfahren ohne Schwierigkeiten möglich.",
-        "heightDispersion": "untermontan, 510-750m",
-        "descriptionNaturalForest": "Gut wüchsiger, hochstämmiger Buchenwald mit beigemischter Tanne."
-      },
-      {
-        "de": "Typischer Waldhirsen-Buchenwald",
-        "la": "Milio-Fagetum typicum",
-        "code": "8a",
-        "geology": "Verwitterungslehme, weichere Juraschichten",
-        "location": "Alle Expositionen und nicht zu steile Lagen. Tiefgründige, frische, basenreiche Boden (Braunerden). Typisch für nebelreiche Lagen.",
-        "tillering": "50-100% Laubholzanteil. Grosse Freiheit in Mischungsform, -art und -grad. Vom naturnahen, fast reinen Bu-Bestand über einen Laubmischwald bis zu einem Laub-Ta-Fi-Mischwald alles möglich.",
-        "properties": "Gesamtzuwachs und Höhenbonität sehr gut. Grosse Freiheit bei der Baumartenwahl unter den nicht wärmebedürftigen Arten: Bu, BAh, Ta, Fi, Es, BUl, Dou. Befahrbarkeit bei nassem Boden erschwert.",
-        "vegetation": "BS: Bu, Ta, (BAh, Es) ; SS: Himbeere, Schwarzer Holunder, Brombeere ; KS: Aronstab, Waldmeister, Lungenkraut, Goldnessel, Wald-Segge, Wald-Schwingel, Fuchs' Kreuzkraut, Gemeiner Wurmfarn",
-        "transitions": ["12a"],
-        "forestryCare": "Bei einem hohen Ta-Anteil (sofern der Wildbestand es zulässt) Plenterung möglich; sonst Femelschlagbewirtschaftung.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0,
+          0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0,
+          0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Femelschlagverfahren ohne Schwierigkeiten möglich.",
         "heightDispersion": "untermontan, 510-750m",
         "descriptionNaturalForest": "Gut wüchsiger, hochstämmiger Buchenwald mit beigemischter Tanne."
@@ -177,6 +212,11 @@
         "vegetation": "BS: Bu, Ta, (BAh, Es) ; SS: Himbeere, Schwarzer Holunder, Brombeere ; KS: Aronstab, Waldmeister, Lungenkraut, Goldnessel, Wald-Segge, Wald-Schwingel, Fuchs' Kreuzkraut, Gemeiner Wurmfarn",
         "transitions": ["12a"],
         "forestryCare": "Bei einem hohen Ta-Anteil (sofern der Wildbestand es zulässt) Plenterung möglich; sonst Femelschlagbewirtschaftung.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0,
+          0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0,
+          0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Femelschlagverfahren ohne Schwierigkeiten möglich.",
         "heightDispersion": "untermontan, 510-750m",
         "descriptionNaturalForest": "In diesem sehr wüchsigen Wald spielen Bergahorn und Esche neben der Buche eine grosse Rolle. Feuchtezeiger wie der Wald-Ziest und die Überhängende Segge prägen die Krautschicht zusammen mit den Zeigern der Montanstufe."
@@ -192,6 +232,11 @@
         "vegetation": "BS: Bu, Ta, (BAh, Es) ; SS: Himbeere, Schwarzer Holunder, Brombeere ; KS: Aronstab, Waldmeister, Lungenkraut, Goldnessel, Wald-Segge, Wald-Schwingel, Fuchs' Kreuzkraut, Gemeiner Wurmfarn",
         "transitions": ["12a"],
         "forestryCare": "Bei einem hohen Ta-Anteil (sofern der Wildbestand es zulässt) Plenterung möglich; sonst Femelschlagbewirtschaftung.",
+        "expoAndAspect": [
+          1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+          0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0,
+          0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Femelschlagverfahren ohne Schwierigkeiten möglich.",
         "heightDispersion": "untermontan, 400-450m",
         "descriptionNaturalForest": "Wüchsiger Hallen-Buchenwald mit Tanne."
@@ -207,6 +252,11 @@
         "vegetation": "BS: Bu, Ta ; SS: - ; KS: Wald-Schwingel, Waldmeister, Aronstab, Gemeiner Wurmfarn",
         "transitions": ["12a"],
         "forestryCare": "Bei einem hohen Ta-Anteil (sofern der Wildbestand es zulässt) Plenterung möglich; sonst Femelschlagbewirtschaftung.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+          0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Femelschlagverfahren ohne Schwierigkeiten möglich.",
         "heightDispersion": "untermontan, 510-750m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Hallen-Buchenwald mit Tanne mit teils ausgeprägter Strauchschicht."
@@ -222,6 +272,11 @@
         "vegetation": "BS: Bu, Es, BAh, TEi, Ki, (Ta) ; SS: Waldrebe, Hornstrauch, Weissdorn, Wolliger Schneeball, Gemeiner und Lorbeer-Seidelbast, Liguster ; KS: Frühlings-Platterbse, Bingelkraut, Haselwurz, Stinkende Nieswurz, Waldmeister, Wald-Segge, Goldnessel, Mandelblätttrige Wolfsmilch, Wald-Zwenke, Busch-Windröschen, Lungenkraut, Aronstab, Nickendes Perlgras, Vielblütige Weisswurz",
         "transitions": ["10a", "11", "12a", "13a"],
         "forestryCare": "Trotz der Konkurrenzkraft der Buche können wärmeliebende Laubbäume relativ leicht gefördert werden. Fö und Lä brauchen der Bu gegenüber einen Wuchsvorsprung. Ki sollte in geschlossenem Bestand aufwachsen, da sie sonst stark astig wird und Zwiesel bildet.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung im Allgemeinen problemlos. Da sich in grösseren Bestandeslücken die Sträucher üppig entwickeln können, empfiehlt sich ein kleinflächiges Femelschlagverfahren oder, bei Buche, ein mehrmaliges, dosiertes Vorlichten (Saum-Schirmschlag).",
         "heightDispersion": "submontan, 350-710m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Hallenwald mit dominanter Buche; starke, gerade Stämme. Viele Frühjahrsblüter in der Krautschicht. Das Aussehen der Krautschicht kann von verschiedenen Arten bestimmt werden: Oft herrscht das Bingelkraut vor, manchmal die Haselwurz. Bestände mit sehr wenigen Bodenpflanzen sind in der Gegend von Liestal verbreitet."
@@ -237,9 +292,34 @@
         "vegetation": "BS: Bu, Ta, BAh, Es ; SS: Hasel, Rote Heckenkirsche, Schwarzer Holunder ; KS: Bingelkraut, Waldmeister, Lungenkraut, Goldnessel, Haselwurz, Hexenkraut, Ruprechtskraut ; MS: Moose oft gut vertreten, z.B. Welliges Sternmoos",
         "transitions": ["7S", "9a", "11", "12b"],
         "forestryCare": "Stufige Bestände anstreben.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung im Allgemeinen gut möglich.",
         "heightDispersion": "submontan, 350-710m",
         "descriptionNaturalForest": "Gut wüchsiger Buchen-Hallenwald mit Tannenbeimischung. Im Frühling weist der Gold-Hahnenfuss auf die Bodenfeuchtigkeit hin."
+      },
+      {
+        "de": "Typischer Lungenkraut-/Platterbsen-Buchenwald",
+        "la": "Pulmonario-/Lathyro-Fagetum typicum",
+        "code": "9a",
+        "geology": "Alle Malm-, Dogger- und Mischelkalk-Schichten ausser Mergel.",
+        "location": "Alle Expositionen und Lagen. Fruchtbare, skelettreiche, gut durchlüftete Kalkböden, die nur in Dürrezeiten austrocknen; meist mit gut entwickeltem Mullhorizont (verbraunte Rendzina und Kalk-Braunerden).",
+        "tillering": "70-100% Laubholzanteil. Möglichkeiteen vom reinen Bu-Hallenwald bis zum Laubmischwald mit Fö. Auch sehr gut für Nu geeignet. An lokal frischeren Stellen Fi und Ta eingestreut möglich.",
+        "properties": "Gesamtzuwachs und Höhenbonität mittel bis gut. Zeitweilige leichte Bodentrockenheit im Sommer möglich. TEi, BAh, Bu, Ki, Es, Li, Fö und Lä als Hauptwertträger. FAh und HBu im Nebenbestand. Gute Exemplare von Es, SAh in der Oberschicht aufwachsen lassen. Fi und Ta auf den skelettreichen Böden in trockenen Sommern durch Dürreschäden gefährdet. Ro, Dou möglich. Befahrbarkeit im allgemeinen problemlos.",
+        "vegetation": "BS: Bu, Es, BAh, TEi, Ki, (Ta) ; SS: Waldrebe, Hornstrauch, Weissdorn, Wolliger Schneeball, Gemeiner und Lorbeer-Seidelbast, Liguster ; KS: Frühlings-Platterbse, Bingelkraut, Haselwurz, Stinkende Nieswurz, Waldmeister, Wald-Segge, Goldnessel, Mandelblätttrige Wolfsmilch, Wald-Zwenke, Busch-Windröschen, Lungenkraut, Aronstab, Nickendes Perlgras, Vielblütige Weisswurz",
+        "transitions": ["10a", "11", "12a", "13a"],
+        "forestryCare": "Trotz der Konkurrenzkraft der Buche können wärmeliebende Laubbäume relativ leicht gefördert werden. Fö und Lä brauchen der Bu gegenüber einen Wuchsvorsprung. Ki sollte in geschlossenem Bestand aufwachsen, da sie sonst stark astig wird und Zwiesel bildet.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
+        "forestryRejuvDev": "Naturverjüngung im Allgemeinen problemlos. Da sich in grösseren Bestandeslücken die Sträucher üppig entwickeln können, empfiehlt sich ein kleinflächiges Femelschlagverfahren oder, bei Buche, ein mehrmaliges, dosiertes Vorlichten (Saum-Schirmschlag).",
+        "heightDispersion": "submontan, 350-710m",
+        "descriptionNaturalForest": "Ziemlich wüchsiger Hallenwald mit dominanter Buche; starke, gerade Stämme. Viele Frühjahrsblüter in der Krautschicht. Das Aussehen der Krautschicht kann von verschiedenen Arten bestimmt werden: Oft herrscht das Bingelkraut vor, manchmal die Haselwurz. Bestände mit sehr wenigen Bodenpflanzen sind in der Gegend von Liestal verbreitet."
       },
       {
         "de": "Wechselfeuchter Lungenkraut-/Platterbsen-Buchenwald",
@@ -252,6 +332,11 @@
         "vegetation": "BS: Bu, Fö, TEi, EBe, BAh ; SS: Waldrebe, Hornstrauch, Weissdorn, Wolliger Schneeball, Gemeiner und Lorbeer-Seidelbast, Liguster oft dicht und kriechend ; KS: Schlaffe Segge, Waldmeister, Haselwurz, Bingelkraut, Frühlings-Platterbse, Wald-Zwenke, Finger-Segge, Wald-Segge",
         "transitions": ["9a", "10w"],
         "forestryCare": "Kombinationen von Licht- und Halbschattenbaumarten sowie den Nebenbestand fördern.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Allgemeinen problemlos, wenn die Sträucher zurückgedrängt werden und nicht zu grossflächig verjüngt wird.",
         "heightDispersion": "submontan, 400-700m",
         "descriptionNaturalForest": "Im Allgemeinen mässig wüchsiger Buchenwald mit eingestreuten Föhren und oft dichter Strauchschicht."
@@ -267,6 +352,11 @@
         "vegetation": "BS: Bu, TEi, MBe, Es, Ki, Fö ; SS: Waldrebe, Hornstrauch, Weissdorn, Wolliger Schneeball, Gemeiner und Lorbeer-Seidelbast, Liguster ; KS: Frühlings-Platterbse, Bingelkraut, Stinkende Nieswurz, Haselwurz, Waldmeister, Immenblatt, manchmal auch Weisse Segge; Goldnessel, Wald-Segge und Lungenkraut selten.",
         "transitions": ["9a", "10w", "14"],
         "forestryCare": "Förderung von Unterwuchs und Nebenbestand als Schutz vor Bodenaustrocknung und zur Pflege des Bodenlebens. Buche frühzeitig zurückdrängen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Die Naturverjüngung wird in allzu lichten Beständen durch die Sträucher behindert (weniger als bei Nr. 10w).",
         "heightDispersion": "submontan, 320-750m",
         "descriptionNaturalForest": "Mässig wüchsiger Buchenmischwald."
@@ -282,24 +372,14 @@
         "vegetation": "BS: Bu, Fö, MBe. Ki, TEI ; SS: Liguster (oft üppig und kriechend), Hornstrauch, Wolliger Schneeball, Feld-Rose, Lorbeer-Seidelbast, Schwarzdorn ; KS: Schlaffe Segge (oft Teppiche), Bingelkraut, Frühlings-Platterbse, Nickendes Perlgras",
         "transitions": ["9a", "10a", "12w", "14"],
         "forestryCare": "Eine nicht zu dichte Strauchschicht unter einem vielfältigen Kronendach lockert den kompakten Boden dank intensiver Durchwurzelung und Aktivierung des Bodenlebens.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Wenn zu stark aufgelichtet wird, kann die aufkommende dichte Strauchschicht die natürliche Verjüngung hemmen.",
         "heightDispersion": "submontan, 350-850m",
         "descriptionNaturalForest": "Mässig wüchsiger Buchenmischwald, meist mit ausgeprägter Strauchschicht."
-      },
-      {
-        "de": "Aronstab-Buchenwald",
-        "la": "Aro-fagetum",
-        "code": "11",
-        "geology": "Lehmreicher Gehängeschutt, auch weichere Kalkschichten des Jura.",
-        "location": "Meist schattige Hangfusslagen, untere Hanglagen. Kalk- und tonreiche Böden, die noch genügend durchlüftet sind für die Buche (feuchte, basenreiche Braunerde).",
-        "tillering": "90-100% Laubholzanteil. Edellaubmischwald mit BAh, Es als dominante Baumarten, dazu Ki, BUl, oder SEi-Bestand mit Nebenbestand.",
-        "properties": "Gesamtzuwachs und Höhenbonität sehr gut. Baumartenwahl durch die zeitweise Nässe bestimmt. SEi, Ki, BAh, Es, BUl und eventuell beigemischt Ta und Fi sind Hauptwertträger; HBu, Li, FAh und SAh sind für den Nebenbestand geeignet. Dieser Standort, der von Natur aus von der Buche beherrscht wird, ist der ideale Standort für Edellaubhölzer, die hier hervorragende Wertleistungen erreichen. Fö und Lä sind nicht konkurrenzfähig. Mulden können wegen Kälteseen für frostempfindliche Bäume gefährlich sein. In besonderen Fällen kann als vorübergehende Bestockung mit sehr kurzer Umtriebszeit (Vorwald, Abschirmung) As verwendet werden. Die feuchten Böden nicht befahren.",
-        "vegetation": "BS: Bu, Es, BAh, BUl, SAh, SEi ; SS: Rote Heckenkirsche, Lorbeer-Seidelbast ; KS: Bärlauch, Goldnessel, Aronstab, Wald-Schlüsselblume, Bingelkraut, Hexenkraut, Waldmeister, Einbeere",
-        "transitions": ["7S", "9a", "12S"],
-        "forestryCare": "Es und Ki in Einzelmischung, BAh, SAh, BUl und Li in gemischten Gruppen und Horsten. SEi in grösseren Flächen.",
-        "forestryRejuvDev": "Der Bärlauch-Teppich im Frühling schränkt die Naturverjüngung im Allgemeinen nicht ein.",
-        "heightDispersion": "submontan, 300-700m",
-        "descriptionNaturalForest": "Sehr wüchsiger Hallen-Buchenmischwald mit schwach entwickelter Strauchschicht. Frühlingsaspekt meist vom Bärlauch bestimmt, so dass im Sommer nach dessen Vergilben nur noch wenig Kräuter vorhanden sind."
       },
       {
         "de": "Typischer Bingelkraut-/Zahnwurz-Buchenwald",
@@ -312,6 +392,11 @@
         "vegetation": "BS: Bu, BAh, Es, Ta, BUl ; SS: - ; KS: Fiederblättrige zahnwurz, Wald-Schwingel, Bingelkraut, Waldmeister, Goldnessel, Sauerklee, Haselwurz, Gelappter Schildfarn",
         "transitions": ["12S", "13a", "17", "18"],
         "forestryCare": "BAh, Es und BUl brauchen von der Dickungsphase an genügend Licht, da sie sonst von der Buche überwachsen werden; sie müssen auch später herausgepflegt werden, damit genügend grosse Kronen entstehen könen. Allfälligen eiben-Nebenbestand pflegen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Ein differenziertes Femelschlagverfahren gewährleistet meist eine reichliche Naturverjüngung. Bu-Verjüngung unter Schirm, umfangreiche Kahlhiebe vermeiden. Vereinzelt angesamte Bu können über zehn Jahre ausharren, ohne ihre Entwicklungsfähigkeit einzubüssen.",
         "heightDispersion": "untermontan, 600-1200m",
         "descriptionNaturalForest": "Gut wüchsiger Hallen-Buchenwald mit hohen, geraden Stämmen. Manchmal Tannen beigemischt. Krautschicht oft von der Fiederblättrigen Zahnwurz beherrscht."
@@ -327,6 +412,11 @@
         "vegetation": "BS: Bu, BAh, Es, Ta, BUl ; SS: - ; KS: Fiederblättrige zahnwurz, Wald-Schwingel, Bingelkraut, Waldmeister, Goldnessel, Sauerklee, Haselwurz, Gelappter Schildfarn",
         "transitions": ["12S", "13a", "17", "19"],
         "forestryCare": "BAh, Es und BUl brauchen von der Dickungsphase an genügend Licht, da sie sonst von der Buche überwachsen werden; sie müssen auch später herausgepflegt werden, damit genügend grosse Kronen entstehen könen. Allfälligen eiben-Nebenbestand pflegen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Ein differenziertes Femelschlagverfahren gewährleistet meist eine reichliche Naturverjüngung. Bu-Verjüngung unter Schirm, umfangreiche Kahlhiebe vermeiden. Vereinzelt angesamte Bu können über zehn Jahre ausharren, ohne ihre Entwicklungsfähigkeit einzubüssen.",
         "heightDispersion": "untermontan, 600-1200m",
         "descriptionNaturalForest": "Gut wüchsiger Hallen-Buchenwald mit hohen, geraden Stämmen. Manchmal Tannen beigemischt. Krautschicht jedoch oft lückig und artenarm."
@@ -342,6 +432,11 @@
         "vegetation": "BS: Bu, Es, BAh, BUl, (Ta) ; SS: Schwarzer Holunder ; KS: Bärlauch, Wald-Ziest, Ruprechtskraut, Hexenkraut, Bingelkraut, Wald-Schwingel, Gemeiner Wurmfarn",
         "transitions": ["11", "12a13a", "20"],
         "forestryCare": "BAh, Es, BUl in einzelmischung. Eschen frühzeitig und stark durchforsten.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Der Bärlauchteppich im Frühling schränkt die Naturverjüngug im allgemeinen nicht ein.",
         "heightDispersion": "untermontan, 600-850m",
         "descriptionNaturalForest": "Sehr wüchsiger Hallen-Buchenwald mit hohem Eschen-, Bergahorn- und Tannenanteil. Frühlingsaspekt meist vom Bärlauch bestimmt."
@@ -357,6 +452,11 @@
         "vegetation": "BS: Bu, BAh, Fö, MBe ; SS: Seidelbast, Rote Heckenkirsche ; KS: Weisse Segge, Fiederblättriger Zahnwurz, Immenblatt, Bingelkraut, Schwalbenwurz, Strauchwicke, Straussblütige Margarite",
         "transitions": ["10a", "14", "16", "18*"],
         "forestryCare": "Bu nicht in Einzelmischung, damit sie die Lichtbaumarten nicht bedrängt. Unterwuchs und Nebenbestand fördern die biologische Bodenaktivität und verbessern das Bestandesklima.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Allgemeinen nicht schwierig; jedoch keine grossflächigen Schläge, damit Strauchschicht und Grasteppich nicht gefördert werden.",
         "heightDispersion": "obermontan, 600-900m",
         "descriptionNaturalForest": "Mässig wüchsiger Buchenwald trockener Hänge. Wärmeliebende Bäume wie Eichen oder Kirschen fehlen; die Tanne ist dieser Standort zu trocken."
@@ -372,6 +472,11 @@
         "vegetation": "BS: Bu, BAh, Fö, MBe ; SS: Seidelbast, Rote Heckenkirsche ; KS: Weisse Segge, Fiederblättriger Zahnwurz, Immenblatt, Bingelkraut, Schwalbenwurz, Strauchwicke, Straussblütige Margarite",
         "transitions": ["10a", "14", "16", "18*"],
         "forestryCare": "Bu nicht in Einzelmischung, damit sie die Lichtbaumarten nicht bedrängt. Unterwuchs und Nebenbestand fördern die biologische Bodenaktivität und verbessern das Bestandesklima.",
+        "expoAndAspect": [
+          0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0,
+          0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1,
+          0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Allgemeinen nicht schwierig; jedoch keine grossflächigen Schläge, damit Strauchschicht und Grasteppich nicht gefördert werden.",
         "heightDispersion": "untermontan, 600-900m",
         "descriptionNaturalForest": "Im Unterschied zu Nr. 12e dominieren oft die Schlaffe Segge oder die Fieder-Zwenke, manchmal Liguster-Teppiche."
@@ -387,6 +492,11 @@
         "vegetation": "BS: Bu, Es, BAh, SLi, SAh ; SS: Schwarzer Holunder ; KS: Fiederblättrige Zahnwurz, Bingelkraut, Christophskraut, Gründer Alpendost, Gelappter Schildfarn, Hirschzunge und andere Farne",
         "transitions": ["12a", "13h", "22"],
         "forestryCare": "Schuttstauende und steinschlagertragende Arten wie Li fördern.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1,
+          1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1,
+          1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1
+        ],
         "forestryRejuvDev": "Die natürliche Verjüngung der Laubbäume ist trotz des speziellen Bodens in kleinen Femelschlägen möglich. Der Schutzwaldcharakter dieser Standorte schliesst ein grossflächiges Vorgehen aus. Es kann auf extrem feinerdearmen Böden nötig sein, das Bestockungsziel über einen Vorwald mit Erlen anzustreben. Im Schutze des Vorwaldes samen sich dann die Baumarten des Schlusswaldes an.",
         "heightDispersion": "untermontan 500-800m",
         "descriptionNaturalForest": "Im Allgemeinen gut wüchsiger Buchenmischwald mit Linden, Eschen und Bergahorne an steilen Hängen und Schutthalden. Herunterkollernde Steine verletzen die Stämme. Oft Säbelwuchs."
@@ -402,6 +512,11 @@
         "vegetation": "BS: Bu, SLi, BAh, Es, MBe ; SS: Gemeiner Kreuzdorn u.a. ; KS: Weisse Segge, Immenblatt, Bingelkraut, Frühlings-Platterbse, Stinkende Nieswurz",
         "transitions": ["13a", "14", "16", "25*"],
         "forestryCare": "Schuttstauende und steinschlagertragende Arten wie Li fördern.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1,
+          1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1,
+          1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung meist ausreichend bei kleinflächigen Femelhieben. Der Schutzwaldcharakter schliesst grossflächige Schläge aus. Seltenere Baumarten eventuell künstlich einbringen.",
         "heightDispersion": "untermontan, 390-920m",
         "descriptionNaturalForest": "Mässig wüchsiger Buchenmischwald mit Linden. Kollernde Steine verletzen die Stämme. Oft Säbelwuchs. Wärmeliebende Kräuter und Trockenheitszeiger."
@@ -417,6 +532,11 @@
         "vegetation": "BS: Bu, SLi, BAh, BUl ; SS: kaum vorhanden ; KS: Alpendost-Arten, Gelber Eisenhut, Weisse Pestwurz, Bingelkraut",
         "transitions": ["13a", "18a", "20"],
         "forestryCare": "Schuttstauende und steinschlagertragende Arten wie Li fördern.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung meist ausreichend bei kleinflächigen Femelhieben. Der Schutzwaldcharakter schliesst grossflächige Schläge aus. Seltenere Baumarten eventuell künstlich einbringen.",
         "heightDispersion": "obermontan, 800-1000m",
         "descriptionNaturalForest": "Buchenwald mit Bergahorn an steilen Schutthängen, Säbelwuchs, Stammverletzungen durch herabkollernde Steine. Oft Hochstauden."
@@ -432,6 +552,11 @@
         "vegetation": "BS: Bu, SLi, BAh, BUl ; SS: kaum vorhanden ; KS: Alpendost-Arten, Blaugras, Gelber Eisenhut, Weisse Pestwurz, Bingelkraut",
         "transitions": ["13a", "18a", "21"],
         "forestryCare": "Schuttstauende und steinschlagertragende Arten wie Li fördern.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1,
+          1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1,
+          1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1
+        ],
         "forestryRejuvDev": "Möglichst keine Eingriffe, wenn die Schutzwirkung nicht gefährdet ist.",
         "heightDispersion": "obermontan, 800-1000m",
         "descriptionNaturalForest": "Schlechtwüchsiger Buchenwald; Säbelwuchs und Stammverletzungen; einzelne Mehlbeerbäume und Föhren sind eingestreut. Neben Alpendost und anderen Montananzeigern kommen Blaugras und weitere Bodentrockenheitszeiger vor."
@@ -447,6 +572,11 @@
         "vegetation": "BS: Bu, TEi, Ki, MBe, BAh, Fö, Es ; SS: Wolliger Schneeball, Liguster, Feld-Rose, Gemeiner und Lorbeer-Seidelbast, Weissdorn, Schwarzdorn, Strauchwicke, Berberitze ; KS: Weisse Segge, Blaugras, Maiglöckchen, Straussblütige Margarite, Immenblatt, Gemeine Weisswurz, Graufilzige Schlüsselblume, Schwalbenwurz, Bingelkraut, Haselwurz, Frühlings-Platterbse, Vogelfuss-Segge",
         "transitions": ["10a", "12*", "13e", "16", "38"],
         "forestryCare": "Bei der Jungwuchs- und Dickungspflege kann die Baumartenmischung reguliert werden; fördern von TEi, BAh, MBe, EBe u.a. Die Föhre kann übergehalten werden und so manchmal eine zweite Laubholzgeneration überdauern.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Allgemeinen für alle Arten möglich. Die oft dichte Strauchschicht behindert die Ansamung. Ein Nebenbestand kann die Strauchschicht sowie das Überhandnehmen von Gräsern und Seggen zurückdämmen. Im Allgemeinen ist eine kleinflächiges Vorgehen anzuraten.",
         "heightDispersion": "submontan, 300-800m",
         "descriptionNaturalForest": "Mässig bis schlecht wüchsiger Buchenwald mit eingestreuten andern Laubhölzern und Waldföhren. Oft reiche Strauch- und Krautschicht. Teils grosse Flecken Blaugras vorhanden."
@@ -462,6 +592,11 @@
         "vegetation": "BS: Bu, TEi, Ki, MBe, EBe, Fö ; SS: Wolliger Schneeball, Liguster, Feld-Rose, Weissdorn, Schwarzdorn ; KS: Berg-Segge, Maiglöckchen, Gemeine Weisswurz, Schwalbenwurz, Wald-Habichtskraut, Weissliche Hainsimse, Frühlings-Platterbse, Finger-Segge",
         "transitions": ["1", "6", "10a", "14", "38"],
         "forestryCare": "Bei der Jungwuchs- und Dickungspflege kann die Baumartenmischung reguliert werden; fördern von TEi, BAh, MBe, EBe u.a. Die Föhre kann übergehalten werden und so manchmal eine zweite Laubholzgeneration überdauern.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0,
+          0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Allgemeinen für alle Arten möglich. Die oft dichte Strauchschicht behindert die Ansamung. Ein Nebenbestand kann die Strauchschicht sowie das Überhandnehmen von Gräsern und Seggen zurückdämmen. Im Allgemeinen ist eine kleinflächiges Vorgehen anzuraten.",
         "heightDispersion": "submontan, 400-600m",
         "descriptionNaturalForest": "Mässig wüchsiger Buchenwald mit eingestreuten andern Laubhölzern und Waldföhren. Oft reiche Strauch- und Krautschicht."
@@ -477,6 +612,11 @@
         "vegetation": "BS: Bu, Fö, MBe, BAh; in tieferen Lagen TEi ; SS: Strauchwicke, Alpen-Heckenkirsche, Alpen-Kreuzdorn ; KS: Blaugras, Bingelkraut, Wald-Habichtskraut, Hasenlattich, Berg-Distel, Niedliche und Rundblättrige Glockenblume, Eichenfarn, Gelappter Farnschild, Grüner Alpendost",
         "transitions": ["13e", "14e", "14w", "38", "65"],
         "forestryCare": "Zurückhaltende Durchforstung, eventuell auf Eingriffe verzichten.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Stockausschläge, natürliche Verjüngung gehemmt.",
         "heightDispersion": "untermontan, 425-1000m",
         "descriptionNaturalForest": "Krüppeliger Buchenwald, in dem manchmal die Föhre beigemischt ist. Meist dominiert das Blaugras die Bodenvegetation. In schattigeren Lagen auch Eichenfarn, Gelappter Farnschild oder Grüner Alpendost vorhanden."
@@ -492,6 +632,11 @@
         "vegetation": "BS: Bu, BAh, Es, MBe, Ta; Eibe (meist im Unterholz) ; SS: Gemeiner Seidelbast ; KS: Berg-Flockenblume, Alpenmasslieb, Bingelkraut, Waldmeister, Wald-Segge, Wald-Schlüsselblume, Wald-Schwingel, Bundtes Reitgras, Schlaffe Segge",
         "transitions": ["12a", "12w", "14", "18"],
         "forestryCare": "Zurückhaltende Durchforstung, Förderung der Eibe.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1
+        ],
         "forestryRejuvDev": "Die Eibe wir regelmässig vom Reh verbissen und kann sich deshalb nicht verjüngen. Die natürliche Verjüngung der übrigen Baumarten bereitet keine Probleme.",
         "heightDispersion": "submontan, 700-920m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Steilhang-Buchenwald, häufig mit Eiben unter dem Schirm der Buchen. Am Boden Wechsel von wenige bewachsenen Stellen mit dichten Pflanzenteppichen, je nach Lichteinfall (Setienlicht)."
@@ -507,6 +652,11 @@
         "vegetation": "BS: Bu, Ta, BAh, BUl, Es, VBe,  (Fi) ; SS: Heckenkirschen-Arten, Schwarzer Holunder ; KS: Grauer Alpendost, Wald-Schwingel, Gemeiner Waldfarn, Wurmfarn-Arten, Goldnessel, Bingelkraut, Sauerklee; die Quirlblättrige Weisswurz ist im Kanton selten ",
         "transitions": ["12a", "20"],
         "forestryCare": "In der Jugendphase muss in Mischbeständen zugunsten der Nadelhölzer eingegriffen werden, da Bu sonst überhand nimmt. Die Konkurrenz der Hauptbaumarten ist so stark, dass die übrigen Baumarten nur bei grossem Pflegeaufwand gute Holzqualität erreichen.",
+        "expoAndAspect": [
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1
+        ],
         "forestryRejuvDev": "Naturverjüngung ohne Schwierigkeiten, femelschlag- oder plenterartig. Plenterung ist möglich, wenn der Wildbestand nicht zu gross ist. Grössere Fi-Anteile durch Pflanzung.",
         "heightDispersion": "obermontan, 750-1169m",
         "descriptionNaturalForest": "Gut wüchsiger Tannen-Buchenmischwald. Die Krautschicht kann lückig oder fast geschlossen sein. Oft fällt der Graue Alpendost auf."
@@ -522,6 +672,11 @@
         "vegetation": "BS: Bu, Ta, BAh, BUl, Es, VBe,  (Fi) ; SS: Heckenkirschen-Arten, Schwarzer Holunder ; KS: Grauer Alpendost, Wald-Schwingel, Gemeiner Waldfarn, Wurmfarn-Arten, Goldnessel, Bingelkraut, Sauerklee; die Quirlblättrige Weisswurz ist im Kanton selten ",
         "transitions": ["12a", "12e", "21"],
         "forestryCare": "Bu nicht in Einzelmischung, damit sie die Lichtbaumarten nicht bedrängt. Unterwuchs und Nebenbestand fördern die biologische Bodenaktivität und verbessern das Bestandesklima.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung im Allgemeinen nicht schwierig; jedoch keine grossflächigen Schläge, damit Strauchschicht und Grasteppich nicht gefördert werden.",
         "heightDispersion": "obermontan, 750-1169m",
         "descriptionNaturalForest": "Mässig wüchsiger Buchenwald mit beigemischeten Tannen und Mehlbeeren. In der Krautschicht neben den Arten des Typischen Tannen-Buchenwaldes Trockenheitszeiger wie Weisse Segge und Schwalbenwurz."
@@ -537,6 +692,11 @@
         "vegetation": "BS: Bu, Ta, VBe ; SS: wenig entwickelt ; KS: Wald-Hainsimse, Heidelbeere, Sauerklee, Hasenlattich, Waldmeister",
         "transitions": ["16", "18"],
         "forestryCare": "In Mischbeständen ist Plenterung möglich. BAh zur Bodenpflege fördern.",
+        "expoAndAspect": [
+          0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+          0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Die natürliche Verjüngung kann lokal durch Heidelbeer-Teppiche verhindert werden. Sonst ist die natürliche Verjüngung gut.",
         "heightDispersion": "obermontan, 800-1050m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Tannen-Buchenwald mit eher lückiger Krautschicht."
@@ -552,6 +712,11 @@
         "vegetation": "BS: Bu, Ta, BAh ; SS: Schwarzer Holunder ; KS: Bärlauch, Grauer Alpendost, Gemeiner Waldfarn, Wurmfarn-Arten, Wald-Schlüsselblume, Wolliger Hahnenfuss",
         "transitions": ["18", "26h"],
         "forestryCare": "BAh fördern (starke Konkurrenz)",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung oft durch die üppige Krautschicht erschwert.",
         "heightDispersion": "obermontan, 800-1100m",
         "descriptionNaturalForest": "Gut wüchsiger Tannen-Buchenwald in schattigen Lagen. Üppige Krautschicht mit Bärlauch, Farnen und Hochstauden."
@@ -567,6 +732,11 @@
         "vegetation": "BS: BAh, Es, SLi, BUl ; SS: Schwarzer Holunder, Rote Heckenkirsche ; KS: Hirschzunge, Wurmfarn-Arten, Gelappter Schildfarn, Moos-Nabelmiere, Ruprechtsfarn, Ruprechtskraut, Bingelkraut, Mondviole",
         "transitions": ["13a", "25*"],
         "forestryCare": "Zurückhaltende Eingriffe (Nutzung einzelner Bäume), eventuell nur zur Förderung der Verjüngung, oder ganz darauf verzichten.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1
+        ],
         "forestryRejuvDev": "Die natürliche Verjüngung erfolgt ohne Schwierigkeiten, aber langsam.",
         "heightDispersion": "submontan bis obermontan, 450-1000m",
         "descriptionNaturalForest": "Ziemlich wüchsiger Bergahornwald mit Sommerlinden und einzelnen Eschen auf Blockschutthängen. Stammverletzungen durch herabkollernde Steine; Stockausschläge. Unterwuchs kaum vorhanden. Die Krautschicht wird durch die Hirschzunge und andere Farne in ihrem Aussehen bestimmt. Oft Mosaik mit Nr. 13."
@@ -582,6 +752,11 @@
         "vegetation": "BS: BAh, Es, SLi ; SS: Hasel, Schwarzer Holunder ; KS: Lerchensporn, Märzenglöckchen, Einbeere, Bisamkraut, Aronstab, Goldnessel, Bingelkraut, Bärlauch, Fiederblättrige Zahnwurz, Geissfuss",
         "transitions": ["22"],
         "forestryCare": "Eventuell zurückhaltende Einzelbaumnutzung zu Förderung der Verjüngung.",
+        "expoAndAspect": [
+          0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Durch die dichte Krautschicht erschwert.",
         "heightDispersion": "submontan bis untermontan, 325-420m",
         "descriptionNaturalForest": "Gut wüchsiger Bergahornwald. Im Frühling üppige Krautschicht mit Frühblühern."
@@ -602,6 +777,11 @@
           "38.AmÜbergangzuwaldfreienSchutthängenfindetsichofteinHaselgebüsch-SaummitderselbenKrautschicht."
         ],
         "forestryCare": "Kleinflächige Niederwaldnutzung kann die Schutzfunktion gegen Steinschlag stützen, da so Stockausschlagbestände mit hohen Stammzahlen entstehen.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
+          1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+          1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Die Bodenverhältnisse erschweren die natürliche Ansamung. Kleinflächiges Vorgehen ist angezeigt, um die Sträucher nicht zu sehr zu begünstigen.",
         "heightDispersion": "collin bis untermontan, 400-800m",
         "descriptionNaturalForest": "Mässig wüchsiger Linden-Mischwald an sonnigen, warmen Schutthängen. Strauchschicht oft gut entwickelt, Krautschicht manchmal lückig und artenarm; oft fällt die Schmerwurz auf, die über den Schutt kriecht."
@@ -617,6 +797,11 @@
         "vegetation": "BS: Es, BAh, SEi, BUl, Ki ; SS: Hasel, Pfaffenhütchen, Gemeiner Schneeball, Hornstrauch, Liguster, TKi ; KS: Brustwurz, Hexenkraut, Lockerährige und Überhängende Segge, Wald-Gilbweiderich, Wald-Ziest, Lungenkraut, Bingelkraut, Aronstab, Horstbildende Schmiele, Riesen-Schwingel, Kriechender Günsel",
         "transitions": ["7S", "11", "27", "29", "30"],
         "forestryCare": "Edellaubbäume benötigen intensive Pflege und regelmässige Durchforstungen, insbesondere in der Jugend. Durch Frost, Wildverbiss oder Eschenkrebs geschädigte und schlecht geformte Es und BAh können bis in die schwache Stangenholzphase ohne Nachteil auf den Stock gesetzt werden, da die neuen Stockausschläge schon im ersten Jahr die Krautschicht durchwachsen und sich später von Kernwüchsen kaum unterscheiden lassen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung problemlos. Zu lange Verjüngungszeiträume können dem Aufwachsen einer üppigen Krautschicht Vorschub leisten. Es braucht mehr Licht als BAh, aber weniger als SEi. Letztere soll nur auf grösseren Flächen verjüngt werden. Unterschiedlicher Lichtbedarf und Wachstumsverlauf verlangen ein differenziertes Vorgehen und eine überlegte Wahl von Mischart und -form.",
         "heightDispersion": "submontan bis untermontan, 300-850m",
         "descriptionNaturalForest": "Sehr wüchsiger, hochstämmiger Laubmischwald mit teils üppiger Bodenvegetation."
@@ -632,6 +817,11 @@
         "vegetation": "BS: Es, BAh, SEi, BUl, Ki ; SS: Hasel, Pfaffenhütchen, Hornstrauch, Liguster, Schneeball-Arten ; KS: Geissfuss, Brustwurz, Wald-Ziest, Überhängende Segge, Lungenkraut, Bingelkraut, Aronstab, Horstbildende Schmiele",
         "transitions": ["7S", "11", "27"],
         "forestryCare": "Edellaubbäume benötigen intensive Pflege und regelmässige Durchforstungen, insbesondere in der Jugend. Durch Frost, Wildverbiss oder Eschenkrebs geschädigte und schlecht geformte Es und BAh können bis in die schwache Stangenholzphase ohne Nachteil auf den Stock gesetzt werden, da die neuen Stockausschläge schon im ersten Jahr die Krautschicht durchwachsen und sich später von Kernwüchsen kaum unterscheiden lassen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung problemlos. Zu lange Verjüngungszeiträume können dem Aufwachsen einer üppigen Krautschicht Vorschub leisten. Es braucht mehr Licht als BAh, aber weniger als SEi. Letztere soll nur auf grösseren Flächen verjüngt werden. Unterschiedlicher Lichtbedarf und Wachstumsverlauf verlangen ein differenziertes Vorgehen und eine überlegte Wahl von Mischart und -form.",
         "heightDispersion": "obermontan, 750-1050m",
         "descriptionNaturalForest": "Gut wüchsiger Bergahorn-Eschenwald mit üppiger Bodenvegetation. Grauer Alpendost und andere Hochstauden dominieren."
@@ -647,6 +837,11 @@
         "vegetation": "BS: Es, SEr, BAh ; SS: Liguster, Pfaffenhütchen, Hasel ; KS: Riesen-Schachtelhalm, Dotterblume, Lockerährige Segge, Wasser-Minze, Spierstaude, Brustwurz, Bitteres Schaumkraut",
         "transitions": ["26"],
         "forestryCare": "Siehe 26a. In kleinen Quellwäldern nur sehr zurückhaltend oder überhaupt nicht eingreifen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0,
+          0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0,
+          0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung ohne Probleme. Es-Jungwüchse möglichst frühzeitig zu vollem Lichtgenuss kommen lassen.",
         "heightDispersion": "submontan und untermontan, 300-800m",
         "descriptionNaturalForest": "Meist schmale, kleinflächige, sehr wüchsige Eschenbestände entlang von Bächen oder an quelligen Stellen. Oft mit Riesen-Schachtelhalm."
@@ -662,6 +857,11 @@
         "vegetation": "BS: Es, SEr, BAh ; SS: Liguster, Pfaffenhütchen, Hasel ; KS: Riesen-Schachtelhalm, Dotterblume, Lockerährige Segge, Wasser-Minze, Spierstaude, Brustwurz, Bitteres Schaumkraut",
         "transitions": ["26h"],
         "forestryCare": "Siehe 26a. In kleinen Quellwäldern nur sehr zurückhaltend oder überhaupt nicht eingreifen.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung ohne Probleme. Es-Jungwüchse möglichst frühzeitig zu vollem Lichtgenuss kommen lassen.",
         "heightDispersion": "obermontan, 800-1000m",
         "descriptionNaturalForest": "Meist schmale, kleinflächige, sehr wüchsige Eschenbestände entlang von Bächen oder an quelligen Stellen. Der Graue Alpendost und andere Hochstauden sowie der Wald-Schachtelhalm prägen oft die Bodenvegetation."
@@ -677,6 +877,11 @@
         "vegetation": "BS: Es, BAh, SEr, SEi ; SS: TKi, Pfaffenhütchen, Schwarzer Holunder, Hornstrauch, Wald-Geissblatt ; KS: Brustwurz, Horstbildende Schmiele, Gundelrebe, Gemeine Nelkenwurz, Wald-Segge, Hexenkraut, Kriechender Günsel, Wald-Ziest, Scharbockskraut, Wald-Schlüsselblume, Lungenkraut",
         "transitions": ["AusbildungaufLösslehmzu7S"],
         "forestryCare": "Edellaubbäume benötigen intensive Pflege und regelmässige Durchforstungen, insbesondere in der Jugend. Durch Frost, Wildverbiss oder Eschenkrebs geschädigte und schlecht geformte Es und BAh können bis in die schwache Stangenholzphase ohne Nachteil auf den Stock gesetzt werden, da die neuen Stockausschläge schon im ersten Jahr die Krautschicht durchwachsen und sich später von Kernwüchsen kaum unterscheiden lassen.",
+        "expoAndAspect": [
+          1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+          0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0,
+          0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung problemlos. Zu lange Verjüngungszeiträume können dem Aufwachsen einer üppigen Krautschicht Vorschub leisten. Es braucht mehr Licht als BAh, aber weniger als SEi. Letztere soll nur auf grösseren Flächen verjüngt werden. Unterschiedlicher Lichtbedarf und Wachstumsverlauf verlangen ein differenziertes Vorgehen und eine überlegte Wahl von Mischart und -form.",
         "heightDispersion": "submontan, 200-420m",
         "descriptionNaturalForest": "Sehr wüchsiger Eschenmischwald; Unterholz reich an Traubenkirsche (Lösslehmmulden) und Nährstoffzeigern (Auenwälder)."
@@ -692,6 +897,11 @@
         "vegetation": "BS: Es, SEr, BAh ; SS: TKi, Pfaffenhütchen, Liguster, Gemeiner Schneeball, Hornstrauch ; KS: Sumpf-Segge, Lockerährige und Dünnährige Segge, Sumpf-Baldrian, Dotterblume, Schachtelhalm-Arten",
         "transitions": ["26", "27", "29"],
         "forestryCare": "Edellaubbäume benötigen intensive Pflege und regelmässige Durchforstungen, insbesondere in der Jugend. Durch Frost, Wildverbiss oder Eschenkrebs geschädigte und schlecht geformte Es und BAh können bis in die schwache Stangenholzphase ohne Nachteil auf den Stock gesetzt werden, da die neuen Stockausschläge schon im ersten Jahr die Krautschicht durchwachsen und sich später von Kernwüchsen kaum unterscheiden lassen. Zurückhaltende oder überhaupt keine Eingriffe.",
+        "expoAndAspect": [
+          1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+          0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+          0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Natürliche Verjüngung problemlos. Zu lange Verjüngungszeiträume können dem Aufwachsen einer üppigen Krautschicht Vorschub leisten. Es braucht mehr Licht als BAh, aber weniger als SEi. Letztere soll nur auf grösseren Flächen verjüngt werden. Unterschiedlicher Lichtbedarf und Wachstumsverlauf verlangen ein differenziertes Vorgehen und eine überlegte Wahl von Mischart und -form. Zurückhaltende oder überhaupt keine Eingriffe.",
         "heightDispersion": "submontan bis untermontan, 300-400m",
         "descriptionNaturalForest": "Sumpfiger Schwarzerlen- und Eschenwald mit üppiger Bodenvegetation."
@@ -707,6 +917,11 @@
         "vegetation": "BS: Li, SEi, SAh, Es, HBu, Ki ; SS: Hasel, Weissdorn-Arten, Liguster, Pfaffenhütchen ; KS: Efeu, Gelbes und Weisses Buschwindröschen, Festknolliger Lerchensporn, Bisamkraut (Moschuskraut), Scharbockskraut, Gold-Hahnenfuss, Goldnessel, Efeublättriger Ehrenpreis, Aschersons Knäuelgras, Aronstab, Brombeere, Bärlauch, Bingelkraut, Lungenkraut, Pyrenäen-Milchstern, Süsse Wolfsmilch, Blaustern ",
         "transitions": null,
         "forestryCare": "Feine Eingriffe um lichtbedürftige Eichenbestände zu fördern.",
+        "expoAndAspect": [
+          1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+          0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+          0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung gut möglich.",
         "heightDispersion": "collin, 200-230m",
         "descriptionNaturalForest": "Ziemlich bis mässig wüchsiger Laubmischwald. Schon im März zieren bunte Teppiche von Frühjahrsblühern den Waldboden. Im Sommer artenarmer Aspekt mit viel Efeu."
@@ -722,6 +937,11 @@
         "vegetation": "BS: FEi, TEi, MBe, Fö, Es, Birn- und Apfelbaum ; SS: Felsenmispel, Strauchwicke, Gemeiner und Alpen-Kreuzdorn, Felsenkirsche, Liguster, Wolliger Schneeball ; KS: Ästige Graslilie, Fieder-Zwenke, Weisse Segge, Braunrote Sumpfwurz, Edel-Gamander, Schwalbenwurz, Breitblättriges Laserkraut, Dost",
         "transitions": ["14", "16", "65"],
         "forestryCare": "Flaumeichen nach Bedarf fördern, ansonsten keine Eingriffe vornehmen.",
+        "expoAndAspect": [
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1,
+          1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Verjüngung aufgrund trockener und exponierter Lagen schwierig.",
         "heightDispersion": "collin bis submontan, 350-800m",
         "descriptionNaturalForest": "Lichter Eichenbuschwald auf Felsköpfen, trockenen Graten und warmen Sonnenhängen mit reicher Strauch- und Krautschicht. Die Eichen sind häufig Flaumeichen mit etlichen Traubeneichen-Merkmalen. Zusätzlich meist noch Mehlbeere und Föhre vorhanden."
@@ -737,6 +957,11 @@
         "vegetation": "BS: FEi, TEi, MBe, Fö, Es, Birn- und Apfelbaum ; SS: Felsenmispel, Strauchwicke, Gemeiner und Alpen-Kreuzdorn, Felsenkirsche, Liguster, Wolliger Schneeball ; KS: Ästige Graslilie, Fieder-Zwenke, Weisse Segge, Braunrote Sumpfwurz, Edel-Gamander, Schwalbenwurz, Breitblättriges Laserkraut, Dost",
         "transitions": ["14", "16", "66"],
         "forestryCare": "Eichen nach Bedarf fördern, ansonsten keine Eingriffe vornehmen.",
+        "expoAndAspect": [
+          1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+          0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+          0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Verjüngung aufgrund trockener und exponierter Lagen schwierig.",
         "heightDispersion": "colline Stufe, 260-290m",
         "descriptionNaturalForest": "Die Reinacher Buschwälder sind Pionierbestände. Sie sind nicht typisch ausgebildet und in letzter Zeit stark in ihrer Entwicklung gestört worden."
@@ -752,6 +977,11 @@
         "vegetation": "BS: SEr ; SS: Faulbaum ; KS: Sumpf-Segge, Sumpf-Labkraut, Blutweiderich ; MS: Torfmoose",
         "transitions": null,
         "forestryCare": "Höchstens einzelne Bäume zur Förderung spezifischer Bäume entnehmen.",
+        "expoAndAspect": [
+          1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
+          0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0,
+          0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "Aufgrund des bodenbedeckenden Moosschicht teils schwierig.",
         "heightDispersion": "submontan bis untermontan, 390-400m",
         "descriptionNaturalForest": "Erlen-Sumpfwald mit lückiger Krautschicht."
@@ -767,6 +997,11 @@
         "vegetation": "BS: Fi, Ta, (Bu, BUl, MBe, VBe) ; SS: Vogelbeere, Brombeere, Alpen-Hagrose ; KS: Heidelbeere, Bärlapp-Arten, Eichen- und Ruprechtsfarn, Gemeine Goldrute, Breiter Wurmfarn, Sauerklee, Wald-Habichtskraut ; MS: Etagenmoos, Rotstengelmoos, Widenton, Gabelzahnmoos, Torfmoos u.a.",
         "transitions": ["13a", "16", "22"],
         "forestryCare": "Wenn nicht auf die Bewirtschaftung verzichtet wird, mit Plenterhieben stufigen Bestand anstreben.",
+        "expoAndAspect": [
+          0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1,
+          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
+          1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0
+        ],
         "forestryRejuvDev": "Naturverjüngung der Fichte  auf Rohhumus ohne Probleme, für die anderen Baumarten etwas schwieriger.",
         "heightDispersion": "untermontan bis hochmontan, 350-1050m",
         "descriptionNaturalForest": "Fichten-Tannenmischwald auf Blockhalden. Zwischen den Blöcken dicke federnde Schichten von Rohhumus. Die Moosschicht ist auffällig gut entwickelt."
@@ -782,6 +1017,11 @@
         "vegetation": "BS: Fö, MBe, (Bu, BAh) ; SS: Liguster, Wolliger Schneeball, Hornstrauch, Weissdorn, Feld-Rose ; KS: Waldmeister, Ästige Graslilie, Fieder-Zwenke, Buntes Reitgras, Pfeifengras, Gebräuchliche Betonie, Dost, Breitblättriges Laserkraut; an offenen Stellen oft auch Orchideen",
         "transitions": ["10w", "14w"],
         "forestryCare": "Nur Eingriffe, die auf die Schutzfunktion ausgerichtet sind.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "An offenen Stellen kann sich die Fö gut verjüngen.",
         "heightDispersion": "submontan bis untermontan, 500-1000m",
         "descriptionNaturalForest": "Schlecht wüchsiger Föhrenwald, oft mit vielen Mehlbeerbäumen und einzelnen schwachen Buchen. Bodenvegetation oft von Gräsern beherrscht."
@@ -797,6 +1037,11 @@
         "vegetation": "BS: Fö, MBe, (Bu, BAh) ; SS: Liguster, Wolliger Schneeball, Hornstrauch, Weissdorn, Feld-Rose ; KS: Waldmeister, Ästige Graslilie, Fieder-Zwenke, Buntes Reitgras, Pfeifengras, Gebräuchliche Betonie, Dost, Breitblättriges Laserkraut; an offenen Stellen oft auch Orchideen",
         "transitions": ["10w", "14w"],
         "forestryCare": "Nur Eingriffe, die auf die Schutzfunktion ausgerichtet sind.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0
+        ],
         "forestryRejuvDev": "An offenen Stellen kann sich die Fö gut verjüngen.",
         "heightDispersion": "submontan bis obermontan, 500-1000m",
         "descriptionNaturalForest": "Sehr schlecht wüchsiger Föhrenwald, oft mit vielen Mehlbeerbäumen aber ohne Buchen. Bodenvegetation oft von Gräsern beherrscht."
@@ -812,9 +1057,176 @@
         "vegetation": "BS: Fö, MBe ; SS: Felsenmispel, Alpen-Kreuzdorn, Strauckwicke, Wolliger Schneeball ; KS: Niedrige und Weisse Segge, Braunrote Sumpfwurz, Berg- und Edel-Gamander, Ästige Graslilie, Schwalbenwurz, Blaugras, Berg-Distel, Alpen-Bergflachs, Fieder-Zwenke",
         "transitions": ["16", "38"],
         "forestryCare": "Nur Eingriffe, die auf die Schutzfunktion ausgerichtet sind.",
+        "expoAndAspect": [
+          1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
+          0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1,
+          0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0
+        ],
         "forestryRejuvDev": "An offenen Stellen kann sich die Fö verjüngen.",
         "heightDispersion": "untermontan bis hochmontan, 600-1169m",
         "descriptionNaturalForest": "Offener, niedriger Föhrenwald in Kretenlagen."
+      },
+      {
+        "de": "Typischer Waldhirsen-Buchenwald",
+        "la": "Milio-Fagetum typicum",
+        "code": "8a",
+        "geology": "Verwitterungslehme, weichere Juraschichten",
+        "location": "Alle Expositionen und nicht zu steile Lagen. Tiefgründige, frische, basenreiche Boden (Braunerden). Typisch für nebelreiche Lagen.",
+        "tillering": "50-100% Laubholzanteil. Grosse Freiheit in Mischungsform, -art und -grad. Vom naturnahen, fast reinen Bu-Bestand über einen Laubmischwald bis zu einem Laub-Ta-Fi-Mischwald alles möglich.",
+        "properties": "Gesamtzuwachs und Höhenbonität sehr gut. Grosse Freiheit bei der Baumartenwahl unter den nicht wärmebedürftigen Arten: Bu, BAh, Ta, Fi, Es, BUl, Dou. Befahrbarkeit bei nassem Boden erschwert.",
+        "vegetation": "BS: Bu, Ta, (BAh, Es) ; SS: Himbeere, Schwarzer Holunder, Brombeere ; KS: Aronstab, Waldmeister, Lungenkraut, Goldnessel, Wald-Segge, Wald-Schwingel, Fuchs' Kreuzkraut, Gemeiner Wurmfarn",
+        "transitions": ["12a"],
+        "forestryCare": "Bei einem hohen Ta-Anteil (sofern der Wildbestand es zulässt) Plenterung möglich; sonst Femelschlagbewirtschaftung.",
+        "expoAndAspect": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "forestryRejuvDev": "Natürliche Verjüngung im Femelschlagverfahren ohne Schwierigkeiten möglich.",
+        "heightDispersion": "untermontan, 510-750m",
+        "descriptionNaturalForest": "Gut wüchsiger, hochstämmiger Buchenwald mit beigemischter Tanne."
+      },
+      {
+        "de": "Aronstab-Buchenwald",
+        "la": "Aro-fagetum",
+        "code": "11",
+        "geology": "Lehmreicher Gehängeschutt, auch weichere Kalkschichten des Jura.",
+        "location": "Meist schattige Hangfusslagen, untere Hanglagen. Kalk- und tonreiche Böden, die noch genügend durchlüftet sind für die Buche (feuchte, basenreiche Braunerde).",
+        "tillering": "90-100% Laubholzanteil. Edellaubmischwald mit BAh, Es als dominante Baumarten, dazu Ki, BUl, oder SEi-Bestand mit Nebenbestand.",
+        "properties": "Gesamtzuwachs und Höhenbonität sehr gut. Baumartenwahl durch die zeitweise Nässe bestimmt. SEi, Ki, BAh, Es, BUl und eventuell beigemischt Ta und Fi sind Hauptwertträger; HBu, Li, FAh und SAh sind für den Nebenbestand geeignet. Dieser Standort, der von Natur aus von der Buche beherrscht wird, ist der ideale Standort für Edellaubhölzer, die hier hervorragende Wertleistungen erreichen. Fö und Lä sind nicht konkurrenzfähig. Mulden können wegen Kälteseen für frostempfindliche Bäume gefährlich sein. In besonderen Fällen kann als vorübergehende Bestockung mit sehr kurzer Umtriebszeit (Vorwald, Abschirmung) As verwendet werden. Die feuchten Böden nicht befahren.",
+        "vegetation": "BS: Bu, Es, BAh, BUl, SAh, SEi ; SS: Rote Heckenkirsche, Lorbeer-Seidelbast ; KS: Bärlauch, Goldnessel, Aronstab, Wald-Schlüsselblume, Bingelkraut, Hexenkraut, Waldmeister, Einbeere",
+        "transitions": ["7S", "9a", "12S"],
+        "forestryCare": "Es und Ki in Einzelmischung, BAh, SAh, BUl und Li in gemischten Gruppen und Horsten. SEi in grösseren Flächen.",
+        "expoAndAspect": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "forestryRejuvDev": "Der Bärlauch-Teppich im Frühling schränkt die Naturverjüngung im Allgemeinen nicht ein.",
+        "heightDispersion": "submontan, 300-700m",
+        "descriptionNaturalForest": "Sehr wüchsiger Hallen-Buchenmischwald mit schwach entwickelter Strauchschicht. Frühlingsaspekt meist vom Bärlauch bestimmt, so dass im Sommer nach dessen Vergilben nur noch wenig Kräuter vorhanden sind."
       }
     ],
     "associationGroup": [
@@ -965,9 +1377,9 @@
         "fr": "en pente ou dans une dépression",
         "code": "h_and_m"
       },
+      { "de": "normal", "fr": "normal", "code": "normal" },
       { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
-      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
-      { "de": "normal", "fr": "normal", "code": "normal" }
+      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
     ],
     "bushType": [
       {
