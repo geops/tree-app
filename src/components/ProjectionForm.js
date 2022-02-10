@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
@@ -10,7 +10,6 @@ import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
 import { setFormLocation, setForestTypeDescription } from '../store/actions';
-import transitionMappings from '../utils/transitionMappings';
 
 import styles from './ProjectionForm.module.css';
 
@@ -64,7 +63,6 @@ function ProjectionForm() {
     projectionMode === 'm'
       ? projectionResult.extreme.options
       : projectionResult.form.options;
-
   const [fieldActive, setFieldActive] = useState('');
   const activateField = (field) => setFieldActive(field);
   const deactivateField = () => setFieldActive('');
@@ -90,11 +88,17 @@ function ProjectionForm() {
   };
 
   const formActive = projectionMode === 'm' || fieldActive;
-  const cantonalForestTypes =
-    transitionMappings[activeProfile] &&
-    transitionMappings[activeProfile][
-      `${location.forestType}(${location.transitionForestType})`
-    ];
+
+  const cantonalForestTypes = useMemo(() => {
+    try {
+      const mapping = info('transitionMapping', undefined, activeProfile);
+      return mapping[
+        `${location.forestType}(${location.transitionForestType})`
+      ];
+    } catch {
+      return undefined;
+    }
+  }, [location, activeProfile]);
 
   return (
     <Form className={formActive ? styles.formActive : styles.form}>

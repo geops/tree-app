@@ -27,3 +27,8 @@ CREATE TABLE lu_bestockung (STO_Nr TEXT, Kategorie TEXT, Fi TEXT, Ta TEXT, WFö 
 COPY lu_bestockung
 FROM '/data/profiles/lu/bestockung.csv'
 DELIMITER ';' CSV HEADER;
+
+CREATE TABLE lu_uebergaenge (STO_Nr_nais TEXT, STO_Nr_profile TEXT);
+COPY lu_uebergaenge
+FROM '/data/profiles/lu/uebergaenge_mapping.csv'
+DELIMITER ';' CSV HEADER;

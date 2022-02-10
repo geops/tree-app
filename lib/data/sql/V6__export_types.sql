@@ -98,31 +98,34 @@ FROM lu_pioneer_data;
 
 COPY
     (SELECT jsonb_build_object(
-      'bl', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
-                                                                                            'de', sto_deu,
-                                                                                            'la', sto_lat,
-                                                                                            'properties', eigenschaften,
-                                                                                            'tillering', bestockungsziele,
-                                                                                            'forestryRejuvDev', wb_verj_ent,
-                                                                                            'forestryCare', wb_pfl,
-                                                                                            'descriptionNaturalForest', beschrieb_naturwald,
-                                                                                            'heightDispersion', hoehenverbreitung,
-                                                                                            'location', bl_standorttypen.standort,
-                                                                                            'geology', geologie,
-                                                                                            'vegetation', vegetation,
-                                                                                            'transitions', to_jsonb(string_to_array(regexp_replace(uebergaenge_zu, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
+      'bl', (SELECT jsonb_build_object(
+        'forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                          'de', sto_deu,
+                                                          'la', sto_lat,
+                                                          'properties', eigenschaften,
+                                                          'tillering', bestockungsziele,
+                                                          'forestryRejuvDev', wb_verj_ent,
+                                                          'forestryCare', wb_pfl,
+                                                          'descriptionNaturalForest', beschrieb_naturwald,
+                                                          'heightDispersion', hoehenverbreitung,
+                                                          'location', bl_standorttypen.standort,
+                                                          'geology', geologie,
+                                                          'vegetation', vegetation,
+                                                          'transitions', to_jsonb(string_to_array(regexp_replace(uebergaenge_zu, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
           values
           FROM bl_standorttypen
-          ), 'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
-                                                                      'de', gesgr_deu,
-                                                                      'forestAppearance', waldbild,
-                                                                      'description', standort,
-                                                                      'useAndCare', nutzung_pflege,
-                                                                      'heightDispersion', vegetationsstufe,
-                                                                      'areaBl', flaechenanteil_bl,
-                                                                      'areaBs', flaechenanteil_bs,
-                                                                      'areaBlBsPercent', flaeche_blbs_prozent,
-                                                                      'locations', to_jsonb(string_to_array(regexp_replace(standorte, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
+        ),
+        'transitionMapping', (SELECT json_object_agg(sto_nr_nais, to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ','))) FROM bl_uebergaenge),
+        'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
+                                                                'de', gesgr_deu,
+                                                                'forestAppearance', waldbild,
+                                                                'description', standort,
+                                                                'useAndCare', nutzung_pflege,
+                                                                'heightDispersion', vegetationsstufe,
+                                                                'areaBl', flaechenanteil_bl,
+                                                                'areaBs', flaechenanteil_bs,
+                                                                'areaBlBsPercent', flaeche_blbs_prozent,
+                                                                'locations', to_jsonb(string_to_array(regexp_replace(standorte, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
           values
           FROM bl_gesellschaftsgruppen))),
       'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
@@ -214,7 +217,9 @@ COPY
           LEFT JOIN lu_soil_export ON lu_standorttypen.sto_nr = lu_soil_export.code
           LEFT JOIN lu_vegetation_indicator_export vegetation_indicator ON lu_standorttypen.sto_nr = vegetation_indicator.code
           LEFT JOIN lu_pioneer_export pioneer_tree_types ON lu_standorttypen.sto_nr = pioneer_tree_types.code
-      ), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
+      ), 
+      'transitionMapping', (SELECT json_object_agg(sto_nr_nais, to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ','))) FROM lu_uebergaenge),
+      'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                               'de', gesgr_deu,
                                                                                               'la', gesgruppe_lat,
                                                                                               'description', beschreibung,
@@ -223,24 +228,25 @@ COPY
                                                                                               'aptitudeMeaning', eignung_bedeutung,
                                                                                               'heightDispersion', hoehenverbreitung)) AS
           values
-          FROM lu_gesellschaftsgruppen), 'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
-                                                                                             'a', a,
-                                                                                             'b', b,
-                                                                                             'c', c,
-                                                                                             'e', e,
-                                                                                             'f', f,
-                                                                                             'g', g,
-                                                                                             'h', h,
-                                                                                             'i', i,
-                                                                                             'j', j,
-                                                                                             'k', k,
-                                                                                             'l', l,
-                                                                                             'm', m,
-                                                                                             'n', n,
-                                                                                             'o', o,
-                                                                                             'p', p,
-                                                                                             'note', bemerkung,
-                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
+          FROM lu_gesellschaftsgruppen),
+      'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                          'a', a,
+                                                          'b', b,
+                                                          'c', c,
+                                                          'e', e,
+                                                          'f', f,
+                                                          'g', g,
+                                                          'h', h,
+                                                          'i', i,
+                                                          'j', j,
+                                                          'k', k,
+                                                          'l', l,
+                                                          'm', m,
+                                                          'n', n,
+                                                          'o', o,
+                                                          'p', p,
+                                                          'note', bemerkung,
+                                                          'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
           values
           FROM lu_artengruppen))),
       'ch', (WITH additional AS
