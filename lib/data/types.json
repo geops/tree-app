@@ -820,8 +820,8 @@
     "associationGroup": [
       {
         "de": "Wüchsige Buchenwälder der submontanen Stufe",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "9455",
+        "areaBs": "326",
         "category": "A",
         "locations": [
           "1",
@@ -840,14 +840,14 @@
         ],
         "useAndCare": "Die wüchsigen und ausgeglichenen Standorte sind gut geeignet für die Holzproduktion. Der Spielraum der Waldpflege ist gross, sowohl in der Baumartenwahl, als auch in der Art des Vorgehens. Praktisch alle Laubhölzer, sowie Beimischungen von Nadelhölzern sind auf diesen Standorten vielversprechend. Der Pflegeaufwand für Lichtbaumarten ist gross.",
         "description": "Alle Lagen ausser extremen Kuppen und nassen Mulden. Frische bis feuchte, mässig suare bis kalkhaltige Böden (Braunerden, Rendzinen).",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "47.3",
         "forestAppearance": "Die Buche ist die dominante Baumart, eingestreut sind neben Esche und Bergahorn die wärmeliebenden Laubholzarten Eiche, Kirschbaum und Feldahorn.",
         "heightDispersion": "submontane Stufe"
       },
       {
         "de": "Buchenwälder auf trockenen und wechseltrockenen Kalkböden",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "5037",
+        "areaBs": "15",
         "category": "B",
         "locations": [
           "10a",
@@ -862,14 +862,14 @@
         ],
         "useAndCare": "Die Baumartenwahl ist auf trockenheitsertragende Baumarten beschränkt. Die Möglichkeit, seltene Holzarten wie Mehl- oder Elsbeere zu fördern, sollte genutzt werden. Die extremsten Waldgesellschaften wie der Blaugras-Buchenwald Nr. 16 eignen sich kaum für die Holzproduktion.",
         "description": "Oft warme Hänge und Kuppenlagen. Im Allgemeinen flachgründige, trockene oder wechseltrockene Kalkböden (Rendzinen).",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "24.5",
         "forestAppearance": "Wenig wüchsige Buchenwälder mit Waldföhre, Mehl- und Elsbeere, Traubeneiche (die beiden letzteren fehlen in der montanen Stufe); Krautschicht mit Wärme-, Trockenheits- oder Wechseltrockenheitszeigern.",
         "heightDispersion": "submontane bis obermontane Stufe"
       },
       {
         "de": "Wüchsige Buchenwälder der untermontanen Stufe",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "3330",
+        "areaBs": "0",
         "category": "C",
         "locations": [
           "8a",
@@ -883,67 +883,67 @@
         ],
         "useAndCare": "Hohe Produktivität. Die Baumerten des Naturwaldes und beigemischte Fichten kommen als Wertholzträger in Frage. Optimalstandorte der Buche.",
         "description": "Hanglagen, seltener flache Kuppen. Im Allgemeinen basen- bis kalkreiche, frische bis feuchte Böden (Braunerden und Rendzinen).",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "16.1",
         "forestAppearance": "Wüchsiger Hallen-Buchenwald mit vereinzelten Eschen, Bergahornen und Tannen. Die Zahl der Baumerten ist des kühleren Klimas wegen kleiner als in der submontanen Stufe.",
         "heightDispersion": "untermontane, sowie kühle Nordlagen der submontanen Stufe"
       },
       {
         "de": "Tannen-Buchenwälder",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "566",
+        "areaBs": "0",
         "category": "D",
         "locations": ["18", "19", "20"],
         "useAndCare": "Ziemlich hohe Produktivität. Die Baumerten des Naturwaldes und beigemischte Fichten kommen als Wertholzträger in Frage. Optimalstandorte der Tanne",
         "description": "Alle Lagen ausser trockenen Kuppen. Frische bis feuchte Böden (Braunerden und Rendzinen).",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "2.7",
         "forestAppearance": "Wüchsige Tannen-Buchenwälder mit Bergahorn und Esche.",
         "heightDispersion": "obermontane Stufe"
       },
       {
         "de": "Hangschutt-Wälder",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "1013",
+        "areaBs": "0",
         "category": "E",
         "locations": ["13a", "13e", "13eh", "13h", "22", "22C", "25*", "48"],
         "useAndCare": "Die Nutzungsmöglichkeiten beschränken sich auf die Entnahme von Einzelstämmen der natürlich vorkommenden Baumarten.",
         "description": "Steile Hänge. Gesteinsschuttböden mit mehr oder weniger grobem Kalksteinskelett. Oft unter Felswänden oder -bändern, von denen Geröll herunterkollert.",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "4.9",
         "forestAppearance": "Mässig bewegte Schutthänge sind von oft artenarme Buchenwäldern bestockt. Feuchte und grobskelettige Schuttböden in Schattenlagen sind der Standort von Ahornwäldern; trockene Schutthänge in sonnigen Lagen sind von Lindenwäldern bedeckt; auf Blockschuttflächen in kühlen hochmontanen Lagen wachsen moosreiche Fichtenwälder.",
         "heightDispersion": "submontane bis hochmontane Stufe"
       },
       {
         "de": "Eschen- und Erlenwälder",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "373",
+        "areaBs": "5",
         "category": "F",
         "locations": ["26", "26h", "27", "27h", "29", "30", "44"],
         "useAndCare": "Auf diesen produktiven Standorten werden der nassen Böden wegen nur die Baumarten des Naturwaldes empfohlen. Die Böden sind nicht befahrbar. In Gebieten, wo diese Gesellschaften selten sind, sollte der Erhaltung von möglichst natürlichen Beständen Priorität eingeräumt werden.",
         "description": "Tal- und Muldenlagen. Tiefgründige, feuchte bis nasse, nährstoffreiche Böden (Gleye und Pseudogleye).",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "1.8",
         "forestAppearance": "Wüchsige Eschenwälder mit Stieleiche (untere Lagen), Bergahorn oder Schwarzerle (diese dominiert im Buchenwald Nr. 44), sowie Tanne in der obermontanen Stufe.",
         "heightDispersion": "alle"
       },
       {
         "de": "Eichen- und Eichenmischwälder warmer. Trockener Lagen",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "327",
+        "areaBs": "97",
         "category": "G",
         "locations": ["35A", "38", "39"],
         "useAndCare": "Ausser in den Eichen-Hagenbuchenwäldern der Birstal-Terrassen und der Langen Erle (Wiesental) ist eine Holzproduktion auf diesen mageren Standorten kaum möglich.",
         "description": "Auf sommertrockenen Schotterböden. Eichenwälder an stark besonnten Lagen auf Felskuppen und an Steilhängen mit flachgründigen Böden.",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "2.1",
         "forestAppearance": "Eichen-Hagenbuchenwälder oder schlechtwüchsige bis buschförmige Flaumeichen- und Traubeneichen-Bestände mit vielfältiger Strauch- und Krautschicht, die zahlreiche wärme- und trockenheitszeigende Pflanzen enthalten.",
         "heightDispersion": "colline bis submontane Stufe"
       },
       {
         "de": "Föhrenwälder",
-        "areaBl": "#REF!",
-        "areaBs": "#REF!",
+        "areaBl": "112",
+        "areaBs": "0",
         "category": "H",
         "locations": ["61", "62", "65"],
         "useAndCare": "Eine wirtschaftliche Nutzung der wenig produktiven Föhrenwälder ist nicht sinnvoll.",
         "description": "Kuppen und Grate. Extrem trockene oder wechseltrockene Kalkfels- und Mergelböden.",
-        "areaBlBsPercent": "#NAME?",
+        "areaBlBsPercent": "0.5",
         "forestAppearance": "Wenig wüchsige , lichte Föhrenwälder und offene Föhrenhaine, wo die Mehlbeere, viele Straucharten und trockenheitszeigende Kräuter gedeihen können.",
         "heightDispersion": "submontane bis hochmontane Stufe"
       }
@@ -63353,46 +63353,7 @@
         "code": "100"
       }
     ],
-    "forestEcoregion": [
-      {
-        "de": "Nördliche Randalpen",
-        "fr": "Alpes externes du Nord",
-        "code": "1"
-      },
-      {
-        "de": "Nördliche Zwischenalpen mit Buche",
-        "fr": "Alpes intermédiaires du Nord avec hêtre",
-        "code": "2a"
-      },
-      {
-        "de": "Nördliche Zwischenalpen ohne Buche",
-        "fr": "Alpes intermédiaires du Nord sans hêtre",
-        "code": "2b"
-      },
-      {
-        "de": "Kontinentale Hochalpen",
-        "fr": "Hautes Alpes continentales",
-        "code": "3"
-      },
-      {
-        "de": "Südliche Zwischenalpen",
-        "fr": "Alpes intermédiaires du Sud",
-        "code": "4"
-      },
-      {
-        "de": "Südliche Randalpen mit Fichte",
-        "fr": "Alpes externes du Sud avec épicéa",
-        "code": "5a"
-      },
-      {
-        "de": "Südliche Randalpen ohne Fichte",
-        "fr": "Alpes externes du Sud sans épicéa",
-        "code": "5b"
-      },
-      { "de": "Jura", "fr": "Jura", "code": "J" },
-      { "de": "Mittelland", "fr": "Plateau", "code": "M" },
-      { "de": "Mendrisiotto", "fr": "Mendrisiotto", "code": "Me" }
-    ]
+    "forestEcoregion": null
   },
   "lu": {
     "forestType": [
