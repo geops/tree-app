@@ -91,10 +91,12 @@ function ProjectionForm() {
 
   const cantonalForestTypes = useMemo(() => {
     try {
-      const mapping = info('transitionMapping', undefined, activeProfile);
-      return mapping[
-        `${location.forestType}(${location.transitionForestType})`
-      ];
+      const mapped = info(
+        'transitionMapping',
+        `${location.forestType}(${location.transitionForestType})`,
+        activeProfile,
+      );
+      return mapped?.cantonalForestTypes;
     } catch {
       return undefined;
     }
