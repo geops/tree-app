@@ -92,15 +92,13 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>
-            {t('bl.forestType.vegetationIndicator.label')}
-          </Table.HeaderCell>
+          <Table.HeaderCell>Zeigergruppen</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <DataTable
               data={data.vegetationIndicator}
               getLabel={(i) =>
                 `${vegetationMapping[i]?.toUpperCase()}: ${t(
-                  `bl.forestType.vegetationIndicator.${vegetationMapping[i]}`,
+                  `bl.forestType.vegetationIndicators.${vegetationMapping[i]}`,
                 )}`
               }
             />

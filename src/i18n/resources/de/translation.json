@@ -194,6 +194,7 @@
     "label": "Standortsregion"
   },
   "forestType": {
+    "vegetationIndicator": "Zeigergruppen",
     "aspect": {
       "001-025": "Nord - Nordnordost",
       "026-050": "Nordnordost - Nordost",
@@ -478,8 +479,7 @@
       "tillering": "Bestockung",
       "tilleringFirwood": "Tannenanteil",
       "tilleringHardwood": "Laubholzanteil",
-      "vegetationIndicator": {
-        "label": "Zeigergruppen",
+      "vegetationIndicators": {
         "a": "Starke Säurezeiger, feucht-nass",
         "b": "Starke Säurezeiger, frisch / trocken",
         "c": "Schwache Säurezeiger",
@@ -501,8 +501,7 @@
   },
   "bl": {
     "forestType": {
-      "vegetationIndicator": {
-        "label": "Zeigergruppen",
+      "vegetationIndicators": {
         "A": "Starke Säurezeiger, lichtbedürftig",
         "B1": "Säurezeiger",
         "B2": "Säurezeiger auf eher trockenen Böden",

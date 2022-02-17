@@ -139,14 +139,14 @@ function GeneralTab({ data }) {
         </Table.Row>
         <Table.Row>
           <Table.HeaderCell>
-            {t('lu.forestType.vegetationIndicator.label')}
+            {t('forestType.vegetationIndicator')}
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
             <DataTable
               data={data.vegetationIndicator}
               getLabel={(i) =>
                 `${vegetationMapping[i]?.toUpperCase()}: ${t(
-                  `lu.forestType.vegetationIndicator.${vegetationMapping[i]}`,
+                  `lu.forestType.vegetationIndicators.${vegetationMapping[i]}`,
                 )}`
               }
             />

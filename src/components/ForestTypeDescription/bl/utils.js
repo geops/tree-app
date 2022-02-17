@@ -1,3 +1,5 @@
+import translation from '../../../i18n/resources/de/translation.json';
+
 export const treeTypeMapping = [
   'Fi',
   'Ta',
@@ -27,60 +29,9 @@ export const treeTypeMapping = [
   'Wei',
 ];
 
-export const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'basen', 'feuchte'];
-export const vegetationMapping = [
-  'A',
-  'B1',
-  'B2',
-  'C1',
-  'C2',
-  'D1',
-  'D2',
-  'E1',
-  'E2',
-  'F',
-  'G',
-  'H',
-  'I',
-  'J',
-  'K',
-  'L',
-  'M',
-  'N1',
-  'N2',
-  'N3',
-  'O1',
-  'O2',
-  'O3',
-  'O4',
-  'O5',
-  'O6',
-  'O7',
-  'O8',
-  'P1',
-  'P2',
-  'P3',
-  'P4',
-  'Q1',
-  'Q2',
-  'Q3',
-  'R',
-  'S',
-  'T',
-  'U1',
-  'U2',
-  'U3',
-  'V1',
-  'V2',
-  'W',
-  'X1',
-  'X2',
-  'Y1',
-  'Y2',
-  'Z1',
-  'Z2',
-  'Z3',
-];
+export const vegetationMapping = Object.keys(
+  translation.bl.forestType.vegetationIndicators,
+);
 
 export const getTilleringTreeTypes = (data) =>
   data[0]
@@ -96,7 +47,6 @@ export const getTilleringTreeTypes = (data) =>
     );
 
 const utils = {
-  soilMapping,
   vegetationMapping,
   treeTypeMapping,
 };
