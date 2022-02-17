@@ -304,7 +304,8 @@
       "yes": "Oui",
       "no": "Non",
       "unknown": "pas évalué"
-    }
+    },
+    "cantonalForestTypes": "Types de station cantonal"
   },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
@@ -494,8 +495,7 @@
         "o": "Indicateur de base alternativement humide/séche",
         "p": "Indicateur de sécheresse"
       },
-      "terrain": "Terrain",
-      "cantonalForestType": "Type de station cantonal"
+      "terrain": "Terrain"
     }
   }
 }

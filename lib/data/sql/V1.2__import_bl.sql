@@ -7,3 +7,8 @@ CREATE TABLE bl_gesellschaftsgruppen (GESGR_CAT TEXT, GESGR_DEU TEXT, WALDBILD T
 COPY bl_gesellschaftsgruppen
 FROM '/data/profiles/bl/gesellschaftsgruppen.csv'
 DELIMITER ';' CSV HEADER;
+
+CREATE TABLE bl_uebergaenge (STO_Nr_nais TEXT, STO_Nr_profile TEXT);
+COPY bl_uebergaenge
+FROM '/data/profiles/bl/uebergaenge_mapping.csv'
+DELIMITER ';' CSV HEADER;

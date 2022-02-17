@@ -304,7 +304,8 @@
       "yes": "Ja",
       "no": "Nein",
       "unknown": "nicht angesprochen"
-    }
+    },
+    "cantonalForestTypes": "Kantonale Standortstypen"
   },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
@@ -495,8 +496,7 @@
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
       },
-      "terrain": "Relief",
-      "cantonalForestType": "Kantonaler Standortstyp"
+      "terrain": "Relief"
     }
   }
 }
