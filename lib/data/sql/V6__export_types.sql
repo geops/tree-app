@@ -1,3 +1,4 @@
+-- Export tables Luzern
 CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood text[]);
 CREATE TABLE lu_soil_export (code TEXT, data int[], characteristics text, note text);
 CREATE TABLE lu_vegetation_indicator_export (code TEXT, data int[], note text);
@@ -96,6 +97,17 @@ SELECT
   pioneer::text[] as data
 FROM lu_pioneer_data;
 
+
+-- Export tables Basel
+CREATE TABLE bl_vegetation_indicator_export (code TEXT, data int[], note text);
+INSERT INTO bl_vegetation_indicator_export 
+SELECT
+  sto_nr AS code,
+  ARRAY [A,B1,B2,C1,C2,D1,D2,D3,E1,E2,F,G,H,I,J,K,L,M,N1,N2,N3,O1,O2,O3,O4,O5,O6,O7,O8,P1,P2,P3,P4,Q1,Q2,Q3,R,S,T,U1,U2,U3,V1,V2,W,X1,X2,Y1,Y2,Z1,Z2,Z3]::int[] AS data
+FROM bl_artengruppen;
+
+
+-- Main export function 
 COPY
     (SELECT jsonb_build_object(
       'bl', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
@@ -110,6 +122,7 @@ COPY
                                                                                             'location', bl_standorttypen.standort,
                                                                                             'geology', geologie,
                                                                                             'vegetation', vegetation,
+                                                                                            'vegetationIndicator', array_to_json(vegetation_indicator.data),
                                                                                             'expoAndAspect', jsonb_build_array(NNO_12,
                                                                                                                             NNO_25,
                                                                                                                             NNO_37,
@@ -178,6 +191,7 @@ COPY
           values
           FROM bl_standorttypen
           LEFT JOIN bl_expo_hanglage USING(STO_Nr)
+          LEFT JOIN bl_vegetation_indicator_export vegetation_indicator ON bl_standorttypen.sto_nr = vegetation_indicator.code
           ), 'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
                                                                       'de', gesgr_deu,
                                                                       'forestAppearance', waldbild,
@@ -279,7 +293,9 @@ COPY
           LEFT JOIN lu_soil_export ON lu_standorttypen.sto_nr = lu_soil_export.code
           LEFT JOIN lu_vegetation_indicator_export vegetation_indicator ON lu_standorttypen.sto_nr = vegetation_indicator.code
           LEFT JOIN lu_pioneer_export pioneer_tree_types ON lu_standorttypen.sto_nr = pioneer_tree_types.code
-      ), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
+      ), 
+      'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM lu_uebergaenge),
+      'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                               'de', gesgr_deu,
                                                                                               'la', gesgruppe_lat,
                                                                                               'description', beschreibung,
@@ -288,24 +304,25 @@ COPY
                                                                                               'aptitudeMeaning', eignung_bedeutung,
                                                                                               'heightDispersion', hoehenverbreitung)) AS
           values
-          FROM lu_gesellschaftsgruppen), 'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
-                                                                                             'a', a,
-                                                                                             'b', b,
-                                                                                             'c', c,
-                                                                                             'e', e,
-                                                                                             'f', f,
-                                                                                             'g', g,
-                                                                                             'h', h,
-                                                                                             'i', i,
-                                                                                             'j', j,
-                                                                                             'k', k,
-                                                                                             'l', l,
-                                                                                             'm', m,
-                                                                                             'n', n,
-                                                                                             'o', o,
-                                                                                             'p', p,
-                                                                                             'note', bemerkung,
-                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
+          FROM lu_gesellschaftsgruppen),
+      'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                          'a', a,
+                                                          'b', b,
+                                                          'c', c,
+                                                          'e', e,
+                                                          'f', f,
+                                                          'g', g,
+                                                          'h', h,
+                                                          'i', i,
+                                                          'j', j,
+                                                          'k', k,
+                                                          'l', l,
+                                                          'm', m,
+                                                          'n', n,
+                                                          'o', o,
+                                                          'p', p,
+                                                          'note', bemerkung,
+                                                          'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
           values
           FROM lu_artengruppen))),
       'ch', (WITH additional AS

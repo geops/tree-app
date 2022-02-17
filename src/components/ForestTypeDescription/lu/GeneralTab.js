@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
-import DataTable from './DataTable';
+import DataTable from '../DataTable';
 import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';

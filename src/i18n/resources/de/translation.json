@@ -304,7 +304,8 @@
       "yes": "Ja",
       "no": "Nein",
       "unknown": "nicht angesprochen"
-    }
+    },
+    "cantonalForestTypes": "Kantonale Standortstypen"
   },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
@@ -495,8 +496,65 @@
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
       },
-      "terrain": "Relief",
-      "cantonalForestType": "Kantonaler Standortstyp"
+      "terrain": "Relief"
+    }
+  },
+  "bl": {
+    "forestType": {
+      "vegetationIndicator": {
+        "label": "Zeigergruppen",
+        "A": "Starke Säurezeiger, lichtbedürftig",
+        "B1": "Säurezeiger",
+        "B2": "Säurezeiger auf eher trockenen Böden",
+        "C1": "Säurezeiger",
+        "C2": "Schwacher Säurezeiger auf wechselfeuchten Böden, lichtbedürftig",
+        "D1": "Schwache Säurezeiger",
+        "D2": "Schwacher Säurezeiger leichter Wechselfeuchtigkeit in eher flachen Lagen",
+        "E1": "Säurezeiger auf frischen Böden, auch Fichtenfolger",
+        "E2": "Säureertragende Arten",
+        "F": "Arten mit weiter Standortsamplitude",
+        "G": "Arten mit weiter Standortsamplitude",
+        "H": "Mullbodenzeiger",
+        "I": "Zeiger frischer Mullböden",
+        "J": "Basenzeiger (Kalk im Unterboden)",
+        "K": "Frische- und Basenzeiger",
+        "L": "Kalkzeiger",
+        "M": "Kalkzeiger",
+        "N1": "Zeiger mässiger Trockenheit/Wechseltrockenheit",
+        "N2": "Trockenheitszeiger, ausschliesslich auf Kalkböden",
+        "N3": "Trockenheitszeiger",
+        "O1": "Trockenheitszeiger, lichtbedürftig",
+        "O2": "Zeiger von Wechseltrockenheit",
+        "O3": "Zeiger starker Wechseltrockenheit",
+        "O4": "Wechselfeuchtigkeitszeiger in eher schattigen Lagen",
+        "O5": "Zeiger von Trockenheit/Wechseltrockenheit in eher montanen Lagen",
+        "O6": "Zeiger starker Trockenheit",
+        "O7": "Zeiger starker (Wechsel-)Trockenheit in Eichen- und Föhrenwälder",
+        "O8": "Zeiger starker (Wechsel-)Trockenheit in Föhrenwälder",
+        "P1": "Frische- und Basenzeiger",
+        "P2": "Frühlingspflanzen auf frischen, basenreichen Böden",
+        "P3": "Frühlingspflanzen auf frischen Böden",
+        "P4": "Frühlingspflanzen auf frischen Böden mit Schwarzwaldschotter",
+        "Q1": "Zeiger frischer, lehmiger kalkreicher Böden",
+        "Q2": "Mässige Feuchtigkeitszeiger",
+        "Q3": "Feuctigkeitszeiger",
+        "R": "Nässezeiger",
+        "S": "Zeiger starker Nässe",
+        "T": "Zeiger starker Quellnässe auf kalkreichen Böden",
+        "U1": "Zeiger ständiger starker, zum Teil wechselder Nässe",
+        "U2": "Zeiger ständiger starker Nässe",
+        "U3": "Nässezeiger in der obermontanen Stufe",
+        "V1": "Zeiger von Hangschutt (schattige Laubwälder)",
+        "V2": "Zeiger von Hangschutt (auch wärmere Lagen und Blockschutt-Fichtenwald)",
+        "W": "Zeiger warmer Lagen",
+        "X1": "Montanzeiger auf eher lehmigen, oberflächlich oft etwas sauren Böden",
+        "X2": "Montanzeiger auf lehmigen, basenreichen Böden",
+        "Y1": "Montanzeiger auf basenreichen Böden",
+        "Y2": "Montanzeiger auf neutralen bis basenreichen Böden",
+        "Z1": "Montanzeiger auf Kalkböden",
+        "Z2": "Zeiger der obermontanen Stufe auf frischen bis feuchten Böden",
+        "Z3": "Zeiger der obermontanen Stufe auf feuchten Böden"
+      }
     }
   }
 }

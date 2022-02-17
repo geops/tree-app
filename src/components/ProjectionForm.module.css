@@ -16,6 +16,10 @@
   font-weight: bold;
 }
 
+.cantonalForestType {
+  padding: 5px 0;
+}
+
 .cantonalForestTypeLabel {
   margin: 0 0 0.28571429rem 0 !important;
   font-weight: 700;

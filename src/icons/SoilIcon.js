@@ -9,7 +9,7 @@ const SoilIcon = ({ value, size }) => (
       width={size}
       viewBox={`0 0 ${size} ${size}`}
     >
-      {value === 1 && (
+      {value === 1 && ( // Plus
         <>
           <line
             y1={0}
@@ -29,7 +29,7 @@ const SoilIcon = ({ value, size }) => (
           />
         </>
       )}
-      {value === 2 && (
+      {value === 2 && ( // Empty rectangle
         <rect
           height={size}
           width={size}
@@ -38,8 +38,20 @@ const SoilIcon = ({ value, size }) => (
           fill="none"
         />
       )}
-      {value === 3 && (
+      {value === 3 && ( // Filled rectangle
         <rect height={size} width={size} stroke="black" strokeWidth={2} />
+      )}
+      {value === 4 && ( // Minus
+        <>
+          <line
+            y1={size / 2}
+            y2={size / 2}
+            x1={0}
+            x2={size}
+            stroke="black"
+            strokeWidth={2}
+          />
+        </>
       )}
     </svg>
   </div>
