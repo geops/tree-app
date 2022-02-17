@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSelector, useDispatch } from 'react-redux';
 import { Table } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 import { parseString } from '../../../utils/comparisonUtils';
 import ForestTypeLinksList from '../ForestTypeLinksList';
+import DataTable from '../DataTable';
 import { setForestTypeDescription } from '../../../store/actions';
+import { vegetationMapping } from './utils';
 
 function GeneralTab({ data }) {
+  const { t } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
   const dispatch = useDispatch();
   const transitions = data.transitions?.reduce((finalTypes, code) => {
@@ -77,6 +81,21 @@ function GeneralTab({ data }) {
             <p>{parseString(data.vegetation)}</p>
           </Table.Cell>
         </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>
+            {t('bl.forestType.vegetationIndicator.label')}
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <DataTable
+              data={data.vegetationIndicator}
+              getLabel={(i) =>
+                `${vegetationMapping[i]?.toUpperCase()}: ${t(
+                  `bl.forestType.vegetationIndicator.${vegetationMapping[i]}`,
+                )}`
+              }
+            />
+          </Table.Cell>
+        </Table.Row>
       </Table.Body>
     </Table>
   );
@@ -99,6 +118,7 @@ GeneralTab.propTypes = {
     tillering: PropTypes.string,
     transitions: PropTypes.arrayOf(PropTypes.string),
     vegetation: PropTypes.string,
+    vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
   }).isRequired,
 };
 

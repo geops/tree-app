@@ -8,6 +8,11 @@ COPY bl_gesellschaftsgruppen
 FROM '/data/profiles/bl/gesellschaftsgruppen.csv'
 DELIMITER ';' CSV HEADER;
 
+CREATE TABLE bl_artengruppen (STO_Nr TEXT, A TEXT, B1 TEXT, B2 TEXT, C1 TEXT, C2 TEXT, D1 TEXT, D2 TEXT, D3 TEXT, E1 TEXT, E2 TEXT, F TEXT, G TEXT, H TEXT, I  TEXT, J TEXT, K TEXT, L TEXT, M TEXT, N1 TEXT, N2 TEXT, N3 TEXT, O1 TEXT, O2 TEXT, O3 TEXT, O4 TEXT, O5 TEXT, O6 TEXT, O7 TEXT, O8 TEXT, P1 TEXT, P2 TEXT, P3 TEXT, P4 TEXT, Q1 TEXT, Q2 TEXT, Q3 TEXT, R TEXT, S TEXT, T TEXT, U1 TEXT, U2 TEXT, U3 TEXT, V1 TEXT, V2 TEXT, W TEXT, X1 TEXT, X2 TEXT, Y1 TEXT, Y2 TEXT, Z1 TEXT, Z2 TEXT, Z3 TEXT);
+COPY bl_artengruppen
+FROM '/data/profiles/bl/artengruppen.csv'
+DELIMITER ';' CSV HEADER;
+
 CREATE TABLE bl_uebergaenge (STO_Nr_nais TEXT, STO_Nr_profile TEXT);
 COPY bl_uebergaenge
 FROM '/data/profiles/bl/uebergaenge_mapping.csv'

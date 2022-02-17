@@ -1,3 +1,4 @@
+-- Export tables Luzern
 CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood text[]);
 CREATE TABLE lu_soil_export (code TEXT, data int[], characteristics text, note text);
 CREATE TABLE lu_vegetation_indicator_export (code TEXT, data int[], note text);
@@ -96,6 +97,17 @@ SELECT
   pioneer::text[] as data
 FROM lu_pioneer_data;
 
+-- Export tables Basel
+CREATE TABLE bl_vegetation_indicator_export (code TEXT, data int[], note text);
+INSERT INTO bl_vegetation_indicator_export 
+SELECT
+  sto_nr AS code,
+  ARRAY [A,B1,B2,C1,C2,D1,D2,D3,E1,E2,F,G,H,I,J,K,L,M,N1,N2,N3,O1,O2,O3,O4,O5,O6,O7,O8,P1,P2,P3,P4,Q1,Q2,Q3,R,S,T,U1,U2,U3,V1,V2,W,X1,X2,Y1,Y2,Z1,Z2,Z3]::int[] AS data
+FROM bl_artengruppen;
+
+
+-- Main export function 
+
 COPY
     (SELECT jsonb_build_object(
       'bl', (SELECT jsonb_build_object(
@@ -111,9 +123,11 @@ COPY
                                                           'location', bl_standorttypen.standort,
                                                           'geology', geologie,
                                                           'vegetation', vegetation,
+                                                          'vegetationIndicator', array_to_json(vegetation_indicator.data),
                                                           'transitions', to_jsonb(string_to_array(regexp_replace(uebergaenge_zu, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
           values
           FROM bl_standorttypen
+          LEFT JOIN bl_vegetation_indicator_export vegetation_indicator ON bl_standorttypen.sto_nr = vegetation_indicator.code
         ),
         'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM bl_uebergaenge),
         'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,

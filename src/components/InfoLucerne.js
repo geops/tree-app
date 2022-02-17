@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DataTable from './ForestTypeDescription/lu/DataTable';
+import DataTable from './ForestTypeDescription/DataTable';
 
 const bodenLabels = [
   'Merkmal vereinzelt sichtbar',
