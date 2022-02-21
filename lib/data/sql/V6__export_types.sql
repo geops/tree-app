@@ -192,7 +192,9 @@ COPY
           FROM bl_standorttypen
           LEFT JOIN bl_expo_hanglage USING(STO_Nr)
           LEFT JOIN bl_vegetation_indicator_export vegetation_indicator ON bl_standorttypen.sto_nr = vegetation_indicator.code
-          ), 'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
+          ),
+          'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM bl_uebergaenge),
+          'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
                                                                       'de', gesgr_deu,
                                                                       'forestAppearance', waldbild,
                                                                       'description', standort,
