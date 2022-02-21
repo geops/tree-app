@@ -194,6 +194,7 @@
     "label": "Écorégion"
   },
   "forestType": {
+    "vegetationIndicator": "Groupes d'indicateurs",
     "aspect": {
       "001-025": "Nord à nord-nord-est",
       "026-050": "Nord-nord-est à nord-est",
@@ -478,7 +479,6 @@
       "tilleringFirwood": "Proportion de sapin",
       "tilleringHardwood": "Proportion de feuillus",
       "vegetationIndicator": {
-        "label": "Groupes d'indicateurs",
         "a": "Indicateurs de conditions très acides, milieux humides à mouillés",
         "b": "Indicateurs de conditions très acides, fraîches à sèches",
         "c": "Indicateurs de conditions faiblement acides",
