@@ -15,11 +15,7 @@ function NoData({ height, width, className }) {
         height={height}
         style={{ fill: 'white', opacity: 0.8 }}
       />
-      <text
-        x={width / 2}
-        y={height / 2}
-        className={className || styles.labelMiddleBold}
-      >
+      <text x="50%" y="50%" className={className || styles.labelMiddleBold}>
         {t('forestTypeDiagram.noData')}
       </text>
     </>
