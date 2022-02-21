@@ -500,8 +500,7 @@
   },
   "bl": {
     "forestType": {
-      "vegetationIndicator": {
-        "label": "Zeigergruppen",
+      "vegetationIndicators": {
         "A": "Starke Säurezeiger, lichtbedürftig",
         "B1": "Säurezeiger",
         "B2": "Säurezeiger auf eher trockenen Böden",
@@ -509,6 +508,7 @@
         "C2": "Schwacher Säurezeiger auf wechselfeuchten Böden, lichtbedürftig",
         "D1": "Schwache Säurezeiger",
         "D2": "Schwacher Säurezeiger leichter Wechselfeuchtigkeit in eher flachen Lagen",
+        "D3": "",
         "E1": "Säurezeiger auf frischen Böden, auch Fichtenfolger",
         "E2": "Säureertragende Arten",
         "F": "Arten mit weiter Standortsamplitude",
