@@ -4345,6 +4345,16 @@
         "forestAppearance": "Wenig wüchsige , lichte Föhrenwälder und offene Föhrenhaine, wo die Mehlbeere, viele Straucharten und trockenheitszeigende Kräuter gedeihen können.",
         "heightDispersion": "submontane bis hochmontane Stufe"
       }
+    ],
+    "transitionMapping": [
+      { "code": "7a(10a)", "cantonalForestTypes": ["7a(10a)"] },
+      { "code": "7S(10a)", "cantonalForestTypes": ["7S(10a)"] },
+      { "code": "7a(9a)", "cantonalForestTypes": ["7a(9a)"] },
+      { "code": "7S(9a)", "cantonalForestTypes": ["7S(9a)"] },
+      { "code": "8a(12a)", "cantonalForestTypes": ["8a(12a)"] },
+      { "code": "8a(12e)", "cantonalForestTypes": ["8a(12e)"] },
+      { "code": "9a(11)", "cantonalForestTypes": ["9a(11)"] },
+      { "code": "12a(9a)", "cantonalForestTypes": ["12a(9a)"] }
     ]
   },
   "ch": {
