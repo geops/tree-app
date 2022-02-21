@@ -10,6 +10,7 @@ import { forestTypeSortFct } from '../../utils/sortForestTypes';
 
 import ChForestTypeComparison from './ch';
 import LuForestTypeComparison from './lu';
+import BlForestTypeComparison from './bl';
 
 const getValidForestTypes = (codes, activeProfile) =>
   codes.reduce((forestTypes, code) => {
@@ -71,6 +72,7 @@ function ForestTypeComparison() {
       <br />
       {activeProfile === 'ch' && <ChForestTypeComparison />}
       {activeProfile === 'lu' && <LuForestTypeComparison data={data} />}
+      {activeProfile === 'bl' && <BlForestTypeComparison data={data} />}
     </>
   );
 }

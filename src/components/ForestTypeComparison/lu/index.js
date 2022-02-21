@@ -13,7 +13,7 @@ function ForestTypeComparisonIndex({ data }) {
       menu={{ attached: true, tabular: true }}
       panes={[
         {
-          menuItem: t('lu.forestType.general'),
+          menuItem: t('app.location'),
           render: () => <ForestTypeTab data={data} />,
         },
       ]}

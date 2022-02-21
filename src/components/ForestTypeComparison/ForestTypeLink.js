@@ -4,9 +4,9 @@ import { useDispatch } from 'react-redux';
 import {
   setForestTypeDescription,
   setForestTypeModal,
-} from '../../../store/actions';
+} from '../../store/actions';
 
-import descriptionStyles from '../../ForestTypeDescription/ForestTypeDescription.module.css';
+import descriptionStyles from '../ForestTypeDescription/ForestTypeDescription.module.css';
 
 const ForestTypeLink = ({ code }) => {
   const dispatch = useDispatch();

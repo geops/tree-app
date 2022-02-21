@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ForestTypeLink from './ForestTypeLink';
-import comparisonStyles from '../ForestTypeComparison.module.css';
-import { getStringWithUnit } from '../../../utils/comparisonUtils';
-import useIsMobile from '../../../hooks/useIsMobile';
+import comparisonStyles from './ForestTypeComparison.module.css';
+import { getStringWithUnit } from '../../utils/comparisonUtils';
+import useIsMobile from '../../hooks/useIsMobile';
 
 const ComparisonCell = ({
   data,

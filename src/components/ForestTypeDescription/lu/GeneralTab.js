@@ -86,13 +86,13 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.rejuvDev')}</Table.HeaderCell>
+          <Table.HeaderCell>{t('forestType.care')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseString(data.forestryRejuvDev)}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.care')}</Table.HeaderCell>
+          <Table.HeaderCell>{t('forestType.care')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseString(data.forestryCare)}</p>
           </Table.Cell>

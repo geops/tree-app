@@ -83,8 +83,8 @@ export const writeLocationTable = async (location, profile, t) => {
         : '-',
     ),
     getLocationTableRow(t('lu.forestType.aptitude'), location.aptitude),
-    getLocationTableRow(t('lu.forestType.rejuvDev'), location.forestryRejuvDev),
-    getLocationTableRow(t('lu.forestType.care'), location.forestryCare),
+    getLocationTableRow(t('forestType.care'), location.forestryRejuvDev),
+    getLocationTableRow(t('forestType.care'), location.forestryCare),
     getLocationTableRow(t('lu.forestType.description'), location.description),
     getLocationTableRow(
       t('lu.forestType.heightDispersion'),

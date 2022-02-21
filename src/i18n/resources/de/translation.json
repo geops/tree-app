@@ -194,6 +194,12 @@
     "label": "Standortsregion"
   },
   "forestType": {
+    "la": "Lateinische Bezeichnung",
+    "properties": "Eigenschaften",
+    "rejuvDev": "Verjüngung und Entwicklung",
+    "care": "Pflege",
+    "descriptionNaturalForest": "Beschrieb Naturwald",
+    "descriptionForestType": "Beschrieb Standort",
     "vegetationIndicator": "Zeigergruppen",
     "aspect": {
       "001-025": "Nord - Nordnordost",
@@ -441,7 +447,6 @@
       "aptitude": "Eignung",
       "aptitudeMeaning": "Eignung und Bedeutung",
       "associations": "Gesellschaftsgruppen",
-      "care": "Pflege",
       "compactRisk": {
         "0": "keine Angabe",
         "1": "geringes Verdichtungsrisiko (auch bei nassem Wetter nur unbedeutende Verdichtung der Böden)",
@@ -464,7 +469,6 @@
         "label": "Priorität",
         "k": "kantonale Priorität"
       },
-      "rejuvDev": "Verjüngung und Entwicklung",
       "subGroups": "Standortstypen",
       "soil": {
         "label": "Boden",

@@ -194,6 +194,12 @@
     "label": "Écorégion"
   },
   "forestType": {
+    "la": "Désignation latine",
+    "properties": "Propriétés",
+    "rejuvDev": "Rajeunissement et développement",
+    "care": "Maintenance",
+    "descriptionNaturalForest": "Description forêt naturelle",
+    "descriptionForestType": "Description emplacement",
     "aspect": {
       "001-025": "Nord à nord-nord-est",
       "026-050": "Nord-nord-est à nord-est",
@@ -439,7 +445,6 @@
       "aptitude": "Aptitude",
       "aptitudeMeaning": "",
       "associations": "Associations",
-      "care": "Maintenance",
       "compactRisk": {
         "0": "non précisé",
         "1": "faible risque de compactage (même par temps humide seulement compactage insignifiant du sol)",
