@@ -19,11 +19,6 @@ import {
   vegetationMapping,
 } from '../../ForestTypeDescription/bl/utils';
 import SoilIcon from '../../../../icons/SoilIcon';
-// import {
-//   treeTypeMapping,
-//   soilMapping,
-// } from '../../ForestTypeDescription/lu/utils';
-// import { getStringWithUnit } from '../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
 
 const getTreeTypes = (treeTypes, category) =>
