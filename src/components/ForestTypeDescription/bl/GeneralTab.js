@@ -101,6 +101,18 @@ function GeneralTab({ data }) {
                   `bl.forestType.vegetationIndicators.${vegetationMapping[i]}`,
                 )}`
               }
+              getValue={(value) => {
+                switch (value) {
+                  case 1:
+                    return 3;
+                  case 2:
+                    return 2;
+                  case 3:
+                    return 1;
+                  default:
+                    return 4;
+                }
+              }}
             />
           </Table.Cell>
         </Table.Row>
