@@ -1,29 +1,21 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Divider, Tab } from 'semantic-ui-react';
 
-import Button from '../../Button';
+import Button from '../../../Button';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
-import ExportButton from '../../ExportButton';
 import styles from '../ForestTypeDescription.module.css';
-import { exportLocation } from '../../../utils/docx/exportLocation';
-import { setForestTypeComparison } from '../../../store/actions';
+
+import { setForestTypeComparison } from '../../../../store/actions';
 
 function ForestTypeDescription({ data }) {
   const dispatch = useDispatch();
+  const { t } = useTranslation();
   const comparison = useSelector((state) => state.forestTypeComparison) || [];
-  const activeProfile = useSelector((state) => state.activeProfile);
-  const { t, i18n } = useTranslation();
-
   const [activeTab, setActiveTab] = useState(0);
-
-  const exportDocx = useCallback(
-    () => exportLocation(data, activeProfile, i18n.language, t),
-    [i18n.language, t, activeProfile, data],
-  );
 
   return (
     <>
@@ -38,7 +30,6 @@ function ForestTypeDescription({ data }) {
         >
           {t('forestTypeModal.compare')}
         </Button>
-        <ExportButton onClick={exportDocx} />
       </div>
       <Divider hidden />
       <Tab
@@ -47,20 +38,19 @@ function ForestTypeDescription({ data }) {
         menu={{ className: styles.pane, attached: true, tabular: true }}
         panes={[
           {
-            key: t('forestType.label'),
-            menuItem: t('forestType.label'),
+            key: 'Standortstyp',
+            menuItem: 'Standortstyp',
             render: () => <GeneralTab data={data} />,
           },
           {
             menuItem: {
-              key: t('lu.forestType.associations'),
-              content: t('lu.forestType.associations'),
-              'data-cypress': 'forestTypeDescription.lu.associationsMenuItem',
+              key: 'Gesellschaftsgruppen',
+              content: 'Gesellschaftsgruppen',
             },
             render: () => (
               <AssociationsTab
                 onForestTypeChange={() => setActiveTab(0)}
-                associationGroupCode={data.associationGroupCode}
+                forestTypeCode={data.code}
               />
             ),
           },

@@ -4,22 +4,21 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
-import { parseString } from '../../../utils/comparisonUtils';
-import ForestTypeLinksList from '../ForestTypeLinksList';
-import { setForestTypeDescription } from '../../../store/actions';
+import { setForestTypeDescription } from '../../../../store/actions';
+import ForestTypeLinksList from '../../ForestTypeLinksList';
+import { parseString } from '../../../../utils/comparisonUtils';
 
-function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
+function AssociationsTab({ associationGroupCode, onForestTypeChange }) {
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
   const associationGroup = info(
     'associationGroup',
-    undefined,
+    associationGroupCode,
     activeProfile,
-  ).find((group) => group.locations.includes(forestTypeCode));
-
-  const forestSubTypes = associationGroup.locations?.map((code) =>
-    info('forestType', code, activeProfile),
+  );
+  const forestSubTypes = info('forestType', null, activeProfile).filter(
+    (type) => type.associationGroupCode === associationGroupCode,
   );
 
   return (
@@ -27,7 +26,7 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
       <h3>
         {associationGroup ? (
           <>
-            {associationGroup.category} - {associationGroup[i18n.language]}{' '}
+            {associationGroup.code} - {associationGroup[i18n.language]}{' '}
             {associationGroup.la ? <i>{associationGroup.la}</i> : null}
           </>
         ) : (
@@ -37,49 +36,49 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
       <Table basic padded structured>
         <Table.Body>
           <Table.Row>
-            <Table.HeaderCell>Standortbeschreibung</Table.HeaderCell>
+            <Table.HeaderCell>
+              {t('lu.forestType.aptitudeMeaning')}
+            </Table.HeaderCell>
+            <Table.Cell colSpan="3">
+              <p>{parseString(associationGroup.aptitudeMeaning)}</p>
+            </Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.HeaderCell>
+              {t('lu.forestType.description')}
+            </Table.HeaderCell>
             <Table.Cell colSpan="3">
               <p>{parseString(associationGroup.description)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>Waldbild</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <p>{parseString(associationGroup.forestAppearance)}</p>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.HeaderCell>Höhenverbreitung</Table.HeaderCell>
+            <Table.HeaderCell>
+              {t('lu.forestType.heightDispersion')}
+            </Table.HeaderCell>
             <Table.Cell colSpan="3">
               <p>{parseString(associationGroup.heightDispersion)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>Nutzung und Pflege</Table.HeaderCell>
+            <Table.HeaderCell>{t('lu.forestType.location')}</Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <p>{parseString(associationGroup.useAndCare)}</p>
+              <p>{parseString(associationGroup.location)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>Fläche</Table.HeaderCell>
+            <Table.HeaderCell>
+              {t('forestTypeDiagram.soil.header')}
+            </Table.HeaderCell>
             <Table.Cell colSpan="3">
-              <div>
-                <strong>Basel-Land:</strong>
-                {` ${associationGroup.areaBl}ha`}
-              </div>
-              <div>
-                <strong>Basel-Stadt:</strong>
-                {` ${associationGroup.areaBs}ha`}
-              </div>
-              <div>
-                <strong>Gesamter Flächenanteil:</strong>
-                {` ${associationGroup.areaBlBsPercent}%`}
-              </div>
+              <p>{parseString(associationGroup.soil)}</p>
             </Table.Cell>
           </Table.Row>
           <Table.Row>
-            <Table.HeaderCell>Standortstypen</Table.HeaderCell>
-            <Table.Cell colSpan="3">
+            <Table.HeaderCell>{t('lu.forestType.subGroups')}</Table.HeaderCell>
+            <Table.Cell
+              colSpan="3"
+              data-cypress="forestTypeDescription.lu.associationsTabSubGroups"
+            >
               <ForestTypeLinksList
                 forestTypes={forestSubTypes}
                 onClick={(evt, code) => {
@@ -96,7 +95,7 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
 }
 
 AssociationsTab.propTypes = {
-  forestTypeCode: PropTypes.string.isRequired,
+  associationGroupCode: PropTypes.string.isRequired,
   onForestTypeChange: PropTypes.func,
 };
 

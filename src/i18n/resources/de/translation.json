@@ -201,6 +201,7 @@
     "descriptionNaturalForest": "Beschrieb Naturwald",
     "descriptionForestType": "Beschrieb Standort",
     "vegetationIndicator": "Zeigergruppen",
+    "geology": "Geologie",
     "aspect": {
       "001-025": "Nord - Nordnordost",
       "026-050": "Nordnordost - Nordost",

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import NoData from '../NoData';
 import styles from '../ForestTypeDescription.module.css';
-import { getImageUrl } from '../../../utils/reliefMappings';
+import { getImageUrl } from '../../../../utils/reliefMappings';
 
 function Relief({ code }) {
   const activeProfile = useSelector((state) => state.activeProfile);

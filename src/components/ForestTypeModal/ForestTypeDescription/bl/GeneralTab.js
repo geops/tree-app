@@ -6,10 +6,10 @@ import { Table } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
 import Site from './Site';
-import ForestTypeLinksList from '../ForestTypeLinksList';
-import { parseString } from '../../../utils/comparisonUtils';
+import ForestTypeLinksList from '../../ForestTypeLinksList';
+import { parseString } from '../../../../utils/comparisonUtils';
 import DataTable from '../DataTable';
-import { setForestTypeDescription } from '../../../store/actions';
+import { setForestTypeDescription } from '../../../../store/actions';
 import { vegetationMapping } from './utils';
 
 function GeneralTab({ data }) {

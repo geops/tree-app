@@ -1,14 +1,14 @@
 import React from 'react';
 import { Paragraph, Table, ImageRun, TextRun } from 'docx';
-import TilleringSingle from '../../components/ForestTypeDescription/lu/TilleringSingle';
-import Tillering from '../../components/ForestTypeDescription/lu/Tillering';
-import Site from '../../components/ForestTypeDescription/lu/Site';
+import TilleringSingle from '../../components/ForestTypeModal/ForestTypeDescription/lu/TilleringSingle';
+import Tillering from '../../components/ForestTypeModal/ForestTypeDescription/lu/Tillering';
+import Site from '../../components/ForestTypeModal/ForestTypeDescription/lu/Site';
 import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from './exportUtils';
 import {
   vegetationMapping,
   soilMapping,
   getTilleringTreeTypes,
-} from '../../components/ForestTypeDescription/lu/utils';
+} from '../../components/ForestTypeModal/ForestTypeDescription/lu/utils';
 import { getImageUrl } from '../reliefMappings';
 import { writeDataTable } from './writeDataTable';
 

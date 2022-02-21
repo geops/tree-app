@@ -4,12 +4,12 @@ import { Modal, Ref } from 'semantic-ui-react';
 
 import ForestTypeComparison from './ForestTypeComparison';
 import ForestTypeDescription from './ForestTypeDescription';
-import ProfileSwitcher from './ProfileSwitcher';
+import ProfileSwitcher from '../ProfileSwitcher';
 import {
   setForestTypeModal,
   setForestTypeComparison,
   setForestTypeDescription,
-} from '../store/actions';
+} from '../../store/actions';
 
 const modalModes = ['c', 'd'];
 

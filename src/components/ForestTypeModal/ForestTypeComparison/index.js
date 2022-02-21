@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { Form, Message } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
-import Dropdown from '../Dropdown';
-import { setForestTypeComparison } from '../../store/actions';
-import { forestTypeSortFct } from '../../utils/sortForestTypes';
+import Dropdown from '../../Dropdown';
+import { setForestTypeComparison } from '../../../store/actions';
+import { forestTypeSortFct } from '../../../utils/sortForestTypes';
 
 import ChForestTypeComparison from './ch';
 import LuForestTypeComparison from './lu';

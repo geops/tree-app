@@ -6,26 +6,39 @@ import {
   setForestTypeModal,
 } from '../../store/actions';
 
-import descriptionStyles from '../ForestTypeDescription/ForestTypeDescription.module.css';
+import descriptionStyles from './ForestTypeDescription/ForestTypeDescription.module.css';
 
-const ForestTypeLink = ({ code }) => {
+const ForestTypeLink = ({ code, children, onClick }) => {
   const dispatch = useDispatch();
   return (
     <button
+      key={code}
       className={descriptionStyles.link}
       type="button"
-      onClick={() => {
+      onClick={(evt) => {
         dispatch(setForestTypeModal('d'));
         dispatch(setForestTypeDescription(code));
+        onClick(evt, code);
       }}
     >
-      {code}
+      {children || code}
     </button>
   );
 };
 
 ForestTypeLink.propTypes = {
   code: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.string,
+    PropTypes.number,
+  ]),
+  onClick: PropTypes.func,
+};
+
+ForestTypeLink.defaultProps = {
+  children: null,
+  onClick: () => {},
 };
 
 export default ForestTypeLink;

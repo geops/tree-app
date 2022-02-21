@@ -1,38 +1,40 @@
-import translation from '../../../i18n/resources/de/translation.json';
+import translation from '../../../../i18n/resources/de/translation.json';
 
 export const treeTypeMapping = [
-  'Fi',
-  'Ta',
-  'WFö',
-  'BFö',
-  'Ei',
-  'Lä',
-  'Dg',
   'Bu',
-  'Es',
+  'TEi',
+  'SEi',
   'BAh',
   'SAh',
-  'SEi',
-  'TEi',
+  'BUl',
+  'Es',
+  'SEr',
+  'TKi',
+  'FAh',
+  'HBu',
+  'Ki',
   'WLi',
   'SLi',
-  'Ki',
-  'BUl',
-  'FUl',
-  'SEr',
-  'GEr',
-  'AEr',
-  'HBi',
-  'TKi',
-  'VBe',
+  'EBe',
   'MBe',
-  'Wei',
+  'VBe',
+  'Nu',
+  'FUl',
+  'HBi',
+  'Ro',
+  'REi',
+  'As',
+  'Ta',
+  'Fi',
+  'Fö',
+  'Lä',
+  'SFö',
+  'Dou',
 ];
 
 export const vegetationMapping = Object.keys(
-  translation.lu.forestType.vegetationIndicators,
+  translation.bl.forestType.vegetationIndicators,
 );
-export const soilMapping = Object.keys(translation.lu.forestType.soil);
 
 export const getTilleringTreeTypes = (data) =>
   data[0]
@@ -49,7 +51,6 @@ export const getTilleringTreeTypes = (data) =>
 
 const utils = {
   vegetationMapping,
-  soilMapping,
   treeTypeMapping,
 };
 export default utils;

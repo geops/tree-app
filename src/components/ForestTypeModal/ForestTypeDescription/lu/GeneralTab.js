@@ -7,7 +7,7 @@ import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
 import Relief from './Relief';
-import { parseString } from '../../../utils/comparisonUtils';
+import { parseString } from '../../../../utils/comparisonUtils';
 import { soilMapping, vegetationMapping } from './utils';
 
 function GeneralTab({ data }) {

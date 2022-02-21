@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './ForestTypeDescription.module.css';
+
+import ForestTypeLink from './ForestTypeLink';
 
 function ForestTypeLinksList({ forestTypes, onClick }) {
   if (!forestTypes || !forestTypes.length) {
@@ -8,16 +9,11 @@ function ForestTypeLinksList({ forestTypes, onClick }) {
   }
 
   return forestTypes.map(({ code, de }) => (
-    <span key={code}>
-      <button
-        className={styles.link}
-        type="button"
-        onClick={(evt) => onClick(evt, code)}
-      >
+    <div key={code}>
+      <ForestTypeLink onClick={onClick} code={code}>
         {code} - {de}
-      </button>
-      <br />
-    </span>
+      </ForestTypeLink>
+    </div>
   ));
 }
 

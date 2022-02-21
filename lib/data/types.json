@@ -3100,7 +3100,7 @@
         "tillering": "80-100% Laubholzanteil. Vereinzelt Fö.",
         "properties": "Hauptbaumarten: Bu, SLi, BAh, MBe und Fö (diese Ausbildung trockener Schuttböden hat keine Bedeutung für die Holzproduktion).",
         "vegetation": "BS: Bu, SLi, BAh, BUl ; SS: kaum vorhanden ; KS: Alpendost-Arten, Blaugras, Gelber Eisenhut, Weisse Pestwurz, Bingelkraut",
-        "transitions": ["13a", "18a", "21"],
+        "transitions": ["13a"],
         "forestryCare": "Schuttstauende und steinschlagertragende Arten wie Li fördern.",
         "expoAndAspect": [
           0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1,
@@ -3842,7 +3842,7 @@
         "tillering": "60-100% Laubholzanteil. Möglichkeit vom Buchenwald bis zum Mischwald aus BAh, Fö und Lä. MBe berücksichtigen.",
         "properties": "Gesamtzuwachs und Höhenbonität mässig. Das montane Klima und die Bodentrockenheit bestimmen die Baumartenwahl: Bu, BAh, Fö, MBe; sowie Lä, SFö. Wegen der Steilheit oft nicht befahrbar.",
         "vegetation": "BS: Bu, Ta, BAh, BUl, Es, VBe,  (Fi) ; SS: Heckenkirschen-Arten, Schwarzer Holunder ; KS: Grauer Alpendost, Wald-Schwingel, Gemeiner Waldfarn, Wurmfarn-Arten, Goldnessel, Bingelkraut, Sauerklee; die Quirlblättrige Weisswurz ist im Kanton selten ",
-        "transitions": ["12a", "12e", "21"],
+        "transitions": ["12a", "12e"],
         "forestryCare": "Bu nicht in Einzelmischung, damit sie die Lichtbaumarten nicht bedrängt. Unterwuchs und Nebenbestand fördern die biologische Bodenaktivität und verbessern das Bestandesklima.",
         "expoAndAspect": [
           1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
@@ -5962,7 +5962,7 @@
         "tillering": "80-100% Laubholzanteil. Mischwald im Rahmen des natürlichen Baumartenangebots.",
         "properties": "Wüchsigkeit und Höhenbonität mittel. Steinschlagschäden. Baumartenwahl der Höhenlagen und des Schuttbodens wegen auf natürliche vorkommende Arten beschränkt: Bu, SLi, BAh, BUl, Ta. Befahren der Steilhänge meist unmöglich.",
         "vegetation": "BS: Bu, SLi, BAh, BUl ; SS: kaum vorhanden ; KS: Alpendost-Arten, Gelber Eisenhut, Weisse Pestwurz, Bingelkraut",
-        "transitions": ["13a", "18a", "20"],
+        "transitions": ["13a", "20"],
         "forestryCare": "Schuttstauende und steinschlagertragende Arten wie Li fördern.",
         "expoAndAspect": [
           0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,

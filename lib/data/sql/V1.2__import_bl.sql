@@ -24,7 +24,7 @@ FROM '/data/profiles/bl/uebergaenge_mapping.csv'
 DELIMITER ';' CSV HEADER;
 
 CREATE TABLE bl_baumartenwahl (STO_Nr TEXT, Laubholzanteil_prozent TEXT, Bu TEXT, TEi TEXT, SEi TEXT, BAh TEXT, SAh TEXT, BUl TEXT, Es TEXT, SEr TEXT, TKi TEXT, FAh TEXT, HBu TEXT, Ki TEXT, WLi TEXT, SLi TEXT, EBe TEXT, MBe TEXT, VBe TEXT, Nu TEXT, FUl TEXT, HBi TEXT, Ro TEXT, REi TEXT, As_ TEXT, Ta TEXT, Fi TEXT, Fö TEXT, Lä TEXT, SFö TEXT, Dou TEXT);
-ALTER TABLE bl_baumartenwahl RENAME COLUMN As_ TO "as"; -- We rename the column because "AS" is a reserved postgresql word
+ALTER TABLE bl_baumartenwahl RENAME COLUMN As_ TO "as"; -- We rename the column because "AS" is a reserved postgresql word and can't be used in CREATE TABLE
 COPY bl_baumartenwahl
 FROM '/data/profiles/bl/baumartenwahl.csv'
 DELIMITER ';' CSV HEADER;

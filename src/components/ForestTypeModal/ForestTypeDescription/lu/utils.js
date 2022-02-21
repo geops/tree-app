@@ -1,4 +1,4 @@
-import translation from '../../../i18n/resources/de/translation.json';
+import translation from '../../../../i18n/resources/de/translation.json';
 
 export const treeTypeMapping = [
   'Fi',
@@ -30,8 +30,9 @@ export const treeTypeMapping = [
 ];
 
 export const vegetationMapping = Object.keys(
-  translation.bl.forestType.vegetationIndicators,
+  translation.lu.forestType.vegetationIndicators,
 );
+export const soilMapping = Object.keys(translation.lu.forestType.soil);
 
 export const getTilleringTreeTypes = (data) =>
   data[0]
@@ -48,6 +49,7 @@ export const getTilleringTreeTypes = (data) =>
 
 const utils = {
   vegetationMapping,
+  soilMapping,
   treeTypeMapping,
 };
 export default utils;
