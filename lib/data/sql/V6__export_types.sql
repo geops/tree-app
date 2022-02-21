@@ -99,13 +99,20 @@ FROM lu_pioneer_data;
 
 
 -- Export tables Basel
-CREATE TABLE bl_vegetation_indicator_export (code TEXT, data int[], note text);
+CREATE TABLE bl_vegetation_indicator_export (code TEXT, data int[]);
 INSERT INTO bl_vegetation_indicator_export 
 SELECT
   sto_nr AS code,
   ARRAY [A,B1,B2,C1,C2,D1,D2,D3,E1,E2,F,G,H,I,J,K,L,M,N1,N2,N3,O1,O2,O3,O4,O5,O6,O7,O8,P1,P2,P3,P4,Q1,Q2,Q3,R,S,T,U1,U2,U3,V1,V2,W,X1,X2,Y1,Y2,Z1,Z2,Z3]::int[] AS data
 FROM bl_artengruppen;
 
+CREATE TABLE bl_treetype_export (code TEXT, hardwood TEXT, data text[]);
+INSERT INTO bl_treetype_export 
+SELECT
+  sto_nr AS code,
+  Laubholzanteil_prozent as hardwood,
+  ARRAY [Bu,TEi,SEi,BAh,SAh,BUl,Es,SEr,TKi,FAh,HBu,Ki,WLi,SLi,EBe,MBe,VBe,Nu,FUl,HBi,Ro,REi,"as",Ta,Fi,Fö,Lä,SFö,Dou]::text[] AS data
+FROM bl_baumartenwahl;
 
 -- Main export function 
 COPY
@@ -123,6 +130,8 @@ COPY
                                                                                             'geology', geologie,
                                                                                             'vegetation', vegetation,
                                                                                             'vegetationIndicator', array_to_json(vegetation_indicator.data),
+                                                                                            'tilleringHardwood', treetypes.hardwood,
+                                                                                            'tilleringTreeTypes', treetypes.data,
                                                                                             'expoAndAspect', jsonb_build_array(NNO_12,
                                                                                                                             NNO_25,
                                                                                                                             NNO_37,
@@ -192,6 +201,7 @@ COPY
           FROM bl_standorttypen
           LEFT JOIN bl_expo_hanglage USING(STO_Nr)
           LEFT JOIN bl_vegetation_indicator_export vegetation_indicator ON bl_standorttypen.sto_nr = vegetation_indicator.code
+          LEFT JOIN bl_treetype_export treetypes ON bl_standorttypen.sto_nr = treetypes.code
           ),
           'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM bl_uebergaenge),
           'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
