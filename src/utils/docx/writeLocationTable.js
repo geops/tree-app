@@ -126,7 +126,7 @@ export const writeLocationTable = async (location, profile, t) => {
       ],
     ),
     getLocationTableRow(t('forestTypeDiagram.vegetation'), location.vegetation),
-    getLocationTableRow(t('lu.forestType.vegetationIndicator.label'), [
+    getLocationTableRow(t('forestType.vegetationIndicator'), [
       writeDataTable(
         location.vegetationIndicator,
         vegetationMapping,

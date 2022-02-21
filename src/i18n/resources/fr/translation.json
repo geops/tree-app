@@ -194,6 +194,7 @@
     "label": "Écorégion"
   },
   "forestType": {
+    "vegetationIndicator": "Groupes d'indicateurs",
     "aspect": {
       "001-025": "Nord à nord-nord-est",
       "026-050": "Nord-nord-est à nord-est",
@@ -478,7 +479,6 @@
       "tilleringFirwood": "Proportion de sapin",
       "tilleringHardwood": "Proportion de feuillus",
       "vegetationIndicator": {
-        "label": "Groupes d'indicateurs",
         "a": "Indicateurs de conditions très acides, milieux humides à mouillés",
         "b": "Indicateurs de conditions très acides, fraîches à sèches",
         "c": "Indicateurs de conditions faiblement acides",
@@ -500,8 +500,7 @@
   },
   "bl": {
     "forestType": {
-      "vegetationIndicator": {
-        "label": "Zeigergruppen",
+      "vegetationIndicators": {
         "A": "Starke Säurezeiger, lichtbedürftig",
         "B1": "Säurezeiger",
         "B2": "Säurezeiger auf eher trockenen Böden",
@@ -509,6 +508,7 @@
         "C2": "Schwacher Säurezeiger auf wechselfeuchten Böden, lichtbedürftig",
         "D1": "Schwache Säurezeiger",
         "D2": "Schwacher Säurezeiger leichter Wechselfeuchtigkeit in eher flachen Lagen",
+        "D3": "",
         "E1": "Säurezeiger auf frischen Böden, auch Fichtenfolger",
         "E2": "Säureertragende Arten",
         "F": "Arten mit weiter Standortsamplitude",
