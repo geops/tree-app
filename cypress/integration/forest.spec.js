@@ -27,7 +27,7 @@ describe('Forest type comparison and description', () => {
       '[data-cypress="forestTypeDescription.lu.associationsMenuItem"]',
     ).click();
     cy.get(
-      '[data-cypress="forestTypeDescription.lu.associationsTabSubGroups"] > :nth-child(2)',
+      '[data-cypress="forestTypeDescription.lu.associationsTabSubGroups"] > :nth-child(2) > button',
     ).click();
     cy.get('[data-cypress=forestTypeModal] .header').should(
       'include.text',
