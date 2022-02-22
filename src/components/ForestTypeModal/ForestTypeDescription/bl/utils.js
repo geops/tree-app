@@ -32,6 +32,15 @@ export const treeTypeMapping = [
   'Dou',
 ];
 
+export const getTreeTypes = (treeTypes, category) =>
+  treeTypeMapping.reduce(
+    (finalTreeTypes, treeType, index) =>
+      treeTypes[index] === category
+        ? `${finalTreeTypes}${`${finalTreeTypes ? ', ' : ''}${treeType}`}`
+        : finalTreeTypes,
+    '',
+  );
+
 export const vegetationMapping = Object.keys(
   translation.bl.forestType.vegetationIndicators,
 );

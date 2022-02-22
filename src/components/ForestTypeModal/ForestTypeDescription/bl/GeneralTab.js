@@ -7,10 +7,12 @@ import { info } from '@geops/tree-lib';
 
 import Site from './Site';
 import ForestTypeLinksList from '../../ForestTypeLinksList';
-import { parseString } from '../../../../utils/comparisonUtils';
 import DataTable from '../DataTable';
+import BorderlessRow from '../../BorderlessRow';
+import { parseString } from '../../../../utils/comparisonUtils';
 import { setForestTypeDescription } from '../../../../store/actions';
-import { vegetationMapping } from './utils';
+import { vegetationMapping, getTreeTypes } from './utils';
+import styles from '../../ForestTypeComparison/ForestTypeComparison.module.css';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
@@ -85,6 +87,32 @@ function GeneralTab({ data }) {
             />
           </Table.Cell>
         </Table.Row>
+        <BorderlessRow>
+          <Table.HeaderCell>Als Hauptbaumart geeignet</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            {getTreeTypes(data.tilleringTreeTypes, 'D') || '-'}
+          </Table.Cell>
+        </BorderlessRow>
+        <BorderlessRow>
+          <Table.HeaderCell>Als Nebenbaumart geeignet</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            {getTreeTypes(data.tilleringTreeTypes, 'N') || '-'}
+          </Table.Cell>
+        </BorderlessRow>
+        <BorderlessRow>
+          <Table.HeaderCell>Baumart mitpflegen</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            {getTreeTypes(data.tilleringTreeTypes, 'S') || '-'}
+          </Table.Cell>
+        </BorderlessRow>
+        <BorderlessRow borderBottom>
+          <Table.HeaderCell>
+            Gastbaumart, als Hauptbaumart geeignet
+          </Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            {getTreeTypes(data.tilleringTreeTypes, 'G') || '-'}
+          </Table.Cell>
+        </BorderlessRow>
         <Table.Row>
           <Table.HeaderCell>Vegetation</Table.HeaderCell>
           <Table.Cell colSpan="3">
@@ -139,6 +167,7 @@ GeneralTab.propTypes = {
     transitions: PropTypes.arrayOf(PropTypes.string),
     vegetation: PropTypes.string,
     vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
+    tilleringTreeTypes: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
 };
 

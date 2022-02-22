@@ -8,9 +8,12 @@ import Button from '../../../Button';
 import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
 import ExportButton from '../../../ExportButton';
-import styles from '../ForestTypeDescription.module.css';
+
 import { exportLocation } from '../../../../utils/docx/exportLocation';
+import { getComparisonForestTypes } from '../../../../utils/comparisonUtils';
 import { setForestTypeComparison } from '../../../../store/actions';
+
+import styles from '../ForestTypeDescription.module.css';
 
 function ForestTypeDescription({ data }) {
   const dispatch = useDispatch();
@@ -32,7 +35,9 @@ function ForestTypeDescription({ data }) {
           active
           onClick={() =>
             dispatch(
-              setForestTypeComparison([...new Set([...comparison, data.code])]),
+              setForestTypeComparison(
+                getComparisonForestTypes(comparison, data.code),
+              ),
             )
           }
         >

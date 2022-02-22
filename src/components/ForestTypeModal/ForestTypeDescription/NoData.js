@@ -23,8 +23,8 @@ function NoData({ height, width, className }) {
 }
 
 NoData.propTypes = {
-  height: PropTypes.number.isRequired,
-  width: PropTypes.number.isRequired,
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]).isRequired,
   className: PropTypes.string,
 };
 

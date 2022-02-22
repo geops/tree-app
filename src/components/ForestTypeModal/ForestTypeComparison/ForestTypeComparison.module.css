@@ -3,7 +3,8 @@
   font-weight: bold;
 }
 
-.treeTypeCell {
+.borderless,
+.borderless td {
   border-top: none !important;
   border-bottom: none !important;
   box-shadow: none !important;

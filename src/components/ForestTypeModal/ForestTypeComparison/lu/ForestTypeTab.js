@@ -6,6 +6,8 @@ import useIsMobile from '../../../../hooks/useIsMobile';
 
 import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from '../ComparisonCell';
+import HeaderCell from '../ComparisonHeaderCell';
+import BorderlessRow from '../../BorderlessRow';
 import ForestTypeLink from '../../ForestTypeLink';
 import SoilIcon from '../../../../icons/SoilIcon';
 import {
@@ -15,24 +17,11 @@ import {
 import { getStringWithUnit } from '../../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
 
-const HeaderCell = ({ ...props }) => {
-  const { children } = props;
-  return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <Table.HeaderCell {...props} verticalAlign="top">
-      {children}
-    </Table.HeaderCell>
-  );
-};
-HeaderCell.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-};
-
 function ForestTypeTab({ data }) {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
 
-  const treeTypeCells = useMemo(
+  const treeTypeRows = useMemo(
     () =>
       treeTypeMapping.reduce((treeTypes, currTreeType, idx) => {
         const cells = data.map((ft) => ({
@@ -54,7 +43,6 @@ function ForestTypeTab({ data }) {
                   <ComparisonCell
                     key={`${currTreeType} - ${cell.code}`}
                     code={cell.code}
-                    className={comparisonStyles.treeTypeCell}
                   >
                     <div>{`${getStringWithUnit(cell.natural, '%')}`}</div>
                     {getStringWithUnit(cell.commercial, '%') !== '-' && (
@@ -92,21 +80,13 @@ function ForestTypeTab({ data }) {
             />
           ))}
         </Table.Row>
-        {treeTypeCells.map((tt, idx, arr) => (
-          <tr
+        {treeTypeRows.map((tt, idx, arr) => (
+          <BorderlessRow
             key={tt.treeType}
-            className={
-              idx + 1 !== arr.length ? comparisonStyles.treeTypeCell : undefined
-            }
-            ref={(el) => {
-              // We need to use this hack for mobile view because react-semantic-ui sets a box shadow with !important
-              if (el) {
-                el.style.setProperty('box-shadow', 'none', 'important');
-              }
-            }}
+            borderBottom={idx + 1 === arr.length}
           >
             <>
-              <td className={comparisonStyles.treeTypeCell}>
+              <td>
                 <div
                   className={
                     !isMobile ? comparisonStyles.treeTypeHeader : undefined
@@ -118,7 +98,7 @@ function ForestTypeTab({ data }) {
               </td>
               {tt.cells}
             </>
-          </tr>
+          </BorderlessRow>
         ))}
         <Table.Row>
           <HeaderCell>{t('lu.forestType.tilleringFirwood')}</HeaderCell>
@@ -206,16 +186,14 @@ function ForestTypeTab({ data }) {
         </Table.Row>
         <Table.Row>
           <HeaderCell>{t('forestTypeDiagram.vegetation')}</HeaderCell>
-          <>
-            {data.map((ft, idx, arr) => (
-              <ComparisonCell
-                key={ft.code}
-                code={ft.code}
-                data={ft.vegetation ? ft.vegetation : null}
-                footer={isMobile && idx + 1 !== arr.length && <br />}
-              />
-            ))}
-          </>
+          {data.map((ft, idx, arr) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              data={ft.vegetation ? ft.vegetation : null}
+              footer={isMobile && idx + 1 !== arr.length && <br />}
+            />
+          ))}
         </Table.Row>
         <Table.Row>
           <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
@@ -225,6 +203,7 @@ function ForestTypeTab({ data }) {
                 const value = ft.soil[idx];
                 return (
                   <span
+                    key={`${ft.code}-${soilType}`}
                     style={{
                       display: 'flex',
                       justifyContent: 'space-between',
@@ -233,7 +212,6 @@ function ForestTypeTab({ data }) {
                       opacity: value ? 1 : 0.4,
                     }}
                   >
-                    {/* eslint-disable-next-line react/destructuring-assignment */}
                     {soilType.toUpperCase()}
                     {value && <SoilIcon value={value} size={10} />}
                   </span>

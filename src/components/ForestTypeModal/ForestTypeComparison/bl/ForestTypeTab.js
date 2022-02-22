@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 import useIsMobile from '../../../../hooks/useIsMobile';
 
 import ComparisonCell from '../ComparisonCell';
+import BorderlessRow from '../../BorderlessRow';
+import HeaderCell from '../ComparisonHeaderCell';
 import ForestTypeLink from '../../ForestTypeLink';
 import ForestTypeLinksList from '../../ForestTypeLinksList';
 import Site from '../../ForestTypeDescription/bl/Site';
@@ -15,33 +16,11 @@ import {
   setForestTypeModal,
 } from '../../../../store/actions';
 import {
-  treeTypeMapping,
   vegetationMapping,
+  getTreeTypes,
 } from '../../ForestTypeDescription/bl/utils';
 import SoilIcon from '../../../../icons/SoilIcon';
 import comparisonStyles from '../ForestTypeComparison.module.css';
-
-const getTreeTypes = (treeTypes, category) =>
-  treeTypeMapping.reduce(
-    (finalTreeTypes, treeType, index) =>
-      treeTypes[index] === category
-        ? `${finalTreeTypes}${`${finalTreeTypes ? ', ' : ''}${treeType}`}`
-        : finalTreeTypes,
-    '',
-  );
-
-const HeaderCell = ({ ...props }) => {
-  const { children } = props;
-  return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <Table.HeaderCell {...props} verticalAlign="top">
-      {children}
-    </Table.HeaderCell>
-  );
-};
-HeaderCell.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-};
 
 function ForestTypeTab({ data }) {
   const dispatch = useDispatch();
@@ -71,7 +50,7 @@ function ForestTypeTab({ data }) {
             />
           ))}
         </Table.Row>
-        <Table.Row className={comparisonStyles.row}>
+        <Table.Row>
           <HeaderCell>Eigenschaften</HeaderCell>
           {data.map((ft, idx, arr) => (
             <ComparisonCell
@@ -173,73 +152,63 @@ function ForestTypeTab({ data }) {
         </Table.Row>
         <Table.Row>
           <HeaderCell>Übergänge zu</HeaderCell>
-          <>
-            {data.map((ft) => {
-              const forestSubTypes = ft.transitions?.map((code) =>
-                info('forestType', code, 'bl'),
-              );
-              return (
-                <ComparisonCell key={ft.code} code={ft.code}>
-                  <ForestTypeLinksList
-                    forestTypes={forestSubTypes}
-                    onClick={(evt, code) => {
-                      dispatch(setForestTypeModal('d'));
-                      dispatch(setForestTypeDescription(code));
-                    }}
-                  />
-                </ComparisonCell>
-              );
-            })}
-          </>
+          {data.map((ft) => {
+            const forestSubTypes = ft.transitions?.map((code) =>
+              info('forestType', code, 'bl'),
+            );
+            return (
+              <ComparisonCell key={ft.code} code={ft.code}>
+                <ForestTypeLinksList
+                  forestTypes={forestSubTypes}
+                  onClick={(evt, code) => {
+                    dispatch(setForestTypeModal('d'));
+                    dispatch(setForestTypeDescription(code));
+                  }}
+                />
+              </ComparisonCell>
+            );
+          })}
         </Table.Row>
-        <Table.Row>
+        <BorderlessRow>
           <HeaderCell>Als Hauptbaumart geeignet</HeaderCell>
-          <>
-            {data.map((ft) => (
-              <ComparisonCell
-                key={ft.code}
-                code={ft.code}
-                data={getTreeTypes(ft.tilleringTreeTypes, 'D') || '-'}
-              />
-            ))}
-          </>
-        </Table.Row>
-        <Table.Row>
+          {data.map((ft) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              data={getTreeTypes(ft.tilleringTreeTypes, 'D') || '-'}
+            />
+          ))}
+        </BorderlessRow>
+        <BorderlessRow>
           <HeaderCell>Als Nebenbaumart geeignet</HeaderCell>
-          <>
-            {data.map((ft) => (
-              <ComparisonCell
-                key={ft.code}
-                code={ft.code}
-                data={getTreeTypes(ft.tilleringTreeTypes, 'N') || '-'}
-              />
-            ))}
-          </>
-        </Table.Row>
-        <Table.Row>
+          {data.map((ft) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              data={getTreeTypes(ft.tilleringTreeTypes, 'N') || '-'}
+            />
+          ))}
+        </BorderlessRow>
+        <BorderlessRow>
           <HeaderCell>Baumart mitpflegen</HeaderCell>
-          <>
-            {data.map((ft) => (
-              <ComparisonCell
-                key={ft.code}
-                code={ft.code}
-                data={getTreeTypes(ft.tilleringTreeTypes, 'S') || '-'}
-              />
-            ))}
-          </>
-        </Table.Row>
-        <Table.Row>
+          {data.map((ft) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              data={getTreeTypes(ft.tilleringTreeTypes, 'S') || '-'}
+            />
+          ))}
+        </BorderlessRow>
+        <BorderlessRow borderBottom>
           <HeaderCell>Gastbaumart, als Hauptbaumart geeignet</HeaderCell>
-          <>
-            {data.map((ft) => (
-              <ComparisonCell
-                key={ft.code}
-                code={ft.code}
-                data={getTreeTypes(ft.tilleringTreeTypes, 'G') || '-'}
-              />
-            ))}
-          </>
-        </Table.Row>
+          {data.map((ft) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              data={getTreeTypes(ft.tilleringTreeTypes, 'G') || '-'}
+            />
+          ))}
+        </BorderlessRow>
         <Table.Row>
           <HeaderCell>Hangneigung & Exposition</HeaderCell>
           {data.map((ft) => (
@@ -250,25 +219,24 @@ function ForestTypeTab({ data }) {
         </Table.Row>
         <Table.Row>
           <HeaderCell>Laubholzanteil</HeaderCell>
-          <>
-            {data.map((ft) => (
-              <ComparisonCell
-                key={ft.code}
-                code={ft.code}
-                data={ft.tilleringHardwood ? ft.tilleringHardwood : null}
-                unit="%"
-              />
-            ))}
-          </>
+          {data.map((ft) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              data={ft.tilleringHardwood ? ft.tilleringHardwood : null}
+              unit="%"
+            />
+          ))}
         </Table.Row>
         <Table.Row>
           <HeaderCell>Zeigergruppen</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
-              {vegetationMapping.map((soilType, idx) => {
+              {vegetationMapping.map((indicator, idx) => {
                 const value = ft.vegetationIndicator[idx];
                 return (
                   <span
+                    key={`${ft.code}-${indicator}`}
                     style={{
                       display: 'flex',
                       justifyContent: 'space-between',
@@ -277,7 +245,7 @@ function ForestTypeTab({ data }) {
                       opacity: value ? 1 : 0.4,
                     }}
                   >
-                    {soilType.toUpperCase()}
+                    {indicator.toUpperCase()}
                     {value && <SoilIcon value={value} size={10} />}
                   </span>
                 );
