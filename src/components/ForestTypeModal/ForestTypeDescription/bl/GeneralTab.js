@@ -12,7 +12,6 @@ import BorderlessRow from '../../BorderlessRow';
 import { parseString } from '../../../../utils/comparisonUtils';
 import { setForestTypeDescription } from '../../../../store/actions';
 import { vegetationMapping, getTreeTypes } from './utils';
-import styles from '../../ForestTypeComparison/ForestTypeComparison.module.css';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
