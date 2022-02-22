@@ -2358,7 +2358,7 @@
         "tillering": "80-100% Laubholzanteil. Spielraum vom BAh-Es-Bestand bis zum Laubholz-Ta-Mischwald. Nr. 12b besonders geeignet für Ta als Wertträger.",
         "properties": "Gesamtzuwachs und Höhenbonität gut. Baumartenwahl durch montanes Klima und Bodenfeuchtigkeit bestimmt: Es, BAh, Bu, BUl, Ta. Dieser Standort eignet sich (wie Nr. 11 in der submontanen Stufe) für die Produktion hochwertiger Edellaubhölzer. Die feuchten Böden nicht befahren.",
         "vegetation": "BS: Bu, Es, BAh, BUl, (Ta) ; SS: Schwarzer Holunder ; KS: Bärlauch, Wald-Ziest, Ruprechtskraut, Hexenkraut, Bingelkraut, Wald-Schwingel, Gemeiner Wurmfarn",
-        "transitions": ["11", "12a13a", "20"],
+        "transitions": ["11", "12a", "13a", "20"],
         "forestryCare": "BAh, Es, BUl in einzelmischung. Eschen frühzeitig und stark durchforsten.",
         "expoAndAspect": [
           1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 0,
