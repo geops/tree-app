@@ -27,9 +27,3 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.borderless {
-  border-top: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
