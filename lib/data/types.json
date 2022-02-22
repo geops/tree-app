@@ -3100,7 +3100,7 @@
         "tillering": "70-100% Laubholzanteil. Möglichkeiten vom reinen Laubmischwald bis zum Fö-Laubmischwald offen. Seltenere Laubhölzer berücksichtigen.",
         "properties": "Gesamtzuwachs und Hohenbonität im Allgemeinen mässig. Das Baumartenangebot ist trotz der Bodentrockenheit gross: Bu, TEi, Fö, BAh, MBe, EBe, Li, FAh, SFö. SAh und Ki können mitgepflegt werden, wenn sie spontan auftreten. Die meisten Laubbäume sind eher geringer Qualität. Die wirtschaftlich interssanteste Baumart ist die Föhre, doch darf ihr Anteil den Laubbäumen gegenüber nicht zu hoch sein, da ihre Nadeln schlecht abgebaut werden. Tendenz zu dichter Strauch- und Krautschicht.",
         "vegetation": "BS: Bu, TEi, Ki, MBe, BAh, Fö, Es ; SS: Wolliger Schneeball, Liguster, Feld-Rose, Gemeiner und Lorbeer-Seidelbast, Weissdorn, Schwarzdorn, Strauchwicke, Berberitze ; KS: Weisse Segge, Blaugras, Maiglöckchen, Straussblütige Margarite, Immenblatt, Gemeine Weisswurz, Graufilzige Schlüsselblume, Schwalbenwurz, Bingelkraut, Haselwurz, Frühlings-Platterbse, Vogelfuss-Segge",
-        "transitions": ["10a", "12*", "13e", "16", "38"],
+        "transitions": ["10a", "13e", "16", "38"],
         "forestryCare": "Bei der Jungwuchs- und Dickungspflege kann die Baumartenmischung reguliert werden; fördern von TEi, BAh, MBe, EBe u.a. Die Föhre kann übergehalten werden und so manchmal eine zweite Laubholzgeneration überdauern.",
         "expoAndAspect": [
           1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0,
