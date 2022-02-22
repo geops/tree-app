@@ -20,7 +20,6 @@ import {
   getTreeTypes,
 } from '../../ForestTypeDescription/bl/utils';
 import SoilIcon from '../../../../icons/SoilIcon';
-import comparisonStyles from '../ForestTypeComparison.module.css';
 
 function ForestTypeTab({ data }) {
   const dispatch = useDispatch();
