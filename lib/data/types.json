@@ -116,7 +116,7 @@
         "tillering": "60-100% Laubholzanteil. Fi nur vereinzelt. Möglichkeiten vom Mischwald mit starker Föhrenbeteiligung bis zum Laubmischwald oder Traubeneichenwald. Bodenpfleglicher Nebenbestand wichtig. Auf trockeneren Standorten sollte Schwergewicht auf TEi gelegt werden.",
         "properties": "Gesamtzuwachsund Oberhöhen mittel, der sauren Böden wegen. Baumartenwahl: TEi (besonders geeignet im unter Kantonteil), Bu, HBi, Ki, SAh, Fö, Lä; daneben Fi, Dou, Ro und falls kürzere Umtriebszeiten nötig sind, REi. Mit einem Nebenbestand aus HBu, WLi wird der Gefahr weiterer Bodenversauerung entgegengewirkt. Bu verhindert Versauerung wenig oder nicht.",
         "vegetation": "BS: Bu, HBu, TEi ; SS: Gewöhliche Heckenkirsche ; KS: Hainsimsen-Arten, Busch-Windröschen, Sauerklee, Ährige Rapunzel, Gemeiner Waldfarn, Wald-Veilchen, Goldnessel (spärlich)",
-        "transitions": ["1", "7a", "7e"],
+        "transitions": ["1", "7a"],
         "forestryCare": "Hauptwertträger in grossen Gruppen gemischt. Intensive Durchforstung von Fö-Beständen mittleren Alters, da sonst Produktivitätsrückgang und Vitalitätseinbussen. Starke Förderung der Lichtbaumarten nötig.",
         "expoAndAspect": [
           1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,

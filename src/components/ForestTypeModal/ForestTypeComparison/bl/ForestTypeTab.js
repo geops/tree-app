@@ -44,7 +44,6 @@ HeaderCell.propTypes = {
 };
 
 function ForestTypeTab({ data }) {
-  const { t } = useTranslation();
   const dispatch = useDispatch();
   const isMobile = useIsMobile();
 
@@ -83,39 +82,19 @@ function ForestTypeTab({ data }) {
             />
           ))}
         </Table.Row>
-
-        {/* {treeTypeCells.map((tt, idx, arr) => (
-          <tr
-            key={tt.treeType}
-            className={
-              idx + 1 !== arr.length ? comparisonStyles.treeTypeCell : undefined
-            }
-            ref={(el) => {
-              // We need to use this hack for mobile view because react-semantic-ui sets a box shadow with !important
-              if (el) {
-                el.style.setProperty('box-shadow', 'none', 'important');
-              }
-            }}
-          >
-            <>
-              <td className={comparisonStyles.treeTypeCell}>
-                <div
-                  className={
-                    !isMobile ? comparisonStyles.treeTypeHeader : undefined
-                  }
-                >
-                  <span>{idx === 0 && t('lu.forestType.tillering')}</span>
-                  <div>{tt.treeType}</div>
-                </div>
-              </td>
-              {tt.cells}
-            </>
-          </tr>
-        ))} */}
-
+        <Table.Row>
+          <HeaderCell>Bestockungsziele</HeaderCell>
+          {data.map((ft) => (
+            <ComparisonCell
+              key={ft.code}
+              code={ft.code}
+              data={ft.tillering ? ft.tillering : null}
+            />
+          ))}
+        </Table.Row>
         <Table.Row>
           <HeaderCell>Verjüngung und Entwicklung</HeaderCell>
-          {data.map((ft, idx, arr) => (
+          {data.map((ft) => (
             <ComparisonCell
               key={ft.code}
               code={ft.code}
@@ -149,7 +128,7 @@ function ForestTypeTab({ data }) {
         </Table.Row>
         <Table.Row>
           <HeaderCell>Höhenverbreitung</HeaderCell>
-          {data.map((ft, idx, arr) => (
+          {data.map((ft) => (
             <ComparisonCell
               key={ft.code}
               code={ft.code}
@@ -195,7 +174,7 @@ function ForestTypeTab({ data }) {
         <Table.Row>
           <HeaderCell>Übergänge zu</HeaderCell>
           <>
-            {data.map((ft, idx, arr) => {
+            {data.map((ft) => {
               const forestSubTypes = ft.transitions?.map((code) =>
                 info('forestType', code, 'bl'),
               );
@@ -214,22 +193,9 @@ function ForestTypeTab({ data }) {
           </>
         </Table.Row>
         <Table.Row>
-          <HeaderCell>Vegetation</HeaderCell>
-          <>
-            {data.map((ft, idx, arr) => (
-              <ComparisonCell
-                key={ft.code}
-                code={ft.code}
-                data={ft.vegetation ? ft.vegetation : null}
-                footer={isMobile && idx + 1 !== arr.length && <br />}
-              />
-            ))}
-          </>
-        </Table.Row>
-        <Table.Row>
           <HeaderCell>Als Hauptbaumart geeignet</HeaderCell>
           <>
-            {data.map((ft, idx, arr) => (
+            {data.map((ft) => (
               <ComparisonCell
                 key={ft.code}
                 code={ft.code}
@@ -241,7 +207,7 @@ function ForestTypeTab({ data }) {
         <Table.Row>
           <HeaderCell>Als Nebenbaumart geeignet</HeaderCell>
           <>
-            {data.map((ft, idx, arr) => (
+            {data.map((ft) => (
               <ComparisonCell
                 key={ft.code}
                 code={ft.code}
@@ -253,7 +219,7 @@ function ForestTypeTab({ data }) {
         <Table.Row>
           <HeaderCell>Baumart mitpflegen</HeaderCell>
           <>
-            {data.map((ft, idx, arr) => (
+            {data.map((ft) => (
               <ComparisonCell
                 key={ft.code}
                 code={ft.code}
@@ -265,7 +231,7 @@ function ForestTypeTab({ data }) {
         <Table.Row>
           <HeaderCell>Gastbaumart, als Hauptbaumart geeignet</HeaderCell>
           <>
-            {data.map((ft, idx, arr) => (
+            {data.map((ft) => (
               <ComparisonCell
                 key={ft.code}
                 code={ft.code}
@@ -283,7 +249,20 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
+          <HeaderCell>Laubholzanteil</HeaderCell>
+          <>
+            {data.map((ft) => (
+              <ComparisonCell
+                key={ft.code}
+                code={ft.code}
+                data={ft.tilleringHardwood ? ft.tilleringHardwood : null}
+                unit="%"
+              />
+            ))}
+          </>
+        </Table.Row>
+        <Table.Row>
+          <HeaderCell>Zeigergruppen</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
               {vegetationMapping.map((soilType, idx) => {
