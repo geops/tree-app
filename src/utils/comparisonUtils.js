@@ -11,3 +11,15 @@ export const getStringWithUnit = (data, unit) => {
   }
   return data ? parseString(`${data}${unit || ''}`) : '-';
 };
+
+export const getComparisonForestTypes = (
+  previousForestTypes = [],
+  newForestType,
+) => {
+  let comparison = [...new Set([...previousForestTypes, newForestType])];
+  if (comparison.length > 4) {
+    // If comparison exceeds 4 types, replace the last forest type with the new one
+    comparison = [...comparison.slice(0, 3), newForestType];
+  }
+  return comparison;
+};

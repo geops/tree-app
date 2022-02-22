@@ -1,0 +1,17 @@
+.comparisonIsSame {
+  color: var(--primary-color-500);
+  font-weight: bold;
+}
+
+.borderless,
+.borderless td {
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.treeTypeHeader {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  font-weight: bold;
+}
