@@ -11,7 +11,7 @@ import DataTable from '../DataTable';
 import BorderlessRow from '../../BorderlessRow';
 import { parseString } from '../../../../utils/comparisonUtils';
 import { setForestTypeDescription } from '../../../../store/actions';
-import { vegetationMapping, getTreeTypes } from './utils';
+import { vegetationMapping, getTreeTypes, soilIconTranslator } from './utils';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
@@ -128,18 +128,7 @@ function GeneralTab({ data }) {
                   `bl.forestType.vegetationIndicators.${vegetationMapping[i]}`,
                 )}`
               }
-              getValue={(value) => {
-                switch (value) {
-                  case 1:
-                    return 3;
-                  case 2:
-                    return 2;
-                  case 3:
-                    return 1;
-                  default:
-                    return 4;
-                }
-              }}
+              getValue={soilIconTranslator}
             />
           </Table.Cell>
         </Table.Row>

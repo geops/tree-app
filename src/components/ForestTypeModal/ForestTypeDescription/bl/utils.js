@@ -58,6 +58,21 @@ export const getTilleringTreeTypes = (data) =>
         (r.farmForest && r.farmForest.filter((t) => t).length),
     );
 
+export const soilIconTranslator = (key) => {
+  switch (key) {
+    case 1:
+      return 3;
+    case 2:
+      return 2;
+    case 3:
+      return 1;
+    case 4:
+      return 4;
+    default:
+      return null;
+  }
+};
+
 const utils = {
   vegetationMapping,
   treeTypeMapping,

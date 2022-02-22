@@ -18,6 +18,7 @@ import {
 import {
   vegetationMapping,
   getTreeTypes,
+  soilIconTranslator,
 } from '../../ForestTypeDescription/bl/utils';
 import SoilIcon from '../../../../icons/SoilIcon';
 
@@ -232,7 +233,7 @@ function ForestTypeTab({ data }) {
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
               {vegetationMapping.map((indicator, idx) => {
-                const value = ft.vegetationIndicator[idx];
+                const value = soilIconTranslator(ft.vegetationIndicator[idx]);
                 return (
                   <span
                     key={`${ft.code}-${indicator}`}
