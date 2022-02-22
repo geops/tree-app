@@ -7,16 +7,13 @@ import {
   ExternalHyperlink,
 } from 'docx';
 import { saveAs } from 'file-saver';
-import { info } from '@geops/tree-lib';
 import {
   writeLine,
   style,
   verticalSpace,
-  pageBreak,
   pageProperties,
-} from './exportUtils';
-import { writeLocationTable } from './writeLocationTable';
-import { writeAssociationsTable } from './writeAssociationsTable';
+} from '../exportUtils';
+import writeLocationTable from './writeLocationTable';
 
 const getTitle = (title, latin) =>
   new Paragraph({
@@ -30,16 +27,13 @@ const getTitle = (title, latin) =>
     heading: HeadingLevel.HEADING_3,
   });
 
-export const exportLocation = async (location, activeProfile, language, t) => {
+export const exportLocation = async (location, language, t) => {
   const mainTitle = new Paragraph({
     text: t('export.recommendationMainTitle'),
     heading: HeadingLevel.HEADING_1,
   });
 
-  const profile = writeLine(
-    t(`profiles.${activeProfile}`),
-    t('export.profile'),
-  );
+  const profile = writeLine(t('profiles.bl'), t('export.profile'));
 
   const date = writeLine(
     `${new Date().toLocaleDateString(`${language}-${language.toUpperCase()}`)}`,
@@ -65,24 +59,7 @@ export const exportLocation = async (location, activeProfile, language, t) => {
     `${location.code} - ${location[language]} `,
     location.la,
   );
-  const locationTable = await writeLocationTable(location, activeProfile, t);
-
-  const associationGroup = info(
-    'associationGroup',
-    location.associationGroupCode,
-    activeProfile,
-  );
-
-  const associationsTitle = getTitle(
-    `${associationGroup.code} - ${associationGroup[language]} `,
-    associationGroup.la,
-  );
-  const associationsTable = writeAssociationsTable(
-    associationGroup,
-    activeProfile,
-    language,
-    t,
-  );
+  const locationTable = await writeLocationTable(location, t);
 
   const doc = new Document({
     styles: style,
@@ -97,9 +74,6 @@ export const exportLocation = async (location, activeProfile, language, t) => {
           ...verticalSpace(1),
           locationTitle,
           locationTable,
-          pageBreak,
-          associationsTitle,
-          associationsTable,
         ],
       },
     ],

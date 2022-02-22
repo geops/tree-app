@@ -1,3 +1,4 @@
+import { info } from '@geops/tree-lib';
 import translation from '../../../../i18n/resources/de/translation.json';
 
 export const treeTypeMapping = [
@@ -32,7 +33,7 @@ export const treeTypeMapping = [
   'Dou',
 ];
 
-export const getTreeTypes = (treeTypes, category) =>
+export const getTilleringTreeTypes = (treeTypes, category) =>
   treeTypeMapping.reduce(
     (finalTreeTypes, treeType, index) =>
       treeTypes[index] === category
@@ -40,23 +41,35 @@ export const getTreeTypes = (treeTypes, category) =>
         : finalTreeTypes,
     '',
   );
+export const getTransitions = (forestTypes) =>
+  forestTypes?.reduce((finalTypes, code) => {
+    let ft = null;
+    try {
+      ft = info('forestType', code.replace(' ', ''), 'bl');
+    } catch {
+      ft = null;
+    }
+    return ft ? [...finalTypes, ft] : finalTypes;
+  }, []);
 
 export const vegetationMapping = Object.keys(
   translation.bl.forestType.vegetationIndicators,
 );
 
-export const getTilleringTreeTypes = (data) =>
-  data[0]
-    .map((naturalForest, index) => {
-      const farmForest = data[1] && data[1][index];
-      const type = treeTypeMapping[index];
-      return { naturalForest, farmForest, type };
-    })
-    .filter(
-      (r) =>
-        (r.naturalForest && r.naturalForest.filter((t) => t).length) ||
-        (r.farmForest && r.farmForest.filter((t) => t).length),
-    );
+export const soilIconTranslator = (key) => {
+  switch (key) {
+    case 1:
+      return 3;
+    case 2:
+      return 2;
+    case 3:
+      return 1;
+    case 4:
+      return 4;
+    default:
+      return null;
+  }
+};
 
 const utils = {
   vegetationMapping,

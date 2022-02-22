@@ -140,6 +140,7 @@ export const getLocationTableCell = (
   content,
   fontStyle = 'main-20',
   padding = cellPadding,
+  borders = defaultBorder,
 ) => {
   let children = [];
   if (typeof content === 'string') {
@@ -156,17 +157,22 @@ export const getLocationTableCell = (
   }
   return new TableCell({
     verticalAlign: VerticalAlign.CENTER,
-    borders: defaultBorder,
+    borders,
     margins: padding,
     children,
   });
 };
 
-export const getLocationTableRow = (headerText, valueContent) =>
+export const getLocationTableRow = (
+  headerText,
+  valueContent,
+  padding,
+  borders,
+) =>
   new TableRow({
     children: [
-      getLocationTableCell(headerText, 'main-20-bold'),
-      getLocationTableCell(valueContent),
+      getLocationTableCell(headerText, 'main-20-bold', padding, borders),
+      getLocationTableCell(valueContent, undefined, padding, borders),
     ],
   });
 

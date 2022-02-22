@@ -1,26 +1,26 @@
 import React from 'react';
 import { Paragraph, Table, ImageRun, TextRun } from 'docx';
-import TilleringSingle from '../../components/ForestTypeModal/ForestTypeDescription/lu/TilleringSingle';
-import Tillering from '../../components/ForestTypeModal/ForestTypeDescription/lu/Tillering';
-import Site from '../../components/ForestTypeModal/ForestTypeDescription/lu/Site';
-import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from './exportUtils';
+import TilleringSingle from '../../../components/ForestTypeModal/ForestTypeDescription/lu/TilleringSingle';
+import Tillering from '../../../components/ForestTypeModal/ForestTypeDescription/lu/Tillering';
+import Site from '../../../components/ForestTypeModal/ForestTypeDescription/lu/Site';
+import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from '../exportUtils';
 import {
   vegetationMapping,
   soilMapping,
   getTilleringTreeTypes,
-} from '../../components/ForestTypeModal/ForestTypeDescription/lu/utils';
-import { getImageUrl } from '../reliefMappings';
-import { writeDataTable } from './writeDataTable';
+} from '../../../components/ForestTypeModal/ForestTypeDescription/lu/utils';
+import { getImageUrl } from '../../reliefMappings';
+import { writeDataTable } from '../writeDataTable';
 
-export const writeLocationTable = async (location, profile, t) => {
+const writeLocationTable = async (location, t) => {
   const tilleringHardwoodPng = await jsxToBlob(
     <TilleringSingle data={location.tilleringHardwood} />,
   );
   const tilleringPng = await jsxToBlob(<Tillering data={location.tillering} />);
   const sitePng = await jsxToBlob(<Site data={location.expoAndAspect} />);
   const reliefPng =
-    getImageUrl(location.code, profile) &&
-    (await fetch(getImageUrl(location.code, profile)).then((response) =>
+    getImageUrl(location.code, 'lu') &&
+    (await fetch(getImageUrl(location.code, 'lu')).then((response) =>
       response.blob(),
     ));
 
@@ -130,12 +130,18 @@ export const writeLocationTable = async (location, profile, t) => {
       writeDataTable(
         location.vegetationIndicator,
         vegetationMapping,
-        'lu.forestType.vegetationIndicator',
+        'lu.forestType.vegetationIndicators',
         t,
       ),
     ]),
     getLocationTableRow(t('lu.forestType.soil.label'), [
-      writeDataTable(location.soil, soilMapping, 'lu.forestType.soil', t),
+      writeDataTable(
+        location.soil,
+        soilMapping,
+        'lu.forestType.soil',
+        undefined,
+        t,
+      ),
     ]),
   ];
 

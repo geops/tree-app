@@ -17,7 +17,8 @@ import {
 } from '../../../../store/actions';
 import {
   vegetationMapping,
-  getTreeTypes,
+  getTilleringTreeTypes,
+  soilIconTranslator,
 } from '../../ForestTypeDescription/bl/utils';
 import SoilIcon from '../../../../icons/SoilIcon';
 
@@ -174,7 +175,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={getTreeTypes(ft.tilleringTreeTypes, 'D') || '-'}
+              data={getTilleringTreeTypes(ft.tilleringTreeTypes, 'D') || '-'}
             />
           ))}
         </BorderlessRow>
@@ -184,7 +185,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={getTreeTypes(ft.tilleringTreeTypes, 'N') || '-'}
+              data={getTilleringTreeTypes(ft.tilleringTreeTypes, 'N') || '-'}
             />
           ))}
         </BorderlessRow>
@@ -194,7 +195,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={getTreeTypes(ft.tilleringTreeTypes, 'S') || '-'}
+              data={getTilleringTreeTypes(ft.tilleringTreeTypes, 'S') || '-'}
             />
           ))}
         </BorderlessRow>
@@ -204,7 +205,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={getTreeTypes(ft.tilleringTreeTypes, 'G') || '-'}
+              data={getTilleringTreeTypes(ft.tilleringTreeTypes, 'G') || '-'}
             />
           ))}
         </BorderlessRow>
@@ -232,7 +233,7 @@ function ForestTypeTab({ data }) {
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
               {vegetationMapping.map((indicator, idx) => {
-                const value = ft.vegetationIndicator[idx];
+                const value = soilIconTranslator(ft.vegetationIndicator[idx]);
                 return (
                   <span
                     key={`${ft.code}-${indicator}`}

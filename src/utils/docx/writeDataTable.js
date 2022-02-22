@@ -1,15 +1,38 @@
 import { Table, TableRow, Paragraph, AlignmentType } from 'docx';
 import { PAGE_WIDTH_DXA, getLocationTableCell } from './exportUtils';
 
-export const writeDataTable = (soils, mapping, translationPath, t) => {
+const getIcon = (key) => {
+  switch (key) {
+    case 1:
+      return '+';
+    case 2:
+      return '□';
+    case 3:
+      return '■';
+    default:
+      return '–';
+  }
+};
+
+export const writeDataTable = (
+  soils,
+  mapping,
+  translationPath,
+  translator,
+  t,
+) => {
   const rows = soils.reduce((all, indicator, index, arr) => {
     if (!indicator) {
       return all;
     }
-    let icon = '+';
-    if (indicator !== 1) {
-      icon = indicator === 2 ? '□' : '■';
+
+    let translated = indicator;
+    if (translator && typeof translator === 'function') {
+      // In case a profile uses different values
+      translated = translator(indicator);
     }
+
+    const icon = getIcon(translated);
     return [
       ...all,
       new TableRow({
