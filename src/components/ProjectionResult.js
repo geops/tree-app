@@ -24,7 +24,7 @@ function getPane(scenario, projection, language, t) {
   return (
     forestType && {
       menuItem: (
-        <Menu.Item className={styles.arrow}>
+        <Menu.Item className={styles.arrow} key={scenario}>
           <div className={styles.icons}>{scenarios.icons}</div>
           <div data-cypress="projectionResultMenuItem">
             {transitionForestType
@@ -37,7 +37,7 @@ function getPane(scenario, projection, language, t) {
           <div className={styles.scenario}>{scenarios.names.join(', ')}</div>
         </Menu.Item>
       ),
-      render: () => <ProjectionTab location={projection} />,
+      render: () => <ProjectionTab location={projection} key={scenario} />,
     }
   );
 }

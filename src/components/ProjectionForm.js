@@ -74,9 +74,9 @@ function ProjectionForm() {
     let value = '';
     if (first && options[field] && !location[name]) {
       [value] = options[field];
-    } else if (options[field].includes(location[name])) {
+    } else if (options[field]?.includes(location[name])) {
       value = location[name];
-    } else if (options[field].includes('unknown')) {
+    } else if (options[field]?.includes('unknown')) {
       value = 'unknown';
     }
     return value;
@@ -170,44 +170,45 @@ function ProjectionForm() {
           </Message>
         )
       )}
-      {location.transition && options.forestType && (
-        <Segment>
-          <Dropdown
-            className={styles.forestType}
-            data-cypress="projectionFormTransitionForestType"
-            clearable
-            label={t('forestType.transition')}
-            options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, dispatch, true),
-            )}
-            onChange={(e, { value }) =>
-              setLocation('transitionForestType', value)
-            }
-            onBlur={deactivateField}
-            onFocus={() => activateField('transitionForestType')}
-            placeholder={t('dropdown.placeholder')}
-            search
-            value={getValue('forestType', { transition: true })}
-          />
-          <Dropdown
-            clearable
-            data-cypress="projectionFormTransitionAltitudinalZone"
-            label={t('altitudinalZone.transition')}
-            options={options.altitudinalZone.map(
-              getDropdownOptions('altitudinalZone', i18n.language),
-            )}
-            onChange={(e, { value }) => {
-              setLocation('transitionAltitudinalZone', value);
-            }}
-            onBlur={deactivateField}
-            onFocus={() => activateField('transitionAltitudinalZone')}
-            value={
-              getValue('altitudinalZone', { transition: true }) ||
-              getValue('altitudinalZone')
-            }
-          />
-        </Segment>
-      )}
+      {location.transition &&
+        (options.transitionForestType || options.forestType) && (
+          <Segment>
+            <Dropdown
+              className={styles.forestType}
+              data-cypress="projectionFormTransitionForestType"
+              clearable
+              label={t('forestType.transition')}
+              options={(options.transitionForestType || options.forestType).map(
+                getDropdownOptions('forestType', i18n.language, dispatch, true),
+              )}
+              onChange={(e, { value }) =>
+                setLocation('transitionForestType', value)
+              }
+              onBlur={deactivateField}
+              onFocus={() => activateField('transitionForestType')}
+              placeholder={t('dropdown.placeholder')}
+              search
+              value={getValue('transitionForestType')}
+            />
+            <Dropdown
+              clearable
+              data-cypress="projectionFormTransitionAltitudinalZone"
+              label={t('altitudinalZone.transition')}
+              options={options.altitudinalZone.map(
+                getDropdownOptions('altitudinalZone', i18n.language),
+              )}
+              onChange={(e, { value }) => {
+                setLocation('transitionAltitudinalZone', value);
+              }}
+              onBlur={deactivateField}
+              onFocus={() => activateField('transitionAltitudinalZone')}
+              value={
+                getValue('altitudinalZone', { transition: true }) ||
+                getValue('altitudinalZone')
+              }
+            />
+          </Segment>
+        )}
       {options.slope && options.slope.length > 1 && (
         <ChoiceButton
           label={t('slope.label')}
