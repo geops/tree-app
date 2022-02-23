@@ -41,6 +41,7 @@ export const getTilleringTreeTypes = (treeTypes, category) =>
         : finalTreeTypes,
     '',
   );
+
 export const getTransitions = (forestTypes) =>
   forestTypes?.reduce((finalTypes, code) => {
     let ft = null;

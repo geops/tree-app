@@ -10,6 +10,7 @@ import AssociationsTab from './AssociationsTab';
 import ExportButton from '../../../ExportButton';
 
 import { exportLocation } from '../../../../utils/docx/bl/exportLocation';
+
 import { getComparisonForestTypes } from '../../../../utils/comparisonUtils';
 import { setForestTypeComparison } from '../../../../store/actions';
 

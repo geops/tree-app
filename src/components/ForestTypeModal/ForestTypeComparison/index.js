@@ -34,6 +34,7 @@ function ForestTypeComparison() {
   useEffect(() => {
     const validForestTypes = getValidForestTypes(codes, activeProfile);
     dispatch(setForestTypeComparison(validForestTypes.map((ft) => ft.code)));
+    window.scrollTo(0, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeProfile, dispatch]);
 
