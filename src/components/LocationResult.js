@@ -9,7 +9,6 @@ import { info } from '@geops/tree-lib';
 import Button from './Button';
 import Ecogram from './Ecogram';
 import HelpModal from './HelpModal';
-import ForestTypeModal from './ForestTypeModal';
 import { setFormLocation } from '../store/actions';
 import styles from './LocationResult.module.css';
 
@@ -71,7 +70,6 @@ function LocationResult() {
                   const onClick = () => selectForestType(ftCode);
                   return (
                     <List.Item key={ftCode} className={styles.listitem}>
-                      <ForestTypeModal data={ftInfo} />
                       <Button
                         active
                         compact

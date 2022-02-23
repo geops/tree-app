@@ -1,3 +1,5 @@
+import translation from '../i18n/resources/de/translation.json';
+
 export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
 export const SET_LATIN_ACTIVE = 'SET_LATIN_ACTIVE';
 export const SET_LOCATION_RESULT = 'SET_LOCATION_RESULT';
@@ -60,7 +62,12 @@ export function setWelcomeModal(open) {
 }
 
 export function setActiveProfile(activeProfile) {
-  return { type: SET_ACTIVE_PROFILE, activeProfile };
+  return {
+    type: SET_ACTIVE_PROFILE,
+    activeProfile: Object.keys(translation.profiles).includes(activeProfile)
+      ? activeProfile
+      : 'ch',
+  };
 }
 
 export function setForestTypeComparison(
