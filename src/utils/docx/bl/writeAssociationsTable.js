@@ -20,7 +20,7 @@ const writeAssociationsTable = (associationGroup) => {
         writeLine(associationGroup.areaBlBsPercent, 'Gesamter Flächenanteil'),
       ]),
       getLocationTableRow(
-        'Übergänge zu',
+        'Standortstypen',
         forestSubTypes?.map(
           (ft) =>
             new Paragraph({
