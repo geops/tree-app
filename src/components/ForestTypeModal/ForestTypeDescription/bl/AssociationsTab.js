@@ -4,7 +4,10 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
-import { parseString } from '../../../../utils/comparisonUtils';
+import {
+  parseString,
+  getValidForestTypes,
+} from '../../../../utils/comparisonUtils';
 import ForestTypeLinksList from '../../ForestTypeLinksList';
 import { setForestTypeDescription } from '../../../../store/actions';
 
@@ -17,10 +20,7 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
     undefined,
     activeProfile,
   ).find((group) => group.locations.includes(forestTypeCode));
-
-  const forestSubTypes = associationGroup.locations?.map((code) =>
-    info('forestType', code, activeProfile),
-  );
+  const forestSubTypes = getValidForestTypes(associationGroup.locations, 'bl');
 
   return (
     <>

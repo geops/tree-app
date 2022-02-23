@@ -1,11 +1,4 @@
-import {
-  Paragraph,
-  HeadingLevel,
-  Document,
-  Packer,
-  TextRun,
-  ExternalHyperlink,
-} from 'docx';
+import { Paragraph, HeadingLevel, Document, Packer } from 'docx';
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
 import {
@@ -14,21 +7,11 @@ import {
   verticalSpace,
   pageBreak,
   pageProperties,
+  getTitle,
+  getPermalink,
 } from '../exportUtils';
 import writeLocationTable from './writeLocationTable';
 import writeAssociationsTable from './writeAssociationsTable';
-
-const getTitle = (title, latin) =>
-  new Paragraph({
-    children: [
-      new TextRun(title),
-      new TextRun({
-        text: latin,
-        italics: true,
-      }),
-    ],
-    heading: HeadingLevel.HEADING_3,
-  });
 
 export const exportLocation = async (location, language, t) => {
   const mainTitle = new Paragraph({
@@ -37,26 +20,11 @@ export const exportLocation = async (location, language, t) => {
   });
 
   const profile = writeLine(t('profiles.lu'), t('export.profile'));
-
   const date = writeLine(
     `${new Date().toLocaleDateString(`${language}-${language.toUpperCase()}`)}`,
     t('export.date'),
   );
-
-  const permalink = new Paragraph({
-    style: 'main-20',
-    children: [
-      new ExternalHyperlink({
-        children: [
-          new TextRun({
-            text: t('export.link'),
-            style: 'Hyperlink',
-          }),
-        ],
-        link: window.location.href,
-      }),
-    ],
-  });
+  const permalink = getPermalink(t('export.link'));
 
   const locationTitle = getTitle(
     `${location.code} - ${location[language]} `,
@@ -69,7 +37,6 @@ export const exportLocation = async (location, language, t) => {
     location.associationGroupCode,
     'lu',
   );
-
   const associationsTitle = getTitle(
     `${associationGroup.code} - ${associationGroup[language]} `,
     associationGroup.la,

@@ -6,14 +6,14 @@ import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from '../exportUtils';
 import {
   vegetationMapping,
   getTilleringTreeTypes,
-  getTransitions,
   soilIconTranslator,
 } from '../../../components/ForestTypeModal/ForestTypeDescription/bl/utils';
+import { getValidForestTypes } from '../../comparisonUtils';
 import { writeDataTable } from '../writeDataTable';
 
 const writeLocationTable = async (data, t) => {
   const sitePng = await jsxToBlob(<Site data={data.expoAndAspect} />);
-  const transitions = getTransitions(data.transitions);
+  const transitions = getValidForestTypes(data.transitions, 'bl');
   const borderConfig = {
     color: 'e0e1e2',
     style: BorderStyle.SINGLE,

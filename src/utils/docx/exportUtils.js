@@ -7,6 +7,8 @@ import {
   VerticalAlign,
   BorderStyle,
   TableRow,
+  HeadingLevel,
+  ExternalHyperlink,
 } from 'docx';
 import { svgAsPngUri } from 'save-svg-as-png';
 import { renderToString } from 'react-dom/server';
@@ -107,6 +109,35 @@ export const jsxToBlob = (jsx) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
 // Docx table helpers
+export const getPermalink = (text) =>
+  new Paragraph({
+    style: 'main-20',
+    children: [
+      new ExternalHyperlink({
+        children: [
+          new TextRun({
+            text,
+            style: 'Hyperlink',
+          }),
+        ],
+        link: window.location.href,
+      }),
+    ],
+  });
+
+export const getTitle = (title, latin) =>
+  new Paragraph({
+    children: [
+      new TextRun(title),
+      latin &&
+        new TextRun({
+          text: latin,
+          italics: true,
+        }),
+    ],
+    heading: HeadingLevel.HEADING_3,
+  });
+
 export const getScenariosTableCell = (
   text,
   fontStyle = 'main-20',

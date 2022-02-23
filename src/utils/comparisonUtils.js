@@ -1,3 +1,4 @@
+import { info } from '@geops/tree-lib';
 import parse from 'html-react-parser';
 
 export const parseString = (str) =>
@@ -23,3 +24,19 @@ export const getComparisonForestTypes = (
   }
   return comparison;
 };
+
+export const getValidForestTypes = (codes = [], activeProfile = 'ch') =>
+  codes.reduce((forestTypes, code) => {
+    try {
+      const nextFt = info('forestType', code, activeProfile);
+      return [...forestTypes, nextFt];
+    } catch {
+      // eslint-disable-next-line no-console
+      console.error(
+        new Error(
+          `${code} is not a valid forest type in ${activeProfile} profile`,
+        ),
+      );
+      return forestTypes;
+    }
+  }, []);

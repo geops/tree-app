@@ -8,19 +8,21 @@ import Site from './Site';
 import ForestTypeLinksList from '../../ForestTypeLinksList';
 import DataTable from '../DataTable';
 import BorderlessRow from '../../BorderlessRow';
-import { parseString } from '../../../../utils/comparisonUtils';
+import {
+  parseString,
+  getValidForestTypes,
+} from '../../../../utils/comparisonUtils';
 import { setForestTypeDescription } from '../../../../store/actions';
 import {
   vegetationMapping,
   getTilleringTreeTypes,
-  getTransitions,
   soilIconTranslator,
 } from './utils';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const transitions = getTransitions(data.transitions);
+  const transitions = getValidForestTypes(data.transitions, 'bl');
   return (
     <Table basic padded structured>
       <Table.Body>

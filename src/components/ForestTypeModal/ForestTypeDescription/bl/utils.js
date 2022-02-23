@@ -1,4 +1,3 @@
-import { info } from '@geops/tree-lib';
 import translation from '../../../../i18n/resources/de/translation.json';
 
 export const treeTypeMapping = [
@@ -41,17 +40,6 @@ export const getTilleringTreeTypes = (treeTypes, category) =>
         : finalTreeTypes,
     '',
   );
-
-export const getTransitions = (forestTypes) =>
-  forestTypes?.reduce((finalTypes, code) => {
-    let ft = null;
-    try {
-      ft = info('forestType', code.replace(' ', ''), 'bl');
-    } catch {
-      ft = null;
-    }
-    return ft ? [...finalTypes, ft] : finalTypes;
-  }, []);
 
 export const vegetationMapping = Object.keys(
   translation.bl.forestType.vegetationIndicators,

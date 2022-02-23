@@ -1,31 +1,18 @@
-import {
-  Paragraph,
-  HeadingLevel,
-  Document,
-  Packer,
-  TextRun,
-  ExternalHyperlink,
-} from 'docx';
+import { Paragraph, HeadingLevel, Document, Packer } from 'docx';
 import { saveAs } from 'file-saver';
+import { info } from '@geops/tree-lib';
+
 import {
   writeLine,
   style,
   verticalSpace,
   pageProperties,
+  pageBreak,
+  getTitle,
+  getPermalink,
 } from '../exportUtils';
 import writeLocationTable from './writeLocationTable';
-
-const getTitle = (title, latin) =>
-  new Paragraph({
-    children: [
-      new TextRun(title),
-      new TextRun({
-        text: latin,
-        italics: true,
-      }),
-    ],
-    heading: HeadingLevel.HEADING_3,
-  });
+import writeAssociationsTable from './writeAssociationsTable';
 
 export const exportLocation = async (location, language, t) => {
   const mainTitle = new Paragraph({
@@ -33,33 +20,28 @@ export const exportLocation = async (location, language, t) => {
     heading: HeadingLevel.HEADING_1,
   });
 
-  const profile = writeLine(t('profiles.bl'), t('export.profile'));
-
+  const profile = writeLine(t('profiles.bl'), 'Profil');
   const date = writeLine(
     `${new Date().toLocaleDateString(`${language}-${language.toUpperCase()}`)}`,
-    t('export.date'),
+    'Datum',
   );
-
-  const permalink = new Paragraph({
-    style: 'main-20',
-    children: [
-      new ExternalHyperlink({
-        children: [
-          new TextRun({
-            text: t('export.link'),
-            style: 'Hyperlink',
-          }),
-        ],
-        link: window.location.href,
-      }),
-    ],
-  });
+  const permalink = getPermalink('Link');
 
   const locationTitle = getTitle(
     `${location.code} - ${location[language]} `,
     location.la,
   );
   const locationTable = await writeLocationTable(location, t);
+
+  const associationGroup = info('associationGroup', undefined, 'bl').find(
+    (assGroup) => assGroup.locations.includes(location.code),
+  );
+  const associationsTitle = getTitle(associationGroup.de);
+  const associationsTable = writeAssociationsTable(
+    associationGroup,
+    language,
+    t,
+  );
 
   const doc = new Document({
     styles: style,
@@ -74,13 +56,16 @@ export const exportLocation = async (location, language, t) => {
           ...verticalSpace(1),
           locationTitle,
           locationTable,
+          pageBreak,
+          associationsTitle,
+          associationsTable,
         ],
       },
     ],
   });
 
   return Packer.toBlob(doc).then((blob) => {
-    saveAs(blob, `Tree-App_${t('app.locationDescription')}.docx`);
+    saveAs(blob, 'Tree-App_Standortbeschreibung.docx');
   });
 };
 
