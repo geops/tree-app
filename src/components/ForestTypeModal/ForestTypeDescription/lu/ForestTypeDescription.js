@@ -9,7 +9,7 @@ import GeneralTab from './GeneralTab';
 import AssociationsTab from './AssociationsTab';
 import ExportButton from '../../../ExportButton';
 
-import { exportLocation } from '../../../../utils/docx/exportLocation';
+import { exportLocation } from '../../../../utils/docx/lu/exportLocation';
 import { getComparisonForestTypes } from '../../../../utils/comparisonUtils';
 import { setForestTypeComparison } from '../../../../store/actions';
 
@@ -18,14 +18,12 @@ import styles from '../ForestTypeDescription.module.css';
 function ForestTypeDescription({ data }) {
   const dispatch = useDispatch();
   const comparison = useSelector((state) => state.forestTypeComparison) || [];
-  const activeProfile = useSelector((state) => state.activeProfile);
   const { t, i18n } = useTranslation();
-
   const [activeTab, setActiveTab] = useState(0);
 
   const exportDocx = useCallback(
-    () => exportLocation(data, activeProfile, i18n.language, t),
-    [i18n.language, t, activeProfile, data],
+    () => exportLocation(data, i18n.language, t),
+    [i18n.language, t, data],
   );
 
   return (

@@ -7,20 +7,11 @@ import { info } from '@geops/tree-lib';
 import Dropdown from '../../Dropdown';
 import { setForestTypeComparison } from '../../../store/actions';
 import { forestTypeSortFct } from '../../../utils/sortForestTypes';
+import { getValidForestTypes } from '../../../utils/comparisonUtils';
 
 import ChForestTypeComparison from './ch';
 import LuForestTypeComparison from './lu';
 import BlForestTypeComparison from './bl';
-
-const getValidForestTypes = (codes, activeProfile) =>
-  codes.reduce((forestTypes, code) => {
-    try {
-      const nextFt = info('forestType', code, activeProfile);
-      return [...forestTypes, nextFt];
-    } catch {
-      return forestTypes;
-    }
-  }, []);
 
 function ForestTypeComparison() {
   const dispatch = useDispatch();
@@ -34,6 +25,7 @@ function ForestTypeComparison() {
   useEffect(() => {
     const validForestTypes = getValidForestTypes(codes, activeProfile);
     dispatch(setForestTypeComparison(validForestTypes.map((ft) => ft.code)));
+    window.scrollTo(0, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeProfile, dispatch]);
 

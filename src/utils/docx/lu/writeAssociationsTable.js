@@ -1,14 +1,9 @@
 import { Table } from 'docx';
 import { info } from '@geops/tree-lib';
-import { PAGE_WIDTH_DXA, getLocationTableRow } from './exportUtils';
+import { PAGE_WIDTH_DXA, getLocationTableRow } from '../exportUtils';
 
-export const writeAssociationsTable = (
-  associationGroup,
-  activeProfile,
-  language,
-  t,
-) => {
-  const forestSubTypes = info('forestType', null, activeProfile).filter(
+const writeAssociationsTable = (associationGroup, language, t) => {
+  const forestSubTypes = info('forestType', null, 'lu').filter(
     (type) => type.associationGroupCode === associationGroup.code,
   );
 

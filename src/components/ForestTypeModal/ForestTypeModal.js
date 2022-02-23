@@ -17,15 +17,14 @@ function ForestTypeModal() {
   const dispatch = useDispatch();
   const modalRef = useRef();
   const forestTypeModal = useSelector((state) => state.forestTypeModal);
+  const activeProfile = useSelector((state) => state.activeProfile);
   const forestTypeDescription = useSelector(
     (state) => state.forestTypeDescription,
   );
 
   useEffect(
-    () =>
-      modalRef.current &&
-      modalRef.current.scroll({ top: 0, left: 0, behavior: 'smooth' }),
-    [forestTypeDescription],
+    () => modalRef.current && modalRef.current.scroll({ top: 0, left: 0 }),
+    [forestTypeDescription, activeProfile],
   );
 
   return (

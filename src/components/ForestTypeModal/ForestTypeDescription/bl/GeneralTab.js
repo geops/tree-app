@@ -1,31 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Table } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
 
 import Site from './Site';
 import ForestTypeLinksList from '../../ForestTypeLinksList';
 import DataTable from '../DataTable';
 import BorderlessRow from '../../BorderlessRow';
-import { parseString } from '../../../../utils/comparisonUtils';
+import {
+  parseString,
+  getValidForestTypes,
+} from '../../../../utils/comparisonUtils';
 import { setForestTypeDescription } from '../../../../store/actions';
-import { vegetationMapping, getTreeTypes, soilIconTranslator } from './utils';
+import {
+  vegetationMapping,
+  getTilleringTreeTypes,
+  soilIconTranslator,
+} from './utils';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
-  const activeProfile = useSelector((state) => state.activeProfile);
   const dispatch = useDispatch();
-  const transitions = data.transitions?.reduce((finalTypes, code) => {
-    let ft = null;
-    try {
-      ft = info('forestType', code.replace(' ', ''), activeProfile);
-    } catch {
-      ft = null;
-    }
-    return ft ? [...finalTypes, ft] : finalTypes;
-  }, []);
+  const transitions = getValidForestTypes(data.transitions, 'bl');
   return (
     <Table basic padded structured>
       <Table.Body>
@@ -89,19 +86,19 @@ function GeneralTab({ data }) {
         <BorderlessRow>
           <Table.HeaderCell>Als Hauptbaumart geeignet</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {getTreeTypes(data.tilleringTreeTypes, 'D') || '-'}
+            {getTilleringTreeTypes(data.tilleringTreeTypes, 'D') || '-'}
           </Table.Cell>
         </BorderlessRow>
         <BorderlessRow>
           <Table.HeaderCell>Als Nebenbaumart geeignet</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {getTreeTypes(data.tilleringTreeTypes, 'N') || '-'}
+            {getTilleringTreeTypes(data.tilleringTreeTypes, 'N') || '-'}
           </Table.Cell>
         </BorderlessRow>
         <BorderlessRow>
           <Table.HeaderCell>Baumart mitpflegen</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {getTreeTypes(data.tilleringTreeTypes, 'S') || '-'}
+            {getTilleringTreeTypes(data.tilleringTreeTypes, 'S') || '-'}
           </Table.Cell>
         </BorderlessRow>
         <BorderlessRow borderBottom>
@@ -109,7 +106,7 @@ function GeneralTab({ data }) {
             Gastbaumart, als Hauptbaumart geeignet
           </Table.HeaderCell>
           <Table.Cell colSpan="3">
-            {getTreeTypes(data.tilleringTreeTypes, 'G') || '-'}
+            {getTilleringTreeTypes(data.tilleringTreeTypes, 'G') || '-'}
           </Table.Cell>
         </BorderlessRow>
         <Table.Row>

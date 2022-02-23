@@ -32,7 +32,7 @@ export const treeTypeMapping = [
   'Dou',
 ];
 
-export const getTreeTypes = (treeTypes, category) =>
+export const getTilleringTreeTypes = (treeTypes, category) =>
   treeTypeMapping.reduce(
     (finalTreeTypes, treeType, index) =>
       treeTypes[index] === category
@@ -44,19 +44,6 @@ export const getTreeTypes = (treeTypes, category) =>
 export const vegetationMapping = Object.keys(
   translation.bl.forestType.vegetationIndicators,
 );
-
-export const getTilleringTreeTypes = (data) =>
-  data[0]
-    .map((naturalForest, index) => {
-      const farmForest = data[1] && data[1][index];
-      const type = treeTypeMapping[index];
-      return { naturalForest, farmForest, type };
-    })
-    .filter(
-      (r) =>
-        (r.naturalForest && r.naturalForest.filter((t) => t).length) ||
-        (r.farmForest && r.farmForest.filter((t) => t).length),
-    );
 
 export const soilIconTranslator = (key) => {
   switch (key) {

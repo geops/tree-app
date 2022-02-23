@@ -1,11 +1,4 @@
-import {
-  Paragraph,
-  HeadingLevel,
-  Document,
-  Packer,
-  TextRun,
-  ExternalHyperlink,
-} from 'docx';
+import { Paragraph, HeadingLevel, Document, Packer } from 'docx';
 import { saveAs } from 'file-saver';
 import { info } from '@geops/tree-lib';
 import {
@@ -14,72 +7,42 @@ import {
   verticalSpace,
   pageBreak,
   pageProperties,
-} from './exportUtils';
-import { writeLocationTable } from './writeLocationTable';
-import { writeAssociationsTable } from './writeAssociationsTable';
+  getTitle,
+  getPermalink,
+} from '../exportUtils';
+import writeLocationTable from './writeLocationTable';
+import writeAssociationsTable from './writeAssociationsTable';
 
-const getTitle = (title, latin) =>
-  new Paragraph({
-    children: [
-      new TextRun(title),
-      new TextRun({
-        text: latin,
-        italics: true,
-      }),
-    ],
-    heading: HeadingLevel.HEADING_3,
-  });
-
-export const exportLocation = async (location, activeProfile, language, t) => {
+export const exportLocation = async (location, language, t) => {
   const mainTitle = new Paragraph({
     text: t('export.recommendationMainTitle'),
     heading: HeadingLevel.HEADING_1,
   });
 
-  const profile = writeLine(
-    t(`profiles.${activeProfile}`),
-    t('export.profile'),
-  );
-
+  const profile = writeLine(t('profiles.lu'), t('export.profile'));
   const date = writeLine(
     `${new Date().toLocaleDateString(`${language}-${language.toUpperCase()}`)}`,
     t('export.date'),
   );
-
-  const permalink = new Paragraph({
-    style: 'main-20',
-    children: [
-      new ExternalHyperlink({
-        children: [
-          new TextRun({
-            text: t('export.link'),
-            style: 'Hyperlink',
-          }),
-        ],
-        link: window.location.href,
-      }),
-    ],
-  });
+  const permalink = getPermalink(t('export.link'));
 
   const locationTitle = getTitle(
     `${location.code} - ${location[language]} `,
     location.la,
   );
-  const locationTable = await writeLocationTable(location, activeProfile, t);
+  const locationTable = await writeLocationTable(location, t);
 
   const associationGroup = info(
     'associationGroup',
     location.associationGroupCode,
-    activeProfile,
+    'lu',
   );
-
   const associationsTitle = getTitle(
     `${associationGroup.code} - ${associationGroup[language]} `,
     associationGroup.la,
   );
   const associationsTable = writeAssociationsTable(
     associationGroup,
-    activeProfile,
     language,
     t,
   );
