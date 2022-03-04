@@ -97,6 +97,13 @@ function MapLocation() {
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
+    let originalMobilePathname;
+    if (isMobile) {
+      // load map data on mobile and redirect to original path afterwards
+      originalMobilePathname = window.location.pathname;
+      history.replace(`/${window.location.search}`);
+    }
+
     const handleCoords = ({ coordinate }, resetFormLocation = true) => {
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
@@ -115,8 +122,12 @@ function MapLocation() {
       dispatch(setMapLocation(location, resetFormLocation));
       if (isMobile === false && location.forestType) {
         history.push(`/projection${window.location.search}`);
+      } else if (originalMobilePathname) {
+        history.replace(`${originalMobilePathname}${window.location.search}`);
+        originalMobilePathname = null;
       }
     };
+
     const waitForLoad = () => {
       const mapboxLayer = map
         .getLayers()
