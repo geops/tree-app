@@ -264,3 +264,20 @@ ALTER TABLE "forest_types_fr" ADD PRIMARY KEY (gid);
 
 
 SELECT AddGeometryColumn('','forest_types_fr','geom','2056','MULTIPOLYGON',2);
+
+
+
+----------------------------------------------
+-- Forest types JU
+
+
+CREATE TABLE "forest_types_ju" (gid serial,
+"objectid" float8,
+"nais1" varchar(80),
+"naisue" varchar(80),
+"hs1" varchar(80),
+"hsue" varchar(80));
+
+ALTER TABLE "forest_types_ju" ADD PRIMARY KEY (gid);
+
+SELECT AddGeometryColumn('','forest_types_ju','geom','0','MULTIPOLYGON',2);
