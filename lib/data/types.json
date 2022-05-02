@@ -10,14 +10,14 @@
       { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
     ],
     "relief": [
-      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
-      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
-      { "de": "normal", "fr": "normal", "code": "normal" },
       {
         "de": "Hang- und Muldenlage",
         "fr": "en pente ou dans une dépression",
         "code": "h_and_m"
-      }
+      },
+      { "de": "normal", "fr": "normal", "code": "normal" },
+      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
+      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
     ],
     "bushType": [
       {
@@ -62393,7 +62393,46 @@
         "code": "100"
       }
     ],
-    "forestEcoregion": null
+    "forestEcoregion": [
+      {
+        "de": "Nördliche Randalpen",
+        "fr": "Alpes externes du Nord",
+        "code": "1"
+      },
+      {
+        "de": "Nördliche Zwischenalpen mit Buche",
+        "fr": "Alpes intermédiaires du Nord avec hêtre",
+        "code": "2a"
+      },
+      {
+        "de": "Nördliche Zwischenalpen ohne Buche",
+        "fr": "Alpes intermédiaires du Nord sans hêtre",
+        "code": "2b"
+      },
+      {
+        "de": "Kontinentale Hochalpen",
+        "fr": "Hautes Alpes continentales",
+        "code": "3"
+      },
+      {
+        "de": "Südliche Zwischenalpen",
+        "fr": "Alpes intermédiaires du Sud",
+        "code": "4"
+      },
+      {
+        "de": "Südliche Randalpen mit Fichte",
+        "fr": "Alpes externes du Sud avec épicéa",
+        "code": "5a"
+      },
+      {
+        "de": "Südliche Randalpen ohne Fichte",
+        "fr": "Alpes externes du Sud sans épicéa",
+        "code": "5b"
+      },
+      { "de": "Jura", "fr": "Jura", "code": "J" },
+      { "de": "Mittelland", "fr": "Plateau", "code": "M" },
+      { "de": "Mendrisiotto", "fr": "Mendrisiotto", "code": "Me" }
+    ]
   },
   "lu": {
     "forestType": [
