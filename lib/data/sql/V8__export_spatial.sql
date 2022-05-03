@@ -54,7 +54,7 @@ FROM altitudinal_zones_cantonal azc;
 -- altitudinal_zones_2085_dry
 
 CREATE VIEW altitudinal_zones_2085_dry_export AS
-SELECT (code::TEXT || subcode::TEXT)::INT AS code,
+SELECT (code::TEXT || subcode::TEXT)::text AS code,
        ST_Transform(geom, 3857) AS geometry
 FROM altitudinal_zones_2085_dry;
 
@@ -63,7 +63,7 @@ FROM altitudinal_zones_2085_dry;
 -- altitudinal_zones_2085_less_dry
 
 CREATE VIEW altitudinal_zones_2085_less_dry_export AS
-SELECT (code::TEXT || subcode::TEXT)::INT AS code,
+SELECT (code::TEXT || subcode::TEXT)::text AS code,
        ST_Transform(geom, 3857) AS geometry
 FROM altitudinal_zones_2085_less_dry;
 
