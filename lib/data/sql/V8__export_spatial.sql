@@ -41,11 +41,11 @@ WITH altitudinal_zones_cantonal AS
                 GROUP BY meta.code, meta_ue.code)
        )foo )
 
-SELECT (code::TEXT || subcode::TEXT)::integer AS code,
+SELECT (code::TEXT || subcode::TEXT)::text AS code,
        ST_Transform(ST_Difference(geom, (SELECT ST_Union(geom) FROM altitudinal_zones_cantonal)), 3857) AS geometry
 FROM altitudinal_zones_1995
 UNION
-SELECT azc.code::integer,
+SELECT azc.code::text,
        ST_Transform(azc.geom, 3857) AS geometry
 FROM altitudinal_zones_cantonal azc;
 
