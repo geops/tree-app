@@ -4,11 +4,12 @@
 
 CREATE OR REPLACE VIEW altitudinal_zones_1995_export AS
 WITH altitudinal_zones_cantonal AS
-  (SELECT foo.geom, foo.code 
+  (SELECT foo.geom, foo.code, foo.code_ue
        FROM (
               SELECT
               ST_Union(geom) AS geom,
-              meta.code
+              meta.code,
+              Null as code_ue
               FROM (SELECT *, (regexp_matches(hstufe, '(\w*)'))[1] code FROM forest_types_zh) zh
                 LEFT JOIN altitudinal_zone_meta meta ON zh.code = meta.zh
                 WHERE meta.code IS NOT NULL
@@ -16,24 +17,38 @@ WITH altitudinal_zones_cantonal AS
               UNION
               (SELECT 
                   ST_Union(geom) AS geom,
-                  hohenstufe::text as code
+                  hohenstufe::text as code,
+                  Null as code_ue
               FROM forest_types_ne
                 WHERE hohenstufe IS NOT NULL
                 GROUP BY hohenstufe)
               UNION
               (SELECT 
                   ST_Union(geom) AS geom,
-                  hs::text as code
+                  hs::text as code,
+                  Null as code_ue
               FROM forest_types_lu
                 WHERE hs IS NOT NULL
                 GROUP BY hs)
+              UNION
+              (SELECT
+              ST_Union(geom) AS geom,
+              meta.code,
+              meta_ue.code as code_ue
+              FROM (SELECT * FROM forest_types_ju) ju
+                LEFT JOIN altitudinal_zone_meta meta ON ju.hs1 = meta.zh
+                LEFT JOIN altitudinal_zone_meta meta_ue ON ju.hsue = meta.zh
+                WHERE meta.code IS NOT NULL
+                GROUP BY meta.code, meta_ue.code)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::integer AS code,
+       NULL AS code_ue,
        ST_Transform(ST_Difference(geom, (SELECT ST_Union(geom) FROM altitudinal_zones_cantonal)), 3857) AS geometry
 FROM altitudinal_zones_1995
 UNION
 SELECT azc.code::integer,
+       azc.code_ue::integer,
        ST_Transform(azc.geom, 3857) AS geometry
 FROM altitudinal_zones_cantonal azc;
 
@@ -108,4 +123,12 @@ UNION
 SELECT nais AS code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_fr
-WHERE nais IS NOT NULL;
+WHERE nais IS NOT NULL
+UNION
+SELECT CASE naisue is null
+           WHEN TRUE THEN nais1
+           ELSE nais1 || '(' || naisue || ')'
+       END AS code,
+       ST_Transform(geom, 3857) as geometry
+FROM forest_types_ju
+WHERE nais1 IS NOT NULL;
