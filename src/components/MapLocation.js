@@ -108,7 +108,6 @@ function MapLocation() {
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
-      console.log(features);
       let location = features
         .filter((feature) => feature.properties?.code !== undefined)
         .reduce(featuresToLocation, { forestTypes: [] });
