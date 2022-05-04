@@ -36,7 +36,7 @@ WITH altitudinal_zones_cantonal AS
                   END AS code
               FROM (SELECT * FROM forest_types_ju) ju
                 LEFT JOIN altitudinal_zone_meta meta ON ju.hs1 = meta.zh
-                LEFT JOIN altitudinal_zone_meta meta_ue ON ju.hsue = meta.zh
+                LEFT JOIN altitudinal_zone_meta meta_ue ON ju.hsue = meta_ue.zh
                 WHERE meta.code IS NOT NULL
                 GROUP BY meta.code, meta_ue.code)
        )foo )
