@@ -51,6 +51,8 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
+    "csv": "^6.0.5",
+    "fs": "^0.0.1-security",
     "lodash.difference": "^4.5.0",
     "lodash.get": "^4.4.2",
     "lodash.intersection": "^4.4.0",
