@@ -60,7 +60,6 @@ const projection = (store) => (next) => (action) => {
     store.dispatch(setLocation(location));
 
     try {
-      console.log(mapLocation);
       const locateResult = locate(location, activeProfile);
       store.dispatch(setLocationResult(locateResult));
     } catch (error) {

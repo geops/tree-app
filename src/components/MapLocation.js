@@ -28,7 +28,6 @@ const getKey = (sl) =>
   ).metadata.mapping;
 
 const featuresToLocation = (location, f) => {
-  console.log(location);
   const key = getKey(f.sourceLayer) || f.sourceLayer;
   let value = f.properties.code.toString();
 
