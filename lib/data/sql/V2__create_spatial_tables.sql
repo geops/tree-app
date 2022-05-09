@@ -5,7 +5,7 @@ CREATE TABLE "altitudinal_zones_1995" (gid serial, "hs_de" varchar(200),
                                                            "hs_fr" varchar(200),
                                                                    "hs_it" varchar(200),
                                                                            "hs_en" varchar(200),
-                                                                                   "code" int8, "subcode" int8);
+                                                                                   "code" varchar(10), "subcode" varchar(10));
 
 
 ALTER TABLE "altitudinal_zones_1995" ADD PRIMARY KEY (gid);
@@ -20,7 +20,7 @@ CREATE TABLE "altitudinal_zones_2085_dry" (gid serial, "hs_de" varchar(200),
                                                                "hs_fr" varchar(200),
                                                                        "hs_it" varchar(200),
                                                                                "hs_en" varchar(200),
-                                                                                       "code" int8, "subcode" int8);
+                                                                                       "code" varchar(10), "subcode" varchar(10));
 
 
 ALTER TABLE "altitudinal_zones_2085_dry" ADD PRIMARY KEY (gid);
@@ -36,7 +36,7 @@ CREATE TABLE "altitudinal_zones_2085_less_dry" (gid serial, "hs_de" varchar(200)
                                                                     "hs_fr" varchar(200),
                                                                             "hs_it" varchar(200),
                                                                                     "hs_en" varchar(200),
-                                                                                            "code" int8, "subcode" int8);
+                                                                                            "code" varchar(10), "subcode" varchar(10));
 
 
 ALTER TABLE "altitudinal_zones_2085_less_dry" ADD PRIMARY KEY (gid);
