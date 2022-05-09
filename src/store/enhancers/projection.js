@@ -45,6 +45,9 @@ const projection = (store) => (next) => (action) => {
     location.transition = formLocation.transition || mapLocation.transition;
     location.transitionForestType =
       formLocation.transitionForestType || mapLocation.transitionForestType;
+    location.transitionAltitudinalZone =
+      formLocation.transitionAltitudinalZone ||
+      location.transitionAltitudinalZone;
     if (hochmontanAltitudinalZones.includes(location.altitudinalZone)) {
       if (projectionMode === 'm' || !formLocation.silverFirArea) {
         location.silverFirArea = location.altitudinalZone.slice(1);

@@ -176,7 +176,7 @@ function ProjectionForm() {
             <Dropdown
               className={styles.forestType}
               data-cypress="projectionFormTransitionForestType"
-              clearable
+              clearable={!!formLocation.transitionForestType}
               label={t('forestType.transition')}
               options={(options.transitionForestType || options.forestType).map(
                 getDropdownOptions('forestType', i18n.language, dispatch, true),
@@ -191,7 +191,7 @@ function ProjectionForm() {
               value={getValue('transitionForestType')}
             />
             <Dropdown
-              clearable
+              clearable={!!formLocation.transitionAltitudinalZone}
               data-cypress="projectionFormTransitionAltitudinalZone"
               label={t('altitudinalZone.transition')}
               options={options.altitudinalZone.map(
@@ -202,10 +202,7 @@ function ProjectionForm() {
               }}
               onBlur={deactivateField}
               onFocus={() => activateField('transitionAltitudinalZone')}
-              value={
-                getValue('altitudinalZone', { transition: true }) ||
-                getValue('altitudinalZone')
-              }
+              value={getValue('altitudinalZone', { transition: true })}
             />
           </Segment>
         )}
