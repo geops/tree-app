@@ -16,13 +16,8 @@
         "code": "h_and_m"
       },
       { "de": "normal", "fr": "normal", "code": "normal" },
-<<<<<<< HEAD
-      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
-      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
-=======
       { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
       { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" }
->>>>>>> master
     ],
     "bushType": [
       {
