@@ -1,16 +1,11 @@
 import React from 'react';
-import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
+import { utils } from '@geops/tree-lib';
 import styles from '../components/ProjectionResult.module.css';
 import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
-export const getAZ = (altitudinalZone) => {
-  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
-    return '80';
-  }
-  return altitudinalZone;
-};
+const { projection } = utils;
 
 export const getResultLocation = (scenario, location) =>
   scenario.projections
@@ -19,7 +14,9 @@ export const getResultLocation = (scenario, location) =>
 
 export const getResultKey = (location) => {
   const { altitudinalZone, forestType, transitionForestType } = location;
-  return `${getAZ(altitudinalZone)}|${forestType}|${transitionForestType}`;
+  return `${projection.getAZ(
+    altitudinalZone,
+  )}|${forestType}|${transitionForestType}`;
 };
 
 export const getScenarios = (scenario, t) => {
@@ -85,12 +82,9 @@ export const getScenarioColumns = (
   return columns;
 };
 
-const utils = {
-  getAZ,
-  getResultKey,
-  getResultLocation,
+const projectionUtils = {
   getScenarios,
   getScenarioColumns,
 };
 
-export default utils;
+export default projectionUtils;

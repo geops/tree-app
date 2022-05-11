@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { applyMiddleware } from 'redux';
 // eslint-disable-next-line import/no-unresolved
-import { locate, project } from '@geops/tree-lib';
+import { locate, utils } from '@geops/tree-lib';
 
 import {
   SET_FORM_LOCATION,
@@ -19,18 +19,8 @@ const projectionActionTypes = [
   SET_PROJECTION_MODE,
 ];
 
-export const hochmontanAltitudinalZones = ['81', '82', '83'];
-
-const runProject = (location, targetAltitudinalZone) => {
-  let newTargetAltitudinalZone = targetAltitudinalZone;
-  let { silverFirArea } = location;
-  if (hochmontanAltitudinalZones.includes(targetAltitudinalZone)) {
-    silverFirArea = targetAltitudinalZone.slice(1);
-    newTargetAltitudinalZone = '80';
-  }
-  const newLocation = { ...location, silverFirArea };
-  return project(newLocation, newTargetAltitudinalZone);
-};
+const { projection: projectionUtils } = utils;
+const { hochmontanAltitudinalZones, runProject } = projectionUtils;
 
 const projection = (store) => (next) => (action) => {
   const result = next(action);

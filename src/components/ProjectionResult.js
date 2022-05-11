@@ -2,19 +2,18 @@ import React, { useCallback } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';
 import ExportButton from './ExportButton';
 import styles from './ProjectionResult.module.css';
 
-import {
-  getScenarios,
-  getScenarioColumns,
-  getAZ,
-} from '../utils/projectionUtils';
+import { getScenarios, getScenarioColumns } from '../utils/projectionUtils';
 import { exportRecommendation } from '../utils/docx/exportRecommendation';
+
+const { projection: projectionUtils } = utils;
+const { getAZ } = projectionUtils;
 
 function getPane(scenario, projection, language, t) {
   const { forestType, transitionForestType } = projection;
