@@ -3,14 +3,17 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Grid, Header, Tab } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { list } from '@geops/tree-lib';
+import { list as listUtils } from '@geops/tree-lib';
 
 import TreeTypeList from './TreeTypeList';
 
 import styles from './ProjectionTab.module.css';
 
 function ProjectionTab({ location }) {
-  const [one, two, three] = useMemo(() => list(location, true), [location]);
+  const [one, two, three] = useMemo(
+    () => listUtils.list(location, true),
+    [location],
+  );
   const { t } = useTranslation();
   return (
     <Tab.Pane>

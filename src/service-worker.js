@@ -10,7 +10,7 @@
 import { clientsClaim } from 'workbox-core';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
-import reliefMappings from './utils/reliefMappings';
+import { mapping as mappingUtils } from '@geops/tree-lib';
 
 const CACHE_NAME = 'tree-app-tiles-v7';
 const OLD_CACHES = [
@@ -25,6 +25,7 @@ const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
 
 clientsClaim();
 
+const reliefMappings = mappingUtils.getMapping('relief');
 const reliefRoutes = Object.keys(reliefMappings).reduce((routes, profile) => {
   const newRoutes = reliefMappings[profile].map((imageName) => ({
     url: `/public/images/${profile}/${imageName}.png`,

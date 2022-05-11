@@ -3,14 +3,14 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { info, list, vegetation } from '@geops/tree-lib';
+import { info, list as listUtils, vegetation } from '@geops/tree-lib';
 
 const concat = (prev, cur) => [prev, ', ', cur];
 
 function VegetationTab({ data }) {
   const { i18n, t } = useTranslation();
   const location = { forestType: data.code };
-  const [t1, t2, t3] = list(location);
+  const [t1, t2, t3] = listUtils.list(location);
   const vegetationInfo = vegetation(location);
   const [b1, b2] = vegetationInfo.bush;
   const [h1, h2] = vegetationInfo.herb;

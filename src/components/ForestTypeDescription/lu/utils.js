@@ -1,56 +1,12 @@
-export const treeTypeMapping = [
-  'Fi',
-  'Ta',
-  'WFö',
-  'BFö',
-  'Ei',
-  'Lä',
-  'Dg',
-  'Bu',
-  'Es',
-  'BAh',
-  'SAh',
-  'SEi',
-  'TEi',
-  'WLi',
-  'SLi',
-  'Ki',
-  'BUl',
-  'FUl',
-  'SEr',
-  'GEr',
-  'AEr',
-  'HBi',
-  'TKi',
-  'VBe',
-  'MBe',
-  'Wei',
-];
+import { mapping as mappingUtils } from '@geops/tree-lib';
 
-export const soilMapping = ['l', 'f', 'h', 'ahh', 'ah', 'basen', 'feuchte'];
-export const vegetationMapping = [
-  'a',
-  'b',
-  'c',
-  'e',
-  'f',
-  'g',
-  'h',
-  'i',
-  'j',
-  'k',
-  'l',
-  'm',
-  'n',
-  'o',
-  'p',
-];
+const treeTypesMapping = mappingUtils.getMapping('treeTypes', 'lu');
 
 export const getTilleringTreeTypes = (data) =>
   data[0]
     .map((naturalForest, index) => {
       const farmForest = data[1] && data[1][index];
-      const type = treeTypeMapping[index];
+      const type = treeTypesMapping[index];
       return { naturalForest, farmForest, type };
     })
     .filter(
@@ -59,9 +15,4 @@ export const getTilleringTreeTypes = (data) =>
         (r.farmForest && r.farmForest.filter((t) => t).length),
     );
 
-const utils = {
-  soilMapping,
-  vegetationMapping,
-  treeTypeMapping,
-};
-export default utils;
+export default getTilleringTreeTypes;

@@ -4,16 +4,16 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+import { info, mapping } from '@geops/tree-lib';
 
 import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
 import { setFormLocation, setForestTypeDescription } from '../store/actions';
-import { transitionMapping } from '../utils/luTransitionMapping';
 
 import styles from './ProjectionForm.module.css';
 
+const { getMapping } = mapping;
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
 const getButtonOptions = (type, lng) => (key) => ({
   key,
@@ -92,7 +92,7 @@ function ProjectionForm() {
   const formActive = projectionMode === 'm' || fieldActive;
   const cantonalForestType =
     activeProfile === 'lu' &&
-    transitionMapping[
+    getMapping('transition', activeProfile)[
       `${location.forestType}(${location.transitionForestType})`
     ];
 
