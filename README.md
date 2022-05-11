@@ -2,11 +2,18 @@
 
 This offline-first web application provides tree recommendations for different climate change scenarios.
 
-## Installation & usage
+## Installation
 
 1. Install all dependencies: `yarn install`
-2. Place an input.csv with headers (CLNR;x;y;IP5AREPROZ;IP50PROZ;custom_forest_type_code;custom_transition_forest_type_code) file into the lib/locations folder
-3. Run yarn `data:transform`. This creates a export.csv in the the lib/locations folder
-4. Run the node script `yarn data:export:csv ../data/locations/export.csv` from its root directory
-5. An exportTreeRecommendations.csv file is generated in the export package root directory
+2. Optionally customize vector tiles endpoint: copy `.env` to `.env.local` and modify the endpoint variable.
+3. Build the app for production: `yarn run build`
+4. [Serve](https://create-react-app.dev/docs/deployment/) the `./build` directory using your favorite HTTP server.
+5. Make sure to redirect all paths to `index.html` to [support client-side routing](https://create-react-app.dev/docs/deployment/#serving-apps-with-client-side-routing).
 
+## More
+
+- [Development](https://github.com/geops/tree-app/tree/master/DEVELOPMENT.md)
+
+## Bugs
+
+Please use the [GitHub issue tracker](https://github.com/geops/tree-app/issues) for all bugs and feature requests. Before creating a new issue, do a quick search to see if the problem has been reported already.
