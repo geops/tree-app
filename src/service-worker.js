@@ -20,6 +20,7 @@ const OLD_CACHES = [
   'tree-app-tiles-v4',
   'tree-app-tiles-v5',
   'tree-app-tiles-v6',
+  'tree-app-tiles-v7',
 ];
 const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
 

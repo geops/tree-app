@@ -67,6 +67,7 @@ const featuresToLocation = (location, f) => {
   }
 
   if (f.sourceLayer.startsWith('altitudinal_zones_')) {
+    console.log(f.properties);
     if (value === '-10') {
       return { ...location, [key]: null };
     }
