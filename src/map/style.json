@@ -115,7 +115,7 @@
       "paint": {
         "fill-color": [
           "match",
-          ["get", "code"],
+          ["get", "code_style"],
           "0",
           "#ccc",
           "10",
@@ -160,7 +160,7 @@
       "paint": {
         "fill-color": [
           "match",
-          ["get", "code"],
+          ["get", "code_style"],
           "0",
           "#ccc",
           "10",
@@ -205,7 +205,7 @@
       "paint": {
         "fill-color": [
           "match",
-          ["get", "code"],
+          ["get", "code_style"],
           "0",
           "#ccc",
           "10",
