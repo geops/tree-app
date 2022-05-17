@@ -12,8 +12,7 @@ import styles from './ProjectionResult.module.css';
 import { getScenarios, getScenarioColumns } from '../utils/projectionUtils';
 import { exportRecommendation } from '../utils/docx/exportRecommendation';
 
-const { projection: projectionUtils } = utils;
-const { getAZ } = projectionUtils;
+const { getAZ } = utils();
 
 function getPane(scenario, projection, language, t) {
   const { forestType, transitionForestType } = projection;

@@ -42,7 +42,7 @@ BEGIN
           (SELECT id, st_transform(st_geomfromtext('POINT('||x||' '||y||' )', 2056), 3857) AS geom
                FROM locations) SELECT locations.*,
                                    ft.forest_type_code,
-                                   tft.forest_type_code AS transition_forest_type_code
+                                   tft.forest_type_code AS transition_forest_type_code,
                                    azt.code AS altitudinal_zones_1995_code,
                                    azm.code AS altitudinal_zones_2085_less_dry_code,
                                    aze.code AS altitudinal_zones_2085_dry_code,
@@ -57,7 +57,7 @@ BEGIN
           LEFT JOIN altitudinal_zones_1995_export_mat azt ON ST_Intersects(l.geom, azt.geometry)
           LEFT JOIN altitudinal_zones_2085_dry_export_mat aze ON ST_Intersects(l.geom, aze.geometry)
           LEFT JOIN altitudinal_zones_2085_less_dry_export_mat azm ON ST_Intersects(l.geom, azm.geometry)
-          ) TO '/data/locations/export2.csv'
+          ) TO '/data/locations/export.csv'
      DELIMITER ';' CSV HEADER;
 
      GET DIAGNOSTICS x = ROW_COUNT;

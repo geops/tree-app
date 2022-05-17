@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
-import { info, mapping } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 
 import Button from './Button';
 import ChoiceButton from './ChoiceButton';
@@ -13,7 +13,7 @@ import { setFormLocation, setForestTypeDescription } from '../store/actions';
 
 import styles from './ProjectionForm.module.css';
 
-const { getMapping } = mapping;
+const { getMapping } = utils();
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
 const getButtonOptions = (type, lng) => (key) => ({
   key,

@@ -19,8 +19,7 @@ const projectionActionTypes = [
   SET_PROJECTION_MODE,
 ];
 
-const { projection: projectionUtils } = utils;
-const { hochmontanAltitudinalZones, runProject } = projectionUtils;
+const { hochmontanAltitudinalZones, runProject } = utils();
 
 const projection = (store) => (next) => (action) => {
   const result = next(action);
@@ -66,6 +65,7 @@ const projection = (store) => (next) => (action) => {
           targetAltitudinalZoneModerate: targetAZModerate,
           targetAltitudinalZoneExtreme: targetAZExtreme,
         } = mapLocation;
+        console.log(location);
         projectionResult.moderate = runProject(location, targetAZModerate);
         projectionResult.extreme = runProject(location, targetAZExtreme);
       } else {

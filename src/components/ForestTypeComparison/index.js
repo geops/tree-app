@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { Form, Message } from 'semantic-ui-react';
-import { info, sort as sortUtils } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 
 import Dropdown from '../Dropdown';
 import { setForestTypeComparison } from '../../store/actions';
@@ -10,6 +10,7 @@ import { setForestTypeComparison } from '../../store/actions';
 import ChForestTypeComparison from './ch';
 import LuForestTypeComparison from './lu';
 
+const { sortForestTypes } = utils();
 const getValidForestTypes = (codes, activeProfile) =>
   codes.reduce((forestTypes, code) => {
     try {
@@ -38,7 +39,7 @@ function ForestTypeComparison() {
   const options = useMemo(
     () =>
       info('forestType', null, activeProfile)
-        .sort(sortUtils.sortForestTypes)
+        .sort(sortForestTypes)
         .map((ft) => ({
           text: `${ft.code} - ${ft[i18n.language]}`,
           value: ft.code,

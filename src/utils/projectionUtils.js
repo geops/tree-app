@@ -5,19 +5,7 @@ import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
-const { projection } = utils;
-
-export const getResultLocation = (scenario, location) =>
-  scenario.projections
-    ? scenario.projections.slice(-1)[0] || location
-    : location;
-
-export const getResultKey = (location) => {
-  const { altitudinalZone, forestType, transitionForestType } = location;
-  return `${projection.getAZ(
-    altitudinalZone,
-  )}|${forestType}|${transitionForestType}`;
-};
+const { getResultLocation, getResultKey } = utils();
 
 export const getScenarios = (scenario, t) => {
   const icons = [];

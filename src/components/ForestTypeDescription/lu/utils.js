@@ -1,6 +1,6 @@
-import { mapping as mappingUtils } from '@geops/tree-lib';
+import { utils } from '@geops/tree-lib';
 
-const treeTypesMapping = mappingUtils.getMapping('treeTypes', 'lu');
+const treeTypesMapping = utils().getMapping('treeTypes', 'lu');
 
 export const getTilleringTreeTypes = (data) =>
   data[0]

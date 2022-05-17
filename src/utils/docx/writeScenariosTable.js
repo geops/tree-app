@@ -1,5 +1,5 @@
 import { Paragraph, Table, TableRow, TableCell } from 'docx';
-import { list as listUtils, info, utils } from '@geops/tree-lib';
+import { list, info, utils } from '@geops/tree-lib';
 import { getScenarios, getScenarioColumns } from '../projectionUtils';
 import {
   treeTypesReducer,
@@ -13,7 +13,7 @@ const getScenarioColumn = (scenario, projection, language, t) => {
   const { forestType, transitionForestType } = projection;
   const altitudinalZone = utils.projection.getAZ(projection.altitudinalZone);
   const scenarios = getScenarios(scenario, t);
-  const treeValues = listUtils.list(projection, true).slice(0, 3);
+  const treeValues = list(projection, true).slice(0, 3);
   return (
     forestType && {
       header: `${
