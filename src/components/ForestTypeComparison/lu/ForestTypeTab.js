@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
-import { mapping as mappingUtils } from '@geops/tree-lib';
+import { utils } from '@geops/tree-lib';
 import useIsMobile from '../../../hooks/useIsMobile';
 
 import Relief from '../../ForestTypeDescription/lu/Relief';
@@ -31,7 +31,7 @@ function ForestTypeTab({ data }) {
 
   const treeTypeCells = useMemo(
     () =>
-      mappingUtils
+      utils()
         .getMapping('treeTypes', 'lu')
         .reduce((treeTypes, currTreeType, idx) => {
           const cells = data.map((ft) => ({
@@ -220,24 +220,26 @@ function ForestTypeTab({ data }) {
           <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
-              {mappingUtils.getMapping('soil', 'lu').map((soilType, idx) => {
-                const value = ft.soil[idx];
-                return (
-                  <span
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      gap: 10,
-                      minWidth: 80,
-                      opacity: value ? 1 : 0.4,
-                    }}
-                  >
-                    {/* eslint-disable-next-line react/destructuring-assignment */}
-                    {soilType.toUpperCase()}
-                    {value && <SoilIcon value={value} size={10} />}
-                  </span>
-                );
-              })}
+              {utils()
+                .getMapping('soil', 'lu')
+                .map((soilType, idx) => {
+                  const value = ft.soil[idx];
+                  return (
+                    <span
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        gap: 10,
+                        minWidth: 80,
+                        opacity: value ? 1 : 0.4,
+                      }}
+                    >
+                      {/* eslint-disable-next-line react/destructuring-assignment */}
+                      {soilType.toUpperCase()}
+                      {value && <SoilIcon value={value} size={10} />}
+                    </span>
+                  );
+                })}
             </ComparisonCell>
           ))}
         </Table.Row>

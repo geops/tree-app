@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
-import { mapping as mappingUtils } from '@geops/tree-lib';
+import { utils } from '@geops/tree-lib';
 import DataTable from './DataTable';
 import Site from './Site';
 import Tillering from './Tillering';
@@ -10,13 +10,11 @@ import TilleringSingle from './TilleringSingle';
 import Relief from './Relief';
 import { parseString } from '../../../utils/comparisonUtils';
 
+const { getMapping } = utils();
 function GeneralTab({ data }) {
   const { t } = useTranslation();
-  const vegetationMapping = useMemo(
-    () => mappingUtils.getMapping('vegetation', 'lu'),
-    [],
-  );
-  const soilMapping = useMemo(() => mappingUtils.getMapping('soil', 'lu'), []);
+  const vegetationMapping = useMemo(() => getMapping('vegetation', 'lu'), []);
+  const soilMapping = useMemo(() => getMapping('soil', 'lu'), []);
 
   return (
     <Table basic padded structured>
