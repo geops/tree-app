@@ -43,9 +43,9 @@ BEGIN
                FROM locations) SELECT locations.*,
                                    ft.forest_type_code,
                                    tft.forest_type_code AS transition_forest_type_code,
-                                   azt.code AS altitudinal_zones_1995_code,
-                                   azm.code AS altitudinal_zones_2085_less_dry_code,
-                                   aze.code AS altitudinal_zones_2085_dry_code,
+                                   azt.code_style AS altitudinal_zones_1995_code,
+                                   azm.code_style AS altitudinal_zones_2085_less_dry_code,
+                                   aze.code_style AS altitudinal_zones_2085_dry_code,
                                    fe.code AS forest_ecoregion_code,
                                    sfa.code AS silver_fir_area_code
           FROM l
