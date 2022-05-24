@@ -5,7 +5,7 @@ import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
-const { getResultLocation, getResultKey } = utils();
+const { getProjectionResultLocation, getProjectionResultKey } = utils();
 
 export const getScenarios = (scenario, t) => {
   const icons = [];
@@ -45,11 +45,17 @@ export const getScenarioColumns = (
     columns.push(getColumn('today', location, language, t));
     columns.push(getColumn('form', form, language, t));
   } else {
-    const moderate = getResultLocation(projectionResult.moderate, location);
-    const extreme = getResultLocation(projectionResult.extreme, location);
-    const todayKey = getResultKey(location);
-    const moderateKey = getResultKey(moderate);
-    const extremeKey = getResultKey(extreme);
+    const moderate = getProjectionResultLocation(
+      projectionResult.moderate,
+      location,
+    );
+    const extreme = getProjectionResultLocation(
+      projectionResult.extreme,
+      location,
+    );
+    const todayKey = getProjectionResultKey(location);
+    const moderateKey = getProjectionResultKey(moderate);
+    const extremeKey = getProjectionResultKey(extreme);
     if (moderateKey === extremeKey && todayKey === moderateKey) {
       columns.push(getColumn('todayModerateExtreme', location, language, t));
     } else if (moderateKey === extremeKey) {

@@ -19,7 +19,7 @@ const projectionActionTypes = [
   SET_PROJECTION_MODE,
 ];
 
-const { hochmontanAltitudinalZones, runProject } = utils();
+const { reduceHochmontanSilverFir, reduceHochmontanAz, runProject } = utils();
 
 const projection = (store) => (next) => (action) => {
   const result = next(action);
@@ -37,13 +37,14 @@ const projection = (store) => (next) => (action) => {
     location.transitionAltitudinalZone =
       formLocation.transitionAltitudinalZone ||
       location.transitionAltitudinalZone;
-    if (hochmontanAltitudinalZones.includes(location.altitudinalZone)) {
-      if (projectionMode === 'm' || !formLocation.silverFirArea) {
-        location.silverFirArea = location.altitudinalZone.slice(1);
-      }
-      if (projectionMode === 'm' || !formLocation.altitudinalZone) {
-        location.altitudinalZone = '80';
-      }
+    if (projectionMode === 'm' || !formLocation.silverFirArea) {
+      location.silverFirArea = reduceHochmontanSilverFir(
+        location.altitudinalZone,
+        location.silverFirArea,
+      );
+    }
+    if (projectionMode === 'm' || !formLocation.altitudinalZone) {
+      location.altitudinalZone = reduceHochmontanAz(location.altitudinalZone);
     }
     if (!location.transition) {
       delete location.transitionForestType;
