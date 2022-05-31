@@ -27,15 +27,17 @@ const getKey = (sl) =>
     }
   ).metadata.mapping;
 
+const getHasTransition = (code) => code.includes('(') && code.endsWith(')');
+
 const featuresToLocation = (location, f) => {
   const key = getKey(f.sourceLayer) || f.sourceLayer;
-  let value = f.properties.code.toString();
+  const value = f.properties.code.toString();
+  const transition = value.includes('(') && value.endsWith(')');
 
   if (f.sourceLayer === 'forest_types') {
-    const transition = value.includes('(') && value.endsWith(')');
     let forestType = value;
     let transitionForestType = null;
-    if (transition) {
+    if (getHasTransition(value)) {
       [, forestType, transitionForestType] = value.match(/(.*)\((.*)\)/);
     }
     let forestTypeInfo;
@@ -64,8 +66,18 @@ const featuresToLocation = (location, f) => {
     return location;
   }
 
-  if (f.sourceLayer.startsWith('altitudinal_zones_') && value === '-10') {
-    value = null;
+  if (f.sourceLayer.startsWith('altitudinal_zones_')) {
+    if (value === '-10') {
+      return { ...location, [key]: null };
+    }
+    if (getHasTransition(value)) {
+      const [, azValue, transAzValue] = value.match(/(.*)\((.*)\)/);
+      return {
+        ...location,
+        [key]: azValue,
+        transitionAltitudinalZone: transAzValue,
+      };
+    }
   }
 
   return { ...location, [key]: value };
