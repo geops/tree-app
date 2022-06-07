@@ -111,7 +111,7 @@ INSERT INTO bl_treetype_export
 SELECT
   sto_nr AS code,
   Laubholzanteil_prozent as hardwood,
-  ARRAY [Bu,TEi,SEi,BAh,SAh,BUl,Es,SEr,TKi,FAh,HBu,Ki,WLi,SLi,EBe,MBe,VBe,Nu,FUl,HBi,Ro,REi,"as",Ta,Fi,Fö,Lä,SFö,Dou]::text[] AS data
+  ARRAY [Bu,TEi,SEi,BAh,SAh,BUl,Es,SEr,TKi,FAh,HBu,Ki,WLi,SLi,EBe,MBe,VBe,Nu,FUl,FEi,FlUl,SbAh,HBi,Ro,REi,"as",Ta,Fi,Fö,Lä,Eib,BFö,SFö,Dou]::text[] AS data
 FROM bl_baumartenwahl;
 
 -- Main export function 
