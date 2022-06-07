@@ -198,7 +198,6 @@
     "properties": "Propriétés",
     "rejuvDev": "Rajeunissement et développement",
     "care": "Maintenance",
-    "descriptionNaturalForest": "Description forêt naturelle",
     "descriptionForestType": "Description emplacement",
     "vegetationIndicator": "Groupes d'indicateurs",
     "geology": "Géologie",
@@ -457,6 +456,7 @@
         "label": "Risque de compactage"
       },
       "description": "Description",
+      "descriptionNaturalForest": "Description forêt naturelle",
       "heightDispersion": "Répartition en altitude",
       "location": "Emplacement",
       "meaning": "Sens",
@@ -506,6 +506,7 @@
   },
   "bl": {
     "forestType": {
+      "descriptionNaturalForest": "Beschrieb Waldbild",
       "vegetationIndicators": {
         "A": "Starke Säurezeiger, lichtbedürftig",
         "B1": "Säurezeiger",

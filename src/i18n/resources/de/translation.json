@@ -506,6 +506,7 @@
   },
   "bl": {
     "forestType": {
+      "descriptionNaturalForest": "Beschrieb Waldbild",
       "vegetationIndicators": {
         "A": "Starke Säurezeiger, lichtbedürftig",
         "B1": "Säurezeiger",

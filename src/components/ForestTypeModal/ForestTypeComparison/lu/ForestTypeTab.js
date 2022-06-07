@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
 import useIsMobile from '../../../../hooks/useIsMobile';
 
-import Relief from '../../ForestTypeDescription/lu/Relief';
+import Relief from '../../ForestTypeDescription/Relief';
 import ComparisonCell from '../ComparisonCell';
 import HeaderCell from '../ComparisonHeaderCell';
 import BorderlessRow from '../../BorderlessRow';

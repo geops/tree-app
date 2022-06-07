@@ -22,16 +22,44 @@ const lu = [
   'AV',
 ];
 
+const bl = [
+  '1,6,7a(10a),7S(10a),9a,9w,10a,12e,14,15,16,18*',
+  '7a',
+  '7b,7a(9a),7S(9a),8a(12a),8a,8d',
+  '7S,9a(11),27,27h,30,44',
+  '8a(12e)',
+  '8S',
+  '11,12S,20,26,26h',
+  '12a,12a(9a),12w,13a,13e,13h,13eh,17,18M,19,22,22C,25*',
+  '29',
+  '35A',
+  '38',
+  '39',
+  '48',
+  '61,62',
+  '65',
+];
+
 const reliefMappings = {
   lu,
+  bl,
 };
 
-export const getImageUrl = (code, activeProfile) => {
+/**
+ * @param {string} code A valid forest type code
+ * @param {string} activeProfile A valid tree-app profile with relief mapping
+ * @param {boolean} trimCode Only uses the base code number when set to true (12a => 12)
+ * @returns {string} image path
+ */
+export const getImageUrl = (code, activeProfile, trimCode = false) => {
   const imageName = reliefMappings[activeProfile].find((string) => {
-    const forestTypeCodeNumber = code.slice(
-      0,
-      getFirstLetterIndex(code) || code.length,
-    );
+    let forestTypeCodeNumber = code;
+    if (trimCode) {
+      forestTypeCodeNumber = code.slice(
+        0,
+        getFirstLetterIndex(code) || code.length,
+      );
+    }
     const forestTypes = string.split(',');
     return forestTypes.includes(forestTypeCodeNumber);
   });
