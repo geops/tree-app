@@ -204,20 +204,22 @@ VALUES ('',
 CREATE TABLE altitudinal_zone_meta (source TEXT, de TEXT, fr TEXT, nais TEXT, code TEXT, zh TEXT, id SERIAL);
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('mediterran',
         'collin-mediterran',
         'collinéen à méditerranéen',
         '01C',
-        '0');
+        '0',
+        'med');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('hyperinsubrisch',
         'hyperinsubrisch',
         'hyperinsubrique',
         'HY',
-        '10');
+        '10',
+        'hy');
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
@@ -229,12 +231,13 @@ VALUES ('collin',
         'co');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('collin mit Buche',
         'collin mit Buche',
         'collinéen avec hêtre',
         'CB',
-        '30');
+        '30',
+        'cb');
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
@@ -264,12 +267,13 @@ VALUES ('obermontan',
         'om');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('unter- & obermontan',
         'unter- & obermontan',
         'montagnard inférieur & supérieur',
         'UMOM',
-        '70');
+        '70',
+        'umom');
 
 
 INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
@@ -281,20 +285,22 @@ VALUES ('hochmontan',
         'hm');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('subalpin',
         'subalpin',
         'subalpin',
         'SA',
-        '90');
+        '90',
+        'sa');
 
 
-INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code)
+INSERT INTO altitudinal_zone_meta (source, de, fr, nais, code, zh)
 VALUES ('obersubalpin',
         'obersubalpin',
         'subalpin supérieur',
         'OSA',
-        '100');
+        '100',
+        'osa');
 
 ----------------------------------------------
 -- foresttype

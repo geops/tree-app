@@ -27,15 +27,17 @@ const getKey = (sl) =>
     }
   ).metadata.mapping;
 
+const getHasTransition = (code) => code.includes('(') && code.endsWith(')');
+
 const featuresToLocation = (location, f) => {
   const key = getKey(f.sourceLayer) || f.sourceLayer;
-  let value = f.properties.code.toString();
+  const value = f.properties.code.toString();
+  const transition = value.includes('(') && value.endsWith(')');
 
   if (f.sourceLayer === 'forest_types') {
-    const transition = value.includes('(') && value.endsWith(')');
     let forestType = value;
     let transitionForestType = null;
-    if (transition) {
+    if (getHasTransition(value)) {
       [, forestType, transitionForestType] = value.match(/(.*)\((.*)\)/);
     }
     let forestTypeInfo;
@@ -64,8 +66,18 @@ const featuresToLocation = (location, f) => {
     return location;
   }
 
-  if (f.sourceLayer.startsWith('altitudinal_zones_') && value === '-10') {
-    value = null;
+  if (f.sourceLayer.startsWith('altitudinal_zones_')) {
+    if (value === '-10') {
+      return { ...location, [key]: null };
+    }
+    if (getHasTransition(value)) {
+      const [, azValue, transAzValue] = value.match(/(.*)\((.*)\)/);
+      return {
+        ...location,
+        [key]: azValue,
+        transitionAltitudinalZone: transAzValue,
+      };
+    }
   }
 
   return { ...location, [key]: value };
@@ -97,6 +109,13 @@ function MapLocation() {
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
+    let originalMobilePathname;
+    if (isMobile) {
+      // load map data on mobile and redirect to original path afterwards
+      originalMobilePathname = window.location.pathname;
+      history.replace(`/${window.location.search}`);
+    }
+
     const handleCoords = ({ coordinate }, resetFormLocation = true) => {
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
@@ -115,8 +134,12 @@ function MapLocation() {
       dispatch(setMapLocation(location, resetFormLocation));
       if (isMobile === false && location.forestType) {
         history.push(`/projection${window.location.search}`);
+      } else if (originalMobilePathname) {
+        history.replace(`${originalMobilePathname}${window.location.search}`);
+        originalMobilePathname = null;
       }
     };
+
     const waitForLoad = () => {
       const mapboxLayer = map
         .getLayers()
