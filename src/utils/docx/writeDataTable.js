@@ -21,7 +21,7 @@ export const writeDataTable = (
   translator,
   t,
 ) => {
-  const rows = soils.reduce((all, indicator, index, arr) => {
+  const rows = (soils || []).reduce((all, indicator, index, arr) => {
     if (!indicator) {
       return all;
     }
@@ -53,10 +53,12 @@ export const writeDataTable = (
     ];
   }, []);
 
-  return new Table({
-    columnWidths: [(PAGE_WIDTH_DXA / 8) * 5, PAGE_WIDTH_DXA / 12],
-    rows,
-  });
+  return rows.length > 0
+    ? new Table({
+        columnWidths: [(PAGE_WIDTH_DXA / 8) * 5, PAGE_WIDTH_DXA / 12],
+        rows,
+      })
+    : new Paragraph('-');
 };
 
 export default writeDataTable;

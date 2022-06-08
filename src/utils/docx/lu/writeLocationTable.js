@@ -3,7 +3,12 @@ import { Paragraph, Table, ImageRun, TextRun } from 'docx';
 import TilleringSingle from '../../../components/ForestTypeModal/ForestTypeDescription/lu/TilleringSingle';
 import Tillering from '../../../components/ForestTypeModal/ForestTypeDescription/lu/Tillering';
 import Site from '../../../components/ForestTypeModal/ForestTypeDescription/lu/Site';
-import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from '../exportUtils';
+import {
+  PAGE_WIDTH_DXA,
+  getLocationTableRow,
+  jsxToBlob,
+  getImageHtml,
+} from '../exportUtils';
 import {
   vegetationMapping,
   soilMapping,
@@ -18,11 +23,10 @@ const writeLocationTable = async (location, t) => {
   );
   const tilleringPng = await jsxToBlob(<Tillering data={location.tillering} />);
   const sitePng = await jsxToBlob(<Site data={location.expoAndAspect} />);
-  const reliefPng =
-    getImageUrl(location.code, 'lu') &&
-    (await fetch(getImageUrl(location.code, 'lu')).then((response) =>
-      response.blob(),
-    ));
+  const imagePath = getImageUrl(location.code, 'lu', true);
+  const imageHtml = imagePath && (await getImageHtml(imagePath));
+  const imageBlob =
+    imagePath && (await fetch(imagePath).then((response) => response.blob()));
 
   const rows = [
     getLocationTableRow(t('lu.forestType.tilleringHardwood'), [
@@ -90,15 +94,15 @@ const writeLocationTable = async (location, t) => {
       t('lu.forestType.heightDispersion'),
       location.heightDispersion,
     ),
-    getLocationTableRow(t('lu.forestType.terrain'), [
+    getLocationTableRow(t('forestType.terrain'), [
       new Paragraph({
         children: [
-          reliefPng
+          imageBlob
             ? new ImageRun({
-                data: reliefPng,
+                data: imageBlob,
                 transformation: {
-                  width: 150,
-                  height: 90,
+                  width: imageHtml.width / 3,
+                  height: imageHtml.height / 3,
                 },
               })
             : new TextRun('-'),
@@ -131,6 +135,7 @@ const writeLocationTable = async (location, t) => {
         location.vegetationIndicator,
         vegetationMapping,
         'lu.forestType.vegetationIndicators',
+        undefined,
         t,
       ),
     ]),

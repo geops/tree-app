@@ -127,9 +127,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={
-                ft.priority ? t(`lu.forestType.priority.${ft.priority}`) : '-'
-              }
+              data={ft.priority && t(`lu.forestType.priority.${ft.priority}`)}
             />
           ))}
         </Table.Row>
@@ -150,7 +148,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={ft.forestryRejuvDev ? ft.forestryRejuvDev : null}
+              data={ft.forestryRejuvDev}
               footer={isMobile && idx + 1 !== arr.length && <br />}
             />
           ))}
@@ -161,7 +159,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={ft.forestryCare ? ft.forestryCare : null}
+              data={ft.forestryCare}
               footer={isMobile && idx + 1 !== arr.length && <br />}
             />
           ))}
@@ -172,15 +170,15 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={ft.heightDispersion ? ft.heightDispersion : null}
+              data={ft.heightDispersion}
             />
           ))}
         </Table.Row>
         <Table.Row>
-          <HeaderCell>{t('lu.forestType.terrain')}</HeaderCell>
+          <HeaderCell>{t('forestType.terrain')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell code={ft.code} key={ft.code}>
-              <Relief code={ft.code} />
+              <Relief code={ft.code} trimCode />
             </ComparisonCell>
           ))}
         </Table.Row>
@@ -190,7 +188,7 @@ function ForestTypeTab({ data }) {
             <ComparisonCell
               key={ft.code}
               code={ft.code}
-              data={ft.vegetation ? ft.vegetation : null}
+              data={ft.vegetation}
               footer={isMobile && idx + 1 !== arr.length && <br />}
             />
           ))}

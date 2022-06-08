@@ -90,7 +90,7 @@ KS: Fiederblättrige Zahnwurz, Wald-Schwingel, Bingelkraut, Waldmeister, Goldnes
 12S;Feuchter Bingelkraut-/Zahnwurz-Buchenwald;Mercuriali-/Cardamino-Fagetum circaetosum/allietosum;Gesamtzuwachs und Höhenbonität gut. Baumartenwahl durch montanes Klima und Bodenfeuchtigkeit bestimmt: Es, BAh, Bu, BUl, Ta. Dieser Standort eignet sich (wie Nr. 11 in der submontanen Stufe) für die Produktion hochwertiger Edellaubhölzer. Die feuchten Böden nicht befahren.;Spielraum vom BAh-Es-Bestand bis zum Laubholz-Ta-Mischwald. Nr. 12b besonders geeignet für Ta als Wertträger.;Der Bärlauchteppich im Frühling schränkt die Naturverjüngug im allgemeinen nicht ein.;BAh, Es, BUl in einzelmischung. Eschen frühzeitig und stark durchforsten.;Sehr wüchsiger Hallen-Buchenwald mit hohem Eschen-, Bergahorn- und Tannenanteil. Frühlingsaspekt meist vom Bärlauch bestimmt.;untermontan, 600-850m;Eher schattige Hänge und Hangfusslagen. Feuchte Böden in Zufuhrlagen, die für die Buche noch genügend durchlüftet sind. Feuchte, nährstoffreiche basenhaltige, teils vergleyte Braunerden.;Lehmreicher Gehängeschutt.;"BS: Bu, Es, BAh, BUl, (Ta)
 SS: Schwarzer Holunder
 KS: Bärlauch, Wald-Ziest, Ruprechtskraut, Hexenkraut, Bingelkraut, Wald-Schwingel, Gemeiner Wurmfarn
-";11, 12a 13a, 20
+";11, 12a, 13a, 20
 12e;Trockener Bingelkraut-/Zahnwurz-Buchenwald;Mercuriali-/Cardamino-Fagetum caricetosum albae;"Gesamtzuwachs und Höhenbonität mässig. Das montane Klima und die Bodentrockenheit bestimmen die Baumartenwahl: Bu, BAh, Fö, MBe; sowie Lä, SFö. Wegen der Steilheit oft nicht befahrbar.";Möglichkeit vom Buchenwald bis zum Mischwald aus BAh, Fö und Lä. MBe berücksichtigen.;"Natürliche Verjüngung im Allgemeinen nicht schwierig; jedoch keine grossflächigen Schläge, damit Strauchschicht und Grasteppich nicht gefördert werden.";Bu nicht in Einzelmischung, damit sie die Lichtbaumarten nicht bedrängt. Unterwuchs und Nebenbestand fördern die biologische Bodenaktivität und verbessern das Bestandesklima.;"Mässig wüchsiger Buchenwald trockener Hänge. Wärmeliebende Bäume wie Eichen oder Kirschen fehlen; die Tanne ist dieser Standort zu trocken.";obermontan, 600-900m;Meist gut besonnte Hänge. Trockene Kalkböden (Böden wie bei Nr. 10a und 14a, Lokalklima etwas kühler).;Jura-Kalke;"BS: Bu, BAh, Fö, MBe
 SS: Seidelbast, Rote Heckenkirsche
 KS: Weisse Segge, Fiederblättriger Zahnwurz, Immenblatt, Bingelkraut, Schwalbenwurz, Strauchwicke, Straussblütige Margerite
@@ -217,3 +217,7 @@ KS: Waldmeister, Ästige Graslilie, Fieder-Zwenke, Buntes Reitgras, Pfeifengras,
 SS: Felsenmispel, Alpen-Kreuzdorn, Strauckwicke, Wolliger Schneeball
 KS: Niedrige und Weisse Segge, Braunrote Sumpfwurz, Berg- und Edel-Gamander, Ästige Graslilie, Schwalbenwurz, Blaugras, Berg-Distel, Alpen-Bergflachs, Fieder-Zwenke
 ";16, 38
+98;bewaldete Wässerstellen;;;;;;;;;;;
+99;Wälder auf aufgeschütteten Böden;;;;;;;;;;;
+100;unbestockte Waldflächen;;;;;;;;;;;
+0;nicht interpretierbare Waldflächen;;;;;;;;;;;

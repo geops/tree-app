@@ -27,6 +27,12 @@ function GeneralTab({ data }) {
   return (
     <Table basic padded structured>
       <Table.Body>
+        <Table.Row>
+          <Table.HeaderCell>Laubholzanteil</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            {data.tilleringHardwood ? `${data.tilleringHardwood}%` : '-'}
+          </Table.Cell>
+        </Table.Row>
         <BorderlessRow>
           <Table.HeaderCell>Als Hauptbaumart geeignet</Table.HeaderCell>
           <Table.Cell colSpan="3">
@@ -103,7 +109,7 @@ function GeneralTab({ data }) {
           <Table.Cell colSpan="3">{data.geology || '-'}</Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          <Table.HeaderCell>{t('forestType.terrain')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <Relief code={data.code} />
           </Table.Cell>
@@ -119,7 +125,7 @@ function GeneralTab({ data }) {
         <Table.Row>
           <Table.HeaderCell>Vegetation</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{parseString(data.vegetation)}</p>
+            <p>{parseString(data.vegetation || '-')}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
@@ -160,6 +166,7 @@ GeneralTab.propTypes = {
     vegetation: PropTypes.string,
     vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
     tilleringTreeTypes: PropTypes.arrayOf(PropTypes.string),
+    tilleringHardwood: PropTypes.string,
   }).isRequired,
 };
 

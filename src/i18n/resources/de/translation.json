@@ -202,6 +202,7 @@
     "descriptionForestType": "Beschrieb Standort",
     "vegetationIndicator": "Zeigergruppen",
     "geology": "Geologie",
+    "terrain": "Relief",
     "aspect": {
       "001-025": "Nord - Nordnordost",
       "026-050": "Nordnordost - Nordost",
@@ -500,8 +501,7 @@
         "n": "Arten auf Blockschutt",
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
-      },
-      "terrain": "Relief"
+      }
     }
   },
   "bl": {

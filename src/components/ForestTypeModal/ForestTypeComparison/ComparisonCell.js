@@ -30,6 +30,7 @@ const ComparisonCell = ({
               hasSameValues ? comparisonStyles.comparisonIsSame : undefined
             }
           >
+            {!data && !children && '-'}
             {data ? getStringWithUnit(data, unit) : children}
           </span>
         </span>

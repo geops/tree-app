@@ -33,33 +33,36 @@ export const exportLocation = async (location, language, t) => {
   );
   const locationTable = await writeLocationTable(location, t);
 
+  let children = [
+    mainTitle,
+    profile,
+    date,
+    permalink,
+    ...verticalSpace(1),
+    locationTitle,
+    locationTable,
+  ];
+
   const associationGroup = info('associationGroup', undefined, 'bl').find(
     (assGroup) => assGroup.locations.includes(location.code),
   );
-  const associationsTitle = getTitle(associationGroup.de);
-  const associationsTable = writeAssociationsTable(
-    associationGroup,
-    language,
-    t,
-  );
+
+  if (associationGroup) {
+    const associationsTitle = getTitle(associationGroup?.de);
+    const associationsTable = writeAssociationsTable(
+      associationGroup,
+      language,
+      t,
+    );
+    children = [...children, pageBreak, associationsTitle, associationsTable];
+  }
 
   const doc = new Document({
     styles: style,
     sections: [
       {
         properties: pageProperties,
-        children: [
-          mainTitle,
-          profile,
-          date,
-          permalink,
-          ...verticalSpace(1),
-          locationTitle,
-          locationTable,
-          pageBreak,
-          associationsTitle,
-          associationsTable,
-        ],
+        children,
       },
     ],
   });

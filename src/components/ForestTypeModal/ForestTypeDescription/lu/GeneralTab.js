@@ -112,7 +112,7 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>{t('lu.forestType.terrain')}</Table.HeaderCell>
+          <Table.HeaderCell>{t('forestType.terrain')}</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <Relief code={data.code} trimCode />
           </Table.Cell>

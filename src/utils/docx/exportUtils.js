@@ -108,6 +108,14 @@ export const svgUriToBlob = async (dataUri) =>
 export const jsxToBlob = (jsx) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
+export const getImageHtml = (imagePath) =>
+  new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = () => reject();
+    img.src = imagePath;
+  });
+
 // Docx table helpers
 export const getPermalink = (text) =>
   new Paragraph({
@@ -125,18 +133,19 @@ export const getPermalink = (text) =>
     ],
   });
 
-export const getTitle = (title, latin) =>
-  new Paragraph({
-    children: [
-      new TextRun(title),
-      latin &&
-        new TextRun({
-          text: latin,
-          italics: true,
-        }),
-    ],
+export const getTitle = (title, latin) => {
+  if (!title) {
+    return new Paragraph();
+  }
+  const children = [new TextRun(title)];
+  if (latin) {
+    children.push(latin);
+  }
+  return new Paragraph({
+    children,
     heading: HeadingLevel.HEADING_3,
   });
+};
 
 export const getScenariosTableCell = (
   text,
@@ -174,6 +183,9 @@ export const getLocationTableCell = (
   borders = defaultBorder,
 ) => {
   let children = [];
+  if (!content) {
+    children = [new Paragraph('-')];
+  }
   if (typeof content === 'string') {
     children = content.split('\\n').map(
       (string) =>
@@ -190,7 +202,7 @@ export const getLocationTableCell = (
     verticalAlign: VerticalAlign.CENTER,
     borders,
     margins: padding,
-    children,
+    children: children.length > 0 ? children : [new Paragraph('-')],
   });
 };
 

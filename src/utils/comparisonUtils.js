@@ -26,7 +26,7 @@ export const getComparisonForestTypes = (
 };
 
 export const getValidForestTypes = (codes = [], activeProfile = 'ch') =>
-  codes.reduce((forestTypes, code) => {
+  (codes || []).reduce((forestTypes, code) => {
     try {
       const nextFt = info('forestType', code, activeProfile);
       return [...forestTypes, nextFt];

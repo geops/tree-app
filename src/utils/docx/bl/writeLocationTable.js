@@ -2,7 +2,12 @@ import React from 'react';
 import { Paragraph, Table, ImageRun, TextRun, BorderStyle } from 'docx';
 
 import Site from '../../../components/ForestTypeModal/ForestTypeDescription/bl/Site';
-import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from '../exportUtils';
+import {
+  PAGE_WIDTH_DXA,
+  getLocationTableRow,
+  jsxToBlob,
+  getImageHtml,
+} from '../exportUtils';
 import {
   vegetationMapping,
   getTilleringTreeTypes,
@@ -10,9 +15,14 @@ import {
 } from '../../../components/ForestTypeModal/ForestTypeDescription/bl/utils';
 import { getValidForestTypes } from '../../comparisonUtils';
 import { writeDataTable } from '../writeDataTable';
+import { getImageUrl } from '../../reliefMappings';
 
 const writeLocationTable = async (data, t) => {
   const sitePng = await jsxToBlob(<Site data={data.expoAndAspect} />);
+  const imagePath = getImageUrl(data.code, 'bl');
+  const imageHtml = imagePath && (await getImageHtml(imagePath));
+  const imageBlob =
+    imagePath && (await fetch(imagePath).then((response) => response.blob()));
   const transitions = getValidForestTypes(data.transitions, 'bl');
   const borderConfig = {
     color: 'e0e1e2',
@@ -21,24 +31,9 @@ const writeLocationTable = async (data, t) => {
   };
 
   const rows = [
-    getLocationTableRow('Eigenschaften', data.properties),
-    getLocationTableRow('Bestockungsziele', data.tillering),
-    getLocationTableRow('Verjüngung und Entwicklung', data.forestryRejuvDev),
-    getLocationTableRow('Pflege', data.forestryCare),
-    getLocationTableRow('Beschrieb Waldbild', data.descriptionNaturalForest),
-    getLocationTableRow('Höhenverbreitung', data.heightDispersion),
-    getLocationTableRow('Standort', data.location),
-    getLocationTableRow('Geologie', data.geology),
-    getLocationTableRow('Vegetation', data.vegetation),
     getLocationTableRow(
-      'Übergänge zu',
-      transitions?.map(
-        (ft) =>
-          new Paragraph({
-            text: `${ft.code} - ${ft.de}`,
-            style: 'main-20',
-          }),
-      ),
+      'Laubholzanteil',
+      data.tilleringHardwood ? `${data.tilleringHardwood}%` : '-',
     ),
     getLocationTableRow(
       'Als Hauptbaumart geeignet',
@@ -84,15 +79,38 @@ const writeLocationTable = async (data, t) => {
         right: borderConfig,
       },
     ),
-    getLocationTableRow('Laubholzanteil', `${data.tilleringHardwood}%`),
-    getLocationTableRow('Zeigergruppen', [
-      writeDataTable(
-        data.vegetationIndicator,
-        vegetationMapping,
-        'bl.forestType.vegetationIndicators',
-        soilIconTranslator,
-        t,
+    getLocationTableRow('Eigenschaften', data.properties),
+    getLocationTableRow('Bestockungsziele', data.tillering),
+    getLocationTableRow('Verjüngung und Entwicklung', data.forestryRejuvDev),
+    getLocationTableRow('Pflege', data.forestryCare),
+    getLocationTableRow('Beschrieb Waldbild', data.descriptionNaturalForest),
+    getLocationTableRow(
+      'Übergänge zu',
+      transitions?.map(
+        (ft) =>
+          new Paragraph({
+            text: `${ft.code} - ${ft.de}`,
+            style: 'main-20',
+          }),
       ),
+    ),
+    getLocationTableRow('Höhenverbreitung', data.heightDispersion),
+    getLocationTableRow('Standort', data.location),
+    getLocationTableRow('Geologie', data.geology),
+    getLocationTableRow(t('forestType.terrain'), [
+      new Paragraph({
+        children: [
+          imageBlob
+            ? new ImageRun({
+                data: imageBlob,
+                transformation: {
+                  width: imageHtml.width,
+                  height: imageHtml.height,
+                },
+              })
+            : new TextRun('-'),
+        ],
+      }),
     ]),
     getLocationTableRow('Hangneigung & Exposition', [
       new Paragraph({
@@ -108,6 +126,16 @@ const writeLocationTable = async (data, t) => {
             : new TextRun('-'),
         ],
       }),
+    ]),
+    getLocationTableRow('Vegetation', data.vegetation),
+    getLocationTableRow('Zeigerartengruppen', [
+      writeDataTable(
+        data.vegetationIndicator,
+        vegetationMapping,
+        'bl.forestType.vegetationIndicators',
+        soilIconTranslator,
+        t,
+      ),
     ]),
   ];
 

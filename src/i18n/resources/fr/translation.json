@@ -174,7 +174,6 @@
       "waterPermeability": "Perméabilité à l'eau",
       "permeability": "Perméabilité"
     },
-    "terrain": "Terrain",
     "vegetation": "Végétation aspect"
   },
   "dropdown": {
@@ -312,7 +311,8 @@
       "no": "Non",
       "unknown": "pas évalué"
     },
-    "cantonalForestTypes": "Types de station cantonal"
+    "cantonalForestTypes": "Types de station cantonal",
+    "terrain": "Terrain"
   },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
