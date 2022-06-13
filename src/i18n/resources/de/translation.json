@@ -474,13 +474,15 @@
       "subGroups": "Standortstypen",
       "soil": {
         "label": "Boden",
-        "l": "Streuhorizont",
-        "f": "Fermentations-Horizont",
-        "h": "Humus-Horizont",
-        "ahh": "Mineralerde-Durchmischungs-Horizont (mechanisch)",
-        "ah": "Mineralerde-Durchmischungs-Horizont (biologisch)",
-        "basen": "Kalk",
-        "feuchte": "vergleyt"
+        "typeMapping": {
+          "l": "Streuhorizont",
+          "f": "Fermentations-Horizont",
+          "h": "Humus-Horizont",
+          "ahh": "Mineralerde-Durchmischungs-Horizont (mechanisch)",
+          "ah": "Mineralerde-Durchmischungs-Horizont (biologisch)",
+          "basen": "Kalk",
+          "feuchte": "vergleyt"
+        }
       },
       "tillering": "Bestockung",
       "tilleringFirwood": "Tannenanteil",
