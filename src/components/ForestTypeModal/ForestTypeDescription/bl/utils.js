@@ -20,6 +20,9 @@ export const treeTypeMapping = [
   'VBe',
   'Nu',
   'FUl',
+  'FEi',
+  'FlUl',
+  'SbAh',
   'HBi',
   'Ro',
   'REi',
@@ -28,18 +31,25 @@ export const treeTypeMapping = [
   'Fi',
   'Fö',
   'Lä',
+  'Eib',
+  'BFö',
   'SFö',
   'Dou',
 ];
 
-export const getTilleringTreeTypes = (treeTypes, category) =>
-  treeTypeMapping.reduce(
+export const getTilleringTreeTypes = (treeTypes = [], category) => {
+  if (!treeTypes?.length) {
+    return null;
+  }
+
+  return treeTypeMapping.reduce(
     (finalTreeTypes, treeType, index) =>
       treeTypes[index] === category
         ? `${finalTreeTypes}${`${finalTreeTypes ? ', ' : ''}${treeType}`}`
         : finalTreeTypes,
     '',
   );
+};
 
 export const vegetationMapping = Object.keys(
   translation.bl.forestType.vegetationIndicators,

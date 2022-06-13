@@ -202,6 +202,7 @@
     "descriptionForestType": "Beschrieb Standort",
     "vegetationIndicator": "Zeigergruppen",
     "geology": "Geologie",
+    "terrain": "Relief",
     "aspect": {
       "001-025": "Nord - Nordnordost",
       "026-050": "Nordnordost - Nordost",
@@ -473,13 +474,15 @@
       "subGroups": "Standortstypen",
       "soil": {
         "label": "Boden",
-        "l": "Streuhorizont",
-        "f": "Fermentations-Horizont",
-        "h": "Humus-Horizont",
-        "ahh": "Mineralerde-Durchmischungs-Horizont (mechanisch)",
-        "ah": "Mineralerde-Durchmischungs-Horizont (biologisch)",
-        "basen": "Kalk",
-        "feuchte": "vergleyt"
+        "typeMapping": {
+          "l": "Streuhorizont",
+          "f": "Fermentations-Horizont",
+          "h": "Humus-Horizont",
+          "ahh": "Mineralerde-Durchmischungs-Horizont (mechanisch)",
+          "ah": "Mineralerde-Durchmischungs-Horizont (biologisch)",
+          "basen": "Kalk",
+          "feuchte": "vergleyt"
+        }
       },
       "tillering": "Bestockung",
       "tilleringFirwood": "Tannenanteil",
@@ -500,12 +503,12 @@
         "n": "Arten auf Blockschutt",
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
-      },
-      "terrain": "Relief"
+      }
     }
   },
   "bl": {
     "forestType": {
+      "descriptionNaturalForest": "Beschrieb Waldbild",
       "vegetationIndicators": {
         "A": "Starke Säurezeiger, lichtbedürftig",
         "B1": "Säurezeiger",

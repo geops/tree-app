@@ -174,7 +174,6 @@
       "waterPermeability": "Perméabilité à l'eau",
       "permeability": "Perméabilité"
     },
-    "terrain": "Terrain",
     "vegetation": "Végétation aspect"
   },
   "dropdown": {
@@ -198,7 +197,6 @@
     "properties": "Propriétés",
     "rejuvDev": "Rajeunissement et développement",
     "care": "Maintenance",
-    "descriptionNaturalForest": "Description forêt naturelle",
     "descriptionForestType": "Description emplacement",
     "vegetationIndicator": "Groupes d'indicateurs",
     "geology": "Géologie",
@@ -313,7 +311,8 @@
       "no": "Non",
       "unknown": "pas évalué"
     },
-    "cantonalForestTypes": "Types de station cantonal"
+    "cantonalForestTypes": "Types de station cantonal",
+    "terrain": "Terrain"
   },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
@@ -457,6 +456,7 @@
         "label": "Risque de compactage"
       },
       "description": "Description",
+      "descriptionNaturalForest": "Description forêt naturelle",
       "heightDispersion": "Répartition en altitude",
       "location": "Emplacement",
       "meaning": "Sens",
@@ -506,6 +506,7 @@
   },
   "bl": {
     "forestType": {
+      "descriptionNaturalForest": "Beschrieb Waldbild",
       "vegetationIndicators": {
         "A": "Starke Säurezeiger, lichtbedürftig",
         "B1": "Säurezeiger",

@@ -8,6 +8,7 @@ import Site from './Site';
 import ForestTypeLinksList from '../../ForestTypeLinksList';
 import DataTable from '../DataTable';
 import BorderlessRow from '../../BorderlessRow';
+import Relief from '../Relief';
 import {
   parseString,
   getValidForestTypes,
@@ -27,60 +28,9 @@ function GeneralTab({ data }) {
     <Table basic padded structured>
       <Table.Body>
         <Table.Row>
-          <Table.HeaderCell>Geologie</Table.HeaderCell>
-          <Table.Cell colSpan="3">{data.geology || '-'}</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Standortbeschreibung</Table.HeaderCell>
-          <Table.Cell colSpan="3">{data.location || '-'}</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Bestockung</Table.HeaderCell>
-          <Table.Cell colSpan="3">{data.tillering || '-'}</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Eigenschaften</Table.HeaderCell>
-          <Table.Cell colSpan="3">{data.properties || '-'}</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Verjüngung und Entwicklung</Table.HeaderCell>
+          <Table.HeaderCell>Laubholzanteil</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{parseString(data.forestryRejuvDev) || '-'}</p>
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Pflege</Table.HeaderCell>
-          <Table.Cell colSpan="3">
-            <p>{parseString(data.forestryCare) || '-'}</p>
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Beschreibung Naturwald</Table.HeaderCell>
-          <Table.Cell colSpan="3">
-            <p>{parseString(data.descriptionNaturalForest) || '-'}</p>
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Höhenverbreitung</Table.HeaderCell>
-          <Table.Cell colSpan="3">
-            <p>{parseString(data.heightDispersion) || '-'}</p>
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Hangneigung & Exposition</Table.HeaderCell>
-          <Table.Cell colSpan="3">
-            <div style={{ padding: '10px 0' }}>
-              <Site data={data.expoAndAspect} />
-            </div>
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.HeaderCell>Übergänge zu</Table.HeaderCell>
-          <Table.Cell colSpan="3">
-            <ForestTypeLinksList
-              forestTypes={transitions}
-              onClick={(evt, code) => dispatch(setForestTypeDescription(code))}
-            />
+            {data.tilleringHardwood ? `${data.tilleringHardwood}%` : '-'}
           </Table.Cell>
         </Table.Row>
         <BorderlessRow>
@@ -110,13 +60,76 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </BorderlessRow>
         <Table.Row>
-          <Table.HeaderCell>Vegetation</Table.HeaderCell>
+          <Table.HeaderCell>Eigenschaften</Table.HeaderCell>
+          <Table.Cell colSpan="3">{data.properties || '-'}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Bestockungsziele</Table.HeaderCell>
+          <Table.Cell colSpan="3">{data.tillering || '-'}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Verjüngung und Entwicklung</Table.HeaderCell>
           <Table.Cell colSpan="3">
-            <p>{parseString(data.vegetation)}</p>
+            <p>{parseString(data.forestryRejuvDev) || '-'}</p>
           </Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>Zeigergruppen</Table.HeaderCell>
+          <Table.HeaderCell>Pflege</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseString(data.forestryCare) || '-'}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Beschrieb Walbild</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseString(data.descriptionNaturalForest) || '-'}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Übergänge zu</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <ForestTypeLinksList
+              forestTypes={transitions}
+              onClick={(evt, code) => dispatch(setForestTypeDescription(code))}
+            />
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Höhenverbreitung</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseString(data.heightDispersion) || '-'}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Standort</Table.HeaderCell>
+          <Table.Cell colSpan="3">{data.location || '-'}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Geologie</Table.HeaderCell>
+          <Table.Cell colSpan="3">{data.geology || '-'}</Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>{t('forestType.terrain')}</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <Relief code={data.code} />
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Hangneigung & Exposition</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <div style={{ padding: '10px 0' }}>
+              <Site data={data.expoAndAspect} />
+            </div>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Vegetation</Table.HeaderCell>
+          <Table.Cell colSpan="3">
+            <p>{parseString(data.vegetation || '-')}</p>
+          </Table.Cell>
+        </Table.Row>
+        <Table.Row>
+          <Table.HeaderCell>Zeigerartengruppen</Table.HeaderCell>
           <Table.Cell colSpan="3">
             <DataTable
               data={data.vegetationIndicator}
@@ -153,6 +166,7 @@ GeneralTab.propTypes = {
     vegetation: PropTypes.string,
     vegetationIndicator: PropTypes.arrayOf(PropTypes.number),
     tilleringTreeTypes: PropTypes.arrayOf(PropTypes.string),
+    tilleringHardwood: PropTypes.string,
   }).isRequired,
 };
 

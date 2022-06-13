@@ -32,7 +32,9 @@ export const treeTypeMapping = [
 export const vegetationMapping = Object.keys(
   translation.lu.forestType.vegetationIndicators,
 );
-export const soilMapping = Object.keys(translation.lu.forestType.soil);
+export const soilMapping = Object.keys(
+  translation.lu.forestType.soil.typeMapping,
+);
 
 export const getTilleringTreeTypes = (data) =>
   data[0]

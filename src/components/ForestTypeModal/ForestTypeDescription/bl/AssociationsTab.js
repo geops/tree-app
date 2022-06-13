@@ -20,7 +20,7 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
     undefined,
     activeProfile,
   ).find((group) => group.locations.includes(forestTypeCode));
-  const forestSubTypes = getValidForestTypes(associationGroup.locations, 'bl');
+  const forestSubTypes = getValidForestTypes(associationGroup?.locations, 'bl');
 
   return (
     <>
@@ -34,63 +34,65 @@ function AssociationsTab({ forestTypeCode, onForestTypeChange }) {
           t('forestTypeModal.noDataHeader')
         )}
       </h3>
-      <Table basic padded structured>
-        <Table.Body>
-          <Table.Row>
-            <Table.HeaderCell>Standortbeschreibung</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <p>{parseString(associationGroup.description)}</p>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.HeaderCell>Waldbild</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <p>{parseString(associationGroup.forestAppearance)}</p>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.HeaderCell>Höhenverbreitung</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <p>{parseString(associationGroup.heightDispersion)}</p>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.HeaderCell>Nutzung und Pflege</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <p>{parseString(associationGroup.useAndCare)}</p>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.HeaderCell>Fläche</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <div>
-                <strong>Basel-Land:</strong>
-                {` ${associationGroup.areaBl}ha`}
-              </div>
-              <div>
-                <strong>Basel-Stadt:</strong>
-                {` ${associationGroup.areaBs}ha`}
-              </div>
-              <div>
-                <strong>Gesamter Flächenanteil:</strong>
-                {` ${associationGroup.areaBlBsPercent}%`}
-              </div>
-            </Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.HeaderCell>Standortstypen</Table.HeaderCell>
-            <Table.Cell colSpan="3">
-              <ForestTypeLinksList
-                forestTypes={forestSubTypes}
-                onClick={(evt, code) => {
-                  dispatch(setForestTypeDescription(code));
-                  onForestTypeChange();
-                }}
-              />
-            </Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>
+      {associationGroup && (
+        <Table basic padded structured>
+          <Table.Body>
+            <Table.Row>
+              <Table.HeaderCell>Nutzung und Pflege</Table.HeaderCell>
+              <Table.Cell colSpan="3">
+                <p>{parseString(associationGroup.useAndCare)}</p>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.HeaderCell>Waldbild</Table.HeaderCell>
+              <Table.Cell colSpan="3">
+                <p>{parseString(associationGroup?.forestAppearance)}</p>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.HeaderCell>Höhenverbreitung</Table.HeaderCell>
+              <Table.Cell colSpan="3">
+                <p>{parseString(associationGroup.heightDispersion)}</p>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.HeaderCell>Standortbeschreibung</Table.HeaderCell>
+              <Table.Cell colSpan="3">
+                <p>{parseString(associationGroup?.description)}</p>
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.HeaderCell>Standortstypen</Table.HeaderCell>
+              <Table.Cell colSpan="3">
+                <ForestTypeLinksList
+                  forestTypes={forestSubTypes}
+                  onClick={(evt, code) => {
+                    dispatch(setForestTypeDescription(code));
+                    onForestTypeChange();
+                  }}
+                />
+              </Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.HeaderCell>Fläche</Table.HeaderCell>
+              <Table.Cell colSpan="3">
+                <div>
+                  <strong>Basel-Land:</strong>
+                  {` ${associationGroup.areaBl}ha`}
+                </div>
+                <div>
+                  <strong>Basel-Stadt:</strong>
+                  {` ${associationGroup.areaBs}ha`}
+                </div>
+                <div>
+                  <strong>Gesamter Flächenanteil:</strong>
+                  {` ${associationGroup.areaBlBsPercent}%`}
+                </div>
+              </Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      )}
     </>
   );
 }

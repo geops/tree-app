@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Table } from 'semantic-ui-react';
+import { useTranslation } from 'react-i18next';
 
 import SoilIcon from '../../../icons/SoilIcon';
 
 function DataTable({ data, getLabel, getValue }) {
+  const { t } = useTranslation();
+  if (!data?.length) {
+    return <strong>{t('forestTypeModal.noDataHeader')}</strong>;
+  }
   return (
     <div style={{ width: '100%', maxWidth: 400 }}>
       <Table basic columns={2} compact padded>
