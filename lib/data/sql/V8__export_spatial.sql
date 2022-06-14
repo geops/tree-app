@@ -132,4 +132,9 @@ SELECT CASE naisue is null
        END AS code,
        ST_Transform(geom, 3857) as geometry
 FROM forest_types_ju
-WHERE nais1 IS NOT NULL;
+WHERE nais1 IS NOT NULL
+UNION
+SELECT nais_2022 AS code,
+       ST_Transform(geom, 3857) as geometry
+FROM forest_types_bl
+WHERE nais_2022 IS NOT NULL;

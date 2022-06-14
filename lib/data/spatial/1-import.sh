@@ -65,3 +65,5 @@ _import "Download manually" "forest_types_zh" "forest_types_zh" "forest_types_zh
 _import "Download manually" "forest_types_fr" "forest_types_fr" "forest_types_fr"
 
 _import "Download manually" "forest_types_ju" "forest_types_ju" "forest_types_ju"
+
+_import "Download manually" "forest_types_bl" "forest_types_bl" "forest_types_bl"
