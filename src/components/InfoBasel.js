@@ -28,7 +28,7 @@ export default function InfoBasel() {
         Eine gesamtheitliche Abwägung der Handlungsoptionen ist und bleibt die
         Kernkompetenz der Forstfachpersonen.
       </p>
-      <h3>Standortypen und Gesellschaftsgruppen</h3>
+      <h3>Standortstypen und Gesellschaftsgruppen</h3>
       <p>
         Die Beschreibungen zu den Standortstypen umfassen die waldbaulichen
         Empfehlungen, die gezielt auf den einzelnen Standort bezogen sind. Sie
