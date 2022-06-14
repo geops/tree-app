@@ -83,7 +83,10 @@ const writeLocationTable = async (data, t) => {
     getLocationTableRow('Bestockungsziele', data.tillering),
     getLocationTableRow('Verjüngung und Entwicklung', data.forestryRejuvDev),
     getLocationTableRow('Pflege', data.forestryCare),
-    getLocationTableRow('Beschrieb Waldbild', data.descriptionNaturalForest),
+    getLocationTableRow(
+      t('bl.forestType.descriptionNaturalForest'),
+      data.descriptionNaturalForest,
+    ),
     getLocationTableRow(
       'Übergänge zu',
       transitions?.map(

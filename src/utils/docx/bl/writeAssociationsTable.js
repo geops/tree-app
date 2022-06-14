@@ -7,18 +7,13 @@ const writeAssociationsTable = (associationGroup) => {
   return new Table({
     columnWidths: [(PAGE_WIDTH_DXA / 6) * 2, (PAGE_WIDTH_DXA / 6) * 4],
     rows: [
-      getLocationTableRow('Standortbeschreibung', associationGroup.description),
+      getLocationTableRow('Nutzung und Pflege', associationGroup.useAndCare),
       getLocationTableRow('Waldbild', associationGroup.forestAppearance),
       getLocationTableRow(
         'Höhenverbreitung',
         associationGroup.heightDispersion,
       ),
-      getLocationTableRow('Nutzung und Pflege', associationGroup.useAndCare),
-      getLocationTableRow('Fläche', [
-        writeLine(associationGroup.areaBl, 'Basel-Land'),
-        writeLine(associationGroup.areaBs, 'Basel-Stadt'),
-        writeLine(associationGroup.areaBlBsPercent, 'Gesamter Flächenanteil'),
-      ]),
+      getLocationTableRow('Standortbeschreibung', associationGroup.description),
       getLocationTableRow(
         'Standortstypen',
         forestSubTypes?.map(
@@ -29,6 +24,11 @@ const writeAssociationsTable = (associationGroup) => {
             }),
         ),
       ),
+      getLocationTableRow('Fläche', [
+        writeLine(associationGroup.areaBl, 'Basel-Land'),
+        writeLine(associationGroup.areaBs, 'Basel-Stadt'),
+        writeLine(associationGroup.areaBlBsPercent, 'Gesamter Flächenanteil'),
+      ]),
     ],
   });
 };

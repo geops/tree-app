@@ -147,7 +147,7 @@ function ForestTypeTab({ data }) {
           ))}
         </Table.Row>
         <Table.Row>
-          <HeaderCell>Beschrieb Waldbild</HeaderCell>
+          <HeaderCell>{t('bl.forestType.descriptionNaturalForest')}</HeaderCell>
           {data.map((ft, idx, arr) => (
             <ComparisonCell
               key={ft.code}

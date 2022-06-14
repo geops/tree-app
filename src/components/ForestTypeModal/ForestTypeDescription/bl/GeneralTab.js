@@ -80,7 +80,9 @@ function GeneralTab({ data }) {
           </Table.Cell>
         </Table.Row>
         <Table.Row>
-          <Table.HeaderCell>Beschrieb Walbild</Table.HeaderCell>
+          <Table.HeaderCell>
+            {t('bl.forestType.descriptionNaturalForest')}
+          </Table.HeaderCell>
           <Table.Cell colSpan="3">
             <p>{parseString(data.descriptionNaturalForest) || '-'}</p>
           </Table.Cell>
