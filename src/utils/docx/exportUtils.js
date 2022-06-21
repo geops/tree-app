@@ -139,7 +139,12 @@ export const getTitle = (title, latin) => {
   }
   const children = [new TextRun(title)];
   if (latin) {
-    children.push(new Paragraph(latin));
+    children.push(
+      new TextRun({
+        text: latin,
+        italics: true,
+      }),
+    );
   }
   return new Paragraph({
     children,
