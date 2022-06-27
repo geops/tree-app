@@ -1,14 +1,15 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
+import { utils } from '@geops/tree-lib';
 import NoData from '../NoData';
 import styles from '../ForestTypeDescription.module.css';
-import { getImageUrl } from '../../../utils/reliefMappings';
 
+const { getReliefImageUrl } = utils();
 function Relief({ code }) {
   const activeProfile = useSelector((state) => state.activeProfile);
   const imageUrl = useMemo(
-    () => getImageUrl(code, activeProfile),
+    () => getReliefImageUrl(code, activeProfile),
     [code, activeProfile],
   );
   return imageUrl ? (

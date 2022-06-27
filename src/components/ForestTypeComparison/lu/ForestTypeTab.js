@@ -2,16 +2,13 @@ import PropTypes from 'prop-types';
 import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
+import { utils } from '@geops/tree-lib';
 import useIsMobile from '../../../hooks/useIsMobile';
 
 import Relief from '../../ForestTypeDescription/lu/Relief';
 import ComparisonCell from './ComparisonCell';
 import ForestTypeLink from './ForestTypeLink';
 import SoilIcon from '../../../icons/SoilIcon';
-import {
-  treeTypeMapping,
-  soilMapping,
-} from '../../ForestTypeDescription/lu/utils';
 import { getStringWithUnit } from '../../../utils/comparisonUtils';
 import comparisonStyles from '../ForestTypeComparison.module.css';
 
@@ -34,37 +31,39 @@ function ForestTypeTab({ data }) {
 
   const treeTypeCells = useMemo(
     () =>
-      treeTypeMapping.reduce((treeTypes, currTreeType, idx) => {
-        const cells = data.map((ft) => ({
-          code: ft.code,
-          natural: ft.tillering[0][idx],
-          commercial: ft.tillering[1] && ft.tillering[1][idx],
-        }));
-        return cells.every(
-          (cell) =>
-            cell.natural[0] === (undefined || null) &&
-            cell.natural[1] === (undefined || null),
-        )
-          ? treeTypes
-          : [
-              ...treeTypes,
-              {
-                treeType: currTreeType,
-                cells: cells.map((cell) => (
-                  <ComparisonCell
-                    key={`${currTreeType} - ${cell.code}`}
-                    code={cell.code}
-                    className={comparisonStyles.treeTypeCell}
-                  >
-                    <div>{`${getStringWithUnit(cell.natural, '%')}`}</div>
-                    {getStringWithUnit(cell.commercial, '%') !== '-' && (
-                      <div>({getStringWithUnit(cell.commercial, '%')})</div>
-                    )}
-                  </ComparisonCell>
-                )),
-              },
-            ];
-      }, []),
+      utils()
+        .getMapping('treeTypes', 'lu')
+        .reduce((treeTypes, currTreeType, idx) => {
+          const cells = data.map((ft) => ({
+            code: ft.code,
+            natural: ft.tillering[0][idx],
+            commercial: ft.tillering[1] && ft.tillering[1][idx],
+          }));
+          return cells.every(
+            (cell) =>
+              cell.natural[0] === (undefined || null) &&
+              cell.natural[1] === (undefined || null),
+          )
+            ? treeTypes
+            : [
+                ...treeTypes,
+                {
+                  treeType: currTreeType,
+                  cells: cells.map((cell) => (
+                    <ComparisonCell
+                      key={`${currTreeType} - ${cell.code}`}
+                      code={cell.code}
+                      className={comparisonStyles.treeTypeCell}
+                    >
+                      <div>{`${getStringWithUnit(cell.natural, '%')}`}</div>
+                      {getStringWithUnit(cell.commercial, '%') !== '-' && (
+                        <div>({getStringWithUnit(cell.commercial, '%')})</div>
+                      )}
+                    </ComparisonCell>
+                  )),
+                },
+              ];
+        }, []),
     [data],
   );
 
@@ -221,24 +220,26 @@ function ForestTypeTab({ data }) {
           <HeaderCell>{t('lu.forestType.soil.label')}</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
-              {soilMapping.map((soilType, idx) => {
-                const value = ft.soil[idx];
-                return (
-                  <span
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      gap: 10,
-                      minWidth: 80,
-                      opacity: value ? 1 : 0.4,
-                    }}
-                  >
-                    {/* eslint-disable-next-line react/destructuring-assignment */}
-                    {soilType.toUpperCase()}
-                    {value && <SoilIcon value={value} size={10} />}
-                  </span>
-                );
-              })}
+              {utils()
+                .getMapping('soil', 'lu')
+                .map((soilType, idx) => {
+                  const value = ft.soil[idx];
+                  return (
+                    <span
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        gap: 10,
+                        minWidth: 80,
+                        opacity: value ? 1 : 0.4,
+                      }}
+                    >
+                      {/* eslint-disable-next-line react/destructuring-assignment */}
+                      {soilType.toUpperCase()}
+                      {value && <SoilIcon value={value} size={10} />}
+                    </span>
+                  );
+                })}
             </ComparisonCell>
           ))}
         </Table.Row>

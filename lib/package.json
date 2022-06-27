@@ -39,6 +39,7 @@
     "data:spatial:deploy:local": "yarn run netlify dev -d ./data/spatial/tiles",
     "data:spatial:deploy": "netlify deploy --dir=data/spatial/tiles --prod --site=5dc39927-3ba0-485e-b01d-2e15385ce212",
     "data:spatial:deploy:staging": "netlify deploy --dir=data/spatial/tiles --prod --site=25c2d3a9-948d-4f31-a534-44830dcd5e12",
+    "data:export:csv": "node --experimental-json-modules export/src/export_csv.mjs",
     "doc:build": "documentation build src/** --format html --output doc --config documentation.yml",
     "doc:serve": "documentation serve --config documentation.yml --watch src/**",
     "build": "webpack --mode production",
@@ -54,7 +55,8 @@
     "lodash.get": "^4.4.2",
     "lodash.intersection": "^4.4.0",
     "lodash.union": "^4.6.0",
-    "lodash.xor": "^4.5.0"
+    "lodash.xor": "^4.5.0",
+    "proj4": "^2.8.0"
   },
   "repository": {
     "type": "git",
