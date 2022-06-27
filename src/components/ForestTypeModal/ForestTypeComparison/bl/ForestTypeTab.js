@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Table } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 import { useTranslation } from 'react-i18next';
-import useIsMobile from '../../../../hooks/useIsMobile';
 
+import useIsMobile from '../../../../hooks/useIsMobile';
 import ComparisonCell from '../ComparisonCell';
 import BorderlessRow from '../../BorderlessRow';
 import HeaderCell from '../ComparisonHeaderCell';
@@ -18,7 +18,6 @@ import {
   setForestTypeModal,
 } from '../../../../store/actions';
 import {
-  vegetationMapping,
   getTilleringTreeTypes,
   soilIconTranslator,
 } from '../../ForestTypeDescription/bl/utils';
@@ -243,26 +242,28 @@ function ForestTypeTab({ data }) {
           <HeaderCell>Zeigerartengruppen</HeaderCell>
           {data.map((ft) => (
             <ComparisonCell key={ft.code} code={ft.code}>
-              {vegetationMapping.map((indicator, idx) => {
-                const value = soilIconTranslator(
-                  ft.vegetationIndicator && ft.vegetationIndicator[idx],
-                );
-                return (
-                  <span
-                    key={`${ft.code}-${indicator}`}
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      gap: 10,
-                      minWidth: 80,
-                      opacity: value ? 1 : 0.4,
-                    }}
-                  >
-                    {indicator.toUpperCase()}
-                    {value && <SoilIcon value={value} size={10} />}
-                  </span>
-                );
-              })}
+              {utils()
+                .getMapping('vegetation', 'bl')
+                .map((indicator, idx) => {
+                  const value = soilIconTranslator(
+                    ft.vegetationIndicator && ft.vegetationIndicator[idx],
+                  );
+                  return (
+                    <span
+                      key={`${ft.code}-${indicator}`}
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        gap: 10,
+                        minWidth: 80,
+                        opacity: value ? 1 : 0.4,
+                      }}
+                    >
+                      {indicator.toUpperCase()}
+                      {value && <SoilIcon value={value} size={10} />}
+                    </span>
+                  );
+                })}
             </ComparisonCell>
           ))}
         </Table.Row>

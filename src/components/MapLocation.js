@@ -32,12 +32,12 @@ const getHasTransition = (code) => code.includes('(') && code.endsWith(')');
 const featuresToLocation = (location, f) => {
   const key = getKey(f.sourceLayer) || f.sourceLayer;
   const value = f.properties.code.toString();
-  const transition = value.includes('(') && value.endsWith(')');
+  const transition = getHasTransition(value);
 
   if (f.sourceLayer === 'forest_types') {
     let forestType = value;
     let transitionForestType = null;
-    if (getHasTransition(value)) {
+    if (transition) {
       [, forestType, transitionForestType] = value.match(/(.*)\((.*)\)/);
     }
     let forestTypeInfo;
@@ -70,7 +70,7 @@ const featuresToLocation = (location, f) => {
     if (value === '-10') {
       return { ...location, [key]: null };
     }
-    if (getHasTransition(value)) {
+    if (transition) {
       const [, azValue, transAzValue] = value.match(/(.*)\((.*)\)/);
       return {
         ...location,

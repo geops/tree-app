@@ -29,6 +29,7 @@ const ComparisonCell = ({
             className={
               hasSameValues ? comparisonStyles.comparisonIsSame : undefined
             }
+            style={{ maxWidth: '12vw' }}
           >
             {!data && !children && '-'}
             {data ? getStringWithUnit(data, unit) : children}

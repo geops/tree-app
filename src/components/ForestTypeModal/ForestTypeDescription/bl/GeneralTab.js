@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { Table } from 'semantic-ui-react';
+import { utils } from '@geops/tree-lib';
 
 import Site from './Site';
 import ForestTypeLinksList from '../../ForestTypeLinksList';
@@ -14,15 +15,15 @@ import {
   getValidForestTypes,
 } from '../../../../utils/comparisonUtils';
 import { setForestTypeDescription } from '../../../../store/actions';
-import {
-  vegetationMapping,
-  getTilleringTreeTypes,
-  soilIconTranslator,
-} from './utils';
+import { getTilleringTreeTypes, soilIconTranslator } from './utils';
 
 function GeneralTab({ data }) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
+  const vegetationMapping = useMemo(
+    () => utils().getMapping('vegetation', 'bl'),
+    [],
+  );
   const transitions = getValidForestTypes(data.transitions, 'bl');
   return (
     <Table basic padded structured>

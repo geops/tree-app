@@ -1,29 +1,26 @@
 import React from 'react';
 import { Paragraph, Table, ImageRun, TextRun, BorderStyle } from 'docx';
+import { utils } from '@geops/tree-lib';
 
 import Site from '../../../components/ForestTypeModal/ForestTypeDescription/bl/Site';
+import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from '../exportUtils';
 import {
-  PAGE_WIDTH_DXA,
-  getLocationTableRow,
-  jsxToBlob,
-  getImageHtml,
-} from '../exportUtils';
-import {
-  vegetationMapping,
   getTilleringTreeTypes,
   soilIconTranslator,
 } from '../../../components/ForestTypeModal/ForestTypeDescription/bl/utils';
 import { getValidForestTypes } from '../../comparisonUtils';
 import { writeDataTable } from '../writeDataTable';
-import { getImageUrl } from '../../reliefMappings';
+
+const { getReliefImageUrl, getMapping, getImageHtml } = utils();
 
 const writeLocationTable = async (data, t) => {
   const sitePng = await jsxToBlob(<Site data={data.expoAndAspect} />);
-  const imagePath = getImageUrl(data.code, 'bl');
+  const imagePath = getReliefImageUrl(data.code, 'bl');
   const imageHtml = imagePath && (await getImageHtml(imagePath));
   const imageBlob =
     imagePath && (await fetch(imagePath).then((response) => response.blob()));
   const transitions = getValidForestTypes(data.transitions, 'bl');
+  const vegetationMapping = getMapping('vegetation', 'bl');
   const borderConfig = {
     color: 'e0e1e2',
     style: BorderStyle.SINGLE,

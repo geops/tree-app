@@ -6551,16 +6551,6 @@
         "forestAppearance": null,
         "heightDispersion": null
       }
-    ],
-    "transitionMapping": [
-      { "code": "7a(10a)", "cantonalForestTypes": ["7a(10a)"] },
-      { "code": "7S(10a)", "cantonalForestTypes": ["7S(10a)"] },
-      { "code": "7a(9a)", "cantonalForestTypes": ["7a(9a)"] },
-      { "code": "7S(9a)", "cantonalForestTypes": ["7S(9a)"] },
-      { "code": "8a(12a)", "cantonalForestTypes": ["8a(12a)"] },
-      { "code": "8a(12e)", "cantonalForestTypes": ["8a(12e)"] },
-      { "code": "9a(11)", "cantonalForestTypes": ["9a(11)"] },
-      { "code": "12a(9a)", "cantonalForestTypes": ["12a(9a)"] }
     ]
   },
   "ch": {
@@ -78818,22 +78808,6 @@
         "aptitudeMeaning": "Der Schutz vor Naturgefahren steht im Vordergrund: Stabilisierung der Hänge, Förderung von Mischbaumarten.",
         "heightDispersion": "hochmontan, subalpin; 1300-1800m"
       }
-    ],
-    "transitionMapping": [
-      { "code": "7a(6)", "cantonalForestTypes": ["7d"] },
-      { "code": "7a(10a)", "cantonalForestTypes": ["7e"] },
-      { "code": "7a(9a)", "cantonalForestTypes": ["7f"] },
-      { "code": "8a(8*)", "cantonalForestTypes": ["8c"] },
-      { "code": "8a(12e)", "cantonalForestTypes": ["8e"] },
-      { "code": "8a(12a)", "cantonalForestTypes": ["8f"] },
-      { "code": "18(46)", "cantonalForestTypes": ["18c"] },
-      { "code": "29h(46)", "cantonalForestTypes": ["26c"] },
-      { "code": "26(17)", "cantonalForestTypes": ["26P"] },
-      { "code": "29(46t)", "cantonalForestTypes": ["29Ls"] },
-      { "code": "50(46)", "cantonalForestTypes": ["50d"] },
-      { "code": "50(49*Ta)", "cantonalForestTypes": ["50f"] },
-      { "code": "57S(71)", "cantonalForestTypes": ["57B"] },
-      { "code": "71(70)", "cantonalForestTypes": ["71*"] }
     ]
   }
 }

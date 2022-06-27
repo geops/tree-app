@@ -1,6 +1,6 @@
 import { Paragraph, Table, TableRow, TableCell } from 'docx';
-import { list, info } from '@geops/tree-lib';
-import { getAZ, getScenarios, getScenarioColumns } from '../projectionUtils';
+import { list, info, utils } from '@geops/tree-lib';
+import { getScenarios, getScenarioColumns } from '../projectionUtils';
 import {
   treeTypesReducer,
   PAGE_WIDTH_DXA,
@@ -11,7 +11,7 @@ import {
 
 const getScenarioColumn = (scenario, projection, language, t) => {
   const { forestType, transitionForestType } = projection;
-  const altitudinalZone = getAZ(projection.altitudinalZone);
+  const altitudinalZone = utils.projection.getAZ(projection.altitudinalZone);
   const scenarios = getScenarios(scenario, t);
   const treeValues = list(projection, true).slice(0, 3);
   return (

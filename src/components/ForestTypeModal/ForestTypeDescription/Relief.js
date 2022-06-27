@@ -3,15 +3,16 @@ import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
+import { utils } from '@geops/tree-lib';
 import styles from './ForestTypeDescription.module.css';
-import { getImageUrl } from '../../../utils/reliefMappings';
 import diagramStyles from './Diagram.module.css';
 
+const { getReliefImageUrl } = utils();
 function Relief({ code, trimCode }) {
   const { t } = useTranslation();
   const activeProfile = useSelector((state) => state.activeProfile);
   const imageUrl = useMemo(
-    () => getImageUrl(code, activeProfile, trimCode),
+    () => getReliefImageUrl(code, activeProfile, trimCode),
     [code, activeProfile, trimCode],
   );
   return imageUrl ? (

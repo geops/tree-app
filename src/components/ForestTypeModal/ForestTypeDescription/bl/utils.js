@@ -1,48 +1,12 @@
-import translation from '../../../../i18n/resources/de/translation.json';
+import { utils } from '@geops/tree-lib';
 
-export const treeTypeMapping = [
-  'Bu',
-  'TEi',
-  'SEi',
-  'BAh',
-  'SAh',
-  'BUl',
-  'Es',
-  'SEr',
-  'TKi',
-  'FAh',
-  'HBu',
-  'Ki',
-  'WLi',
-  'SLi',
-  'EBe',
-  'MBe',
-  'VBe',
-  'Nu',
-  'FUl',
-  'FEi',
-  'FlUl',
-  'SbAh',
-  'HBi',
-  'Ro',
-  'REi',
-  'As',
-  'Ta',
-  'Fi',
-  'Fö',
-  'Lä',
-  'Eib',
-  'BFö',
-  'SFö',
-  'Dou',
-];
-
+const treeTypesMapping = utils().getMapping('treeTypes', 'bl');
 export const getTilleringTreeTypes = (treeTypes = [], category) => {
   if (!treeTypes?.length) {
     return null;
   }
 
-  return treeTypeMapping.reduce(
+  return treeTypesMapping.reduce(
     (finalTreeTypes, treeType, index) =>
       treeTypes[index] === category
         ? `${finalTreeTypes}${`${finalTreeTypes ? ', ' : ''}${treeType}`}`
@@ -50,10 +14,6 @@ export const getTilleringTreeTypes = (treeTypes = [], category) => {
     '',
   );
 };
-
-export const vegetationMapping = Object.keys(
-  translation.bl.forestType.vegetationIndicators,
-);
 
 export const soilIconTranslator = (key) => {
   switch (key) {
@@ -69,9 +29,3 @@ export const soilIconTranslator = (key) => {
       return null;
   }
 };
-
-const utils = {
-  vegetationMapping,
-  treeTypeMapping,
-};
-export default utils;

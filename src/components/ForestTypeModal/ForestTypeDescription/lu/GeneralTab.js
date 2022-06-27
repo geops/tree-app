@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Table } from 'semantic-ui-react';
+import { utils } from '@geops/tree-lib';
 import DataTable from '../DataTable';
 import Site from './Site';
 import Tillering from './Tillering';
 import TilleringSingle from './TilleringSingle';
 import Relief from '../Relief';
 import { parseString } from '../../../../utils/comparisonUtils';
-import { soilMapping, vegetationMapping } from './utils';
 
+const { getMapping } = utils();
 function GeneralTab({ data }) {
   const { t } = useTranslation();
+  const vegetationMapping = useMemo(() => getMapping('vegetation', 'lu'), []);
+  const soilMapping = useMemo(() => getMapping('soil', 'lu'), []);
 
   return (
     <Table basic padded structured>
@@ -159,7 +162,7 @@ function GeneralTab({ data }) {
               data={data.soil}
               getLabel={(i) =>
                 `${soilMapping[i]?.toUpperCase()}: ${t(
-                  `lu.forestType.soil.${soilMapping[i]}`,
+                  `lu.forestType.soil.typeMapping.${soilMapping[i]}`,
                 )}`
               }
             />

@@ -1,21 +1,14 @@
 import React from 'react';
 import { Paragraph, Table, ImageRun, TextRun } from 'docx';
+import { utils } from '@geops/tree-lib';
 import TilleringSingle from '../../../components/ForestTypeModal/ForestTypeDescription/lu/TilleringSingle';
 import Tillering from '../../../components/ForestTypeModal/ForestTypeDescription/lu/Tillering';
 import Site from '../../../components/ForestTypeModal/ForestTypeDescription/lu/Site';
-import {
-  PAGE_WIDTH_DXA,
-  getLocationTableRow,
-  jsxToBlob,
-  getImageHtml,
-} from '../exportUtils';
-import {
-  vegetationMapping,
-  soilMapping,
-  getTilleringTreeTypes,
-} from '../../../components/ForestTypeModal/ForestTypeDescription/lu/utils';
-import { getImageUrl } from '../../reliefMappings';
+import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from '../exportUtils';
+import { getTilleringTreeTypes } from '../../../components/ForestTypeModal/ForestTypeDescription/lu/utils';
 import { writeDataTable } from '../writeDataTable';
+
+const { getReliefImageUrl, getMapping, getImageHtml } = utils();
 
 const writeLocationTable = async (location, t) => {
   const tilleringHardwoodPng = await jsxToBlob(
@@ -23,10 +16,13 @@ const writeLocationTable = async (location, t) => {
   );
   const tilleringPng = await jsxToBlob(<Tillering data={location.tillering} />);
   const sitePng = await jsxToBlob(<Site data={location.expoAndAspect} />);
-  const imagePath = getImageUrl(location.code, 'lu', true);
+  const imagePath = getReliefImageUrl(location.code, 'lu', true);
   const imageHtml = imagePath && (await getImageHtml(imagePath));
   const imageBlob =
     imagePath && (await fetch(imagePath).then((response) => response.blob()));
+
+  const vegetationMapping = getMapping('vegetation', 'lu');
+  const soilMapping = getMapping('soil', 'lu');
 
   const rows = [
     getLocationTableRow(t('lu.forestType.tilleringHardwood'), [
@@ -143,7 +139,7 @@ const writeLocationTable = async (location, t) => {
       writeDataTable(
         location.soil,
         soilMapping,
-        'lu.forestType.soil',
+        'lu.forestType.soil.typeMapping',
         undefined,
         t,
       ),

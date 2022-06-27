@@ -46,12 +46,13 @@ function DataTable({ data, getLabel, getValue }) {
 }
 
 DataTable.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.number).isRequired,
+  data: PropTypes.arrayOf(PropTypes.number),
   getLabel: PropTypes.func.isRequired,
   getValue: PropTypes.func,
 };
 
 DataTable.defaultProps = {
+  data: undefined,
   getValue: (value) => value,
 };
 

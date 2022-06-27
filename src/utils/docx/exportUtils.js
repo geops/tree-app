@@ -108,14 +108,6 @@ export const svgUriToBlob = async (dataUri) =>
 export const jsxToBlob = (jsx) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
-export const getImageHtml = (imagePath) =>
-  new Promise((resolve, reject) => {
-    const img = new Image();
-    img.onload = () => resolve(img);
-    img.onerror = () => reject();
-    img.src = imagePath;
-  });
-
 // Docx table helpers
 export const getPermalink = (text) =>
   new Paragraph({

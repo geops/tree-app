@@ -1,0 +1,497 @@
+custom_forest_type_code;forest_type_code;latin;german
+N0001.0000000;1;Luzulo sylvaticae-/L. niveae-Fagetum typicum;Typischer Hainsimsen-Bu-Wald
+N0001.0090000;1h;"Luzulo-Abieti-Fagetum; artenarme Ausbildung";Artenarmer Waldsimsen-Ta-Bu-Wald
+N0002.0000000;2;Luzulo-Fagetum leucobryetosum;Hainsimsen-Bu-Wald mit Weissmoos
+N0003.0000000;3;Luzulo niveae-Fagetum typicum;Typischer Schneesimsen-Bu-Wald
+N0003.0000010;3s;"Luzulo niveae-Fagetum; trockene Ausbildung";Trockener Schneesimsen-Bu-Wald
+N0003.0001500;3LV;"Ilici-Fagetum typicum; nährstoffarme Ausbildung";Nährstoffarmer Bu-Wald mit Stechpalme
+N0003.0100000;3L/4L;Ilici-Fagetum typicum und dryopteridetosum;Mesophiler Bu-Wald mit Stechpalme
+N0003.1000000;3*/4*;Rhododendro-Fagetum;Alpenrosen-Bu-Wald
+N0004.0000000;4;Luzulo niveae-Fagetum dryopteridetosum;Farnreicher Schneesimsen-Bu-Wald
+N0006.0000000;6;Galio odorati-Fagetum luzuletosum;Waldmeister-Bu-Wald mit Hainsimse
+N0006.0000030;6Fe;"Galio odorati-Fagetum luzuletosum; Ausbildung auf Fels";Waldmeister-Bu-Wald mit Hainsimse auf Fels
+N0007.0001200;7S;Galio-Fagetum stachyetosum sylvaticae;Feuchter Waldmeister-Bu-Wald
+N0007.0001230;7SFe;"Galio-Fagetum stachyetosum sylvaticae; Ausbildung auf Fels";Feuchter Waldmeister-Bu-Wald auf Fels
+N0007.0010000;7a;Galio-Fagetum typicum;Typischer Waldmeister-Bu-Wald
+N0007.0010030;7aFe;"Galio-Fagetum typicum; Ausbildung auf Fels";Typischer Waldmeister-Bu-Wald auf Fels
+N0007.0020000;7b;Galio-Fagetum caricetosum remotae;Waldmeister-Bu-Wald mit Lockerähriger Segge
+N0007.1000000;7*;Galio-Fagetum blechnetosum;Waldmeister-Bu-Wald mit Rippenfarn
+N0008.0001200;8S;Milio-Fagetum stachyetosum sylvaticae;Feuchter Waldhirsen-Bu-Wald
+N0008.0001230;8SFe;"Milio-Fagetum stachyetosum sylvaticae; Ausbildung auf Fels";Feuchter Waldhirsen-Bu-Wald auf Fels
+N0008.0010000;8a;Milio-Fagetum typicum;Typischer Waldhirsen-Bu-Wald
+N0008.0010030;8aFe;"Milio-Fagetum typicum; Ausbildung auf Fels";Typischer Waldhirsen-Bu-Wald auf Fels
+N0008.0020000;8b;Milio-Fagetum caricetosum remotae;Waldhirsen-Bu-Wald mit  Lockerähriger Segge
+N0008.0040000;8d;Milio-Fagetum luzuletosum;Waldhirsen-Bu-Wald mit Hainsimse
+N0008.0040030;8dFe;"Milio-Fagetum luzuletosum; Ausbildung auf Fels";Waldhirsen-Bu-Wald mit Hainsimse auf Fels
+N0008.1000000;8*;Milio-Fagetum blechnetosum;Waldhirsen-Bu-Wald mit Rippenfarn
+N0009.0010000;9a;Pulmonario-/ Lathyro-Fagetum typicum;Typischer Lungenkraut-/Platterbsen-Bu-Wald
+N0009.0010030;9aFe;"Pulmonario-/ Lathyro-Fagetum typicum; Ausbildung auf Fels";Typischer Lungenkraut-/Platterbsen-Bu-Wald auf Fels
+N0009.0140000;9w;Pulmonario-/ Lathyro-Fagetum caricetosum flaccae;Wechselfeuchter Lungenkraut-/Platterbsen-Bu-Wald
+N0010.0010000;10a;Pulmonario-/ Lathyro-Fagetum melittetosum;Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt
+N0010.0140000;10w;"Pulmonario-/ Lathyro-Fagetum melittetosum; Ausbildung mit Carex flacca";Wechseltrockener Lungenkraut-/Platterbsen-Bu-Wald mit Immenblatt
+N0011.0000000;11;Aro-Fagetum;Aronstab-Bu-Wald
+N0011.0000030;11Fe;"Aro-Fagetum; Ausbildung auf Fels";Aronstab-Bu-Wald auf Fels
+N0012.0001200;12S;Mercuriali-/Cardamino-Fagetum circaetosum ;Feuchter Bingelkraut-/Zahnwurz-Bu-Wald
+N0012.0001230;12SFe;"Mercuriali-/Cardamino-Fagetum circaetosum; Ausbildung auf Fels";Feuchter Bingelkraut-/Zahnwurz-Bu-Wald auf Fels
+N0012.0010000;12a;Mercuriali-/Cardamino-Fagetum typicum;Typischer Bingelkraut-/Zahnwurz-Bu-Wald
+N0012.0010030;12aFe;"Mercuriali-/Cardamino-Fagetum typicum; Ausbildung auf Fels";Typischer Bingelkraut-/Zahnwurz-Bu-Wald auf Fels
+N0012.0050000;12e;Mercuriali-/Cardamino-Fagetum caricetosum albae;Trockener Bingelkraut-/Zahnwurz-Bu-Wald
+N0012.0140000;12w;Mercuriali-/Cardamino-Fagetum caricetosum flaccae;Wechselfeuchter Bingelkraut-/Zahnwurz-Bu-Wald
+N0012.1000000;12*;Cardamino-Fagetum insubricum sl.;Mesophiler insubrischer Kalk-Bu-Wald
+N0012.1090000;12*h;Cardamino-Fagetum veratretosum;Kalk-Bu-Wald der insubrischen Gebirge
+N0013.0010000;13a;Tilio-Fagetum typicum;Typischer Linden-Bu-Wald
+N0013.0010030;13aFe;"Tilio-Fagetum typicum; Ausbildung auf Fels";Typischer Linden-Bu-Wald auf Fels
+N0013.0050000;13e;Tilio-Fagetum caricetosum albae;Trockener Linden-Bu-Wald
+N0013.0060000;13eh;Adenostylo-Fagetum seslerietosum;Trockener Alpendost-Bu-Wald
+N0013.0090000;13h;Adenostylo-Fagetum typicum;Typischer Alpendost-Bu-Wald
+N0013.0090030;13hFe;Adenostylo-Fagetum typicum, Ausbildung auf Fels;Typischer Alpendost-Bu-Wald auf Fels
+N0013.1000000;13*;"Tilio-Fagetum; insubrische Ausbildung";Insubrischer Linden-Bu-Wald 
+N0014.0000000;14;Carici (albae)-Fagetum typicum;Seggen-Bu-Wald mit Weissegge
+N0014.1000000;14*;Cephelanthero-Fagetum insubricum s. l.;Trockener insubrischer Kalk-Bu-Wald
+N0015.0000000;15;Carici-Fagetum caricetosum montanae;Seggen-Bu-Wald mit Bergsegge
+N0016.0000000;16;Seslerio-Fagetum;Typischer Blaugras-Bu-Wald
+N0016.1000000;16*;"Seslerio-Fagetum; insubrische Ausbildung";Insubrischer Blaugras-Bu-Wald
+N0017.0000000;17;Taxo-Fagetum / Seslerio-Fagetum calamagrostietosum variae;Eiben-Bu-Wald/Steilhang-Bu-Wald mit Reitgras
+N0018.0000000;18;Festuco-Abieti-Fagetum;Waldschwingel-Ta-Bu-Wald
+N0018.0000030;18Fe;"Festuco-Abieti-Fagetum; Ausbildung auf Fels";Waldschwingel-Ta-Bu-Wald auf Fels
+N0018.0000700;18M;Adenostyle glabrae-Abieti-Fagetum typicum;Typischer Karbonat-Ta-Bu-Wald
+N0018.0140000;18w;Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae;Typischer Buntreitgras-Ta-Bu-Wald
+N0018.0150000;18v;"Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae; Ausbildung mit Carex ferruginea";Buntreitgras-Ta-Bu-Wald mit Rostsegge
+N0018.1000000;18*;Adenostyle glabrae-Abieti-Fagetum caricetosum albae;Karbonat-Ta-Bu-Wald mit Weissegge
+N0019.0000000;19;Luzulo-Abieti-Fagetum typicum;Typischer Waldsimsen-Ta-Bu-Wald
+N0019.0000030;19Fe;"Luzulo-Abieti-Fagetum typicum; Ausbildung auf Fels";Typischer Waldsimsen-Ta-Bu-Wald auf Fels
+N0019.0000600;19L;Laburno-Abieti-Fagetum typicum;Typischer Goldregen-Ta-Bu-Wald
+N0019.0002000;19LC;Laburno-Abieti-Fagetum cardaminetosum kitaibelii;Goldregen-Ta-Bu-Wald mit Kitaibels Zahnwurz
+N0019.0002100;19LP;Laburno-Abieti-Fagetum petasitetosum;Goldregen-Ta-Bu-Wald mit weisser Pestwurz
+N0019.0010000;19a;Luzulo-Abieti-Fagetum calamagrostietosum arundinaceae;Waldsimsen-Ta-Bu-Wald mit Rohrreitgras
+N0019.0070000;19f;"Luzulo-Abieti-Fagetum; Ausbildung auf Pseudogley";Waldsimsen-Ta-Bu-Wald auf Pseudogley
+N0020.0000000;20;Adenostylo alliariae-Abieti-Fagetum typicum;Hochstauden-Ta-Bu-Wald
+N0020.0000030;20Fe;"Adenostylo alliariae-Abieti-Fagetum typicum; Ausbildung auf Fels";Hochstauden-Ta-Bu-Wald auf Fels
+N0020.0000400;20E;Adenostylo alliariae-Abieti-Fagetum hordelymetosum;Waldgersten-Ta-Bu-Wald
+N0021.0000000;21;Aceri-Fagetum;Ahorn-Bu-Wald
+N0021.0000600;21L;Laburno-Aceretum ;Goldregen-Ahornwald
+N0021.1000000;21*;Alno viridi-Sorbetum aucupariae ;Grünerlen-Vogelbeerwald
+N0022.0000000;22;Phyllitido-Aceretum;Hirschzungen-Ahornwald
+N0022.0000030;22Fe;"Phyllitido-Aceretum; Ausbildung auf Fels";Hirschzungen-Ahornwald auf Fels
+N0022.0000100;22A;Arunco-Aceretum;Geissbart-Ahornwald
+N0022.0000200;22C;Corydalido-Aceretum;Lerchensporn-Ahornwald
+N0022.1000000;22*;"Phyllitido-Aceretum; insubrische Ausbildung";Insubrischer Hirschzungen-Ahornwald
+N0023.0000000;23;Sorbo-Aceretum;Mehlbeer-Ahornwald
+N0023.0000030;23Fe;"Sorbo-Aceretum; Ausbildung auf Fels";Mehlbeer-Ahornwald auf Fels
+N0023.0001600;23H;Hepatico-Aceretum;Leberblümchen-Ahornwald
+N0023.1000000;23*;Corylo-Sorbetum ariae ;Haselnuss-Mehlbeerwald
+N0024.0000000;24;Ulmo-Aceretum asperuletosum taurinae;Ulmen-Ahornwald mit Turinermeister
+N0024.1000000;24*;Ulmo-Aceretum typicum;Typischer Ulmen-Ahornwald
+N0024.1000030;24*Fe;"Ulmo-Aceretum typicum; Ausbildung auf Fels";Typischer Ulmen-Ahornwald auf Fels
+N0025.0000000;25;Asperulo taurinae-Tilietum typicum;Typischer Turinermeister-Lindenwald
+N0025.0000030;25Fe;"Asperulo taurinae-Tilietum typicum; Ausbildung auf Fels";Typischer Turinermeister-Lindenwald auf Fels
+N0025.0000100;25A;Fraxino-Tilietum aegopodietosum;Eschen-Lindenmischwald mit Geissfuss
+N0025.0001100;25Q;Querco-Tilietum;Eichen-Lindenmischwald
+N0025.0001700;25O;"Asperulo taurinae-Tilietum ostryetosum; insubrische Ausbildung";Trockener insubrischer Lindenmischwald mit Hopfenbuche
+N0025.0001900;25F;Asperulo taurinae-Tilietum aegopodietosum;Turinermeister-Lindenwald mit Geissfuss
+N0025.0001930;25FFe;"Asperulo taurinae-Tilietum aegopodietosum; Ausbildung auf Fels";Turinermeister-Lindenwald mit Geissfuss auf Fels
+N0025.0010000;25a;"Luzulo niveae-Tilietum cordatae; typische insubrische Ausbildung";Typischer insubrischer Schneesimsen-Lindenwald
+N0025.0010010;25as;"Luzulo niveae-Tilietum cordatae; trockene insubrische Ausbildung";Trockener insubrischer Schneesimsen-Lindenwald
+N0025.0020000;25b;"Asperulo taurinae-Tilietum typicum; insubrische Ausbildung";Insubrischer Turinermeister-Lindenwald
+N0025.0050000;25e;Tilio-Fraxinetum;Linden-Eschen-Felsenwald
+N0025.0070000;25f;"Lunario-Acerion; Tilion; Arunco-Fraxinetum p. p.";Schluchtwald, saure Ausbildung
+N0025.0170000;25au;"Luzulo niveae-Tilietum cordatae; feuchte insubrische Ausbildung";Feuchter insubrischer Schneesimsen-Lindenwald
+N0025.1000000;25*;Aceri-Tilietum / Asperulo taurinae-Tilietum tametosum;Ahorn-Lindenwald/Trockener Turinermeister-Lindenwald
+N0026.0000000;26;Aceri-Fraxinetum;Ahorn-Eschenwald
+N0026.0000030;26Fe;"Aceri-Fraxinetum; Ausbildung auf Fels";Ahorn-Eschenwald auf Fels
+N0026.0090000;26h;"Aceri-Fraxinetum; Höhenausbildung";Ahorn-Eschenwald, Höhenausbildung
+N0026.0140000;26w;Aceri-Fraxinetum calamagrostietosum variae;Ahorn-Eschenwald mit Schlaffer Segge
+N0027.0000000;27;Carici remotae-Fraxinetum;Bach-Eschenwald
+N0027.0001700;27O;Osmundo-Alnetum  (syn Osmundo-Fraxinetum - Ceschi);Königsfarn-Schwarzerlenwald
+N0027.0090000;27h;"Carici remotae-Fraxinetum; Ausbildung mit Petasites albus";Bach-Eschenwald, Höhenausbildung
+N0027.1000000;27*;Adenostylo-Alnetum incanae;Hochstauden-Weisserlen-Ahornwald
+N0028.0000000;28;Ulmo-Fraxinetum equisetosum hyemalis;Ulmen-Eschen-Auenwald
+N0029.0000000;29;Ulmo-Fraxinetum typicum;Ulmen-Eschenwald
+N0029.0000100;29A;Ulmo-Fraxinetum listeretosum;Zweiblatt-Eschen-Auenwald
+N0029.0000200;29C;Ulmo-Fraxinetum caricetosum albae;Ulmen-Eschen-Auenwald mit Weissegge
+N0029.0090000;29h;Ulmo-Fraxinetum equisetosum sylvaticae;Ulmen-Eschenwald mit Waldschachtelhalm
+N0030.0000000;30;Pruno-Fraxinetum;Traubenkirschen-Eschenwald
+N0031.0000000;31;Equiseto-Alnetum incanae;Tieflagen-Grauerlenwald
+N0032.0000200;32C;Calamagrostio-Alnetum incanae;Untermontaner Grauerlenwald
+N0032.0001200;32S;Alno-Salicetum pentandrae;Subalpiner Loorbeerweiden-Auenwald
+N0032.0001400;32V;Violo-Alnetum incanae;Obermontaner Grauerlenwald
+N0032.1000000;32*;Aceri-Alnetum incanae typicum;Typischer Ahorn-Weisserlenwald
+N0033.0001400;33V;Salvio glutinosae-Fraxinetum violetosum biflorae;Montaner Salbei-Eschenmischwald
+N0033.0010000;33a;"Arunco-Fraxinetum castanosum; saure Ausbildung";Heidelbeer-Geissbart-Eschenmischwald mit Kastanie
+N0033.0020000;33b;"Arunco-Fraxinetum castanosum; basische Ausbildung";Zyklamen-Geissbart-Eschenmischwald mit Kastanie
+N0033.0100000;33m;"Arunco-Fraxinetum castanosum; mesophile Ausbildung";Mesophiler Geissbart-Eschenmischwald mit Kastanie
+N0034.0010000;34a;"Cruciato glabrae-Quercetum; saure Ausbildung";Saurer Kreuzlabkraut-Eichenwald mit Kastanie
+N0034.0020000;34b;"Cruciato glabrae-Quercetum; basische Ausbildung";Basischer Kreuzlabkraut-Eichenwald mit Kastanie
+N0034.1000000;34*;Luzulo niveae-Tilietum cordatae;Schneesimsen-Winterlindenwald
+N0035.0000000;35;Galio-Carpinetum;Waldlabkraut-Hainbuchenmischwald
+N0035.0000700;35M;Galio-Carpinetum molinietosum;Waldlabkraut-Hainbuchenwald mit Pfeifengras
+N0035.0001100;35Q;Polygonato-Quercetum roboris (Sartori 1980) ;Stieleichen-Winterlinden-Talboden-Auenwald
+N0035.0001200;35S;Scillo-Carpinetum;Blaustern-Hagebuchenmischwald
+N0035.0010000;35A;Stellario-Carpinetum;Aronstab-Eichenmischwald
+N0036.0000000;36;Carpino betuli-Ostryetum;Hagebuchen-Hopfenbuchenwald
+N0037.0000000;37;Fraxino orni-Ostryetum;Hopfenbuchen-Eichenwald
+N0038.0000000;38;Arabidi turritae-Quercetum pubescentis;Turmkressen-Flaumeichenwald
+N0038.0001200;38S;Saponario-Quercetum pubescentis;Seifenkraut-Flaumeichenwald
+N0038.1000000;38*;Asperulo purpurei-Quercetum pubescentis ;Purpurwaldmeister-Flaumeichenwald
+N0039.0000000;39;Coronillo coronatae-Quercetum;Kronwicken-Eichenmischwald
+N0039.1000000;39*;Rhamno alpinae-Quercetum;Kreuzdorn-Eichenmischwald
+N0040.0000800;40P;Corylo-Populetum;Pionier-Aspen-Haselbuschwald
+N0040.0000820;40PBl;"Corylo-Populetum; Blockausbildung";Aspen-Haselbuschwald auf Blockschutt
+N0040.0130800;40Pt;"Corylo-Populetum; Ausbildung tiefer Lagen";Pionier-Aspen-Haselbuschwald, Tieflagenausbildung
+N0040.0130820;40PBlt;"Corylp-Populetum; Blockausbildung tiefer Lagen";Aspen-Haselbuschwald auf Blockschutt, Tieflagenausbildung
+N0040.1000000;40*;Teucrio-Quercetum;Gamander-Eichenwald
+N0041.0000000;41;Lathyro-Quercetum;Platterbsen-Eichenmischwald
+N0041.1000000;41*;Luzulo-Quercetum;Hainsimsen-Eichenwald
+N0042.0000200;42C;Phyteum betonicifoliae-Quercetum castanosum;Rapunzel-Eichenwald mit Kastanie
+N0042.0001100;42Q;Phyteum betonicifoliae-Quercetum typicum;Typischer Rapunzel-Eichenwald
+N0042.0001400;42V;Phyteumo betonicifoliae-Quercetum vaccinetosum;Eichen-Kastanienwald mit Heidelbeere
+N0042.0110000;42r;Phyteumo betonicifoliae-Quercetum festucetosum variae;Insubrischer Eichenwald auf Fels
+N0042.0120000;42B;Allio lusitanici-Quercetum pubescentis;Insubrischer Eichenwald auf Fels, basische Ausbildung
+N0042.0130000;42t;"Phyteumo betonicifoliae-Quercetum polygonatetosum multiflorii; Cruciato glabrae-Quercetum p.p.";Eichen-Kastanienwald in Entwicklung
+N0043.0000000;43;Salicetum albae;Silberweiden-Auenwald
+N0043.0001200;43S;Salicetum elaeagno-daphnoidis;Lavendelweidengebüsch
+N0043.1000000;43*;Coronillo emeri-Populetum nigrae;Insubrischer Schwarzpappel-Auenwald
+N0044.0000000;44;Carici elongatae-Alnetum glutinosae;Seggen-Schwarzerlenbruch
+N0045.0000000;45;Pino-Betuletum;Föhren-Birkenbruchwald
+N0046.0000000;46;Vaccinio myrtillii-Abieti-Piceetum typicum;Typischer Heidelbeer-Ta-Fi-Wald
+N0046.0000003;46Re;Vaccinio myrtillii-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Heidelbeer-Ta-Fi-Wald im Ta-Reliktareal
+N0046.0000700;46M;Vaccinio myrtillii-Abieti-Piceetum melampyretosum;Heidelbeer-Ta-Fi-Wald auf Podsol
+N0046.0000703;46MRe;Vaccinio myrtillii-Abieti-Piceetum melampyretosum im Tannen-Reliktareal;Heidelbeer-Ta-Fi-Wald auf Podsol im Ta-Reliktareal
+N0046.0130000;46t;Bazzanio-Abietetum;Peitschenmoos-Fichten-Tannenwald
+N0046.1000000;46*;Vaccinio myrtillii-Abieti-Piceetum sphagnetosum;Heidelbeer-Ta-Fi-Wald mit Torfmoos
+N0046.1000003;46*Re;Vaccinio myrtillii-Abieti-Piceetum sphagnetosum im Tannen-Reliktareal;Heidelbeer-Ta-Fi-Wald mit Torfmoos im Ta-Reliktareal
+N0047.0000000;47;Calamagrostio-villosae-Abieti-Piceetum typicum;Typischer Wollreitgras-Ta-Fi-Wald
+N0047.0000003;47Re;Calamagrostio-villosae-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Wollreitgras-Ta-Fi-Wald im Ta-Reliktareal
+N0047.0000300;47D;Calamagrostio-villosae-Abieti-Piceetum dryopteridetosum;Farnreicher Wollreitgras-Ta-Fi-Wald, 
+N0047.0000303;47DRe;Calamagrostio-villosae-Abieti-Piceetum dryopteridetosum im Tannen-Reliktareal;Farnreicher Wollreitgras-Ta-Fi-Wald im Ta-Reliktareal
+N0047.0000700;47M;Calamagrostio-villosae-Abieti-Piceetum melampyretosum;Wollreitgras-Ta-Fi-Wald mit Wachtelweizen
+N0047.0001600;47H;Hypno-Piceetum;Zypressenschlafmoos-Fi-Wald
+N0047.1000000;47*;Rhododendro-Abietetum;Alpenrosen-Lärchen-Ta-Wald
+N0047.1000001;47*Lä;"Rhododendro-Abietetum; Lärchenausbildung";Alpenrosen-Lärchen-Ta-Wald, Lärchenausbildung
+N0048.0000000;48;Asplenio-Abieti-Piceetum;Blockschutt-Tannen-Fichtenwald
+N0049.0000000;49;Equiseto-Abieti-Piceetum typicum;Typischer Schachtelhalm-Ta-Fi-Wald
+N0049.1000000;49*;Equiseto-Piceetum caricetosum ferrugineae;Schachtelhalm-Fi-Wald mit Rostsegge
+N0049.1000002;49*Ta;Equiseto-Abieti-Piceetum caricetosum ferrugineae;Schachtelhalm-Ta-Fi-Wald mit Rostsegge 
+N0050.0000000;50;Adenostylo alliariae-Abieti-Piceetum typicum;Typischer Hochstauden-Ta-Fi-Wald
+N0050.0000003;50Re;Adenostylo alliariae-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Hochstauden-Ta-Fi-Wald im Ta-Reliktareal
+N0050.0000030;50Fe;"Adenostylo alliariae-Abieti-Piceetum typicum; Ausbildung auf Fels";Typischer Hochstauden-Ta-Fi-Wald auf Fels
+N0050.0000800;50P;Adenostylo-Abieti-Piceetum petasitetosum;Hochstauden-Ta-Fi-Wald mit Pestwurz
+N0050.1000000;50*;Adenostylo glabrae-Abieti-Piceetum typicum;Karbonat-Ta-Fi-Wald mit kahlem Alpendost
+N0050.1000003;50*Re;Adenostylo glabrae-Abieti-Piceetum typicum im Tannen-Reliktareal;Karbonat-Ta-Fi-Wald mit kahlem Alpendost im Ta-Reliktareal
+N0051.0000000;51;Galio-Abieti-Piceetum typicum;Typischer Labkraut-Ta-Fi-Wald
+N0051.0000003;51Re;Galio-Abieti-Piceetum typicum im Tannen-Reliktareal;Typischer Labkraut-Ta-Fi-Wald im Ta-Reliktareal
+N0051.0000030;51Fe;"Galio-Abieti-Piceetum typicum; Ausbildung auf Fels";Typischer Labkraut-Ta-Fi-Wald auf Fels
+N0051.0000200;51C;Galio-Abieti-Piceetum coryletosum;Labkraut-Ta-Fi-Wald mit Hasel
+N0052.0000000;52;Adenostylo glabrae-Abieti-Piceetum caricetosum albae;Karbonat-Ta-Fi-Wald mit Weisssegge
+N0052.0000003;52Re;Adenostylo glabrae-Abieti-Piceetum caricetosum albae im Tannen-Reliktareal;Karbonat-Ta-Fi-Wald mit Weisssegge im Ta-Reliktareal
+N0052.0001300;52T;Adenostylo glabrae -Abieti-Piceetum caricetosum albae mit Tilia cordata;Karbonat-Ta-Fi-Wald mit Winterlinde
+N0053.0000000;53;Polygalo chamaebuxi-Piceetum;Typischer Zwergbuchs-Fi-Wald
+N0053.0000001;53Lä;"Polygalo chamaebuxi-Piceetum; Lärchenausbildung";Typischer Zwergbuchs-Fi-Wald, Lärchenausbildung
+N0053.0000002;53Ta;Polygalo chamaebuxi-Piceetum mit Tanne;Typischer Zwergbuchs-Fi-Wald mit Tanne
+N0053.0000100;53A;Polygalo chamaebuxi-Piceetum aposeritetosum;Zwergbuchs-Fi-Wald mit Hainlattich
+N0053.0000102;53ATa;Polygalo chamaebuxi-Piceetum aposeritetosum mit Tanne;Zwergbuchs-Fi-Wald mit Hainlattich und Tanne
+N0053.1000000;53*;Erico-Piceetum typicum;Erika-Fi-Wald
+N0053.1000002;53*Ta;Erico-Piceetum typicum mit Tanne;Erika-Fi-Wald mit Tanne
+N0053.1000010;53*s;"Erico-Piceetum typicum; subalpine Ausbildung";Erika-Fi-Wald, subalpine Ausbildung
+N0053.1000011;53*sLä;"Erico-Piceetum typicum; subalpine Lärchenausbildung";Erika-Fi-Wald, subalpine Lärchenausbildung
+N0054.0000000;54;Melico-Piceetum typicum;Typischer Perlgras-Fi-Wald
+N0054.0000100;54A;Melico-Piceetum atragenetosum;Perlgras-Fi-Wald mit Atragene
+N0055.0000000;55;Veronico latifoliae-Piceetum;Ehrenpreis-Fi-Wald
+N0055.0000001;55Lä;"Veronico latifoliae-Piceetum; Lärchenausbildung";Ehrenpreis-Fi-Wald, Lärchenausbildung
+N0055.1000000;55*;Luzulo niveae-Piceetum;Schneesimsen-Fi-Wald
+N0055.1000001;55*Lä;"Luzulo niveae-Piceetum; Lärchenausbildung";Schneesimsen-Fi-Wald, Lärchenausbildung
+N0055.1000002;55*Ta;Luzulo niveae-Piceetum mit Tanne;Schneesimsen-Fi-Wald mit Tanne
+N0056.0000000;56;Sphagno-Piceetum;Moorrand-Fi-Wald
+N0057.0000020;57Bl;"Homogyno-Piceetum; Blockausbildung";Alpenlattich-Fi-Wald, Blockausbildung
+N0057.0000022;57BlTa;"Homogyno-Piceetum; Blockausbildung mit Tanne";Alpenlattich-Fi-Wald, Blockausbildung, mit Tanne
+N0057.0000200;57C;Homogyno-Piceetum calamagrostietosum villosae;Alpenlattich-Fi-Wald mit Wollreitgras
+N0057.0000201;57CLä;"Homogyno-Piceetum calamagrostietosum villosae; Lärchenausbildung";Alpenlattich-Fi-Wald mit Wollreitgras, Lärchenausbildung
+N0057.0000202;57CTa;Homogyno-Piceetum calamagrostietosum villosae mit Tanne;Alpenlattich-Fi-Wald mit Wollreitgras und Tanne
+N0057.0000700;57M;Homogyno-Piceetum melampyretosum sylvatici;Alpenlattich-Fi-Wald mit Waldwachtelweizen
+N0057.0001200;57S;Homogyno-Piceetum sphagnetosum;Alpenlattich-Fi-Wald mit Torfmoos
+N0057.0001202;57STa;Homogyno-Piceetum sphagnetosum mit Tanne;Alpenlattich-Fi-Wald mit Torfmoos und Tanne
+N0057.0001400;57V;Homogyno-Piceetum vaccinietosum myrtilli;Alpenlattich-Fi-Wald mit Heidelbeere
+N0057.0001401;57VLä;"Homogyno-Piceetum vaccinietosum myrtilli; Lärchenausbildung";Alpenlattich-Fi-Wald mit Heidelbeere, Lärchenausbildung
+N0057.0001402;57VTa;Homogyno-Piceetum vaccinietosum myrtilli mit Tanne;Alpenlattich-Fi-Wald mit Heidelbeere und Tanne
+N0057.0001800;57VM;Homogyno-Piceetum valerianetosum montanae;Alpenlattich Fi-Wald mit Bergbaldrian
+N0058.0000000;58;Larici-Piceetum typicum;Typischer Preiselbeer-Fi-Wald
+N0058.0000001;58Lä;"Larici-Piceetum typicum; Lärchenausbildung";Typischer Preiselbeer-Fi-Wald, Lärchenausbildung
+N0058.0000020;58Bl;"Larici-Piceetum typicum; Blockausbildung";Preiselbeer-Fi-Wald, Blockausbildung
+N0058.0000030;58Fe;"Larici-Piceetum typicum; Ausbildung auf Fels";Typischer Preiselbeer-Fi-Wald auf Fels
+N0058.0000200;58C;Larici-Piceetum calamagrostietosum villosae;Preiselbeer-Fi-Wald mit Wollreitgras
+N0058.0000600;58L;Larici-Piceetum laserpitietosum halleri;Preiselbeer-Fi-Wald mit Laserkraut
+N0058.0000601;58LLä;"Larici-Piceetum laserpitietosum halleri; Lärchenausbildung";Preiselbeer-Fi-Wald mit Laserkraut, , Lärchenausbildung
+N0059.0000000;59;Larici-Pinetum cembrae typicum;Lärchen-Arvenwald mit Alpenrose
+N0059.0000001;59Lä;"Larici-Pinetum cembrae typicum; Lärchenausbildung";Lärchen-Arvenwald mit Alpenrose, Lärchenausbildung
+N0059.0000100;59A;Adenostylo-Laricetum;Hochstauden-Lärchenwald
+N0059.0000200;59C;Cotoneastro-Pinetum cembrae;Steinmispel-Arvenwald
+N0059.0000400;59E;Larici- Pinetum cembrae ericetosum;Lärchen-Arvenwald mit Erika
+N0059.0000401;59ELä;"Larici- Pinetum cembrae ericetosum; Lärchenausbildung";Lärchen-Arvenwald mit Erika, Lärchenausbildung
+N0059.0000500;59J;Junipero-Laricetum;Wacholder-Lärchenwald
+N0059.0000600;59L;Larici-Pinetum cembrae laserpitietosum halleri;Lärchen-Arvenwald mit Laserkraut
+N0059.0000601;59LLä;"Larici-Pinetum cembrae laserpitietosum halleri; Lärchenausbildung";Lärchen-Arvenwald mit Laserkraut, Lärchenausbildung
+N0059.0001200;59S;Seslerio-Laricetum;Blaugras-Lärchenwald
+N0059.0001400;59V;Larici-Pinetum cembrae vaccinietosum myrtilli;Lärchen-Arvenwald mit Heidelbeere
+N0059.0001401;59VLä;"Larici-Pinetum cembrae vaccinietosum myrtilli; Lärchenausbildung";Lärchen-Arvenwald mit Heidelbeere, Lärchenausbildung
+N0059.0001600;59H;Larici-Pinetum cembrae rhododendretosum hirsuti;Lärchen-Arvenwald mit Steinrose
+N0059.0001800;59R;Larici-Pinetum cembrae rumicetosum scutati;Lärchenwald mit schildblättriger Ampfer
+N0059.1000000;59*;Rhododendro ferruginei-Laricetum;Alpenrosen-Lärchenwald
+N0060.0000000;60;Adenostylo-Piceetum typicum;Typischer Hochstauden-Fi-Wald
+N0060.0000001;60Lä;"Adenostylo-Piceetum typicum; Lärchenausbildung";Typischer Hochstauden-Fi-Wald, Lärchenausbildung
+N0060.0000002;60Ta;Adenostylo-Piceetum typicum mit Tanne;Typischer Hochstauden-Fi-Wald mit Tanne
+N0060.0000100;60A;Adenostylo-Piceetum athyrietosum distentifolii;Hochstauden-Fi-Wald mit Alpenwaldfarn
+N0060.0000101;60ALä;"Adenostylo-Piceetum athyrietosum distentifolii; Lärchenausbildung";Hochstauden-Fi-Wald mit Alpenwaldfarn, Lärchenausbildung
+N0060.0000102;60ATa;Adenostylo-Piceetum athyrietosum distentifolii mit Tanne;Hochstauden-Fi-Wald mit Alpenwaldfarn und Tanne
+N0060.0000400;60E;Adenostylo-Piceetum equisetetosum silvaticae;Hochstauden-Fi-Wald mit Schachtelhalm
+N0060.1000000;60*;Calamagrostio variae-Piceetum;Buntreitgras-Fi-Wald
+N0060.1000001;60*Lä;"Calamagrostio variae-Piceetum; Lärchenausbildung";Buntreitgras-Fi-Wald, Lärchenausbildung
+N0060.1000002;60*Ta;Calamagrostio variae-Abieti-Piceetum;Buntreitgras-Ta-Fi-Wald 
+N0061.0000000;61;Molinio-Pinetum sylvestris;Pfeifengras-Föhrenwald
+N0062.0000000;62;Cephalanthero-Pinetum sylvestris;Orchideen-Föhrenwald
+N0065.0000000;65;Erico- / Coronillo-Pinetum sylvestris;Erika-/Strauchwicken-Föhrenwald
+N0065.1000000;65*;Ononido-Pinetum sylvestris;Hauhechel-Föhrenwald
+N0066.0000000;66;Pyrolo- und Ligustro-Pinetum;Wintergrün- und Liguster-Föhrenwald
+N0066.0001000;66PM;Pyrolo-Pinetum montanae;Bergföhren-Auenwald
+N0067.0000000;67;Erico-Pinetum montanae;Erika-Bergföhrenwald
+N0067.1000000;67*;Carici humilis Pinetum sylvestris;Erdseggen-Föhrenwald
+N0068.0000000;68;Calluno-Pinetum sylvestris;Besenheide-Föhrenwald
+N0068.1000000;68*;Vaccinio vitis-idaeae-Pinetum sylvestris;Preiselbeer-Föhrenwald
+N0069.0000000;69;Rhododendro hirsuti-Pinetum montanae;Steinrosen-Bergföhrenwald
+N0070.0000000;70;Rhododendro ferruginei-Pinetum montanae;Alpenrosen-Bergföhrenwald
+N0071.0000000;71;Sphagno-Pinetum montanae;Torfmoos-Bergföhrenwald
+N0072.0000000;72;Sphagno-Pinetum cembrae;Nordalpen-Arvenwald
+N0072.0000001;72Lä;"Sphagno-Pinetum cembrae; Lärchenausbildung";Nordalpen-Arvenwald, Lärchenausbildung
+N0091.0000000;91;Chelidonio-Robinion;Robinienwälder sauer
+N0092.0010000;92a;;sonstige Neophytenwälder azonal
+N0092.0180000;92z;;sonstige Neophytenwälder zonal
+N0093.0000000;93;Lauretum insubricum s. l. ;Insubrische Laurisilven
+N1001.0000000;1G;;
+N1001.0090000;1hG;;
+N1003.0000000;3G;"Luzulo niveae-Fagetum typicum; Gebüschvariante";Typischer Schneesimsen-Bu-Wald, Gebüschvariante
+N1003.0000010;3sG;"Luzulo niveae-Fagetum; trockene Ausbildung; Gebüschvariante";Trockener Schneesimsen-Bu-Wald, Gebüschvariante
+N1003.0001500;3LVG;;
+N1003.0100000;3L/4LG;;
+N1003.1000000;3*G;;
+N1004.0000000;4G;"Luzulo niveae-Fagetum dryopteridetosum; Gebüschvariante";Farnreicher Schneesimsen-Bu-Wald, Gebüschvariante
+N1004.1000000;4*G;;
+N1006.0000000;6G;;
+N1006.0000030;6FeG;;
+N1007.0001200;7SG;;
+N1007.0001230;7SFeG;;
+N1007.0010000;7aG;;
+N1007.0010030;7aFeG;;
+N1007.1000000;7*G;;
+N1008.0001200;8SG;;
+N1008.0001230;8SFeG;;
+N1008.0010000;8aG;;
+N1008.0010030;8aFeG;;
+N1008.0040000;8dG;;
+N1008.0040030;8dFeG;;
+N1008.1000000;8*G;;
+N1009.0010000;9aG;;
+N1009.0010030;9aFeG;;
+N1009.0140000;9wG;;
+N1010.0010000;10aG;;
+N1010.0140000;10wG;;
+N1011.0000000;11G;;
+N1011.0000030;11FeG;;
+N1012.0001200;12SG;;
+N1012.0001230;12SFeG;;
+N1012.0010000;12aG;"Mercuriali-/Cardamino-Fagetum typicum; Gebüschvariante";Typischer Bingelkraut-/Zahnwurz-Bu-Wald, Gebüschvariante
+N1012.0010030;12aFeG;;
+N1012.0050000;12eG;;
+N1012.0140000;12wG;;
+N1012.1000000;12*G;;
+N1012.1090000;12*hG;;
+N1013.0010000;13aG;;
+N1013.0010030;13aFeG;;
+N1013.0050000;13eG;;
+N1013.0060000;13ehG;;
+N1013.0090000;13hG;"Adenostylo-Fagetum typicum; Gebüschvariante";Typischer Alpendost-Bu-Wald, Gebüschvariante
+N1013.1000000;13*G;;
+N1014.0000000;14G;"Carici (albae)-Fagetum typicum; Gebüschvariante";Seggen-Bu-Wald mit Weissegge, Gebüschvariante
+N1014.1000000;14*G;;
+N1015.0000000;15G;;
+N1016.0000000;16G;;
+N1016.1000000;16*G;;
+N1017.0000000;17G;"Taxo-Fagetum / Seslerio-Fagetum calamagrostietosum variae; Gebüschvariante";Eiben-Bu-Wald/Steilhang-Bu-Wald mit Reitgras, Gebüschvariante
+N1018.0000000;18G;"Festuco-Abieti-Fagetum; Gebüschvariante";Waldschwingel-Ta-Bu-Wald, Gebüschvariante
+N1018.0000030;18FeG;;
+N1018.0000700;18MG;"Adenostyle glabrae-Abieti-Fagetum typicum; Gebüschvariante";Typischer Karbonat-Ta-Bu-Wald, Gebüschvariante
+N1018.0140000;18wG;"Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae; Gebüschvariante";Typischer Buntreitgras-Ta-Bu-Wald, Gebüschvariante
+N1018.0150000;18vG;"Adenostylo glabrae Abieti-Fagetum calamagrostietosum variae; Ausbildung mit Carex ferruginea; Gebüschvariante";Buntreitgras-Ta-Bu-Wald mit Rostsegge, Gebüschvariante
+N1018.1000000;18*G;"Adenostyle glabrae-Abieti-Fagetum caricetosum albae; Gebüschvariante";Karbonat-Ta-Bu-Wald mit Weissegge, Gebüschvariante
+N1019.0000000;19G;"Luzulo-Abieti-Fagetum typicum; Gebüschvariante";Typischer Waldsimsen-Ta-Bu-Wald, Gebüschvariante
+N1019.0000030;19FeG;;
+N1019.0000600;19LG;;
+N1019.0002100;19LPG;;
+N1019.0010000;19aG;"Luzulo-Abieti-Fagetum calamagrostietosum arundinaceae; Gebüschvariante";Waldsimsen-Ta-Bu-Wald mit Rohrreitgras, Gebüschvariante
+N1019.0070000;19fG;;
+N1020.0000000;20G;"Adenostylo alliariae-Abieti-Fagetum typicum; Gebüschvariante";Hochstauden-Ta-Bu-Wald, Gebüschvariante
+N1020.0000030;20FeG;;
+N1020.0000400;20EG;"Adenostylo alliariae-Abieti-Fagetum hordelymetosum; Gebüschvariante";Waldgersten-Ta-Bu-Wald, Gebüschvariante
+N1021.0000000;21G;"Aceri-Fagetum; Gebüschvariante";Ahorn-Bu-Wald, Gebüschvariante
+N1021.0000600;21LG;;
+N1021.1000000;21*G;"Alno viridi-Sorbetum aucupariae; Gebüschvariante";Grünerlen-Vogelbeerwald, Gebüschvariante
+N1022.0000000;22G;;
+N1022.0000030;22FeG;;
+N1022.0000100;22AG;;
+N1022.0000200;22CG;;
+N1022.1000000;22*G;;
+N1023.0000000;23G;"Sorbo-Aceretum; Gebüschvariante";Mehlbeer-Ahornwald, Gebüschvariante
+N1023.0000030;23FeG;;
+N1023.1000000;23*G;;
+N1024.0000000;24G;"Ulmo-Aceretum asperuletosum taurinae; Gebüschvariante";Ulmen-Ahornwald mit Turinermeister, Gebüschvariante
+N1024.1000000;24*G;"Ulmo-Aceretum typicum; Gebüschvariante";Typischer Ulmen-Ahornwald, Gebüschvariante
+N1024.1000030;24*FeG;;
+N1025.0000000;25G;"Asperulo taurinae-Tilietum typicum; Gebüschvariante";Typischer Turinermeister-Lindenwald, Gebüschvariante
+N1025.0000030;25FeG;;
+N1025.0001700;25OG;;
+N1025.0010000;25aG;;
+N1025.0020000;25BG;;
+N1025.0050000;25eG;;
+N1025.0070000;25fG;;
+N1025.0170000;25. Aug;;
+N1025.1000000;25*G;;
+N1026.0000000;26G;;
+N1026.0090000;26hG;"Aceri-Fraxinetum; Höhenausbildung; Gebüschvariante";Ahorn-Eschenwald, Höhenausbildung, Gebüschvariante
+N1027.0000000;27G;;Bach-Eschenwald, Gebüschvariante
+N1027.0001700;27OG;;
+N1027.0090000;27hG;"Carici remotae-Fraxinetum; Ausbildung mit Petasites albus; Gebüschvariante";"Bach-Eschenwald, Höhenausbildung; Gebüschvariante"
+N1027.1000000;27*G;;
+N1028.0000000;28G;;
+N1029.0000000;29G;;
+N1029.0000100;29AG;;
+N1029.0000200;29CG;;
+N1029.0090000;29hG;;
+N1030.0000000;30G;;
+N1031.0000000;31G;;
+N1032.0000200;32CG;;
+N1032.0001200;32SG;;
+N1032.0001400;32VG;"Violo-Alnetum incanae; Gebüschvariante";Obermontaner Grauerlenwald, Gebüschvariante
+N1032.1000000;32*G;;
+N1033.0001400;33VG;;
+N1033.0010000;33aG;;
+N1033.0020000;33bG;;
+N1033.0100000;33mG;;
+N1034.0010000;34aG;;
+N1034.0020000;34bG;;
+N1034.1000000;34*G;;
+N1035.0000000;35G;;
+N1035.0000700;35MG;;
+N1035.0001100;35QG;;
+N1035.0001200;35SG;;
+N1035.0010000;35AG;;
+N1036.0000000;36G;;
+N1037.0000000;37G;;
+N1038.0000000;38G;;
+N1038.0001200;38SG;;
+N1038.1000000;38*G;;
+N1039.0000000;39G;;
+N1039.1000000;39*G;;
+N1040.0000800;40PG;"Corylo-Populetum; Gebüschvariante";Pionier-Aspen-Haselbuschwald, Gebüschvariante
+N1040.0000820;40PBlG;"Corylo-Populetum; Blockausbildung; Gebüschvariante";Aspen-Haselbuschwald auf Blockschutt, Gebüschvariante
+N1040.1000000;40*G;;
+N1041.0000000;41G;;
+N1041.1000000;41*G;;
+N1042.0000200;42CG;;
+N1042.0001100;42QG;;
+N1042.0001400;42VG;;
+N1042.0110000;42rG;;
+N1042.0120000;42BG;;
+N1042.0130000;42tG;;
+N1043.0000000;43G;;
+N1043.0001200;43SG;;
+N1043.1000000;43*G;;
+N1044.0000000;44G;;
+N1045.0000000;45G;;
+N1046.0000000;46G;;
+N1046.0000700;46MG;;
+N1046.0130000;46tG;;
+N1046.1000000;46*G;;
+N1047.0000000;47G;;
+N1047.0000300;47DG;"Calamagrostio-villosae-Abieti-Piceetum dryopteridetosum; Gebüschvariante";Farnreicher Wollreitgras-Ta-Fi-Wald, , Gebüschvariante
+N1047.0000700;47MG;"Calamagrostio-villosae-Abieti-Piceetum melampyretosum; Gebüschvariante";Wollreitgras-Ta-Fi-Wald mit Wachtelweizen, Gebüschvariante
+N1047.0001600;47HG;"Hypno-Piceetum; Gebüschvariante";Zypressenschlafmoos-Fi-Wald, Gebüschvariante
+N1047.1000000;47*G;"Rhododendro-Abietetum; Gebüschvariante";Alpenrosen-Lärchen-Ta-Wald, Gebüschvariante
+N1048.0000000;48G;"Asplenio-Abieti-Piceetum; Gebüschvariante";Blockschutt-Tannen-Fichtenwald, Gebüschvariante
+N1049.0000000;49G;;
+N1049.1000000;49*G;;
+N1050.0000000;50G;"Adenostylo alliariae-Abieti-Piceetum typicum; Gebüschvariante";Typischer Hochstauden-Ta-Fi-Wald, Gebüschvariante
+N1050.0000030;50FeG;;
+N1050.0000800;50PG;;
+N1050.1000000;50*G;"Adenostylo glabrae-Abieti-Piceetum typicum; Gebüschvariante";Karbonat-Ta-Fi-Wald mit kahlem Alpendost, Gebüschvariante
+N1051.0000000;51G;"Galio-Abieti-Piceetum typicum; Gebüschvariante";Typischer Labkraut-Ta-Fi-Wald, Gebüschvariante
+N1051.0000030;51FeG;;
+N1051.0000200;51CG;;
+N1052.0000000;52G;;
+N1052.0001300;52TG;;
+N1053.0000000;53G;"Polygalo chamaebuxi-Piceetum; Gebüschvariante";Zwergbuchs-Fi-Wald, Gebüschvariante
+N1053.0000002;53TaG;;
+N1053.1000000;53*G;"Erico-Piceetum typicum; Gebüschvariante";Erika-Fi-Wald, Gebüschvariante
+N1054.0000000;54G;;
+N1055.0000000;55G;;
+N1055.1000000;55*G;"Luzulo niveae-Piceetum; Gebüschvariante";Schneesimsen-Fi-Wald, Gebüschvariante
+N1056.0000000;56G;;
+N1057.0000020;57BlG;"Homogyno-Piceetum; Blockausbildung; Gebüschvariante";Alpenlattich-Fi-Wald, Blockausbildung, Gebüschvariante
+N1057.0000200;57CG;"Homogyno-Piceetum calamagrostietosum villosae; Gebüschvariante";Alpenlattich-Fi-Wald mit Wollreitgras, Gebüschvariante
+N1057.0000700;57MG;;
+N1057.0001200;57SG;;
+N1057.0001400;57VG;"Homogyno-Piceetum vaccinietosum myrtilli; Gebüschvariante";Alpenlattich-Fi-Wald mit Heidelbeere, Gebüschvariante
+N1058.0000000;58G;"Larici-Piceetum typicum; Gebüschvariante";Typischer Preiselbeer-Fi-Wald, Gebüschvariante
+N1058.0000200;58CG;;
+N1058.0000600;58LG;"Larici-Piceetum laserpitietosum halleri; Gebüschvariante";Preiselbeer-Fi-Wald mit Laserkraut, Gebüschvariante
+N1059.0000000;59G;"Larici-Pinetum cembrae typicum; Gebüschvariante";Lärchen-Arvenwald mit Alpenrose, Gebüschvariante
+N1059.0000100;59AG;"Adenostylo-Laricetum; Gebüschvariante";Hochstauden-Lärchenwald, Gebüschvariante
+N1059.0000200;59CG;;
+N1059.0000400;59EG;"Larici- Pinetum cembrae ericetosum; Gebüschvariante";Lärchen-Arvenwald mit Erika, Gebüschvariante
+N1059.0000500;59JG;;
+N1059.0000600;59LG;;
+N1059.0001200;59SG;;
+N1059.0001400;59VG;"Larici-Pinetum cembrae vaccinietosum myrtilli; Gebüschvariante";Lärchen-Arvenwald mit Heidelbeere, Gebüschvariante
+N1059.1000000;59*G;"Rhododendro ferruginei-Laricetum; Gebüschvariante";Alpenrosen-Lärchenwald, Gebüschvariante
+N1060.0000000;60G;;
+N1060.0000100;60AG;"Adenostylo-Piceetum athyrietosum distentifolii; Gebüschvariante";Hochstauden-Fi-Wald mit Alpenwaldfarn, Gebüschvariante
+N1060.0000400;60EG;;
+N1060.1000000;60*G;"Calamagrostio variae-Piceetum; Gebüschvariante";Buntreitgras-Fi-Wald, Gebüschvariante
+N1060.1000002;60*TaG;"Calamagrostio variae-Abieti-Piceetum; Gebüschvariante";Buntreitgras-Ta-Fi-Wald, Gebüschvariante
+N1061.0000000;61G;;
+N1062.0000000;62G;;
+N1065.0000000;65G;;
+N1065.1000000;65*G;;
+N1066.0000000;66G;;
+N1066.0001000;66PMG;;
+N1067.0000000;67G;"Erico-Pinetum montanae; Gebüschvariante";Erika-Legföhrenwald
+N1068.0000000;68G;;
+N1068.1000000;68*G;;
+N1069.0000000;69G;"Rhododendro hirsuti-Pinetum montanae; Gebüschvariante";Steinrosen-Legföhrenwald
+N1070.0000000;70G;"Rhododendro ferruginei-Pinetum montanae; Gebüschvariante";Alpenrosen-Legföhrenwald
+N1071.0000000;71G;"Sphagno-Pinetum montanae; Gebüschvariante";Torfmoos-Legföhrenwald
+N1072.0000000;72G;"Sphagno-Pinetum cembrae; Gebüschvariante";Nordalpen-Arvenwald, Gebüschvariante
+N1091.0000000;91G;;
+N1092.0010000;92aG;;
+N1092.0180000;92zG;;
+N1093.0000000;93G;;
+N2001.0000000;AV;Alnenion viridis;Grünerlengebüsch
+N2002.0000000;Samb;;Gebüschreiche Vorwaldgesellschaft
+N2003.0000000;Salci;;Moor-Weidengebüsch
+N2004.0000000;Salwa;;Gebirgs-Weidengebüsch
+N2005.0000000;Saro;;Besenginstergebüsch
+N2006.0000000;Berb;;Trockenwarmes Gebüsch
+N2007.0000000;Prun;;Mesophiles Gebüsch
+N2008.0000000;Rubi;;Brombeergestrüpp
+N2009.0000000;Rhod;;Alpenrosenheide
+N2010.0000000;Junip;;Zwergwacholderheide
+N3000.0000000;u;;Nicht-Wald
+N3001.0000000;u-1;;Siedlung
+N3002.0000000;u-2;;Acker
+N3003.0000000;u-3;;Fettwiese
+N3004.0000000;u-4;;Fettwiese/Bäume
+N3005.0000000;u-5;;Weide
+N3006.0000000;u-6;;Wytweide
+N3007.0000000;u-7;;Hochstauden
+N3008.0000000;u-8;;Magerwiese
+N3009.0000000;u-9;;Feuchtgebiet
+N3010.0000000;u-10;;Gewässer
+N3011.0000000;u-11;;Fels/Schutt
+N9999.0000000;nb;;

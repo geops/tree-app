@@ -1,0 +1,15 @@
+{
+  "name": "export",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "data:export:csv": "node --experimental-json-modules src/export_csv.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^6.0.5"
+  }
+}

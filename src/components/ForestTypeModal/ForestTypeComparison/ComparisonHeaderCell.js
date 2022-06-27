@@ -5,8 +5,12 @@ import { Table } from 'semantic-ui-react';
 const HeaderCell = ({ ...props }) => {
   const { children } = props;
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <Table.HeaderCell {...props} verticalAlign="top">
+    <Table.HeaderCell
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...props}
+      verticalAlign="top"
+      style={{ maxWidth: '12vw' }}
+    >
       {children}
     </Table.HeaderCell>
   );
