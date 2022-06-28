@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
@@ -44,7 +44,7 @@ const checkFields = ['slope', 'additional', 'relief'];
 function ProjectionResult() {
   const {
     location,
-    mapLocationForestType,
+    mapLocation,
     projectionMode,
     projectionResult,
     latinActive,
@@ -52,7 +52,7 @@ function ProjectionResult() {
     activeProfile,
   } = useSelector((state) => ({
     location: state.location,
-    mapLocationForestType: state.mapLocation.forestType,
+    mapLocation: state.mapLocation,
     projectionMode: state.projectionMode,
     projectionResult: state.projectionResult,
     latinActive: state.latinActive,
@@ -67,22 +67,59 @@ function ProjectionResult() {
   const { options } =
     projectionMode === 'm' ? projectionResult.extreme : projectionResult.form;
 
-  const panes = [
-    {
-      menuItem: t('recommendation.header'),
-      render: () => (
-        <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
+  // const hasNoUnknown = useMemo(
+  //   () =>
+  //     ['extreme', 'moderate'].some((proj) => {
+  //       const projection = projectionResult[proj];
+  //       return (
+  //         !projection.projections?.[0] &&
+  //         location.altitudinalZone !==
+  //           mapLocation[`targetAltitudinalZone${capitalize(proj)}`]
+  //       );
+  //     }),
+  //   [location.altitudinalZone, mapLocation, projectionResult],
+  // );
+
+  // useEffect(() => {
+  //   if (hasNoUnknown) {
+  //     ['extreme', 'moderate'].forEach((proj) => {
+  //       const projection = projectionResult[proj];
+  //       projection.options.slope = projection.options.slope?.filter(
+  //         (opt) => opt !== 'unknown',
+  //       );
+  //     });
+  //     dispatch(setProjectionResult(projectionResult));
+  //   }
+  // }, [dispatch, hasNoUnknown, projectionResult]);
+
+  const panes = useMemo(
+    () => [
+      {
+        menuItem: t('recommendation.header'),
+        render: () => (
+          <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
+        ),
+      },
+      ...getScenarioColumns(
+        location,
+        mapLocation,
+        projectionMode,
+        projectionResult,
+        getPane,
+        i18n.language,
+        t,
       ),
-    },
-    ...getScenarioColumns(
+    ],
+    [
+      i18n.language,
       location,
+      mapLocation,
       projectionMode,
       projectionResult,
-      getPane,
-      i18n.language,
+      sameAltitudinalZone,
       t,
-    ),
-  ];
+    ],
+  );
 
   const finalPanes = panes.filter((p) => p);
   const foundProjection = sameAltitudinalZone || finalPanes.length > 2;
@@ -146,7 +183,7 @@ function ProjectionResult() {
               { field: t(`${checkField}.label`) },
             )}
           </Header>
-          {mapLocationForestType && (
+          {mapLocation.forestType && (
             <Header className={styles.checkMapLocation} inverted>
               <Trans i18nKey="recommendation.checkMapLocation" />
             </Header>
