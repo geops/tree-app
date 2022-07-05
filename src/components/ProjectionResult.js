@@ -67,31 +67,6 @@ function ProjectionResult() {
   const { options } =
     projectionMode === 'm' ? projectionResult.extreme : projectionResult.form;
 
-  // const hasNoUnknown = useMemo(
-  //   () =>
-  //     ['extreme', 'moderate'].some((proj) => {
-  //       const projection = projectionResult[proj];
-  //       return (
-  //         !projection.projections?.[0] &&
-  //         location.altitudinalZone !==
-  //           mapLocation[`targetAltitudinalZone${capitalize(proj)}`]
-  //       );
-  //     }),
-  //   [location.altitudinalZone, mapLocation, projectionResult],
-  // );
-
-  // useEffect(() => {
-  //   if (hasNoUnknown) {
-  //     ['extreme', 'moderate'].forEach((proj) => {
-  //       const projection = projectionResult[proj];
-  //       projection.options.slope = projection.options.slope?.filter(
-  //         (opt) => opt !== 'unknown',
-  //       );
-  //     });
-  //     dispatch(setProjectionResult(projectionResult));
-  //   }
-  // }, [dispatch, hasNoUnknown, projectionResult]);
-
   const panes = useMemo(
     () => [
       {
