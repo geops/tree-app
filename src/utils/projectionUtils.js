@@ -33,7 +33,6 @@ export const getScenarios = (scenario, t) => {
 
 export const getScenarioColumns = (
   location,
-  mapLocation,
   projectionMode,
   projectionResult,
   getColumn,

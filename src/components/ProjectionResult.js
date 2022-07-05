@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
@@ -60,6 +60,7 @@ function ProjectionResult() {
     activeProfile: state.activeProfile,
   }));
   const { i18n, t } = useTranslation();
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
   const AZToday = getAZ(location.altitudinalZone);
   const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
   const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
@@ -77,7 +78,6 @@ function ProjectionResult() {
       },
       ...getScenarioColumns(
         location,
-        mapLocation,
         projectionMode,
         projectionResult,
         getPane,
@@ -88,7 +88,6 @@ function ProjectionResult() {
     [
       i18n.language,
       location,
-      mapLocation,
       projectionMode,
       projectionResult,
       sameAltitudinalZone,
@@ -136,6 +135,8 @@ function ProjectionResult() {
         <>
           <Tab
             className={styles.tab}
+            activeIndex={finalPanes[activeTabIndex] ? activeTabIndex : 0}
+            onTabChange={(evt, data) => setActiveTabIndex(data.activeIndex)}
             menu={{
               className: styles.tabMenu,
               inverted: true,
