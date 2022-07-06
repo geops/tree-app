@@ -66,7 +66,6 @@ const projection = (store) => (next) => (action) => {
           targetAltitudinalZoneModerate: targetAZModerate,
           targetAltitudinalZoneExtreme: targetAZExtreme,
         } = mapLocation;
-        console.log(location);
         projectionResult.moderate = runProject(location, targetAZModerate);
         projectionResult.extreme = runProject(location, targetAZExtreme);
       } else {

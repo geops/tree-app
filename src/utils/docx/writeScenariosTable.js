@@ -9,9 +9,10 @@ import {
   getScenariosTableCell,
 } from './exportUtils';
 
+const { getAZ } = utils();
 const getScenarioColumn = (scenario, projection, language, t) => {
   const { forestType, transitionForestType } = projection;
-  const altitudinalZone = utils.projection.getAZ(projection.altitudinalZone);
+  const altitudinalZone = getAZ(projection.altitudinalZone);
   const scenarios = getScenarios(scenario, t);
   const treeValues = list(projection, true).slice(0, 3);
   return (
