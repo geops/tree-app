@@ -1,16 +1,14 @@
 import React from 'react';
 import { Paragraph, Table, ImageRun, TextRun } from 'docx';
+import { utils } from '@geops/tree-lib';
 import TilleringSingle from '../../components/ForestTypeDescription/lu/TilleringSingle';
 import Tillering from '../../components/ForestTypeDescription/lu/Tillering';
 import Site from '../../components/ForestTypeDescription/lu/Site';
 import { PAGE_WIDTH_DXA, getLocationTableRow, jsxToBlob } from './exportUtils';
-import {
-  vegetationMapping,
-  soilMapping,
-  getTilleringTreeTypes,
-} from '../../components/ForestTypeDescription/lu/utils';
-import { getImageUrl } from '../reliefMappings';
+import { getTilleringTreeTypes } from '../../components/ForestTypeDescription/lu/utils';
 import { writeDataTable } from './writeDataTable';
+
+const { getReliefImageUrl, getMapping } = utils();
 
 export const writeLocationTable = async (location, profile, t) => {
   const tilleringHardwoodPng = await jsxToBlob(
@@ -19,10 +17,13 @@ export const writeLocationTable = async (location, profile, t) => {
   const tilleringPng = await jsxToBlob(<Tillering data={location.tillering} />);
   const sitePng = await jsxToBlob(<Site data={location.expoAndAspect} />);
   const reliefPng =
-    getImageUrl(location.code, profile) &&
-    (await fetch(getImageUrl(location.code, profile)).then((response) =>
+    getReliefImageUrl(location.code, profile) &&
+    (await fetch(getReliefImageUrl(location.code, profile)).then((response) =>
       response.blob(),
     ));
+
+  const vegetationMapping = getMapping('vegetation', profile);
+  const soilMapping = getMapping('soil', profile);
 
   const rows = [
     getLocationTableRow(t('lu.forestType.tilleringHardwood'), [

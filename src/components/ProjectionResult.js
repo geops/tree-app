@@ -1,20 +1,18 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';
 import ExportButton from './ExportButton';
 import styles from './ProjectionResult.module.css';
 
-import {
-  getScenarios,
-  getScenarioColumns,
-  getAZ,
-} from '../utils/projectionUtils';
+import { getScenarios, getScenarioColumns } from '../utils/projectionUtils';
 import { exportRecommendation } from '../utils/docx/exportRecommendation';
+
+const { getAZ } = utils();
 
 function getPane(scenario, projection, language, t) {
   const { forestType, transitionForestType } = projection;
@@ -46,7 +44,7 @@ const checkFields = ['slope', 'additional', 'relief'];
 function ProjectionResult() {
   const {
     location,
-    mapLocationForestType,
+    mapLocation,
     projectionMode,
     projectionResult,
     latinActive,
@@ -54,7 +52,7 @@ function ProjectionResult() {
     activeProfile,
   } = useSelector((state) => ({
     location: state.location,
-    mapLocationForestType: state.mapLocation.forestType,
+    mapLocation: state.mapLocation,
     projectionMode: state.projectionMode,
     projectionResult: state.projectionResult,
     latinActive: state.latinActive,
@@ -62,6 +60,7 @@ function ProjectionResult() {
     activeProfile: state.activeProfile,
   }));
   const { i18n, t } = useTranslation();
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
   const AZToday = getAZ(location.altitudinalZone);
   const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
   const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
@@ -69,22 +68,32 @@ function ProjectionResult() {
   const { options } =
     projectionMode === 'm' ? projectionResult.extreme : projectionResult.form;
 
-  const panes = [
-    {
-      menuItem: t('recommendation.header'),
-      render: () => (
-        <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
+  const panes = useMemo(
+    () => [
+      {
+        menuItem: t('recommendation.header'),
+        render: () => (
+          <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
+        ),
+      },
+      ...getScenarioColumns(
+        location,
+        projectionMode,
+        projectionResult,
+        getPane,
+        i18n.language,
+        t,
       ),
-    },
-    ...getScenarioColumns(
+    ],
+    [
+      i18n.language,
       location,
       projectionMode,
       projectionResult,
-      getPane,
-      i18n.language,
+      sameAltitudinalZone,
       t,
-    ),
-  ];
+    ],
+  );
 
   const finalPanes = panes.filter((p) => p);
   const foundProjection = sameAltitudinalZone || finalPanes.length > 2;
@@ -126,6 +135,8 @@ function ProjectionResult() {
         <>
           <Tab
             className={styles.tab}
+            activeIndex={finalPanes[activeTabIndex] ? activeTabIndex : 0}
+            onTabChange={(evt, data) => setActiveTabIndex(data.activeIndex)}
             menu={{
               className: styles.tabMenu,
               inverted: true,
@@ -148,7 +159,7 @@ function ProjectionResult() {
               { field: t(`${checkField}.label`) },
             )}
           </Header>
-          {mapLocationForestType && (
+          {mapLocation.forestType && (
             <Header className={styles.checkMapLocation} inverted>
               <Trans i18nKey="recommendation.checkMapLocation" />
             </Header>
