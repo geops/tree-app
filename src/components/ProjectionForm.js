@@ -4,16 +4,16 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 
 import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
 import { setFormLocation, setForestTypeDescription } from '../store/actions';
-import { transitionMapping } from '../utils/luTransitionMapping';
 
 import styles from './ProjectionForm.module.css';
 
+const { getMapping } = utils();
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
 const getButtonOptions = (type, lng) => (key) => ({
   key,
@@ -74,9 +74,9 @@ function ProjectionForm() {
     let value = '';
     if (first && options[field] && !location[name]) {
       [value] = options[field];
-    } else if (options[field].includes(location[name])) {
+    } else if (options[field]?.includes(location[name])) {
       value = location[name];
-    } else if (options[field].includes('unknown')) {
+    } else if (options[field]?.includes('unknown')) {
       value = 'unknown';
     }
     return value;
@@ -92,7 +92,7 @@ function ProjectionForm() {
   const formActive = projectionMode === 'm' || fieldActive;
   const cantonalForestType =
     activeProfile === 'lu' &&
-    transitionMapping[
+    getMapping('transition', activeProfile)[
       `${location.forestType}(${location.transitionForestType})`
     ];
 
@@ -170,44 +170,42 @@ function ProjectionForm() {
           </Message>
         )
       )}
-      {location.transition && options.forestType && (
-        <Segment>
-          <Dropdown
-            className={styles.forestType}
-            data-cypress="projectionFormTransitionForestType"
-            clearable
-            label={t('forestType.transition')}
-            options={options.forestType.map(
-              getDropdownOptions('forestType', i18n.language, dispatch, true),
-            )}
-            onChange={(e, { value }) =>
-              setLocation('transitionForestType', value)
-            }
-            onBlur={deactivateField}
-            onFocus={() => activateField('transitionForestType')}
-            placeholder={t('dropdown.placeholder')}
-            search
-            value={getValue('forestType', { transition: true })}
-          />
-          <Dropdown
-            clearable
-            data-cypress="projectionFormTransitionAltitudinalZone"
-            label={t('altitudinalZone.transition')}
-            options={options.altitudinalZone.map(
-              getDropdownOptions('altitudinalZone', i18n.language),
-            )}
-            onChange={(e, { value }) => {
-              setLocation('transitionAltitudinalZone', value);
-            }}
-            onBlur={deactivateField}
-            onFocus={() => activateField('transitionAltitudinalZone')}
-            value={
-              getValue('altitudinalZone', { transition: true }) ||
-              getValue('altitudinalZone')
-            }
-          />
-        </Segment>
-      )}
+      {location.transition &&
+        (options.transitionForestType || options.forestType) && (
+          <Segment>
+            <Dropdown
+              className={styles.forestType}
+              data-cypress="projectionFormTransitionForestType"
+              clearable={!!formLocation.transitionForestType}
+              label={t('forestType.transition')}
+              options={(options.transitionForestType || options.forestType).map(
+                getDropdownOptions('forestType', i18n.language, dispatch, true),
+              )}
+              onChange={(e, { value }) =>
+                setLocation('transitionForestType', value)
+              }
+              onBlur={deactivateField}
+              onFocus={() => activateField('transitionForestType')}
+              placeholder={t('dropdown.placeholder')}
+              search
+              value={getValue('transitionForestType')}
+            />
+            <Dropdown
+              clearable={!!formLocation.transitionAltitudinalZone}
+              data-cypress="projectionFormTransitionAltitudinalZone"
+              label={t('altitudinalZone.transition')}
+              options={options.altitudinalZone.map(
+                getDropdownOptions('altitudinalZone', i18n.language),
+              )}
+              onChange={(e, { value }) => {
+                setLocation('transitionAltitudinalZone', value);
+              }}
+              onBlur={deactivateField}
+              onFocus={() => activateField('transitionAltitudinalZone')}
+              value={getValue('altitudinalZone', { transition: true })}
+            />
+          </Segment>
+        )}
       {options.slope && options.slope.length > 1 && (
         <ChoiceButton
           label={t('slope.label')}

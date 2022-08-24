@@ -44,7 +44,7 @@ function Recommendation({ sameAltitudinalZone }) {
       {r && (
         <Grid columns={3} padded verticalAlign="middle">
           <Grid.Row centered>
-            <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
+            <Grid.Column textAlign="center" computer={4} tablet={2} mobile={2}>
               <PositiveIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
@@ -64,7 +64,7 @@ function Recommendation({ sameAltitudinalZone }) {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row centered>
-            <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
+            <Grid.Column textAlign="center" computer={4} tablet={2} mobile={2}>
               <NeutralIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
@@ -84,7 +84,7 @@ function Recommendation({ sameAltitudinalZone }) {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row centered>
-            <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
+            <Grid.Column textAlign="center" computer={4} tablet={2} mobile={2}>
               <NegativeIcon fill="white" className={styles.icon} />
             </Grid.Column>
             <Grid.Column width={1}>
@@ -98,7 +98,12 @@ function Recommendation({ sameAltitudinalZone }) {
           </Grid.Row>
           {(r[9].length > 0 || r[10].length > 0) && (
             <Grid.Row centered>
-              <Grid.Column textAlign="center" width={4} tablet={2} mobile={2}>
+              <Grid.Column
+                textAlign="center"
+                computer={4}
+                tablet={2}
+                mobile={2}
+              >
                 <AttentionIcon fill="white" className={styles.icon} />
               </Grid.Column>
               <Grid.Column width={1}>

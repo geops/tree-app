@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { applyMiddleware } from 'redux';
 // eslint-disable-next-line import/no-unresolved
-import { locate, project } from '@geops/tree-lib';
+import { locate, utils } from '@geops/tree-lib';
 
 import {
   SET_FORM_LOCATION,
@@ -19,18 +19,7 @@ const projectionActionTypes = [
   SET_PROJECTION_MODE,
 ];
 
-export const hochmontanAltitudinalZones = ['81', '82', '83'];
-
-const runProject = (location, targetAltitudinalZone) => {
-  let newTargetAltitudinalZone = targetAltitudinalZone;
-  let { silverFirArea } = location;
-  if (hochmontanAltitudinalZones.includes(targetAltitudinalZone)) {
-    silverFirArea = targetAltitudinalZone.slice(1);
-    newTargetAltitudinalZone = '80';
-  }
-  const newLocation = { ...location, silverFirArea };
-  return project(newLocation, newTargetAltitudinalZone);
-};
+const { reduceHochmontanSilverFir, reduceHochmontanAz, runProject } = utils();
 
 const projection = (store) => (next) => (action) => {
   const result = next(action);
@@ -45,13 +34,17 @@ const projection = (store) => (next) => (action) => {
     location.transition = formLocation.transition || mapLocation.transition;
     location.transitionForestType =
       formLocation.transitionForestType || mapLocation.transitionForestType;
-    if (hochmontanAltitudinalZones.includes(location.altitudinalZone)) {
-      if (projectionMode === 'm' || !formLocation.silverFirArea) {
-        location.silverFirArea = location.altitudinalZone.slice(1);
-      }
-      if (projectionMode === 'm' || !formLocation.altitudinalZone) {
-        location.altitudinalZone = '80';
-      }
+    location.transitionAltitudinalZone =
+      formLocation.transitionAltitudinalZone ||
+      location.transitionAltitudinalZone;
+    if (projectionMode === 'm' || !formLocation.silverFirArea) {
+      location.silverFirArea = reduceHochmontanSilverFir(
+        location.altitudinalZone,
+        location.silverFirArea,
+      );
+    }
+    if (projectionMode === 'm' || !formLocation.altitudinalZone) {
+      location.altitudinalZone = reduceHochmontanAz(location.altitudinalZone);
     }
     if (!location.transition) {
       delete location.transitionForestType;

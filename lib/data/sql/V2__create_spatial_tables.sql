@@ -5,7 +5,7 @@ CREATE TABLE "altitudinal_zones_1995" (gid serial, "hs_de" varchar(200),
                                                            "hs_fr" varchar(200),
                                                                    "hs_it" varchar(200),
                                                                            "hs_en" varchar(200),
-                                                                                   "code" int8, "subcode" int8);
+                                                                                   "code" varchar(10), "subcode" varchar(10));
 
 
 ALTER TABLE "altitudinal_zones_1995" ADD PRIMARY KEY (gid);
@@ -20,7 +20,7 @@ CREATE TABLE "altitudinal_zones_2085_dry" (gid serial, "hs_de" varchar(200),
                                                                "hs_fr" varchar(200),
                                                                        "hs_it" varchar(200),
                                                                                "hs_en" varchar(200),
-                                                                                       "code" int8, "subcode" int8);
+                                                                                       "code" varchar(10), "subcode" varchar(10));
 
 
 ALTER TABLE "altitudinal_zones_2085_dry" ADD PRIMARY KEY (gid);
@@ -36,7 +36,7 @@ CREATE TABLE "altitudinal_zones_2085_less_dry" (gid serial, "hs_de" varchar(200)
                                                                     "hs_fr" varchar(200),
                                                                             "hs_it" varchar(200),
                                                                                     "hs_en" varchar(200),
-                                                                                            "code" int8, "subcode" int8);
+                                                                                            "code" varchar(10), "subcode" varchar(10));
 
 
 ALTER TABLE "altitudinal_zones_2085_less_dry" ADD PRIMARY KEY (gid);
@@ -264,3 +264,20 @@ ALTER TABLE "forest_types_fr" ADD PRIMARY KEY (gid);
 
 
 SELECT AddGeometryColumn('','forest_types_fr','geom','2056','MULTIPOLYGON',2);
+
+
+
+----------------------------------------------
+-- Forest types JU
+
+
+CREATE TABLE "forest_types_ju" (gid serial,
+"objectid" float8,
+"nais1" varchar(80),
+"naisue" varchar(80),
+"hs1" varchar(80),
+"hsue" varchar(80));
+
+ALTER TABLE "forest_types_ju" ADD PRIMARY KEY (gid);
+
+SELECT AddGeometryColumn('','forest_types_ju','geom','0','MULTIPOLYGON',2);
