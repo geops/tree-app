@@ -433,7 +433,8 @@
   "profiles": {
     "ch": "Bund",
     "bl": "Basel",
-    "lu": "Luzern"
+    "lu": "Luzern",
+    "va": "Vaud"
   },
   "forestTypeModal": {
     "compare": "Standortstypen vergleichen",
