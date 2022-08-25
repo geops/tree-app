@@ -53,9 +53,19 @@ export const getScenarioColumns = (
       projectionResult.extreme,
       location,
     );
+
     const todayKey = getProjectionResultKey(location);
-    const moderateKey = getProjectionResultKey(moderate);
-    const extremeKey = getProjectionResultKey(extreme);
+    const moderateKey = getProjectionResultKey(
+      moderate,
+      projectionResult,
+      'moderate',
+    );
+    const extremeKey = getProjectionResultKey(
+      extreme,
+      projectionResult,
+      'extreme',
+    );
+
     if (moderateKey === extremeKey && todayKey === moderateKey) {
       columns.push(getColumn('todayModerateExtreme', location, language, t));
     } else if (moderateKey === extremeKey) {
@@ -67,6 +77,16 @@ export const getScenarioColumns = (
     } else if (todayKey === extremeKey) {
       columns.push(getColumn('todayExtreme', location, language, t));
       columns.push(getColumn('moderate', moderate, language, t));
+    } else if (!extremeKey && moderateKey === todayKey) {
+      columns.push(getColumn('todayModerate', location, language, t));
+    } else if (!moderateKey && extremeKey === todayKey) {
+      columns.push(getColumn('todayExtreme', location, language, t));
+    } else if (!extremeKey && moderateKey) {
+      columns.push(getColumn('today', location, language, t));
+      columns.push(getColumn('moderate', moderate, language, t));
+    } else if (extremeKey && !moderateKey) {
+      columns.push(getColumn('today', location, language, t));
+      columns.push(getColumn('extreme', moderate, language, t));
     } else {
       columns.push(getColumn('today', location, language, t));
       columns.push(getColumn('moderate', moderate, language, t));
