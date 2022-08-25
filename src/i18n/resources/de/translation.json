@@ -422,7 +422,13 @@
   },
   "profiles": {
     "ch": "Bund",
+<<<<<<< HEAD
     "lu": "Luzern"
+=======
+    "bl": "Basel",
+    "lu": "Luzern",
+    "va": "Vaud"
+>>>>>>> 98022bb (chore: WIP on vaud profile UI adjustments)
   },
   "forestTypeModal": {
     "compare": "Standortstypen vergleichen",
