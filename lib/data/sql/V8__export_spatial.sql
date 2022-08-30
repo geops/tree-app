@@ -42,6 +42,14 @@ WITH altitudinal_zones_cantonal AS
                 LEFT JOIN altitudinal_zone_meta meta_ue ON ju.hsue = meta_ue.zh
                 WHERE meta.code IS NOT NULL
                 GROUP BY meta.code, meta_ue.code)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  ev::text as code,
+                  ev::text as code_style
+              FROM forest_types_lu
+                WHERE ev IS NOT NULL
+                GROUP BY ev)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::text AS code, (code::TEXT || subcode::TEXT)::text AS code_style,
