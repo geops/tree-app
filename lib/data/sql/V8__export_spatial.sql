@@ -102,7 +102,9 @@ FROM silver_fir_areas;
 
 CREATE VIEW forest_types_export AS
 SELECT nais as code,
-       ST_Transform(geom, 3857) as geometry
+       ST_Transform(geom, 3857) as geometry,
+       null as code_canton,
+       null as info
 FROM forest_types_tg
 WHERE nais IS NOT NULL
 UNION
@@ -110,27 +112,37 @@ SELECT CASE nais2 is null
            WHEN TRUE THEN nais1
            ELSE nais1 || '(' || nais2 || ')'
        END AS code,
-       ST_Transform(geom, 3857) as geometry
+       ST_Transform(geom, 3857) as geometry,
+       null as code_canton,
+       null as info
 FROM forest_types_lu
 WHERE nais1 IS NOT NULL
 UNION
 SELECT typ_nais AS code,
-       ST_Transform(geom, 3857) as geometry
+       ST_Transform(geom, 3857) as geometry,
+       null as code_canton,
+       null as info
 FROM forest_types_fl
 WHERE typ_nais IS NOT NULL
 UNION
 SELECT nais as code,
-       ST_Transform(geom, 3857) as geometry
+       ST_Transform(geom, 3857) as geometry,
+       null as code_canton,
+       null as info
 FROM forest_types_zh
 WHERE nais IS NOT NULL
 UNION
 SELECT code_nais AS code,
-       ST_Transform(geom, 3857) as geometry
+       ST_Transform(geom, 3857) as geometry,
+       null as code_canton,
+       null as info
 FROM forest_types_ne
 WHERE code_nais IS NOT NULL
 UNION
 SELECT nais AS code,
-       ST_Transform(geom, 3857) as geometry
+       ST_Transform(geom, 3857) as geometry,
+       null as code_canton,
+       null as info
 FROM forest_types_fr
 WHERE nais IS NOT NULL
 UNION
@@ -138,6 +150,15 @@ SELECT CASE naisue is null
            WHEN TRUE THEN nais1
            ELSE nais1 || '(' || naisue || ')'
        END AS code,
-       ST_Transform(geom, 3857) as geometry
+       ST_Transform(geom, 3857) as geometry,
+       null as code_canton,
+       null as info
 FROM forest_types_ju
-WHERE nais1 IS NOT NULL;
+WHERE nais1 IS NOT NULL
+UNION
+SELECT nais AS code,
+       ST_Transform(geom, 3857) as geometry,
+       vd as code_canton,
+       popup as info
+FROM forest_types_vd
+WHERE nais IS NOT NULL;
