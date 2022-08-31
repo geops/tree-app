@@ -66,4 +66,4 @@ _import "Download manually" "forest_types_fr" "forest_types_fr" "forest_types_fr
 
 _import "Download manually" "forest_types_ju" "forest_types_ju" "forest_types_ju"
 
-_import "Download manually" "forest_types_ju" "forest_types_ju" "forest_types_vd"
+_import "Download manually" "forest_types_vd" "forest_types_vd" "forest_types_vd"
