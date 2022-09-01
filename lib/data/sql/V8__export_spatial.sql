@@ -53,8 +53,12 @@ WITH altitudinal_zones_cantonal AS
                   ST_Union(geom) AS geom,
                   hs::text as code,
                   hs::text as code_style
+<<<<<<< HEAD
               FROM forest_types_lu
 >>>>>>> 4e16f4e (add forest_types_vd)
+=======
+              FROM forest_types_vd
+>>>>>>> 0ffd7d8 (chore: corrected sql errors)
                 WHERE hs IS NOT NULL
                 GROUP BY hs)
        )foo )
