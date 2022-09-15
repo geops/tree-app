@@ -18,6 +18,13 @@
 
 .cantonalForestType {
   padding: 5px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary-color-500);
+}
+
+.cantonalForestType span {
+  padding-left: 5px;
 }
 
 .cantonalForestTypeLabel {

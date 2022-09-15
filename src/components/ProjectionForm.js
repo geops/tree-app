@@ -286,7 +286,9 @@ function ProjectionForm() {
                 icon="info"
                 onClick={() => dispatch(setForestTypeDescription(cft))}
               />
-              {cft} - {info('forestType', cft, activeProfile)[i18n.language]}
+              <span>
+                {cft} - {info('forestType', cft, activeProfile)[i18n.language]}
+              </span>
             </div>
           ))}
         </>
