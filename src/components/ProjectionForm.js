@@ -271,16 +271,22 @@ function ProjectionForm() {
           <p className={styles.cantonalForestTypeLabel}>
             {t('lu.forestType.cantonalForestType')}
           </p>
-          <Button
-            active
-            compact
-            icon="info"
-            onClick={() =>
-              dispatch(setForestTypeDescription(cantonalForestType))
-            }
-          />
-          {cantonalForestType} -{' '}
-          {info('forestType', cantonalForestType, activeProfile)[i18n.language]}
+          {cantonalForestType.map((cft) => (
+            <div
+              className={styles.cantonalForestType}
+              key={`cantonal-ft-${cft}`}
+            >
+              <Button
+                active
+                compact
+                icon="info"
+                onClick={() => dispatch(setForestTypeDescription(cft))}
+              />
+              <span>
+                {cft} - {info('forestType', cft, activeProfile)[i18n.language]}
+              </span>
+            </div>
+          ))}
         </>
       )}
     </Form>
