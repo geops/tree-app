@@ -90,7 +90,7 @@ function ProjectionForm() {
 
   const formActive = projectionMode === 'm' || fieldActive;
 
-  const cantonalForestTypes = useMemo(() => {
+  const cantonalTransitionForestTypes = useMemo(() => {
     try {
       return getMapping('transition', activeProfile)[
         `${location.forestType}(${location.transitionForestType})`
@@ -130,6 +130,14 @@ function ProjectionForm() {
           value={getValue('altitudinalZone')}
         />
       )}
+      {mapLocation.cantonalForestType ? (
+        <div className={styles.cantonalForestTypes}>
+          <p className={styles.cantonalForestTypesLabel}>
+            {t('forestType.cantonalForestType')}
+          </p>
+          <span>{mapLocation.cantonalForestType}</span>
+        </div>
+      ) : null}
       {options.forestType ? (
         <>
           <Dropdown
@@ -270,27 +278,31 @@ function ProjectionForm() {
             value={getValue('targetAltitudinalZone')}
           />
         )}
-      {cantonalForestTypes?.length && (
+      {cantonalTransitionForestTypes?.length && (
         <>
-          <p className={styles.cantonalForestTypeLabel}>
-            {t('forestType.cantonalForestTypes')}
+          <p className={styles.cantonalForestTypesLabel}>
+            {t('forestType.cantonalTransitionForestTypes')}
           </p>
-          {cantonalForestTypes.map((cft) => (
-            <div
-              className={styles.cantonalForestType}
-              key={`cantonal-ft-${cft}`}
-            >
-              <Button
-                active
-                compact
-                icon="info"
-                onClick={() => dispatch(setForestTypeDescription(cft))}
-              />
-              <span>
-                {cft} - {info('forestType', cft, activeProfile)[i18n.language]}
-              </span>
-            </div>
-          ))}
+          {cantonalTransitionForestTypes.map((cft) => {
+            const ftInfo = info('forestType', cft, activeProfile);
+            return (
+              <div
+                className={styles.cantonalForestTypesLabel}
+                key={`cantonal-ft-${cft}`}
+              >
+                <Button
+                  active
+                  compact
+                  icon="info"
+                  onClick={() => dispatch(setForestTypeDescription(cft))}
+                />
+                <span>
+                  {cft}
+                  {ftInfo[i18n.language] ? ` - ${ftInfo[i18n.language]}` : ''}
+                </span>
+              </div>
+            );
+          })}
         </>
       )}
     </Form>

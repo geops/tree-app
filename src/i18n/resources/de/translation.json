@@ -314,7 +314,8 @@
       "no": "Nein",
       "unknown": "nicht angesprochen"
     },
-    "cantonalForestTypes": "Kantonale Standortstypen"
+    "cantonalForestType": "Kantonaler Standortstyp",
+    "cantonalTransitionForestTypes": "Kantonale Übergangsstandortstypen"
   },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
