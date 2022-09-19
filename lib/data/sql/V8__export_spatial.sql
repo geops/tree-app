@@ -47,7 +47,7 @@ WITH altitudinal_zones_cantonal AS
                   ST_Union(geom) AS geom,
                   hs::text as code,
                   hs::text as code_style
-              FROM forest_types_vd
+              FROM altitudinal_zones_vd
                 WHERE hs IS NOT NULL
                 GROUP BY hs)
        )foo )
