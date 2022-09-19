@@ -16,7 +16,16 @@ function isMobileDevice() {
 function MapGeolocation() {
   const map = useContext(MapContext);
   const projection = map.getView().getProjection();
-  const geoloc = useMemo(() => new Geolocation({ projection }), [projection]);
+  const geoloc = useMemo(
+    () =>
+      new Geolocation({
+        projection,
+        trackingOptions: {
+          enableHighAccuracy: true,
+        },
+      }),
+    [projection],
+  );
 
   geoloc.on('change:position', () => {
     const coordinate = geoloc.getPosition();
