@@ -29,7 +29,7 @@ const getKey = (sl) =>
 
 const getHasTransition = (code) => code.includes('(') && code.endsWith(')');
 
-const featuresToLocation = (location, f) => {
+const featuresToLocation = (location, f, activeProfile) => {
   const key = getKey(f.sourceLayer) || f.sourceLayer;
   const value = f.properties.code.toString();
   const transition = getHasTransition(value);
@@ -46,6 +46,15 @@ const featuresToLocation = (location, f) => {
     } catch (error) {
       // ignore missing forest types
     }
+
+    const hasCantonalForestType =
+      f.properties[`code_${activeProfile}`] &&
+      f.properties.code !== f.properties[`code_${activeProfile}`];
+    if (hasCantonalForestType) {
+      // eslint-disable-next-line no-param-reassign
+      location.cantonalForestType = f.properties[`code_${activeProfile}`];
+    }
+
     if (
       forestTypeInfo &&
       !location.forestTypes.find((t) => t.forestType === forestType)
@@ -106,6 +115,7 @@ function MapLocation() {
   const history = useHistory();
   const isMobile = useIsMobile();
   const mapLocation = useSelector((state) => state.mapLocation);
+  const activeProfile = useSelector((state) => state.activeProfile);
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
@@ -122,7 +132,9 @@ function MapLocation() {
       const features = map.getFeaturesAtPixel(pixel) || [];
       let location = features
         .filter((feature) => feature.properties?.code !== undefined)
-        .reduce(featuresToLocation, { forestTypes: [] });
+        .reduce((loc, feat) => featuresToLocation(loc, feat, activeProfile), {
+          forestTypes: [],
+        });
       location.coordinate = to2056(coordinate);
       if (location.forestTypes.length === 1) {
         location = { ...location, ...location.forestTypes[0] };

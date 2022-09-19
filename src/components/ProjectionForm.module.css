@@ -16,18 +16,19 @@
   font-weight: bold;
 }
 
-.cantonalForestType {
+.cantonalForestTypes {
   padding: 5px 0;
   font-size: 18px;
   font-weight: bold;
   color: var(--primary-color-500);
+  margin-bottom: 10px;
 }
 
-.cantonalForestType span {
+.cantonalForestTypes span {
   padding-left: 5px;
 }
 
-.cantonalForestTypeLabel {
+.cantonalForestTypesLabel {
   margin: 0 0 0.28571429rem 0 !important;
   font-weight: 700;
   color: var(--primary-color-500);
