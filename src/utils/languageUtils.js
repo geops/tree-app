@@ -1,5 +1,5 @@
 const langByProfileMapping = {
-  va: 'fr',
+  vd: 'fr',
 };
 
 const getLanguageByProfile = (profile) => langByProfileMapping[profile];
