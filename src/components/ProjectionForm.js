@@ -130,7 +130,7 @@ function ProjectionForm() {
           value={getValue('altitudinalZone')}
         />
       )}
-      {mapLocation.cantonalForestType ? (
+      {location.cantonalForestType ? (
         <div className={styles.cantonalForestTypes}>
           <p className={styles.cantonalForestTypesLabel}>
             {t('forestType.cantonalForestType')}

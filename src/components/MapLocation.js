@@ -3,7 +3,7 @@ import { transform } from 'ol/proj';
 import { Style, Icon } from 'ol/style';
 import OLFeature from 'ol/Feature';
 import VectorSource from 'ol/source/Vector';
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
@@ -50,10 +50,9 @@ const featuresToLocation = (location, f, activeProfile) => {
     const hasCantonalForestType =
       f.properties[`code_${activeProfile}`] &&
       f.properties.code !== f.properties[`code_${activeProfile}`];
-    if (hasCantonalForestType) {
-      // eslint-disable-next-line no-param-reassign
-      location.cantonalForestType = f.properties[`code_${activeProfile}`];
-    }
+    // eslint-disable-next-line no-param-reassign
+    location.cantonalForestType =
+      hasCantonalForestType && f.properties[`code_${activeProfile}`];
 
     if (
       forestTypeInfo &&
@@ -118,15 +117,14 @@ function MapLocation() {
   const activeProfile = useSelector((state) => state.activeProfile);
   const { i18n, t } = useTranslation();
 
-  useEffect(() => {
-    let originalMobilePathname;
-    if (isMobile) {
-      // load map data on mobile and redirect to original path afterwards
-      originalMobilePathname = window.location.pathname;
-      history.replace(`/${window.location.search}`);
-    }
-
-    const handleCoords = ({ coordinate }, resetFormLocation = true) => {
+  const handleCoords = useCallback(
+    ({ coordinate }, resetFormLocation = true) => {
+      let originalMobilePathname;
+      if (isMobile) {
+        // load map data on mobile and redirect to original path afterwards
+        originalMobilePathname = window.location.pathname;
+        history.replace(`/${window.location.search}`);
+      }
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
@@ -150,8 +148,12 @@ function MapLocation() {
         history.replace(`${originalMobilePathname}${window.location.search}`);
         originalMobilePathname = null;
       }
-    };
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [activeProfile, dispatch, map],
+  );
 
+  useEffect(() => {
     const waitForLoad = () => {
       const mapboxLayer = map
         .getLayers()
@@ -166,7 +168,14 @@ function MapLocation() {
     map.getLayers().on('propertychange', waitForLoad);
     map.on('singleclick', handleCoords);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [map, dispatch]);
+  }, [map, activeProfile, handleCoords, dispatch]);
+
+  useEffect(() => {
+    if (mapLocation?.coordinate) {
+      handleCoords({ coordinate: to3857(mapLocation.coordinate) }, false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeProfile]);
   return (
     <>
       <Vector source={vectorSource} zIndex={999} />
