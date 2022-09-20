@@ -44,7 +44,7 @@ WITH altitudinal_zones_cantonal AS
                 GROUP BY meta.code, meta_ue.code)
               UNION
               (SELECT 
-                  ST_Union(geom) AS geom,
+                  ST_Union(st_makevalid(geom)) AS geom,
                   hs::text as code,
                   hs::text as code_style
               FROM altitudinal_zones_vd
