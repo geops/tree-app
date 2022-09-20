@@ -19,6 +19,7 @@ import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
 import { setMapLocation } from '../store/actions';
 import styles from './MapLocation.module.css';
+import translation from '../i18n/resources/de/translation.json';
 
 const getKey = (sl) =>
   (
@@ -47,9 +48,13 @@ const featuresToLocation = (location, f, activeProfile) => {
       // ignore missing forest types
     }
 
-    const hasCantonalForestType =
-      f.properties[`code_${activeProfile}`] &&
-      f.properties.code !== f.properties[`code_${activeProfile}`];
+    const cantonalForestTypes = Object.keys(translation.profiles).reduce(
+      (allCantonalFts, profile) => ({
+        ...allCantonalFts,
+        [`forestType_${profile}`]: f.properties[`code_${profile}`],
+      }),
+      {},
+    );
 
     if (
       forestTypeInfo &&
@@ -64,8 +69,7 @@ const featuresToLocation = (location, f, activeProfile) => {
             transitionForestType,
             transition,
             info: forestTypeInfo,
-            cantonalForestType:
-              hasCantonalForestType && f.properties[`code_${activeProfile}`],
+            ...cantonalForestTypes,
           },
         ],
       };
