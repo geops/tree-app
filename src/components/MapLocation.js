@@ -50,9 +50,6 @@ const featuresToLocation = (location, f, activeProfile) => {
     const hasCantonalForestType =
       f.properties[`code_${activeProfile}`] &&
       f.properties.code !== f.properties[`code_${activeProfile}`];
-    // eslint-disable-next-line no-param-reassign
-    location.cantonalForestType =
-      hasCantonalForestType && f.properties[`code_${activeProfile}`];
 
     if (
       forestTypeInfo &&
@@ -67,6 +64,8 @@ const featuresToLocation = (location, f, activeProfile) => {
             transitionForestType,
             transition,
             info: forestTypeInfo,
+            cantonalForestType:
+              hasCantonalForestType && f.properties[`code_${activeProfile}`],
           },
         ],
       };
