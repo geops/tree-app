@@ -30,7 +30,7 @@ const getKey = (sl) =>
 
 const getHasTransition = (code) => code.includes('(') && code.endsWith(')');
 
-const featuresToLocation = (location, f, activeProfile) => {
+const featuresToLocation = (location, f) => {
   const key = getKey(f.sourceLayer) || f.sourceLayer;
   const value = f.properties.code.toString();
   const transition = getHasTransition(value);
@@ -120,20 +120,21 @@ function MapLocation() {
   const activeProfile = useSelector((state) => state.activeProfile);
   const { i18n, t } = useTranslation();
 
-  const handleCoords = useCallback(
-    ({ coordinate }, resetFormLocation = true) => {
-      let originalMobilePathname;
-      if (isMobile) {
-        // load map data on mobile and redirect to original path afterwards
-        originalMobilePathname = window.location.pathname;
-        history.replace(`/${window.location.search}`);
-      }
+  useEffect(() => {
+    let originalMobilePathname;
+    if (isMobile) {
+      // load map data on mobile and redirect to original path afterwards
+      originalMobilePathname = window.location.pathname;
+      history.replace(`/${window.location.search}`);
+    }
+
+    const handleCoords = ({ coordinate }, resetFormLocation = true) => {
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
       let location = features
         .filter((feature) => feature.properties?.code !== undefined)
-        .reduce((loc, feat) => featuresToLocation(loc, feat, activeProfile), {
+        .reduce(featuresToLocation, {
           forestTypes: [],
         });
       location.coordinate = to2056(coordinate);
@@ -151,12 +152,8 @@ function MapLocation() {
         history.replace(`${originalMobilePathname}${window.location.search}`);
         originalMobilePathname = null;
       }
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [activeProfile, dispatch, map],
-  );
+    };
 
-  useEffect(() => {
     const waitForLoad = () => {
       const mapboxLayer = map
         .getLayers()
@@ -171,14 +168,8 @@ function MapLocation() {
     map.getLayers().on('propertychange', waitForLoad);
     map.on('singleclick', handleCoords);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [map, activeProfile, handleCoords, dispatch]);
+  }, [map, activeProfile, dispatch]);
 
-  useEffect(() => {
-    if (mapLocation?.coordinate) {
-      handleCoords({ coordinate: to3857(mapLocation.coordinate) }, false);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeProfile]);
   return (
     <>
       <Vector source={vectorSource} zIndex={999} />
