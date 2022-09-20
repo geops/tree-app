@@ -3,7 +3,7 @@ import { transform } from 'ol/proj';
 import { Style, Icon } from 'ol/style';
 import OLFeature from 'ol/Feature';
 import VectorSource from 'ol/source/Vector';
-import React, { useContext, useEffect, useCallback } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
