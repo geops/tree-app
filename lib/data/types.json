@@ -10,6 +10,7 @@
       { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
     ],
     "relief": [
+      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
       {
         "de": "Hang- und Muldenlage",
         "fr": "en pente ou dans une dépression",
