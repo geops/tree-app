@@ -100,6 +100,20 @@ function ProjectionForm() {
     }
   }, [location, activeProfile]);
 
+  const additionalInfo = useMemo(() => {
+    try {
+      const addInfoKey = location[`info_${activeProfile}`];
+      return getMapping('additionalInfo', activeProfile)[addInfoKey];
+    } catch {
+      return undefined;
+    }
+  }, [location, activeProfile]);
+
+  const cantonalForestType = useMemo(
+    () => location[`forestType_${activeProfile}`],
+    [location, activeProfile],
+  );
+
   return (
     <Form className={formActive ? styles.formActive : styles.form}>
       {projectionMode === 'f' && options.forestEcoregion && (
@@ -130,12 +144,12 @@ function ProjectionForm() {
           value={getValue('altitudinalZone')}
         />
       )}
-      {location[`forestType_${activeProfile}`] ? (
+      {cantonalForestType ? (
         <div className={styles.cantonalForestTypes}>
           <p className={styles.cantonalForestTypesLabel}>
             {t('forestType.cantonalForestType')}
           </p>
-          <span>{location[`forestType_${activeProfile}`]}</span>
+          <span>{cantonalForestType}</span>
         </div>
       ) : null}
       {options.forestType ? (
@@ -305,6 +319,14 @@ function ProjectionForm() {
           })}
         </>
       )}
+      {additionalInfo ? (
+        <div className={styles.additionalInfo}>
+          <p className={styles.additionalInfoTitle}>
+            {t('forestType.additionalInfo')}
+          </p>
+          <p>{additionalInfo}</p>
+        </div>
+      ) : null}
     </Form>
   );
 }
