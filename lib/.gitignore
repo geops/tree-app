@@ -10,6 +10,7 @@ data/spatial/tiles/tree
 data/spatial/altitudinal_zones_1995
 data/spatial/altitudinal_zones_2085_dry
 data/spatial/altitudinal_zones_2085_less_dry
+data/spatial/altitudinal_zones_vd
 data/spatial/cantonal_boundaries
 data/spatial/forest_ecoregions
 data/spatial/forest_types_bl
@@ -19,6 +20,7 @@ data/spatial/forest_types_ju
 data/spatial/forest_types_lu
 data/spatial/forest_types_ne
 data/spatial/forest_types_tg
+data/spatial/forest_types_vd
 data/spatial/forest_types_zh
 data/spatial/silver_fir_areas
 data/spatial/cantonal_boundaries.zip
