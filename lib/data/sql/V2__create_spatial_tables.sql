@@ -281,3 +281,27 @@ CREATE TABLE "forest_types_ju" (gid serial,
 ALTER TABLE "forest_types_ju" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_ju','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types VD
+
+
+CREATE TABLE "forest_types_vd" (gid serial,
+"vd" varchar(80),
+"nais" varchar(80),
+"ev" varchar(80),
+"popup" varchar(80),
+"hs" float8);
+ALTER TABLE "forest_types_vd" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_vd','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Altitudinal zones VD
+
+CREATE TABLE "altitudinal_zones_vd" (gid serial,
+"ev_sta" varchar(80),
+"hs" float8);
+ALTER TABLE "altitudinal_zones_vd" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','altitudinal_zones_vd','geom','0','MULTIPOLYGON',2);
