@@ -66,6 +66,10 @@ export const getScenarioColumns = (
       'extreme',
     );
 
+    if (!moderateKey && !extremeKey) {
+      return columns;
+    }
+
     if (moderateKey === extremeKey && todayKey === moderateKey) {
       columns.push(getColumn('todayModerateExtreme', location, language, t));
     } else if (moderateKey === extremeKey) {
