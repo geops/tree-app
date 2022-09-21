@@ -48,10 +48,11 @@ const featuresToLocation = (location, f) => {
       // ignore missing forest types
     }
 
-    const cantonalForestTypes = Object.keys(translation.profiles).reduce(
-      (allCantonalFts, profile) => ({
-        ...allCantonalFts,
+    const cantonalData = Object.keys(translation.profiles).reduce(
+      (allCantonalData, profile) => ({
+        ...allCantonalData,
         [`forestType_${profile}`]: f.properties[`code_${profile}`],
+        [`info_${profile}`]: f.properties[`info_${profile}`],
       }),
       {},
     );
@@ -69,7 +70,7 @@ const featuresToLocation = (location, f) => {
             transitionForestType,
             transition,
             info: forestTypeInfo,
-            ...cantonalForestTypes,
+            ...cantonalData,
           },
         ],
       };

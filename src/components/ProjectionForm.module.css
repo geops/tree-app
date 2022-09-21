@@ -16,6 +16,16 @@
   font-weight: bold;
 }
 
+.additionalInfo {
+  margin: 15px 0;
+  font-size: 0.92857143em;
+}
+
+.additionalInfoTitle {
+  font-weight: 700;
+  color: var(--primary-color-500);
+}
+
 .cantonalForestTypes {
   padding: 5px 0;
   font-size: 18px;
