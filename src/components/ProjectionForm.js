@@ -109,10 +109,16 @@ function ProjectionForm() {
     }
   }, [location, activeProfile]);
 
-  const cantonalForestType = useMemo(
-    () => location[`forestType_${activeProfile}`],
-    [location, activeProfile],
-  );
+  const cantonalForestType = useMemo(() => {
+    const ft = location.transition
+      ? `${location.forestType}(${location.transitionForestType})`
+      : location.forestType;
+
+    return (
+      location[`forestType_${activeProfile}`] !== ft &&
+      location[`forestType_${activeProfile}`]
+    );
+  }, [location, activeProfile]);
 
   return (
     <Form className={formActive ? styles.formActive : styles.form}>
