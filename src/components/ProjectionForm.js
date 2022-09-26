@@ -100,15 +100,6 @@ function ProjectionForm() {
     }
   }, [location, activeProfile]);
 
-  const additionalInfo = useMemo(() => {
-    try {
-      const addInfoKey = location[`info_${activeProfile}`];
-      return getMapping('additionalInfo', activeProfile)[addInfoKey];
-    } catch {
-      return undefined;
-    }
-  }, [location, activeProfile]);
-
   const cantonalForestType = useMemo(() => {
     const ft = location.transition
       ? `${location.forestType}(${location.transitionForestType})`
@@ -152,10 +143,10 @@ function ProjectionForm() {
       )}
       {cantonalForestType ? (
         <div className={styles.cantonalForestTypes}>
-          <p className={styles.cantonalForestTypesLabel}>
+          <label className={styles.cantonalForestTypesLabel}>
             {t('forestType.cantonalForestType')}
-          </p>
-          <span>{cantonalForestType}</span>
+          </label>
+          <p>{cantonalForestType}</p>
         </div>
       ) : null}
       {options.forestType ? (
@@ -306,17 +297,14 @@ function ProjectionForm() {
           {cantonalTransitionForestTypes.map((cft) => {
             const ftInfo = info('forestType', cft, activeProfile);
             return (
-              <div
-                className={styles.cantonalForestTypesLabel}
-                key={`cantonal-ft-${cft}`}
-              >
+              <div key={`cantonal-ft-${cft}`}>
                 <Button
                   active
                   compact
                   icon="info"
                   onClick={() => dispatch(setForestTypeDescription(cft))}
                 />
-                <span>
+                <span className={styles.cantonalTransitionForestType}>
                   {cft}
                   {ftInfo[i18n.language] ? ` - ${ftInfo[i18n.language]}` : ''}
                 </span>
@@ -325,14 +313,6 @@ function ProjectionForm() {
           })}
         </>
       )}
-      {additionalInfo ? (
-        <div className={styles.additionalInfo}>
-          <p className={styles.additionalInfoTitle}>
-            {t('forestType.additionalInfo')}
-          </p>
-          <p>{additionalInfo}</p>
-        </div>
-      ) : null}
     </Form>
   );
 }

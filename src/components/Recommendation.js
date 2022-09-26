@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Trans, useTranslation } from 'react-i18next';
 import { Checkbox, Grid, Tab, Message } from 'semantic-ui-react';
 
+import { utils } from '@geops/tree-lib';
 import HelpModal from './HelpModal';
 import LatinSwitcher from './LatinSwitcher';
 import TreeTypeList from './TreeTypeList';
@@ -15,17 +16,19 @@ import { getRecommendation } from '../utils/recommendationUtils';
 import { setFuture } from '../store/actions';
 import styles from './Recommendation.module.css';
 
+const { getMapping } = utils();
+
 function Recommendation({ sameAltitudinalZone }) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const { location, projectionMode, projectionResult, future } = useSelector(
-    (state) => ({
+  const { location, projectionMode, projectionResult, future, activeProfile } =
+    useSelector((state) => ({
       location: state.location,
       projectionMode: state.projectionMode,
       projectionResult: state.projectionResult,
       future: state.future,
-    }),
-  );
+      activeProfile: state.activeProfile,
+    }));
 
   const r = useMemo(
     () =>
@@ -38,6 +41,15 @@ function Recommendation({ sameAltitudinalZone }) {
       ),
     [location, projectionMode, projectionResult, future, sameAltitudinalZone],
   );
+
+  const additionalInfo = useMemo(() => {
+    try {
+      const addInfoKey = location[`info_${activeProfile}`];
+      return getMapping('additionalInfo', activeProfile)[addInfoKey];
+    } catch {
+      return undefined;
+    }
+  }, [location, activeProfile]);
 
   return (
     <Tab.Pane data-cypress="recommendationPane">
@@ -153,6 +165,9 @@ function Recommendation({ sameAltitudinalZone }) {
         <Message className={styles.sameAltitudinalZone}>
           {t('recommendation.sameAltitudinalZone')}
         </Message>
+      )}
+      {additionalInfo && (
+        <Message className={styles.additionalInfo}>{additionalInfo}</Message>
       )}
     </Tab.Pane>
   );
