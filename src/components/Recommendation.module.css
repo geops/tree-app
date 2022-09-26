@@ -28,6 +28,11 @@
   color: var(--primary-color-500);
 }
 
+.additionalInfo:global(.ui.message) {
+  background-color: var(--primary-color-700);
+  color: white;
+}
+
 @media (max-width: 768px) {
   .list {
     display: grid;

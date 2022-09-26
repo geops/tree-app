@@ -16,30 +16,28 @@
   font-weight: bold;
 }
 
-.additionalInfo {
-  margin: 15px 0;
-  font-size: 0.92857143em;
-}
-
-.additionalInfoTitle {
-  font-weight: 700;
-  color: var(--primary-color-500);
-}
-
 .cantonalForestTypes {
   padding: 5px 0;
-  font-size: 18px;
   font-weight: bold;
   color: var(--primary-color-500);
   margin-bottom: 10px;
 }
 
-.cantonalForestTypes span {
-  padding-left: 5px;
+.cantonalForestTypes p {
+  font-size: 18px;
+  border: 2px solid var(--primary-color-500);
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.cantonalForestTypesLabel,
+.cantonalTransitionForestType {
+  font-weight: 700;
+  color: var(--primary-color-500);
 }
 
 .cantonalForestTypesLabel {
+  display: inline-block;
   margin: 0 0 0.28571429rem 0 !important;
-  font-weight: 700;
-  color: var(--primary-color-500);
 }
