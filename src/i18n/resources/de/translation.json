@@ -306,7 +306,7 @@
       "unknown": "nicht angesprochen"
     },
     "cantonalForestType": "Kantonaler Standortstyp",
-    "cantonalTransitionForestTypes": "Kantonale Übergangsstandortstypen",
+    "cantonalTransitionForestType": "Kantonale Übergangsstandortstyp",
     "additionalInfo": "Zusatzinformationen"
   },
   "help": {

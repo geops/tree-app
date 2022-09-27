@@ -91,7 +91,7 @@ function ProjectionForm() {
 
   const formActive = projectionMode === 'm' || fieldActive;
 
-  const cantonalTransitionForestTypes = useMemo(() => {
+  const cantonalTransitionForestType = useMemo(() => {
     try {
       return getMapping('transition', activeProfile)[
         `${location.forestType}(${location.transitionForestType})`
@@ -290,28 +290,35 @@ function ProjectionForm() {
             value={getValue('targetAltitudinalZone')}
           />
         )}
-      {cantonalTransitionForestTypes?.length && (
+      {cantonalTransitionForestType && (
         <>
           <p className={styles.cantonalForestTypesLabel}>
-            {t('forestType.cantonalTransitionForestTypes')}
+            {t('forestType.cantonalTransitionForestType')}
           </p>
-          {cantonalTransitionForestTypes.map((cft) => {
-            const ftInfo = info('forestType', cft, activeProfile);
-            return (
-              <div key={`cantonal-ft-${cft}`}>
-                <Button
-                  active
-                  compact
-                  icon="info"
-                  onClick={() => dispatch(setForestTypeDescription(cft))}
-                />
-                <span className={styles.cantonalTransitionForestType}>
-                  {cft}
-                  {ftInfo[i18n.language] ? ` - ${ftInfo[i18n.language]}` : ''}
-                </span>
-              </div>
-            );
-          })}
+          <div>
+            <Button
+              active
+              compact
+              icon="info"
+              onClick={() =>
+                dispatch(setForestTypeDescription(cantonalTransitionForestType))
+              }
+            />
+            <span className={styles.cantonalTransitionForestType}>
+              {cantonalTransitionForestType}
+              {info('forestType', cantonalTransitionForestType, activeProfile)[
+                i18n.language
+              ]
+                ? ` - ${
+                    info(
+                      'forestType',
+                      cantonalTransitionForestType,
+                      activeProfile,
+                    )[i18n.language]
+                  }`
+                : ''}
+            </span>
+          </div>
         </>
       )}
     </Form>
