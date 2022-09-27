@@ -16,14 +16,8 @@
         "fr": "en pente ou dans une dépression",
         "code": "h_and_m"
       },
-<<<<<<< HEAD
-      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
-      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
-      { "de": "normal", "fr": "normal", "code": "normal" }
-=======
       { "de": "normal", "fr": "normal", "code": "normal" },
       { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" }
->>>>>>> 6043f80 (chore: update types.json)
     ],
     "bushType": [
       {
