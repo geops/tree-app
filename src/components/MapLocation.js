@@ -75,7 +75,7 @@ const featuresToLocation = (location, f) => {
         ],
       };
     }
-    return location;
+    return { ...location, ...cantonalData };
   }
 
   if (f.sourceLayer.startsWith('altitudinal_zones_')) {

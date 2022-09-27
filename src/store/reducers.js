@@ -18,6 +18,7 @@ import {
   SET_FUTURE,
   SET_LANG_OVERRIDE,
 } from './actions';
+import translation from '../i18n/resources/de/translation.json';
 
 const initialProjection = { options: {}, projections: [] };
 export const initialState = {
@@ -95,6 +96,13 @@ function tree(state = initialState, action) {
       }
       if (mapLocation.transitionForestType) {
         formLocation.transitionForestType = undefined;
+      }
+      if (!mapLocation.forestType) {
+        Object.keys(translation.profiles).forEach((profile) => {
+          // Remove cantonal data when no forestType found
+          delete mapLocation[`forestType_${profile}`];
+          delete mapLocation[`info_${profile}`];
+        });
       }
       return { ...state, formLocation, mapLocation, projectionMode: 'm' };
     }
