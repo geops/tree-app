@@ -16,12 +16,28 @@
   font-weight: bold;
 }
 
-.cantonalForestType {
+.cantonalForestTypes {
   padding: 5px 0;
+  font-weight: bold;
+  color: var(--primary-color-500);
+  margin-bottom: 10px;
 }
 
-.cantonalForestTypeLabel {
-  margin: 0 0 0.28571429rem 0 !important;
+.cantonalForestTypes p {
+  font-size: 18px;
+  border: 2px solid var(--primary-color-500);
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.cantonalForestTypesLabel,
+.cantonalTransitionForestType {
   font-weight: 700;
   color: var(--primary-color-500);
+}
+
+.cantonalForestTypesLabel {
+  display: inline-block;
+  margin: 0 0 0.28571429rem 0 !important;
 }

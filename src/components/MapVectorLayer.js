@@ -19,7 +19,7 @@ mapStyle.sources.tree.tiles = [`${endpoint}/tree/{z}/{x}/{y}.pbf`];
 const getLayerStyle = (layerId) =>
   mapStyle.layers.find((l) => l.id === layerId) || {};
 
-const getStyle = (sourceLayer) => ({
+const getStyle = (sourceLayer, activeProfile) => ({
   ...mapStyle,
   layers: mapStyle.layers.map((layer) => {
     const isSourceLayer = layer['source-layer'] === sourceLayer;
@@ -30,6 +30,15 @@ const getStyle = (sourceLayer) => ({
       paint['line-opacity'] = isSourceLayer ? 0.5 : 0.0;
     } else if (layer.type === 'symbol') {
       paint['text-opacity'] = isSourceLayer ? 1 : 0.0;
+    }
+    if (/^ft_label$/.test(layer.id)) {
+      // eslint-disable-next-line no-param-reassign
+      layer.layout['text-field'] = [
+        'case',
+        ['has', `code_${activeProfile}`],
+        ['get', `code_${activeProfile}`],
+        ['get', 'code'],
+      ];
     }
     return { ...layer, paint };
   }),
@@ -45,8 +54,9 @@ function MapVectorLayer() {
   const dispatch = useDispatch();
   const layer = useContext(LayerContext);
   const mapLayer = useSelector((state) => state.mapLayer);
+  const activeProfile = useSelector((state) => state.activeProfile);
   const layerStyle = getLayerStyle(mapLayer);
-  const style = getStyle(layerStyle['source-layer']);
+  const style = getStyle(layerStyle['source-layer'], activeProfile);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
 
   const getDropdownItem = (l) => (

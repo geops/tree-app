@@ -311,8 +311,10 @@
       "no": "Non",
       "unknown": "pas évalué"
     },
-    "cantonalForestTypes": "Types de station cantonal",
-    "terrain": "Terrain"
+    "cantonalForestType": "Type de station cantonale",
+    "cantonalTransitionForestTypes": "Type de station de transition cantonale",
+    "terrain": "Terrain",
+    "additionalInfo": "Informations supplémentaires"
   },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
@@ -430,7 +432,9 @@
   },
   "profiles": {
     "ch": "Confédération",
-    "lu": "Lucerne"
+    "lu": "Lucerne",
+    "bl": "Bâle",
+    "vd": "Vaud"
   },
   "forestTypeModal": {
     "compare": "Comparer les types de stations",

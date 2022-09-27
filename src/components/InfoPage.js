@@ -35,13 +35,11 @@ function InfoPage() {
       title: { content: `${t('app.language')} & ${t('app.profile')}` },
       content: {
         content: (
-          <>
+          <div className={styles.infoLangProfilesContent}>
             <LanguageSwitcher />
-            <br /> <br />
             <ProfileSwitcher />
-            <br />
             <LatinSwitcher />
-          </>
+          </div>
         ),
       },
     },

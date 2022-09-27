@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Switch, Route, useHistory, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Icon, Menu } from 'semantic-ui-react';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { ReactComponent as MapIcon } from '../icons/map.svg';
 import { ReactComponent as LocationIcon } from '../icons/location.svg';
@@ -14,8 +15,10 @@ import LocationPage from './LocationPage';
 import Map from './Map';
 import ProjectionPage from './ProjectionPage';
 import useIsMobile from '../hooks/useIsMobile';
+import getLanguageByProfile from '../utils/languageUtils';
 
 import styles from './Navigation.module.css';
+import { setLangOverride } from '../store/actions';
 
 function Navigation() {
   const history = useHistory();
@@ -24,7 +27,19 @@ function Navigation() {
   const is = (page) => pathname === `/${page}`;
   const { t } = useTranslation();
   const isMobile = useIsMobile();
+  const profile = useSelector((state) => state.activeProfile);
+  const dispatch = useDispatch();
   document.title = t('app.title');
+
+  useEffect(() => {
+    const langOverride = getLanguageByProfile(profile);
+    if (langOverride) {
+      dispatch(setLangOverride(langOverride));
+      return;
+    }
+    dispatch(setLangOverride());
+  }, [profile, dispatch]);
+
   return (
     <div className={styles.wrapper}>
       <div className={`${styles.map} ${is('') && 'frontpage'}`}>

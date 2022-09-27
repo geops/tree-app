@@ -314,7 +314,9 @@
       "no": "Nein",
       "unknown": "nicht angesprochen"
     },
-    "cantonalForestTypes": "Kantonale Standortstypen"
+    "cantonalForestType": "Kantonaler Standortstyp",
+    "cantonalTransitionForestType": "Kantonale Übergangsstandortstyp",
+    "additionalInfo": "Zusatzinformationen"
   },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
@@ -433,7 +435,8 @@
   "profiles": {
     "ch": "Bund",
     "bl": "Basel",
-    "lu": "Luzern"
+    "lu": "Luzern",
+    "vd": "Vaud"
   },
   "forestTypeModal": {
     "compare": "Standortstypen vergleichen",

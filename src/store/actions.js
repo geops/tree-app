@@ -16,6 +16,7 @@ export const SET_FORESTTYPE_COMPARISON = 'SET_FORESTTYPE_COMPARISON';
 export const SET_FORESTTYPE_DESCRIPTION = 'SET_FORESTTYPE_DESCRIPTION';
 export const SET_FORESTTYPE_MODAL = 'SET_FORESTTYPE_MODAL';
 export const SET_FUTURE = 'SET_FUTURE';
+export const SET_LANG_OVERRIDE = 'SET_LANG_OVERRIDE';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -90,4 +91,8 @@ export function setForestTypeModal(forestTypeModal) {
 
 export function setFuture(future) {
   return { type: SET_FUTURE, future };
+}
+
+export function setLangOverride(langOverride) {
+  return { type: SET_LANG_OVERRIDE, langOverride };
 }
