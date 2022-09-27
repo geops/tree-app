@@ -91,7 +91,7 @@ function ProjectionForm() {
 
   const formActive = projectionMode === 'm' || fieldActive;
 
-  const cantonalTransitionForestType = useMemo(() => {
+  const cantonalTransitionForestTypes = useMemo(() => {
     try {
       return getMapping('transition', activeProfile)[
         `${location.forestType}(${location.transitionForestType})`
@@ -290,35 +290,29 @@ function ProjectionForm() {
             value={getValue('targetAltitudinalZone')}
           />
         )}
-      {cantonalTransitionForestType && (
+      {cantonalTransitionForestTypes?.length && (
         <>
-          <p className={styles.cantonalForestTypesLabel}>
-            {t('forestType.cantonalTransitionForestType')}
-          </p>
-          <div>
-            <Button
-              active
-              compact
-              icon="info"
-              onClick={() =>
-                dispatch(setForestTypeDescription(cantonalTransitionForestType))
-              }
-            />
-            <span className={styles.cantonalTransitionForestType}>
-              {cantonalTransitionForestType}
-              {info('forestType', cantonalTransitionForestType, activeProfile)[
-                i18n.language
-              ]
-                ? ` - ${
-                    info(
-                      'forestType',
-                      cantonalTransitionForestType,
-                      activeProfile,
-                    )[i18n.language]
-                  }`
-                : ''}
-            </span>
-          </div>
+          <label className={styles.cantonalForestTypesLabel}>
+            {t('forestType.cantonalTransitionForestTypes')}
+          </label>
+          {cantonalTransitionForestTypes.map((cft) => {
+            const cftInfo = info('forestType', cft, activeProfile);
+            return (
+              <div
+                className={styles.cantonalForestTypes}
+                key={`cantonal-ft-${cft}`}
+              >
+                <Button
+                  active
+                  compact
+                  icon="info"
+                  onClick={() => dispatch(setForestTypeDescription(cft))}
+                />
+                {cft}
+                {cftInfo[i18n.language] ? ` - ${cftInfo[i18n.language]}` : ''}
+              </div>
+            );
+          })}
         </>
       )}
     </Form>
