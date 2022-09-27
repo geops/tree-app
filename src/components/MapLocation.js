@@ -19,6 +19,7 @@ import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
 import { setMapLocation } from '../store/actions';
 import styles from './MapLocation.module.css';
+import translation from '../i18n/resources/de/translation.json';
 
 const getKey = (sl) =>
   (
@@ -46,6 +47,16 @@ const featuresToLocation = (location, f) => {
     } catch (error) {
       // ignore missing forest types
     }
+
+    const cantonalData = Object.keys(translation.profiles).reduce(
+      (allCantonalData, profile) => ({
+        ...allCantonalData,
+        [`forestType_${profile}`]: f.properties[`code_${profile}`],
+        [`info_${profile}`]: f.properties[`info_${profile}`],
+      }),
+      {},
+    );
+
     if (
       forestTypeInfo &&
       !location.forestTypes.find((t) => t.forestType === forestType)
@@ -59,11 +70,12 @@ const featuresToLocation = (location, f) => {
             transitionForestType,
             transition,
             info: forestTypeInfo,
+            ...cantonalData,
           },
         ],
       };
     }
-    return location;
+    return { ...location, ...cantonalData };
   }
 
   if (f.sourceLayer.startsWith('altitudinal_zones_')) {
@@ -106,6 +118,7 @@ function MapLocation() {
   const history = useHistory();
   const isMobile = useIsMobile();
   const mapLocation = useSelector((state) => state.mapLocation);
+  const activeProfile = useSelector((state) => state.activeProfile);
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
@@ -122,7 +135,9 @@ function MapLocation() {
       const features = map.getFeaturesAtPixel(pixel) || [];
       let location = features
         .filter((feature) => feature.properties?.code !== undefined)
-        .reduce(featuresToLocation, { forestTypes: [] });
+        .reduce(featuresToLocation, {
+          forestTypes: [],
+        });
       location.coordinate = to2056(coordinate);
       if (location.forestTypes.length === 1) {
         location = { ...location, ...location.forestTypes[0] };
@@ -154,7 +169,8 @@ function MapLocation() {
     map.getLayers().on('propertychange', waitForLoad);
     map.on('singleclick', handleCoords);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [map, dispatch]);
+  }, [map, activeProfile, dispatch]);
+
   return (
     <>
       <Vector source={vectorSource} zIndex={999} />

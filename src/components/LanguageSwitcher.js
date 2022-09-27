@@ -1,10 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 
 import Button from './Button';
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
+  const langOverride = useSelector((state) => state.langOverride);
+
+  if (langOverride) {
+    return null;
+  }
+
   return (
     <Button.Group>
       <Button
