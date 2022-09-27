@@ -1,3 +1,4 @@
+import i18n from 'i18next';
 import {
   SET_FORM_LOCATION,
   SET_LATIN_ACTIVE,
@@ -15,7 +16,9 @@ import {
   SET_FORESTTYPE_DESCRIPTION,
   SET_FORESTTYPE_MODAL,
   SET_FUTURE,
+  SET_LANG_OVERRIDE,
 } from './actions';
+import translation from '../i18n/resources/de/translation.json';
 
 const initialProjection = { options: {}, projections: [] };
 export const initialState = {
@@ -38,6 +41,7 @@ export const initialState = {
   targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
   future: true,
+  langOverride: null,
 };
 
 const initialFormLocation = {
@@ -93,6 +97,13 @@ function tree(state = initialState, action) {
       if (mapLocation.transitionForestType) {
         formLocation.transitionForestType = undefined;
       }
+      if (!mapLocation.forestType) {
+        Object.keys(translation.profiles).forEach((profile) => {
+          // Remove cantonal data when no forestType found
+          delete mapLocation[`forestType_${profile}`];
+          delete mapLocation[`info_${profile}`];
+        });
+      }
       return { ...state, formLocation, mapLocation, projectionMode: 'm' };
     }
     case SET_MAP_VIEW:
@@ -144,6 +155,9 @@ function tree(state = initialState, action) {
       };
     case SET_FORESTTYPE_MODAL:
       return { ...state, forestTypeModal: action.forestTypeModal };
+    case SET_LANG_OVERRIDE:
+      i18n.changeLanguage(action.langOverride);
+      return { ...state, langOverride: action.langOverride };
     default:
       return state;
   }
