@@ -21,6 +21,8 @@
   },
   "export": {
     "export": "Exporter",
+    "exportRecommendation": "Exporter recommandation",
+    "exportForestTypeDescription": "Exporter description de station",
     "recommendationMainTitle": "Extrait de le Tree-App",
     "coordinate": "Coordonner",
     "date": "Date",
