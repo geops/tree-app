@@ -62,7 +62,7 @@ function ForestTypeComparison() {
         />
       </Form>
       {codes.length > 3 && (
-        <Message negative>
+        <Message warning>
           <Message.Header>
             {t('forestTypeModal.maximumForestTypes')}
           </Message.Header>
