@@ -123,5 +123,5 @@
 }
 
 .exportButton:hover:not(:disabled) {
-  background-color: var(--primary-color-700) !important;
+  background-color: var(--primary-color-200) !important;
 }
