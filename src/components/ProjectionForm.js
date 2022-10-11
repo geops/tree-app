@@ -23,16 +23,19 @@ const getDropdownOptions =
   (type, lng, dispatch, includeKey = false) =>
   (key) => ({
     key,
+    title: `${key} -${info(type, key)[lng]}`,
     content: dispatch ? (
-      <>
+      <div className={styles.option}>
         <Button
           active
           compact
           icon="info"
           onClick={() => dispatch(setForestTypeDescription(key))}
         />
-        {key} - {info(type, key)[lng]}
-      </>
+        <span className={styles.optionLabel}>
+          {key} - {info(type, key)[lng]}
+        </span>
+      </div>
     ) : (
       info(type, key)[lng]
     ),
