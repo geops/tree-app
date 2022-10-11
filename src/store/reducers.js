@@ -28,7 +28,7 @@ export const initialState = {
   forestTypeCompare: [],
   formLocation: {},
   locationResult: { options: {} },
-  mapLayer: 'cb',
+  mapLayer: 'ft',
   mapLocation: {},
   mapView: '9|2660013|1185171',
   projectionMode: 'm',

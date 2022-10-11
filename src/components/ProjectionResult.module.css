@@ -115,8 +115,13 @@
 .exportButtonWrapper {
   display: flex;
   justify-content: flex-end;
+  padding: 25px;
 }
 
-.exportButtonWrapper button {
-  margin: 8px !important;
+.exportButton:not(:hover) {
+  background-color: var(--primary-color-700) !important;
+}
+
+.exportButton:hover:not(:disabled) {
+  background-color: var(--primary-color-700) !important;
 }
