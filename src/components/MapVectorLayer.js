@@ -59,13 +59,15 @@ function MapVectorLayer() {
   const style = getStyle(layerStyle['source-layer'], activeProfile);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
 
-  const getDropdownItem = (l) => (
+  const getDropdownItem = (l, indent) => (
     <Dropdown.Item
       active={mapLayer === l.id}
       className={styles.item}
       key={l.id}
       onClick={() => dispatch(setMapLayer(l.id))}
     >
+      {/* The indent hack is due to Semantic React UI using dropdown item padding with !important */}
+      {indent ? <span>{'      '}</span> : null}
       {t(`map.${l['source-layer']}`)}
     </Dropdown.Item>
   );
@@ -107,12 +109,13 @@ function MapVectorLayer() {
         text={t(`map.${layerStyle['source-layer']}`)}
       >
         <Dropdown.Menu>
-          {getLayersByGroup('main').map(getDropdownItem)}
-          <Dropdown.Divider />
+          {getLayersByGroup('main').map((lyr) => getDropdownItem(lyr))}
           <Dropdown.Header className={styles.header}>
             {t('map.altitudinalZones')}
           </Dropdown.Header>
-          {getLayersByGroup('altitudinalZones').map(getDropdownItem)}
+          {getLayersByGroup('altitudinalZones').map((lyr) =>
+            getDropdownItem(lyr, true),
+          )}
         </Dropdown.Menu>
       </Dropdown>
       {legend && (

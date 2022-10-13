@@ -29,8 +29,7 @@
 }
 
 .additionalInfo:global(.ui.message) {
-  background-color: var(--primary-color-700);
-  color: white;
+  margin: 0 1vw;
 }
 
 @media (max-width: 768px) {

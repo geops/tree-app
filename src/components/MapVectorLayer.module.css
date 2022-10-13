@@ -26,8 +26,13 @@
 .header {
   text-transform: none !important;
   font-size: 1.1em !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .item {
   color: var(--primary-color-500) !important;
+}
+
+.item span {
+  white-space: pre;
 }

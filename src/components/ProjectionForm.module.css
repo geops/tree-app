@@ -24,9 +24,8 @@
 
 .optionLabel {
   display: grid;
-  grid-template-columns: max-content 5px auto;
+  grid-template-columns: auto 5px auto;
   gap: 8px;
-  align-items: center;
   font-size: 1.2em !important;
   line-height: 17px;
 }

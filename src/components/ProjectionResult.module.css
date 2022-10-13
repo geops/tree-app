@@ -109,13 +109,12 @@
   font-size: 1.1em;
   line-height: 1.5em;
   font-weight: normal;
-  margin: 20px;
 }
 
 .exportButtonWrapper {
   display: flex;
   justify-content: flex-end;
-  padding: 25px;
+  padding: 20px calc(1em + 1vw);
 }
 
 .exportButton:not(:hover) {
