@@ -72,6 +72,7 @@ function ForestTypeComparison() {
           disabled={codes.length < 4}
           position="bottom right"
           className={styles.maximumForestTypesPopup}
+          on={['click']}
         />
       </Form>
       <br />
