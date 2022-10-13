@@ -17,20 +17,22 @@
 }
 
 .option {
-  display: grid;
-  grid-template-columns: 40px auto;
+  display: flex;
   gap: 10px;
   align-items: center;
 }
 
 .optionLabel {
-  overflow: hidden;
-  white-space: nowrap;
-  vertical-align: middle;
-  text-overflow: ellipsis;
-  text-align: left;
-  font-size: 18px;
-  line-height: 20px;
+  display: grid;
+  grid-template-columns: max-content 5px auto;
+  gap: 8px;
+  align-items: center;
+  font-size: 1.2em !important;
+  line-height: 17px;
+}
+
+.optionLabel span:last-child {
+  align-items: baseline;
 }
 
 .cantonalForestTypes {

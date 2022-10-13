@@ -33,7 +33,9 @@ const getDropdownOptions =
           onClick={() => dispatch(setForestTypeDescription(key))}
         />
         <span className={styles.optionLabel}>
-          {key} - {info(type, key)[lng]}
+          <span>{key}</span>
+          <span>-</span>
+          <span>{info(type, key)[lng]}</span>
         </span>
       </div>
     ) : (
