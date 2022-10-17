@@ -27,7 +27,7 @@ const getStyle = (sourceLayer, activeProfile) => ({
     if (layer.type === 'fill') {
       paint['fill-opacity'] = isSourceLayer ? 0.5 : 0.0;
     } else if (layer.type === 'line') {
-      paint['line-opacity'] = isSourceLayer ? 0.5 : 0.0;
+      paint['line-opacity'] = isSourceLayer ? 0.8 : 0.0;
     } else if (layer.type === 'symbol') {
       paint['text-opacity'] = isSourceLayer ? 1 : 0.0;
     }
