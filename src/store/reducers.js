@@ -86,11 +86,14 @@ function tree(state = initialState, action) {
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
     case SET_MAP_LOCATION: {
-      const { resetFormLocation } = action;
+      const { resetFormLocation, resetMapLocation, projectionMode } = action;
       const formLocation = resetFormLocation
         ? getFormLocation(state, { formLocation: initialFormLocation })
         : state.formLocation;
-      const mapLocation = { ...state.mapLocation, ...action.mapLocation };
+      console.log(state.mapLocation);
+      const mapLocation = resetMapLocation
+        ? action.mapLocation
+        : { ...state.mapLocation, ...action.mapLocation };
       if (mapLocation.forestType) {
         formLocation.forestType = undefined;
       }
@@ -104,7 +107,12 @@ function tree(state = initialState, action) {
           delete mapLocation[`info_${profile}`];
         });
       }
-      return { ...state, formLocation, mapLocation, projectionMode: 'm' };
+      return {
+        ...state,
+        formLocation,
+        mapLocation,
+        projectionMode: projectionMode || 'm',
+      };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };

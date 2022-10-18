@@ -17,7 +17,7 @@ import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
 import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
-import { setMapLocation } from '../store/actions';
+import { setMapLocation, setProjectionMode } from '../store/actions';
 import styles from './MapLocation.module.css';
 import translation from '../i18n/resources/de/translation.json';
 
@@ -118,6 +118,7 @@ function MapLocation() {
   const history = useHistory();
   const isMobile = useIsMobile();
   const mapLocation = useSelector((state) => state.mapLocation);
+  const formLocation = useSelector((state) => state.formLocation);
   const activeProfile = useSelector((state) => state.activeProfile);
   const { i18n, t } = useTranslation();
 
@@ -147,11 +148,14 @@ function MapLocation() {
         location.transition = null;
       }
       dispatch(setMapLocation(location, resetFormLocation));
-      if (isMobile === false && location.forestType) {
+      if (isMobile === false) {
         history.push(`/projection${window.location.search}`);
       } else if (originalMobilePathname) {
         history.replace(`${originalMobilePathname}${window.location.search}`);
         originalMobilePathname = null;
+      }
+      if (!location.altitudinalZone) {
+        dispatch(setMapLocation(location, true, true, 'f'));
       }
     };
 
