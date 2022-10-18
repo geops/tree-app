@@ -39,14 +39,13 @@
   font-weight: bold;
   color: var(--primary-color-500);
   margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: minmax(auto, 50px) minmax(auto, 30px) auto;
+  align-items: center;
 }
 
-.cantonalForestTypes p {
-  font-size: 18px;
-  border: 2px solid var(--primary-color-500);
-  border-radius: 4px;
-  padding: 10px 20px;
-  width: 100%;
+.cantonalForestTypes button {
+  margin-right: 15px !important;
 }
 
 .cantonalForestTypesLabel,
