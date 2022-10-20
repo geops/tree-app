@@ -22,22 +22,23 @@ function WelcomeModal() {
         <Image wrapped>
           <Logo className={styles.logo} />
         </Image>
-        <Modal.Description>
+        <Modal.Description className={styles.description}>
           <InfoAbout />
         </Modal.Description>
       </Modal.Content>
-      <Modal.Actions>
-        <div className={styles.actions}>
+      <Modal.Actions className={styles.actions}>
+        <div className={styles.switchers}>
           <LanguageSwitcher />
           <ProfileSwitcher />
-          <Button
-            active
-            data-cypress="welcomeModalGo"
-            onClick={() => dispatch(setWelcomeModal(false))}
-          >
-            <Icon name="checkmark" /> {t('welcome.close')}
-          </Button>
         </div>
+        <Button
+          active
+          data-cypress="welcomeModalGo"
+          onClick={() => dispatch(setWelcomeModal(false))}
+          className={styles.continueButton}
+        >
+          <Icon name="checkmark" /> {t('welcome.close')}
+        </Button>
       </Modal.Actions>
     </Modal>
   );

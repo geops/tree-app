@@ -1,6 +1,6 @@
 .profile-switcher {
-  max-width: 184px;
+  /* max-width: 184px; */
   min-width: 150px !important;
-  width: 184px !important;
+  /* width: 200px !important; */
   min-height: 36px;
 }
