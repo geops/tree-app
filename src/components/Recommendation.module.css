@@ -27,7 +27,7 @@
 .sameAltitudinalZone:global(.ui.message),
 .additionalInfo:global(.ui.message) {
   border: 1px solid white;
-  background-color: var(--primary-color-700);
+  background-color: transparent;
   color: white;
   margin: 0 1vw;
 }

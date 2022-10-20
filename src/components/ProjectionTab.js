@@ -45,7 +45,7 @@ function ProjectionTab({ location }) {
 }
 
 ProjectionTab.propTypes = {
-  location: PropTypes.objectOf({ forestType: PropTypes.string }).isRequired,
+  location: PropTypes.shape({ forestType: PropTypes.string }).isRequired,
 };
 
 export default ProjectionTab;
