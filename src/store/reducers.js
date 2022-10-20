@@ -90,7 +90,6 @@ function tree(state = initialState, action) {
       const formLocation = resetFormLocation
         ? getFormLocation(state, { formLocation: initialFormLocation })
         : state.formLocation;
-      console.log(state.mapLocation);
       const mapLocation = resetMapLocation
         ? action.mapLocation
         : { ...state.mapLocation, ...action.mapLocation };
@@ -144,6 +143,9 @@ function tree(state = initialState, action) {
       localStorage.setItem('tree.profile', action.activeProfile);
       return { ...state, activeProfile: action.activeProfile };
     case SET_FORESTTYPE_COMPARISON:
+      if (action.forestTypeComparison?.length > 4) {
+        action.forestTypeComparison.splice(3, 1);
+      }
       return {
         ...state,
         forestTypeComparison: action.forestTypeComparison,
