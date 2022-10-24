@@ -6,7 +6,7 @@ import styles from './Button.module.css';
 
 function Button({ className, ...props }) {
   // eslint-disable-next-line react/jsx-props-no-spreading
-  return <SUIButton {...props} className={`${className} ${styles.button}`} />;
+  return <SUIButton {...props} className={`${styles.button} ${className}`} />;
 }
 
 Button.propTypes = {

@@ -21,6 +21,8 @@
   },
   "export": {
     "export": "Exporter",
+    "exportRecommendation": "Exporter recommandation",
+    "exportForestTypeDescription": "Exporter description de station",
     "recommendationMainTitle": "Extrait de le Tree-App",
     "coordinate": "Coordonner",
     "date": "Date",
@@ -434,7 +436,7 @@
     "noDataHeader": "Pas de données disponibles",
     "noDataMessage": "Il n'y a pas de données pour ce type de station dans le profil actuel. Êtes-vous dans le bon profil?",
     "noComparisonMessage": "La comparaison des types de stations est désactivée dans le profil actuel. Êtes-vous dans le bon profil?",
-    "maximumForestTypes": "Maximum de types de stations à comparer a été atteint"
+    "maximumForestTypes": "Maximum de types de stations à comparer a été atteint."
   },
   "lu": {
     "forestType": {
