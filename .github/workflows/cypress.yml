@@ -10,7 +10,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 16
 
       - name: Get yarn cache
         id: yarn-cache
@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - run: yarn build
         working-directory: ./lib
