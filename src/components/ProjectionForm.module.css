@@ -16,19 +16,36 @@
   font-weight: bold;
 }
 
+.option {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.optionLabel {
+  display: grid;
+  grid-template-columns: auto 5px auto;
+  gap: 8px;
+  font-size: 1.2em !important;
+  line-height: 17px;
+}
+
+.optionLabel span:last-child {
+  align-items: baseline;
+}
+
 .cantonalForestTypes {
   padding: 5px 0;
   font-weight: bold;
   color: var(--primary-color-500);
   margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: minmax(auto, 50px) minmax(auto, 30px) auto;
+  align-items: center;
 }
 
-.cantonalForestTypes p {
-  font-size: 18px;
-  border: 2px solid var(--primary-color-500);
-  border-radius: 4px;
-  padding: 10px 20px;
-  width: 100%;
+.cantonalForestTypes button {
+  margin-right: 15px !important;
 }
 
 .cantonalForestTypesLabel,

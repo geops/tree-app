@@ -5,7 +5,7 @@
   "version": "2.5.4",
   "private": true,
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "dependencies": {
     "@geops/tree-lib": "^2.0.0",

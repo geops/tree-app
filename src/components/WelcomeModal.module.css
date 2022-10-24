@@ -9,12 +9,54 @@
   right: 20px;
 }
 
+.description {
+  padding-top: 0 !important;
+}
+
+.description ol {
+  margin: 5px 0;
+}
+
+.switchers {
+  width: 50%;
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.switchers > div {
+  flex: 1 1 48%;
+  max-width: 50%;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .actions > * {
-  margin: 10px !important;
+  margin: 0 !important;
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 480px),
+  only screen and (max-width: 768px) {
+  .logo {
+    width: 100px;
+  }
+
+  .switchers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .actions {
+    padding: 5px !important;
+  }
 }

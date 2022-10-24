@@ -109,13 +109,13 @@
   font-size: 1.1em;
   line-height: 1.5em;
   font-weight: normal;
-  margin: 20px;
+  padding: 0 20px 20px;
 }
 
 .exportButtonWrapper {
   display: flex;
   justify-content: flex-end;
-  padding: 25px;
+  padding: 20px calc(1em + 1vw);
 }
 
 .exportButton:not(:hover) {
@@ -123,5 +123,5 @@
 }
 
 .exportButton:hover:not(:disabled) {
-  background-color: var(--primary-color-700) !important;
+  background-color: var(--primary-color-200) !important;
 }
