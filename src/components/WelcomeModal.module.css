@@ -18,26 +18,28 @@
 }
 
 .switchers {
+  width: 50%;
   display: flex;
   text-align: left;
   justify-content: flex-end;
-  gap: 10px;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.switchers > div {
+  flex: 1 1 48%;
+  max-width: 50%;
 }
 
 .actions {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .actions > * {
   margin: 0 !important;
-}
-
-.continueButton {
-  height: 40px;
-  align-self: flex-end;
 }
 
 /* Mobile */
@@ -49,9 +51,9 @@
 
   .switchers {
     width: 100%;
-    display: grid;
+    display: flex;
     justify-content: space-between;
-    grid-template-columns: 48% 48%;
+    gap: 10px;
   }
 
   .actions {
