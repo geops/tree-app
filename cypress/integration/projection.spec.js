@@ -1,7 +1,7 @@
 describe('Projection mode', () => {
   beforeEach(() => {
+    localStorage.setItem('tree.welcomeModal', 'close');
     cy.visit('');
-    cy.get('[data-cypress=welcomeModalGo]').click();
     cy.get('.ui.menu > :nth-child(2)').click();
   });
 
@@ -28,8 +28,8 @@ describe('Projection in form mode', () => {
     cy.get(`[data-cypress=projectionForm${name}] ${item}`).click({ force });
   };
   beforeEach(() => {
+    localStorage.setItem('tree.welcomeModal', 'close');
     cy.visit('');
-    cy.get('[data-cypress=welcomeModalGo]').click();
     cy.get('.ui.menu > :nth-child(2)').click();
     cy.get('[data-cypress=projectionModeFormButton]').click();
   });
@@ -66,8 +66,8 @@ describe('Projection in map mode', () => {
     cy.get(`[data-cypress=projectionForm${name}] ${item}`).click({ force });
   };
   beforeEach(() => {
+    localStorage.setItem('tree.welcomeModal', 'close');
     cy.visit('/projection?mp=2654151%7C1205108&mv=18%7C2654195%7C1205068');
-    cy.get('[data-cypress=welcomeModalGo]').click();
     cy.get('.ui.menu > :nth-child(2)').click();
   });
 

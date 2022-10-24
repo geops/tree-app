@@ -33,6 +33,7 @@ function ProfileSwitcher() {
       onChange={(e, { value }) => dispatch(setActiveProfile(value))}
       data-cypress="profileSwitcher"
       search={false}
+      label={<h5>{t('app.profile')}</h5>}
     />
   );
 }

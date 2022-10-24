@@ -147,11 +147,17 @@ function MapLocation() {
         location.transition = null;
       }
       dispatch(setMapLocation(location, resetFormLocation));
-      if (isMobile === false && location.forestType) {
+      if (isMobile === false) {
         history.push(`/projection${window.location.search}`);
+        if (!location.altitudinalZone) {
+          dispatch(setMapLocation(location, true, true, 'f'));
+        }
       } else if (originalMobilePathname) {
         history.replace(`${originalMobilePathname}${window.location.search}`);
         originalMobilePathname = null;
+        if (!location.altitudinalZone) {
+          dispatch(setMapLocation(location, true, true, 'f'));
+        }
       }
     };
 

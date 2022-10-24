@@ -16,6 +16,7 @@
 
 .legendContainer:global(.ui.segment) {
   position: absolute;
+  max-width: 250px;
   z-index: 7;
   right: 20px;
   top: 67px;
@@ -24,11 +25,14 @@
 
 .header {
   text-transform: none !important;
-  font-size: 1em !important;
-  font-weight: normal !important;
-  color: #999 !important;
+  font-size: 1.1em !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .item {
   color: var(--primary-color-500) !important;
+}
+
+.item span {
+  white-space: pre;
 }
