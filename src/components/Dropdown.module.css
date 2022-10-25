@@ -18,4 +18,5 @@
 
 .field label {
   color: var(--primary-color-500) !important;
+  text-align: left;
 }

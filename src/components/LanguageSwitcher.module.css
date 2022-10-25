@@ -1,3 +1,7 @@
+.languageSwitcher {
+  max-width: 200px;
+}
+
 .label {
   color: var(--primary-color-500);
 }

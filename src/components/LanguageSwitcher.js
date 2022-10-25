@@ -14,7 +14,7 @@ function LanguageSwitcher() {
   }
 
   return (
-    <div>
+    <div className={styles.languageSwitcher}>
       <label className={styles.label} htmlFor="language-switcher-buttons">
         <h5>{t('app.language')}</h5>
       </label>
