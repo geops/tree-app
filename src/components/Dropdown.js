@@ -35,7 +35,7 @@ function Dropdown({ className, children, label, multiple, value, ...props }) {
 Dropdown.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
-  label: PropTypes.string,
+  label: PropTypes.node,
   multiple: PropTypes.bool,
   value: PropTypes.oneOfType([
     PropTypes.string,
