@@ -1,15 +1,21 @@
 import React, { useContext, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Header, List, Segment } from 'semantic-ui-react';
+import {
+  Header,
+  List,
+  Segment,
+  Checkbox,
+  Popup,
+  Menu,
+} from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
 import Button from './Button';
-import Dropdown from './Dropdown';
 import mapStyle from '../map/style.json';
 import { LayerContext } from '../spatial/components/layer/Base';
-import { setMapLayer } from '../store/actions';
+import { setMapLayers } from '../store/actions';
 import styles from './MapVectorLayer.module.css';
 
 const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
@@ -19,10 +25,11 @@ mapStyle.sources.tree.tiles = [`${endpoint}/tree/{z}/{x}/{y}.pbf`];
 const getLayerStyle = (layerId) =>
   mapStyle.layers.find((l) => l.id === layerId) || {};
 
-const getStyle = (sourceLayer, activeProfile) => ({
+const getStyle = (sourceLayers, activeProfile) => ({
   ...mapStyle,
   layers: mapStyle.layers.map((layer) => {
-    const isSourceLayer = layer['source-layer'] === sourceLayer;
+    const isSourceLayer = sourceLayers.includes(layer.id);
+    // const isSourceLayer = sourceLayers.includes(layer['source-layer']);
     const paint = { ...layer.paint };
     if (layer.type === 'fill') {
       paint['fill-opacity'] = isSourceLayer ? 0.5 : 0.0;
@@ -53,26 +60,50 @@ function MapVectorLayer() {
   const [legendVisible, setLegendVisible] = useState(false);
   const dispatch = useDispatch();
   const layer = useContext(LayerContext);
-  const mapLayer = useSelector((state) => state.mapLayer);
+  const mapLayers = useSelector((state) => state.mapLayers);
   const activeProfile = useSelector((state) => state.activeProfile);
-  const layerStyle = getLayerStyle(mapLayer);
-  const style = getStyle(layerStyle['source-layer'], activeProfile);
+  const layerStyle = getLayerStyle(mapLayers[0]);
+  const style = getStyle(mapLayers, activeProfile);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
 
-  const getDropdownItem = (l, indent) => (
-    <Dropdown.Item
-      active={mapLayer === l.id}
-      className={styles.item}
-      key={l.id}
-      onClick={() => dispatch(setMapLayer(l.id))}
-    >
-      {/* The indent hack is due to Semantic React UI using dropdown item padding with !important */}
-      {indent ? <span>{'      '}</span> : null}
-      {t(`map.${l['source-layer']}`)}
-    </Dropdown.Item>
-  );
+  const getDropdownItem = (l, isAZ) => {
+    const activeItem = mapLayers.includes(l.id);
+    return (
+      <Menu.Item
+        active={activeItem}
+        className={styles.item}
+        key={l.id}
+        onClick={(evt, { active }) =>
+          dispatch(
+            setMapLayers(
+              !active
+                ? [...mapLayers, l.id]
+                : mapLayers.filter((layr) => layr !== l.id),
+            ),
+          )
+        }
+      >
+        {/* The indent hack is due to Semantic React UI using dropdown item padding with !important */}
+        {isAZ ? <span>{'      '}</span> : null}
+        <Checkbox
+          label={
+            activeItem ? (
+              <b>{t(`map.${l['source-layer']}`)}</b>
+            ) : (
+              t(`map.${l['source-layer']}`)
+            )
+          }
+          radio={isAZ}
+          checked={activeItem}
+        />
+      </Menu.Item>
+    );
+  };
 
   const legend = useMemo(() => {
+    if (!layerStyle?.metadata) {
+      return null;
+    }
     let code;
     const { type } = layerStyle.metadata;
     return (
@@ -98,26 +129,31 @@ function MapVectorLayer() {
 
   return (
     <>
-      <Dropdown
-        fluid={false}
-        search={false}
-        selection={undefined}
-        button
-        className={styles.dropdown}
-        direction="left"
-        pointing
-        text={t(`map.${layerStyle['source-layer']}`)}
+      <Popup
+        basic
+        className={styles.popup}
+        trigger={
+          <Button active className={styles.opener}>
+            {layerStyle['source-layer']
+              ? t(`map.${layerStyle['source-layer']}`)
+              : 'Layers'}
+          </Button>
+        }
+        on="click"
+        hideOnScroll
       >
-        <Dropdown.Menu>
-          {getLayersByGroup('main').map((lyr) => getDropdownItem(lyr))}
-          <Dropdown.Header className={styles.header}>
-            {t('map.altitudinalZones')}
-          </Dropdown.Header>
-          {getLayersByGroup('altitudinalZones').map((lyr) =>
-            getDropdownItem(lyr, true),
-          )}
-        </Dropdown.Menu>
-      </Dropdown>
+        <Popup.Content>
+          <Menu text vertical className={styles.menu} fluid compact>
+            {getLayersByGroup('main').map((lyr) => getDropdownItem(lyr))}
+            <Menu.Header className={styles.header}>
+              {t('map.altitudinalZones')}
+            </Menu.Header>
+            {getLayersByGroup('altitudinalZones').map((lyr) =>
+              getDropdownItem(lyr, true),
+            )}
+          </Menu>
+        </Popup.Content>
+      </Popup>
       {legend && (
         <Button
           active={!legendVisible}

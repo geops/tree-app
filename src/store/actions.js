@@ -17,6 +17,7 @@ export const SET_FORESTTYPE_DESCRIPTION = 'SET_FORESTTYPE_DESCRIPTION';
 export const SET_FORESTTYPE_MODAL = 'SET_FORESTTYPE_MODAL';
 export const SET_FUTURE = 'SET_FUTURE';
 export const SET_LANG_OVERRIDE = 'SET_LANG_OVERRIDE';
+export const SET_MAP_LAYERS = 'SET_MAP_LAYERS';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -36,6 +37,10 @@ export function setLocation(location) {
 
 export function setMapLayer(mapLayer) {
   return { type: SET_MAP_LAYER, mapLayer };
+}
+
+export function setMapLayers(mapLayers) {
+  return { type: SET_MAP_LAYERS, mapLayers };
 }
 
 export function setMapView(mapView) {

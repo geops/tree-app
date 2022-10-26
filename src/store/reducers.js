@@ -17,6 +17,7 @@ import {
   SET_FORESTTYPE_MODAL,
   SET_FUTURE,
   SET_LANG_OVERRIDE,
+  SET_MAP_LAYERS,
 } from './actions';
 import translation from '../i18n/resources/de/translation.json';
 
@@ -29,6 +30,7 @@ export const initialState = {
   formLocation: {},
   locationResult: { options: {} },
   mapLayer: 'ft',
+  mapLayers: ['ft'],
   mapLocation: {},
   mapView: '9|2660013|1185171',
   projectionMode: 'm',
@@ -85,6 +87,8 @@ function tree(state = initialState, action) {
     }
     case SET_MAP_LAYER:
       return { ...state, mapLayer: action.mapLayer };
+    case SET_MAP_LAYERS:
+      return { ...state, mapLayers: action.mapLayers };
     case SET_MAP_LOCATION: {
       const { resetFormLocation, resetMapLocation, projectionMode } = action;
       const formLocation = resetFormLocation

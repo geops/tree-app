@@ -6,7 +6,7 @@ import {
   setForestTypeDescription,
   setForestTypeModal,
   setFormLocation,
-  setMapLayer,
+  setMapLayers,
   setMapView,
   setProjectionMode,
   setMapLocation,
@@ -82,9 +82,11 @@ const querySync = ReduxQuerySync.enhancer({
       action: setForestTypeModal,
     },
     ml: {
-      selector: (state) => state.mapLayer,
-      action: setMapLayer,
-      defaultValue: initialState.mapLayer,
+      selector: (state) => state.mapLayers,
+      valueToString: (value) => value.toString(),
+      stringToValue: (value) => value?.split(',') || [],
+      action: setMapLayers,
+      defaultValue: initialState.mapLayers,
     },
     mp: {
       selector: (state) => state.mapLocation && state.mapLocation.coordinate,

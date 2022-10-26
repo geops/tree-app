@@ -1,9 +1,19 @@
-.dropdown:global(.ui.button.dropdown) {
+.popup {
+  width: var(--fluid-layers-width);
+  padding: 0 !important;
+}
+
+.opener {
   position: absolute;
   z-index: 9;
   right: 20px;
   top: 20px;
   margin: 0;
+  width: var(--fluid-layers-width);
+}
+
+.menu {
+  padding: 10px !important;
 }
 
 .legendButton:global(.ui.button) {
@@ -27,9 +37,16 @@
   text-transform: none !important;
   font-size: 1.1em !important;
   color: rgba(0, 0, 0, 0.6) !important;
+  margin-top: 5px;
 }
 
 .item {
+  background-color: transparent !important;
+  padding: 8px 0 !important;
+  margin: 0 !important;
+}
+
+.item label {
   color: var(--primary-color-500) !important;
 }
 
