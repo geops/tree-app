@@ -44,11 +44,11 @@
   background-color: transparent !important;
   padding: 8px 0 !important;
   margin: 0 !important;
-  display: flex;
 }
 
 .item label {
   color: var(--primary-color-500) !important;
+  max-width: 130px;
 }
 
 .item span {
