@@ -4,7 +4,6 @@ import {
   SET_LATIN_ACTIVE,
   SET_LOCATION_RESULT,
   SET_LOCATION,
-  SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
   SET_PROJECTION_MODE,
@@ -29,8 +28,7 @@ export const initialState = {
   forestTypeCompare: [],
   formLocation: {},
   locationResult: { options: {} },
-  mapLayer: 'ft',
-  mapLayers: ['ft'],
+  mapLayers: ['ft', 'cb'],
   mapLocation: {},
   mapView: '9|2660013|1185171',
   projectionMode: 'm',
@@ -85,8 +83,6 @@ function tree(state = initialState, action) {
     case SET_LOCATION: {
       return { ...state, location: action.location };
     }
-    case SET_MAP_LAYER:
-      return { ...state, mapLayer: action.mapLayer };
     case SET_MAP_LAYERS:
       return { ...state, mapLayers: action.mapLayers };
     case SET_MAP_LOCATION: {

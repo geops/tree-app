@@ -44,6 +44,7 @@
   background-color: transparent !important;
   padding: 8px 0 !important;
   margin: 0 !important;
+  display: flex;
 }
 
 .item label {

@@ -86,14 +86,16 @@ function MapVectorLayer() {
         {/* The indent hack is due to Semantic React UI using dropdown item padding with !important */}
         {isAZ ? <span>{'      '}</span> : null}
         <Checkbox
+          id={l.id}
           label={
-            activeItem ? (
-              <b>{t(`map.${l['source-layer']}`)}</b>
-            ) : (
-              t(`map.${l['source-layer']}`)
-            )
+            <label htmlFor={l.id}>
+              {activeItem ? (
+                <b>{t(`map.${l['source-layer']}`)}</b>
+              ) : (
+                t(`map.${l['source-layer']}`)
+              )}
+            </label>
           }
-          radio={isAZ}
           checked={activeItem}
         />
       </Menu.Item>
@@ -134,9 +136,7 @@ function MapVectorLayer() {
         className={styles.popup}
         trigger={
           <Button active className={styles.opener}>
-            {layerStyle['source-layer']
-              ? t(`map.${layerStyle['source-layer']}`)
-              : 'Layers'}
+            {t('Kartenebenen')}
           </Button>
         }
         on="click"
