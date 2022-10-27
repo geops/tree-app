@@ -48,7 +48,7 @@
 
 .item label {
   color: var(--primary-color-500) !important;
-  max-width: 130px;
+  max-width: calc(clamp(130px, 15vw, 200px) - 20px);
 }
 
 .item span {
