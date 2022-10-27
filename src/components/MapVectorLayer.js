@@ -86,7 +86,9 @@ function LegendModal({ legendId, onClose }) {
     >
       <Header
         content={`${t('map.legend')} - ${t(
-          `map.${layerStyle['source-layer']}`,
+          legendId === 'azt'
+            ? 'map.altitudinalZones'
+            : `map.${layerStyle['source-layer']}`,
         )}`}
       />
       <Modal.Content>
