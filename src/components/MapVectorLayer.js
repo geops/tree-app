@@ -2,14 +2,7 @@ import React, { useContext, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  Header,
-  List,
-  Segment,
-  Checkbox,
-  Popup,
-  Menu,
-} from 'semantic-ui-react';
+import { Header, List, Checkbox, Popup, Menu, Modal } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
@@ -57,6 +50,62 @@ const getLayersByGroup = (group) =>
 const azLayers = ['azt', 'azm', 'aze'];
 const getIsAz = (id) => azLayers.includes(id);
 
+function LegendModal({ legendId, onClose }) {
+  const { t, i18n } = useTranslation();
+  const { language: lng } = i18n;
+  const i = useMemo(() => (type, code) => info(type, code)[lng], [lng]);
+  const layerStyle = getLayerStyle(legendId);
+  const legend = useMemo(() => {
+    if (!layerStyle?.metadata) {
+      return null;
+    }
+    let code;
+    const { type } = layerStyle.metadata;
+    return layerStyle.paint['fill-color']
+      .map((fc) => {
+        const row = { color: fc };
+        if (typeof fc === 'string' && fc.startsWith('#') && code) {
+          row.label =
+            type === 'altitudinalZone' && code.startsWith('8')
+              ? `${i('altitudinalZone', '80')} ${i('silverFirArea', code[1])}`
+              : i(type, code);
+          code = null;
+        } else {
+          code = fc.toString();
+        }
+        return row;
+      })
+      .filter((row) => row.label);
+  }, [i, layerStyle.metadata, layerStyle.paint]);
+  return (
+    <Modal
+      closeIcon
+      open={!!legendId}
+      onClose={onClose}
+      className={styles.modal}
+    >
+      <Header
+        content={`${t('map.legend')} - ${t(
+          `map.${layerStyle['source-layer']}`,
+        )}`}
+      />
+      <Modal.Content>
+        {legend.map(({ color, label }) => (
+          <List.Item className={styles.legendItem} key={label}>
+            <List.Icon name="square" style={{ color }} />
+            <List.Content>{label}</List.Content>
+          </List.Item>
+        ))}
+      </Modal.Content>
+    </Modal>
+  );
+}
+
+LegendModal.propTypes = {
+  legendId: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 function LayertreeItem({ layerId, label, onChange, active, radio }) {
   if (!label) {
     return null;
@@ -95,91 +144,89 @@ LayertreeItem.defaultProps = {
 };
 
 function MapVectorLayer() {
-  const { t, i18n } = useTranslation();
-  const { language: lng } = i18n;
-  const i = useMemo(() => (type, code) => info(type, code)[lng], [lng]);
-  const [legendVisible, setLegendVisible] = useState(false);
+  const { t } = useTranslation();
+  const [legendId, setLegendId] = useState();
   const dispatch = useDispatch();
   const layer = useContext(LayerContext);
   const mapLayers = useSelector((state) => state.mapLayers);
   const azLayer = useSelector((state) => state.azLayer);
   const activeProfile = useSelector((state) => state.activeProfile);
-  const layerStyle = getLayerStyle(mapLayers[0]);
   const style = getStyle(mapLayers, activeProfile);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
-
-  const legend = useMemo(() => {
-    if (!layerStyle?.metadata) {
-      return null;
-    }
-    let code;
-    const { type } = layerStyle.metadata;
-    return (
-      type &&
-      Array.isArray(layerStyle.paint['fill-color']) &&
-      layerStyle.paint['fill-color']
-        .map((fc) => {
-          const row = { color: fc };
-          if (typeof fc === 'string' && fc.startsWith('#') && code) {
-            row.label =
-              type === 'altitudinalZone' && code.startsWith('8')
-                ? `${i('altitudinalZone', '80')} ${i('silverFirArea', code[1])}`
-                : i(type, code);
-            code = null;
-          } else {
-            code = fc.toString();
-          }
-          return row;
-        })
-        .filter((row) => row.label)
-    );
-  }, [i, layerStyle]);
 
   return (
     <>
       <Popup
+        style={{ zIndex: 500 }}
+        position="bottom right"
         basic
         className={styles.popup}
         trigger={
           <Button active className={styles.opener}>
-            {t('Kartenebenen')}
+            {t('map.layers')}
           </Button>
         }
         on="click"
-        hideOnScroll
       >
         <Popup.Content>
           <Menu text vertical className={styles.menu} fluid compact>
-            {getLayersByGroup('main').map((lyr) => (
+            {getLayersByGroup('main').map((lyr) => {
+              const layerStyle = getLayerStyle(lyr.id);
+              const hasLegend =
+                layerStyle?.metadata &&
+                layerStyle.metadata.type &&
+                Array.isArray(layerStyle.paint['fill-color']);
+              return (
+                <div className={styles.labelWrapper}>
+                  <LayertreeItem
+                    label={t(`map.${lyr['source-layer']}`)}
+                    layerId={lyr.id}
+                    key={lyr.id}
+                    active={mapLayers.includes(lyr.id)}
+                    onChange={(evt, { active }) =>
+                      dispatch(
+                        setMapLayers(
+                          !active
+                            ? [...mapLayers, lyr.id]
+                            : mapLayers.filter((l) => l !== lyr.id),
+                        ),
+                      )
+                    }
+                  />
+                  {hasLegend && (
+                    <Button
+                      size="mini"
+                      active
+                      compact
+                      icon="info"
+                      onClick={() => setLegendId(legendId ? null : lyr.id)}
+                    />
+                  )}
+                </div>
+              );
+            })}
+            <div className={styles.labelWrapper}>
               <LayertreeItem
-                label={t(`map.${lyr['source-layer']}`)}
-                layerId={lyr.id}
-                key={lyr.id}
-                active={mapLayers.includes(lyr.id)}
-                onChange={(evt, { active }) =>
+                label={t('map.altitudinalZones')}
+                active={azLayers.some((l) => mapLayers.includes(l))}
+                onChange={(evt, { active }) => {
                   dispatch(
                     setMapLayers(
-                      !active
-                        ? [...mapLayers, lyr.id]
-                        : mapLayers.filter((l) => l !== lyr.id),
+                      active
+                        ? mapLayers.filter((l) => !getIsAz(l))
+                        : [...mapLayers, azLayer],
                     ),
-                  )
-                }
+                  );
+                }}
               />
-            ))}
-            <LayertreeItem
-              label={t('map.altitudinalZones')}
-              active={azLayers.some((l) => mapLayers.includes(l))}
-              onChange={(evt, { active }) => {
-                dispatch(
-                  setMapLayers(
-                    active
-                      ? mapLayers.filter((l) => !getIsAz(l))
-                      : [...mapLayers, azLayer],
-                  ),
-                );
-              }}
-            />
+              <Button
+                size="mini"
+                active
+                compact
+                icon="info"
+                onClick={() => setLegendId(legendId ? null : 'azt')}
+              />
+            </div>
             <div className={styles.azLayers}>
               {getLayersByGroup('altitudinalZones').map((lyr) => (
                 <LayertreeItem
@@ -205,27 +252,9 @@ function MapVectorLayer() {
           </Menu>
         </Popup.Content>
       </Popup>
-      {legend && (
-        <Button
-          active={!legendVisible}
-          className={styles.legendButton}
-          icon={legendVisible ? 'close' : 'info'}
-          onClick={() => setLegendVisible(!legendVisible)}
-        />
-      )}
-      {legend && legendVisible && (
-        <Segment className={styles.legendContainer}>
-          <Header size="small">{t('map.legend')}</Header>
-          <List>
-            {legend.map(({ color, label }) => (
-              <List.Item>
-                <List.Icon name="square" style={{ color }} />
-                <List.Content>{label}</List.Content>
-              </List.Item>
-            ))}
-          </List>
-        </Segment>
-      )}
+      {legendId ? (
+        <LegendModal legendId={legendId} onClose={() => setLegendId(null)} />
+      ) : null}
     </>
   );
 }

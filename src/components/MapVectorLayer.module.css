@@ -1,6 +1,8 @@
 .popup {
   width: var(--fluid-layers-width);
   padding: 0 !important;
+  max-height: 70vh;
+  overflow: auto;
 }
 
 .opener {
@@ -10,27 +12,21 @@
   top: 20px;
   margin: 0;
   width: var(--fluid-layers-width);
+  max-height: 70vh;
+  overflow: hidden;
 }
 
 .menu {
   padding: 10px !important;
 }
 
-.legendButton:global(.ui.button) {
-  position: absolute;
-  right: 20px;
-  top: 67px;
-  margin: 0;
-  z-index: 8;
+.modal {
+  max-width: 400px;
 }
 
-.legendContainer:global(.ui.segment) {
-  position: absolute;
-  max-width: 250px;
-  z-index: 7;
-  right: 20px;
-  top: 67px;
-  margin: 0;
+.legendItem {
+  display: flex;
+  align-items: center;
 }
 
 .azLayers {
@@ -55,6 +51,9 @@
   max-width: calc(clamp(130px, 15vw, 200px) - 20px);
 }
 
-.item span {
-  white-space: pre;
+.labelWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
 }
