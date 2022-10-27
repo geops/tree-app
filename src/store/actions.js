@@ -34,8 +34,8 @@ export function setLocation(location) {
   return { type: SET_LOCATION, location };
 }
 
-export function setMapLayers(mapLayers) {
-  return { type: SET_MAP_LAYERS, mapLayers };
+export function setMapLayers(mapLayers, azLayer) {
+  return { type: SET_MAP_LAYERS, mapLayers, azLayer };
 }
 
 export function setMapView(mapView) {

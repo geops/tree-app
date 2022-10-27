@@ -33,6 +33,10 @@
   margin: 0;
 }
 
+.azLayers {
+  margin-left: 20px;
+}
+
 .header {
   text-transform: none !important;
   font-size: 1.1em !important;

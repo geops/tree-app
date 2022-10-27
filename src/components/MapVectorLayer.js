@@ -1,5 +1,6 @@
 import React, { useContext, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   Header,
@@ -53,6 +54,46 @@ const getStyle = (sourceLayers, activeProfile) => ({
 const getLayersByGroup = (group) =>
   mapStyle.layers.filter((l) => l.metadata && l.metadata.group === group);
 
+const azLayers = ['azt', 'azm', 'aze'];
+const getIsAz = (id) => azLayers.includes(id);
+
+function LayertreeItem({ layerId, label, onChange, active, radio }) {
+  if (!label) {
+    return null;
+  }
+  return (
+    <Menu.Item
+      active={active}
+      className={styles.item}
+      key={layerId}
+      onClick={(evt, item) => onChange(evt, item)}
+    >
+      <Checkbox
+        id={layerId}
+        label={
+          <label htmlFor={layerId}>{active ? <b>{label}</b> : label}</label>
+        }
+        radio={radio}
+        checked={active}
+      />
+    </Menu.Item>
+  );
+}
+
+LayertreeItem.propTypes = {
+  layerId: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  label: PropTypes.string.isRequired,
+  active: PropTypes.bool,
+  radio: PropTypes.bool,
+};
+
+LayertreeItem.defaultProps = {
+  layerId: undefined,
+  active: false,
+  radio: false,
+};
+
 function MapVectorLayer() {
   const { t, i18n } = useTranslation();
   const { language: lng } = i18n;
@@ -61,46 +102,11 @@ function MapVectorLayer() {
   const dispatch = useDispatch();
   const layer = useContext(LayerContext);
   const mapLayers = useSelector((state) => state.mapLayers);
+  const azLayer = useSelector((state) => state.azLayer);
   const activeProfile = useSelector((state) => state.activeProfile);
   const layerStyle = getLayerStyle(mapLayers[0]);
   const style = getStyle(mapLayers, activeProfile);
   useMemo(() => layer.mapboxMap.setStyle(style), [layer, style]);
-
-  const getDropdownItem = (l, isAZ) => {
-    const activeItem = mapLayers.includes(l.id);
-    return (
-      <Menu.Item
-        active={activeItem}
-        className={styles.item}
-        key={l.id}
-        onClick={(evt, { active }) =>
-          dispatch(
-            setMapLayers(
-              !active
-                ? [...mapLayers, l.id]
-                : mapLayers.filter((layr) => layr !== l.id),
-            ),
-          )
-        }
-      >
-        {/* The indent hack is due to Semantic React UI using dropdown item padding with !important */}
-        {isAZ ? <span>{'      '}</span> : null}
-        <Checkbox
-          id={l.id}
-          label={
-            <label htmlFor={l.id}>
-              {activeItem ? (
-                <b>{t(`map.${l['source-layer']}`)}</b>
-              ) : (
-                t(`map.${l['source-layer']}`)
-              )}
-            </label>
-          }
-          checked={activeItem}
-        />
-      </Menu.Item>
-    );
-  };
 
   const legend = useMemo(() => {
     if (!layerStyle?.metadata) {
@@ -144,13 +150,58 @@ function MapVectorLayer() {
       >
         <Popup.Content>
           <Menu text vertical className={styles.menu} fluid compact>
-            {getLayersByGroup('main').map((lyr) => getDropdownItem(lyr))}
-            <Menu.Header className={styles.header}>
-              {t('map.altitudinalZones')}
-            </Menu.Header>
-            {getLayersByGroup('altitudinalZones').map((lyr) =>
-              getDropdownItem(lyr, true),
-            )}
+            {getLayersByGroup('main').map((lyr) => (
+              <LayertreeItem
+                label={t(`map.${lyr['source-layer']}`)}
+                layerId={lyr.id}
+                key={lyr.id}
+                active={mapLayers.includes(lyr.id)}
+                onChange={(evt, { active }) =>
+                  dispatch(
+                    setMapLayers(
+                      !active
+                        ? [...mapLayers, lyr.id]
+                        : mapLayers.filter((l) => l !== lyr.id),
+                    ),
+                  )
+                }
+              />
+            ))}
+            <LayertreeItem
+              label={t('map.altitudinalZones')}
+              active={azLayers.some((l) => mapLayers.includes(l))}
+              onChange={(evt, { active }) => {
+                dispatch(
+                  setMapLayers(
+                    active
+                      ? mapLayers.filter((l) => !getIsAz(l))
+                      : [...mapLayers, azLayer],
+                  ),
+                );
+              }}
+            />
+            <div className={styles.azLayers}>
+              {getLayersByGroup('altitudinalZones').map((lyr) => (
+                <LayertreeItem
+                  key={lyr.id}
+                  label={t(`map.${lyr['source-layer']}`)}
+                  layerId={lyr.id}
+                  radio
+                  active={mapLayers.includes(lyr.id)}
+                  onChange={(evt, { active }) => {
+                    if (active) {
+                      return;
+                    }
+                    dispatch(
+                      setMapLayers(
+                        [...mapLayers.filter((l) => !getIsAz(l)), lyr.id],
+                        lyr.id,
+                      ),
+                    );
+                  }}
+                />
+              ))}
+            </div>
           </Menu>
         </Popup.Content>
       </Popup>

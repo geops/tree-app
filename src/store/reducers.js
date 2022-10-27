@@ -29,6 +29,7 @@ export const initialState = {
   formLocation: {},
   locationResult: { options: {} },
   mapLayers: ['ft', 'cb'],
+  azLayer: 'azt',
   mapLocation: {},
   mapView: '9|2660013|1185171',
   projectionMode: 'm',
@@ -83,8 +84,13 @@ function tree(state = initialState, action) {
     case SET_LOCATION: {
       return { ...state, location: action.location };
     }
-    case SET_MAP_LAYERS:
-      return { ...state, mapLayers: action.mapLayers };
+    case SET_MAP_LAYERS: {
+      const newState = { ...state, mapLayers: action.mapLayers };
+      if (action.azLayer) {
+        newState.azLayer = action.azLayer;
+      }
+      return newState;
+    }
     case SET_MAP_LOCATION: {
       const { resetFormLocation, resetMapLocation, projectionMode } = action;
       const formLocation = resetFormLocation
