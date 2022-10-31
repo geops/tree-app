@@ -427,7 +427,8 @@
   },
   "profiles": {
     "ch": "Bund",
-    "lu": "Luzern"
+    "lu": "Luzern",
+    "vd": "Vaud"
   },
   "forestTypeModal": {
     "compare": "Standortstypen vergleichen",
