@@ -152,7 +152,7 @@ function ProjectionForm() {
           <label className={styles.cantonalForestTypesLabel}>
             {t('forestType.cantonalForestType')}
           </label>
-          <p>{cantonalForestType}</p>
+          <h3>{cantonalForestType}</h3>
         </div>
       ) : null}
       {options.forestType ? (

@@ -39,9 +39,11 @@
   font-weight: bold;
   color: var(--primary-color-500);
   margin-bottom: 10px;
-  display: grid;
-  grid-template-columns: minmax(auto, 50px) minmax(auto, 30px) auto;
   align-items: center;
+}
+
+.cantonalForestTypes h3 {
+  margin-top: 0;
 }
 
 .cantonalForestTypes button {
