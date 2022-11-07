@@ -2,7 +2,15 @@ import React, { useContext, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { Header, List, Checkbox, Popup, Menu, Modal } from 'semantic-ui-react';
+import {
+  Header,
+  List,
+  Checkbox,
+  Popup,
+  Menu,
+  Modal,
+  Button as SUIButton,
+} from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
 import { info } from '@geops/tree-lib';
 
@@ -145,11 +153,31 @@ LayertreeItem.defaultProps = {
   radio: false,
 };
 
+function LegendTrigger({ onClick, ...otherProps }) {
+  return (
+    <SUIButton
+      size="small"
+      basic
+      compact
+      className={styles.legendTrigger}
+      icon="info"
+      onClick={onClick}
+      // eslint-disable-next-line react/jsx-props-no-spreading
+      {...otherProps}
+    />
+  );
+}
+
+LegendTrigger.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
+
 function MapVectorLayer() {
   const { t } = useTranslation();
   const [legendId, setLegendId] = useState();
   const dispatch = useDispatch();
   const layer = useContext(LayerContext);
+  const [layertreeOpen, setLayertreeOpen] = useState(false);
   const mapLayers = useSelector((state) => state.mapLayers);
   const azLayer = useSelector((state) => state.azLayer);
   const activeProfile = useSelector((state) => state.activeProfile);
@@ -161,14 +189,22 @@ function MapVectorLayer() {
       <Popup
         style={{ zIndex: 500 }}
         position="bottom right"
-        basic
         className={styles.popup}
         trigger={
-          <Button active className={styles.opener}>
+          <Button
+            active
+            className={styles.opener}
+            onClick={() => setLayertreeOpen(true)}
+          >
             {t('map.layers')}
           </Button>
         }
+        open={layertreeOpen}
         on="click"
+        onClose={() => {
+          if (legendId) return;
+          setLayertreeOpen(false);
+        }}
       >
         <Popup.Content>
           <Menu text vertical className={styles.menu} fluid compact>
@@ -179,11 +215,10 @@ function MapVectorLayer() {
                 layerStyle.metadata.type &&
                 Array.isArray(layerStyle.paint['fill-color']);
               return (
-                <div className={styles.labelWrapper}>
+                <div className={styles.labelWrapper} key={lyr.id}>
                   <LayertreeItem
                     label={t(`map.${lyr['source-layer']}`)}
                     layerId={lyr.id}
-                    key={lyr.id}
                     active={mapLayers.includes(lyr.id)}
                     onChange={(evt, { active }) =>
                       dispatch(
@@ -196,11 +231,7 @@ function MapVectorLayer() {
                     }
                   />
                   {hasLegend && (
-                    <Button
-                      size="mini"
-                      active
-                      compact
-                      icon="info"
+                    <LegendTrigger
                       onClick={() => setLegendId(legendId ? null : lyr.id)}
                     />
                   )}
@@ -221,11 +252,7 @@ function MapVectorLayer() {
                   );
                 }}
               />
-              <Button
-                size="mini"
-                active
-                compact
-                icon="info"
+              <LegendTrigger
                 onClick={() => setLegendId(legendId ? null : 'azt')}
               />
             </div>
@@ -255,7 +282,13 @@ function MapVectorLayer() {
         </Popup.Content>
       </Popup>
       {legendId ? (
-        <LegendModal legendId={legendId} onClose={() => setLegendId(null)} />
+        <LegendModal
+          legendId={legendId}
+          onClose={() => {
+            setLegendId(null);
+            setLayertreeOpen(true);
+          }}
+        />
       ) : null}
     </>
   );
