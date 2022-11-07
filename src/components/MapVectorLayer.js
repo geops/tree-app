@@ -18,6 +18,7 @@ import Button from './Button';
 import mapStyle from '../map/style.json';
 import { LayerContext } from '../spatial/components/layer/Base';
 import { setMapLayers } from '../store/actions';
+import getIsAz, { azLayers } from '../utils/getIsAz';
 import styles from './MapVectorLayer.module.css';
 
 const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
@@ -55,8 +56,8 @@ const getStyle = (sourceLayers, activeProfile) => ({
 const getLayersByGroup = (group) =>
   mapStyle.layers.filter((l) => l.metadata && l.metadata.group === group);
 
-const azLayers = ['azt', 'azm', 'aze'];
-const getIsAz = (id) => azLayers.includes(id);
+// const azLayers = ['azt', 'azm', 'aze'];
+// const getIsAz = (id) => azLayers.includes(id);
 
 function LegendModal({ legendId, onClose }) {
   const { t, i18n } = useTranslation();
@@ -265,14 +266,12 @@ function MapVectorLayer() {
                   radio
                   active={mapLayers.includes(lyr.id)}
                   onChange={(evt, { active }) => {
-                    if (active) {
-                      return;
-                    }
+                    if (active) return;
                     dispatch(
-                      setMapLayers(
-                        [...mapLayers.filter((l) => !getIsAz(l)), lyr.id],
+                      setMapLayers([
+                        ...mapLayers.filter((l) => !getIsAz(l)),
                         lyr.id,
-                      ),
+                      ]),
                     );
                   }}
                 />

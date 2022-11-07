@@ -1,4 +1,5 @@
 import translation from '../i18n/resources/de/translation.json';
+import getIsAz from '../utils/getIsAz';
 
 export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
 export const SET_LATIN_ACTIVE = 'SET_LATIN_ACTIVE';
@@ -34,7 +35,8 @@ export function setLocation(location) {
   return { type: SET_LOCATION, location };
 }
 
-export function setMapLayers(mapLayers, azLayer) {
+export function setMapLayers(mapLayers) {
+  const azLayer = mapLayers.find((id) => getIsAz(id));
   return { type: SET_MAP_LAYERS, mapLayers, azLayer };
 }
 
