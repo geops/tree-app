@@ -56,9 +56,6 @@ const getStyle = (sourceLayers, activeProfile) => ({
 const getLayersByGroup = (group) =>
   mapStyle.layers.filter((l) => l.metadata && l.metadata.group === group);
 
-// const azLayers = ['azt', 'azm', 'aze'];
-// const getIsAz = (id) => azLayers.includes(id);
-
 function LegendModal({ legendId, onClose }) {
   const { t, i18n } = useTranslation();
   const { language: lng } = i18n;
