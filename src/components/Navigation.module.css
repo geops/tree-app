@@ -9,18 +9,15 @@ body {
 
 .wrapper {
   height: 100%;
+  display: grid;
+  grid-template-columns: auto min(var(--max-width-right-column), 50%);
 }
 
 .map {
-  width: 50%;
-  position: absolute;
+  position: relative;
 }
 
 .page {
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;
@@ -29,6 +26,7 @@ body {
 }
 
 .menu:global(.ui.menu.fluid) {
+  max-width: var(--max-width-right-column);
   border-radius: 0;
   margin: 0;
   flex-shrink: 0;
@@ -73,6 +71,9 @@ body {
   }
   .map,
   .page {
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 100%;
     height: calc(100% - 59px);
   }

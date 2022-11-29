@@ -34,13 +34,24 @@ function ForestTypeModal() {
         open={modalModes.includes(forestTypeModal)}
         actions={
           <Modal.Actions
-            style={{ display: 'flex', justifyContent: 'flex-end' }}
+            style={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+              marginBottom: 10,
+            }}
             actions={[
               {
                 key: 'profileSwitcher',
                 as: ProfileSwitcher,
               },
-              { key: 'done', content: 'Ok' },
+              {
+                key: 'done',
+                content: 'Ok',
+                style: {
+                  marginBottom: 0,
+                  marginTop: 18,
+                },
+              },
             ]}
           />
         }

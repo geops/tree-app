@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
-import { Form, Message } from 'semantic-ui-react';
+import { Form, Popup } from 'semantic-ui-react';
 import { info, utils } from '@geops/tree-lib';
 
 import Dropdown from '../../Dropdown';
@@ -10,6 +10,8 @@ import LuForestTypeComparison from './lu';
 import BlForestTypeComparison from './bl';
 import { setForestTypeComparison } from '../../../store/actions';
 import { getValidForestTypes } from '../../../utils/comparisonUtils';
+
+import styles from './ForestTypeComparison.module.css';
 
 const { sortForestTypes } = utils();
 function ForestTypeComparison() {
@@ -42,24 +44,29 @@ function ForestTypeComparison() {
   return (
     <>
       <Form>
-        <Dropdown
-          label={t('forestTypeModal.compare')}
-          multiple
-          options={options}
-          onChange={(e, { value }) => dispatch(setForestTypeComparison(value))}
-          value={codes}
-          open={dropdownOpen && codes.length < 4}
-          onClick={() => setDropdownOpen(!dropdownOpen)}
-          onBlur={() => setDropdownOpen(false)}
+        <Popup
+          trigger={
+            <Dropdown
+              label={t('forestTypeModal.compare')}
+              multiple
+              options={options}
+              onChange={(e, { value }) =>
+                dispatch(setForestTypeComparison(value))
+              }
+              value={codes}
+              open={dropdownOpen && codes.length < 4}
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              onBlur={() => setDropdownOpen(false)}
+            />
+          }
+          content={t('forestTypeModal.maximumForestTypes')}
+          hideOnScroll
+          disabled={codes.length < 4}
+          position="bottom right"
+          className={styles.maximumForestTypesPopup}
+          on={['click']}
         />
       </Form>
-      {codes.length > 3 && (
-        <Message negative>
-          <Message.Header>
-            {t('forestTypeModal.maximumForestTypes')}
-          </Message.Header>
-        </Message>
-      )}
       <br />
       {activeProfile === 'ch' && <ChForestTypeComparison />}
       {activeProfile === 'lu' && <LuForestTypeComparison data={data} />}

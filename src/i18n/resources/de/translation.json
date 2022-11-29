@@ -21,6 +21,8 @@
   },
   "export": {
     "export": "Exportieren",
+    "exportRecommendation": "Empfehlung exportieren",
+    "exportForestTypeDescription": "Standortbeschreibung exportieren",
     "recommendationMainTitle": "Auszug aus der Tree-App",
     "coordinate": "Koordinate",
     "date": "Datum",
@@ -377,7 +379,8 @@
     "forest_types": "Standortskarte",
     "hint": "Bitte Position wählen",
     "legend": "Legende",
-    "silver_fir_areas": "Tannenareale"
+    "silver_fir_areas": "Tannenareale",
+    "layers": "Kartenebenen"
   },
   "offline": {
     "success": "Die Tree App ist offline verfügbar.",
@@ -444,7 +447,7 @@
     "noDataHeader": "Keine Daten vorhanden",
     "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?",
     "noComparisonMessage": "Der Standortvergleich ist im aktuellen Profil deaktiviert. Sind Sie im richtigen Profil?",
-    "maximumForestTypes": "Maximum an Vergleichsstandorte erreicht!"
+    "maximumForestTypes": "Maximum an Vergleichsstandorte erreicht."
   },
   "lu": {
     "forestType": {

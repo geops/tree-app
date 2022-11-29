@@ -4,7 +4,6 @@ import {
   SET_LATIN_ACTIVE,
   SET_LOCATION_RESULT,
   SET_LOCATION,
-  SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
   SET_PROJECTION_MODE,
@@ -17,6 +16,7 @@ import {
   SET_FORESTTYPE_MODAL,
   SET_FUTURE,
   SET_LANG_OVERRIDE,
+  SET_MAP_LAYERS,
 } from './actions';
 import translation from '../i18n/resources/de/translation.json';
 
@@ -28,7 +28,8 @@ export const initialState = {
   forestTypeCompare: [],
   formLocation: {},
   locationResult: { options: {} },
-  mapLayer: 'cb',
+  mapLayers: ['ft', 'cb'],
+  azLayer: 'azt',
   mapLocation: {},
   mapView: '9|2660013|1185171',
   projectionMode: 'm',
@@ -83,14 +84,21 @@ function tree(state = initialState, action) {
     case SET_LOCATION: {
       return { ...state, location: action.location };
     }
-    case SET_MAP_LAYER:
-      return { ...state, mapLayer: action.mapLayer };
+    case SET_MAP_LAYERS: {
+      const newState = { ...state, mapLayers: action.mapLayers };
+      if (action.azLayer) {
+        newState.azLayer = action.azLayer;
+      }
+      return newState;
+    }
     case SET_MAP_LOCATION: {
-      const { resetFormLocation } = action;
+      const { resetFormLocation, resetMapLocation, projectionMode } = action;
       const formLocation = resetFormLocation
         ? getFormLocation(state, { formLocation: initialFormLocation })
         : state.formLocation;
-      const mapLocation = { ...state.mapLocation, ...action.mapLocation };
+      const mapLocation = resetMapLocation
+        ? action.mapLocation
+        : { ...state.mapLocation, ...action.mapLocation };
       if (mapLocation.forestType) {
         formLocation.forestType = undefined;
       }
@@ -104,7 +112,12 @@ function tree(state = initialState, action) {
           delete mapLocation[`info_${profile}`];
         });
       }
-      return { ...state, formLocation, mapLocation, projectionMode: 'm' };
+      return {
+        ...state,
+        formLocation,
+        mapLocation,
+        projectionMode: projectionMode || 'm',
+      };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };
@@ -136,6 +149,9 @@ function tree(state = initialState, action) {
       localStorage.setItem('tree.profile', action.activeProfile);
       return { ...state, activeProfile: action.activeProfile };
     case SET_FORESTTYPE_COMPARISON:
+      if (action.forestTypeComparison?.length > 4) {
+        action.forestTypeComparison.splice(3, 1);
+      }
       return {
         ...state,
         forestTypeComparison: action.forestTypeComparison,

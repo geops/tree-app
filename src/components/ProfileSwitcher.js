@@ -28,11 +28,12 @@ function ProfileSwitcher() {
   return (
     <Dropdown
       value={activeProfile}
-      className={styles['profile-switcher']}
+      className={styles.profileSwitcher}
       options={profiles}
       onChange={(e, { value }) => dispatch(setActiveProfile(value))}
       data-cypress="profileSwitcher"
       search={false}
+      label={<h5>{t('app.profile')}</h5>}
     />
   );
 }

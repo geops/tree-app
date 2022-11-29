@@ -2,8 +2,8 @@ const { info } = require('../../src/i18n/resources/de/translation.json');
 
 describe('Info', () => {
   beforeEach(() => {
+    localStorage.setItem('tree.welcomeModal', 'close');
     cy.visit('');
-    cy.get('[data-cypress=welcomeModalGo]').click();
     cy.get('.ui.menu > :nth-child(3)').click();
   });
 

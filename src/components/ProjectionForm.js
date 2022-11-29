@@ -23,16 +23,21 @@ const getDropdownOptions =
   (type, lng, dispatch, includeKey = false) =>
   (key) => ({
     key,
+    title: `${key} -${info(type, key)[lng]}`,
     content: dispatch ? (
-      <>
+      <div className={styles.option}>
         <Button
           active
           compact
           icon="info"
           onClick={() => dispatch(setForestTypeDescription(key))}
         />
-        {key} - {info(type, key)[lng]}
-      </>
+        <span className={styles.optionLabel}>
+          <span>{key}</span>
+          <span>-</span>
+          <span>{info(type, key)[lng]}</span>
+        </span>
+      </div>
     ) : (
       info(type, key)[lng]
     ),
@@ -146,7 +151,7 @@ function ProjectionForm() {
           <label className={styles.cantonalForestTypesLabel}>
             {t('forestType.cantonalForestType')}
           </label>
-          <p>{cantonalForestType}</p>
+          <h3>{cantonalForestType}</h3>
         </div>
       ) : null}
       {options.forestType ? (
@@ -307,8 +312,10 @@ function ProjectionForm() {
                   icon="info"
                   onClick={() => dispatch(setForestTypeDescription(cft))}
                 />
-                {cft}
-                {cftInfo[i18n.language] ? ` - ${cftInfo[i18n.language]}` : ''}
+                <span>{`${cft}${cftInfo[i18n.language] ? ' - ' : ''}`}</span>
+                <span>
+                  {cftInfo[i18n.language] ? cftInfo[i18n.language] : ''}
+                </span>
               </div>
             );
           })}

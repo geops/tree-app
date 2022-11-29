@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function useIsMobile() {
   const isClient = typeof window === 'object';
-  const getMobile = () => (isClient ? window.innerWidth < 768 : false);
+  const getMobile = () => (isClient ? window.innerWidth <= 768 : false);
   const [isMobile, setIsMobile] = useState(getMobile);
 
   useEffect(() => {

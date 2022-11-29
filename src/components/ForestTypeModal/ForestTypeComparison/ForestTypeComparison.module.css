@@ -15,3 +15,15 @@
   grid-template-columns: 80% 20%;
   font-weight: bold;
 }
+
+.maximumForestTypesPopup {
+  border: 2px solid var(--primary-color-200) !important;
+  color: var(--primary-color-500) !important;
+}
+
+.maximumForestTypesPopup::before {
+  border-top: 2px solid var(--primary-color-200) !important;
+  border-left: 2px solid var(--primary-color-200) !important;
+  box-shadow: none !important;
+  top: -6px !important;
+}

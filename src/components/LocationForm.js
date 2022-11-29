@@ -2,12 +2,11 @@ import intersection from 'lodash.intersection';
 import React from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Accordion, Form, Header, Label, Segment } from 'semantic-ui-react';
+import { Accordion, Form, Header } from 'semantic-ui-react';
 // eslint-disable-next-line import/no-unresolved
-import { info } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 
 import Button from './Button';
-import Checkbox from './Checkbox';
 import Dropdown from './Dropdown';
 import HelpModal from './HelpModal';
 import Input from './Input';
@@ -16,6 +15,26 @@ import styles from './LocationForm.module.css';
 import { setFormLocation } from '../store/actions';
 import translation from '../i18n/resources/de/translation.json';
 
+const { capitalize } = utils();
+const getField = (key, suffix) => `${suffix}${capitalize(key)}`;
+const noLabel = (key) => key !== 'label' && key !== 'other';
+const translationOptions = {
+  aspect: Object.keys(translation.forestType.aspect).filter(noLabel).sort(),
+  group: Object.keys(translation.forestType.group).filter(noLabel),
+  slope: Object.keys(translation.forestType.slope).filter(noLabel).sort(),
+  yesNoUnknown: Object.keys(translation.forestType.yesNoUnknown),
+  geomorphology: Object.keys(translation.forestType.geomorphology).filter(
+    noLabel,
+  ),
+  reliefType: Object.keys(translation.forestType.reliefType).filter(noLabel),
+};
+
+const geoMorphFields = translationOptions.geomorphology.map((key) =>
+  getField(key, 'geomorphology'),
+);
+const reliefTypeFields = translationOptions.reliefType.map((key) =>
+  getField(key, 'reliefType'),
+);
 const filterFields = [
   'treeTypes',
   'indicators',
@@ -25,32 +44,14 @@ const filterFields = [
   'deciduousTreeHeightMax',
   'carbonateFine',
   'carbonateRock',
-  'geomorphologyRockBand',
-  'geomorphologyBlockyRockyStrong',
-  'geomorphologyBlockyRockyLittle',
-  'geomorphologyLimestonePavement',
-  'geomorphologyRocksModeratelyMoved',
-  'geomorphologyRocksStronglyMoved',
-  'geomorphologyRocksStabilised',
-  'reliefTypeCentralSlope',
-  'reliefTypeHollow',
-  'reliefTypeDome',
-  'reliefTypePlateau',
-  'reliefTypeSteep',
+  ...geoMorphFields,
+  ...reliefTypeFields,
   'aspects',
   'slopes',
   'forestEcoregion',
   'altitudinalZone',
   'groups',
 ];
-
-const noLabel = (key) => key !== 'label' && key !== 'other';
-const translationOptions = {
-  aspect: Object.keys(translation.forestType.aspect).filter(noLabel).sort(),
-  group: Object.keys(translation.forestType.group).filter(noLabel),
-  slope: Object.keys(translation.forestType.slope).filter(noLabel).sort(),
-  yesNoUnknown: Object.keys(translation.forestType.yesNoUnknown),
-};
 
 const getDropdownOptions =
   (type, lng, includeKey = false) =>
@@ -91,6 +92,12 @@ function LocationForm() {
   options.aspect = translationOptions.aspect.map(getTranslatedOption('aspect'));
   options.group = translationOptions.group.map(getTranslatedOption('group'));
   options.slope = translationOptions.slope.map(getTranslatedOption('slope'));
+  options.geomorphology = translationOptions.geomorphology.map(
+    getTranslatedOption('geomorphology'),
+  );
+  options.reliefType = translationOptions.reliefType.map(
+    getTranslatedOption('reliefType'),
+  );
   options.yesNoUnknown = translationOptions.yesNoUnknown.map(
     getTranslatedOption('yesNoUnknown'),
   );
@@ -208,102 +215,52 @@ function LocationForm() {
       content: {
         content: (
           <>
-            <Segment>
-              <Label attached="top">
-                {t('forestType.geomorphology.label')}
-              </Label>
-              <Checkbox
-                label={t('forestType.geomorphology.rockBand')}
-                onChange={(e, { checked: geomorphologyRockBand }) =>
-                  dispatch(setFormLocation({ geomorphologyRockBand }))
-                }
-                checked={formLocation.geomorphologyRockBand || false}
-              />
-              <Checkbox
-                label={t('forestType.geomorphology.blockyRockyStrong')}
-                onChange={(e, { checked: geomorphologyBlockyRockyStrong }) =>
-                  dispatch(setFormLocation({ geomorphologyBlockyRockyStrong }))
-                }
-                checked={formLocation.geomorphologyBlockyRockyStrong || false}
-              />
-              <Checkbox
-                label={t('forestType.geomorphology.blockyRockyLittle')}
-                onChange={(e, { checked: geomorphologyBlockyRockyLittle }) =>
-                  dispatch(setFormLocation({ geomorphologyBlockyRockyLittle }))
-                }
-                checked={formLocation.geomorphologyBlockyRockyLittle || false}
-              />
-              <Checkbox
-                label={t('forestType.geomorphology.limestonePavement')}
-                onChange={(e, { checked: geomorphologyLimestonePavement }) =>
-                  dispatch(setFormLocation({ geomorphologyLimestonePavement }))
-                }
-                checked={formLocation.geomorphologyLimestonePavement || false}
-              />
-              <Checkbox
-                label={t('forestType.geomorphology.rocksModeratelyMoved')}
-                onChange={(e, { checked: geomorphologyRocksModeratelyMoved }) =>
+            <Dropdown
+              label={t('forestType.geomorphology.label')}
+              multiple
+              options={options.geomorphology}
+              onChange={(e, { value }) => {
+                translationOptions.geomorphology.forEach((opt) => {
                   dispatch(
-                    setFormLocation({ geomorphologyRocksModeratelyMoved }),
-                  )
-                }
-                checked={
-                  formLocation.geomorphologyRocksModeratelyMoved || false
-                }
-              />
-              <Checkbox
-                label={t('forestType.geomorphology.rocksStronglyMoved')}
-                onChange={(e, { checked: geomorphologyRocksStronglyMoved }) =>
-                  dispatch(setFormLocation({ geomorphologyRocksStronglyMoved }))
-                }
-                checked={formLocation.geomorphologyRocksStronglyMoved || false}
-              />
-              <Checkbox
-                label={t('forestType.geomorphology.rocksStabilised')}
-                onChange={(e, { checked: geomorphologyRocksStabilised }) =>
-                  dispatch(setFormLocation({ geomorphologyRocksStabilised }))
-                }
-                checked={formLocation.geomorphologyRocksStabilised || false}
-              />
-            </Segment>
-            <Segment>
-              <Label attached="top">{t('forestType.reliefType.label')}</Label>
-              <Checkbox
-                label={t('forestType.reliefType.centralSlope')}
-                onChange={(e, { checked: reliefTypeCentralSlope }) =>
-                  dispatch(setFormLocation({ reliefTypeCentralSlope }))
-                }
-                checked={formLocation.reliefTypeCentralSlope || false}
-              />
-              <Checkbox
-                label={t('forestType.reliefType.hollow')}
-                onChange={(e, { checked: reliefTypeHollow }) =>
-                  dispatch(setFormLocation({ reliefTypeHollow }))
-                }
-                checked={formLocation.reliefTypeHollow || false}
-              />
-              <Checkbox
-                label={t('forestType.reliefType.dome')}
-                onChange={(e, { checked: reliefTypeDome }) =>
-                  dispatch(setFormLocation({ reliefTypeDome }))
-                }
-                checked={formLocation.reliefTypeDome || false}
-              />
-              <Checkbox
-                label={t('forestType.reliefType.plateau')}
-                onChange={(e, { checked: reliefTypePlateau }) =>
-                  dispatch(setFormLocation({ reliefTypePlateau }))
-                }
-                checked={formLocation.reliefTypePlateau || false}
-              />
-              <Checkbox
-                label={t('forestType.reliefType.steep')}
-                onChange={(e, { checked: reliefTypeSteep }) =>
-                  dispatch(setFormLocation({ reliefTypeSteep }))
-                }
-                checked={formLocation.reliefTypeSteep || false}
-              />
-            </Segment>
+                    setFormLocation({
+                      [`${getField(opt, 'geomorphology')}`]: value.find(
+                        (val) => val === opt,
+                      ),
+                    }),
+                  );
+                });
+              }}
+              value={translationOptions.geomorphology.reduce(
+                (activeKeys, key) =>
+                  formLocation[`${getField(key, 'geomorphology')}`]
+                    ? [...activeKeys, key]
+                    : activeKeys,
+                [],
+              )}
+            />
+            <Dropdown
+              label={t('forestType.reliefType.label')}
+              multiple
+              options={options.reliefType}
+              onChange={(e, { value }) => {
+                translationOptions.reliefType.forEach((opt) => {
+                  dispatch(
+                    setFormLocation({
+                      [`${getField(opt, 'reliefType')}`]: value.find(
+                        (val) => val === opt,
+                      ),
+                    }),
+                  );
+                });
+              }}
+              value={translationOptions.reliefType.reduce(
+                (activeKeys, key) =>
+                  formLocation[`${getField(key, 'reliefType')}`]
+                    ? [...activeKeys, key]
+                    : activeKeys,
+                [],
+              )}
+            />
           </>
         ),
       },
