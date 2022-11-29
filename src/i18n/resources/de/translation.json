@@ -370,7 +370,8 @@
     "forest_types": "Standortskarte",
     "hint": "Bitte Position wählen",
     "legend": "Legende",
-    "silver_fir_areas": "Tannenareale"
+    "silver_fir_areas": "Tannenareale",
+    "layers": "Kartenebenen"
   },
   "offline": {
     "success": "Die Tree App ist offline verfügbar.",

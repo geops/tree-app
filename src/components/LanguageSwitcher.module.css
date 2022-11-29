@@ -6,6 +6,10 @@
   color: var(--primary-color-500);
 }
 
+.label h5 {
+  margin-bottom: 4px !important;
+}
+
 .buttons {
   height: 40px;
   display: flex !important;
