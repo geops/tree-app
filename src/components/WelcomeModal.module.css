@@ -22,13 +22,12 @@
   display: flex;
   text-align: left;
   justify-content: flex-end;
-  flex-direction: row-reverse;
   gap: 20px;
 }
 
 .switchers > div {
   flex: 1 1 48%;
-  max-width: 50%;
+  max-width: 47%;
 }
 
 .actions {
@@ -53,6 +52,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     gap: 10px;
   }
 

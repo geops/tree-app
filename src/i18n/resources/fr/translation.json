@@ -371,7 +371,8 @@
     "forest_types": "Carte des stations forestières",
     "hint": "Veuillez sélectionner une position sur la carte",
     "legend": "Légende",
-    "silver_fir_areas": "Aires du sapin blanc"
+    "silver_fir_areas": "Aires du sapin blanc",
+    "layers": "Couches de la carte"
   },
   "offline": {
     "success": "Tree App est disponible hors ligne",

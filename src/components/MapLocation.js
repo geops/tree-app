@@ -174,16 +174,19 @@ function MapLocation() {
         <Modal.Header>{t('forestType.select')}</Modal.Header>
         <Modal.Content>
           <List divided selection>
-            {mapLocation.forestTypes?.map(
-              (ft) =>
+            {mapLocation.forestTypes?.map((ft) => {
+              const cantonalFt = ft[`forestType_${activeProfile}`];
+              return (
                 ft.info && (
                   <List.Item
                     className={styles.item}
                     description={ft.info[i18n.language]}
                     header={`${
                       ft.transition
-                        ? `${ft.forestType} (${ft.transitionForestType})`
-                        : ft.forestType
+                        ? `${cantonalFt || ft.forestType} (${
+                            ft.transitionForestType
+                          })`
+                        : cantonalFt || ft.forestType
                     }`}
                     key={ft.forestType}
                     onClick={() => {
@@ -191,8 +194,9 @@ function MapLocation() {
                       history.push(`/projection${window.location.search}`);
                     }}
                   />
-                ),
-            )}
+                )
+              );
+            })}
           </List>
         </Modal.Content>
       </Modal>

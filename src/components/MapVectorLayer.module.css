@@ -1,36 +1,74 @@
-.dropdown:global(.ui.button.dropdown) {
+.popup {
+  width: var(--fluid-layers-width);
+  padding: 0 !important;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.opener {
   position: absolute;
   z-index: 9;
   right: 20px;
   top: 20px;
   margin: 0;
+  width: var(--fluid-layers-width);
+  max-height: 70vh;
+  overflow: hidden;
 }
 
-.legendButton:global(.ui.button) {
-  position: absolute;
-  right: 20px;
-  top: 67px;
-  margin: 0;
-  z-index: 8;
+.menu {
+  padding: 10px !important;
 }
 
-.legendContainer:global(.ui.segment) {
-  position: absolute;
-  max-width: 250px;
-  z-index: 7;
-  right: 20px;
-  top: 67px;
-  margin: 0;
+.modal {
+  max-width: 400px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+}
+
+.azLayers {
+  margin-left: 20px;
 }
 
 .header {
   text-transform: none !important;
   font-size: 1.1em !important;
   color: rgba(0, 0, 0, 0.6) !important;
+  margin-top: 5px;
 }
 
 .item {
+  background-color: transparent !important;
+  padding: 8px 0 !important;
+  margin: 0 !important;
+}
+
+.item label {
   color: var(--primary-color-500) !important;
+  max-width: calc(clamp(130px, 15vw, 200px) - 20px);
+}
+
+.labelWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.legendTrigger:global(.ui.compact.button) {
+  color: var(--primary-color-500) !important;
+  box-shadow: none;
+  padding: 5px 3px !important;
+  width: 20px;
+}
+
+.legendTrigger:global(.ui.compact.button:focus),
+.legendTrigger:global(.ui.compact.button:hover) {
+  color: var(--primary-color-200) !important;
+  box-shadow: none;
 }
 
 .item span {

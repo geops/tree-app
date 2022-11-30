@@ -1,10 +1,10 @@
 import translation from '../i18n/resources/de/translation.json';
+import getIsAz from '../utils/getIsAz';
 
 export const SET_FORM_LOCATION = 'SET_FORM_LOCATION';
 export const SET_LATIN_ACTIVE = 'SET_LATIN_ACTIVE';
 export const SET_LOCATION_RESULT = 'SET_LOCATION_RESULT';
 export const SET_LOCATION = 'SET_LOCATION';
-export const SET_MAP_LAYER = 'SET_MAP_LAYER';
 export const SET_MAP_LOCATION = 'SET_MAP_LOCATION';
 export const SET_MAP_VIEW = 'SET_MAP_VIEW';
 export const SET_PROJECTION_MODE = 'SET_PROJECTION_MODE';
@@ -17,6 +17,7 @@ export const SET_FORESTTYPE_DESCRIPTION = 'SET_FORESTTYPE_DESCRIPTION';
 export const SET_FORESTTYPE_MODAL = 'SET_FORESTTYPE_MODAL';
 export const SET_FUTURE = 'SET_FUTURE';
 export const SET_LANG_OVERRIDE = 'SET_LANG_OVERRIDE';
+export const SET_MAP_LAYERS = 'SET_MAP_LAYERS';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -34,8 +35,9 @@ export function setLocation(location) {
   return { type: SET_LOCATION, location };
 }
 
-export function setMapLayer(mapLayer) {
-  return { type: SET_MAP_LAYER, mapLayer };
+export function setMapLayers(mapLayers) {
+  const azLayer = mapLayers.find((id) => getIsAz(id));
+  return { type: SET_MAP_LAYERS, mapLayers, azLayer };
 }
 
 export function setMapView(mapView) {
