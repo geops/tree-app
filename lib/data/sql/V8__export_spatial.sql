@@ -162,6 +162,13 @@ SELECT CASE naisue is null
 FROM forest_types_ju
 WHERE nais1 IS NOT NULL
 UNION
+SELECT nais_2022 AS code,
+       ST_Transform(geom, 3857) as geometry,
+       nais_2022 as code_vd,
+       null as info_vd
+FROM forest_types_bl
+WHERE nais_2022 IS NOT NULL
+UNION
 SELECT nais AS code,
        ST_Transform(geom, 3857) as geometry,
        vd as code_vd,
