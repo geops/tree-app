@@ -21,6 +21,8 @@
   },
   "export": {
     "export": "Exporter",
+    "exportRecommendation": "Exporter recommandation",
+    "exportForestTypeDescription": "Exporter description de station",
     "recommendationMainTitle": "Extrait de le Tree-App",
     "coordinate": "Coordonner",
     "date": "Date",
@@ -174,7 +176,6 @@
       "waterPermeability": "Perméabilité à l'eau",
       "permeability": "Perméabilité"
     },
-    "terrain": "Terrain",
     "vegetation": "Végétation aspect"
   },
   "dropdown": {
@@ -194,6 +195,13 @@
     "label": "Écorégion"
   },
   "forestType": {
+    "la": "Désignation latine",
+    "properties": "Propriétés",
+    "rejuvDev": "Rajeunissement et développement",
+    "care": "Maintenance",
+    "descriptionForestType": "Description emplacement",
+    "vegetationIndicator": "Groupes d'indicateurs",
+    "geology": "Géologie",
     "aspect": {
       "001-025": "Nord à nord-nord-est",
       "026-050": "Nord-nord-est à nord-est",
@@ -304,7 +312,11 @@
       "yes": "Oui",
       "no": "Non",
       "unknown": "pas évalué"
-    }
+    },
+    "cantonalForestType": "Type de station cantonale",
+    "cantonalTransitionForestTypes": "Types de station de transition cantonales",
+    "terrain": "Terrain",
+    "additionalInfo": "Informations supplémentaires"
   },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
@@ -365,7 +377,8 @@
     "forest_types": "Carte des stations forestières",
     "hint": "Veuillez sélectionner une position sur la carte",
     "legend": "Légende",
-    "silver_fir_areas": "Aires du sapin blanc"
+    "silver_fir_areas": "Aires du sapin blanc",
+    "layers": "Couches de la carte"
   },
   "offline": {
     "success": "Tree App est disponible hors ligne",
@@ -422,7 +435,9 @@
   },
   "profiles": {
     "ch": "Confédération",
-    "lu": "Lucerne"
+    "lu": "Lucerne",
+    "bl": "Bâle",
+    "vd": "Vaud"
   },
   "forestTypeModal": {
     "compare": "Comparer les types de stations",
@@ -430,15 +445,14 @@
     "noDataHeader": "Pas de données disponibles",
     "noDataMessage": "Il n'y a pas de données pour ce type de station dans le profil actuel. Êtes-vous dans le bon profil?",
     "noComparisonMessage": "La comparaison des types de stations est désactivée dans le profil actuel. Êtes-vous dans le bon profil?",
-    "maximumForestTypes": "Maximum de types de stations à comparer a été atteint"
+    "maximumForestTypes": "Maximum de types de stations à comparer a été atteint."
   },
   "lu": {
     "forestType": {
       "appearance": "Apparence",
       "aptitude": "Aptitude",
       "aptitudeMeaning": "",
-      "associations": "",
-      "care": "Maintenance",
+      "associations": "Associations",
       "compactRisk": {
         "0": "non précisé",
         "1": "faible risque de compactage (même par temps humide seulement compactage insignifiant du sol)",
@@ -449,7 +463,7 @@
         "label": "Risque de compactage"
       },
       "description": "Description",
-      "general": "Type de station",
+      "descriptionNaturalForest": "Description forêt naturelle",
       "heightDispersion": "Répartition en altitude",
       "location": "Emplacement",
       "meaning": "Sens",
@@ -478,7 +492,6 @@
       "tilleringFirwood": "Proportion de sapin",
       "tilleringHardwood": "Proportion de feuillus",
       "vegetationIndicator": {
-        "label": "Groupes d'indicateurs",
         "a": "Indicateurs de conditions très acides, milieux humides à mouillés",
         "b": "Indicateurs de conditions très acides, fraîches à sèches",
         "c": "Indicateurs de conditions faiblement acides",
@@ -495,8 +508,66 @@
         "o": "Indicateur de base alternativement humide/séche",
         "p": "Indicateur de sécheresse"
       },
-      "terrain": "Terrain",
-      "cantonalForestType": "Type de station cantonal"
+      "terrain": "Terrain"
+    }
+  },
+  "bl": {
+    "forestType": {
+      "descriptionNaturalForest": "Beschrieb Waldbild",
+      "vegetationIndicators": {
+        "A": "Starke Säurezeiger, lichtbedürftig",
+        "B1": "Säurezeiger",
+        "B2": "Säurezeiger auf eher trockenen Böden",
+        "C1": "Säurezeiger",
+        "C2": "Schwacher Säurezeiger auf wechselfeuchten Böden, lichtbedürftig",
+        "D1": "Schwache Säurezeiger",
+        "D2": "Schwacher Säurezeiger leichter Wechselfeuchtigkeit in eher flachen Lagen",
+        "D3": "",
+        "E1": "Säurezeiger auf frischen Böden, auch Fichtenfolger",
+        "E2": "Säureertragende Arten",
+        "F": "Arten mit weiter Standortsamplitude",
+        "G": "Arten mit weiter Standortsamplitude",
+        "H": "Mullbodenzeiger",
+        "I": "Zeiger frischer Mullböden",
+        "J": "Basenzeiger (Kalk im Unterboden)",
+        "K": "Frische- und Basenzeiger",
+        "L": "Kalkzeiger",
+        "M": "Kalkzeiger",
+        "N1": "Zeiger mässiger Trockenheit/Wechseltrockenheit",
+        "N2": "Trockenheitszeiger, ausschliesslich auf Kalkböden",
+        "N3": "Trockenheitszeiger",
+        "O1": "Trockenheitszeiger, lichtbedürftig",
+        "O2": "Zeiger von Wechseltrockenheit",
+        "O3": "Zeiger starker Wechseltrockenheit",
+        "O4": "Wechselfeuchtigkeitszeiger in eher schattigen Lagen",
+        "O5": "Zeiger von Trockenheit/Wechseltrockenheit in eher montanen Lagen",
+        "O6": "Zeiger starker Trockenheit",
+        "O7": "Zeiger starker (Wechsel-)Trockenheit in Eichen- und Föhrenwälder",
+        "O8": "Zeiger starker (Wechsel-)Trockenheit in Föhrenwälder",
+        "P1": "Frische- und Basenzeiger",
+        "P2": "Frühlingspflanzen auf frischen, basenreichen Böden",
+        "P3": "Frühlingspflanzen auf frischen Böden",
+        "P4": "Frühlingspflanzen auf frischen Böden mit Schwarzwaldschotter",
+        "Q1": "Zeiger frischer, lehmiger kalkreicher Böden",
+        "Q2": "Mässige Feuchtigkeitszeiger",
+        "Q3": "Feuctigkeitszeiger",
+        "R": "Nässezeiger",
+        "S": "Zeiger starker Nässe",
+        "T": "Zeiger starker Quellnässe auf kalkreichen Böden",
+        "U1": "Zeiger ständiger starker, zum Teil wechselder Nässe",
+        "U2": "Zeiger ständiger starker Nässe",
+        "U3": "Nässezeiger in der obermontanen Stufe",
+        "V1": "Zeiger von Hangschutt (schattige Laubwälder)",
+        "V2": "Zeiger von Hangschutt (auch wärmere Lagen und Blockschutt-Fichtenwald)",
+        "W": "Zeiger warmer Lagen",
+        "X1": "Montanzeiger auf eher lehmigen, oberflächlich oft etwas sauren Böden",
+        "X2": "Montanzeiger auf lehmigen, basenreichen Böden",
+        "Y1": "Montanzeiger auf basenreichen Böden",
+        "Y2": "Montanzeiger auf neutralen bis basenreichen Böden",
+        "Z1": "Montanzeiger auf Kalkböden",
+        "Z2": "Zeiger der obermontanen Stufe auf frischen bis feuchten Böden",
+        "Z3": "Zeiger der obermontanen Stufe auf feuchten Böden"
+      }
     }
   }
 }

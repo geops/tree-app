@@ -21,6 +21,8 @@
   },
   "export": {
     "export": "Exportieren",
+    "exportRecommendation": "Empfehlung exportieren",
+    "exportForestTypeDescription": "Standortbeschreibung exportieren",
     "recommendationMainTitle": "Auszug aus der Tree-App",
     "coordinate": "Koordinate",
     "date": "Datum",
@@ -194,6 +196,15 @@
     "label": "Standortsregion"
   },
   "forestType": {
+    "la": "Lateinische Bezeichnung",
+    "properties": "Eigenschaften",
+    "rejuvDev": "Verjüngung und Entwicklung",
+    "care": "Pflege",
+    "descriptionNaturalForest": "Beschrieb Naturwald",
+    "descriptionForestType": "Beschrieb Standort",
+    "vegetationIndicator": "Zeigergruppen",
+    "geology": "Geologie",
+    "terrain": "Relief",
     "aspect": {
       "001-025": "Nord - Nordnordost",
       "026-050": "Nordnordost - Nordost",
@@ -304,7 +315,10 @@
       "yes": "Ja",
       "no": "Nein",
       "unknown": "nicht angesprochen"
-    }
+    },
+    "cantonalForestType": "Kantonaler Standortstyp",
+    "cantonalTransitionForestTypes": "Kantonale Übergangsstandortstypen",
+    "additionalInfo": "Zusatzinformationen"
   },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
@@ -365,7 +379,8 @@
     "forest_types": "Standortskarte",
     "hint": "Bitte Position wählen",
     "legend": "Legende",
-    "silver_fir_areas": "Tannenareale"
+    "silver_fir_areas": "Tannenareale",
+    "layers": "Kartenebenen"
   },
   "offline": {
     "success": "Die Tree App ist offline verfügbar.",
@@ -422,7 +437,9 @@
   },
   "profiles": {
     "ch": "Bund",
-    "lu": "Luzern"
+    "bl": "Basel",
+    "lu": "Luzern",
+    "vd": "Vaud"
   },
   "forestTypeModal": {
     "compare": "Standortstypen vergleichen",
@@ -430,7 +447,7 @@
     "noDataHeader": "Keine Daten vorhanden",
     "noDataMessage": "Für diesen Standort gibt es im aktuellen Profil keine Daten. Sind Sie im richtigen Profil?",
     "noComparisonMessage": "Der Standortvergleich ist im aktuellen Profil deaktiviert. Sind Sie im richtigen Profil?",
-    "maximumForestTypes": "Maximum an Vergleichsstandorte erreicht!"
+    "maximumForestTypes": "Maximum an Vergleichsstandorte erreicht."
   },
   "lu": {
     "forestType": {
@@ -438,7 +455,6 @@
       "aptitude": "Eignung",
       "aptitudeMeaning": "Eignung und Bedeutung",
       "associations": "Gesellschaftsgruppen",
-      "care": "Pflege",
       "compactRisk": {
         "0": "keine Angabe",
         "1": "geringes Verdichtungsrisiko (auch bei nassem Wetter nur unbedeutende Verdichtung der Böden)",
@@ -449,7 +465,6 @@
         "label": "Verdichtungsrisiko"
       },
       "description": "Beschreibung",
-      "general": "Standortstyp",
       "heightDispersion": "Höhenverbreitung",
       "location": "Standort",
       "meaning": "Bedeutung",
@@ -462,23 +477,23 @@
         "label": "Priorität",
         "k": "kantonale Priorität"
       },
-      "rejuvDev": "Verjüngung und Entwicklung",
       "subGroups": "Standortstypen",
       "soil": {
         "label": "Boden",
-        "l": "Streuhorizont",
-        "f": "Fermentations-Horizont",
-        "h": "Humus-Horizont",
-        "ahh": "Mineralerde-Durchmischungs-Horizont (mechanisch)",
-        "ah": "Mineralerde-Durchmischungs-Horizont (biologisch)",
-        "basen": "Kalk",
-        "feuchte": "vergleyt"
+        "typeMapping": {
+          "l": "Streuhorizont",
+          "f": "Fermentations-Horizont",
+          "h": "Humus-Horizont",
+          "ahh": "Mineralerde-Durchmischungs-Horizont (mechanisch)",
+          "ah": "Mineralerde-Durchmischungs-Horizont (biologisch)",
+          "basen": "Kalk",
+          "feuchte": "vergleyt"
+        }
       },
       "tillering": "Bestockung",
       "tilleringFirwood": "Tannenanteil",
       "tilleringHardwood": "Laubholzanteil",
-      "vegetationIndicator": {
-        "label": "Zeigergruppen",
+      "vegetationIndicators": {
         "a": "Starke Säurezeiger, feucht-nass",
         "b": "Starke Säurezeiger, frisch / trocken",
         "c": "Schwache Säurezeiger",
@@ -494,9 +509,66 @@
         "n": "Arten auf Blockschutt",
         "o": "Basenzeiger wechselfeucht / wechseltrocken",
         "p": "Trockenheitszeiger"
-      },
-      "terrain": "Relief",
-      "cantonalForestType": "Kantonaler Standortstyp"
+      }
+    }
+  },
+  "bl": {
+    "forestType": {
+      "descriptionNaturalForest": "Beschrieb Waldbild",
+      "vegetationIndicators": {
+        "A": "Starke Säurezeiger, lichtbedürftig",
+        "B1": "Säurezeiger",
+        "B2": "Säurezeiger auf eher trockenen Böden",
+        "C1": "Säurezeiger",
+        "C2": "Schwacher Säurezeiger auf wechselfeuchten Böden, lichtbedürftig",
+        "D1": "Schwache Säurezeiger",
+        "D2": "Schwacher Säurezeiger leichter Wechselfeuchtigkeit in eher flachen Lagen",
+        "D3": "",
+        "E1": "Säurezeiger auf frischen Böden, auch Fichtenfolger",
+        "E2": "Säureertragende Arten",
+        "F": "Arten mit weiter Standortsamplitude",
+        "G": "Arten mit weiter Standortsamplitude",
+        "H": "Mullbodenzeiger",
+        "I": "Zeiger frischer Mullböden",
+        "J": "Basenzeiger (Kalk im Unterboden)",
+        "K": "Frische- und Basenzeiger",
+        "L": "Kalkzeiger",
+        "M": "Kalkzeiger",
+        "N1": "Zeiger mässiger Trockenheit/Wechseltrockenheit",
+        "N2": "Trockenheitszeiger, ausschliesslich auf Kalkböden",
+        "N3": "Trockenheitszeiger",
+        "O1": "Trockenheitszeiger, lichtbedürftig",
+        "O2": "Zeiger von Wechseltrockenheit",
+        "O3": "Zeiger starker Wechseltrockenheit",
+        "O4": "Wechselfeuchtigkeitszeiger in eher schattigen Lagen",
+        "O5": "Zeiger von Trockenheit/Wechseltrockenheit in eher montanen Lagen",
+        "O6": "Zeiger starker Trockenheit",
+        "O7": "Zeiger starker (Wechsel-)Trockenheit in Eichen- und Föhrenwälder",
+        "O8": "Zeiger starker (Wechsel-)Trockenheit in Föhrenwälder",
+        "P1": "Frische- und Basenzeiger",
+        "P2": "Frühlingspflanzen auf frischen, basenreichen Böden",
+        "P3": "Frühlingspflanzen auf frischen Böden",
+        "P4": "Frühlingspflanzen auf frischen Böden mit Schwarzwaldschotter",
+        "Q1": "Zeiger frischer, lehmiger kalkreicher Böden",
+        "Q2": "Mässige Feuchtigkeitszeiger",
+        "Q3": "Feuctigkeitszeiger",
+        "R": "Nässezeiger",
+        "S": "Zeiger starker Nässe",
+        "T": "Zeiger starker Quellnässe auf kalkreichen Böden",
+        "U1": "Zeiger ständiger starker, zum Teil wechselder Nässe",
+        "U2": "Zeiger ständiger starker Nässe",
+        "U3": "Nässezeiger in der obermontanen Stufe",
+        "V1": "Zeiger von Hangschutt (schattige Laubwälder)",
+        "V2": "Zeiger von Hangschutt (auch wärmere Lagen und Blockschutt-Fichtenwald)",
+        "W": "Zeiger warmer Lagen",
+        "X1": "Montanzeiger auf eher lehmigen, oberflächlich oft etwas sauren Böden",
+        "X2": "Montanzeiger auf lehmigen, basenreichen Böden",
+        "Y1": "Montanzeiger auf basenreichen Böden",
+        "Y2": "Montanzeiger auf neutralen bis basenreichen Böden",
+        "Z1": "Montanzeiger auf Kalkböden",
+        "Z2": "Zeiger der obermontanen Stufe auf frischen bis feuchten Böden",
+        "Z3": "Zeiger der obermontanen Stufe auf feuchten Böden"
+      }
     }
   }
 }

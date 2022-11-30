@@ -1,9 +1,9 @@
+import i18n from 'i18next';
 import {
   SET_FORM_LOCATION,
   SET_LATIN_ACTIVE,
   SET_LOCATION_RESULT,
   SET_LOCATION,
-  SET_MAP_LAYER,
   SET_MAP_LOCATION,
   SET_MAP_VIEW,
   SET_PROJECTION_MODE,
@@ -15,7 +15,10 @@ import {
   SET_FORESTTYPE_DESCRIPTION,
   SET_FORESTTYPE_MODAL,
   SET_FUTURE,
+  SET_LANG_OVERRIDE,
+  SET_MAP_LAYERS,
 } from './actions';
+import translation from '../i18n/resources/de/translation.json';
 
 const initialProjection = { options: {}, projections: [] };
 export const initialState = {
@@ -25,7 +28,8 @@ export const initialState = {
   forestTypeCompare: [],
   formLocation: {},
   locationResult: { options: {} },
-  mapLayer: 'cb',
+  mapLayers: ['ft', 'cb'],
+  azLayer: 'azt',
   mapLocation: {},
   mapView: '9|2660013|1185171',
   projectionMode: 'm',
@@ -38,6 +42,7 @@ export const initialState = {
   targetAltitudinalZone: null,
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
   future: true,
+  langOverride: null,
 };
 
 const initialFormLocation = {
@@ -79,21 +84,40 @@ function tree(state = initialState, action) {
     case SET_LOCATION: {
       return { ...state, location: action.location };
     }
-    case SET_MAP_LAYER:
-      return { ...state, mapLayer: action.mapLayer };
+    case SET_MAP_LAYERS: {
+      const newState = { ...state, mapLayers: action.mapLayers };
+      if (action.azLayer) {
+        newState.azLayer = action.azLayer;
+      }
+      return newState;
+    }
     case SET_MAP_LOCATION: {
-      const { resetFormLocation } = action;
+      const { resetFormLocation, resetMapLocation, projectionMode } = action;
       const formLocation = resetFormLocation
         ? getFormLocation(state, { formLocation: initialFormLocation })
         : state.formLocation;
-      const mapLocation = { ...state.mapLocation, ...action.mapLocation };
+      const mapLocation = resetMapLocation
+        ? action.mapLocation
+        : { ...state.mapLocation, ...action.mapLocation };
       if (mapLocation.forestType) {
         formLocation.forestType = undefined;
       }
       if (mapLocation.transitionForestType) {
         formLocation.transitionForestType = undefined;
       }
-      return { ...state, formLocation, mapLocation, projectionMode: 'm' };
+      if (!mapLocation.forestType) {
+        Object.keys(translation.profiles).forEach((profile) => {
+          // Remove cantonal data when no forestType found
+          delete mapLocation[`forestType_${profile}`];
+          delete mapLocation[`info_${profile}`];
+        });
+      }
+      return {
+        ...state,
+        formLocation,
+        mapLocation,
+        projectionMode: projectionMode || 'm',
+      };
     }
     case SET_MAP_VIEW:
       return { ...state, mapView: action.mapView };
@@ -125,6 +149,9 @@ function tree(state = initialState, action) {
       localStorage.setItem('tree.profile', action.activeProfile);
       return { ...state, activeProfile: action.activeProfile };
     case SET_FORESTTYPE_COMPARISON:
+      if (action.forestTypeComparison?.length > 4) {
+        action.forestTypeComparison.splice(3, 1);
+      }
       return {
         ...state,
         forestTypeComparison: action.forestTypeComparison,
@@ -144,6 +171,9 @@ function tree(state = initialState, action) {
       };
     case SET_FORESTTYPE_MODAL:
       return { ...state, forestTypeModal: action.forestTypeModal };
+    case SET_LANG_OVERRIDE:
+      i18n.changeLanguage(action.langOverride);
+      return { ...state, langOverride: action.langOverride };
     default:
       return state;
   }

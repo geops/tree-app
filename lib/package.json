@@ -8,7 +8,7 @@
   ],
   "main": "build/index.js",
   "devDependencies": {
-    "@geops/mapbox-gl-fonts": "3.0.1",
+    "@geops/mapbox-gl-fonts": "3.0.2",
     "@neutrinojs/airbnb-base": "9.5.0",
     "@neutrinojs/jest": "9.5.0",
     "@neutrinojs/library": "9.5.0",
@@ -21,10 +21,9 @@
     "husky": "4.3.8",
     "jest": "26.6.3",
     "lint-staged": "10.5.4",
-    "netlify-cli": "6.14.18",
     "neutrino": "9.5.0",
     "prettier": "2.4.1",
-    "semantic-release": "18.0.0",
+    "semantic-release": "19.0.3",
     "webpack": "4.46.0",
     "webpack-cli": "3.3.12"
   },
@@ -36,9 +35,9 @@
     "data:spatial:export": "cd data && docker-compose exec db sh -c '/data/spatial/2-export.sh'",
     "data:spatial:tile": "cd data && docker-compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
     "data:spatial:fonts": "./data/spatial/4-fonts.sh",
-    "data:spatial:deploy:local": "yarn run netlify dev -d ./data/spatial/tiles",
-    "data:spatial:deploy": "netlify deploy --dir=data/spatial/tiles --prod --site=5dc39927-3ba0-485e-b01d-2e15385ce212",
-    "data:spatial:deploy:staging": "netlify deploy --dir=data/spatial/tiles --prod --site=25c2d3a9-948d-4f31-a534-44830dcd5e12",
+    "data:spatial:deploy": "vercel deploy --cwd ./data/spatial/tiles",
+    "data:spatial:deploy:local": "vercel dev --cwd ./data/spatial/tiles",
+    "data:export:csv": "node --experimental-json-modules export/src/export_csv.mjs",
     "doc:build": "documentation build src/** --format html --output doc --config documentation.yml",
     "doc:serve": "documentation serve --config documentation.yml --watch src/**",
     "build": "webpack --mode production",
@@ -54,7 +53,8 @@
     "lodash.get": "^4.4.2",
     "lodash.intersection": "^4.4.0",
     "lodash.union": "^4.6.0",
-    "lodash.xor": "^4.5.0"
+    "lodash.xor": "^4.5.0",
+    "proj4": "^2.8.0"
   },
   "repository": {
     "type": "git",

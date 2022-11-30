@@ -10,7 +10,6 @@ import { useHistory } from 'react-router-dom';
 import { List, Modal } from 'semantic-ui-react';
 import { info } from '@geops/tree-lib';
 
-import useIsMobile from '../hooks/useIsMobile';
 import { EPSG2056 } from '../map/projection';
 import { layers } from '../map/style.json';
 import mapPositionIcon from '../icons/mapPosition.svg';
@@ -19,6 +18,7 @@ import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
 import { setMapLocation } from '../store/actions';
 import styles from './MapLocation.module.css';
+import translation from '../i18n/resources/de/translation.json';
 
 const getKey = (sl) =>
   (
@@ -32,12 +32,12 @@ const getHasTransition = (code) => code.includes('(') && code.endsWith(')');
 const featuresToLocation = (location, f) => {
   const key = getKey(f.sourceLayer) || f.sourceLayer;
   const value = f.properties.code.toString();
-  const transition = value.includes('(') && value.endsWith(')');
+  const transition = getHasTransition(value);
 
   if (f.sourceLayer === 'forest_types') {
     let forestType = value;
     let transitionForestType = null;
-    if (getHasTransition(value)) {
+    if (transition) {
       [, forestType, transitionForestType] = value.match(/(.*)\((.*)\)/);
     }
     let forestTypeInfo;
@@ -46,6 +46,16 @@ const featuresToLocation = (location, f) => {
     } catch (error) {
       // ignore missing forest types
     }
+
+    const cantonalData = Object.keys(translation.profiles).reduce(
+      (allCantonalData, profile) => ({
+        ...allCantonalData,
+        [`forestType_${profile}`]: f.properties[`code_${profile}`],
+        [`info_${profile}`]: f.properties[`info_${profile}`],
+      }),
+      {},
+    );
+
     if (
       forestTypeInfo &&
       !location.forestTypes.find((t) => t.forestType === forestType)
@@ -59,18 +69,19 @@ const featuresToLocation = (location, f) => {
             transitionForestType,
             transition,
             info: forestTypeInfo,
+            ...cantonalData,
           },
         ],
       };
     }
-    return location;
+    return { ...location, ...cantonalData };
   }
 
   if (f.sourceLayer.startsWith('altitudinal_zones_')) {
     if (value === '-10') {
       return { ...location, [key]: null };
     }
-    if (getHasTransition(value)) {
+    if (transition) {
       const [, azValue, transAzValue] = value.match(/(.*)\((.*)\)/);
       return {
         ...location,
@@ -104,25 +115,20 @@ function MapLocation() {
   const map = useContext(MapContext);
   const dispatch = useDispatch();
   const history = useHistory();
-  const isMobile = useIsMobile();
   const mapLocation = useSelector((state) => state.mapLocation);
+  const activeProfile = useSelector((state) => state.activeProfile);
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
-    let originalMobilePathname;
-    if (isMobile) {
-      // load map data on mobile and redirect to original path afterwards
-      originalMobilePathname = window.location.pathname;
-      history.replace(`/${window.location.search}`);
-    }
-
     const handleCoords = ({ coordinate }, resetFormLocation = true) => {
       iconFeature.getGeometry().setCoordinates(coordinate);
       const pixel = map.getPixelFromCoordinate(coordinate);
       const features = map.getFeaturesAtPixel(pixel) || [];
       let location = features
         .filter((feature) => feature.properties?.code !== undefined)
-        .reduce(featuresToLocation, { forestTypes: [] });
+        .reduce(featuresToLocation, {
+          forestTypes: [],
+        });
       location.coordinate = to2056(coordinate);
       if (location.forestTypes.length === 1) {
         location = { ...location, ...location.forestTypes[0] };
@@ -132,11 +138,9 @@ function MapLocation() {
         location.transition = null;
       }
       dispatch(setMapLocation(location, resetFormLocation));
-      if (isMobile === false && location.forestType) {
-        history.push(`/projection${window.location.search}`);
-      } else if (originalMobilePathname) {
-        history.replace(`${originalMobilePathname}${window.location.search}`);
-        originalMobilePathname = null;
+      history.push(`/projection${window.location.search}`);
+      if (!location.altitudinalZone) {
+        dispatch(setMapLocation(location, true, true, 'f'));
       }
     };
 
@@ -154,7 +158,8 @@ function MapLocation() {
     map.getLayers().on('propertychange', waitForLoad);
     map.on('singleclick', handleCoords);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [map, dispatch]);
+  }, [map, activeProfile, dispatch]);
+
   return (
     <>
       <Vector source={vectorSource} zIndex={999} />
@@ -169,27 +174,29 @@ function MapLocation() {
         <Modal.Header>{t('forestType.select')}</Modal.Header>
         <Modal.Content>
           <List divided selection>
-            {mapLocation.forestTypes?.map(
-              (ft) =>
+            {mapLocation.forestTypes?.map((ft) => {
+              const cantonalFt = ft[`forestType_${activeProfile}`];
+              return (
                 ft.info && (
                   <List.Item
                     className={styles.item}
                     description={ft.info[i18n.language]}
                     header={`${
                       ft.transition
-                        ? `${ft.forestType} (${ft.transitionForestType})`
-                        : ft.forestType
+                        ? `${cantonalFt || ft.forestType} (${
+                            ft.transitionForestType
+                          })`
+                        : cantonalFt || ft.forestType
                     }`}
                     key={ft.forestType}
                     onClick={() => {
                       dispatch(setMapLocation({ ...mapLocation, ...ft }, true));
-                      if (isMobile === false) {
-                        history.push(`/projection${window.location.search}`);
-                      }
+                      history.push(`/projection${window.location.search}`);
                     }}
                   />
-                ),
-            )}
+                )
+              );
+            })}
           </List>
         </Modal.Content>
       </Modal>

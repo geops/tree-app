@@ -18,4 +18,9 @@
 
 .field label {
   color: var(--primary-color-500) !important;
+  text-align: left;
+}
+
+.field label h5 {
+  margin-bottom: 4px !important;
 }

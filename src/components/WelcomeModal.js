@@ -1,9 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Icon, Image, Modal } from 'semantic-ui-react';
+import { Image, Modal } from 'semantic-ui-react';
 
-import Button from './Button';
 import InfoAbout from './InfoAbout';
 import LanguageSwitcher from './LanguageSwitcher';
 import ProfileSwitcher from './ProfileSwitcher';
@@ -16,27 +15,24 @@ function WelcomeModal() {
   const dispatch = useDispatch();
   const welcomeModalOpen = useSelector((state) => state.welcomeModalOpen);
   return (
-    <Modal open={welcomeModalOpen}>
+    <Modal
+      open={welcomeModalOpen}
+      onClose={() => dispatch(setWelcomeModal(false))}
+      closeIcon
+    >
       <Modal.Header>{t('welcome.header')}</Modal.Header>
       <Modal.Content image>
         <Image wrapped>
           <Logo className={styles.logo} />
         </Image>
-        <Modal.Description>
+        <Modal.Description className={styles.description}>
           <InfoAbout />
         </Modal.Description>
       </Modal.Content>
-      <Modal.Actions>
-        <div className={styles.actions}>
+      <Modal.Actions className={styles.actions}>
+        <div className={styles.switchers}>
           <LanguageSwitcher />
           <ProfileSwitcher />
-          <Button
-            active
-            data-cypress="welcomeModalGo"
-            onClick={() => dispatch(setWelcomeModal(false))}
-          >
-            <Icon name="checkmark" /> {t('welcome.close')}
-          </Button>
         </div>
       </Modal.Actions>
     </Modal>

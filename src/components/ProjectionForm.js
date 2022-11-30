@@ -1,19 +1,19 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
-import { info } from '@geops/tree-lib';
+import { info, utils } from '@geops/tree-lib';
 
 import Button from './Button';
 import ChoiceButton from './ChoiceButton';
 import Dropdown from './Dropdown';
 import { setFormLocation, setForestTypeDescription } from '../store/actions';
-import { transitionMapping } from '../utils/luTransitionMapping';
 
 import styles from './ProjectionForm.module.css';
 
+const { getMapping } = utils();
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
 const getButtonOptions = (type, lng) => (key) => ({
   key,
@@ -23,16 +23,21 @@ const getDropdownOptions =
   (type, lng, dispatch, includeKey = false) =>
   (key) => ({
     key,
+    title: `${key} -${info(type, key)[lng]}`,
     content: dispatch ? (
-      <>
+      <div className={styles.option}>
         <Button
           active
           compact
           icon="info"
           onClick={() => dispatch(setForestTypeDescription(key))}
         />
-        {key} - {info(type, key)[lng]}
-      </>
+        <span className={styles.optionLabel}>
+          <span>{key}</span>
+          <span>-</span>
+          <span>{info(type, key)[lng]}</span>
+        </span>
+      </div>
     ) : (
       info(type, key)[lng]
     ),
@@ -64,7 +69,6 @@ function ProjectionForm() {
     projectionMode === 'm'
       ? projectionResult.extreme.options
       : projectionResult.form.options;
-
   const [fieldActive, setFieldActive] = useState('');
   const activateField = (field) => setFieldActive(field);
   const deactivateField = () => setFieldActive('');
@@ -90,11 +94,27 @@ function ProjectionForm() {
   };
 
   const formActive = projectionMode === 'm' || fieldActive;
-  const cantonalForestType =
-    activeProfile === 'lu' &&
-    transitionMapping[
-      `${location.forestType}(${location.transitionForestType})`
-    ];
+
+  const cantonalTransitionForestTypes = useMemo(() => {
+    try {
+      return getMapping('transition', activeProfile)[
+        `${location.forestType}(${location.transitionForestType})`
+      ];
+    } catch {
+      return undefined;
+    }
+  }, [location, activeProfile]);
+
+  const cantonalForestType = useMemo(() => {
+    const ft = location.transition
+      ? `${location.forestType}(${location.transitionForestType})`
+      : location.forestType;
+
+    return (
+      location[`forestType_${activeProfile}`] !== ft &&
+      location[`forestType_${activeProfile}`]
+    );
+  }, [location, activeProfile]);
 
   return (
     <Form className={formActive ? styles.formActive : styles.form}>
@@ -126,6 +146,14 @@ function ProjectionForm() {
           value={getValue('altitudinalZone')}
         />
       )}
+      {cantonalForestType ? (
+        <div className={styles.cantonalForestTypes}>
+          <label className={styles.cantonalForestTypesLabel}>
+            {t('forestType.cantonalForestType')}
+          </label>
+          <h3>{cantonalForestType}</h3>
+        </div>
+      ) : null}
       {options.forestType ? (
         <>
           <Dropdown
@@ -266,21 +294,31 @@ function ProjectionForm() {
             value={getValue('targetAltitudinalZone')}
           />
         )}
-      {cantonalForestType && (
+      {cantonalTransitionForestTypes?.length && (
         <>
-          <p className={styles.cantonalForestTypeLabel}>
-            {t('lu.forestType.cantonalForestType')}
-          </p>
-          <Button
-            active
-            compact
-            icon="info"
-            onClick={() =>
-              dispatch(setForestTypeDescription(cantonalForestType))
-            }
-          />
-          {cantonalForestType} -{' '}
-          {info('forestType', cantonalForestType, activeProfile)[i18n.language]}
+          <label className={styles.cantonalForestTypesLabel}>
+            {t('forestType.cantonalTransitionForestTypes')}
+          </label>
+          {cantonalTransitionForestTypes.map((cft) => {
+            const cftInfo = info('forestType', cft, activeProfile);
+            return (
+              <div
+                className={styles.cantonalForestTypes}
+                key={`cantonal-ft-${cft}`}
+              >
+                <Button
+                  active
+                  compact
+                  icon="info"
+                  onClick={() => dispatch(setForestTypeDescription(cft))}
+                />
+                <span>{`${cft}${cftInfo[i18n.language] ? ' - ' : ''}`}</span>
+                <span>
+                  {cftInfo[i18n.language] ? cftInfo[i18n.language] : ''}
+                </span>
+              </div>
+            );
+          })}
         </>
       )}
     </Form>

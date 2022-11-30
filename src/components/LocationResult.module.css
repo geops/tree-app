@@ -19,6 +19,8 @@
 }
 
 .forestTypeButton {
+  display: grid !important;
+  grid-template-columns: auto auto auto;
   text-align: left !important;
-  text-align-last: center;
+  gap: 5px;
 }

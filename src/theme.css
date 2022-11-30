@@ -8,6 +8,9 @@
   --primary-color-700: #004a4d;
   --primary-color-800: #003a3d;
   --primary-color-900: #002a2c;
+  --max-width-right-column: 800px;
+  --fluid-button-padding: clamp(5px, 2vw, 30px);
+  --fluid-layers-width: clamp(210px, 15vw, 200px);
 }
 
 .Toastify__toast-icon {

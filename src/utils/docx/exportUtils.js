@@ -7,6 +7,8 @@ import {
   VerticalAlign,
   BorderStyle,
   TableRow,
+  HeadingLevel,
+  ExternalHyperlink,
 } from 'docx';
 import { svgAsPngUri } from 'save-svg-as-png';
 import { renderToString } from 'react-dom/server';
@@ -107,6 +109,41 @@ export const jsxToBlob = (jsx) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
 // Docx table helpers
+export const getPermalink = (text) =>
+  new Paragraph({
+    style: 'main-20',
+    children: [
+      new ExternalHyperlink({
+        children: [
+          new TextRun({
+            text,
+            style: 'Hyperlink',
+          }),
+        ],
+        link: window.location.href,
+      }),
+    ],
+  });
+
+export const getTitle = (title, latin) => {
+  if (!title) {
+    return new Paragraph();
+  }
+  const children = [new TextRun(title)];
+  if (latin) {
+    children.push(
+      new TextRun({
+        text: latin,
+        italics: true,
+      }),
+    );
+  }
+  return new Paragraph({
+    children,
+    heading: HeadingLevel.HEADING_3,
+  });
+};
+
 export const getScenariosTableCell = (
   text,
   fontStyle = 'main-20',
@@ -140,8 +177,12 @@ export const getLocationTableCell = (
   content,
   fontStyle = 'main-20',
   padding = cellPadding,
+  borders = defaultBorder,
 ) => {
   let children = [];
+  if (!content) {
+    children = [new Paragraph('-')];
+  }
   if (typeof content === 'string') {
     children = content.split('\\n').map(
       (string) =>
@@ -156,17 +197,22 @@ export const getLocationTableCell = (
   }
   return new TableCell({
     verticalAlign: VerticalAlign.CENTER,
-    borders: defaultBorder,
+    borders,
     margins: padding,
-    children,
+    children: children.length > 0 ? children : [new Paragraph('-')],
   });
 };
 
-export const getLocationTableRow = (headerText, valueContent) =>
+export const getLocationTableRow = (
+  headerText,
+  valueContent,
+  padding,
+  borders,
+) =>
   new TableRow({
     children: [
-      getLocationTableCell(headerText, 'main-20-bold'),
-      getLocationTableCell(valueContent),
+      getLocationTableCell(headerText, 'main-20-bold', padding, borders),
+      getLocationTableCell(valueContent, undefined, padding, borders),
     ],
   });
 

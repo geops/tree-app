@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DataTable from './ForestTypeDescription/lu/DataTable';
+import DataTable from './ForestTypeModal/ForestTypeDescription/DataTable';
 
 const bodenLabels = [
   'Merkmal vereinzelt sichtbar',
@@ -30,7 +30,7 @@ export default function InfoLucerne() {
         In folgendem Dokument sind diese Grundgedanken mit allgemeiner
         Gültigkeit in der Form praktischer Richtlinien formuliert:{' '}
         <a
-          href="https://lawa.lu.ch/-/media/LAWA/Dokumente/Wald/waldplanung/Grundlagen/AN_Kommentar_Waldbau_2021.pdf"
+          href="https://lawa.lu.ch/-/media/LAWA/Dokumente/Wald/waldplanung/Grundlagen/AN_Kommentar_Waldbau_Kurzfassung.pdf"
           target="info-lucerne"
         >
           Waldbaukommentar Luzern

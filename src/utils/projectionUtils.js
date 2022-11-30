@@ -1,26 +1,11 @@
 import React from 'react';
-import { hochmontanAltitudinalZones } from '../store/enhancers/projection';
+import { utils } from '@geops/tree-lib';
 import styles from '../components/ProjectionResult.module.css';
 import { ReactComponent as EarthExtremeIcon } from '../icons/earthExtreme.svg';
 import { ReactComponent as EarthModerateIcon } from '../icons/earthModerate.svg';
 import { ReactComponent as EarthTodayIcon } from '../icons/earthToday.svg';
 
-export const getAZ = (altitudinalZone) => {
-  if (hochmontanAltitudinalZones.includes(altitudinalZone)) {
-    return '80';
-  }
-  return altitudinalZone;
-};
-
-export const getResultLocation = (scenario, location) =>
-  scenario.projections
-    ? scenario.projections.slice(-1)[0] || location
-    : location;
-
-export const getResultKey = (location) => {
-  const { altitudinalZone, forestType, transitionForestType } = location;
-  return `${getAZ(altitudinalZone)}|${forestType}|${transitionForestType}`;
-};
+const { getProjectionResultLocation, getProjectionResultKey } = utils();
 
 export const getScenarios = (scenario, t) => {
   const icons = [];
@@ -60,11 +45,31 @@ export const getScenarioColumns = (
     columns.push(getColumn('today', location, language, t));
     columns.push(getColumn('form', form, language, t));
   } else {
-    const moderate = getResultLocation(projectionResult.moderate, location);
-    const extreme = getResultLocation(projectionResult.extreme, location);
-    const todayKey = getResultKey(location);
-    const moderateKey = getResultKey(moderate);
-    const extremeKey = getResultKey(extreme);
+    const moderate = getProjectionResultLocation(
+      projectionResult.moderate,
+      location,
+    );
+    const extreme = getProjectionResultLocation(
+      projectionResult.extreme,
+      location,
+    );
+
+    const todayKey = getProjectionResultKey(location);
+    const moderateKey = getProjectionResultKey(
+      moderate,
+      projectionResult,
+      'moderate',
+    );
+    const extremeKey = getProjectionResultKey(
+      extreme,
+      projectionResult,
+      'extreme',
+    );
+
+    if (!moderateKey && !extremeKey) {
+      return columns;
+    }
+
     if (moderateKey === extremeKey && todayKey === moderateKey) {
       columns.push(getColumn('todayModerateExtreme', location, language, t));
     } else if (moderateKey === extremeKey) {
@@ -76,6 +81,16 @@ export const getScenarioColumns = (
     } else if (todayKey === extremeKey) {
       columns.push(getColumn('todayExtreme', location, language, t));
       columns.push(getColumn('moderate', moderate, language, t));
+    } else if (!extremeKey && moderateKey === todayKey) {
+      columns.push(getColumn('todayModerate', location, language, t));
+    } else if (!moderateKey && extremeKey === todayKey) {
+      columns.push(getColumn('todayExtreme', location, language, t));
+    } else if (!extremeKey && moderateKey) {
+      columns.push(getColumn('today', location, language, t));
+      columns.push(getColumn('moderate', moderate, language, t));
+    } else if (extremeKey && !moderateKey) {
+      columns.push(getColumn('today', location, language, t));
+      columns.push(getColumn('extreme', moderate, language, t));
     } else {
       columns.push(getColumn('today', location, language, t));
       columns.push(getColumn('moderate', moderate, language, t));
@@ -85,12 +100,9 @@ export const getScenarioColumns = (
   return columns;
 };
 
-const utils = {
-  getAZ,
-  getResultKey,
-  getResultLocation,
+const projectionUtils = {
   getScenarios,
   getScenarioColumns,
 };
 
-export default utils;
+export default projectionUtils;

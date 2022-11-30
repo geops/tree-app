@@ -76,7 +76,9 @@ function LocationResult() {
                         onClick={onClick}
                         className={styles.forestTypeButton}
                       >
-                        {ftCode} - {ftInfo[i18n.language]}
+                        <div>{ftCode}</div>
+                        <div>-</div>
+                        <div>{ftInfo[i18n.language]}</div>
                       </Button>
                     </List.Item>
                   );

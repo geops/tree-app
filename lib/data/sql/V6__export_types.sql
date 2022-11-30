@@ -1,3 +1,4 @@
+-- Export tables Luzern
 CREATE TABLE lu_tillering_export (code TEXT, natural_forest_types int[][], farm_forest_types int[][], hardwood int[], firwood text[]);
 CREATE TABLE lu_soil_export (code TEXT, data int[], characteristics text, note text);
 CREATE TABLE lu_vegetation_indicator_export (code TEXT, data int[], note text);
@@ -96,8 +97,125 @@ SELECT
   pioneer::text[] as data
 FROM lu_pioneer_data;
 
+
+-- Export tables Basel
+CREATE TABLE bl_vegetation_indicator_export (code TEXT, data int[]);
+INSERT INTO bl_vegetation_indicator_export 
+SELECT
+  sto_nr AS code,
+  ARRAY [A,B1,B2,C1,C2,D1,D2,D3,E1,E2,F,G,H,I,J,K,L,M,N1,N2,N3,O1,O2,O3,O4,O5,O6,O7,O8,P1,P2,P3,P4,Q1,Q2,Q3,R,S,T,U1,U2,U3,V1,V2,W,X1,X2,Y1,Y2,Z1,Z2,Z3]::int[] AS data
+FROM bl_artengruppen;
+
+CREATE TABLE bl_treetype_export (code TEXT, hardwood TEXT, data text[]);
+INSERT INTO bl_treetype_export 
+SELECT
+  sto_nr AS code,
+  Laubholzanteil_prozent as hardwood,
+  ARRAY [Bu,TEi,SEi,BAh,SAh,BUl,Es,SEr,TKi,FAh,HBu,Ki,WLi,SLi,EBe,MBe,VBe,Nu,FUl,FEi,FlUl,SbAh,HBi,Ro,REi,"as",Ta,Fi,Fö,Lä,Eib,BFö,SFö,Dou]::text[] AS data
+FROM bl_baumartenwahl;
+
+-- Main export function 
 COPY
     (SELECT jsonb_build_object(
+      'bl', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                            'de', sto_deu,
+                                                                                            'la', sto_lat,
+                                                                                            'properties', eigenschaften,
+                                                                                            'tillering', bestockungsziele,
+                                                                                            'forestryRejuvDev', wb_verj_ent,
+                                                                                            'forestryCare', wb_pfl,
+                                                                                            'descriptionNaturalForest', beschrieb_naturwald,
+                                                                                            'heightDispersion', hoehenverbreitung,
+                                                                                            'location', bl_standorttypen.standort,
+                                                                                            'geology', geologie,
+                                                                                            'vegetation', vegetation,
+                                                                                            'vegetationIndicator', array_to_json(vegetation_indicator.data),
+                                                                                            'tilleringHardwood', treetypes.hardwood,
+                                                                                            'tilleringTreeTypes', treetypes.data,
+                                                                                            'expoAndAspect', jsonb_build_array(NNO_12,
+                                                                                                                            NNO_25,
+                                                                                                                            NNO_37,
+                                                                                                                            NNO_50,
+                                                                                                                            NNO_62,
+                                                                                                                            NNO_75,
+                                                                                                                            NNO_87,
+                                                                                                                            NNO_100,
+                                                                                                                            NOO_12,
+                                                                                                                            NOO_25,
+                                                                                                                            NOO_37,
+                                                                                                                            NOO_50,
+                                                                                                                            NOO_62,
+                                                                                                                            NOO_75,
+                                                                                                                            NOO_87,
+                                                                                                                            NOO_100,
+                                                                                                                            OSO_12,
+                                                                                                                            OSO_25,
+                                                                                                                            OSO_37,
+                                                                                                                            OSO_50,
+                                                                                                                            OSO_62,
+                                                                                                                            OSO_75,
+                                                                                                                            OSO_87,
+                                                                                                                            OSO_100,
+                                                                                                                            SSO_12,
+                                                                                                                            SSO_25,
+                                                                                                                            SSO_37,
+                                                                                                                            SSO_50,
+                                                                                                                            SSO_62,
+                                                                                                                            SSO_75,
+                                                                                                                            SSO_87,
+                                                                                                                            SSO_100,
+                                                                                                                            SSW_12,
+                                                                                                                            SSW_25,
+                                                                                                                            SSW_37,
+                                                                                                                            SSW_50,
+                                                                                                                            SSW_62,
+                                                                                                                            SSW_75,
+                                                                                                                            SSW_87,
+                                                                                                                            SSW_100,
+                                                                                                                            WSW_12,
+                                                                                                                            WSW_25,
+                                                                                                                            WSW_37,
+                                                                                                                            WSW_50,
+                                                                                                                            WSW_62,
+                                                                                                                            WSW_75,
+                                                                                                                            WSW_87,
+                                                                                                                            WSW_100,
+                                                                                                                            WNW_12,
+                                                                                                                            WNW_25,
+                                                                                                                            WNW_37,
+                                                                                                                            WNW_50,
+                                                                                                                            WNW_62,
+                                                                                                                            WNW_75,
+                                                                                                                            WNW_87,
+                                                                                                                            WNW_100,
+                                                                                                                            NNW_12,
+                                                                                                                            NNW_25,
+                                                                                                                            NNW_37,
+                                                                                                                            NNW_50,
+                                                                                                                            NNW_62,
+                                                                                                                            NNW_75,
+                                                                                                                            NNW_87,
+                                                                                                                            NNW_100),
+                                                                                            'transitions', to_jsonb(string_to_array(regexp_replace(uebergaenge_zu, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
+          values
+          FROM bl_standorttypen
+          LEFT JOIN bl_expo_hanglage USING(STO_Nr)
+          LEFT JOIN bl_vegetation_indicator_export vegetation_indicator ON bl_standorttypen.sto_nr = vegetation_indicator.code
+          LEFT JOIN bl_treetype_export treetypes ON bl_standorttypen.sto_nr = treetypes.code
+          ),
+          --'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM bl_uebergaenge),
+          'associationGroup', (SELECT json_agg(jsonb_build_object('category', gesgr_cat,
+                                                                      'de', gesgr_deu,
+                                                                      'forestAppearance', waldbild,
+                                                                      'description', standort,
+                                                                      'useAndCare', nutzung_pflege,
+                                                                      'heightDispersion', vegetationsstufe,
+                                                                      'areaBl', flaechenanteil_bl,
+                                                                      'areaBs', flaechenanteil_bs,
+                                                                      'areaBlBsPercent', flaeche_blbs_prozent,
+                                                                      'locations', to_jsonb(string_to_array(regexp_replace(standorte, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) AS
+          values
+          FROM bl_gesellschaftsgruppen))),
       'lu', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
                                                                                             'de', sto_deu,
                                                                                             'la', sto_lat,
@@ -187,7 +305,9 @@ COPY
           LEFT JOIN lu_soil_export ON lu_standorttypen.sto_nr = lu_soil_export.code
           LEFT JOIN lu_vegetation_indicator_export vegetation_indicator ON lu_standorttypen.sto_nr = vegetation_indicator.code
           LEFT JOIN lu_pioneer_export pioneer_tree_types ON lu_standorttypen.sto_nr = pioneer_tree_types.code
-      ), 'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
+      ), 
+      --'transitionMapping', (SELECT json_agg(jsonb_build_object('code', sto_nr_nais, 'cantonalForestTypes', to_jsonb(string_to_array(regexp_replace(sto_nr_profile, E'[\\n\\r[:space:]]+', '', 'g' )::text, ',')))) FROM lu_uebergaenge),
+      'associationGroup', (SELECT json_agg(jsonb_build_object('code', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ),
                                                                                               'de', gesgr_deu,
                                                                                               'la', gesgruppe_lat,
                                                                                               'description', beschreibung,
@@ -196,24 +316,25 @@ COPY
                                                                                               'aptitudeMeaning', eignung_bedeutung,
                                                                                               'heightDispersion', hoehenverbreitung)) AS
           values
-          FROM lu_gesellschaftsgruppen), 'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
-                                                                                             'a', a,
-                                                                                             'b', b,
-                                                                                             'c', c,
-                                                                                             'e', e,
-                                                                                             'f', f,
-                                                                                             'g', g,
-                                                                                             'h', h,
-                                                                                             'i', i,
-                                                                                             'j', j,
-                                                                                             'k', k,
-                                                                                             'l', l,
-                                                                                             'm', m,
-                                                                                             'n', n,
-                                                                                             'o', o,
-                                                                                             'p', p,
-                                                                                             'note', bemerkung,
-                                                                                             'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
+          FROM lu_gesellschaftsgruppen),
+      'speciesGroup', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                          'a', a,
+                                                          'b', b,
+                                                          'c', c,
+                                                          'e', e,
+                                                          'f', f,
+                                                          'g', g,
+                                                          'h', h,
+                                                          'i', i,
+                                                          'j', j,
+                                                          'k', k,
+                                                          'l', l,
+                                                          'm', m,
+                                                          'n', n,
+                                                          'o', o,
+                                                          'p', p,
+                                                          'note', bemerkung,
+                                                          'associationGroupCode', regexp_replace(gesgr_nr, E'[\\n\\r[:space:]]+', '', 'g' ))) AS
           values
           FROM lu_artengruppen))),
       'ch', (WITH additional AS
@@ -346,4 +467,4 @@ COPY
           relief,
           silver_fir_areas,
           slope,
-          treetype))) TO '/data/types.json';
+          treetype))) TO PROGRAM $$sed 's/\\\\\"/\\\"/g' > '/data/types.json'$$; --filter + replace double backslash escapes
