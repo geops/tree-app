@@ -50,6 +50,14 @@ WITH altitudinal_zones_cantonal AS
               FROM altitudinal_zones_vd
                 WHERE hs IS NOT NULL
                 GROUP BY hs)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  hs::text as code,
+                  hs::text as code_style
+              FROM forest_types_bl
+                WHERE hs IS NOT NULL
+                GROUP BY hs)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::text AS code, (code::TEXT || subcode::TEXT)::text AS code_style,
