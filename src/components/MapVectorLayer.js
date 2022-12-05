@@ -31,8 +31,12 @@ const getLayerStyle = (layerId) =>
 const getStyle = (sourceLayers, activeProfile) => ({
   ...mapStyle,
   layers: mapStyle.layers.map((layer) => {
-    const isSourceLayer = sourceLayers.includes(layer.id);
-    // const isSourceLayer = sourceLayers.includes(layer['source-layer']);
+    const currentSourceLayers = mapStyle.layers.filter((l) =>
+      sourceLayers.includes(l.id),
+    );
+    const isSourceLayer = !!currentSourceLayers.find(
+      (l) => l['source-layer'] === layer['source-layer'],
+    );
     const paint = { ...layer.paint };
     if (layer.type === 'fill') {
       paint['fill-opacity'] = isSourceLayer ? 0.5 : 0.0;
