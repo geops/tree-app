@@ -34,7 +34,7 @@ const getStyle = (sourceLayers, activeProfile) => ({
     const currentSourceLayers = mapStyle.layers.filter((l) =>
       sourceLayers.includes(l.id),
     );
-    const isSourceLayer = currentSourceLayers.find(
+    const isSourceLayer = !!currentSourceLayers.find(
       (l) => l['source-layer'] === layer['source-layer'],
     );
     const paint = { ...layer.paint };
