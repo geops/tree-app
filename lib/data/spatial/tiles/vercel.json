@@ -15,6 +15,10 @@
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
+        },
+        {
+          "key": "Content-Encoding",
+          "value": "gzip"
         }
       ]
     },
@@ -33,15 +37,6 @@
         {
           "key": "Access-Control-Allow-Origin",
           "value": "*"
-        }
-      ]
-    },
-    {
-      "source": "/tree/(.*).pbf",
-      "headers": [
-        {
-          "key": "Content-Encoding",
-          "value": "gzip"
         }
       ]
     }
