@@ -22,7 +22,9 @@ function ForestTypePage() {
       info('forestType', null, activeProfile)
         .sort(sortForestTypes)
         .map((ft) => ({
-          text: `${ft.code} - ${ft[i18n.language]}`,
+          text: `${ft.code}${
+            ft[i18n.language] ? `- ${ft[i18n.language]}` : ''
+          }`,
           value: ft.code,
         })),
     [activeProfile, i18n.language],

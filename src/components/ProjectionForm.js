@@ -69,7 +69,6 @@ function ProjectionForm() {
     projectionMode === 'm'
       ? projectionResult.extreme.options
       : projectionResult.form.options;
-
   const [fieldActive, setFieldActive] = useState('');
   const activateField = (field) => setFieldActive(field);
   const deactivateField = () => setFieldActive('');

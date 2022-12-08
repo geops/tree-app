@@ -151,9 +151,7 @@ CREATE TABLE "forest_types_lu" (gid serial,
 "shape_leng" numeric,
 "shape_area" numeric);
 
-
 ALTER TABLE "forest_types_lu" ADD PRIMARY KEY (gid);
-
 
 SELECT AddGeometryColumn('','forest_types_lu','geom','2056','MULTIPOLYGON',2);
 
@@ -172,12 +170,9 @@ CREATE TABLE "forest_types_fl" (gid serial,
 "typ_nais" varchar(254),
 "text_nais" varchar(100));
 
-
 ALTER TABLE "forest_types_fl" ADD PRIMARY KEY (gid);
 
-
 SELECT AddGeometryColumn('','forest_types_fl','geom','2056','MULTIPOLYGON',2);
-
 
 ----------------------------------------------
 -- Forest types ZH
@@ -191,16 +186,12 @@ CREATE TABLE "forest_types_zh" (gid serial,
 "shape_area" numeric,
 "shape_len" numeric);
 
-
 ALTER TABLE "forest_types_zh" ADD PRIMARY KEY (gid);
-
 
 SELECT AddGeometryColumn('','forest_types_zh','geom','2056','MULTIPOLYGON',2);
 
-
 ----------------------------------------------
 -- Forest types NE
-
 
 CREATE TABLE "forest_types_ne" (gid serial,
 "code_neuch" float8,
@@ -210,13 +201,10 @@ CREATE TABLE "forest_types_ne" (gid serial,
 
 ALTER TABLE "forest_types_ne" ADD PRIMARY KEY (gid);
 
-
 SELECT AddGeometryColumn('','forest_types_ne','geom','2056','MULTIPOLYGON',2);
-
 
 ----------------------------------------------
 -- Forest types FR
-
 
 CREATE TABLE "forest_types_fr" (gid serial,
 "objectid" float8,
@@ -262,14 +250,10 @@ CREATE TABLE "forest_types_fr" (gid serial,
 
 ALTER TABLE "forest_types_fr" ADD PRIMARY KEY (gid);
 
-
 SELECT AddGeometryColumn('','forest_types_fr','geom','2056','MULTIPOLYGON',2);
-
-
 
 ----------------------------------------------
 -- Forest types JU
-
 
 CREATE TABLE "forest_types_ju" (gid serial,
 "objectid" float8,
@@ -282,6 +266,19 @@ ALTER TABLE "forest_types_ju" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_ju','geom','0','MULTIPOLYGON',2);
 
+----------------------------------------------
+-- Forest types BL
+
+CREATE TABLE "forest_types_bl" (gid serial,
+"id" float8,
+"gemeinde" varchar(254),
+"nais_2022" varchar(10),
+"hoehenstuf" varchar(254),
+"hs" float8);
+
+ALTER TABLE "forest_types_bl" ADD PRIMARY KEY (gid);
+
+SELECT AddGeometryColumn('','forest_types_bl','geom','0','MULTIPOLYGON',2);
 
 ----------------------------------------------
 -- Forest types VD
