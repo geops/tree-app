@@ -19,7 +19,7 @@ function InfoRecommendation() {
       <p>
         <strong>recommendation</strong> description
       </p>
-      <ul className={styles.iconList}>
+      <ul className={`${styles.iconList} ${styles.iconListBackground}`}>
         <li>
           <PositiveIcon />{' '}
           {{ positiveTitle: t('help.recommendationPositiveHeader') }}:{' '}

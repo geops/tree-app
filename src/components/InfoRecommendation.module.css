@@ -5,13 +5,19 @@
 .iconList :global(li) {
   margin-top: 0.5em;
   min-height: 2em;
+  position: relative;
 }
 
 .iconList :global(svg) {
   height: 42px;
   position: absolute;
-  left: 30px;
+  left: -45px;
   fill: var(--primary-color-500);
+}
+
+.iconListBackground :global(svg) {
+  background: var(--primary-color-500);
+  border-radius: 5px;
 }
 
 .todayIcon {
