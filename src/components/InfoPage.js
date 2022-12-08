@@ -44,11 +44,6 @@ function InfoPage() {
       },
     },
     {
-      key: 'info.bugs',
-      title: { content: t('info.bugsTitle') },
-      content: { content: <InfoBugs /> },
-    },
-    {
       key: 'info.usage',
       title: { content: t('info.usageTitle') },
       content: { content: <InfoUsage /> },
@@ -102,6 +97,11 @@ function InfoPage() {
           <div dangerouslySetInnerHTML={{ __html: t('info.changelog') }} />
         ),
       },
+    },
+    {
+      key: 'info.bugs',
+      title: { content: t('info.bugsTitle') },
+      content: { content: <InfoBugs /> },
     },
   ];
 
