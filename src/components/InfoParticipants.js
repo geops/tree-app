@@ -9,9 +9,9 @@ const participants = {
   forestTypeMap: 'Michiel Fehr, Daniel Oertig',
   idea: 'Urs Rutishauser, Monika Frehner, Cornel Broder',
   conception:
-    'Monika Frehner, Urs Rutishauser, Cornel Broder, Elke Ehrhardt, Uli Müller, Thomas Bettler, Christian Küchli, Andreas Zischg, Peter Brang',
-  projectManagement: 'Peter Brang',
-  projectSupervision: 'Pierre Alfter, Robert Jenni',
+    'Monika Frehner, Urs Rutishauser, Cornel Broder, Elke Erhardt, Uli Müller, Thomas Bettler, Christian Küchli, Andreas Zischg, Peter Brang †',
+  projectManagement: 'Robert Jenni',
+  projectSupervision: 'Kathrin Streit',
   projectControl: 'Marco Ferretti, Christoph Dürr, Ueli Meier',
   wslUsers:
     'Sabine Augustin, Thomas Bettler, Stefan Biermann, Pierre Cothéreau, Christoph Dürr, Michiel Fehr, Hans-Ulrich Frey, Lukas Glanzmann, Grégory Guichard, Pascal Junod, Stéphane Losey, Daniel Müller, Christian Rosset, Viola Sala, Claudio de Sassi, Noémie Schaffter, Samuel Scheibler, Thomas Studer',
