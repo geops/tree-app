@@ -23,13 +23,13 @@
     "export": "Exporter",
     "exportRecommendation": "Exporter recommandation",
     "exportForestTypeDescription": "Exporter description de station",
-    "recommendationMainTitle": "Extrait de le Tree-App",
-    "coordinate": "Coordonner",
+    "recommendationMainTitle": "Extrait de Tree-App",
+    "coordinate": "Coordonnées",
     "date": "Date",
     "future": "Les essences qui, ultérieurement, seront également adaptées",
-    "mode": "La recommandation d'emplacement a été créée en mode manuel.",
+    "mode": "La recommandation pour le choix des essences a été créée en mode manuel.",
     "link": "Lien",
-    "locationType": "Type de lieu",
+    "locationType": "Type de station",
     "exporting": "En cours...",
     "error": "Échec de l'exportation",
     "profile": "Profil"
@@ -176,6 +176,7 @@
       "waterPermeability": "Perméabilité à l'eau",
       "permeability": "Perméabilité"
     },
+    "terrain": "Terrain",
     "vegetation": "Végétation aspect"
   },
   "dropdown": {
@@ -331,10 +332,10 @@
   "info": {
     "about": "L’application <i>Tree App</i> vous aide à choisir les essences adaptées dans trois scénarios climatiques :<2><0>climat 1961-1990</0><1>changement climatique « modéré » 2070-2099</1><2>changement climatique « fort » 2070-2099</2></2><p>Elle est un produit du programme de recherche Forêts et changements climatiques de l’OFEV et du WSL.<br> Cliquez sur la carte pour obtenir les essences recommandées à l'emplacement du clic. Indiquez ensuite le type de station (l'association forestière), soit en le déterminant à l'aide de l'application (bouton « Station »), soit en le sélectionnant manuellement dans la liste des types de station proposés (bouton « Recommandations »).</p><p>Version {{version}}</p>",
     "aboutTitle": "À propos",
-    "bugs": "<p>Les caractéristiques suivantes ne sont pas encore intégrées à la version actuelle :</p><p>1) l'application fonctionne avec les navigateurs Firefox, Edge, Chrome, Samsung Internet et Safari. Des dysfonctionnements peuvent se produire avec les autres navigateurs.</p><p>2) Si une version antérieure de l'application a été chargée, il se peut qu'elle ne soit pas mise à jour. Pour ce faire, le cache doit être effacé manuellement (voir les instructions spécifiques au navigateur sur Internet). </p><p>3) Dans les écorégions 2b et 4, le hêtre peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des écorégions 2a et 5 doivent être utilisés. Ils peuvent l'être dans le mode « manuel » aussi bien dans l'affichage « Station » que dans l'affichage « Recommandation ».</p><p>4) Dans l'aire relictuelle du sapin, celui-ci peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des aires principale et secondaire du sapin sont à utiliser. Ils ne sont pas encore intégrés à l'affichage « Station » et peuvent être utilisés manuellement dans l'affichage « Recommandation ».</p><p>5) Les cartographies des stations forestières de quelques cantons ont été integrées. Le type de station y est directement repris de ces cartes. L'affichage d'autres cartographies cantonales des stations forestières est in Arbeit.</p><p>6) Les essences recommandées dans Tree App peuvent différer des recommandations inscrites dans les divers documents cantonaux, car elles ont été compilées à partir de plusieurs recommandations cantonales. </p><p>7) Les fonds de plan ne peuvent pas être utilisées hors ligne. Toutefois, ils peuvent être chargés dans le navigateur avant que la connexion ne soit perdue. </p><p>8) Pour certaines stations pas encore présentes en Suisse aujourd'hui, aucune espèce d'arbre dominante de la forêt naturelle n'est indiquée car elle n'est pas encore connue. </p>",
+    "bugs": "<p>Les caractéristiques suivantes ne sont pas encore intégrées à la version actuelle :</p><p>1) L'application a été testée avec les navigateurs Firefox, Edge, Chrome et Safari.</p><p>2) Si une version antérieure de l'application a été chargée, il se peut qu'elle ne soit pas mise à jour. Pour ce faire, le cache doit être effacé manuellement (voir les instructions spécifiques au navigateur sur Internet). </p><p>3) Dans les écorégions 2b et 4, le hêtre peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des écorégions 2a et 5 doivent être utilisés. Ils peuvent l'être dans le mode « manuel » aussi bien dans l'affichage « Station » que dans l'affichage « Recommandation ».</p><p>4) Dans l'aire relictuelle du sapin, celui-ci peut être présent dans l'étage dominant. Dans ce cas, les écogrammes des aires principale et secondaire du sapin sont à utiliser. Ils ne sont pas encore intégrés à l'affichage « Station » et peuvent être utilisés manuellement dans l'affichage « Recommandation ».</p><p>5) Les cartographies des stations forestières de quelques cantons ont été integrées. Le type de station y est directement repris de ces cartes. L'affichage d'autres cartographies cantonales des stations forestières est in Arbeit.</p><p>6) Les essences recommandées dans Tree App peuvent différer des recommandations inscrites dans les divers documents cantonaux, car elles ont été compilées à partir de plusieurs recommandations cantonales. </p><p>7) Les fonds de plan ne peuvent pas être utilisées hors ligne. Toutefois, ils peuvent être chargés dans le navigateur avant que la connexion ne soit perdue. </p><p>8) Pour certaines stations pas encore présentes en Suisse aujourd'hui, aucune espèce d'arbre dominante de la forêt naturelle n'est indiquée car elle n'est pas encore connue. </p>",
     "bugsTitle": "Erreurs connues et développements prévus",
     "changelogTitle": "Versions",
-    "changelog": "<p>La version 2.5 a été publiée le 22.12.2021. Les principales améliorations sont les suivantes : </p><p>1) Une fonction d'exportation a été intégrée pour les recommandations relatives aux essences. </p><p>2) De nouvelles cartes cantonales des stations ont été intégrées.</p><p>3) Les descriptions des types de stations dans le canton de Lucerne ont été intégrées, ce qui permet également de comparer jusqu'à 4 types de stations. On peut choisir d'afficher ou non cette version lucernoise.</p><p><p><p>La version 2.4.1 a été publiée le 22.11.2021. Les innovations les plus importantes sont : </p><p>1) Les cartes des étages de végétation ont été mises à jour. Elles sont maintenant basées sur les modèles climatiques de 2018 (NCCS 2018). Cependant, l'ampleur du changement climatique jusqu'à la période 2070-2099, qui est supposée pour un changement climatique modéré et prononcé, reste largement inchangée. La nouvelle modélisation des étages de végétation est également basée sur des données améliorées. Une élévation de la limite supérieure de la forêt est également nouvellement modélisée. </p><p>2) A basse altitude dans le sud de la Suisse, un étage méditerranéen a été modélisé en plus de l'étage hyperinsubrique et l'écorégion Mendrisiotto a été délimitée. </p><p>3) Lorsque vous utilisez la carte sur un téléphone portable, il est désormais possible de partager l'URL via sharelink (bouton en bas à droite de la carte). </p><p>4) Il est possible d'afficher les noms des espèces d'arbres et de plantes indicatrices en latin. </p><p>5) Les espèces d'arbres non indigènes sont désormais signalées par un signe de degré (°). </p><p>6) Dans certains cantons, la carte des stations est stockée dans l'appli. Elle peut être affichée en mode carte en passant du standard « Limites cantonales » à « Carte des stations forestières ».</p>.",
+    "changelog": "<>La version 2.6 a été publiée 14.12.2022.Les principales améliorations sont les suivantes: </p><p>1) De nouvelles cartes cantonales des stations ont été intégrées. </p><p>2) Désormais, lorsqu'une transition entre deux types de stations est cartographiée sur une carte des stations et que les deux types de stations appartiennent à des étages altitudinaux différents, une recommandation d'essence est générée.. </p><p>3) En plus du profil lucernois existant, il est désormais possible d'afficher un profil bâlois avec des informations spécifiques au canton. </p><p> 4) Une erreur concernant les chemins de projection avec  conditions a été corrigée. </p><p><p>La version 2.5 a été publiée le 22.12.2021. Les principales améliorations sont les suivantes : </p><p>1) Une fonction d'exportation a été intégrée pour les recommandations relatives aux essences. </p><p>2) De nouvelles cartes cantonales des stations ont été intégrées.</p><p>3) Les descriptions des types de stations dans le canton de Lucerne ont été intégrées, ce qui permet également de comparer jusqu'à 4 types de stations. On peut choisir d'afficher ou non cette version lucernoise.</p><p><p><p>La version 2.4.1 a été publiée le 22.11.2021. Les innovations les plus importantes sont : </p><p>1) Les cartes des étages de végétation ont été mises à jour. Elles sont maintenant basées sur les modèles climatiques de 2018 (NCCS 2018). Cependant, l'ampleur du changement climatique jusqu'à la période 2070-2099, qui est supposée pour un changement climatique modéré et prononcé, reste largement inchangée. La nouvelle modélisation des étages de végétation est également basée sur des données améliorées. Une élévation de la limite supérieure de la forêt est également nouvellement modélisée. </p><p>2) A basse altitude dans le sud de la Suisse, un étage méditerranéen a été modélisé en plus de l'étage hyperinsubrique et l'écorégion Mendrisiotto a été délimitée. </p><p>3) Lorsque vous utilisez la carte sur un téléphone portable, il est désormais possible de partager l'URL via sharelink (bouton en bas à droite de la carte). </p><p>4) Il est possible d'afficher les noms des espèces d'arbres et de plantes indicatrices en latin. </p><p>5) Les espèces d'arbres non indigènes sont désormais signalées par un signe de degré (°). </p><p>6) Dans certains cantons, la carte des stations est stockée dans l'appli. Elle peut être affichée en mode carte en passant du standard « Limites cantonales » à « Carte des stations forestières ».</p>.",
     "contact": "Pour signaler des problèmes ou des propositions d'amélioration, adresse-toi à : <2>info@tree-app.ch</2>",
     "contactBody": "Adresse URL actuelle : {{ url }}",
     "contactTitle": "Contact",
@@ -445,14 +446,15 @@
     "noDataHeader": "Pas de données disponibles",
     "noDataMessage": "Il n'y a pas de données pour ce type de station dans le profil actuel. Êtes-vous dans le bon profil?",
     "noComparisonMessage": "La comparaison des types de stations est désactivée dans le profil actuel. Êtes-vous dans le bon profil?",
-    "maximumForestTypes": "Maximum de types de stations à comparer a été atteint."
+    "maximumForestTypes": "Maximum de types de stations à comparer a été atteint"
   },
   "lu": {
     "forestType": {
       "appearance": "Apparence",
       "aptitude": "Aptitude",
       "aptitudeMeaning": "",
-      "associations": "Associations",
+      "associations": "",
+      "care": "Maintenance",
       "compactRisk": {
         "0": "non précisé",
         "1": "faible risque de compactage (même par temps humide seulement compactage insignifiant du sol)",
@@ -463,7 +465,7 @@
         "label": "Risque de compactage"
       },
       "description": "Description",
-      "descriptionNaturalForest": "Description forêt naturelle",
+      "general": "Type de station",
       "heightDispersion": "Répartition en altitude",
       "location": "Emplacement",
       "meaning": "Sens",
@@ -480,9 +482,9 @@
       "subGroups": "Types de stations",
       "soil": {
         "label": "Sol",
-        "l": "Horizon de dispersion",
+        "l": "Litière",
         "f": "Horizon de fermentation",
-        "h": "Horizon d'humus",
+        "h": "Horizon humique",
         "ahh": "Horizon de mélange de terre minérale (mécaniquement)",
         "ah": "Horizon de mélange de terre minérale (biologique)",
         "basen": "Chaux",
@@ -492,23 +494,25 @@
       "tilleringFirwood": "Proportion de sapin",
       "tilleringHardwood": "Proportion de feuillus",
       "vegetationIndicator": {
+        "label": "Groupes d'indicateurs",
         "a": "Indicateurs de conditions très acides, milieux humides à mouillés",
         "b": "Indicateurs de conditions très acides, fraîches à sèches",
         "c": "Indicateurs de conditions faiblement acides",
         "e": "Espèces des hêtraies",
         "f": "Indicateur nutritif, frais",
         "g": "Indicateur nutritif, argileux",
-        "h": "Indicateur nutritif, femouillerucht",
+        "h": "Indicateur nutritif, mouillé",
         "i": "Indicateur d'humidité",
-        "j": "Grandes vivaces",
+        "j": "Mégaphorbiées",
         "k": "Indicateur d'humidité, pauvre en base",
-        "l": "Indicateur de montagne (étape de montagne)",
+        "l": "Indicateur de montagne (étage des montagnes)",
         "m": "Indicateur de base/chaux",
         "n": "Espèce sur bloc de gravats",
         "o": "Indicateur de base alternativement humide/séche",
         "p": "Indicateur de sécheresse"
       },
-      "terrain": "Terrain"
+      "terrain": "Terrain",
+      "cantonalForestType": "Type de station cantonal"
     }
   },
   "bl": {
