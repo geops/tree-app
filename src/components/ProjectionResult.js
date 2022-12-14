@@ -146,7 +146,10 @@ function ProjectionResult() {
             panes={finalPanes}
           />
           <div className={styles.exportButtonWrapper}>
-            <ExportButton onClick={exportDocx} className={styles.exportButton}>
+            <ExportButton
+              onClick={exportDocx}
+              className={`${styles.exportButton}`}
+            >
               {t('export.exportRecommendation')}
             </ExportButton>
           </div>
