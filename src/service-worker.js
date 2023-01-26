@@ -112,6 +112,4 @@ self.addEventListener('fetch', (event) => {
 
 self.importScripts(`${matomoUrl}offline-service-worker.js`);
 // eslint-disable-next-line no-undef
-console.log(matomoAnalytics);
-// eslint-disable-next-line no-undef
 matomoAnalytics.initialize();

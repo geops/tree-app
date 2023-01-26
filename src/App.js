@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 import { MatomoProvider, createInstance } from '@datapunt/matomo-tracker-react';
@@ -6,6 +6,7 @@ import { MatomoProvider, createInstance } from '@datapunt/matomo-tracker-react';
 import Navigation from './components/Navigation';
 import WelcomeModal from './components/WelcomeModal';
 import ForestTypeModal from './components/ForestTypeModal';
+import MatomoTracker from './components/MatomoTracker';
 import history from './history';
 import store from './store';
 
@@ -23,10 +24,12 @@ const matomo = createInstance({
 });
 
 function App() {
+  useEffect(() => matomo.trackPageView(), []);
   return (
     <MatomoProvider value={matomo}>
       <Router history={history}>
         <Provider store={store}>
+          {matomo && <MatomoTracker />}
           <Navigation />
           <WelcomeModal />
           <ForestTypeModal />
