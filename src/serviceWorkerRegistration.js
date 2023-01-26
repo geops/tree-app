@@ -50,6 +50,10 @@ export function register(config) {
       } else {
         // Is not localhost. Just register service worker
         registerValidSW(swUrl, config);
+        // Register matomo service worker for offline tracking
+        navigator.serviceWorker.register(
+          'https://static.matomo.org/service-worker.js',
+        );
       }
     });
   }

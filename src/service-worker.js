@@ -23,7 +23,10 @@ const OLD_CACHES = [
   'tree-app-tiles-v8',
   'tree-app-tiles-v9',
 ];
-const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
+const {
+  REACT_APP_MATOMO_URL_BASE: matomoUrl,
+  REACT_APP_VECTOR_TILES_ENDPOINT: endpoint,
+} = process.env;
 
 clientsClaim();
 
@@ -106,3 +109,9 @@ self.addEventListener('fetch', (event) => {
     );
   }
 });
+
+self.importScripts(`${matomoUrl}offline-service-worker.js`);
+// eslint-disable-next-line no-undef
+console.log(matomoAnalytics);
+// eslint-disable-next-line no-undef
+matomoAnalytics.initialize();
