@@ -13,10 +13,9 @@ import store from './store';
 import './theme.css';
 
 const matomoUrl = process?.env?.REACT_APP_MATOMO_URL_BASE;
-const matomoSiteId = process?.env?.REACT_APP_MATOMO_SITE_ID;
 const matomo = createInstance({
   urlBase: matomoUrl,
-  siteId: matomoSiteId,
+  siteId: process?.env?.REACT_APP_MATOMO_SITE_ID,
   trackerUrl: `${matomoUrl}piwik.php`,
   configurations: {
     setCookieSameSite: 'LAX',
