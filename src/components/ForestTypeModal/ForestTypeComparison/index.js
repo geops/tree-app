@@ -5,9 +5,9 @@ import { Form, Popup } from 'semantic-ui-react';
 import { info, utils } from '@geops/tree-lib';
 
 import Dropdown from '../../Dropdown';
-import ChForestTypeComparison from './ch';
 import LuForestTypeComparison from './lu';
 import BlForestTypeComparison from './bl';
+import NoForestTypeComparison from './NoForestTypeComparison.js';
 import { setForestTypeComparison } from '../../../store/actions';
 import { getValidForestTypes } from '../../../utils/comparisonUtils';
 
@@ -30,16 +30,17 @@ function ForestTypeComparison() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeProfile, dispatch]);
 
-  const options = useMemo(
-    () =>
-      info('forestType', null, activeProfile)
-        .sort(sortForestTypes)
-        .map((ft) => ({
-          text: `${ft.code} - ${ft[i18n.language]}`,
-          value: ft.code,
-        })),
-    [activeProfile, i18n.language],
-  );
+  const options = useMemo(() => {
+    try {
+      const infos = info('forestType', null, activeProfile);
+      return infos.sort(sortForestTypes).map((ft) => ({
+        text: `${ft.code}${ft[i18n.language] ? ` - ${ft[i18n.language]}` : ''}`,
+        value: ft.code,
+      }));
+    } catch (error) {
+      return [];
+    }
+  }, [activeProfile, i18n.language]);
 
   return (
     <>
@@ -68,7 +69,7 @@ function ForestTypeComparison() {
         />
       </Form>
       <br />
-      {activeProfile === 'ch' && <ChForestTypeComparison />}
+      {/^(ch|vd)$/.test(activeProfile) && <NoForestTypeComparison />}
       {activeProfile === 'lu' && <LuForestTypeComparison data={data} />}
       {activeProfile === 'bl' && <BlForestTypeComparison data={data} />}
     </>
