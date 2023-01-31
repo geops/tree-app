@@ -5,3 +5,4 @@ npm-debug.log
 .eslintcache
 cypress/videos
 src/i18n/*.csv
+.vscode

@@ -24,7 +24,7 @@ Spatial data is downloaded from different sources and imported into the database
 3. Transform GeoJSON files to single vector tileset: `yarn run data:spatial:tile`
 4. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
 5. Deploy tiles local by running `yarn run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `yarn start`)
-6. Change version number in src/service-worker.js to clear the tile cache and deploy repository changes
+6. Change version number in [src/service-worker.js](https://github.com/geops/tree-app/blob/master/src/service-worker.js#L16) to clear the tile cache and deploy repository changes
 7. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `yarn run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch` or `tiles-staging.tree-app.ch`)
 
 ## Bugs
