@@ -12,7 +12,7 @@ import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 
 const tileCacheString = 'tree-app-tiles-v';
-const currentTileVersion = 10; // Current tile version, needs tu be increased every time new tiles are deployed
+const currentTileVersion = 10; // Current tile version, needs to be increased every time new tiles are deployed
 const CACHE_NAME = `${tileCacheString}${currentTileVersion}`;
 // Create an array of 'tree-app-tiles-v[1 - currentVersion]' strings for the caches to be removed
 const OLD_CACHES = Array.from(Array(currentTileVersion).keys()).map(
