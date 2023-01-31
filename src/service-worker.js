@@ -11,18 +11,14 @@ import { clientsClaim } from 'workbox-core';
 import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 
-const CACHE_NAME = 'tree-app-tiles-v9';
-const OLD_CACHES = [
-  'tree-app-tiles-v1',
-  'tree-app-tiles-v2',
-  'tree-app-tiles-v3',
-  'tree-app-tiles-v4',
-  'tree-app-tiles-v5',
-  'tree-app-tiles-v6',
-  'tree-app-tiles-v7',
-  'tree-app-tiles-v8',
-  'tree-app-tiles-v9',
-];
+const tileCacheString = 'tree-app-tiles-v'; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
+const currentTileVersion = 10; // Current tile version, needs to be increased every time new tiles are deployed
+const CACHE_NAME = `${tileCacheString}${currentTileVersion}`;
+// Create an array of 'tree-app-tiles-v[1 - currentVersion]' strings for the caches to be removed
+const OLD_CACHES = Array.from(Array(currentTileVersion).keys()).map(
+  (version) => `${tileCacheString}${version}`,
+);
+
 const {
   REACT_APP_MATOMO_URL_BASE: matomoUrl,
   REACT_APP_VECTOR_TILES_ENDPOINT: endpoint,

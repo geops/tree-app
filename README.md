@@ -24,3 +24,12 @@ Deploy master to production on https://www.tree-app.ch:
 
 - Create a pull request with base branch `production` and compare branch `master`
 - Merge with the option `Rebase and Merge`
+
+## Run service-worker locally
+
+To test offline-mode in development, the local build must be launched using http (not https).
+This can be done with the following steps:
+
+- `yarn build`
+- `yarn global add serve`
+- `serve -s build`
