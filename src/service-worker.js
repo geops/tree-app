@@ -66,7 +66,6 @@ self.addEventListener('message', (event) => {
 OLD_CACHES.forEach((OLD_CACHE) => caches.delete(OLD_CACHE));
 
 self.addEventListener('install', (event) => {
-  console.log('installing');
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) =>
       fetch(`${endpoint}/tiles.txt`)
