@@ -13,6 +13,7 @@ function MatomoTracker() {
     }
 
     pushInstruction('setConsentGiven');
+    pushInstruction('disableCookies');
     trackPageView();
   }, [consentGiven, trackPageView, pushInstruction]);
 
