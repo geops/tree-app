@@ -44,6 +44,7 @@ export const initialState = {
   future: true,
   langOverride: null,
   consentGiven: true,
+  disableCookies: true,
 };
 
 const initialFormLocation = {
