@@ -105,3 +105,7 @@ self.addEventListener('fetch', (event) => {
     );
   }
 });
+
+self.importScripts(`${matomoUrl}offline-service-worker.js`);
+// eslint-disable-next-line no-undef
+matomoAnalytics.initialize({ queueLimit: 100, timeLimit: 86400 * 2 });
