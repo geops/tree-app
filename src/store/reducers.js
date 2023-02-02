@@ -43,6 +43,8 @@ export const initialState = {
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
   future: true,
   langOverride: null,
+  consentGiven: true,
+  disableCookies: true,
 };
 
 const initialFormLocation = {

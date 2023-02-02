@@ -19,7 +19,10 @@ const OLD_CACHES = Array.from(Array(currentTileVersion).keys()).map(
   (version) => `${tileCacheString}${version}`,
 );
 
-const { REACT_APP_VECTOR_TILES_ENDPOINT: endpoint } = process.env;
+const {
+  REACT_APP_MATOMO_URL_BASE: matomoUrl,
+  REACT_APP_VECTOR_TILES_ENDPOINT: endpoint,
+} = process.env;
 
 clientsClaim();
 
@@ -102,3 +105,7 @@ self.addEventListener('fetch', (event) => {
     );
   }
 });
+
+self.importScripts(`${matomoUrl}offline-service-worker.js`);
+// eslint-disable-next-line no-undef
+matomoAnalytics.initialize({ queueLimit: 100, timeLimit: 86400 * 2 });

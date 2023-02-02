@@ -4,6 +4,7 @@ import { Switch, Route, useHistory, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { Icon, Menu } from 'semantic-ui-react';
 import { useSelector, useDispatch } from 'react-redux';
+import { MatomoContext } from '@datapunt/matomo-tracker-react';
 
 import { ReactComponent as MapIcon } from '../icons/map.svg';
 import { ReactComponent as LocationIcon } from '../icons/location.svg';
@@ -116,5 +117,7 @@ function Navigation() {
     </div>
   );
 }
+
+Navigation.contextType = MatomoContext;
 
 export default Navigation;
