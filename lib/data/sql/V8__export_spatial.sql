@@ -7,7 +7,7 @@ WITH altitudinal_zones_cantonal AS
   (SELECT foo.geom, foo.code, foo.code_style
        FROM (
               SELECT
-              ST_Union(geom) AS geom,
+              ST_Union(st_makevalid(geom)) AS geom,
               meta.code,
               meta.code as code_style
               FROM (SELECT *, (regexp_matches(hstufe, '(\w*)'))[1] code FROM forest_types_zh) zh
@@ -16,7 +16,7 @@ WITH altitudinal_zones_cantonal AS
                 GROUP BY meta.code
               UNION
               (SELECT 
-                  ST_Union(geom) AS geom,
+                  ST_Union(st_makevalid(geom)) AS geom,
                   hohenstufe::text as code,
                   hohenstufe::text as code_style
               FROM forest_types_ne
@@ -24,14 +24,14 @@ WITH altitudinal_zones_cantonal AS
                 GROUP BY hohenstufe)
               UNION
               (SELECT 
-                  ST_Union(geom) AS geom,
+                  ST_Union(st_makevalid(geom)) AS geom,
                   hs::text as code,
                   hs::text as code_style
               FROM forest_types_lu
                 WHERE hs IS NOT NULL
                 GROUP BY hs)
               UNION
-              (SELECT ST_Union(geom) AS geom,
+              (SELECT ST_Union(st_makevalid(geom)) AS geom,
                   CASE meta_ue.code is null
                     WHEN TRUE THEN meta.code
                     ELSE meta.code || '(' || meta_ue.code || ')'
@@ -52,7 +52,7 @@ WITH altitudinal_zones_cantonal AS
                 GROUP BY hs)
               UNION
               (SELECT 
-                  ST_Union(geom) AS geom,
+                  ST_Union(st_makevalid(geom)) AS geom,
                   hs::text as code,
                   hs::text as code_style
               FROM forest_types_bl
@@ -93,7 +93,7 @@ FROM altitudinal_zones_2085_less_dry;
 
 CREATE VIEW forest_ecoregions_export AS
 SELECT subcode as code,
-       ST_Transform(ST_Union(ST_MakeValid(geom)),3857) as geometry
+       ST_Transform(ST_Union(st_makevalid(geom)),3857) as geometry
 FROM forest_ecoregions
 GROUP BY subcode;
 

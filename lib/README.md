@@ -25,7 +25,7 @@ Spatial data is downloaded from different sources and imported into the database
 4. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
 5. Deploy tiles local by running `yarn run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `yarn start`)
 6. Change version number in [src/service-worker.js](https://github.com/geops/tree-app/blob/master/src/service-worker.js#L15) to clear the tile cache and deploy repository changes
-7. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `yarn run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch` or `tiles-staging.tree-app.ch`)
+7. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `yarn run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch` or `tiles-staging.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step.
 
 ## Bugs
 
@@ -35,3 +35,7 @@ Please use the [GitHub issue tracker](https://github.com/geops/tree-app/issues) 
 
 - Run `yarn run test:watch` to continuously test in development.
 - Use [Angular Commit Message Conventions](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines) for commit messages.
+
+## Known issues
+
+- When running the tree-app locally with local tiles, the labels for the forest_types layer may not load properly and break the style (on heigh zoom levels), since the fonts are not found. This is likely due to CORS. When using a vercel deployment the labels load without issues.

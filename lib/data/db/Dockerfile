@@ -1,5 +1,5 @@
 
-FROM postgres:12
+FROM postgres:15
 
 ENV POSTGIS_MAJOR 3
 
