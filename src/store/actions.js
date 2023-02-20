@@ -18,6 +18,7 @@ export const SET_FORESTTYPE_MODAL = 'SET_FORESTTYPE_MODAL';
 export const SET_FUTURE = 'SET_FUTURE';
 export const SET_LANG_OVERRIDE = 'SET_LANG_OVERRIDE';
 export const SET_MAP_LAYERS = 'SET_MAP_LAYERS';
+export const SET_CONSENT_GIVEN = 'SET_CONSENT_GIVEN';
 
 export function setFormLocation(formLocation) {
   return { type: SET_FORM_LOCATION, formLocation };
@@ -108,4 +109,8 @@ export function setFuture(future) {
 
 export function setLangOverride(langOverride) {
   return { type: SET_LANG_OVERRIDE, langOverride };
+}
+
+export function setConsentGiven(consentGiven) {
+  return { type: SET_CONSENT_GIVEN, consentGiven };
 }

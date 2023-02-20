@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React, { useMemo } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 
 function InfoImpressumLucerne() {
@@ -37,11 +37,34 @@ function InfoImpressumLucerne() {
 
 export default function InfoImpressum() {
   const activeProfile = useSelector((state) => state.activeProfile);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const wslPrivacyLink = useMemo(
+    () =>
+      i18n.language === 'fr'
+        ? 'https://www.wsl.ch/fr/a-propos-du-wsl/conditions-dutilisation.html'
+        : 'https://www.wsl.ch/de/ueber-die-wsl/rechtliches.html',
+    [i18n.language],
+  );
+  const bafuPrivacyLink = useMemo(
+    () =>
+      i18n.language === 'fr'
+        ? 'https://www.admin.ch/gov/fr/accueil/conditions-utilisation.html'
+        : 'https://www.admin.ch/gov/de/start/rechtliches.html',
+    [i18n.language],
+  );
   return (
     <div>
       <h3>{t('info.impressumGeneralTitle')}</h3>
-      <p>{t('info.impressum')}</p>
+      <p>
+        <Trans i18nKey="info.impressum" t={t}>
+          <a href={bafuPrivacyLink} rel="noopener noreferrer" target="_blank">
+            {bafuPrivacyLink}
+          </a>
+          <a href={wslPrivacyLink} rel="noopener noreferrer" target="_blank">
+            {wslPrivacyLink}
+          </a>
+        </Trans>
+      </p>
       {activeProfile === 'lu' && <InfoImpressumLucerne />}
     </div>
   );

@@ -17,6 +17,7 @@ import {
   SET_FUTURE,
   SET_LANG_OVERRIDE,
   SET_MAP_LAYERS,
+  SET_CONSENT_GIVEN,
 } from './actions';
 import translation from '../i18n/resources/de/translation.json';
 
@@ -43,8 +44,7 @@ export const initialState = {
   welcomeModalOpen: localStorage.getItem('tree.welcomeModal') !== 'close',
   future: true,
   langOverride: null,
-  consentGiven: true,
-  disableCookies: true,
+  consentGiven: localStorage.getItem('tree.consentGiven') === 'true',
 };
 
 const initialFormLocation = {
@@ -176,6 +176,8 @@ function tree(state = initialState, action) {
     case SET_LANG_OVERRIDE:
       i18n.changeLanguage(action.langOverride);
       return { ...state, langOverride: action.langOverride };
+    case SET_CONSENT_GIVEN:
+      return { ...state, consentGiven: action.consentGiven };
     default:
       return state;
   }
