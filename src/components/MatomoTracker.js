@@ -5,19 +5,18 @@ import { useMatomo } from '@datapunt/matomo-tracker-react';
 function MatomoTracker() {
   const { trackPageView, pushInstruction } = useMatomo();
   const consentGiven = useSelector((state) => state.consentGiven);
-  const disableCookies = useSelector((state) => state.disableCookies);
 
   // Start tracking page view when the consent has been given
   useEffect(() => {
     if (!trackPageView || !pushInstruction || !consentGiven) {
       return;
     }
-    pushInstruction('setConsentGiven');
-    if (disableCookies) {
-      pushInstruction('disableCookies');
+
+    if (consentGiven) {
+      pushInstruction('setConsentGiven');
+      trackPageView();
     }
-    trackPageView();
-  }, [consentGiven, trackPageView, pushInstruction, disableCookies]);
+  }, [consentGiven, trackPageView, pushInstruction]);
 
   return null;
 }
