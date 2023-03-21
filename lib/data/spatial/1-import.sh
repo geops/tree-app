@@ -16,7 +16,7 @@ _import () {
         7z x -aoa -o"${TARGET}" "${TARGET}.zip"
         cd ${TARGET}
 
-        if [ -n "$ZIPFILE" ]; then
+        if [[ -n "$ZIPFILE" ]]; then
             if [ -f "/data/spatial/${TARGET}/${ZIPFILE}/${SHPFILE}.shp" ]; then
                 mv ${ZIPFILE}/${SHPFILE}.* .
             else
@@ -31,7 +31,7 @@ _import () {
 
     local COUNT=$(psql -d tree -U postgres -At -c "SELECT COUNT(*) FROM ${TARGET}")
     if [ "$COUNT" == "0" ]; then
-        if [ -n "$ZIPFILE" ] && [ -f "/data/spatial/${TARGET}/${ZIPFILE}.gpkg" ]; then
+        if [[ -n "$ZIPFILE" ]] && [ -f "/data/spatial/${TARGET}/${ZIPFILE}.gpkg" ]; then
             echo "Importing GeoPackage ${ZIPFILE}.gpkg ..."
             ogr2ogr -f PostgreSQL "PG:dbname=tree user=postgres" -nln ${TARGET} /data/spatial/${TARGET}/${ZIPFILE}.gpkg
         else
@@ -53,7 +53,7 @@ _import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/data.zip" "for
 
 _import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_fir_areas" "Tannenareale" "Tannenareale"
 
-_import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d/swissboundaries3d_2023-01/swissboundaries3d_2023-01_2056_5728.shp.zip" "cantonal_boundaries" null "swissBOUNDARIES3D_1_4_TLM_KANTONSGEBIET"
+_import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d/swissboundaries3d_2023-01/swissboundaries3d_2023-01_2056_5728.shp.zip" "cantonal_boundaries" "" "swissBOUNDARIES3D_1_4_TLM_KANTONSGEBIET"
 
 _import "Download manually" "forest_types_fl" "forest_types_fl" "forest_types_fl"
 
