@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import WelcomeModal from './components/WelcomeModal';
 import ForestTypeModal from './components/ForestTypeModal';
 import MatomoTracker from './components/MatomoTracker';
+import CookieBanner from './components/CookieBanner';
 import history from './history';
 import store from './store';
 
@@ -32,6 +33,7 @@ function App() {
           <Navigation />
           <WelcomeModal />
           <ForestTypeModal />
+          <CookieBanner />
         </Provider>
       </Router>
     </MatomoProvider>
