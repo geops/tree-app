@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 import { MatomoProvider, createInstance } from '@datapunt/matomo-tracker-react';
@@ -24,6 +24,7 @@ const matomo = createInstance({
 });
 
 function App() {
+  useEffect(() => matomo.trackPageView(), []);
   return (
     <MatomoProvider value={matomo}>
       <Router history={history}>
