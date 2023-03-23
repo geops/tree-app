@@ -4,6 +4,7 @@ describe('Info', () => {
   beforeEach(() => {
     localStorage.setItem('tree.welcomeModal', 'close');
     cy.visit('');
+    cy.get('[data-cypress=cookie-consent-ok-btn]').click();
     cy.get('.ui.menu > :nth-child(3)').click();
   });
 
