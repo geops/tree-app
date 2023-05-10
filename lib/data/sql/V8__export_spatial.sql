@@ -10,8 +10,17 @@ WITH altitudinal_zones_cantonal AS
               ST_Union(geom) AS geom,
               meta.code,
               meta.code as code_style
-              FROM (SELECT *, (regexp_matches(hstufe, '(\w*)'))[1] code FROM forest_types_zh) zh
+              FROM (SELECT st_makevalid(geom) as geom, (regexp_matches(hstufe, '(\w*)'))[1] code FROM forest_types_zh) zh
                 LEFT JOIN altitudinal_zone_meta meta ON zh.code = meta.zh
+                WHERE meta.code IS NOT NULL
+                GROUP BY meta.code
+              UNION
+              SELECT
+              ST_Union(geom) AS geom,
+              meta.code,
+              meta.code as code_style
+              FROM (SELECT st_makevalid(geom) as geom, (regexp_matches(hstufe, '(\w*)'))[1] code FROM forest_types_zh_2) zh_2
+                LEFT JOIN altitudinal_zone_meta meta ON zh_2.code = meta.zh
                 WHERE meta.code IS NOT NULL
                 GROUP BY meta.code
               UNION
@@ -141,6 +150,13 @@ SELECT nais as code,
        nais as code_vd,
        null as info_vd
 FROM forest_types_zh
+WHERE nais IS NOT NULL
+UNION
+SELECT nais as code,
+       ST_Transform(geom, 3857) as geometry,
+       nais as code_vd,
+       null as info_vd
+FROM forest_types_zh_2
 WHERE nais IS NOT NULL
 UNION
 SELECT code_nais AS code,

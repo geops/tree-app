@@ -190,6 +190,19 @@ ALTER TABLE "forest_types_zh" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_zh','geom','2056','MULTIPOLYGON',2);
 
+CREATE TABLE "forest_types_zh_2" (gid serial,
+"vecode" float8,
+"ek72" varchar(10),
+"vename" varchar(80),
+"nais" varchar(15),
+"hstufe" varchar(15),
+"shape_area" numeric,
+"shape_len" numeric);
+
+ALTER TABLE "forest_types_zh_2" ADD PRIMARY KEY (gid);
+
+SELECT AddGeometryColumn('','forest_types_zh_2','geom','2056','MULTIPOLYGON',2);
+
 ----------------------------------------------
 -- Forest types NE
 

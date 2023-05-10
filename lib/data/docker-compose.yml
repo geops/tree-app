@@ -10,6 +10,10 @@ services:
       - POSTGRES_DB=tree
     volumes:
       - .:/data
+    deploy:
+      resources:
+        limits:
+          memory: 12g
   tippecanoe:
     build:
       context: ./tippecanoe
