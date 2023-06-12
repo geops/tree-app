@@ -32,7 +32,7 @@ export const initialState = {
   mapLayers: ['ft', 'cb'],
   azLayer: 'azt',
   mapLocation: {},
-  mapView: '9|2660013|1185171',
+  mapView: process?.env?.REACT_APP_MAP_VIEW || '9|2660013|1185171',
   projectionMode: 'm',
   projectionOptions: {},
   projectionResult: {
