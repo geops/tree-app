@@ -315,3 +315,20 @@ CREATE TABLE "altitudinal_zones_vd" (gid serial,
 "hs" float8);
 ALTER TABLE "altitudinal_zones_vd" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','altitudinal_zones_vd','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types SG
+
+
+CREATE TABLE "forest_types_sg" (gid serial,
+"dtwgeinhei" varchar(80),
+"ta" varchar(80),
+"tahs" varchar(80),
+"taue" varchar(80),
+"tauehs" varchar(80),
+"shape_leng" numeric,
+"shape_area" numeric,
+"hs" float8);
+ALTER TABLE "forest_types_sg" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_sg','geom','0','MULTIPOLYGON',2);
