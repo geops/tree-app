@@ -61,7 +61,7 @@ _import "Download manually" "forest_types_lu" "forest_types_lu" "forest_types_lu
 
 _import "Download manually" "forest_types_ne" "forest_types_ne" "forest_types_ne"
 
-_import "Download manually" "forest_types_tg" "forest_types_tg" "forest_types_tg"
+# _import "Download manually" "forest_types_tg" "forest_types_tg" "forest_types_tg"
 
 _import "Download manually" "forest_types_zh" "forest_types_zh" "forest_types_zh"
 
@@ -77,3 +77,4 @@ _import "Download manually" "forest_types_vd" "forest_types_vd" "forest_types_vd
 
 _import "Download manually" "altitudinal_zones_vd" "altitudinal_zones_vd" "altitudinal_zones_vd"
 
+_import "Download manually" "forest_types_sg" "forest_types_sg" "forest_types_sg"
