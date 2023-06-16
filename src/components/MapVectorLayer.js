@@ -104,7 +104,10 @@ function LegendModal({ legendId, onClose }) {
       <Modal.Content>
         {legend.map(({ color, label }) => (
           <List.Item className={styles.legendItem} key={label}>
-            <List.Icon name="square" style={{ color }} />
+            <List.Icon
+              style={{ backgroundColor: color }}
+              className={styles.legendIcon}
+            />
             <List.Content>{label}</List.Content>
           </List.Item>
         ))}
