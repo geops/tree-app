@@ -77,7 +77,7 @@ WITH altitudinal_zones_cantonal AS
                   hs::text as code_style
               FROM forest_types_sg
                 WHERE hs IS NOT NULL
-                GROUP BY hs)
+                GROUP BY hs, tauehs)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::text AS code, (code::TEXT || subcode::TEXT)::text AS code_style,
