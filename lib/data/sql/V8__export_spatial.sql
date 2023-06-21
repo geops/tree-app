@@ -70,7 +70,10 @@ WITH altitudinal_zones_cantonal AS
               UNION
               (SELECT 
                   ST_Union(geom) AS geom,
-                  hs::text as code,
+                  CASE tauehs is null
+                    WHEN TRUE THEN hs::text
+                    ELSE hs::text || '(' || tauehs::text || ')'
+                  END AS code,
                   hs::text as code_style
               FROM forest_types_sg
                 WHERE hs IS NOT NULL
