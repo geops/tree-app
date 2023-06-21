@@ -219,5 +219,5 @@ SELECT CASE taue is null
        END AS code_vd,
        null as info_vd
 FROM forest_types_sg
-WHERE taue IS NOT NULL
+WHERE ta IS NOT NULL
 ;
