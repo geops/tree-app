@@ -70,14 +70,14 @@ WITH altitudinal_zones_cantonal AS
               UNION
               (SELECT 
                   ST_Union(geom) AS geom,
-                  CASE tauehs is null
+                  CASE hsue is null
                     WHEN TRUE THEN hs::text
-                    ELSE hs::text || '(' || tauehs::text || ')'
+                    ELSE hs::text || '(' || hsue::text || ')'
                   END AS code,
                   hs::text as code_style
               FROM forest_types_sg
                 WHERE hs IS NOT NULL
-                GROUP BY hs)
+                GROUP BY hs, hsue)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::text AS code, (code::TEXT || subcode::TEXT)::text AS code_style,
