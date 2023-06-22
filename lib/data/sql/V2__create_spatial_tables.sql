@@ -329,6 +329,7 @@ CREATE TABLE "forest_types_sg" (gid serial,
 "tauehs" varchar(80),
 "shape_leng" numeric,
 "shape_area" numeric,
-"hs" float8);
+"hs" float8),
+"hsue" float8);
 ALTER TABLE "forest_types_sg" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','forest_types_sg','geom','0','MULTIPOLYGON',2);
