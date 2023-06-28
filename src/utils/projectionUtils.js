@@ -66,7 +66,11 @@ export const getScenarioColumns = (
       'extreme',
     );
 
-    if (!moderateKey && !extremeKey) {
+    if (
+      (!moderateKey && !extremeKey) ||
+      (!projectionResult.moderate.projections &&
+        !projectionResult.extreme.projections)
+    ) {
       return columns;
     }
 
