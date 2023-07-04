@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 import { applyMiddleware } from 'redux';
-// eslint-disable-next-line import/no-unresolved
 import { locate, utils } from '@geops/tree-lib';
 
 import {

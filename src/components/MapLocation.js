@@ -3,7 +3,7 @@ import { transform } from 'ol/proj';
 import { Style, Icon } from 'ol/style';
 import OLFeature from 'ol/Feature';
 import VectorSource from 'ol/source/Vector';
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
@@ -16,9 +16,10 @@ import mapPositionIcon from '../icons/mapPosition.svg';
 import { MapContext } from '../spatial/components/Map';
 import Mapbox from '../spatial/components/layer/Mapbox';
 import Vector from '../spatial/components/layer/Vector';
-import { setMapLocation } from '../store/actions';
+import { setFormLocation, setMapLocation } from '../store/actions';
 import styles from './MapLocation.module.css';
 import translation from '../i18n/resources/de/translation.json';
+import usePrevious from '../hooks/usePrevious';
 
 const getKey = (sl) =>
   (
@@ -116,7 +117,10 @@ function MapLocation() {
   const dispatch = useDispatch();
   const history = useHistory();
   const mapLocation = useSelector((state) => state.mapLocation);
+  const formLocation = useSelector((state) => state.formLocation);
+  const previousMapLocation = usePrevious(mapLocation);
   const activeProfile = useSelector((state) => state.activeProfile);
+  const [mapTraz, setMapTraz] = useState(null);
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
@@ -142,8 +146,8 @@ function MapLocation() {
       if (!location.altitudinalZone) {
         dispatch(setMapLocation(location, true, true, 'f'));
       }
+      setMapTraz(location.transitionAltitudinalZone);
     };
-
     const waitForLoad = () => {
       const mapboxLayer = map
         .getLayers()
@@ -159,6 +163,21 @@ function MapLocation() {
     map.on('singleclick', handleCoords);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, activeProfile, dispatch]);
+
+  useEffect(() => {
+    // Resets the form transitional AZ when the map location has a transitional AZ
+    // We put this logic in its own useEffect since it would trigger too many rerenders if
+    // we put it in the click listener.
+    if (
+      JSON.stringify(previousMapLocation) !== JSON.stringify(mapLocation) &&
+      mapTraz &&
+      formLocation.transitionAltitudinalZone
+    ) {
+      dispatch(
+        setFormLocation({ ...formLocation, transitionAltitudinalZone: null }),
+      );
+    }
+  }, [previousMapLocation, mapLocation, dispatch, formLocation, mapTraz]);
 
   return (
     <>
