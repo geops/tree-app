@@ -159,21 +159,6 @@ function MapLocation() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, activeProfile, dispatch]);
 
-  // useEffect(() => {
-  //   // Resets the form transitional AZ when the map location has a transitional AZ
-  //   // We put this logic in its own useEffect since it would trigger too many rerenders if
-  //   // we put it in the click listener.
-  //   if (
-  //     JSON.stringify(previousMapLocation) !== JSON.stringify(mapLocation) &&
-  //     mapTraz &&
-  //     formLocation.transitionAltitudinalZone
-  //   ) {
-  //     dispatch(
-  //       setFormLocation({ ...formLocation, transitionAltitudinalZone: null }),
-  //     );
-  //   }
-  // }, [previousMapLocation, mapLocation, dispatch, formLocation, mapTraz]);
-
   return (
     <>
       <Vector source={vectorSource} zIndex={999} />
