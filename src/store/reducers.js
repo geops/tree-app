@@ -107,6 +107,10 @@ function tree(state = initialState, action) {
       if (mapLocation.transitionForestType) {
         formLocation.transitionForestType = undefined;
       }
+      if (action.mapLocation.transitionAltitudinalZone) {
+        // If the map location from the map click has a transAZ we remove the form transAz
+        formLocation.transitionAltitudinalZone = undefined;
+      }
       if (!mapLocation.forestType) {
         Object.keys(translation.profiles).forEach((profile) => {
           // Remove cantonal data when no forestType found

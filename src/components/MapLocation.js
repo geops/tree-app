@@ -143,7 +143,6 @@ function MapLocation() {
         dispatch(setMapLocation(location, true, true, 'f'));
       }
     };
-
     const waitForLoad = () => {
       const mapboxLayer = map
         .getLayers()
