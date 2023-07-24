@@ -25,7 +25,8 @@ Spatial data is downloaded from different sources and imported into the database
 4. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
 5. Deploy tiles local by running `yarn run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `yarn start`)
 6. Change version number in [src/service-worker.js](https://github.com/geops/tree-app/blob/master/src/service-worker.js#L16) to clear the tile cache and deploy repository changes
-7. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `yarn run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch` or `tiles-staging.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step.
+7. Before deployment, check the vercel project ID in the `.vercel` folder in [tiles](https://github.com/geops/tree-app/tree/master/lib/data/spatial/tiles). This folder is generated during the first deployemnt and prompts the definition of the vercel project. Depending on the current project ID and the target instance (tree-app or tg.tree-app), the folder needs to be deleted so the initial prompt is triggered again (e.g. if Thurgau tiles need to be deployed but the last deployment was made for tiles-staging, the folder needs to be recreated)
+8. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `yarn run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`, `tiles-tg.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step.
 
 ## Excluding specific canton data
 
