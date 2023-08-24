@@ -78,6 +78,14 @@ WITH altitudinal_zones_cantonal AS
               FROM forest_types_sg
                 WHERE hs IS NOT NULL
                 GROUP BY hs, hsue)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  hs::text as code,
+                  hs::text as code_style
+              FROM forest_types_sh
+                WHERE hs IS NOT NULL
+                GROUP BY hs)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::text AS code, (code::TEXT || subcode::TEXT)::text AS code_style,
@@ -223,4 +231,17 @@ SELECT CASE taue is null
        null as info_vd
 FROM forest_types_sg
 WHERE ta IS NOT NULL
+UNION
+SELECT CASE naisue is null
+           WHEN TRUE THEN nais
+           ELSE nais || '(' || naisue || ')'
+       END AS code,
+       ST_Transform(geom, 3857) as geometry,
+       CASE naisue is null
+           WHEN TRUE THEN nais
+           ELSE nais || '(' || naisue || ')'
+       END AS code_vd,
+       null as info_vd
+FROM forest_types_sh
+WHERE nais IS NOT NULL
 ;
