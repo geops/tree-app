@@ -333,3 +333,21 @@ CREATE TABLE "forest_types_sg" (gid serial,
 "hsue" float8);
 ALTER TABLE "forest_types_sg" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','forest_types_sg','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types SG
+
+
+CREATE TABLE "forest_types_sh" (gid serial,
+"uuid" varchar(254),
+"waldgesell" varchar(254),
+"waldgese_1" varchar(254),
+"tree-app_w" varchar(254),
+"tree-app_1" varchar(254),
+"tree-app_2" varchar(254),
+"hs" float8,
+"nais" varchar(10),
+"naisue" varchar(10));
+ALTER TABLE "forest_types_sh" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_sh','geom','0','MULTIPOLYGON',2);

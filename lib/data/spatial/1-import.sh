@@ -78,3 +78,6 @@ _import "Download manually" "forest_types_vd" "forest_types_vd" "forest_types_vd
 _import "Download manually" "altitudinal_zones_vd" "altitudinal_zones_vd" "altitudinal_zones_vd"
 
 _import "Download manually" "forest_types_sg" "forest_types_sg" "forest_types_sg"
+
+_import "Download manually" "forest_types_sh" "forest_types_sh" "forest_types_sh"
+
