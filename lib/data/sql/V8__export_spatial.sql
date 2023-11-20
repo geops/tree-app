@@ -247,4 +247,11 @@ SELECT CASE naisue is null
        null as info_vd
 FROM forest_types_sh
 WHERE nais IS NOT NULL
+UNION
+SELECT stan_nais AS code,
+       ST_Transform(geom, 3857) as geometry,
+       stan_nais as code_vd,
+       null as info_vd
+FROM forest_types_so
+WHERE stan_nais IS NOT NULL
 ;
