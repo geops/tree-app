@@ -6,9 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v1
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
@@ -26,10 +28,20 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - run: yarn build
+      - name: Build lib
+        run: yarn build
         working-directory: ./lib
 
+      - name: Cypress install
+        uses: cypress-io/github-action@v5
+        with:
+          runTests: false
+      # report machine parameters
+      - run: yarn cypress info
+      - run: node --version
+      - run: node -p 'os.cpus()'
+
       - name: Run and record Cypress tests
-        run: yarn cypress:ci
+        run: yarn run cypress:ci
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
