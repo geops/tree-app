@@ -30,6 +30,6 @@ jobs:
         working-directory: ./lib
 
       - name: Run and record Cypress tests
-        run: yarn run cypress:ci
+        run: yarn cypress:ci
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
