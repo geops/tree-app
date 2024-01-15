@@ -3,6 +3,9 @@
   "description": "Library for tree recommendations.",
   "license": "MIT",
   "version": "2.0.0",
+  "engines": {
+    "node": "18.x"
+  },
   "files": [
     "build"
   ],
