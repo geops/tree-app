@@ -4,9 +4,6 @@
   "license": "MIT",
   "version": "2.6.2",
   "private": true,
-  "engines": {
-    "node": "18.x"
-  },
   "dependencies": {
     "@datapunt/matomo-tracker-react": "^0.5.1",
     "@geops/tree-lib": "^2.0.0",
