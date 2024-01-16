@@ -37,16 +37,19 @@ jobs:
       - name: Cypress install
         uses: cypress-io/github-action@v5
         with:
-          runTests: false
-
-      # report machine parameters
-      - run: yarn cypress info
-      - run: node --version
-      - run: node -p 'os.cpus()'
-
-      - name: Run and record Cypress tests
-        with:
           wait-on: 'http://[::1]:3000'
           start: yarn run cypress:ci
           env:
             CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
+
+      # report machine parameters
+      # - run: yarn cypress info
+      # - run: node --version
+      # - run: node -p 'os.cpus()'
+
+      # - name: Run and record Cypress tests
+      #   with:
+      #     wait-on: 'http://[::1]:3000'
+      #     start: yarn run cypress:ci
+      #     env:
+      #       CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
