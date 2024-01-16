@@ -3,6 +3,9 @@
   "description": "Library for tree recommendations.",
   "license": "MIT",
   "version": "2.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "files": [
     "build"
   ],
@@ -40,7 +43,7 @@
     "data:export:csv": "node --experimental-json-modules export/src/export_csv.mjs",
     "doc:build": "documentation build src/** --format html --output doc --config documentation.yml",
     "doc:serve": "documentation serve --config documentation.yml --watch src/**",
-    "build": "webpack --mode production",
+    "build": "NODE_OPTIONS='--no-experimental-fetch --openssl-legacy-provider' webpack --mode production",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint --cache --format codeframe src",
     "test": "jest",
