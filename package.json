@@ -132,7 +132,7 @@
   },
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:ci": "start-server-and-test start http://localhost:3000 'cypress run'",
+    "cypress:ci": "start-server-and-test start http://localhost:3000 'cypress run --browser chrome'",
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "prebuild": "cd lib && yarn build",
     "build": "NODE_OPTIONS='--no-experimental-fetch --openssl-legacy-provider' react-scripts build",
