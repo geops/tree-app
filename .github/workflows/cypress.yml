@@ -45,9 +45,8 @@ jobs:
       - run: node -p 'os.cpus()'
 
       - name: Run and record Cypress tests
-        run: yarn run cypress:ci
-        env:
-          CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
-          REACT_APP_VECTOR_TILES_ENDPOINT: https://tree-app-tiles-cxpa887k2-geops.vercel.app
-          REACT_APP_MATOMO_URL_BASE: https://analytics.geops.de/
-          REACT_APP_MATOMO_SITE_ID: 14
+        with:
+          wait-on: 'http://[::1]:3000'
+          start: yarn run cypress:ci
+          env:
+            CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
