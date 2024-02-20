@@ -362,7 +362,8 @@ CREATE TABLE "forest_types_so" (gid serial,
 "stan_nais" varchar(254),
 "grunnheit" varchar(254),
 "hs" varchar(20),
-"hs_code" float8);
+"hs_code" float8,
+"hsue_code" float8);
 
 ALTER TABLE "forest_types_so" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','forest_types_so','geom','0','MULTIPOLYGON',2);
