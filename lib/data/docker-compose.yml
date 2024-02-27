@@ -4,6 +4,8 @@ services:
     build:
       context: ./db
     restart: always
+    # disable jit
+    command: postgres -c jit=off
     ports:
       - 5432:5432
     environment:
