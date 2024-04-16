@@ -439,7 +439,8 @@
     "ch": "Confédération",
     "lu": "Lucerne",
     "bl": "Bâle",
-    "vd": "Vaud"
+    "vd": "Vaud",
+    "so": "Soleure"
   },
   "forestTypeModal": {
     "compare": "Comparer les types de stations",
