@@ -12,8 +12,9 @@ import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 
 const tileCacheString = 'tree-app-tiles-v'; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
+const SO_CACHE_NAME = 'so-data-v1'; // Cache name for SO profile data
 const currentTileVersion = 18; // Current tile version, needs to be increased every time new tiles are deployed
-const CACHE_NAME = `${tileCacheString}${currentTileVersion}`;
+const TILE_CACHE_NAME = `${tileCacheString}${currentTileVersion}`;
 // Create an array of 'tree-app-tiles-v[1 - currentVersion]' strings for the caches to be removed
 const OLD_CACHES = Array.from(Array(currentTileVersion).keys()).map(
   (version) => `${tileCacheString}${version}`,
@@ -21,7 +22,7 @@ const OLD_CACHES = Array.from(Array(currentTileVersion).keys()).map(
 
 const {
   REACT_APP_MATOMO_URL_BASE: matomoUrl,
-  REACT_APP_VECTOR_TILES_ENDPOINT: endpoint,
+  REACT_APP_VECTOR_TILES_ENDPOINT: tilesEndpoint,
 } = process.env;
 
 clientsClaim();
@@ -70,14 +71,14 @@ OLD_CACHES.forEach((OLD_CACHE) => caches.delete(OLD_CACHE));
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) =>
-      fetch(`${endpoint}/tiles.txt`)
+    caches.open(TILE_CACHE_NAME).then((cache) =>
+      fetch(`${tilesEndpoint}/tiles.txt`)
         .then((response) => response.text())
         .then(async (response) => {
           const tiles = response.split(/\r?\n/);
           // eslint-disable-next-line no-plusplus
           for (let index = 0; index < tiles.length; index++) {
-            const tileUrl = `${endpoint}/${tiles[index]}`;
+            const tileUrl = `${tilesEndpoint}/${tiles[index]}`;
             // eslint-disable-next-line no-await-in-loop
             if (tiles[index] && !(await cache.match(tileUrl))) {
               try {
@@ -93,11 +94,35 @@ self.addEventListener('install', (event) => {
         }),
     ),
   );
+  event.waitUntil(
+    caches.open(SO_CACHE_NAME).then((cache) =>
+      fetch(`https://so-data.tree-app.ch/forest-types/list.txt`)
+        .then((response) => response.text())
+        .then(async (response) => {
+          const forestTypes = response.split(/\r?\n/);
+          // eslint-disable-next-line no-plusplus
+          for (let index = 0; index < forestTypes.length; index++) {
+            const pdfUrl = `https://so-data.tree-app.ch/forest-types/${forestTypes[index]}`;
+            // eslint-disable-next-line no-await-in-loop
+            if (forestTypes[index] && !(await cache.match(pdfUrl))) {
+              try {
+                // eslint-disable-next-line no-await-in-loop
+                const pdfResponse = await fetch(pdfUrl);
+                cache.put(pdfUrl, pdfResponse);
+              } catch (error) {
+                // Some tiles do not exist.
+              }
+            }
+          }
+          return true;
+        }),
+    ),
+  );
 });
 
 // eslint-disable-next-line no-restricted-globals
 self.addEventListener('fetch', (event) => {
-  if (event.request.url.startsWith(endpoint)) {
+  if (event.request.url.startsWith(tilesEndpoint)) {
     event.respondWith(
       caches
         .match(event.request)
