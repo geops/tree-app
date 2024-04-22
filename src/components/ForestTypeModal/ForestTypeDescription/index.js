@@ -42,7 +42,7 @@ ForestTypeDescription.Header = function ForestTypeDescriptionHeader() {
 
   return data ? (
     <>
-      {data.code} - {data[i18n.language]} {data.la && <i>{data.la}</i>}
+      {data.code} {data[i18n.language] && `- ${data[i18n.language]}`} {data.la && <i>{data.la}</i>}
     </>
   ) : (
     t('forestTypeModal.noDataHeader')

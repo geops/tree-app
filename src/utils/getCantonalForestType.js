@@ -11,6 +11,7 @@ const getCantonalForestTypes = (
     const mapping = utils().getMapping('forestTypes', profile);
     ftMapping = isFuture ? mapping.future : mapping.current;
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.log(`No forest type mapping found for ${profile}`, error);
   }
 
@@ -23,6 +24,7 @@ const getCantonalForestTypes = (
       try {
         ftInfo = info('forestType', ft, profile);
       } catch (error) {
+        // eslint-disable-next-line no-console
         console.log(`No forest type found for ${ft} in ${profile}`, error);
       }
       return ftInfo ? [...allFts, ftInfo] : [...allFts, { code: ft }];
