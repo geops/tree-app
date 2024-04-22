@@ -467,4 +467,9 @@ COPY
           relief,
           silver_fir_areas,
           slope,
-          treetype))) TO PROGRAM $$sed 's/\\\\\"/\\\"/g' > '/data/types.json'$$; --filter + replace double backslash escapes
+          treetype)
+           ,'so', (SELECT jsonb_build_object('forestType', (SELECT json_agg(jsonb_build_object('code', sto_nr,
+                                                                                             'de', sto_deu)) AS
+           values
+           FROM so_standorttypen)))
+          )) TO PROGRAM $$sed 's/\\\\\"/\\\"/g' > '/data/types.json'$$; --filter + replace double backslash escapes

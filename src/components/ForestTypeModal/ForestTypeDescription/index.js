@@ -17,9 +17,9 @@ function getForestTypeData(code, profile) {
 }
 
 function ForestTypeDescription() {
-  const activeProfile = 'so'; // useSelector((state) => state.activeProfile);
+  const activeProfile = useSelector((state) => state.activeProfile);
   const code = useSelector((state) => state.forestTypeDescription);
-  const data = true; // getForestTypeData(code, activeProfile);
+  const data = getForestTypeData(code, activeProfile);
   const { t } = useTranslation();
 
   return data ? (

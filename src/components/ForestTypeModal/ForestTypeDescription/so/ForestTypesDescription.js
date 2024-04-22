@@ -4,10 +4,11 @@ import React from 'react';
 const style = { height: '70vh' };
 
 function ForestTypeDescription({ code }) {
+  const name = code.replace('*', 'stern');
   return (
     <embed
       type="application/pdf"
-      src={`https://so-data.tree-app.ch/forest-types/${code}.pdf`}
+      src={`https://so-data.tree-app.ch/forest-types/${name}.pdf`}
       width="100%"
       style={style}
     />
