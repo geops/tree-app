@@ -2,7 +2,7 @@
   "name": "@geops/tree-app",
   "description": "Web app for tree recommendations.",
   "license": "MIT",
-  "version": "2.6.3",
+  "version": "2.6.4",
   "private": true,
   "engines": {
     "node": ">=18"
