@@ -84,8 +84,7 @@ function ProjectionResult() {
     
     
     const panes = useMemo(
-      () => {
-        const ps = [
+      () => [
           {
             menuItem: t('recommendation.header'),
             render: () => (
@@ -100,9 +99,7 @@ function ProjectionResult() {
             i18n.language,
             t,
           ),
-        ];
-        return ps.filter(Boolean);
-      },
+        ].filter(Boolean),
       [
         i18n.language,
         location,
