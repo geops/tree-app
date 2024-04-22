@@ -33,6 +33,7 @@ function TabFooter(props) {
               compact
               className={styles.cantonalForestTypeButton}
               onClick={() => dispatch(setForestTypeDescription(ft.code))}
+              disabled={ft.disabled}
             >
               {ft.code}
             </Button>

@@ -27,7 +27,7 @@ const getCantonalForestTypes = (
         // eslint-disable-next-line no-console
         console.log(`No forest type found for ${ft} in ${profile}`, error);
       }
-      return ftInfo ? [...allFts, ftInfo] : [...allFts, { code: ft }];
+      return ftInfo ? [...allFts, ftInfo] : [...allFts, { code: ft, disabled: true}];
     }, []);
   }
   return cantonalForestTypes;
