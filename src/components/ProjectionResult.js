@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { Header, Menu, Tab } from 'semantic-ui-react';
@@ -6,7 +6,6 @@ import { info, utils } from '@geops/tree-lib';
 
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';
-import ExportButton from './ExportButton';
 import TabFooter from './TabFooter';
 import styles from './ProjectionResult.module.css';
 
@@ -19,14 +18,13 @@ function getPane(scenario, projection, language, t) {
   const { forestType, transitionForestType } = projection;
   const altitudinalZone = getAZ(projection.altitudinalZone);
   const scenarios = getScenarios(scenario, t);
-  console.log(scenarios);
 
   return (
     forestType && {
       forestType: transitionForestType
-      ? `${forestType}(${transitionForestType})`
-      : `${forestType}`,
-      scenarios,
+        ? `${forestType}(${transitionForestType})`
+        : `${forestType}`,
+      scenarioKey: scenarios?.key,
       menuItem: (
         <Menu.Item className={styles.arrow} key={scenario}>
           <div className={styles.icons}>{scenarios.icons}</div>
@@ -47,6 +45,14 @@ function getPane(scenario, projection, language, t) {
 }
 const checkFields = ['slope', 'additional', 'relief'];
 
+const useProjectedForestType = (activeTabIndex, panes) => {
+  const [projectedForestType, setProjectedForestType] = useState(null);
+  useEffect(() => {
+    const { forestType, scenarioKey } = panes[activeTabIndex] || {};
+    setProjectedForestType({ code: forestType, scenarioKey });
+  }, [activeTabIndex, panes]);
+  return projectedForestType;
+}
 
 function ProjectionResult() {
   const {
@@ -68,7 +74,6 @@ function ProjectionResult() {
   }));
   const { i18n, t } = useTranslation();
   const [activeTabIndex, setActiveTabIndex] = useState(0);
-  const [projectedForestType, setProjectedForestType] = useState(null);
   const AZToday = getAZ(location.altitudinalZone);
   const TAZModerate = getAZ(location.targetAltitudinalZoneModerate);
   const TAZExtreme = getAZ(location.targetAltitudinalZoneExtreme);
@@ -76,36 +81,36 @@ function ProjectionResult() {
   const { options } =
     projectionMode === 'm' ? projectionResult.extreme : projectionResult.form;
 
-  const panes = useMemo(
-    () => [
-      {
-        menuItem: t('recommendation.header'),
-        render: () => (
-          <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
-        ),
-      },
-      ...getScenarioColumns(
+    
+    
+    const panes = useMemo(
+      () => [
+          {
+            menuItem: t('recommendation.header'),
+            render: () => (
+              <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
+            ),
+          },
+          ...getScenarioColumns(
+            location,
+            projectionMode,
+            projectionResult,
+            getPane,
+            i18n.language,
+            t,
+          ),
+        ].filter(Boolean),
+      [
+        i18n.language,
         location,
         projectionMode,
         projectionResult,
-        getPane,
-        i18n.language,
+        sameAltitudinalZone,
         t,
-      ),
-    ],
-    [
-      i18n.language,
-      location,
-      projectionMode,
-      projectionResult,
-      sameAltitudinalZone,
-      t,
-    ],
-  );
-
-  const finalPanes = panes.filter((p) => p);
-  console.log(projectedForestType);
-  const foundProjection = sameAltitudinalZone || finalPanes.length > 2;
+      ],
+    );
+  const projectedForestTypes = useProjectedForestType(activeTabIndex, panes);
+  const foundProjection = sameAltitudinalZone || panes.length > 2;
   const checkField =
     foundProjection === false &&
     checkFields.find(
@@ -144,28 +149,23 @@ function ProjectionResult() {
         <>
           <Tab
             className={styles.tab}
-            activeIndex={finalPanes[activeTabIndex] ? activeTabIndex : 0}
+            activeIndex={panes[activeTabIndex] ? activeTabIndex : 0}
             onTabChange={(evt, data) => {
               setActiveTabIndex(data.activeIndex);
-              setProjectedForestType({ forestType: data.panes[data.activeIndex].forestType, scenario:});
             }}
             menu={{
               className: styles.tabMenu,
               inverted: true,
               secondary: true,
-              widths: finalPanes.length,
+              widths: panes.length,
             }}
-            panes={finalPanes}
+            panes={panes}
           />
-          {/* <div className={styles.exportButtonWrapper}>
-            <ExportButton
-              onClick={exportDocx}
-              className={`${styles.exportButton}`}
-            >
-              {t('export.exportRecommendation')}
-            </ExportButton>
-          </div> */}
-          <TabFooter onExport={exportDocx} forestType={projectedForestType} />
+          <TabFooter
+            onExport={exportDocx}
+            forestType={projectedForestTypes?.code}
+            isFuture={/moderate|extreme/.test(projectedForestTypes?.scenarioKey)}
+          />
         </>
       ) : (
         <>

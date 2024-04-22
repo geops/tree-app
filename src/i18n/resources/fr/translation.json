@@ -320,6 +320,9 @@
     "terrain": "Terrain",
     "additionalInfo": "Informations supplémentaires"
   },
+  "forestTypePage": {
+    "noCantonalForestTypesMessage": "Aucun type de site cantonal n'est disponible pour ce profil. Veuillez changer de profil."
+  },
   "help": {
     "recommendationAttention": "La lutte contre cette essence envahissante est réglée dans une <2>Aide à l’exécution de la Confédération</2>.",
     "recommendationAttentionHeader": "Ailante",
