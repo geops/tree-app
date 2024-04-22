@@ -321,6 +321,9 @@
     "cantonalTransitionForestTypes": "Kantonale Übergangsstandortstypen",
     "additionalInfo": "Zusatzinformationen"
   },
+  "forestTypePage": {
+    "noCantonalForestTypesMessage": "Für dieses Profil sind keine kantonalen Standortstypen vorhanden. Bitte wechseln Sie das Profil."
+  },
   "help": {
     "recommendationAttention": "Zur Bekämpfung dieser unerwünschten invasiven Baumart gibt es eine <2>Vollzugshilfe des Bundes</2>.",
     "recommendationAttentionHeader": "Götterbaum",
