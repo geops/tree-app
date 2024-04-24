@@ -1,7 +1,7 @@
 _tile () {
     local TARGET=$1
     echo "Tiling ${TARGET} ..."
-    tippecanoe --detect-shared-borders --no-feature-limit --no-tile-size-limit --include=code --include=code_style --include=code_vd --include=info_vd --minimum-zoom=0 --maximum-zoom=12 -s EPSG:3857 --force -o "/data/spatial/tiles/${TARGET}.mbtiles" /data/spatial/export/${TARGET}.geojson
+    tippecanoe --detect-shared-borders --no-feature-limit --no-tile-size-limit --include=code --include=code_style --include=code_vd --include=info_vd --include=code_so --minimum-zoom=0 --maximum-zoom=12 -s EPSG:3857 --force -o "/data/spatial/tiles/${TARGET}.mbtiles" /data/spatial/export/${TARGET}.geojson
 }
 
 _tile "altitudinal_zones_1995"
