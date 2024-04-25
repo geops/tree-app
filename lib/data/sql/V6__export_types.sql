@@ -618,8 +618,6 @@ SELECT
       values
 , 'bushType', bushtype. 
       values
-, 'forestEcoregion', forest_ecoregions. 
-      values
 , 'forestType', foresttype. 
       values
 , 'herbType', herbtype. 
@@ -636,12 +634,13 @@ SELECT
       values
 , 'treeType', treetype. 
       values
+, 'forestEcoregion', forest_ecoregions. 
+      values
 ) 
       FROM
          additional,
          altitudinal_zone,
          bushtype,
-         forest_ecoregions,
          foresttype,
          herbtype,
          indicators,
@@ -649,7 +648,8 @@ SELECT
          relief,
          silver_fir_areas,
          slope,
-         treetype 
+         treetype,
+         forest_ecoregions
    )
 , 'so', 
    (
@@ -657,7 +657,7 @@ SELECT
          jsonb_build_object('forestType', 
          (
             SELECT
-               json_agg(jsonb_build_object('codeNaisFuture', codeNaisFuture, 'codeSoFuture', codeSoFuture, 'hasPdf', hasPdf, 'codeAltitudinalZoneFuture', codeAltitudinalZoneFuture, 'codesNaisPresent', array_to_json(codesNaisPresent), 'codesSoPresent', array_to_json(codesSoPresent), 'de', de)) AS 
+               json_agg(jsonb_build_object('code', codeSoFuture, 'codeNaisFuture', codeNaisFuture, 'codeSoFuture', codeSoFuture, 'hasPdf', hasPdf, 'codeAltitudinalZoneFuture', codeAltitudinalZoneFuture, 'codesNaisPresent', array_to_json(codesNaisPresent), 'codesSoPresent', array_to_json(codesSoPresent), 'de', de)) AS 
             values
             FROM
                so_standorttypen_export 

@@ -26,7 +26,7 @@ function TabFooter(props) {
     <div className={styles.tabFooter}>
       {cantonalForestType ? (
         <div className={styles.cantonalForestTypesWrapper}>
-          <Header as="h4" inverted>Cantonale Standortstypen</Header>
+          <Header as="h4" inverted>{t('forestType.cantonalForestType')}</Header>
           <Button
               basic
               active
