@@ -5,9 +5,12 @@
     padding: 20px calc(1em + 1vw);
 }
 
+.cantonalForestTypesWrapper {
+    max-width: 50%;
+}
+
 .cantonalForestTypes {
     min-height: 36px;
-    max-width: 50%;
     display: flex;
     gap: 5px;
     flex-wrap: wrap;

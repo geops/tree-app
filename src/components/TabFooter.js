@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
+import { Header } from 'semantic-ui-react';
 import ExportButton from './ExportButton';
 import Button from './Button';
 import styles from './TabFooter.module.css';
@@ -11,33 +12,31 @@ import { setForestTypeDescription } from '../store/actions';
 function TabFooter(props) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const { onExport, forestType, isFuture } = props;
+  const { onExport, forestType } = props;
   const activeProfile = useSelector((state) => state.activeProfile);
 
-  const cantonalForestTypes = useMemo(
-    () => getCantonalForestTypes(forestType, activeProfile, isFuture),
-    [forestType, activeProfile, isFuture],
+  const cantonalForestType = useMemo(
+    () => getCantonalForestTypes(forestType, activeProfile),
+    [forestType, activeProfile],
   );
 
-  if (!onExport && !cantonalForestTypes?.length) return null;
+  if (!onExport && !cantonalForestType) return null;
 
   return (
     <div className={styles.tabFooter}>
-      {cantonalForestTypes?.length ? (
-        <div className={styles.cantonalForestTypes}>
-          {cantonalForestTypes.map((ft) => (
-            <Button
+      {cantonalForestType ? (
+        <div className={styles.cantonalForestTypesWrapper}>
+          <Header as="h4" inverted>Cantonale Standortstypen</Header>
+          <Button
               basic
-              key={ft.code}
               active
               compact
               className={styles.cantonalForestTypeButton}
-              onClick={() => dispatch(setForestTypeDescription(ft.code))}
-              disabled={ft.disabled}
+              onClick={() => dispatch(setForestTypeDescription(cantonalForestType.codeSoFuture))}
+              disabled={!cantonalForestType.hasPdf}
             >
-              {ft.code}
-            </Button>
-          ))}
+              {cantonalForestType.codeSoFuture}
+          </Button>
         </div>
       ) : null}
       {onExport && (
@@ -52,13 +51,11 @@ function TabFooter(props) {
 TabFooter.propTypes = {
   onExport: PropTypes.func,
   forestType: PropTypes.string,
-  isFuture: PropTypes.bool,
 };
 
 TabFooter.defaultProps = {
   onExport: null,
   forestType: null,
-  isFuture: false,
 };
 
 export default TabFooter;

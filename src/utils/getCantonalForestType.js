@@ -1,36 +1,18 @@
-import { info, utils } from '@geops/tree-lib';
+import { info } from '@geops/tree-lib';
 
-const getCantonalForestTypes = (
+const getCantonalForestType = (
   naisForestTypeCode,
   profile,
-  isFuture = false,
 ) => {
-  if (!naisForestTypeCode) return [];
-  let ftMapping = null;
+  if (!naisForestTypeCode) return null;
+  let ftInfo;
   try {
-    const mapping = utils().getMapping('forestTypes', profile);
-    ftMapping = isFuture ? mapping.future : mapping.current;
+    ftInfo = info('forestType', naisForestTypeCode, profile, 'codeNaisFuture');
   } catch (error) {
     // eslint-disable-next-line no-console
-    console.log(`No forest type mapping found for ${profile}`, error);
+    console.log(`No forest type found for ${naisForestTypeCode} in ${profile}`, error);
   }
-
-  if (!ftMapping) return [];
-  let cantonalForestTypes = [];
-  if (ftMapping && ftMapping[naisForestTypeCode]) {
-    const mappedFts = ftMapping[naisForestTypeCode];
-    cantonalForestTypes = mappedFts.reduce((allFts, ft) => {
-      let ftInfo;
-      try {
-        ftInfo = info('forestType', ft, profile);
-      } catch (error) {
-        // eslint-disable-next-line no-console
-        console.log(`No forest type found for ${ft} in ${profile}`, error);
-      }
-      return ftInfo ? [...allFts, ftInfo] : [...allFts, { code: ft, disabled: true}];
-    }, []);
-  }
-  return cantonalForestTypes;
+  return ftInfo;
 };
 
-export default getCantonalForestTypes;
+export default getCantonalForestType;

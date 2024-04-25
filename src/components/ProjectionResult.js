@@ -163,8 +163,7 @@ function ProjectionResult() {
           />
           <TabFooter
             onExport={exportDocx}
-            forestType={projectedForestTypes?.code}
-            isFuture={/moderate|extreme/.test(projectedForestTypes?.scenarioKey)}
+            forestType={!/today/.test(projectedForestTypes?.scenarioKey) ? projectedForestTypes?.code : undefined}
           />
         </>
       ) : (
