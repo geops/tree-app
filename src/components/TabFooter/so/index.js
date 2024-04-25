@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Header } from 'semantic-ui-react';
-import ExportButton from './ExportButton';
-import Button from './Button';
-import styles from './TabFooter.module.css';
-import getCantonalForestTypes from '../utils/getCantonalForestType';
-import { setForestTypeDescription } from '../store/actions';
+import ExportButton from '../../ExportButton';
+import Button from '../../Button';
+import styles from '../TabFooter.module.css';
+import getCantonalForestTypes from './getCantonalForestType';
+import { setForestTypeDescription } from '../../../store/actions';
 
-function TabFooter(props) {
+function SoTabFooter(props) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const { onExport, forestType } = props;
+  const { onExport, cantonalForestTypeCode, cantonalForestTypeAltitudinalZone } = props;
   const activeProfile = useSelector((state) => state.activeProfile);
 
   const cantonalForestType = useMemo(
-    () => getCantonalForestTypes(forestType, activeProfile),
-    [forestType, activeProfile],
+    () => getCantonalForestTypes(cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone),
+    [cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone],
   );
 
   if (!onExport && !cantonalForestType) return null;
@@ -48,14 +48,16 @@ function TabFooter(props) {
   );
 }
 
-TabFooter.propTypes = {
+SoTabFooter.propTypes = {
   onExport: PropTypes.func,
-  forestType: PropTypes.string,
+  cantonalForestTypeCode: PropTypes.string,
+  cantonalForestTypeAltitudinalZone: PropTypes.string,
 };
 
-TabFooter.defaultProps = {
+SoTabFooter.defaultProps = {
   onExport: null,
-  forestType: null,
+  cantonalForestTypeCode: null,
+  cantonalForestTypeAltitudinalZone: null,
 };
 
-export default TabFooter;
+export default SoTabFooter;

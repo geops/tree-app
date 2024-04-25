@@ -289,7 +289,7 @@ INSERT INTO
       bl_baumartenwahl;
 
 -- Export tables Solothurn
-CREATE TABLE so_standorttypen_export (codeNaisFuture TEXT, codeSoFuture TEXT, hasPdf boolean, codeAltitudinalZoneFuture TEXT, codesNaisPresent text[], codesSoPresent text[], de TEXT);
+CREATE TABLE so_standorttypen_export (codeNaisFuture TEXT, codeSoFuture TEXT, hasPdf boolean, altitudinalZoneFuture TEXT, codesNaisPresent text[], codesSoPresent text[], de TEXT);
 INSERT INTO
    so_standorttypen_export 
    SELECT
@@ -305,7 +305,7 @@ INSERT INTO
                false 
          end
       )
-      AS hasPdf, TRIM(' ' FROM "2085_Höhenstufe") AS codeAltitudinalZoneFuture, string_to_array("1975_NaiS", ',')::text[] AS codesNaisPresent, string_to_array("1975_SO", ',')::text[] AS codesSoPresent, STO_DEU AS de 
+      AS hasPdf, TRIM(' ' FROM "2085_Höhenstufe") AS altitudinalZoneFuture, string_to_array("1975_NaiS", ',')::text[] AS codesNaisPresent, string_to_array("1975_SO", ',')::text[] AS codesSoPresent, STO_DEU AS de 
    FROM
       so_standorttypen;
 
@@ -657,7 +657,7 @@ SELECT
          jsonb_build_object('forestType', 
          (
             SELECT
-               json_agg(jsonb_build_object('code', codeSoFuture, 'codeNaisFuture', codeNaisFuture, 'codeSoFuture', codeSoFuture, 'hasPdf', hasPdf, 'codeAltitudinalZoneFuture', codeAltitudinalZoneFuture, 'codesNaisPresent', array_to_json(codesNaisPresent), 'codesSoPresent', array_to_json(codesSoPresent), 'de', de)) AS 
+               json_agg(jsonb_build_object('code', codeSoFuture, 'codeNaisFuture', codeNaisFuture, 'codeSoFuture', codeSoFuture, 'hasPdf', hasPdf, 'altitudinalZoneFuture', altitudinalZoneFuture, 'codesNaisPresent', array_to_json(codesNaisPresent), 'codesSoPresent', array_to_json(codesSoPresent), 'de', de)) AS 
             values
             FROM
                so_standorttypen_export 

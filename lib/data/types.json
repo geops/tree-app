@@ -78637,7 +78637,7 @@
         "codeNaisFuture": "1",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78647,7 +78647,7 @@
         "codeNaisFuture": "1 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78657,7 +78657,7 @@
         "codeNaisFuture": "2",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78667,7 +78667,7 @@
         "codeNaisFuture": "2 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78677,7 +78677,7 @@
         "codeNaisFuture": "6",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78687,7 +78687,7 @@
         "codeNaisFuture": "6 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78697,7 +78697,7 @@
         "codeNaisFuture": "7a",
         "codesSoPresent": ["18aB"],
         "codesNaisPresent": ["18"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78707,7 +78707,7 @@
         "codeNaisFuture": "7a",
         "codesSoPresent": ["7a", " 8a"],
         "codesNaisPresent": ["7a", " 8a"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78717,7 +78717,7 @@
         "codeNaisFuture": "7a c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78727,7 +78727,7 @@
         "codeNaisFuture": "7a(10a)",
         "codesSoPresent": ["7e", " 8e"],
         "codesNaisPresent": ["7a(10a)", " 8a(12e)"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78737,7 +78737,7 @@
         "codeNaisFuture": "7a(10a)",
         "codesSoPresent": ["7j", " 8j"],
         "codesNaisPresent": ["7a(10a)", " 8a(12e)"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78747,7 +78747,7 @@
         "codeNaisFuture": "7a(10a) c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78757,7 +78757,7 @@
         "codeNaisFuture": "7a(6)",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78767,7 +78767,7 @@
         "codeNaisFuture": "7a(6) c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78777,7 +78777,7 @@
         "codeNaisFuture": "7a(9a)",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78787,7 +78787,7 @@
         "codeNaisFuture": "7a(9a) c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78797,7 +78797,7 @@
         "codeNaisFuture": "7b",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78807,7 +78807,7 @@
         "codeNaisFuture": "7b c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78817,7 +78817,7 @@
         "codeNaisFuture": "7S",
         "codesSoPresent": ["20", " 21", " 7g", " 8g"],
         "codesNaisPresent": ["20", " 21", " 7S", " 8S"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78827,7 +78827,7 @@
         "codeNaisFuture": "7S",
         "codesSoPresent": ["7aS", " 8aS"],
         "codesNaisPresent": ["7S", " 8S"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78837,7 +78837,7 @@
         "codeNaisFuture": "7S c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78847,7 +78847,7 @@
         "codeNaisFuture": "7*",
         "codesSoPresent": ["7*", " 8*"],
         "codesNaisPresent": ["7*", " 8*"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78857,7 +78857,7 @@
         "codeNaisFuture": "7*",
         "codesSoPresent": ["7*u"],
         "codesNaisPresent": ["7*"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78867,7 +78867,7 @@
         "codeNaisFuture": "7* c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78877,7 +78877,7 @@
         "codeNaisFuture": "8a",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78887,7 +78887,7 @@
         "codeNaisFuture": "8d",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78897,7 +78897,7 @@
         "codeNaisFuture": "8S",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78907,7 +78907,7 @@
         "codeNaisFuture": "9a",
         "codesSoPresent": ["12a", " 12aB", " 12c", " 12t", " 18a", " 9a"],
         "codesNaisPresent": ["12a", " 12a(9)", " 18M", " 9a"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78917,7 +78917,7 @@
         "codeNaisFuture": "9a",
         "codesSoPresent": ["18g"],
         "codesNaisPresent": ["18M(20)"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78927,7 +78927,7 @@
         "codeNaisFuture": "9a c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78937,7 +78937,7 @@
         "codeNaisFuture": "9a(11)",
         "codesSoPresent": ["9b"],
         "codesNaisPresent": ["9a(11)"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78947,7 +78947,7 @@
         "codeNaisFuture": "9a(11)",
         "codesSoPresent": ["9g"],
         "codesNaisPresent": ["9a(11)"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78957,7 +78957,7 @@
         "codeNaisFuture": "9a(11) c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78967,7 +78967,7 @@
         "codeNaisFuture": "9w",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78977,7 +78977,7 @@
         "codeNaisFuture": "9w c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78987,7 +78987,7 @@
         "codeNaisFuture": "10a",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -78997,7 +78997,7 @@
         "codeNaisFuture": "10a c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79007,7 +79007,7 @@
         "codeNaisFuture": "10w",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79017,7 +79017,7 @@
         "codeNaisFuture": "10w c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79027,7 +79027,7 @@
         "codeNaisFuture": "11",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79037,7 +79037,7 @@
         "codeNaisFuture": "11 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79047,7 +79047,7 @@
         "codeNaisFuture": "12a",
         "codesSoPresent": ["12a", " 18a"],
         "codesNaisPresent": ["12a", " 18M"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79057,7 +79057,7 @@
         "codeNaisFuture": "12a",
         "codesSoPresent": ["18g"],
         "codesNaisPresent": ["18M(20)"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79067,7 +79067,7 @@
         "codeNaisFuture": "12e",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79077,7 +79077,7 @@
         "codeNaisFuture": "12w",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79087,7 +79087,7 @@
         "codeNaisFuture": "13a",
         "codesSoPresent": ["13a", " 13h"],
         "codesNaisPresent": ["13a", " 13h"],
-        "codeAltitudinalZoneFuture": "untermontan"
+        "altitudinalZoneFuture": "untermontan"
       },
       {
         "de": null,
@@ -79097,7 +79097,7 @@
         "codeNaisFuture": "13a",
         "codesSoPresent": ["13a", " 13h", " 13t"],
         "codesNaisPresent": ["13a", " 13h", " 13a"],
-        "codeAltitudinalZoneFuture": "submontan"
+        "altitudinalZoneFuture": "submontan"
       },
       {
         "de": null,
@@ -79107,7 +79107,7 @@
         "codeNaisFuture": "13a",
         "codesSoPresent": ["13g"],
         "codesNaisPresent": ["13a"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79117,7 +79117,7 @@
         "codeNaisFuture": "13a c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79127,7 +79127,7 @@
         "codeNaisFuture": "13e",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79137,7 +79137,7 @@
         "codeNaisFuture": "13e c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79147,7 +79147,7 @@
         "codeNaisFuture": "14",
         "codesSoPresent": ["14a"],
         "codesNaisPresent": ["14"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79157,7 +79157,7 @@
         "codeNaisFuture": "14",
         "codesSoPresent": ["14w"],
         "codesNaisPresent": ["14"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79167,7 +79167,7 @@
         "codeNaisFuture": "14 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79177,7 +79177,7 @@
         "codeNaisFuture": "14(16)",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79187,7 +79187,7 @@
         "codeNaisFuture": "14(16) c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79197,7 +79197,7 @@
         "codeNaisFuture": "15",
         "codesSoPresent": ["18*"],
         "codesNaisPresent": ["18*"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79207,7 +79207,7 @@
         "codeNaisFuture": "15",
         "codesSoPresent": ["15a"],
         "codesNaisPresent": ["15"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79217,7 +79217,7 @@
         "codeNaisFuture": "15",
         "codesSoPresent": ["15w"],
         "codesNaisPresent": ["15"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79227,7 +79227,7 @@
         "codeNaisFuture": "15 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79237,7 +79237,7 @@
         "codeNaisFuture": "16",
         "codesSoPresent": ["16a"],
         "codesNaisPresent": ["16"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79247,7 +79247,7 @@
         "codeNaisFuture": "16",
         "codesSoPresent": ["16l"],
         "codesNaisPresent": ["16"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79257,7 +79257,7 @@
         "codeNaisFuture": "16",
         "codesSoPresent": ["16w"],
         "codesNaisPresent": ["16"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79267,7 +79267,7 @@
         "codeNaisFuture": "17",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79277,7 +79277,7 @@
         "codeNaisFuture": "17 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79287,7 +79287,7 @@
         "codeNaisFuture": "22",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79297,7 +79297,7 @@
         "codeNaisFuture": "22 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79307,7 +79307,7 @@
         "codeNaisFuture": "22C",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79317,7 +79317,7 @@
         "codeNaisFuture": "22C c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79327,7 +79327,7 @@
         "codeNaisFuture": "25F",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79337,7 +79337,7 @@
         "codeNaisFuture": "25*",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79347,7 +79347,7 @@
         "codeNaisFuture": "25* c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79357,7 +79357,7 @@
         "codeNaisFuture": "26",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79367,7 +79367,7 @@
         "codeNaisFuture": "26",
         "codesSoPresent": ["26f", " 26h"],
         "codesNaisPresent": ["26", " 26h"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79377,7 +79377,7 @@
         "codeNaisFuture": "26",
         "codesSoPresent": ["26g"],
         "codesNaisPresent": ["26"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79387,7 +79387,7 @@
         "codeNaisFuture": "26",
         "codesSoPresent": ["26w"],
         "codesNaisPresent": ["26"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79397,7 +79397,7 @@
         "codeNaisFuture": "26 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79407,7 +79407,7 @@
         "codeNaisFuture": "27",
         "codesSoPresent": ["27a", " 49"],
         "codesNaisPresent": ["27", " 49"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79417,7 +79417,7 @@
         "codeNaisFuture": "27",
         "codesSoPresent": ["27f", " 27h"],
         "codesNaisPresent": ["27", " 27h"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79427,7 +79427,7 @@
         "codeNaisFuture": "27",
         "codesSoPresent": ["27g"],
         "codesNaisPresent": ["27"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79437,7 +79437,7 @@
         "codeNaisFuture": "27",
         "codesSoPresent": ["27w"],
         "codesNaisPresent": ["27"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79447,7 +79447,7 @@
         "codeNaisFuture": "27 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79457,7 +79457,7 @@
         "codeNaisFuture": "28",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79467,7 +79467,7 @@
         "codeNaisFuture": "28 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79477,7 +79477,7 @@
         "codeNaisFuture": "29",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79487,7 +79487,7 @@
         "codeNaisFuture": "29 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79497,7 +79497,7 @@
         "codeNaisFuture": "29A",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79507,7 +79507,7 @@
         "codeNaisFuture": "29A c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79517,7 +79517,7 @@
         "codeNaisFuture": "29C",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79527,7 +79527,7 @@
         "codeNaisFuture": "29C c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79537,7 +79537,7 @@
         "codeNaisFuture": "30",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79547,7 +79547,7 @@
         "codeNaisFuture": "30 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79557,7 +79557,7 @@
         "codeNaisFuture": "38",
         "codesSoPresent": ["38"],
         "codesNaisPresent": ["38"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79567,7 +79567,7 @@
         "codeNaisFuture": "38",
         "codesSoPresent": ["38w"],
         "codesNaisPresent": ["38"],
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79577,7 +79577,7 @@
         "codeNaisFuture": "38 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79587,7 +79587,7 @@
         "codeNaisFuture": "40*",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79597,7 +79597,7 @@
         "codeNaisFuture": "40* c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79607,7 +79607,7 @@
         "codeNaisFuture": "43",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79617,7 +79617,7 @@
         "codeNaisFuture": "43 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79627,7 +79627,7 @@
         "codeNaisFuture": "44",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79637,7 +79637,7 @@
         "codeNaisFuture": "44 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79647,7 +79647,7 @@
         "codeNaisFuture": "45",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79657,7 +79657,7 @@
         "codeNaisFuture": "45 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79667,7 +79667,7 @@
         "codeNaisFuture": "46",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79677,7 +79677,7 @@
         "codeNaisFuture": "48",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79687,7 +79687,7 @@
         "codeNaisFuture": "61",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79697,7 +79697,7 @@
         "codeNaisFuture": "62",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79707,7 +79707,7 @@
         "codeNaisFuture": "62 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79717,7 +79717,7 @@
         "codeNaisFuture": "65",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79727,7 +79727,7 @@
         "codeNaisFuture": "66",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       },
       {
         "de": null,
@@ -79737,7 +79737,7 @@
         "codeNaisFuture": "66 c",
         "codesSoPresent": null,
         "codesNaisPresent": null,
-        "codeAltitudinalZoneFuture": null
+        "altitudinalZoneFuture": null
       }
     ]
   }
