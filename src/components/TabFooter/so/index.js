@@ -6,7 +6,7 @@ import { Header } from 'semantic-ui-react';
 import ExportButton from '../../ExportButton';
 import Button from '../../Button';
 import styles from '../TabFooter.module.css';
-import getCantonalForestTypes from './getCantonalForestType';
+import getCantonalForestType from './getCantonalForestType';
 import { setForestTypeDescription } from '../../../store/actions';
 
 function SoTabFooter(props) {
@@ -16,7 +16,7 @@ function SoTabFooter(props) {
   const activeProfile = useSelector((state) => state.activeProfile);
 
   const cantonalForestType = useMemo(
-    () => getCantonalForestTypes(cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone),
+    () => getCantonalForestType(cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone),
     [cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone],
   );
 
