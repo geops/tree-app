@@ -13,7 +13,7 @@ const getCantonalForestType = (
       [ftInfo] = ftInfos;
     }
     const altitudinalZone = info('altitudinalZone', altitudinalZoneCode);
-    ftInfo = ftInfos?.find((ft) => ft.altitudinalZoneFuture === altitudinalZone.de) || ftInfos[0];
+    ftInfo = ftInfos?.find((ft) => ft.altitudinalZoneFuture === altitudinalZone?.de) || ftInfos[0];
   } catch (error) {
     // eslint-disable-next-line no-console
     console.log(`No forest type found for ${naisForestTypeCode} in ${profile}`, error);
