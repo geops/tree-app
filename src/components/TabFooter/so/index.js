@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Header } from 'semantic-ui-react';
-import ExportButton from '../../ExportButton';
+import DefaultTabFooter from '../DefaultTabFooter';
 import Button from '../../Button';
-import styles from '../TabFooter.module.css';
 import getCantonalForestType from './getCantonalForestType';
 import { setForestTypeDescription } from '../../../store/actions';
+import styles from '../TabFooter.module.css';
 
 function SoTabFooter(props) {
   const { t } = useTranslation();
@@ -23,28 +23,26 @@ function SoTabFooter(props) {
   if (!onExport && !cantonalForestType) return null;
 
   return (
-    <div className={styles.tabFooter}>
+    <>
+      <DefaultTabFooter onExport={onExport} />
       {cantonalForestType ? (
         <div className={styles.cantonalForestTypesWrapper}>
           <Header as="h4" inverted>{t('forestType.cantonalForestType')}</Header>
-          <Button
+          <div className={styles.cantonalForestType}>
+            <Button
               basic
               active
               compact
+              icon="info"
               className={styles.cantonalForestTypeButton}
               onClick={() => dispatch(setForestTypeDescription(cantonalForestType.codeSoFuture))}
               disabled={!cantonalForestType.hasPdf}
-            >
-              {cantonalForestType.codeSoFuture}
-          </Button>
+            />
+            <Header className={styles.cantonalForestTypeLabel} inverted as="span">{cantonalForestType.codeSoFuture}</Header>
+          </div>
         </div>
       ) : null}
-      {onExport && (
-        <ExportButton onClick={onExport} className={`${styles.exportButton}`}>
-          {t('export.exportRecommendation')}
-        </ExportButton>
-      )}
-    </div>
+    </>
   );
 }
 
