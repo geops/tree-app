@@ -64,19 +64,16 @@ function CantonalForestTypeHeader({ forestType }) {
       <label className={styles.cantonalForestTypesLabel}>
         {t('forestType.cantonalForestType')}
       </label>
-      {hasPdf ? (
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             active
             compact
             icon="info"
             onClick={() => dispatch(setForestTypeDescription(forestType))}
+            disabled={!hasPdf}
           />
           <h3>{forestType}</h3>
         </div>
-      ) : (
-        <h3>{forestType}</h3>
-      )}
     </div>
   );
 }
