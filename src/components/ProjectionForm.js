@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
 import { info, utils } from '@geops/tree-lib';
 
 import Button from './Button';
@@ -12,6 +13,7 @@ import Dropdown from './Dropdown';
 import { setFormLocation, setForestTypeDescription } from '../store/actions';
 
 import styles from './ProjectionForm.module.css';
+import getCantonalForestType from './TabFooter/so/getCantonalForestType';
 
 const { getMapping } = utils();
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
@@ -46,6 +48,39 @@ const getDropdownOptions =
       : info(type, key)[lng],
     value: key,
   });
+
+function CantonalForestTypeHeader({ forestType }) {
+  const { t } = useTranslation();
+  const dispatch = useDispatch();
+  const activeProfile = useSelector((state) => state.activeProfile);
+  const [hasPdf, setHasPdf] = useState(false);
+  useEffect(() => {
+    if (activeProfile !== 'so') return;
+    const ft = getCantonalForestType(forestType, activeProfile, undefined, 'codesSoPresent');
+    setHasPdf(ft?.hasPdf)
+  }, [activeProfile, forestType]);
+  return (
+    <div className={styles.cantonalForestTypes}>
+      <label className={styles.cantonalForestTypesLabel}>
+        {t('forestType.cantonalForestType')}
+      </label>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+          <Button
+            active
+            compact
+            icon="info"
+            onClick={() => dispatch(setForestTypeDescription(forestType))}
+            disabled={!hasPdf}
+          />
+          <h3>{forestType}</h3>
+        </div>
+    </div>
+  );
+}
+
+CantonalForestTypeHeader.propTypes = {
+  forestType: PropTypes.string.isRequired,
+}
 
 function ProjectionForm() {
   const dispatch = useDispatch();
@@ -147,12 +182,7 @@ function ProjectionForm() {
         />
       )}
       {cantonalForestType ? (
-        <div className={styles.cantonalForestTypes}>
-          <label className={styles.cantonalForestTypesLabel}>
-            {t('forestType.cantonalForestType')}
-          </label>
-          <h3>{cantonalForestType}</h3>
-        </div>
+        <CantonalForestTypeHeader forestType={cantonalForestType} />
       ) : null}
       {options.forestType ? (
         <>

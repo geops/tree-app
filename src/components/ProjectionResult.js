@@ -6,7 +6,7 @@ import { info, utils } from '@geops/tree-lib';
 
 import ProjectionTab from './ProjectionTab';
 import Recommendation from './Recommendation';
-import TabFooter from './TabFooter';
+import TabFooter from './TabFooter/index';
 import styles from './ProjectionResult.module.css';
 
 import { getScenarios, getScenarioColumns } from '../utils/projectionUtils';
@@ -25,6 +25,7 @@ function getPane(scenario, projection, language, t) {
         ? `${forestType}(${transitionForestType})`
         : `${forestType}`,
       scenarioKey: scenarios?.key,
+      altitudinalZone,
       menuItem: (
         <Menu.Item className={styles.arrow} key={scenario}>
           <div className={styles.icons}>{scenarios.icons}</div>
@@ -48,8 +49,8 @@ const checkFields = ['slope', 'additional', 'relief'];
 const useProjectedForestType = (activeTabIndex, panes) => {
   const [projectedForestType, setProjectedForestType] = useState(null);
   useEffect(() => {
-    const { forestType, scenarioKey } = panes[activeTabIndex] || {};
-    setProjectedForestType({ code: forestType, scenarioKey });
+    const { forestType, scenarioKey, altitudinalZone } = panes[activeTabIndex] || {};
+    setProjectedForestType({ code: forestType, scenarioKey, altitudinalZone });
   }, [activeTabIndex, panes]);
   return projectedForestType;
 }
@@ -163,8 +164,8 @@ function ProjectionResult() {
           />
           <TabFooter
             onExport={exportDocx}
-            forestType={projectedForestTypes?.code}
-            isFuture={/moderate|extreme/.test(projectedForestTypes?.scenarioKey)}
+            cantonalForestTypeCode={!/today/.test(projectedForestTypes?.scenarioKey) ? projectedForestTypes?.code : undefined}
+            cantonalForestTypeAltitudinalZone={projectedForestTypes?.altitudinalZone}
           />
         </>
       ) : (

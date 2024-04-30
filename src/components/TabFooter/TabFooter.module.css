@@ -5,12 +5,9 @@
     padding: 20px calc(1em + 1vw);
 }
 
-.cantonalForestTypes {
-    min-height: 36px;
-    max-width: 50%;
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
+.cantonalForestTypesWrapper {
+    background-color: var(--primary-color-400);
+    padding: calc(1em + 1vw)
 }
 
 .cantonalForestTypeButton:global(.ui.basic.active.button) {
@@ -22,6 +19,17 @@
 
 .cantonalForestTypeButton:global(.ui.basic.active.button):hover {
     background-color: var(--primary-color-200) !important;
+}
+
+.cantonalForestTypeLabel:global(.ui.inverted.header) {
+    margin: 0
+}
+
+.cantonalForestType {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100;
 }
 
 .exportButton {
