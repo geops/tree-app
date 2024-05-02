@@ -6,6 +6,7 @@ import { info } from '@geops/tree-lib';
 import ChForestTypesDescription from './ch/ForestTypesDescription';
 import LuForestTypeDescription from './lu/ForestTypeDescription';
 import BlForestTypeDescription from './bl/ForestTypeDescription';
+import SoForestTypesDescription from './so/ForestTypesDescription';
 
 function getForestTypeData(code, profile) {
   try {
@@ -26,6 +27,7 @@ function ForestTypeDescription() {
       {activeProfile === 'ch' && <ChForestTypesDescription data={data} />}
       {activeProfile === 'lu' && <LuForestTypeDescription data={data} />}
       {activeProfile === 'bl' && <BlForestTypeDescription data={data} />}
+      {activeProfile === 'so' && <SoForestTypesDescription code={code} />}
     </>
   ) : (
     t('forestTypeModal.noDataMessage')
@@ -40,7 +42,7 @@ ForestTypeDescription.Header = function ForestTypeDescriptionHeader() {
 
   return data ? (
     <>
-      {data.code} - {data[i18n.language]} {data.la && <i>{data.la}</i>}
+      {data.code} {data[i18n.language] && `- ${data[i18n.language]}`} {data.la && <i>{data.la}</i>}
     </>
   ) : (
     t('forestTypeModal.noDataHeader')

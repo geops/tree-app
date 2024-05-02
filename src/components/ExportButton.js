@@ -43,7 +43,7 @@ ExportButton.propTypes = {
 
 ExportButton.defaultProps = {
   children: undefined,
-  className: PropTypes.string,
+  className: '',
 };
 
 export default ExportButton;
