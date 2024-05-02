@@ -5,8 +5,8 @@ import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import Button from '../../../Button';
 
-const containerStyle = { margin: '-1.5rem', position: 'relative' };
-const buttonStyle = { float: 'right', margin: '1rem 1rem 0'};
+const containerStyle = { marginTop: '1.5rem', position: 'relative' };
+const buttonStyle = { position: 'absolute', zIndex: 999, right: 10, top: -30 };
 let rerenderTimout = null;
 
 function ForestTypeDescription({ code }) {
