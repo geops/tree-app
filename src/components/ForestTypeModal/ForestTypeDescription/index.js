@@ -22,7 +22,8 @@ function ForestTypeDescription() {
   const data = getForestTypeData(code, activeProfile);
   const { t } = useTranslation();
 
-  return data ? (
+  return (data && activeProfile !== 'so') ||
+    (activeProfile === 'so' && data.hasPdf) ? (
     <>
       {activeProfile === 'ch' && <ChForestTypesDescription data={data} />}
       {activeProfile === 'lu' && <LuForestTypeDescription data={data} />}
@@ -42,7 +43,8 @@ ForestTypeDescription.Header = function ForestTypeDescriptionHeader() {
 
   return data ? (
     <>
-      {data.code} {data[i18n.language] && `- ${data[i18n.language]}`} {data.la && <i>{data.la}</i>}
+      {data.code} {data[i18n.language] && `- ${data[i18n.language]}`}{' '}
+      {data.la && <i>{data.la}</i>}
     </>
   ) : (
     t('forestTypeModal.noDataHeader')
