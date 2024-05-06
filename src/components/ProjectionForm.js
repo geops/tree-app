@@ -54,33 +54,40 @@ function CantonalForestTypeHeader({ forestType }) {
   const dispatch = useDispatch();
   const activeProfile = useSelector((state) => state.activeProfile);
   const [hasPdf, setHasPdf] = useState(false);
+
   useEffect(() => {
     if (activeProfile !== 'so') return;
-    const ft = getCantonalForestType(forestType, activeProfile, undefined, 'codesSoPresent');
-    setHasPdf(ft?.hasPdf)
+    const ft = getCantonalForestType(
+      forestType,
+      activeProfile,
+      undefined,
+      'code',
+    );
+    setHasPdf(ft?.hasPdf);
   }, [activeProfile, forestType]);
+
   return (
     <div className={styles.cantonalForestTypes}>
       <label className={styles.cantonalForestTypesLabel}>
         {t('forestType.cantonalForestType')}
       </label>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Button
-            active
-            compact
-            icon="info"
-            onClick={() => dispatch(setForestTypeDescription(forestType))}
-            disabled={!hasPdf}
-          />
-          <h3>{forestType}</h3>
-        </div>
+        <Button
+          active
+          compact
+          icon="info"
+          onClick={() => dispatch(setForestTypeDescription(forestType))}
+          disabled={!hasPdf}
+        />
+        <h3>{forestType}</h3>
+      </div>
     </div>
   );
 }
 
 CantonalForestTypeHeader.propTypes = {
   forestType: PropTypes.string.isRequired,
-}
+};
 
 function ProjectionForm() {
   const dispatch = useDispatch();
