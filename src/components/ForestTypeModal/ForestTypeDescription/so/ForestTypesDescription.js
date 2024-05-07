@@ -10,11 +10,11 @@ const buttonStyle = { position: 'absolute', zIndex: 999, right: 10, top: -30 };
 let rerenderTimout = null;
 
 function ForestTypeDescription({ code }) {
-  const name = code.replace('*', 'stern');
+  const name = code?.replace('*', 'stern');
   const containerRef = useRef(null);
   const [numPages, setNumPages] = useState(null);
   const { t } = useTranslation();
-  const [, forceUpdate] = useReducer(x => x + 1, 0);
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
 
   const onDocumentLoadSuccess = ({ numPages: nextNumPages }) => {
     setNumPages(nextNumPages);
@@ -32,7 +32,7 @@ function ForestTypeDescription({ code }) {
       clearTimeout(rerenderTimout);
       resizeObserver.disconnect();
     };
-  }, [])
+  }, []);
 
   return (
     <div style={containerStyle} ref={containerRef}>

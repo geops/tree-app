@@ -13,13 +13,16 @@ const getCantonalForestType = (
       if (Array.isArray(ft[filterAttribute])) {
         return ft[filterAttribute].includes(code);
       }
-      return ft[filterAttribute] === code
+      return ft[filterAttribute] === code;
     });
     if (!altitudinalZoneCode) {
       [ftInfo] = ftInfos;
     } else {
       const altitudinalZone = info('altitudinalZone', altitudinalZoneCode);
-      ftInfo = ftInfos?.find((ft) => ft.altitudinalZoneFuture === altitudinalZone?.de) || ftInfos[0];
+      ftInfo =
+        ftInfos?.find(
+          (ft) => ft.altitudinalZoneFuture === altitudinalZone?.de,
+        ) || ftInfos[0];
     }
   } catch (error) {
     // eslint-disable-next-line no-console

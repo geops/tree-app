@@ -12,11 +12,20 @@ import styles from '../TabFooter.module.css';
 function SoTabFooter(props) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const { onExport, cantonalForestTypeCode, cantonalForestTypeAltitudinalZone } = props;
+  const {
+    onExport,
+    cantonalForestTypeCode,
+    cantonalForestTypeAltitudinalZone,
+  } = props;
   const activeProfile = useSelector((state) => state.activeProfile);
 
   const cantonalForestType = useMemo(
-    () => getCantonalForestType(cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone),
+    () =>
+      getCantonalForestType(
+        cantonalForestTypeCode,
+        activeProfile,
+        cantonalForestTypeAltitudinalZone,
+      ),
     [cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone],
   );
 
@@ -27,7 +36,9 @@ function SoTabFooter(props) {
       <DefaultTabFooter onExport={onExport} />
       {cantonalForestType ? (
         <div className={styles.cantonalForestTypesWrapper}>
-          <Header as="h4" inverted>{t('forestType.cantonalForestType')}</Header>
+          <Header as="h4" inverted>
+            {t('forestType.cantonalForestType')}
+          </Header>
           <div className={styles.cantonalForestType}>
             <Button
               basic
@@ -35,10 +46,20 @@ function SoTabFooter(props) {
               compact
               icon="info"
               className={styles.cantonalForestTypeButton}
-              onClick={() => dispatch(setForestTypeDescription(cantonalForestType.codeSoFuture))}
+              onClick={() =>
+                dispatch(
+                  setForestTypeDescription(cantonalForestType.codeSoFuture),
+                )
+              }
               disabled={!cantonalForestType.hasPdf}
             />
-            <Header className={styles.cantonalForestTypeLabel} inverted as="span">{cantonalForestType.codeSoFuture}</Header>
+            <Header
+              className={styles.cantonalForestTypeLabel}
+              inverted
+              as="span"
+            >
+              {cantonalForestType.codeSoFuture}
+            </Header>
           </div>
         </div>
       ) : null}

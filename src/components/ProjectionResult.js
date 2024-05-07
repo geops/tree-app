@@ -49,11 +49,12 @@ const checkFields = ['slope', 'additional', 'relief'];
 const useProjectedForestType = (activeTabIndex, panes) => {
   const [projectedForestType, setProjectedForestType] = useState(null);
   useEffect(() => {
-    const { forestType, scenarioKey, altitudinalZone } = panes[activeTabIndex] || {};
+    const { forestType, scenarioKey, altitudinalZone } =
+      panes[activeTabIndex] || {};
     setProjectedForestType({ code: forestType, scenarioKey, altitudinalZone });
   }, [activeTabIndex, panes]);
   return projectedForestType;
-}
+};
 
 function ProjectionResult() {
   const {
@@ -82,34 +83,33 @@ function ProjectionResult() {
   const { options } =
     projectionMode === 'm' ? projectionResult.extreme : projectionResult.form;
 
-    
-    
-    const panes = useMemo(
-      () => [
-          {
-            menuItem: t('recommendation.header'),
-            render: () => (
-              <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
-            ),
-          },
-          ...getScenarioColumns(
-            location,
-            projectionMode,
-            projectionResult,
-            getPane,
-            i18n.language,
-            t,
-          ),
-        ].filter(Boolean),
+  const panes = useMemo(
+    () =>
       [
-        i18n.language,
-        location,
-        projectionMode,
-        projectionResult,
-        sameAltitudinalZone,
-        t,
-      ],
-    );
+        {
+          menuItem: t('recommendation.header'),
+          render: () => (
+            <Recommendation sameAltitudinalZone={sameAltitudinalZone} />
+          ),
+        },
+        ...getScenarioColumns(
+          location,
+          projectionMode,
+          projectionResult,
+          getPane,
+          i18n.language,
+          t,
+        ),
+      ].filter(Boolean),
+    [
+      i18n.language,
+      location,
+      projectionMode,
+      projectionResult,
+      sameAltitudinalZone,
+      t,
+    ],
+  );
   const projectedForestTypes = useProjectedForestType(activeTabIndex, panes);
   const foundProjection = sameAltitudinalZone || panes.length > 2;
   const checkField =
@@ -164,8 +164,14 @@ function ProjectionResult() {
           />
           <TabFooter
             onExport={exportDocx}
-            cantonalForestTypeCode={!/today/.test(projectedForestTypes?.scenarioKey) ? projectedForestTypes?.code : undefined}
-            cantonalForestTypeAltitudinalZone={projectedForestTypes?.altitudinalZone}
+            cantonalForestTypeCode={
+              !/today/.test(projectedForestTypes?.scenarioKey)
+                ? projectedForestTypes?.code
+                : undefined
+            }
+            cantonalForestTypeAltitudinalZone={
+              projectedForestTypes?.altitudinalZone
+            }
           />
         </>
       ) : (
