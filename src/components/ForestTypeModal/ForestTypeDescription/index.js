@@ -20,7 +20,7 @@ const useShowForestTypeDescription = (data, activeProfile) => {
   const showForestTypeDescription = useMemo(() => {
     if (activeProfile === 'so') {
       return !!(data?.code && data?.hasPdf);
-    } 
+    }
     return !!data;
   }, [data, activeProfile]);
   return showForestTypeDescription;
@@ -31,7 +31,10 @@ function ForestTypeDescription() {
   const code = useSelector((state) => state.forestTypeDescription);
   const data = getForestTypeData(code, activeProfile);
   const { t } = useTranslation();
-  const showForestTypeDescription = useShowForestTypeDescription(data, activeProfile);
+  const showForestTypeDescription = useShowForestTypeDescription(
+    data,
+    activeProfile,
+  );
 
   return showForestTypeDescription ? (
     <>
@@ -49,7 +52,10 @@ ForestTypeDescription.Header = function ForestTypeDescriptionHeader() {
   const code = useSelector((state) => state.forestTypeDescription);
   const activeProfile = useSelector((state) => state.activeProfile);
   const data = getForestTypeData(code, activeProfile);
-  const showForestTypeDescription = useShowForestTypeDescription(data, activeProfile);
+  const showForestTypeDescription = useShowForestTypeDescription(
+    data,
+    activeProfile,
+  );
   const { i18n, t } = useTranslation();
 
   return showForestTypeDescription ? (
