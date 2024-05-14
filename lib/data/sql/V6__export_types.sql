@@ -305,7 +305,7 @@ INSERT INTO
                false 
          end
       )
-      AS hasPdf, TRIM(' ' FROM "2085_Höhenstufe") AS altitudinalZoneFuture, string_to_array("1975_NaiS", ',')::text[] AS codesNaisPresent, string_to_array("1975_SO", ',')::text[] AS codesSoPresent, STO_DEU AS de 
+      AS hasPdf, TRIM(' ' FROM "2085_Höhenstufe") AS altitudinalZoneFuture, string_to_array(REPLACE("1975_NaiS", ' ', '' ), ',')::text[] AS codesNaisPresent, string_to_array(REPLACE("1975_SO", ' ', ''), ',')::text[] AS codesSoPresent, STO_DEU AS de 
    FROM
       so_standorttypen;
 

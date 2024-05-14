@@ -6381,14 +6381,14 @@
       { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
     ],
     "relief": [
+      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
+      { "de": "normal", "fr": "normal", "code": "normal" },
       { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
       {
         "de": "Hang- und Muldenlage",
         "fr": "en pente ou dans une dépression",
         "code": "h_and_m"
-      },
-      { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
-      { "de": "normal", "fr": "normal", "code": "normal" }
+      }
     ],
     "bushType": [
       {
@@ -68764,46 +68764,7 @@
         "code": "100"
       }
     ],
-    "forestEcoregion": [
-      {
-        "de": "Nördliche Randalpen",
-        "fr": "Alpes externes du Nord",
-        "code": "1"
-      },
-      {
-        "de": "Nördliche Zwischenalpen mit Buche",
-        "fr": "Alpes intermédiaires du Nord avec hêtre",
-        "code": "2a"
-      },
-      {
-        "de": "Nördliche Zwischenalpen ohne Buche",
-        "fr": "Alpes intermédiaires du Nord sans hêtre",
-        "code": "2b"
-      },
-      {
-        "de": "Kontinentale Hochalpen",
-        "fr": "Hautes Alpes continentales",
-        "code": "3"
-      },
-      {
-        "de": "Südliche Zwischenalpen",
-        "fr": "Alpes intermédiaires du Sud",
-        "code": "4"
-      },
-      {
-        "de": "Südliche Randalpen mit Fichte",
-        "fr": "Alpes externes du Sud avec épicéa",
-        "code": "5a"
-      },
-      {
-        "de": "Südliche Randalpen ohne Fichte",
-        "fr": "Alpes externes du Sud sans épicéa",
-        "code": "5b"
-      },
-      { "de": "Jura", "fr": "Jura", "code": "J" },
-      { "de": "Mittelland", "fr": "Plateau", "code": "M" },
-      { "de": "Mendrisiotto", "fr": "Mendrisiotto", "code": "Me" }
-    ]
+    "forestEcoregion": null
   },
   "lu": {
     "forestType": [
@@ -78705,8 +78666,8 @@
         "hasPdf": true,
         "codeSoFuture": "7a",
         "codeNaisFuture": "7a",
-        "codesSoPresent": ["7a", " 8a"],
-        "codesNaisPresent": ["7a", " 8a"],
+        "codesSoPresent": ["7a", "8a"],
+        "codesNaisPresent": ["7a", "8a"],
         "altitudinalZoneFuture": null
       },
       {
@@ -78725,8 +78686,8 @@
         "hasPdf": true,
         "codeSoFuture": "7e",
         "codeNaisFuture": "7a(10a)",
-        "codesSoPresent": ["7e", " 8e"],
-        "codesNaisPresent": ["7a(10a)", " 8a(12e)"],
+        "codesSoPresent": ["7e", "8e"],
+        "codesNaisPresent": ["7a(10a)", "8a(12e)"],
         "altitudinalZoneFuture": null
       },
       {
@@ -78735,8 +78696,8 @@
         "hasPdf": true,
         "codeSoFuture": "7j",
         "codeNaisFuture": "7a(10a)",
-        "codesSoPresent": ["7j", " 8j"],
-        "codesNaisPresent": ["7a(10a)", " 8a(12e)"],
+        "codesSoPresent": ["7j", "8j"],
+        "codesNaisPresent": ["7a(10a)", "8a(12e)"],
         "altitudinalZoneFuture": null
       },
       {
@@ -78815,8 +78776,8 @@
         "hasPdf": true,
         "codeSoFuture": "7g",
         "codeNaisFuture": "7S",
-        "codesSoPresent": ["20", " 21", " 7g", " 8g"],
-        "codesNaisPresent": ["20", " 21", " 7S", " 8S"],
+        "codesSoPresent": ["20", "21", "7g", "8g"],
+        "codesNaisPresent": ["20", "21", "7S", "8S"],
         "altitudinalZoneFuture": null
       },
       {
@@ -78825,8 +78786,8 @@
         "hasPdf": true,
         "codeSoFuture": "7aS",
         "codeNaisFuture": "7S",
-        "codesSoPresent": ["7aS", " 8aS"],
-        "codesNaisPresent": ["7S", " 8S"],
+        "codesSoPresent": ["7aS", "8aS"],
+        "codesNaisPresent": ["7S", "8S"],
         "altitudinalZoneFuture": null
       },
       {
@@ -78845,8 +78806,8 @@
         "hasPdf": true,
         "codeSoFuture": "7*",
         "codeNaisFuture": "7*",
-        "codesSoPresent": ["7*", " 8*"],
-        "codesNaisPresent": ["7*", " 8*"],
+        "codesSoPresent": ["7*", "8*"],
+        "codesNaisPresent": ["7*", "8*"],
         "altitudinalZoneFuture": null
       },
       {
@@ -78905,8 +78866,8 @@
         "hasPdf": true,
         "codeSoFuture": "9a",
         "codeNaisFuture": "9a",
-        "codesSoPresent": ["12a", " 12aB", " 12c", " 12t", " 18a", " 9a"],
-        "codesNaisPresent": ["12a", " 12a(9)", " 18M", " 9a"],
+        "codesSoPresent": ["12a", "12aB", "12c", "12t", "18a", "9a"],
+        "codesNaisPresent": ["12a", "12a(9)", "18M", "9a"],
         "altitudinalZoneFuture": null
       },
       {
@@ -79045,8 +79006,8 @@
         "hasPdf": true,
         "codeSoFuture": "12a",
         "codeNaisFuture": "12a",
-        "codesSoPresent": ["12a", " 18a"],
-        "codesNaisPresent": ["12a", " 18M"],
+        "codesSoPresent": ["12a", "18a"],
+        "codesNaisPresent": ["12a", "18M"],
         "altitudinalZoneFuture": null
       },
       {
@@ -79085,8 +79046,8 @@
         "hasPdf": true,
         "codeSoFuture": "13a",
         "codeNaisFuture": "13a",
-        "codesSoPresent": ["13a", " 13h"],
-        "codesNaisPresent": ["13a", " 13h"],
+        "codesSoPresent": ["13a", "13h"],
+        "codesNaisPresent": ["13a", "13h"],
         "altitudinalZoneFuture": "untermontan"
       },
       {
@@ -79095,8 +79056,8 @@
         "hasPdf": true,
         "codeSoFuture": "13t",
         "codeNaisFuture": "13a",
-        "codesSoPresent": ["13a", " 13h", " 13t"],
-        "codesNaisPresent": ["13a", " 13h", " 13a"],
+        "codesSoPresent": ["13a", "13h", "13t"],
+        "codesNaisPresent": ["13a", "13h", "13a"],
         "altitudinalZoneFuture": "submontan"
       },
       {
@@ -79365,8 +79326,8 @@
         "hasPdf": false,
         "codeSoFuture": "26f",
         "codeNaisFuture": "26",
-        "codesSoPresent": ["26f", " 26h"],
-        "codesNaisPresent": ["26", " 26h"],
+        "codesSoPresent": ["26f", "26h"],
+        "codesNaisPresent": ["26", "26h"],
         "altitudinalZoneFuture": null
       },
       {
@@ -79405,8 +79366,8 @@
         "hasPdf": false,
         "codeSoFuture": "27a",
         "codeNaisFuture": "27",
-        "codesSoPresent": ["27a", " 49"],
-        "codesNaisPresent": ["27", " 49"],
+        "codesSoPresent": ["27a", "49"],
+        "codesNaisPresent": ["27", "49"],
         "altitudinalZoneFuture": null
       },
       {
@@ -79415,8 +79376,8 @@
         "hasPdf": false,
         "codeSoFuture": "27f",
         "codeNaisFuture": "27",
-        "codesSoPresent": ["27f", " 27h"],
-        "codesNaisPresent": ["27", " 27h"],
+        "codesSoPresent": ["27f", "27h"],
+        "codesNaisPresent": ["27", "27h"],
         "altitudinalZoneFuture": null
       },
       {
