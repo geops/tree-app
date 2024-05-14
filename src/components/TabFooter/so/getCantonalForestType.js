@@ -5,6 +5,7 @@ const getCantonalForestType = (
   profile,
   altitudinalZoneCode,
   filterAttribute = 'codeNaisFuture',
+  mapForestType,
 ) => {
   if (!code) return null;
   let ftInfo;
@@ -16,12 +17,12 @@ const getCantonalForestType = (
       return ft[filterAttribute] === code;
     });
     if (!altitudinalZoneCode) {
-      [ftInfo] = ftInfos;
+      ftInfo = ftInfos.find((ft) => ft.codeSoPresent?.includes(mapForestType)) || ftInfos[0];
     } else {
       const altitudinalZone = info('altitudinalZone', altitudinalZoneCode);
       ftInfo =
         ftInfos?.find(
-          (ft) => ft.altitudinalZoneFuture === altitudinalZone?.de,
+          (ft) => ft.altitudinalZoneFuture === altitudinalZone?.de || ft.codesSoPresent?.includes(mapForestType),
         ) || ftInfos[0];
     }
   } catch (error) {
