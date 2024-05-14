@@ -17,12 +17,16 @@ const getCantonalForestType = (
       return ft[filterAttribute] === code;
     });
     if (!altitudinalZoneCode) {
-      ftInfo = ftInfos.find((ft) => ft.codeSoPresent?.includes(mapForestType)) || ftInfos[0];
+      ftInfo =
+        ftInfos.find((ft) => ft.codeSoPresent?.includes(mapForestType)) ||
+        ftInfos[0];
     } else {
       const altitudinalZone = info('altitudinalZone', altitudinalZoneCode);
       ftInfo =
         ftInfos?.find(
-          (ft) => ft.altitudinalZoneFuture === altitudinalZone?.de || ft.codesSoPresent?.includes(mapForestType),
+          (ft) =>
+            ft.altitudinalZoneFuture === altitudinalZone?.de ||
+            ft.codesSoPresent?.includes(mapForestType),
         ) || ftInfos[0];
     }
   } catch (error) {

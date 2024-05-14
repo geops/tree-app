@@ -7,8 +7,12 @@ import ChForestTypesDescription from './ch/ForestTypesDescription';
 import LuForestTypeDescription from './lu/ForestTypeDescription';
 import BlForestTypeDescription from './bl/ForestTypeDescription';
 import SoForestTypesDescription from './so/ForestTypesDescription';
+import useHasPdf from './so/useHasPdf';
 
 function getForestTypeData(code, profile) {
+  if (profile === 'so') {
+    return { code };
+  }
   try {
     return code && info('forestType', code, profile);
   } catch (error) {
@@ -17,12 +21,11 @@ function getForestTypeData(code, profile) {
 }
 
 const useShowForestTypeDescription = (data, activeProfile) => {
-  const showForestTypeDescription = useMemo(() => {
-    if (activeProfile === 'so') {
-      return !!(data?.code && data?.hasPdf);
-    }
-    return !!data;
-  }, [data, activeProfile]);
+  const hasPdf = useHasPdf(data?.code);
+  const showForestTypeDescription = useMemo(
+    () => (activeProfile === 'so' ? hasPdf : !!data),
+    [data, activeProfile, hasPdf],
+  );
   return showForestTypeDescription;
 };
 

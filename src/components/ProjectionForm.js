@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/label-has-for */
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Message, Segment } from 'semantic-ui-react';
@@ -13,7 +13,7 @@ import Dropdown from './Dropdown';
 import { setFormLocation, setForestTypeDescription } from '../store/actions';
 
 import styles from './ProjectionForm.module.css';
-import getCantonalForestType from './TabFooter/so/getCantonalForestType';
+import useHasPdf from './ForestTypeModal/ForestTypeDescription/so/useHasPdf';
 
 const { getMapping } = utils();
 const capitalize = (text) => text[0].toUpperCase() + text.slice(1);
@@ -52,19 +52,7 @@ const getDropdownOptions =
 function CantonalForestTypeHeader({ forestType }) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const activeProfile = useSelector((state) => state.activeProfile);
-  const [hasPdf, setHasPdf] = useState(false);
-
-  useEffect(() => {
-    if (activeProfile !== 'so') return;
-    const ft = getCantonalForestType(
-      forestType,
-      activeProfile,
-      undefined,
-      'code',
-    );
-    setHasPdf(ft?.hasPdf);
-  }, [activeProfile, forestType]);
+  const hasPdf = useHasPdf(forestType);
 
   return (
     <div className={styles.cantonalForestTypes}>
