@@ -78872,7 +78872,7 @@
       {
         "de": null,
         "code": "12aB",
-        "hasPdf": false,
+        "hasPdf": true,
         "codeSoFuture": "12aB",
         "codeNaisFuture": "8a",
         "codesSoPresent": null,
