@@ -8,6 +8,7 @@ import Button from '../../Button';
 import getCantonalForestType from './getCantonalForestType';
 import { setForestTypeDescription } from '../../../store/actions';
 import styles from '../TabFooter.module.css';
+import useHasPdf from '../../ForestTypeModal/ForestTypeDescription/so/useHasPdf';
 
 function SoTabFooter(props) {
   const { t } = useTranslation();
@@ -28,8 +29,15 @@ function SoTabFooter(props) {
         undefined,
         mapLocation?.[`forestType_${activeProfile}`] || mapLocation?.forestType,
       ),
-    [cantonalForestTypeCode, activeProfile, cantonalForestTypeAltitudinalZone, mapLocation],
+    [
+      cantonalForestTypeCode,
+      activeProfile,
+      cantonalForestTypeAltitudinalZone,
+      mapLocation,
+    ],
   );
+
+  const hasPdf = useHasPdf(cantonalForestType?.codeSoFuture);
 
   if (!onExport && !cantonalForestType) return null;
 
@@ -53,7 +61,7 @@ function SoTabFooter(props) {
                   setForestTypeDescription(cantonalForestType.codeSoFuture),
                 )
               }
-              disabled={!cantonalForestType.hasPdf}
+              disabled={!hasPdf}
             />
             <Header
               className={styles.cantonalForestTypeLabel}
