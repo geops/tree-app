@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { info } from '@geops/tree-lib';
@@ -6,8 +6,13 @@ import { info } from '@geops/tree-lib';
 import ChForestTypesDescription from './ch/ForestTypesDescription';
 import LuForestTypeDescription from './lu/ForestTypeDescription';
 import BlForestTypeDescription from './bl/ForestTypeDescription';
+import SoForestTypesDescription from './so/ForestTypesDescription';
+import useHasPdf from './so/useHasPdf';
 
 function getForestTypeData(code, profile) {
+  if (profile === 'so') {
+    return { code };
+  }
   try {
     return code && info('forestType', code, profile);
   } catch (error) {
@@ -15,17 +20,31 @@ function getForestTypeData(code, profile) {
   }
 }
 
+const useShowForestTypeDescription = (data, activeProfile) => {
+  const hasPdf = useHasPdf(data?.code);
+  const showForestTypeDescription = useMemo(
+    () => (activeProfile === 'so' ? hasPdf : !!data),
+    [data, activeProfile, hasPdf],
+  );
+  return showForestTypeDescription;
+};
+
 function ForestTypeDescription() {
   const activeProfile = useSelector((state) => state.activeProfile);
   const code = useSelector((state) => state.forestTypeDescription);
   const data = getForestTypeData(code, activeProfile);
   const { t } = useTranslation();
+  const showForestTypeDescription = useShowForestTypeDescription(
+    data,
+    activeProfile,
+  );
 
-  return data ? (
+  return showForestTypeDescription ? (
     <>
       {activeProfile === 'ch' && <ChForestTypesDescription data={data} />}
       {activeProfile === 'lu' && <LuForestTypeDescription data={data} />}
       {activeProfile === 'bl' && <BlForestTypeDescription data={data} />}
+      {activeProfile === 'so' && <SoForestTypesDescription code={code} />}
     </>
   ) : (
     t('forestTypeModal.noDataMessage')
@@ -33,14 +52,19 @@ function ForestTypeDescription() {
 }
 
 ForestTypeDescription.Header = function ForestTypeDescriptionHeader() {
-  const data = useSelector((state) =>
-    getForestTypeData(state.forestTypeDescription, state.activeProfile),
+  const code = useSelector((state) => state.forestTypeDescription);
+  const activeProfile = useSelector((state) => state.activeProfile);
+  const data = getForestTypeData(code, activeProfile);
+  const showForestTypeDescription = useShowForestTypeDescription(
+    data,
+    activeProfile,
   );
   const { i18n, t } = useTranslation();
 
-  return data ? (
+  return showForestTypeDescription ? (
     <>
-      {data.code} - {data[i18n.language]} {data.la && <i>{data.la}</i>}
+      {data.code} {data[i18n.language] && `- ${data[i18n.language]}`}{' '}
+      {data.la && <i>{data.la}</i>}
     </>
   ) : (
     t('forestTypeModal.noDataHeader')

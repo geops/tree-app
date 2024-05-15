@@ -28,7 +28,7 @@ export const getScenarios = (scenario, t) => {
     icons.push(<EarthExtremeIcon key="extreme" className={styles.icon} />);
     names.push(t('projectionScenario.extreme'));
   }
-  return { names, icons };
+  return { names, icons, key: scenario };
 };
 
 export const getScenarioColumns = (
