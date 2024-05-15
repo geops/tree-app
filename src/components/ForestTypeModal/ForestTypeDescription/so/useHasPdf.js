@@ -1,32 +1,42 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-let abortCtrl = new AbortController();
+const cache = {};
 
 const useHasPdf = (forestType) => {
   const activeProfile = useSelector((state) => state.activeProfile);
   const [hasPdf, setHasPdf] = useState(false);
   useEffect(() => {
+    let abortCtrl = new AbortController();
     if (forestType && activeProfile === 'so') {
-      abortCtrl.abort()
-      abortCtrl = new AbortController();
-      const fetchPDF = async () => {
-        const url = `https://so-data.tree-app.ch/forest-types/${forestType.replace(
-          '*',
-          'stern',
-        )}.pdf`;
-        fetch(url, { signal: abortCtrl.signal })
-          .then((res) => setHasPdf(res.ok === true && res.status === 200))
-          .catch((err) => {
-            // eslint-disable-next-line no-console
-            console.warn(`No PDF found for ${forestType}`, err);
-            setHasPdf(false);
-          });
-      };
-      fetchPDF();
+      const url = `https://so-data.tree-app.ch/forest-types/${forestType.replace(
+        '*',
+        'stern',
+      )}.pdf`;
+      if (url in cache) {
+        setHasPdf(cache[url]);
+      } else {
+        const fetchPDF = async () => {
+          fetch(url, { signal: abortCtrl.signal })
+            .then((res) => {
+              const response = res.ok === true && res.status === 200
+              setHasPdf(response);
+              cache[url] = response;
+            })
+            .catch((err) => {
+              // eslint-disable-next-line no-console
+              console.warn(`No PDF found for ${forestType}`, err);
+              cache[url] = false;
+              setHasPdf(false);
+            });
+        };
+        abortCtrl.abort()
+        abortCtrl = new AbortController();
+        fetchPDF();
+      }
     }
     return () => {
-      abortCtrl.abort()
+      abortCtrl.abort();
     };
   }, [forestType, activeProfile]);
   return hasPdf;
