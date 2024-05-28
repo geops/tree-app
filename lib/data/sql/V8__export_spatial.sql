@@ -100,6 +100,14 @@ WITH altitudinal_zones_cantonal AS
               FROM forest_types_so
                 WHERE hs_code IS NOT NULL
                 GROUP BY hs_code, hsue_code)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  hs::text as code,
+                  hs::text as code_style
+              FROM forest_types_gl
+                WHERE hs IS NOT NULL
+                GROUP BY hs)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::text AS code, (code::TEXT || subcode::TEXT)::text AS code_style,
@@ -289,4 +297,13 @@ SELECT stan_nais AS code,
        grunnheit as code_so,
        null as info_vd
 FROM forest_types_so
-WHERE stan_nais IS NOT NULL;
+WHERE stan_nais IS NOT NULL
+UNION
+SELECT nais_profi AS code,
+       ST_Transform(geom, 3857) as geometry,
+       nais_profi as code_vd,
+       nais_profi as code_so,
+       null as info_vd
+FROM forest_types_gl
+WHERE nais_profi IS NOT NULL;
+
