@@ -289,4 +289,13 @@ SELECT stan_nais AS code,
        grunnheit as code_so,
        null as info_vd
 FROM forest_types_so
-WHERE stan_nais IS NOT NULL;
+WHERE stan_nais IS NOT NULL
+UNION
+SELECT nais_profi AS code,
+       ST_Transform(geom, 3857) as geometry,
+       nais_profi as code_vd,
+       nais_profi as code_so,
+       null as info_vd
+FROM forest_types_gl
+WHERE nais_profi IS NOT NULL;
+
