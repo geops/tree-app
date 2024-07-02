@@ -14,7 +14,7 @@ const participants = {
   projectSupervision: 'Kathrin Streit',
   projectControl: 'Marco Ferretti, Christoph Dürr, Ueli Meier',
   wslUsers:
-    'Sabine Augustin, Thomas Bettler, Stefan Biermann, Pierre Cothéreau, Christoph Dürr, Michiel Fehr, Hans-Ulrich Frey, Lukas Glanzmann, Grégory Guichard, Pascal Junod, Stéphane Losey, Daniel Müller, Christian Rosset, Viola Sala, Claudio de Sassi, Noémie Schaffter, Samuel Scheibler, Thomas Studer',
+    'Sabine Augustin, Thomas Bettler, Stefan Biermann, Pierre Cothereau, Christoph Dürr, Michiel Fehr, Hans-Ulrich Frey, Lukas Glanzmann, Grégory Guichard, Pascal Junod, Stéphane Losey, Daniel Müller, Christian Rosset, Viola Sala, Claudio de Sassi, Noémie Schaffter, Samuel Scheibler, Thomas Studer',
 };
 
 function InfoParticipants() {
