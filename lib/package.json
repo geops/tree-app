@@ -3,6 +3,9 @@
   "description": "Library for tree recommendations.",
   "license": "MIT",
   "version": "2.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "files": [
     "build"
   ],
@@ -32,6 +35,7 @@
     "data:transform": "yarn data:stop && yarn data:start && yarn data:stop",
     "data:start": "cd data && ./docker-start.sh",
     "data:stop": "cd data && docker-compose down --remove-orphans --volumes",
+    "data:so:deploy": "vercel deploy --cwd ./data/profiles/so",
     "data:spatial:export": "cd data && docker-compose exec db sh -c '/data/spatial/2-export.sh'",
     "data:spatial:tile": "cd data && docker-compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
     "data:spatial:fonts": "./data/spatial/4-fonts.sh",
@@ -40,7 +44,7 @@
     "data:export:csv": "node --experimental-json-modules export/src/export_csv.mjs",
     "doc:build": "documentation build src/** --format html --output doc --config documentation.yml",
     "doc:serve": "documentation serve --config documentation.yml --watch src/**",
-    "build": "webpack --mode production",
+    "build": "NODE_OPTIONS='--no-experimental-fetch --openssl-legacy-provider' webpack --mode production",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint --cache --format codeframe src",
     "test": "jest",

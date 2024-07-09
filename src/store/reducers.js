@@ -32,7 +32,7 @@ export const initialState = {
   mapLayers: ['ft', 'cb'],
   azLayer: 'azt',
   mapLocation: {},
-  mapView: '9|2660013|1185171',
+  mapView: process?.env?.REACT_APP_MAP_VIEW || '9|2660013|1185171',
   projectionMode: 'm',
   projectionOptions: {},
   projectionResult: {
@@ -106,6 +106,10 @@ function tree(state = initialState, action) {
       }
       if (mapLocation.transitionForestType) {
         formLocation.transitionForestType = undefined;
+      }
+      if (action.mapLocation.transitionAltitudinalZone) {
+        // If the map location from the map click has a transAZ we remove the form transAz
+        formLocation.transitionAltitudinalZone = undefined;
       }
       if (!mapLocation.forestType) {
         Object.keys(translation.profiles).forEach((profile) => {

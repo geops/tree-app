@@ -190,6 +190,19 @@ ALTER TABLE "forest_types_zh" ADD PRIMARY KEY (gid);
 
 SELECT AddGeometryColumn('','forest_types_zh','geom','2056','MULTIPOLYGON',2);
 
+CREATE TABLE "forest_types_zh_2" (gid serial,
+"vecode" float8,
+"ek72" varchar(10),
+"vename" varchar(80),
+"nais" varchar(15),
+"hstufe" varchar(15),
+"shape_area" numeric,
+"shape_len" numeric);
+
+ALTER TABLE "forest_types_zh_2" ADD PRIMARY KEY (gid);
+
+SELECT AddGeometryColumn('','forest_types_zh_2','geom','2056','MULTIPOLYGON',2);
+
 ----------------------------------------------
 -- Forest types NE
 
@@ -302,3 +315,89 @@ CREATE TABLE "altitudinal_zones_vd" (gid serial,
 "hs" float8);
 ALTER TABLE "altitudinal_zones_vd" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','altitudinal_zones_vd','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types SG
+
+
+CREATE TABLE "forest_types_sg" (gid serial,
+"dtwgeinhei" varchar(80),
+"ta" varchar(80),
+"tahs" varchar(80),
+"taue" varchar(80),
+"tauehs" varchar(80),
+"shape_leng" numeric,
+"shape_area" numeric,
+"hs" float8,
+"hsue" float8);
+ALTER TABLE "forest_types_sg" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_sg','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types SG
+
+
+CREATE TABLE "forest_types_sh" (gid serial,
+"uuid" varchar(254),
+"waldgesell" varchar(254),
+"waldgese_1" varchar(254),
+"tree-app_w" varchar(254),
+"tree-app_1" varchar(254),
+"tree-app_2" varchar(254),
+"hs" float8,
+"nais" varchar(10),
+"naisue" varchar(10));
+ALTER TABLE "forest_types_sh" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_sh','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types SO
+
+
+CREATE TABLE "forest_types_so" (gid serial,
+"t_id" int4,
+"stan_nais" varchar(254),
+"grunnheit" varchar(254),
+"hs" varchar(20),
+"hs_code" float8,
+"hsue_code" float8);
+
+ALTER TABLE "forest_types_so" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_so','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types GL
+
+
+CREATE TABLE "forest_types_gl" (gid serial,
+"fid" numeric,
+"t_id" numeric,
+"t_basket" numeric,
+"t_ili_tid" varchar(254),
+"gruppe" varchar(1),
+"gruppennam" varchar(254),
+"wg_haupt" varchar(4),
+"wg_zusatz" varchar(254),
+"wg_name" varchar(254),
+"flaeche_a" float8,
+"biotopnhg" int2,
+"nais_profi" varchar(254),
+"mutation_d" date,
+"bemerkung" varchar(254),
+"id_anf_sw" float8,
+"id_anf_nsw" float8,
+"fid_2" numeric,
+"hs_de" varchar(200),
+"hs_fr" varchar(200),
+"hs_it" varchar(200),
+"hs_en" varchar(200),
+"code" numeric,
+"subcode" numeric,
+"hs" float8);
+
+ALTER TABLE "forest_types_gl" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_gl','geom','0','MULTIPOLYGON',2);

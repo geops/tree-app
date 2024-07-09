@@ -34,6 +34,7 @@ const CookieBanner = () => {
             dispatch(setConsentGiven(true));
             localStorage.setItem('tree.consentGiven', true);
           }}
+          data-cypress="cookie-consent-ok-btn"
         >
           OK
         </Button>

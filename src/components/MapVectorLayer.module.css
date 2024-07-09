@@ -74,3 +74,11 @@
 .item span {
   white-space: pre;
 }
+
+.legendIcon {
+  height: 12px !important;
+  width: 12px !important;
+  outline: 1px solid #d4d4d5;
+  border-radius: 1px;
+  margin-right: 10px !important;
+}

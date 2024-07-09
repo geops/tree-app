@@ -1,3 +1,5 @@
 .exportButton {
   min-width: 150px;
+  max-height: 50px;
+  height: fit-content;
 }

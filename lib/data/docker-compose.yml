@@ -4,12 +4,18 @@ services:
     build:
       context: ./db
     restart: always
+    # disable jit
+    command: postgres -c jit=off
     ports:
       - 5432:5432
     environment:
       - POSTGRES_DB=tree
     volumes:
       - .:/data
+    deploy:
+      resources:
+        limits:
+          memory: 12g
   tippecanoe:
     build:
       context: ./tippecanoe

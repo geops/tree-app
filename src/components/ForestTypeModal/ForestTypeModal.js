@@ -13,6 +13,8 @@ import {
 
 const modalModes = ['c', 'd'];
 
+const style = { height: '72dvh', overflowY: 'scroll', overflowX: 'hidden' };
+
 function ForestTypeModal() {
   const dispatch = useDispatch();
   const modalRef = useRef();
@@ -56,7 +58,7 @@ function ForestTypeModal() {
           />
         }
         content={
-          <Modal.Content>
+          <Modal.Content style={style}>
             {forestTypeModal === 'c' ? (
               <ForestTypeComparison />
             ) : (

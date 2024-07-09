@@ -6381,9 +6381,9 @@
       { "de": "nicht relevant", "fr": "pas important", "code": "unknown" }
     ],
     "relief": [
-      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
       { "de": "nicht relevant", "fr": "pas important", "code": "unknown" },
       { "de": "normal", "fr": "normal", "code": "normal" },
+      { "de": "Kuppenlage", "fr": "sur une butte", "code": "kup" },
       {
         "de": "Hang- und Muldenlage",
         "fr": "en pente ou dans une dépression",
@@ -68766,7 +68766,7 @@
     ],
     "forestEcoregion": [
       {
-        "de": "Nördliche Randalpen",
+        "de": "Nördliche Randalpen",  
         "fr": "Alpes externes du Nord",
         "code": "1"
       },
@@ -78624,6 +78624,1120 @@
         "description": "Dichte bis aufgelöste, durch Schneedruck hangabwärts 'liegende' Bestände. Im Unterwuchs und in den Lücken üppige Hochstaudenflur.",
         "aptitudeMeaning": "Der Schutz vor Naturgefahren steht im Vordergrund: Stabilisierung der Hänge, Förderung von Mischbaumarten.",
         "heightDispersion": "hochmontan, subalpin; 1300-1800m"
+      }
+    ]
+  },
+  "so": {
+    "forestType": [
+      {
+        "de": null,
+        "code": "1",
+        "hasPdf": false,
+        "codeSoFuture": "1",
+        "codeNaisFuture": "1",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "1 collin",
+        "hasPdf": false,
+        "codeSoFuture": "1 collin",
+        "codeNaisFuture": "1 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "2",
+        "hasPdf": false,
+        "codeSoFuture": "2",
+        "codeNaisFuture": "2",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "2 collin",
+        "hasPdf": false,
+        "codeSoFuture": "2 collin",
+        "codeNaisFuture": "2 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "6",
+        "hasPdf": true,
+        "codeSoFuture": "6",
+        "codeNaisFuture": "6",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "6 collin",
+        "hasPdf": true,
+        "codeSoFuture": "6 collin",
+        "codeNaisFuture": "6 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9a",
+        "hasPdf": true,
+        "codeSoFuture": "9a",
+        "codeNaisFuture": "7a",
+        "codesSoPresent": ["18aB"],
+        "codesNaisPresent": ["18"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7a",
+        "hasPdf": true,
+        "codeSoFuture": "7a",
+        "codeNaisFuture": "7a",
+        "codesSoPresent": ["7a", "8a"],
+        "codesNaisPresent": ["7a", "8a"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7a collin",
+        "hasPdf": true,
+        "codeSoFuture": "7a collin",
+        "codeNaisFuture": "7a collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7e",
+        "hasPdf": true,
+        "codeSoFuture": "7e",
+        "codeNaisFuture": "7a(10a)",
+        "codesSoPresent": ["7e", "8e"],
+        "codesNaisPresent": ["7a(10a)", "8a(12e)"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7j",
+        "hasPdf": true,
+        "codeSoFuture": "7j",
+        "codeNaisFuture": "7a(10a)",
+        "codesSoPresent": ["7j", "8j"],
+        "codesNaisPresent": ["7a(10a)", "8a(12e)"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7a collin",
+        "hasPdf": true,
+        "codeSoFuture": "7a collin",
+        "codeNaisFuture": "7a(10a) collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7d",
+        "hasPdf": true,
+        "codeSoFuture": "7d",
+        "codeNaisFuture": "7a(6)",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7a collin",
+        "hasPdf": true,
+        "codeSoFuture": "7a collin",
+        "codeNaisFuture": "7a(6) collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7f",
+        "hasPdf": true,
+        "codeSoFuture": "7f",
+        "codeNaisFuture": "7a(9a)",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7a collin",
+        "hasPdf": true,
+        "codeSoFuture": "7a collin",
+        "codeNaisFuture": "7a(9a) collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7b",
+        "hasPdf": false,
+        "codeSoFuture": "7b",
+        "codeNaisFuture": "7b",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7b collin",
+        "hasPdf": false,
+        "codeSoFuture": "7b collin",
+        "codeNaisFuture": "7b collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7g",
+        "hasPdf": true,
+        "codeSoFuture": "7g",
+        "codeNaisFuture": "7S",
+        "codesSoPresent": ["20", "21", "7g", "8g"],
+        "codesNaisPresent": ["20", "21", "7S", "8S"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7aS",
+        "hasPdf": true,
+        "codeSoFuture": "7aS",
+        "codeNaisFuture": "7S",
+        "codesSoPresent": ["7aS", "8aS"],
+        "codesNaisPresent": ["7S", "8S"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7S collin",
+        "hasPdf": true,
+        "codeSoFuture": "7S collin",
+        "codeNaisFuture": "7S collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7*",
+        "hasPdf": true,
+        "codeSoFuture": "7*",
+        "codeNaisFuture": "7*",
+        "codesSoPresent": ["7*", "8*"],
+        "codesNaisPresent": ["7*", "8*"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7*u",
+        "hasPdf": true,
+        "codeSoFuture": "7*u",
+        "codeNaisFuture": "7*",
+        "codesSoPresent": ["7*u"],
+        "codesNaisPresent": ["7*"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "7* collin",
+        "hasPdf": true,
+        "codeSoFuture": "7* collin",
+        "codeNaisFuture": "7* collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "12aB",
+        "hasPdf": true,
+        "codeSoFuture": "12aB",
+        "codeNaisFuture": "8a",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "8d",
+        "hasPdf": false,
+        "codeSoFuture": "8d",
+        "codeNaisFuture": "8d",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "8g",
+        "hasPdf": true,
+        "codeSoFuture": "8g",
+        "codeNaisFuture": "8S",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9a",
+        "hasPdf": true,
+        "codeSoFuture": "9a",
+        "codeNaisFuture": "9a",
+        "codesSoPresent": ["12a", "12aB", "12c", "12t", "18a", "9a"],
+        "codesNaisPresent": ["12a", "12a(9)", "18M", "9a"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9b",
+        "hasPdf": false,
+        "codeSoFuture": "9b",
+        "codeNaisFuture": "9a",
+        "codesSoPresent": ["18g"],
+        "codesNaisPresent": ["18M(20)"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9a collin",
+        "hasPdf": true,
+        "codeSoFuture": "9a collin",
+        "codeNaisFuture": "9a collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9b",
+        "hasPdf": false,
+        "codeSoFuture": "9b",
+        "codeNaisFuture": "9a(11)",
+        "codesSoPresent": ["9b"],
+        "codesNaisPresent": ["9a(11)"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9g",
+        "hasPdf": false,
+        "codeSoFuture": "9g",
+        "codeNaisFuture": "9a(11)",
+        "codesSoPresent": ["9g"],
+        "codesNaisPresent": ["9a(11)"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9a collin",
+        "hasPdf": true,
+        "codeSoFuture": "9a collin",
+        "codeNaisFuture": "9a(11) collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9w",
+        "hasPdf": true,
+        "codeSoFuture": "9w",
+        "codeNaisFuture": "9w",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "9w collin",
+        "hasPdf": true,
+        "codeSoFuture": "9w collin",
+        "codeNaisFuture": "9w collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "10a",
+        "hasPdf": true,
+        "codeSoFuture": "10a",
+        "codeNaisFuture": "10a",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "10a collin",
+        "hasPdf": true,
+        "codeSoFuture": "10a collin",
+        "codeNaisFuture": "10a collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "10w",
+        "hasPdf": true,
+        "codeSoFuture": "10w",
+        "codeNaisFuture": "10w",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "10w collin",
+        "hasPdf": true,
+        "codeSoFuture": "10w collin",
+        "codeNaisFuture": "10w collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "11",
+        "hasPdf": true,
+        "codeSoFuture": "11",
+        "codeNaisFuture": "11",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "11 collin",
+        "hasPdf": true,
+        "codeSoFuture": "11 collin",
+        "codeNaisFuture": "11 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "12a",
+        "hasPdf": true,
+        "codeSoFuture": "12a",
+        "codeNaisFuture": "12a",
+        "codesSoPresent": ["12a", "18a"],
+        "codesNaisPresent": ["12a", "18M"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "12b",
+        "hasPdf": true,
+        "codeSoFuture": "12b",
+        "codeNaisFuture": "12a",
+        "codesSoPresent": ["18g"],
+        "codesNaisPresent": ["18M(20)"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "12*",
+        "hasPdf": true,
+        "codeSoFuture": "12*",
+        "codeNaisFuture": "12e",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "12w",
+        "hasPdf": true,
+        "codeSoFuture": "12w",
+        "codeNaisFuture": "12w",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "13a",
+        "hasPdf": true,
+        "codeSoFuture": "13a",
+        "codeNaisFuture": "13a",
+        "codesSoPresent": ["13a", "13h"],
+        "codesNaisPresent": ["13a", "13h"],
+        "altitudinalZoneFuture": "untermontan"
+      },
+      {
+        "de": null,
+        "code": "13t",
+        "hasPdf": true,
+        "codeSoFuture": "13t",
+        "codeNaisFuture": "13a",
+        "codesSoPresent": ["13a", "13h", "13t"],
+        "codesNaisPresent": ["13a", "13h", "13a"],
+        "altitudinalZoneFuture": "submontan"
+      },
+      {
+        "de": null,
+        "code": "13g",
+        "hasPdf": false,
+        "codeSoFuture": "13g",
+        "codeNaisFuture": "13a",
+        "codesSoPresent": ["13g"],
+        "codesNaisPresent": ["13a"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "13a collin",
+        "hasPdf": true,
+        "codeSoFuture": "13a collin",
+        "codeNaisFuture": "13a collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "13e",
+        "hasPdf": true,
+        "codeSoFuture": "13e",
+        "codeNaisFuture": "13e",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "13e collin",
+        "hasPdf": true,
+        "codeSoFuture": "13e collin",
+        "codeNaisFuture": "13e collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "14a",
+        "hasPdf": true,
+        "codeSoFuture": "14a",
+        "codeNaisFuture": "14",
+        "codesSoPresent": ["14a"],
+        "codesNaisPresent": ["14"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "14w",
+        "hasPdf": true,
+        "codeSoFuture": "14w",
+        "codeNaisFuture": "14",
+        "codesSoPresent": ["14w"],
+        "codesNaisPresent": ["14"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "14 collin",
+        "hasPdf": true,
+        "codeSoFuture": "14 collin",
+        "codeNaisFuture": "14 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "14e",
+        "hasPdf": true,
+        "codeSoFuture": "14e",
+        "codeNaisFuture": "14(16)",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "14 collin",
+        "hasPdf": true,
+        "codeSoFuture": "14 collin",
+        "codeNaisFuture": "14(16) collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "10a",
+        "hasPdf": true,
+        "codeSoFuture": "10a",
+        "codeNaisFuture": "15",
+        "codesSoPresent": ["18*"],
+        "codesNaisPresent": ["18*"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "15a",
+        "hasPdf": false,
+        "codeSoFuture": "15a",
+        "codeNaisFuture": "15",
+        "codesSoPresent": ["15a"],
+        "codesNaisPresent": ["15"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "15w",
+        "hasPdf": false,
+        "codeSoFuture": "15w",
+        "codeNaisFuture": "15",
+        "codesSoPresent": ["15w"],
+        "codesNaisPresent": ["15"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "15 collin",
+        "hasPdf": false,
+        "codeSoFuture": "15 collin",
+        "codeNaisFuture": "15 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "16a",
+        "hasPdf": true,
+        "codeSoFuture": "16a",
+        "codeNaisFuture": "16",
+        "codesSoPresent": ["16a"],
+        "codesNaisPresent": ["16"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "16l",
+        "hasPdf": false,
+        "codeSoFuture": "16l",
+        "codeNaisFuture": "16",
+        "codesSoPresent": ["16l"],
+        "codesNaisPresent": ["16"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "16w",
+        "hasPdf": false,
+        "codeSoFuture": "16w",
+        "codeNaisFuture": "16",
+        "codesSoPresent": ["16w"],
+        "codesNaisPresent": ["16"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "17",
+        "hasPdf": true,
+        "codeSoFuture": "17",
+        "codeNaisFuture": "17",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "17 collin",
+        "hasPdf": true,
+        "codeSoFuture": "17 collin",
+        "codeNaisFuture": "17 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "22",
+        "hasPdf": true,
+        "codeSoFuture": "22",
+        "codeNaisFuture": "22",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "22 collin",
+        "hasPdf": true,
+        "codeSoFuture": "22 collin",
+        "codeNaisFuture": "22 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "22*",
+        "hasPdf": false,
+        "codeSoFuture": "22*",
+        "codeNaisFuture": "22C",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "22C collin",
+        "hasPdf": false,
+        "codeSoFuture": "22C collin",
+        "codeNaisFuture": "22C collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "22*",
+        "hasPdf": false,
+        "codeSoFuture": "22*",
+        "codeNaisFuture": "25F",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "25*",
+        "hasPdf": false,
+        "codeSoFuture": "25*",
+        "codeNaisFuture": "25*",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "25* collin",
+        "hasPdf": false,
+        "codeSoFuture": "25* collin",
+        "codeNaisFuture": "25* collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "26a",
+        "hasPdf": true,
+        "codeSoFuture": "26a",
+        "codeNaisFuture": "26",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "26f",
+        "hasPdf": false,
+        "codeSoFuture": "26f",
+        "codeNaisFuture": "26",
+        "codesSoPresent": ["26f", "26h"],
+        "codesNaisPresent": ["26", "26h"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "26g",
+        "hasPdf": false,
+        "codeSoFuture": "26g",
+        "codeNaisFuture": "26",
+        "codesSoPresent": ["26g"],
+        "codesNaisPresent": ["26"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "26w",
+        "hasPdf": false,
+        "codeSoFuture": "26w",
+        "codeNaisFuture": "26",
+        "codesSoPresent": ["26w"],
+        "codesNaisPresent": ["26"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "26 collin",
+        "hasPdf": true,
+        "codeSoFuture": "26 collin",
+        "codeNaisFuture": "26 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "27a",
+        "hasPdf": false,
+        "codeSoFuture": "27a",
+        "codeNaisFuture": "27",
+        "codesSoPresent": ["27a", "49"],
+        "codesNaisPresent": ["27", "49"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "27f",
+        "hasPdf": false,
+        "codeSoFuture": "27f",
+        "codeNaisFuture": "27",
+        "codesSoPresent": ["27f", "27h"],
+        "codesNaisPresent": ["27", "27h"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "27g",
+        "hasPdf": false,
+        "codeSoFuture": "27g",
+        "codeNaisFuture": "27",
+        "codesSoPresent": ["27g"],
+        "codesNaisPresent": ["27"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "27w",
+        "hasPdf": false,
+        "codeSoFuture": "27w",
+        "codeNaisFuture": "27",
+        "codesSoPresent": ["27w"],
+        "codesNaisPresent": ["27"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "27 collin",
+        "hasPdf": false,
+        "codeSoFuture": "27 collin",
+        "codeNaisFuture": "27 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "28",
+        "hasPdf": false,
+        "codeSoFuture": "28",
+        "codeNaisFuture": "28",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "28 collin",
+        "hasPdf": false,
+        "codeSoFuture": "28 collin",
+        "codeNaisFuture": "28 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "29",
+        "hasPdf": false,
+        "codeSoFuture": "29",
+        "codeNaisFuture": "29",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "29 collin",
+        "hasPdf": false,
+        "codeSoFuture": "29 collin",
+        "codeNaisFuture": "29 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "29a",
+        "hasPdf": false,
+        "codeSoFuture": "29a",
+        "codeNaisFuture": "29A",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "29A collin",
+        "hasPdf": false,
+        "codeSoFuture": "29A collin",
+        "codeNaisFuture": "29A collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "29e",
+        "hasPdf": false,
+        "codeSoFuture": "29e",
+        "codeNaisFuture": "29C",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "29C collin",
+        "hasPdf": false,
+        "codeSoFuture": "29C collin",
+        "codeNaisFuture": "29C collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "30",
+        "hasPdf": false,
+        "codeSoFuture": "30",
+        "codeNaisFuture": "30",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "30 collin",
+        "hasPdf": false,
+        "codeSoFuture": "30 collin",
+        "codeNaisFuture": "30 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "38",
+        "hasPdf": true,
+        "codeSoFuture": "38",
+        "codeNaisFuture": "38",
+        "codesSoPresent": ["38"],
+        "codesNaisPresent": ["38"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "38w",
+        "hasPdf": false,
+        "codeSoFuture": "38w",
+        "codeNaisFuture": "38",
+        "codesSoPresent": ["38w"],
+        "codesNaisPresent": ["38"],
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "38 collin",
+        "hasPdf": false,
+        "codeSoFuture": "38 collin",
+        "codeNaisFuture": "38 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "40*",
+        "hasPdf": true,
+        "codeSoFuture": "40*",
+        "codeNaisFuture": "40*",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "40* collin",
+        "hasPdf": false,
+        "codeSoFuture": "40* collin",
+        "codeNaisFuture": "40* collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "43",
+        "hasPdf": false,
+        "codeSoFuture": "43",
+        "codeNaisFuture": "43",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "43 collin",
+        "hasPdf": false,
+        "codeSoFuture": "43 collin",
+        "codeNaisFuture": "43 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "44",
+        "hasPdf": false,
+        "codeSoFuture": "44",
+        "codeNaisFuture": "44",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "44 collin",
+        "hasPdf": false,
+        "codeSoFuture": "44 collin",
+        "codeNaisFuture": "44 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "45",
+        "hasPdf": false,
+        "codeSoFuture": "45",
+        "codeNaisFuture": "45",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "45 collin",
+        "hasPdf": false,
+        "codeSoFuture": "45 collin",
+        "codeNaisFuture": "45 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "46",
+        "hasPdf": false,
+        "codeSoFuture": "46",
+        "codeNaisFuture": "46",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "48",
+        "hasPdf": false,
+        "codeSoFuture": "48",
+        "codeNaisFuture": "48",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "61",
+        "hasPdf": false,
+        "codeSoFuture": "61",
+        "codeNaisFuture": "61",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "62",
+        "hasPdf": false,
+        "codeSoFuture": "62",
+        "codeNaisFuture": "62",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "62 collin",
+        "hasPdf": false,
+        "codeSoFuture": "62 collin",
+        "codeNaisFuture": "62 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "65",
+        "hasPdf": false,
+        "codeSoFuture": "65",
+        "codeNaisFuture": "65",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "66",
+        "hasPdf": false,
+        "codeSoFuture": "66",
+        "codeNaisFuture": "66",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
+      },
+      {
+        "de": null,
+        "code": "66 collin",
+        "hasPdf": false,
+        "codeSoFuture": "66 collin",
+        "codeNaisFuture": "66 collin",
+        "codesSoPresent": null,
+        "codesNaisPresent": null,
+        "altitudinalZoneFuture": null
       }
     ]
   }
