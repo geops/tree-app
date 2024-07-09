@@ -19,7 +19,7 @@ const useHasPdf = (forestType) => {
         const fetchPDF = async () => {
           fetch(url, { signal: abortCtrl.signal })
             .then((res) => {
-              const response = res.ok === true && res.status === 200
+              const response = res.ok === true && res.status === 200;
               setHasPdf(response);
               cache[url] = response;
             })
@@ -30,7 +30,7 @@ const useHasPdf = (forestType) => {
               setHasPdf(false);
             });
         };
-        abortCtrl.abort()
+        abortCtrl.abort();
         abortCtrl = new AbortController();
         fetchPDF();
       }
