@@ -24,7 +24,7 @@
     "lodash.xor": "4.5.0",
     "mapbox-gl": "1.13.0",
     "ol": "6.9.0",
-    "pdfjs-dist": "^4.1.392",
+    "pdfjs-dist": "^4.2.67",
     "proj4": "2.7.5",
     "prop-types": "15.7.2",
     "react": "17.0.2",
