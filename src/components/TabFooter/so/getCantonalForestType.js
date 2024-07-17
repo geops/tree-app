@@ -35,11 +35,7 @@ const getCantonalForestType = (
     console.log(`No forest type found for ${code} in ${profile}`, error);
   }
 
-  if (ftInfo?.codeSoFuture) {
-    return ftInfo?.codeSoFuture !== locationForestType && ftInfo?.codeSoFuture;
-  }
-
-  return mapForestType;
+  return ftInfo?.codeSoFuture ? ftInfo?.codeSoFuture : mapForestType;
 };
 
 export default getCantonalForestType;
