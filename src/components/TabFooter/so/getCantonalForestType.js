@@ -6,7 +6,6 @@ const getCantonalForestType = (
   altitudinalZoneCode,
   filterAttribute = 'codeNaisFuture',
   mapForestType,
-  locationForestType,
 ) => {
   if (!code) return null;
   let ftInfo;
@@ -35,7 +34,7 @@ const getCantonalForestType = (
     console.log(`No forest type found for ${code} in ${profile}`, error);
   }
 
-  return ftInfo?.codeSoFuture ? ftInfo?.codeSoFuture : mapForestType;
+  return ftInfo?.codeSoFuture ? ftInfo.codeSoFuture : mapForestType;
 };
 
 export default getCantonalForestType;

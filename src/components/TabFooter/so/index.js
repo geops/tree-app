@@ -19,9 +19,7 @@ function SoTabFooter(props) {
     cantonalForestTypeAltitudinalZone,
     scenarioKey,
   } = props;
-  const { activeProfile, mapLocation, location } = useSelector(
-    (state) => state,
-  );
+  const { activeProfile, mapLocation } = useSelector((state) => state);
 
   const cantonalForestType = useMemo(
     () =>
@@ -31,14 +29,12 @@ function SoTabFooter(props) {
         cantonalForestTypeAltitudinalZone,
         /today/.test(scenarioKey) ? 'codeSoPresent' : undefined,
         mapLocation?.[`forestType_${activeProfile}`] || mapLocation?.forestType,
-        location?.forestType,
       ),
     [
       cantonalForestTypeCode,
       activeProfile,
       cantonalForestTypeAltitudinalZone,
       mapLocation,
-      location,
       scenarioKey,
     ],
   );
