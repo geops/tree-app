@@ -168,6 +168,7 @@ function ProjectionResult() {
             cantonalForestTypeAltitudinalZone={
               projectedForestTypes?.altitudinalZone
             }
+            scenarioKey={projectedForestTypes?.scenarioKey}
           />
         </>
       ) : (
