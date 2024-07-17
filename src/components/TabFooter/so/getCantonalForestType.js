@@ -36,10 +36,10 @@ const getCantonalForestType = (
   }
 
   if (ftInfo?.codeSoFuture) {
-    return ftInfo?.codeSoFuture !== locationForestType && ftInfo?.codeSoFuture
-  };
+    return ftInfo?.codeSoFuture !== locationForestType && ftInfo?.codeSoFuture;
+  }
 
-  return mapForestType !== locationForestType && mapForestType;
+  return mapForestType;
 };
 
 export default getCantonalForestType;
