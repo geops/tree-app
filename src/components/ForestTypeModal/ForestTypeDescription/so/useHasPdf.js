@@ -3,23 +3,23 @@ import { useSelector } from 'react-redux';
 
 const cache = {};
 
-const useHasPdf = (forestType, url = 'https://so-data.tree-app.ch/forest-types/') => {
+const useHasPdf = (
+  forestType,
+  url = 'https://so-data.tree-app.ch/forest-types/',
+) => {
   const activeProfile = useSelector((state) => state.activeProfile);
   const [hasPdf, setHasPdf] = useState(false);
   useEffect(() => {
     let abortCtrl = new AbortController();
     if (forestType && activeProfile === 'so') {
-      const pdfUrl = `${url}${forestType.replace(
-        '*',
-        'stern',
-      )}.pdf`;
+      const pdfUrl = `${url}${forestType.replace('*', 'stern')}.pdf`;
       if (cache[pdfUrl]) {
         setHasPdf(cache[pdfUrl]);
       } else {
         const fetchPDF = async () => {
           fetch(pdfUrl, { signal: abortCtrl.signal })
             .then((res) => {
-              const response = res.ok === true && res.status === 200
+              const response = res.ok === true && res.status === 200;
               setHasPdf(response);
               cache[pdfUrl] = response;
             })
@@ -30,7 +30,7 @@ const useHasPdf = (forestType, url = 'https://so-data.tree-app.ch/forest-types/'
               setHasPdf(false);
             });
         };
-        abortCtrl.abort()
+        abortCtrl.abort();
         abortCtrl = new AbortController();
         fetchPDF();
       }

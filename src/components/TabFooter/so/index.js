@@ -18,7 +18,9 @@ function SoTabFooter(props) {
     cantonalForestTypeCode,
     cantonalForestTypeAltitudinalZone,
   } = props;
-  const { activeProfile, mapLocation, location } = useSelector((state) => state);
+  const { activeProfile, mapLocation, location } = useSelector(
+    (state) => state,
+  );
 
   const cantonalForestType = useMemo(
     () =>
@@ -59,9 +61,7 @@ function SoTabFooter(props) {
               icon="info"
               className={styles.cantonalForestTypeButton}
               onClick={() =>
-                dispatch(
-                  setForestTypeDescription(cantonalForestType),
-                )
+                dispatch(setForestTypeDescription(cantonalForestType))
               }
               disabled={!hasPdf}
             />
