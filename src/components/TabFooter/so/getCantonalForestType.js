@@ -33,7 +33,8 @@ const getCantonalForestType = (
     // eslint-disable-next-line no-console
     console.log(`No forest type found for ${code} in ${profile}`, error);
   }
-  return ftInfo;
+
+  return ftInfo?.codeSoFuture ? ftInfo.codeSoFuture : mapForestType;
 };
 
 export default getCantonalForestType;

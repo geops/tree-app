@@ -164,14 +164,11 @@ function ProjectionResult() {
           />
           <TabFooter
             onExport={exportDocx}
-            cantonalForestTypeCode={
-              !/today/.test(projectedForestTypes?.scenarioKey)
-                ? projectedForestTypes?.code
-                : undefined
-            }
+            cantonalForestTypeCode={projectedForestTypes?.code}
             cantonalForestTypeAltitudinalZone={
               projectedForestTypes?.altitudinalZone
             }
+            scenarioKey={projectedForestTypes?.scenarioKey}
           />
         </>
       ) : (
