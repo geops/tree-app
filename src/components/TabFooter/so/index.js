@@ -17,6 +17,7 @@ function SoTabFooter(props) {
     onExport,
     cantonalForestTypeCode,
     cantonalForestTypeAltitudinalZone,
+    scenarioKey,
   } = props;
   const { activeProfile, mapLocation } = useSelector((state) => state);
 
@@ -26,7 +27,7 @@ function SoTabFooter(props) {
         cantonalForestTypeCode,
         activeProfile,
         cantonalForestTypeAltitudinalZone,
-        undefined,
+        /today/.test(scenarioKey) ? 'codeSoPresent' : undefined,
         mapLocation?.[`forestType_${activeProfile}`] || mapLocation?.forestType,
       ),
     [
@@ -34,10 +35,11 @@ function SoTabFooter(props) {
       activeProfile,
       cantonalForestTypeAltitudinalZone,
       mapLocation,
+      scenarioKey,
     ],
   );
 
-  const hasPdf = useHasPdf(cantonalForestType?.codeSoFuture);
+  const hasPdf = useHasPdf(cantonalForestType);
 
   if (!onExport && !cantonalForestType) return null;
 
@@ -57,9 +59,7 @@ function SoTabFooter(props) {
               icon="info"
               className={styles.cantonalForestTypeButton}
               onClick={() =>
-                dispatch(
-                  setForestTypeDescription(cantonalForestType.codeSoFuture),
-                )
+                dispatch(setForestTypeDescription(cantonalForestType))
               }
               disabled={!hasPdf}
             />
@@ -68,7 +68,7 @@ function SoTabFooter(props) {
               inverted
               as="span"
             >
-              {cantonalForestType.codeSoFuture}
+              {cantonalForestType}
             </Header>
           </div>
         </div>
@@ -81,12 +81,14 @@ SoTabFooter.propTypes = {
   onExport: PropTypes.func,
   cantonalForestTypeCode: PropTypes.string,
   cantonalForestTypeAltitudinalZone: PropTypes.string,
+  scenarioKey: PropTypes.string,
 };
 
 SoTabFooter.defaultProps = {
   onExport: null,
   cantonalForestTypeCode: null,
   cantonalForestTypeAltitudinalZone: null,
+  scenarioKey: null,
 };
 
 export default SoTabFooter;
