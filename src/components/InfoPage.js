@@ -10,6 +10,7 @@ import InfoGlossary from './InfoGlossary';
 import InfoLocation from './InfoLocation';
 import InfoLucerne from './InfoLucerne';
 import InfoBasel from './InfoBasel';
+import InfoSolothurn from './InfoSolothurn';
 import InfoParticipants from './InfoParticipants';
 import InfoRecommendation from './InfoRecommendation';
 import InfoReports from './InfoReports';
@@ -125,6 +126,18 @@ function InfoPage() {
         key: 'info.bl',
         title: { content: InfoBasel.title },
         content: { content: <InfoBasel /> },
+      },
+    );
+  }
+
+  if (activeProfile === 'so') {
+    panels.splice(
+      panels.findIndex((panel) => panel.key === 'info.language&profile') + 1,
+      0,
+      {
+        key: 'info.so',
+        title: { content: InfoSolothurn.title },
+        content: { content: <InfoSolothurn /> },
       },
     );
   }
