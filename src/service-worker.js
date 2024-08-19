@@ -15,12 +15,17 @@ const soPdfCacheString = 'so-data-v'; // IMPORTANT: This string should NEVER be 
 const currentSoPdfVersion = 2; // Current SO PDF version, needs to be increased every time new PDFs are deployed
 const SO_CACHE_NAME = `${soPdfCacheString}${currentSoPdfVersion}` // Cache name for SO profile data
 
+// Create an array of 'so-data-v[1 - currentVersion]' strings for the caches to be removed
+const OLD_SO_PDF_CACHES = Array.from(Array(currentSoPdfVersion).keys()).map(
+  (version) => `${soPdfCacheString}${version}`,
+);
+
 const tileCacheString = 'tree-app-tiles-v'; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
 const currentTileVersion = 20; // Current tile version, needs to be increased every time new tiles are deployed
 const TILE_CACHE_NAME = `${tileCacheString}${currentTileVersion}`;
 
 // Create an array of 'tree-app-tiles-v[1 - currentVersion]' strings for the caches to be removed
-const OLD_CACHES = Array.from(Array(currentTileVersion).keys()).map(
+const OLD_TILE_CACHES = Array.from(Array(currentTileVersion).keys()).map(
   (version) => `${tileCacheString}${version}`,
 );
 
@@ -77,7 +82,7 @@ self.addEventListener('message', (event) => {
   }
 });
 
-OLD_CACHES.forEach((OLD_CACHE) => caches.delete(OLD_CACHE));
+[...OLD_SO_PDF_CACHES, ...OLD_TILE_CACHES].forEach((OLD_CACHE) => caches.delete(OLD_CACHE));
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
