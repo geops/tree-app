@@ -1,18 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
+const {
+  REACT_APP_SO_PDF_ENDPOINT: soPdfEndpoint,
+} = process.env;
 const cache = {};
 
 const useHasPdf = (
   forestType,
-  url = 'https://so-data.tree-app.ch/forest-types/',
+  url = `${soPdfEndpoint}`,
 ) => {
   const activeProfile = useSelector((state) => state.activeProfile);
   const [hasPdf, setHasPdf] = useState(false);
   useEffect(() => {
     let abortCtrl = new AbortController();
     if (forestType && activeProfile === 'so') {
-      const pdfUrl = `${url}${forestType.replace('*', 'stern')}.pdf`;
+      const pdfUrl = `${url}/${forestType.replace('*', 'stern')}.pdf`;
       if (cache[pdfUrl]) {
         setHasPdf(cache[pdfUrl]);
       } else {

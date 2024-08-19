@@ -9,6 +9,10 @@ const containerStyle = { marginTop: '1.5rem', position: 'relative' };
 const buttonStyle = { position: 'absolute', zIndex: 999, right: 10, top: -30 };
 let rerenderTimout = null;
 
+const {
+  REACT_APP_SO_PDF_ENDPOINT: soPdfEndpoint,
+} = process.env;
+
 function ForestTypeDescription({ code }) {
   const name = code?.replace('*', 'stern');
   const containerRef = useRef(null);
@@ -39,13 +43,13 @@ function ForestTypeDescription({ code }) {
       <Button
         active
         style={buttonStyle}
-        href={`https://so-data.tree-app.ch/forest-types/${name}.pdf`}
+        href={`${soPdfEndpoint}/${name}.pdf`}
         target="so-data"
       >
         {t('export.exportForestTypeDescription')}
       </Button>
       <Document
-        file={`https://so-data.tree-app.ch/forest-types/${name}.pdf`}
+        file={`${soPdfEndpoint}/${name}.pdf`}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         {Array.from(new Array(numPages), (_, index) => (
