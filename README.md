@@ -22,8 +22,9 @@ Please use the [GitHub issue tracker](https://github.com/geops/tree-app/issues) 
 
 Deploy master to production on https://www.tree-app.ch:
 
-- Create a pull request with base branch `production` and compare branch `master`
-- Merge with the option `Rebase and Merge`
+- Create a deploy branch (e.g. `johnDoe/deployProd20082024`) from the current master and push
+- Create a pull request with base branch `production` and the deploy branch as compare branch.
+- Merge with the option `Rebase and Merge` or `Squash and Merge` (github might not let you rebase due to conflicts)
 
 ## Run service-worker locally
 
