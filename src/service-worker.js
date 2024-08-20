@@ -12,7 +12,7 @@ import { precacheAndRoute, createHandlerBoundToURL } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 
 const soPdfCacheString = 'so-data-v'; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
-const currentSoPdfVersion = 1; // Current SO PDF version, needs to be increased every time new PDFs are deployed
+const currentSoPdfVersion = 2; // Current SO PDF version, needs to be increased every time new PDFs are deployed
 const SO_CACHE_NAME = `${soPdfCacheString}${currentSoPdfVersion}` // Cache name for SO profile data
 
 // Create an array of 'so-data-v[1 - currentVersion]' strings for the caches to be removed
