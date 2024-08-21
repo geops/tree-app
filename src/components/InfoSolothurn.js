@@ -32,11 +32,11 @@ export default function InfoSolothurn() {
       </p>
       <p>
         <a
-          href="https://so.ch/fileadmin/internet/vwd/vwd-awjf-wald/pdf/Biodiversitaet/Standort-Steckbriefe_Solothurn.pdf"
+          href="https://so.ch/fileadmin/internet/vwd/vwd-awjf-wald/pdf/Biodiversitaet/Bericht_Waldbauliche_Empfehlungen_Solothurn.pdf"
           rel="noopener noreferrer"
           target="_blank"
         >
-          Standort-Steckbriefe_Solothurn.pdf&nbsp;&nbsp;&nbsp;
+          Bericht Waldbauliche Empfehlungen Solothurn&nbsp;&nbsp;&nbsp;
           <Icon name="external alternate" />
         </a>
       </p>
