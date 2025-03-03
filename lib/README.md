@@ -20,7 +20,7 @@ NaiS data is provided as CSV files and imported into the PostgreSQL database for
 
 Spatial data is downloaded from different sources and imported into the database. To add or update spatial data have a look into `data/spatial`. For the app we generate one vector tileset using the following commands:
 
-1. Restart database: `yarn run data:stop`, then `yarn run data:start`
+1. Restart database: `yarn run data:stop`, then `yarn run data:start`. This generates the types.json. There is a bug that always sets the "forestEcoregion" property to null. After the process is complete, make sure to rervert this change (via the GIT GUI on VS Code e.g.) before passing on to the next step.
 2. Export spatial data to GeoJSON files (might take a long time): `yarn run data:spatial:export`
 3. Transform GeoJSON files to single vector tileset: `yarn run data:spatial:tile`
 4. Generate font glyphs for Mapbox GL: `yarn run data:spatial:fonts`
