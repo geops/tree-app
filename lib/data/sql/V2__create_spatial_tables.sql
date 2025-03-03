@@ -375,29 +375,42 @@ SELECT AddGeometryColumn('','forest_types_so','geom','0','MULTIPOLYGON',2);
 
 CREATE TABLE "forest_types_gl" (gid serial,
 "fid" numeric,
-"t_id" numeric,
-"t_basket" numeric,
-"t_ili_tid" varchar(254),
-"gruppe" varchar(1),
-"gruppennam" varchar(254),
-"wg_haupt" varchar(4),
+"qc_id" numeric,
+"wg_haupt" varchar(254),
 "wg_zusatz" varchar(254),
 "wg_name" varchar(254),
-"flaeche_a" float8,
-"biotopnhg" int2,
-"nais_profi" varchar(254),
-"mutation_d" date,
-"bemerkung" varchar(254),
-"id_anf_sw" float8,
-"id_anf_nsw" float8,
-"fid_2" numeric,
-"hs_de" varchar(200),
-"hs_fr" varchar(200),
-"hs_it" varchar(200),
-"hs_en" varchar(200),
-"code" numeric,
-"subcode" numeric,
-"hs" float8);
+"nais" varchar(254),
+"nais1" varchar(254),
+"nais2" varchar(254),
+"mo" float8,
+"ue" float8,
+"tahs" varchar(254),
+"tahsue" varchar(254),
+"kommentar" varchar(254),
+"korrigiert" numeric,
+"hs_code" float8,
+"hsue_code" float8);
 
 ALTER TABLE "forest_types_gl" ADD PRIMARY KEY (gid);
 SELECT AddGeometryColumn('','forest_types_gl','geom','0','MULTIPOLYGON',2);
+
+
+----------------------------------------------
+-- Forest types AR
+
+
+CREATE TABLE "forest_types_ar" (gid serial,
+"fid" numeric,
+"dtwgeinhei" varchar(254),
+"nais" varchar(254),
+"nais1" varchar(254),
+"nais2" varchar(254),
+"mo" numeric,
+"ue" numeric,
+"tahs" varchar(254),
+"tahsue" varchar(254),
+"hs_code" float8,
+"hsue_code" float8);
+
+ALTER TABLE "forest_types_ar" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_ar','geom','0','MULTIPOLYGON',2);

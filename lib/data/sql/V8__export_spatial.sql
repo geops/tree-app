@@ -100,6 +100,28 @@ WITH altitudinal_zones_cantonal AS
               FROM forest_types_so
                 WHERE hs_code IS NOT NULL
                 GROUP BY hs_code, hsue_code)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  CASE hsue_code is null
+                    WHEN TRUE THEN hs_code::text
+                    ELSE hs_code::text || '(' || hsue_code::text || ')'
+                  END AS code,
+                  hs_code::text as code_style
+              FROM forest_types_gl
+                WHERE hs_code IS NOT NULL
+                GROUP BY hs_code, hsue_code)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  CASE hsue_code is null
+                    WHEN TRUE THEN hs_code::text
+                    ELSE hs_code::text || '(' || hsue_code::text || ')'
+                  END AS code,
+                  hs_code::text as code_style
+              FROM forest_types_ar
+                WHERE hs_code IS NOT NULL
+                GROUP BY hs_code, hsue_code)
        )foo )
 
 SELECT (code::TEXT || subcode::TEXT)::text AS code, (code::TEXT || subcode::TEXT)::text AS code_style,
@@ -291,11 +313,19 @@ SELECT stan_nais AS code,
 FROM forest_types_so
 WHERE stan_nais IS NOT NULL
 UNION
-SELECT nais_profi AS code,
+SELECT nais AS code,
        ST_Transform(geom, 3857) as geometry,
-       nais_profi as code_vd,
-       nais_profi as code_so,
+       nais as code_vd,
+       nais as code_so,
        null as info_vd
 FROM forest_types_gl
-WHERE nais_profi IS NOT NULL;
+WHERE nais IS NOT NULL
+UNION
+SELECT nais AS code,
+       ST_Transform(geom, 3857) as geometry,
+       nais as code_vd,
+       nais as code_so,
+       null as info_vd
+FROM forest_types_ar
+WHERE nais IS NOT NULL;
 

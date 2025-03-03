@@ -83,4 +83,7 @@ _import "Download manually" "forest_types_sh" "forest_types_sh" "forest_types_sh
 
 _import "Download manually" "forest_types_so" "forest_types_so" "forest_types_so"
 
-# _import "Download manually" "forest_types_gl" "forest_types_gl" "forest_types_gl"
+_import "Download manually" "forest_types_gl" "forest_types_gl" "forest_types_gl"
+
+_import "Download manually" "forest_types_ar" "forest_types_ar" "forest_types_ar"
+
