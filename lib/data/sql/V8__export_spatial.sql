@@ -109,7 +109,7 @@ WITH altitudinal_zones_cantonal AS
                   END AS code,
                   hs_code::text as code_style
               FROM forest_types_gl
-                WHERE hs_code IS NOT NULL
+                WHERE hs_code IS NOT NULL and geom is not null
                 GROUP BY hs_code, hsue_code)
               UNION
               (SELECT 
@@ -120,7 +120,7 @@ WITH altitudinal_zones_cantonal AS
                   END AS code,
                   hs_code::text as code_style
               FROM forest_types_ar
-                WHERE hs_code IS NOT NULL
+                WHERE hs_code IS NOT NULL and geom is not null
                 GROUP BY hs_code, hsue_code)
        )foo )
 
@@ -179,7 +179,7 @@ SELECT nais as code,
        nais as code_so,
        null as info_vd
 FROM forest_types_tg
-WHERE nais IS NOT NULL
+WHERE nais IS NOT NULL and geom is not null
 UNION
 SELECT CASE nais2 is null
           WHEN TRUE THEN nais1
@@ -196,7 +196,7 @@ SELECT CASE nais2 is null
        END as code_so,
        null as info_vd
 FROM forest_types_lu
-WHERE nais1 IS NOT NULL
+WHERE nais1 IS NOT NULL and geom is not null
 UNION
 SELECT typ_nais AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -204,7 +204,7 @@ SELECT typ_nais AS code,
        typ_nais as code_so,
        null as info_vd
 FROM forest_types_fl
-WHERE typ_nais IS NOT NULL
+WHERE typ_nais IS NOT NULL and geom is not null
 UNION
 SELECT nais as code,
        ST_Transform(geom, 3857) as geometry,
@@ -212,7 +212,7 @@ SELECT nais as code,
        nais as code_so,
        null as info_vd
 FROM forest_types_zh
-WHERE nais IS NOT NULL
+WHERE nais IS NOT NULL and geom is not null
 UNION
 SELECT nais as code,
        ST_Transform(geom, 3857) as geometry,
@@ -220,7 +220,7 @@ SELECT nais as code,
        nais as code_so,
        null as info_vd
 FROM forest_types_zh_2
-WHERE nais IS NOT NULL
+WHERE nais IS NOT NULL and geom is not null
 UNION
 SELECT code_nais AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -228,7 +228,7 @@ SELECT code_nais AS code,
        code_nais as code_so,
        null as info_vd
 FROM forest_types_ne
-WHERE code_nais IS NOT NULL
+WHERE code_nais IS NOT NULL and geom is not null
 UNION
 SELECT nais AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -236,7 +236,7 @@ SELECT nais AS code,
        nais as code_so,
        null as info_vd
 FROM forest_types_fr
-WHERE nais IS NOT NULL
+WHERE nais IS NOT NULL and geom is not null
 UNION
 SELECT CASE naisue is null
            WHEN TRUE THEN nais1
@@ -253,7 +253,7 @@ SELECT CASE naisue is null
        END as code_so,
        null as info_vd
 FROM forest_types_ju
-WHERE nais1 IS NOT NULL
+WHERE nais1 IS NOT NULL and geom is not null
 UNION
 SELECT nais_2022 AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -261,7 +261,7 @@ SELECT nais_2022 AS code,
        nais_2022 as code_so,
        null as info_vd
 FROM forest_types_bl
-WHERE nais_2022 IS NOT NULL
+WHERE nais_2022 IS NOT NULL and geom is not null
 UNION
 SELECT nais AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -269,7 +269,7 @@ SELECT nais AS code,
        nais AS code_so,
        popup as info_vd
 FROM forest_types_vd
-WHERE nais IS NOT NULL
+WHERE nais IS NOT NULL and geom is not null
 UNION
 SELECT CASE taue is null
            WHEN TRUE THEN ta
@@ -286,7 +286,7 @@ SELECT CASE taue is null
        END AS code_so,
        null as info_vd
 FROM forest_types_sg
-WHERE ta IS NOT NULL
+WHERE ta IS NOT NULL and geom is not null
 UNION
 SELECT CASE naisue is null
            WHEN TRUE THEN nais
@@ -303,7 +303,7 @@ SELECT CASE naisue is null
        END AS code_so,
        null as info_vd
 FROM forest_types_sh
-WHERE nais IS NOT NULL
+WHERE nais IS NOT NULL and geom is not null
 UNION
 SELECT stan_nais AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -311,7 +311,7 @@ SELECT stan_nais AS code,
        grunnheit as code_so,
        null as info_vd
 FROM forest_types_so
-WHERE stan_nais IS NOT NULL
+WHERE stan_nais IS NOT NULL and geom is not null
 UNION
 SELECT nais AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -319,7 +319,7 @@ SELECT nais AS code,
        nais as code_so,
        null as info_vd
 FROM forest_types_gl
-WHERE nais IS NOT NULL
+WHERE nais IS NOT NULL and geom is not null
 UNION
 SELECT nais AS code,
        ST_Transform(geom, 3857) as geometry,
@@ -327,5 +327,5 @@ SELECT nais AS code,
        nais as code_so,
        null as info_vd
 FROM forest_types_ar
-WHERE nais IS NOT NULL;
+WHERE nais IS NOT NULL and geom is not null;
 
