@@ -53,7 +53,7 @@ _import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/data.zip" "for
 
 _import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_fir_areas" "Tannenareale" "Tannenareale"
 
-_import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d/swissboundaries3d_2023-01/swissboundaries3d_2023-01_2056_5728.shp.zip" "cantonal_boundaries" "" "swissBOUNDARIES3D_1_4_TLM_KANTONSGEBIET"
+_import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d/swissboundaries3d_2023-01/swissboundaries3d_2023-01_2056_5728.shp.zip" "cantonal_boundaries" "" "swissBOUNDARIES3D_1_5_TLM_KANTONSGEBIET"
 
 _import "Download manually" "forest_types_fl" "forest_types_fl" "forest_types_fl"
 
