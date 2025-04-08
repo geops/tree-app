@@ -19,7 +19,7 @@ const CookieBanner = () => {
   );
 
   return lsValue !== "true" ? (
-    <Message className="absolute bottom-0 z-50 flex w-screen items-center gap-2 rounded-none border-none bg-stone-900 text-white">
+    <Message className="absolute bottom-0 z-50 flex w-screen items-center gap-2 rounded-none border-none bg-zinc-900 text-white">
       <div>
         <Trans i18nKey="cookieConsent">
           <a
@@ -33,7 +33,7 @@ const CookieBanner = () => {
         </Trans>
       </div>
       <Button
-        className="ml-2 border-2 border-white bg-stone-900 text-white hover:border-white hover:bg-stone-700 hover:bg-stone-900 hover:text-white"
+        className="ml-2 border-2 border-white !bg-zinc-900 text-white hover:border-white hover:!bg-zinc-600 hover:bg-zinc-700 hover:text-white"
         data-cypress="cookie-consent-ok-btn"
         onClick={() => setLsValue("true")}
         variant="outlined"
