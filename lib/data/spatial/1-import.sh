@@ -4,6 +4,23 @@ _import () {
     local ZIPFILE=$3 # SHAPEFILE_LV95_LN02
     local SHPFILE=$4 # swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET
 
+    # if [ "$URL" == "Download manually" ]; then
+    #     if [ ! -f "/data/spatial/${TARGET}.zip" ]; then
+    #         echo "Manual download for ${TARGET} is missing! Do nothing ..."
+    #         return
+    #     fi
+    #     if [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
+    #         cd /data/spatial
+    #         echo "Unzipping ${TARGET} ..."
+    #         7z x -aoa -o"${TARGET}" "${TARGET}.zip"
+    #         cd ${TARGET}
+    #         mv ${ZIPFILE}/* .
+    #         rm -r ${ZIPFILE}
+    #     else
+    #         echo "$TARGET already downloaded! Will be reused ..."
+    #     fi
+    # fi
+
     if [ "$URL" == "Download manually" ] && [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
         echo "Manual unzipped download for ${TARGET} is missing! Do nothing ..."
         return
@@ -86,4 +103,3 @@ _import "Download manually" "forest_types_so" "forest_types_so" "forest_types_so
 _import "Download manually" "forest_types_gl" "forest_types_gl" "forest_types_gl"
 
 _import "Download manually" "forest_types_ar" "forest_types_ar" "forest_types_ar"
-

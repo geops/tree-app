@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   db:
     build:
@@ -12,6 +12,7 @@ services:
       - POSTGRES_DB=tree
     volumes:
       - .:/data
+      - ./export:/treeapp/pg2sqlite
     deploy:
       resources:
         limits:

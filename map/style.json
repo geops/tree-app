@@ -1,0 +1,268 @@
+{
+  "version": 8,
+  "name": "tree",
+  "sources": {
+    "tree": {
+      "type": "vector",
+      "maxzoom": 12
+    }
+  },
+  "layers": [
+    {
+      "id": "cb",
+      "type": "line",
+      "source": "tree",
+      "source-layer": "cantonal_boundaries",
+      "metadata": {
+        "group": "main"
+      },
+      "paint": {
+        "line-color": "#fcad03",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "fe",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "forest_ecoregions",
+      "metadata": {
+        "group": "main",
+        "mapping": "forestEcoregion",
+        "type": "forestEcoregion"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code"],
+          "J",
+          "#cf8a23",
+          "M",
+          "#dcbd2f",
+          "1",
+          "#d8df51",
+          "2a",
+          "#7ce882",
+          "2b",
+          "#3ba625",
+          "3",
+          "#93e6ec",
+          "4",
+          "#76a8e7",
+          "5a",
+          "#5851df",
+          "5b",
+          "#e466c7",
+          "Me",
+          "#a80084",
+          "#ccc"
+        ],
+        "fill-opacity": 0.0
+      }
+    },
+    {
+      "id": "ft",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "metadata": {
+        "group": "main",
+        "mapping": "forestType",
+        "type": "forestType"
+      },
+      "minzoom": 10,
+      "maxzoom": 16,
+      "paint": {
+        "fill-color": "#006268",
+        "fill-opacity": 0
+      }
+    },
+    {
+      "id": "ft_line",
+      "type": "line",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "paint": {
+        "line-color": "#fbf0b2",
+        "line-opacity": 0
+      },
+      "minzoom": 15
+    },
+    {
+      "id": "ft_label",
+      "type": "symbol",
+      "source": "tree",
+      "source-layer": "forest_types",
+      "layout": {
+        "text-field": ["get", "code"],
+        "text-font": ["Roboto Regular"],
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "#fbf0b2",
+        "text-opacity": 0
+      },
+      "minzoom": 15
+    },
+    {
+      "id": "azt",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "altitudinal_zones_1995",
+      "metadata": {
+        "group": "altitudinalZones",
+        "mapping": "altitudinalZone",
+        "type": "altitudinalZone"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code_style"],
+          "0",
+          "#ccc",
+          "10",
+          "#df73ff",
+          "20",
+          "#8400a8",
+          "30",
+          "#e60000",
+          "40",
+          "#ff5500",
+          "50",
+          "#ffaa00",
+          "60",
+          "#267300",
+          "70",
+          "#70a800",
+          "81",
+          "#73dfff",
+          "82",
+          "#00a9e6",
+          "83",
+          "#004da8",
+          "90",
+          "#732600",
+          "100",
+          "#3b1300",
+          "#ccc"
+        ],
+        "fill-opacity": 0.0
+      }
+    },
+    {
+      "id": "azm",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "altitudinal_zones_2085_less_dry",
+      "metadata": {
+        "group": "altitudinalZones",
+        "mapping": "targetAltitudinalZoneModerate",
+        "type": "altitudinalZone"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code_style"],
+          "0",
+          "#ccc",
+          "10",
+          "#df73ff",
+          "20",
+          "#8400a8",
+          "30",
+          "#e60000",
+          "40",
+          "#ff5500",
+          "50",
+          "#ffaa00",
+          "60",
+          "#267300",
+          "70",
+          "#70a800",
+          "81",
+          "#73dfff",
+          "82",
+          "#00a9e6",
+          "83",
+          "#004da8",
+          "90",
+          "#732600",
+          "100",
+          "#3b1300",
+          "#ccc"
+        ],
+        "fill-opacity": 0.0
+      }
+    },
+    {
+      "id": "aze",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "altitudinal_zones_2085_dry",
+      "metadata": {
+        "group": "altitudinalZones",
+        "mapping": "targetAltitudinalZoneExtreme",
+        "type": "altitudinalZone"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code_style"],
+          "0",
+          "#ccc",
+          "10",
+          "#df73ff",
+          "20",
+          "#8400a8",
+          "30",
+          "#e60000",
+          "40",
+          "#ff5500",
+          "50",
+          "#ffaa00",
+          "60",
+          "#267300",
+          "70",
+          "#70a800",
+          "81",
+          "#73dfff",
+          "82",
+          "#00a9e6",
+          "83",
+          "#004da8",
+          "90",
+          "#732600",
+          "100",
+          "#3b1300",
+          "#ccc"
+        ],
+        "fill-opacity": 0.0
+      }
+    },
+    {
+      "id": "sfa",
+      "type": "fill",
+      "source": "tree",
+      "source-layer": "silver_fir_areas",
+      "metadata": {
+        "group": "main",
+        "mapping": "silverFirArea",
+        "type": "silverFirArea"
+      },
+      "paint": {
+        "fill-color": [
+          "match",
+          ["get", "code"],
+          1,
+          "#4e4e4e",
+          2,
+          "#9c9c9c",
+          3,
+          "#ffffff",
+          "#ccc"
+        ],
+        "fill-opacity": 0.0
+      }
+    }
+  ]
+}

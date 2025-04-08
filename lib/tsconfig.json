@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "types": ["@serwist/next/typings"],
+    "lib": ["webworker", "dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
+    "strictNullChecks": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "declaration": true,
+    "noUnusedLocals": false,
+    "outDir": "build"
+  },
+  "exclude": ["node_modules", "lib/build/**/*"]
+}

@@ -1,8 +1,78 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
 /build
-node_modules
-npm-debug.log
+
+# misc
 .DS_Store
-.eslintcache
-cypress/videos
-src/i18n/*.csv
-.vscode
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+
+# Serwist
+public/sw*
+public/swe-worker*
+
+# backend
+lib/data/spatial/tiles/.vercel
+lib/data/spatial/export/*.geojson
+lib/data/spatial/tiles/fonts
+lib/data/spatial/tiles/forest-type
+lib/data/spatial/tiles/tiles.txt
+lib/data/spatial/tiles/tree
+lib/data/spatial/altitudinal_zones_1995
+lib/data/spatial/altitudinal_zones_2085_dry
+lib/data/spatial/altitudinal_zones_2085_less_dry
+lib/data/spatial/altitudinal_zones_vd
+lib/data/spatial/cantonal_boundaries
+lib/data/spatial/forest_ecoregions
+lib/data/spatial/forest_types_ar
+lib/data/spatial/forest_types_bl
+lib/data/spatial/forest_types_fl
+lib/data/spatial/forest_types_fr
+lib/data/spatial/forest_types_gl
+lib/data/spatial/forest_types_ju
+lib/data/spatial/forest_types_lu
+lib/data/spatial/forest_types_ne
+lib/data/spatial/forest_types_sg
+lib/data/spatial/forest_types_sh
+lib/data/spatial/forest_types_so
+lib/data/spatial/forest_types_tg
+lib/data/spatial/forest_types_vd
+lib/data/spatial/forest_types_zh
+lib/data/spatial/forest_types_zh_2
+lib/data/spatial/silver_fir_areas
+lib/data/spatial/cantonal_boundaries.zip
+lib/data/spatial/*.zip
+lib/node_modules
+lib/data/export/*
+lib/build
+lib/.parcel-cache
