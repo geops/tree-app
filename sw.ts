@@ -25,7 +25,7 @@ const OLD_SO_PDF_CACHES = Array.from(Array(currentSoPdfVersion).keys()).map(
 );
 
 const tileCacheString = "tree-app-tiles-v"; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
-const currentTileVersion = 22; // Current tile version, needs to be increased every time new tiles are deployed
+const currentTileVersion = 23; // Current tile version, needs to be increased every time new tiles are deployed
 const TILE_CACHE_NAME = `${tileCacheString}${currentTileVersion}`;
 
 // Create an array of 'tree-app-tiles-v[1 - currentVersion]' strings for the caches to be removed
