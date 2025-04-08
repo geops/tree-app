@@ -19,7 +19,7 @@ const CookieBanner = () => {
   );
 
   return lsValue !== "true" ? (
-    <Message className="absolute bottom-0 z-50 flex w-screen items-center gap-2 rounded-none border-none bg-zinc-900 text-white">
+    <Message className="absolute bottom-0 z-50 flex w-screen items-center justify-between rounded-none border-none bg-zinc-900 text-white">
       <div>
         <Trans i18nKey="cookieConsent">
           <a
