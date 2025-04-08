@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 import dynamic from "next/dynamic";
 import { useMemo } from "react";
+=======
+import { useMemo } from "react";
+import { Fragment } from "react";
+>>>>>>> c7af3cb (refactor: rebuild tree-app using nextJS and tailwind)
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
 import getSortedTreeTypes from "@/utils/getSortedTreeTypes";
+<<<<<<< HEAD
 import getTreeTypePdfUrl from "@/utils/getTreeTypePdfUrl";
 import useHasPdf from "@/utils/hooks/useHasPdf";
 
@@ -59,6 +65,11 @@ function TreeType(props: Tree) {
   return <span>{content}</span>;
 }
 
+=======
+
+import type { TreeAppLanguage } from "@/i18n/i18next";
+
+>>>>>>> c7af3cb (refactor: rebuild tree-app using nextJS and tailwind)
 function TreeTypeList({
   className,
   codes,
@@ -66,6 +77,10 @@ function TreeTypeList({
   className?: string;
   codes?: number[];
 }) {
+<<<<<<< HEAD
+=======
+  const latinActive = useStore((state) => state.latinActive);
+>>>>>>> c7af3cb (refactor: rebuild tree-app using nextJS and tailwind)
   const { i18n } = useTranslation();
 
   const treeInfos = useMemo(() => {

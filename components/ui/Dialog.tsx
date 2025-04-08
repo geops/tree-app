@@ -21,7 +21,10 @@ export interface DialogProps {
   onClose?: (() => void) | null;
   open?: boolean;
   title?: null | string;
+<<<<<<< HEAD
   unmount?: boolean;
+=======
+>>>>>>> c7af3cb (refactor: rebuild tree-app using nextJS and tailwind)
 }
 
 export default function Dialog({
@@ -34,7 +37,10 @@ export default function Dialog({
   onClose = null,
   open = false,
   title = null,
+<<<<<<< HEAD
   unmount = false,
+=======
+>>>>>>> c7af3cb (refactor: rebuild tree-app using nextJS and tailwind)
   ...otherProps
 }: DialogProps) {
   const { t } = useTranslation();
