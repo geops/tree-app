@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { toast, Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 
+import CookieBanner from "@/components/CookieBanner";
 import Layout from "@/components/Layout";
 import SafeHydrate from "@/components/SafeHydrate";
 import TreeClientProvider from "@/components/TreeClientProvider";
@@ -149,6 +150,7 @@ function TreeApp({ Component, pageProps }: AppProps) {
         />
         <title>Tree-App</title>
       </Head>
+      <CookieBanner />
       <div className="h-screen overflow-hidden">
         <Toaster position="top-right" />
         <TreeClientProvider>
