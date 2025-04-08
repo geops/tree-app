@@ -1,157 +1,81 @@
 {
-  "name": "@geops/tree-app",
-  "description": "Web app for tree recommendations.",
-  "license": "MIT",
-  "version": "2.7.0",
+  "name": "tree-app",
+  "version": "3.0.0",
   "private": true,
-  "engines": {
-    "node": ">=18"
+  "scripts": {
+    "dev": "next dev",
+    "build": "pnpm build:lib && next build",
+    "build:lib": "cd lib && pnpm install && pnpm build",
+    "start": "next start",
+    "format": "prettier --write . --check '!./lib/data/spatial'",
+    "lint": "next lint --fix"
   },
   "dependencies": {
-    "@datapunt/matomo-tracker-react": "^0.5.1",
-    "@geops/tree-lib": "^2.0.0",
-    "docx": "^7.1.2",
-    "file-saver": "^2.0.5",
-    "history": "4.10.1",
-    "html-react-parser": "^1.2.7",
-    "i18next": "21.4.1",
+    "@geops/tree-lib": "link:lib/build",
+    "@headlessui/react": "2.0.4",
+    "@heroicons/react": "2.1.5",
+    "@serwist/next": "9.0.7",
+    "@serwist/sw": "9.0.8",
+    "@types/react": "18.3.4",
+    "@tailwindcss/container-queries": "0.1.1",
+    "@types/node": "20.16.2",
+    "@upstash/redis": "1.34.3",
+    "assert": "2.1.0",
+    "docx": "9.1.0",
+    "file-saver": "2.0.5",
+    "html-react-parser": "5.2.0",
+    "i18next": "23.15.1",
     "i18next-browser-languagedetector": "6.1.2",
-    "is-svg": "^4.3.2",
-    "lodash.difference": "4.5.0",
+    "immer": "10.1.1",
+    "is-svg": "5.1.0",
     "lodash.get": "4.4.2",
     "lodash.intersection": "4.4.0",
-    "lodash.union": "4.6.0",
-    "lodash.xor": "4.5.0",
-    "mapbox-gl": "1.13.0",
-    "ol": "6.9.0",
-    "pdfjs-dist": "^4.1.392",
-    "proj4": "2.7.5",
-    "prop-types": "15.7.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-i18next": "11.13.0",
-    "react-pdf": "5",
-    "react-redux": "7.2.6",
-    "react-router-dom": "5.3.0",
-    "react-scripts": "4.0.3",
-    "react-toastify": "8.1.0",
-    "redux": "4.1.2",
-    "redux-query-sync": "0.1.10",
-    "save-svg-as-png": "^1.4.17",
-    "semantic-ui-css": "2.4.1",
-    "semantic-ui-react": "2.0.4",
-    "workbox-background-sync": "^6.3.0",
-    "workbox-broadcast-update": "^6.3.0",
-    "workbox-cacheable-response": "^6.3.0",
-    "workbox-core": "^6.3.0",
-    "workbox-precaching": "^6.4.1",
-    "workbox-routing": "^6.3.0"
+    "maplibre-gl": "4.4.1",
+    "next": "14.2.26",
+    "ol": "10.0.0",
+    "prisma": "5.19.0",
+    "proj4": "2.12.1",
+    "react": "18",
+    "react-dom": "18",
+    "react-hot-toast": "^2.5.1",
+    "react-i18next": "15.0.1",
+    "react-pdf": "9.2.1",
+    "react-select": "5.8.3",
+    "react-tooltip": "5.28.0",
+    "save-svg-as-png": "1.4.17",
+    "sql.js": "1.11.0",
+    "url-loader": "4.1.1",
+    "uuid": "10.0.0",
+    "serwist": "9.0.7",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.6.3",
+    "zustand": "5.0.0-rc.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.30.0",
-    "@typescript-eslint/parser": "4.30.0",
-    "babel-eslint": "10.1.0",
-    "csv-parse": "4.16.3",
-    "cypress": "13.6.1",
-    "eslint": "7.32.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-config-react-app": "6.0.0",
-    "eslint-plugin-cypress": "2.12.1",
-    "eslint-plugin-flowtype": "^5.9.1",
-    "eslint-plugin-import": "2.25.2",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-react": "7.26.1",
-    "eslint-plugin-react-hooks": "4.2.0",
-    "husky": "4.3.8",
-    "lint-staged": "10.5.4",
-    "lodash.set": "4.3.2",
-    "prettier": "2.4.1",
-    "react-error-overlay": "6.0.9",
-    "react-test-renderer": "17.0.2",
-    "start-server-and-test": "2.0.3"
+    "@geops/eslint-config-react": "1.2.0",
+    "@serwist/build": "9.0.7",
+    "@types/file-saver": "2.0.7",
+    "@types/geojson": "7946.0.14",
+    "@types/lodash.get": "4.4.9",
+    "@types/lodash.intersection": "4.4.9",
+    "@types/proj4": "2.5.5",
+    "@types/react-dom": "18",
+    "@types/react-router-dom": "5.3.3",
+    "@types/sql.js": "1.4.9",
+    "@types/uuid": "*",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "cypress": "13.13.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.7",
+    "eslint-config-prettier": "9.1.0",
+    "postcss": "8",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.5"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "resolutions": {
+    "react-i18next": ">=11.16.4"
   },
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "jest": true
-    },
-    "extends": [
-      "airbnb",
-      "plugin:cypress/recommended",
-      "react-app",
-      "prettier"
-    ],
-    "plugins": [
-      "prettier"
-    ],
-    "rules": {
-      "react/jsx-filename-extension": [
-        1,
-        {
-          "extensions": [
-            ".js",
-            ".jsx"
-          ]
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "*.json",
-    "*.css"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "post-checkout": "if [[ $HUSKY_GIT_PARAMS =~ 1$ ]]; then yarn install --frozen-lockfile; fi",
-      "post-merge": "yarn install --frozen-lockfile",
-      "post-rebase": "yarn install"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "eslint src --fix",
-      "prettier --write 'src/**/*.js'"
-    ]
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "singleQuote": true
-  },
-  "scripts": {
-    "cypress:open": "cypress open",
-    "cypress:ci": "start-server-and-test start http://localhost:3000 'cypress run --record'",
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "prebuild": "cd lib && yarn build",
-    "build": "NODE_OPTIONS='--no-experimental-fetch --openssl-legacy-provider' react-scripts build",
-    "lint": "eslint src",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!ol)/\"",
-    "eject": "react-scripts eject",
-    "i18n:convert2csv": "node ./src/i18n/convert2csv.js",
-    "i18n:convert2json": "node ./src/i18n/convert2json.js"
-  },
-  "workspaces": [
-    "lib"
-  ],
-  "jest": {
-    "moduleNameMapper": {
-      "^(.*)esm/entry.webpack": "$1umd/entry.jest"
-    }
-  },
-  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  "author": "geOps",
+  "packageManager": "pnpm@9.7.0+sha256.b35018fbfa8f583668b2649e407922a721355cd81f61beeb4ac1d4258e585559"
 }

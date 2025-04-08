@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-sm leading-[1.4];
+    padding-right: 0 !important; /* headless-ui Dialog issue https://github.com/tailwindlabs/headlessui/issues/762 */
+  }
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  h4 {
+    @apply text-lg font-bold;
+  }
+  a {
+    @apply text-primary-500 hover:text-primary-700;
+  }
+  p {
+    @apply mx-0 my-2;
+  }
+}
+
+.ol-hidden {
+  visibility: hidden;
+}
+
+.map .ol-zoom {
+  position: absolute;
+  background: none;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  top: unset;
+  left: unset;
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.ol-rotate {
+  position: absolute;
+  top: 105px;
+}
+
+.map .ol-zoom-in {
+  padding-bottom: 2px;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.map .ol-zoom-out {
+  padding-bottom: 5px;
+  border-radius: 0 0 8px 8px !important;
+}
+
+.map .ol-zoom button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: theme("colors.primary.500");
+  height: 34px;
+  width: 34px;
+  font-size: 28px;
+  line-height: 38px;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+}
+
+.map .ol-scale-line {
+  right: 4.25rem;
+  left: auto;
+  background: rgba(255, 255, 255, 0);
+  bottom: 1.3rem;
+  backdrop-filter: blur(8px);
+  border-radius: 0.5rem;
+  padding: 6px;
+}
+
+.map .ol-scale-line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 3px;
+  box-sizing: border-box;
+}
+
+.map .ol-scale-line-inner {
+  border: 2px solid theme("colors.primary.500");
+  font-weight: bold;
+  border-top: none;
+  color: theme("colors.primary.500");
+  font-size: 9px;
+  text-align: center;
+  margin: 1px;
+  will-change: contents, width;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  position: relative;
+  border-radius: 0 0 4px 4px;
+  z-index: 10;
+}
+
+.map .ol-zoom button:hover {
+  cursor: pointer;
+  outline: 0;
+  color: theme("colors.primary.200");
+  border: none;
+}
+
+.map .ol-zoom button:focus {
+  color: theme("colors.primary.200");
+  outline: 0;
+}

@@ -1,0 +1,13 @@
+{
+  "extends": ["@geops/eslint-config-react", "plugin:@next/next/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@next/next/google-font-display": "off",
+    "@next/next/google-font-preconnect": "off",
+    "@next/next/no-page-custom-font": "off"
+  },
+  "ignorePatterns": ["lib/data", "lib/build"],
+  "parserOptions": {
+    "project": "./tsconfig.json" // Adjust path if necessary
+  }
+}

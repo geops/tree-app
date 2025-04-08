@@ -1,8 +1,0 @@
-.page {
-  padding: 20px;
-  font-size: 1.1em;
-}
-
-.infoLangProfilesContent > div:not(:last-child) {
-  margin-bottom: 20px;
-}
