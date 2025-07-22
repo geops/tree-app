@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useCallback, useContext, useState } from "react";
 
 import Dialog from "./Dialog";
 import InfoButton from "./InfoButton";
@@ -7,9 +7,14 @@ import type { FC } from "react";
 
 import type { DialogProps } from "./Dialog";
 
+export interface TriggerProps extends React.HTMLAttributes<HTMLButtonElement> {
+  onClick: () => void;
+}
+
 interface Props extends DialogProps {
   onClick?: () => void;
-  Trigger?: FC<{ onClick: () => void }> | null;
+  Trigger?: FC<TriggerProps> | null;
+  triggerProps?: Record<string, unknown>;
 }
 
 const ModalContext = createContext<
@@ -36,21 +41,22 @@ function Modal({
   onClose,
   title,
   Trigger = InfoButton,
+  triggerProps = {},
   ...otherProps
 }: Props) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setIsOpen(false);
     onClose?.();
-  };
-  const openModal = () => {
-    setIsOpen(!isOpen);
+  }, [onClose]);
+  const openModal = useCallback(() => {
+    setIsOpen(true);
     onClick?.();
-  };
+  }, [onClick]);
 
   return (
     <>
-      {Trigger && <Trigger onClick={openModal} />}
+      {Trigger && <Trigger onClick={openModal} {...triggerProps} />}
       <ModalContext.Provider value={{ closeModal, openModal }}>
         <Dialog
           body={<div className="p-4 text-lg">{children}</div>}
