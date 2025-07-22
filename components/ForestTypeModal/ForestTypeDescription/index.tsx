@@ -11,8 +11,13 @@ import LuForestTypeDescription from "./lu";
 
 const SoForestTypesDescription = dynamic(() => import("./so"), { ssr: false }); // Needs to be dynamic due to react-pdf
 
+const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
+
 function useShowForestTypeDescription(code: string, activeProfile: string) {
-  const hasPdf = useHasPdf(code);
+  const hasPdf = useHasPdf(
+    `${soPdfEndpoint}/${code?.replace("*", "stern")}.pdf`,
+    ["so"],
+  );
 
   const showForestTypeDescription = useMemo(
     () => (activeProfile === "so" ? hasPdf : !!code),

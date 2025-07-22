@@ -21,6 +21,7 @@ export interface DialogProps {
   onClose?: (() => void) | null;
   open?: boolean;
   title?: null | string;
+  unmount?: boolean;
 }
 
 export default function Dialog({
@@ -33,6 +34,7 @@ export default function Dialog({
   onClose = null,
   open = false,
   title = null,
+  unmount = false,
   ...otherProps
 }: DialogProps) {
   const { t } = useTranslation();
@@ -85,6 +87,7 @@ export default function Dialog({
       data-testid="dialog"
       onClose={() => onClose?.()}
       open={open}
+      unmount={unmount}
       {...otherProps}
     >
       {modal ? (

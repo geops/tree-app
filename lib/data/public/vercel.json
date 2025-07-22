@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/tree-types/:path*",
+      "destination": "https://tree-app-data-treetypes.vercel.app/tree-types/:path*"
+    },
+    {
+      "source": "/profiles/so/forest-types/:path*",
+      "destination": "https://tree-app-data-so.vercel.app/forest-types/:path*"
+    }
+  ]
+}
