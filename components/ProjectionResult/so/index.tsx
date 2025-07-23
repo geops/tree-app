@@ -24,7 +24,6 @@ function useProjectedFt(
   if (!code) return null;
   const treeClient = useStore.getState().treeClient;
   let ftInfo;
-  console.log(filterAttribute);
 
   try {
     const ftInfos = treeClient
@@ -65,6 +64,8 @@ function useProjectedFt(
   return ftInfo?.codesofuture ? ftInfo.codesofuture : mapForestType;
 }
 
+const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
+
 function ProjectionCantonalForestType({
   altitudinalZone,
   forestType,
@@ -81,7 +82,10 @@ function ProjectionCantonalForestType({
     /today/.test(scenario) ? "codessopresent" : undefined,
     mapLocation.forestType_so!,
   );
-  const hasPdf = useHasPdf(projectedFt);
+  const hasPdf = useHasPdf(
+    projectedFt && `${soPdfEndpoint}/${projectedFt.replace("*", "stern")}.pdf`,
+    ["so"],
+  );
   const { closeModal } = useModalContext();
 
   return (

@@ -8,13 +8,19 @@ import useHasPdf from "@/utils/hooks/useHasPdf";
 import InfoButton from "./ui/InfoButton";
 import Label from "./ui/Label";
 
+const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
+
 function CantonalForestType() {
   const { t } = useTranslation();
   const setForestTypeDescription = useStore(
     (state) => state.setForestTypeDescription,
   );
   const cantonalForestType = useCantonalForestType();
-  const hasPdf = useHasPdf(cantonalForestType);
+  const hasPdf = useHasPdf(
+    cantonalForestType &&
+      `${soPdfEndpoint}/${cantonalForestType.replace("*", "stern")}.pdf`,
+    ["so"],
+  );
 
   if (!cantonalForestType) return null;
 

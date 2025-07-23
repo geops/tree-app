@@ -1,4 +1,3 @@
-import dynamic from "next/dynamic";
 import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -8,11 +7,15 @@ import useHasPdf from "@/utils/hooks/useHasPdf";
 import BlForestTypeDescription from "./bl";
 import ChForestTypesDescription from "./ch";
 import LuForestTypeDescription from "./lu";
+import SoForestTypeDescription from "./so";
 
-const SoForestTypesDescription = dynamic(() => import("./so"), { ssr: false }); // Needs to be dynamic due to react-pdf
+const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
 
 function useShowForestTypeDescription(code: string, activeProfile: string) {
-  const hasPdf = useHasPdf(code);
+  const hasPdf = useHasPdf(
+    `${soPdfEndpoint}/${code?.replace("*", "stern")}.pdf`,
+    ["so"],
+  );
 
   const showForestTypeDescription = useMemo(
     () => (activeProfile === "so" ? hasPdf : !!code),
@@ -37,7 +40,7 @@ function ForestTypeDescription() {
       {activeProfile === "ch" && <ChForestTypesDescription code={code} />}
       {activeProfile === "lu" && <LuForestTypeDescription code={code} />}
       {activeProfile === "bl" && <BlForestTypeDescription code={code} />}
-      {activeProfile === "so" && <SoForestTypesDescription code={code} />}
+      {activeProfile === "so" && <SoForestTypeDescription code={code} />}
       {activeProfile === "vd" && (
         <p className="p-2">{t("forestTypeModal.noDataMessage")}</p>
       )}
