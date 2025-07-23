@@ -20,6 +20,7 @@ interface Props extends DialogProps {
 const ModalContext = createContext<
   | {
       closeModal: () => void;
+      isOpen: boolean;
       openModal: () => void;
     }
   | undefined
@@ -57,7 +58,13 @@ function Modal({
   return (
     <>
       {Trigger && <Trigger onClick={openModal} {...triggerProps} />}
-      <ModalContext.Provider value={{ closeModal, openModal }}>
+      <ModalContext.Provider
+        value={{
+          closeModal,
+          isOpen: isOpen || !!otherProps.open,
+          openModal,
+        }}
+      >
         <Dialog
           body={<div className="p-4 text-lg">{children}</div>}
           className={className}

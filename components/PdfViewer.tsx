@@ -1,6 +1,9 @@
 "use client";
 import { useEffect, useReducer, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Document, Page, pdfjs } from "react-pdf";
+
+import Spinner from "./icons/Spinner";
 
 pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs"; // we host this statically in public folder
 
@@ -10,6 +13,7 @@ function PdfViewer({ href }: { href: string }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [numPages, setNumPages] = useState<null | number>(null);
   const [, forceUpdate] = useReducer((x: number) => x + 1, 0);
+  const { t } = useTranslation();
 
   const onDocumentLoadSuccess = ({
     numPages: nextNumPages,
@@ -36,7 +40,16 @@ function PdfViewer({ href }: { href: string }) {
   return (
     <div ref={containerRef}>
       {containerRef?.current ? (
-        <Document file={href} onLoadSuccess={onDocumentLoadSuccess}>
+        <Document
+          file={href}
+          loading={
+            <span className="mx-auto my-4 flex items-center justify-center gap-2 text-lg">
+              <Spinner className="h-5 w-5" />
+              {t("userLocations.loading")}
+            </span>
+          }
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
           {Array.from(new Array(numPages), (_, index) => (
             <Page
               key={`page_${index + 1}`}

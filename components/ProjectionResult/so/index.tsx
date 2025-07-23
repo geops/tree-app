@@ -24,7 +24,6 @@ function useProjectedFt(
   if (!code) return null;
   const treeClient = useStore.getState().treeClient;
   let ftInfo;
-  console.log(filterAttribute);
 
   try {
     const ftInfos = treeClient
