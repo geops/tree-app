@@ -1,4 +1,4 @@
-import { createContext, useCallback, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 import Dialog from "./Dialog";
 import InfoButton from "./InfoButton";
@@ -46,14 +46,14 @@ function Modal({
   ...otherProps
 }: Props) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const closeModal = useCallback(() => {
+  const closeModal = () => {
     setIsOpen(false);
     onClose?.();
-  }, [onClose]);
-  const openModal = useCallback(() => {
+  };
+  const openModal = () => {
     setIsOpen(true);
     onClick?.();
-  }, [onClick]);
+  };
 
   return (
     <>
