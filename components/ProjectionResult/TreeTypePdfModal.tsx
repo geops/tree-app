@@ -17,7 +17,7 @@ function ModalTrigger({ children, onClick }: TriggerProps) {
 function Footer() {
   const { closeModal } = useModalContext();
   return (
-    <div className="flex items-end justify-between gap-6 sm:justify-end">
+    <div className="flex justify-end">
       <Button onClick={closeModal} variant="secondary">
         OK
       </Button>
