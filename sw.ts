@@ -25,7 +25,7 @@ const OLD_TREE_PDF_CACHES = Array.from(Array(currentTreePdfVersion).keys()).map(
 );
 
 const soPdfCacheString = "so-data-v"; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
-const currentSoPdfVersion = 2; // Current SO PDF version, needs to be increased every time new PDFs are deployed
+const currentSoPdfVersion = 3; // Current SO PDF version, needs to be increased every time new PDFs are deployed
 const SO_CACHE_NAME = `${soPdfCacheString}${currentSoPdfVersion}`; // Cache name for SO profile data
 
 // Create an array of 'so-data-v[1 - currentVersion]' strings for the caches to be removed
