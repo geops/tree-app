@@ -1,11 +1,15 @@
 "use client";
+import dynamic from "next/dynamic";
 import { useTranslation } from "react-i18next";
 
-import PdfViewer from "@/components/PdfViewer";
 import { buttonStyles, primaryStyles } from "@/components/ui/Button";
 import { useModalContext } from "@/components/ui/Modal";
 
 const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
+
+const PdfViewer = dynamic(() => import("@/components/PdfViewer"), {
+  ssr: false,
+}); // Needs to be dynamic due to react-pdf pdf.worker.min.mjs
 
 function ForestTypeDescription({ code }: { code: string }) {
   const name = code?.replace("*", "stern");
