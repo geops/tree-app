@@ -107,10 +107,10 @@ self.addEventListener("install", (event) => {
         fetch(`${treePdfEndpoint}/list.txt`)
           .then((response) => response.text())
           .then(async (response) => {
-            const forestTypes = response.split(/\r?\n/);
-            for (const forestType of forestTypes) {
-              const pdfUrl = `${treePdfEndpoint}/${forestType}`;
-              if (forestType && !(await cache.match(pdfUrl))) {
+            const treeTypes = response.split(/\r?\n/);
+            for (const treeType of treeTypes) {
+              const pdfUrl = `${treePdfEndpoint}/${treeType}`;
+              if (treeType && !(await cache.match(pdfUrl))) {
                 try {
                   const pdfResponse = await fetch(pdfUrl);
                   void cache.put(pdfUrl, pdfResponse);
