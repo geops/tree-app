@@ -32,7 +32,7 @@ function TreeType(props: Tree) {
     return (
       <>
         <span
-          className={`inline-block ${hasPdf ? "hover:text-primary-25 cursor-pointer underline" : ""}`}
+          className={`inline-block ${hasPdf ? "cursor-pointer hover:underline" : ""}`}
         >
           {latinActive ? la : lang}
           <sup>
@@ -48,7 +48,11 @@ function TreeType(props: Tree) {
 
   if (hasPdf && pdfUrl) {
     return (
-      <TreeTypePdfModal href={pdfUrl} triggerProps={{ children: content }} />
+      <TreeTypePdfModal
+        href={pdfUrl}
+        name={`${lang} (${la})`}
+        triggerProps={{ children: content }}
+      />
     );
   }
 

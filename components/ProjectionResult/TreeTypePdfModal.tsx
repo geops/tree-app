@@ -1,22 +1,36 @@
-import { Button } from "@headlessui/react";
+import { Button as HuiButton } from "@headlessui/react";
 
 import PdfViewer from "../PdfViewer";
-import Modal, { TriggerProps } from "../ui/Modal";
+import Button from "../ui/Button";
+import Modal, { TriggerProps, useModalContext } from "../ui/Modal";
 
 interface Props {
   href: string;
+  name: string;
   triggerProps?: Record<string, unknown>;
 }
 
 function ModalTrigger({ children, onClick }: TriggerProps) {
-  return <Button onClick={onClick}>{children}</Button>;
+  return <HuiButton onClick={onClick}>{children}</HuiButton>;
 }
 
-function TreeTypePdfModal({ href, triggerProps }: Props) {
+function Footer() {
+  const { closeModal } = useModalContext();
+  return (
+    <div className="flex items-end justify-between gap-6 sm:justify-end">
+      <Button onClick={closeModal} variant="secondary">
+        OK
+      </Button>
+    </div>
+  );
+}
+
+function TreeTypePdfModal({ href, name, triggerProps }: Props) {
   return (
     <Modal
       body={<PdfViewer href={href} />}
-      title={"PDF Viewer"}
+      footer={<Footer />}
+      title={name}
       Trigger={ModalTrigger}
       triggerProps={triggerProps}
       unmount={true}
