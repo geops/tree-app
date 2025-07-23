@@ -7,9 +7,7 @@ import type { FC } from "react";
 
 import type { DialogProps } from "./Dialog";
 
-export interface TriggerProps extends React.HTMLAttributes<HTMLButtonElement> {
-  onClick: () => void;
-}
+export type TriggerProps = React.HTMLAttributes<HTMLButtonElement>;
 
 interface Props extends DialogProps {
   onClick?: () => void;
@@ -56,26 +54,24 @@ function Modal({
   };
 
   return (
-    <>
+    <ModalContext.Provider
+      value={{
+        closeModal,
+        isOpen: isOpen || !!otherProps.open,
+        openModal,
+      }}
+    >
       {Trigger && <Trigger onClick={openModal} {...triggerProps} />}
-      <ModalContext.Provider
-        value={{
-          closeModal,
-          isOpen: isOpen || !!otherProps.open,
-          openModal,
-        }}
-      >
-        <Dialog
-          body={<div className="p-4 text-lg">{children}</div>}
-          className={className}
-          footer={footer}
-          onClose={closeModal}
-          open={isOpen}
-          title={title}
-          {...otherProps}
-        />
-      </ModalContext.Provider>
-    </>
+      <Dialog
+        body={<div className="p-4 text-lg">{children}</div>}
+        className={className}
+        footer={footer}
+        onClose={closeModal}
+        open={isOpen}
+        title={title}
+        {...otherProps}
+      />
+    </ModalContext.Provider>
   );
 }
 
