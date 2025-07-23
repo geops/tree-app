@@ -1,14 +1,15 @@
 "use client";
+import dynamic from "next/dynamic";
 import { useTranslation } from "react-i18next";
-import { pdfjs } from "react-pdf";
 
-pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs"; // we host this statically in public folder
-
-import PdfViewer from "@/components/PdfViewer";
 import { buttonStyles, primaryStyles } from "@/components/ui/Button";
 import { useModalContext } from "@/components/ui/Modal";
 
 const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
+
+const PdfViewer = dynamic(() => import("@/components/PdfViewer"), {
+  ssr: false,
+}); // Needs to be dynamic due to react-pdf pdf.worker.min.mjs
 
 function ForestTypeDescription({ code }: { code: string }) {
   const name = code?.replace("*", "stern");
@@ -24,7 +25,7 @@ function ForestTypeDescription({ code }: { code: string }) {
       >
         {t("export.exportForestTypeDescription")}
       </a>
-      {/* We react to is open to rerender the component */}
+      {/* We react to isOpen to rerender the component */}
       {isOpen ? <PdfViewer href={`${soPdfEndpoint}/${name}.pdf`} /> : null}
     </div>
   );
