@@ -14,6 +14,7 @@ const cache: Record<string, boolean> = {};
 const useHasPdf = (pdfUrl: null | string, profiles: string[] = []) => {
   const [hasPdf, setHasPdf] = useState(false);
   const activeProfile = useStore((state) => state.activeProfile);
+  const profilesString = profiles.toString();
 
   useEffect(() => {
     if (!pdfUrl || (profiles.length && !profiles.includes(activeProfile))) {
@@ -49,7 +50,8 @@ const useHasPdf = (pdfUrl: null | string, profiles: string[] = []) => {
     return () => {
       abortCtrl.abort();
     };
-  }, [pdfUrl, activeProfile, profiles]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pdfUrl, activeProfile, profilesString]);
   return hasPdf;
 };
 
