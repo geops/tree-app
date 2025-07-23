@@ -87,9 +87,13 @@ function NavBar() {
               </>
             );
 
-            const active = pathname.split("/")[1]
-              ? tab.pathname === pathname
-              : tab.pathname === "/location";
+            let active = pathname === tab.pathname;
+
+            if (!isMobile) {
+              active = pathname.split("/")[1]
+                ? tab.pathname === pathname
+                : tab.pathname === "/location";
+            }
 
             return !isMobile && tab.isMobile ? null : (
               <Tab
