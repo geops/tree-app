@@ -9,11 +9,20 @@ pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs"; // we host this sta
 
 let rerenderTimout: ReturnType<typeof setTimeout>;
 
+function Loading() {
+  const { t } = useTranslation();
+  return (
+    <span className="mx-auto my-4 flex items-center justify-center gap-2 text-lg">
+      <Spinner className="h-5 w-5" />
+      {t("userLocations.loading")}
+    </span>
+  );
+}
+
 function PdfViewer({ href }: { href: string }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [numPages, setNumPages] = useState<null | number>(null);
   const [, forceUpdate] = useReducer((x: number) => x + 1, 0);
-  const { t } = useTranslation();
 
   const onDocumentLoadSuccess = ({
     numPages: nextNumPages,
@@ -42,17 +51,13 @@ function PdfViewer({ href }: { href: string }) {
       {containerRef?.current ? (
         <Document
           file={href}
-          loading={
-            <span className="mx-auto my-4 flex items-center justify-center gap-2 text-lg">
-              <Spinner className="h-5 w-5" />
-              {t("userLocations.loading")}
-            </span>
-          }
+          loading={<Loading />}
           onLoadSuccess={onDocumentLoadSuccess}
         >
           {Array.from(new Array(numPages), (_, index) => (
             <Page
               key={`page_${index + 1}`}
+              loading={<Loading />}
               pageNumber={index + 1}
               renderAnnotationLayer={false}
               renderTextLayer={false}
