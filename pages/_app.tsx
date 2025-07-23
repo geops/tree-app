@@ -1,7 +1,8 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
 import { toast, Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
 
@@ -94,10 +95,39 @@ const useServiceWorker = () => {
   }, [t]);
 };
 
+/* On mobile we need to load the map component first when a map position is loaded
+ * from the url, since the form derives the data from the map layers.
+ */
+function useRedirectOnMobile() {
+  const router = useRouter();
+  const isMobile = useIsMobile();
+  const redirected = useRef(false);
+
+  useEffect(() => {
+    if (redirected.current) return;
+    if (isMobile && "mp" in router.query) {
+      redirected.current = true;
+
+      const flatQuery = Object.fromEntries(
+        Object.entries(router.query).map(([key, value]) => [
+          key,
+          Array.isArray(value) ? value[0] : (value ?? ""),
+        ]),
+      );
+
+      const query = new URLSearchParams(flatQuery).toString();
+      const destination = query ? `/?${query}` : "/";
+
+      void router.replace(destination);
+    }
+  }, [isMobile, router.query.mp, router]);
+}
+
 function TreeApp({ Component, pageProps }: AppProps) {
   const isMobile = useIsMobile();
   const pathname = usePathname();
   useServiceWorker();
+  useRedirectOnMobile();
 
   return (
     <SafeHydrate>
