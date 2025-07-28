@@ -5,6 +5,7 @@ import InfoButton from "@/components/ui/InfoButton";
 import Label from "@/components/ui/Label";
 import { useModalContext } from "@/components/ui/Modal";
 import useStore from "@/store";
+import getForestTypePdfUrl from "@/utils/getForestTypesPdfUrl";
 import useHasPdf from "@/utils/hooks/useHasPdf";
 
 import type {
@@ -64,8 +65,6 @@ function useProjectedFt(
   return ftInfo?.codesofuture ? ftInfo.codesofuture : mapForestType;
 }
 
-const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
-
 function ProjectionCantonalForestType({
   altitudinalZone,
   forestType,
@@ -82,10 +81,9 @@ function ProjectionCantonalForestType({
     /today/.test(scenario) ? "codessopresent" : undefined,
     mapLocation.forestType_so!,
   );
-  const hasPdf = useHasPdf(
-    projectedFt && `${soPdfEndpoint}/${projectedFt.replace("*", "stern")}.pdf`,
-    ["so"],
-  );
+  const hasPdf = useHasPdf(projectedFt && getForestTypePdfUrl(projectedFt), [
+    "so",
+  ]);
   const { closeModal } = useModalContext();
 
   return (
