@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
+import getForestTypePdfUrl from "@/utils/getForestTypesPdfUrl";
 import useHasPdf from "@/utils/hooks/useHasPdf";
 
 import BlForestTypeDescription from "./bl";
@@ -9,13 +10,8 @@ import ChForestTypesDescription from "./ch";
 import LuForestTypeDescription from "./lu";
 import SoForestTypeDescription from "./so";
 
-const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
-
 function useShowForestTypeDescription(code: string, activeProfile: string) {
-  const hasPdf = useHasPdf(
-    `${soPdfEndpoint}/${code?.replace("*", "stern")}.pdf`,
-    ["so"],
-  );
+  const hasPdf = useHasPdf(code && getForestTypePdfUrl(code), ["so"]);
 
   const showForestTypeDescription = useMemo(
     () => (activeProfile === "so" ? hasPdf : !!code),

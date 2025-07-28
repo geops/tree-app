@@ -2,13 +2,12 @@ import { Field } from "@headlessui/react";
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
+import getForestTypePdfUrl from "@/utils/getForestTypesPdfUrl";
 import useCantonalForestType from "@/utils/hooks/useCantonalForestType";
 import useHasPdf from "@/utils/hooks/useHasPdf";
 
 import InfoButton from "./ui/InfoButton";
 import Label from "./ui/Label";
-
-const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
 
 function CantonalForestType() {
   const { t } = useTranslation();
@@ -17,8 +16,7 @@ function CantonalForestType() {
   );
   const cantonalForestType = useCantonalForestType();
   const hasPdf = useHasPdf(
-    cantonalForestType &&
-      `${soPdfEndpoint}/${cantonalForestType.replace("*", "stern")}.pdf`,
+    cantonalForestType && getForestTypePdfUrl(cantonalForestType),
     ["so"],
   );
 
