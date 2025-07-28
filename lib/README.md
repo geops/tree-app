@@ -38,7 +38,7 @@ Forest type data from any of the canton datasets can be excluded by commenting o
 New data (e.g. for a new canton) is provided in the [Seafile-Sharepoint](https://data.int.geops.com/lib/7eb78755-e8bf-46fc-ba1d-3c4d104a6cad/file/045_BaTool/Standortskarten) and may need to be adjusted in QGIS. Once ready the folder containing the the SHAPE files needs to be extracted into [lib/sata/spatial](https://github.com/geops/tree-app/tree/master/lib/data/spatial) folder (the import script does this automatically, but to avoid issues with read/write access we recommentd to extract and import manually). Then add the folder name in the [.gitignore](https://github.com/geops/tree-app/blob/master/lib/.gitignore) file.
 
 ## Adding/Updating static PDFs (tree types, Solothurn forest types, etc.)
-Some Tree-App content is provided via PDFs, which are uploaded to vercel and the handled in tree-app by the service worker for offline mode. When the PDFs need to be updated follow these steps:
+Some Tree-App content is provided via PDFs, which are uploaded to vercel and handled in tree-app by the service worker for offline mode. When the PDFs need to be updated follow these steps:
 - Ensure there is a `.vercel` folder in the folder you want to upload (update), containing a `.project.json` with `{"projectId":"[project ID here]","orgId":"[geops organisation ID here]"}` as content (specifies the vercel project)
   - For the Solothurn forest types in [/lib/data/profiles/so](https://github.com/geops/tree-app/tree/master/lib/data/profiles/so), the project is https://vercel.com/geops/tree-app-data-so.
   - For the tree types in [/lib/data/treetypes](https://github.com/geops/tree-app/tree/master/lib/data/treetypes), the project is https://vercel.com/geops/tree-app-data-treetypes.
