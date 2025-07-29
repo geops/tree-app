@@ -1,4 +1,6 @@
 rm -rf export/*
+# Call external test script
+bash ./spatial/spatial-data-test.sh
 docker-compose up -d --build
 sleep 10 # wait for database to be running
 node ./ecogram/process.mjs
