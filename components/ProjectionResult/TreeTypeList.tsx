@@ -41,7 +41,7 @@ function TreeType(
       <div className="relative inline-block overflow-visible">
         {hasPdf && showPopover ? (
           <div className="absolute bottom-6 left-1/2 z-50 mb-2 w-[max-content] -translate-x-1/2">
-            <div className="relative rounded bg-white/90 px-3 py-2 text-sm text-black shadow-md">
+            <div className="relative rounded bg-white/90 px-3 py-2 text-sm text-primary-600 shadow-md">
               {t("recommendation.treeTapPopover")}
               <div
                 className="absolute -bottom-2 left-1/2 h-2 w-3 -translate-x-1/2"
