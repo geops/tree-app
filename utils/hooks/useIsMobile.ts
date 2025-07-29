@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 import getIsSSR from "@/utils/getIsSSR";
 
-function useIsMobile() {
+function useIsMobile(width = 768): boolean {
   const isSsr = getIsSSR();
-  const getMobile = () => (!isSsr ? window.innerWidth < 768 : false);
+  const getMobile = () => (!isSsr ? window.innerWidth < width : false);
   const [isMobile, setIsMobile] = useState(getMobile());
 
   useEffect(() => {

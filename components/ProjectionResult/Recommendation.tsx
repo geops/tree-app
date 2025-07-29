@@ -14,7 +14,7 @@ import NeutralIcon from "../icons/RecommendationNeutral";
 import PositiveIcon from "../icons/RecommendationPositive";
 import Checkbox from "../ui/Checkbox";
 import Message from "../ui/Message";
-import InfoModal from "../ui/Modal";
+import InfoModal, { TriggerProps } from "../ui/Modal";
 import Table from "../ui/Table";
 
 import TreeTypeList from "./TreeTypeList";
@@ -24,7 +24,7 @@ import type { TreeAppLanguage } from "@/i18n/i18next";
 const infoBtnClasses =
   "h-12 w-12 p-2 rounded-full border-2 border-primary-500 bg-white text-primary-500 outline-2 outline-white hover:outline";
 
-function PositiveInfoBtn({ onClick }: { onClick: () => void }) {
+function PositiveInfoBtn({ onClick }: TriggerProps) {
   return (
     <HuiButton onClick={onClick}>
       <PositiveIcon className={infoBtnClasses} />
@@ -32,7 +32,7 @@ function PositiveInfoBtn({ onClick }: { onClick: () => void }) {
   );
 }
 
-function NeutralInfoBtn({ onClick }: { onClick: () => void }) {
+function NeutralInfoBtn({ onClick }: TriggerProps) {
   return (
     <HuiButton onClick={onClick}>
       <NeutralIcon className={infoBtnClasses} />
@@ -40,7 +40,7 @@ function NeutralInfoBtn({ onClick }: { onClick: () => void }) {
   );
 }
 
-function NegativeInfoBtn({ onClick }: { onClick: () => void }) {
+function NegativeInfoBtn({ onClick }: TriggerProps) {
   return (
     <HuiButton onClick={onClick}>
       <NegativeIcon className={infoBtnClasses} />
@@ -48,7 +48,7 @@ function NegativeInfoBtn({ onClick }: { onClick: () => void }) {
   );
 }
 
-function AttentionInfoBtn({ onClick }: { onClick: () => void }) {
+function AttentionInfoBtn({ onClick }: TriggerProps) {
   return (
     <HuiButton onClick={onClick}>
       <AttentionIcon className={`${infoBtnClasses} !p-0`} />

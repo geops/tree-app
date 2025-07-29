@@ -16,7 +16,7 @@ import Spinner from "./icons/Spinner";
 import Button from "./ui/Button";
 import Label from "./ui/Label";
 import Message, { MessageType } from "./ui/Message";
-import Modal, { useModalContext } from "./ui/Modal";
+import Modal, { TriggerProps, useModalContext } from "./ui/Modal";
 
 const formQueryParams: string[] = Object.keys(params).reduce((final, key) => {
   const { selector } = params[key as keyof Params];
@@ -97,7 +97,7 @@ function getQueryString(coord: Coordinate): string {
   return queryString;
 }
 
-function ModalTrigger({ onClick }: { onClick: () => void }) {
+function ModalTrigger({ onClick }: TriggerProps) {
   const { t } = useTranslation();
   const online = useIsOnline();
   const pathName = usePathname();
