@@ -424,6 +424,7 @@
     "neutral": "Conserver",
     "noProjectionFound": "Aucune recommandation possible",
     "positive": "Favoriser",
+    "treeTapPopover": "Touchez pour en savoir plus",
     "sameAltitudinalZone": "Si l'étage de végétation ne change pas, il s'agit néanmoins de préférer les essences recommandées qui supportent le mieux la chaleur et la sécheresse"
   },
   "relief": {
