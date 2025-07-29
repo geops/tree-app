@@ -94,6 +94,8 @@ function TreeType(
   return <span>{content}</span>;
 }
 
+const LARGEST_MOBILE_WIDTH = 1367; // iPad Pro landscape width + 1px
+
 function TreeTypeList({
   className,
   codes,
@@ -102,7 +104,7 @@ function TreeTypeList({
   codes?: number[];
 }) {
   const { i18n } = useTranslation();
-  const isMobile = useIsMobile(1367);
+  const isMobile = useIsMobile(LARGEST_MOBILE_WIDTH);
 
   const treeInfos = useMemo(() => {
     return getSortedTreeTypes(codes, i18n.language as TreeAppLanguage);
@@ -111,8 +113,6 @@ function TreeTypeList({
   const [showPopover, setShowPopover] = useState<number | undefined>(undefined);
 
   const handleTouchStart = (e: React.TouchEvent, name?: number) => {
-    console.log(name);
-
     if (isMobile) {
       setShowPopover(name);
       setTimeout(() => setShowPopover(undefined), 1000);
