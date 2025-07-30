@@ -1,4 +1,5 @@
 rm -rf export/*
+bash ./spatial/spatial-data-check.sh
 docker-compose up -d --build
 sleep 10 # wait for database to be running
 node ./ecogram/process.mjs
