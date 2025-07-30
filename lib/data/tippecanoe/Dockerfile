@@ -7,11 +7,11 @@ RUN apt-get update \
 
 # Create a directory and copy in all files
 RUN mkdir -p /tmp/tippecanoe-src
-RUN git clone https://github.com/mapbox/tippecanoe.git /tmp/tippecanoe-src
+RUN git clone https://github.com/felt/tippecanoe.git /tmp/tippecanoe-src
 WORKDIR /tmp/tippecanoe-src
 
 # Build tippecanoe
-RUN make \
+RUN make -j \
   && make install
 
 # Remove the temp directory and unneeded packages
