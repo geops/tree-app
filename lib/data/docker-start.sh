@@ -15,7 +15,6 @@ docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/export_re
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/export_locations.sql'
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/export_ecograms.sql'
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/export_spatial.sql'
-# docker-compose exec db sh -c "pg_dump tree -t '*\_export' -U postgres > /data/export/tree.dump"
 docker-compose exec db sh -c "pg_dump tree -n export -U postgres > /data/export/tree.dump"
 docker-compose exec db sh -c "sed 's/export\.//' -i ./pg2sqlite/tree.dump" # Very hacky but unfortunately necessary https://github.com/caiiiycuk/postgresql-to-sqlite?tab=readme-ov-file#tips
 docker-compose exec db sh -c 'java -jar pg2sqlite-1.1.1.jar -d ./pg2sqlite/tree.dump -o ./pg2sqlite/tree.sqlite -f true'
