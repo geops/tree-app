@@ -1,3 +1,6 @@
+start=`date +%s`
+set -e
+
 rm -rf export/*
 bash ./spatial/spatial-data-check.sh
 docker-compose up -d --build
@@ -19,3 +22,9 @@ docker-compose exec db sh -c "pg_dump tree -n export -U postgres > /data/export/
 docker-compose exec db sh -c "sed 's/export\.//' -i ./pg2sqlite/tree.dump" # Very hacky but unfortunately necessary https://github.com/caiiiycuk/postgresql-to-sqlite?tab=readme-ov-file#tips
 docker-compose exec db sh -c 'java -jar pg2sqlite-1.1.1.jar -d ./pg2sqlite/tree.dump -o ./pg2sqlite/tree.sqlite -f true'
 cp export/tree.sqlite ../../public/data/tree.sqlite
+
+end=`date +%s`
+duration=$(( end - start ))
+minutes=$(( duration / 60 ))
+seconds=$(( duration % 60 ))
+echo "Docker start completed in ${minutes} minutes and ${seconds} seconds."
