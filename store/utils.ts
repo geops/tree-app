@@ -14,12 +14,14 @@ import type {
 
 export function getInitialValue<T>(
   key: string,
-  callback: (value: string | undefined) => void = (value) => value,
+  callback: (value: string | undefined, urlParams: URLSearchParams) => void = (
+    value,
+  ) => value,
 ) {
   if (getIsSSR()) return undefined;
   const urlParams = new URLSearchParams(window.location.search);
   const value = urlParams.get(key);
-  return callback(value ?? undefined) as T;
+  return callback(value ?? undefined, urlParams) as T;
 }
 
 export const SET_FORM_LOCATION = "SET_FORM_LOCATION";
@@ -126,10 +128,17 @@ const initialState = {
         }
       : {},
   )!,
-  mapView: getInitialValue<string>("mv") ?? "9|2660013|1185171",
+  mapView: getInitialValue<string>("mv", (val, urlParams) => {
+    const mapPosition = urlParams.get("mp")?.split("|");
+    const mapView = (val ?? "9|2660013|1185171").split("|");
+    // When we have a defined map position we increase the zoom level to 13 so the tile data is loaded for the form
+    if (mapPosition && parseInt(mapView[0]) < 13) {
+      return [13, ...mapPosition].join("|");
+    }
+    return val ?? "9|2660013|1185171";
+  }),
   profiles: ["ch", "bl", "lu", "so", "vd"],
   projectionMode: getInitialValue<ProjectionMode>("pm") ?? "m",
-  // projectionOptions: {},
   projectionResult: {
     extreme: initialProjection,
     form: initialProjection,

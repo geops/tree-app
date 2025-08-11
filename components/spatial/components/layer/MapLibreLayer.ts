@@ -45,33 +45,35 @@ class MaplibreLayer extends Layer {
     });
 
     this.maplibreMap.on("load", () => {
-      const layers = (
-        (this.maplibreMap.getStyle().layers || []) as [
-          TreeAppLayerSpecification,
-        ]
-      ).filter((l) => l.metadata?.group === "main");
-
-      const loadedLayers = layers.map((layer) => ({
-        id: layer.id,
-        loaded: false,
-      }));
-      layers.forEach((layer) => {
-        this.waitForVectorTileLayerToRender(layer.id, () => {
-          const styleLayer = loadedLayers.find((l) => l.id === layer.id);
-          if (styleLayer) {
-            styleLayer.loaded = true;
-          }
-          if (loadedLayers.every((l) => l.loaded)) {
-            this.dispatchEvent("loadend");
-          }
-        });
-      });
+      this.getLayersAreLoaded();
     });
 
     this.map = map;
 
     // eslint-disable-next-line no-underscore-dangle
     this.renderer_ = new MaplibreRenderer({ layer: this });
+  }
+
+  getLayersAreLoaded() {
+    const layers = (
+      (this.maplibreMap.getStyle().layers || []) as [TreeAppLayerSpecification]
+    ).filter((l) => l.metadata?.group === "main");
+
+    const loadedLayers = layers.map((layer) => ({
+      id: layer.id,
+      loaded: false,
+    }));
+    layers.forEach((layer) => {
+      this.waitForVectorTileLayerToRender(layer.id, () => {
+        const styleLayer = loadedLayers.find((l) => l.id === layer.id);
+        if (styleLayer) {
+          styleLayer.loaded = true;
+        }
+        if (loadedLayers.every((l) => l.loaded)) {
+          this.dispatchEvent("loadend");
+        }
+      });
+    });
   }
 
   /**

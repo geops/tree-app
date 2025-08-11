@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { Map } from "ol";
 import OLFeature from "ol/Feature";
 import { Point } from "ol/geom";
 import { transform } from "ol/proj";
@@ -123,6 +124,13 @@ const iconFeature: OLFeature = new OLFeature({
   geometry: new Point([4756710, -2831367]),
 });
 
+function getFeaturesFromLayers(coordinate: Coordinate, map: Map) {
+  const pixel: number[] = map.getPixelFromCoordinate(coordinate);
+  const features = (map?.getFeaturesAtPixel(pixel) ??
+    []) as unknown as TreeAppGeoJsonFeature[];
+  return features;
+}
+
 function MapLocation() {
   const map = useContext(MapContext);
   const { maplibreLayer, markerLayer, userLocationsLayer } =
@@ -135,14 +143,8 @@ function MapLocation() {
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
-    const handleCoords = (
-      { coordinate }: { coordinate: Coordinate },
-      resetFormLocation = true,
-    ) => {
-      const pixel: number[] = map.getPixelFromCoordinate(coordinate);
-      const features = (map?.getFeaturesAtPixel(pixel) ??
-        []) as unknown as TreeAppGeoJsonFeature[];
-
+    const updateForm = (coordinate: Coordinate, resetFormLocation = true) => {
+      const features = getFeaturesFromLayers(coordinate, map);
       if (
         features.some(
           (f) =>
@@ -180,11 +182,39 @@ function MapLocation() {
         setMapLocation(location, true, true, "f");
       }
     };
+
+    const handleClick = (
+      { coordinate }: { coordinate: Coordinate },
+      resetFormLocation = true,
+    ) => {
+      const hasFtFeature = getFeaturesFromLayers(coordinate, map).some(
+        (f) => f.sourceLayer === "forest_types",
+      );
+      const currentZoom = map.getView().getZoom();
+
+      if (currentZoom && currentZoom <= 13 && hasFtFeature) {
+        map.getView().animate(
+          {
+            center: coordinate,
+            duration: 500,
+            zoom: 13,
+          },
+          () => {
+            maplibreLayer?.waitForVectorTileLayerToRender("ft", () =>
+              updateForm(coordinate, resetFormLocation),
+            );
+          },
+        );
+      } else {
+        updateForm(coordinate, resetFormLocation);
+      }
+    };
     maplibreLayer?.on("loadend" as EventTypes, () => {
-      mapLocation.coordinate &&
-        handleCoords({ coordinate: to3857(mapLocation.coordinate) }, false);
+      if (mapLocation.coordinate) {
+        updateForm(to3857(mapLocation.coordinate), false);
+      }
     });
-    map.on("singleclick", handleCoords);
+    map.on("singleclick", handleClick);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, activeProfile]);
 
