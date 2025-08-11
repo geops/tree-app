@@ -18,6 +18,8 @@ FOLDERS=(
   "$SCRIPT_DIR/forest_types_vd"
   "$SCRIPT_DIR/forest_types_sg"
   "$SCRIPT_DIR/forest_types_gl"
+  # "$SCRIPT_DIR/forest_types_tg"
+  "$SCRIPT_DIR/forest_types_sz"
   "$SCRIPT_DIR/altitudinal_zones_1995"
   "$SCRIPT_DIR/altitudinal_zones_2085_dry"
   "$SCRIPT_DIR/altitudinal_zones_2085_less_dry"
