@@ -19,7 +19,7 @@ NaiS data is provided as CSV files and imported into the PostgreSQL database for
 
 Spatial data is downloaded from different sources and imported into the database. To add or update spatial data have a look into `data/spatial`. For the app we generate one vector tileset using the following commands:
 
-1. Restart database: `pnpm run data:stop`, then `pnpm run data:start`. This generates the sqlite database with most of the non-spatial data and tables.
+1. Restart database: `pnpm run data:stop`, then `pnpm run data:start`. This generates the sqlite database with most of the non-spatial data and tables. This downloads the necessary spatial data and writes it in the database. CAUTION: data.geo.admin.ch files are [downloaded via docker](https://github.com/geops/tree-app/blob/master/lib/data/spatial/1-import.sh#L63), which might cause issues with file permissions. After the first run, you might need to adjust the permissions of the unzipped folders (e.g. `sudo chmod 777 altitudinal_zones_1995`) and rerun this step.
 2. Remove all geojson files from data/spatial/export folder: `find data/spatial/export -type f -name "*.geojson" -delete`
 3. Export spatial data to GeoJSON files (might take a long time): `pnpm run data:spatial:export`
 4. Transform GeoJSON files to single vector tileset: `pnpm run data:spatial:tile`

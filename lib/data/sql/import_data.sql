@@ -3247,4 +3247,5 @@ COPY ecograms
 FROM 
   '/data/ecograms.csv' DELIMITER ';' CSV HEADER;
 
+DROP SCHEMA IF EXISTS export CASCADE;
 CREATE SCHEMA export;

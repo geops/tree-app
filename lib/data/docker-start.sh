@@ -2,12 +2,12 @@ start=`date +%s`
 set -e
 
 rm -rf export/*
-bash ./spatial/spatial-data-check.sh
 docker-compose up -d --build
 sleep 10 # wait for database to be running
 node ./ecogram/process.mjs
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/import_data.sql'
 docker-compose exec db sh -c 'bash /data/spatial/1-import.sh'
+bash ./spatial/spatial-data-check.sh
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/export_projections.sql'
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/export_types.sql'
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/lu_export_types.sql'
