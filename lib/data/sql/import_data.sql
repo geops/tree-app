@@ -1315,7 +1315,7 @@ ADD
   PRIMARY KEY (gid);
 SELECT 
   AddGeometryColumn(
-    '', 'forest_types_ju', 'geom', '0', 
+    '', 'forest_types_ju', 'geom', '2056', 
     'MULTIPOLYGON', 2
   );
 ----------------------------------------------
@@ -1334,7 +1334,7 @@ ADD
   PRIMARY KEY (gid);
 SELECT 
   AddGeometryColumn(
-    '', 'forest_types_bl', 'geom', '0', 
+    '', 'forest_types_bl', 'geom', '2056', 
     'MULTIPOLYGON', 2
   );
 ----------------------------------------------
@@ -1353,7 +1353,7 @@ ADD
   PRIMARY KEY (gid);
 SELECT 
   AddGeometryColumn(
-    '', 'forest_types_vd', 'geom', '0', 
+    '', 'forest_types_vd', 'geom', '2056', 
     'MULTIPOLYGON', 2
   );
 ----------------------------------------------
@@ -1370,7 +1370,32 @@ ADD
 SELECT 
   AddGeometryColumn(
     '', 'altitudinal_zones_vd', 'geom', 
-    '0', 'MULTIPOLYGON', 2
+    '2056', 'MULTIPOLYGON', 2
+  );
+  ----------------------------------------------
+-- Forest types SZ
+CREATE TABLE "forest_types_sz" (
+  gid serial,
+  "fid" numeric,
+  "sz_einheit" varchar(80),
+  "nais" varchar(80),
+  "nais1" varchar(80),
+  "nais2" varchar(80),
+  "mo" numeric,
+  "ue" numeric,
+  "tahs" varchar(80),
+  "tahsue" varchar(80),
+  "hs_code" numeric,
+  "hsue_code" integer
+);
+ALTER TABLE 
+  "forest_types_sz" 
+ADD 
+  PRIMARY KEY (gid);
+SELECT 
+  AddGeometryColumn(
+    '', 'forest_types_sz', 'geom', '2056', 
+    'MULTIPOLYGON', 2
   );
 ----------------------------------------------
 -- Forest types SG
@@ -1392,7 +1417,7 @@ ADD
   PRIMARY KEY (gid);
 SELECT 
   AddGeometryColumn(
-    '', 'forest_types_sg', 'geom', '0', 
+    '', 'forest_types_sg', 'geom', '2056', 
     'MULTIPOLYGON', 2
   );
 ----------------------------------------------
@@ -1415,7 +1440,7 @@ ADD
   PRIMARY KEY (gid);
 SELECT 
   AddGeometryColumn(
-    '', 'forest_types_sh', 'geom', '0', 
+    '', 'forest_types_sh', 'geom', '2056', 
     'MULTIPOLYGON', 2
   );
 ----------------------------------------------
@@ -1435,7 +1460,7 @@ ADD
   PRIMARY KEY (gid);
 SELECT 
   AddGeometryColumn(
-    '', 'forest_types_so', 'geom', '0', 
+    '', 'forest_types_so', 'geom', '2056', 
     'MULTIPOLYGON', 2
   );
 ----------------------------------------------
@@ -1461,7 +1486,7 @@ CREATE TABLE "forest_types_gl" (gid serial,
 "hsue_code" float8);
 
 ALTER TABLE "forest_types_gl" ADD PRIMARY KEY (gid);
-SELECT AddGeometryColumn('','forest_types_gl','geom','0','MULTIPOLYGON',2);
+SELECT AddGeometryColumn('','forest_types_gl','geom', '2056','MULTIPOLYGON',2);
 
 
 ----------------------------------------------
@@ -1482,7 +1507,7 @@ CREATE TABLE "forest_types_ar" (gid serial,
 "hsue_code" float8);
 
 ALTER TABLE "forest_types_ar" ADD PRIMARY KEY (gid);
-SELECT AddGeometryColumn('','forest_types_ar','geom','0','MULTIPOLYGON',2);
+SELECT AddGeometryColumn('','forest_types_ar','geom', '2056','MULTIPOLYGON', 2);
 
 
 
@@ -3247,4 +3272,5 @@ COPY ecograms
 FROM 
   '/data/ecograms.csv' DELIMITER ';' CSV HEADER;
 
+DROP SCHEMA IF EXISTS export CASCADE;
 CREATE SCHEMA export;
