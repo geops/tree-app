@@ -1,8 +1,8 @@
 start=`date +%s`
 set -e
 
-rm -rf export/*
 docker-compose up -d --build
+docker-compose exec db sh -c 'rm -rf /data/export/*'
 sleep 10 # wait for database to be running
 node ./ecogram/process.mjs
 docker-compose exec db sh -c 'psql -U postgres -d tree -a -f /data/sql/import_data.sql'
