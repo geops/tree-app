@@ -1372,6 +1372,32 @@ SELECT
     '', 'altitudinal_zones_vd', 'geom', 
     '2056', 'MULTIPOLYGON', 2
   );
+  ----------------------------------------------
+-- Forest types SZ
+CREATE TABLE "forest_types_sz" (
+  gid serial,
+  "fid" numeric,
+  "sz_einheit" varchar(80),
+  "nais" varchar(80),
+  "nais1" varchar(80),
+  "nais2" varchar(80),
+  "mo" numeric,
+  "ue" numeric,
+  "tahs" varchar(80),
+  "tahsue" varchar(80),
+  "hs_code" numeric,
+  "hsue_code" integer
+);
+ALTER TABLE 
+  "forest_types_sz" 
+ADD 
+  PRIMARY KEY (gid);
+SELECT 
+  AddGeometryColumn(
+    '', 'forest_types_sz', 'geom', '2056', 
+    'MULTIPOLYGON', 2
+>>>>>>> staging
+  );
 ----------------------------------------------
 -- Forest types SG
 CREATE TABLE "forest_types_sg" (

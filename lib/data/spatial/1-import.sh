@@ -106,6 +106,8 @@ _import "Download manually" "forest_types_gl" "forest_types_gl" "forest_types_gl
 
 _import "Download manually" "forest_types_ar" "forest_types_ar" "forest_types_ar"
 
+_import "Download manually" "forest_types_ar" "forest_types_ar" "forest_types_sz"
+
 end=`date +%s`
 minutes=$(( (end - start) / 60 ))
 seconds=$(( (end - start) % 60 ))
