@@ -411,6 +411,12 @@ create table forest_types_vd_gen as (
 alter table forest_types_vd_gen alter column geom type geometry(Multipolygon, 2056);
 delete from forest_types_vd_gen where st_area(geom) < 2000;
 
+create table forest_types_sz_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_sz ft
+);
+alter table forest_types_sz_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_sz_gen where st_area(geom) < 2000;
+
 create table forest_types_sg_gen as (
   select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_sg ft
 );
@@ -446,11 +452,15 @@ SELECT ST_Transform(ST_Union(geom), 3857) AS geom
 FROM (
   SELECT (ST_Dump(ST_MakeValid(geom))).geom AS geom FROM forest_types_tg_gen
   UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_fl_gen
+  UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_fr_gen
   UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_bl_gen
   UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_vd_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_sz_gen
   UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_sg_gen
   UNION ALL
@@ -467,6 +477,8 @@ FROM (
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_ju_gen
   UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_lu_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_ne_gen
   UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_zh_gen
   UNION ALL
