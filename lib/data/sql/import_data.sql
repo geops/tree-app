@@ -1396,7 +1396,6 @@ SELECT
   AddGeometryColumn(
     '', 'forest_types_sz', 'geom', '2056', 
     'MULTIPOLYGON', 2
->>>>>>> staging
   );
 ----------------------------------------------
 -- Forest types SG
