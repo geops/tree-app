@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { createPortal } from "react-dom";
 import { Trans, useTranslation } from "react-i18next";
 
 import useLocalStorage from "@/utils/hooks/useLocalStorage";
@@ -18,30 +19,33 @@ const CookieBanner = () => {
     [i18n.language],
   );
 
-  return lsValue !== "true" ? (
-    <Message className="absolute bottom-0 z-50 flex w-screen items-center justify-between rounded-none border-none bg-zinc-900 text-white">
-      <div>
-        <Trans i18nKey="cookieConsent">
-          <a
-            className="text-white underline hover:text-primary-200"
-            href={link}
-            rel="noopener noreferrer"
-            target="_blank"
+  return lsValue !== "true"
+    ? createPortal(
+        <Message className="absolute bottom-0 z-50 flex w-screen items-center justify-between rounded-none border-none bg-zinc-900 text-white">
+          <div>
+            <Trans i18nKey="cookieConsent">
+              <a
+                className="text-white underline hover:text-primary-200"
+                href={link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Datenschutzerklärung
+              </a>
+            </Trans>
+          </div>
+          <Button
+            className="ml-2 border-2 border-white !bg-zinc-900 text-white hover:border-white hover:!bg-zinc-600 hover:bg-zinc-700 hover:text-white"
+            data-cypress="cookie-consent-ok-btn"
+            onClick={() => setLsValue("true")}
+            variant="outlined"
           >
-            Datenschutzerklärung
-          </a>
-        </Trans>
-      </div>
-      <Button
-        className="ml-2 border-2 border-white !bg-zinc-900 text-white hover:border-white hover:!bg-zinc-600 hover:bg-zinc-700 hover:text-white"
-        data-cypress="cookie-consent-ok-btn"
-        onClick={() => setLsValue("true")}
-        variant="outlined"
-      >
-        OK
-      </Button>
-    </Message>
-  ) : null;
+            OK
+          </Button>
+        </Message>,
+        document.body,
+      )
+    : null;
 };
 
 export default CookieBanner;
