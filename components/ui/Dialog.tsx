@@ -83,7 +83,7 @@ export default function Dialog({
   return (
     <HUIDialog
       as="div"
-      className={`relative z-50 h-full w-full focus:outline-none`}
+      className={`relative z-40 h-full w-full focus:outline-none`}
       data-testid="dialog"
       onClose={() => onClose?.()}
       open={open}
@@ -91,7 +91,7 @@ export default function Dialog({
       {...otherProps}
     >
       {modal ? (
-        <div className="fixed inset-0 z-50 w-screen overflow-y-auto bg-black/85">
+        <div className="fixed inset-0 z-40 w-screen overflow-y-auto bg-black/85">
           <div className="flex min-h-full items-center justify-center p-2">
             {content}
           </div>
