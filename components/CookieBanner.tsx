@@ -21,7 +21,7 @@ const CookieBanner = () => {
 
   return lsValue !== "true"
     ? createPortal(
-        <Message className="absolute bottom-0 z-50 flex w-screen items-center justify-between rounded-none border-none bg-zinc-900 text-white">
+        <Message className="absolute bottom-0 z-[9999] flex w-screen items-center justify-between rounded-none border-none bg-zinc-900 text-white">
           <div>
             <Trans i18nKey="cookieConsent">
               <a

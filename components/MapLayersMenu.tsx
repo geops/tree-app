@@ -161,7 +161,7 @@ function MapLayersMenu() {
       {({ open }) => {
         return (
           <>
-            <PopoverButton className="absolute right-5 top-5 z-40 flex items-center rounded-lg p-1 backdrop-blur-sm sm:w-60">
+            <PopoverButton className="absolute right-5 top-5 z-30 flex items-center rounded-lg p-1 backdrop-blur-sm sm:w-60">
               <div
                 className={`${buttonStyles} ${outlinedStyles} flex w-full justify-between gap-2 border-none !px-3`}
               >
