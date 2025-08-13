@@ -1,5 +1,7 @@
 import { defaultCache } from "@serwist/next/worker";
 import { Serwist } from "serwist";
+import { createHandlerBoundToURL } from "workbox-precaching";
+import { NavigationRoute, registerRoute } from "workbox-routing";
 
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
 
@@ -156,6 +158,19 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
+
+// Necessary to make PWA work on iOS
+const handler = createHandlerBoundToURL("/");
+
+const navigationRoute = new NavigationRoute(handler, {
+  denylist: [
+    /^\/_next\//, // exclude Next.js internals
+    /\/api\//, // exclude API routes
+    /\/.*\.[^/]+$/, // exclude files with an extension (e.g., .png, .js)
+  ],
+});
+
+registerRoute(navigationRoute);
 
 const serwist = new Serwist({
   clientsClaim: true,
