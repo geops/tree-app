@@ -1,6 +1,6 @@
 import { defaultCache } from "@serwist/next/worker";
 import { Serwist } from "serwist";
-import { createHandlerBoundToURL } from "workbox-precaching";
+import { createHandlerBoundToURL, precacheAndRoute } from "workbox-precaching";
 import { NavigationRoute, registerRoute } from "workbox-routing";
 
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
@@ -175,7 +175,10 @@ registerRoute(navigationRoute);
 const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
-  precacheEntries: self.__SW_MANIFEST,
+  precacheEntries: [
+    ...(self.__SW_MANIFEST ?? []),
+    { revision: null, url: "/" },
+  ],
   runtimeCaching: defaultCache,
   skipWaiting: true,
 });
