@@ -229,8 +229,6 @@ function MapLocation() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, activeProfile]);
 
-  console.log("LOADING:", locationIsLoading);
-
   return (
     <>
       {locationIsLoading ? (
