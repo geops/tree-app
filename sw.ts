@@ -1,5 +1,7 @@
 import { defaultCache } from "@serwist/next/worker";
 import { Serwist } from "serwist";
+import { createHandlerBoundToURL, precacheAndRoute } from "workbox-precaching";
+import { NavigationRoute, registerRoute } from "workbox-routing";
 
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
 
@@ -157,10 +159,26 @@ self.addEventListener("fetch", (event) => {
   }
 });
 
+// Necessary to make PWA work on iOS
+precacheAndRoute([
+  ...(self.__SW_MANIFEST ?? []),
+  { revision: null, url: "/" }, // precache index.html for offline
+]);
+
+// -----------------------------
+// Navigation route for Page Router
+// -----------------------------
+const handler = createHandlerBoundToURL("/");
+const navigationRoute = new NavigationRoute(handler, {
+  denylist: [/^\/_next\//, /\/api\//, /\/.*\.[^/]+$/],
+});
+registerRoute(navigationRoute);
+
+registerRoute(navigationRoute);
+
 const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
-  precacheEntries: self.__SW_MANIFEST,
   runtimeCaching: defaultCache,
   skipWaiting: true,
 });

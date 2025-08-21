@@ -24,6 +24,9 @@ const getNextConfig = async (phase) => {
           "process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT": JSON.stringify(
             process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
           ),
+          "process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT": JSON.stringify(
+            process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT,
+          ),
         }),
       );
       config.module.rules.push({
@@ -43,6 +46,7 @@ const getNextConfig = async (phase) => {
       return config;
     },
     env: {
+      NEXT_PUBLIC_TREE_PDF_ENDPOINT: process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT,
       NEXT_PUBLIC_VECTOR_TILES_ENDPOINT:
         process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
       NEXT_PUBLIC_SO_PDF_ENDPOINT: process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
