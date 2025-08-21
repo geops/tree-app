@@ -387,7 +387,8 @@
     "hint": "Veuillez sélectionner une position sur la carte",
     "legend": "Légende",
     "silver_fir_areas": "Aires du sapin blanc",
-    "layers": "Couches de la carte"
+    "layers": "Couches de la carte",
+    "loadingMapLocation": "Chargement de l'emplacement..."
   },
   "offline": {
     "success": "Tree App est disponible hors ligne",

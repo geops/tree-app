@@ -32,7 +32,7 @@ function MapGeolocation() {
   return getIsMobileDevice() ? (
     <div className="absolute bottom-28 right-5 z-40 flex items-center rounded p-1 backdrop-blur-sm">
       <Button
-        className="flex h-[34px] !w-[34px] items-center justify-center bg-white !px-0 !py-0 !text-primary-500 hover:bg-white hover:!text-primary-200"
+        className="flex h-[34px] !w-[34px] items-center justify-center bg-white/85 !px-0 !py-0 !text-primary-500 hover:bg-white/85 hover:!text-primary-200"
         onClick={() => geoloc.setTracking(true)}
       >
         <GeolocationIcon className="h-4 w-4" />
