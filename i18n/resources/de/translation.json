@@ -388,7 +388,8 @@
     "hint": "Bitte Position wählen",
     "legend": "Legende",
     "silver_fir_areas": "Tannenareale",
-    "layers": "Kartenebenen"
+    "layers": "Kartenebenen",
+    "loadingMapLocation": "Standort wird geladen..."
   },
   "offline": {
     "success": "Die Tree App ist offline verfügbar.",
