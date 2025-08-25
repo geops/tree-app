@@ -1,6 +1,3 @@
 .vercel
 node_modules
-public/tiles.txt
-tiles/fonts
-tiles/tree
-.next
+tiles/*
