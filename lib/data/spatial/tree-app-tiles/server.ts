@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
-import { readFile } from 'fs/promises'
+import fs from 'fs'
 import path from 'path'
 
 const app = new Hono()
@@ -10,7 +10,7 @@ const baseDir = path.join(process.cwd(), 'tiles')
 app.get('/tiles.txt', async (c) => {
   try {
     const filePath = path.join(baseDir, 'tiles.txt')
-    const content = await readFile(filePath, 'utf-8')
+    const content = await fs.promises.readFile(filePath, 'utf-8')
     c.header('Content-Type', 'text/plain')
     c.header('Cache-Control', 'public, max-age=3600')
     return c.text(content)
@@ -28,7 +28,7 @@ app.get('/:folder/:z/:x/:y.pbf', async (c) => {
     const tilePath = path.join(baseDir, folder, z, x, `${y}.pbf`)
     const isTreeTile = folder === 'tree'
 
-    const tileBuffer = await readFile(tilePath)
+    const tileBuffer = await fs.promises.readFile(tilePath)
 
     c.header('Content-Type', 'application/x-protobuf')
     c.header('Cache-Control', 'public, max-age=31536000, immutable')
