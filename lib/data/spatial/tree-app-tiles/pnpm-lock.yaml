@@ -15,6 +15,9 @@ importers:
         specifier: ^4.6.0
         version: 4.9.4
     devDependencies:
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       tsx:
         specifier: ^4.15.0
         version: 4.20.5
@@ -186,6 +189,9 @@ packages:
     peerDependencies:
       hono: ^4
 
+  '@types/node@24.3.0':
+    resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
+
   esbuild@0.25.9:
     resolution: {integrity: sha512-CRbODhYyQx3qp7ZEwzxOk4JBqmD/seJrzPa/cGjY1VtIn5E09Oi9/dB4JwctnfZ8Q8iT7rioVv5k/FNT/uf54g==}
     engines: {node: '>=18'}
@@ -215,6 +221,9 @@ packages:
     resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  undici-types@7.10.0:
+    resolution: {integrity: sha512-t5Fy/nfn+14LuOc2KNYg75vZqClpAiqscVvMygNnlsHBFpSXdJaYtXMcdNLpl/Qvc3P2cB3s6lOV51nqsFq4ag==}
 
 snapshots:
 
@@ -300,6 +309,10 @@ snapshots:
     dependencies:
       hono: 4.9.4
 
+  '@types/node@24.3.0':
+    dependencies:
+      undici-types: 7.10.0
+
   esbuild@0.25.9:
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.25.9
@@ -348,3 +361,5 @@ snapshots:
       fsevents: 2.3.3
 
   typescript@5.9.2: {}
+
+  undici-types@7.10.0: {}
