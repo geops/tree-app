@@ -1,5 +1,5 @@
 import { defaultCache } from "@serwist/next/worker";
-import { Serwist } from "serwist";
+import { NetworkOnly, Serwist } from "serwist";
 
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
 
@@ -161,7 +161,16 @@ const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
   precacheEntries: self.__SW_MANIFEST,
-  runtimeCaching: defaultCache,
+  runtimeCaching: [
+    ...defaultCache,
+    {
+      handler: new NetworkOnly(),
+      matcher: ({ url }) =>
+        /^https:\/\/wmts10\.geo\.admin\.ch\/1\.0\.0\/ch\.swisstopo\.(pixelkarte-grau|swissimage)\/default\/current\/3857\/.*\.jpeg$/i.test(
+          url.href,
+        ),
+    },
+  ],
   skipWaiting: true,
 });
 

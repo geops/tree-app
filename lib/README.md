@@ -19,12 +19,12 @@ NaiS data is provided as CSV files and imported into the PostgreSQL database for
 
 Spatial data is downloaded from different sources and imported into the database. To add or update spatial data have a look into `data/spatial`. For the app we generate one vector tileset using the following commands:
 
-1. Restart database: `pnpm run data:stop`, then `pnpm run data:start`. This generates the sqlite database with most of the non-spatial data and tables.
+1. Restart database: `pnpm run data:stop`, then `pnpm run data:start`. This generates the sqlite database with most of the non-spatial data and tables. This downloads the necessary spatial data and writes it in the database. CAUTION: data.geo.admin.ch files are [downloaded via docker](https://github.com/geops/tree-app/blob/master/lib/data/spatial/1-import.sh#L63), which might cause issues with file permissions. After the first run, you might need to adjust the permissions of the unzipped folders (e.g. `sudo chmod 777 altitudinal_zones_1995`) and rerun this step.
 2. Remove all geojson files from data/spatial/export folder: `find data/spatial/export -type f -name "*.geojson" -delete`
 3. Export spatial data to GeoJSON files (might take a long time): `pnpm run data:spatial:export`
 4. Transform GeoJSON files to single vector tileset: `pnpm run data:spatial:tile`
-5. Generate font glyphs for Mapbox GL: `pnpm run data:spatial:fonts`
-6. Deploy tiles local by running `pnpm run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `pnpm start`)
+5. Generate font glyphs for Mapbox GL: `pnpm run data:spatial:fonts` (you might have to use an earlier node version for this)
+6. Deploy tiles local by running `pnpm run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `pnpm dev`)
 7. Change version number in [src/service-worker.js](https://github.com/geops/tree-app/blob/master/src/service-worker.js#L16) to clear the tile cache and deploy repository changes
 8. Before deployment, check the vercel project ID in the `.vercel` folder in [tiles](https://github.com/geops/tree-app/tree/master/lib/data/spatial/tiles). This folder is generated during the first deployemnt and prompts the definition of the vercel project. Depending on the current project ID and the target instance (`tree-app` or `tg.tree-app`), the folder needs to be deleted so the initial prompt is triggered again (e.g. if Thurgau tiles `tiles-tg` need to be deployed but the last deployment was made for '`tiles-staging`', the folder needs to be recreated)
 9. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `pnpm run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`, `tiles-tg.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step.
