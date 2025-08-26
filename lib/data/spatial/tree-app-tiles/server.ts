@@ -13,6 +13,7 @@ app.get('/tiles.txt', async (c) => {
     const content = await fs.promises.readFile(filePath, 'utf-8')
     c.header('Content-Type', 'text/plain')
     c.header('Cache-Control', 'public, max-age=3600')
+    c.header('Access-Control-Allow-Origin', '*')
     return c.text(content)
   } catch (err) {
     console.error('tiles.txt not found', err)
