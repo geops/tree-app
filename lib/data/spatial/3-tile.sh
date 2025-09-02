@@ -18,7 +18,7 @@ _tile "forest_types_union" "forest_types" 10 0
 _tile "silver_fir_areas" "silver_fir_areas"
 
 echo "Joining tiles ..."
-cd /data/spatial/tiles
+cd /data/spatial/tree-app-tiles/tiles
 tile-join --force --maximum-zoom=12 --no-tile-size-limit -e "tree" altitudinal_zones_1995.mbtiles altitudinal_zones_2085_dry.mbtiles altitudinal_zones_2085_less_dry.mbtiles cantonal_boundaries.mbtiles forest_ecoregions.mbtiles forest_types.mbtiles forest_types_union.mbtiles silver_fir_areas.mbtiles
 rm altitudinal_zones_1995.mbtiles altitudinal_zones_2085_dry.mbtiles altitudinal_zones_2085_less_dry.mbtiles cantonal_boundaries.mbtiles forest_ecoregions.mbtiles forest_types.mbtiles silver_fir_areas.mbtiles forest_types_union.mbtiles
 find tree -name '*.pbf' > tiles.txt
@@ -26,3 +26,4 @@ end=`date +%s`
 minutes=$(( (end - start) / 60 ))
 seconds=$(( (end - start) % 60 ))
 echo "Tile build completed in ${minutes} minutes and ${seconds} seconds."
+
