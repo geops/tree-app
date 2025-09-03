@@ -150,8 +150,6 @@ function MapLayersMenu() {
   const activeProfile = useStore((state) => state.activeProfile);
   const mlStyle = getStyle(mapLayers, activeProfile);
 
-  console.log(mapLayers);
-
   useEffect(() => {
     if (!layer?.maplibreMap) return;
     if (!layer?.maplibreMap?.getStyle()) return;
