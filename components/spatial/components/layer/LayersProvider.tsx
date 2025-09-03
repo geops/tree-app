@@ -100,7 +100,7 @@ export const getStyle = (
     } else if (layer.type === "symbol") {
       paint["text-opacity"] = isSourceLayer ? 1 : 0.0;
     }
-    if (/^ft$/.test(layer.id)) {
+    if (isSourceLayer && /^ft$/.test(layer.id)) {
       paint["fill-opacity"] = [
         "interpolate",
         ["linear"],
@@ -108,7 +108,7 @@ export const getStyle = (
         12,
         0.8,
         22,
-        0.5,
+        0.1,
       ];
     }
     if (/^ft_label$/.test(layer.id)) {
