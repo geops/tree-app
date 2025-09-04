@@ -1,5 +1,5 @@
 import { defaultCache } from "@serwist/next/worker";
-import { Serwist } from "serwist";
+import { NetworkOnly, Serwist } from "serwist";
 
 import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
 
@@ -15,8 +15,17 @@ declare global {
 
 declare const self: ServiceWorkerGlobalScope;
 
+const treePdfCacheString = "tree-data-v"; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
+const currentTreePdfVersion = 1; // Current Tree PDF version, needs to be increased every time new PDFs are deployed
+const TREE_CACHE_NAME = `${treePdfCacheString}${currentTreePdfVersion}`; // Cache name for Tree profile data
+
+// Create an array of 'tree-data-v[1 - currentVersion]' strings for the caches to be removed
+const OLD_TREE_PDF_CACHES = Array.from(Array(currentTreePdfVersion).keys()).map(
+  (version) => `${treePdfCacheString}${version}`,
+);
+
 const soPdfCacheString = "so-data-v"; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
-const currentSoPdfVersion = 2; // Current SO PDF version, needs to be increased every time new PDFs are deployed
+const currentSoPdfVersion = 3; // Current SO PDF version, needs to be increased every time new PDFs are deployed
 const SO_CACHE_NAME = `${soPdfCacheString}${currentSoPdfVersion}`; // Cache name for SO profile data
 
 // Create an array of 'so-data-v[1 - currentVersion]' strings for the caches to be removed
@@ -25,7 +34,7 @@ const OLD_SO_PDF_CACHES = Array.from(Array(currentSoPdfVersion).keys()).map(
 );
 
 const tileCacheString = "tree-app-tiles-v"; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
-const currentTileVersion = 24; // Current tile version, needs to be increased every time new tiles are deployed
+const currentTileVersion = 25; // Current tile version, needs to be increased every time new tiles are deployed
 const TILE_CACHE_NAME = `${tileCacheString}${currentTileVersion}`;
 
 // Create an array of 'tree-app-tiles-v[1 - currentVersion]' strings for the caches to be removed
@@ -41,13 +50,14 @@ self.addEventListener("message", (event) => {
   }
 });
 
-[...OLD_SO_PDF_CACHES, ...OLD_TILE_CACHES].forEach(
+[...OLD_SO_PDF_CACHES, ...OLD_TILE_CACHES, ...OLD_TREE_PDF_CACHES].forEach(
   (OLD_CACHE) => void caches.delete(OLD_CACHE),
 );
 
 self.addEventListener("install", (event) => {
   const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
   const vectorTilesEndpoint = process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT;
+  const treePdfEndpoint = process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT;
   event.waitUntil(
     (async () => {
       await caches.open(TILE_CACHE_NAME).then((cache) =>
@@ -78,13 +88,30 @@ self.addEventListener("install", (event) => {
           .then((response) => response.text())
           .then(async (response) => {
             const forestTypes = response.split(/\r?\n/);
-            // eslint-disable-next-line no-plusplus
             for (const forestType of forestTypes) {
               const pdfUrl = `${soPdfEndpoint}/${forestType}`;
-              // eslint-disable-next-line no-await-in-loop
               if (forestType && !(await cache.match(pdfUrl))) {
                 try {
-                  // eslint-disable-next-line no-await-in-loop
+                  const pdfResponse = await fetch(pdfUrl);
+                  void cache.put(pdfUrl, pdfResponse);
+                } catch (error) {
+                  // Some PDFs do not exist.
+                }
+              }
+            }
+            return true;
+          }),
+      );
+
+      await caches.open(TREE_CACHE_NAME).then((cache) =>
+        fetch(`${treePdfEndpoint}/list.txt`)
+          .then((response) => response.text())
+          .then(async (response) => {
+            const treeTypes = response.split(/\r?\n/);
+            for (const treeType of treeTypes) {
+              const pdfUrl = `${treePdfEndpoint}/${treeType}`;
+              if (treeType && !(await cache.match(pdfUrl))) {
+                try {
                   const pdfResponse = await fetch(pdfUrl);
                   void cache.put(pdfUrl, pdfResponse);
                 } catch (error) {
@@ -134,7 +161,16 @@ const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
   precacheEntries: self.__SW_MANIFEST,
-  runtimeCaching: defaultCache,
+  runtimeCaching: [
+    ...defaultCache,
+    {
+      handler: new NetworkOnly(),
+      matcher: ({ url }) =>
+        /^https:\/\/wmts10\.geo\.admin\.ch\/1\.0\.0\/ch\.swisstopo\.(pixelkarte-grau|swissimage)\/default\/current\/3857\/.*\.jpeg$/i.test(
+          url.href,
+        ),
+    },
+  ],
   skipWaiting: true,
 });
 

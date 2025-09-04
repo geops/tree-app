@@ -70,8 +70,6 @@
         "mapping": "forestType",
         "type": "forestType"
       },
-      "minzoom": 10,
-      "maxzoom": 16,
       "paint": {
         "fill-color": "#006268",
         "fill-opacity": 0

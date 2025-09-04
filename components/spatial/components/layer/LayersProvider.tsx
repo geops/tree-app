@@ -12,9 +12,9 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { BASELAYER_GRAY } from "@/components/MapBaselayerSwitcher";
 import useStore from "@/store";
 
+import style from "../../../../map/style.json";
 import mapPosition from "../../../icons/mapPosition.svg";
 import userLocation from "../../../icons/userLocation.svg";
-import style from "../../style.json";
 import { MapContext } from "../Map";
 
 import MaplibreLayer from "./MapLibreLayer";
@@ -39,7 +39,7 @@ interface Metadata {
 
 interface Paint {
   "fill-color"?: DataDrivenPropertyValueSpecification<ColorSpecification>;
-  "fill-opacity"?: number;
+  "fill-opacity"?: DataDrivenPropertyValueSpecification<number> | number;
   "line-opacity"?: number;
   "text-opacity"?: number;
 }
@@ -99,6 +99,17 @@ export const getStyle = (
       paint["line-opacity"] = isSourceLayer ? 0.8 : 0.0;
     } else if (layer.type === "symbol") {
       paint["text-opacity"] = isSourceLayer ? 1 : 0.0;
+    }
+    if (isSourceLayer && /^ft$/.test(layer.id)) {
+      paint["fill-opacity"] = [
+        "interpolate",
+        ["linear"],
+        ["zoom"],
+        12,
+        0.8,
+        22,
+        0.1,
+      ];
     }
     if (/^ft_label$/.test(layer.id)) {
       // eslint-disable-next-line no-param-reassign

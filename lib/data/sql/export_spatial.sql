@@ -348,3 +348,141 @@ SELECT nais AS code,
 FROM forest_types_sz
 WHERE nais IS NOT NULL and geom is not null;
 
+
+---------------- GENERALIZE + UNION -----------------
+
+create table forest_types_tg_gen as (
+	select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_tg ft
+);
+alter table forest_types_tg_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_tg_gen where st_area(geom) < 2000;
+
+create table forest_types_lu_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_lu ft
+);
+alter table forest_types_lu_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_lu_gen where st_area(geom) < 2000;
+
+create table forest_types_ju_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_ju ft
+);
+alter table forest_types_ju_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_ju_gen where st_area(geom) < 2000;
+
+create table forest_types_fl_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_fl ft
+);
+alter table forest_types_fl_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_fl_gen where st_area(geom) < 2000;
+
+create table forest_types_zh_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_zh ft
+);
+alter table forest_types_zh_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_zh_gen where st_area(geom) < 2000;
+
+create table forest_types_zh_2_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_zh_2 ft
+);
+alter table forest_types_zh_2_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_zh_2_gen where st_area(geom) < 2000;
+
+create table forest_types_ne_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_ne ft
+);
+alter table forest_types_ne_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_ne_gen where st_area(geom) < 2000;
+
+create table forest_types_fr_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_fr ft
+);
+alter table forest_types_fr_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_fr_gen where st_area(geom) < 2000;
+
+create table forest_types_bl_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_bl ft
+);
+alter table forest_types_bl_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_bl_gen where st_area(geom) < 2000;
+
+create table forest_types_vd_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_vd ft
+);
+alter table forest_types_vd_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_vd_gen where st_area(geom) < 2000;
+
+create table forest_types_sz_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_sz ft
+);
+alter table forest_types_sz_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_sz_gen where st_area(geom) < 2000;
+
+create table forest_types_sg_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_sg ft
+);
+alter table forest_types_sg_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_sg_gen where st_area(geom) < 2000;
+
+create table forest_types_sh_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_sh ft
+);
+alter table forest_types_sh_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_sh_gen where st_area(geom) < 2000;
+
+create table forest_types_so_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_so ft
+);
+alter table forest_types_so_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_so_gen where st_area(geom) < 2000;
+
+create table forest_types_gl_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_gl ft
+);
+alter table forest_types_gl_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_gl_gen where st_area(geom) < 2000;
+
+create table forest_types_ar_gen as (
+  select (st_dump(ST_SimplifyPreserveTopology(st_buffer(st_union(st_buffer(ft.geom, 50)), -50), 30))).geom as geom from forest_types_ar ft
+);
+alter table forest_types_ar_gen alter column geom type geometry(Multipolygon, 2056);
+delete from forest_types_ar_gen where st_area(geom) < 2000;
+
+CREATE OR REPLACE VIEW forest_types_union_export AS
+SELECT ST_Transform(ST_Union(geom), 3857) AS geom
+FROM (
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom AS geom FROM forest_types_tg_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_fl_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_fr_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_bl_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_vd_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_sz_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_sg_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_sh_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_so_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_gl_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_ar_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_bl_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_ju_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_lu_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_ne_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_zh_gen
+  UNION ALL
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_zh_2_gen
+) AS all_geoms
+WHERE GeometryType(geom) IN ('POLYGON', 'MULTIPOLYGON');
+

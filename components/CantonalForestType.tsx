@@ -2,6 +2,7 @@ import { Field } from "@headlessui/react";
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
+import getForestTypePdfUrl from "@/utils/getForestTypesPdfUrl";
 import useCantonalForestType from "@/utils/hooks/useCantonalForestType";
 import useHasPdf from "@/utils/hooks/useHasPdf";
 
@@ -14,7 +15,10 @@ function CantonalForestType() {
     (state) => state.setForestTypeDescription,
   );
   const cantonalForestType = useCantonalForestType();
-  const hasPdf = useHasPdf(cantonalForestType);
+  const hasPdf = useHasPdf(
+    cantonalForestType && getForestTypePdfUrl(cantonalForestType),
+    ["so"],
+  );
 
   if (!cantonalForestType) return null;
 

@@ -1,8 +1,9 @@
 import { useRouter } from "next/router";
+import { Map } from "ol";
 import OLFeature from "ol/Feature";
 import { Point } from "ol/geom";
 import { transform } from "ol/proj";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
@@ -11,6 +12,7 @@ import translation from "../i18n/resources/de/translation.json";
 import { EPSG2056 } from "../map/projection";
 import style from "../map/style.json";
 
+import Spinner from "./icons/Spinner";
 import { LayersContext } from "./spatial/components/layer/LayersProvider";
 import { MapContext } from "./spatial/components/Map";
 import Dialog from "./ui/Dialog";
@@ -123,6 +125,13 @@ const iconFeature: OLFeature = new OLFeature({
   geometry: new Point([4756710, -2831367]),
 });
 
+function getFeaturesFromLayers(coordinate: Coordinate, map: Map) {
+  const pixel: number[] = map.getPixelFromCoordinate(coordinate);
+  const features = (map?.getFeaturesAtPixel(pixel) ??
+    []) as unknown as TreeAppGeoJsonFeature[];
+  return features;
+}
+
 function MapLocation() {
   const map = useContext(MapContext);
   const { maplibreLayer, markerLayer, userLocationsLayer } =
@@ -130,19 +139,18 @@ function MapLocation() {
   const router = useRouter();
   const mapLocation = useStore((state) => state.mapLocation);
   const activeProfile = useStore((state) => state.activeProfile);
+  const [locationIsLoading, setLocationIsLoading] = useState(false);
   const tc = useStore((state) => state.treeClient);
   const setMapLocation = useStore((state) => state.setMapLocation);
   const { i18n, t } = useTranslation();
 
   useEffect(() => {
-    const handleCoords = (
-      { coordinate }: { coordinate: Coordinate },
+    const updateForm = async (
+      coordinate: Coordinate,
       resetFormLocation = true,
     ) => {
-      const pixel: number[] = map.getPixelFromCoordinate(coordinate);
-      const features = (map?.getFeaturesAtPixel(pixel) ??
-        []) as unknown as TreeAppGeoJsonFeature[];
-
+      await new Promise((resolve) => setTimeout(resolve, 0)); // wait one tick
+      const features = getFeaturesFromLayers(coordinate, map);
       if (
         features.some(
           (f) =>
@@ -179,52 +187,95 @@ function MapLocation() {
       if (!location.altitudinalZone) {
         setMapLocation(location, true, true, "f");
       }
+      setLocationIsLoading(false);
+    };
+
+    const handleClick = (
+      { coordinate }: { coordinate: Coordinate },
+      resetFormLocation = true,
+    ) => {
+      const hasFtFeature = getFeaturesFromLayers(coordinate, map).some(
+        (f) => f.sourceLayer === "forest_types",
+      );
+      const currentZoom = map.getView().getZoom();
+      if (currentZoom && currentZoom <= 13 && hasFtFeature) {
+        setLocationIsLoading(true);
+        map.getView().animate(
+          {
+            center: coordinate,
+            duration: 500,
+            zoom: 13,
+          },
+          () => {
+            maplibreLayer?.waitForVectorTileLayerToRender("ft", () => {
+              void updateForm(coordinate, resetFormLocation);
+            });
+          },
+        );
+      } else {
+        setLocationIsLoading(true);
+        void updateForm(coordinate, resetFormLocation);
+      }
     };
     maplibreLayer?.on("loadend" as EventTypes, () => {
-      mapLocation.coordinate &&
-        handleCoords({ coordinate: to3857(mapLocation.coordinate) }, false);
+      if (mapLocation.coordinate) {
+        void updateForm(to3857(mapLocation.coordinate), false);
+      }
     });
-    map.on("singleclick", handleCoords);
+    map.on("singleclick", handleClick);
+    return () => {
+      map.un("singleclick", handleClick);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, activeProfile]);
 
   return (
-    <Dialog
-      body={
-        <ul>
-          {mapLocation.forestTypes?.map((ft) => {
-            const cantonalFt = ft[`forestType_${activeProfile}`];
-            return (
-              ft.info && (
-                <button
-                  className="w-full rounded p-2 text-left text-primary-500 hover:bg-gray-100"
-                  key={ft.forestType}
-                  onClick={() => {
-                    setMapLocation({ ...mapLocation, ...ft }, true);
-                    void router.push(`/projection${window.location.search}`);
-                  }}
-                >
-                  <h4 className="text-primary-500">
-                    {ft.transition
-                      ? `${cantonalFt ?? ft.forestType} (${
-                          ft.transitionForestType
-                        })`
-                      : (cantonalFt ?? ft.forestType)}
-                  </h4>
-                  <p>{ft.info[i18n.language as TreeAppLanguage]}</p>
-                </button>
-              )
-            );
-          })}
-        </ul>
-      }
-      className="!max-w-[600px]"
-      onClose={() => setMapLocation({ ...mapLocation, forestTypes: [] })}
-      open={
-        !mapLocation.forestType && (mapLocation?.forestTypes?.length ?? 0) > 1
-      }
-      title={t("forestType.select")}
-    />
+    <>
+      {locationIsLoading ? (
+        <div className="bg-red absolute bottom-28 left-1/2 z-40 -translate-x-1/2 items-center rounded-lg p-1 backdrop-blur-sm sm:bottom-[1.25rem] sm:left-[1.3rem] sm:translate-x-[unset]">
+          <div className="flex w-max items-center justify-center gap-2 rounded-lg bg-white/85 px-3 py-[5px] text-primary-500">
+            <Spinner className="w-5 text-primary-500" />{" "}
+            <strong className="ml-2">{t("map.loadingMapLocation")}</strong>
+          </div>
+        </div>
+      ) : null}
+      <Dialog
+        body={
+          <ul>
+            {mapLocation.forestTypes?.map((ft) => {
+              const cantonalFt = ft[`forestType_${activeProfile}`];
+              return (
+                ft.info && (
+                  <button
+                    className="w-full rounded p-2 text-left text-primary-500 hover:bg-gray-100"
+                    key={ft.forestType}
+                    onClick={() => {
+                      setMapLocation({ ...mapLocation, ...ft }, true);
+                      void router.push(`/projection${window.location.search}`);
+                    }}
+                  >
+                    <h4 className="text-primary-500">
+                      {ft.transition
+                        ? `${cantonalFt ?? ft.forestType} (${
+                            ft.transitionForestType
+                          })`
+                        : (cantonalFt ?? ft.forestType)}
+                    </h4>
+                    <p>{ft.info[i18n.language as TreeAppLanguage]}</p>
+                  </button>
+                )
+              );
+            })}
+          </ul>
+        }
+        className="!max-w-[600px]"
+        onClose={() => setMapLocation({ ...mapLocation, forestTypes: [] })}
+        open={
+          !mapLocation.forestType && (mapLocation?.forestTypes?.length ?? 0) > 1
+        }
+        title={t("forestType.select")}
+      />
+    </>
   );
 }
 

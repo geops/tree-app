@@ -5,6 +5,7 @@ import InfoButton from "@/components/ui/InfoButton";
 import Label from "@/components/ui/Label";
 import { useModalContext } from "@/components/ui/Modal";
 import useStore from "@/store";
+import getForestTypePdfUrl from "@/utils/getForestTypesPdfUrl";
 import useHasPdf from "@/utils/hooks/useHasPdf";
 
 import type {
@@ -24,7 +25,6 @@ function useProjectedFt(
   if (!code) return null;
   const treeClient = useStore.getState().treeClient;
   let ftInfo;
-  console.log(filterAttribute);
 
   try {
     const ftInfos = treeClient
@@ -81,7 +81,9 @@ function ProjectionCantonalForestType({
     /today/.test(scenario) ? "codessopresent" : undefined,
     mapLocation.forestType_so!,
   );
-  const hasPdf = useHasPdf(projectedFt);
+  const hasPdf = useHasPdf(projectedFt && getForestTypePdfUrl(projectedFt), [
+    "so",
+  ]);
   const { closeModal } = useModalContext();
 
   return (

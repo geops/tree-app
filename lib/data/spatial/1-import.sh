@@ -60,6 +60,8 @@ _import () {
     fi
 }
 
+start=`date +%s`
+
 _import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_1975/data.zip" "altitudinal_zones_1995" "vegetationshoehenstufen_1975"
 
 _import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_trocken/data.zip" "altitudinal_zones_2085_dry" "vegetationshoehenstufen_2085_trocken"
@@ -104,4 +106,10 @@ _import "Download manually" "forest_types_gl" "forest_types_gl" "forest_types_gl
 
 _import "Download manually" "forest_types_ar" "forest_types_ar" "forest_types_ar"
 
-_import "Download manually" "forest_types_sz" "forest_types_sz" "forest_types_sz"
+# _import "Download manually" "forest_types_sz" "forest_types_sz" "forest_types_sz"
+
+
+end=`date +%s`
+minutes=$(( (end - start) / 60 ))
+seconds=$(( (end - start) % 60 ))
+echo "Data import completed in ${minutes} minutes and ${seconds} seconds."

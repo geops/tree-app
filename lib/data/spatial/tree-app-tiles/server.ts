@@ -71,7 +71,7 @@ app.get('/fonts/*', async (c) => {
 // Start local server
 serve({
   fetch: app.fetch,
-  port: 3000,
+  port: parseInt(process.env.PORT as string, 10) || 8000,
 })
 
-console.log('Server running at http://localhost:3000')
+console.log('Server running at http://localhost:8000')
