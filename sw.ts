@@ -140,22 +140,22 @@ self.addEventListener("activate", (event) => {
 });
 
 // eslint-disable-next-line no-restricted-globals
-self.addEventListener("fetch", (event) => {
-  const cacheUrls = [
-    process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
-    process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
-  ];
-  const shouldFetchFromCache = cacheUrls.some(
-    (url) => url && event.request.url.startsWith(url),
-  );
-  if (shouldFetchFromCache) {
-    event.respondWith(
-      caches
-        .match(event.request)
-        .then((response) => response ?? fetch(event.request)),
-    );
-  }
-});
+// self.addEventListener("fetch", (event) => {
+//   const cacheUrls = [
+//     process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
+//     process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
+//   ];
+//   const shouldFetchFromCache = cacheUrls.some(
+//     (url) => url && event.request.url.startsWith(url),
+//   );
+//   if (shouldFetchFromCache) {
+//     event.respondWith(
+//       caches
+//         .match(event.request)
+//         .then((response) => response ?? fetch(event.request)),
+//     );
+//   }
+// });
 
 const serwist = new Serwist({
   clientsClaim: true,
