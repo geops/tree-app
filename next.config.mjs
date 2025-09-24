@@ -61,6 +61,7 @@ const getNextConfig = async (phase) => {
 
   if (phase === PHASE_PRODUCTION_BUILD) {
     const withSerwist = (await import("@serwist/next")).default({
+      maximumFileSizeToCacheInBytes: 5000000,
       swSrc: "sw.ts",
       swDest: "public/sw.js",
       reloadOnOnline: true,
