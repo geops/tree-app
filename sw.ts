@@ -19,6 +19,10 @@ const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
   precacheEntries: self.__SW_MANIFEST,
+  precacheOptions: {
+    // Ignore all URL parameters.
+    ignoreURLParametersMatching: [/.*/],
+  },
   runtimeCaching: [
     ...defaultCache,
     {
