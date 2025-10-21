@@ -1,6 +1,6 @@
 {
   "name": "tree-app",
-  "version": "3.0.1b",
+  "version": "3.0.1c",
   "private": true,
   "scripts": {
     "dev": "next dev",
