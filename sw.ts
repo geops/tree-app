@@ -19,10 +19,10 @@ const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
   precacheEntries: self.__SW_MANIFEST,
-  precacheOptions: {
-    // Ignore all URL parameters.
-    ignoreURLParametersMatching: [/.*/],
-  },
+  // precacheOptions: {
+  //   // Ignore all URL parameters.
+  //   ignoreURLParametersMatching: [/.*/],
+  // },
   runtimeCaching: [
     ...defaultCache,
     {
@@ -147,18 +147,18 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// self.addEventListener("activate", (event) => {
-//   event.waitUntil(
-//     (async () => {
-//       const clients = await self.clients.matchAll({
-//         includeUncontrolled: true,
-//       });
-//       clients.forEach((client) => {
-//         client.postMessage({ type: "CACHE_READY" });
-//       });
-//     })(),
-//   );
-// });
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    (async () => {
+      const clients = await self.clients.matchAll({
+        includeUncontrolled: true,
+      });
+      clients.forEach((client) => {
+        client.postMessage({ type: "CACHE_READY" });
+      });
+    })(),
+  );
+});
 
 self.addEventListener("fetch", (event) => {
   const cacheUrls = [
