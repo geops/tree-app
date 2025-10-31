@@ -160,10 +160,15 @@ self.addEventListener("activate", (event) => {
   );
 });
 
+// Add Serwist event listeners first
+serwist.addEventListeners();
+
+// Then add custom fetch handler for cached resources
 self.addEventListener("fetch", (event) => {
   const cacheUrls = [
     process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
     process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
+    process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT,
   ];
   const shouldFetchFromCache = cacheUrls.some(
     (url) => url && event.request.url.startsWith(url),
@@ -176,5 +181,3 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
-
-serwist.addEventListeners();
