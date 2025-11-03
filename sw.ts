@@ -36,6 +36,12 @@ const serwist = new Serwist({
   skipWaiting: true,
 });
 
+serwist.addToPrecacheList([
+  { url: "/" },
+  { url: "/info" },
+  { url: "/projection" },
+]);
+
 const treePdfCacheString = "tree-data-v"; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
 const currentTreePdfVersion = 1; // Current Tree PDF version, needs to be increased every time new PDFs are deployed
 const TREE_CACHE_NAME = `${treePdfCacheString}${currentTreePdfVersion}`; // Cache name for Tree profile data
