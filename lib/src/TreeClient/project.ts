@@ -3,6 +3,7 @@ import {
   Location,
   ProjectOptionKey,
   ProjectResult,
+  TreeAppProfile,
 } from "../types";
 import {
   reduceHochmontanAz,
@@ -19,6 +20,7 @@ function project(
   location: Location,
   targetAltitude?: AltitudinalZoneCode,
   previousResult: null | ProjectResult = null,
+  profile?: TreeAppProfile,
 ): ProjectResult {
   const altitudinalZones = this.getAltitudinalZones();
   const altitudeList = altitudinalZones
@@ -42,6 +44,7 @@ function project(
     targetAltitudeIdx,
     result,
     altitudeList,
+    profile,
   );
 
   const last = result.projections?.slice(-1)[0];
@@ -58,12 +61,12 @@ function project(
           ...reducedLocation,
           [secondaryField]: "unknown",
         };
-        result = this.project(secondaryLocation, reducedTAZ, result);
+        result = this.project(secondaryLocation, reducedTAZ, result, profile);
         break;
       }
     }
   } else if (lastAltitudeIdx && lastAltitudeIdx < targetAltitudeIdx) {
-    result = this.project({ ...reducedLocation, ...last }, reducedTAZ, result);
+    result = this.project({ ...reducedLocation, ...last }, reducedTAZ, result, profile);
   }
 
   if (result && reducedLocation.forestType && altitudeIdx !== -1) {

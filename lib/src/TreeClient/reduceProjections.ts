@@ -4,6 +4,7 @@ import {
   ProjectOptionKey,
   ProjectProjection,
   ProjectResult,
+  TreeAppProfile,
 } from "../types";
 import {
   primaryProjectionFields as primaryFields,
@@ -13,21 +14,28 @@ import { validateFieldValue } from "../utils";
 
 import TreeClient from ".";
 
-function projectionReducer(
+function reduceProjections(
   this: TreeClient,
   location: Location,
   targetAltitudePointer: number,
   result: ProjectResult,
   altitudeList: string[],
+  profile?: TreeAppProfile
 ): ProjectResult {
   const { options } = result;
 
   let projections: ProjectionQueryResult[] = [];
+  const tableName = this.executeQuery<{ name: string }>(`SELECT name 
+    FROM sqlite_master 
+    WHERE type='table' AND name='${profile}_projections';`)?.data?.[0]?.name || "projections";
+    console.log(tableName);
   const queryString = primaryFields.reduce(
     (acc, fieldName: ProjectOptionKey, index) => {
       let newString = acc;
       const { value, values } = this.getField(fieldName, location);
       validateFieldValue(fieldName, value, values);
+        
+      
       if (index === 0 || location[primaryFields[index - 1]]) {
         const newOptions = this.getProjectionOptions(
           newString.replace(
@@ -44,7 +52,7 @@ function projectionReducer(
       }
       return newString;
     },
-    "select * from projections",
+    `select * from ${tableName}`,
   );
 
   if (primaryFields.every((field) => location[field])) {
@@ -105,4 +113,4 @@ function projectionReducer(
   return { ...result, options };
 }
 
-export default projectionReducer;
+export default reduceProjections;

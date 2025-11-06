@@ -142,12 +142,22 @@ function runProject() {
                 } = mapLocation;
                 projectionResult.moderate = (
                   targetAZModerate
-                    ? treeClient.project(location, targetAZModerate)
+                    ? treeClient.project(
+                        location,
+                        targetAZModerate,
+                        undefined,
+                        activeProfile,
+                      )
                     : initialProjection
                 ) as ProjectResult;
                 projectionResult.extreme = (
                   targetAZExtreme
-                    ? treeClient.project(location, targetAZExtreme)
+                    ? treeClient.project(
+                        location,
+                        targetAZExtreme,
+                        undefined,
+                        activeProfile,
+                      )
                     : initialProjection
                 ) as ProjectResult;
               } else {
@@ -155,6 +165,8 @@ function runProject() {
                 projectionResult.form = treeClient.project(
                   location,
                   targetAZForm,
+                  undefined,
+                  activeProfile,
                 ) as ProjectResult;
               }
             } catch (error) {
