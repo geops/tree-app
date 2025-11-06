@@ -28,7 +28,6 @@ function reduceProjections(
   const tableName = this.executeQuery<{ name: string }>(`SELECT name 
     FROM sqlite_master 
     WHERE type='table' AND name='${profile}_projections';`)?.data?.[0]?.name || "projections";
-    console.log(tableName);
   const queryString = primaryFields.reduce(
     (acc, fieldName: ProjectOptionKey, index) => {
       let newString = acc;
