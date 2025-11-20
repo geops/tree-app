@@ -122,8 +122,11 @@ function locate(
     });
   }
 
+  const indicatorTableName = this.executeQuery<{ name: string }>(`SELECT name 
+    FROM sqlite_master 
+    WHERE type='table' AND name='${profile}_indicator';`)?.data?.[0]?.name || "indicator";
   const { data: indicators } = this.executeQuery<TypesRecord>(
-    "select * from indicator",
+    `select * from ${indicatorTableName}`,
   );
   if (location.indicators && location.indicators.length > 0) {
     const indicatorsForestTypes = location.indicators.map(
@@ -133,8 +136,13 @@ function locate(
       indicatorsForestTypes.every((ift) => ift?.includes(ft.code)),
     );
   }
+
+  const treeTypeTableName = this.executeQuery<{ name: string }>(`SELECT name 
+    FROM sqlite_master 
+    WHERE type='table' AND name='${profile}_treetype';`)?.data?.[0]?.name || "treetype";
+    console.log(treeTypeTableName);
   const { data: treeTypes } = this.executeQuery<TypesRecord>(
-    "select * from treetype",
+    `select * from ${treeTypeTableName}`,
   );
   if (location.treeTypes && location.treeTypes.length > 0) {
     const treeTypesForestTypes = location.treeTypes.map(
