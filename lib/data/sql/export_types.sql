@@ -1,39 +1,50 @@
 -- NAIS - Common data
-drop table if exists export.treetype;
-
-create table export.treetype as
-with
-  foresttypes_agg as (
-    select
-      sisf_nr as target,
-      array_agg(
-        distinct trim(
-          both
-          from
-            naistyp_c
+create or replace function create_treetype(naistyp_art_table text, output_table text)
+returns void as $$
+begin
+    execute format('drop table if exists %s', output_table);
+    
+    execute format('
+        create table %s as
+        with foresttypes_agg as (
+            select
+                sisf_nr as target,
+                array_agg(
+                    distinct trim(
+                        both
+                        from
+                            naistyp_c
+                    )
+                ) as agg_foresttypes
+            from
+                %s
+            where
+                vorh in (''1'', ''2'', ''3'')
+            group by
+                target
         )
-      ) as agg_foresttypes
-    from
-      nat_naistyp_art
-    where
-      vorh in ('1', '2', '3')
-    group by
-      target
-  )
-select
-  tm.target::text as code,
-  tm.de,
-  tm.fr,
-  tm.la,
-  tm.endangered,
-  tm.nonresident,
-  tm.pioneer,
-  to_json(foresttypes_agg.agg_foresttypes) as foresttypes
-from
-  treetype_meta tm
-  join foresttypes_agg on tm.target::text = foresttypes_agg.target::int::text
-order by
-  tm.target asc;
+        select
+            tm.target::text as code,
+            tm.de,
+            tm.fr,
+            tm.la,
+            tm.endangered,
+            tm.nonresident,
+            tm.pioneer,
+            to_json(foresttypes_agg.agg_foresttypes) as foresttypes
+        from
+            treetype_meta tm
+            join foresttypes_agg on tm.target::text = foresttypes_agg.target::int::text
+        order by
+            tm.target asc',
+        output_table,
+        naistyp_art_table
+    );
+end;
+$$ language plpgsql;
+
+select create_treetype('nat_naistyp_art', 'export.treetype');
+select create_treetype('vd_nat_naistyp_art', 'export.vd_treetype');
 
 drop table if exists export.forestecoregion;
 
@@ -236,38 +247,49 @@ group by
 order by
   code;
 
-drop table if exists export.indicator;
-
-create table export.indicator as
-with
-  foresttypes_agg as (
-    select
-      sisf_nr as target,
-      array_agg(
-        distinct trim(
-          both
-          from
-            naistyp_c
+create or replace function create_indicator(naistyp_art_table text, output_table text)
+returns void as $$
+begin
+    execute format('drop table if exists %s', output_table);
+    
+    execute format('
+        create table %s as
+        with foresttypes_agg as (
+            select
+                sisf_nr as target,
+                array_agg(
+                    distinct trim(
+                        both
+                        from
+                            naistyp_c
+                    )
+                ) as agg_foresttypes
+            from
+                %s
+            where
+                vorh in (''1'', ''2'', ''3'')
+            group by
+                target
         )
-      ) as agg_foresttypes
-    from
-      nat_naistyp_art
-    where
-      vorh in ('1', '2', '3')
-    group by
-      target
-  )
-select
-  im.code::int as code,
-  im.de,
-  im.fr,
-  im.la,
-  to_json(foresttypes_agg.agg_foresttypes) as foresttypes
-from
-  indicator_meta im
-  join foresttypes_agg on im.code::text = foresttypes_agg.target::int::text
-order by
-  im.code asc;
+        select
+            im.code::int as code,
+            im.de,
+            im.fr,
+            im.la,
+            to_json(foresttypes_agg.agg_foresttypes) as foresttypes
+        from
+            indicator_meta im
+            join foresttypes_agg on im.code::text = foresttypes_agg.target::int::text
+        order by
+            im.code asc',
+        output_table,
+        naistyp_art_table
+    );
+end;
+$$ language plpgsql;
+
+select create_indicator('nat_naistyp_art', 'export.indicator');
+select create_indicator('vd_nat_naistyp_art', 'export.vd_indicator');
 
 drop table if exists export.mosstype;
 
