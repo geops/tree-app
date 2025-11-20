@@ -141,9 +141,12 @@ function locate(
     FROM sqlite_master 
     WHERE type='table' AND name='${profile}_treetype';`)?.data?.[0]?.name || "treetype";
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     console.log(treeTypeTableName);
 >>>>>>> 11d843b (chore: use new tables in TreeClient)
+=======
+>>>>>>> 2bfdde6 (chore: clean)
   const { data: treeTypes } = this.executeQuery<TypesRecord>(
     `select * from ${treeTypeTableName}`,
   );
