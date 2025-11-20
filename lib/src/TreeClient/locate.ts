@@ -140,7 +140,6 @@ function locate(
   const treeTypeTableName = this.executeQuery<{ name: string }>(`SELECT name 
     FROM sqlite_master 
     WHERE type='table' AND name='${profile}_treetype';`)?.data?.[0]?.name || "treetype";
-    console.log(treeTypeTableName);
   const { data: treeTypes } = this.executeQuery<TypesRecord>(
     `select * from ${treeTypeTableName}`,
   );
