@@ -81,77 +81,77 @@ self.addEventListener("message", (event) => {
   (OLD_CACHE) => void caches.delete(OLD_CACHE),
 );
 
-self.addEventListener("install", (event) => {
-  const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
-  const vectorTilesEndpoint = process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT;
-  const treePdfEndpoint = process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT;
-  event.waitUntil(
-    (async () => {
-      await caches.open(TILE_CACHE_NAME).then((cache) =>
-        fetch(`${vectorTilesEndpoint}/tiles.txt`)
-          .then((response) => response.text())
-          .then(async (response) => {
-            const tiles = response.split(/\r?\n/);
-            // eslint-disable-next-line no-plusplus
-            for (const tile of tiles) {
-              const tileUrl = `${vectorTilesEndpoint}/${tile}`;
-              // eslint-disable-next-line no-await-in-loop
-              if (tile && !(await cache.match(tileUrl))) {
-                try {
-                  // eslint-disable-next-line no-await-in-loop
-                  const tileResponse = await fetch(tileUrl);
-                  void cache.put(tileUrl, tileResponse);
-                } catch (error) {
-                  // Some tiles do not exist.
-                }
-              }
-            }
-            return true;
-          }),
-      );
+// self.addEventListener("install", (event) => {
+//   const soPdfEndpoint = process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT;
+//   const vectorTilesEndpoint = process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT;
+//   const treePdfEndpoint = process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT;
+//   event.waitUntil(
+//     (async () => {
+//       await caches.open(TILE_CACHE_NAME).then((cache) =>
+//         fetch(`${vectorTilesEndpoint}/tiles.txt`)
+//           .then((response) => response.text())
+//           .then(async (response) => {
+//             const tiles = response.split(/\r?\n/);
+//             // eslint-disable-next-line no-plusplus
+//             for (const tile of tiles) {
+//               const tileUrl = `${vectorTilesEndpoint}/${tile}`;
+//               // eslint-disable-next-line no-await-in-loop
+//               if (tile && !(await cache.match(tileUrl))) {
+//                 try {
+//                   // eslint-disable-next-line no-await-in-loop
+//                   const tileResponse = await fetch(tileUrl);
+//                   void cache.put(tileUrl, tileResponse);
+//                 } catch (error) {
+//                   // Some tiles do not exist.
+//                 }
+//               }
+//             }
+//             return true;
+//           }),
+//       );
 
-      await caches.open(SO_CACHE_NAME).then((cache) =>
-        fetch(`${soPdfEndpoint}/list.txt`)
-          .then((response) => response.text())
-          .then(async (response) => {
-            const forestTypes = response.split(/\r?\n/);
-            for (const forestType of forestTypes) {
-              const pdfUrl = `${soPdfEndpoint}/${forestType}`;
-              if (forestType && !(await cache.match(pdfUrl))) {
-                try {
-                  const pdfResponse = await fetch(pdfUrl);
-                  void cache.put(pdfUrl, pdfResponse);
-                } catch (error) {
-                  // Some PDFs do not exist.
-                }
-              }
-            }
-            return true;
-          }),
-      );
+//       await caches.open(SO_CACHE_NAME).then((cache) =>
+//         fetch(`${soPdfEndpoint}/list.txt`)
+//           .then((response) => response.text())
+//           .then(async (response) => {
+//             const forestTypes = response.split(/\r?\n/);
+//             for (const forestType of forestTypes) {
+//               const pdfUrl = `${soPdfEndpoint}/${forestType}`;
+//               if (forestType && !(await cache.match(pdfUrl))) {
+//                 try {
+//                   const pdfResponse = await fetch(pdfUrl);
+//                   void cache.put(pdfUrl, pdfResponse);
+//                 } catch (error) {
+//                   // Some PDFs do not exist.
+//                 }
+//               }
+//             }
+//             return true;
+//           }),
+//       );
 
-      await caches.open(TREE_CACHE_NAME).then((cache) =>
-        fetch(`${treePdfEndpoint}/list.txt`)
-          .then((response) => response.text())
-          .then(async (response) => {
-            const treeTypes = response.split(/\r?\n/);
-            for (const treeType of treeTypes) {
-              const pdfUrl = `${treePdfEndpoint}/${treeType}`;
-              if (treeType && !(await cache.match(pdfUrl))) {
-                try {
-                  const pdfResponse = await fetch(pdfUrl);
-                  void cache.put(pdfUrl, pdfResponse);
-                } catch (error) {
-                  // Some PDFs do not exist.
-                }
-              }
-            }
-            return true;
-          }),
-      );
-    })(),
-  );
-});
+//       await caches.open(TREE_CACHE_NAME).then((cache) =>
+//         fetch(`${treePdfEndpoint}/list.txt`)
+//           .then((response) => response.text())
+//           .then(async (response) => {
+//             const treeTypes = response.split(/\r?\n/);
+//             for (const treeType of treeTypes) {
+//               const pdfUrl = `${treePdfEndpoint}/${treeType}`;
+//               if (treeType && !(await cache.match(pdfUrl))) {
+//                 try {
+//                   const pdfResponse = await fetch(pdfUrl);
+//                   void cache.put(pdfUrl, pdfResponse);
+//                 } catch (error) {
+//                   // Some PDFs do not exist.
+//                 }
+//               }
+//             }
+//             return true;
+//           }),
+//       );
+//     })(),
+//   );
+// });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
@@ -170,20 +170,20 @@ self.addEventListener("activate", (event) => {
 serwist.addEventListeners();
 
 // Then add custom fetch handler for cached resources
-self.addEventListener("fetch", (event) => {
-  const cacheUrls = [
-    process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
-    process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
-    process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT,
-  ];
-  const shouldFetchFromCache = cacheUrls.some(
-    (url) => url && event.request.url.startsWith(url),
-  );
-  if (shouldFetchFromCache) {
-    event.respondWith(
-      caches
-        .match(event.request)
-        .then((response) => response ?? fetch(event.request)),
-    );
-  }
-});
+// self.addEventListener("fetch", (event) => {
+//   const cacheUrls = [
+//     process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
+//     process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
+//     process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT,
+//   ];
+//   const shouldFetchFromCache = cacheUrls.some(
+//     (url) => url && event.request.url.startsWith(url),
+//   );
+//   if (shouldFetchFromCache) {
+//     event.respondWith(
+//       caches
+//         .match(event.request)
+//         .then((response) => response ?? fetch(event.request)),
+//     );
+//   }
+// });
