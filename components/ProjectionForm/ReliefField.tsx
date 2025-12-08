@@ -24,7 +24,7 @@ function ReliefField() {
 
   const items: ButtonGroupItem[] = useMemo(() => {
     if (!options.relief?.length) return [];
-    const slopeOpts = treeClient.getTypes<{
+    const reliefOpts = treeClient.getTypes<{
       code: ReliefCode;
       de?: string;
       fr?: string;
@@ -37,7 +37,7 @@ function ReliefField() {
       "ORDER BY code DESC",
     );
     return (
-      slopeOpts.map((opt) => {
+      reliefOpts.map((opt) => {
         return {
           active: formLocation?.relief
             ? formLocation?.relief === opt.code
