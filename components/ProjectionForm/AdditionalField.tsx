@@ -33,12 +33,17 @@ function AdditionalField() {
       "ORDER BY code DESC",
     );
 
+    const hasUnknown = additionalOpts.some((opt) => opt.code === "unknown");
+    const shouldUseFirstAsDefault = !formLocation?.additional && !hasUnknown;
+
     return (
-      additionalOpts.map((opt) => {
+      additionalOpts.map((opt, index) => {
         return {
           active: formLocation?.additional
             ? formLocation?.additional === opt.code
-            : opt.code === "unknown",
+            : shouldUseFirstAsDefault
+              ? index === 0
+              : opt.code === "unknown",
           label: opt[i18n.language as TreeAppLanguage],
           onClick: () => setFormLocation({ additional: opt.code }),
         };
