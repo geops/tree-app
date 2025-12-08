@@ -37,12 +37,20 @@ function ReliefField() {
       "ORDER BY code DESC",
     );
 
+<<<<<<< HEAD
+=======
+    const hasUnknown = reliefOpts.some((opt) => opt.code === "unknown");
+    const shouldUseFirstAsDefault = !formLocation?.relief && !hasUnknown;
+
+>>>>>>> 8f37c87 (fix: activate first item for relief field if non selected)
     return (
-      reliefOpts.map((opt) => {
+      reliefOpts.map((opt, index) => {
         return {
           active: formLocation?.relief
             ? formLocation?.relief === opt.code
-            : opt.code === "unknown",
+            : shouldUseFirstAsDefault
+              ? index === 0
+              : opt.code === "unknown",
           label: opt[i18n.language as TreeAppLanguage],
           onClick: () => setFormLocation({ relief: opt.code }),
         };
