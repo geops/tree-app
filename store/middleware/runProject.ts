@@ -16,7 +16,12 @@ import type { StateCreator } from "zustand";
 import type { Location } from "../index";
 import type { AppStore, ProjectionResult } from "../index";
 
-const triggerFields = ["mapLocation", "formLocation", "projectionMode"];
+const triggerFields = [
+  "activeProfile",
+  "mapLocation",
+  "formLocation",
+  "projectionMode",
+];
 
 function runProject() {
   return (create: StateCreator<AppStore>): StateCreator<AppStore> =>
