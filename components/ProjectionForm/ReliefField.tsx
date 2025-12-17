@@ -37,17 +37,12 @@ function ReliefField() {
       "ORDER BY code DESC",
     );
 
-    const hasUnknown = reliefOpts.some((opt) => opt.code === "unknown");
-    const shouldUseFirstAsDefault = !formLocation?.relief && !hasUnknown;
-
     return (
-      reliefOpts.map((opt, index) => {
+      reliefOpts.map((opt) => {
         return {
           active: formLocation?.relief
             ? formLocation?.relief === opt.code
-            : shouldUseFirstAsDefault
-              ? index === 0
-              : opt.code === "unknown",
+            : opt.code === "unknown",
           label: opt[i18n.language as TreeAppLanguage],
           onClick: () => setFormLocation({ relief: opt.code }),
         };
