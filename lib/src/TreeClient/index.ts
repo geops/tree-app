@@ -75,7 +75,6 @@ class TreeClient {
     this.getAltitudinalZones = this.getAltitudinalZones.bind(this);
     this.getProjections = this.getProjections.bind(this);
     this.project = project.bind(this);
-    this.reduceProjections = reduceProjections.bind(this);
     this.locate = locate.bind(this);
     this.getProjectionOptions = this.getProjectionOptions.bind(this);
     this.getField = this.getField.bind(this);

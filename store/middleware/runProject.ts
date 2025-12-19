@@ -16,7 +16,12 @@ import type { StateCreator } from "zustand";
 import type { Location } from "../index";
 import type { AppStore, ProjectionResult } from "../index";
 
-const triggerFields = ["mapLocation", "formLocation", "projectionMode"];
+const triggerFields = [
+  "activeProfile",
+  "mapLocation",
+  "formLocation",
+  "projectionMode",
+];
 
 function runProject() {
   return (create: StateCreator<AppStore>): StateCreator<AppStore> =>
@@ -81,6 +86,10 @@ function runProject() {
               location.additional = formLocation.additional;
             }
 
+            if (projectionMode === "m" && !!formLocation.relief) {
+              location.relief = formLocation.relief;
+            }
+
             if (
               projectionMode === "m" &&
               mapLocation.altitudinalZone &&
@@ -142,12 +151,22 @@ function runProject() {
                 } = mapLocation;
                 projectionResult.moderate = (
                   targetAZModerate
-                    ? treeClient.project(location, targetAZModerate)
+                    ? treeClient.project(
+                        location,
+                        targetAZModerate,
+                        undefined,
+                        activeProfile,
+                      )
                     : initialProjection
                 ) as ProjectResult;
                 projectionResult.extreme = (
                   targetAZExtreme
-                    ? treeClient.project(location, targetAZExtreme)
+                    ? treeClient.project(
+                        location,
+                        targetAZExtreme,
+                        undefined,
+                        activeProfile,
+                      )
                     : initialProjection
                 ) as ProjectResult;
               } else {
@@ -155,6 +174,8 @@ function runProject() {
                 projectionResult.form = treeClient.project(
                   location,
                   targetAZForm,
+                  undefined,
+                  activeProfile,
                 ) as ProjectResult;
               }
             } catch (error) {
