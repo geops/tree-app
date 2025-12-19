@@ -50,7 +50,8 @@ function runProject() {
           // We run the projection when the location data changes and when the app loads
           if (
             triggerFields.some((field) => updatedFields.includes(field)) ||
-            isFirstRun
+            isFirstRun ||
+            prevState?.activeProfile !== get()?.activeProfile
           ) {
             const {
               activeProfile,

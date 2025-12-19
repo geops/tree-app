@@ -76,15 +76,18 @@ export interface VegetationTabProps {
 
 function VegetationTab({ data }: VegetationTabProps) {
   const { i18n, t } = useTranslation();
+  const activeProfile = useStore((state) => state.activeProfile);
   const treeClient = useStore((state) => state.treeClient);
   const isMobile = useIsMobile();
 
   const [t1, t2, t3] = useMemo(
     () =>
-      treeClient.getVegetationList({
-        forestType: data.code,
-      }),
-    [data.code, treeClient],
+      treeClient.getVegetationList(
+        { forestType: data.code },
+        undefined,
+        activeProfile,
+      ),
+    [data.code, treeClient, activeProfile],
   );
 
   const vegetationInfo = useMemo(() => {
