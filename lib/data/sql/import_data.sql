@@ -1375,7 +1375,8 @@ SELECT
   ----------------------------------------------
 -- Forest types SZ
 CREATE TABLE "forest_types_sz" (
-  "fid" serial,
+  gid serial,
+  "fid" numeric,
   "sz_einheit" varchar(80),
   "nais" varchar(80),
   "nais1" varchar(80),
@@ -1384,8 +1385,9 @@ CREATE TABLE "forest_types_sz" (
   "ue" numeric,
   "tahs" varchar(80),
   "tahsue" varchar(80),
-  "hs_code" numeric,
-  "hsue_code" integer
+  "grundlage" varchar(254),
+  "hs_code" float8,
+  "hsue_code" float8
 );
 ALTER TABLE 
   "forest_types_sz" 
