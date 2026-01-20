@@ -1247,49 +1247,19 @@ SELECT
   );
 ----------------------------------------------
 -- Forest types FR
-CREATE TABLE "forest_types_fr" (
-  gid serial, 
-  "objectid" float8, 
-  "legende" varchar(10), 
-  "wg_1" varchar(10), 
-  "ueh_hoch_1" varchar(10), 
-  "ueh_tief_1" varchar(10), 
-  "td_1" varchar(20), 
-  "taux_1" numeric, 
-  "wg_2" varchar(10), 
-  "ueh_hoch_2" varchar(10), 
-  "ueh_tief_2" varchar(10), 
-  "td_2" varchar(20), 
-  "taux_2" numeric, 
-  "wg_3" varchar(10), 
-  "ueh_hoch_3" varchar(10), 
-  "ueh_tief_3" varchar(10), 
-  "td_3" varchar(20), 
-  "taux_3" numeric, 
-  "wgr" varchar(20), 
-  "annee" varchar(2), 
-  "lot" varchar(10), 
-  "etat" float8, 
-  "assoc_tot_" varchar(35), 
-  "pdf" varchar(20), 
-  "pdf_fr" varchar(50), 
-  "pdf_de" varchar(50), 
-  "wg_tot" varchar(50), 
-  "id_legende" int4, 
-  "legende_fr" varchar(150), 
-  "legende_de" varchar(150), 
-  "legende_la" varchar(150), 
-  "fertilite_" float8, 
-  "fertilite1" float8, 
-  "prop_feuil" float8, 
-  "prop_feu_1" float8, 
-  "ass_remarq" varchar(100), 
-  "score_ass_" numeric, 
-  "shape_star" numeric, 
-  "shape_stle" numeric, 
-  "namensuber" varchar(254), 
-  "nais" varchar(10)
-);
+CREATE TABLE "forest_types_fr" (gid serial,
+"fid" numeric,
+"assoc_tot_" varchar(254),
+"nais" varchar(254),
+"nais1" varchar(254),
+"nais2" varchar(254),
+"mo" numeric,
+"ue" numeric,
+"tahs" varchar(254),
+"tahsue" varchar(254),
+"hs_code" float8,
+"hsue_code" float8);
+
 ALTER TABLE 
   "forest_types_fr" 
 ADD 
