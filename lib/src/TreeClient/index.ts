@@ -164,7 +164,7 @@ class TreeClient {
     const { data: lists } = this.executeQuery<Recommendation>(
       `select * from ${recommendationTableName} where foresttype = '${forestType}'`,
     );
-    return [...(lists?.[0].recommendations ?? emptyLists)];
+    return [...(lists?.[0]?.recommendations ?? emptyLists)];
   }
 
   public getSilverFirAreaByCode(
