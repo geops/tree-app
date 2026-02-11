@@ -24,7 +24,7 @@ function ReliefField() {
 
   const items: ButtonGroupItem[] = useMemo(() => {
     if (!options.relief?.length) return [];
-    const slopeOpts = treeClient.getTypes<{
+    const reliefOpts = treeClient.getTypes<{
       code: ReliefCode;
       de?: string;
       fr?: string;
@@ -36,12 +36,18 @@ function ReliefField() {
       },
       "ORDER BY code DESC",
     );
+
+    const hasUnknown = reliefOpts.some((opt) => opt.code === "unknown");
+    const shouldUseFirstAsDefault = !formLocation?.relief && !hasUnknown;
     return (
-      slopeOpts.map((opt) => {
+      reliefOpts.map((opt, index) => {
         return {
+          // eslint-disable-next-line no-nested-ternary
           active: formLocation?.relief
             ? formLocation?.relief === opt.code
-            : opt.code === "unknown",
+            : shouldUseFirstAsDefault
+              ? index === 0
+              : opt.code === "unknown",
           label: opt[i18n.language as TreeAppLanguage],
           onClick: () => setFormLocation({ relief: opt.code }),
         };

@@ -951,6 +951,58 @@ COPY so_standorttypen
 FROM 
   '/data/profiles/so/standorttypen.csv' DELIMITER ';' CSV HEADER;
 
+  -- Vaud
+CREATE TABLE vd_projections_import (
+  forest_ecoregions TEXT, altitudinal_zone TEXT, 
+  forest_type TEXT, slope TEXT, silver_fir_area TEXT, 
+  forest_ecoregions_specific TEXT, 
+  relief TEXT, additional TEXT, target_altitudinal_zone TEXT, 
+  target_forest_type TEXT, "update" TEXT
+);
+COPY vd_projections_import 
+FROM 
+  '/data/profiles/vd/projections.csv' DELIMITER ';' CSV HEADER;
+
+UPDATE vd_projections_import 
+SET additional = 'tiefgründig' 
+WHERE lower(trim(additional)) = 'sol profond';
+
+UPDATE vd_projections_import 
+SET additional = 'flachgründig' 
+WHERE lower(trim(additional)) = 'sol superficiel';
+
+CREATE TEMP TABLE VD_NAT_BAUM_COLLIN_STAGING (
+  REGION TEXT,
+  NAISTYP_SORT TEXT,
+  NAISTYP TEXT,
+  SISF_NR TEXT,
+  VORH TEXT,
+  QUELLE_BA TEXT,
+  "update" TEXT
+);
+COPY VD_NAT_BAUM_COLLIN_STAGING
+FROM '/data/profiles/vd/VD_NAT_BAUM_COLLIN.csv' DELIMITER ';'
+CSV HEADER;
+
+CREATE TABLE VD_NAT_BAUM_COLLIN AS
+SELECT REGION, NAISTYP_SORT, NAISTYP, SISF_NR, VORH, QUELLE_BA
+FROM VD_NAT_BAUM_COLLIN_STAGING
+WHERE update IS DISTINCT FROM 'delete';
+
+CREATE TEMP TABLE VD_NAT_NAISTYP_ART_STAGING (
+  NAISTYP_SORT TEXT, NAISTYP_C TEXT, 
+  ART TEXT, SISF_NR TEXT, VORH TEXT,
+  "update" TEXT
+);
+COPY VD_NAT_NAISTYP_ART_STAGING 
+FROM 
+  '/data/profiles/vd/VD_NAT_NAISTYP_ART.csv' DELIMITER ';' CSV HEADER;
+
+CREATE TABLE VD_NAT_NAISTYP_ART AS
+SELECT NAISTYP_SORT, NAISTYP_C, 
+  ART, SISF_NR, VORH
+FROM VD_NAT_NAISTYP_ART_STAGING
+WHERE update IS DISTINCT FROM 'delete';
 
 
 -- ########### PROJECTIONS ###########

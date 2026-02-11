@@ -46,7 +46,7 @@
     "@types/lodash.xor": "4.5.9",
     "@types/sql.js": "1.4.9",
     "documentation": "13.2.5",
-    "eslint": "7.32.0",
+    "eslint": "9.26.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "fast-csv": "5.0.2",

@@ -50,6 +50,7 @@ const getGridCols = (scenariosLength: number) => {
 
 function ScenariosDesktop({ scenarios }: { scenarios: Scenario[] }) {
   const { t } = useTranslation();
+  const activeProfile = useStore((state) => state.activeProfile);
   const treeClient = useStore((state) => state.treeClient);
   const cells: {
     dominant: React.ReactNode[];
@@ -65,6 +66,7 @@ function ScenariosDesktop({ scenarios }: { scenarios: Scenario[] }) {
         const [one, two, three] = treeClient.getVegetationList(
           projection,
           true,
+          activeProfile,
         );
         const content = getScenarioButtonContent(name, t);
         return {
@@ -150,6 +152,7 @@ function ScenariosDesktop({ scenarios }: { scenarios: Scenario[] }) {
 
 function ScenariosMobile({ scenarios }: { scenarios: Scenario[] }) {
   const { t } = useTranslation();
+  const activeProfile = useStore((state) => state.activeProfile);
   const treeClient = useStore((state) => state.treeClient);
 
   return (
@@ -161,6 +164,7 @@ function ScenariosMobile({ scenarios }: { scenarios: Scenario[] }) {
         const [one, two, three] = treeClient.getVegetationList(
           projection,
           true,
+          activeProfile,
         );
         const content = getScenarioButtonContent(name, t);
         return (
