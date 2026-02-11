@@ -5,15 +5,7 @@ const additionalInfoMapping: Record<number, string> = {
   2: "En cas de sol superficiel : recommandations TreeApp inadéquates",
   3: "Recommandations TreeApp inadéquates",
   4: "Si le sol est sensible au tassement, ne pas favoriser les essences suivantes: épicéa, sapin blanc, hêtre, érable sycomore, frêne et chêne pédonculé",
-<<<<<<< HEAD
-<<<<<<< HEAD
   5: "Si le sol est profond mais que la capacite de rétention d'eau est faible, ne pas favoriser les essences suivantes : épicea, sapin blanc, hêtre à confirmer",
-=======
-  5: "Si le sol est profond mais que la capacite de retent5: "Si le sol est profond mais que la capacite de rétention d'eau est faible, ne pas favoriser les essences suivantes : épicea, sapin blanc, hêtre à confirmer",
->>>>>>> 1b6ecd1 ([BATOOLW-189] change additional Info to projections)
-=======
-  5: "Si le sol est profond mais que la capacite de rétention d'eau est faible, ne pas favoriser les essences suivantes : épicea, sapin blanc, hêtre à confirmer",
->>>>>>> 013f85f (chore: fix typo)
   6: "Si la capacité de rétention d'eau est faible, ne pas favoriser les essences suivantes: épicea, sapin blanc, hêtre à  confirmer",
   7: "Si la capacité de rétention d'eau du sol est faible, ne pas favoriser les essences suivantes: épicéa, sapin blanc, hêtre à confirmer; si le sol est sensible au tassement, ne pas favoriser les essences suivantes: épicéa, sapin blanc, hêtre, érable sycomore, frêne et chêne pédonculé",
   8: "Ne pas favoriser les essences suivantes: épicéa, sapin blanc, hêtre, érable sycomore, frêne et chêne pédonculé",

@@ -37,21 +37,17 @@ function ReliefField() {
       "ORDER BY code DESC",
     );
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     const hasUnknown = reliefOpts.some((opt) => opt.code === "unknown");
     const shouldUseFirstAsDefault = !formLocation?.relief && !hasUnknown;
-
->>>>>>> 8f37c87 (fix: activate first item for relief field if non selected)
-=======
->>>>>>> f3ae9f5 (fix: use "unknown" as default value for secondary fields.)
     return (
-      reliefOpts.map((opt) => {
+      reliefOpts.map((opt, index) => {
         return {
+          // eslint-disable-next-line no-nested-ternary
           active: formLocation?.relief
             ? formLocation?.relief === opt.code
-            : opt.code === "unknown",
+            : shouldUseFirstAsDefault
+              ? index === 0
+              : opt.code === "unknown",
           label: opt[i18n.language as TreeAppLanguage],
           onClick: () => setFormLocation({ relief: opt.code }),
         };
