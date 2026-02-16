@@ -1,4 +1,4 @@
-import { AlignmentType, ImageRun, Paragraph, Table, TableRow } from "docx";
+import { AlignmentType, Paragraph, Table, TableRow } from "docx";
 
 import AttentionIcon from "@/components/icons/RecommendationAttention";
 import NegativeIcon from "@/components/icons/RecommendationNegative";
@@ -10,6 +10,7 @@ import getSortedTreeTypes from "../getSortedTreeTypes";
 
 import {
   cellIconPadding,
+  createIcon,
   getRecommendationTableCell,
   jsxToBlob,
   PAGE_WIDTH_DXA,
@@ -61,6 +62,11 @@ export const writeRecommendationTable = async (
   const neutralIcon = await jsxToBlob(<NeutralIcon color="#000000" />);
   const attentionIcon = await jsxToBlob(<AttentionIcon color="#000000" />);
 
+  const positiveRun = createIcon(positiveIcon);
+  const negativeRun = createIcon(negativeIcon);
+  const neutralRun = createIcon(neutralIcon);
+  const attentionRun = createIcon(attentionIcon);
+
   const rows = [
     new TableRow({
       children: [
@@ -68,16 +74,7 @@ export const writeRecommendationTable = async (
           [
             new Paragraph({
               alignment: AlignmentType.CENTER,
-              children: [
-                // @ts-expect-error Don't need fallback
-                new ImageRun({
-                  data: positiveIcon ?? new ArrayBuffer(0),
-                  transformation: {
-                    height: 25,
-                    width: 25,
-                  },
-                }),
-              ],
+              children: positiveRun ? [positiveRun] : [],
             }),
           ],
           cellIconPadding,
@@ -106,16 +103,7 @@ export const writeRecommendationTable = async (
           [
             new Paragraph({
               alignment: AlignmentType.CENTER,
-              children: [
-                // @ts-expect-error Don't need fallback
-                new ImageRun({
-                  data: neutralIcon ?? new ArrayBuffer(0),
-                  transformation: {
-                    height: 25,
-                    width: 25,
-                  },
-                }),
-              ],
+              children: neutralRun ? [neutralRun] : [],
             }),
           ],
           cellIconPadding,
@@ -144,16 +132,7 @@ export const writeRecommendationTable = async (
           [
             new Paragraph({
               alignment: AlignmentType.CENTER,
-              children: [
-                // @ts-expect-error Don't need fallback
-                new ImageRun({
-                  data: negativeIcon ?? new ArrayBuffer(0),
-                  transformation: {
-                    height: 25,
-                    width: 25,
-                  },
-                }),
-              ],
+              children: negativeRun ? [negativeRun] : [],
             }),
           ],
           cellIconPadding,
@@ -178,16 +157,7 @@ export const writeRecommendationTable = async (
             [
               new Paragraph({
                 alignment: AlignmentType.CENTER,
-                children: [
-                  // @ts-expect-error Don't need fallback
-                  new ImageRun({
-                    data: attentionIcon ?? new ArrayBuffer(0),
-                    transformation: {
-                      height: 25,
-                      width: 25,
-                    },
-                  }),
-                ],
+                children: attentionRun ? [attentionRun] : [],
               }),
             ],
             cellIconPadding,

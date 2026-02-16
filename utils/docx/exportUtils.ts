@@ -2,6 +2,7 @@ import {
   BorderStyle,
   ExternalHyperlink,
   HeadingLevel,
+  ImageRun,
   Paragraph,
   ShadingType,
   Table,
@@ -110,7 +111,7 @@ export const svgStringToBlob = async (string: string) => {
     fetch(uri)
       .then((res) => res.blob())
       .then((blob) => blob.arrayBuffer()),
-  )) as Buffer;
+  )) as ArrayBuffer;
 };
 
 export const svgUriToBlob = async (dataUri: string) =>
@@ -120,6 +121,18 @@ export const svgUriToBlob = async (dataUri: string) =>
 
 export const jsxToBlob = (jsx: React.ReactNode) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
+
+export const createIcon = (buffer: ArrayBuffer | null) =>
+  buffer
+    ? new ImageRun({
+        data: buffer,
+        transformation: {
+          height: 25,
+          width: 25,
+        },
+        type: "png",
+      })
+    : undefined;
 
 // Docx table helpers
 export const getPermalink = (text: string) =>
