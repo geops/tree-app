@@ -1,5 +1,5 @@
 import { cantonalMappings } from "@geops/tree-lib";
-import { ImageRun, Paragraph, Table, TextRun } from "docx";
+import { Paragraph, Table, TextRun } from "docx";
 
 import getTilleringTreeTypes from "@/components/ForestTypeModal/ForestTypeDescription/lu/getTilleringTreeTypes";
 import getImageHtml from "@/utils/getImageHtml";
@@ -8,7 +8,12 @@ import getReliefImageUrl from "@/utils/getReliefImageUrl";
 import Site from "../../../components/ForestTypeModal/ForestTypeDescription/lu/Site";
 import Tillering from "../../../components/ForestTypeModal/ForestTypeDescription/lu/Tillering";
 import TilleringSingle from "../../../components/ForestTypeModal/ForestTypeDescription/lu/TilleringSingle";
-import { getLocationTableRow, jsxToBlob, PAGE_WIDTH_DXA } from "../exportUtils";
+import {
+  createPng,
+  getLocationTableRow,
+  jsxToBlob,
+  PAGE_WIDTH_DXA,
+} from "../exportUtils";
 import { writeDataTable } from "../writeDataTable";
 
 import type { LuForestType } from "@geops/tree-lib/types";
@@ -23,8 +28,13 @@ const writeLocationTable = async (
   const tilleringHardwoodPng = await jsxToBlob(
     <TilleringSingle data={data.tilleringhardwood} />,
   );
+  const tilleringHardwoodImage = createPng(tilleringHardwoodPng, 225, 30);
   const tilleringPng = await jsxToBlob(<Tillering data={data.tillering} />);
-  const sitePng = await jsxToBlob(<Site data={data.expoandaspect} />);
+  const tilleringImage = createPng(
+    tilleringPng,
+    225,
+    getTilleringTreeTypes(data.tillering).length * 19 + 30,
+  );
   const imagePath = getReliefImageUrl(data.code, "lu", true);
   const imageHtml = imagePath && (await getImageHtml(imagePath));
   const imageBlob =
@@ -32,40 +42,32 @@ const writeLocationTable = async (
     (await fetch(imagePath)
       .then((response) => response.blob())
       .then((blob) => blob.arrayBuffer()));
+  const terrainImage = createPng(
+    imageBlob ? imageBlob : null,
+    (imageHtml as HTMLImageElement)?.width / 3,
+    (imageHtml as HTMLImageElement)?.height / 3,
+  );
+  const sitePng = await jsxToBlob(<Site data={data.expoandaspect} />);
+  const siteImage = createPng(sitePng, 120, 120);
+
+  console.log(
+    imageBlob ? imageBlob : null,
+    (imageHtml as HTMLImageElement)?.width / 3,
+    (imageHtml as HTMLImageElement)?.height / 3,
+  );
 
   const rows = [
     getLocationTableRow(t("lu.forestType.tilleringHardwood"), [
       new Paragraph({
-        children: [
-          tilleringHardwoodPng
-            ? // @ts-expect-error Don't need fallback
-              new ImageRun({
-                data: tilleringHardwoodPng,
-                transformation: {
-                  height: 30,
-                  width: 225,
-                },
-              })
-            : new TextRun("-"),
-        ],
+        children: tilleringHardwoodImage
+          ? [tilleringHardwoodImage]
+          : [new TextRun("-")],
       }),
     ]),
     getLocationTableRow(t("lu.forestType.tillering"), [
       new Paragraph(""),
       new Paragraph({
-        children: [
-          tilleringPng
-            ? // @ts-expect-error Don't need fallback
-              new ImageRun({
-                data: tilleringPng,
-                transformation: {
-                  height:
-                    getTilleringTreeTypes(data.tillering).length * 19 + 30,
-                  width: 225,
-                },
-              })
-            : new TextRun("-"),
-        ],
+        children: tilleringImage ? [tilleringImage] : [new TextRun("-")],
       }),
       new Paragraph(""),
     ]),
@@ -99,18 +101,7 @@ const writeLocationTable = async (
     ),
     getLocationTableRow(t("forestType.terrain"), [
       new Paragraph({
-        children: [
-          imageBlob
-            ? // @ts-expect-error Don't need fallback
-              new ImageRun({
-                data: imageBlob,
-                transformation: {
-                  height: (imageHtml as HTMLImageElement).height / 3,
-                  width: (imageHtml as HTMLImageElement).width / 3,
-                },
-              })
-            : new TextRun("-"),
-        ],
+        children: terrainImage ? [terrainImage] : [new TextRun("-")],
       }),
     ]),
     getLocationTableRow(
@@ -119,18 +110,7 @@ const writeLocationTable = async (
       )}`,
       [
         new Paragraph({
-          children: [
-            sitePng
-              ? // @ts-expect-error Don't need fallback
-                new ImageRun({
-                  data: sitePng,
-                  transformation: {
-                    height: 120,
-                    width: 120,
-                  },
-                })
-              : new TextRun("-"),
-          ],
+          children: siteImage ? [siteImage] : [new TextRun("-")],
         }),
       ],
     ),

@@ -122,13 +122,17 @@ export const svgUriToBlob = async (dataUri: string) =>
 export const jsxToBlob = (jsx: React.ReactNode) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
-export const createIcon = (buffer: ArrayBuffer | null) =>
+export const createPng = (
+  buffer: ArrayBuffer | null,
+  width = 25,
+  height = 25,
+) =>
   buffer
     ? new ImageRun({
         data: buffer,
         transformation: {
-          height: 25,
-          width: 25,
+          height,
+          width,
         },
         type: "png",
       })

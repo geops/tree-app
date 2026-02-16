@@ -10,7 +10,7 @@ import getSortedTreeTypes from "../getSortedTreeTypes";
 
 import {
   cellIconPadding,
-  createIcon,
+  createPng,
   getRecommendationTableCell,
   jsxToBlob,
   PAGE_WIDTH_DXA,
@@ -62,10 +62,10 @@ export const writeRecommendationTable = async (
   const neutralIcon = await jsxToBlob(<NeutralIcon color="#000000" />);
   const attentionIcon = await jsxToBlob(<AttentionIcon color="#000000" />);
 
-  const positiveRun = createIcon(positiveIcon);
-  const negativeRun = createIcon(negativeIcon);
-  const neutralRun = createIcon(neutralIcon);
-  const attentionRun = createIcon(attentionIcon);
+  const positiveRun = createPng(positiveIcon);
+  const negativeRun = createPng(negativeIcon);
+  const neutralRun = createPng(neutralIcon);
+  const attentionRun = createPng(attentionIcon);
 
   const rows = [
     new TableRow({
