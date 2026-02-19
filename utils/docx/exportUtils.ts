@@ -122,6 +122,13 @@ export const svgUriToBlob = async (dataUri: string) =>
 export const jsxToBlob = (jsx: React.ReactNode) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
+export const validateImage = (
+  blob: ArrayBuffer | null,
+  html: HTMLImageElement | null,
+) => {
+  return !!blob && !!html;
+};
+
 export const createPng = (
   buffer: ArrayBuffer | null | undefined,
   width = 25,

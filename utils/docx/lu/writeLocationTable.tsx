@@ -13,6 +13,7 @@ import {
   getLocationTableRow,
   jsxToBlob,
   PAGE_WIDTH_DXA,
+  validateImage,
 } from "../exportUtils";
 import { writeDataTable } from "../writeDataTable";
 
@@ -47,7 +48,9 @@ const writeLocationTable = async (
     : null;
   const imageWidth = terrainImageHtml ? terrainImageHtml.width / 3 : 0;
   const imageHeight = terrainImageHtml ? terrainImageHtml.height / 3 : 0;
-  const terrainImage = createPng(terrainImageBlob, imageWidth, imageHeight);
+  const terrainImage = validateImage(terrainImageBlob, terrainImageHtml)
+    ? createPng(terrainImageBlob, imageWidth, imageHeight)
+    : undefined;
 
   const sitePng = await jsxToBlob(<Site data={data.expoandaspect} />);
   const siteImage = createPng(sitePng, 120, 120);
