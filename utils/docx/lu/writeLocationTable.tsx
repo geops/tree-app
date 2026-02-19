@@ -36,25 +36,19 @@ const writeLocationTable = async (
     getTilleringTreeTypes(data.tillering).length * 19 + 30,
   );
   const imagePath = getReliefImageUrl(data.code, "lu", true);
-  const imageHtml = imagePath && (await getImageHtml(imagePath));
-  const imageBlob =
-    imagePath &&
-    (await fetch(imagePath)
-      .then((response) => response.blob())
-      .then((blob) => blob.arrayBuffer()));
+  const imageHtml = imagePath ? await getImageHtml(imagePath) : null;
+  const imageBlob = imagePath
+    ? await fetch(imagePath)
+        .then((response) => response.blob())
+        .then((blob) => blob.arrayBuffer())
+    : null;
   const terrainImage = createPng(
-    imageBlob ? imageBlob : null,
-    (imageHtml as HTMLImageElement)?.width / 3,
-    (imageHtml as HTMLImageElement)?.height / 3,
+    imageBlob,
+    (imageHtml?.width ?? 0) / 3,
+    (imageHtml?.height ?? 0) / 3,
   );
   const sitePng = await jsxToBlob(<Site data={data.expoandaspect} />);
   const siteImage = createPng(sitePng, 120, 120);
-
-  console.log(
-    imageBlob ? imageBlob : null,
-    (imageHtml as HTMLImageElement)?.width / 3,
-    (imageHtml as HTMLImageElement)?.height / 3,
-  );
 
   const rows = [
     getLocationTableRow(t("lu.forestType.tilleringHardwood"), [

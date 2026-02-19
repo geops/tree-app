@@ -123,7 +123,7 @@ export const jsxToBlob = (jsx: React.ReactNode) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
 
 export const createPng = (
-  buffer: ArrayBuffer | null,
+  buffer: ArrayBuffer | null | undefined,
   width = 25,
   height = 25,
 ) =>
