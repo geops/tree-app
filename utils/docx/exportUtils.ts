@@ -2,6 +2,7 @@ import {
   BorderStyle,
   ExternalHyperlink,
   HeadingLevel,
+  ImageRun,
   Paragraph,
   ShadingType,
   Table,
@@ -110,7 +111,7 @@ export const svgStringToBlob = async (string: string) => {
     fetch(uri)
       .then((res) => res.blob())
       .then((blob) => blob.arrayBuffer()),
-  )) as Buffer;
+  )) as ArrayBuffer;
 };
 
 export const svgUriToBlob = async (dataUri: string) =>
@@ -120,6 +121,29 @@ export const svgUriToBlob = async (dataUri: string) =>
 
 export const jsxToBlob = (jsx: React.ReactNode) =>
   isSvg(renderToString(jsx)) ? svgStringToBlob(renderToString(jsx)) : null;
+
+export const validateImage = (
+  blob: ArrayBuffer | null,
+  html: HTMLImageElement | null,
+) => {
+  return !!blob && !!html;
+};
+
+export const createPng = (
+  buffer: ArrayBuffer | null | undefined,
+  width = 25,
+  height = 25,
+) =>
+  buffer
+    ? new ImageRun({
+        data: buffer,
+        transformation: {
+          height,
+          width,
+        },
+        type: "png",
+      })
+    : undefined;
 
 // Docx table helpers
 export const getPermalink = (text: string) =>
