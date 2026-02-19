@@ -28,12 +28,12 @@ const writeLocationTable = async (
 ) => {
   const sitePng = await jsxToBlob(<Site data={data.expoandaspect} />);
   const imagePath = getReliefImageUrl(data.code, "bl");
-  const imageHtml = imagePath && (await getImageHtml(imagePath));
-  const imageBlob =
-    imagePath &&
-    (await fetch(imagePath)
-      .then((response) => response.blob())
-      .then((blob) => blob.arrayBuffer()));
+  const imageHtml = imagePath ? await getImageHtml(imagePath) : null;
+  const imageBlob = imagePath
+    ? await fetch(imagePath)
+        .then((response) => response.blob())
+        .then((blob) => blob.arrayBuffer())
+    : null;
   const transitions = getValidForestTypes<BlForestType>(data.transitions, "bl");
   const borderConfig = {
     color: "e0e1e2",
@@ -41,9 +41,9 @@ const writeLocationTable = async (
     style: BorderStyle.SINGLE,
   };
   const terrainImage = createPng(
-    imageBlob ? imageBlob : null,
-    (imageHtml as HTMLImageElement)?.width,
-    (imageHtml as HTMLImageElement)?.height,
+    imageBlob,
+    imageHtml?.width ?? 0,
+    imageHtml?.height ?? 0,
   );
   const slopeAndExpoImage = createPng(sitePng, 120, 120);
 
