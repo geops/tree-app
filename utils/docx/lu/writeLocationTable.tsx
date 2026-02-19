@@ -35,18 +35,20 @@ const writeLocationTable = async (
     225,
     getTilleringTreeTypes(data.tillering).length * 19 + 30,
   );
-  const imagePath = getReliefImageUrl(data.code, "lu", true);
-  const imageHtml = imagePath ? await getImageHtml(imagePath) : null;
-  const imageBlob = imagePath
-    ? await fetch(imagePath)
+
+  const terrainImagePath = getReliefImageUrl(data.code, "lu", true);
+  const terrainImageHtml = terrainImagePath
+    ? await getImageHtml(terrainImagePath)
+    : null;
+  const terrainImageBlob = terrainImagePath
+    ? await fetch(terrainImagePath)
         .then((response) => response.blob())
         .then((blob) => blob.arrayBuffer())
     : null;
-  const terrainImage = createPng(
-    imageBlob,
-    (imageHtml?.width ?? 0) / 3,
-    (imageHtml?.height ?? 0) / 3,
-  );
+  const imageWidth = terrainImageHtml ? terrainImageHtml.width / 3 : 0;
+  const imageHeight = terrainImageHtml ? terrainImageHtml.height / 3 : 0;
+  const terrainImage = createPng(terrainImageBlob, imageWidth, imageHeight);
+
   const sitePng = await jsxToBlob(<Site data={data.expoandaspect} />);
   const siteImage = createPng(sitePng, 120, 120);
 
