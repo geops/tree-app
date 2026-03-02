@@ -44,7 +44,7 @@ end;
 $$ language plpgsql;
 
 select create_treetype('nat_naistyp_art', 'export.treetype');
-select create_treetype('vd_nat_naistyp_art', 'export.vd_treetype');
+-- select create_treetype('vd_nat_naistyp_art', 'export.vd_treetype');
 
 drop table if exists export.forestecoregion;
 
@@ -289,7 +289,7 @@ end;
 $$ language plpgsql;
 
 select create_indicator('nat_naistyp_art', 'export.indicator');
-select create_indicator('vd_nat_naistyp_art', 'export.vd_indicator');
+-- select create_indicator('vd_nat_naistyp_art', 'export.vd_indicator');
 
 drop table if exists export.mosstype;
 
