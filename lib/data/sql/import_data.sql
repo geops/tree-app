@@ -1008,10 +1008,6 @@ SELECT NAISTYP_SORT, NAISTYP_C,
 FROM VD_NAT_NAISTYP_ART_STAGING
 WHERE update IS DISTINCT FROM 'delete';
 
-
->>>>>>> db33daf (chore: update and correct CSV data, update db)
-=======
->>>>>>> e5813d2 (chore: remove all VD specific treetype data and code)
 -- ########### PROJECTIONS ###########
 CREATE TABLE projections_import (
   forest_ecoregions TEXT, altitudinal_zone TEXT, 
