@@ -93,4 +93,4 @@ $$ LANGUAGE plpgsql;
 SELECT create_projections_export_table('projections', 'projections_import');
 
 -- Create the VD projections export table
-SELECT create_projections_export_table('vd_projections', 'vd_projections_import');
+-- SELECT create_projections_export_table('vd_projections', 'vd_projections_import');
