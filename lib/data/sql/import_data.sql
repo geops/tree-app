@@ -952,24 +952,24 @@ FROM
   '/data/profiles/so/standorttypen.csv' DELIMITER ';' CSV HEADER;
 
   -- Vaud
-CREATE TABLE vd_projections_import (
-  forest_ecoregions TEXT, altitudinal_zone TEXT, 
-  forest_type TEXT, slope TEXT, silver_fir_area TEXT, 
-  forest_ecoregions_specific TEXT, 
-  relief TEXT, additional TEXT, target_altitudinal_zone TEXT, 
-  target_forest_type TEXT, "update" TEXT
-);
-COPY vd_projections_import 
-FROM 
-  '/data/profiles/vd/projections.csv' DELIMITER ';' CSV HEADER;
+-- CREATE TABLE vd_projections_import (
+--   forest_ecoregions TEXT, altitudinal_zone TEXT, 
+--   forest_type TEXT, slope TEXT, silver_fir_area TEXT, 
+--   forest_ecoregions_specific TEXT, 
+--   relief TEXT, additional TEXT, target_altitudinal_zone TEXT, 
+--   target_forest_type TEXT, "update" TEXT
+-- );
+-- COPY vd_projections_import 
+-- FROM 
+--   '/data/profiles/vd/projections.csv' DELIMITER ';' CSV HEADER;
 
-UPDATE vd_projections_import 
-SET additional = 'tiefgründig' 
-WHERE lower(trim(additional)) = 'sol profond';
+-- UPDATE vd_projections_import 
+-- SET additional = 'tiefgründig' 
+-- WHERE lower(trim(additional)) = 'sol profond';
 
-UPDATE vd_projections_import 
-SET additional = 'flachgründig' 
-WHERE lower(trim(additional)) = 'sol superficiel';
+-- UPDATE vd_projections_import 
+-- SET additional = 'flachgründig' 
+-- WHERE lower(trim(additional)) = 'sol superficiel';
 
 -- CREATE TEMP TABLE VD_NAT_BAUM_COLLIN_STAGING (
 --   REGION TEXT,
