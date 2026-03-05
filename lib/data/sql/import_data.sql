@@ -1299,19 +1299,20 @@ SELECT
   );
 ----------------------------------------------
 -- Forest types FR
-CREATE TABLE "forest_types_fr" (gid serial,
-"fid" numeric,
-"assoc_tot_" varchar(254),
-"nais" varchar(254),
-"nais1" varchar(254),
-"nais2" varchar(254),
-"mo" numeric,
-"ue" numeric,
-"tahs" varchar(254),
-"tahsue" varchar(254),
-"hs_code" float8,
-"hsue_code" float8);
-
+CREATE TABLE "forest_types_fr" (
+  gid serial, 
+  "fid" float8,
+  "assoc_tot_" varchar(254),
+  "nais" varchar(254),
+  "nais1" varchar(254),
+  "nais2" varchar(254),
+  "mo" float8,
+  "ue" float8,
+  "tahs" varchar(254),
+  "tahsue" varchar(254),
+  "hs_code" int8,
+  "hsue_code" int8
+);
 ALTER TABLE 
   "forest_types_fr" 
 ADD 
@@ -1397,8 +1398,8 @@ SELECT
   ----------------------------------------------
 -- Forest types SZ
 CREATE TABLE "forest_types_sz" (
-  gid serial,
-  "fid" numeric,
+  gid serial, 
+  "fid" float8,
   "sz_einheit" varchar(80),
   "nais" varchar(80),
   "nais1" varchar(80),

@@ -76,3 +76,4 @@ lib/node_modules
 lib/data/export/*
 lib/build
 lib/.parcel-cache
+lib/data/data:start_log.txt
