@@ -8,7 +8,7 @@ function getRecommendation(
   future: boolean,
   sameAltitudinalZone?: boolean | undefined,
 ) {
-  const { treeClient } = useStore.getState();
+  const { activeProfile, treeClient } = useStore.getState();
 
   let projections;
   let result;
@@ -25,9 +25,19 @@ function getRecommendation(
 
   try {
     if ((projections && projections.length === 0) || sameAltitudinalZone) {
-      result = treeClient.recommend(location, [location], future);
+      result = treeClient.recommend(
+        location,
+        [location],
+        future,
+        activeProfile,
+      );
     } else {
-      result = treeClient.recommend(location, projections, future);
+      result = treeClient.recommend(
+        location,
+        projections,
+        future,
+        activeProfile,
+      );
     }
   } catch (error) {
     // eslint-disable-next-line no-console

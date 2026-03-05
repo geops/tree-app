@@ -16,7 +16,12 @@ import type { StateCreator } from "zustand";
 import type { Location } from "../index";
 import type { AppStore, ProjectionResult } from "../index";
 
-const triggerFields = ["mapLocation", "formLocation", "projectionMode"];
+const triggerFields = [
+  "activeProfile",
+  "mapLocation",
+  "formLocation",
+  "projectionMode",
+];
 
 function runProject() {
   return (create: StateCreator<AppStore>): StateCreator<AppStore> =>
@@ -45,7 +50,8 @@ function runProject() {
           // We run the projection when the location data changes and when the app loads
           if (
             triggerFields.some((field) => updatedFields.includes(field)) ||
-            isFirstRun
+            isFirstRun ||
+            prevState?.activeProfile !== get()?.activeProfile
           ) {
             const {
               activeProfile,
@@ -79,6 +85,10 @@ function runProject() {
 
             if (projectionMode === "m" && !!formLocation.additional) {
               location.additional = formLocation.additional;
+            }
+
+            if (projectionMode === "m" && !!formLocation.relief) {
+              location.relief = formLocation.relief;
             }
 
             if (
@@ -142,12 +152,22 @@ function runProject() {
                 } = mapLocation;
                 projectionResult.moderate = (
                   targetAZModerate
-                    ? treeClient.project(location, targetAZModerate)
+                    ? treeClient.project(
+                        location,
+                        targetAZModerate,
+                        undefined,
+                        activeProfile,
+                      )
                     : initialProjection
                 ) as ProjectResult;
                 projectionResult.extreme = (
                   targetAZExtreme
-                    ? treeClient.project(location, targetAZExtreme)
+                    ? treeClient.project(
+                        location,
+                        targetAZExtreme,
+                        undefined,
+                        activeProfile,
+                      )
                     : initialProjection
                 ) as ProjectResult;
               } else {
@@ -155,6 +175,8 @@ function runProject() {
                 projectionResult.form = treeClient.project(
                   location,
                   targetAZForm,
+                  undefined,
+                  activeProfile,
                 ) as ProjectResult;
               }
             } catch (error) {

@@ -1,5 +1,5 @@
 import { cantonalMappings } from "@geops/tree-lib";
-import { BorderStyle, ImageRun, Paragraph, Table, TextRun } from "docx";
+import { BorderStyle, Paragraph, Table, TextRun } from "docx";
 
 import Site from "@/components/ForestTypeModal/ForestTypeDescription/bl/Site";
 import getImageHtml from "@/utils/getImageHtml";
@@ -10,12 +10,16 @@ import {
   getTilleringTreeTypes,
   soilIconTranslator,
 } from "../../../components/ForestTypeModal/ForestTypeDescription/bl/utils";
-import { getLocationTableRow, jsxToBlob, PAGE_WIDTH_DXA } from "../exportUtils";
+import {
+  createPng,
+  getLocationTableRow,
+  jsxToBlob,
+  PAGE_WIDTH_DXA,
+  validateImage,
+} from "../exportUtils";
 import { writeDataTable } from "../writeDataTable";
 
 import type { BlForestType } from "@geops/tree-lib/types";
-
-// const { getImageHtml, getMapping, getReliefImageUrl } = utils();
 
 const vegetationMapping = cantonalMappings?.bl?.vegetation;
 
@@ -24,13 +28,26 @@ const writeLocationTable = async (
   t: (key: string) => string,
 ) => {
   const sitePng = await jsxToBlob(<Site data={data.expoandaspect} />);
-  const imagePath = getReliefImageUrl(data.code, "bl");
-  const imageHtml = imagePath && (await getImageHtml(imagePath));
-  const imageBlob =
-    imagePath &&
-    (await fetch(imagePath)
-      .then((response) => response.blob())
-      .then((blob) => blob.arrayBuffer()));
+
+  const terrainImagePath = getReliefImageUrl(data.code, "bl");
+  const terrainImageHtml = terrainImagePath
+    ? await getImageHtml(terrainImagePath)
+    : null;
+  const terrainImageBlob = terrainImagePath
+    ? await fetch(terrainImagePath)
+        .then((response) => response.blob())
+        .then((blob) => blob.arrayBuffer())
+    : null;
+  const terrainImage = validateImage(terrainImageBlob, terrainImageHtml)
+    ? createPng(
+        terrainImageBlob,
+        terrainImageHtml?.width ?? 0,
+        terrainImageHtml?.height ?? 0,
+      )
+    : undefined;
+
+  const slopeAndExpoImage = createPng(sitePng, 120, 120);
+
   const transitions = getValidForestTypes<BlForestType>(data.transitions, "bl");
   const borderConfig = {
     color: "e0e1e2",
@@ -110,34 +127,12 @@ const writeLocationTable = async (
     getLocationTableRow("Geologie", data.geology),
     getLocationTableRow(t("forestType.terrain"), [
       new Paragraph({
-        children: [
-          imageBlob
-            ? // @ts-expect-error Don't need fallback
-              new ImageRun({
-                data: imageBlob,
-                transformation: {
-                  height: (imageHtml as HTMLImageElement)?.height,
-                  width: (imageHtml as HTMLImageElement)?.width,
-                },
-              })
-            : new TextRun("-"),
-        ],
+        children: terrainImage ? [terrainImage] : [new TextRun("-")],
       }),
     ]),
     getLocationTableRow("Hangneigung & Exposition", [
       new Paragraph({
-        children: [
-          sitePng
-            ? // @ts-expect-error Don't need fallback
-              new ImageRun({
-                data: sitePng,
-                transformation: {
-                  height: 120,
-                  width: 120,
-                },
-              })
-            : new TextRun("-"),
-        ],
+        children: slopeAndExpoImage ? [slopeAndExpoImage] : [new TextRun("-")],
       }),
     ]),
     getLocationTableRow("Vegetation", data.vegetation),

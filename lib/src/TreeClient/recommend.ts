@@ -3,7 +3,7 @@ import intersection from "lodash.intersection";
 import union from "lodash.union";
 import xor from "lodash.xor";
 
-import { Location, ProjectProjection } from "../types";
+import { Location, ProjectProjection, TreeAppProfile } from "../types";
 import removeDuplicates from "../utils/removeDuplicates";
 
 import TreeClient from "./";
@@ -13,6 +13,7 @@ function recommend(
   location: Location,
   projections: Location[] | ProjectProjection[],
   future = false,
+  profile?: TreeAppProfile,
 ) {
   if (!location.forestType) {
     throw new Error("location.forestType is required");
@@ -23,9 +24,9 @@ function recommend(
   if (future && typeof future !== "boolean") {
     throw new Error(`expected boolean type for future flag`);
   }
-  const [today1, today2, today3, today4] = this.getVegetationList(location);
+  const [today1, today2, today3, today4] = this.getVegetationList(location, undefined, profile);
   const t123 = union(today1, today2, today3);
-  const p = projections.map((x) => this.getVegetationList(x));
+  const p = projections.map((x) => this.getVegetationList(x, undefined, profile));
   const p12 = p.map(([x1, x2]) => union(x1, x2));
   const p3 = p.map(([, , x3]) => x3);
   const p4 = p.map(([, , , x4]) => x4);

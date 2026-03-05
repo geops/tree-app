@@ -8,6 +8,7 @@ import type {
   AltitudinalZoneCode,
   ForestEcoregionCode,
   Location as FormLocation,
+  ReliefCode,
   SilverFirAreaCode,
   TreeAppProfile,
 } from "@geops/tree-lib/types";
@@ -69,9 +70,17 @@ if (getInitialValue<ForestEcoregionCode>("flfe")) {
     getInitialValue<ForestEcoregionCode>("flfe");
 }
 
+if (getInitialValue<string>("fla")) {
+  initialFormLocation.additional = getInitialValue<string>("fla");
+}
+
 if (getInitialValue<SilverFirAreaCode>("flsfa")) {
   initialFormLocation.silverFirArea =
     getInitialValue<SilverFirAreaCode>("flsfa");
+}
+
+if (getInitialValue<ReliefCode>("flr")) {
+  initialFormLocation.relief = getInitialValue<ReliefCode>("flr");
 }
 
 if (getInitialValue<string>("flft")) {

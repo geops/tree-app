@@ -75,7 +75,6 @@ class TreeClient {
     this.getAltitudinalZones = this.getAltitudinalZones.bind(this);
     this.getProjections = this.getProjections.bind(this);
     this.project = project.bind(this);
-    this.reduceProjections = reduceProjections.bind(this);
     this.locate = locate.bind(this);
     this.getProjectionOptions = this.getProjectionOptions.bind(this);
     this.getField = this.getField.bind(this);
@@ -156,12 +155,16 @@ class TreeClient {
     return projections;
   }
 
-  public getRecommendations(forestType: string): number[][] {
+  public getRecommendations(forestType: string, profile?: TreeAppProfile): number[][] {
+    const recommendationTableName = this.executeQuery<{ name: string }>(`SELECT name 
+      FROM sqlite_master 
+      WHERE type='table' AND name='${profile}_recommendations';`)?.data?.[0]?.name || "recommendations";
+
     const emptyLists = [[], [], [], []];
     const { data: lists } = this.executeQuery<Recommendation>(
-      `select * from recommendations where foresttype = '${forestType}'`,
+      `select * from ${recommendationTableName} where foresttype = '${forestType}'`,
     );
-    return [...(lists?.[0].recommendations ?? emptyLists)];
+    return [...(lists?.[0]?.recommendations ?? emptyLists)];
   }
 
   public getSilverFirAreaByCode(
@@ -215,6 +218,7 @@ class TreeClient {
   public getVegetationList(
     location: { forestType?: string; transitionForestType?: string } = {},
     mergeLevel4 = false,
+    profile?: TreeAppProfile,
   ) {
     const { forestType, transitionForestType } = location;
     if (!forestType) {
@@ -225,7 +229,7 @@ class TreeClient {
       throw new Error(`${forestType} is not valid`);
     }
 
-    const lists = this.getRecommendations(forestType);
+    const lists = this.getRecommendations(forestType, profile);
 
     if (transitionForestType) {
       if (!this.getForestTypeByCode<ForestType>(forestType)) {
@@ -233,7 +237,7 @@ class TreeClient {
       }
 
       const [lists0, lists1, lists2, lists3] = lists;
-      const transitionLists = this.getRecommendations(transitionForestType);
+      const transitionLists = this.getRecommendations(transitionForestType, profile);
 
       lists[0] = union(
         intersection(lists0, transitionLists[0]),

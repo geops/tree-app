@@ -7,6 +7,7 @@ import ForestEcoregionField from "../ForestEcoregionField";
 import AdditionalField from "./AdditionalField";
 import CantonalTransitionField from "./CantonalTransitionForestType";
 import ForestTypeField from "./ForestTypeField";
+import ReliefField from "./ReliefField";
 import SilverFirAreaField from "./SilverFirAreaField";
 import SlopeField from "./SlopeField";
 import TargetAltitudinalZoneField from "./TargetAltitudinalZoneField";
@@ -25,6 +26,7 @@ function ProjectionForm() {
       <SlopeField />
       <AdditionalField />
       <SilverFirAreaField />
+      <ReliefField />
       <TargetAltitudinalZoneField />
       <CantonalTransitionField />
     </Fieldset>
