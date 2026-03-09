@@ -1400,7 +1400,7 @@ SELECT
 CREATE TABLE "forest_types_sz" (
   gid serial, 
   "fid" float8,
-  "sz_einheit" varchar(80),
+  "sz einheit" varchar(80),
   "nais" varchar(80),
   "nais1" varchar(80),
   "nais2" varchar(80),
