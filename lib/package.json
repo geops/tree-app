@@ -18,10 +18,14 @@
     "data:treetypes:deploy": "vercel deploy --cwd ./data/treetypes",
     "data:spatial:export": "cd data && docker compose exec db sh -c '/data/spatial/2-export.sh'",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "data:spatial:tile": "cd data && docker compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
 =======
     "data:spatial:tile": "cd data && HOST_UID=${SUDO_UID:-$(id -u)} HOST_GID=${SUDO_GID:-$(id -g)} docker compose exec -u ${HOST_UID}:${HOST_GID} tippecanoe sh -c '/data/spatial/3-tile.sh'",
 >>>>>>> 80e6c86 (chore: update maps.geo.admin import urls, adjust some scripts)
+=======
+    "data:spatial:tile": "cd data && docker compose exec tippecanoe sh -c '/data/spatial/3-tile.sh'",
+>>>>>>> 68dfa9b (chore: clean)
     "data:spatial:fonts": "bash ./data/spatial/4-fonts.sh",
     "data:spatial:deploy": "cd data/spatial/tree-app-tiles && pnpm install && pnpm build && vercel deploy --cwd .",
     "data:spatial:deploy:local": "cd data/spatial/tree-app-tiles && pnpm install && pnpm build && node dist/server.js",
