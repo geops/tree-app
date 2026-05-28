@@ -1,4 +1,7 @@
 .vercel
 node_modules
-tiles/*
+tiles/tree
+tiles/fonts
+tiles/tiles.txt
 dist
+.env*
