@@ -45,9 +45,12 @@ $$ language plpgsql;
 
 select create_treetype('nat_naistyp_art', 'export.treetype');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 select create_treetype('vd_nat_naistyp_art', 'export.vd_treetype');
 >>>>>>> 83f1de6 (chore: create all VD types tables)
+=======
+>>>>>>> e5813d2 (chore: remove all VD specific treetype data and code)
 
 drop table if exists export.forestecoregion;
 
@@ -293,9 +296,12 @@ $$ language plpgsql;
 
 select create_indicator('nat_naistyp_art', 'export.indicator');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 select create_indicator('vd_nat_naistyp_art', 'export.vd_indicator');
 >>>>>>> 83f1de6 (chore: create all VD types tables)
+=======
+>>>>>>> e5813d2 (chore: remove all VD specific treetype data and code)
 
 drop table if exists export.mosstype;
 

@@ -972,6 +972,7 @@ SET additional = 'flachgründig'
 WHERE lower(trim(additional)) = 'sol superficiel';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 CREATE TEMP TABLE VD_NAT_BAUM_COLLIN_STAGING (
   REGION TEXT,
@@ -1009,6 +1010,8 @@ WHERE update IS DISTINCT FROM 'delete';
 
 
 >>>>>>> db33daf (chore: update and correct CSV data, update db)
+=======
+>>>>>>> e5813d2 (chore: remove all VD specific treetype data and code)
 -- ########### PROJECTIONS ###########
 CREATE TABLE projections_import (
   forest_ecoregions TEXT, altitudinal_zone TEXT, 
