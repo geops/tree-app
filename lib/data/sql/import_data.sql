@@ -971,9 +971,6 @@ UPDATE vd_projections_import
 SET additional = 'flachgründig' 
 WHERE lower(trim(additional)) = 'sol superficiel';
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 CREATE TEMP TABLE VD_NAT_BAUM_COLLIN_STAGING (
   REGION TEXT,
   NAISTYP_SORT TEXT,

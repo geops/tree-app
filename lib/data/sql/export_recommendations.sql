@@ -76,4 +76,3 @@ end;
 $$ language plpgsql;
 
 select create_recommendations('nat_naistyp_art', 'nat_baum_collin', 'export.recommendations');
-
