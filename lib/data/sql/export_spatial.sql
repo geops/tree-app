@@ -141,6 +141,17 @@ WITH altitudinal_zones_cantonal AS
                     ELSE hs_code::text || '(' || hsue_code::text || ')'
                   END AS code,
                   hs_code::text as code_style
+              FROM forest_types_tg
+                WHERE hs_code IS NOT NULL and geom is not null
+                GROUP BY hs_code, hsue_code)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  CASE hsue_code is null
+                    WHEN TRUE THEN hs_code::text
+                    ELSE hs_code::text || '(' || hsue_code::text || ')'
+                  END AS code,
+                  hs_code::text as code_style
               FROM forest_types_fr
                 WHERE hs_code IS NOT NULL and geom is not null
                 GROUP BY hs_code, hsue_code)
