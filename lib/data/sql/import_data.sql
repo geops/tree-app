@@ -1135,8 +1135,27 @@ SELECT
 CREATE TABLE "forest_types_tg" (
   gid serial, 
   "fid" numeric, 
+  "OBJECTID_1" numeric,
+  "objectid" numeric,
+  "reviernr" numeric,
+  "standortei" numeric,
+  "befahrbark" numeric,
+  "text" varchar(254),
+  "laubholzan" numeric,
+  "g1" numeric,
+  "g2" numeric,
+  "typ" numeric,
+  "ndhant" numeric,
+  "ndh_2050" numeric,
+  "zusatz" varchar(254),
+  "wuechsigk" numeric,
+  "Shape_Area" numeric,
   "tgneu" varchar(50), 
-  "nais" varchar(50)
+  "nais" varchar(50),
+  "Hoehenstufe" varchar(50),
+  "tahsue" varchar(50),
+  "hs_code" int4,
+  "hsue_code" int4
 );
 ALTER TABLE 
   "forest_types_tg" 

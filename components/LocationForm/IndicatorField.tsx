@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { TreeAppLanguage } from "@/i18n/i18next";
 import useStore from "@/store";
+import { getTypeOptions } from "@/utils/getTypeOptions";
 
 import LatinSwitcher from "../LatinSwitcher";
 import Dropdown from "../ui/Dropdown";
@@ -20,24 +21,18 @@ function IndicatorField() {
   const latinActive = useStore((state) => state.latinActive);
 
   const options = useMemo(() => {
-    if (!opts?.indicator?.length) return [];
-    const indicators = treeClient.getTypes<TranslatedTypeRecordLatin>(
-      "indicator",
-      ["code", "la", i18n.language],
-      opts?.indicator?.length
-        ? { code: `IN (${opts.indicator.map((ind) => `${ind}`).join(", ")})` }
-        : undefined,
-    );
-
-    return (
-      indicators
-        .filter((ind) => opts.indicator?.includes(ind.code))
-        .map((ind) => ({
-          filterValue: `${ind.la} ${ind[i18n.language as TreeAppLanguage]}`,
-          label: latinActive ? ind.la : ind[i18n.language as TreeAppLanguage],
-          value: ind.code,
-        })) ?? []
-    );
+    return getTypeOptions<TranslatedTypeRecordLatin, DropdownOption>({
+      codes: opts?.indicator ?? [],
+      columns: ["code", "la", i18n.language],
+      mapOption: (ind) => ({
+        filterValue: `${ind.la} ${ind[i18n.language as TreeAppLanguage]}`,
+        label: latinActive ? ind.la : ind[i18n.language as TreeAppLanguage],
+        value: ind.code,
+      }),
+      quoteCodes: false,
+      treeClient,
+      type: "indicator",
+    });
   }, [opts?.indicator, i18n.language, treeClient, latinActive]);
 
   return (

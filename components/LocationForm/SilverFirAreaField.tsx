@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { TreeAppLanguage } from "@/i18n/i18next";
 import useStore from "@/store";
+import { getTypeOptions } from "@/utils/getTypeOptions";
 
 import Dropdown from "../ui/Dropdown";
 import Input from "../ui/Input";
@@ -23,24 +24,16 @@ function SilverFirAreaField() {
 
   const options = useMemo(() => {
     if (projectionMode === "m" || !opts?.silverFirArea?.length) return [];
-    const silverFirAreas = treeClient.getTypes<SilverFirArea>(
-      "silverfirarea",
-      ["code", i18n.language],
-      opts?.silverFirArea?.length
-        ? {
-            code: `IN (${opts.silverFirArea.map((sfa) => `'${sfa}'`).join(", ")})`,
-          }
-        : undefined,
-    );
-
-    return (
-      silverFirAreas
-        .filter((sfa) => opts.silverFirArea?.includes(sfa.code))
-        .map((sfa) => ({
-          label: sfa[i18n.language as TreeAppLanguage],
-          value: sfa.code,
-        })) ?? []
-    );
+    return getTypeOptions<SilverFirArea, DropdownOption>({
+      codes: opts.silverFirArea,
+      columns: ["code", i18n.language],
+      mapOption: (sfa) => ({
+        label: sfa[i18n.language as TreeAppLanguage],
+        value: sfa.code,
+      }),
+      treeClient,
+      type: "silverfirarea",
+    });
   }, [opts?.silverFirArea, i18n.language, treeClient, projectionMode]);
 
   if (projectionMode === "m") {
