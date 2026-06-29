@@ -31,7 +31,7 @@
     "lodash.get": "4.4.2",
     "lodash.intersection": "4.4.0",
     "maplibre-gl": "4.4.1",
-    "next": "15.5.10",
+    "next": "15.5.18",
     "ol": "10.0.0",
     "prisma": "5.19.0",
     "proj4": "2.12.1",
@@ -45,10 +45,10 @@
     "save-svg-as-png": "1.4.17",
     "serwist": "9.2.1",
     "sql.js": "1.11.0",
+    "url-loader": "4.1.1",
+    "uuid": "14.0.0",
     "tailwindcss": "3.4.1",
     "typescript": "5.6.3",
-    "url-loader": "4.1.1",
-    "uuid": "10.0.0",
     "zustand": "5.0.0-rc.2"
   },
   "devDependencies": {
