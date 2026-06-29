@@ -16,7 +16,6 @@ FOLDERS=(
   "$SCRIPT_DIR/forest_types_sh"
   "$SCRIPT_DIR/forest_types_so"
   "$SCRIPT_DIR/forest_types_sz"
-  "$SCRIPT_DIR/forest_types_union"
   "$SCRIPT_DIR/forest_types_vd"
   "$SCRIPT_DIR/forest_types_zh_2"
   "$SCRIPT_DIR/forest_types_zh"

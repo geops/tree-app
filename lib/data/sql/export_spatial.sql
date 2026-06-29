@@ -472,7 +472,7 @@ delete from forest_types_ar_gen where st_area(geom) < 2000;
 CREATE OR REPLACE VIEW forest_types_union_export AS
 SELECT ST_Transform(ST_Union(geom), 3857) AS geom
 FROM (
-  SELECT (ST_Dump(ST_MakeValid(geom))).geom AS geom FROM forest_types_tg_gen
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_tg_gen
   UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_fl_gen
   UNION ALL
