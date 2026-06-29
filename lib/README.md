@@ -4,7 +4,7 @@ This library provides tree recommendations for different climate change scenario
 
 ## Data
 
-Data for tree type projections is provided as a [CSV file](./data/projections.csv) and needs to be converted into JSON to be usable by the library.
+Data for tree type projections is provided as a [CSV file](./data/projections.csv) and needs to be converted into an sqlite database to be usable by the library.
 
 1. Install NodeJS, pnpm, vercel CLI and Docker Compose.
 2. Install dependencies: `pnpm install`
