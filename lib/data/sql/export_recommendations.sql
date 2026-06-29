@@ -75,13 +75,4 @@ begin
 end;
 $$ language plpgsql;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 select create_recommendations('nat_naistyp_art', 'nat_baum_collin', 'export.recommendations');
-=======
-select create_recommendations('nat_naistyp_art', 'nat_baum_collin', 'export.recommendations');
-select create_recommendations('vd_nat_naistyp_art', 'vd_nat_baum_collin', 'export.vd_recommendations');
->>>>>>> 83f1de6 (chore: create all VD types tables)
-=======
-select create_recommendations('nat_naistyp_art', 'nat_baum_collin', 'export.recommendations');
->>>>>>> e5813d2 (chore: remove all VD specific treetype data and code)
