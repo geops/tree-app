@@ -3,7 +3,7 @@ import { Button as HuiButton } from "@headlessui/react";
 import type { ComponentPropsWithoutRef } from "react";
 import type { ReactNode } from "react";
 
-interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
+export interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
   children: ReactNode;
   className?: string;
   variant?: "outlined" | "primary" | "secondary";

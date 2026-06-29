@@ -1,13 +1,12 @@
-import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
 
-import Button from "../ui/Button";
 import Message from "../ui/Message";
 import InfoModal from "../ui/Modal";
 
 import Ecogram from "./Ecogram";
+import ForestTypeButton from "./ForestTypeButton";
 
 import type { ForestType, TreeLocationGroup } from "@geops/tree-lib/types";
 
@@ -22,12 +21,10 @@ const otherForestTypeGroups: TreeLocationGroup[] = [
 
 function LocationResult() {
   const { i18n, t } = useTranslation();
-  const router = useRouter();
   const location = useStore((state) => state.location);
   const formLocation = useStore((state) => state.formLocation);
   const projectionMode = useStore((state) => state.projectionMode);
   const treeClient = useStore((state) => state.treeClient);
-  const setFormLocation = useStore((state) => state.setFormLocation);
   const { ecogram, forestTypes } = useStore((state) => state.locationResult);
   console.log(formLocation);
 
@@ -88,25 +85,19 @@ function LocationResult() {
                         ftCode,
                         ["code", i18n.language as TreeAppLanguage],
                       );
-                      const onClick = () => {
-                        setFormLocation({ forestType: ftCode });
-                        void router.push(
-                          `/projection${window.location.search}`,
-                        );
-                      };
                       return (
                         <li key={ftCode}>
-                          <Button
+                          <ForestTypeButton
                             className="grid grid-cols-[auto,auto,auto] gap-2 text-left"
+                            code={ftCode}
                             disabled={!hasRequiredFields}
-                            onClick={onClick}
                           >
                             <div>{ftCode}</div>
                             <div>-</div>
                             <div>
                               {ftInfo?.[i18n.language as TreeAppLanguage]}
                             </div>
-                          </Button>
+                          </ForestTypeButton>
                         </li>
                       );
                     })}
