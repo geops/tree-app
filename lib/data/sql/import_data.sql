@@ -971,6 +971,40 @@ UPDATE vd_projections_import
 SET additional = 'flachgründig' 
 WHERE lower(trim(additional)) = 'sol superficiel';
 
+CREATE TEMP TABLE VD_NAT_BAUM_COLLIN_STAGING (
+  REGION TEXT,
+  NAISTYP_SORT TEXT,
+  NAISTYP TEXT,
+  SISF_NR TEXT,
+  VORH TEXT,
+  QUELLE_BA TEXT,
+  ART TEXT,
+  "update" TEXT
+);
+COPY VD_NAT_BAUM_COLLIN_STAGING
+FROM '/data/profiles/vd/VD_NAT_BAUM_COLLIN.csv' DELIMITER ';'
+CSV HEADER;
+
+CREATE TABLE VD_NAT_BAUM_COLLIN AS
+SELECT REGION, NAISTYP_SORT, NAISTYP, SISF_NR, VORH, QUELLE_BA
+FROM VD_NAT_BAUM_COLLIN_STAGING
+WHERE update IS DISTINCT FROM 'delete';
+
+CREATE TEMP TABLE VD_NAT_NAISTYP_ART_STAGING (
+  NAISTYP_SORT TEXT, NAISTYP_C TEXT, 
+  ART TEXT, SISF_NR TEXT, VORH TEXT,
+  "update" TEXT
+);
+COPY VD_NAT_NAISTYP_ART_STAGING 
+FROM 
+  '/data/profiles/vd/VD_NAT_NAISTYP_ART.csv' DELIMITER ';' CSV HEADER;
+
+CREATE TABLE VD_NAT_NAISTYP_ART AS
+SELECT NAISTYP_SORT, NAISTYP_C, 
+  ART, SISF_NR, VORH
+FROM VD_NAT_NAISTYP_ART_STAGING
+WHERE update IS DISTINCT FROM 'delete';
+
 -- ########### PROJECTIONS ###########
 CREATE TABLE projections_import (
   forest_ecoregions TEXT, altitudinal_zone TEXT, 
@@ -1135,8 +1169,27 @@ SELECT
 CREATE TABLE "forest_types_tg" (
   gid serial, 
   "fid" numeric, 
+  "OBJECTID_1" numeric,
+  "objectid" numeric,
+  "reviernr" numeric,
+  "standortei" numeric,
+  "befahrbark" numeric,
+  "text" varchar(254),
+  "laubholzan" numeric,
+  "g1" numeric,
+  "g2" numeric,
+  "typ" numeric,
+  "ndhant" numeric,
+  "ndh_2050" numeric,
+  "zusatz" varchar(254),
+  "wuechsigk" numeric,
+  "Shape_Area" numeric,
   "tgneu" varchar(50), 
-  "nais" varchar(50)
+  "nais" varchar(50),
+  "Hoehenstufe" varchar(50),
+  "tahsue" varchar(50),
+  "hs_code" int4,
+  "hsue_code" int4
 );
 ALTER TABLE 
   "forest_types_tg" 
