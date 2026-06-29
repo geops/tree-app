@@ -28,7 +28,7 @@
 >>>>>>> 68dfa9b (chore: clean)
     "data:spatial:fonts": "bash ./data/spatial/4-fonts.sh",
     "data:spatial:deploy": "cd data/spatial/tree-app-tiles && pnpm install && pnpm build && vercel deploy --cwd .",
-    "data:spatial:deploy:local": "cd data/spatial/tree-app-tiles && pnpm install && pnpm build && node dist/server.js",
+    "data:spatial:deploy:local": "cd data/spatial/tree-app-tiles && pnpm install && pnpm build && node dist/local.js",
     "data:export:csv": "node --experimental-json-modules export/src/export_csv.mjs",
     "doc:build": "documentation build src/** --format html --output doc --config documentation.yml",
     "doc:serve": "documentation serve --config documentation.yml --watch src/**",
