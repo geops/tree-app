@@ -23,15 +23,27 @@ const otherForestTypeGroups: TreeLocationGroup[] = [
 function LocationResult() {
   const { i18n, t } = useTranslation();
   const router = useRouter();
+  const location = useStore((state) => state.location);
   const formLocation = useStore((state) => state.formLocation);
+  const projectionMode = useStore((state) => state.projectionMode);
   const treeClient = useStore((state) => state.treeClient);
   const setFormLocation = useStore((state) => state.setFormLocation);
   const { ecogram, forestTypes } = useStore((state) => state.locationResult);
+  console.log(formLocation);
+
   const hasMainGroup =
-    !formLocation.groups || formLocation.groups.includes("main");
+    !formLocation.groups || formLocation.groups?.includes("main");
   const hasOtherGroup =
     !formLocation.groups ||
-    formLocation.groups.filter((group) => group !== "main").length > 0;
+    formLocation.groups.every((group) => group !== "main");
+  const hasRequiredFields =
+    projectionMode === "m"
+      ? !!(location.altitudinalZone && location.forestEcoregion)
+      : !!(formLocation.altitudinalZone && formLocation.forestEcoregion);
+  const requirementsMessage =
+    projectionMode === "m"
+      ? "projection.missingLocation"
+      : "location.selectAzAndEcoregion";
 
   return forestTypes ? (
     <div className="px-5">
@@ -61,6 +73,9 @@ function LocationResult() {
               {t("location.otherResultHelp")}
             </InfoModal>
           </div>
+          {!hasRequiredFields && (
+            <Message className="mb-2">{t(requirementsMessage)}</Message>
+          )}
           <div className="flex flex-col gap-4">
             {otherForestTypeGroups
               .filter((group) => forestTypes[group].length > 0)
@@ -83,6 +98,7 @@ function LocationResult() {
                         <li key={ftCode}>
                           <Button
                             className="grid grid-cols-[auto,auto,auto] gap-2 text-left"
+                            disabled={!hasRequiredFields}
                             onClick={onClick}
                           >
                             <div>{ftCode}</div>
