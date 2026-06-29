@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
+import { getTypeOptions } from "@/utils/getTypeOptions";
 
 import Dropdown, {
   DROPDOWN_CLASSNAMES,
@@ -41,32 +42,24 @@ function ForestTypeField({ isTransition = false, ...props }: FtfProps) {
   }, [ftOpts, isTransition]);
 
   const options = useMemo(() => {
-    if (!forestTypeOptions?.length) return [];
-    const forestTypes = treeClient.getTypes<ForestType>(
-      "foresttype",
-      ["code", i18n.language],
-      forestTypeOptions?.length
-        ? {
-            code: `IN (${forestTypeOptions.map((ft) => `'${ft}'`).join(", ")})`,
-          }
-        : undefined,
-    );
-    return (
-      forestTypes
-        .filter((ft) => forestTypeOptions?.includes(ft.code))
-        .map((ft) => ({
-          label: (
-            <div className="grid grid-cols-[min-content,20px,auto] items-center">
-              <span className="text-center">{ft.code}</span>
-              <span className="text-center">-</span>
-              <span className="text-left">
-                {ft[i18n.language as TreeAppLanguage]}
-              </span>
-            </div>
-          ),
-          value: ft.code,
-        })) ?? []
-    );
+    return getTypeOptions<ForestType, DropdownOption>({
+      codes: forestTypeOptions ?? [],
+      columns: ["code", i18n.language],
+      mapOption: (ft) => ({
+        label: (
+          <div className="grid grid-cols-[min-content,20px,auto] items-center">
+            <span className="text-center">{ft.code}</span>
+            <span className="text-center">-</span>
+            <span className="text-left">
+              {ft[i18n.language as TreeAppLanguage]}
+            </span>
+          </div>
+        ),
+        value: ft.code,
+      }),
+      treeClient,
+      type: "foresttype",
+    });
   }, [forestTypeOptions, treeClient, i18n.language]);
 
   if (!forestTypeOptions?.length) return null;
