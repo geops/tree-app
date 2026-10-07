@@ -112,8 +112,14 @@ function project(
 
   this.projectDepth -= 1;
   if (this.projectDepth === 0 && this.queryLog && this.queryLogEntries.length) {
-    console.log("QUERY LOG", this.queryLogEntries);
+    const entries = this.queryLogEntries;
     this.queryLogEntries = [];
+    // Log a single plain string instead of an array: printing an array of many
+    // (long) query strings makes devtools build an expandable preview per item,
+    // which is what was actually causing the long delay, not the scheduling.
+    console.log(
+      `QUERY LOG (${entries.length} queries):\n${entries.join("\n")}`,
+    );
   }
 
   return result;
