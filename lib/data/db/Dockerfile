@@ -5,7 +5,10 @@ ENV POSTGIS_MAJOR 3
 
 # Install JRE and PostGIS
 RUN apt-get update && \
-    apt-get install -y openjdk-17-jre postgis postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR && \
+    apt-get install -y \
+    default-jre \
+    postgis \
+    postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR && \
     rm -rf /var/lib/apt/lists/*
 
 # Set up a default database with PostGIS enabled

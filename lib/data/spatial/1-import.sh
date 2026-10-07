@@ -28,20 +28,26 @@ _import () {
 
     if [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ] && [ ! -f "/data/spatial/${TARGET}/${ZIPFILE}.gpkg" ]; then
         echo "Downloading ${TARGET} ..."
-        cd /data/spatial
-        wget --no-check-certificate "${URL}" -O "${TARGET}.zip"
-        7z x -aoa -o"${TARGET}" "${TARGET}.zip"
-        cd ${TARGET}
+        mkdir -p /data/spatial/${TARGET}
 
-        if [[ -n "$ZIPFILE" ]]; then
-            if [ -f "/data/spatial/${TARGET}/${ZIPFILE}/${SHPFILE}.shp" ]; then
-                mv ${ZIPFILE}/${SHPFILE}.* .
-            else
-                7z x -aoa -o"." "${ZIPFILE}.zip"
-                rm "${ZIPFILE}.zip"
+        if [[ "$URL" == *.gpkg ]]; then
+            wget --no-check-certificate "${URL}" -O "/data/spatial/${TARGET}/${ZIPFILE}.gpkg"
+        else
+            cd /data/spatial
+            wget --no-check-certificate "${URL}" -O "${TARGET}.zip"
+            7z x -aoa -o"${TARGET}" "${TARGET}.zip"
+            cd ${TARGET}
+
+            if [[ -n "$ZIPFILE" ]]; then
+                if [ -f "/data/spatial/${TARGET}/${ZIPFILE}/${SHPFILE}.shp" ]; then
+                    mv ${ZIPFILE}/${SHPFILE}.* .
+                else
+                    7z x -aoa -o"." "${ZIPFILE}.zip"
+                    rm "${ZIPFILE}.zip"
+                fi
             fi
+            rename "s/${SHPFILE}/${TARGET}/" ${SHPFILE}.*
         fi
-        rename "s/${SHPFILE}/${TARGET}/" ${SHPFILE}.*
     else
         echo "$TARGET already downloaded! Will be reused ..."
     fi
@@ -62,15 +68,15 @@ _import () {
 
 start=`date +%s`
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_1975/data.zip" "altitudinal_zones_1995" "vegetationshoehenstufen_1975"
+_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_1975/wald-vegetationshoehenstufen_1975/wald-vegetationshoehenstufen_1975_2056.gpkg" "altitudinal_zones_1995" "vegetationshoehenstufen_1975"
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_trocken/data.zip" "altitudinal_zones_2085_dry" "vegetationshoehenstufen_2085_trocken"
+_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_trocken/wald-vegetationshoehenstufen_2085_trocken/wald-vegetationshoehenstufen_2085_trocken_2056.gpkg" "altitudinal_zones_2085_dry" "vegetationshoehenstufen_2085_trocken"
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_weniger_trocken/data.zip" "altitudinal_zones_2085_less_dry" "vegetationshoehenstufen_2085_weniger_trocken"
+_import "https://data.geo.admin.ch/ch.bafu.wald-vegetationshoehenstufen_2085_weniger_trocken/wald-vegetationshoehenstufen_2085_weniger_trocken/wald-vegetationshoehenstufen_2085_weniger_trocken_2056.gpkg" "altitudinal_zones_2085_less_dry" "vegetationshoehenstufen_2085_weniger_trocken"
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/data.zip" "forest_ecoregions" "Waldstandortsregionen" "Waldstandortsregionen"
+_import "https://data.geo.admin.ch/ch.bafu.wald-standortsregionen/wald-standortsregionen/wald-standortsregionen_2056.shp.zip" "forest_ecoregions" "Waldstandortsregionen" "Waldstandortsregionen"
 
-_import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/data.zip" "silver_fir_areas" "Tannenareale" "Tannenareale"
+_import "https://data.geo.admin.ch/ch.bafu.wald-tannenareale/wald-tannenareale/wald-tannenareale_2056.shp.zip" "silver_fir_areas" "Tannenareale" "Tannenareale"
 
 _import "https://data.geo.admin.ch/ch.swisstopo.swissboundaries3d/swissboundaries3d_2023-01/swissboundaries3d_2023-01_2056_5728.shp.zip" "cantonal_boundaries" "" "swissBOUNDARIES3D_1_5_TLM_KANTONSGEBIET"
 

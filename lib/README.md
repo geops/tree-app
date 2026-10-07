@@ -6,10 +6,10 @@ This library provides tree recommendations for different climate change scenario
 
 Data for tree type projections is provided as a [CSV file](./data/projections.csv) and needs to be converted into JSON to be usable by the library.
 
-1. Install NodeJS, pnpm and Docker Compose.
+1. Install NodeJS, pnpm, vercel CLI and Docker Compose.
 2. Install dependencies: `pnpm install`
-4. Stop postgres if it is already running: `sudo service postgresql stop`
-5. Run transformation: `pnpm run data:transform`
+3. Stop postgres if it is already running: `sudo service postgresql stop`
+4. Run transformation: `pnpm run data:transform`
 
 ### NaiS
 
