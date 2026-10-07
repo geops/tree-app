@@ -122,9 +122,7 @@ function locate(
     });
   }
 
-  const indicatorTableName = this.executeQuery<{ name: string }>(`SELECT name 
-    FROM sqlite_master 
-    WHERE type='table' AND name='${profile}_indicator';`)?.data?.[0]?.name || "indicator";
+  const indicatorTableName = this.getResolvedTableName("indicator", profile);
   const { data: indicators } = this.executeQuery<TypesRecord>(
     `select * from ${indicatorTableName}`,
   );
@@ -137,9 +135,7 @@ function locate(
     );
   }
 
-  const treeTypeTableName = this.executeQuery<{ name: string }>(`SELECT name 
-    FROM sqlite_master 
-    WHERE type='table' AND name='${profile}_treetype';`)?.data?.[0]?.name || "treetype";
+  const treeTypeTableName = this.getResolvedTableName("treetype", profile);
   const { data: treeTypes } = this.executeQuery<TypesRecord>(
     `select * from ${treeTypeTableName}`,
   );

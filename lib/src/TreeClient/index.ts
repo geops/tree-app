@@ -38,6 +38,9 @@ type ArrayValue<T> = T[keyof T] extends (infer U)[] ? U : never;
 class TreeClient {
   private dbFilePath: string;
   private eventListeners: Record<string, CustomEventCallback[]> = {};
+  // Caches for static lookups that are identical across repeated/recursive calls
+  private fieldTypesCache: Record<string, TypesRecord[]> = {};
+  private tableNameCache: Record<string, string> = {};
   private wasmFilePath: string;
   public db: Database | null;
   public executeQuery: <T>(
@@ -78,6 +81,7 @@ class TreeClient {
     this.locate = locate.bind(this);
     this.getProjectionOptions = this.getProjectionOptions.bind(this);
     this.getField = this.getField.bind(this);
+    this.getResolvedTableName = this.getResolvedTableName.bind(this);
     this.getVegetation = this.getVegetation.bind(this);
     this.getVegetationList = this.getVegetationList.bind(this);
     this.getRecommendations = this.getRecommendations.bind(this);
@@ -119,14 +123,31 @@ class TreeClient {
     location: Location,
   ): { field: string; value: Location[keyof Location]; values: TypesRecord[] } {
     const lcField = field.toLowerCase();
-    const { data: types } = this.executeQuery<TypesRecord>(
-      `select * from ${lcField}`,
-    );
+    if (!this.fieldTypesCache[lcField]) {
+      const { data: types } = this.executeQuery<TypesRecord>(
+        `select * from ${lcField}`,
+      );
+      this.fieldTypesCache[lcField] = types ?? [];
+    }
     return {
       field: field,
       value: location[field as keyof Location] ?? "",
-      values: types ?? [],
+      values: this.fieldTypesCache[lcField],
     };
+  }
+
+  // Resolves a profile-specific table name (e.g. "bl_projections"), falling back
+  // to the base table, and caches the result since it never changes at runtime.
+  public getResolvedTableName(baseName: string, profile?: TreeAppProfile): string {
+    const cacheKey = `${profile ?? ""}_${baseName}`;
+    if (this.tableNameCache[cacheKey] === undefined) {
+      const resolved =
+        this.executeQuery<{ name: string }>(
+          `SELECT name FROM sqlite_master WHERE type='table' AND name='${profile}_${baseName}';`,
+        )?.data?.[0]?.name || baseName;
+      this.tableNameCache[cacheKey] = resolved;
+    }
+    return this.tableNameCache[cacheKey];
   }
 
   public getProjectionOptions(
@@ -156,9 +177,10 @@ class TreeClient {
   }
 
   public getRecommendations(forestType: string, profile?: TreeAppProfile): number[][] {
-    const recommendationTableName = this.executeQuery<{ name: string }>(`SELECT name 
-      FROM sqlite_master 
-      WHERE type='table' AND name='${profile}_recommendations';`)?.data?.[0]?.name || "recommendations";
+    const recommendationTableName = this.getResolvedTableName(
+      "recommendations",
+      profile,
+    );
 
     const emptyLists = [[], [], [], []];
     const { data: lists } = this.executeQuery<Recommendation>(

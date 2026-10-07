@@ -109,8 +109,6 @@ function project(
     delete result.projections;
   }
 
-  console.log("PROJECT RESULT", result);
-
   return result;
 }
 
