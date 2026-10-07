@@ -15,6 +15,33 @@ declare global {
 
 declare const self: ServiceWorkerGlobalScope;
 
+const serwist = new Serwist({
+  clientsClaim: true,
+  navigationPreload: true,
+  precacheEntries: self.__SW_MANIFEST,
+  precacheOptions: {
+    // Ignore all URL parameters.
+    ignoreURLParametersMatching: [/.*/],
+  },
+  runtimeCaching: [
+    ...defaultCache,
+    {
+      handler: new NetworkOnly(),
+      matcher: ({ url }) =>
+        /^https:\/\/wmts10\.geo\.admin\.ch\/1\.0\.0\/ch\.swisstopo\.(pixelkarte-grau|swissimage)\/default\/current\/3857\/.*\.jpeg$/i.test(
+          url.href,
+        ),
+    },
+  ],
+  skipWaiting: true,
+});
+
+serwist.addToPrecacheList([
+  { url: "/" },
+  { url: "/info" },
+  { url: "/projection" },
+]);
+
 const treePdfCacheString = "tree-data-v"; // IMPORTANT: This string should NEVER be changed, otherwise the old caches will not be identifyable anymore
 const currentTreePdfVersion = 1; // Current Tree PDF version, needs to be increased every time new PDFs are deployed
 const TREE_CACHE_NAME = `${treePdfCacheString}${currentTreePdfVersion}`; // Cache name for Tree profile data
@@ -139,11 +166,15 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// eslint-disable-next-line no-restricted-globals
+// Add Serwist event listeners first
+serwist.addEventListeners();
+
+// Then add custom fetch handler for cached resources
 self.addEventListener("fetch", (event) => {
   const cacheUrls = [
     process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
     process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
+    process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT,
   ];
   const shouldFetchFromCache = cacheUrls.some(
     (url) => url && event.request.url.startsWith(url),
@@ -156,22 +187,3 @@ self.addEventListener("fetch", (event) => {
     );
   }
 });
-
-const serwist = new Serwist({
-  clientsClaim: true,
-  navigationPreload: true,
-  precacheEntries: self.__SW_MANIFEST,
-  runtimeCaching: [
-    ...defaultCache,
-    {
-      handler: new NetworkOnly(),
-      matcher: ({ url }) =>
-        /^https:\/\/wmts10\.geo\.admin\.ch\/1\.0\.0\/ch\.swisstopo\.(pixelkarte-grau|swissimage)\/default\/current\/3857\/.*\.jpeg$/i.test(
-          url.href,
-        ),
-    },
-  ],
-  skipWaiting: true,
-});
-
-serwist.addEventListeners();

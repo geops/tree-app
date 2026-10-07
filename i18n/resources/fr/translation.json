@@ -369,7 +369,8 @@
     "mainResultHelp": "Type de station zonale qui, selon l’étage de végétation correspondant, est suffisamment caractérisé par les facteurs du milieu tels que l’acidité du sol (ou les éléments nutritifs disponibles) et l’humidité moyenne du sol et qui peut être représenté dans l’écogramme. Lors de l’utilisation des critères de filtrage, les types de station qui répondent aux critères sont surlignés en vert, tandis que ceux qui ne remplissent pas les critères sont surlignés en gris.",
     "noEcogram": "Aucun écogramme trouvé",
     "otherResultHelp": "Autres types de station possibles à cet emplacement qui n’appartiennent pas aux stations forestières principales (cf. écogramme), mais aux 4 groupes de stations suivants : stations forestières particulières, stations caractérisées par une humidité très variable, forêts alluviales ainsi que stations pionnières et forêts buissonnantes (cf. glossaire).",
-    "reset": "Enlever les critères de filtrage"
+    "reset": "Enlever les critères de filtrage",
+    "selectAzAndEcoregion": "Veuillez sélectionner un étage de végétation et une écorégion"
   },
   "map": {
     "altitudinalZones": "Étages de végétation",

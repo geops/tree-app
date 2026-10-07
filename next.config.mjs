@@ -63,7 +63,6 @@ const getNextConfig = async (phase) => {
     const withSerwist = (await import("@serwist/next")).default({
       swSrc: "sw.ts",
       swDest: "public/sw.js",
-      reloadOnOnline: true,
     });
     return withSerwist(nextConfig);
   }
