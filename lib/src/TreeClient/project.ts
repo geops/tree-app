@@ -22,6 +22,7 @@ function project(
   previousResult: null | ProjectResult = null,
   profile?: TreeAppProfile,
 ): ProjectResult {
+  this.projectDepth += 1;
   const altitudinalZones = this.getAltitudinalZones();
   const altitudeList = altitudinalZones
     .map((az) => az.code)
@@ -107,6 +108,12 @@ function project(
 
   if (!previousResult && (result.projections ?? []).length === 0) {
     delete result.projections;
+  }
+
+  this.projectDepth -= 1;
+  if (this.projectDepth === 0 && this.queryLog && this.queryLogEntries.length) {
+    console.log("QUERY LOG", this.queryLogEntries);
+    this.queryLogEntries = [];
   }
 
   return result;

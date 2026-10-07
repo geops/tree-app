@@ -40,6 +40,10 @@ class TreeClient {
   private eventListeners: Record<string, CustomEventCallback[]> = {};
   // Caches for static lookups that are identical across repeated/recursive calls
   private fieldTypesCache: Record<string, TypesRecord[]> = {};
+  public queryLog: boolean;
+  // Buffers queries executed during a project() call tree, flushed once it unwinds
+  public queryLogEntries: string[] = [];
+  public projectDepth = 0;
   private tableNameCache: Record<string, string> = {};
   private wasmFilePath: string;
   public db: Database | null;
@@ -55,13 +59,15 @@ class TreeClient {
   public reduceProjections: typeof reduceProjections;
 
   constructor(
-    options: { dbFilePath: string; wasmFilePath: string } = {
-      dbFilePath: "./data/tree.sqlite",
-      wasmFilePath: "./data/sql-wasm.wasm",
-    },
+    options: {
+      dbFilePath?: string;
+      queryLog?: boolean;
+      wasmFilePath?: string;
+    } = {},
   ) {
-    this.dbFilePath = options.dbFilePath;
-    this.wasmFilePath = options.wasmFilePath;
+    this.dbFilePath = options.dbFilePath ?? "./data/tree.sqlite";
+    this.wasmFilePath = options.wasmFilePath ?? "./data/sql-wasm.wasm";
+    this.queryLog = options.queryLog ?? false;
     this.db = null;
     this.executeQuery = executeQuery.bind(this) as <T>(
       query: string,
