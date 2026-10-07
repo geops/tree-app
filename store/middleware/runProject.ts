@@ -148,9 +148,6 @@ function runProject() {
               ...initialState.projectionResult,
             };
             try {
-              if (treeClient.queryLog) {
-                console.log("Generating project query log...");
-              }
               if (projectionMode === "m") {
                 const {
                   targetAltitudinalZoneExtreme: targetAZExtreme,
