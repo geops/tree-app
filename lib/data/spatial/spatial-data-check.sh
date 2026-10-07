@@ -2,6 +2,10 @@
 
 # Get directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+IMPORT_SCRIPT="$SCRIPT_DIR/1-import.sh"
+
+# Targets passed as the 2nd argument to each _import call in 1-import.sh
+imported_targets=$(grep -oE '^_import[[:space:]]+"[^"]*"[[:space:]]+"[^"]*"' "$IMPORT_SCRIPT" | sed -E 's/^_import[[:space:]]+"[^"]*"[[:space:]]+"([^"]*)"/\1/')
 
 FOLDERS=(
   "$SCRIPT_DIR/forest_types_ar"
@@ -32,6 +36,12 @@ FOLDERS=(
 all_good=true
 
 for folder in "${FOLDERS[@]}"; do
+  name=$(basename "$folder")
+  if ! grep -qx "$name" <<< "$imported_targets"; then
+    echo "❌ $name is not imported by $(basename "$IMPORT_SCRIPT")"
+    all_good=false
+  fi
+
   if [[ -d "$folder" ]]; then
     count=$(find "$folder" -maxdepth 1 -type f \( -iname "*.shp" -o -iname "*.gpkg" \) | wc -l)
     if [[ $count -gt 0 ]]; then
