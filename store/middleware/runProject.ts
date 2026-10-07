@@ -91,6 +91,10 @@ function runProject() {
               location.relief = formLocation.relief;
             }
 
+            if (projectionMode === "m" && !!formLocation.slope) {
+              location.slope = formLocation.slope;
+            }
+
             if (
               projectionMode === "m" &&
               mapLocation.altitudinalZone &&
