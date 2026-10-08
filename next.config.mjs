@@ -1,4 +1,7 @@
 /** @type {import("next").NextConfig} */
+import { fileURLToPath } from "node:url";
+
+import CopyWebpackPlugin from "copy-webpack-plugin";
 import {
   PHASE_DEVELOPMENT_SERVER,
   PHASE_PRODUCTION_BUILD,
@@ -15,6 +18,21 @@ const getNextConfig = async (phase) => {
       if (!isServer) {
         config.resolve.fallback.fs = false;
         config.resolve.alias.canvas = false;
+        config.plugins.push(
+          new CopyWebpackPlugin({
+            patterns: [
+              {
+                from: fileURLToPath(
+                  new URL(
+                    "./node_modules/maplibre-gl/dist/maplibre-gl-shared.mjs",
+                    import.meta.url,
+                  ),
+                ),
+                to: "static/media/maplibre-gl-shared.mjs",
+              },
+            ],
+          }),
+        );
       }
       config.plugins.push(
         new webpack.DefinePlugin({
