@@ -15,6 +15,9 @@ function executeQuery<T>(
     data: [],
     error: null,
   };
+  if (this.queryLog) {
+    this.queryLogEntries.push(query);
+  }
   try {
     if (!db) throw new Error("Can't connect to database");
     const queryResult = db.exec(query);

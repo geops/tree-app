@@ -38,6 +38,13 @@ type ArrayValue<T> = T[keyof T] extends (infer U)[] ? U : never;
 class TreeClient {
   private dbFilePath: string;
   private eventListeners: Record<string, CustomEventCallback[]> = {};
+  // Caches for static lookups that are identical across repeated/recursive calls
+  private fieldTypesCache: Record<string, TypesRecord[]> = {};
+  public queryLog: boolean;
+  // Buffers queries executed during a project() call tree, flushed once it unwinds
+  public queryLogEntries: string[] = [];
+  public projectDepth = 0;
+  private tableNameCache: Record<string, string> = {};
   private wasmFilePath: string;
   public db: Database | null;
   public executeQuery: <T>(
@@ -52,13 +59,15 @@ class TreeClient {
   public reduceProjections: typeof reduceProjections;
 
   constructor(
-    options: { dbFilePath: string; wasmFilePath: string } = {
-      dbFilePath: "./data/tree.sqlite",
-      wasmFilePath: "./data/sql-wasm.wasm",
-    },
+    options: {
+      dbFilePath?: string;
+      queryLog?: boolean;
+      wasmFilePath?: string;
+    } = {},
   ) {
-    this.dbFilePath = options.dbFilePath;
-    this.wasmFilePath = options.wasmFilePath;
+    this.dbFilePath = options.dbFilePath ?? "./data/tree.sqlite";
+    this.wasmFilePath = options.wasmFilePath ?? "./data/sql-wasm.wasm";
+    this.queryLog = options.queryLog ?? false;
     this.db = null;
     this.executeQuery = executeQuery.bind(this) as <T>(
       query: string,
@@ -78,6 +87,7 @@ class TreeClient {
     this.locate = locate.bind(this);
     this.getProjectionOptions = this.getProjectionOptions.bind(this);
     this.getField = this.getField.bind(this);
+    this.getResolvedTableName = this.getResolvedTableName.bind(this);
     this.getVegetation = this.getVegetation.bind(this);
     this.getVegetationList = this.getVegetationList.bind(this);
     this.getRecommendations = this.getRecommendations.bind(this);
@@ -119,14 +129,31 @@ class TreeClient {
     location: Location,
   ): { field: string; value: Location[keyof Location]; values: TypesRecord[] } {
     const lcField = field.toLowerCase();
-    const { data: types } = this.executeQuery<TypesRecord>(
-      `select * from ${lcField}`,
-    );
+    if (!this.fieldTypesCache[lcField]) {
+      const { data: types } = this.executeQuery<TypesRecord>(
+        `select * from ${lcField}`,
+      );
+      this.fieldTypesCache[lcField] = types ?? [];
+    }
     return {
       field: field,
       value: location[field as keyof Location] ?? "",
-      values: types ?? [],
+      values: this.fieldTypesCache[lcField],
     };
+  }
+
+  // Resolves a profile-specific table name (e.g. "bl_projections"), falling back
+  // to the base table, and caches the result since it never changes at runtime.
+  public getResolvedTableName(baseName: string, profile?: TreeAppProfile): string {
+    const cacheKey = `${profile ?? ""}_${baseName}`;
+    if (this.tableNameCache[cacheKey] === undefined) {
+      const resolved =
+        this.executeQuery<{ name: string }>(
+          `select name from sqlite_master where type='table' and name='${profile}_${baseName}';`,
+        )?.data?.[0]?.name || baseName;
+      this.tableNameCache[cacheKey] = resolved;
+    }
+    return this.tableNameCache[cacheKey];
   }
 
   public getProjectionOptions(
@@ -156,9 +183,10 @@ class TreeClient {
   }
 
   public getRecommendations(forestType: string, profile?: TreeAppProfile): number[][] {
-    const recommendationTableName = this.executeQuery<{ name: string }>(`SELECT name 
-      FROM sqlite_master 
-      WHERE type='table' AND name='${profile}_recommendations';`)?.data?.[0]?.name || "recommendations";
+    const recommendationTableName = this.getResolvedTableName(
+      "recommendations",
+      profile,
+    );
 
     const emptyLists = [[], [], [], []];
     const { data: lists } = this.executeQuery<Recommendation>(
