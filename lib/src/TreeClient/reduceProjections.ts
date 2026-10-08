@@ -68,7 +68,7 @@ function reduceProjections(
         );
         // @ts-expect-error dev
         options[fieldName] = options[fieldName] ?? newOptions;
-        const queryValue = value || "unknown";
+        const queryValue = value ?? "unknown";
           const secondaryQueryString = `${newString}${newString.includes("where") ? " and" : " where"} ${lowerCaseField} = '${queryValue as string}'`;
           const { data } =
             this.executeQuery<ProjectionQueryResult>(secondaryQueryString);
