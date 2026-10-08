@@ -82,6 +82,14 @@ const getNextConfig = async (phase) => {
       swSrc: "sw.ts",
       swDest: "public/sw.js",
       reloadOnOnline: true,
+      manifestTransforms: [
+        async (manifest) => ({
+          manifest: manifest.filter(
+            ({ url }) => !url.endsWith("/dynamic-css-manifest.json"),
+          ),
+          warnings: [],
+        }),
+      ],
     });
     return withSerwist(nextConfig);
   }
