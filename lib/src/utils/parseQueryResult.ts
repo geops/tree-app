@@ -5,7 +5,7 @@ import safeJsonParse from "./safeJsonParse";
 function parseQueryResult<T>(queryResponse: QueryExecResult[]): T[] {
   const result = queryResponse?.[0];
 
-  if (!result || !result.columns || !result.values) {
+  if (!result?.columns || !result.values) {
     return [];
   }
 
