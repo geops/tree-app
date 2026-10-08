@@ -149,7 +149,7 @@ class TreeClient {
     if (this.tableNameCache[cacheKey] === undefined) {
       const resolved =
         this.executeQuery<{ name: string }>(
-          `SELECT name FROM sqlite_master WHERE type='table' AND name='${profile}_${baseName}';`,
+          `select name from sqlite_master where type='table' and name='${profile}_${baseName}';`,
         )?.data?.[0]?.name || baseName;
       this.tableNameCache[cacheKey] = resolved;
     }
