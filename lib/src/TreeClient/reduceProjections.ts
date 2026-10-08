@@ -25,17 +25,14 @@ function reduceProjections(
   const { options } = result;
 
   let projections: ProjectionQueryResult[] = [];
-  const tableName = this.executeQuery<{ name: string }>(`SELECT name 
-    FROM sqlite_master 
-    WHERE type='table' AND name='${profile}_projections';`)?.data?.[0]?.name || "projections";
+  const tableName = this.getResolvedTableName("projections", profile);
   const queryString = primaryFields.reduce(
     (acc, fieldName: ProjectOptionKey, index) => {
       let newString = acc;
       const { value, values } = this.getField(fieldName, location);
       validateFieldValue(fieldName, value, values);
-        
-      
-      if (index === 0 || location[primaryFields[index - 1]]) {
+
+      if ((index === 0 || location[primaryFields[index - 1]]) && options[fieldName] === undefined) {
         const newOptions = this.getProjectionOptions(
           newString.replace(
             "select *",
@@ -43,8 +40,7 @@ function reduceProjections(
           ),
           fieldName,
         );
-        // @ts-expect-error dev
-        options[fieldName] = options[fieldName] ?? newOptions;
+        options[fieldName] = newOptions;
       }
       if (value) {
         newString += `${newString.includes("where") ? " and" : " where"} ${fieldName.toLowerCase()} = '${value as string}'`;
@@ -62,13 +58,14 @@ function reduceProjections(
         const { value, values } = this.getField(fieldName, location);
         validateFieldValue(fieldName, value, values);
         const lowerCaseField = fieldName.toLowerCase();
-        const newOptions = this.getProjectionOptions(
-          newString.replace("select *", `select distinct ${lowerCaseField}`),
-          fieldName,
-        );
-        // @ts-expect-error dev
-        options[fieldName] = options[fieldName] ?? newOptions;
-        const queryValue = value || "unknown";
+        if (options[fieldName] === undefined) {
+          const newOptions = this.getProjectionOptions(
+            newString.replace("select *", `select distinct ${lowerCaseField}`),
+            fieldName,
+          );
+          options[fieldName] = newOptions;
+        }
+        const queryValue = value ?? "unknown";
           const secondaryQueryString = `${newString}${newString.includes("where") ? " and" : " where"} ${lowerCaseField} = '${queryValue as string}'`;
           const { data } =
             this.executeQuery<ProjectionQueryResult>(secondaryQueryString);
@@ -81,9 +78,6 @@ function reduceProjections(
     const { data } = this.executeQuery<ProjectionQueryResult>(
       queryStringWithSecondaryFields,
     );
-    // console.log("location: ", location);
-    console.log("QUERYSTRING: ", queryStringWithSecondaryFields);
-    // console.log("projections: ", projections);
     projections = data;
   }
 

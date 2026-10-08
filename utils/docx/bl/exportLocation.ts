@@ -59,8 +59,8 @@ export const exportLocation = async (
     undefined,
     undefined,
     `WHERE '${forestType.code}' IN (
-        SELECT value
-        FROM json_each(bl_associationgroup.locations)
+        select value
+        from json_each(bl_associationgroup.locations)
         )`,
   )?.[0];
 

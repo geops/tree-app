@@ -7,7 +7,9 @@ function TreeClientProvider({ children }: { children: React.ReactNode }) {
   const setTreeClient = useStore((state) => state.setTreeClient);
   const treeClient = useStore((state) => state.treeClient);
   useEffect(() => {
-    const client = new TreeClient();
+    const queryLog =
+      new URLSearchParams(window.location.search).get("querylog") === "true";
+    const client = new TreeClient({ queryLog });
     const loadCallback = (instance: TreeClient) => {
       setTreeClient(instance);
     };
