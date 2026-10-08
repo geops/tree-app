@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import fs from 'fs'
 import path from 'path'
-import { serve } from '@hono/node-server'
+import { handle } from '@hono/node-server/vercel'
 
 const app = new Hono()
 const baseDir = path.join(process.cwd(), 'tiles')
@@ -68,10 +68,5 @@ app.get('/fonts/*', async (c) => {
   }
 })
 
-// Start local server
-serve({
-  fetch: app.fetch,
-  port: parseInt(process.env.PORT as string, 10) || 8000,
-})
-
-console.log('Server running at http://localhost:8000')
+export { app }
+export default handle(app)

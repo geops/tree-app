@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { useMemo, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Tooltip, TooltipRefProps } from "react-tooltip";
@@ -8,19 +7,19 @@ import useStore from "@/store";
 import Button from "../ui/Button";
 import InfoButton from "../ui/InfoButton";
 
+import ForestTypeButton from "./ForestTypeButton";
+
 import type { ForestType } from "@geops/tree-lib/types";
 
 import type { TreeAppLanguage } from "@/i18n/i18next";
 
 function EcogramPopup({ forestTypes }: { forestTypes: string[] }) {
   const { i18n, t } = useTranslation();
-  const router = useRouter();
   const activeProfile = useStore((state) => state.activeProfile);
   const treeClient = useStore((state) => state.treeClient);
   const setForestTypeDescription = useStore(
     (state) => state.setForestTypeDescription,
   );
-  const setFormLocation = useStore((state) => state.setFormLocation);
   const refTooltip = useRef<TooltipRefProps>(null);
 
   const forestTypeInfos: ForestType[] = useMemo(() => {
@@ -74,16 +73,13 @@ function EcogramPopup({ forestTypes }: { forestTypes: string[] }) {
                 className="h-12 w-12 min-w-12 rounded bg-primary-500 text-white hover:bg-primary-200 hover:text-white"
                 onClick={() => setForestTypeDescription(code)}
               />
-              <Button
+              <ForestTypeButton
                 className="truncate"
-                onClick={() => {
-                  setFormLocation({ forestType: code });
-                  void router.push(`/projection${window.location.search}`);
-                }}
+                code={code}
                 title={`${code} - ${name}`}
               >
                 {code} - {name}
-              </Button>
+              </ForestTypeButton>
             </li>
           );
         })}
