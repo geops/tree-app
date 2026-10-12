@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
-import maplibregl from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
 import Layer from "ol/layer/Layer";
 import Source from "ol/source/Source";
 
@@ -26,6 +26,13 @@ class MaplibreLayer extends Layer {
   public maplibreMap: maplibregl.Map;
   constructor({ container, map, style, ...options }: MaplibreLayerOptions) {
     super({ ...options, source: new Source({}) });
+
+    maplibregl.setWorkerUrl(
+      new URL(
+        "../../../../node_modules/maplibre-gl/dist/maplibre-gl-worker.mjs",
+        import.meta.url,
+      ).href,
+    );
 
     this.maplibreMap = new maplibregl.Map({
       attributionControl: false,

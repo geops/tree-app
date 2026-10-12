@@ -1,12 +1,33 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Button from "@/components/ui/Button";
 import useStore from "@/store";
+import getIsSSR from "@/utils/getIsSSR";
 
 import type { QueryExecResult } from "sql.js";
 
 export type DatabaseExecResult = null | QueryExecResult[] | undefined;
+
+const getQueryParam = () => {
+  if (getIsSSR()) return "";
+  return new URLSearchParams(window.location.search).get("query") ?? "";
+};
+
+const setQueryParam = (query: string) => {
+  if (getIsSSR()) return;
+  const params = new URLSearchParams(window.location.search);
+  if (query) {
+    params.set("query", query);
+  } else {
+    params.delete("query");
+  }
+  window.history.replaceState(
+    {},
+    "",
+    `${window.location.pathname}?${params.toString()}`,
+  );
+};
 
 /**
  * Renders a single value of the array returned by db.exec(...) as a table
@@ -47,9 +68,26 @@ const ResultTable = ({ columns, values }: QueryExecResult) => {
 export default function SqlJsPage() {
   const tc = useStore((state) => state.treeClient);
   const [queryResults, setQueryResults] = useState<DatabaseExecResult>(null);
-  const [queryString, setQueryString] = useState<string>("");
+  const [queryString, setQueryString] = useState<string>(getQueryParam);
   const [error, setError] = useState<null | string>(null);
   const ref = useRef<HTMLTextAreaElement | null>(null);
+
+  const runQuery = (query: string) => {
+    const { data: results, error: err } = tc.executeQuery<QueryExecResult>(
+      query,
+      true,
+    );
+    setQueryResults(results);
+    setError(err);
+  };
+
+  useEffect(() => {
+    if (queryString) {
+      runQuery(queryString);
+    }
+    // Only run once on mount to pick up the initial "query" url param
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="grid h-full grid-rows-[50px_200px_50px_auto] p-5">
@@ -68,10 +106,8 @@ export default function SqlJsPage() {
           className="mb-2"
           disabled={queryString === ""}
           onClick={() => {
-            const { data: results, error: err } =
-              tc.executeQuery<QueryExecResult>(queryString, true);
-            setQueryResults(results);
-            setError(err);
+            runQuery(queryString);
+            setQueryParam(queryString);
           }}
         >
           Execute
@@ -85,6 +121,7 @@ export default function SqlJsPage() {
             setQueryString("");
             setQueryResults(null);
             setError(null);
+            setQueryParam("");
             ref.current?.focus();
           }}
         >

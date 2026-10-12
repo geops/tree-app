@@ -120,7 +120,7 @@ self.addEventListener("install", (event) => {
               if (forestType && !(await cache.match(pdfUrl))) {
                 try {
                   const pdfResponse = await fetch(pdfUrl);
-                  void cache.put(pdfUrl, pdfResponse);
+                  await cache.put(pdfUrl, pdfResponse);
                 } catch (error) {
                   // Some PDFs do not exist.
                 }
@@ -140,7 +140,7 @@ self.addEventListener("install", (event) => {
               if (treeType && !(await cache.match(pdfUrl))) {
                 try {
                   const pdfResponse = await fetch(pdfUrl);
-                  void cache.put(pdfUrl, pdfResponse);
+                  await cache.put(pdfUrl, pdfResponse);
                 } catch (error) {
                   // Some PDFs do not exist.
                 }

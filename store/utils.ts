@@ -10,6 +10,7 @@ import type {
   Location as FormLocation,
   ReliefCode,
   SilverFirAreaCode,
+  SlopeCode,
   TreeAppProfile,
 } from "@geops/tree-lib/types";
 
@@ -81,6 +82,10 @@ if (getInitialValue<SilverFirAreaCode>("flsfa")) {
 
 if (getInitialValue<ReliefCode>("flr")) {
   initialFormLocation.relief = getInitialValue<ReliefCode>("flr");
+}
+
+if (getInitialValue<SlopeCode>("fls")) {
+  initialFormLocation.slope = getInitialValue<SlopeCode>("fls");
 }
 
 if (getInitialValue<string>("flft")) {

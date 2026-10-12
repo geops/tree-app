@@ -111,7 +111,7 @@ function ScenariosDesktop({ scenarios }: { scenarios: Scenario[] }) {
       },
       { dominant: [], headers: [], important: [], other: [] },
     );
-  }, [scenarios, t, treeClient]);
+  }, [activeProfile, scenarios, t, treeClient]);
   return (
     <Table className="rounded border-none">
       <Table.Row
