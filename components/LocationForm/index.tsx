@@ -26,6 +26,13 @@ function LocationForm() {
   const { t } = useTranslation();
   const formLocation = useStore((state) => state.formLocation);
   const setFormLocation = useStore((state) => state.setFormLocation);
+  const hasFilters =
+    intersection(
+      Object.keys(formLocation).filter(
+        (key): key is keyof Location => !!formLocation[key as keyof Location],
+      ),
+      filterFields,
+    )?.length > 0;
 
   return (
     <div className="flex flex-col gap-4 px-5">
@@ -87,13 +94,7 @@ function LocationForm() {
             },
           ]}
         />
-        {intersection(
-          Object.keys(formLocation).filter(
-            (key): key is keyof Location =>
-              formLocation[key as keyof Location] !== "",
-          ),
-          filterFields,
-        )?.length > 0 && (
+        {hasFilters && (
           <Button
             className="my-4"
             onClick={() => {
