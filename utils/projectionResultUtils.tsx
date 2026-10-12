@@ -56,10 +56,12 @@ function getProjectionResultKey(
   return !(
     projection &&
     !projection.projections?.slice(-1)[0] &&
-    location.altitudinalZone !==
-      location[
-        `targetAltitudinalZone${capitalize(scenarioString)}` as keyof LocationSubset
-      ]
+    reduceHochmontanAz(location.altitudinalZone) !==
+      reduceHochmontanAz(
+        location[
+          `targetAltitudinalZone${capitalize(scenarioString)}` as keyof LocationSubset
+        ],
+      )
   )
     ? key
     : null;
@@ -121,10 +123,10 @@ export function getScenarios<T>(
       scenarios.push(
         scenarioCallback("moderateExtreme", moderate, language, t)!,
       );
-    } else if (todayKey === moderateKey) {
+    } else if (todayKey === moderateKey && extremeKey) {
       scenarios.push(scenarioCallback("todayModerate", location, language, t)!);
       scenarios.push(scenarioCallback("extreme", extreme, language, t)!);
-    } else if (todayKey === extremeKey) {
+    } else if (todayKey === extremeKey && moderateKey) {
       scenarios.push(scenarioCallback("todayExtreme", location, language, t)!);
       scenarios.push(scenarioCallback("moderate", moderate, language, t)!);
     } else if (!extremeKey && moderateKey === todayKey) {
@@ -136,7 +138,7 @@ export function getScenarios<T>(
       scenarios.push(scenarioCallback("moderate", moderate, language, t)!);
     } else if (extremeKey && !moderateKey) {
       scenarios.push(scenarioCallback("today", location, language, t)!);
-      scenarios.push(scenarioCallback("extreme", moderate, language, t)!);
+      scenarios.push(scenarioCallback("extreme", extreme, language, t)!);
     } else {
       scenarios.push(scenarioCallback("today", location, language, t)!);
       scenarios.push(scenarioCallback("moderate", moderate, language, t)!);

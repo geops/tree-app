@@ -93,7 +93,7 @@ self.addEventListener("install", (event) => {
               if (forestType && !(await cache.match(pdfUrl))) {
                 try {
                   const pdfResponse = await fetch(pdfUrl);
-                  void cache.put(pdfUrl, pdfResponse);
+                  await cache.put(pdfUrl, pdfResponse);
                 } catch (error) {
                   // Some PDFs do not exist.
                 }
@@ -113,7 +113,7 @@ self.addEventListener("install", (event) => {
               if (treeType && !(await cache.match(pdfUrl))) {
                 try {
                   const pdfResponse = await fetch(pdfUrl);
-                  void cache.put(pdfUrl, pdfResponse);
+                  await cache.put(pdfUrl, pdfResponse);
                 } catch (error) {
                   // Some PDFs do not exist.
                 }
@@ -144,6 +144,7 @@ self.addEventListener("fetch", (event) => {
   const cacheUrls = [
     process.env.NEXT_PUBLIC_VECTOR_TILES_ENDPOINT,
     process.env.NEXT_PUBLIC_SO_PDF_ENDPOINT,
+    process.env.NEXT_PUBLIC_TREE_PDF_ENDPOINT,
   ];
   const shouldFetchFromCache = cacheUrls.some(
     (url) => url && event.request.url.startsWith(url),

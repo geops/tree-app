@@ -72,7 +72,7 @@ function LegendModal({
                   : info(type, code)?.[0]?.[lng as TreeAppLanguage];
               code = null;
             } else {
-              code = fc?.toString() ?? null;
+              code = fc == null ? null : String(fc);
             }
             return row;
           })

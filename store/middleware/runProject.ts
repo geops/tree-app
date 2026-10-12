@@ -1,6 +1,5 @@
 import { reduceHochmontanAz, reduceHochmontanSilverFir } from "@geops/tree-lib";
 
-import merge from "@/utils/merge";
 import removeIdUrlParam from "@/utils/removeIdUrlParam";
 
 import initialState, { initialProjection } from "../utils";
@@ -67,7 +66,7 @@ function runProject() {
             const location =
               projectionMode === "m"
                 ? { ...mapLocation }
-                : (merge(mapLocation, formLocation, false) as Location);
+                : ({ ...mapLocation, ...formLocation } as Location);
 
             if (!isFirstRun) {
               removeIdUrlParam();
@@ -89,6 +88,10 @@ function runProject() {
 
             if (projectionMode === "m" && !!formLocation.relief) {
               location.relief = formLocation.relief;
+            }
+
+            if (projectionMode === "m" && !!formLocation.slope) {
+              location.slope = formLocation.slope;
             }
 
             if (
@@ -136,7 +139,7 @@ function runProject() {
             setLocation(location);
 
             const locationResult = treeClient.locate(
-              merge(mapLocation, formLocation, false),
+              location,
               activeProfile,
             ) as LocateResult;
 
