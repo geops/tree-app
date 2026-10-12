@@ -69,7 +69,6 @@ lib/data/spatial/forest_types_tg
 lib/data/spatial/forest_types_vd
 lib/data/spatial/forest_types_zh
 lib/data/spatial/forest_types_zh_2
-lib/data/spatial/forest_types_union
 lib/data/spatial/silver_fir_areas
 lib/data/spatial/cantonal_boundaries.zip
 lib/data/spatial/*.zip

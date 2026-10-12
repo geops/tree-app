@@ -3,6 +3,8 @@ _import () {
     local TARGET=$2 # cantonal_boundaries
     local ZIPFILE=$3 # SHAPEFILE_LV95_LN02
     local SHPFILE=$4 # swissBOUNDARIES3D_1_3_TLM_KANTONSGEBIET
+    local SHP_PATH="/data/spatial/${TARGET}/${TARGET}.shp"
+    local GPKG_PATH="/data/spatial/${TARGET}/${ZIPFILE}.gpkg"
 
     # if [ "$URL" == "Download manually" ]; then
     #     if [ ! -f "/data/spatial/${TARGET}.zip" ]; then
@@ -21,17 +23,28 @@ _import () {
     #     fi
     # fi
 
-    if [ "$URL" == "Download manually" ] && [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ]; then
+    if [ "$URL" == "Download manually" ]; then
+        if [ ! -f "$SHP_PATH" ] && [ -d "/data/spatial/${TARGET}" ]; then
+            SHP_PATH=$(find "/data/spatial/${TARGET}" -maxdepth 1 -type f -name "*.shp" | head -n 1)
+        fi
+
+        if [ ! -f "$GPKG_PATH" ] && [ -d "/data/spatial/${TARGET}" ]; then
+            GPKG_PATH=$(find "/data/spatial/${TARGET}" -maxdepth 1 -type f -name "*.gpkg" | head -n 1)
+        fi
+    fi
+
+    if [ "$URL" == "Download manually" ] && [ ! -f "$SHP_PATH" ] && [ ! -f "$GPKG_PATH" ]; then
         echo "Manual unzipped download for ${TARGET} is missing! Do nothing ..."
         return
     fi
 
-    if [ ! -f "/data/spatial/${TARGET}/${TARGET}.shp" ] && [ ! -f "/data/spatial/${TARGET}/${ZIPFILE}.gpkg" ]; then
+    if [ ! -f "$SHP_PATH" ] && [ ! -f "$GPKG_PATH" ]; then
         echo "Downloading ${TARGET} ..."
         mkdir -p /data/spatial/${TARGET}
 
         if [[ "$URL" == *.gpkg ]]; then
             wget --no-check-certificate "${URL}" -O "/data/spatial/${TARGET}/${ZIPFILE}.gpkg"
+            GPKG_PATH="/data/spatial/${TARGET}/${ZIPFILE}.gpkg"
         else
             cd /data/spatial
             wget --no-check-certificate "${URL}" -O "${TARGET}.zip"
@@ -47,6 +60,7 @@ _import () {
                 fi
             fi
             rename "s/${SHPFILE}/${TARGET}/" ${SHPFILE}.*
+            SHP_PATH="/data/spatial/${TARGET}/${TARGET}.shp"
         fi
     else
         echo "$TARGET already downloaded! Will be reused ..."
@@ -54,12 +68,12 @@ _import () {
 
     local COUNT=$(psql -d tree -U postgres -At -c "SELECT COUNT(*) FROM ${TARGET}")
     if [ "$COUNT" == "0" ]; then
-        if [[ -n "$ZIPFILE" ]] && [ -f "/data/spatial/${TARGET}/${ZIPFILE}.gpkg" ]; then
-            echo "Importing GeoPackage ${ZIPFILE}.gpkg ..."
-            ogr2ogr -f PostgreSQL "PG:dbname=tree user=postgres" -nln ${TARGET} /data/spatial/${TARGET}/${ZIPFILE}.gpkg
+        if [ -f "$GPKG_PATH" ]; then
+            echo "Importing GeoPackage $(basename "$GPKG_PATH") ..."
+            ogr2ogr -f PostgreSQL "PG:dbname=tree user=postgres" -nln ${TARGET} "$GPKG_PATH"
         else
-            echo "Importing Shapefile ${TARGET}.shp ..."
-            shp2pgsql -D -a -s 2056 "/data/spatial/${TARGET}/${TARGET}.shp" | psql -d tree -U postgres
+            echo "Importing Shapefile $(basename "$SHP_PATH") ..."
+            shp2pgsql -D -a -s 2056 "$SHP_PATH" | psql -d tree -U postgres
         fi
     else
         echo "$TARGET already imported! Do nothing ..."
@@ -86,7 +100,7 @@ _import "Download manually" "forest_types_lu" "forest_types_lu" "forest_types_lu
 
 _import "Download manually" "forest_types_ne" "forest_types_ne" "forest_types_ne"
 
-# _import "Download manually" "forest_types_tg" "forest_types_tg" "forest_types_tg"
+_import "Download manually" "forest_types_tg" "forest_types_tg" "forest_types_tg"
 
 _import "Download manually" "forest_types_zh" "forest_types_zh" "forest_types_zh"
 

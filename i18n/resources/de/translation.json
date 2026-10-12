@@ -370,7 +370,8 @@
     "mainResultHelp": "Zonaler Standortstyp, der für die entsprechende Vegetationshöhenstufe durch die Standortsfaktoren Bodensäure bzw. Nährstoffverfügbarkeit und die durchschnittliche Bodenfeuchte genügend charakterisiert und im Ökogramm dargestellt werden kann.\nBei Anwendung der Filterkriterien werden Standortstypen, welche die Kriterien erfüllen, grün hinterlegt, und Standortstypen, die sie nicht erfüllen, grau hinterlegt. ",
     "noEcogram": "Kein Ökogramm gefunden",
     "otherResultHelp": "Weitere an diesem Ort mögliche Standortstypen, die nicht zu den Hauptwaldstandorten (s. Ökogramm) gehören, sondern zu einer der folgenden 4 Standortsgruppen: Sonderwaldstandorte, Standorte mit stark wechselnde Feuchtigkeit, Auenwälder sowie Pionierstandorte und Gebüschwälder (s. Glossar).",
-    "reset": "Filterkriterien zurücksetzen"
+    "reset": "Filterkriterien zurücksetzen",
+    "selectAzAndEcoregion": "Bitte wählen Sie eine Standortsregion und eine Höhenstufe aus."
   },
   "map": {
     "altitudinalZones": "Höhenstufen",

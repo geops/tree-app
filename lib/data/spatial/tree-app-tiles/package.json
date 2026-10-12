@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch server.ts",
-    "start": "node dist/server.js",
+    "dev": "tsx watch local.ts",
+    "start": "node dist/local.js",
     "build": "tsc"
   },
   "dependencies": {

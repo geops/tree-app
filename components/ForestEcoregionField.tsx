@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import { TreeAppLanguage } from "@/i18n/i18next";
 import useStore from "@/store";
+import { getTypeOptions } from "@/utils/getTypeOptions";
 
 import Dropdown, { DropdownOption } from "./ui/Dropdown";
 import Input from "./ui/Input";
@@ -26,24 +27,16 @@ function ForestEcoregionField() {
 
   const options = useMemo(() => {
     if (projectionMode === "m") return [];
-    const forestEcoregions = treeClient.getTypes<ForestEcoregion>(
-      "forestecoregion",
-      ["code", i18n.language],
-      opts?.forestEcoregion?.length
-        ? {
-            code: `IN (${opts.forestEcoregion.map((ecoRegion) => `'${ecoRegion}'`).join(", ")})`,
-          }
-        : undefined,
-    );
-
-    return (
-      forestEcoregions
-        .filter((ecoRegion) => opts.forestEcoregion?.includes(ecoRegion.code))
-        .map((ecoRegion) => ({
-          label: ecoRegion[i18n.language as TreeAppLanguage],
-          value: ecoRegion.code,
-        })) ?? []
-    );
+    return getTypeOptions<ForestEcoregion, DropdownOption>({
+      codes: opts?.forestEcoregion ?? [],
+      columns: ["code", i18n.language],
+      mapOption: (ecoRegion) => ({
+        label: ecoRegion[i18n.language as TreeAppLanguage],
+        value: ecoRegion.code,
+      }),
+      treeClient,
+      type: "forestecoregion",
+    });
   }, [opts?.forestEcoregion, i18n.language, treeClient, projectionMode]);
 
   if (projectionMode === "m") {

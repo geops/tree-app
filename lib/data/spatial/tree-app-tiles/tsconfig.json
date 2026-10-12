@@ -11,5 +11,5 @@
     "types": ["node"],
     "lib": ["ES2022", "DOM"]
   },
-  "include": ["server.ts"]
+  "include": ["server.ts", "local.ts"]
 }

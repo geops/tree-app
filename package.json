@@ -1,6 +1,6 @@
 {
   "name": "tree-app",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,8 +14,8 @@
     "@geops/tree-lib": "link:lib/build",
     "@headlessui/react": "2.0.4",
     "@heroicons/react": "2.1.5",
-    "@serwist/next": "9.0.7",
-    "@serwist/sw": "9.0.8",
+    "@serwist/next": "9.2.1",
+    "@serwist/sw": "9.2.1",
     "@tailwindcss/container-queries": "0.1.1",
     "@types/node": "20.16.2",
     "@types/react": "18.3.4",
@@ -44,17 +44,17 @@
     "react-select": "5.8.3",
     "react-tooltip": "5.28.0",
     "save-svg-as-png": "1.4.17",
-    "serwist": "9.0.7",
+    "serwist": "9.2.1",
     "sql.js": "1.11.0",
-    "tailwindcss": "3.4.1",
-    "typescript": "5.6.3",
     "url-loader": "4.1.1",
     "uuid": "14.0.0",
+    "tailwindcss": "3.4.1",
+    "typescript": "5.6.3",
     "zustand": "5.0.0-rc.2"
   },
   "devDependencies": {
     "@geops/eslint-config-react": "1.2.0",
-    "@serwist/build": "9.0.7",
+    "@serwist/build": "9.2.1",
     "@types/file-saver": "2.0.7",
     "@types/geojson": "7946.0.14",
     "@types/lodash.get": "4.4.9",
@@ -78,5 +78,5 @@
     "react-i18next": ">=11.16.4"
   },
   "author": "geOps",
-  "packageManager": "pnpm@9.7.0+sha256.b35018fbfa8f583668b2649e407922a721355cd81f61beeb4ac1d4258e585559"
+  "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a"
 }
