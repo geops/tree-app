@@ -206,13 +206,13 @@ FROM silver_fir_areas;
 -- forest_types
 
 CREATE OR REPLACE VIEW forest_types_export AS
-SELECT nais as code,
+SELECT nais_v2 as code,
        ST_Transform(geom, 3857) as geometry,
-       nais as code_vd,
-       nais as code_so,
+       nais_v2 as code_vd,
+       nais_v2 as code_so,
        null as info_vd
 FROM forest_types_tg
-WHERE nais IS NOT NULL and geom is not null
+WHERE nais_v2 IS NOT NULL and geom is not null
 UNION
 SELECT CASE nais2 is null
           WHEN TRUE THEN nais1

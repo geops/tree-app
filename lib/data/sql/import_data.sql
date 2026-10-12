@@ -1154,6 +1154,7 @@ CREATE TABLE "forest_types_tg" (
   "nais" varchar(50),
   "Hoehenstufe" varchar(50),
   "tahsue" varchar(50),
+  "nais_v2" varchar(50), 
   "hs_code" int4,
   "hsue_code" int4
 );

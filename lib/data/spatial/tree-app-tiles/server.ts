@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import fs from 'fs'
 import path from 'path'
-import { handle } from '@hono/node-server/vercel'
+import { getRequestListener } from '@hono/node-server'
 
 const app = new Hono()
 const baseDir = path.join(process.cwd(), 'tiles')
@@ -69,4 +69,4 @@ app.get('/fonts/*', async (c) => {
 })
 
 export { app }
-export default handle(app)
+export default getRequestListener(app.fetch)
