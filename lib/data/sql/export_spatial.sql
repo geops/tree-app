@@ -141,6 +141,17 @@ WITH altitudinal_zones_cantonal AS
                     ELSE hs_code::text || '(' || hsue_code::text || ')'
                   END AS code,
                   hs_code::text as code_style
+              FROM forest_types_tg
+                WHERE hs_code IS NOT NULL and geom is not null
+                GROUP BY hs_code, hsue_code)
+              UNION
+              (SELECT 
+                  ST_Union(geom) AS geom,
+                  CASE hsue_code is null
+                    WHEN TRUE THEN hs_code::text
+                    ELSE hs_code::text || '(' || hsue_code::text || ')'
+                  END AS code,
+                  hs_code::text as code_style
               FROM forest_types_fr
                 WHERE hs_code IS NOT NULL and geom is not null
                 GROUP BY hs_code, hsue_code)
@@ -195,13 +206,13 @@ FROM silver_fir_areas;
 -- forest_types
 
 CREATE OR REPLACE VIEW forest_types_export AS
-SELECT nais as code,
+SELECT nais_v2 as code,
        ST_Transform(geom, 3857) as geometry,
-       nais as code_vd,
-       nais as code_so,
+       nais_v2 as code_vd,
+       nais_v2 as code_so,
        null as info_vd
 FROM forest_types_tg
-WHERE nais IS NOT NULL and geom is not null
+WHERE nais_v2 IS NOT NULL and geom is not null
 UNION
 SELECT CASE nais2 is null
           WHEN TRUE THEN nais1
@@ -461,7 +472,7 @@ delete from forest_types_ar_gen where st_area(geom) < 2000;
 CREATE OR REPLACE VIEW forest_types_union_export AS
 SELECT ST_Transform(ST_Union(geom), 3857) AS geom
 FROM (
-  SELECT (ST_Dump(ST_MakeValid(geom))).geom AS geom FROM forest_types_tg_gen
+  SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_tg_gen
   UNION ALL
   SELECT (ST_Dump(ST_MakeValid(geom))).geom FROM forest_types_fl_gen
   UNION ALL

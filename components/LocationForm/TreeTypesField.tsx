@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { TreeAppLanguage } from "@/i18n/i18next";
 import useStore from "@/store";
+import { getTypeOptions } from "@/utils/getTypeOptions";
 
 import LatinSwitcher from "../LatinSwitcher";
 import Dropdown from "../ui/Dropdown";
@@ -20,24 +21,17 @@ function TreeTypesField() {
   const latinActive = useStore((state) => state.latinActive);
 
   const options = useMemo(() => {
-    if (!opts?.treeType?.length) return [];
-    const treeTypes = treeClient.getTypes<TranslatedTypeRecordLatin>(
-      "treetype",
-      ["code", "la", i18n.language],
-      opts?.treeType?.length
-        ? { code: `IN (${opts.treeType.map((tt) => `'${tt}'`).join(", ")})` }
-        : undefined,
-    );
-
-    return (
-      treeTypes
-        .filter((tt) => opts.treeType?.includes(tt.code))
-        .map((tt) => ({
-          filterValue: `${tt.la} ${tt[i18n.language as TreeAppLanguage]}`,
-          label: latinActive ? tt.la : tt[i18n.language as TreeAppLanguage],
-          value: tt.code,
-        })) ?? []
-    );
+    return getTypeOptions<TranslatedTypeRecordLatin, DropdownOption>({
+      codes: opts?.treeType ?? [],
+      columns: ["code", "la", i18n.language],
+      mapOption: (tt) => ({
+        filterValue: `${tt.la} ${tt[i18n.language as TreeAppLanguage]}`,
+        label: latinActive ? tt.la : tt[i18n.language as TreeAppLanguage],
+        value: tt.code,
+      }),
+      treeClient,
+      type: "treetype",
+    });
   }, [opts, i18n.language, treeClient, latinActive]);
 
   return (
