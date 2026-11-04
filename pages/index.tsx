@@ -1,18 +1,9 @@
-import type { GetServerSideProps } from "next";
+import useIsMobile from "@/utils/hooks/useIsMobile";
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const query = context.resolvedUrl.includes("?")
-    ? context.resolvedUrl.slice(context.resolvedUrl.indexOf("?"))
-    : "";
-
-  return {
-    redirect: {
-      destination: `/projection${query}`,
-      permanent: false,
-    },
-  };
-};
+import Projection from "./projection";
 
 export default function Index() {
-  return null;
+  const isMobile = useIsMobile();
+
+  return isMobile ? null : <Projection />;
 }
