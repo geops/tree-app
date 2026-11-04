@@ -92,7 +92,7 @@ function NavBar() {
             if (!isMobile) {
               active = pathname.split("/")[1]
                 ? tab.pathname === pathname
-                : tab.pathname === "/location";
+                : tab.pathname === "/projection";
             }
 
             return !isMobile && tab.isMobile ? null : (

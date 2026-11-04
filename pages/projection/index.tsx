@@ -18,6 +18,7 @@ import type { TreeAppLanguage } from "@/i18n/i18next";
 function Projection() {
   const location = useStore((state) => state.location);
   const projectionResult = useStore((state) => state.projectionResult);
+  const mapLocation = useStore((state) => state.mapLocation);
   const projectionMode = useStore((state) => state.projectionMode);
   const { i18n, t } = useTranslation();
 
@@ -31,6 +32,9 @@ function Projection() {
     location.targetAltitudinalZoneExtreme,
   ) as AltitudinalZoneCode;
   const sameAltitudinalZone = AZToday === TAZModerate && AZToday === TAZExtreme;
+  const showForm =
+    (projectionMode === "m" && mapLocation.coordinate) ||
+    projectionMode === "f";
 
   const scenarios = useMemo(
     () =>
@@ -59,7 +63,7 @@ function Projection() {
         </div>
       )}
       <UserLocationInfo className="mb-4 px-5" needsUrlId />
-      <ProjectionForm />
+      {showForm ? <ProjectionForm /> : null}
       <ProjectionResult
         sameAltitudinalZone={sameAltitudinalZone}
         scenarios={scenarios}
