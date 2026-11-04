@@ -9,7 +9,6 @@ import ForestTypeModal from "./ForestTypeModal";
 import NavBar from "./NavBar";
 import WelcomeDialog from "./WelcomeDialog";
 
-// import type { Metadata, Viewport } from "next";
 import type { Viewport } from "next";
 
 interface Props {

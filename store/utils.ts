@@ -26,6 +26,8 @@ export function getInitialValue<T>(
   return callback(value ?? undefined, urlParams) as T;
 }
 
+const defaultMapView = "9|2660013|1185171";
+
 export const SET_FORM_LOCATION = "SET_FORM_LOCATION";
 export const SET_MAP_LOCATION = "SET_MAP_LOCATION";
 export const SET_PROJECTION_MODE = "SET_PROJECTION_MODE";
@@ -142,15 +144,16 @@ const initialState = {
         }
       : {},
   )!,
-  mapView: getInitialValue<string>("mv", (val, urlParams) => {
-    const mapPosition = urlParams.get("mp")?.split("|");
-    const mapView = (val ?? "9|2660013|1185171").split("|");
-    // When we have a defined map position we increase the zoom level to 13 so the tile data is loaded for the form
-    if (mapPosition && parseInt(mapView[0]) < 13) {
-      return [13, ...mapPosition].join("|");
-    }
-    return val ?? "9|2660013|1185171";
-  }),
+  mapView:
+    getInitialValue<string>("mv", (val, urlParams) => {
+      const mapPosition = urlParams.get("mp")?.split("|");
+      const mapView = (val ?? defaultMapView).split("|");
+      // When we have a defined map position we increase the zoom level to 13 so the tile data is loaded for the form
+      if (mapPosition && parseInt(mapView[0]) < 13) {
+        return [13, ...mapPosition].join("|");
+      }
+      return val ?? defaultMapView;
+    }) ?? defaultMapView,
   profiles: ["ch", "bl", "lu", "so", "vd"],
   projectionMode: getInitialValue<ProjectionMode>("pm") ?? "m",
   projectionResult: {
