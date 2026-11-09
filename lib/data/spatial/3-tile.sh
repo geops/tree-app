@@ -4,7 +4,7 @@ _tile () {
     local MAX_ZOOM=${3:-14}  # Default to 14 if not provided
     local MIN_ZOOM=${4:-0}   # Default to 0 if not provided
     echo "Tiling ${TARGET} ..."
-    tippecanoe --no-tile-size-limit --detect-shared-borders --no-feature-limit --include=code --include=code_style --include=code_vd --include=info_vd --include=code_so --minimum-zoom=${MIN_ZOOM} --maximum-zoom=${MAX_ZOOM} -s EPSG:3857 --layer ${LAYER_NAME} --force -o "/data/spatial/tree-app-tiles/tiles/${TARGET}.mbtiles" /data/spatial/export/${TARGET}.geojson
+    tippecanoe --no-tile-size-limit --detect-shared-borders --no-feature-limit --include=code --include=code_style --include=code_ag --include=code_vd --include=info_vd --include=code_so --minimum-zoom=${MIN_ZOOM} --maximum-zoom=${MAX_ZOOM} -s EPSG:3857 --layer ${LAYER_NAME} --force -o "/data/spatial/tree-app-tiles/tiles/${TARGET}.mbtiles" /data/spatial/export/${TARGET}.geojson
 }
 
 start=`date +%s`
