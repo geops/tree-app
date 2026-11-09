@@ -25,12 +25,14 @@ import type { TreeAppProfile } from "@/utils/types/definitions";
 
 interface LocationCantonal {
   forestType: string;
+  forestType_ag?: string;
   forestType_bl?: string;
   forestType_ch?: string;
   forestType_lu?: string;
   forestType_so?: string;
   forestType_vd?: string;
   info?: ForestType;
+  info_ag?: string;
   info_bl?: string;
   info_ch?: string;
   info_lu?: string;

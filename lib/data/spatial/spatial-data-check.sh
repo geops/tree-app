@@ -8,6 +8,7 @@ IMPORT_SCRIPT="$SCRIPT_DIR/1-import.sh"
 imported_targets=$(grep -oE '^_import[[:space:]]+"[^"]*"[[:space:]]+"[^"]*"' "$IMPORT_SCRIPT" | sed -E 's/^_import[[:space:]]+"[^"]*"[[:space:]]+"([^"]*)"/\1/')
 
 FOLDERS=(
+  "$SCRIPT_DIR/forest_types_ag"
   "$SCRIPT_DIR/forest_types_ar"
   "$SCRIPT_DIR/forest_types_bl"
   "$SCRIPT_DIR/forest_types_fl"

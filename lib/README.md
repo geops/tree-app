@@ -23,19 +23,18 @@ Spatial data is downloaded from different sources and imported into the database
 2. Remove all geojson files from data/spatial/export folder: `find data/spatial/export -type f -name "*.geojson" -delete`
 3. Export spatial data to GeoJSON files (takes approx. 50 minutes): `pnpm run data:spatial:export`
 4. Transform GeoJSON files to single vector tileset: `pnpm run data:spatial:tile`
-5. Generate font glyphs for Mapbox GL: `pnpm run data:spatial:fonts` (you might have to use an earlier node version for this)
+5. Generate font glyphs for Mapbox GL: `npm run data:spatial:fonts` (you need to use an earlier node version for this, e.g. node 16)
 6. Deploy tiles local by running `pnpm run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `pnpm dev`)
 7. Change version number in [sw.ts](https://github.com/geops/tree-app/blob/master/sw.ts#L37) to clear the tile cache and deploy repository changes
-8. Before deployment, check the vercel project ID in the `.vercel` folder in [tiles](https://github.com/geops/tree-app/tree/master/lib/data/spatial/tree-app-tiles). This folder is generated during the first deployemnt and prompts the definition of the vercel project. Depending on the current project ID and the target instance (`tree-app` or `tg.tree-app`), the folder needs to be deleted so the initial prompt is triggered again (e.g. if Thurgau tiles `tiles-tg` need to be deployed but the last deployment was made for '`tiles-staging`', the folder needs to be recreated)
-9. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `pnpm run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`, `tiles-tg.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step.
+8. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `pnpm run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step. You might be prompted to select the vercel project during the deployment process (needs to be done on first deployment, creates a `.vercel` folder)
 
 ## Excluding specific canton data
 
 Forest type data from any of the canton datasets can be excluded by commenting out the corresponding line in the [import file](https://github.com/geops/tree-app/blob/master/lib/data/spatial/1-import.sh#L55) and rebuilding the tiles.
 
-## Adding new SHAPE files
+## Adding new SHAPE/GeoPackage files
 
-New data (e.g. for a new canton) is provided in the [Seafile-Sharepoint](https://data.int.geops.com/lib/7eb78755-e8bf-46fc-ba1d-3c4d104a6cad/file/045_BaTool/Standortskarten) and may need to be adjusted in QGIS. Once ready the folder containing the the SHAPE files needs to be extracted into [lib/sata/spatial](https://github.com/geops/tree-app/tree/master/lib/data/spatial) folder (the import script does this automatically, but to avoid issues with read/write access we recommentd to extract and import manually). Then add the folder name in the [.gitignore](https://github.com/geops/tree-app/blob/master/lib/.gitignore) file.
+New data (e.g. for a new canton) is provided in the [Seafile-Sharepoint](https://data.int.geops.com/lib/7eb78755-e8bf-46fc-ba1d-3c4d104a6cad/file/045_BaTool/Standortskarten) and may need to be adjusted in QGIS. Once ready the folder containing the files needs to be extracted into [lib/sata/spatial](https://github.com/geops/tree-app/tree/master/lib/data/spatial) folder (the import script does this automatically, but to avoid issues with read/write access we recommentd to extract and import manually). Then add the folder name in the [.gitignore](https://github.com/geops/tree-app/blob/master/lib/.gitignore) file.
 
 ## Adding/Updating static PDFs (tree types, Solothurn forest types, etc.)
 Some Tree-App content is provided via PDFs, which are uploaded to vercel and handled in tree-app by the service worker for offline mode. When the PDFs need to be updated follow these steps:

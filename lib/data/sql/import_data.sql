@@ -1521,6 +1521,21 @@ SELECT AddGeometryColumn('','forest_types_ar','geom', '2056','MULTIPOLYGON', 2);
 
 
 
+----------------------------------------------
+-- Forest types AG
+
+CREATE TABLE "forest_types_ag" (gid serial,
+"stao_87" varchar(80),
+"hoehenstufe" varchar(80),
+"stao_nais_bis2026" varchar(80),
+"stao_nais_aktualisiert2026" varchar(80),
+"shape_length" float8,
+"shape_area" float8);
+
+ALTER TABLE "forest_types_ag" ADD PRIMARY KEY (gid);
+SELECT AddGeometryColumn('','forest_types_ag','geom', '2056','MULTIPOLYGON', 2);
+
+
 -- ########### TYPES ###########
 ----------------------------------------------
 -- additional
