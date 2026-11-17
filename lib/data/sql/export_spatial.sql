@@ -405,18 +405,18 @@ SELECT nais AS code,
       null as info_vd,
       nais as code_ag
 FROM forest_types_sz
-    WHERE nais IS NOT NULL and geom is not null
-    UNION
-    SELECT stao_nais_aktualisiert2026 AS code,
+WHERE nais IS NOT NULL and geom is not null
+UNION
+SELECT stao_nais_bis2026 AS code,
       ST_Transform(geom, 3857) as geometry,
-      stao_nais_aktualisiert2026 as code_vd,
-      stao_nais_aktualisiert2026 as code_so,
+      stao_nais_bis2026 as code_vd,
+      stao_nais_bis2026 as code_so,
       null as info_vd,
       stao_87 as code_ag
-    FROM forest_types_ag
-    WHERE stao_nais_aktualisiert2026 IS NOT NULL
-      and trim(stao_nais_aktualisiert2026) <> ''
-      and geom is not null;
+FROM forest_types_ag
+WHERE stao_nais_bis2026 IS NOT NULL
+  and trim(stao_nais_bis2026) <> ''
+  and geom is not null;
 
 
 ---------------- GENERALIZE + UNION -----------------
