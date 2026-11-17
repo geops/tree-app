@@ -6,7 +6,7 @@ This library provides tree recommendations for different climate change scenario
 
 Data for tree type projections is provided as a [CSV file](./data/projections.csv) and needs to be converted into an sqlite database to be usable by the library.
 
-1. Install NodeJS, pnpm, vercel CLI and Docker Compose.
+1. Install NodeJS, pnpm, vercel CLI and Docker Compose. NVM recommended.
 2. Install dependencies: `pnpm install`
 3. Stop postgres if it is already running: `sudo service postgresql stop`
 4. Run transformation: `pnpm run data:stop`, then `pnpm run data:start`. This generates the sqlite database with most of the non-spatial data and tables. This downloads the necessary spatial data and writes it in the database. This step should take approx. 8 minutes. The full log of the build is written into `lib/data/data:start_log.txt`.
@@ -21,12 +21,12 @@ Spatial data is downloaded from different sources and imported into the database
 
 1. Transform data as described in [Data](#data). CAUTION: data.geo.admin.ch files are [downloaded via docker](https://github.com/geops/tree-app/blob/master/lib/data/spatial/1-import.sh#L63), which might cause issues with file permissions. After the first run, you might need to adjust the permissions of the unzipped folders (e.g. `sudo chmod 777 altitudinal_zones_1995`) and rerun this step. Before the next step, check `lib/data/data:start_log.txt` for errors
 2. Remove all geojson files from data/spatial/export folder: `find data/spatial/export -type f -name "*.geojson" -delete`
-3. Export spatial data to GeoJSON files (takes approx. 50 minutes): `pnpm run data:spatial:export`
-4. Transform GeoJSON files to single vector tileset: `pnpm run data:spatial:tile`
-5. Generate font glyphs for Mapbox GL: `npm run data:spatial:fonts` (you need to use an earlier node version for this, e.g. node 16)
+3. Export spatial data to GeoJSON files (takes approx. 25 minutes, can be up to 50 minutes depending on your system specs): `pnpm run data:spatial:export`
+4. Transform GeoJSON files to single vector tileset (approx. 5 minutes): `pnpm run data:spatial:tile`
+5. Generate font glyphs for Mapbox GL: `npm run data:spatial:fonts` (you need to use an earlier node version for this, e.g. node 16 --> `nvm use 16`)
 6. Deploy tiles local by running `pnpm run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `pnpm dev`)
-7. Change version number in [sw.ts](https://github.com/geops/tree-app/blob/master/sw.ts#L37) to clear the tile cache and deploy repository changes
-8. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `pnpm run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step. You might be prompted to select the vercel project during the deployment process (needs to be done on first deployment, creates a `.vercel` folder)
+7. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `pnpm run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step. You might be prompted to select the vercel project during the deployment process (needs to be done on first deployment, creates a `.vercel` folder)
+8. ONLY do this step when the tiles change for production! Change version number in [sw.ts](https://github.com/geops/tree-app/blob/master/sw.ts#L37) to clear the tile cache and deploy repository changes. During development, either test with localhost (completely bypassing the service worker) or use incognito mode to test fresh vercel deployments and avoid caching issues.
 
 ## Excluding specific canton data
 
