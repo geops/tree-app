@@ -37,7 +37,7 @@ function ForestTypeDescription() {
       {activeProfile === "lu" && <LuForestTypeDescription code={code} />}
       {activeProfile === "bl" && <BlForestTypeDescription code={code} />}
       {activeProfile === "so" && <SoForestTypeDescription code={code} />}
-      {activeProfile === "vd" && (
+      {/vd|ag/.test(activeProfile) && (
         <p className="p-2">{t("forestTypeModal.noDataMessage")}</p>
       )}
     </>

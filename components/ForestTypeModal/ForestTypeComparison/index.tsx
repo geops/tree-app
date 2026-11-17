@@ -10,7 +10,7 @@ function ForestTypeComparison() {
 
   return (
     <>
-      {/^(ch|vd|so)$/.test(activeProfile) && <NoForestTypeComparison />}
+      {/^(ch|vd|so|ag)$/.test(activeProfile) && <NoForestTypeComparison />}
       {activeProfile === "lu" && <LuForestTypeComparison />}
       {activeProfile === "bl" && <BlForestTypeComparison />}
     </>
