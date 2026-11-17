@@ -83,7 +83,7 @@ function ForestTypeModal() {
   return (
     <Modal
       body={
-        <div className="w-full">
+        <div className="w-full px-2">
           {forestTypeModal === "c" ? (
             <ForestTypeComparison />
           ) : (
