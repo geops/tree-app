@@ -93,7 +93,7 @@ function ForestTypeModal() {
       }
       footer={
         <div className="flex items-end justify-between gap-6 sm:justify-end">
-          <ProfileSelect portal={false} />
+          <ProfileSelect />
           <Button onClick={() => setForestTypeModal("")} variant="secondary">
             OK
           </Button>
