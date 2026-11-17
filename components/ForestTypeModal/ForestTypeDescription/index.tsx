@@ -20,10 +20,14 @@ function useShowForestTypeDescription(code: string, activeProfile: string) {
   return showForestTypeDescription;
 }
 
+function NoData() {
+  const { t } = useTranslation();
+  return <p>{t("forestTypeModal.noDataMessage")}</p>;
+}
+
 function ForestTypeDescription() {
   const activeProfile = useStore((state) => state.activeProfile);
   const code = useStore((state) => state.forestTypeDescription);
-  const { t } = useTranslation();
   const showForestTypeDescription = useShowForestTypeDescription(
     code!,
     activeProfile,
@@ -37,12 +41,10 @@ function ForestTypeDescription() {
       {activeProfile === "lu" && <LuForestTypeDescription code={code} />}
       {activeProfile === "bl" && <BlForestTypeDescription code={code} />}
       {activeProfile === "so" && <SoForestTypeDescription code={code} />}
-      {activeProfile === "vd" && (
-        <p className="p-2">{t("forestTypeModal.noDataMessage")}</p>
-      )}
+      {!["bl", "ch", "lu", "so"].includes(activeProfile) && <NoData />}
     </>
   ) : (
-    t("forestTypeModal.noDataMessage")
+    <NoData />
   );
 }
 

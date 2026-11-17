@@ -53,6 +53,7 @@ lib/data/spatial/altitudinal_zones_2085_less_dry
 lib/data/spatial/altitudinal_zones_vd
 lib/data/spatial/cantonal_boundaries
 lib/data/spatial/forest_ecoregions
+lib/data/spatial/forest_types_ag
 lib/data/spatial/forest_types_ar
 lib/data/spatial/forest_types_bl
 lib/data/spatial/forest_types_fl

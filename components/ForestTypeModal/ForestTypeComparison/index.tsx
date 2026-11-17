@@ -4,17 +4,12 @@ import useStore from "@/store";
 
 import BlForestTypeComparison from "./bl";
 import LuForestTypeComparison from "./lu";
-import NoForestTypeComparison from "./NoForestTypeComparison";
 function ForestTypeComparison() {
+  const { t } = useTranslation();
   const activeProfile = useStore((state) => state.activeProfile);
-
-  return (
-    <>
-      {/^(ch|vd|so)$/.test(activeProfile) && <NoForestTypeComparison />}
-      {activeProfile === "lu" && <LuForestTypeComparison />}
-      {activeProfile === "bl" && <BlForestTypeComparison />}
-    </>
-  );
+  if (activeProfile === "lu") return <LuForestTypeComparison />;
+  if (activeProfile === "bl") return <BlForestTypeComparison />;
+  return <p>{t("forestTypeModal.noComparisonMessage")}</p>;
 }
 
 ForestTypeComparison.Header = function ForestTypeComparisonHeader() {
