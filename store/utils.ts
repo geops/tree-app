@@ -154,7 +154,6 @@ const initialState = {
       }
       return val ?? defaultMapView;
     }) ?? defaultMapView,
-  profiles: ["ch", "ag", "bl", "lu", "so", "vd"],
   projectionMode: getInitialValue<ProjectionMode>("pm") ?? "m",
   projectionResult: {
     extreme: initialProjection,

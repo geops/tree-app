@@ -1,3 +1,4 @@
+import { profiles } from "@geops/tree-lib";
 import { useTranslation } from "react-i18next";
 
 import useStore from "@/store";
@@ -16,7 +17,6 @@ function ProfileSelect({
   portal?: boolean;
 }) {
   const { t } = useTranslation();
-  const profiles = useStore((state) => state.profiles);
   const activeProfile = useStore((state) => state.activeProfile);
   const setActiveProfile = useStore((state) => state.setActiveProfile);
 

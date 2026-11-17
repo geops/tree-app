@@ -73,7 +73,6 @@ export interface AppStore {
   mapLayers: string[];
   mapLocation: Location;
   mapView: string;
-  profiles: string[];
   projectionMode: ProjectionMode;
   projectionResult: ProjectionResult;
   selectedFeature: FeatureLike | undefined;
