@@ -6,10 +6,10 @@ This library provides tree recommendations for different climate change scenario
 
 Data for tree type projections is provided as a [CSV file](./data/projections.csv) and needs to be converted into an sqlite database to be usable by the library.
 
-1. Install NodeJS, pnpm, vercel CLI and Docker Compose.
+1. Install NodeJS, pnpm, vercel CLI and Docker Compose. NVM recommended.
 2. Install dependencies: `pnpm install`
 3. Stop postgres if it is already running: `sudo service postgresql stop`
-4. Run transformation: `pnpm run data:transform`
+4. Run transformation: `pnpm run data:stop`, then `pnpm run data:start`. This generates the sqlite database with most of the non-spatial data and tables. This downloads the necessary spatial data and writes it in the database. This step should take approx. 8 minutes. The full log of the build is written into `lib/data/data:start_log.txt`.
 
 ### NaiS
 
@@ -19,23 +19,22 @@ NaiS data is provided as CSV files and imported into the PostgreSQL database for
 
 Spatial data is downloaded from different sources and imported into the database. To add or update spatial data have a look into `data/spatial`. For the app we generate one vector tileset using the following commands:
 
-1. Restart database: `pnpm run data:stop`, then `pnpm run data:start`. This generates the sqlite database with most of the non-spatial data and tables. This downloads the necessary spatial data and writes it in the database. CAUTION: data.geo.admin.ch files are [downloaded via docker](https://github.com/geops/tree-app/blob/master/lib/data/spatial/1-import.sh#L63), which might cause issues with file permissions. After the first run, you might need to adjust the permissions of the unzipped folders (e.g. `sudo chmod 777 altitudinal_zones_1995`) and rerun this step. This step should take approx. 8 minutes. The full log of the build is written into `lib/data/data:start_log.txt`. Before the next step, check the log for errors
+1. Transform data as described in [Data](#data). CAUTION: data.geo.admin.ch files are [downloaded via docker](https://github.com/geops/tree-app/blob/master/lib/data/spatial/1-import.sh#L63), which might cause issues with file permissions. After the first run, you might need to adjust the permissions of the unzipped folders (e.g. `sudo chmod 777 altitudinal_zones_1995`) and rerun this step. Before the next step, check `lib/data/data:start_log.txt` for errors
 2. Remove all geojson files from data/spatial/export folder: `find data/spatial/export -type f -name "*.geojson" -delete`
-3. Export spatial data to GeoJSON files (takes approx. 50 minutes): `pnpm run data:spatial:export`
-4. Transform GeoJSON files to single vector tileset: `pnpm run data:spatial:tile`
-5. Generate font glyphs for Mapbox GL: `pnpm run data:spatial:fonts` (you might have to use an earlier node version for this)
+3. Export spatial data to GeoJSON files (takes approx. 25 minutes, can be up to 50 minutes depending on your system specs): `pnpm run data:spatial:export`
+4. Transform GeoJSON files to single vector tileset (approx. 5 minutes): `pnpm run data:spatial:tile`
+5. Generate font glyphs for Mapbox GL: `npm run data:spatial:fonts` (you need to use an earlier node version for this, e.g. node 16 --> `nvm use 16`)
 6. Deploy tiles local by running `pnpm run data:spatial:deploy:local` and change REACT_APP_VECTOR_TILES_ENDPOINT to localhost in `.env` (reload new endppoint with `pnpm dev`)
-7. Change version number in [sw.ts](https://github.com/geops/tree-app/blob/master/sw.ts#L37) to clear the tile cache and deploy repository changes
-8. Before deployment, check the vercel project ID in the `.vercel` folder in [tiles](https://github.com/geops/tree-app/tree/master/lib/data/spatial/tree-app-tiles). This folder is generated during the first deployemnt and prompts the definition of the vercel project. Depending on the current project ID and the target instance (`tree-app` or `tg.tree-app`), the folder needs to be deleted so the initial prompt is triggered again (e.g. if Thurgau tiles `tiles-tg` need to be deployed but the last deployment was made for '`tiles-staging`', the folder needs to be recreated)
-9. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `pnpm run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`, `tiles-tg.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step.
+7. Deploy tiles to a webserver or to Vercel (currently maintained by geOps) running `pnpm run data:spatial:deploy` followed by `vercel alias set [deployment-url] [custom-domain]` (custom domain either `tiles.tree-app.ch`, `tiles-staging.tree-app.ch`). The geops vercel team needs to be active locally (use https://vercel.com/docs/cli/switch) for this step. You might be prompted to select the vercel project during the deployment process (needs to be done on first deployment, creates a `.vercel` folder)
+8. ONLY do this step when the tiles change for production! Change version number in [sw.ts](https://github.com/geops/tree-app/blob/master/sw.ts#L37) to clear the tile cache and deploy repository changes. During development, either test with localhost (completely bypassing the service worker) or use incognito mode to test fresh vercel deployments and avoid caching issues.
 
 ## Excluding specific canton data
 
 Forest type data from any of the canton datasets can be excluded by commenting out the corresponding line in the [import file](https://github.com/geops/tree-app/blob/master/lib/data/spatial/1-import.sh#L55) and rebuilding the tiles.
 
-## Adding new SHAPE files
+## Adding new SHAPE/GeoPackage files
 
-New data (e.g. for a new canton) is provided in the [Seafile-Sharepoint](https://data.int.geops.com/lib/7eb78755-e8bf-46fc-ba1d-3c4d104a6cad/file/045_BaTool/Standortskarten) and may need to be adjusted in QGIS. Once ready the folder containing the the SHAPE files needs to be extracted into [lib/sata/spatial](https://github.com/geops/tree-app/tree/master/lib/data/spatial) folder (the import script does this automatically, but to avoid issues with read/write access we recommentd to extract and import manually). Then add the folder name in the [.gitignore](https://github.com/geops/tree-app/blob/master/lib/.gitignore) file.
+New data (e.g. for a new canton) is provided in the [Seafile-Sharepoint](https://data.int.geops.com/lib/7eb78755-e8bf-46fc-ba1d-3c4d104a6cad/file/045_BaTool/Standortskarten) and may need to be adjusted in QGIS. Once ready the folder containing the files needs to be extracted into [lib/sata/spatial](https://github.com/geops/tree-app/tree/master/lib/data/spatial) folder (the import script does this automatically, but to avoid issues with read/write access we recommentd to extract and import manually). Then add the folder name in the [.gitignore](https://github.com/geops/tree-app/blob/master/lib/.gitignore) file.
 
 ## Adding/Updating static PDFs (tree types, Solothurn forest types, etc.)
 Some Tree-App content is provided via PDFs, which are uploaded to vercel and handled in tree-app by the service worker for offline mode. When the PDFs need to be updated follow these steps:

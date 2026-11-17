@@ -16,8 +16,7 @@ const {
   safeJsonParse: jsonParseHelper,
 } = helpers;
 
-export const profiles = ["bl", "ch", "lu", "so", "vd"] as const;
-
+export const profiles = ["ag", "bl", "ch", "lu", "so", "vd"];
 export const version = treeLibVersion;
 export const safeJsonParse = jsonParseHelper;
 export const reduceHochmontanAz = reduceHochmontanAzHelper;

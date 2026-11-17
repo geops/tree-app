@@ -12,7 +12,7 @@ export type CoordinateArrayType = [number, number];
 
 export type MaplibreStyleType = string | StyleSpecification | undefined;
 
-export type TreeAppProfile = "bl" | "ch" | "lu" | "so" | "vd";
+export type TreeAppProfile = "ag" | "bl" | "ch" | "lu" | "so" | "vd";
 
 export interface IconProps {
   className?: string;
